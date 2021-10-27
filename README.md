@@ -24,7 +24,7 @@ In der Übersicht soll einen erster Eindruck vom zukünftigen Aufbau vermitteln.
 Im Vordergrund steht die Kapselung von Datenbank, Core-API und GUI.
 
 
-[Projektanforderungen](/Projektanforderungen)
+[Projektanforderungen](https://git.svws-nrw.de/svws/svws-dokumentation/-/wikis/Projektanforderungen)
 
 
 ----
