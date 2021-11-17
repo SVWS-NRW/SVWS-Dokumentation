@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Funktionsumfang Schild-NRW #
+=======
+# Funktionsumfang Schild-NRW
+>>>>>>> branch 'main' of https://git.svws-nrw.de/svws/svws-dokumentation
 
 Grundsätzlich soll das Ziel des Projekts sein, den gesamten Funktionsumfang von Schild-NRW sukzessive nachzubilden. Dabei sollen historisch bedingte Fehler und umständliche Benutzerführung abgestellt werden.
 Die Umsetzung aller Funktionalitäten wird einige Zeit in Anspruch nehmen, so dass die Umsetzung modular erfolgen soll. Es werden zunächst die Grundfunktionen umgesetzt und dann nach und nach spezielle Verwaltungsaufgaben, die auch schulformspezifisch sein können.
