@@ -1,6 +1,6 @@
 # Übersicht SVWS-Client
 
-uploads/8512c7499c2c26fd60dbfa4ade8907f0/600px-REST-Server-02.png
+https://git.svws-nrw.de/svws/SVWS-Client/-/wikis/uploads/8512c7499c2c26fd60dbfa4ade8907f0/600px-REST-Server-02.png
 
 Die Grafik soll die verschiedensten Möglichkeiten darstellen, wie in Zukunft verschiedene GUI-Tools auf die Datenbanken zugreifen können. Durch die standartisierte Open-API-Schnittstelle ist es auch unerheblich, mit welchem Framework das GUI programmiert ist.
 
