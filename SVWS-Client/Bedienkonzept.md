@@ -17,7 +17,7 @@ Die neue Oberfläche ist in drei Bereiche unterteilt: Navigation, Sidebar und Co
 Generell soll bei der gesamten Bedienoberfläche auf Modale verzichtet werden. In den meisten Fällen kann alles in der Sidebar und dem Content-Bereich stehen. Beispiele für den Einsatz eines Modals sind Erweiterte Filter und die Druck-Vorschau.
 
 
-![Datei:BK Konzept.png|700px](uploads/700px-BK_Konzept.png)
+![](uploads/700px-BK_Konzept.png)
 
 
 ## Navigation 
