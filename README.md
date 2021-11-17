@@ -1,30 +1,30 @@
 ![Open-api-logo-klein.png](uploads/Open-api-logo-klein.png)
 
-Das Projekt zur Schaffung einer Open:API-Schnittstelle für die Schulverwaltung NRW.
+Das Projekt zur Schaffung einer Open:API-Schnittstelle fÃ¼r die Schulverwaltung NRW.
 
 
-# Übersicht
+# Ãœbersicht
 
 **Das Projekt:** 
 Die Schulverwaltungssoftware des Landes NRW wurde im Jahr 2000 erstmalig in Auftrag gegeben.
 Mittlerweile ist die Software 20 Jahre alt und es besteht dringender Bedarf an Modernisierung.
 Unter den bisherigen Entwicklern besteht der Konsens, dass es extrem schwierig sein wird, eine neue Software mit den bestehenden Ressourcen zu entwicklen, die den gleichen Funktionsumfang bietet, wie das jetzige Schild-NRW.
 
-Aus diesem Grund die Idee: Entwicklung eines REST-Servers, der eine offene API-Schnittstelle zur Verfügung stellt.
-Schild-NRW kann dann weiterhin in einer Übergangsphase auf die Datenbank zugreifen.
-Sobald aber alle Services der REST-Schnittstelle zur Verfügung stehen, kann Schild-NRW dann nach und nur noch als GUI dienen.
+Aus diesem Grund die Idee: Entwicklung eines REST-Servers, der eine offene API-Schnittstelle zur VerfÃ¼gung stellt.
+Schild-NRW kann dann weiterhin in einer Ãœbergangsphase auf die Datenbank zugreifen.
+Sobald aber alle Services der REST-Schnittstelle zur VerfÃ¼gung stehen, kann Schild-NRW dann nach und nur noch als GUI dienen.
 
 
 
-![700px-Übersicht-REST-Server-01.png](uploads/700px-Übersicht-REST-Server-01.png)
+![700px-Ãœbersicht-REST-Server-01.png](uploads/700px-Ãœbersicht-REST-Server-01.png)
 
 
 
-In der Übersicht soll einen erster Eindruck vom zukünftigen Aufbau vermitteln.
+In der Ãœbersicht soll einen erster Eindruck vom zukÃ¼nftigen Aufbau vermitteln.
 Im Vordergrund steht die Kapselung von Datenbank, Core-API und GUI.
 
 
-[Projektanforderungen](https://git.svws-nrw.de/svws/svws-dokumentation/-/wikis/Projektanforderungen)
+[Projektanforderungen](https://git.svws-nrw.de/svws/svws-dokumentation/-/blob/main/Projektanforderungen.md)
 
 
 ----
