@@ -17,7 +17,7 @@ Die neue Oberfläche ist in drei Bereiche unterteilt: Navigation, Sidebar und Co
 Generell soll bei der gesamten Bedienoberfläche auf Modale verzichtet werden. In den meisten Fällen kann alles in der Sidebar und dem Content-Bereich stehen. Beispiele für den Einsatz eines Modals sind Erweiterte Filter und die Druck-Vorschau.
 
 
-![](uploads/700px-BK_Konzept.png)
+![](https://git.svws-nrw.de/svws/SVWS-Client/-/wikis/uploads/700px-BK_Konzept.png)
 
 
 ## Navigation 
