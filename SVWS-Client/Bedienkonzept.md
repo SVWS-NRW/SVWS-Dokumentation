@@ -6,7 +6,7 @@ Es beschreibt die Menüführung, die Art der Objekte und die Bereiche, die bei d
 Von diesem Konzept darf bei der Umsetzung grafischer Oberflächen dann nicht mehr abgewichen werden, um eine einheitliche Bedienführung in allen Komponenten zu gewährleisten.
 
 
-[Link zum WireFrame-Model](https://xd.adobe.com/view/4fa6739c-7cb9-444e-b62f-bf5ef48a2b4b-1af5/?fullscreen Link zum WireFrame-Modell)
+![Link zum WireFrame-Model](https://xd.adobe.com/view/4fa6739c-7cb9-444e-b62f-bf5ef48a2b4b-1af5/?fullscreen)
 
 
 
