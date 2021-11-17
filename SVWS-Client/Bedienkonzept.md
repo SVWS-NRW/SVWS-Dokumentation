@@ -41,7 +41,7 @@ Je nach Bildschirmbreite können Input-Felder im Content-Bereich auf 1–3 Spalt
 
 # Der Main-Frame 
 
-![Datei:BK ModulA.png|700px](uploads/700px-BK_ModulA.png)
+![](https://git.svws-nrw.de/svws/SVWS-Client/-/wikis/uploads/700px-BK_ModulA.png)
 
 
 Das Hauptfenster mit den Daten orientiert sich an der bisherigen Nutzerführung von Schild-NRW, jedoch bettet sich dieses Fenster in das Konzept mit der Side bar ein, so dass der User ohne großen Platzverlust auch an die anderen Perspektiven (Einstellungen, andere Modul) gelangen kann.
@@ -54,7 +54,7 @@ Passende Iconsets müssen hierfür dann gefunden werden.
 
 # Weitere Navigations-Ebenen 
 
-![Datei:BK ModulB.png|700px](uploads/700px-BK_ModulB.png)
+![](https://git.svws-nrw.de/svws/SVWS-Client/-/wikis/uploads/700px-BK_ModulB.png)
 
 Weitere Ebenen können für die Aufgaben verwendet werden, die z.B. nicht an das Daten-Panel gebunden sind.
 Hier können bestimmte Gruppenprozesse, Einstellungen, Import/Export-Funktionen hinterlegt sein.
@@ -69,7 +69,7 @@ Dazu sind drei Arten von Modalen Fenstern freigegeben worden, die folgende Funkt
 
 ## Einfaches Modales Fenster 
 
-![Datei:BK EinfachesModal.png|500px](uploads/500px-BK_EinfachesModal.png)
+![](https://git.svws-nrw.de/svws/SVWS-Client/-/wikis/uploads/500px-BK_EinfachesModal.png)
 
 Für schnelle Optionale Entscheidungen, die der User wärend eines Use-Case zu treffen hat.
 
