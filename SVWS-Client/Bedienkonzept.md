@@ -75,7 +75,7 @@ Für schnelle Optionale Entscheidungen, die der User wärend eines Use-Case zu t
 
 ## Großes Modales Fenster 
 
-![Datei:BK GroßesModal.png|500px](uploads/500px-BK_GroßesModal.png)
+![](https://git.svws-nrw.de/svws/SVWS-Client/-/wikis/uploads/500px-BK_Gro%C3%9FesModal.png)
 
 Für komplexere Abfragen, wie zum Beispiel den Filter I, der aus dem Hauptfenster aufgerufen werden kann.
 
@@ -84,7 +84,7 @@ Für komplexere Abfragen, wie zum Beispiel den Filter I, der aus dem Hauptfenste
 
 ## komplexes Modales Fenster 
 
-![Datei:BK KomplexesModal.png|500px](uploads/500px-BK_KomplexesModal.png)
+![](https://git.svws-nrw.de/svws/SVWS-Client/-/wikis/uploads/500px-BK_KomplexesModal.png)
 
 Datenintensive Use-Cases, wie das Reporting mit Vorschau oder die Einstellungen für die Import und Exporte können mit dieser Variante umgestezt werden.
 
@@ -97,8 +97,8 @@ Datenintensive Use-Cases, wie das Reporting mit Vorschau oder die Einstellungen 
 
 # Beispiel der Hauptanwendung 
 
-![Datei:BK Beispiel.png|700px](uploads/700px-BK_Beispiel.png)
+![](https://git.svws-nrw.de/svws/SVWS-Client/-/wikis/uploads/700px-BK_Beispiel.png)
 
 # Use-Case Neuaufnahme #
 
-![Datei:BK Neuaufnahme.png|700px](uploads/700px-BK_Neuaufnahme.png)
+![](https://git.svws-nrw.de/svws/SVWS-Client/-/wikis/uploads/700px-BK_Neuaufnahme.png)
