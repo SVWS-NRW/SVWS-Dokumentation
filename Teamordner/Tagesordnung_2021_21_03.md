@@ -13,6 +13,7 @@ Wuppertal
 9.	Beauftragung WebDAV/CalDAV/VUE.js (Zusammenarbeit mit Firmen)
 10.	Beauftragung PHP-Notenmodul (?)
 11.	Erstellung Konzept Gruppenprozesse (Beauftragung Design?)
+12. Diskussion Benutzerrechte (Analyse Benutzerrechte in Schild2.0)
 
 # Erläuterungen
 
