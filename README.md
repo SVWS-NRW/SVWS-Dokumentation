@@ -16,7 +16,7 @@ Sobald aber alle Services der REST-Schnittstelle zur Verfügung stehen, kann Sch
 
 
 
-![](uploads/700px-Übersicht-REST-Server-01.png)
+![Übersicht-REST](uploads/700px-Übersicht-REST-Server-01.png)
 
 
 
