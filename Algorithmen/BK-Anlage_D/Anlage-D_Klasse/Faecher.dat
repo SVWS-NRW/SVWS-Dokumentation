@@ -1,0 +1,16 @@
+InternKrz|StatistikKrz|Bezeichnung|BezeichnungZeugnis|BezeichnungÜZeugnis|Unterrichtsprache|Sortierung S1|Sortierung S2|Gewichtung
+AHE-BIO|BI|Biologie|Biologie|Biologie||467|20|0
+AHE-EW|PA|Erziehungswissenschaften|Erziehungswissenschaften|Erziehungswissenschaften||488|10|1
+AHE-E|E|Englisch|Englisch|Englisch||489|30|1
+AHE-DM|DM|Didaktik und Methodik|Didaktik und Methodik|Didaktik und Methodik||490|40|1
+AHE-MA|M|Mathematik|Mathematik|Mathematik||491|50|1
+AHE-KU|KU|Kunst|Kunst|Kunst||492|70|1
+AHE-MU|MU|Musik|Musik|Musik||493|60|1
+AHE-F|F|Französisch|Französisch|Französisch||494|80|1
+AHE-DEU|D|Deutsch|Deutsch|Deutsch||495|90|1
+AHE-GES|GL|Gesellschaftslehre mit Geschichte|Gesellschaftslehre mit Geschichte|Gesellschaftslehre mit Geschichte||496|100|1
+AHE-KR|KR|Katholische Religionslehre|Katholische Religionslehre|Katholische Religionslehre||497|110|1
+AHE-SP|SP|Sport|Sport|Sport||498|120|1
+AHE-PHY|FP|Physikalische Experimente mit Kindern|Physikalische Experimente mit Kindern|Physikalische Experimente mit Kindern||502|32000|1
+AHE-KRUE|KR|Religionspädagogische Übungen|Religionspädagogische Übungen|Religionspädagogische Übungen||531|32000|1
+AHE-HW|EL|Hauswirtschaftslehre|Hauswirtschaftslehre|Hauswirtschaftslehre||546|32000|1
