@@ -16,4 +16,4 @@ Befehl für die Verlinkung von Eclipse, so dass sich der SVWW-Server auch ohne R
 
 
 Hier wird das JDK einfach für den net_bind freigegeben.
-Muss bei Änderung des JDKs ernaut ausgeführt werden.
+Muss bei Änderung des JDKs erneut ausgeführt werden.
