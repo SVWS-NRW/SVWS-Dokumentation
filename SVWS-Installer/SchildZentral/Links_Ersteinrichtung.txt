@@ -1,0 +1,8 @@
+www.download.ribeka.com/Software/SchILD/SchILDzentral/Setups/AlleModule/Setup_SchILDZentralSchulmoduleAMM.exe
+
+www.download.ribeka.com/Software/SchILD/SchILDzentral/Setups/AlleModule/Setup_SchILDzentralSchultraegermodul.exe
+
+www.download.ribeka.com/Software/SchILD/SchILDzentral/Setups/Modul1/schildzentral_basisskript_mssql.sql
+Das ist das SQL-Skript zum Anlegen der Datenbank.
+
+Nach der Installation kann das Update darüber gespielt werden. Einen kurzen Leitfaden zur Einrichtung habe ich beigefügt.

@@ -1,0 +1,43 @@
+unit_AbiBelegpruefungNeu.pas
+
+Darin sind die Abituralgorithmen (für Gy/GE, WBK, BK) enthalten, die in SchILD und LuPO verwendet werden
+
+ 
+
+unit_AbiPrueferKlassen.pas
+
+Enthält Klassendefinitionen und Hilfsroutinen, die in unit_AbiBelegpruefungNeu.pas verwendet werden.
+
+ 
+
+unit_AbiturG8G9.pas
+
+„Schnittstellen-Unit“ zwischen SchILD und unit_AbiBelegpruefungNeu.pas, d.h. dort werden die in SchILD gespeicherten Daten so aufbereitet, dass sie von den Abitur-Algorithmen verarbeitet werden können. Außerdem werden die Ergebnisse der Berechnungen wieder an SchILD übergeben
+
+ 
+
+Unit_FHRAlgorithmus.pas
+
+Der FHR-Algorithmus für das „normale FHR“ (also nicht das, was am BK normalerweise abläuft)
+
+ 
+
+Unit_BasisPruefungsalgorithmus.pas
+
+„Basis-Unit“ für die übrigen Algorithmen (also alles, was nicht „klassisches“ Abitur oder FHR ist). Hier werden u.a. die Daten an die internen Strukturen übergeben.
+
+ 
+
+Unit_Allg_Algorithmen.pas
+
+Prüfungsalgorithmen für allgemein-bildenden Schulen, wird in Unit_BasisPruefungsalgorithmus.pas verwendet.
+
+ 
+
+unit_BK_Algorithmen.pas
+
+Prüfungsalgorithmen für BKs, , wird in Unit_BasisPruefungsalgorithmus.pas verwendet.
+
+ 
+
+Alle Units verwenden auch weitere Hilfsunits, die aber i.d.R. nicht direkt was mit Prüfungsalgorithmen zu tun haben. Falls Sie die auch benötigen (oder falls ich was vergessen haben), sagen Sie einfach Bescheid.

@@ -1,0 +1,10 @@
+DROP SCHEMA IF EXISTS test;
+
+CREATE SCHEMA IF NOT EXISTS schild30
+  DEFAULT CHARACTER SET = 'utf8'
+  DEFAULT COLLATE 'utf8_general_ci';
+
+CREATE USER IF NOT EXISTS schildadmin IDENTIFIED BY 'schildadmin';
+  
+GRANT ALL PRIVILEGES ON schild30.* TO schildadmin;
+GRANT GRANT OPTION ON schild30.* TO schildadmin;

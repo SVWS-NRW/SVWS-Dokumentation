@@ -1,0 +1,354 @@
+function TAllgPruefungsAlgorithmus.Pruefe_R_GY_GE_APO_SI05_HSA_9: string;
+var
+	idf0, idf1, msg, idHF: string;
+	i : integer;
+  erfolg, del: boolean;
+begin
+// Dieser Algorithmus ist auch identsich mit der Berechbung des Hauptschulabschlusses am Ende von 9 in der HS und
+// in der RS und GY am Ende von 9 (dann wírd aber nur Englisch gewertetet)
+	Result := 'N';
+	msg := '';
+
+  if FSchulform = 'GE' then
+    erfolg := Vorpruefung_HSA_GE
+  else
+    erfolg := false;
+
+  if not erfolg then
+  begin
+  // Deutsch prüfen
+    idHF := HauptfachID( fC0, 'Fach', 'D' );
+    if idHF = '' then
+    begin		// Deutsch enthalten?
+      Meldung( 'Deutsch fehlt' );
+      fZuWenigFaecher := true;
+    end else
+      Uebertragen( fC0, fC1, idHF );
+
+  // Mathe prüfen
+    idHF := HauptfachID( fC0, 'Fach', 'M' );
+    if idHF = '' then
+    begin
+      Meldung( 'Mathematik fehlt' );
+      fZuWenigFaecher := true;
+    end else
+      Uebertragen( fC0, fC1, idHF );
+
+  // Englisch prüfen
+    idHF := HauptfachID( fC0, 'Fach', 'E' );
+    if idHF = '' then
+    begin
+      Meldung( 'Englisch fehlt' );
+      fZuWenigFaecher := true;
+    end else if StrToInt( fJahrgang ) <= 7 then
+      Uebertragen( fC0, fC1, idHF );		// Enlisch zählt lt. Barnscheid nur in jg. 6 und 7 zu den "Hauptfächern"
+
+    if FZuWenigFaecher then
+      exit;
+
+  // Jetzt noch die Fremdsprachen ib C0 außer Englisch löschen
+    with fC0 do
+    begin
+      First;
+      while not EOF do
+      begin
+        del := false;
+        if ( FieldByname( 'Fachgruppe' ).AsString = 'FS' ) and ( fC0.FieldByname( 'Fach' ).AsString <> 'E' ) then
+        begin
+          if FSchulgliederung = 'GE' then
+            del := FieldByName( 'Note' ).AsInteger > 4 // Defizite bleiben in allen FS außer E unberücksichtigt
+          else
+            del := true;
+        end;
+        if del then
+          Delete
+        else
+          Next;
+      end;
+    end;
+
+  // Auf 6 in C1 prüfen
+    idf1 := NoteVorhanden( fC1, 'Note', '=', 6, -1 );
+    idf0 := NoteVorhanden( fC0, 'Note', '>=', 5, -1 );
+    if idf1 <> '' then
+    begin		// mindestens eine 6 vorhanden
+      for i := 1 to AnzahlElemente( idf1 ) do
+        StrAdd( SchreibeFachNote( fC1, StrToInt( EinzelElement( idf1, i ) ) ), msg );
+      for i := 1 to AnzahlElemente( idf0 ) do
+        StrAdd( SchreibeFachNote( fC0, StrToInt( EinzelElement( idf0, i ) ) ), msg );
+      VersetzungsMeldung( 'Kein Hauptschulabschluss:', msg );
+      exit;
+    end;
+
+  // Auf 5 in C1 prüfen
+    idf1 := NoteVorhanden( fC1, 'Note', '=', 5, -1 );
+    if idf1 <> '' then
+    begin	// 5 in D/M/E vorhanden
+      for i := 1 to AnzahlElemente( idf1 ) do
+        StrAdd( SchreibeFachNote( fC1, StrToInt( EinzelElement( idf1, i ) ) ), msg );
+      for i := 1 to AnzahlElemente( idf0 ) do
+        StrAdd( SchreibeFachNote( fC0, StrToInt( EinzelElement( idf0, i ) ) ), msg );
+
+      if AnzahlElemente( idf1 ) > 1 then
+      begin		// zwei oder mehr 5
+        VersetzungsMeldung( 'Kein Hauptschulabschluss:', msg );
+        exit;
+      end else
+      begin		// eine 5, wie sieht es bei den übrigen Fächern aus?
+        if AnzahlElemente( idf0 ) > 1 then
+        begin		// zwei oder mehr 5,6 in C0
+          VersetzungsMeldung( 'Kein Hauptschulabschluss:', msg );
+          exit;
+        end;
+      end;
+    end else if idf0 <> '' then
+    begin		// in C0 Fächer schlechter als 4
+      for i := 1 to NumToken( idf0, ';' ) do
+        StrAdd( SchreibeFachNote( fC0, StrToInt( EinzelElement( idf0,  i ) ) ), msg );
+      if AnzahlElemente( idf0 ) > 1 then
+      begin		//	2 oder mehr Fächer in C0 schlechter als 4
+        if AnzahlElemente( idf0 ) > 2 then
+        begin // 3 oder mehr Fächer in C0 schlechter als 4 ==> Keine Versetzung
+          VersetzungsMeldung( 'Kein Hauptschulabschluss:', msg );
+          exit;
+        end else
+        begin	// es gibt 2 Fächer >4 in fC0, ist dabei eine 6?
+          idf0 := NoteVorhanden( fC0, 'Note', '=', 6, -1 );
+          if AnzahlElemente( idf0 ) > 1 then
+          begin	//
+            VersetzungsMeldung( 'Kein Hauptschulabschluss:', msg );
+            exit;
+          end;
+        end;
+      end;
+    end;
+  end;
+
+	Result := 'A';
+
+// Hier keine Progmosemitteilung, das HS (wenn erreicht) ein "ecter" Abschluss ist
+	Meldung( 'Hauptschulabschluss erreicht!' );
+
+end;
+
+
+
+
+
+function TAllgPruefungsAlgorithmus.Pruefe_APO_SI05_HSA_10: string;	// hauptschulabschluss nach Kl.10
+var
+	msg, idf0, idf1, idHF: string;
+	i : integer;
+  erfolg, del: boolean;
+  inote: integer;
+begin
+// Der Algorithmus für den Hausptschulabschluss ist für H, R und GY weitestgehend identisch (Unterschiede nur bei der Auswahl der verwendeten Fächer)
+
+	Result := 'N';
+	msg := '';
+
+// Lernbereichsnoten nur bei SI-Hauptschulabschluss
+  if ( fSchulgliederung = 'H' ) or ( fSchulgliederung = 'GE' ) then    // Arbeitslehre statt Gesellschaftswissemschaft als Gesamtnote
+  begin
+    if fGesamtnoteGS <> 0 then
+    begin
+      AusContainerLoeschen( fC0, FeldWertIDs( fC0, 'Fachgruppe', 'AL', 0 ) );
+      inote := FGesamtnoteGS;
+      if FNachprFaecherErmitteln and ( FTestFach_ID = -100 ) then
+        inote := FTestnote;
+      FachHinzu( 'AL', 'AL', 'Arbeitslehre als Lernbereichsnote', '', '', IntToStr( inote ), '', '', '', 0, 1, 0, 0, -100, false, false, '', '', '-', false, false )
+    end else
+    begin
+      Meldung( 'Arbeitslehre als Lernbereichsnote fehlt' );
+      FZuWenigFaecher := true;
+      Result := 'I';
+    end;
+  end else if ( fSchulgliederung = 'R' ) or ( fSchulgliederung = 'GY' ) then
+  begin
+    if fGesamtnoteGS <> 0 then
+    begin
+      AusContainerLoeschen( fC0, FeldWertIDs( fC0, 'Fachgruppe', 'GS', 0 ) );
+      inote := FGesamtnoteGS;
+      if FNachprFaecherErmitteln and ( FTestFach_ID = -100 ) then
+        inote := FTestnote;
+      FachHinzu( 'GL', 'GL', 'Gesellschaftswissenschaft als Lernbereichsnote', '', '', IntToStr( inote ), '', '', '', 0, 1, 0, 0, -100, false, false, '', '', '-', false, false );
+    end else
+    begin
+      Meldung( 'Gesellschaftswissenschaft als Lernbereichsnote fehlt' );
+      FZuWenigFaecher := true;
+      Result := 'I';
+    end;
+  end;
+
+  if fGesamtnoteNW <> 0 then
+  begin
+    AusContainerLoeschen( fC0, FeldWertIDs( fC0, 'Fachgruppe', 'NW', 0 ) );
+    AusContainerLoeschen( fC0, FeldWertIDs( fC0, 'Fachgruppe', 'WN', 0 ) );
+    inote := FGesamtnoteNW;
+    if FNachprFaecherErmitteln and ( FTestFach_ID = -101 ) then
+      inote := FTestnote;
+    FachHinzu( 'NW', 'NW', 'Naturwissenschaft als Lernbereichsnote', '', '', IntToStr( inote ), '', '', '', 0, 1, 0, 0, -101, false, false, '', '', '-', false, false );
+  end else
+  begin
+    Meldung( 'Naturwissenschaft als Lernbereichsnote fehlt' );
+    FZuWenigFaecher := true;
+    Result := 'I';
+  end;
+
+{  if FSchulgliederung = 'GE' then
+    erfolg := Vorpruefung_HSA_GE
+  else
+    erfolg := false;}
+
+  erfolg := false;
+
+  if not erfolg then
+  begin
+// Deutsch prüfen
+    idHF := HauptfachID( fC0, 'Fach', 'D' );
+    if idHF = '' then
+    begin		// Deutsch enthalten?
+      Meldung( 'Deutsch fehlt' );
+      fZuWenigFaecher := true;
+    end else
+      Uebertragen( fC0, fC1, idHF );
+
+  // Mathe prüfen
+    idHF := HauptfachID( fC0, 'Fach', 'M' );
+    if idHF = '' then
+    begin
+      Meldung( 'Mathematik fehlt' );
+      fZuWenigFaecher := true;
+    end else
+      Uebertragen( fC0, fC1, idHF );
+
+  // Englisch prüfen
+    idHF := HauptfachID( fC0, 'Fach', 'E' );
+    if idHF = '' then
+    begin
+      Meldung( 'Englisch fehlt' );
+      fZuWenigFaecher := true;
+    end;{ else
+      Uebertragen( fC0, fC1, FeldWertIDs( fC0, 'FachIntern', 'E', 0 ) );}
+
+  // C1 enthält nun D/M, C0 alle anderen Fächer
+
+  // Jetzt noch die Fremdsprachen ib C0 außer Englisch löschen, nicht bei GE
+    if FSchulgliederung <> 'GE' then
+    begin
+      with fC0 do
+      begin
+        First;
+        while not EOF do
+        begin
+          del := false;
+          if ( FieldByname( 'Fachgruppe' ).AsString = 'FS' ) and ( fC0.FieldByname( 'Fach' ).AsString <> 'E' ) then
+          begin
+            if FSchulgliederung = 'GE' then
+              del := FieldByName( 'Note' ).AsInteger > 4 // Defizite bleiben in allen FS außer E unberücksichtigt
+            else
+              del := true;
+          end;
+          if del then
+            Delete
+          else
+            Next;
+        end;
+      end;
+    end;
+  // Englisch prüfen
+    idHF := HauptfachID( fC0, 'Fach', 'E' );
+    if idHF = '' then
+    begin
+      Meldung( 'Englisch fehlt' );
+      fZuWenigFaecher := true;
+    end;
+
+    if FZuWenigFaecher then
+      exit;
+
+  // Fallunterscheidung nach Schulformen
+    if ( fSchulgliederung = 'H' ) or ( fSchulgliederung = 'GE' ) then
+    begin
+      Uebertragen( fC0, fC1, FeldWertIDs( fC0, 'Fach', 'AL', 0 ) );
+      Uebertragen( fC0, fC1, FeldWertIDs( fC0, 'Fach', 'NW', 0 ) );
+    end else if ( fSchulgliederung = 'R' ) or ( fSchulgliederung = 'GY' ) then
+    begin   // Gymnasium/Realschule
+      Uebertragen( fC0, fC1, FeldWertIDs( fC0, 'Fach', 'GL', 0 ) );
+      Uebertragen( fC0, fC1, FeldWertIDs( fC0, 'Fach', 'NW', 0 ) );
+    end;
+
+  {$IFDEF DEBUGMODE}
+  //  FC0_FC1_Zeigen;
+  {$ENDIF}
+
+
+  // Auf 6 in C1 prüfen
+    idf1 := NoteVorhanden( fC1, 'Note', '=', 6, -1 );
+    if idf1 <> '' then
+    begin		// 6 vorhanden
+      idf1 := NoteVorhanden( fC1, 'Note', '>=', 5, -1 );
+      for i := 1 to NumToken( idf1, ';' ) do
+        StrAdd( SchreibeFachNote( fC1, StrToInt( GetToken( idf1, ';', i ) ) ), msg );
+      idf0 := NoteVorhanden( fC0, 'Note', '>=', 5, -1 );
+      for i := 1 to NumToken( idf0, ';' ) do
+        StrAdd( SchreibeFachNote( fC0, StrToInt( GetToken( idf0, ';', i ) ) ), msg );
+
+      VersetzungsMeldung( 'Kein Hauptschulabschluss nach Klasse 10:', msg );
+      exit;
+    end;
+
+  // Auf 5 in C1 prüfen
+    idf1 := NoteVorhanden( fC1, 'Note', '=', 5, -1 );
+    idf0 := NoteVorhanden( fC0, 'Note', '>=', 5, -1 );
+    if idf1 <> '' then
+    begin	// 5 in D/M vorhanden
+      for i := 1 to NumToken( idf1, ';' ) do
+        StrAdd( SchreibeFachNote( fC1, StrToInt( GetToken( idf1, ';', i ) ) ), msg );
+      for i := 1 to NumToken( idf0, ';' ) do
+        StrAdd( SchreibeFachNote( fC0, StrToInt( GetToken( idf0, ';', i ) ) ), msg );
+      if NumToken( idf1, ';' ) > 1 then
+      begin		// zwei oder mehr 5
+        VersetzungsMeldung( 'Kein Hauptschulabschluss nach Klasse 10:', msg );
+        exit;
+      end else
+      begin		// eine 5, wie sieht es bei den übrigen Fächern aus?
+        if idf0 <> '' then
+        begin		// es gibt mindestens ein Fach mit 5 oder 6 in C0
+          for i := 1 to AnzahlElemente( idf0 ) do
+            StrAdd( SchreibeFachNote( fC0, StrToInt( EinzelElement( idf0, i ) ) ), msg );
+          if AnzahlElemente( idf0 ) > 1 then
+          begin		// zwei oder mehr 5,6 in C0
+            VersetzungsMeldung( 'Kein Hauptschulabschluss nach Klasse 10:', msg );
+            exit;
+          end;
+        end;
+      end;
+    end else if idf0 <> '' then
+    begin		// in C0 Fächer schlechter als 4
+      for i := 1 to AnzahlElemente( idf0 ) do
+        StrAdd( SchreibeFachNote( fC0, StrToInt( EinzelElement( idf0, i ) ) ), msg );
+      if AnzahlElemente( idf0 ) > 1 then
+      begin		// mehr als 1 Fach in C0 schlechter als 4
+        if NumToken( idf0, ';' ) > 2 then
+        begin		//	mehr als 2 Fächer in C0 schlechter als 4
+          VersetzungsMeldung( 'Kein Hauptschulabschluss nach Klasse 10:', msg );
+          exit;
+        end else
+        begin	 // 2 Fächer in C0 schlechter als 4, prüfen ob 6 vorkommt
+          idf0 := NoteVorhanden( fC0, 'Note', '=', 6, -1 );
+          if AnzahlElemente( idf0 ) > 1 then
+          begin	// mehr als eine 6 in C0
+            VersetzungsMeldung( 'Kein Hauptschulabschluss nach Klasse 10:', msg );
+            exit;
+          end;
+        end;
+      end;
+    end;
+  end;
+	Result := 'A';
+  if IstPrognose then
+  	Meldung( 'Prognose: Hauptschulabschluss nach Klasse 10' )
+  else
+  	Meldung( 'Hauptschulabschluss nach Klasse 10 erreicht!' );
+end;

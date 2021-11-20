@@ -1,0 +1,15 @@
+[Unit]
+Description=svws-server service
+After=syslog.target network.target
+[Service]
+SuccessExitStatus=143
+User=root
+Group=svws
+
+Type=forking
+
+ExecStart=/root/home/git/SVWS-Server/svws-server-app/run_server.sh
+ExecStop=/bin/kill -15 $MAINPID
+
+[Install]
+WantedBy=multi-user.target

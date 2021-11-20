@@ -1,0 +1,471 @@
+function TAllgPruefungsAlgorithmus.Pruefe_APO_SI05_FOR_Abschluss_GE( const PO_Art: string ): string;
+// PO_Art: FOR oder FORQ
+
+
+  function AnzahlBesserGrenzNote( ds: TDataset; const id_liste: string; const grenznote: integer ): integer;
+  var
+    i, id: integer;
+  begin
+    Result := 0;
+    for i := 1 to AnzahlElemente( id_liste ) do
+    begin
+      id := StrToInt( EinzelElement( id_liste, i ) );
+      if ds.Locate( 'ID', id, [] ) then
+      begin  // es kann sein, dass das betreffende Fach in einer anderen Gruppe ist, daher muss LOcate nicht zum Erfolg führen
+        if ds.FieldByName( 'Note' ).AsInteger <= grenznote then
+          inc( Result );
+      end;
+    end;
+  end;
+
+var
+  msg: string;
+  idHF, idEK, idGK, idWPI, idUeb, idTmp, idAusgl, ka : string;
+  idDef_mA_FG1, idDef_oA_FG1, idAusgl_FG1: string;
+  idDef_mA_FG2, idDef_oA_FG2, idAusgl_FG2: string;
+  idDef_mA2_FG2, sID: string;
+  i, anz3, anz4, note: integer;
+  erfolg: boolean;
+  nMinE, GN_EK, GN_GK, GN_WPI, GN_Ueb, GN_: integer;
+  ausgl_fg1, gn_ueberschreitung: boolean;
+  neg_msg: string;
+begin
+
+  Result := 'N';
+  msg := '';
+
+//Grenznoten festlegen
+  if PO_Art = 'FOR' then
+  begin
+    nMinE := 2;
+    GN_EK := 4;
+    GN_GK := 3;
+    GN_WPI := 4;
+    GN_Ueb := 4; // aber: mindestens 2 Fächer besser als 3
+    neg_msg := 'Keine Fachoberschulreife ohne Qualifikationsvermerk';
+  end else if PO_Art = 'FORQ' then
+  begin
+    nMinE := 3;
+    GN_EK := 3;
+    GN_GK := 2;
+    GN_WPI := 3;
+    GN_Ueb := 3;
+    neg_msg := 'Keine Fachoberschulreife mit Berechtigung z. Besuch d. gymn. Oberstufe -Einführungsphase-';
+  end;
+{§40 (2) Eine Schülerin oder ein Schüler der Gesamtschule erwirbt nach dem
+Abschlussverfahren am Ende der Klasse 10 den mittleren Schulabschluss
+(Fachoberschulreife), wenn sie oder er
+1.  an mindestens zwei Erweiterungskursen teilgenommen hat,
+2.  in den Fächern der Erweiterungskurse und im Fach des Wahlpflichtun-
+terrichts  mindestens  ausreichende,  in  den  Fächern  der  Grundkurse
+mindestens befriedigende Leistungen erzielt hat,
+3.  in den anderen  Fächern bei  sonst mindestens ausreichenden Leistun-
+gen in zwei Fächern mindestens befriedigende Leistungen erzielt hat.
+
+Bei der Teilnahme an mehr als zwei Erweiterungskursen werden die Leis-
+tungen in den Fächern dieser Kurse wie eine um eine Notenstufe bessere
+Leistung  im  Grundkursbereich  gewertet.
+
+Der  Abschluss  wird auch  dann
+vergeben, wenn die geforderten Leistungen
+in nicht mehr als einem der FDeutsch,  Englisch,  Mathematik,  Fach  des  Wahlpflichtunterrichts
+oder
+in nicht mehr als einem der übrigen Fächer
+um eine Notenstufe unterschritten werden und diese Leistung durch eine bessere Leistung in ei-
+nem anderen Fach ausgeglichen wird; dabei muss die Minderleistung in
+den Fächern Deutsch, Englisch, Mathematik, Fach des Wahlpflichtunter-
+richts durch eine bessere Leistung in einem anderen Fach dieser Fächer-
+gruppe ausgeglichen werden. Eine weitere Unterschreitung der Leistun-
+gen in den übrigen Fächern um bis zu zwei Notenstufen bleibt unberück-
+sichtigt.
+}
+// Bei folgenden Bedingungen ist FOR erreicht
+// 2 E-Kurse mit 4 oder besser und
+// 3 G-Kurse mit 3 oder besser und
+// 1 WPI-Kurs mit 4 oder besser
+// 2x3, sonst 4 in übrigen Fächern
+
+
+
+//FORQ
+{(4) Eine Schülerin oder ein Schüler der Gesamtschule erwirbt mit dem mitt-
+leren Schulabschluss (Fachoberschulreife) die Berechtigung zum Besuch
+der gymnasialen Oberstufe und setzt die Schullaufbahn dort in der Einfüh-
+rungsphase fort, wenn
+1.  sie oder er an mindestens drei Erweiterungskursen teilgenommen hat,
+2.  die Leistungen in den Fächern der Erweiterungskurse und im Fach des
+Wahlpflichtunterrichts  mindestens  befriedigend  und  im  Fach  des
+Grundkurses mindestens gut sind,
+3.  die Leistungen in den übrigen Fächern mindestens befriedigend sind.
+
+Bei der Teilnahme an mehr als drei Erweiterungskursen wird die im Fach
+des vierten Erweiterungskurses erzielte Leistung wie eine um eine Noten-
+stufe bessere Note im Fach des Grundkurses gewertet.
+
+Die Berechtigung
+wird auch dann vergeben, wenn die geforderten Leis-tungen in nicht mehr
+als  einem  der  Fächer  Deutsch,  Englisch,  Mathematik,  Fach  des  Wahl-
+pflichtunterrichts  um  eine  Notenstufe  unterschritten  werden  und  diese
+Leistung durch eine bessere Note in einem anderen Fach dieser Fächer-
+gruppe ausgeglichen wird. Bis zu zwei Unterschreitungen um eine Noten-
+stufe und eine weitere Unterschreitung um bis zu zwei Notenstufen in der
+Gruppe der übrigen Fächer müssen durch jeweils mindestens gute Leis-
+tungen in anderen Fächern ausgeglichen werden. Jedes Fach darf nur ein-
+mal zum Ausgleich herangezogen werden.}
+
+// Prüfen, ob "überzählige" E-Kurse da sind
+  idEK := NoteVorhanden( fC0, 'Note', '<=', 6, 'E' ); // Alle E-Kurse sammeln
+  if AnzahlElemente( idEK ) > nMinE then
+  begin
+    fC2.EmptyTable; // temporärer Speicher für E-Kurse
+    Kopieren( fC0, fC2, idEK );
+// Bei mehreren E-Kurse diese als G-Kurse umsetzen (mit 1 Note besser)
+// Die E-Kurse nach Noten sortieren
+    fC2.SortByFields( 'Note' );
+    fC2.First;
+    for i := 1 to nMinE do
+      fC2.Next;
+    while not fC2.Eof do
+    begin
+      FC2.Next;
+      FC0.Locate( 'ID', fC2.FieldByName( 'ID' ).AsInteger, [] );
+      FC0.Edit;
+      if fC0.FieldByname( 'Note' ).AsInteger > 1 then
+        fC0.FieldByname( 'Note' ).AsInteger := fC0.FieldByname( 'Note' ).AsInteger - 1;
+      fC0.FieldByName( 'Kursart' ).AsString := 'G';
+      fC0.Post;
+    end;
+    fC2.EmptyTable;
+  end;
+
+// Jetzt die Kurse nochmals holen
+  idEK := '';
+  idGK := '';
+  idUeb := '';
+
+  with fC0 do
+  begin
+    First;
+    while not Eof do
+    begin
+      ka := FieldByName( 'Kursart' ).AsString;
+      if ka = 'E' then
+        ZuMengeHinzu( idEK, FieldByname( 'ID' ).AsString )
+      else if ka = 'G' then
+        ZuMengeHinzu( idGK, FieldByname( 'ID' ).AsString )
+      else if ( ka = 'WPI' ) or ( ka = 'WPIG' ) then
+        ZuMengeHinzu( idWPI, FieldByname( 'ID' ).AsString )
+      else
+        ZuMengeHinzu( idUeb, FieldByname( 'ID' ).AsString );
+      Next;
+    end
+  end;
+
+  if PO_Art = 'FOR' then
+  begin
+// Eine weitere Unterschreitung der Leistungen in den übrigen Fächern um bis zu zwei Notenstufen
+// bleibt unberücksichtigt.
+// Prüfen, ob bei den Grundkursen
+//"Eine weitere Unterschreitung der Leistungengen um bis zu zwei Notenstufen" vorhanden ist
+    gn_ueberschreitung := false;
+    fC2.EmptyTable;
+    Kopieren( fC0, fC2, idGK );
+    fC2.SortByFields( 'Note desc' );
+    fC2.First;
+    while not fC2.Eof do
+    begin
+      if ( FC2.FieldByname( 'Note' ).AsInteger = 4 ) or
+         ( FC2.FieldByname( 'Note' ).AsInteger = 5 )  then
+      begin
+//        AusMengeLoeschen( idGK, FC2.FieldByname( 'ID' ).AsString );
+        AusMengeLoeschen( idUeb, FC2.FieldByname( 'ID' ).AsString );
+        gn_ueberschreitung := true;
+        break;
+      end else
+        FC2.Next;
+    end;
+
+// Falls bei den Grundkursen keine Überschreitung festgestellt wurde, auch bei den übrigen nachschauen
+  // Bei den übrigen ein Fach mit der Note GN_Ueb + 1 oder + 2 suchen,
+    if not gn_ueberschreitung then
+    begin
+      fC2.EmptyTable;
+      Kopieren( fC0, fC2, idUeb );
+      fC2.SortByFields( 'Note desc' );
+      fC2.First;
+      while not fC2.Eof do
+      begin
+        if ( FC2.FieldByname( 'Note' ).AsInteger = GN_Ueb + 1 ) or
+           ( FC2.FieldByname( 'Note' ).AsInteger = GN_Ueb + 2 )  then
+        begin
+          AusMengeLoeschen( idUeb, FC2.FieldByname( 'ID' ).AsString );
+          break;
+        end else
+          FC2.Next;
+      end;
+    end;
+    fC2.EmptyTable;
+  end;
+
+
+// Mindestens nMinE E-Kurse belegt   (Punkt 1 in obiger Liste)
+  if AnzahlElemente( idEK ) < nMinE then
+  begin
+    msg := 'Zu wenig E-Kurse';
+    VersetzungsMeldung( neg_msg, msg );
+    fZuWenigFaecher := true;
+  end;
+
+  if idWPI = '' then
+  begin
+    msg := 'Kein WPI-Kurs';
+    VersetzungsMeldung( neg_msg, msg );
+    fZuWenigFaecher := true;
+  end else
+    Uebertragen( fC0, fC1, idWPI );
+
+// Die Container füllen
+  // Deutsch prüfen
+  idHF := HauptfachID( fC0, 'Fach', 'D' );
+  if idHF = '' then
+  begin		// Deutsch enthalten?
+    Meldung( 'Deutsch fehlt' );
+    fZuWenigFaecher := true;
+  end else
+    Uebertragen( fC0, fC1, idHF );
+
+// Mathe prüfen
+  idHF := HauptfachID( fC0, 'Fach', 'M' );
+  if idHF = '' then
+  begin
+    Meldung( 'Mathematik fehlt' );
+    fZuWenigFaecher := true;
+  end else
+    Uebertragen( fC0, fC1, idHF );
+
+// Englisch prüfen
+  idHF := HauptfachID( fC0, 'Fach', 'E' );
+  if idHF = '' then
+  begin
+    Meldung( 'Englisch fehlt' );
+    fZuWenigFaecher := true;
+  end else
+    Uebertragen( fC0, fC1, idHF );
+
+  if FZuWenigFaecher then
+    exit;
+
+// Trick, um bei Prognosen die Ermittlung der Nachprüfungsfächer zu verhindern
+  fZuwenigFaecher := IstPrognose;
+
+// Jetzt die Prüfungen:
+// FOR: in den Fächern der Erweiterungskurse mindestens befriedigende Leistungen erzielt hat,
+// d.h. alle EK-Kurse besser als Grenznote
+  erfolg := ( AnzahlBesserGrenznote( FC0, idEK, GN_EK ) + AnzahlBesserGrenznote( FC1, idEK, GN_EK ) ) = AnzahlElemente( idEK );
+  if erfolg then
+// FOR in den Fächern des Wahlpflichtunterrichts  mindestens  ausreichende Leistungen
+    erfolg := ( AnzahlBesserGrenznote( FC0, idWPI, GN_WPI ) + AnzahlBesserGrenznote( FC1, idWPI, GN_WPI ) ) = AnzahlElemente( idWPI );
+  if erfolg then
+// FOR den  Fächern  der  Grundkurse mindestens befriedigende Leistungen erzielt hat
+    erfolg := ( AnzahlBesserGrenznote( FC0, idGK, GN_GK ) + AnzahlBesserGrenznote( FC1, idGK, GN_GK ) ) = AnzahlElemente( idGK );
+
+// jetzt die übrigen Fächer
+  if erfolg then
+  begin
+    erfolg := ( AnzahlBesserGrenznote( FC0, idUeb, GN_Ueb ) + AnzahlBesserGrenznote( FC1, idUeb, GN_Ueb ) ) = AnzahlElemente( idUeb );
+    if erfolg and ( PO_Art = 'FOR' ) then // zusätzlich 2 Kurse 3 oder besser
+      erfolg := ( AnzahlBesserGrenznote( FC0, idUeb, 3 ) + AnzahlBesserGrenznote( FC1, idUeb, 3 ) ) >= 2;
+  end;
+
+  if erfolg then
+  begin
+    Result := 'A';
+    exit;
+  end;
+
+//Der  Abschluss  wird auch  dann vergeben, wenn die geforderten Leistungen in nicht mehr als einem der Fächer
+//Deutsch,  Englisch,  Mathematik,  Fach  des  Wahlpflichtunterrichts um eine Notenstufe unterschritten werden
+// dabei muss die Minderleistung in den Fächern Deutsch, Englisch, Mathematik, Fach des Wahlpflichtunter-
+//richts durch eine bessere Leistung in einem anderen Fach dieser Fächergruppe ausgeglichen werden
+// d.h. wir betrachten Fächergruppe 1
+  idDef_mA_FG1 := '';
+  idDef_oA_FG1 := '';
+  idAusgl_FG1 := '';
+  idDef_mA_FG2 := '';
+  idDef_oA_FG2 := '';
+  idAusgl_FG2 := '';
+
+// Fächergruppe 1 prüfen
+  with FC1 do
+  begin
+    First;
+    while not Eof do
+    begin
+      ka := FieldByName( 'Kursart' ).AsString;
+      if ka = 'E' then
+        GN_ := GN_EK
+      else if ka = 'G' then
+        GN_ := GN_GK
+      else if ( ka = 'WPI' ) or ( ka = 'WPIG' ) then
+        GN_ := GN_WPI
+      else
+        GN_ := GN_Ueb;
+      if FieldByName( 'Note' ).AsInteger = GN_ + 1 then  // Defizit mit Ausgleichmöglichkeit
+        ZuMengeHinzu( idDef_mA_FG1, FieldByname( 'ID' ).AsString )
+      else if FieldByName( 'Note' ).AsInteger > GN_ + 1 then  // Defizit ohne Ausgleichmöglichkeit
+        ZuMengeHinzu( idDef_oA_FG1, FieldByname( 'ID' ).AsString )
+      else if FieldByName( 'Note' ).AsInteger < GN_ then
+        ZuMengeHinzu( idAusgl_FG1, FieldByname( 'ID' ).AsString );
+      Next;
+    end;
+  end;
+
+// Fächergruppe 2
+  idDef_mA2_FG2 := '';
+  with FC0 do
+  begin
+    SortByFields( 'Note' );
+    First;
+    while not Eof do
+    begin
+      ka := FieldByName( 'Kursart' ).AsString;
+      note := FieldByName( 'Note' ).AsInteger;
+      sID := FieldByName( 'ID' ).AsString;
+      if ka = 'E' then
+        GN_ := GN_EK
+      else if ka = 'G' then
+        GN_ := GN_GK
+      else if ( ka = 'WPI' ) or ( ka = 'WPIG' ) then
+        GN_ := GN_WPI
+      else
+      begin
+        GN_ := GN_Ueb;
+        if ( PO_Art = 'FOR' ) and ( AnzahlElemente( idAusgl_FG2 ) < 2 ) then // esrt ab 2 Ausgleichfächer kann Grenznote 4 genommen werden
+          GN_ := GN_ - 1;
+      end;
+// Wichtig: die Bedingung für die weiteren Fächer ist
+//3.  in den anderen  Fächern bei  sonst mindestens ausreichenden Leistungen in zwei Fächern mindestens befriedigende Leistungen erzielt hat.
+// d.h. zum Ausgleich können nur
+      if PO_Art = 'FOR' then
+      begin
+        if note = GN_ + 1 then  // Defizit mit Ausgleichmöglichkeit
+          ZuMengeHinzu( idDef_mA_FG2, sID )
+        else if note > GN_ + 1 then  // Defizit ohne Ausgleichmöglichkeit
+          ZuMengeHinzu( idDef_oA_FG2, sID )
+        else if note < GN_ then  // ist potentielles Ausgleichsfach
+          ZuMengeHinzu( idAusgl_FG2, sID );
+      end else if PO_Art = 'FORQ' then
+      begin
+        if note = GN_ + 1 then  // Defizit mit Ausgleichmöglichkeit
+          ZuMengeHinzu( idDef_mA_FG2, sID )
+        else if ( note = GN_ + 2 ) and ( idDef_mA2_FG2 = '' ) then
+          ZuMengeHinzu( idDef_mA2_FG2, sID )
+        else if note > GN_ + 1 then  // Defizit ohne Ausgleichmöglichkeit
+          ZuMengeHinzu( idDef_oA_FG2, sID )
+        else if note < GN_ then
+          ZuMengeHinzu( idAusgl_FG2, sID );
+      end;
+      Next;
+    end;
+  end;
+
+
+  ausgl_fg1 := false;
+  if PO_Art = 'FOR' then
+  begin
+// Fächergruppe I
+    if ( idDef_oA_FG1 <> '' ) or ( idDef_mA_FG1 <> '' ) then
+    begin // DEfizite in Fachgruppe 1 gefunden
+      erfolg := ( idDef_oA_FG1 = '' ) and ( AnzahlElemente( idDef_mA_FG1 ) = 1 ) and ( AnzahlElemente( idAusgl_FG1 ) > 0 );
+      if not erfolg then
+      begin
+        msg := 'Defizit(e) ohne Ausgleichsmöglichkeit in Fächergruppe I gefunden';
+        VersetzungsMeldung( 'Keine Fachoberschulreife:', msg );
+        exit;
+      end else
+      begin
+        Meldung( 'Defizit(e) in Fachgruppe I, Ausgleich gefunden' );
+        AusMengeLoeschen( idAusgl_FG1, EinzelElement( idAusgl_FG1, 1 ) ); // Ist "verbraucht"
+        ausgl_fg1 := true;
+      end;
+    end;
+
+// Jetzt noch die übrigen Fächer
+    if ( idDef_oA_FG2 <> '' ) or ( idDef_mA_FG2 <> '' ) then
+    begin // DEfizite in Fachgruppe 2 gefunden
+// Eine weitere Unterschreitung der Leistungen in den übrigen Fächern um bis zu zwei Notenstufen bleibt unberücksichtigt.
+// NEUFASSUNG?
+      if AnzahlElemente( idDef_mA_FG2 ) = 2 then
+        idDef_mA_FG2 := EinzelElement( idDef_mA_FG2, 1 );  // Nehme nur ein Fach
+
+// Wichtig: die Bedingung für die weiteren Fächer ist
+//3.  in den anderen  Fächern bei  sonst mindestens ausreichenden Leistungen in zwei Fächern mindestens befriedigende Leistungen erzielt hat.
+
+      idAusgl_FG2 := Vereinigungsmenge( idAusgl_FG1, idAusgl_FG2 );
+      erfolg := {not ausgl_fg1 and} ( idDef_oA_FG2 = '' ) and ( AnzahlElemente( idDef_mA_FG2 ) = 1 ) and ( AnzahlElemente( idAusgl_FG2 ) > 0 );
+      if not erfolg then
+      begin
+        msg := 'Defizit(e) ohne Ausgleichsmöglichkeit in Fächergruppe II gefunden';
+        VersetzungsMeldung( 'Keine Fachoberschulreife:', msg );
+        exit;
+      end else
+        Meldung( 'Defizit(e) in Fachgruppe II, Ausgleich gefunden' );
+    end;
+  end else if PO_Art = 'FORQ' then
+  begin
+// 2 Fälle:
+    if ( idDef_oA_FG1 <> '' ) or ( idDef_mA_FG1 <> '' ) then
+    begin // DEfizite in Fachgruppe 1 gefunden
+// 1. In FGI max. 1 x Abweichung um eine NOte, in FGII max. 3 Abweichungen um ein Note
+// Fächergruppe I
+      erfolg := ( idDef_oA_FG1 = '' ) and ( AnzahlElemente( idDef_mA_FG1 ) = 1 ) and ( AnzahlElemente( idAusgl_FG1 ) > 0 );
+      if not erfolg then
+      begin
+        msg := 'Defizit(e) ohne Ausgleichsmöglichkeit in Fächergruppe I gefunden';
+        VersetzungsMeldung( 'Keine Berechtigung zum Besuch der gymnasialen Oberstufe:', msg );
+        exit;
+      end else
+      begin
+        Meldung( 'Defizit(e) in Fachgruppe I, Ausgleich gefunden' );
+        AusMengeLoeschen( idAusgl_FG1, EinzelElement( idAusgl_FG1, 1 ) ); // Ist "verbraucht"
+      end;
+//In FGII max. 3 Abweichungen um ein Note
+      if ( idDef_oA_FG2 <> '' ) or ( idDef_mA_FG2 <> '' ) then
+      begin // DEfizite in Fachgruppe 2 gefunden
+        idAusgl_FG2 := Vereinigungsmenge( idAusgl_FG1, idAusgl_FG2 );
+        erfolg := ( idDef_oA_FG2 = '' ) and
+                  ( AnzahlElemente( idDef_mA_FG2 ) <= 3 ) and
+                  ( AnzahlElemente( idAusgl_FG2 ) >= AnzahlElemente( idDef_mA_FG2 ) );
+        if not erfolg then
+        begin
+          msg := 'Defizit(e) ohne Ausgleichsmöglichkeit in Fächergruppe II gefunden';
+          VersetzungsMeldung( 'Keine Fachoberschulreife:', msg );
+          exit;
+        end else
+          Meldung( 'Defizit(e) in Fachgruppe II, Ausgleich gefunden' );
+      end;
+    end else
+    begin // Keine Defizite in FG1 gefunden
+// Bis  zu zwei Unterschreitungen um eine Notenstufe und eine weitere Unterschreitung um bis zu
+// zwei Notenstufen in der Gruppe der übrigen Fächer müssen durch jeweils mindestens gute Leistungen
+// in anderen Fächern ausgeglichen werden.
+// 2. 2 x Abweichnung in FG2 um eine Note und 1 x um zwei Noten
+      if ( idDef_oA_FG2 <> '' ) or ( idDef_mA_FG2 <> '' ) or ( idDef_mA2_FG2 <> '' ) then
+      begin // DEfizite in Fachgruppe 2 gefunden
+        idAusgl_FG2 := Vereinigungsmenge( idAusgl_FG1, idAusgl_FG2 );
+        erfolg := ( idDef_oA_FG2 = '' ) and
+                  ( AnzahlElemente( Vereinigungsmenge( idDef_mA_FG2, idDef_mA2_FG2 ) ) <= 3 ) and
+                  ( AnzahlElemente( idAusgl_FG2 ) >= AnzahlElemente( idDef_mA_FG2 ) + AnzahlElemente( idDef_mA2_FG2 ) );
+        if not erfolg then
+        begin
+          msg := 'Defizit(e) ohne Ausgleichsmöglichkeit in Fächergruppe II gefunden';
+          VersetzungsMeldung( 'Keine Fachoberschulreife:', msg );
+          exit;
+        end else
+          Meldung( 'Defizit(e) in Fachgruppe II, Ausgleich gefunden' );
+      end;
+
+    end;
+  end;
+  Result := 'A';
+end;
