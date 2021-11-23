@@ -72,4 +72,10 @@ View > Gradle Tasks > SVWS-Server > Run Build
 ### VSCodeUserSetup
 + Install VSCodeUserSetup-x64-latest.exe (optional)
 
+### git per terminal auf Windows 
+
++ Ohne Administrationsrechte installierbar
++ hier die Anleitung auf heise.de -> https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html
++ download:  https://git-scm.com/download/win
++ Im MSB noch den Proxy eintragen: git config --global http.proxy http://10.64.128.22:3128
 
