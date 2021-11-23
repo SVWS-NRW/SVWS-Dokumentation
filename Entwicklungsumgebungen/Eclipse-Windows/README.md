@@ -2,9 +2,12 @@
 
 Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf einem Netzlauferk sollte vermieden werden. Gemappte Laufwerke unter Windows sorgen im Kompiliervorgang zu abbrüchen im gralde build. Daher: lokal installieren und möglichst noch puffer einplanen. 
 
+Idee: alles in ein (nicht gemapptes) Verzeichnis z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ .../workspace/ arbeiten
+
 ## JDK 17 installieren
 
-+ Installieren des jdk-17 -> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.zip
++ Download des jdk-17 -> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.zip
++ 
 
 ## NodeJS insstallieren 
 
