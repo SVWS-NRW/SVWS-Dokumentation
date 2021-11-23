@@ -6,6 +6,12 @@ Idee: Alles in ein (nicht gemapptes) Verzeichnis installieren.
 
 Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ .../workspace/ arbeiten.
 
+## Maria db installieren
+
+download : 
+
+im MSB: am besten unter D:// weil man sonst nur mit admin rechten an den Ordner kommt
+
 
 ## JDK 17 installieren
 
@@ -21,12 +27,12 @@ Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ 
 
 optional:
 
-    + Es bietet sich hier auch an, das Schild 2 Passwort zu setzen
+    + Es bietet sich hier auch an, das Schild 2 Passwort zu setzen wird aber nur im Inlstallen benötigt
     + (nur) zum build der Windows Installationsdateien ist der Eintrag der Variablen SVWS-CERTIFICATE_PASSWORD, SVWS-CERTIFICATE_PATh und SVWS_SIGNTOLL_PATH nötig. 
 
-## NodeJS insstallieren 
+## NodeJS installieren 
 
-+ Install node.js (v16.6.1-x64.msi)
++ Install node.js 16er Version -> https://nodejs.org/dist/v16.13.0/node-v16.13.0-x64.msi
 
 ## Eclipse installieren und konfigurieren
 
@@ -65,6 +71,25 @@ Eclipse > File > Import > Import existing Gradle-Project
 Import der vier Repositories als Gradle-Projekt
 U.U. Neustart von Eclipse erforderlich
 View > Gradle Tasks > SVWS-Server > Run Build
+
+
+## svwsconfig.jason anpassen
+git
+
+## market Place
+java 17 plugin
+jason plugin
+
+## window preferences 
+
+neue Java Version
+gradle Homeverzeichnis
+compiler auf 17 
+
+##
+svws-server -> svws server app- /src/main/java/ -> de.nwr ... -> mian.jve
+Runbconfiguration editieren für den Import der MDB
+migration svsw-db utils-> src/main/java/ -> app -> migrate.java
 
 
 ## optionale Software 
