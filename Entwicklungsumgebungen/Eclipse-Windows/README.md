@@ -4,12 +4,14 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf eine
 
 Daher: lokal installieren und möglichst noch Puffer einplanen. 
 
-Idee: alles in ein (nicht gemapptes) Verzeichnis z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ .../workspace/ arbeiten
+Idee: alles in ein (nicht gemapptes) Verzeichnis 
+z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ .../workspace/ arbeiten.
 
 ## JDK 17 installieren
 
 + Download des jdk-17 -> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.zip
-+ 
++ Entpacken in z.B. D:\svws_Entwicklungsumgebung\jdk-17\
++ Path setzen: 
 
 ## NodeJS insstallieren 
 
