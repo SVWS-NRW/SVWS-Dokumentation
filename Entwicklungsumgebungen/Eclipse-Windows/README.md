@@ -6,6 +6,16 @@ Idee: Alles in ein (nicht gemapptes) Verzeichnis installieren.
 
 Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ .../workspace/ arbeiten.
 
+## On this page
+{:.no_toc}
+
+- TOC
+{:toc}
+
+----
+
+
+
 ## JDK 17 installieren
 
 + Download des jdk-17 -> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.zip
