@@ -19,6 +19,9 @@
 + Eclipse > Window > Preferences > General > Editors > Text Editors > Spelling > UTF-8
 + Eclipse > Window > Preferences > General > Workspace > Text file encodig > Other UTF-8
 
+
+![Eclipse-UTF8_Settings](Entwicklungsumgebungen/Eclipse-Windows/graphics/Eclipse-UTF8-Setting.jpg)
+
 https://git.svws-nrw.de/svws/svws-dokumentation/-/blob/main/Entwicklungsumgebungen/Eclipse-Windows/graphics/Eclipse-UTF8-Setting.jpg
 
 ## optionale Software 
