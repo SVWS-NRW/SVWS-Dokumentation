@@ -12,6 +12,13 @@ z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ 
 + Download des jdk-17 -> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.zip
 + Entpacken in z.B. D:\svws_Entwicklungsumgebung\jdk-17\
 + Path setzen: 
+    + Über das Windowssymbol den Editor für die Umgebungsvariablen öffnen 
+    + die Variable Path bearbeiten und einen weiteren Eintrag zum Java Verzeichnis einfügen
+
+![Umgebungsvariablen setzen](Entwicklungsumgebungen/Eclipse-Windows/graphics/Umgebungsvariablen_setzen_1.png)
+
+![Umgebungsvariablen setzen](Entwicklungsumgebungen/Eclipse-Windows/graphics/Umgebungsvariablen_setzen_2.png)
+
 
 ## NodeJS insstallieren 
 
