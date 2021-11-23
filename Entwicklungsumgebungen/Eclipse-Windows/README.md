@@ -3,6 +3,7 @@
 Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf einem Netzlauferk sollte vermieden werden. Gemappte Laufwerke unter Windows, wie es zum Beipiel im MSB -User Homeverzeichnis der Fall ist, sorgen im Kompiliervorgang zu Abbrüchen beim gralde build. Daher am Besten alles lokal installieren und möglichst noch Puffer einplanen. 
 
 Idee: Alles in ein (nicht gemapptes) Verzeichnis installieren.
+
 Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ .../workspace/ arbeiten.
 
 ## JDK 17 installieren
