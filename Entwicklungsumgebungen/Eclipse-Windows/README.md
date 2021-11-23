@@ -1,5 +1,7 @@
 # Installation unter Windows 10 64bit
 
+Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf einem Netzlauferk sollte vermieden werden. Gemappte Laufwerke unter Windows sorgen im Kompiliervorgang zu abbrüchen im gralde build. Daher: lokal installieren und möglichst noch puffer einplanen. 
+
 ## JDK 17 installieren
 
 + Installieren des jdk-17 -> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.zip
@@ -19,10 +21,33 @@
 + Eclipse > Window > Preferences > General > Editors > Text Editors > Spelling > UTF-8
 + Eclipse > Window > Preferences > General > Workspace > Text file encodig > Other UTF-8
 
-
 ![Eclipse-UTF8_Settings](Entwicklungsumgebungen/Eclipse-Windows/graphics/Eclipse-UTF8-Setting.jpg)
 
-https://git.svws-nrw.de/svws/svws-dokumentation/-/blob/main/Entwicklungsumgebungen/Eclipse-Windows/graphics/Eclipse-UTF8-Setting.jpg
+### Git Repositories in Eclipse einrichten 
+
++ Eclpise > Windows > Shows Perspektive > GIT
+
+#### Quellen einragen:
+
++ Repositories in Eclipse clonen: Git > Clone a Git repository
+
+#### Alternative Quellen in GitHub.com
+Hier benötigt man als "Passwort" in Eclipse den persönlichen Github Token 
++ https://github.com/FPfotenhauer/SVWS-Server (Mono-Repository mit Core, DB und Apps)
++ https://github.com/FPfotenhauer/SVWS-Client
++ https://github.com/SVWS-NRW/SVWS-UI-Framework
++ https://github.com/FPfotenhauer/jbcrypt
+
+### Arbeiten in Eclipse
+
+Wechseln in SVWS-Server den dev-Branch (wenn dev-Branch aktiv)
+Check out as new Local Branch
+Wechseln in Java-Perspective
+Eclipse > File > Import > Import existing Gradle-Project
+Import der vier Repositories als Gradle-Projekt
+U.U. Neustart von Eclipse erforderlich
+View > Gradle Tasks > SVWS-Server > Run Build
+
 
 ## optionale Software 
 
