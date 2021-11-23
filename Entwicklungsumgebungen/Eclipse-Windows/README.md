@@ -1,6 +1,8 @@
 # Installation unter Windows 10 64bit
 
-Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf einem Netzlauferk sollte vermieden werden. Gemappte Laufwerke unter Windows sorgen im Kompiliervorgang zu abbrüchen im gralde build. Daher: lokal installieren und möglichst noch puffer einplanen. 
+Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf einem Netzlauferk sollte vermieden werden. Gemappte Laufwerke unter Windows sorgen im Kompiliervorgang zu Abbrüchen beim gralde build. 
+
+Daher: lokal installieren und möglichst noch Puffer einplanen. 
 
 Idee: alles in ein (nicht gemapptes) Verzeichnis z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ .../workspace/ arbeiten
 
