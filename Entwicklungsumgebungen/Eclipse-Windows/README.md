@@ -19,6 +19,10 @@ z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ 
 
 ![Umgebungsvariablen setzen](Entwicklungsumgebungen/Eclipse-Windows/graphics/Umgebungsvariablen_setzen_2.png)
 
+optional:
+
+    + Es bietet sich hier auch an, das Schild 2 Passwort zu setzen
+    + (nur) zum build der Windows Installationsdateien ist der Eintrag der Variablen SVWS-CERTIFICATE_PASSWORD, SVWS-CERTIFICATE_PATh und SVWS_SIGNTOLL_PATH nötig. 
 
 ## NodeJS insstallieren 
 
