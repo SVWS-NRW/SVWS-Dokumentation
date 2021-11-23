@@ -6,15 +6,6 @@ Idee: Alles in ein (nicht gemapptes) Verzeichnis installieren.
 
 Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ .../workspace/ arbeiten.
 
-## Inhaltsverzeichnis
-{:.no_toc}
-
-- TOC
-{:toc}
-
-----
-
-
 
 ## JDK 17 installieren
 
