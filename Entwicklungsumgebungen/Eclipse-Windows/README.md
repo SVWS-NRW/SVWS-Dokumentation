@@ -6,7 +6,7 @@ Idee: Alles in ein (nicht gemapptes) Verzeichnis installieren.
 
 Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ .../workspace/ arbeiten.
 
-## On this page
+## Inhaltsverzeichnis
 {:.no_toc}
 
 - TOC
