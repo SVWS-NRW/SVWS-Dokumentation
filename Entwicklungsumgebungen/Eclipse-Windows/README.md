@@ -1,10 +1,13 @@
 # Installation unter Windows 10 64bit
 
-Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf einem Netzlauferk sollte vermieden werden. Gemappte Laufwerke unter Windows, wie es zum Beipiel im MSB -User Homeverzeichnis der Fall ist, sorgen im Kompiliervorgang zu Abbrüchen beim gralde build. Daher am Besten alles lokal installieren und möglichst noch Puffer einplanen. 
+## Systemvoraussetzungen und Installationshinweise
+Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf einem Netzlauferk sollte vermieden werden, da gemappte Laufwerke unter Windows, 
+wie es zum Beipiel im MSB-User Homeverzeichnis der Fall ist, im Kompiliervorgang zu Abbrüchen beim 'gradle build' führen. 
+Daher am Besten alles lokal auf der Festplatt D:/ installieren und möglichst noch Puffer einplanen. 
 
-Idee: Alles in ein (nicht gemapptes) Verzeichnis installieren.
-
-Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen ... jdk-17/ .../workspace/ arbeiten.
+Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen arbeiten.
++ jdk-17/
++ workspace/ 
 
 ## Maria db installieren
 

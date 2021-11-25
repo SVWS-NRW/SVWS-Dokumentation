@@ -3,24 +3,25 @@
 ## Systemvoraussetzungen und Installationshinweise
 Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf einem Netzlauferk sollte vermieden werden, da gemappte Laufwerke unter Windows, 
 wie es zum Beipiel im MSB-User Homeverzeichnis der Fall ist, im Kompiliervorgang zu Abbrüchen beim 'gradle build' führen. 
-Daher am Besten alles lokal auf der Festplatt D:/ installieren und möglichst noch Puffer einplanen. 
-
-Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen arbeiten.
-+ jdk-17/
-+ workspace/
+Daher am Besten alles lokal auf der Partition D:\\ installieren und möglichst noch Puffer einplanen.  
+Installation unter:
+`D:\\svws_Entwicklungsumgebung\`
+mit den jeweiligen Unterverzeichnissen:
++ `jdk-17`
++ `workspace`
 + ... 
 
 ## Maria db installieren
 
-+ download : Maria db 10.6 z.B. -> https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.5&os=windows&cpu=x86_64&pkg=msi&m=netcologne
++ download : Maria db 10.6 -> https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.5&os=windows&cpu=x86_64&pkg=msi&m=netcologne
 + root user einrichten z.B. svwsadmin
-+ Installationsordner im MSB: am besten unter D:// weil man sonst nur mit admin rechten an den Ordner kommt
++ Installationsordner im MSB auch unter D:\\svws_Entwicklungsumgebung\ , weil man sonst nur mit admin rechten an die Datenbank von außen gelangt
 
 
 ## JDK 17 installieren
 
 + Download des jdk-17 -> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.zip
-+ Entpacken in z.B. D:\svws_Entwicklungsumgebung\jdk-17\
++ Entpacken in z.B. `D:\svws_Entwicklungsumgebung\jdk-17\`
 + Path setzen: Über das Windowssymbol den Editor für die Umgebungsvariablen öffnen ...
 	
 	
@@ -28,8 +29,7 @@ Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen arbeiten.
     
 	
 + die Variable "Path" bearbeiten und einen weiteren Eintrag zum Java Verzeichnis einfügen: 
-		
-		D:\svws-Entwicklungsumgebung\jdk-17\bin
+	`D:\svws-Entwicklungsumgebung\jdk-17\bin`
 
 ![Umgebungsvariablen setzen](graphics/Umgebungsvariablen_setzen_2.png)
 
@@ -40,59 +40,102 @@ Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen arbeiten.
 ## Eclipse installieren und konfigurieren
 
 + Installieren eclipse-inst-win64.zip (2021-09) (Eclipse IDE for Java Developers)-> https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-09/R/eclipse-jee-2021-09-R-win32-x86_64.zip&mirror_id=17
-+ Einmaliger Start Eclipse - festlegen der Worspace-Pfade
-+ Bei Bedarf den Speicher hochsetzen: in der eclipse.ini entsprechen z.B. aus der 512 eine 2048 machen
-+ Eclipse > Window > Preferences > Java > installed JREs -> Add - 17 er Verzeichnis eintragen
++ Einmaliger Start Eclipse und festlegen des Workspace: `D:\\svws_Entwicklungsumgebung\workspace\`
++ Bei Bedarf den Speicher hochsetzen: per texteditor `D:\svws_Entwicklungsumgebung\workspace\eclipse.ini` entsprechend z.B. aus der 512 eine 2048 machen
+
+![Speicher hochsetzen](graphics/eclipse.ini.png)
+
++ Eclipse > Window > Preferences > Java > installed JREs -> Add 
+<br> Java 17 Verzeichnis eintragen:
+
+![](graphics/eclipse_java_17.png)
+
 + Eclipse > Help > Marcet Place -> Java 17 suchen und "Eclipse Java Development Tools Latest Release" installieren
-+ Exlipse > Window > Preferences > Java > Compiler -> 17 eintragen
+
+![](graphics/eclipse_java_devtool.png)
+
++ Eclipse > Help > Marcet Place -> JSON editor suchen und "JSON Editor Plugin 1.1.2" installieren
+
+![](graphics/eclipse_json.png)
+
++ Eclipse > Window > Preferences > Java > Compiler -> 17 eintragen
+
+![](graphics/eclipse_java_compiler.png)
+
 + Eclipse > Window > Preferences > General > Editors > Text Editors > Spelling > UTF-8
+
+![](graphics/eclipse_general_editor.png)
+
 + Eclipse > Window > Preferences > General > Workspace > Text file encodig > Other UTF-8
 
-![Eclipse-UTF8_Settings](Entwicklungsumgebungen/Eclipse-Windows/graphics/Eclipse-UTF8-Setting.jpg)
+![](graphics/eclipse_general_workspace.png)
+
 
 ### Git Repositories in Eclipse einrichten 
 
-+ Eclpise > Windows > Shows Perspektive > GIT
++ Eclipse > Windows > Perspektive > Open Perspective > Other  -> Git
 
-#### Quellen einragen:
+#### Quellen aus GitLab eintragen:
 
-+ Repositories in Eclipse clonen: Git > Clone a Git repository
++ Repositories in Eclipse clonen: rechte Maustaste Git > Clone a Git Repository
++ URL und Passwort eingeben
 
-#### Alternative Quellen in GitHub.com
+##### URLs: 
+
+		https://git.svws-nrw.de/svws/SVWS-Server
+		https://git.svws-nrw.de/svws/SVWS-UI-Framework
+		https://git.svws-nrw.de/svws/SVWS-Client
+		https://git.svws-nrw.de/svws/svws-dokumentation
+
+optional zum Testen des MDB-Datenbankimports:
+
+		https://git.svws-nrw.de/svws/SVWS-TestMDBs
+
+#### Alternative Quellen in GitHub.com (für Externe)
 Hier benötigt man als "Passwort" in Eclipse den persönlichen Github Token 
-+ https://github.com/FPfotenhauer/SVWS-Server (Mono-Repository mit Core, DB und Apps)
-+ https://github.com/FPfotenhauer/SVWS-Client
-+ https://github.com/SVWS-NRW/SVWS-UI-Framework
-+ https://github.com/FPfotenhauer/jbcrypt
+
+		https://github.com/FPfotenhauer/SVWS-Server
+		https://github.com/FPfotenhauer/SVWS-Client
+		https://github.com/SVWS-NRW/SVWS-UI-Framework
+
+
 
 ### Arbeiten in Eclipse
 
-Wechseln in SVWS-Server den dev-Branch (wenn dev-Branch aktiv)
-Check out as new Local Branch
-Wechseln in Java-Perspective
-Eclipse > File > Import > Import existing Gradle-Project
-Import der vier Repositories als Gradle-Projekt
-U.U. Neustart von Eclipse erforderlich
-View > Gradle Tasks > SVWS-Server > Run Build
+In Eclipse kann man jeweils die "Perspective" ändern und direkt auf und mit den Git Repositories arbeiten oder in der Java Entwicklungsumgebung
 
+#### Git Perspective
+Eclipse im Git Perspective geöffnet (rechts oben): 
++ rechte Maustaste pull holt sich die aktuellen Änderungen
++ Wechseln in SVWS-Server den dev-Branch (wenn dev-Branch aktiv), um die aktuellste Entwicklung zu testen
++ Check out as new Local Branch
 
-## svwsconfig.jason anpassen
+#### Java Perspective einrichten
+Wechseln in Java-Perspective (rechts oben): 
++ Eclipse > File > Import > Import existing Gradle-Project
++ Import der vier Repositories als Gradle-Projekt
++ U.U. Neustart von Eclipse erforderlich
+
+#### Server, Client, etc bauen
+
++ View > Gradle Tasks > SVWS-Server > Run Clean 
++ View > Gradle Tasks > SVWS-Server > Run Build
++ Beachte: der Server und das UI müssen vor dem Client fertig gebaut sein und in der passenden Versionsnummer vorliegen
+
+#### svwsconfig.jason anpassen
 git
 
-## market Place
-java 17 plugin
-jason plugin
-
-## window preferences 
-
-neue Java Version
+### window preferences 
 gradle Homeverzeichnis
-compiler auf 17 
 
-##
-svws-server -> svws server app- /src/main/java/ -> de.nwr ... -> mian.jve
+#### Imoprtieren einer MDB Datenbank
 Runbconfiguration editieren für den Import der MDB
 migration svsw-db utils-> src/main/java/ -> app -> migrate.java
+
+
+#### Starten des Servers
+svws-server -> svws server app- /src/main/java/ -> de.nwr ... -> mian.jve
+
 
 # SVWS Installer (optional):
 
