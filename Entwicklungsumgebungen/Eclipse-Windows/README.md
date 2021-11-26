@@ -1,20 +1,12 @@
 # Installation unter Windows 10 64bit
 
 ## Systemvoraussetzungen und Installationshinweise
-Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf einem Netzlauferk sollte vermieden werden, da gemappte Laufwerke unter Windows, 
-wie es zum Beipiel im MSB-User Homeverzeichnis der Fall ist, im Kompiliervorgang zu Abbrüchen beim 'gradle build' führen. 
-Daher am Besten alles lokal auf der Festplatt D:/ installieren und möglichst noch Puffer einplanen. 
-
-Z.B.: D:\svws_Entwicklungsumgebung\ und dort in Unterverzeichnissen arbeiten.
-+ jdk-17/
-+ workspace/ 
+Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokalem Laufwerk liegen.
 
 ## Maria db installieren
 
-download : 
-
-im MSB: am besten unter D:// weil man sonst nur mit admin rechten an den Ordner kommt
-
++ download : Maria db 10.6 -> https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.5&os=windows&cpu=x86_64&pkg=msi&m=netcologne
++ root user einrichten
 
 ## JDK 17 installieren
 
@@ -96,6 +88,9 @@ migration svsw-db utils-> src/main/java/ -> app -> migrate.java
 
 
 ## optionale Software 
+
+### DBeaver
++ download: https://dbeaver.io/download/
 
 ### VSCodeUserSetup
 + Install VSCodeUserSetup-x64-latest.exe (optional)

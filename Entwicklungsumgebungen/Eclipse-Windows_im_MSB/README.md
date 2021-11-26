@@ -156,6 +156,10 @@ Die folgenden Umgebungsvariablen werden benötigt (Vorgehen: vgl. oben)
 
 ## optionale Software 
 
+
+### DBeaver
++ download: https://dbeaver.io/download/
+
 ### VSCodeUserSetup
 + Install VSCodeUserSetup-x64-latest.exe (optional)
 
