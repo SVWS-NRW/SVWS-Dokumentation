@@ -7,7 +7,6 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 
 + download : Maria db 10.6 -> https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.5&os=windows&cpu=x86_64&pkg=msi&m=netcologne
 + root user einrichten
-+  ....
 
 ## JDK 17 installieren
 
@@ -21,11 +20,6 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 
 ![Umgebungsvariablen setzen](Entwicklungsumgebungen/Eclipse-Windows/graphics/Umgebungsvariablen_setzen_2.png)
 
-optional:
-
-    + Es bietet sich hier auch an, das Schild 2 Passwort zu setzen wird aber nur im Inlstallen benötigt
-    + (nur) zum build der Windows Installationsdateien ist der Eintrag der Variablen SVWS-CERTIFICATE_PASSWORD, SVWS-CERTIFICATE_PATh und SVWS_SIGNTOLL_PATH nötig. 
-
 ## NodeJS installieren 
 
 + Install node.js 16er Version -> https://nodejs.org/dist/v16.13.0/node-v16.13.0-x64.msi
@@ -33,62 +27,60 @@ optional:
 ## Eclipse installieren und konfigurieren
 
 + Installieren eclipse-inst-win64.zip (2021-09) (Eclipse IDE for Java Developers)-> https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-09/R/eclipse-jee-2021-09-R-win32-x86_64.zip&mirror_id=17
-+ Einmaliger Start Eclipse - festlegen der Worspace-Pfade
-+ Bei Bedarf den Speicher hochsetzen: in der eclipse.ini entsprechen z.B. aus der 512 eine 2048 machen
-+ Eclipse > Window > Preferences > Java > installed JREs -> Add - 17 er Verzeichnis eintragen
++ Einmaliger Start Eclipse und festlegen des Workspace: `D:\\svws_Entwicklungsumgebung\workspace\`
++ Bei Bedarf den Speicher hochsetzen: per texteditor `D:\svws_Entwicklungsumgebung\workspace\eclipse.ini` entsprechend z.B. aus der 512 eine 2048 machen
+
+![Speicher hochsetzen](graphics/eclipse.ini.png)
+
++ Eclipse > Window > Preferences > Java > installed JREs -> Add 
+<br> Java 17 Verzeichnis eintragen:
+
+![](graphics/eclipse_java_17.png)
+
 + Eclipse > Help > Marcet Place -> Java 17 suchen und "Eclipse Java Development Tools Latest Release" installieren
-+ Exlipse > Window > Preferences > Java > Compiler -> 17 eintragen
+
+![](graphics/eclipse_java_devtool.png)
+
++ Eclipse > Help > Marcet Place -> JSON editor suchen und "JSON Editor Plugin 1.1.2" installieren
+
+![](graphics/eclipse_json.png)
+
++ Eclipse > Window > Preferences > Java > Compiler -> 17 eintragen
+
+![](graphics/eclipse_java_compiler.png)
+
 + Eclipse > Window > Preferences > General > Editors > Text Editors > Spelling > UTF-8
+
+![](graphics/eclipse_general_editor.png)
+
 + Eclipse > Window > Preferences > General > Workspace > Text file encodig > Other UTF-8
 
-![Eclipse-UTF8_Settings](Entwicklungsumgebungen/Eclipse-Windows/graphics/Eclipse-UTF8-Setting.jpg)
+![](graphics/eclipse_general_workspace.png)
 
 ### Git Repositories in Eclipse einrichten 
 
-+ Eclpise > Windows > Shows Perspektive > GIT
++ Eclipse > Windows > Perspektive > Open Perspective > Other  -> Git
 
-#### Quellen einragen:
+#### Quellen aus GitLab eintragen:
 
-+ Repositories in Eclipse clonen: Git > Clone a Git repository
++ Repositories in Eclipse clonen: rechte Maustaste Git > Clone a Git Repository
++ URL und Passwort eingeben
 
-#### Alternative Quellen in GitHub.com
-Hier benötigt man als "Passwort" in Eclipse den persönlichen Github Token 
+Hier benötigt man als "Passwort" in Eclipse den persönlichen Github Token.
+
 + https://github.com/FPfotenhauer/SVWS-Server (Mono-Repository mit Core, DB und Apps)
 + https://github.com/FPfotenhauer/SVWS-Client
 + https://github.com/SVWS-NRW/SVWS-UI-Framework
-+ https://github.com/FPfotenhauer/jbcrypt
 
-### Arbeiten in Eclipse
+Anschließend git clone ausführen.
 
-Wechseln in SVWS-Server den dev-Branch (wenn dev-Branch aktiv)
-Check out as new Local Branch
-Wechseln in Java-Perspective
-Eclipse > File > Import > Import existing Gradle-Project
-Import der vier Repositories als Gradle-Projekt
-U.U. Neustart von Eclipse erforderlich
-View > Gradle Tasks > SVWS-Server > Run Build
+### Gradle Projekte laden
 
-
-## svwsconfig.jason anpassen
-git
-
-## market Place
-java 17 plugin
-jason plugin
-
-## window preferences 
-
-neue Java Version
-gradle Homeverzeichnis
-compiler auf 17 
-
-##
-svws-server -> svws server app- /src/main/java/ -> de.nwr ... -> mian.jve
-Runbconfiguration editieren für den Import der MDB
-migration svsw-db utils-> src/main/java/ -> app -> migrate.java
+Nun müssen nur noch in der "gradle perspektive" die im git Verzeichnis liegenden gradle Projekte importiert werden. 
 
 
 ## optionale Software 
+
 
 ### DBeaver
 + download: https://dbeaver.io/download/
@@ -98,8 +90,21 @@ migration svsw-db utils-> src/main/java/ -> app -> migrate.java
 
 ### git per terminal auf Windows 
 
+
+
 + Ohne Administrationsrechte installierbar
 + hier die Anleitung auf heise.de -> https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html
 + download:  https://git-scm.com/download/win
 + Im MSB noch den Proxy eintragen: git config --global http.proxy http://10.64.128.22:3128
+
+# Installation in einer Proxy-Umgebung
+Eclipse > Windows > Preferences > General > Network Connection
+
+den Http und den Https-Proxy eintragen. (Sollte er automatisch finden, wenn konfiguriert.)
+
+Powershell öffnen im Ordner SVWS-Server
+Proxy Config für NodeJS
+
+		npm config set proxy http://proxy.company.com:8080
+		npm config set https-proxy http://proxy.company.com:8080
 
