@@ -133,31 +133,41 @@ Wechseln in Java-Perspective (rechts oben):
 + Beachte: der Server und das UI müssen vor dem Client fertig gebaut sein und in der passenden Versionsnummer vorliegen
 
 #### svwsconfig.json anpassen
-		{
-      "EnableClientProtection" : null,
-      "DisableDBRootAccess" : false,
-      "DisableAutoUpdates" : false,
-      "UseHTTPDefaultv11" : false,
-      "PortHTTPS" : 443,
-      "UseCORSHeader" : true,
-      "TempPath" : "tmp",
-      "TLSKeyAlias" : null,
-      "TLSKeystorePath" : ".",
-      "TLSKeystorePassword" : "svwskeystore",
-      "ClientPath" : "D:/svws-Entwicklungsumgebung/git/SVWS-Client/build/output",
-      "LoggingEnabled" : true,
-      "LoggingPath" : "logs",
-      "DBKonfiguration" : {
-      "dbms" : "MARIA_DB",
-      "location" : "localhost",
-      "defaultschema" : "svwsdb",
-      "SchemaKonfiguration" : [ {
+
+unter svws-server -> svws-server-app -> src/main/resources  findet man die Datei
+
+   svwsconfig.json.example
+
+diese kann man als Vorlage benutzen und in svws-server -> svws-server-app -> svwsconfig.json.example kopieren und die entsprechenden Eintragungen machen. 
+
+Hier ein Beispiel
+
+       
+      {
+       "EnableClientProtection" : null,
+       "DisableDBRootAccess" : false,
+       "DisableAutoUpdates" : false,
+       "UseHTTPDefaultv11" : false,
+       "PortHTTPS" : 443,
+       "UseCORSHeader" : true,
+       "TempPath" : "tmp",
+       "TLSKeyAlias" : null,
+       "TLSKeystorePath" : ".",
+       "TLSKeystorePassword" : "svwskeystore",
+       "ClientPath" : "D:/svws-Entwicklungsumgebung/git/SVWS-Client/build/output",
+       "LoggingEnabled" : true,
+       "LoggingPath" : "logs",
+       "DBKonfiguration" : {
+       "dbms" : "MARIA_DB",
+       "location" : "localhost",
+       "defaultschema" : "svwsdb",
+       "SchemaKonfiguration" : [ {
        "name" : "svwsdb",
        "svwslogin" : false,
        "username" : "svwsadmin",
        "password" : "svwsadmin"
        } ]
-    } 
+      } 
     }'
 
 ### window preferences 
