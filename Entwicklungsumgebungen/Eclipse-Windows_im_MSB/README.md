@@ -54,7 +54,11 @@ unter `D:\svws-Entwicklungsumgebung\eclipse\`
 ![](graphics/eclipse_JDK_3.png)
 
 + Eclipse > Help > Marcet Place -> Java 17 suchen und "Eclipse Java Development Tools Latest Release" installieren
+bei der Installation alle 4 Optionen auswählen
+![](graphics/eclipse_marketplace_java_17_support_1.png)
+![](graphics/eclipse_marketplace_java_17_support_2.png)
 
++ Eclipse > Help > Marcet Place -> Java development suchen und kontrollieren, ob "Eclipse Java Development Tools Latest Release" bereits installiert ist; ansonsten installieren
 ![](graphics/eclipse_java_devtool.png)
 
 + Eclipse > Help > Marcet Place -> JSON editor suchen und "JSON Editor Plugin 1.1.2" installieren
