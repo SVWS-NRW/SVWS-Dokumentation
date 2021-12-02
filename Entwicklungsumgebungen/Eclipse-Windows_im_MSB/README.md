@@ -40,8 +40,9 @@ mit den jeweiligen Unterverzeichnissen:
 ## Eclipse installieren und konfigurieren
 
 + Installieren eclipse-inst-win64.zip (2021-09) (Eclipse IDE for Enterprise Java and Web Developers)-> https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-09/R/eclipse-jee-2021-09-R-win32-x86_64.zip&mirror_id=17
+unter `D:\svws_Entwicklungsumgebung\eclipse\`
 + Einmaliger Start Eclipse und festlegen des Workspace: `D:\\svws_Entwicklungsumgebung\workspace\`
-+ Bei Bedarf den Speicher hochsetzen: per texteditor `D:\svws_Entwicklungsumgebung\workspace\eclipse.ini` entsprechend z.B. aus der 512 eine 2048 machen
++ Bei Bedarf den Speicher hochsetzen: per texteditor `D:\svws_Entwicklungsumgebung\eclipse\eclipse.ini` entsprechend z.B. aus der 512 eine 2048 machen
 
 ![Speicher hochsetzen](graphics/eclipse.ini.png)
 
