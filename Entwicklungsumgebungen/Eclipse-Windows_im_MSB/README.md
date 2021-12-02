@@ -88,6 +88,7 @@ bei der Installation alle 4 Optionen auswählen
 
 + Repositories in Eclipse clonen: rechte Maustaste Git > Clone a Git Repository
 + URL und Passwort eingeben
++ gerne auch in einem Unterverzeichnis `D:\svws-Entwicklungsumgebung\git\`
 
 ##### URLs: 
 
