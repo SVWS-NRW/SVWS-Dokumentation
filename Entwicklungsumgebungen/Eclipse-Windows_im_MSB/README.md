@@ -132,8 +132,33 @@ Wechseln in Java-Perspective (rechts oben):
 + View > Gradle Tasks > SVWS-Server > Run Build
 + Beachte: der Server und das UI müssen vor dem Client fertig gebaut sein und in der passenden Versionsnummer vorliegen
 
-#### svwsconfig.jason anpassen
-git
+#### svwsconfig.json anpassen
+		'{
+  "EnableClientProtection" : null,
+  "DisableDBRootAccess" : false,
+  "DisableAutoUpdates" : false,
+  "UseHTTPDefaultv11" : false,
+  "PortHTTPS" : 443,
+  "UseCORSHeader" : true,
+  "TempPath" : "tmp",
+  "TLSKeyAlias" : null,
+  "TLSKeystorePath" : ".",
+  "TLSKeystorePassword" : "svwskeystore",
+  "ClientPath" : "D:/svws-Entwicklungsumgebung/git/SVWS-Client/build/output",
+  "LoggingEnabled" : true,
+  "LoggingPath" : "logs",
+  "DBKonfiguration" : {
+    "dbms" : "MARIA_DB",
+    "location" : "localhost",
+    "defaultschema" : "svwsdb",
+    "SchemaKonfiguration" : [ {
+      "name" : "svwsdb",
+      "svwslogin" : false,
+      "username" : "svwsadmin",
+      "password" : "svwsadmin"
+    } ]
+  }
+}'
 
 ### window preferences 
 gradle Homeverzeichnis
