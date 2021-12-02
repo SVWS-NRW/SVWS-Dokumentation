@@ -3,9 +3,9 @@
 ## Systemvoraussetzungen und Installationshinweise
 Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf einem Netzlauferk sollte vermieden werden, da gemappte Laufwerke unter Windows, 
 wie es zum Beipiel im MSB-User Homeverzeichnis der Fall ist, im Kompiliervorgang zu Abbrüchen beim 'gradle build' führen. 
-Daher am Besten alles lokal auf der Partition D:\\ installieren und möglichst noch Puffer einplanen.  
+Daher am Besten alles lokal auf der Partition D:\ installieren und möglichst noch Puffer einplanen.  
 Installation unter:
-`D:\\svws_Entwicklungsumgebung\`
+`D:\svws-Entwicklungsumgebung\`
 mit den jeweiligen Unterverzeichnissen:
 + `jdk-17`
 + `workspace`
@@ -15,13 +15,13 @@ mit den jeweiligen Unterverzeichnissen:
 
 + download : Maria db 10.6 -> https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.5&os=windows&cpu=x86_64&pkg=msi&m=netcologne
 + root user einrichten z.B. svwsadmin
-+ Installationsordner im MSB auch unter D:\\svws_Entwicklungsumgebung\ , weil man sonst nur mit admin rechten an die Datenbank von außen gelangt
++ Installationsordner im MSB auch unter D:\svws-Entwicklungsumgebung\ , weil man sonst nur mit admin rechten an die Datenbank von außen gelangt
 
 
 ## JDK 17 installieren
 
 + Download des jdk-17 -> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.zip
-+ Entpacken in z.B. `D:\svws_Entwicklungsumgebung\jdk-17\`
++ Entpacken in z.B. `D:\svws-Entwicklungsumgebung\jdk-17\`
 + Path setzen: Über das Windowssymbol den Editor für die Umgebungsvariablen öffnen ...
 	
 	
@@ -39,19 +39,28 @@ mit den jeweiligen Unterverzeichnissen:
 
 ## Eclipse installieren und konfigurieren
 
-+ Installieren eclipse-inst-win64.zip (2021-09) (Eclipse IDE for Java Developers)-> https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-09/R/eclipse-jee-2021-09-R-win32-x86_64.zip&mirror_id=17
-+ Einmaliger Start Eclipse und festlegen des Workspace: `D:\\svws_Entwicklungsumgebung\workspace\`
-+ Bei Bedarf den Speicher hochsetzen: per texteditor `D:\svws_Entwicklungsumgebung\workspace\eclipse.ini` entsprechend z.B. aus der 512 eine 2048 machen
++ Installieren eclipse-inst-win64.zip (2021-09) (Eclipse IDE for Enterprise Java and Web Developers)-> https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-09/R/eclipse-jee-2021-09-R-win32-x86_64.zip&mirror_id=17
+unter `D:\svws-Entwicklungsumgebung\eclipse\`
++ Einmaliger Start Eclipse und festlegen des Workspace: `D:\svws-Entwicklungsumgebung\workspace\`
++ Bei Bedarf den Speicher hochsetzen: per texteditor `D:\svws-Entwicklungsumgebung\eclipse\eclipse.ini` entsprechend z.B. aus der 512 eine 2048 machen
 
 ![Speicher hochsetzen](graphics/eclipse.ini.png)
 
 + Eclipse > Window > Preferences > Java > installed JREs -> Add 
 <br> Java 17 Verzeichnis eintragen:
 
-![](graphics/eclipse_java_17.png)
+![](graphics/eclipse_JDK_1.png)
+![](graphics/eclipse_JDK_2.png)
+![](graphics/eclipse_JDK_3.png)
 
 + Eclipse > Help > Marcet Place -> Java 17 suchen und "Eclipse Java Development Tools Latest Release" installieren
+![](graphics/eclipse_marketplace_java_17_support_1.png)
 
+bei der Installation alle 4 Optionen auswählen
+
+![](graphics/eclipse_marketplace_java_17_support_2.png)
+
++ Eclipse > Help > Marcet Place -> Java development suchen und kontrollieren, ob "Eclipse Java Development Tools Latest Release" bereits installiert ist; ansonsten installieren
 ![](graphics/eclipse_java_devtool.png)
 
 + Eclipse > Help > Marcet Place -> JSON editor suchen und "JSON Editor Plugin 1.1.2" installieren
@@ -79,6 +88,7 @@ mit den jeweiligen Unterverzeichnissen:
 
 + Repositories in Eclipse clonen: rechte Maustaste Git > Clone a Git Repository
 + URL und Passwort eingeben
++ gerne auch in einem Unterverzeichnis `D:\svws-Entwicklungsumgebung\git\`
 
 ##### URLs: 
 
@@ -122,8 +132,43 @@ Wechseln in Java-Perspective (rechts oben):
 + View > Gradle Tasks > SVWS-Server > Run Build
 + Beachte: der Server und das UI müssen vor dem Client fertig gebaut sein und in der passenden Versionsnummer vorliegen
 
-#### svwsconfig.jason anpassen
-git
+#### svwsconfig.json anpassen
+
+unter svws-server -> svws-server-app -> src/main/resources  findet man die Datei
+
+   svwsconfig.json.example
+
+diese kann man als Vorlage benutzen und in svws-server -> svws-server-app -> svwsconfig.json.example kopieren und die entsprechenden Eintragungen machen. 
+
+Hier ein Beispiel
+
+       
+      {
+       "EnableClientProtection" : null,
+       "DisableDBRootAccess" : false,
+       "DisableAutoUpdates" : false,
+       "UseHTTPDefaultv11" : false,
+       "PortHTTPS" : 443,
+       "UseCORSHeader" : true,
+       "TempPath" : "tmp",
+       "TLSKeyAlias" : null,
+       "TLSKeystorePath" : ".",
+       "TLSKeystorePassword" : "svwskeystore",
+       "ClientPath" : "D:/svws-Entwicklungsumgebung/git/SVWS-Client/build/output",
+       "LoggingEnabled" : true,
+       "LoggingPath" : "logs",
+       "DBKonfiguration" : {
+       "dbms" : "MARIA_DB",
+       "location" : "localhost",
+       "defaultschema" : "svwsdb",
+       "SchemaKonfiguration" : [ {
+       "name" : "svwsdb",
+       "svwslogin" : false,
+       "username" : "svwsadmin",
+       "password" : "svwsadmin"
+       } ]
+      } 
+    }'
 
 ### window preferences 
 gradle Homeverzeichnis
