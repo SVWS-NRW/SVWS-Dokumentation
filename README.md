@@ -1,4 +1,4 @@
-![Open-api-logo-klein.png](uploads/Open-api-logo-klein.png)
+![Open-api-logo-klein.png](graphics/Open-api-logo-klein.png)
 
 Das Projekt zur Schaffung einer Open:API-Schnittstelle für die Schulverwaltung NRW.
 
@@ -16,7 +16,7 @@ Sobald aber alle Services der REST-Schnittstelle zur Verfügung stehen, kann Sch
 
 
 
-![Übersicht-REST](uploads/700px-Übersicht-REST-Server-01.png)
+![Übersicht-REST](graphics/700px-Übersicht-REST-Server-01.png)
 
 
 

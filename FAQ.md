@@ -1,5 +1,15 @@
 # Häufig gestellte Fragen
 
+Inhaltsverzeichnis
+  * [Fragen zum Projekt](#fragen-zum-projekt)
+  * [Grundlegende Entscheidungen](#grundlegende-entscheidungen)
+  * [Datenbankuser bei Migration](#datenbankuser-bei-migration)
+  * [Verwendung eines CSS-Frameworks](#verwendung-eines-css-frameworks)
+  * [JSweet zur Auslagerung der Algorithmik in den Browser](#jsweet-zur-auslagerung-der-algorithmik-in-den-browser)
+  * [Selbst signierte Zertifikate akzeptieren](#selbst-signierte-zertifikate-akzeptieren)
+
+
+
 ## Fragen zum Projekt
 
 An dieser Stelle werden Fragen bzw. Antworten gesammelt, die während der Entwicklung des Projektes entstehen.

@@ -16,9 +16,10 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
     + Über das Windowssymbol den Editor für die Umgebungsvariablen öffnen 
     + die Variable Path bearbeiten und einen weiteren Eintrag zum Java Verzeichnis einfügen
 
-![Umgebungsvariablen setzen](Entwicklungsumgebungen/Eclipse-Windows/graphics/Umgebungsvariablen_setzen_1.png)
 
-![Umgebungsvariablen setzen](Entwicklungsumgebungen/Eclipse-Windows/graphics/Umgebungsvariablen_setzen_2.png)
+![Umgebungsvariablen setzen](graphics/Umgebungsvariablen_setzen_1.png)
+
+![Umgebungsvariablen setzen](graphics/Umgebungsvariablen_setzen_2.png)
 
 ## NodeJS installieren 
 
