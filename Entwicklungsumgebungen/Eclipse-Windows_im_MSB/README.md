@@ -5,7 +5,7 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB. Die Installation auf eine
 wie es zum Beipiel im MSB-User Homeverzeichnis der Fall ist, im Kompiliervorgang zu Abbrüchen beim 'gradle build' führen. 
 Daher am Besten alles lokal auf der Partition D:\\ installieren und möglichst noch Puffer einplanen.  
 Installation unter:
-`D:\\svws_Entwicklungsumgebung\`
+`D:\svws-Entwicklungsumgebung\`
 mit den jeweiligen Unterverzeichnissen:
 + `jdk-17`
 + `workspace`
