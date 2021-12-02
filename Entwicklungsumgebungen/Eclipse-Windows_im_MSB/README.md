@@ -49,7 +49,9 @@ unter `D:\svws-Entwicklungsumgebung\eclipse\`
 + Eclipse > Window > Preferences > Java > installed JREs -> Add 
 <br> Java 17 Verzeichnis eintragen:
 
-![](graphics/eclipse_java_17.png)
+![](graphics/eclipse_JDK_1.png)
+![](graphics/eclipse_JDK_2.png)
+![](graphics/eclipse_JDK_3.png)
 
 + Eclipse > Help > Marcet Place -> Java 17 suchen und "Eclipse Java Development Tools Latest Release" installieren
 
