@@ -10,3 +10,9 @@ Hier sollen zunächst Alternativen recherchiert und vorgestellt werden.
 
 # JReport
 
+
+
+# ReportingCloud
+
+https://docs.reporting.cloud/docs/chapter/introduction/whatisreportingcloud
+
