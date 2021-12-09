@@ -1,46 +1,43 @@
-# A, B oder C, ???
+# SVWS-UI-Framework
 
-# A: Stand an dieser Stelle schon 
-
-## SVWS-UI-Framework
-
-Ziel des Projektes ist es, ein eigenes Framework für die UI-Komponenten zu entwickeln
+## Open Source
+Ziel des Projektes ist es, ein eigenes Framework für die UI-Komponenten zu benutzen 
 und dieses mit Storybook.js in einem OpenSource-Repository zur Verfügung zu stellen.
+Dabei kann das verwendete Repository mit GitHub-Pages als Grundlage für die Bereitstellung dienen:
 
-Dabei kann das verwendete Repo mit GitHub-Pages als Grundlage für die Bereitstellung dienen.
+[SVWS-UI-Framework-Repository auf GitHub](https://github.com/SVWS-NRW/SVWS-UI-Framework)
 
-[Link zum Framework-Repository auf GitHub](https://github.com/SVWS-NRW/SVWS-UI-Framework)
+## Entwicklung der UI-Frameworks
+Zu Beginn des Projekts wurde festgelegt, dass die Entwicklung des UI-Framework mit VUE.js erfolgen soll. 
 
+[Auswahl des GUI-Frameworks](GUI-Auswahl.md)
+
+Im Anschluss wurde zunächst ein "Storybook" erstellt. 
 Die Vorteile von Storybook liegen in der zuverlässigen Bereitstellung und dem vom eigentlichen Code unabhängigen Testing.
+Die Storybook-Umgebung kann auf einem Windows-Rechner wie folgt aus einem abonierten Repository aufgerufen werden:
 
-Die Storybook-Umgebung kann auf einem Windows-Rechner wie folgt aus einem abonierten Repository aufgerufen werdfen:
+* Im Stammordner von `git/SVWS-UI-Framework` eine Powershell öffnen.
+* `.\gradlew clean build` ausführen
+* `npm run storybook:start` eingeben
 
-* Im Stammordner von git/SVWS-UI-Framework eine Powershell öffnen.
-* .\gradlew clean build
-* npm run storybook:start
+siehe auch: https://storybook.js.org
 
-# B das alte Wiki
 
-## SVWS-GUI-Programmierung
+##  Styleguide und Bedienkonzept 
+
+[Styleguide und Screendesign](Styleguide.md)
+
+[Bedienkonzept der GUI-Komponenten](Bedienkonzept.md)
+
+
+
+
+## Konzept der SVWS-GUI-Programmierung
 
 ### Übersicht GUI-Tools
+Die folgende Grafik soll die verschiedensten Möglichkeiten darstellen, wie in Zukunft verschiedene GUI-Tools auf die Datenbanken zugreifen können. 
+Durch die standartisierte Open-API-Schnittstelle ist es auch unerheblich, mit welchem Framework das GUI programmiert ist. Denkbar sind auch Desktop-Applikationen oder Web-Clients, die den REST-Server ansprechen.
+
+
 ![Übersicht-REST-Server-02](graphics/Übersicht-REST-Server-02.png)
 
-Die Grafik soll die verschiedensten Möglichkeiten darstellen, wie in Zukunft verschiedene GUI-Tools auf die Datenbanken zugreifen können. Durch die standartisierte Open-API-Schnittstelle ist es auch unerheblich, mit welchem Framework das GUI programmiert ist. Denkbar sind auch Desktop-Applikationen oder Web-Clients, die den REST-Server ansprechen.
-
-
-###Entwicklung der Oberfläche
-Die notwendigen Schritte zur Entwicklung der Vorgaben für die User-Interfaces sollen nun auch Schritt für Schritt angegangen werden. 
-Dazu wurde schon zu Beginn des projekts das UI-Framework mit VUE.js festgelegt. 
-Es folgen nun die Bedienkonzepte, der Styleguide und das Screendesign.
-
-[Auswahl des GUI-Frameworks](GUI-Framework.md)
-
-
-Das Bedienkonzept der GUI-Komponenten
-
-Styleguide und Screendesign
-
-Aufbau eines eigenen UI-Frameworks mit Storybook.js
-
-# C aus der Readme in svws-NRW/SVWS-UI-Framework ??? 

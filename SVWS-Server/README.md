@@ -21,4 +21,4 @@ Im Debugging kann die Schnittstelle mit der SwaggerUI aufgerufen werden, mit der
 ![Übersicht-REST-Server-05](graphics/Übersicht-REST-Server-05.png)
 
 ## Übersicht: Algorithmen
-Blockungsalgorithmen link noch anlegen
+[Blockungsalgorithmen](Blockungsalgorithmen.md)
