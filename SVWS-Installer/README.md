@@ -168,12 +168,6 @@ Als Default-Verzeichnisse werden bei der Installation  die folgenden Verzeichnis
 
 Unter folgender URL können die benötigten Pakete und Versionen für den Bau des Installers heruntergeladen werden.
 
-https://svws.nrw.de/uploads/media/svws-server-downloads/
-
-Beispiel: https://svws.nrw.de/uploads/media/svws-server-downloads/curl/7.72.0/curl-7.72.0-windows.zip
-
-Es gibt die verschiedenen Unterordner in denen wiederum die Versionen einen eigenen Ordner bekommen.
-
 + curl
 	+ https://svws.nrw.de/uploads/media/svws-server-downloads/curl/7.72.0/curl-7.72.0-windows.zip
 	+ Sourcen: https://svws.nrw.de/uploads/media/svws-server-downloads/curl/7.72.0/src-curl-7_72_0.zip

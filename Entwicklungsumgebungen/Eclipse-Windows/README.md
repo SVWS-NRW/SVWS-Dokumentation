@@ -1,14 +1,16 @@
-# Installation unter Windows 10 64bit
+***Installation unter Windows 10 64bit***
+====================
 
-## Systemvoraussetzungen und Installationshinweise
+
+# Systemvoraussetzungen und Installationshinweise
 Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokalem Laufwerk liegen.
 
-## Maria db installieren
+# Maria db installieren
 
 + download : Maria db 10.6 -> https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.5&os=windows&cpu=x86_64&pkg=msi&m=netcologne
 + root user einrichten
 
-## JDK 17 installieren
+# JDK 17 installieren
 
 + Download des jdk-17 -> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.zip
 + Entpacken in z.B. D:\svws_Entwicklungsumgebung\jdk-17\
@@ -21,11 +23,11 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 
 ![Umgebungsvariablen setzen](graphics/Umgebungsvariablen_setzen_2.png)
 
-## NodeJS installieren 
+# NodeJS installieren 
 
 + Install node.js 16er Version -> https://nodejs.org/dist/v16.13.0/node-v16.13.0-x64.msi
 
-## Eclipse installieren und konfigurieren
+# Eclipse installieren und konfigurieren
 
 + Installieren eclipse-inst-win64.zip (2021-09) (Eclipse IDE for Java Developers)-> https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-09/R/eclipse-jee-2021-09-R-win32-x86_64.zip&mirror_id=17
 + Einmaliger Start Eclipse und festlegen des Workspace: `D:\\svws_Entwicklungsumgebung\workspace\`
@@ -58,11 +60,11 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 
 ![](graphics/eclipse_general_workspace.png)
 
-### Git Repositories in Eclipse einrichten 
+## Git Repositories in Eclipse einrichten 
 
 + Eclipse > Windows > Perspektive > Open Perspective > Other  -> Git
 
-#### Quellen aus GitLab eintragen:
+### Quellen aus GitLab eintragen:
 
 + Repositories in Eclipse clonen: rechte Maustaste Git > Clone a Git Repository
 + URL und Passwort eingeben
@@ -75,21 +77,21 @@ Hier benötigt man als "Passwort" in Eclipse den persönlichen Github Token.
 
 Anschließend git clone ausführen.
 
-### Gradle Projekte laden
+## Gradle Projekte laden
 
 Nun müssen nur noch in der "gradle perspektive" die im git Verzeichnis liegenden gradle Projekte importiert werden. 
 
 
-## optionale Software 
+# optionale Software 
 
 
-### DBeaver
+## DBeaver
 + download: https://dbeaver.io/download/
 
-### VSCodeUserSetup
+## VSCodeUserSetup
 + Install VSCodeUserSetup-x64-latest.exe (optional)
 
-### git per terminal auf Windows 
+## git per terminal auf Windows 
 
 
 
