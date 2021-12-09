@@ -41,7 +41,8 @@ Zu Beginn des Installer erscheinen nach der Annahme der Lizenzvereinbarungen fol
 
 
 ### ***Achtung!***
-	
+
+
 *Es werden für MariaDB und den Datenbank-User Zufallskennwörter generiert!*
 
 *Ändern Sie diese nach Ihren Wünschen, aber <b>dokumentieren Sie in jedem Fall Ihre Eingabe</b>.*	
@@ -58,7 +59,9 @@ Ist die Option deaktiviert und es wird keine svwsconfig.json gefunden wird, dann
 Ist die Installation aktiviert wird der MariaDB-Server in den Programm-Verzeichnissen installiert. Der Dienst wird als Windows-Service registriert und gestartet.
 Mit dem Installer kann die MariaDB-Version zu zu späteren Zeitpunkten dann auch aktualisiert werden.
 
-Programmverzeichnis MariaDB: `C:\Programme\SVWS-Server\db Datenverzeichnis MariaDB: C:\ProgramData\SVWSServer\data`
+Programmverzeichnis MariaDB: 
+
+`C:\Programme\SVWS-Server\db Datenverzeichnis MariaDB: C:\ProgramData\SVWSServer\data`
 
 Die sort_buffer_size wird in der my.ini im data-Verzeichnis auf 16777216 gesetzt!
 
@@ -79,72 +82,114 @@ Die Dienste MariaDB und SVWS-Server werden in der Computerverwaltung registriert
 
 ![](graphics/SVWSDienste.jpg)
 
-# svwsconfig.json Konfigurationsdatei
+# Konfigurationsdatei editieren 
 
-C:\ProgramData\SVWS-Server\res
+Man findet alle Einstellungsmöglichkeiten zum Betrieb des SVWS-Servers an zentraler Stelle in der Datei: 
+`svwsconfig.json`
+			
+Unter Windows im Verzeichnis: 
+`C:\ProgramData\SVWS-Server\res`
 
-Svwsconfig.json.jpg
+![](graphics/Svwsconfig.json.jpg)
 
 In dieser Datei wird die Serverkonfiguration gespeichert.
 
+## Parameter Beschreibung
 
-DisableDBRootAccess: Hier kann bei erhöhtem Sicherheitsbedarf der Root-Zugang zur Datenbank gesperrte werden.
-UseHTTPDefaultv11: Hier kann auf HTTP/1.1 herunter geschaltet werden.
-PortHTTPS: Hier kann der Port von 443 auf einen anderen Port gesetzt werden, falls dieser schon belegt.
-UseCORSHeader: Die Verwendung des CORSHeader kann deaktiviert werden.
-TLSKeystorePath: Pfad zum Keystore für das Zertifikat
-TLSKeystorePassword: Das Passwort für den Keystore. (Wird automatisch generiert.)
-ClientPath: Pfad: zu den Dateien des SVWS-Cllient. (Webanwendung in Entwicklung)
-LoggingEnabled: Schaltet das Logging ein.
-LoggingPath: Pfad zu den LOG-Dateien.
+### allgemeine Einstellungen
+|Parameter 	|	Beschreibung |
+|---|---|
+| DisableDBRootAccess | Hier kann bei erhöhtem Sicherheitsbedarf der Root-Zugang zur Datenbank gesperrte werden. |  
+| UseHTTPDefaultv11 | Hier kann auf HTTP/1.1 herunter geschaltet werden. | 
+|PortHTTPS | Hier kann der Port von 443 auf einen anderen Port gesetzt werden, falls dieser schon belegt. |
+|UseCORSHeader | Die Verwendung des CORSHeader kann deaktiviert werden.|
+|TLSKeystorePath | Pfad zum Keystore für das Zertifikat|
+|TLSKeystorePassword | Das Passwort für den Keystore. (Wird automatisch generiert.)
+|ClientPath | Pfad zu den Dateien des SVWS-Cllient. (Webanwendung in Entwicklung)|
+|LoggingEnabled | Schaltet das Logging ein.|
+|LoggingPath | Pfad zu den LOG-Dateien.|
 
-DBKonfiguration
-dbms: Datenbanksystem (MariaDB oder MSSQL, SQLite für Schulungsumgebungen)
-location: ServerURL
-defaultschema: Standart-Schema. Es können mehrere Schema verwendet werden.
-SchemaKonfiguration
-name: Name des Datenbankschemas
-svwslogin: LogIn-Prozess auch über das DBMS möglich. (User muss dann im DBMS angelegt sein.) Z.Z. nicht unterstützt!
-username: Datenbankusername
-password: Passwort des Datenbankusers
-Registrierung der Dienste
-SVWSDienste.jpg
+### Datenbankserver Einstellungen
+|DBKonfiguration||
+|---|---|
+|dbms| Datenbanksystem (MariaDB oder MSSQL, SQLite für Schulungsumgebungen)|
+|location| ServerURL|
+|defaultschema| Standart-Schema. Es können mehrere Schema verwendet werden.|
+
+### Datenbankschemata Einstellungen
+|SchemaKonfiguration||
+|---|---|
+|name| Name des Datenbankschemas|
+| svwslogin| LogIn-Prozess auch über das DBMS möglich. (User muss dann im DBMS angelegt sein.) <br> Zur Zeit nicht unterstützt!|
+| username | Datenbankusername|
+| password | Passwort des Datenbankusers
+
+
+# Registrierung der Dienste
+
+![](graphics/SVWSDienste.jpg)
 
 Die beiden Server werden als Windows Dienst registriert. Diese können in der Computerverwaltung überprüft werden.
 
-Erstellen des Keystore/Zertifikat
-Im Keystore des SVWS-Server wird ein selbstsigniertes Zertifikat erstellt. Der öffentliche Teil wird in den Ordner C:\Users\{Username}\Dokumente gespeichert. Dieses Zertifikat muss dann in der Zertifikatsspeicher des Windowssystems installiert werden.
+# Erstellen des Keystore/Zertifikat
+Im Keystore des SVWS-Server wird ein selbstsigniertes Zertifikat erstellt. 
+Der öffentliche Teil wird in den Ordner 
 
-SVWSZertifikat.jpg
+`C:\Users\{Username}\Dokumente` gespeichert. 
 
-Ort: Vertrauenwürdige Stammzertifikate
+Dieses Zertifikat muss dann in der Zertifikatsspeicher des Windowssystems installiert werden.
 
-Bitte beachten Sie das nur Chrome und Edge automatisch diese Zertifikate nutzen. Firefox muss in der about:config die Einstellung security.enterprise_roots.enabled auf true gesetzt haben.
+![](graphics/SVWSZertifikat.jpg)
 
-Uninstaller
+**Ort:** Vertrauenwürdige Stammzertifikate
+
+Bitte beachten Sie das nur Chrome und Edge automatisch diese Zertifikate nutzen. 
+
+**Firefox** muss in der about:config die Einstellung security.enterprise_roots.enabled auf true gesetzt haben.
+
+# Uninstaller
 Im Programmverzeichnis des SVWS-Server befindet sich auch ein signierter Uninstaller mit dem alle Installationsdateien wieder entfernt werden können.
 
 Bitte beachten Sie, dass Dateien, die nach der Installation hinzugefügt wurden nicht erfasst werden.
 
 Außerdem sollte kontrolliert werden, ob auch alle Dienste entfernt wurden. Windows 10 gibt in einigen Fällen die Dienste nicht schnell genug frei, so dass die Löschung scheitert.
 
-Wichtige Pfade zu den Ordnern
-Als Default-Verzeichnisse werden vorgeschlagen:
+# Wichtige Pfade zu den Ordnern
+Als Default-Verzeichnisse werden bei der Installation  die folgenden Verzeichnisse vorgeschlagen:
 
-C:\Program files\SVWS-Server
-Für alle Prgramm-Dateien inklusive MariaDB und Java-Umgebung.
+| Pfad | Beschreibung |
+|---|---|
+|`C:\Program files\SVWS-Server`| Alle Programm-Dateien inklusive MariaDB und Java-Umgebung|
+|`C:\ProgramData\SVWS-Server`| Alle Daten und Logs und Einstellungsdateien|
+|`C:\Users\{Username}\AppData\Local\Temp`| Log-Files des Installers und Uninstallers|
+|`C:\Users\{Username}\Dokumente`|Das Zertifikat für die Browser|
 
-C:\ProgramData\SVWS-Server
-Für alle Daten und Logs und Einstellungsdateien.
-Außerdem werden hier die Dateien für den SVWS-Client abgelegt.
+# Pakete im SVWS-Installer
 
-C:\Users\{Username}\AppData\Local\Temp
-Hier werden die Log-Files des Installers und Uninstallers gespeichert.
+Unter folgender URL können die benötigten Pakete und Versionen für den Bau des Installers heruntergeladen werden.
 
-C:\Users\{Username}\Dokumente
-Hier wird das erzeugte Zertifikat für die Browser erzeugt.
+https://svws.nrw.de/uploads/media/svws-server-downloads/
 
-Pakete im SVWS-Installer
-Eine Auflistung aller benötigten Pakete und links zu den Quellen finden Sie in der Deployment-Übersicht:
+Beispiel: https://svws.nrw.de/uploads/media/svws-server-downloads/curl/7.72.0/curl-7.72.0-windows.zip
 
-https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Deployment-%C3%9Cbersicht#Download_der_ben.C3.B6tigten_Pakete
+Es gibt die verschiedenen Unterordner in denen wiederum die Versionen einen eigenen Ordner bekommen.
+
++ curl
+	+ https://svws.nrw.de/uploads/media/svws-server-downloads/curl/7.72.0/curl-7.72.0-windows.zip
+	+ Sourcen: https://svws.nrw.de/uploads/media/svws-server-downloads/curl/7.72.0/src-curl-7_72_0.zip
++ mariadb
+	+ https://svws.nrw.de/uploads/media/svws-server-downloads/mariadb/10.5.7/mariadb-10.5.7-win.zip
++ Sourcen: https://svws.nrw.de/uploads/media/svws-server-downloads/mariadb/10.5.7/server-mariadb-10.5.7.zip
++ innoextract
+	+ https://svws.nrw.de/uploads/media/svws-server-downloads/innoextract/1.9/innoextract-1.9-windows.zip
+	+ Sourcen: https://svws.nrw.de/uploads/media/svws-server-downloads/innoextract/1.9/innoextract-1.9.tar.gz
++ innosetup
+	+ https://svws.nrw.de/uploads/media/svws-server-downloads/innosetup/6.0.5/innosetup-6.0.5.exe
+	+ https://github.com/jrsoftware/issrc
++ jdk
+	+ https://svws.nrw.de/uploads/media/svws-server-downloads/jdk/12.0.2/jdk-12.0.2-win.zip
+	+ Sourcen: https://svws.nrw.de/uploads/media/svws-server-downloads/jdk/12.0.2/src-jdk-12-2.zip
++ winsw
+	+ https://svws.nrw.de/uploads/media/svws-server-downloads/winsw/2.10.3/
+	+ Sourcen: https://svws.nrw.de/uploads/media/svws-server-downloads/winsw/2.10.3/
+
