@@ -122,9 +122,19 @@ Eclipse im Git Perspective geöffnet (rechts oben):
 
 #### Java Perspective einrichten
 Wechseln in Java-Perspective (rechts oben): 
+
+Gradle benötigt zum Nachladen Quellen die Verbindung zum Github. Dies kann entweder mit Umgebungsvariablen oder in 
+ `C:\Users\{USERNAME]\.gradle`
+
+der github_actor=YOUR_USER_ACCOUNT
+github_token=YOUR_GIT_TOKEN
+SCHILD2_ACCESS_PASSWORD=SCHILD_PW_
+
 + Eclipse > File > Import > Import existing Gradle-Project
 + Import der vier Repositories als Gradle-Projekt
 + U.U. Neustart von Eclipse erforderlich
+
+
 
 #### Server, Client, etc bauen
 
