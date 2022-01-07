@@ -1,0 +1,121 @@
+# Installation des Wireguard-Servers
+
+## Vorüberlegungen
+
+### Virtualisierung im Container oder als VM?
+Erfahrung: Unter Proxmox im LXC Container gestaltet sich eine Installation leider etwas Kompliziert:  
+Hier muss man beim Proxmox-Muttersystem noch diverse Anpassungen vornehmen, 
+die leider nicht unbedingt fruchten bzw. für die man dann auch neue Berechtigungen benötigt. 
+Das ist unhandlich! 
+
+Benutzt man stattdessen eine VM per iso installiert kann man auch besser die 
+Rechenkapazität zuordnen und ein Backup der kompletten Mascine unabhängig 
+von der Proxmox Version oder überhaupt der Virtualisierungslösung machen.
+
+### Hardwarelösungen 
+
+Hier gibt es mehrer Lösungen auch schon bestehende Router werden per Software update oftmals zum 
+Wireguard VPN Server upgegraded. Beispiel sind hier: 
+
+fritzbox: <br>
+https://www.computerbild.de/artikel/cb-News-Software-FritzOS-7.39-AVM-integriert-WireGuard-VPN-FritzBox-31230305.html
+
+shellfire: <br>
+https://www.shellfire.de/blog/shellfire-box-4k-wireguard-vpn-router-power/
+
+### Intergation in OpenSense
+
+TODO
+
+## Installation in einer VM
+
+download debian 11 net install: <br>
+https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.1.0-amd64-netinst.iso
+
+Typische Debian installation - einfach der Menueführung folgen und ggf kein grafisches Frontend auswählen. 
+Es wird nicht unbedingt benötigt. Anschließend die folgenden Befehle ausführen:
+
+		
+		# im Bedarfsfall die Sources erweitern:
+		# sh -c "echo 'deb http://deb.debian.org/debian buster-backports main contrib non-free' > /etc/apt/sources.list.d/buster-backports.list"
+		
+		# wireguard installieren:
+		su - 
+		apt update
+		apt upgrade
+		apt install linux-headers-$(uname --kernel-release)
+		apt install wireguard iptables net-tools
+
+		# ip_forward einrichten einfach durch dranhängen an die sysctl.conf 
+		# alternativ und schöner per nano die flags in der sysctl.conf suchen und auf 1 setzen
+		echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
+		echo "net.ipv6.conf.all.ip_forward=1" >> /etc/sysctl.conf
+		
+		# checken: läuft das Portforwarding?
+		sysctl -p
+
+		# Schlüsselerstellen:
+		cd /etc/wireguard/
+		umask 077; wg genkey | tee privatekey | wg pubkey > publickey
+		chmod 600 /etc/wireguard/privatekey
+		
+		# checken: habe ich die beiden Schlüssel?
+		cat privatekey
+		cat publickey
+		
+		
+Ein Schlüsselpaar für einen Client, hier z.B. Client1, kann dann wie folgt erzeugt werden: 
+		wg genkey | tee client1_private.key | wg pubkey > client1_public.key
+		mv client1_private.key anywhere_the_Client_whats_to_egt_ist
+		
+Dies kann auch auf einem Clientsystem ausgeführt werden - dann müsste aber der andere client1_public.key auf den Server copiert werden.
+
+
+Nun wird das Wireguard-Netzwerkinterface angelegt dazu eine Datein wg0.conf erstellen: 
+
+		nano /etc/wireguard/wg0.conf
+
+Inhalt dieser Datei soll sie folgt aussehen: 
+		[Interface]
+		Address = 192.168.211.1/24
+		ListenPort = 51820
+
+		PrivateKey = <Server Private-Key>
+		PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+		PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+
+		# Client1
+		[Peer]
+		PublicKey = <Client Public-Key>
+		AllowedIPs = 192.168.211.2/32
+
+Hier muss eth0 an die entsprechende Netzwerkschnittstelle, die per ´iconfig´ abgelesen werden kann, angepasst werden. 
+Das Wireguard-Netz 192.168.211.XYZ kann frei im privaten Adressbereich gewählt werden. Z.B. auch 10.10.10.XYZ 
+Ebenso können auch diverse Subnetze gedacht werden, um dort Berechtigungen zusetzen ... 
+
+
+
+## einfaches Aufsetzen per Script von Angristan
+
+
+https://awesomeopensource.com/project/angristan/wireguard-install
+
+
+		curl -O https://raw.githubusercontent.com/angristan/wireguard-install/master/wireguard-install.sh
+		chmod +x wireguard-install.sh
+		./wireguard-install.sh
+
+
+
+
+## Quellen: 
+
+https://github.com/angristan/wireguard-install 
+
+https://www.bennetrichter.de/anleitungen/wireguard-linux/
+
+https://www.bitblokes.de/wireguard-vpn-server-einrichten-ubuntu-raspberry-pi-linux-android/
+
+https://github.com/angristan/wireguard-install/blob/88ae1c0d0f5d4f48252fd3be27b2f122e40edf83/wireguard-install.sh
+
+https://blog.peterge.de/wireguard-lxc-unter-proxmox/
