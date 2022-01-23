@@ -20,8 +20,8 @@ code --install-extension meganrogge.template-string-converter
 code --install-extension ms-vscode.live-server
 # TS/JS intellisense
 code --install-extension ms-vscode.vscode-typescript-next
-# vetur für vue/Client
-code --install-extension octref.vetur
+# volar für vue/Client
+code --install-extension johnsoncodehk.volar
 
 # gradle Paket für alle Projekte
 code --install-extension richardwillis.vscode-gradle-extension-pack
