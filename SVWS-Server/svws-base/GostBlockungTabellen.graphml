@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by yFiles for HTML 2.4.0.4-->
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/2.0/ygraphml.xsd " xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:demostyle2="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/2.0" xmlns:demostyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/1.0" xmlns:icon-style="http://www.yworks.com/yed-live/icon-style/1.0" xmlns:bpmn="http://www.yworks.com/xml/yfiles-bpmn/2.0" xmlns:demotablestyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoTableStyle/1.0" xmlns:uml="http://www.yworks.com/yFilesHTML/demos/UMLDemoStyle/1.0" xmlns:GraphvizNodeStyle="http://www.yworks.com/yFilesHTML/graphviz-node-style/1.0" xmlns:VuejsNodeStyle="http://www.yworks.com/demos/yfiles-vuejs-node-style/1.0" xmlns:explorer-style="http://www.yworks.com/data-explorer/1.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/3.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/3.0" xmlns:x0="http://www.yworks.com/yFilesHTML/demos/EntityRelationship/1.0" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/2.0/xaml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<key id="d0" for="node" attr.type="int" attr.name="zOrder" y:attr.uri="http://www.yworks.com/xml/yfiles-z-order/1.0/zOrder"/>
+	<key id="d1" for="node" attr.type="boolean" attr.name="Expanded" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/Expanded">
+		<default>true</default>
+	</key>
+	<key id="d2" for="node" attr.type="string" attr.name="url"/>
+	<key id="d3" for="node" attr.type="string" attr.name="description"/>
+	<key id="d4" for="node" attr.name="NodeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeLabels"/>
+	<key id="d5" for="node" attr.name="NodeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeGeometry"/>
+	<key id="d6" for="all" attr.name="UserTags" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/UserTags"/>
+	<key id="d7" for="node" attr.name="NodeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeStyle"/>
+	<key id="d8" for="node" attr.name="NodeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/NodeViewState"/>
+	<key id="d9" for="edge" attr.type="string" attr.name="url"/>
+	<key id="d10" for="edge" attr.type="string" attr.name="description"/>
+	<key id="d11" for="edge" attr.name="EdgeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeLabels"/>
+	<key id="d12" for="edge" attr.name="EdgeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeGeometry"/>
+	<key id="d13" for="edge" attr.name="EdgeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeStyle"/>
+	<key id="d14" for="edge" attr.name="EdgeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/EdgeViewState"/>
+	<key id="d15" for="port" attr.name="PortLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLabels"/>
+	<key id="d16" for="port" attr.name="PortLocationParameter" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLocationParameter">
+		<default>
+			<x:Static Member="y:FreeNodePortLocationModel.NodeCenterAnchored"/>
+		</default>
+	</key>
+	<key id="d17" for="port" attr.name="PortStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortStyle">
+		<default>
+			<x:Static Member="y:VoidPortStyle.Instance"/>
+		</default>
+	</key>
+	<key id="d18" for="port" attr.name="PortViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/PortViewState"/>
+	<key id="d19" attr.name="SharedData" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/SharedData"/>
+	<data key="d19">
+		<y:SharedData>
+			<yjs:SolidColorFill x:Key="1" color="#FFE8EEF7"/>
+			<yjs:SolidColorFill x:Key="2" color="#FFB7C9E3"/>
+			<yjs:Stroke x:Key="3" fill="WHITE"/>
+			<yjs:PolylineEdgeStyle x:Key="4" stroke="{y:GraphMLReference 3}">
+				<yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="{y:GraphMLReference 3}" fill="#FFFFFFFF" cropLength="1"/>
+				</yjs:PolylineEdgeStyle.targetArrow>
+			</yjs:PolylineEdgeStyle>
+		</y:SharedData>
+	</data>
+	<graph id="G" edgedefault="directed">
+		<data key="d6">
+			<y:Json>{"version":"2.0.0","theme":{"name":"dark","version":"1.0.0"}}</y:Json>
+		</data>
+		<node id="n0">
+			<data key="d0">1</data>
+			<data key="d5">
+				<y:RectD X="-269.25" Y="-533.1875" Width="195" Height="177"/>
+			</data>
+			<data key="d7">
+				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
+					<x0:EntityNodeStyle.model>
+						<x0:EntityRelationshipModel>
+							<x0:EntityRelationshipModel.title>GostBlockung&lt;Input&gt;</x0:EntityRelationshipModel.title>
+							<x0:EntityRelationshipModel.attributes>
+								<x:Array Type="sys:Object">
+									<sys:String>ID:Bigint</sys:String>
+									<sys:String>Name:Varchar(255)</sys:String>
+									<sys:String>Abiturjahrgang:Int</sys:String>
+									<sys:String>GostHalbjahr:Int</sys:String>
+									<sys:String>AnzahlSchienen</sys:String>
+								</x:Array>
+							</x0:EntityRelationshipModel.attributes>
+						</x0:EntityRelationshipModel>
+					</x0:EntityNodeStyle.model>
+				</x0:EntityNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.994413407821229"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.994413407821229"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.994413407821229"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.9949238578680203,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n1">
+			<data key="d0">2</data>
+			<data key="d5">
+				<y:RectD X="-629.5" Y="-264.25" Width="195" Height="192.625"/>
+			</data>
+			<data key="d7">
+				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
+					<x0:EntityNodeStyle.model>
+						<x0:EntityRelationshipModel>
+							<x0:EntityRelationshipModel.title>GostBlockungKurse&lt;Input&gt;</x0:EntityRelationshipModel.title>
+							<x0:EntityRelationshipModel.attributes>
+								<x:Array Type="sys:Object">
+									<sys:String>ID</sys:String>
+									<sys:String>GostKursart</sys:String>
+									<sys:String>Fach_ID</sys:String>
+									<sys:String>KursNummer</sys:String>
+									<sys:String>IstKoopkurs</sys:String>
+									<sys:String>BezeichnungSuffix</sys:String>
+									<sys:String>Wochenstunden</sys:String>
+									<sys:String>MaximaleGroesse</sys:String>
+									<sys:String><![CDATA[AufMaximalSchienen -> 1]]></sys:String>
+								</x:Array>
+							</x0:EntityRelationshipModel.attributes>
+						</x0:EntityRelationshipModel>
+					</x0:EntityNodeStyle.model>
+				</x0:EntityNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9948619139370585"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.005138086062941527"/>
+				</data>
+			</port>
+		</node>
+		<node id="n2">
+			<data key="d0">3</data>
+			<data key="d5">
+				<y:RectD X="-412.75" Y="-259.375" Width="338.5" Height="98"/>
+			</data>
+			<data key="d7">
+				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
+					<x0:EntityNodeStyle.model>
+						<x0:EntityRelationshipModel>
+							<x0:EntityRelationshipModel.title>GostBlockungSchienen&lt;Input&gt;</x0:EntityRelationshipModel.title>
+							<x0:EntityRelationshipModel.attributes>
+								<x:Array Type="sys:Object">
+									<sys:String>ID</sys:String>
+									<sys:String>Bezeichnung</sys:String>
+									<sys:String>Blockung_ID</sys:String>
+									<sys:String><![CDATA[Wochenstunden -> 3 (alternative zum AufMaximalSchienen)]]></sys:String>
+								</x:Array>
+							</x0:EntityRelationshipModel.attributes>
+						</x0:EntityRelationshipModel>
+					</x0:EntityNodeStyle.model>
+				</x0:EntityNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.010000000000000009"/>
+				</data>
+			</port>
+		</node>
+		<node id="n3">
+			<data key="d0">4</data>
+			<data key="d5">
+				<y:RectD X="268.1875" Y="-526" Width="195" Height="196.25"/>
+			</data>
+			<data key="d7">
+				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
+					<x0:EntityNodeStyle.model>
+						<x0:EntityRelationshipModel>
+							<x0:EntityRelationshipModel.title>GostBlockungRegeln&lt;Input&gt;</x0:EntityRelationshipModel.title>
+							<x0:EntityRelationshipModel.attributes>
+								<x:Array Type="sys:Object">
+									<sys:String>ID</sys:String>
+									<sys:String>TODO:FixiertKurs</sys:String>
+									<sys:String>TODO:FixiertSchueler</sys:String>
+									<sys:String>MaxDiffKursgroesse</sys:String>
+									<sys:String>Blockung_ID</sys:String>
+									<sys:String>SchieneBlockenJaNein:Boolean</sys:String>
+									<sys:String>SchieneGesperrt</sys:String>
+									<sys:String>SchuelerGesperrt</sys:String>
+									<sys:String>...</sys:String>
+								</x:Array>
+							</x0:EntityRelationshipModel.attributes>
+						</x0:EntityRelationshipModel>
+					</x0:EntityNodeStyle.model>
+				</x0:EntityNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9949558638083229"/>
+				</data>
+			</port>
+		</node>
+		<node id="n4">
+			<data key="d0">6</data>
+			<data key="d5">
+				<y:RectD X="231.4375" Y="155.875" Width="293" Height="89.625"/>
+			</data>
+			<data key="d7">
+				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
+					<x0:EntityNodeStyle.model>
+						<x0:EntityRelationshipModel>
+							<x0:EntityRelationshipModel.title>GostBlockungKursSchueler&lt;Output&gt;</x0:EntityRelationshipModel.title>
+							<x0:EntityRelationshipModel.attributes>
+								<x:Array Type="sys:Object">
+									<sys:String>GostBlockungKurs_ID</sys:String>
+									<sys:String>Schueler_ID</sys:String>
+									<sys:String>IstKollision:Boolean</sys:String>
+									<sys:String>Zwischenergebnis_ID</sys:String>
+								</x:Array>
+							</x0:EntityRelationshipModel.attributes>
+						</x0:EntityRelationshipModel>
+					</x0:EntityNodeStyle.model>
+				</x0:EntityNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.010914051841746264"/>
+				</data>
+			</port>
+		</node>
+		<node id="n5">
+			<data key="d0">7</data>
+			<data key="d5">
+				<y:RectD X="-71.8125" Y="155.875" Width="287" Height="89.625"/>
+			</data>
+			<data key="d7">
+				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
+					<x0:EntityNodeStyle.model>
+						<x0:EntityRelationshipModel>
+							<x0:EntityRelationshipModel.title>GostBlockungKursSchienen&lt;Output&gt;</x0:EntityRelationshipModel.title>
+							<x0:EntityRelationshipModel.attributes>
+								<x:Array Type="sys:Object">
+									<sys:String>GostBlockungKurs_ID</sys:String>
+									<sys:String>Schienen_ID</sys:String>
+									<sys:String>Zwischenergebnis_ID</sys:String>
+									<sys:String><![CDATA[HatKollision: Boolean]]></sys:String>
+								</x:Array>
+							</x0:EntityRelationshipModel.attributes>
+						</x0:EntityRelationshipModel>
+					</x0:EntityNodeStyle.model>
+				</x0:EntityNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.010914051841746264"/>
+				</data>
+			</port>
+		</node>
+		<node id="n6">
+			<data key="d0">9</data>
+			<data key="d5">
+				<y:RectD X="-635.5" Y="-46.125" Width="201" Height="118"/>
+			</data>
+			<data key="d7">
+				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
+					<x0:EntityNodeStyle.model>
+						<x0:EntityRelationshipModel>
+							<x0:EntityRelationshipModel.title>GostBlockungKursLehrer&lt;Input&gt;</x0:EntityRelationshipModel.title>
+							<x0:EntityRelationshipModel.attributes>
+								<x:Array Type="sys:Object">
+									<sys:String>GostBlockungKurs_ID</sys:String>
+									<sys:String>Lehrer_ID</sys:String>
+									<sys:String>Reihenfolge</sys:String>
+									<sys:String>Wochenstunden</sys:String>
+								</x:Array>
+							</x0:EntityRelationshipModel.attributes>
+						</x0:EntityRelationshipModel>
+					</x0:EntityNodeStyle.model>
+				</x0:EntityNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.00833333333333336"/>
+				</data>
+			</port>
+		</node>
+		<node id="n7">
+			<data key="d0">10</data>
+			<data key="d5">
+				<y:RectD X="-852.375" Y="-259.375" Width="195" Height="192.625"/>
+			</data>
+			<data key="d7">
+				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
+					<x0:EntityNodeStyle.model>
+						<x0:EntityRelationshipModel>
+							<x0:EntityRelationshipModel.title>GostBlockungFach&lt;Input&gt;</x0:EntityRelationshipModel.title>
+							<x0:EntityRelationshipModel.attributes>
+								<x:Array Type="sys:Object">
+									<sys:String>Blockung_ID</sys:String>
+									<sys:String>Fach_ID</sys:String>
+									<sys:String>MaxParalleleKurse</sys:String>
+									<sys:String>AnzahlKurse</sys:String>
+								</x:Array>
+							</x0:EntityRelationshipModel.attributes>
+						</x0:EntityRelationshipModel>
+					</x0:EntityNodeStyle.model>
+				</x0:EntityNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.005138086062941527"/>
+				</data>
+			</port>
+		</node>
+		<node id="n8">
+			<data key="d0">12</data>
+			<data key="d5">
+				<y:RectD X="87.0625" Y="16.375" Width="275.5" Height="109.75"/>
+			</data>
+			<data key="d7">
+				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
+					<x0:EntityNodeStyle.model>
+						<x0:EntityRelationshipModel>
+							<x0:EntityRelationshipModel.title>GostBlockungZwischenergebnis&lt;Output&gt;</x0:EntityRelationshipModel.title>
+							<x0:EntityRelationshipModel.attributes>
+								<x:Array Type="sys:Object">
+									<sys:String>ID</sys:String>
+									<sys:String>AnzahlUmwaehler</sys:String>
+									<sys:String>Bewertung</sys:String>
+									<sys:String>Blockung_ID</sys:String>
+									<sys:String>(DurchBenutzerAlsGutHervorgehoben)</sys:String>
+								</x:Array>
+							</x0:EntityRelationshipModel.attributes>
+						</x0:EntityRelationshipModel>
+					</x0:EntityNodeStyle.model>
+				</x0:EntityNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9910514541387024"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9910514541387024"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.008948545861297563"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.008948545861297563"/>
+				</data>
+			</port>
+		</node>
+		<edge id="e0" source="n1" target="n6" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="4"/>
+			</data>
+		</edge>
+		<edge id="e1" source="n0" target="n7" sourceport="p2" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="4"/>
+			</data>
+		</edge>
+		<edge id="e2" source="n0" target="n1" sourceport="p0" targetport="p1">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="4"/>
+			</data>
+		</edge>
+		<edge id="e3" source="n0" target="n2" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="4"/>
+			</data>
+		</edge>
+		<edge id="e4" source="n8" target="n5" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="4"/>
+			</data>
+		</edge>
+		<edge id="e5" source="n8" target="n4" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle stroke="#FFFFFFFF">
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FFFFFFFF" fill="WHITE" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow type="NONE" fill="#FFFFFFFF">
+							<yjs:Arrow.stroke>
+								<yjs:Stroke fill="WHITE" thickness="1.5"/>
+							</yjs:Arrow.stroke>
+						</yjs:Arrow>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e6" source="n3" target="n8" sourceport="p0" targetport="p2">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle>
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="WHITE" thickness="5"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FFFFFFFF" fill="WHITE" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow type="NONE" scale="5" fill="#FFFFFFFF">
+							<yjs:Arrow.stroke>
+								<yjs:Stroke fill="WHITE" thickness="1.5"/>
+							</yjs:Arrow.stroke>
+						</yjs:Arrow>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e7" source="n0" target="n8" sourceport="p3" targetport="p3">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle>
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="WHITE" thickness="5"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FFFFFFFF" fill="WHITE" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow type="NONE" scale="5" fill="#FFFFFFFF">
+							<yjs:Arrow.stroke>
+								<yjs:Stroke fill="WHITE" thickness="1.5"/>
+							</yjs:Arrow.stroke>
+						</yjs:Arrow>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+	</graph>
+</graphml>
