@@ -535,7 +535,7 @@ Selbstsigniertes Zerifikat]]></y:Label.Text>
 			</port>
 			<port name="p7">
 				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.9945054945054945,0.5"/>
+					<y:FreeNodePortLocationModelParameter Ratio="0.005494505494505475,0.5"/>
 				</data>
 			</port>
 		</node>
@@ -879,7 +879,7 @@ Firewall, DHCP, etc.
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1213" Y="675" Width="375" Height="390"/>
+				<y:RectD X="1213" Y="660" Width="375" Height="390"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 17}" fill="{x:Null}" shape="ROUND_RECTANGLE"/>
@@ -1262,7 +1262,7 @@ Lehrer]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1723" Y="285" Width="375" Height="390"/>
+				<y:RectD X="1663" Y="375" Width="375" Height="390"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 17}" fill="{x:Null}" shape="ROUND_RECTANGLE"/>
@@ -1292,7 +1292,7 @@ Lehrer]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1753" Y="300.75" Width="180" Height="30"/>
+				<y:RectD X="1693" Y="390.75" Width="180" Height="30"/>
 			</data>
 			<data key="d7">
 				<demostyle:FlowchartNodeStyle type="process" stroke="{y:GraphMLReference 20}" fill="{y:GraphMLReference 21}"/>
@@ -1311,7 +1311,7 @@ Lehrer]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1770.5" Y="353" Width="85" Height="74"/>
+				<y:RectD X="1710.5" Y="443" Width="85" Height="74"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 1}"/>
@@ -1338,7 +1338,7 @@ mit installiertem Zertifikat]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1873" Y="386" Width="180" Height="97.5"/>
+				<y:RectD X="1813" Y="476" Width="180" Height="97.5"/>
 			</data>
 			<data key="d7">
 				<demostyle:FlowchartNodeStyle type="process" stroke="{y:GraphMLReference 22}" fill="WHITE_SMOKE"/>
@@ -1347,7 +1347,7 @@ mit installiertem Zertifikat]]></y:Label.Text>
 		<node id="n46">
 			<data key="d0">61</data>
 			<data key="d5">
-				<y:RectD X="1775.5" Y="472.5" Width="75" Height="75"/>
+				<y:RectD X="1715.5" Y="562.5" Width="75" Height="75"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 23}"/>
@@ -1376,7 +1376,7 @@ mit installiertem Zertifikat]]></y:Label.Text>
 		<node id="n47">
 			<data key="d0">62</data>
 			<data key="d5">
-				<y:RectD X="1933" Y="508" Width="92" Height="92"/>
+				<y:RectD X="1873" Y="598" Width="92" Height="92"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 29}"/>
@@ -1402,7 +1402,7 @@ Lehrer]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1976" Y="283" Width="94" Height="94"/>
+				<y:RectD X="1916" Y="373" Width="94" Height="94"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 30}"/>
@@ -1411,7 +1411,7 @@ Lehrer]]></y:Label.Text>
 		<node id="n49">
 			<data key="d0">64</data>
 			<data key="d5">
-				<y:RectD X="1841" Y="568" Width="64" Height="64"/>
+				<y:RectD X="1781" Y="658" Width="64" Height="64"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 31}"/>
@@ -1425,7 +1425,7 @@ Lehrer]]></y:Label.Text>
 		<node id="n50">
 			<data key="d0">65</data>
 			<data key="d5">
-				<y:RectD X="1676" Y="373" Width="34" Height="34"/>
+				<y:RectD X="1616" Y="463" Width="34" Height="34"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 32}"/>
@@ -1434,7 +1434,7 @@ Lehrer]]></y:Label.Text>
 		<node id="n51">
 			<data key="d0">66</data>
 			<data key="d5">
-				<y:RectD X="1676" Y="493" Width="34" Height="34"/>
+				<y:RectD X="1616" Y="583" Width="34" Height="34"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 32}"/>
@@ -1443,7 +1443,7 @@ Lehrer]]></y:Label.Text>
 		<node id="n52">
 			<data key="d0">67</data>
 			<data key="d5">
-				<y:RectD X="1796" Y="583" Width="34" Height="34"/>
+				<y:RectD X="1736" Y="673" Width="34" Height="34"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 32}"/>
@@ -1452,7 +1452,7 @@ Lehrer]]></y:Label.Text>
 		<node id="n53">
 			<data key="d0">68</data>
 			<data key="d5">
-				<y:RectD X="1856" Y="523" Width="34" Height="34"/>
+				<y:RectD X="1796" Y="613" Width="34" Height="34"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 32}"/>
@@ -1461,7 +1461,7 @@ Lehrer]]></y:Label.Text>
 		<node id="n54">
 			<data key="d0">69</data>
 			<data key="d5">
-				<y:RectD X="2053" Y="343" Width="34" Height="34"/>
+				<y:RectD X="1993" Y="433" Width="34" Height="34"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 33}"/>
@@ -1480,7 +1480,7 @@ Lehrer]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="870" Y="585" Width="750" Height="30"/>
+				<y:RectD X="870" Y="585" Width="660" Height="30"/>
 			</data>
 			<data key="d7">
 				<demostyle:FlowchartNodeStyle type="directData" fill="{y:GraphMLReference 44}"/>
@@ -1489,7 +1489,7 @@ Lehrer]]></y:Label.Text>
 		<node id="n56">
 			<data key="d0">71</data>
 			<data key="d5">
-				<y:RectD X="2053" Y="313" Width="34" Height="34"/>
+				<y:RectD X="1993" Y="403" Width="34" Height="34"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 45}"/>
@@ -1731,7 +1731,7 @@ Lehrer]]></y:Label.Text>
 		<edge id="e24" source="n42" target="n42" sourceport="p0" targetport="p1">
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="1798,435"/>
+					<y:Bend Location="1738,525"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -1741,10 +1741,10 @@ Lehrer]]></y:Label.Text>
 		<edge id="e25" source="n47" target="n46" sourceport="p0" targetport="p0">
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="1933,540"/>
-					<y:Bend Location="1873,540"/>
-					<y:Bend Location="1873,510"/>
-					<y:Bend Location="1843,510"/>
+					<y:Bend Location="1873,630"/>
+					<y:Bend Location="1813,630"/>
+					<y:Bend Location="1813,600"/>
+					<y:Bend Location="1783,600"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -1754,7 +1754,7 @@ Lehrer]]></y:Label.Text>
 		<edge id="e26" source="n49" target="n46" sourceport="p0" targetport="p1">
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="1813,600"/>
+					<y:Bend Location="1753,690"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -1786,30 +1786,26 @@ Lehrer]]></y:Label.Text>
 				<y:GraphMLReference ResourceKey="56"/>
 			</data>
 		</edge>
-		<edge id="e29" source="n46" target="n4" sourceport="p2" targetport="p7">
+		<edge id="e29" source="n11" target="n11" sourceport="p2" targetport="p3">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="56"/>
+			</data>
+		</edge>
+		<edge id="e30" source="n46" target="n44" sourceport="p2" targetport="p0">
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="1650,510"/>
-					<y:Bend Location="1650,600"/>
-					<y:Bend Location="750,600"/>
-					<y:Bend Location="690,600"/>
-					<y:Bend Location="660,600"/>
+					<y:Bend Location="1590,600"/>
+					<y:Bend Location="1590,480"/>
 				</x:List>
 			</data>
 			<data key="d13">
 				<y:GraphMLReference ResourceKey="56"/>
 			</data>
 		</edge>
-		<edge id="e30" source="n11" target="n11" sourceport="p2" targetport="p3">
-			<data key="d13">
-				<y:GraphMLReference ResourceKey="56"/>
-			</data>
-		</edge>
-		<edge id="e31" source="n46" target="n44" sourceport="p3" targetport="p0">
+		<edge id="e31" source="n4" target="n46" sourceport="p7" targetport="p3">
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="1650,510"/>
-					<y:Bend Location="1650,390"/>
+					<y:Bend Location="630,600"/>
 				</x:List>
 			</data>
 			<data key="d13">
