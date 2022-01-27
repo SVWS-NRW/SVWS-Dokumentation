@@ -770,7 +770,7 @@ Firewall, DHCP, etc.
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1470" Y="780" Width="375" Height="390"/>
+				<y:RectD X="1470" Y="780" Width="390" Height="390"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 19}" fill="{x:Null}" shape="ROUND_RECTANGLE"/>
@@ -1140,7 +1140,7 @@ Lehrer]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1470" Y="1215" Width="375" Height="390"/>
+				<y:RectD X="1470" Y="1200" Width="390" Height="390"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 19}" fill="{x:Null}" shape="ROUND_RECTANGLE"/>
@@ -1209,16 +1209,6 @@ Lehrer]]></y:Label.Text>
 					<y:FreeNodePortLocationModelParameter Ratio="0.011494252873563204,0.5"/>
 				</data>
 			</port>
-			<port name="p2">
-				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.04678837052062109,0.5405405405405406"/>
-				</data>
-			</port>
-			<port name="p3">
-				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.0820824881676799,0.581081081081081"/>
-				</data>
-			</port>
 		</node>
 		<node id="n42">
 			<data key="d0">60</data>
@@ -1269,16 +1259,6 @@ userbezugenem Zertifikat]]></y:Label.Text>
 			<port name="p3">
 				<data key="d16">
 					<y:FreeNodePortLocationModelParameter Ratio="0.012987012987012991,0.5"/>
-				</data>
-			</port>
-			<port name="p4">
-				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.052987012987014165,0.54"/>
-				</data>
-			</port>
-			<port name="p5">
-				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.09298701298701417,0.58"/>
 				</data>
 			</port>
 		</node>
@@ -1456,7 +1436,7 @@ Lehrer]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1350" Y="225" Width="495" Height="510"/>
+				<y:RectD X="1350" Y="240" Width="510" Height="510"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle fill="{x:Null}" shape="ROUND_RECTANGLE">
@@ -1575,42 +1555,6 @@ VPN
 			<data key="d0">84</data>
 			<data key="d5">
 				<y:RectD X="1423" Y="1003" Width="34" Height="34"/>
-			</data>
-			<data key="d7">
-				<yjs:ImageNodeStyle image="{y:GraphMLReference 32}"/>
-			</data>
-		</node>
-		<node id="n65">
-			<data key="d0">85</data>
-			<data key="d5">
-				<y:RectD X="1468" Y="1348" Width="34" Height="34"/>
-			</data>
-			<data key="d7">
-				<yjs:ImageNodeStyle image="{y:GraphMLReference 32}"/>
-			</data>
-		</node>
-		<node id="n66">
-			<data key="d0">86</data>
-			<data key="d5">
-				<y:RectD X="1468" Y="1468" Width="34" Height="34"/>
-			</data>
-			<data key="d7">
-				<yjs:ImageNodeStyle image="{y:GraphMLReference 32}"/>
-			</data>
-		</node>
-		<node id="n67">
-			<data key="d0">87</data>
-			<data key="d5">
-				<y:RectD X="1483" Y="1363" Width="34" Height="34"/>
-			</data>
-			<data key="d7">
-				<yjs:ImageNodeStyle image="{y:GraphMLReference 32}"/>
-			</data>
-		</node>
-		<node id="n68">
-			<data key="d0">88</data>
-			<data key="d5">
-				<y:RectD X="1483" Y="1483" Width="34" Height="34"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 32}"/>
@@ -1820,28 +1764,6 @@ VPN
 			</data>
 			<data key="d13">
 				<y:GraphMLReference ResourceKey="61"/>
-			</data>
-		</edge>
-		<edge id="e22" source="n43" target="n41" sourceport="p4" targetport="p2">
-			<data key="d12">
-				<x:List>
-					<y:Bend Location="1400,1443"/>
-					<y:Bend Location="1400,1323"/>
-				</x:List>
-			</data>
-			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 59}" targetArrow="{y:GraphMLReference 56}" sourceArrow="{y:GraphMLReference 56}"/>
-			</data>
-		</edge>
-		<edge id="e23" source="n43" target="n41" sourceport="p5" targetport="p3">
-			<data key="d12">
-				<x:List>
-					<y:Bend Location="1403,1446"/>
-					<y:Bend Location="1403,1326"/>
-				</x:List>
-			</data>
-			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 59}" targetArrow="{y:GraphMLReference 56}" sourceArrow="{y:GraphMLReference 56}"/>
 			</data>
 		</edge>
 	</graph>
