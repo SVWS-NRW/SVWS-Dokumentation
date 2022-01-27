@@ -1224,7 +1224,7 @@ Lehrer]]></y:Label.Text>
 			<data key="d4">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[   Installationsvariante: SVWS-Server in der Schule  ]]></y:Label.Text>
+						<y:Label.Text><![CDATA[   Installationsvariante: SVWS-Server in der Schule mit VPN ]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:CompositeLabelModelParameter Model="{y:GraphMLReference 24}">
 								<y:CompositeLabelModelParameter.Parameter>
