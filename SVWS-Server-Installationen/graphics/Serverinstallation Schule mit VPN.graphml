@@ -1793,6 +1793,7 @@ Lehrer]]></y:Label.Text>
 					<y:Bend Location="1650,600"/>
 					<y:Bend Location="750,600"/>
 					<y:Bend Location="690,600"/>
+					<y:Bend Location="660,600"/>
 				</x:List>
 			</data>
 			<data key="d13">
