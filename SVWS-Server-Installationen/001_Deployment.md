@@ -15,6 +15,8 @@ Der SVWS-Server öffnet dabei den Port 443, so dass der SVWS-Client auch von and
 Ein echter Server-Betrieb ist hier allerdings nicht gewährleistet, da der Einzelplatzrechner ja unter Umständen herunter gefahren wird.
 Diese Installationsvariante ist für sehr kleine Schulen ohne weitere IT-Umgebung bzw. IT-Unterstützung vorgesehen.
 
+![Übersicht-REST](graphics/700px-Einzelplatzinstallation einfach.png)
+
 # Eigener Server im Verwaltungsnetz der Schule
 Die Variante, einen eigenen Server in der Schule zu betreiben, der im Verwaltungsnetzwerk abgekoppelt vom pädagogischen Netzwerk betrieben wird, 
 ist die häufigste Installations-Art. Auch hier wird der Port 443 intern geöffnet, so das der Client den SVWS-Client mit einem Webbrowser erreichen können sollte. 
