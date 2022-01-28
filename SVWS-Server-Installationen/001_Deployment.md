@@ -1,4 +1,3 @@
-
 ***SVWS - Deployment***
 ====================
 
@@ -28,7 +27,7 @@ Das Zertifikat, welches bei der Installation erstellt wurde, sollte dann an die 
 
 Mittelfristiges Ziel soll es auch sein, den SVWS-Server auch für Linux zur Verfügung zu stellen. Es ist geplant, dafür ein eigenes NPM-Reposotories aufzubauen. Dies soll zum einen die Abhängigkeit von Windows reduzieren, da der SVWS-Client ja grundsätzlich in jedem Browser angezeigt werden kann. Zum anderen soll es den Schulen helfen, Lizenzkosten zu sparen.
 
-Deployment-Arten 01.png
+![Serverinstallation Schule ohne VPN einfach.png](graphics/Serverinstallation Schule ohne VPN einfach.png)
 
 Terminalserverumgebungen
 Kommunaler Server im Rechenzentrum
