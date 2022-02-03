@@ -29,7 +29,6 @@ Mittelfristiges Ziel soll es auch sein, den SVWS-Server auch für Linux zur Verf
 
 ![Serverinstallation Schule ohne VPN einfach.png](graphics/Serverinstallation Schule ohne VPN einfach.png)
 
-# Terminalserverumgebungen
 
 # Kommunaler Server im Rechenzentrum
 
