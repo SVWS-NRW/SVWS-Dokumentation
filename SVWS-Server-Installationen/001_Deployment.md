@@ -29,30 +29,15 @@ Mittelfristiges Ziel soll es auch sein, den SVWS-Server auch für Linux zur Verf
 
 ![Serverinstallation Schule ohne VPN einfach.png](graphics/Serverinstallation Schule ohne VPN einfach.png)
 
-Terminalserverumgebungen
-Kommunaler Server im Rechenzentrum
-In großeren Umgebungen sind verschiedene Varianten der Installation denkbar. Der SVWS-Server soll perspektivisch natürlich auch die Funktionalität von Schild-Zentral übernehmen können. Die Trennung der Schemata ist hier eine wichtige Datenschutz-Maßnahme. Aber auch die Aufteilung in verschiedene Container wird hier in Betracht gezogen.
+# Terminalserverumgebungen
 
-In Rechenzentren macht es aus Lizenzgründen Sinn auf Linux-Systeme zu setzen. Die Verteilung der Software ist mit Flatpack geplant.
+# Kommunaler Server im Rechenzentrum
 
-Eine erste Installationsanleitung für Linux-Systeme wird hier dokumentiert: Installation unter Linux
+In großeren Umgebungen sind verschiedene Varianten der Installation denkbar. Der SVWS-Server soll perspektivisch natürlich auch die Funktionalität von Schild-Zentral übernehmen können. 
+Die Trennung der Schemata ist hier eine wichtige Datenschutz-Maßnahme. Aber auch die Aufteilung in verschiedene Container wird hier in Betracht gezogen.
+In Rechenzentren macht es aus Lizenzgründen Sinn auf Linux-Systeme zu setzen.
+
+![Serverinstallation Schule ohne VPN einfach.png](graphics/Serverinstallation Rechenzentrum einfach.png)
 
 
 ---
-
-Installation auf einem NAS
-Link zu einem Beispiel für Synology
-
-
-Schritt 1: Loggen Sie sich per Putty über SSH auf der Synology ein.
-Schritt 2: Wechseln Sie in den Ordner /usr/share
-Schritt 3: Legen Sie einen Ordner svws-server an und darin die Ordner bin und java.
-sudo mkdir svws-server
-cd svws-server
-sudo mkdir bin
-Schritt 4: Laden Sie das OpenJDK in den Ordner svws-server
-sudo wget https://download.java.net/openjdk/jdk12/ri/openjdk-12+32_linux-x64_bin.tar.gz
-Schritt 5: Entpacken Sie das JDK
-sudo tar xzf openjdk-12+32_linux-x64_bin.tar.gz
-Schritt 6: Verschieben Sie die Version in dne Ordner java.
-sudo mv jdk-12/ java
