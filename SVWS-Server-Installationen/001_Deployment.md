@@ -14,7 +14,7 @@ Der SVWS-Server öffnet dabei den Port 443, so dass der SVWS-Client auch von and
 Ein echter Server-Betrieb ist hier allerdings nicht gewährleistet, da der Einzelplatzrechner ja unter Umständen herunter gefahren wird.
 Diese Installationsvariante ist für sehr kleine Schulen ohne weitere IT-Umgebung bzw. IT-Unterstützung vorgesehen.
 
-![Einzelplatzinstallation einfach.png](graphics/Einzelplatzinstallation einfach.png)
+![Einzelplatzinstallation_einfach.png](graphics/Einzelplatzinstallation_einfach.png)
 
 # Eigener Server im Verwaltungsnetz der Schule
 Die Variante, einen eigenen Server in der Schule zu betreiben, der im Verwaltungsnetzwerk abgekoppelt vom pädagogischen Netzwerk betrieben wird, 
@@ -27,7 +27,7 @@ Das Zertifikat, welches bei der Installation erstellt wurde, sollte dann an die 
 
 Mittelfristiges Ziel soll es auch sein, den SVWS-Server auch für Linux zur Verfügung zu stellen. Es ist geplant, dafür ein eigenes NPM-Reposotories aufzubauen. Dies soll zum einen die Abhängigkeit von Windows reduzieren, da der SVWS-Client ja grundsätzlich in jedem Browser angezeigt werden kann. Zum anderen soll es den Schulen helfen, Lizenzkosten zu sparen.
 
-![Serverinstallation Schule ohne VPN einfach.png](graphics/Serverinstallation Schule ohne VPN einfach.png)
+![Serverinstallation_Schule_ohne_VPN_einfach.png](graphics/Serverinstallation_Schule_ohne_VPN_einfach.png)
 
 
 # Kommunaler Server im Rechenzentrum
@@ -36,7 +36,7 @@ In großeren Umgebungen sind verschiedene Varianten der Installation denkbar. De
 Die Trennung der Schemata ist hier eine wichtige Datenschutz-Maßnahme. Aber auch die Aufteilung in verschiedene Container wird hier in Betracht gezogen.
 In Rechenzentren macht es aus Lizenzgründen Sinn auf Linux-Systeme zu setzen.
 
-![Serverinstallation Schule ohne VPN einfach.png](graphics/Serverinstallation Rechenzentrum einfach.png)
+![Serverinstallation_Schule_ohne_VPN_einfach.png](graphics/Serverinstallation_Rechenzentrum_einfach.png)
 
 
 ---
