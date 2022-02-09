@@ -240,7 +240,7 @@ Ebenso kann man natürlich auch den mysql Dienst starten, neustarten und beenden
 
 ### Fehlersuche per Journal 
 
-Vermutet man Abstürze des Servers, so lohnt sich ein Blick in die Log files:
+Vermutet man Abstürze des Servers, so lohnt sich ein Blick in die Log files: 
 
 		journalctl  -f -u svws
 
