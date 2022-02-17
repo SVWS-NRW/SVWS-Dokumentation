@@ -1,4 +1,3 @@
-
 # benutzergruppen
 
 | Name | Type | Spec |
@@ -2061,7 +2060,7 @@
 
 # floskeln
 
-In der  Tabelle Floskeln stehen die entsprechenden bentigten Abkrzungen fr soziales Verhlaten und auerschulisches Engagement
+In der  Tabelle Floskeln stehen die entsprechenden benötigten Abkürzungen (Floskeln) für das Beschreiben vom sozialen Verhlaten und außerschulischen Engagement.
 
 | Name | Type | Spec |
 |---|---|---|
