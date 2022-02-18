@@ -53,8 +53,6 @@ und die Rechte auf der Netzwerkschnittstelle ergänzen:
 
 		 chown 100000:100000 /dev/net/tun
 
-OKAY: Ich bekomme es nicht hin !
-
 ### ggf aktualisieren
 
 Bei einem frisch installierten System sollte dieser Schritt nicht nötig sein, 
@@ -63,13 +61,7 @@ man kann es aber trotzdem einmal ausführen, um auch die letzten Aktualisierungen
 		apt update
 		apt upgrade -y
 
-## Installation von Wireguard per Script 
 
-download: 
-	
-
-
-Als Port kann auch irgendein Port in den Höheren Bereichen gewä
 
 
 
@@ -170,5 +162,3 @@ https://www.bitblokes.de/wireguard-vpn-server-einrichten-ubuntu-raspberry-pi-lin
 https://github.com/angristan/wireguard-install/blob/88ae1c0d0f5d4f48252fd3be27b2f122e40edf83/wireguard-install.sh
 
 https://blog.peterge.de/wireguard-lxc-unter-proxmox/
-
-https://www.youtube.com/watch?v=D1zp6n7ushM
