@@ -1,13 +1,14 @@
-# Übersicht SVWS-Client
+# Der SVWS-Client
 
-![](https://git.svws-nrw.de/svws/SVWS-Client/-/wikis/uploads/8512c7499c2c26fd60dbfa4ade8907f0/600px-REST-Server-02.png)
-
-Die Grafik soll die verschiedensten Möglichkeiten darstellen, wie in Zukunft verschiedene GUI-Tools auf die Datenbanken zugreifen können. Durch die standartisierte Open-API-Schnittstelle ist es auch unerheblich, mit welchem Framework das GUI programmiert ist.
-
-Die Standard-Oberfläche wird momentan im SVWS-Client progrmmiert.
-Denkbar sind später auch andere Desktop-Applikationen oder Web-Clients, die den REST-Server ansprechen.
+Der SVWS-Client ist die graphische Oberfläche über die die Eingaben in den SVWS-Server erfolgen. 
 
 # Entwicklung der Oberfläche
 
-Die notwendigen Schritte zur Entwicklung der Vorgaben für die User-Interfaces sollen nun auch Schritt für Schritt angegangen werden.
-Dazu wurde schon zu Beginn des projekts das UI-Framework mit VUE.js festgelegt. Es folgen nun die Bedienkonzepte, der Styleguide und das Screendesign. 
+Konzeptionelle Überlegungen zum Design und die damit verbundenen technischen Grundlagen und Angaben zu den Frameworks finden Sie unter [SVWS-UI-Framework](../SVWS-UI-Framework/README.md).
+Hier werden ebenso [Styleguide und Screendesign](../SVWS-UI-Framework/Styleguide.md) vorgestellt und das [Bedienkonzept der GUI-Komponenten](../SVWS-UI-Framework/Bedienkonzept.md) wird erläutert.
+
+# Der Notenmanager
+ 
+Als ein Baustein des SVWS-Clients kann der [Notenmanager](Notenmanager.md) gesehen werden. 
+Hierzu gibt es neben dem Notenmanager innerhalb des SVWS-Client auch eine PHP-basierte Version für den Betrieb 
+zum Beispiel in einem angemieteten Webspace. Weitere Information dazu unter: [WeNoM](WeNoM.md) - Der Web-Notenmanager.
