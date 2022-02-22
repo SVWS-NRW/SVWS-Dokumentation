@@ -1,17 +1,20 @@
-# Installation des Wireguard-Servers
+# Installation des VPN-Servers
 
 ## Vorbereitungen
 
 ### Auswahl der Maschine 
 
-Es gibt mehrer Möglichkeiten wo ein Wireguard-VPN-Server betrieben werden kann:
+Es gibt mehrer Möglichkeiten wie ein VPN-Server betrieben werden kann:
 
 - in einer Virtualisierungsumgebung (Proxmox, ESXi, ...) 
 - im Containersystem (Docker, LXH, ...)
 - direkt auf echter Hardware (Raspberry, PC, Server ...)
 - im Router (Fritzbox, ...)
+- als Teil einer Firewall (OpenSense, ...)
 
 ### Beipiele für Hardwarelösungen:
+
+Hier gibt es mehrer Anbieter, die auch Hardwarelösungen anbieten. Ein paar wenige Beispiele sind hier nach kurzer Suche im Internet exemplarisch zu finden:
 
 Fritzbox: <br>
 https://www.computerbild.de/artikel/cb-News-Software-FritzOS-7.39-AVM-integriert-WireGuard-VPN-FritzBox-31230305.html
@@ -22,54 +25,58 @@ https://www.shellfire.de/blog/shellfire-box-4k-wireguard-vpn-router-power/
 OpenSense: <br>
 https://www.ovpn.com/de/guides/wireguard/opnsense
 
+## WireGuard VPN-Server
 
+Die Entscheidung für den Wireguard VPN-Server in der Testumgebung des SVWS-Servers ist aufgrund verschiedener Rahmenbedingungen gefallen: 
 
+ - performant, da fest im Linux-Kernel verankert
+ - Open Source
+ - einfache Installation per Skript
+ - installierbar auf einem Server oder einer virtuellen Maschine 
+ - ebenfalls als Hardware erhältlich
+ - einfache Wartung und Konfiguration per script
+ - mögliche Weiterentwicklung (Konfiguration der VPN-Zugänge von außen)
 
-
-Im Weitern wird als Basis ein LXH Container auf einem Proxmoxsystem verwendet. Die Installation unterscheidet sich im Wesentlichen nicht von anderen Installationen 
+Im Weitern wird als Basis einer virtuellen Maschine auf einem Proxmoxsystem verwendet. 
+Ebenso ist die installation in einem LXH-Container möglich, jedoch mit einigen Konfigurationen auf dem Muttersystem verbunden, auf die hier nicht weiter eingegangen wird. 
+Die Installation unterscheidet sich im Wesentlichen nicht von anderen Installationen 
 
 
 ### Installation des Debian 11 System
 
-download debian 11 net install: <br>
+#### download debian 11 net install: <br>
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.1.0-amd64-netinst.iso
 
 Eine typische Debian Installation ausführen - einfach der Menueführung folgen und je nach Bedarf auch auf das grafische Frontend verzichten. 
 Den SSH-Server direkt mit installieren, es wird in der Regel der SSH Zugang für die Wartung benötigt.
 
-### Vorbereitung der Installation beim Proxmox-Container
-
-Dies ist nur beim LXH Container unter Proxmox nötig. Wenn der Container aufgesetzt ist, dann muss auf dem Muttersystem noch die config datei des Containers 
-noch um das Netzwer-Tunneldevice ergänzt werden: 
- 
-		nano /etc/pve/lxc/NUMER_DES_CONTAINERS.conf
-
-Die folgenden Einträge ergänzen: 
-
-		lxc.cgroup2.devices.allow: c 10:200 rwm
-		lxc.mount.entry: /dev/net dev/net none bind,create=dir
-		
-und die Rechte auf der Netzwerkschnittstelle ergänzen: 
-
-		 chown 100000:100000 /dev/net/tun
-
-OKAY: Ich bekomme es nicht hin !
-
-### ggf aktualisieren
+#### ggf aktualisieren
 
 Bei einem frisch installierten System sollte dieser Schritt nicht nötig sein, 
 man kann es aber trotzdem einmal ausführen, um auch die letzten Aktualisierungen geladen zu haben: 
 
 		apt update
 		apt upgrade -y
+		
+		
+		
+nützliche Helfer installieren: 		
+		
+		apt install -y nmap curl
 
 ## Installation von Wireguard per Script 
 
-download: 
+download:
+
+		curl -O https://raw.githubusercontent.com/angristan/wireguard-install/master/wireguard-install.sh
+		chmod +x wireguard-install.sh
+		./wireguard-install.sh
 	
 
 
-Als Port kann auch irgendein Port in den Höheren Bereichen gewä
+Als Port kann auch irgendein Port in den Höheren Bereichen gewählt werden, wie hier dargestellt: 
+
+![Wireguard Installation Screenshot](graphisc/screenshote/wireguard_1.png)
 
 
 
