@@ -162,6 +162,15 @@ Dzu benötigt man das tool qrencode
 QR Code erzeugen: 
 		
 		qrencode -t UTF8 < test-user.conf
+		
+oder auch alles in Einem: 
+
+		ssh wireguard -q -l root -t "wireguard_user -u test -a" | tee test-user.conf > qrencode -t UTF8
+		
+bzw. inklusive Speichern des QRcodes und der config Datei:  
+
+		ssh wireguard -q -l root -t "wireguard_user -u test -a" | tee test-user.conf > qrencode -o test-user.png -t PNG
+
 
 #### Beispiel: Löschen des users *test*:
 
