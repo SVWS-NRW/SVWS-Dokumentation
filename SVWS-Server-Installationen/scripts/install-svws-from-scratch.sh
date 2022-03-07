@@ -30,7 +30,7 @@
 	#Abfragen der Einstellungen:
 	read -rp "Bitte GITHUB Benutzernamen angeben: " -e -i "${GITHUB_ACTOR}" GITHUB_ACTOR
 	read -rp "Bitte GITHUB Token angeben: " -e -i "${GITHUB_TOKEN}" GITHUB_TOKEN
-	//read -rp "Bitte SCHILD MDB Passwort angeben: " -e -i "${SCHILD_PW}" SCHILD_PW
+	#read -rp "Bitte SCHILD MDB Passwort angeben: " -e -i "${SCHILD_PW}" SCHILD_PW
 	read -rp "Bitte das Passwort für den Benutzer svws, unter der der Dienst läuft, angeben: " -e -i "${SVWS_PW}" SVWS_PW
 	read -rp "Bitte das Maria-DB root-Passwort angeben: " -e -i "${SVWS_DB_PW}" SVWS_DB_PW
 

@@ -26,13 +26,14 @@ ggf. den svws-Benutzer wechseln:
 
 		su svws
 
-## Aktualisieren des UI-Frameworks
+## Aktualisieren des SVWS-Servers
 
-Wechsel ins Installationsverzeichnis des SVWS-UI-Frameworks:
+Wechsel ins Installationsverzeichnis des SVWS-Servers:
 
-		cd /app/SVWS-UI-Framework
+		cd /app/SVWS-Server
 		
-### optional: 
+		
+### optional: Branch auswählen 
 
 Kontolle, ob das richtige Branch eingestellt ist.
 		
@@ -42,48 +43,43 @@ Falls dies nicht schon bei der Installation geschehen ist, müsste hier ggf. noc
 
 		git checkout dev
 
-### Quellcode abholen: 
+### Quellcode abholen und das UI-Framework bauen:
 
 
 		git pull 
-		
-### Das UI-Framework bauen:
-
 		./gradlew clean build
 
-## Aktualisieren des SVWS-Servers
+## Aktualisieren des UI-Frameworks
 
-		cd /app/SVWS-Server
+Analog zum oben beschriebenen Update des SVWS-Servers kann das UI-Framework aktualisiert werden.
 
-@svws: git branch (Kontrololle auf dev)
+		cd /app/SVWS-UI-Framework
+		git pull
+		./gradlew clean build
 
-@svws: git pull (kann mit dem User svws-gitlab und dessen Token gemacht werden)
+## Aktualisierung des SVWS-Clients
 
-@svws: ./gradlew clean build
+Nachdem der SVWS-Server und das SVWS-UI-FRamework aktualisiert sind kann der SVWS-Client akualisiert werden. 
 
-@svws: cd /app
+		/app/SVWS-Client
+		git pull
+		./gradlew clean build
 
-@svws: cd SVWS-Client
-
-@svws: git branch (Kontrololle auf dev)
-
-@svws: git pull (kann mit dem User svws-gitlab und dessen Token gemacht werden)
-
-@svws: ./gradlew clean build
+## Fehlerbehebung 
 
 Sollten Änderungen im Repo durch den Build-Prozess existieren:
 
-@svws: git reset --hard
+		git reset --hard
+		
+		cd app/git/SVWS-Server/svws-server-app
+		vi svwsconfig.json > Schema svwsdb löschen
 
-@svws: cd app/git/SVWS-Server/svws-server-app
+## Start des SVWS-Server
 
-@svws: vi svwsconfig.json > Schema svwsdb löschen
+ggf mit `exit` wieder zum user root wechseln und den Service starten
 
-@svws: exit
-
-@root: systemctl start svws
-
-@root: sytemctl status svws
+		systemctl start svws
+		systemctl status svws
 
 http://svws-nrw.de/debug
 
