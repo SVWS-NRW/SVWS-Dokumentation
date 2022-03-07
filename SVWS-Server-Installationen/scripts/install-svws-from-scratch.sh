@@ -51,7 +51,7 @@ chmod -r -w SVWS-Zugangsdaten.txt
 #########################################################################
 ####################### install skript ##################################
 #########################################################################
-#!/bin/bash
+
 
 # teste, ob das script mit rootrechten ausgeführt wird:  
 if [[ $EUID = 0 && "$(ps -o comm= | grep su | sed -n '1p')" = "su" ]]; then

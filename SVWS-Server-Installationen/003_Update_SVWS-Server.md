@@ -1,26 +1,59 @@
-# Update des Testserver auf die neueste Version des DEV-Branch
+***Update des SVWS-Servers***
+=============================
+
+# Update des Grundsystems
+
+		apt update
+		apt upgrade -y
+
+
+# Update per Script
+
+... comming soon ... 
+
+# Update from Scratch
+
+Voraussetzung ist dabei die [Installation direkt aus den Git-Quellen](002_Installation_SVWS-Server.md). 
+Nun möchte man ein update zum Beispiel auf die neueste Version des DEV-Branch durchführen
+Alle Schritte, die in dem vorangegangenem Kapitel in einem Script zusammengefasst ausgeführt werden, werden hier einzeln aufgeführt und beschrieben.
 
 Einloggen auf dem Testserver
 
-@root: sytemctl stop svws
+		sytemctl stop svws
+		sytemctl status svws
 
-@root: sytemctl status svws
+ggf. den svws-Benutzer wechseln: 
 
-@root: su svws
+		su svws
 
-@svws: cd /app
+## Aktualisieren des UI-Frameworks
 
-@svws: cd SVWS-UI-Framework
+Wechsel ins Installationsverzeichnis des SVWS-UI-Frameworks:
 
-@svws: git branch (Kontrololle auf dev)
+		cd /app/SVWS-UI-Framework
+		
+### optional: 
 
-@svws: git pull (kann mit dem User svws-gitlab und dessen Token gemacht werden)
+Kontolle, ob das richtige Branch eingestellt ist.
+		
+		git branch
+		
+Falls dies nicht schon bei der Installation geschehen ist, müsste hier ggf. noch den gewünschten Branch eingestellt werden.
 
-@svws: ./gradlew clean build
+		git checkout dev
 
-@svws: cd /app
+### Quellcode abholen: 
 
-@svws: cd SVWS-Server
+
+		git pull 
+		
+### Das UI-Framework bauen:
+
+		./gradlew clean build
+
+## Aktualisieren des SVWS-Servers
+
+		cd /app/SVWS-Server
 
 @svws: git branch (Kontrololle auf dev)
 
