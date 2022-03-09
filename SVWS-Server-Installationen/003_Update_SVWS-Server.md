@@ -9,12 +9,19 @@
 
 # Update per Script
 
-... comming soon ... 
+Mit Hilfe diese Scripts kann ein Update zum Beispiel auf die neueste Version des DEV-Branch des SVWS-Servers durchgeführt werden. 
+
+Voraussetzung ist dabei die [Installation direkt aus den Git-Quellen](002_Installation_SVWS-Server.md). 
+	
+	Download [update-svws-from-scratch.sh](scripts/update-svws-from-scratch.sh)
+    ausführbar machen: chmod -x install-svws-from-scratch.sh
+    Script starten: ./update-svws-from-scratch
+	
+Alle Rückmeldungen werden im logfile unter `~/svws-update.log` gesammelt.
+
 
 # Update from Scratch
 
-Voraussetzung ist dabei die [Installation direkt aus den Git-Quellen](002_Installation_SVWS-Server.md). 
-Nun möchte man ein update zum Beispiel auf die neueste Version des DEV-Branch durchführen
 Alle Schritte, die in dem vorangegangenem Kapitel in einem Script zusammengefasst ausgeführt werden, werden hier einzeln aufgeführt und beschrieben.
 
 Einloggen auf dem Testserver

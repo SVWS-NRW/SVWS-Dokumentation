@@ -16,29 +16,32 @@ apt update
 apt upgrade -y
 #
 #
-echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >> ~/svws-update.log
-echo "++++++++++++++++++ updating SVWS-Server +++++++++++++++++++" >> ~/svws-update.log
-echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >> ~/svws-update.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
+echo "++++++++++++++++++ updating SVWS-Server +++++++++++++++++++" | tee ~/svws-update.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
 cd /app/SVWS-Server
-git pull >> ~/svws-update.log
-./gradlew clean build >> ~/svws-update.log
+git pull | tee ~/svws-update.log
+git checkout dev | tee ~/svws-update.log
+./gradlew clean build | tee ~/svws-update.log
 #
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >> ~/svws-update.log
-echo "+++++++++++++++ updating SVWS-UI-Framewortk ++++++++++++++++" >> ~/svws-update.log
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >> ~/svws-update.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
+echo "+++++++++++++++ updating SVWS-UI-Framewortk ++++++++++++++++" | tee ~/svws-update.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
 cd /app/SVWS-UI-Framework
-git pull >> ~/svws-update.log
-./gradlew clean build >> ~/svws-update.log
+git pull | tee ~/svws-update.log
+git checkout dev | tee ~/svws-update.log
+./gradlew clean build | tee ~/svws-update.log
 #
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >> ~/svws-update.log
-echo "++++++++++++++++++ updating SVWS-Client ++++++++++++++++++++" >> ~/svws-update.log
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" >> ~/svws-update.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
+echo "++++++++++++++++++ updating SVWS-Client ++++++++++++++++++++" | tee ~/svws-update.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
 cd /app/SVWS-Client
-git pull >> ~/svws-update.log
-./gradlew clean build >> ~/svws-update.log
+git pull | tee ~/svws-update.log
+git checkout dev | tee ~/svws-update.log
+./gradlew clean build | tee ~/svws-update.log
 #
 # die richtigen Rechte setzten: 
 chown -R svws:svws /app/
 #
-systemctl start svws
-systemctl status svws >> update.log
+systemctl start svws 
+systemctl status svws | tee ~/svws-update.log
