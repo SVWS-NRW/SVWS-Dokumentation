@@ -15,33 +15,38 @@ systemctl stop svws
 apt update
 apt upgrade -y
 #
+# Bei Debian ist oft kein Sudo eingerichtet, so dass der buil Prozess des Servers unter dem installationsscript der Einfachheit halber als root ausgeführt wird. 
+# daher muss man kurz die Rechte zurückholen und anschließend wieder dem svws-User das Verzeichnis als Besitzer zurückgeben. 
 #
-echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
-echo "++++++++++++++++++ updating SVWS-Server +++++++++++++++++++" | tee ~/svws-update.log
-echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
+chown -R root:root /app/
+#
+#
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee -a ~/svws-update.log
+echo "++++++++++++++++++ updating SVWS-Server +++++++++++++++++++" | tee -a ~/svws-update.log
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee -a ~/svws-update.log
 cd /app/SVWS-Server
-git pull | tee ~/svws-update.log
-git checkout dev | tee ~/svws-update.log
-./gradlew clean build | tee ~/svws-update.log
+git pull | tee -a ~/svws-update.log
+git checkout dev | tee -a ~/svws-update.log
+./gradlew clean build | tee -a ~/svws-update.log
 #
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
-echo "+++++++++++++++ updating SVWS-UI-Framewortk ++++++++++++++++" | tee ~/svws-update.log
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee -a ~/svws-update.log
+echo "+++++++++++++++ updating SVWS-UI-Framewortk ++++++++++++++++" | tee -a ~/svws-update.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee -a ~/svws-update.log
 cd /app/SVWS-UI-Framework
-git pull | tee ~/svws-update.log
-git checkout dev | tee ~/svws-update.log
-./gradlew clean build | tee ~/svws-update.log
+git pull | tee -a ~/svws-update.log
+git checkout dev | tee -a ~/svws-update.log
+./gradlew clean build | tee -a ~/svws-update.log
 #
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
-echo "++++++++++++++++++ updating SVWS-Client ++++++++++++++++++++" | tee ~/svws-update.log
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee ~/svws-update.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee -a ~/svws-update.log
+echo "++++++++++++++++++ updating SVWS-Client ++++++++++++++++++++" | tee -a ~/svws-update.log
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee -a ~/svws-update.log
 cd /app/SVWS-Client
-git pull | tee ~/svws-update.log
-git checkout dev | tee ~/svws-update.log
-./gradlew clean build | tee ~/svws-update.log
+git pull | tee -a ~/svws-update.log
+git checkout dev | tee -a ~/svws-update.log
+./gradlew clean build | tee -a ~/svws-update.log
 #
 # die richtigen Rechte setzten: 
 chown -R svws:svws /app/
 #
 systemctl start svws 
-systemctl status svws | tee ~/svws-update.log
+systemctl status svws | tee -a ~/svws-update.log
