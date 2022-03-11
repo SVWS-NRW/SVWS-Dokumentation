@@ -196,7 +196,9 @@ git checkout dev
 # falls es zu problemen kommt: kann man noch einen zweiten Durchgang machen: 
 # ./gradlew svws-core-ts:assemble
 # erstelle eine svwsconfig.json für den HTTP-Server mit Standardeinstellungen
-echo '
+
+
+cat > $INST_PATH/SVWS-Server/svwsconfig.json <<-EOF
 {
   "EnableClientProtection" : null,
   "DisableDBRootAccess" : false,
@@ -218,7 +220,7 @@ echo '
     "SchemaKonfiguration" : []
   }
 }
-' > $INST_PATH/SVWS-Server/svwsconfig.json 
+EOF
 # 
 
 
