@@ -16,10 +16,10 @@ curl -X 'POST' \
   'https://svws/api/schema/root/migrate/mdb/testschule' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
-  -F 'database=@GymAbi.mdb' \
-  -F 'databasePassword=svwsadmin' \
-  -F 'schemaUsername=admin' \
-  -F 'schemaUserPassword='
+  -F 'database=~\SVWS-TestMDBs\GOST_Abitur\GymAbi.mdb' \
+  -F 'databasePassword=DasUeblicheSchildMDB-PW' \
+  -F 'schemaUsername=svwsadmin' \
+  -F 'schemaUserPassword=svwsadmin'
 
 
 # Einfügen über die SwaggerUI
