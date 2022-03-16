@@ -12,14 +12,15 @@ Mehrere Schemata für verschieden Schulformen finden Sie unter `https://git.svws
 
 # Testdatenbank per Curl befüllen
 
-curl -X 'POST' \
-  'https://svws/api/schema/root/migrate/mdb/testschule' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'database=~\SVWS-TestMDBs\GOST_Abitur\GymAbi.mdb' \
-  -F 'databasePassword=DasUeblicheSchildMDB-PW' \
-  -F 'schemaUsername=svwsadmin' \
-  -F 'schemaUserPassword=svwsadmin'
+curl
+	-k -u 'root: svwsadmin'
+	-X 'POST' 'https://svws/api/schema/root/migrate/mdb/testschule'  
+	-H 'accept: application/json' 
+	-H 'Content-Type: multipart/form-data'  
+	-F 'database=~\SVWS-TestMDBs\GOST_Abitur\GymAbi.mdb' 
+	-F 'databasePassword=DasUeblicheSchildMDB-PW' 
+	-F 'schemaUsername=svwsadmin' 
+	-F 'schemaUserPassword=svwsadmin'
 
 
 # Einfügen über die SwaggerUI
@@ -49,9 +50,16 @@ Es kann auch schon ein existierender Benutzer genommen werden.
 Falls ein schon existierender user genommen wird, muss das anschließend abgefragte Passwort natürlich passen.
 ++ ** SchemaUserPasswort **: Passwort der o.g. (neu angelegte) Maria-DB Users. 
 
+
+
 # Einloggen auf dem SVWS-Client
 
 Bei Aufruf von https://YourServerDomainName/ bzw dem Aktualisieren (F5) des Fensters sollte nun die neue "Testdatenbank" sichbar sein. 
 Das Einloggen ist auf dieser Oberfläche nur mit den schon vorher vorhandenen Schild2.0-Usern möglich. In der Testdatenbank haben wir hier Admin mit leerem Kennwort. 
+
+
+# Lupo Testdateien importieren
+
+Achtung: erst das Schloss öffnen - hier braucht man den localen SVWS-User (quasiSchild-User)
 
 
