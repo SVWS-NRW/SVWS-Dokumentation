@@ -3,20 +3,6 @@ module.exports = {
   description: 'Just playing around.',
   themeConfig: {
     sidebar: [
-
-      { text: 'Test-SVWS-Client', link: '/SVWS-Client/' },
-      { text: 'T-SVWS-Installer', link: '/SVWS-Installer/index' },
-      {	
-        text: 'T-SVWS-Server',
-        link: '/SVWS-Server/',
-        children: [ { text: 'svws-db', link: '/SVWS-Server/svws-db/' }, ]
-      },
-      {	
-        text: 'T-SVWS-Server-Installationen',
-        link: '/SVWS-Server-Installationen/#server-installationen',
-        children: [ { text: 'VPN-Server', link: '/SVWS-Server-Installationen/#vpn-server' }, ]
-      },
-
       {
         text: 'Entwicklungsumgebungen',
         children: [
