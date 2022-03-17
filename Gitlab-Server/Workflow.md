@@ -77,25 +77,60 @@ Am Ende eines Arbeitstages möchte man gerne die durch commit angelegten Version
 
 		git push
 
+### Rückführung in den Develop-Branch
+
+Nach mehreren Commits ist ggf. das Feature fertig bzw. auf dem Stand einer Beta-Version, die Einzug halten kann in den Develop-Branch. 
+Per Pull-Requests bittet man nun die Zuständigen, das Feature in den Develop-Branch zu mergen. 
+Je nach Berechtigung kann man es auch selbständig wie folgt in den lokalen Develop-Branch mergen und in das zentrale Repository pushen:
+
+Aktualisieren und Wechseln ins Develop-Branch
+
+		git pull origin develop
+		git checkout develop
+		
+Zusammenführen und zum Git_Server pushen: 
+
+		git merge my_feature
+		git push
+
+Falls die Entwicklung des Features abgeschlossen ist kann man ggf das lokale Branch löschen mit:
+
+		git branch -d some-feature
+
+
 ### Problembehandlung
 
 		git status 
 		
 Gibt den Stand des lokal vorgehaltenen Repositories bzgl. des ausgewählten Branches auf dem Git-Server an. 
 
-Falls mehrere Developer auf einem Branch arbeiten ist es wichtig zunächst mit einem Pull die letzten Änderungen vom Server zum lokalen Repository zu syncronisieren. 
+Falls mehrere Developer auf einem Branch arbeiten ist es wichtig zunächst mit einem Pull die letzten Änderungen vom Server 
+zum lokalen Repository zu syncronisieren. 
 
 		git pull 
 
+TODO: Frank fragen, wann er rebase einsetzt .... 
 
-### Rückführung in den Develop-Branch
+		git rebase
+		
 
 # Workflow Releases
 
+## Anlegen eine neuen Release-Branch
+
+		git checkout -b release-0.1 develop
+
+Im Grunde wird ein Release analog zum oben beschriebenen Vorgehen bei einzelnen Features von Develop-Branch abgetrennt. 
+Ziel ist dann jedoch nicht eine weiterführende Programmierung sondern ein intensieves Testen auf dem eingefrohrenen Zustand 
+und eine Vorbereitung der Softwareauslieferung. 
 
 ![Gitflow-Workflow-3](graphics/Gitflow-Workflow-3.png)
 
 Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizens](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)
+
+
+
+## Hotfixes im laufenden Release
 
 
 ![Gitflow-Workflow-4](graphics/Gitflow-Workflow-4.png)
