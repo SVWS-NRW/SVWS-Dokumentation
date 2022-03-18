@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "vitepress-example-minimal",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^0.20.1"
+  }
+}
