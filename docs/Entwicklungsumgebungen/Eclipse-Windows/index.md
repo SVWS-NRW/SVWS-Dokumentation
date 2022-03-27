@@ -55,7 +55,7 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 
 Hier benötigt man als "Passwort" in Eclipse den persönlichen Github Token.
 
-+ https://gitlab.svws-nrw.de/SVWS-Server (Mono-Repository mit Core, DB, Client und UI-Components und Apps)
++ https://git.svws-nrw.de/SVWS-Server (Mono-Repository mit Core, DB, Client und UI-Components und Apps)
 
 
 Anschließend git clone ausführen.
