@@ -31,12 +31,11 @@ sudo snap install dbeaver-ce
 In Eclipe eine GIT-Perspective öffnen und die Repositories in Eclipse oder im Terminal clonen.
 
 ### Git Repositories
-SVWS-Server und SVWS-Client Repositories clonen
+SVWS-Server Repository clonen
 
 ```bash
-git clone https://github.com/FPfotenhauer/SVWS-Server --branch dev #Mono-Repository mit Core, DB und Apps
-git clone https://github.com/FPfotenhauer/SVWS-Client --branch dev
-git clone https://github.com/FPfotenhauer/SVWS-UI-Framework --branch dev	
+git clone https://github.com/FPfotenhauer/SVWS-Server --branch dev #Mono-Repository mit Core, DB, Webclient, UI-Components und Apps
+
 ````
 
 Für den aktuellen Entwicklungs branch in den dev-Branch wechseln, wenn dev-Branch aktiv ist.
@@ -81,7 +80,7 @@ Beispiel einer svwsconfig.json, bitte die userdaten und Passwörter entspechend 
 "UseHTTPDefaultv11": false,
 "PortHTTPS": 443,
 "UseCORSHeader": true,
-"ClientPath": "/home/svwsdeveloper/git/SVWS-Client/build/output",
+"ClientPath": "/home/svwsdeveloper/git/SVWS-Server/svws-webclient/build/output",
 "LoggingEnabled": true,
 "LoggingPath": "logs",
 "TempPath": "/home/svwsdeveloper/temp",

@@ -23,9 +23,6 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 
 ![Umgebungsvariablen setzen](graphics/Umgebungsvariablen_setzen_2.png)
 
-# NodeJS installieren 
-
-+ Install node.js 17er Version -> https://nodejs.org
 
 # Eclipse installieren und konfigurieren
 
@@ -67,6 +64,44 @@ Anschließend git clone ausführen.
 
 Nun müssen nur noch in der "gradle perspektive" die im git Verzeichnis liegenden gradle Projekte importiert werden. 
 
+#### SVWS Einstellungen
+
+Die Beispiel-Config ins Zielverzeichnis kopieren und umbenennen.
+
+```
+ git/SVWS-Swerver/svws-server-app/src/main/resources/svwsconfig.json.example #Zielverzeichnis#/svwsconfig.json
+```
+		
+Beispiel einer svwsconfig.json, bitte die userdaten und Passwörter entspechend anpassen:
+		
+```json
+{
+"EnableClientProtection" : null,
+"DisableDBRootAccess": false,
+"DisableAutoUpdates" : false,
+"UseHTTPDefaultv11": false,
+"PortHTTPS": 443,
+"UseCORSHeader": true,
+"ClientPath": ".../git/SVWS-Server/svws-webclient/build/output",
+"LoggingEnabled": true,
+"LoggingPath": "logs",
+"TempPath": "/home/svwsdeveloper/temp",
+"TLSKeystorePath": ".",
+"TLSKeystorePassword": "svwskeystore",
+"DBKonfiguration": {
+	"dbms": "MARIA_DB",
+	"location": "localhost",
+	"SchemaKonfiguration": [
+		{
+		"name": "schildtest",
+		"svwslogin": false,
+		"username": "svwsadmin",
+		"password": "svwsadmin"
+		}
+		]
+	}
+}
+```
 
 # Optionale Software 
 
@@ -78,8 +113,6 @@ Nun müssen nur noch in der "gradle perspektive" die im git Verzeichnis liegende
 + Install VSCodeUserSetup-x64-latest.exe (optional)
 
 ## git per terminal auf Windows 
-
-
 
 + Ohne Administrationsrechte installierbar
 + hier die Anleitung auf heise.de -> https://www.heise.de/tipps-tricks/Git-auf-Windows-installieren-und-einrichten-5046134.html
