@@ -25,32 +25,19 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 
 # NodeJS installieren 
 
-+ Install node.js 16er Version -> https://nodejs.org/dist/v16.13.0/node-v16.13.0-x64.msi
++ Install node.js 17er Version -> https://nodejs.org
 
 # Eclipse installieren und konfigurieren
 
-+ Installieren eclipse-inst-win64.zip (2021-09) (Eclipse IDE for Java Developers)-> https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-09/R/eclipse-jee-2021-09-R-win32-x86_64.zip&mirror_id=17
++ Installieren eclipse-inst-win64.zip (aktuelle Version) (Eclipse IDE for Java Developers)-> https://www.eclipse.org/downloads/
 + Einmaliger Start Eclipse und festlegen des Workspace: `D:\\svws_Entwicklungsumgebung\workspace\`
 + Bei Bedarf den Speicher hochsetzen: per texteditor `D:\svws_Entwicklungsumgebung\workspace\eclipse.ini` entsprechend z.B. aus der 512 eine 2048 machen
 
 ![Speicher hochsetzen](graphics/eclipse.ini.png)
 
-+ Eclipse > Window > Preferences > Java > installed JREs -> Add 
-<br> Java 17 Verzeichnis eintragen:
-
-![](graphics/eclipse_java_17.png)
-
-+ Eclipse > Help > Marcet Place -> Java 17 suchen und "Eclipse Java Development Tools Latest Release" installieren
-
-![](graphics/eclipse_java_devtool.png)
-
 + Eclipse > Help > Marcet Place -> JSON editor suchen und "JSON Editor Plugin 1.1.2" installieren
 
 ![](graphics/eclipse_json.png)
-
-+ Eclipse > Window > Preferences > Java > Compiler -> 17 eintragen
-
-![](graphics/eclipse_java_compiler.png)
 
 + Eclipse > Window > Preferences > General > Editors > Text Editors > Spelling > UTF-8
 
@@ -71,9 +58,8 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 
 Hier benötigt man als "Passwort" in Eclipse den persönlichen Github Token.
 
-+ https://github.com/FPfotenhauer/SVWS-Server (Mono-Repository mit Core, DB und Apps)
-+ https://github.com/FPfotenhauer/SVWS-Client
-+ https://github.com/SVWS-NRW/SVWS-UI-Framework
++ https://gitlab.svws-nrw.de/SVWS-Server (Mono-Repository mit Core, DB, Client und UI-Components und Apps)
+
 
 Anschließend git clone ausführen.
 
@@ -82,7 +68,7 @@ Anschließend git clone ausführen.
 Nun müssen nur noch in der "gradle perspektive" die im git Verzeichnis liegenden gradle Projekte importiert werden. 
 
 
-# optionale Software 
+# Optionale Software 
 
 
 ## DBeaver
