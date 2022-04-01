@@ -1,7 +1,7 @@
 ***SVWS - Dokumentation***
 ====================
 
-![Open-api-logo-klein.png](graphics/Open-api-logo-klein.png)
+![Open-api-logo-klein.png](docs/graphics/Open-api-logo-klein.png)
 
 Das Projekt zur Schaffung einer Open:API-Schnittstelle für die Schulverwaltung NRW.
 
@@ -19,7 +19,7 @@ Sobald aber alle Services der REST-Schnittstelle zur Verfügung stehen, kann Sch
 
 
 
-![Übersicht-REST](graphics/700px-Übersicht-REST-Server-01.png)
+![Übersicht-REST](docs/graphics/700px-Übersicht-REST-Server-01.png)
 
 
 
@@ -27,7 +27,7 @@ In der Übersicht soll einen erster Eindruck vom zukünftigen Aufbau vermitteln.
 Im Vordergrund steht die Kapselung von Datenbank, Core-API und GUI.
 
 
-[Projektanforderungen](Projektanforderungen.md)
+[Projektanforderungen](docs/Projektanforderungen.md)
 
 
 ----

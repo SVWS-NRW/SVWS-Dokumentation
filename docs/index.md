@@ -29,5 +29,7 @@ Im Vordergrund steht die Kapselung von Datenbank, Core-API und GUI.
 
 [Projektanforderungen](Projektanforderungen.md)
 
+[FAQ](FAQ.md)
+
 
 ----

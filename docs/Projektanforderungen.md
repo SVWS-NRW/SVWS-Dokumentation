@@ -9,7 +9,7 @@ In der Zwischenzeit dient Schild-NRW3.0 weiterhin als Schulverwaltungsprogramm.
 
 ### Schülerdatenverwaltung ##
 
-Hier werden alle Individualdaten der Schüler verwaltet. Ziel ist es hier, die modernen Platzverhältnisse von heutigen Bildschirmen in der Browserdarstellung zu unterstützen und auszunutzen.
+Im SVWS-Server werden alle Individualdaten der Schüler verwaltet. Ziel ist es hier, die modernen Platzverhältnisse von heutigen Bildschirmen in der Browserdarstellung zu unterstützen und auszunutzen.
 Es sollen Bereiche zusammengefasst und besser strukturiert werden.
 Die Darstellung soll sich an die Bedürfnisse des Users anpassen und soll daher individuell skalierbar sein.
 Eingabefehler sollen direkt bei der Eingabe geprüft werden. (Fehler in Emailadresse, Statistikfehler)
@@ -17,7 +17,7 @@ Grundsätzlich müssen aber alle Eingabemasken nachgebildet werden.
 
 ### Lehrerdatenverwaltung ##
 
-Die Lehrer-Individualdaten-Verwaltung soll der der Schüler angeglichen werden und dem gleichen Konzept mit dem Container und den Gruppenprozessen folgen.
+Die Lehrer-Individualdaten-Verwaltung soll analog zur Schülerdatenverwaltung aufgebaut werden und dem gleichen Konzept mit dem Container und den Gruppenprozessen folgen.
 Lehrerdaten sollen so aufgeteilt werden, dass Berechtigungen nach Schulleitung und Abteilungsleitung und Sekretariat sinnvoll aufgeteilt werden können und Datenschutzregelungen eingehalten werden können.
 
 Die Verwaltung der Unterrichtsdaten soll bei den Lehrkräften mehr Gewicht bekommen, so dass eine Übersicht über den Unterricht eines Lehrers jederzeit visualisiert werden kann und hier auch Eintragungen gemacht werden können, die sich dann auf die Schülerdaten auswirken.
@@ -28,7 +28,9 @@ Das Prinzip der Gruppenprozesse, das es ermöglicht, Arbeiten für große Schül
 
 ### Auswahl und Filterung ##
 
-Die Filterung von Schülerdatensätzen auf bestimmte Merkmale soll erhalten bleiben und optimiert werden. Dabei soll der Filter I als Hauptwerkzeug in seiner Benutzerführung ggf. so gestaltet werden, dass andere Filter (z.B. Filter auf leere Einträge) überflüssig werden. Vereinfachung der Programm-Bedienung.
+Die Filterung von Schülerdatensätzen auf bestimmte Merkmale soll erhalten bleiben und optimiert werden. 
+Dabei soll der Filter I als Hauptwerkzeug in seiner Benutzerführung ggf. so gestaltet werden, dass andere Filter (z.B. Filter auf leere Einträge) überflüssig werden. 
+Diese Umstrukturierung soll im Sinne der Vereinfachung der Programm-Bedienung erfolgen.
 
 ### Statistikbereitstellung ##
 
@@ -38,7 +40,8 @@ Eine Plausibilitätsprüfung soll von IT.NRW auf diese Tabellen durchgeführt we
 
 Wünschenswert wäre es, wenn das Datenbanksystem dazu genutzt werden könnte, dass Statistiktabellen im laufenden Betrieb aktuell gehalten werden und eine Prüfung der Daten zu jeder Zeit angestoßen werden können.
 
-Das aktuelle Schnittstellenformat von ASDPC32 muss dabei unterstützt werden.
+Das aktuelle Schnittstellenformat von ASDPC32 wird weiterhin über die Schild 3.0 Oberfläche unterstützt werden. 
+Der zukünftige Austausch der ASD-Daten soll direkt aus dem SVWS-Server per Webservice zu den vom Land NRW bereitgestellten Schnittstellen erfolgen.
 
 ### Reporting ##
 
@@ -49,7 +52,7 @@ Dieser Punkt befindet sich noch sehr stark in der Konzeptphase.
 
 #### Zeugnisdruck ###
 
-In Anlehnung an den Punkt Reporting muss geklärt werden, wie der Zeugnisdruck standardisiert werden kann.
+In Anlehnung an den Punkt Reporting muss geklärt werden, wie der Zeugnisdruck standardisiert werden kann. Es ist jedoch weiterhin über Schild 3.0 Oberfläche möglich über das Reporting Tool die Zeugnisse zu drucken. 
 
 ### Datenaustausch ##
 
@@ -127,7 +130,7 @@ Auf der Clientseite muss eine Webapplikation dafür sorgen, dass unabhängig von
 
 Durch die Entwicklungszeit, die durchaus mehrere Jahre in Anspruch nehmen kann, ist es zwingend notwendig, dass der SVWS-Server unter einer OpenSource-Lizenz entwickelt wird.
 
-Die aktuellen Gesellschaftlichen Entwicklungen zeigen, dass es in den kommenden Jahren eine Entwicklung geben kann, die es vorschreibt, dass Softwareprojekt, die mit öffentlichen Geldern finanziert werden auch unter quelloffenen Lizenzen verbreitet werden müssen.
+Die aktuellen gesellschaftlichen Entwicklungen zeigen, dass es in den kommenden Jahren eine Entwicklung geben kann, die es vorschreibt, dass Softwareprojekt, die mit öffentlichen Geldern finanziert werden auch unter quelloffenen Lizenzen verbreitet werden müssen.
 
 Damit der SVWS-Server solche Rahmenbedingungen direkt erfüllt, sollte von dieser Strategie nicht abgewichen werden.
 
