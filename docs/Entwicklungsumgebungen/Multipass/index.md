@@ -1,10 +1,10 @@
 __Achtung, hier sind noch die Angaben für GitHub. Bitte für Gitlab anpassen.__
 
-[multipass.run](Multipass) ist ein sehr einfaches Tool zur Erstellung von virtuellen Testumgebungen. Es wird die jeweilige vom Betriebssystem zur Verfügung gestellte Virtualisierungsumgebung genutzt. Für eine SVWS-Testumgebung ideal.
+[Multipass](https://multipass.run) ist ein sehr einfaches Tool zur Erstellung von virtuellen Testumgebungen. Es wird die jeweilige vom Betriebssystem zur Verfügung gestellte Virtualisierungsumgebung genutzt. Für eine SVWS-Testumgebung ideal.
 
 Je nach Betriebssystem muss multipass zumindest installiert werden, der Rest wird virtualisiert:
 
-z.B. unter macOS (momentan nur für Intel CPU) kann man mit Hilfe von [brew.sh](Homebrew) so vorgehen:
+z.B. unter macOS (momentan nur für Intel CPU) kann man mit Hilfe von [Homebrew](https://brew.sh) so vorgehen:
 
 ```bash
 brew install multipass
