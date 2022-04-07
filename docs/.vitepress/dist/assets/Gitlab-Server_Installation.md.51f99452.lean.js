@@ -1,1 +1,0 @@
-import{_ as e,y as t,x as a,W as r}from"./plugin-vue_export-helper.68280688.js";const b='{"title":"Vobereitung","description":"","frontmatter":{},"relativePath":"Gitlab-Server/Installation.md","lastUpdated":1649311654592}',n={},s=r("",11),i=[s];function o(l,d,p,c,u,h){return a(),t("div",null,i)}var _=e(n,[["render",o]]);export{b as __pageData,_ as default};

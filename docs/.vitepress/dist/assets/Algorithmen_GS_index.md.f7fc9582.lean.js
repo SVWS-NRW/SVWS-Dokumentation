@@ -1,1 +1,0 @@
-import{_ as t,y as e,x as a}from"./plugin-vue_export-helper.68280688.js";const l='{"title":"","description":"","frontmatter":{},"relativePath":"Algorithmen/GS/index.md","lastUpdated":1649311654558}',r={};function n(o,s,c,i,d,p){return a(),e("div")}var f=t(r,[["render",n]]);export{l as __pageData,f as default};

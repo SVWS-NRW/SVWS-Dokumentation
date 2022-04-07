@@ -1,1 +1,0 @@
-import{_ as e,y as n,x as t,W as i}from"./plugin-vue_export-helper.68280688.js";const _='{"title":"","description":"","frontmatter":{},"relativePath":"SVWS-Client/Favicon.md","lastUpdated":1649311654599}',o={},r=i("",7),s=[r];function a(d,l,c,p,m,u){return t(),n("div",null,s)}var f=e(o,[["render",a]]);export{_ as __pageData,f as default};

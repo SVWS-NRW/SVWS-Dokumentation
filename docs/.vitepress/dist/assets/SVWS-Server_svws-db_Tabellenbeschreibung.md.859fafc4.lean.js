@@ -1,1 +1,0 @@
-import{_ as t,y as d,x as r,W as e}from"./plugin-vue_export-helper.68280688.js";const D='{"title":"benutzergruppen","description":"","frontmatter":{},"relativePath":"SVWS-Server/svws-db/Tabellenbeschreibung.md","lastUpdated":1649311654682}',a={},h=e("",457),L=[h];function n(U,i,c,N,T,l){return r(),d("div",null,L)}var A=t(a,[["render",n]]);export{D as __pageData,A as default};

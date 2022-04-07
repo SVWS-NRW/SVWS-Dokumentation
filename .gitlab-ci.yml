@@ -6,7 +6,7 @@ pages:
   script:
     - npm install
     - npm run build
-    - cp -a dist/. public/
+    - cp -a .vitepress/dist/. public/
   artifacts:
     paths:
       - public
