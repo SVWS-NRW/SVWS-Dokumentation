@@ -1,0 +1,1 @@
+import{_ as n,y as s,x as e,W as t}from"./plugin-vue_export-helper.68280688.js";const q='{"title":"macOS","description":"","frontmatter":{},"relativePath":"Entwicklungsumgebungen/macOS/index.md","lastUpdated":1649311654589}',a={},o=t("",5),c=[o];function p(i,l,u,r,m,d){return e(),s("div",null,c)}var f=n(a,[["render",p]]);export{q as __pageData,f as default};

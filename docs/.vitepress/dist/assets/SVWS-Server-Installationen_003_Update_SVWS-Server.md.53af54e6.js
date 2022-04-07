@@ -1,0 +1,26 @@
+import{_ as s,y as r,x as a,W as t,D as e}from"./plugin-vue_export-helper.68280688.js";const w='{"title":"Update des Grundsystems","description":"","frontmatter":{},"headers":[{"level":2,"title":"Aktualisieren des SVWS-Servers","slug":"aktualisieren-des-svws-servers"},{"level":3,"title":"optional: Branch ausw\xE4hlen","slug":"optional-branch-auswahlen"},{"level":3,"title":"Quellcode abholen und das UI-Framework bauen:","slug":"quellcode-abholen-und-das-ui-framework-bauen"},{"level":2,"title":"Aktualisieren des UI-Frameworks","slug":"aktualisieren-des-ui-frameworks"},{"level":2,"title":"Aktualisierung des SVWS-Clients","slug":"aktualisierung-des-svws-clients"},{"level":2,"title":"Fehlerbehebung","slug":"fehlerbehebung"},{"level":2,"title":"Start des SVWS-Server","slug":"start-des-svws-server"}],"relativePath":"SVWS-Server-Installationen/003_Update_SVWS-Server.md","lastUpdated":1649311654649}',n={},d=t(`<h1 id="update-des-svws-servers" tabindex="-1"><em><strong>Update des SVWS-Servers</strong></em> <a class="header-anchor" href="#update-des-svws-servers" aria-hidden="true">#</a></h1><h1 id="update-des-grundsystems" tabindex="-1">Update des Grundsystems <a class="header-anchor" href="#update-des-grundsystems" aria-hidden="true">#</a></h1><pre><code>	apt update
+	apt upgrade -y
+</code></pre><h1 id="update-per-script" tabindex="-1">Update per Script <a class="header-anchor" href="#update-per-script" aria-hidden="true">#</a></h1><p>Mit Hilfe diese Scripts kann ein Update zum Beispiel auf die neueste Version des DEV-Branch des SVWS-Servers durchgef\xFChrt werden.</p><p>Voraussetzung ist dabei die <a href="./002_Installation_SVWS-Server.html">Installation direkt aus den Git-Quellen</a>.</p><pre><code>Download [update-svws-from-scratch.sh](scripts/update-svws-from-scratch.sh)
+ausf\xFChrbar machen: chmod -x install-svws-from-scratch.sh
+Script starten: ./update-svws-from-scratch
+</code></pre><p>Alle R\xFCckmeldungen werden im logfile unter <code>~/svws-update.log</code> gesammelt.</p><h1 id="update-from-scratch" tabindex="-1">Update from Scratch <a class="header-anchor" href="#update-from-scratch" aria-hidden="true">#</a></h1><p>Alle Schritte, die in dem vorangegangenem Kapitel in einem Script zusammengefasst ausgef\xFChrt werden, werden hier einzeln aufgef\xFChrt und beschrieben.</p><p>Einloggen auf dem Testserver</p><pre><code>	sytemctl stop svws
+	sytemctl status svws
+</code></pre><p>ggf. den svws-Benutzer wechseln:</p><pre><code>	su svws
+</code></pre><h2 id="aktualisieren-des-svws-servers" tabindex="-1">Aktualisieren des SVWS-Servers <a class="header-anchor" href="#aktualisieren-des-svws-servers" aria-hidden="true">#</a></h2><p>Wechsel ins Installationsverzeichnis des SVWS-Servers:</p><pre><code>	cd /app/SVWS-Server
+</code></pre><h3 id="optional-branch-auswahlen" tabindex="-1">optional: Branch ausw\xE4hlen <a class="header-anchor" href="#optional-branch-auswahlen" aria-hidden="true">#</a></h3><p>Kontolle, ob das richtige Branch eingestellt ist.</p><pre><code>	git branch
+</code></pre><p>Falls dies nicht schon bei der Installation geschehen ist, m\xFCsste hier ggf. noch den gew\xFCnschten Branch eingestellt werden.</p><pre><code>	git checkout dev
+</code></pre><h3 id="quellcode-abholen-und-das-ui-framework-bauen" tabindex="-1">Quellcode abholen und das UI-Framework bauen: <a class="header-anchor" href="#quellcode-abholen-und-das-ui-framework-bauen" aria-hidden="true">#</a></h3><pre><code>	git pull 
+	./gradlew clean build
+</code></pre><h2 id="aktualisieren-des-ui-frameworks" tabindex="-1">Aktualisieren des UI-Frameworks <a class="header-anchor" href="#aktualisieren-des-ui-frameworks" aria-hidden="true">#</a></h2><p>Analog zum oben beschriebenen Update des SVWS-Servers kann das UI-Framework aktualisiert werden.</p><pre><code>	cd /app/SVWS-UI-Framework
+	git pull
+	./gradlew clean build
+</code></pre><h2 id="aktualisierung-des-svws-clients" tabindex="-1">Aktualisierung des SVWS-Clients <a class="header-anchor" href="#aktualisierung-des-svws-clients" aria-hidden="true">#</a></h2><p>Nachdem der SVWS-Server und das SVWS-UI-FRamework aktualisiert sind kann der SVWS-Client akualisiert werden.</p><pre><code>	/app/SVWS-Client
+	git pull
+	./gradlew clean build
+</code></pre><h2 id="fehlerbehebung" tabindex="-1">Fehlerbehebung <a class="header-anchor" href="#fehlerbehebung" aria-hidden="true">#</a></h2><p>Sollten \xC4nderungen im Repo durch den Build-Prozess existieren:</p><pre><code>	git reset --hard
+	
+	cd app/git/SVWS-Server/svws-server-app
+	vi svwsconfig.json &gt; Schema svwsdb l\xF6schen
+</code></pre><h2 id="start-des-svws-server" tabindex="-1">Start des SVWS-Server <a class="header-anchor" href="#start-des-svws-server" aria-hidden="true">#</a></h2><p>ggf mit <code>exit</code> wieder zum user root wechseln und den Service starten</p><pre><code>	systemctl start svws
+	systemctl status svws
+</code></pre><p><a href="http://svws-nrw.de/debug" target="_blank" rel="noopener noreferrer">http://svws-nrw.de/debug</a></p>`,37),i=e("p",{schema:""},"SchemaRoot > /api/schema/root/migrate/mdb/",-1),l=e("p",null,"GymAbi.mdb in svwsdb mit svwsadmin und Passwort migrieren.",-1),h=[d,i,l];function c(o,u,p,S,v,g){return a(),r("div",null,h)}var b=s(n,[["render",c]]);export{w as __pageData,b as default};

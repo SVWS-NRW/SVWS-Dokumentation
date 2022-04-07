@@ -1,0 +1,1 @@
+import{_ as e,y as n,x as t,W as s}from"./plugin-vue_export-helper.68280688.js";const m='{"title":"siehe unten init.sh","description":"","frontmatter":{},"relativePath":"Entwicklungsumgebungen/Multipass/index.md","lastUpdated":1649311654587}',r={},i=s("",19),a=[i];function d(o,l,p,u,c,h){return t(),n("div",null,a)}var b=e(r,[["render",d]]);export{m as __pageData,b as default};

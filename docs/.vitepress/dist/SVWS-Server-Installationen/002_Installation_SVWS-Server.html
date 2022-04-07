@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Installation per Script | SVWS Dokumentation</title>
+    <meta name="description" content="Just playing around.">
+    <link rel="stylesheet" href="/assets/style.2759ba08.css">
+    <link rel="modulepreload" href="/assets/plugin-vue_export-helper.68280688.js">
+    <link rel="modulepreload" href="/assets/Home.95c605b2.js">
+    <link rel="modulepreload" href="/assets/SVWS-Server-Installationen_002_Installation_SVWS-Server.md.ec73b568.lean.js">
+    <link rel="modulepreload" href="/assets/app.7749d780.js">
+    
+    <meta name="twitter:title" content="Installation per Script | SVWS Dokumentation">
+  <meta property="og:title" content="Installation per Script | SVWS Dokumentation">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-675d8756><div class="sidebar-button" data-v-675d8756><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="SVWS Dokumentation, back to home" data-v-675d8756 data-v-4a583abe><!----> SVWS Dokumentation</a><div class="flex-grow" data-v-675d8756></div><div class="nav" data-v-675d8756><!----></div><!--[--><!--]--></header><aside class="sidebar" data-v-83e92a68><!----><!--[--><!--]--><ul class="sidebar-links" data-v-83e92a68><!--[--><li class="sidebar-link"><p class="sidebar-link-item">Entwicklungsumgebungen</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/Entwicklungsumgebungen/Eclipse-Ubuntu/">Eclipse-Ubuntu</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/Entwicklungsumgebungen/Eclipse-Windows/">Eclipse-Windows</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/Entwicklungsumgebungen/Eclipse-Windows_im_MSB/">Eclipse-Windows_im_MSB</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/Entwicklungsumgebungen/Multipass/">Multipass</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/Entwicklungsumgebungen/VS-Code/">VS-Code</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/Entwicklungsumgebungen/macOS/">macOS</a><!----></li></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="/Gitlab-Server/">Gitlab-Server</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/Lizenz-Informationen/">Lizenz-Informationen</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/Reporting/">Reporting</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/SVWS-Client/">SVWS-Client</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/SVWS-Installer/">SVWS-Installer</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/SVWS-Server/">SVWS-Server</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/SVWS-Server/svws-db/">svws-db</a><!----></li></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="/SVWS-Server-Installationen/">SVWS-Server-Installationen</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/SVWS-UI-Framework/">SVWS-UI-Framework</a><!----></li><!--]--></ul><!--[--><!--]--></aside><div class="sidebar-mask"></div><main class="page" data-v-7eddb2c4><div class="container" data-v-7eddb2c4><!--[--><!--]--><div style="position:relative;" class="content" data-v-7eddb2c4><div><h1 id="installation-des-svws-servers" tabindex="-1"><em><strong>Installation des SVWS-Servers</strong></em> <a class="header-anchor" href="#installation-des-svws-servers" aria-hidden="true">#</a></h1><h1 id="installation-per-script" tabindex="-1">Installation per Script <a class="header-anchor" href="#installation-per-script" aria-hidden="true">#</a></h1><p>Dieses Installations-Script ist wurde entwickelt für die vollständige Installation des SVWS-Servers auf Debian 11. Es wurde getestet in einem <a href="./IT-Umgebung/Einrichtung_Proxmox-Container.html">Proxmox-Container</a>. Es beinhaltet quasi alle Schritte, die unter dem nachfolgenden Kapitel <em>Installation from Scratch</em> aufgeführt sind, vereint in einem Script. Aktuell werden noch Token-Zugänge zum Github SVWS-Server und SVWS-Client Repository benötigt und im Script abgefragt. Dieser Schritt* entfällt bei Veröffnetlichung der SVWS-Servers auf Git Hub unter OpenSource-Lizens</p><ul><li>Download <a href="./scripts/install-svws-from-scratch.html">install-svws-from-scratch.sh</a></li><li>ausführbar machen: <code>chmod -x install-svws-from-scratch.sh</code></li><li>Script starten: <code>./install-svws-from-scratch</code></li></ul><ul><li>geben Sie Ihren Github-Usernamen und das Token an*</li><li>geben Sie das MBD Passwort für Schild an</li></ul><p>Die Angabe des Schild Passwortes ist nur nötig, wenn auch eine Schild2-Datenbank importiert werden soll. Dies kann auch im Anschluss an die Installation noch erfolgen. Das Script läuft ohne Unterbrechung durch und legt eine nur für den Systemadmin lesbare Datei <code>SVWS-Zugangsdaten.txt</code> in das root-Hauptverzeichnis.</p><p>Nach etwa 10-15 min ist der SVWS-Server inklusive aller benötigten Bestandteile aus dem Quellcode heraus compiliert und mit beendigung des Scripts gestartet. Der user svws wird eingerichtet und unter /app befinden sich nun die Dateien zum Betrieb des Servers. Er läuft als Service im Debian System, wird beim Start des Systems automatisch gestartet oder kann mit den folgenden Befehlen gestartet bzw. gestopt werden:</p><div class="language-bash"><pre><code>			systemctl start svws
+			systemctl restart svws
+			
+			systemctl stop svws
+</code></pre></div><p>Der SVWS-Client für die Bedienung des SVWS-Servers kann unter https://<em>IP-oder-FQDN-des-Servers</em>/ aufgerufen werden:</p><h1 id="installation-from-scratch" tabindex="-1">Installation from Scratch <a class="header-anchor" href="#installation-from-scratch" aria-hidden="true">#</a></h1><p>Alle Schritte, die in dem vorangegangenem Kapitel in einem Script zusammengefasst ausgeführt werden, werden hier einzeln aufgeführt und beschrieben.</p><h2 id="vorbereitungen-und-erste-schritte" tabindex="-1">Vorbereitungen und erste Schritte <a class="header-anchor" href="#vorbereitungen-und-erste-schritte" aria-hidden="true">#</a></h2><p>Der SVWS-Server benötigt <a href="https://www.debian.org/CD/http-ftp/" target="_blank" rel="noopener noreferrer">Debian 11</a> als grundlegendes Betriebssystem. Je nach Hardware kann das typische <a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.2.0-amd64-netinst.iso" target="_blank" rel="noopener noreferrer">AMD64 Netzwerk Image</a> von Debian benutzt werden.</p><p>Nach Installation wird das Betriebssystem auf den neuesten Stand gebracht, also als root die folgenden Befehle ausführen:</p><div class="language-bash"><pre><code>		<span class="token function">apt</span> update -y
+		<span class="token function">apt</span> dist-upgrade -y
+</code></pre></div><p>Anschließend die nötige bzw. hilfreiche Software installieren:</p><div class="language-bash"><pre><code>		<span class="token function">apt</span> <span class="token function">install</span> <span class="token function">ssh</span> nmap <span class="token function">curl</span> <span class="token function">git</span> <span class="token function">zip</span> net-tools dnsutils software-properties-common dirmngr -y
+</code></pre></div><p>Dann den user anlegen, z. B. <code>svws</code>, unter dem der Dienst betrieben wird:</p><div class="language-bash"><pre><code>		<span class="token function">useradd</span>	-m -G <span class="token function">users</span> -s /bin/bash svws
+</code></pre></div><h2 id="mariadb-installieren-und-einrichten" tabindex="-1">MariaDB installieren und einrichten <a class="header-anchor" href="#mariadb-installieren-und-einrichten" aria-hidden="true">#</a></h2><p>Es wird MariaDB mindestens 10.6 benötigt. Unter debain 11 bisher nur über die ofiziellen Sources von <a href="http://mariadb.org" target="_blank" rel="noopener noreferrer">mariadb.org</a> installierbar:</p><div class="language-bash"><pre><code>		<span class="token function">wget</span> https://mariadb.org/mariadb_release_signing_key.asc
+		<span class="token function">chmod</span> -c <span class="token number">644</span> mariadb_release_signing_key.asc
+		<span class="token function">mv</span> -vi mariadb_release_signing_key.asc /etc/apt/trusted.gpg.d/
+		<span class="token builtin class-name">echo</span> <span class="token string">&quot;deb [arch=amd64,arm64,ppc64el] https://ftp.ubuntu-tw.org/mirror/mariadb/repo/10.6/debian bullseye main&quot;</span> <span class="token operator">|</span> <span class="token function">tee</span> /etc/apt/sources.list.d/mariadb.list
+
+		<span class="token function">apt</span> update
+		<span class="token function">apt</span> <span class="token function">install</span> mariadb-server -y 
+</code></pre></div><p>Die Datei <code>mysql_secure_installation.sql</code> anlegen, um das MariaDB-Passwort zu setzen und weitere sicherheitsrelevante Einstellung zu tätigen:</p><div class="language-bash"><pre><code>		<span class="token builtin class-name">echo</span> <span class="token string">&quot;
+		ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;!geben_Sie_hier_Ihre_Daten_an!&#39;;
+		DELETE FROM mysql.user WHERE User=&#39;&#39;;
+		DROP DATABASE IF EXISTS test;
+		DELETE FROM mysql.db WHERE Db=&#39;test&#39; OR Db=&#39;test<span class="token entity" title="\\">\\</span>_%&#39;;
+		FLUSH PRIVILEGES;
+		&quot;</span> <span class="token operator">&gt;</span> mysql_secure_installation.sql
+</code></pre></div><p>Den o.g. mysql Befehl ausführen:</p><div class="language-bash"><pre><code>		mysql <span class="token operator">&lt;</span> mysql_secure_installation.sql
+</code></pre></div><h2 id="java-installieren" tabindex="-1">Java installieren <a class="header-anchor" href="#java-installieren" aria-hidden="true">#</a></h2><p>Java mind. 17 unter debain 11 installieren:</p><div class="language-bash"><pre><code>		<span class="token function">apt</span> <span class="token function">install</span> openjdk-17-jdk-headless -y
+</code></pre></div><p>Den Pfad setzen, aktualisieren und dauehaft verfügbar machen, unter dem Java zu finden ist:</p><div class="language-bash"><pre><code>		<span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span>/usr/lib/jvm/java-17-openjdk-amd64/bin:<span class="token environment constant">$PATH</span>
+		<span class="token builtin class-name">export</span> <span class="token environment constant">PATH</span>
+		<span class="token builtin class-name">echo</span> <span class="token string">&quot;JAVA_HOME:/usr/lib/jvm/java-17-openjdk-amd64&quot;</span> <span class="token operator">&gt;&gt;</span> /etc/environment
+</code></pre></div><h2 id="nodejs-installieren" tabindex="-1">NodeJs installieren <a class="header-anchor" href="#nodejs-installieren" aria-hidden="true">#</a></h2><p>node.js mind. Version 16 herunterladen und installieren:</p><div class="language-bash"><pre><code>		<span class="token function">curl</span> -fsSL https://deb.nodesource.com/setup_16.x <span class="token operator">|</span> <span class="token function">bash</span> -
+		<span class="token function">apt</span> <span class="token function">install</span> nodejs -y
+		<span class="token builtin class-name">echo</span> <span class="token string">&quot;prefix=~/.npm&quot;</span> <span class="token operator">&gt;</span> ~/.npmrc
+</code></pre></div><h2 id="svws-server-sources-herunterladen-und-bauen" tabindex="-1">SVWS-Server Sources herunterladen und bauen <a class="header-anchor" href="#svws-server-sources-herunterladen-und-bauen" aria-hidden="true">#</a></h2><p>Das Verzeichnis erstellen, unter der die Software zu finden ist:</p><div class="language-bash"><pre><code>		<span class="token function">mkdir</span> /app
+		<span class="token builtin class-name">cd</span> /app
+</code></pre></div><p>Git Quellen einrichten und Repositories clonen:</p><div class="language-bash"><pre><code>		<span class="token builtin class-name">export</span> <span class="token assign-left variable">GITHUB_ACTOR</span><span class="token operator">=</span>Geben_Sie_hier_ihre_Daten_an 
+		<span class="token builtin class-name">export</span> <span class="token assign-left variable">GITHUB_TOKEN</span><span class="token operator">=</span>Geben_Sie_hier_ihre_Daten_an 
+		<span class="token builtin class-name">export</span> <span class="token assign-left variable">SCHILD_PW</span><span class="token operator">=</span>Geben_Sie_hier_ihre_Daten_an 
+		<span class="token function">git</span> clone https://<span class="token variable">${GITHUB_TOKEN}</span>:x-oauth-basic@github.com//SVWS-NRW/SVWS-UI-Framework.git
+		<span class="token function">git</span> clone https://<span class="token variable">${GITHUB_TOKEN}</span>:x-oauth-basic@github.com/FPfotenhauer/SVWS-Server.git
+		<span class="token function">git</span> clone https://<span class="token variable">${GITHUB_TOKEN}</span>:x-oauth-basic@github.com/FPfotenhauer/SVWS-Client.git
+</code></pre></div><p>Für die weitere Installation wird noch ein gradle.properties File angelegt</p><div class="language-bash"><pre><code>		<span class="token function">cat</span> <span class="token operator">&gt;</span> ~/.gradle/gradle.properties  <span class="token operator">&lt;&lt;-</span>EOF
+		<span class="token assign-left variable">github_actor</span><span class="token operator">=</span><span class="token variable">$GITHUB_ACTOR</span>
+		<span class="token assign-left variable">github_token</span><span class="token operator">=</span><span class="token variable">$GITHUB_TOKEN</span>
+		<span class="token assign-left variable">schild2_access_password</span><span class="token operator">=</span><span class="token variable">$SCHILD_PW</span>
+		EOF
+</code></pre></div><p>Um den Developer branch zu wählen muss jeweils noch <code>git checkout dev</code> vor dem Build Prozess erfolgen. Hier kann natürlich auch (bald) ausprobiert werden und ein anderer Branch gewählt werden. Nun wird nacheinander das UI-Framework, der Server und der Client gebaut. Bitte diese Reihenfolge einhalten:</p><div class="language-bash"><pre><code>		<span class="token builtin class-name">cd</span> /app/SVWS-UI-Framework
+		<span class="token function">git</span> checkout dev
+		./gradlew build
+
+		<span class="token builtin class-name">cd</span> /app/SVWS-Server
+		<span class="token function">git</span> checkout dev
+		./gradlew build
+		
+		<span class="token builtin class-name">cd</span> /app/SVWS-Client
+		<span class="token function">git</span> checkout dev
+		./gradlew build
+</code></pre></div><h2 id="starten-des-svws-servers" tabindex="-1">Starten des SVWS-Servers <a class="header-anchor" href="#starten-des-svws-servers" aria-hidden="true">#</a></h2><p>Es muss vor dem Starten des SVWS-Servers nun die Konfiguration des SVWS-Servers in der Datei <code>svwsconfig.json</code> gespeichert werden:</p><div class="language-bash"><pre><code>		<span class="token builtin class-name">echo</span> <span class="token string">&#39;
+		{
+		&quot;EnableClientProtection&quot; : null,
+		&quot;DisableDBRootAccess&quot; : false,
+		&quot;DisableAutoUpdates&quot; : null,
+		&quot;UseHTTPDefaultv11&quot; : false,
+		&quot;PortHTTPS&quot; : 443,
+		&quot;UseCORSHeader&quot; : true,
+		&quot;TempPath&quot; : &quot;tmp&quot;,
+		&quot;TLSKeyAlias&quot; : null,
+		&quot;TLSKeystorePath&quot; : &quot;svws-server-app&quot;,
+		&quot;TLSKeystorePassword&quot; : &quot;svwskeystore&quot;,
+		&quot;ClientPath&quot; : &quot;../SVWS-Client/build/output&quot;,
+		&quot;LoggingEnabled&quot; : true,
+		&quot;LoggingPath&quot; : &quot;logs&quot;,
+		&quot;DBKonfiguration&quot; : {
+			&quot;dbms&quot; : &quot;MARIA_DB&quot;,
+			&quot;location&quot; : &quot;127.0.0.1&quot;,
+			&quot;defaultschema&quot; : null,
+			&quot;SchemaKonfiguration&quot; : []
+			}
+		}
+		&#39;</span> <span class="token operator">&gt;</span> /app/SVWS-Server/svwsconfig.json 
+</code></pre></div><p>Es müssen weiterhin die richtigen Rechte gesetzt werden, um den SVWS-Server nicht mit root-Rechten starten zu wollen:</p><div class="language-bash"><pre><code>		<span class="token function">chown</span> -R svws:svws /app/
+</code></pre></div><p>manueller Start des SVWS-Server:</p><div class="language-bash"><pre><code>		<span class="token builtin class-name">cd</span> /app/SVWS-Server/
+		./start_server.sh <span class="token operator">&amp;</span>
+</code></pre></div><h2 id="einrichten-des-servers-als-dienst" tabindex="-1">Einrichten des Servers als Dienst <a class="header-anchor" href="#einrichten-des-servers-als-dienst" aria-hidden="true">#</a></h2><p>Erstelle eine Datei zur Beschreibung und Bedienung des Dienstes per systemd:</p><div class="language-bash"><pre><code>		<span class="token builtin class-name">echo</span> <span class="token string">&quot;
+		[Unit]
+		Description=SVWS Server
+		
+		[Service]
+		User=svws
+		Type=simple
+		WorkingDirectory = /app/SVWS-Server
+		ExecStart=/bin/bash /app/SVWS-Server/start_server.sh
+		# Restart=on-failure 	# optional-auskommentieren, wenn gewünscht
+		# RestartSec=5s 		# optional-auskommentieren, wenn gewünscht
+		StandardOutput=journal 
+		
+		[Install]
+		WantedBy=multi-user.target
+		
+		&quot;</span> <span class="token operator">&gt;</span> /etc/systemd/system/svws.service
+</code></pre></div><p>Den Dienst nun noch fest einbinden, so dass er beim Neustart gestartet wird:</p><div class="language-bash"><pre><code>		systemctl <span class="token builtin class-name">enable</span> svws
+</code></pre></div><p>Nun noch den Server folgenden Befehlen starten:</p><div class="language-bash"><pre><code>		systemctl start svws
+</code></pre></div><h2 id="fehlersuche-und-fehleranalyse" tabindex="-1">Fehlersuche und Fehleranalyse <a class="header-anchor" href="#fehlersuche-und-fehleranalyse" aria-hidden="true">#</a></h2><h3 id="neustart-der-dienste" tabindex="-1">Neustart der Dienste <a class="header-anchor" href="#neustart-der-dienste" aria-hidden="true">#</a></h3><p>Zum Neustart des Servers braucht man üblicherweise unter Linux nicht das gesammte System neu starten sondern kann einfach nur den Dienst neustarten oder auch ggf. stoppen:</p><div class="language-bash"><pre><code>		systemctl restart svws
+
+		systemctl stop svws
+</code></pre></div><p>Ebenso kann man natürlich auch den mysql Dienst starten, neustarten und beenden.</p><h3 id="fehlersuche-per-journal" tabindex="-1">Fehlersuche per Journal <a class="header-anchor" href="#fehlersuche-per-journal" aria-hidden="true">#</a></h3><p>Vermutet man Abstürze des Servers, so lohnt sich ein Blick in die Log files:</p><div class="language-bash"><pre><code>		journalctl  -f -u svws
+</code></pre></div><p>Zusätzlich kann man, um einen regelmäßigen Restart zu ermöglichen, den 5 sekündigen Neustart wie oben beschrieben erzwingen. So erhält man ggf. auch regelmäßige Einträge bzw. direkt Einträge nach Absturz des Servers.</p></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-fb8d84c6><div class="edit" data-v-fb8d84c6><div class="edit-link" data-v-fb8d84c6 data-v-1ed99556><!----></div></div><div class="updated" data-v-fb8d84c6><!----></div></footer><!----><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"algorithmen_blockungs-algorithmus_blockungsalgorithmen.md\":\"750e485a\",\"algorithmen_gs_index.md\":\"f7fc9582\",\"entwicklungsumgebungen_eclipse-ubuntu_index.md\":\"9a2997d1\",\"entwicklungsumgebungen_eclipse-windows_index.md\":\"665f342c\",\"entwicklungsumgebungen_eclipse-windows_im_msb_index.md\":\"8808b28b\",\"entwicklungsumgebungen_intellij_index.md\":\"ea713a62\",\"entwicklungsumgebungen_multipass_index.md\":\"b928d8e0\",\"entwicklungsumgebungen_vs-code_index.md\":\"7bae4f16\",\"entwicklungsumgebungen_macos_index.md\":\"6b4e03c0\",\"entwicklungsumgebungen_übersicht_index.md\":\"578ffb2c\",\"faq.md\":\"c2122441\",\"gitlab-server_installation.md\":\"51f99452\",\"gitlab-server_workflow.md\":\"a980b2ed\",\"gitlab-server_index.md\":\"5d9dd5d4\",\"lizenz-informationen_index.md\":\"c6609a8f\",\"projektanforderungen.md\":\"1cc1494e\",\"reporting_index.md\":\"09653467\",\"svws-client_favicon.md\":\"3d012817\",\"svws-client_mitarbeit.md\":\"222a9d2f\",\"svws-client_notenmanager.md\":\"161f97a2\",\"svws-client_wenom.md\":\"151f8167\",\"svws-client_index.md\":\"d393954c\",\"svws-installer_index.md\":\"71d1249c\",\"svws-server-installationen_001_deployment.md\":\"b29438ad\",\"svws-server-installationen_002_installation_svws-server.md\":\"ec73b568\",\"svws-server-installationen_003_update_svws-server.md\":\"53af54e6\",\"svws-server-installationen_004_datenbank_schemata_einfügen.md\":\"1ce1554e\",\"svws-server-installationen_it-umgebung_einrichtung_portfreigabe.md\":\"d20475eb\",\"svws-server-installationen_it-umgebung_einrichtung_proxmox-container.md\":\"bb66d962\",\"svws-server-installationen_it-umgebung_installation_reverseproxy-server.md\":\"7c8d3c36\",\"svws-server-installationen_it-umgebung_installation_vpn-server.md\":\"c70544e5\",\"svws-server-installationen_index.md\":\"a5b6b730\",\"svws-server-installationen_scripts_install-svws-from-scratch.md\":\"67789963\",\"svws-server_index.md\":\"695e8a82\",\"svws-server_svws-base_readme.md\":\"6fd0e715\",\"svws-server_svws-base_schemacsvstatkue_schulver_einlesen.md\":\"f462637e\",\"svws-server_svws-base_schemacsvstatkue_statkue_datumswerte.md\":\"84b7cedc\",\"svws-server_svws-base_schemacsvstatkue_statkue_fachklassen.md\":\"301f257b\",\"svws-server_svws-core-ts_readme.md\":\"71e0be90\",\"svws-server_svws-core_readme.md\":\"f516ebd2\",\"svws-server_svws-db-utils_readme.md\":\"86b12d5c\",\"svws-server_svws-db_tabellenbeschreibung.md\":\"859fafc4\",\"svws-server_svws-db_index.md\":\"f6aebaf5\",\"svws-server_svws-openapi-ts_readme.md\":\"1f782ed6\",\"svws-server_svws-openapi_readme.md\":\"613d2243\",\"svws-server_svws-server-app_readme.md\":\"63e7e55a\",\"svws-server_svws-transpile_readme.md\":\"98867224\",\"svws-ui-framework_bedienkonzept.md\":\"28acd4bb\",\"svws-ui-framework_gui-auswahl.md\":\"e805c73b\",\"svws-ui-framework_styleguide.md\":\"29c7814b\",\"svws-ui-framework_index.md\":\"d4eebd1f\",\"teamordner_tagesordnung_2021_21_03.md\":\"57e27933\",\"index.md\":\"d40d7ea1\"}")</script>
+    <script type="module" async src="/assets/app.7749d780.js"></script>
+    
+  </body>
+</html>

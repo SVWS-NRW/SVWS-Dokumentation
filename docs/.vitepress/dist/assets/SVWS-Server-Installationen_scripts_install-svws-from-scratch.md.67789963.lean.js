@@ -1,0 +1,1 @@
+import{_ as n,y as s,x as a,W as t}from"./plugin-vue_export-helper.68280688.js";const g='{"title":"#","description":"","frontmatter":{},"relativePath":"SVWS-Server-Installationen/scripts/install-svws-from-scratch.md","lastUpdated":1649314111101}',e={},o=t("",1),p=[o];function c(l,i,r,u,m,k){return a(),s("div",null,p)}var b=n(e,[["render",c]]);export{g as __pageData,b as default};
