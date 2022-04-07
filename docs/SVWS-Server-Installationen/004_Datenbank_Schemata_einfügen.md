@@ -8,10 +8,13 @@ Ein laufender SVWS-Server wird benötigt - siehe hierzu: [Installationsanleitung
 
 Mehrere Schemata für verschieden Schulformen finden Sie unter `https://git.svws-nrw.de/svws/SVWS-TestMDBs`
 
+```bash
 		git clone https://git.svws-nrw.de/svws/SVWS-TestMDBs
+```
 
 # Testdatenbank per Curl befüllen
 
+```bash
 curl -X 'POST' \
   'https://svws/api/schema/root/migrate/mdb/testschule' \
   -H 'accept: application/json' \
@@ -20,7 +23,7 @@ curl -X 'POST' \
   -F 'databasePassword=DasUeblicheSchildMDB-PW' \
   -F 'schemaUsername=svwsadmin' \
   -F 'schemaUserPassword=svwsadmin'
-
+```
 
 # Einfügen über die SwaggerUI
 
@@ -28,14 +31,16 @@ Eine Übersicht über die Webservices bietet die SwaggerUI.
 Hier kann man über *Try it Out* - Buttons jeweils die Services ausprobieren bzw. benutzen. 
 Die Swagger UI aufrufen:
 
+```bash
 		https://YourServerDomainName/debug/
+```
 
-![SwaggerUI.png](./graphics/swagger-01.png)
+![SwaggerUI.png](./graphics/Swagger-01.png)
 
 Dann unter dem Abschnitt "SchemaRoot /api/schema/root/migrate/mdb/{schema}" den*Try it Out*-Button
 drücken, so dass man diese Ansicht erhält:
 
-![SwaggerUI.png](./graphics/swagger-02.png)
+![SwaggerUI.png](./graphics/Swagger-02.png)
 
 Achtung: Um auf der SwaggerUI diesen Service nutzen zu können, muss man sich zuerst authentisieren, indem man auf das rechts abgebildete Schloss klickt. 
 Hier nun den User `root` der Maria-DB Installation und das entsprechende Passwort angeben. 
