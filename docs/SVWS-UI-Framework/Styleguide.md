@@ -17,47 +17,47 @@ Dabei richtet sich das Aussehen nach den im Bedienkonzept festgelegten Grundwert
 
 
 # Farben
-![](graphics/Styleguide_Farben.png)
+![](./graphics/Styleguide_Farben.png)
 
 # Fonts
 
 ## Type
-![](graphics/Styleguide_Fonttype.png)
+![](./graphics/Styleguide_Fonttype.png)
 
 ## Size
-![](graphics/Styleguide_Fontsize.png)
+![](./graphics/Styleguide_Fontsize.png)
 
 # Icons
-![](graphics/Styleguide_Icons.png)
+![](./graphics/Styleguide_Icons.png)
 
 # Input Fields
-![](graphics/Styleguide_Input_Fields_01.png)
-![](graphics/Styleguide_Input_Fields_02.png)
+![](./graphics/Styleguide_Input_Fields_01.png)
+![](./graphics/Styleguide_Input_Fields_02.png)
 
 # Geometrie
 
 ## Landscape
-![](graphics/Screendesign_Landscape.png)
+![](./graphics/Screendesign_Landscape.png)
 
 ## Modal-Fenster
-![](graphics/Screendesign_Modalfenster.png)
+![](./graphics/Screendesign_Modalfenster.png)
 
 # Screenshots
 
 ## Basisfenster 
-![](graphics/Screendesign01.png)
+![](./graphics/Screendesign01.png)
 
 
 ## Schülerneuaufnahme
-![](graphics/Screendesign04.png)
+![](./graphics/Screendesign04.png)
 
 ## Einfaches Modales-Fenster
-![](graphics/Screendesign03.png)
+![](./graphics/Screendesign03.png)
 
 ## Multiselect
-![](graphics/Screendesign05.png)
+![](./graphics/Screendesign05.png)
 
 
 ## Der Anmeldebildschirm
-![](graphics/Screendesign02.png)
+![](./graphics/Screendesign02.png)
 

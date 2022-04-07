@@ -39,5 +39,5 @@ Die folgende Grafik soll die verschiedensten Möglichkeiten darstellen, wie in Z
 Durch die standartisierte Open-API-Schnittstelle ist es auch unerheblich, mit welchem Framework das GUI programmiert ist. Denkbar sind auch Desktop-Applikationen oder Web-Clients, die den REST-Server ansprechen.
 
 
-![Übersicht-REST-Server-02](graphics/Übersicht-REST-Server-02.png)
+![Übersicht-REST-Server-02](./graphics/Uebersicht-REST-Server-02.png)
 

@@ -1,7 +1,7 @@
 # Notenmanager
 
 Der Notenmanager kann im Grunde auf zwei Arten aufgerufen werden: 
-Einerseits als Teil ist der Notenmanager Teil des [SVWS-Clients](README.md), also der Eingabemaske, die auch im Verwaltungsnetz und ggf. darüber hinaus zur Verfügung steht. 
+Einerseits ist der Notenmanager Teil des [SVWS-Clients](index.md), also der Eingabemaske, die auch im Verwaltungsnetz und ggf. darüber hinaus zur Verfügung steht. 
 Der Notenmanager wird als Teil des SVWS-Servers bei der Installation mitgeliefert. 
 Andererseits kann der Notenmanager in der Form des Web-Notenmanagers (WeNoM) aufgerufen werden. 
 
@@ -14,7 +14,7 @@ WeNoM und der orginäre Notenmanager sollen sich nur wenig unterscheiden. Instal
 
 ## Styleguide und Bedienkonzept des Notenmoduls
 
-Der Styleguide und das Bedienkonzept richten sich in großen Teilen nach den Vorgaben durch den SVWS-Client. Eine ausführliche Einführung dazu befindet sich in den Abschnitt Styleguide und Bedienkonzept des [SVWS-UI-Framework](../SVWS-UI-Framework/README.md).
+Der Styleguide und das Bedienkonzept richten sich in großen Teilen nach den Vorgaben durch den SVWS-Client. Eine ausführliche Einführung dazu befindet sich in den Abschnitt Styleguide und Bedienkonzept des [SVWS-UI-Framework](../SVWS-UI-Framework/index.md).
 
 ### Styleguide
 
@@ -24,24 +24,24 @@ Der [Styleguide](https://xd.adobe.com/view/04217600-e7ff-4dfd-a433-806082ab30bc-
 
 Sortierbar und Filterbare Gesamtansicht der Notenliste mit markierten Defiziten:
 
-![WeNoM_005](graphics/WeNoM_005.png)
+![WeNoM_005](./graphics/WeNoM_005.png)
 
 Aus der Sidebar einblendbare Detailansichtdes einzelnen Schülers für Zeugnisbemerkungen, Fördermaßnahmen, etc.: 
 
-![WeNoM_006](graphics/WeNoM_006.png)
+![WeNoM_006](./graphics/WeNoM_006.png)
 
 Ansicht bei kleinerer Fensterbreite: 
 
-![WeNoM_009](graphics/WeNoM_009.png)
+![WeNoM_009](./graphics/WeNoM_009.png)
 
 
 Große Sidebar für längere Eingaben, wie es zum Beispiel bei Textbausteinen für Grundschulzeugnissen nötig ist:
 
-![WeNoM_007](graphics/WeNoM_007.png)
+![WeNoM_007](./graphics/WeNoM_007.png)
 
 Noteneingabetool für die Bedienung per touchscreen: 
 
-![WeNoM_008](graphics/WeNoM_008.png)
+![WeNoM_008](./graphics/WeNoM_008.png)
 
 
 
@@ -53,9 +53,9 @@ Das gesammte [WireFrame-Modell](https://xd.adobe.com/view/6d18872d-ab80-40ca-a57
 
 Funktionen der Hauptseite:
 
-![WeNoM_001](graphics/WeNoM_001.png)
+![WeNoM_001](./graphics/WeNoM_001.png)
 
 Aufbau und Größenordnung der Seite inkl. Sidebar:
 
-![WeNoM_002](graphics/WeNoM_002.png)
+![WeNoM_002](./graphics/WeNoM_002.png)
 

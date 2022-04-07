@@ -30,12 +30,12 @@ Die Swagger UI aufrufen:
 
 		https://YourServerDomainName/debug/
 
-![SwaggerUI.png](graphics/swagger-01.png)
+![SwaggerUI.png](./graphics/swagger-01.png)
 
 Dann unter dem Abschnitt "SchemaRoot /api/schema/root/migrate/mdb/{schema}" den*Try it Out*-Button
 drücken, so dass man diese Ansicht erhält:
 
-![SwaggerUI.png](graphics/swagger-02.png)
+![SwaggerUI.png](./graphics/swagger-02.png)
 
 Achtung: Um auf der SwaggerUI diesen Service nutzen zu können, muss man sich zuerst authentisieren, indem man auf das rechts abgebildete Schloss klickt. 
 Hier nun den User `root` der Maria-DB Installation und das entsprechende Passwort angeben. 

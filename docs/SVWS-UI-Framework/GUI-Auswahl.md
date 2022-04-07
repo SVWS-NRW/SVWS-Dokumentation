@@ -3,7 +3,7 @@
 Nach einer längeren Entscheidungsphase wurde das vue.js Framework ausgewählt:
 
 
-![VUEJS01](graphics/VUEJS01.png)
+![VUEJS01](./graphics/VUEJS01.png)
 
 
 # weitere Informationen zu VUE.JS:

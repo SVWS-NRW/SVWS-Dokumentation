@@ -26,13 +26,13 @@ mit den jeweiligen Unterverzeichnissen:
 + Path setzen: Über das Windowssymbol den Editor für die Umgebungsvariablen öffnen ...
 	
 	
-![Umgebungsvariablen setzen](graphics/Umgebungsvariablen_setzen_1.png)
+![Umgebungsvariablen setzen](./graphics/Umgebungsvariablen_setzen_1.png)
     
 	
 + die Variable "Path" bearbeiten und einen weiteren Eintrag zum Java Verzeichnis einfügen: 
 	`D:\svws-Entwicklungsumgebung\jdk-17\bin`
 
-![Umgebungsvariablen setzen](graphics/Umgebungsvariablen_setzen_2.png)
+![Umgebungsvariablen setzen](./graphics/Umgebungsvariablen_setzen_2.png)
 
 
 # NodeJS installieren 
@@ -46,47 +46,47 @@ unter `D:\svws-Entwicklungsumgebung\eclipse\`
 + Einmaliger Start Eclipse und festlegen des Workspace: `D:\svws-Entwicklungsumgebung\workspace\`
 + Bei Bedarf den Speicher hochsetzen: per texteditor `D:\svws-Entwicklungsumgebung\eclipse\eclipse.ini` entsprechend z.B. aus der 512 eine 2048 machen
 
-![Speicher hochsetzen](graphics/eclipse.ini.png)
+![Speicher hochsetzen](./graphics/eclipse.ini.png)
 
 + ... und bei der Verwendung von Java 17 die entsprechende Zeile `D:\svws-Entwicklungsumgebung\eclipse\eclipse.ini` löschen:
 	
-![Umgebungsvariablen setzen](graphics/eclipse.ini_Zeilen_loeschen.png)
+![Umgebungsvariablen setzen](./graphics/eclipse.ini_Zeilen_loeschen.png)
 
 + Eclipse > Window > Preferences > Java > installed JREs -> Add 
 <br> Java 17 Verzeichnis eintragen:
 
-![](graphics/eclipse_JDK_1.png)
+![](./graphics/eclipse_JDK_1.png)
 
-![](graphics/eclipse_JDK_2.png)
+![](./graphics/eclipse_JDK_2.png)
 
-![](graphics/eclipse_JDK_3.png)
+![](./graphics/eclipse_JDK_3.png)
 
 + Eclipse > Help > Marcet Place -> Java 17 suchen und "Eclipse Java Development Tools Latest Release" installieren
 
-![](graphics/eclipse_marketplace_java_17_support_1.png)
+![](./graphics/eclipse_marketplace_java_17_support_1.png)
 
 bei der Installation alle 4 Optionen auswählen
 
-![](graphics/eclipse_marketplace_java_17_support_2.png)
+![](./graphics/eclipse_marketplace_java_17_support_2.png)
 
 + Eclipse > Help > Marcet Place -> Java development suchen und kontrollieren, ob "Eclipse Java Development Tools Latest Release" bereits installiert ist; ansonsten installieren
-![](graphics/eclipse_java_devtool.png)
+![](./graphics/eclipse_java_devtool.png)
 
 + Eclipse > Help > Marcet Place -> JSON editor suchen und "JSON Editor Plugin 1.1.2" installieren
 
-![](graphics/eclipse_json.png)
+![](./graphics/eclipse_json.png)
 
 + Eclipse > Window > Preferences > Java > Compiler -> 17 eintragen
 
-![](graphics/eclipse_java_compiler.png)
+![](./graphics/eclipse_java_compiler.png)
 
 + Eclipse > Window > Preferences > General > Editors > Text Editors > Spelling > UTF-8
 
-![](graphics/eclipse_general_editor.png)
+![](./graphics/eclipse_general_editor.png)
 
 + Eclipse > Window > Preferences > General > Workspace > Text file encodig > Other UTF-8
 
-![](graphics/eclipse_general_workspace.png)
+![](./graphics/eclipse_general_workspace.png)
 
 
 ## Git Repositories in Eclipse einrichten 
@@ -139,9 +139,9 @@ Wechseln in Java-Perspective (rechts oben):
 + in den Umgebungsvariablen oder im .gradle/gradle.config das Github_token, den Github_actor und das Schildpasswort wie folgt eintragen: 
 
 
-![](graphics/Gradle_benoetigte_Variablen_I.png)
+![](./graphics/Gradle_benoetigte_Variablen_I.png)
 
-![](graphics/Gradle_benoetigte_Variablen_II.png)
+![](./graphics/Gradle_benoetigte_Variablen_II.png)
 
 ### Server, Client, etc bauen
 

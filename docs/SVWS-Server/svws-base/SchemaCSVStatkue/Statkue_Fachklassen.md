@@ -2,7 +2,7 @@
 
 Änderung des Datumsformat in jjjj-mm-tt hh:mm:ss für die Spalte "geaendert":
 
-![](graphics/Format_geaendert.jpg)
+![](./graphics/Format_geaendert.jpg)
 
 + Rechte Maustaste > Exportieren > Textdatei auf die Tabelle Fachklasse.
 + Speichertort wählen.

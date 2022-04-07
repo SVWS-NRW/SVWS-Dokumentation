@@ -19,9 +19,9 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
     + die Variable Path bearbeiten und einen weiteren Eintrag zum Java Verzeichnis einfügen
 
 
-![Umgebungsvariablen setzen](graphics/Umgebungsvariablen_setzen_1.png)
+![Umgebungsvariablen setzen](./graphics/Umgebungsvariablen_setzen_1.png)
 
-![Umgebungsvariablen setzen](graphics/Umgebungsvariablen_setzen_2.png)
+![Umgebungsvariablen setzen](./graphics/Umgebungsvariablen_setzen_2.png)
 
 
 # Eclipse installieren und konfigurieren
@@ -30,19 +30,19 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 + Einmaliger Start Eclipse und festlegen des Workspace: `D:\\svws_Entwicklungsumgebung\workspace\`
 + Bei Bedarf den Speicher hochsetzen: per texteditor `D:\svws_Entwicklungsumgebung\workspace\eclipse.ini` entsprechend z.B. aus der 512 eine 2048 machen
 
-![Speicher hochsetzen](graphics/eclipse.ini.png)
+![Speicher hochsetzen](./graphics/eclipse.ini.png)
 
 + Eclipse > Help > Marcet Place -> JSON editor suchen und "JSON Editor Plugin 1.1.2" installieren
 
-![](graphics/eclipse_json.png)
+![](./graphics/eclipse_json.png)
 
 + Eclipse > Window > Preferences > General > Editors > Text Editors > Spelling > UTF-8
 
-![](graphics/eclipse_general_editor.png)
+![](./graphics/eclipse_general_editor.png)
 
 + Eclipse > Window > Preferences > General > Workspace > Text file encodig > Other UTF-8
 
-![](graphics/eclipse_general_workspace.png)
+![](./graphics/eclipse_general_workspace.png)
 
 ## Git Repositories in Eclipse einrichten 
 
@@ -119,14 +119,18 @@ Beispiel einer svwsconfig.json, bitte die userdaten und Passwörter entspechend 
 + download:  https://git-scm.com/download/win
 + Im MSB noch den Proxy eintragen: git config --global http.proxy http://10.64.128.22:3128
 
-# Installation in einer Proxy-Umgebung
+# Installation in einer Proxy-Umgebun
+
+```
 Eclipse > Windows > Preferences > General > Network Connection
+````
 
 den Http und den Https-Proxy eintragen. (Sollte er automatisch finden, wenn konfiguriert.)
 
 Powershell öffnen im Ordner SVWS-Server
 Proxy Config für NodeJS
 
+```shell
 		npm config set proxy http://proxy.company.com:8080
 		npm config set https-proxy http://proxy.company.com:8080
-
+```

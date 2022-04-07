@@ -16,7 +16,7 @@ Die Laufzeit bei einer quadratischen Matrix mit Dimension n beträgt O(n³).
 
 Es folgt eine Darstellung der internen Arbeitsweise des Algorithmus:
 
-![Minimum Weight Bipartite Matching mit Dijkstra.png](graphics/Minimum_Weight_Bipartite_Matching_mit_Dijkstra.png)
+![Minimum Weight Bipartite Matching mit Dijkstra.png](./graphics/Minimum_Weight_Bipartite_Matching_mit_Dijkstra.png)
 
 ## Maximum Cardinality Bipartite Matching
 Ein maximales (ungewichtetes) bipartites Matching ist ein Graphalgorithmus der eine Zuordnung auf einem (ungewichteten) bipartiten Graphen maximiert.
@@ -27,4 +27,4 @@ Man stelle sich eine linke Knotenmenge (z.B. SchülerInnen) und eine rechte Knot
 Der Algorithmus ordnet nun die maximale Anzahl an SchülerInnen den gewünschten Projektes zu, ohne dabei die maximale Teilnehmerzahl (= Sitzplätze) pro Projekt zu überschreiten.
 Die Methode "gibMaximalesBipartitesMatching" der Klasse "Matrix" implementiert diesen Algorithmus mit Hilfe einer Breitensuche als Subroutine. Die Laufzeit bei N Knoten beträgt O(n³). Schnellere Algorithmen existieren O(n^2.5), sind aber wesentlich komplizierter.
 
-![Maximum Bipartite Matching mit Breitensuche.png](graphics/Maximum_Bipartite_Matching_mit_Breitensuche.png)
+![Maximum Bipartite Matching mit Breitensuche.png](./graphics/Maximum_Bipartite_Matching_mit_Breitensuche.png)

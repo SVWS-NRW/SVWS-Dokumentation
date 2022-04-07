@@ -2,7 +2,7 @@
 
 ## Übersicht Datenbankfunktionen
 
-![Übersicht-REST-Server-06](graphics/Übersicht-REST-Server-06.png)
+![Übersicht-REST-Server-06](./graphics/Uebersicht-REST-Server-06.png)
 
 ## Das Projekt SVWS-DB
 In diesem Projekt werden in der Übergangsphase von Schild-NRW-3.0 die Datenbank-Scripte erzeugt. 
@@ -37,13 +37,13 @@ im Repository, so dass Änderungen auch über DIFFs zurück verfolgt werden kön
 Ein MDB-Genarator wird in der Übergangsphase die Keytabs MDBs für Schild2.0 erzeugen. So müssen die Defaultdaten von IT.nicht doppelt gepflegt werden müssen. Die vom Projekt erzeugten MDBs sind seit dem Update Schlild-NRW2.0.24.2 in Verwendung!
 Eine Beschreibung, wie bestimmte Tabellen aktualisiert werden müssen gibt es an dieser Stelle, außerdem wird hier beschrieben warum und wie von den Tabellen von IT.NRW abgewichen wurde und wie das gepflegt werden sollte:
 
-+ [Schulver.mdb einlesen](Schulver_einlesen.md)
+<!-- + [Schulver.mdb einlesen](Schulver_einlesen.md)
 + [Datumswerte korrekt in CSV importieren](Statkue_Datumswerte.md)
 + [Statkue_Fachklasse einlesen](Statkue_Fachklassen.md)
 + [Statkue_ZulFaecher mit Mapping](Statkue_zulaessige_Faecher.md)
 + [Statkue_SVWS_ZulaessigeJahrgaenge](Statkue_zulaessige_Jahrgaenge.md)
 + [Statkue_ZulKuArt](Statkue_zulaessigeKursarten.md)
-+ [Statkue_SVWS_Fachgruppen mit Schulformen](Statkue_Fachgruppen.md)
++ [Statkue_SVWS_Fachgruppen mit Schulformen](Statkue_Fachgruppen.md) -->
 
 
 

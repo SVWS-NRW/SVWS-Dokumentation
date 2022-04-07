@@ -36,7 +36,7 @@ Der SVWS-Installer übernimmt die folgenden Aufgaben:
 Zu Beginn des Installer erscheinen nach der Annahme der Lizenzvereinbarungen folgende Optionen:
 
 
-![](graphics/Installer_Auswahl_Dialog.jpg)
+![](./graphics/Installer_Auswahl_Dialog.jpg)
 
 
 
@@ -80,7 +80,7 @@ Da diese mit der ausgeliferten OpebJDK-Version zusammen passen müssen, werden d
 Die Aufrufe werden in Form von Batch-Dateien mit der Endung .cmd im Hauptverezichnis ausgeliefert.
 Die Dienste MariaDB und SVWS-Server werden in der Computerverwaltung registriert und automatisch gestartet.
 
-![](graphics/SVWSDienste.jpg)
+![](./graphics/SVWSDienste.jpg)
 
 # Konfigurationsdatei editieren 
 
@@ -90,7 +90,7 @@ Man findet alle Einstellungsmöglichkeiten zum Betrieb des SVWS-Servers an zentr
 Unter Windows im Verzeichnis: 
 `C:\ProgramData\SVWS-Server\res`
 
-![](graphics/Svwsconfig.json.jpg)
+![](./graphics/Svwsconfig.json.jpg)
 
 In dieser Datei wird die Serverkonfiguration gespeichert.
 
@@ -127,7 +127,7 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 
 # Registrierung der Dienste
 
-![](graphics/SVWSDienste.jpg)
+![](./graphics/SVWSDienste.jpg)
 
 Die beiden Server werden als Windows Dienst registriert. Diese können in der Computerverwaltung überprüft werden.
 
@@ -139,7 +139,7 @@ Der öffentliche Teil wird in den Ordner
 
 Dieses Zertifikat muss dann in der Zertifikatsspeicher des Windowssystems installiert werden.
 
-![](graphics/SVWSZertifikat.jpg)
+![](./graphics/SVWSZertifikat.jpg)
 
 **Ort:** Vertrauenwürdige Stammzertifikate
 

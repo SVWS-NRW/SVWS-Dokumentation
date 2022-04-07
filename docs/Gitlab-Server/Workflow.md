@@ -14,7 +14,7 @@ Beim Development des SVWS-Servers soll die Versionierung (v0.1, v0.2, ... ) im M
 
 Die eigentliche Arbeit des Developmentteams findet auf dem Develop-Branch statt:
 
-![Gitflow-Workflow-1](graphics/Gitflow-Workflow-1.png)
+![Gitflow-Workflow-1](./graphics/Gitflow-Workflow-1.png)
 
 Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizens](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)
 
@@ -58,7 +58,7 @@ Ausgehend vom Develeper Branch erstellt sich der einzelne Entwickler bzw die Kle
 		git checkout my_feature
 		git push -u origin my_feature
 		
-![Gitflow-Workflow-2](graphics/Gitflow-Workflow-2.png)
+![Gitflow-Workflow-2](./graphics/Gitflow-Workflow-2.png)
 
 Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizens](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)
 
@@ -124,7 +124,7 @@ Im Grunde wird ein Release analog zum oben beschriebenen Vorgehen bei einzelnen 
 Ziel ist dann jedoch nicht eine weiterführende Programmierung sondern ein intensieves Testen auf dem eingefrohrenen Zustand 
 und eine Vorbereitung der Softwareauslieferung. 
 
-![Gitflow-Workflow-3](graphics/Gitflow-Workflow-3.png)
+![Gitflow-Workflow-3](./graphics/Gitflow-Workflow-3.png)
 
 Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizens](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)
 
@@ -133,11 +133,11 @@ Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/
 ## Hotfixes im laufenden Release
 
 
-![Gitflow-Workflow-4](graphics/Gitflow-Workflow-4.png)
+![Gitflow-Workflow-4](./graphics/Gitflow-Workflow-4.png)
 
 Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizens](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)
 		
 		
-![Gitflow-Workflow-5](graphics/Gitflow-Workflow-5.png)
+![Gitflow-Workflow-5](./graphics/Gitflow-Workflow-5.png)
 
 Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizens](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)

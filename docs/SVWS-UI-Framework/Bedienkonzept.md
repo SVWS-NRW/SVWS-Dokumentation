@@ -15,7 +15,7 @@ In den meisten Fällen kann alles in der Sidebar und dem Content-Bereich stehen.
 Beispiele für den Einsatz eines Modals sind Erweiterte Filter und die Druck-Vorschau.
 
 
-![](graphics/BK_Konzept.png)
+![](./graphics/BK_Konzept.png)
 
 
 ## Navigation
@@ -41,7 +41,7 @@ Visuelle Elemente verdeutlichen dem User, wo Funktionen hinterlegt werden und we
 Die Vielzahl der Daten wird in den Tabs dargestellt. Im Oberen Bereich werden wichtige Informatioenen und Hinweise dazu eingeblendet, an welcher Stelle im Programm man sich befindet.
 Passende Iconsets müssen hierfür dann gefunden werden.
 
-![](graphics/BK_ModulA.png)
+![](./graphics/BK_ModulA.png)
 
 
 ## Weitere Navigations-Ebenen
@@ -49,7 +49,7 @@ Passende Iconsets müssen hierfür dann gefunden werden.
 Weitere Ebenen können für die Aufgaben verwendet werden, die z.B. nicht an das Daten-Panel gebunden sind. Hier können bestimmte Gruppenprozesse, Einstellungen, Import/Export-Funktionen hinterlegt sein.
 Der User hat immer eine Übersicht, auf welcher Navigations-Ebene er sich befindet, kann aber über die Sidebar auch sehr schnelle wieder auf die Hauptebene zurück kehren.
 
-![](graphics/BK_ModulB.png)
+<!-- ![](./graphics/BK_ModulB.png) -->
 
 ## Modale Fenster
 Modale Fenster sind in diesem Konzept eher vermieden worden. An einigen Stellen wird man aber um solche Abfragen nicht herum kommen. Dazu sind drei Arten von Modalen Fenstern freigegeben worden, die folgende Funktionen nutzen.
@@ -57,27 +57,27 @@ Modale Fenster sind in diesem Konzept eher vermieden worden. An einigen Stellen 
 ### Einfaches Modales Fenster
 Für schnelle Optionale Entscheidungen, die der User während eines Use-Case zu treffen hat.
 
-![](graphics/BK_EinfachesModal.png)
+![](./graphics/BK_EinfachesModal.png)
 
 
 
 ### Großes Modales Fenster
 Für komplexere Abfragen, wie zum Beispiel den Filter I, der aus dem Hauptfenster aufgerufen werden kann.
 
-![](graphics/BK_GroßesModal.png)
+![](./graphics/BK_GrossesModal.png)
 
 
 ### komplexes Modales Fenster
 Datenintensive Use-Cases, wie das Reporting mit Vorschau oder die Einstellungen für die Import und Exporte können mit dieser Variante umgestezt werden.
 
-![](graphics/BK_KomplexesModal.png)
+![](./graphics/BK_KomplexesModal.png)
 
 
 
 ### Beispiel der Hauptanwendung
-![](graphics/BK_Beispiel.png)
+![](./graphics/BK_Beispiel.png)
 
 
 
 ### Use-Case Neuaufnahme
-![](graphics/BK_Neuaufnahme.png)
+![](./graphics/BK_Neuaufnahme.png)
