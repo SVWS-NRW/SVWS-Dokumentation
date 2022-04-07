@@ -2,6 +2,7 @@ tmp
 /bin/
 /node_modules/
 /.classpath
+/.vitepress/dist
 /dist/
 /.project
 /.settings
@@ -31,6 +32,3 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
-node_modules
-components.d.ts
-.vitepress/dist
