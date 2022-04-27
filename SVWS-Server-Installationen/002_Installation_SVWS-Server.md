@@ -146,34 +146,23 @@ Git Quellen einrichten und Repositories clonen:
 		export GITHUB_ACTOR=Geben_Sie_hier_ihre_Daten_an 
 		export GITHUB_TOKEN=Geben_Sie_hier_ihre_Daten_an 
 		export SCHILD_PW=Geben_Sie_hier_ihre_Daten_an 
-		git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com//SVWS-NRW/SVWS-UI-Framework.git
 		git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com/FPfotenhauer/SVWS-Server.git
-		git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com/FPfotenhauer/SVWS-Client.git
 ```
 
 Für die weitere Installation wird noch ein gradle.properties File angelegt
 
 ```bash
-		cat > ~/.gradle/gradle.properties  <<-EOF
-		github_actor=$GITHUB_ACTOR
-		github_token=$GITHUB_TOKEN
-		schild2_access_password=$SCHILD_PW
-		EOF
+		mkdir ~/.gradle
+		echo github_actor=$GITHUB_ACTOR >> ~/.gradle/gradle.properties 
+		echo github_token=$GITHUB_TOKEN >> ~/.gradle/gradle.properties 
+		echo schild2_access_password=$SCHILD_PW >> ~/.gradle/gradle.properties 
 ```
 
 Um den Developer branch zu wählen muss jeweils noch `git checkout dev` vor dem Build Prozess erfolgen. Hier kann natürlich auch (bald) ausprobiert werden und ein anderer Branch gewählt werden.
 Nun wird nacheinander das UI-Framework, der Server und der Client gebaut. Bitte diese Reihenfolge einhalten: 
 
 ```bash
-		cd /app/SVWS-UI-Framework
-		git checkout dev
-		./gradlew build
-
 		cd /app/SVWS-Server
-		git checkout dev
-		./gradlew build
-		
-		cd /app/SVWS-Client
 		git checkout dev
 		./gradlew build
 ```
@@ -195,17 +184,19 @@ Es muss vor dem Starten des SVWS-Servers nun die Konfiguration des SVWS-Servers 
 		"TLSKeyAlias" : null,
 		"TLSKeystorePath" : "svws-server-app",
 		"TLSKeystorePassword" : "svwskeystore",
-		"ClientPath" : "../SVWS-Client/build/output",
+		"ClientPath" : "../SVWS-Server/svws-webclient/build/output",
 		"LoggingEnabled" : true,
 		"LoggingPath" : "logs",
 		"DBKonfiguration" : {
 			"dbms" : "MARIA_DB",
 			"location" : "127.0.0.1",
-			"defaultschema" : null,
+			"defaultschema" : null,nmap
 			"SchemaKonfiguration" : []
 			}
 		}
 		' > /app/SVWS-Server/svwsconfig.json 
+
+
 ```
 
 Es müssen weiterhin die richtigen Rechte gesetzt werden, um den SVWS-Server nicht mit root-Rechten starten zu wollen: 

@@ -1,5 +1,4 @@
-﻿```bash
-#!/bin/bash
+﻿#!/bin/bash
 ########################################################################
 #
 # geschrieben für LXC Container mit linux debian 11 auf einem Proxmox
@@ -149,9 +148,9 @@ cd $INST_PATH
 # TODO: git clone auf unserem Gitlab einrichten!!!!
 # git clone https://${GITHUB_USER}:${GITHUB_TOKEN}@git.svws-nrw.de/svws/SVWS-Server
 
-git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com//SVWS-NRW/SVWS-UI-Framework.git
+
 git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com/FPfotenhauer/SVWS-Server.git
-git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com/FPfotenhauer/SVWS-Client.git
+
 
 #### token in gradle hinterlegen #############################
 mkdir ~/.gradle
@@ -163,31 +162,6 @@ schild2_access_password=$SCHILD_PW
 EOF
 
 
-
-#######################################################################
-# Baue das UI-Framework
-#######################################################################
-cd $INST_PATH/SVWS-UI-Framework
-git checkout dev
-./gradlew build
-# Alternative Vorgehensweise: 
-#npm i
-#npm audit fix --force
-# ### Fehler kann ignoriert werden:
-# npm ERR! code ETARGET
-# npm ERR! notarget No matching version found for @storybook/vue3@6.1.21.
-# npm ERR! notarget In most cases you or one of your dependencies are requesting
-# npm ERR! notarget a package version that doesn't exist.
-# ###
-#npm run build
-# lokalen Link erstellen
-#npm link
-
-#
-#
-#
-#
-#
 #######################################################################
 # Baue den Server
 #######################################################################
@@ -211,7 +185,7 @@ cat > $INST_PATH/SVWS-Server/svwsconfig.json <<-EOF
   "TLSKeyAlias" : null,
   "TLSKeystorePath" : "svws-server-app",
   "TLSKeystorePassword" : "svwskeystore",
-  "ClientPath" : "../SVWS-Client/build/output",
+  "ClientPath" : "../SVWS-Server/svws-webclient/build/output",
   "LoggingEnabled" : true,
   "LoggingPath" : "logs",
   "DBKonfiguration" : {
@@ -226,17 +200,10 @@ EOF
 
 
 
-#########################################################################
-# Baue den Client
-#########################################################################
-cd $INST_PATH/SVWS-Client
-git checkout dev
-./gradlew build
 
-#
 ########################################################################
-#svws als Dienst einrichten:
-
+# svws als Dienst einrichten:
+########################################################################
 
 echo "
 [Unit]
@@ -291,6 +258,3 @@ systemctl start svws
 #
 # zuerst eine mdb "irgendwoher" runterladen
 # über die Oberfläche: localhost/debug/
-
-
-```
