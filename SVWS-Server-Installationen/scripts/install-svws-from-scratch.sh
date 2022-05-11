@@ -210,7 +210,8 @@ echo "
 Description=SVWS Server
 
 [Service]
-User=svws
+# User=svws 
+# Im Develop zunächst als root starten
 Type=simple
 WorkingDirectory = $INST_PATH/SVWS-Server
 ExecStart=/bin/bash $INST_PATH/SVWS-Server/start_server.sh

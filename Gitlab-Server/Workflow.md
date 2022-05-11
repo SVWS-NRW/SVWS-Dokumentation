@@ -23,15 +23,10 @@ Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/
 Das Projekt maßgeblich auf [git.svws-nrw.de](https://git.svws-nrw.de) entwickelt: 
 
 		git clone https://git.svws-nrw.de/svws/SVWS-Server
-		git clone https://git.svws-nrw.de/svws/SVWS-UI-Framework
-		git clone https://git.svws-nrw.de/svws/SVWS-Client
 
-Diese drei genannten Repositories werden in Zukunft zu einem zusammengefasst. 
-Ebenso findet man einen Spiegel der Repositries unter [Github](https://github.com/FPfotenhauer?tab=repositories):
+Ebenso findet man einen Spiegel des Repositries unter [Github](https://github.com/FPfotenhauer?tab=repositories):
 
-+ [github.com/FPfotenhauer/SVWS-Client](https://github.com/FPfotenhauer/SVWS-Client)
-+ [github.com/FPfotenhauer/SVWS-Server](https://github.com/FPfotenhauer/SVWS-Server)
-+ [github.com/SVWS-NRW/SVWS-UI-Framework](https://github.com/SVWS-NRW/SVWS-UI-Framework)
+[github.com/FPfotenhauer/SVWS-Server](https://github.com/FPfotenhauer/SVWS-Server)
 
 Je nach Betätigungsfeld und Berechtigung macht es auch Sinn weitere Repositories zu clonen: 
 
@@ -109,11 +104,6 @@ zum lokalen Repository zu syncronisieren.
 
 		git pull 
 
-TODO: Frank fragen, wann er rebase einsetzt .... 
-
-		git rebase
-		
-
 # Workflow Releases
 
 ## Anlegen eine neuen Release-Branch
@@ -132,12 +122,10 @@ Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/
 
 ## Hotfixes im laufenden Release
 
+Muss bei einem schon veröffentlichten Release aufgrund eines kritischen Fehlers ein Hotfix erstellt werden, so wird vom Masterbranch ausgehen ein neues Branch erstellt. 
+Anschließend muss dieses Hotfix dann natürlich in zwei Branches gemerged werden: Im Masterbrach und im Developerbranch. 
 
 ![Gitflow-Workflow-4](./graphics/Gitflow-Workflow-4.png)
 
 Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizens](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)
 		
-		
-![Gitflow-Workflow-5](./graphics/Gitflow-Workflow-5.png)
-
-Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizens](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)

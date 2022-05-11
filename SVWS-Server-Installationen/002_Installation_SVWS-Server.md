@@ -223,7 +223,8 @@ Erstelle eine Datei zur Beschreibung und Bedienung des Dienstes per systemd:
 		Description=SVWS Server
 		
 		[Service]
-		User=svws
+		# User=svws 
+		# im Develop unter root getest
 		Type=simple
 		WorkingDirectory = /app/SVWS-Server
 		ExecStart=/bin/bash /app/SVWS-Server/start_server.sh

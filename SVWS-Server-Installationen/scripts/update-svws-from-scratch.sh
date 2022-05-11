@@ -29,21 +29,6 @@ git pull | tee -a ~/svws-update.log
 git checkout dev | tee -a ~/svws-update.log
 ./gradlew clean build | tee -a ~/svws-update.log
 #
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee -a ~/svws-update.log
-echo "+++++++++++++++ updating SVWS-UI-Framewortk ++++++++++++++++" | tee -a ~/svws-update.log
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee -a ~/svws-update.log
-cd /app/SVWS-UI-Framework
-git pull | tee -a ~/svws-update.log
-git checkout dev | tee -a ~/svws-update.log
-./gradlew clean build | tee -a ~/svws-update.log
-#
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee -a ~/svws-update.log
-echo "++++++++++++++++++ updating SVWS-Client ++++++++++++++++++++" | tee -a ~/svws-update.log
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" | tee -a ~/svws-update.log
-cd /app/SVWS-Client
-git pull | tee -a ~/svws-update.log
-git checkout dev | tee -a ~/svws-update.log
-./gradlew clean build | tee -a ~/svws-update.log
 #
 # die richtigen Rechte setzten: 
 chown -R svws:svws /app/
