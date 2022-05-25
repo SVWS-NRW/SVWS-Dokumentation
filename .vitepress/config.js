@@ -38,6 +38,7 @@ module.exports = {
       },
       { text: 'SVWS-Server-Installationen', link: '/SVWS-Server-Installationen/' },
       { text: 'SVWS-UI-Framework', link: '/SVWS-UI-Framework/' },
+      { text: 'Testumgebungen', link: '/Testumgebungen/' },
     ],
   },
 };
