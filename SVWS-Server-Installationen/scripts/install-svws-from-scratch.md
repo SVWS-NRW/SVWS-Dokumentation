@@ -1,4 +1,5 @@
-﻿#!/bin/bash
+﻿```bash
+#!/bin/bash
 ########################################################################
 #
 # geschrieben für LXC Container mit linux debian 11 auf einem Proxmox
@@ -259,3 +260,4 @@ systemctl start svws
 #
 # zuerst eine mdb "irgendwoher" runterladen
 # über die Oberfläche: localhost/debug/
+```

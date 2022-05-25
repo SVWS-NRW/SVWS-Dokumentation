@@ -5,4 +5,4 @@
 
 ![Übersicht-Roadmap](./graphics/Entwicklung_SVWS-Server.png)
 
-[Download Roadmap](./graphics/Entwicklung_SVWS-Server.odg)
+<!-- [Download Roadmap](./graphics/Entwicklung_SVWS-Server.odg) -->

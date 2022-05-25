@@ -1,3 +1,4 @@
+```
 #!/bin/bash
 ############################### update-svwsv-server-from-scratch #########################################
 #
@@ -35,3 +36,4 @@ chown -R svws:svws /app/
 #
 systemctl start svws 
 systemctl status svws | tee -a ~/svws-update.log
+```
