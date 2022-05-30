@@ -39,6 +39,7 @@ SVWS-Server:
 - Core: (Hier passiert das Meiste)
 - Open-API: Diese Schnittstelle nimmt Anfragen von Clients entgegen und liefert Antworten zurück.
 
+SVWS-Client:
 - TS_Lib: Diese Komponente des Clients ist für die Kommunikation mit der Open-API verwantwortlich. Sie entält (auch) transpilierte Anteile aus den Server-Schichten 'Core' und 'Open-API'.
 - Web-UI: Die graphische Benutzeroberfläche für den Benutzer (mit vue.js-Komponenten)
 
