@@ -29,7 +29,7 @@ Im Vordergrund steht die Kapselung von Datenbank, Core-API und GUI.
 
 # Zwiebelmodell Code-Ebenen
 
-![Übersicht-REST](./graphics/Zwiebelmodell SVWS-Server und SVWS-Client.png)
+![Übersicht-REST](./graphics/Zwiebelmodell_SVWS-Server_und_SVWS-Client.png)
 
 [Projektanforderungen](Projektanforderungen.md)
 
