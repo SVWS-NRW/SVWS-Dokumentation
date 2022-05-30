@@ -33,13 +33,14 @@ Im Vordergrund steht die Kapselung von Datenbank, Core-API und GUI.
 
 Von innen nach außen übernehmen die Schichten die folgenden Rollen:
 
-- SVWS-Datenbank: Hier werden die Daten in einer MariaDB gelesen und geschrieben.
+SVWS-Server:
+- SVWS-Datenbank: Hier werden die Daten in eine(r) MariaDB geschrieben und gelesen.
 - DB-Utils: Stellt Funktionalitäten zum Datenbank-Zugriff zur Verfügung.
 - Core: (Hier passiert das Meiste)
 - Open-API: Diese Schnittstelle nimmt Anfragen von Clients entgegen und liefert Antworten zurück.
 
-- TS_Lib: Diese Komponente des Clients ist für die Kommunikation mit der Open-API verwantwortlich.
-- Web-UI: Die graphische Benutzeroberfläche für den Benutzer.
+- TS_Lib: Diese Komponente des Clients ist für die Kommunikation mit der Open-API verwantwortlich. Sie entält (auch) transpilierte Anteile aus den Server-Schichten 'Core' und 'Open-API'.
+- Web-UI: Die graphische Benutzeroberfläche für den Benutzer (mit vue.js-Komponenten)
 
 [Projektanforderungen](Projektanforderungen.md)
 
