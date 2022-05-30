@@ -27,7 +27,7 @@ In der Übersicht soll einen erster Eindruck vom zukünftigen Aufbau vermitteln.
 Im Vordergrund steht die Kapselung von Datenbank, Core-API und GUI.
 
 
-# Zwiebelmodell Code-Ebenen / Komponenten-Hierarchie
+# Zwiebelmodell Komponenten-Hierarchie
 
 ![Übersicht-REST](./graphics/Zwiebelmodell_SVWS-Server_und_SVWS-Client.png)
 
