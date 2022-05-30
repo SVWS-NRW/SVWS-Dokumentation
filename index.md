@@ -31,6 +31,16 @@ Im Vordergrund steht die Kapselung von Datenbank, Core-API und GUI.
 
 ![Übersicht-REST](./graphics/Zwiebelmodell_SVWS-Server_und_SVWS-Client.png)
 
+Von innen nach außen übernehmen die Schichten die folgenden Rollen:
+
+- SVWS-Datenbank: Hier werden die Daten in einer MariaDB gelesen und geschrieben.
+- DB-Utils: Stellt Funktionalitäten zum Datenbank-Zugriff zur Verfügung.
+- Core: (Hier passiert das Meiste)
+- Open-API: Diese Schnittstelle nimmt Anfragen von Clients entgegen und liefert Antworten zurück.
+
+- TS_Lib: Diese Komponente des Clients ist für die Kommunikation mit der Open-API verwantwortlich.
+- Web-UI: Die graphische Benutzeroberfläche für den Benutzer.
+
 [Projektanforderungen](Projektanforderungen.md)
 
 [FAQ](FAQ.md)
