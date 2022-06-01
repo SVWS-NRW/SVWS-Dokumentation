@@ -1,6 +1,6 @@
 # **SVWS-core**
-Die untere Übersicht zeigt den Aufbau des Servers als Zwiebelmodell. Das Herzstück des Server wird aus dem SVWS-core gebildet. Der SVWS-core besteht aus den implementierten Algorithmen, den core-types (generierten Datentypen /Java-Klassen), und aus den core-DTO's (data transferobject) diese sind generierte java-Objekte, die vom core zur Verfügung gestellt, bzw. vom Server verarbeitet werden.
-Der SVWS-core organisiert nicht nur serverseitig die Zugriffe und Verarbeitung von generierten Java-Objekten (DTOs) und deren Speicherung update und Löschung auf die Datenbank mit Hilfe der Packages svws-db und svws-db-utils sondern er beantwortet auch die request die vom SVWS-client kommen über die Open-API Schnittstelle.
+Die untere Übersicht zeigt den Aufbau des Servers als Zwiebelmodell. Das Herzstück des Servers wird aus dem SVWS-core gebildet. Der SVWS-core besteht aus den implementierten Algorithmen, den core-types (Datentypen /Java-Klassenm, mit Hilfsmethoden), und aus den core-DTO's (data transferobject).
+Der SVWS-core organisiert nicht nur serverseitig die Zugriffe und Verarbeitung von DTOs und copre-types und deren Speicherung, Update und Löschung in der Datenbank mit Hilfe der Packages svws-db und svws-db-utils, sondern er beantwortet auch die requests, die vom SVWS-Client kommen, über die Open-API-Schnittstelle.
 
  
 - Jetzige Zustand
