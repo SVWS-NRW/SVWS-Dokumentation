@@ -4,12 +4,12 @@ Der SVWS-core organisiert nicht nur serverseitig die Zugriffe und Verarbeitung v
 
  
 - Jetzige Zustand
- 	Der core besteht aus dem core-type (svws-base {logger, csv-Definitionen}) und dem data-Object. (data-object was ist das? woraus besteht das?)
-	Der core generiert beim Build-Prozess Datenbanktabellen aus den csv-Dateien und erstellt einen Datenbankschema her (dies wird im wird in der SVWS-Datenbank geladen?)
+ 	Eigenständig gibt es das Paket svws-base (darin: Logger und csv-Definitionen).
+	Der core generiert beim Build-Prozess Datenbanktabellen aus den csv-Dateien und erstellt ein Datenbankschema (dies wird in der SVWS-Datenbank geladen?)
 
 
-- baldige Zustand
-	Die csv-Definitionen werden nicht mehr im svws-base sein. Hierbei werden die Pa	kete SVWS-base und SVWS-db in einem SVWS-db-Paket vereint.
+- Baldiger Zustand
+	Die csv-Definitionen werden nicht mehr im svws-base sein. Hierbei werden die Pakete SVWS-base und SVWS-db in einem SVWS-db-Paket vereint.
 	(wenn keine csv-Dateien mehr benötigt werden, was wird konkret geändert?)
 
 	
