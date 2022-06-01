@@ -13,4 +13,4 @@ Der SVWS-core organisiert nicht nur serverseitig die Zugriffe und Verarbeitung v
 	(wenn keine csv-Dateien mehr benötigt werden, was wird konkret geändert?)
 
 	
-![Server-Client-Zwiebelmodel](./SVWS-Server/graphics/Zwiebelmodell_SVWS-Server_und_SVWS-Client.png)
+![Server-Client-Zwiebelmodel](SVWS/SVWS-Dokumentation/SVWS-Server/graphics/Zwiebelmodell_SVWS-Server_und_SVWS-Client.png)
