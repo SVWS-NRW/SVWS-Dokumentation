@@ -12,3 +12,5 @@ Der SVWS-core organisiert nicht nur serverseitig die Zugriffe und Verarbeitung v
 	Die csv-Definitionen werden nicht mehr im svws-base sein. Hierbei werden die Pa	kete SVWS-base und SVWS-db in einem SVWS-db-Paket vereint.
 	(wenn keine csv-Dateien mehr benötigt werden, was wird konkret geändert?)
 
+	
+
