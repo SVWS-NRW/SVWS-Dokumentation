@@ -8,7 +8,9 @@ Rechte Maustaste > Exportieren > Textdatei auf die Tabelle DBS.
 
 Speichertort wählen.
 
-Im Export-Schema auf "erweitert" und auf UTF-8 mit "" als Textrenner einstellen. Feldnamen in erster Zeile mit einbeziehen!
+Im Export-Schema auf "erweitert" und auf UTF-8 ohne "" als Textrenner einstellen.
+
+Feldnamen in erster Zeile mit einbeziehen!
 
 Exportieren.
 
