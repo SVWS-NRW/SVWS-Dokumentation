@@ -24,6 +24,8 @@ Dann nach SchulNr sortieren lassen.
 
 Großes D in ArtDerTraegerschaft einbauen.
 
+Spalten gueltigVon und gueltigBis am Ende anfügen.
+
 Speichern unter:
 
 svws-base > src/main/resources >schema.csv.schulver
