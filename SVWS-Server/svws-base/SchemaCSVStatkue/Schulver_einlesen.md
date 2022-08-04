@@ -24,7 +24,9 @@ Dann nach SchulNr sortieren lassen.
 
 Großes D in ArtDerTraegerschaft einbauen.
 
-Speichern.
+Speichern unter:
+
+svws-base > src/main/resources >schema.csv.schulver
 
 Schulver_DBS.csv in das Repository kopieren.
 
