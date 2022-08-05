@@ -1,7 +1,7 @@
 # Installation auf einem Ubuntu
 
 ## Systemvoraussetzungen 
-Installation unter Ubuntu 20.04 oder Debian 10
+Installation unter Ubuntu 22.04
 
 ## Software Installation
 Java, Curl, git, NodeJS installieren
@@ -15,7 +15,7 @@ curl -sL https://deb.nodesource.com/setup_17.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt install nodejs
 node -v 				#Kontrolle der Version
-sudo apt install npm 			#Wird von nodejs installiert
+# sudo apt install npm 			#Wird von nodejs installiert!!!
 echo "prefix=~/.npm" > ~/.npmrc 	#root-Rechte können somit vermieden werden
 ```
 
@@ -23,9 +23,9 @@ Eclipse, VisualStudioCode und DBeaver über den Software-Store installieren
 
 ```bash
 sudo snap install eclipse --classic
-sudo snap install code --classic
-sudo snap install dbeaver-ce
-sudo snap install dbeaver-ce
+# sudo snap install code --classic #für visual studio
+sudo snap install dbeaver-ce	
+
 ```
 ## Einrichtung 
 In Eclipe eine GIT-Perspective öffnen und die Repositories in Eclipse oder im Terminal clonen.
@@ -47,7 +47,7 @@ Beim Start von Eclipse zuerst einen neuen workspace anlegen.
 Für den Zugriff auf einige private Repositories müssen noch die Gradle-Properties gesetzt werden.
 
 ```bash
-cd home/.gradle
+cd home/USERNAME/.gradle/gradle.properties
 vim gradle.properties
 ```
 		
@@ -57,6 +57,15 @@ github_actor=hier_GitHub-Username_eintragen
 github_token=hier_den_token_eintragen
 schild2_access_password=hier_das_schild2_password_eintragen
 ```
+Achtung: kleinschreiben!
+
+
+import -> gradle -> existing projekt
+next next 
+svws Ordner auswählen
+
+Das 
+
 
 #### SVWS Einstellungen
 
