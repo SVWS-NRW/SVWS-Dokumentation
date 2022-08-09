@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by yFiles for HTML 2.5-->
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/2.0/ygraphml.xsd " xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:demostyle2="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/2.0" xmlns:demostyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/1.0" xmlns:icon-style="http://www.yworks.com/yed-live/icon-style/1.0" xmlns:bpmn="http://www.yworks.com/xml/yfiles-bpmn/2.0" xmlns:demotablestyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoTableStyle/1.0" xmlns:uml="http://www.yworks.com/yFilesHTML/demos/UMLDemoStyle/1.0" xmlns:GraphvizNodeStyle="http://www.yworks.com/yFilesHTML/graphviz-node-style/1.0" xmlns:VuejsNodeStyle="http://www.yworks.com/demos/yfiles-vuejs-node-style/1.0" xmlns:explorer-style="http://www.yworks.com/data-explorer/1.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/3.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/3.0" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/2.0/xaml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<key id="d0" for="node" attr.type="int" attr.name="zOrder" y:attr.uri="http://www.yworks.com/xml/yfiles-z-order/1.0/zOrder"/>
+	<key id="d1" for="node" attr.type="boolean" attr.name="Expanded" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/Expanded">
+		<default>true</default>
+	</key>
+	<key id="d2" for="node" attr.type="string" attr.name="url"/>
+	<key id="d3" for="node" attr.type="string" attr.name="description"/>
+	<key id="d4" for="node" attr.name="NodeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeLabels"/>
+	<key id="d5" for="node" attr.name="NodeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeGeometry"/>
+	<key id="d6" for="all" attr.name="UserTags" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/UserTags"/>
+	<key id="d7" for="node" attr.name="NodeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeStyle"/>
+	<key id="d8" for="node" attr.name="NodeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/NodeViewState"/>
+	<key id="d9" for="edge" attr.type="string" attr.name="url"/>
+	<key id="d10" for="edge" attr.type="string" attr.name="description"/>
+	<key id="d11" for="edge" attr.name="EdgeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeLabels"/>
+	<key id="d12" for="edge" attr.name="EdgeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeGeometry"/>
+	<key id="d13" for="edge" attr.name="EdgeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeStyle"/>
+	<key id="d14" for="edge" attr.name="EdgeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/EdgeViewState"/>
+	<key id="d15" for="port" attr.name="PortLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLabels"/>
+	<key id="d16" for="port" attr.name="PortLocationParameter" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLocationParameter">
+		<default>
+			<x:Static Member="y:FreeNodePortLocationModel.NodeCenterAnchored"/>
+		</default>
+	</key>
+	<key id="d17" for="port" attr.name="PortStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortStyle">
+		<default>
+			<x:Static Member="y:VoidPortStyle.Instance"/>
+		</default>
+	</key>
+	<key id="d18" for="port" attr.name="PortViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/PortViewState"/>
+	<key id="d19" attr.name="SharedData" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/SharedData"/>
+	<data key="d19">
+		<y:SharedData>
+			<y:InteriorLabelModel x:Key="1"/>
+			<y:CompositeLabelModelParameter x:Key="2" Model="{y:GraphMLReference 6}">
+				<y:CompositeLabelModelParameter.Parameter>
+					<y:InteriorLabelModelParameter Position="South" Model="{y:GraphMLReference 1}"/>
+				</y:CompositeLabelModelParameter.Parameter>
+			</y:CompositeLabelModelParameter>
+			<yjs:Stroke x:Key="3" fill="#FF663800"/>
+			<yjs:SolidColorFill x:Key="4" color="#FFD2DEEE"/>
+			<y:ExteriorLabelModel x:Key="5" Insets="5"/>
+			<y:CompositeLabelModel x:Key="6">
+				<y:CompositeLabelModel.LabelModels>
+					<y:GraphMLReference ResourceKey="5"/>
+					<y:GraphMLReference ResourceKey="1"/>
+					<y:FreeNodeLabelModel/>
+				</y:CompositeLabelModel.LabelModels>
+			</y:CompositeLabelModel>
+			<sys:String x:Key="7" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0">data:image/png;base64,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</sys:String>
+			<y:CompositeLabelModelParameter x:Key="8" Model="{y:GraphMLReference 6}">
+				<y:CompositeLabelModelParameter.Parameter>
+					<y:ExteriorLabelModelParameter Position="South" Model="{y:GraphMLReference 5}"/>
+				</y:CompositeLabelModelParameter.Parameter>
+			</y:CompositeLabelModelParameter>
+			<sys:String x:Key="9" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0">data:image/png;base64,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</sys:String>
+			<yjs:Font x:Key="10" fontSize="12" fontFamily="'Arial'"/>
+			<y:FreeNodePortLocationModelParameter x:Key="11" Ratio="0.002183406113537123,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="12" Ratio="0.5,0.006369426751592355"/>
+			<y:FreeNodePortLocationModelParameter x:Key="13" Ratio="0.5,0.005108556832694788"/>
+			<y:FreeNodePortLocationModelParameter x:Key="14" Ratio="0.5,0.005108556832694788"/>
+			<yjs:Font x:Key="15" fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+			<yjs:Font x:Key="16" fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+			<y:FreeNodePortLocationModelParameter x:Key="17" Ratio="0.9958246346555324,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="18" Ratio="0.9958246346555324,0.5"/>
+			<yjs:PolylineEdgeStyle x:Key="19" stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}"/>
+			<y:SmartEdgeLabelModel x:Key="20"/>
+			<yjs:DefaultLabelStyle x:Key="21" font="{y:GraphMLReference 10}" textFill="BLACK"/>
+			<yjs:Stroke x:Key="22" fill="{y:GraphMLReference 24}"/>
+			<yjs:Arrow x:Key="23" type="TRIANGLE" scale="0.75" stroke="#FF663800" fill="{y:GraphMLReference 24}" cropLength="1"/>
+			<yjs:SolidColorFill x:Key="24" color="#FF663800"/>
+			<yjs:PolylineEdgeStyle x:Key="25" stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}"/>
+		</y:SharedData>
+	</data>
+	<graph id="G" edgedefault="directed">
+		<data key="d6">
+			<y:Json>{"version":"2.0.0","theme":{"name":"light","version":"1.0.0"}}</y:Json>
+		</data>
+		<node id="n0">
+			<data key="d0">2</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text><![CDATA[Proxmox.svws-nrw.de
+142.132.152.180
+10.0.0.1/30
+10.1.0.1/16
+]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" font="{y:GraphMLReference 10}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-105.125" Y="-286.75" Width="300.25" Height="207.25"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-87.5,-237,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9936305732484076"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.9978165938864629,0.5"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5099916736053289,1"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n1">
+			<data key="d0">0</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text><![CDATA[https://u304716.your-storagebox.de/
+per webdav: /backup
+]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="BOTTOM" textFill="BLACK">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="408.875" Y="-270.5625" Width="229.25" Height="174.875"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-72.5,-222,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.002183406113537123,0.5"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n2">
+			<data key="d0">3</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text>Proxmox</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-66.375" Y="-273.625" Width="81.25" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
+			</data>
+		</node>
+		<node id="n3">
+			<data key="d0">4</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text>Storage</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="453.375" Y="-255.3125" Width="81.25" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 9}"/>
+			</data>
+		</node>
+		<node id="n4">
+			<data key="d0">5</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text>Internet</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:CompositeLabelModelParameter Model="{y:GraphMLReference 6}">
+								<y:CompositeLabelModelParameter.Parameter>
+									<y:InteriorLabelModelParameter Position="Center" Model="{y:GraphMLReference 1}"/>
+								</y:CompositeLabelModelParameter.Parameter>
+							</y:CompositeLabelModelParameter>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-346.75" Y="-220.75" Width="106.5" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-57.5,-207,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.997245179063361,0.5"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n5">
+			<data key="d0">6</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text><![CDATA[UFW, ReverseProxy, Gateway,
+DHCP, DNS, NAT
+10.0.0.2/30
+10.1.0.2/16
+]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 10}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-73.75" Y="120.25" Width="237.5" Height="207.25"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-72.5,-222,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9948914431673053"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9948914431673053"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5126315789473684,1"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5252631578947369,1"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5378947368421053,1"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p7">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5505263157894736,1"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p8">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.005108556832694788"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p9">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.005108556832694788"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p10">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.004175365344467663,0.5"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p11">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.004175365344467663,0.5"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p12">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.016806944291836077,0.514475271411339"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p13">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.9958246346555324,0.5"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p14">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.9958246346555324,0.5"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p15">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.9958246346555324,0.5"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n6">
+			<data key="d0">7</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text>UFW</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-49.75" Y="130.125" Width="81.25" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
+			</data>
+		</node>
+		<node id="n7">
+			<data key="d0">8</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text><![CDATA[10.1.1.50 per DHCP
+und Folge-IPs
+Gillab Runner
+]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 10}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="261.25" Y="438" Width="237.5" Height="193.75"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-57.5,-207,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n8">
+			<data key="d0">9</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text>runner.svws-nrw.de</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="310.25" Y="458.375" Width="81.25" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
+			</data>
+		</node>
+		<node id="n9">
+			<data key="d0">12</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text><![CDATA[10.1.1.100 per DHCP
+und Folge-IPs
+SVWS-Testserver
+]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 10}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-26.25" Y="438" Width="237.5" Height="193.75"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-27.5,-177,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n10">
+			<data key="d0">13</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text>test.svws-nrw.de</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 15}" textFill="BLACK" textSize="14"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="22.75" Y="458.375" Width="81.25" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
+			</data>
+		</node>
+		<node id="n11">
+			<data key="d0">14</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text><![CDATA[10.1.1.21 per DHCP
+Nexus Artifactory
+]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 10}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-585.75" Y="438" Width="237.5" Height="193.75"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-12.5,-162,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n12">
+			<data key="d0">15</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text>artifactory.svws-nrw.de</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 16}" textFill="BLACK" textSize="14"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-536.75" Y="458.375" Width="81.25" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
+			</data>
+		</node>
+		<node id="n13">
+			<data key="d0">16</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text><![CDATA[10.1.1.20 per DHCP
+Dokumentation
+BlueSpiceWiki
+]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 10}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-313.75" Y="438" Width="237.5" Height="193.75"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="2.5,-147,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n14">
+			<data key="d0">17</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text>wiki.svws-nrw.de</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-264.75" Y="458.375" Width="81.25" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
+			</data>
+		</node>
+		<node id="n15">
+			<data key="d0">-3</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text><![CDATA[
+]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 10}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-6.25" Y="515.75" Width="237.5" Height="193.75"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="-12.5,-162,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n16">
+			<data key="d0">-2</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text><![CDATA[01.test.svws-nrw.de ...]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 15}" textFill="BLACK" textSize="14"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="51.875" Y="589.25" Width="81.25" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
+			</data>
+		</node>
+		<node id="n17">
+			<data key="d0">-6</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text><![CDATA[
+]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 10}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="276.75" Y="515.75" Width="237.5" Height="193.75"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="2.5,-147,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n18">
+			<data key="d0">-5</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text><![CDATA[01.runner.svws-nrw.de ...]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 15}" textFill="BLACK" textSize="14"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="339.375" Y="588.25" Width="81.25" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
+			</data>
+		</node>
+		<node id="n19">
+			<data key="d0">-7</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text><![CDATA[10.1.1.22 per DHCP
+VPN-Netzwerk
+Wireguard
+]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 10}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-585.75" Y="157.875" Width="237.5" Height="193.75"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="2.5,-147,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="17"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="18"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n20">
+			<data key="d0">18</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text>vpn.svws-nrw.de</y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 16}" textFill="BLACK" textSize="14"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-548.25" Y="166.125" Width="81.25" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
+			</data>
+		</node>
+		<node id="n21">
+			<data key="d0">19</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 2}">
+						<y:Label.Text><![CDATA[per DHCP
+Eclipse, Git-Clients, ...
+
+]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 10}" textFill="BLACK"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="438.25" Y="174.5" Width="237.5" Height="193.75"/>
+			</data>
+			<data key="d7">
+				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
+			</data>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="17.5,-132,270,75"/>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="17"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="18"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p7">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.004175365344467663,0.5"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p8">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.004175365344467663,0.5"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p9">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.004175365344467663,0.5"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+		</node>
+		<node id="n22">
+			<data key="d0">20</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 8}">
+						<y:Label.Text><![CDATA[DevOps Rechner]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle font="{y:GraphMLReference 16}" textFill="BLACK" textSize="14"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="482.875" Y="172.40625" Width="81.25" Height="75.25"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
+			</data>
+		</node>
+		<edge id="e0" source="n4" target="n0" sourceport="p0" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-172.6875,-183.125"/>
+					<y:Bend Location="-172.6875,-183.125"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="19"/>
+			</data>
+		</edge>
+		<edge id="e1" source="n0" target="n5" sourceport="p1" targetport="p1">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 21}">
+						<y:Label.Text><![CDATA[Umleitung:
+Alles außer Port 22 und 8006]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 20}" Location="FromTarget" SegmentRatio="1" Distance="5.000000000000011"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="45,27.125"/>
+					<y:Bend Location="45,27.125"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="19"/>
+			</data>
+		</edge>
+		<edge id="e2" source="n0" target="n1" sourceport="p2" targetport="p0">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 21}">
+						<y:Label.Text><![CDATA[Hetzner: internes Netz]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 20}" Distance="5"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="302,-183.125"/>
+					<y:Bend Location="302,-183.125"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}">
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FF663800" fill="{y:GraphMLReference 24}" cropLength="1"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e3" source="n5" target="n7" sourceport="p3" targetport="p3">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="44.5,326.51021711366536"/>
+					<y:Bend Location="44.5,382.75"/>
+					<y:Bend Location="380,382.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="19"/>
+			</data>
+		</edge>
+		<edge id="e4" source="n5" target="n9" sourceport="p5" targetport="p3">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="18.75,327.5"/>
+					<y:Bend Location="18.75,411.5"/>
+					<y:Bend Location="92.5,411.5"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}"/>
+			</data>
+		</edge>
+		<edge id="e5" source="n5" target="n11" sourceport="p6" targetport="p3">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-41.5,327.5"/>
+					<y:Bend Location="-41.5,374"/>
+					<y:Bend Location="-467,374"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}"/>
+			</data>
+		</edge>
+		<edge id="e6" source="n5" target="n13" sourceport="p7" targetport="p3">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-57.75,327.5"/>
+					<y:Bend Location="-57.75,312.5"/>
+					<y:Bend Location="-9.5,312.5"/>
+					<y:Bend Location="-9.5,401.75"/>
+					<y:Bend Location="-195,401.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}"/>
+			</data>
+		</edge>
+		<edge id="e7" source="n5" target="n5" sourceport="p8" targetport="p9">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="45,111"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="25"/>
+			</data>
+		</edge>
+		<edge id="e8" source="n5" target="n19" sourceport="p11" targetport="p5">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-195,223.875"/>
+					<y:Bend Location="-195,246.375"/>
+					<y:Bend Location="-195,254.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="25"/>
+			</data>
+		</edge>
+		<edge id="e9" source="n21" target="n5" sourceport="p9" targetport="p15">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="322.375,271.375"/>
+					<y:Bend Location="322.375,223.875"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="25"/>
+			</data>
+		</edge>
+	</graph>
+</graphml>
