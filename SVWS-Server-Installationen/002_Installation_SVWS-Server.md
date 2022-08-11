@@ -9,8 +9,9 @@ die unter dem nachfolgenden Kapitel *Installation from Scratch*  aufgeführt sin
 Aktuell werden noch Token-Zugänge zum Github SVWS-Server und SVWS-Client Repository benötigt und im Script abgefragt. 
 Dieser Schritt* entfällt bei Veröffnetlichung der SVWS-Servers auf Git Hub unter OpenSource-Lizens
 
-+ Download [install-svws-from-scratch.sh](./scripts/install-svws-from-scratch.md)
-+ ausführbar machen: `chmod -x install-svws-from-scratch.sh`
++ Show [install-svws-from-scratch.sh](./scripts/install-svws-from-scratch.md)
++ Download [install-svws-from-scratch.sh](./scripts/install-svws-from-scratch.sh)
++ ausführbar machen: `chmod +x install-svws-from-scratch.sh`
 + Script starten: `./install-svws-from-scratch`
 
 <!-- ![download  & script starten](./graphics/screenshots/install_svws_1.jpg) -->

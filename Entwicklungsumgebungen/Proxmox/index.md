@@ -337,7 +337,7 @@ Firewallregeln ('Nummer' aus status ablesen) löschen
 https://indibit.de/reverse-proxy-mit-nginx-mehrere-server-hinter-einer-ip-per-subdomain-ansprechen/
 
 
-		apt-get install -y nginx nginx-extras certbot python3-certbot-nginx
+		apt-get install -y nginx nginx-extras
 		unlink /etc/nginx/sites-enabled/default
 
 
@@ -360,6 +360,39 @@ folgendes Eintragen:
 		nginx -s reload
 
 ## Certifikate einrichten
+
+		apt-get install -y certbot python3-certbot-nginx
+		
+Eine Emailadresse wird benötigt, um diese bei der Vergabe der Zertifikate zu hinterlegen. Hier werden Renewal-Erinnerungen hingeschickt.
+
+VOR ausführen des python skripts "certbot --nginx" kann man schon eine einfache ReverseProxy.config anlegen mit den Domainnamen. Das Skript aktualisiert diese automatisch um die nötigen ssl Eintragungen: 
+
+		nano /etc/nginx/sites-enable/reverse-proxy.conf 
+		
+Aufbau der Datei: 		
+
+		server
+		{
+        server_name cloud.svws-nrw.de;
+        location / {
+                proxy_pass      http://10.1.1.20;
+        }
+		server
+		{
+        server_name wiki.svws-nrw.de;
+        location / {
+                proxy_pass      http://10.1.1.21;
+        }
+
+
+		certbot --nginx
+		certbot renew --dry-run
+		
+Prüfen, ob die regelmäßge Aktivierung angeschaltet ist: 
+		systemctl list-timers
+
+
+
 
 [ToDo]
 
