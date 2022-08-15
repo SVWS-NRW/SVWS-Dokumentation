@@ -61,17 +61,16 @@
 			<y:FreeNodePortLocationModelParameter x:Key="12" Ratio="0.5,0.006369426751592355"/>
 			<y:FreeNodePortLocationModelParameter x:Key="13" Ratio="0.5,0.005108556832694788"/>
 			<y:FreeNodePortLocationModelParameter x:Key="14" Ratio="0.5,0.005108556832694788"/>
-			<yjs:Font x:Key="15" fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
-			<yjs:Font x:Key="16" fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
-			<y:FreeNodePortLocationModelParameter x:Key="17" Ratio="0.9958246346555324,0.5"/>
-			<y:FreeNodePortLocationModelParameter x:Key="18" Ratio="0.9958246346555324,0.5"/>
-			<yjs:PolylineEdgeStyle x:Key="19" stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}"/>
-			<y:SmartEdgeLabelModel x:Key="20"/>
-			<yjs:DefaultLabelStyle x:Key="21" font="{y:GraphMLReference 10}" textFill="BLACK"/>
-			<yjs:Stroke x:Key="22" fill="{y:GraphMLReference 24}"/>
-			<yjs:Arrow x:Key="23" type="TRIANGLE" scale="0.75" stroke="#FF663800" fill="{y:GraphMLReference 24}" cropLength="1"/>
-			<yjs:SolidColorFill x:Key="24" color="#FF663800"/>
-			<yjs:PolylineEdgeStyle x:Key="25" stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}"/>
+			<y:FreeNodePortLocationModelParameter x:Key="15" Ratio="0.9958246346555324,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="16" Ratio="0.9958246346555324,0.5"/>
+			<yjs:PolylineEdgeStyle x:Key="17" stroke="{y:GraphMLReference 20}" targetArrow="{y:GraphMLReference 21}"/>
+			<y:SmartEdgeLabelModel x:Key="18"/>
+			<yjs:DefaultLabelStyle x:Key="19" font="{y:GraphMLReference 10}" textFill="BLACK"/>
+			<yjs:Stroke x:Key="20" fill="{y:GraphMLReference 22}"/>
+			<yjs:Arrow x:Key="21" type="TRIANGLE" scale="0.75" stroke="#FF663800" fill="{y:GraphMLReference 22}" cropLength="1"/>
+			<yjs:SolidColorFill x:Key="22" color="#FF663800"/>
+			<yjs:PolylineEdgeStyle x:Key="23" stroke="{y:GraphMLReference 20}" targetArrow="{y:GraphMLReference 21}"/>
+			<yjs:PolylineEdgeStyle x:Key="24" stroke="{y:GraphMLReference 20}" targetArrow="{y:GraphMLReference 21}"/>
 		</y:SharedData>
 	</data>
 	<graph id="G" edgedefault="directed">
@@ -464,6 +463,26 @@ DHCP, DNS, NAT
 					</y:ViewState>
 				</data>
 			</port>
+			<port name="p16">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.995221027479092"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
+			<port name="p17">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.995221027479092"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
 		</node>
 		<node id="n6">
 			<data key="d0">7</data>
@@ -493,7 +512,7 @@ DHCP, DNS, NAT
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text><![CDATA[10.1.1.50 per DHCP
+						<y:Label.Text><![CDATA[10.1.5.1 per DHCP
 und Folge-IPs
 Gillab Runner
 ]]></y:Label.Text>
@@ -560,7 +579,7 @@ Gillab Runner
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
-						<y:Label.Text>runner.svws-nrw.de</y:Label.Text>
+						<y:Label.Text>runner01.svws-nrw.de</y:Label.Text>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
 								<yjs:DefaultLabelStyle.font>
@@ -583,7 +602,7 @@ Gillab Runner
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text><![CDATA[10.1.1.100 per DHCP
+						<y:Label.Text><![CDATA[10.1.4.1 per DHCP
 und Folge-IPs
 SVWS-Testserver
 ]]></y:Label.Text>
@@ -650,9 +669,13 @@ SVWS-Testserver
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
-						<y:Label.Text>test.svws-nrw.de</y:Label.Text>
+						<y:Label.Text>server.svws-nrw.de</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle font="{y:GraphMLReference 15}" textFill="BLACK" textSize="14"/>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -669,7 +692,7 @@ SVWS-Testserver
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text><![CDATA[10.1.1.21 per DHCP
+						<y:Label.Text><![CDATA[10.1.3.1 per DHCP
 Nexus Artifactory
 ]]></y:Label.Text>
 						<y:Label.Style>
@@ -679,7 +702,7 @@ Nexus Artifactory
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-585.75" Y="438" Width="237.5" Height="193.75"/>
+				<y:RectD X="-313.75" Y="438" Width="237.5" Height="193.75"/>
 			</data>
 			<data key="d7">
 				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
@@ -729,6 +752,16 @@ Nexus Artifactory
 					</y:ViewState>
 				</data>
 			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.005108556832694788"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
 		</node>
 		<node id="n12">
 			<data key="d0">15</data>
@@ -737,13 +770,17 @@ Nexus Artifactory
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text>artifactory.svws-nrw.de</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle font="{y:GraphMLReference 16}" textFill="BLACK" textSize="14"/>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-536.75" Y="458.375" Width="81.25" Height="75.25"/>
+				<y:RectD X="-255.25" Y="458.375" Width="81.25" Height="75.25"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
@@ -754,7 +791,7 @@ Nexus Artifactory
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text><![CDATA[10.1.1.20 per DHCP
+						<y:Label.Text><![CDATA[10.1.2.1 per DHCP
 Dokumentation
 BlueSpiceWiki
 ]]></y:Label.Text>
@@ -765,7 +802,7 @@ BlueSpiceWiki
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-313.75" Y="438" Width="237.5" Height="193.75"/>
+				<y:RectD X="-585.75" Y="438" Width="237.5" Height="193.75"/>
 			</data>
 			<data key="d7">
 				<yjs:RectangleNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}"/>
@@ -815,6 +852,16 @@ BlueSpiceWiki
 					</y:ViewState>
 				</data>
 			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.005108556832694788"/>
+				</data>
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
 		</node>
 		<node id="n14">
 			<data key="d0">17</data>
@@ -833,7 +880,7 @@ BlueSpiceWiki
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-264.75" Y="458.375" Width="81.25" Height="75.25"/>
+				<y:RectD X="-543.125" Y="451.875" Width="81.25" Height="75.25"/>
 			</data>
 			<data key="d7">
 				<yjs:ImageNodeStyle image="{y:GraphMLReference 7}"/>
@@ -909,9 +956,13 @@ BlueSpiceWiki
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
-						<y:Label.Text><![CDATA[01.test.svws-nrw.de ...]]></y:Label.Text>
+						<y:Label.Text><![CDATA[nightly.svws-nrw.de ...]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle font="{y:GraphMLReference 15}" textFill="BLACK" textSize="14"/>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -993,9 +1044,13 @@ BlueSpiceWiki
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
-						<y:Label.Text><![CDATA[01.runner.svws-nrw.de ...]]></y:Label.Text>
+						<y:Label.Text><![CDATA[runner02.svws-nrw.de ...]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle font="{y:GraphMLReference 15}" textFill="BLACK" textSize="14"/>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1012,7 +1067,7 @@ BlueSpiceWiki
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 2}">
-						<y:Label.Text><![CDATA[10.1.1.22 per DHCP
+						<y:Label.Text><![CDATA[10.1.1.1 per DHCP
 VPN-Netzwerk
 Wireguard
 ]]></y:Label.Text>
@@ -1075,7 +1130,7 @@ Wireguard
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="17"/>
+					<y:GraphMLReference ResourceKey="15"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1085,7 +1140,7 @@ Wireguard
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="18"/>
+					<y:GraphMLReference ResourceKey="16"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1108,7 +1163,11 @@ Wireguard
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text>vpn.svws-nrw.de</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle font="{y:GraphMLReference 16}" textFill="BLACK" textSize="14"/>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1188,7 +1247,7 @@ Eclipse, Git-Clients, ...
 			</port>
 			<port name="p4">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="17"/>
+					<y:GraphMLReference ResourceKey="15"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1198,7 +1257,7 @@ Eclipse, Git-Clients, ...
 			</port>
 			<port name="p5">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="18"/>
+					<y:GraphMLReference ResourceKey="16"/>
 				</data>
 				<data key="d18">
 					<y:ViewState>
@@ -1251,7 +1310,11 @@ Eclipse, Git-Clients, ...
 					<y:Label LayoutParameter="{y:GraphMLReference 8}">
 						<y:Label.Text><![CDATA[DevOps Rechner]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle font="{y:GraphMLReference 16}" textFill="BLACK" textSize="14"/>
+							<yjs:DefaultLabelStyle textFill="BLACK" textSize="14">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="14" fontFamily="'Arial'" fontWeight="BOLD"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -1271,17 +1334,17 @@ Eclipse, Git-Clients, ...
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="19"/>
+				<y:GraphMLReference ResourceKey="17"/>
 			</data>
 		</edge>
 		<edge id="e1" source="n0" target="n5" sourceport="p1" targetport="p1">
 			<data key="d11">
 				<x:List>
-					<y:Label Style="{y:GraphMLReference 21}">
+					<y:Label Style="{y:GraphMLReference 19}">
 						<y:Label.Text><![CDATA[Umleitung:
 Alles außer Port 22 und 8006]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 20}" Location="FromTarget" SegmentRatio="1" Distance="5.000000000000011"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 18}" Location="FromTarget" SegmentRatio="1" Distance="5.000000000000011"/>
 						</y:Label.LayoutParameter>
 					</y:Label>
 				</x:List>
@@ -1293,16 +1356,16 @@ Alles außer Port 22 und 8006]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="19"/>
+				<y:GraphMLReference ResourceKey="17"/>
 			</data>
 		</edge>
 		<edge id="e2" source="n0" target="n1" sourceport="p2" targetport="p0">
 			<data key="d11">
 				<x:List>
-					<y:Label Style="{y:GraphMLReference 21}">
+					<y:Label Style="{y:GraphMLReference 19}">
 						<y:Label.Text><![CDATA[Hetzner: internes Netz]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 20}" Distance="5"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 18}" Distance="5"/>
 						</y:Label.LayoutParameter>
 					</y:Label>
 				</x:List>
@@ -1314,9 +1377,9 @@ Alles außer Port 22 und 8006]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}">
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 20}" targetArrow="{y:GraphMLReference 21}">
 					<yjs:PolylineEdgeStyle.sourceArrow>
-						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FF663800" fill="{y:GraphMLReference 24}" cropLength="1"/>
+						<yjs:Arrow type="TRIANGLE" scale="0.75" stroke="#FF663800" fill="{y:GraphMLReference 22}" cropLength="1"/>
 					</yjs:PolylineEdgeStyle.sourceArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -1324,13 +1387,13 @@ Alles außer Port 22 und 8006]]></y:Label.Text>
 		<edge id="e3" source="n5" target="n7" sourceport="p3" targetport="p3">
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="44.5,326.51021711366536"/>
+					<y:Bend Location="44.5,326.441251596424"/>
 					<y:Bend Location="44.5,382.75"/>
 					<y:Bend Location="380,382.75"/>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="19"/>
+				<y:GraphMLReference ResourceKey="17"/>
 			</data>
 		</edge>
 		<edge id="e4" source="n5" target="n9" sourceport="p5" targetport="p3">
@@ -1342,46 +1405,20 @@ Alles außer Port 22 und 8006]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 20}" targetArrow="{y:GraphMLReference 21}"/>
 			</data>
 		</edge>
-		<edge id="e5" source="n5" target="n11" sourceport="p6" targetport="p3">
-			<data key="d12">
-				<x:List>
-					<y:Bend Location="-41.5,327.5"/>
-					<y:Bend Location="-41.5,374"/>
-					<y:Bend Location="-467,374"/>
-				</x:List>
-			</data>
-			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}"/>
-			</data>
-		</edge>
-		<edge id="e6" source="n5" target="n13" sourceport="p7" targetport="p3">
-			<data key="d12">
-				<x:List>
-					<y:Bend Location="-57.75,327.5"/>
-					<y:Bend Location="-57.75,312.5"/>
-					<y:Bend Location="-9.5,312.5"/>
-					<y:Bend Location="-9.5,401.75"/>
-					<y:Bend Location="-195,401.75"/>
-				</x:List>
-			</data>
-			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 22}" targetArrow="{y:GraphMLReference 23}"/>
-			</data>
-		</edge>
-		<edge id="e7" source="n5" target="n5" sourceport="p8" targetport="p9">
+		<edge id="e5" source="n5" target="n5" sourceport="p8" targetport="p9">
 			<data key="d12">
 				<x:List>
 					<y:Bend Location="45,111"/>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="25"/>
+				<y:GraphMLReference ResourceKey="23"/>
 			</data>
 		</edge>
-		<edge id="e8" source="n5" target="n19" sourceport="p11" targetport="p5">
+		<edge id="e6" source="n5" target="n19" sourceport="p11" targetport="p5">
 			<data key="d12">
 				<x:List>
 					<y:Bend Location="-195,223.875"/>
@@ -1390,10 +1427,10 @@ Alles außer Port 22 und 8006]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="25"/>
+				<y:GraphMLReference ResourceKey="23"/>
 			</data>
 		</edge>
-		<edge id="e9" source="n21" target="n5" sourceport="p9" targetport="p15">
+		<edge id="e7" source="n21" target="n5" sourceport="p9" targetport="p15">
 			<data key="d12">
 				<x:List>
 					<y:Bend Location="322.375,271.375"/>
@@ -1401,7 +1438,31 @@ Alles außer Port 22 und 8006]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="25"/>
+				<y:GraphMLReference ResourceKey="23"/>
+			</data>
+		</edge>
+		<edge id="e8" source="n5" target="n13" sourceport="p16" targetport="p4">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-41.75,326.5095579450418"/>
+					<y:Bend Location="-41.75,382.75"/>
+					<y:Bend Location="-467,382.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="24"/>
+			</data>
+		</edge>
+		<edge id="e9" source="n5" target="n11" sourceport="p17" targetport="p4">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-14.75,326.5095579450418"/>
+					<y:Bend Location="-14.75,411.5"/>
+					<y:Bend Location="-195,411.5"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="24"/>
 			</data>
 		</edge>
 	</graph>
