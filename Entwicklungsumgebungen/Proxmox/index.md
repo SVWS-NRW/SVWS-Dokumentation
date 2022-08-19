@@ -14,7 +14,11 @@ https://www.youtube.com/watch?v=_NIZxwzCSaM
 vswitch von Hetzner im Proxmox einbinden
 https://forum.proxmox.com/threads/hetzner-vswitch-vlan-konfig.58385/
 
+
 # Architektur 
+
+[Planung des Proxmoxservers](Planung_Proxmox.md) bei Hetzner.
+
 
 ![Architektur](./graphics/Proxmox_Netzwerk_handy.png)
 
@@ -51,7 +55,7 @@ https://docs.hetzner.com/de/robot/storage-box/access/access-samba-cifs
 Ein aussagekräftiges Backupverzeichnis anlegen. 
 
 2) In der Web-Konfigurations-Oberfläche einen Unteruser anlegen. 
-Passwörter neu erstellen und gut abspeichern ;) Ggf samba aktivieren
+Passwörter neu erstellen und gut abspeichern Ggf samba aktivieren
 
 3) Software nachinstallieren, wenn man  es noch nicht gemacht hat ... 		
 
@@ -128,7 +132,7 @@ Daher besser direkt auf der Proxmoxoberfläche das Cert-generieren anstoßen.
 
 # Proxmox Certifikate generieren
 
-[ToDo]
+
 
 # Proxmox Backup einrichten
 
@@ -373,7 +377,7 @@ Aufbau der Datei:
 
 		server
 		{
-        server_name cloud.svws-nrw.de;
+        server_name server.svws-nrw.de;
         location / {
                 proxy_pass      http://10.1.1.20;
         }
@@ -401,6 +405,8 @@ Prüfen, ob die regelmäßge Aktivierung angeschaltet ist:
 [ToDo]
 
 # virtuelle Maschinen einrichten
+
+siehe: [virtuelle Maschine einrichten](vm_einrichten.md)
 
 ## DNS Eintrag
 
