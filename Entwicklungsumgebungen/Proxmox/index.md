@@ -348,7 +348,7 @@ https://indibit.de/reverse-proxy-mit-nginx-mehrere-server-hinter-einer-ip-per-su
 		cd /etc/nginx/sites-available
 		nano reverse-proxy.conf
 		
-folgendes Eintragen: 
+Für eine Einfach Umlenkung von Port 80 auf eine bestimmte IP im dahinterliegenden Netz folgendes Eintragen: 
 
 		server {
 			server_name wiki.svws-nrw.de;
@@ -392,11 +392,41 @@ Aufbau der Datei:
 		certbot --nginx
 		certbot renew --dry-run
 		
-Prüfen, ob die regelmäßge Aktivierung angeschaltet ist: 
+Prüfen, ob die regelmäßge Aktivierung angeschaltet ist:
+ 
 		systemctl list-timers
+		
+Prüfen, welche Domains und subdomains im certifikat aufgelistet werden: 
 
+		certbot certificates
 
+eine subdomain hinzufügen: 
 
+neuen eintrag  in den servernames: 
+
+nano /etc/nginx/sites-available/reverse-proxy.conf
+
+Hier im Bereich hinter "default_server" die subdomain ergänzen. Die aktuelle Liste:
+
+		server_name vpn.svws-nrw.de wiki.svws-nrw.de artifactory.svws-nrw.de  server.svws-nrw.de nightly.svws-nrw.de wenom.svws-nrw.de runner01.svws-nrw.de runner02.svws-nrw.de  graphana.svws-nrw.de  mirror.svws-nrw.de
+
+Testen, ob die Config in Ordnung ist und laden: 
+
+		nginx -t 
+		nginx -s reload
+
+		certbot --nginx
+		
+und dann die richtige nummer auswählen -> man erhält ein neues einzelzertifikat 
+		
+		
+		
+		
+#### Literatur: 
+
+https://www.debacher.de/ublog/2016/06/letsencrypt/
+
+https://www.teslina.com/tutorials/sicherheit/ssl/lets-encrypt-ssl-zertifikate-mit-certbot-erstellen/
 
 [ToDo]
 
@@ -404,11 +434,46 @@ Prüfen, ob die regelmäßge Aktivierung angeschaltet ist:
 
 [ToDo]
 
+# nfs freigabe
+
+## Literatur 
+
+https://www.howtoforge.de/anleitung/wie-man-nfs-server-unter-debian-11-installiert-und-konfiguriert/
+
+https://www.thegeekdiary.com/dependency-failed-for-nfs-server-and-services/
+
+## installation
+
+		apt install nfs-kernel-server rpcbind
+		
+		mkdir /var/nfs/
+		
+Inhalte in share einfügen zb. echo "test" >> /share/test.txt 
+ggf. noch rechte anpassen 
+
+		nano /etc/exports
+		
+Freigabe per IP eintragen: 
+		/var/nfs/ 10.1.0.1/16 (ro)
+		
+
+
+		systemctl is-enabled nfs-server
+		systemctl status nfs-server
+
+ufw anpassen:  
+		ufw allow from 10.1.0.1/16 to any port nfs
+		
+		
+Problem: es läuft hier in einem LXC container. 
+		
+		
+
 # virtuelle Maschinen einrichten
 
-siehe: [virtuelle Maschine einrichten](vm_einrichten.md)
+[virtuelle Maschine einrichten](vm_einrichten.md)
 
-## DNS Eintrag
+[Gitlab-Runner einrichten](runner.md)
 
-unter der entsprechenden DNS eintragungsmöglichkeit, 
-aktuell bei 1 blue, den entsprechenden eintrga vornehmen: 
+[Nexus-Artifactury einrichten](artifactury.md)
+
