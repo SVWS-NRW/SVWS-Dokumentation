@@ -79,7 +79,7 @@ Testen, ob die Config in Ordnung ist und laden:
 		nginx -s reload
 
 
-## Zertifikat einrichten 
+## Zertifikat einrichten (optional)
 
 Man hat mehrere Möglichkeiten ein Zertifikat und damit ssl und https zu benutzen 
 
@@ -95,6 +95,33 @@ Bei dem Auswahldialog die entsprechende subdomain auswählen und das Zertifikat 
 
 Bei der Komunikation nach außen wird dann dieses Zertifikat verwendet. 
 
-# strong ssl
 
-möchte man nun das die Komunikationsmöglichkeiten noch sicherer gestalten, dann kann man die folgenden Einträge unter dem 'listen 443 ssl' bei der entsprechenden Domain nachtragen: 
+# nfs 
+
+NFS wird intern im Proxmoxmuttersystem zur Bereitstellung der Mounts benutz. 
+Ein weiterer NFS Server in einem Container ist nur mit einer aufwändigen Konfiguration des Muttersystems möglich. 
+Es emfiehlt sich daher den weg über eine CIFS oder WebDav Freigabe zu gehen. 
+
+# bestehende Container
+
+## umbenennen
+
+Container 123 erhält den Namen "TestServer"
+
+		pct set 123 --hostname TestServer
+		
+## HD vergrößern
+
+Komfortabel unter der Weboberfläche: 
+
+LCX auswählen -> Resources -> HD auswählen -> VolumeAktion -> Resize
+
+oder
+
+aus der Konsole des Proxmox Muttersystems: 
+			
+		pct resize 101 rootfs 200G
+
+		
+		
+

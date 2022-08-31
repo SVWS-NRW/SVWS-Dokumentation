@@ -3,7 +3,7 @@
 ## Hardware
 
 + 2 cpu
-+ 16 GB Ram
++ 16 GB (=16384MB) Ram
 + 2 GB swap
 + 250 GB HD
 
@@ -19,6 +19,9 @@ Die Anleitung findet man in dem Gitlabserver unter:
 		apt install -y gitlab-runner
 		gitlab-runner status
    
+Des Weiteren eine gute Dokumentation des Funktionsumfange und der Einstellungsmögliochkeiten unter: 
+
+https://docs.gitlab.com/runner/configuration/advanced-configuration.html
    
 ## Registrierung
 
@@ -38,3 +41,26 @@ Hat man nun custom statt docker bei dem Installationsscript gewählt, dann helfe
 		apt update
 		apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 		# docker run hello-world
+		
+Nachdem man die Docker Installation abgeschlossen hat, muss unter /etc/gitlab-runner/config-toml im unteren Teil der Datei die folgenden Einträge haben
+
+
+```
+...
+  executor = "docker"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+  [runners.docker]
+    tls_verify = false
+    image = "eclipse-temurin:17"
+    privileged = false
+    disable_entrypoint_overwrite = false
+    com_kill_disable = false
+    disable_cache = false
+    volumes = ["/cache"]
+    shm_size = 0
+	
+```

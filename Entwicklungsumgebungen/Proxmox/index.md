@@ -9,6 +9,7 @@ https://community.hetzner.com/tutorials/install-and-configure-proxmox_ve/de
 
 Proxmox mit einer IP:
 https://www.youtube.com/watch?v=_NIZxwzCSaM
+https://schroederdennis.de/allgemein/proxmox-auf-rootserver-mit-nur-1-public-ip-addresse-pfsense-nat/
 
 
 vswitch von Hetzner im Proxmox einbinden
@@ -100,21 +101,62 @@ mit leichten Anpassungen an der Firewall und certbot (s.u.)
 
 [TODO]
 
-# Firewall auf dem Proxmox [disabeld]
+# Firewall auf dem Proxmox 
 
-[haben wir mit iptables analog zum tutorial (s.u.) gelöst]
+Ziel ist es jede Anfrage außer Port 8006 und Port 22 auf die dahinterliegende Firewall zu lenken. 
+Der erste Versuch mit UFW wurde verworfen und statt dessen direkt in die IPtabels geschrieben. 
+
+
+## UFW [disabeld]
+
+Die UFW lässt sich schön komfortabel einrichten, zur Portweiterleitung mit definierten außnahmen eignet sich dann eher direkt IPtabels.
 
 		#apt install ufw -y
 		#ufw allow SSH
 		#ufw allow 8006/tcp
 		#ufw enable
 
-# Nat per Iptables: 
+## Nat per Iptables: 
 
-		iptables -t nat -A PREROUTING -i enp7s0 -p udp -j DNAT --to 10.0.0.2 
+### Literatur
+
+https://www.pcwelt.de/ratgeber/Ratgeber-Firewall-Linux-Firewall-fuer-Profis-mit-iptables-472858.html
+https://schroederdennis.de/allgemein/proxmox-auf-rootserver-mit-nur-1-public-ip-addresse-pfsense-nat/
+### Einrichtung IPtables
+Die beiden Iptable-Befehle organisieren die Weiterleitung allen anfragen auf das Netzwerkdevice enp7s0, so dass diese außer port 8006 und 22 
+weitergeleitet werden auf die 10.0.0.2
+
+		post-up   echo 1 > /proc/sys/net/ipv4/ip_forward
+        post-up   echo 1 > /proc/sys/net/ipv6/ip_forward
+		iptables -t nat -A PREROUTING -i enp7s0 -p udp -j DNAT --to 10.0.0.2
+		iptables -t nat -A PREROUTING -i enp7s0 -p tcp -m multiport ! --dport 22,8006 -j DNAT --to 10.0.0.2
 		
-		iptables-save
+		
+Die Befehle können in der nano /etc/network/interfaces direkt an dem device eingebunden werden. 
 
+### Alternativer Einrichtung
+Alternativ kann man diese Befehle auch direkt ausführen 
+
+		iptables -L -v -n
+		iptables-save 
+		iptables -S
+
+Um die Funktionalität zu prüfen, können die folgenden Befehle verwendet werden: 
+  
+		iptables -L INPUT
+		iptables -L PREROUTING
+		
+###	Masquerading
+
+Dem internen Networkdevice muss man ein Masquerading einrichten, so dass die Pakete auch auf ihrem Rückweg richtig zugeordnet werden. 
+
+		post-up   iptables -t nat -A POSTROUTING -s '10.0.0.0/30' -o enp7s0 -j MASQUERADE
+        post-down iptables -t nat -D POSTROUTING -s '10.0.0.0/30' -o enp7s0 -j MASQUERADE
+
+
+	
+		
+  
 # encrypt
 
 // wird nicht benutzt, sondern das auf der ProxmoxOberfläche generierte Certifikat
@@ -467,7 +509,47 @@ ufw anpassen:
 		
 Problem: es läuft hier in einem LXC container. 
 		
-		
+# ACME Chalange aus DNS umbiegen
+
+Problem: Port 80 wird daurhaft auf die UFW geleitet, 
+damit hier die Firewall und der ReverseProxy ihre Umleitungen übernehmen können. 
+Das Muttersystem des Proxmox hat jedoch unter Proxmox->Certificates nur den typ http. 
+
+Lösung: 
+
+## neue DNS Zone anlegen und umziehen
+Unter der Hetznerkonsole einen neue DNS Zone anlegen. -> DNS -> add new zone
+Namen angeben & autoscanning
+Übernehmen und die drei(?) Hetzner DNS-Server bei 1 blue als eigenen DNS eintragen. 
+
+Die Zuständigkeiten im Antworten auf die IP adressen sind nun neu geregelt, 
+es sollte aber keinem auffallen, weil die Antwort ja gleich geblieben ist. 
+
+## DNS-Methode als Plugin
+
+### Plugin installieren
+
+Achtung: es gibt einen Unterschied zwischen dem Klassischem root login und einem user aus der admingruppe. 
+
+Nur als root kann man unter Datacenter -> ACME sehen. Hier unter Challange Plugins -> Add 
+
+Namengeben, DNS-API hetzner auswählen und als Api Data:  HETZNER_Token="xy..z" wählen. 
+
+### Token anlegen
+
+Unter DNS im Hetzner webfrontend findet man die neue Zone und rechts daneben "Api token" 
+-> neuen Token erstellen und diesen in der oben beschriebenen Form im Proxmox eintragen. 
+
+### Verfahren umstellen
+
+unter Proxmox -> Certificates -> AMCE -> Domaineintrag wählen -> Edit: Chalangetyp DNS und das installierte Plugin wählen. 
+
+
+
+
+
+
+
 
 # virtuelle Maschinen einrichten
 

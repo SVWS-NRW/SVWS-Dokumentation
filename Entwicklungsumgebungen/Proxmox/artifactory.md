@@ -50,15 +50,16 @@ die nexus Installationsordner in das userverzeichnis verschieben und dem Benutze
 		exit		
 
 
-als user arti anmelden und die Installation ausführen 
+Als user arti anmelden und die Installation ausführen:
 
 		 nexus-3.38.1-01/bin/nexus start
 
-testen, ob alles läuft: 
+Testen, ob alles läuft: 
 
 		nexus-3.38.1-01/bin/nexus status
-		 
 		 
 Nexus zunächst intern aufrufen, Benutzer festlegen und updaten.
 
 ![Nexus Erstinstallation](./graphics/nexus.png)
+
+auf sign in klicken und man erhält man bei erstem Aufruf informationen, wo das passwort zu finden ist 
