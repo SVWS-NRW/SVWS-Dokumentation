@@ -31,10 +31,10 @@ Synchronisationsintervall festgelegt werden.
 
 ## Zugriffschutz auf Adressdaten
 
-Die in den Adressbüchern angezeigten Kontakte unterliegen einem
+<!---Die in den Adressbüchern angezeigten Kontakte unterliegen einem
 Zugriffschutz. Der angemeldete Benutzer sieht nur diejenigen Kontakte,
 für die er eine Berechtigung besitzt. Der Zugriffschutz erfolgt
-regelbasiert:
+regelbasiert:~~
 
 | **Angemeldeter Benutzer** | **Sichtbare Kontakte**              |        |          |
 |---------------------------|-------------------------------------|--------|----------|
@@ -44,6 +44,14 @@ regelbasiert:
 | Erzieher                  | ?                                   | ?      | ?        |
 | Admin                     | Alle                                | Alle   | Alle     |
 | Sekretariat               | Alle                                | Alle   | Alle     |
+-->
+Die Adressbuecher und darin enthaltenen Kontakte unterliegen einem Zugriffsschutz. Der angemeldete Benutzer sieht nur diejenigen Adressbuecher und Kontakte, für die er berechtigt ist. Dazu gibt es folgende Berechtigungen:
+- Adressdaten ansehen zum Einsehen der verfügbaren Adressbücher
+- Lehrerdaten ansehen zum Einsehen und Laden der Visitenkarten von Lehrern
+- Schüler Individualdaten ansehen zum Einsehen und Laden der Visitenkarten von Schülern
+- Adressdaten Erzieher ansehen zum Einsehen und Laden der Visitenkarten von Erziehungsberechtigten
+
+In https://git.svws-nrw.de/svws/SVWS-Server/-/issues/578 werden notwendige Änderungen/Eweiterungen diskutiert.
 
 ## Kompatibilität mit CardDAV-Clients
 
