@@ -5,7 +5,7 @@
 
 Proxmox installation bei Hetzner: 
 https://community.hetzner.com/tutorials/install-and-configure-proxmox_ve/de
-
+https://github.com/johnknott/proxmox-hetzner-autoconfigure
 
 Proxmox mit einer IP:
 https://www.youtube.com/watch?v=_NIZxwzCSaM
@@ -511,11 +511,16 @@ Problem: es läuft hier in einem LXC container.
 		
 # ACME Chalange aus DNS umbiegen
 
-Problem: Port 80 wird daurhaft auf die UFW geleitet, 
-damit hier die Firewall und der ReverseProxy ihre Umleitungen übernehmen können. 
-Das Muttersystem des Proxmox hat jedoch unter Proxmox->Certificates nur den typ http. 
 
-Lösung: 
+Port 80 wird daurhaft auf die UFW geleitet, 
+damit hier die Firewall und der ReverseProxy ihre Umleitungen übernehmen können. 
+Das Muttersystem des Proxmox hat jedoch unter Proxmox->Certificates nur den typ http als delfault eingerichtet.  
+
+## Literatur
+
+https://forum.proxmox.com/threads/acme-dns-challenge-plugin-with-hetzner-ns.87589/
+
+
 
 ## neue DNS Zone anlegen und umziehen
 Unter der Hetznerkonsole einen neue DNS Zone anlegen. -> DNS -> add new zone
