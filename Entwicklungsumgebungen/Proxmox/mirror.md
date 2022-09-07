@@ -54,21 +54,23 @@ und entsprechend die Einträge machen:
 ## nginx einrichten 
 
 		apt install -y nginx
-		nano /etc/nginx/conf.d/nodejs-dist.conf
 		
-Das entsprechende Unterverzeichnis anlegen in der .conf Datei: 
+Wenn in der Maschine keine großen weiteren Dienste laufen, dann kann man auch direkt die default Seitendefinition des nginx editieren: 
+		
+		nano /etc/nginx/sites-available/default
 
 ```
 server {
-  server_name nodejs-mirror.svws-nrw.de;
-  listen 80;
-  location = / {
-    return 301 http://nodejs-mirror.svws-nrw.de/dist;
-  }
-  location /dist {
-    autoindex on;
-    alias /opt/nodejs/dist;
-  }
+        listen 80;
+        listen [::]:80;
+        server_name nodejs-mirror.svws-nrw.de 10.1.2.2;
+        root /opt/nodejs/dist;
+        index index.html;
+
+        location / {
+                autoindex on;
+                try_files $uri $uri/ =404;
+        }
 }
 ```
 		nginx -t 
@@ -76,9 +78,20 @@ server {
 		
 ## .htaccess einrichten 
 
+### Literatur
+	
+	https://willy-tech.de/htaccess-in-nginx-einrichten/
+
+### Benutzer einrichten 
+
+		apt install apache2-utils 
 		htpasswd -c /etc/nginx/.htpasswd username
-		nano /etc/nginx/conf.d/gradle-dist.conf
-die folgenden Eintragungen ergänzen: 
+
+### geschützte Bereiche in nginx einrichten 
+
+		nano /etc/nginx/sites-available/default
+		
+Hier die innerhalb der Serverdefinition folgenden Eintragungen ergänzen: 
 
 ````
 auth_basic "Restricted"; # Ausgabe-Meldung bei Zugriff
@@ -87,18 +100,10 @@ auth_basic_user_file /etc/nginx/.htpasswd;
   location ~ /.ht {
                 deny all; # Verweigert Zugriff auf die .ht-Dateien
         }
+````
+
 Dann den nginx testen und neu starten:
 
-
 		nginx -t 
-		nginx -s reload
-
-
-### Literatur
-	
-	https://willy-tech.de/htaccess-in-nginx-einrichten/
-
-
-			
-		
+		nginx -s reload		
 			
