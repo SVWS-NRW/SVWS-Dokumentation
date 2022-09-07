@@ -14,7 +14,7 @@ Mit Hilfe diese Scripts kann ein Update zum Beispiel auf die neueste Version des
 Voraussetzung ist dabei die [Installation direkt aus den Git-Quellen](002_Installation_SVWS-Server.md). 
 	
 + Show [update-svws-from-scratch.md](scripts/update-svws-from-scratch.md)
-+ Download [update-svws-from-scratch.sh](scripts/update-svws-from-scratch.sh)
+
 	
     ausführbar machen: chmod -x install-svws-from-scratch.sh
     Script starten: ./update-svws-from-scratch

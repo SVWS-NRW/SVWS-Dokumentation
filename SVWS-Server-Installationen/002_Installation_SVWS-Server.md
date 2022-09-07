@@ -10,7 +10,7 @@ Aktuell werden noch Token-Zugänge zum Github SVWS-Server und SVWS-Client Reposi
 Dieser Schritt* entfällt bei Veröffnetlichung der SVWS-Servers auf Git Hub unter OpenSource-Lizens
 
 + Show [install-svws-from-scratch.sh](./scripts/install-svws-from-scratch.md)
-+ Download [install-svws-from-scratch.sh](./scripts/install-svws-from-scratch.sh)
+
 + ausführbar machen: `chmod +x install-svws-from-scratch.sh`
 + Script starten: `./install-svws-from-scratch`
 

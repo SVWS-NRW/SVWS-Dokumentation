@@ -92,7 +92,7 @@ Zughang nur per Wireguard oder über Hetznerkonsole. SSH rootlogin ist per se au
 
 ![Architektur](./graphics/Proxmox_Netzwerk_handy.png)
 
-[Download GraphML](./graphics/Proxmox_Netzwerk.graphml)
+Die Quelldatei als GraphML liegt im Unterordner ./graphics.
 
 # Backup 
 

@@ -23,7 +23,7 @@ https://forum.proxmox.com/threads/hetzner-vswitch-vlan-konfig.58385/
 
 ![Architektur](./graphics/Proxmox_Netzwerk_handy.png)
 
-[Download GraphML](./graphics/Proxmox_Netzwerk.graphml)
+Die Quelldatei als GraphML liegt im Unterordner ./graphics.
 
 
 
@@ -61,8 +61,10 @@ Passwörter neu erstellen und gut abspeichern Ggf samba aktivieren
 3) Software nachinstallieren, wenn man  es noch nicht gemacht hat ... 		
 
  Backup Verzeichnis in Debian anlegen und mounten ausprobieren:
-
+		
+````
 		mount.cifs -o user=uXXXXXX-sub1,pass=abcdefghi //uxxxxxx-sub1.your-storagebox.de/uxxxxxx-sub1 /backup
+````
 
 4) dauerhaftes Mounten: 
 
@@ -558,9 +560,13 @@ unter Proxmox -> Certificates -> AMCE -> Domaineintrag wählen -> Edit: Chalange
 
 # virtuelle Maschinen einrichten
 
-[virtuelle Maschine einrichten](vm_einrichten.md)
+[virtuelle Maschine einrichten](./vm_einrichten.md)
 
-[Gitlab-Runner einrichten](runner.md)
+[Gitlab-Runner einrichten](./runner.md)
 
-[Nexus-Artifactury einrichten](artifactury.md)
+[Nexus-Artifactury einrichten](./artifactury.md)
+
+[Docker auf LXH-Container einrichten](./docker.md)
+
+[Mirror-Server einrichten](./mirror.md)
 
