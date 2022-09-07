@@ -7,6 +7,7 @@
     "serve": "vitepress serve"
   },
   "devDependencies": {
+    "vitebook": "^0.201.0",
     "vitepress": "^0.20.1"
   }
 }
