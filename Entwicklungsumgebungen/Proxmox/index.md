@@ -560,13 +560,13 @@ unter Proxmox -> Certificates -> AMCE -> Domaineintrag wählen -> Edit: Chalange
 
 # virtuelle Maschinen einrichten
 
-[virtuelle Maschine einrichten](vm_einrichten.md)
+[virtuelle Maschine einrichten](./vm_einrichten.md)
 
-[Gitlab-Runner einrichten](runner.md)
+[Gitlab-Runner einrichten](./runner.md)
 
-[Nexus-Artifactury einrichten](artifactury.md)
+[Nexus-Artifactury einrichten](./artifactory.md)
 
-[Docker auf LXH-Container einrichten](docker.md)
+[Docker auf LXH-Container einrichten](./docker.md)
 
-[Mirror-Server einrichten](mirror.md)
+[Mirror-Server einrichten](./mirror.md)
 
