@@ -62,24 +62,28 @@ Passwörter neu erstellen und gut abspeichern Ggf samba aktivieren
 
  Backup Verzeichnis in Debian anlegen und mounten ausprobieren:
 		
-````
+```
 		mount.cifs -o user=uXXXXXX-sub1,pass=abcdefghi //uxxxxxx-sub1.your-storagebox.de/uxxxxxx-sub1 /backup
-````
+```
 
 4) dauerhaftes Mounten: 
 
 in /etc/fstab die folgenden eintrgäge machen: 
 
+```
 //uxxxxxx-sub1.your-storagebox.de/uxxxxxx-sub1 /backup cifs iocharset=utf8,rw,credentials=/etc/backup-credentials.txt,file_mode=0660,dir_mode=0770 0 0
 
 		nano /etc/backup-credentials.txt
 
 user=uxxxxxx-sub1
 pass=abcdefg
+```
 
-Anschießend sollte das mounten funktionieren 
+Anschießend sollte das mounten funktionieren
 
+```sh
 mount -a 
+```
 
 schreiben, löschen und reboot testen 
 
@@ -113,10 +117,12 @@ Der erste Versuch mit UFW wurde verworfen und statt dessen direkt in die IPtabel
 
 Die UFW lässt sich schön komfortabel einrichten, zur Portweiterleitung mit definierten außnahmen eignet sich dann eher direkt IPtabels.
 
+```sh
 		#apt install ufw -y
 		#ufw allow SSH
 		#ufw allow 8006/tcp
 		#ufw enable
+```
 
 ## Nat per Iptables: 
 
@@ -128,32 +134,39 @@ https://schroederdennis.de/allgemein/proxmox-auf-rootserver-mit-nur-1-public-ip-
 Die beiden Iptable-Befehle organisieren die Weiterleitung allen anfragen auf das Netzwerkdevice enp7s0, so dass diese außer port 8006 und 22 
 weitergeleitet werden auf die 10.0.0.2
 
+```
 		post-up   echo 1 > /proc/sys/net/ipv4/ip_forward
         post-up   echo 1 > /proc/sys/net/ipv6/ip_forward
 		iptables -t nat -A PREROUTING -i enp7s0 -p udp -j DNAT --to 10.0.0.2
 		iptables -t nat -A PREROUTING -i enp7s0 -p tcp -m multiport ! --dport 22,8006 -j DNAT --to 10.0.0.2
-		
+```
 		
 Die Befehle können in der nano /etc/network/interfaces direkt an dem device eingebunden werden. 
 
 ### Alternativer Einrichtung
 Alternativ kann man diese Befehle auch direkt ausführen 
 
-		iptables -L -v -n
-		iptables-save 
-		iptables -S
+```sh
+iptables -L -v -n
+iptables-save 
+iptables -S
+```
 
 Um die Funktionalität zu prüfen, können die folgenden Befehle verwendet werden: 
   
-		iptables -L INPUT
-		iptables -L PREROUTING
+```sh
+iptables -L INPUT
+iptables -L PREROUTING
+```
 		
 ###	Masquerading
 
 Dem internen Networkdevice muss man ein Masquerading einrichten, so dass die Pakete auch auf ihrem Rückweg richtig zugeordnet werden. 
 
-		post-up   iptables -t nat -A POSTROUTING -s '10.0.0.0/30' -o enp7s0 -j MASQUERADE
-        post-down iptables -t nat -D POSTROUTING -s '10.0.0.0/30' -o enp7s0 -j MASQUERADE
+```sh
+post-up   iptables -t nat -A POSTROUTING -s '10.0.0.0/30' -o enp7s0 -j MASQUERADE
+post-down iptables -t nat -D POSTROUTING -s '10.0.0.0/30' -o enp7s0 -j MASQUERADE
+```
 
 
 	
@@ -163,6 +176,7 @@ Dem internen Networkdevice muss man ein Masquerading einrichten, so dass die Pak
 
 // wird nicht benutzt, sondern das auf der ProxmoxOberfläche generierte Certifikat
 
+```sh
 		#ufw disable 
 		#apt install certbot -y
 		#certbot certonly --standalone --rsa-key-size 4096 --agree-tos --preferred-challenges http -d proxmox.svws-nrw.de
@@ -170,6 +184,7 @@ Dem internen Networkdevice muss man ein Masquerading einrichten, so dass die Pak
 
 		#systemctl enable certbot.timer
 		#systemctl start certbot.timer
+```
 
 bei letsencrypt hat man zusätzlich das Problem, dass proxmox an einer anderen Stelle seine Zertifikate speichert. 
 Daher besser direkt auf der Proxmoxoberfläche das Cert-generieren anstoßen.
@@ -207,11 +222,15 @@ und fertig ...
 
 Achtung: erst andere user anlegen!
 
+```sh
 		adduser username
-		
+```
+
 login testet und dann den user login von root per ssh verbieten:
 
+```sh
 		nano /etc/ssh/sshd_config
+```
 		
 Eintrag abändern auf: 
 -> PermitRootLogin no
@@ -560,7 +579,7 @@ unter Proxmox -> Certificates -> AMCE -> Domaineintrag wählen -> Edit: Chalange
 
 # virtuelle Maschinen einrichten
 
-[virtuelle Maschine einrichten](./vm_einrichten.md)
+[virtuelle Maschine einrichten](./VM_einrichten.md)
 
 [Gitlab-Runner einrichten](./runner.md)
 
