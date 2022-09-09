@@ -24,6 +24,11 @@ links den neuen Container auswählen und unter Summary auf der rechten Seite kan
 Hier kann man temporär das Passwort hinterlegen
 ebenso den dhcp Eintrag (s.u.) 
 
+# Hilfreiche Tools
+
+apt install -y net-tools dnsutils nmap curl zip
+
+
 
 ## DHCP anpassen (optional)
 
