@@ -1,15 +1,17 @@
 ***SVWS - Dokumentation***
 ====================
-# Proxmox Container
 
 
-Kurzfassung: 
+# Proxmox Container Einstellungen
 
-+ Nach dem Erstellen in den Optionen folgende Features aktivieren:
-	+ „keyctl“
-	+ „nesting“
+WICHTIG:  Nach dem Erstellen in den Optionen folgende Features aktivieren:
 
-# Docker installieren: 
++ „keyctl“
++ „nesting“
+	
+siehe dazu auch: https://pve.proxmox.com/wiki/Linux_Container#pct_options
+
+# Docker installieren
 
 ```bash
 apt update
@@ -86,8 +88,9 @@ löscht den Docker Container php8
 
 ## Docker Einsatzbeispiele
 
-#!/bin/bash
-sudo docker run -d --restart always --name bluespice_2 -p 80:80 -p 443:443 -v /wiki/data/:/data -e bs_lang=de -e bs_url=https://wiki-d2.msw.nrw.de bluespice/bluespice-free:3.2.8
+
+		docker run -d --restart always --name bluespice_2 -p 80:80 -p 443:443 -v /wiki/data/:/data -e bs_lang=de -e bs_url=https://wiki-d2.msw.nrw.de bluespice/bluespice-free:3.2.8
 
 ## Literatur:
+
 https://de.wiki.bluespice.com/wiki/Setup:Installationsanleitung/Docker/Docker_Hub

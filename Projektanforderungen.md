@@ -1,5 +1,7 @@
 # Projektanforderungen 
 
+![Projektanforderung.png](./graphics/Projektanforderung.png)
+
 ## Funktionsumfang Schild-NRW
 
 Grundsätzlich soll das Ziel des Projekts sein, den gesamten Funktionsumfang von Schild-NRW sukzessive nachzubilden. Dabei sollen historisch bedingte Fehler und umständliche Benutzerführung abgestellt werden.

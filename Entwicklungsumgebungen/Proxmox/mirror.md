@@ -18,14 +18,14 @@ Quasi ein kleines Frachtschiff ...
 
 ### Dateien spiegeln
 
-am Beispiel nodejs  http://nodejs.org/dist/ 
+am Beispiel nodejs  https://nodejs.org/dist/ 
 
-
-		
 		mkdir -p /opt/nodejs/dist
 		cd /opt/nodejs		
+
+Achtung: die Spiegelung kann mitunter sehr lange dauern. Der Vorgang kann aber auch abgebrochen werden und durch erneutes Ausführen später wieder aufgenommen werden. 
 		
-		wget -m -nH -e robots=off -np --convert-links --reject="index.html*" http://nodejs.org/dist/
+		wget -m -nH -e robots=off -np --convert-links --reject="index.html*" https://nodejs.org/dist/
 		
 bzw , analog dazu die gradle distributions
 		
@@ -40,7 +40,7 @@ ganz kleines Script zum Mirroing, welches über den Cronjob aufgerufen wird:
 		
 		#!/bin/bash
 		cd /opt/nodejs 
-		wget -m -nH -e robots=off -np --convert-links --reject="index.html*" http://nodejs.org/dist/ >> /var/log/nodejs-mirror-dist 2>&1
+		wget -m -nH -e robots=off -np --convert-links --reject="index.html*" https://nodejs.org/dist/ >> /var/log/nodejs-mirror-dist 2>&1
 
 Rechte einschränken, die crontabs aufrufen ...
 
@@ -84,7 +84,7 @@ server {
 
 ### Benutzer einrichten 
 
-		apt install apache2-utils 
+		apt install -y apache2-utils 
 		htpasswd -c /etc/nginx/.htpasswd username
 
 ### geschützte Bereiche in nginx einrichten 
