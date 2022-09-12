@@ -196,6 +196,13 @@ werden können:
 
 Eine Mehrfachauswahl wird unterstützt.
 
+Für eine zügigere Synchronisation bitte folgende Cardbook-Einstellungen verwenden:
+
+- Maximale Anzahl an Änderungen, die pro Synchronisation angestoßen werden: **1000**
+- Bei GET-Anfrage Karten gruppieren nach: **1000**
+
+<img src="./media/media/cardbook_settings.png" />
+
 ## Outlook CalDAV-Synchroninizer-Addon
 
 In der Standardinstallation synchronisiert Outlook Termine und Adressen
