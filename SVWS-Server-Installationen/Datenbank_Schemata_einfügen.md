@@ -2,7 +2,7 @@
 =========================================================
 # Grundlagen
 
-Ein laufender SVWS-Server wird benötigt - siehe hierzu: [Installationsanleitung](002_Installation_SVWS-Server.md)
+Ein laufender SVWS-Server wird benötigt - siehe hierzu: [Installationsanleitung](Installation_SVWS-Server.md)
 
 # Testschemata 
 
