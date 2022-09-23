@@ -27,7 +27,7 @@ Die Dokumentation kann im klassischen Stil unter Giltlab angesehen werden.
 		apt install -y ssh nmap curl git zip net-tools dnsutils software-properties-common dirmngr nginx
 
 
-node 18 installieren
+node 18 installieren:
 
 		curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 		apt install nodejs -y
@@ -61,3 +61,9 @@ Und den nginx neustarten:
 
 
 im dist/ inst die index.html
+
+## updaten der Dokumentation
+
+		cd /var/www/svws-dokumentation/
+		
+		
