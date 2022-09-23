@@ -273,3 +273,14 @@ Vermutet man Abstürze des Servers, so lohnt sich ein Blick in die Log files:
 
 Zusätzlich kann man, um einen regelmäßigen Restart zu ermöglichen, den 5 sekündigen Neustart wie oben beschrieben erzwingen. 
 So erhält man ggf. auch regelmäßige Einträge bzw. direkt Einträge nach Absturz des Servers. 
+
+# automatische Backups 
+
+## Backup der Datenbank
+
+-> [automysqlbackup einrichten](automysqlbackup.md)
+
+## Backup LX-Container im Proxmox
+
+-> [LXC Backup einrichten](../Entwicklungsumgebungen/Proxmox/backup.md)
+

@@ -46,7 +46,7 @@ Software:
 		apt install -y net-tools dnsutils nmap curl zip
 
 
-## storage einbinden
+## Storage einbinden
 
 eine Storage-Box kann hinzugebucht werden und in Debian gemountet werden: 
 
@@ -174,9 +174,10 @@ post-down iptables -t nat -D POSTROUTING -s '10.0.0.0/30' -o enp7s0 -j MASQUERAD
 	
 	
 
-# Proxmox Backup einrichten
+# Proxmox Backups einrichten
 
-[ToDo]
+-> [Backups einrichten](backup.md)
+
 
 # Benutzerverwaltung
 

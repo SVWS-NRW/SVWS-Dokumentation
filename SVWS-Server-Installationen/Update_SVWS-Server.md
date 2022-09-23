@@ -95,3 +95,8 @@ http://svws-nrw.de/debug
 SchemaRoot > /api/schema/root/migrate/mdb/{schema}
 
 GymAbi.mdb in svwsdb mit svwsadmin und Passwort migrieren.
+
+## automatisches Update
+
+Sie können per cronjob das update automatisieren und bei erfolgreichem Abschluss eine mail an die mailadresse Ihrer Wahl versenden. 
+Dies kann man unter [autoupdate](autoupdate.md)

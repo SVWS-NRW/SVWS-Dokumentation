@@ -63,3 +63,7 @@ Nexus zunächst intern aufrufen, Benutzer festlegen und updaten.
 ![Nexus Erstinstallation](./graphics/nexus.png)
 
 auf sign in klicken und man erhält man bei erstem Aufruf informationen, wo das passwort zu finden ist 
+
+## Literatur
+
+https://www.youtube.com/watch?v=pn2iwxYGkhA

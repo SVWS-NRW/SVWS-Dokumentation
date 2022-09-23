@@ -126,6 +126,15 @@ oder
 aus der Konsole des Proxmox Muttersystems: 
 			
 		pct resize 101 rootfs 200G
+		
+## rootshell öffnen
+
+i.d.R ist die Rootshell von außen abgeschaltet. Die kann man aktiv öffnen, was jedoch keine gute Idee ist. Alternativ legt man sich einen user an, der per ssh sich einloggt und dann mit ``su - `` zu root werden kann
+oder man geht über die root shell des Proxmox Muttersystems: 
+
+		lxc-attach 123
+		
+wobei die Ziffer 123 für die ID des Containers steht. 
 
 		
 		

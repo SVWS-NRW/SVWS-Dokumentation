@@ -58,7 +58,7 @@ und entsprechend die Einträge machen:
 
 Möchte man Verzeichnisse z.B. unterhalb vom Ordner /dist ausschließen, so muss man den wget Befehl um die folgende option anreichern: 
 		
-		 -X /dist/name_of_subfolder/, /dist/name_of_subfolder/, ... 
+		 -X /dist/name_of_subfolder/,/dist/name_of_subfolder/, ... 
 		 
 Da das sehr schnell sehr lang ist, bietet es sich an eine exclude liste zu führen: 
 		 
