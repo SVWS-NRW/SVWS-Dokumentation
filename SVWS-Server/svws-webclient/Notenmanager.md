@@ -10,11 +10,12 @@ Andererseits kann der Notenmanager in der Form des Web-Notenmanagers (WeNoM) auf
 Bei WeNoM, dem Web-Notenmanager handelt es sich um eine eigenständige Installation auf einer üblichen Webumgebungen. 
 Als Voraussetzung kann hier ein kleiner Webspache bei einem Hoster mit einer Mysql Datenbank und vorinstallierem PHP genügen. 
 Ggf. steht dies schon im Zuge der Schulhomepage zur Verfügung und kann durch eine Subdomain realisiert werden.
-WeNoM und der orginäre Notenmanager sollen sich nur wenig unterscheiden. Installation, Einrichtung und Unterschiede in der Bedienung werden unter [WeNoM](WeNoM.md) beschrieben. 
+WeNoM und der orginäre Notenmanager sollen sich nur wenig unterscheiden. Installation, Einrichtung und Unterschiede in der Bedienung werden unter [WeNoM](../../Projekte/WeNoM/index.md) beschrieben. 
 
 ## Styleguide und Bedienkonzept des Notenmoduls
 
-Der Styleguide und das Bedienkonzept richten sich in großen Teilen nach den Vorgaben durch den SVWS-Client. Eine ausführliche Einführung dazu befindet sich in den Abschnitt Styleguide und Bedienkonzept des [SVWS-UI-Framework](../SVWS-UI-Framework/index.md).
+Der Styleguide und das Bedienkonzept richten sich in großen Teilen nach den Vorgaben durch den SVWS-Client. 
+Eine ausführliche Einführung dazu befindet sich in den Abschnitt Styleguide und Bedienkonzept des [SVWS-UI-Framework](../../SVWS-Server/svws-webclient/SVWS-UI-Framework/index.md).
 
 ### Styleguide
 
