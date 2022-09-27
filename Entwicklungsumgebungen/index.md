@@ -5,7 +5,9 @@ https://git.svws-nrw.de
 
 Jedes Repository wird automatisch nach Github gespiegelt.
 https://github.com/SVWS-NRW
-Das ist die Organisation.
+
+![GitLab_GitHub.png](./graphics/GitLab_GitHub.png)
+
 
 Aus historischen Gründen befindet sich das Server-Repository noch unter https://github.com/FPfotenhauer/SVWS-Server.
 Dies wird beim OpenSource-Gang aber in die Organisation SVWS-NRW verschoben werden!

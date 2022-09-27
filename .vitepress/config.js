@@ -2,62 +2,77 @@ module.exports = {
   title: 'SVWS Dokumentation',
   description: 'Vollständige Dokumentation für SVWS-NRW, Installation und Entwicklung',
   themeConfig: {
-    sidebar: [
+    sidebar: {
+	
+	'/SVWS-Server/':
+	[
 	  { 
-		text: 'SVWS-Server', link: '/SVWS-Server/', 
-		items:[
-		  { text: 'SVWS-Server', link: '/SVWS-Server/' },
-        
-          { text: 'SVWS-UI-Framework', link: '/SVWS-UI-Framework/' },
+		text: 'Aufbau des SVWS-Server Repositories',
+		items:
+		[
+		  { text: 'svws-base', link: '/SVWS-Server/svws-base' },
+          { text: 'svws-core', link: link: '/SVWS-Server/svws-core' },
+		  { text: 'svws-core', link: link: '/SVWS-Server/svws-core' }
 		] 
-	  },
+	  }
+	],
 	  
+	'/Projekte/':
+	[
 	  { 
-		text: 'SVWS-UI-Framework', 
-		items:[
-		
+		text: 'weitere Projekte',
+		items:
+		[
+		  { text: 'Reporting', link: '/Repoting/' },
+          { text: 'WeNoM', link: link: '/WeNoM/' }
 		] 
-	  },
+	  }
+	],
 	  
-	  { 
-		text: 'SVWS-Client', 
-		items:[
-		
-		] 
-	  },
-	  
+	'/Deployments/':
+	[
       { 
-		text: 'Deployment', 
-		items:[
-		{ text: 'Reporting', link: '/Reporting/' },
-          { text: 'SVWS-Client', link: '/SVWS-Client/' },
+		text: 'Deployments', 
+		items:
+		[
 		    { text: 'SVWS-Server-Installationen', link: '/SVWS-Server-Installationen/' },
 		] 
-	  },
-	  
-	 	 	 
+	  }
+	],
+
+	'/Entwicklungsumgebungen/':
+	[
       {
         text: 'Entwicklungsumgebungen',
         items: [
           { text: 'Eclipse-Ubuntu', link: '/Entwicklungsumgebungen/Eclipse-Ubuntu/' },
           { text: 'Eclipse-Windows', link: '/Entwicklungsumgebungen/Eclipse-Windows/' },
           { text: 'Eclipse-Windows_im_MSB', link: '/Entwicklungsumgebungen/Eclipse-Windows_im_MSB/' },
+		  { text: 'IntelliJ', link: '/Entwicklungsumgebungen/IntelliJ/' },
+		  { text: 'macOS', link: '/Entwicklungsumgebungen/macOS/' }
           { text: 'Multipass', link: '/Entwicklungsumgebungen/Multipass/' },
           { text: 'VS-Code', link: '/Entwicklungsumgebungen/VS-Code/' },
-          { text: 'macOS', link: '/Entwicklungsumgebungen/macOS/' }
         ]
-      },
-	  
+      }
+	], 
+	
+	
+	'/DevOps/':
+	[
       {
         text: 'DevOps',
-        items: [
+        items: 
+		[
           { text: 'Dokumentation', link: '/DevOps/Dokumentation/' },
           { text: 'Lizenz-Informationen', link: '/DevOps/Lizenz-Informationen/' },
           { text: 'SVWS-Windows-Installer', link: '/SVWS-Windows-Installer/' },
           { text: 'Testumgebungen', link: '/Testumgebungen/' }
         ] 
-      },
-    ]
+      }
+	],
+	
+	
+    }
   }
 };
 
