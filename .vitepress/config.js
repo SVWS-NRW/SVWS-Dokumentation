@@ -4,6 +4,8 @@ module.exports = {
   themeConfig: {
     sidebar: {
 
+	'/':
+	[
 	  { 
 		text: '',
 		items:
@@ -12,10 +14,10 @@ module.exports = {
           { text: 'weitere Projekte', link: '/Projekte/' },
 		  { text: 'Deployments', link: '/Deployments/' },
 		  { text: 'Entwicklungsumgebungen', link: '/Entwicklungsumgebungen/'},
-		  { text: 'DevOps', link: '/DevOps/' },
+		  { text: 'DevOps', link: '/DevOps/' }
 		] 
 	  }
-
+	],
 
 	
 	'/SVWS-Server/':
