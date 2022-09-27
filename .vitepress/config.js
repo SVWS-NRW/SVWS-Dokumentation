@@ -3,6 +3,20 @@ module.exports = {
   description: 'Vollständige Dokumentation für SVWS-NRW, Installation und Entwicklung',
   themeConfig: {
     sidebar: {
+
+	  { 
+		text: '',
+		items:
+		[
+		  { text: 'SVWS-Server Repository', link: '/SVWS-Server/' },
+          { text: 'weitere Projekte', link: '/Projekte/' },
+		  { text: 'Deployments', link: '/Deployments/' },
+		  { text: 'Entwicklungsumgebungen', link: '/Entwicklungsumgebungen/'},
+		  { text: 'DevOps', link: '/DevOps/' },
+		] 
+	  }
+
+
 	
 	'/SVWS-Server/':
 	[
