@@ -11,8 +11,8 @@ module.exports = {
 		items:
 		[
 		  { text: 'svws-base', link: '/SVWS-Server/svws-base' },
-          { text: 'svws-core', link: link: '/SVWS-Server/svws-core' },
-		  { text: 'svws-core', link: link: '/SVWS-Server/svws-core' }
+          { text: 'svws-core', link: '/SVWS-Server/svws-core' },
+		  { text: 'svws-core', link: '/SVWS-Server/svws-core' }
 		] 
 	  }
 	],
@@ -24,7 +24,7 @@ module.exports = {
 		items:
 		[
 		  { text: 'Reporting', link: '/Repoting/' },
-          { text: 'WeNoM', link: link: '/WeNoM/' }
+          { text: 'WeNoM', link: '/WeNoM/' }
 		] 
 	  }
 	],
@@ -35,7 +35,7 @@ module.exports = {
 		text: 'Deployments', 
 		items:
 		[
-		    { text: 'SVWS-Server-Installationen', link: '/SVWS-Server-Installationen/' },
+		    { text: 'SVWS-Server-Installationen', link: '/SVWS-Server-Installationen/' }
 		] 
 	  }
 	],
@@ -49,9 +49,9 @@ module.exports = {
           { text: 'Eclipse-Windows', link: '/Entwicklungsumgebungen/Eclipse-Windows/' },
           { text: 'Eclipse-Windows_im_MSB', link: '/Entwicklungsumgebungen/Eclipse-Windows_im_MSB/' },
 		  { text: 'IntelliJ', link: '/Entwicklungsumgebungen/IntelliJ/' },
-		  { text: 'macOS', link: '/Entwicklungsumgebungen/macOS/' }
+		  { text: 'macOS', link: '/Entwicklungsumgebungen/macOS/' },
           { text: 'Multipass', link: '/Entwicklungsumgebungen/Multipass/' },
-          { text: 'VS-Code', link: '/Entwicklungsumgebungen/VS-Code/' },
+          { text: 'VS-Code', link: '/Entwicklungsumgebungen/VS-Code/' }
         ]
       }
 	], 
@@ -69,7 +69,7 @@ module.exports = {
           { text: 'Testumgebungen', link: '/Testumgebungen/' }
         ] 
       }
-	],
+	]
 	
 	
     }
