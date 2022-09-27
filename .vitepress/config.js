@@ -4,29 +4,38 @@ module.exports = {
   themeConfig: {
     sidebar: [
 	  { 
-		text: 'Algorithmen', 
+		text: 'SVWS-Server', link: '/SVWS-Server/', 
 		items:[
+		  { text: 'SVWS-Server', link: '/SVWS-Server/' },
+        
+          { text: 'SVWS-UI-Framework', link: '/SVWS-UI-Framework/' },
+		] 
+	  },
+	  
+	  { 
+		text: 'SVWS-UI-Framework', 
+		items:[
+		
+		] 
+	  },
+	  
+	  { 
+		text: 'SVWS-Client', 
+		items:[
+		
 		] 
 	  },
 	  
       { 
-		text: 'Algorithmen', 
+		text: 'Deployment', 
 		items:[
+		{ text: 'Reporting', link: '/Reporting/' },
+          { text: 'SVWS-Client', link: '/SVWS-Client/' },
+		    { text: 'SVWS-Server-Installationen', link: '/SVWS-Server-Installationen/' },
 		] 
 	  },
 	  
-	  { 
-		text: 'Algorithmen', 
-		items:[
-		] 
-	  },
-	  
-	  { 
-		text: 'Algorithmen', 
-		items:[
-		] 
-	  },
-	 	 
+	 	 	 
       {
         text: 'Entwicklungsumgebungen',
         items: [
@@ -40,16 +49,11 @@ module.exports = {
       },
 	  
       {
-        text: 'Weiteres',
+        text: 'DevOps',
         items: [
-          { text: 'Gitlab-Server', link: '/Gitlab-Server/' },
-          { text: 'Lizenz-Informationen', link: '/Lizenz-Informationen/' },
-          { text: 'Reporting', link: '/Reporting/' },
-          { text: 'SVWS-Client', link: '/SVWS-Client/' },
-          { text: 'SVWS-Installer', link: '/SVWS-Installer/' },
-          { text: 'SVWS-Server', link: '/SVWS-Server/' },
-          { text: 'SVWS-Server-Installationen', link: '/SVWS-Server-Installationen/' },
-          { text: 'SVWS-UI-Framework', link: '/SVWS-UI-Framework/' },
+          { text: 'Dokumentation', link: '/DevOps/Dokumentation/' },
+          { text: 'Lizenz-Informationen', link: '/DevOps/Lizenz-Informationen/' },
+          { text: 'SVWS-Windows-Installer', link: '/SVWS-Windows-Installer/' },
           { text: 'Testumgebungen', link: '/Testumgebungen/' }
         ] 
       },
