@@ -64,6 +64,16 @@ im dist/ inst die index.html
 
 ## updaten der Dokumentation
 
+### Voreinstellungen
+
+		git config pull.ff only
+		
+		passwort speichern
+
+### Update
+
 		cd /var/www/svws-dokumentation/
+		git pull
+		npm run build
 		
 		
