@@ -2,58 +2,93 @@ module.exports = {
   title: 'SVWS Dokumentation',
   description: 'Vollständige Dokumentation für SVWS-NRW, Installation und Entwicklung',
   themeConfig: {
-    sidebar: [
+    sidebar: {
+
+	'/':
+	[
 	  { 
-		text: 'Algorithmen', 
-		items:[
+		text: '',
+		items:
+		[
+		  { text: 'SVWS-Server Repository', link: '/SVWS-Server/' },
+          { text: 'weitere Projekte', link: '/Projekte/' },
+		  { text: 'Deployments', link: '/Deployments/' },
+		  { text: 'Entwicklungsumgebungen', link: '/Entwicklungsumgebungen/'},
+		  { text: 'DevOps', link: '/DevOps/' }
 		] 
-	  },
+	  }
+	],
+
+	
+	'/SVWS-Server/':
+	[
+	  { 
+		text: 'Aufbau des SVWS-Server Repositories',
+		items:
+		[
+		  { text: 'svws-base', link: '/SVWS-Server/svws-base' },
+          { text: 'svws-core', link: '/SVWS-Server/svws-core' },
+		  { text: 'svws-core', link: '/SVWS-Server/svws-core' }
+		] 
+	  }
+	],
 	  
+	'/Projekte/':
+	[
+	  { 
+		text: 'weitere Projekte',
+		items:
+		[
+		  { text: 'Reporting', link: '/Repoting/' },
+          { text: 'WeNoM', link: '/WeNoM/' }
+		] 
+	  }
+	],
+	  
+	'/Deployments/':
+	[
       { 
-		text: 'Algorithmen', 
-		items:[
+		text: 'Deployments', 
+		items:
+		[
+		    { text: 'SVWS-Server-Installationen', link: '/SVWS-Server-Installationen/' }
 		] 
-	  },
-	  
-	  { 
-		text: 'Algorithmen', 
-		items:[
-		] 
-	  },
-	  
-	  { 
-		text: 'Algorithmen', 
-		items:[
-		] 
-	  },
-	 	 
+	  }
+	],
+
+	'/Entwicklungsumgebungen/':
+	[
       {
         text: 'Entwicklungsumgebungen',
         items: [
           { text: 'Eclipse-Ubuntu', link: '/Entwicklungsumgebungen/Eclipse-Ubuntu/' },
           { text: 'Eclipse-Windows', link: '/Entwicklungsumgebungen/Eclipse-Windows/' },
           { text: 'Eclipse-Windows_im_MSB', link: '/Entwicklungsumgebungen/Eclipse-Windows_im_MSB/' },
+		  { text: 'IntelliJ', link: '/Entwicklungsumgebungen/IntelliJ/' },
+		  { text: 'macOS', link: '/Entwicklungsumgebungen/macOS/' },
           { text: 'Multipass', link: '/Entwicklungsumgebungen/Multipass/' },
-          { text: 'VS-Code', link: '/Entwicklungsumgebungen/VS-Code/' },
-          { text: 'macOS', link: '/Entwicklungsumgebungen/macOS/' }
+          { text: 'VS-Code', link: '/Entwicklungsumgebungen/VS-Code/' }
         ]
-      },
-	  
+      }
+	], 
+	
+	
+	'/DevOps/':
+	[
       {
-        text: 'Weiteres',
-        items: [
-          { text: 'Gitlab-Server', link: '/Gitlab-Server/' },
-          { text: 'Lizenz-Informationen', link: '/Lizenz-Informationen/' },
-          { text: 'Reporting', link: '/Reporting/' },
-          { text: 'SVWS-Client', link: '/SVWS-Client/' },
-          { text: 'SVWS-Installer', link: '/SVWS-Installer/' },
-          { text: 'SVWS-Server', link: '/SVWS-Server/' },
-          { text: 'SVWS-Server-Installationen', link: '/SVWS-Server-Installationen/' },
-          { text: 'SVWS-UI-Framework', link: '/SVWS-UI-Framework/' },
+        text: 'DevOps',
+        items: 
+		[
+          { text: 'Dokumentation', link: '/DevOps/Dokumentation/' },
+          { text: 'Lizenz-Informationen', link: '/DevOps/Lizenz-Informationen/' },
+          { text: 'SVWS-Windows-Installer', link: '/SVWS-Windows-Installer/' },
           { text: 'Testumgebungen', link: '/Testumgebungen/' }
         ] 
-      },
-    ]
+      }
+	]
+	
+	
+    }
   }
 };
 
