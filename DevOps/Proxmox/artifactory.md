@@ -64,6 +64,11 @@ Nexus zunächst intern aufrufen, Benutzer festlegen und updaten.
 
 auf sign in klicken und man erhält man bei erstem Aufruf informationen, wo das passwort zu finden ist 
 
+## User per Gitlab - Auth einbinden
+
+https://github.com/auchanretailfrance/nexus3-gitlabauth-plugin
+
+
 ## Literatur
 
 https://www.youtube.com/watch?v=pn2iwxYGkhA

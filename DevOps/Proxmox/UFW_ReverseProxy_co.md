@@ -1,6 +1,7 @@
 ***UFW, ReverseProxy & co. - Dokumentation***
 ====================
 
+
 ## Literatur: 
 
 https://goneuland.de/debian-11-bullseye-ufw-uncomplicated-firewall-einrichten/
@@ -49,7 +50,8 @@ Firewall per default einschalten und starten:
 
 Die Öffnung der Ports 53 kann man weglassen, wenn man wie weiter unten beschrieben, 
 die ganze Komunikation über die innere Netzwerkkarte zulässt.
-		ufw allow 53/udp
+
+		ufw allow 53/udp  
 		ufw allow 53/tcp
 		
 ## DNSMasq für DNS, DHCP einrichten:
@@ -59,11 +61,8 @@ die ganze Komunikation über die innere Netzwerkkarte zulässt.
 In der /etc/dnsmasq.conf folgende Anpassungen machen: 
 
 		interface=eth1
-
 		listen-address=127.0.0.1
-
 		domain=svws-nrw.de
-
 		dhcp-range=10.1.2.20,10.1.2.200,12h
 
 

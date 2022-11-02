@@ -14,8 +14,18 @@ Mehrere Schemata für verschieden Schulformen finden Sie unter `https://git.svws
 
 # Testdatenbank per Curl befüllen
 
+ --user "%1:%2" -k -X POST "https://localhost/api/schema/root/migrate/mdb/%3" 
+-H "accept: application/json" 
+-H "Content-Type: multipart/form-data" 
+-F "databasePassword=%4" 
+-F "schemaUsername=%5" 
+-F "schemaUserPassword=%6" 
+-F "database=@%7"
+
+
+
 ```bash
-curl -X 'POST' \
+curl --user "%1:%2" -X 'POST' \
   'https://svws/api/schema/root/migrate/mdb/testschule' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \

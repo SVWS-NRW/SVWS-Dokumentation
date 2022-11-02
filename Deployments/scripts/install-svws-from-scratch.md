@@ -15,9 +15,10 @@
 	echo "links zum repository: "
 	echo ""
 	echo "https://gitlab.svws-nrw.de/"
-	echo "https://github.com/svws-nrw/"
-	echo ""
-	echo ""
+	echo "https://github.com/SVWS-NRW/SVWS-Server"
+    echo "https://github.com/svws-nrw/svws-server/"
+	echo "" 
+	
 
 	# Vorgaben:
 	INST_PATH="/app"
@@ -114,9 +115,6 @@ apt install nodejs -y
 ######################################################
 # richte die MariaDB ein und setze das root-Passwort
 
-# alte syntax: 
-# UPDATE mysql.user SET plugin = 'mysql_native_password', authentication_string = PASSWORD('$SVWS_USER'), Password=PASSWORD('$SVWS_PW') WHERE user = 'root';
-
 
 echo "
 ALTER USER 'root'@'localhost' IDENTIFIED BY '$SVWS_DB_PW';
@@ -130,8 +128,8 @@ mysql < mysql_secure_installation.sql
 
 
 rm mysql_secure_installation.sql 
-#####################################################
-# 
+
+
 #######################################################################
 ############ SVWS Software abholen ####################################
 #######################################################################
@@ -145,12 +143,7 @@ echo "prefix=~/.npm" > ~/.npmrc
 cd $INST_PATH
 
 
-
-# TODO: git clone auf unserem Gitlab einrichten!!!!
-# git clone https://${GITHUB_USER}:${GITHUB_TOKEN}@git.svws-nrw.de/svws/SVWS-Server
-
-
-git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com/FPfotenhauer/SVWS-Server.git
+git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com/SVWS-NRW/SVWS-Server.git
 
 
 #### token in gradle hinterlegen #############################
@@ -174,7 +167,7 @@ git checkout dev
 # erstelle eine svwsconfig.json für den HTTP-Server mit Standardeinstellungen
 
 
-cat > $INST_PATH/SVWS-Server/svwsconfig.json <<-EOF
+cat > $INST_PATH/SVWS-Server/svws-server-app/svwsconfig.json <<-EOF
 {
   "EnableClientProtection" : null,
   "DisableDBRootAccess" : false,
@@ -184,9 +177,9 @@ cat > $INST_PATH/SVWS-Server/svwsconfig.json <<-EOF
   "UseCORSHeader" : true,
   "TempPath" : "tmp",
   "TLSKeyAlias" : null,
-  "TLSKeystorePath" : "svws-server-app",
+  "TLSKeystorePath" : "../svws-server-app",
   "TLSKeystorePassword" : "svwskeystore",
-  "ClientPath" : "../SVWS-Server/svws-webclient/build/output",
+  "ClientPath" : "../svws-webclient/build/output",
   "LoggingEnabled" : true,
   "LoggingPath" : "logs",
   "DBKonfiguration" : {
@@ -214,8 +207,8 @@ Description=SVWS Server
 # User=svws 
 # Im Develop zunächst als root starten
 Type=simple
-WorkingDirectory = $INST_PATH/SVWS-Server
-ExecStart=/bin/bash $INST_PATH/SVWS-Server/start_server.sh
+WorkingDirectory = $INST_PATH/SVWS-Server/svws-server-app
+ExecStart=/bin/bash $INST_PATH/SVWS-Server/svws-server-app/start_server.sh
 Restart=on-failure
 RestartSec=5s
 
@@ -235,8 +228,6 @@ chown -R svws:svws /app/
 systemctl enable svws
 systemctl start svws
 
-
-
 ################## End des Skripts ###########################
 ##############################################################
 ##############################################################
@@ -254,10 +245,4 @@ systemctl start svws
 # im Journal nach Fehlermeldungen suchen: 
 #
 # journalctl  -f -u svws
-
-
-# Testdatenbank importieren und Benutzernamen setzen:
-#
-# zuerst eine mdb "irgendwoher" runterladen
-# über die Oberfläche: localhost/debug/
 ```

@@ -34,6 +34,7 @@ git checkout dev | tee -a ~/svws-update.log
 # die richtigen Rechte setzten: 
 chown -R svws:svws /app/
 #
+#
 systemctl start svws 
 systemctl status svws | tee -a ~/svws-update.log
 ```
