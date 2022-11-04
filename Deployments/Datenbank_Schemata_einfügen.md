@@ -4,16 +4,19 @@
 
 Ein laufender SVWS-Server wird benötigt - siehe hierzu: [Installationsanleitung](Installation_SVWS-Server.md)
 
-# Testschemata 
+# Testschemata Download
 
-Mehrere Schemata für verschieden Schulformen finden Sie unter `https://git.svws-nrw.de/svws/SVWS-TestMDBs`
+Mehrere Schemata für verschieden Schulformen finden Sie unter `https://github.com/SVWS-NRW/SVWS-TestMDBs`
 
 ```bash
-		git clone https://git.svws-nrw.de/svws/SVWS-TestMDBs
+		git clone https://github.com/SVWS-NRW/SVWS-TestMDBs
 ```
+Hier findet man auch zu den Datenbanken passende Lupo Dateien etc., um sich passende testfälle anzusehen. 
+Die Daten sind vollständig anonymisiert.
 
-# Testdatenbank per Curl befüllen
+# Testdatenbank per Curl
 
+```bash
  --user "%1:%2" -k -X POST "https://localhost/api/schema/root/migrate/mdb/%3" 
 -H "accept: application/json" 
 -H "Content-Type: multipart/form-data" 
@@ -21,21 +24,30 @@ Mehrere Schemata für verschieden Schulformen finden Sie unter `https://git.svws
 -F "schemaUsername=%5" 
 -F "schemaUserPassword=%6" 
 -F "database=@%7"
-
-
-
-```bash
-curl --user "%1:%2" -X 'POST' \
-  'https://svws/api/schema/root/migrate/mdb/testschule' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'database=~\SVWS-TestMDBs\GOST_Abitur\GymAbi.mdb' \
-  -F 'databasePassword=DasUeblicheSchildMDB-PW' \
-  -F 'schemaUsername=svwsadmin' \
-  -F 'schemaUserPassword=svwsadmin'
 ```
 
-# Einfügen über die SwaggerUI
++ %1: Benutzer der Datenbank mit GRAND-Rechten zum Anlegen neuer Datenbanken
++ %2: Passwort der o.g. Benutzers
++ %3: Name der neu anzulegenden Datenbank - Achtung: existierende Datenbanken werden überschrieben!
++ %4: Das allseits bekannte Schild 2.0 - Passwort, um die MDB-Datenbank zu öffnen. 
++ %5: Der neue MariaDB User für die neue Datenbank (Schuldatenbankadmin im Backend)
++ %6: Passwort der o.g. Benutzers
++ %7: vollständiger Pfad zur MDB auf dem Server - MIT @ davor!
+
+
+Beispiel: 
+```bash
+curl --user "root:svwsadmin" -k -X "POST" "https://server.svws-nrw.de/api/schema/root/migrate/mdb/svwsdb" \
+	-H "accept: application/json"  \
+	-H "Content-Type: multipart/form-data" \
+	-F "databasePassword=kannManWissen" \
+	-F "schemaUsername=svwsadmin" \
+	-F "schemaUserPassword=svwsadmin" \
+	-F "database=@/root/SVWS-TestMDBs/GOST_Abitur/Abi-Test-Daten-01/GymAbi.mdb"
+```
+
+
+# Einfügen per SwaggerUI
 
 Eine Übersicht über die Webservices bietet die SwaggerUI. 
 Hier kann man über *Try it Out* - Buttons jeweils die Services ausprobieren bzw. benutzen. 
@@ -47,13 +59,29 @@ Die Swagger UI aufrufen:
 
 ![SwaggerUI.png](./graphics/Swagger-01.png)
 
-Dann unter dem Abschnitt "SchemaRoot /api/schema/root/migrate/mdb/{schema}" den*Try it Out*-Button
+**Achtung:** Um auf der SwaggerUI diesen Service bzw. die mit "Root" gekennzeichneten Services nutzen zu können, 
+muss man sich zuerst authentisieren, indem man auf ein rechts abgebildetes Schloss klickt. 
+
+
+Hier nun den User `root` der Maria-DB Installation und das entsprechende Passwort angeben. 
+
+
+**Hinweis** Möchte man andere - nicht root - Services nutzen, so muss man sich mit dem Schild 3.0-Benutzer bzw. SVSW-Benutzer authorisieren.
+ 
+
+
+Dann unter dem Abschnitt  
+	-> "SchemaRoot /api/schema/root/migrate/mdb/{schema}"   
+	-> *Try it Out*-Button  
 drücken, so dass man diese Ansicht erhält:
+
+
 
 ![SwaggerUI.png](./graphics/Swagger-02.png)
 
-**Achtung:** Um auf der SwaggerUI diesen Service nutzen zu können, muss man sich zuerst authentisieren, indem man auf das rechts abgebildete Schloss klickt. 
-Hier nun den User `root` der Maria-DB Installation und das entsprechende Passwort angeben. 
+
+
+
 
 Anschließend die folgenden Einträge unter der Maske ausfüllen:
 

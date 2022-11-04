@@ -29,6 +29,7 @@ Dabei richtet sich das Aussehen nach den im Bedienkonzept festgelegten Grundwert
 
 # Icons
 ![](./graphics/Styleguide_Icons.png)
+Benutz wurden hier die Remix icons: https://github.com/Remix-Design/RemixIcon
 
 # Input Fields
 ![](./graphics/Styleguide_Input_Fields_01.png)
