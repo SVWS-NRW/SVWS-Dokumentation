@@ -177,7 +177,7 @@ cat > $INST_PATH/SVWS-Server/svws-server-app/svwsconfig.json <<-EOF
   "UseCORSHeader" : true,
   "TempPath" : "tmp",
   "TLSKeyAlias" : null,
-  "TLSKeystorePath" : "../svws-server-app",
+  "TLSKeystorePath" : ".",
   "TLSKeystorePassword" : "svwskeystore",
   "ClientPath" : "../svws-webclient/build/output",
   "LoggingEnabled" : true,
@@ -235,13 +235,14 @@ systemctl start svws
 ########################################################################
 # Nützliche Hinweise:
 ########################################################################
-
+#
 # manueller Start des SVWS-Server:
 #
 # cd /$INST_PATH/SVWS-Server/
 #./start_server.sh &
 #
-
+#
+#
 # im Journal nach Fehlermeldungen suchen: 
 #
 # journalctl  -f -u svws
