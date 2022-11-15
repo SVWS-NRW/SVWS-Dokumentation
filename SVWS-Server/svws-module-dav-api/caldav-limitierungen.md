@@ -4,10 +4,13 @@
 Für generierte Kalender ist eine Implementierung angedacht, diese ist derzeit nicht umgesetzt. Eine Klasse für generierte Kalender `GenerierteKalenderRepository` gibt derzeit nur leere Listen zurück. Weiterhin müssen den generierten Kalendern IDs gegeben werden, die nicht mit den vorhandenen IDs auf DavRessourcen kollidieren, bspw. `Stundenplan` oder `Prüfungstermine`.
 
 ** Fehlendes UI für Kalendererstellung und ACL **
-Obgleich das DavRepository die Methoden für das Anlegen von Kalendern sowie das zufügen von ACL-Einträgen am Kalender bereitstellt, fehlt der durchstich zur OpenAPI und ein entsprechendes Protokoll. Soweit bekannt unterstützen die Clients das Anlegen von Remote-Kalendern und das Rechtemanagement nicht. Unser derzeitiger Lösungsweg sieht vor, dass Admins neue Kalender und die Berechtigungen an den Kalendern in der Datenbank selbst pflegen muss - dies sollte keine Dauerlösung sein.
+Obgleich das DavRepository die Methoden für das Anlegen von Kalendern sowie das zufügen von ACL-Einträgen am Kalender bereitstellt, fehlt der durchstich zur OpenAPI und ein entsprechendes Protokoll. Soweit bekannt unterstützen die Clients das Anlegen von Remote-Kalendern und das Rechtemanagement nicht. Unser derzeitiger Lösungsweg sieht vor, dass Admins neue Kalender und die Berechtigungen an den Kalendern in der Datenbank selbst pflegen muss - dies sollte keine Dauerlösung sein. Eine kurzfristige Lösung ohne notwendiges UI kann über die Konfiguration des Servers erreicht werden, indem Standardkalender und Lese- und Schreibberechtigte Nutzer(gruppen) dort vordefiniert werden können.
 
 ** Zusammenführen von CardDav- und CalDav-API **
 Für die CardDav-Api wurde bisher nur der Weg der generierten Adressbücher eingeschlagen, für die CalDav-Api gespiegelt dazu nur der der Weg für beschreibbare und geteilte Kalender. Dadurch entstand einge Codeduplizierung im Rahmen der Dispatcher, welche für beide Implementierungen außerordentlich ähnlich sind (durch die gemeinsame Grundlage des webdav-Protokolls). Für die Implementierung der beschreibbaren Adressbücher und für Wartbarkeit des Codes (Stichwort Code Duplication) wäre eine Zusammenführung der beiden APIs sinnvoll, Grundlagen hierfür sind bei den URI-Parametern und einem Teil der Dispatcher bereits erfolgt, auch der Zugriff auf schreibbare DavRessourcen( und -sammlungen) sowie ACL sind im `DavRepository` bereits so allgemein gehalten, dass sie wiederverwendet werden können. In diesem Rahmen treten auch noch Sonarlint-Meldungen auf.
+
+** Fehlende Konfiguration für Standardwerte **
+Es gibt eine Reihe von Standardwerten, die in der SWVS-Konfiguration hinterlegt werden sollten. Dies ist bisher nicht umgesetzt, auch die Clients fragen diese Werte nicht an. 
 
 ## Serialisierung
 
