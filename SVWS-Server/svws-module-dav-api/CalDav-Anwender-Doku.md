@@ -1,8 +1,6 @@
 
 # CalDAV-API für Kalenderdaten
 
-Inhaltsverzeichnis
-[[_TOC_]]
 
 ## Kalender
 Folgende Kalender können im SVWS-Server in Clientprogrammen mit CalDav-Support importiert werden:
