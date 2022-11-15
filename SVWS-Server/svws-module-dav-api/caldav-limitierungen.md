@@ -1,28 +1,34 @@
 # CalDav Limitierungen
 
-** Fehlende Generierte Kalender **
+**Fehlende Generierte Kalender**
+
 Für generierte Kalender ist eine Implementierung angedacht, diese ist derzeit nicht umgesetzt. Eine Klasse für generierte Kalender `GenerierteKalenderRepository` gibt derzeit nur leere Listen zurück. Weiterhin müssen den generierten Kalendern IDs gegeben werden, die nicht mit den vorhandenen IDs auf DavRessourcen kollidieren, bspw. `Stundenplan` oder `Prüfungstermine`.
 
-** Fehlendes UI für Kalendererstellung und ACL **
+**Fehlendes UI für Kalendererstellung und ACL**
+
 Obgleich das DavRepository die Methoden für das Anlegen von Kalendern sowie das zufügen von ACL-Einträgen am Kalender bereitstellt, fehlt der durchstich zur OpenAPI und ein entsprechendes Protokoll. Soweit bekannt unterstützen die Clients das Anlegen von Remote-Kalendern und das Rechtemanagement nicht. Unser derzeitiger Lösungsweg sieht vor, dass Admins neue Kalender und die Berechtigungen an den Kalendern in der Datenbank selbst pflegen muss - dies sollte keine Dauerlösung sein. Eine kurzfristige Lösung ohne notwendiges UI kann über die Konfiguration des Servers erreicht werden, indem Standardkalender und Lese- und Schreibberechtigte Nutzer(gruppen) dort vordefiniert werden können.
 
-** Zusammenführen von CardDav- und CalDav-API **
+**Zusammenführen von CardDav- und CalDav-API**
+
 Für die CardDav-Api wurde bisher nur der Weg der generierten Adressbücher eingeschlagen, für die CalDav-Api gespiegelt dazu nur der der Weg für beschreibbare und geteilte Kalender. Dadurch entstand einge Codeduplizierung im Rahmen der Dispatcher, welche für beide Implementierungen außerordentlich ähnlich sind (durch die gemeinsame Grundlage des webdav-Protokolls). Für die Implementierung der beschreibbaren Adressbücher und für Wartbarkeit des Codes (Stichwort Code Duplication) wäre eine Zusammenführung der beiden APIs sinnvoll, Grundlagen hierfür sind bei den URI-Parametern und einem Teil der Dispatcher bereits erfolgt, auch der Zugriff auf schreibbare DavRessourcen( und -sammlungen) sowie ACL sind im `DavRepository` bereits so allgemein gehalten, dass sie wiederverwendet werden können. In diesem Rahmen treten auch noch Sonarlint-Meldungen auf.
 
-** Fehlende Konfiguration für Standardwerte **
+**Fehlende Konfiguration für Standardwerte**
+
 Es gibt eine Reihe von Standardwerten, die in der SWVS-Konfiguration hinterlegt werden sollten. Dies ist bisher nicht umgesetzt, auch die Clients fragen diese Werte nicht an. 
 
 ## Serialisierung
 
-** Unvollständige Serialisierung von Kalenderdaten zum vCalendar-Format **
+**Unvollständige Serialisierung von Kalenderdaten zum vCalendar-Format**
 Für die vorhandenen Kalenderdaten genügt ein rudimentärer Parser des VCalendar-Formats, welcher das Minimale und Maximale Datum eines Eintrags für von Clients verwendete Zeitfilter aus den VCalendar-Rohdaten parst. Die Serialisierung ist in Ansätzen implementiert, sollte aber für die generierten Kalender noch vervollständigt werden.
 
-** Fehlende Unterstützung für wiederkehrende Termine **
+**Fehlende Unterstützung für wiederkehrende Termine**
+
 Wiederkehrende Termine (bspw. wöchentliche, monatliche Termine) werden im VCalendar-Format als Recurrence-Rules (RRULE) abgebildet. Für die derzeit vorhandenen beschreibbaren Kalender ist es kein direktes Hindernis, dass diese weder geparst, noch serialisiert werden können. Dies wird erst in Kombination mit (von Outlook verwendeten) Filtern hinderlich, wenn ein wiederkehrender Termin außerhalb des gefilterten Zeitfensters gestartet ist, aber durch die wiederkehr in das Zeitfenster fällt - diese Termine werden nicht für das Zeitfenster erfasst. Außerdem ist für generierte Kalender (mit Stundenplänen oder regelmäßigen Terminen allgemein) eine Modellierung und Serialisierung der RRULES außerordentlich sinnvoll.
 
 ## Tests
 
-** Tests von Zeitzonen **
+**Tests von Zeitzonen**
+
 Mit manuellen Tests wurde bisher ausschließlich in der Standardzeitzone getestet, so dass Server und Client in Europe/Berlin waren. Dieser Happy-Path sollte auch der Regelfall für die Anwendung sein, von Abweichungen muss aber ausgegangen werden. Da an mehreren Stellen zwischen ISO, SQL und Java Zeitpunkten ineinander konvertiert werden muss und hier auch die Zeitzone eine Rolle spielt, möchte ich eine Fehleranfälligkeit ohne weitere Tests nicht ausschließen.
 
 **Testautomatisierung: Automatische API-Tests in CI integrieren**
