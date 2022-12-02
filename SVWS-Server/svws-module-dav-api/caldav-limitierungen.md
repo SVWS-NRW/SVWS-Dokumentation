@@ -16,15 +16,6 @@ Für die CardDav-Api wurde bisher nur der Weg der generierten Adressbücher eing
 
 Es gibt eine Reihe von Standardwerten, die in der SWVS-Konfiguration hinterlegt werden sollten. Dies ist bisher nicht umgesetzt, auch die Clients fragen diese Werte nicht an. 
 
-## Serialisierung
-
-**Unvollständige Serialisierung von Kalenderdaten zum vCalendar-Format**
-Für die vorhandenen Kalenderdaten genügt ein rudimentärer Parser des VCalendar-Formats, welcher das Minimale und Maximale Datum eines Eintrags für von Clients verwendete Zeitfilter aus den VCalendar-Rohdaten parst. Die Serialisierung ist in Ansätzen implementiert, sollte aber für die generierten Kalender noch vervollständigt werden.
-
-**Fehlende Unterstützung für wiederkehrende Termine**
-
-Wiederkehrende Termine (bspw. wöchentliche, monatliche Termine) werden im VCalendar-Format als Recurrence-Rules (RRULE) abgebildet. Für die derzeit vorhandenen beschreibbaren Kalender ist es kein direktes Hindernis, dass diese weder geparst, noch serialisiert werden können. Dies wird erst in Kombination mit (von Outlook verwendeten) Filtern hinderlich, wenn ein wiederkehrender Termin außerhalb des gefilterten Zeitfensters gestartet ist, aber durch die wiederkehr in das Zeitfenster fällt - diese Termine werden nicht für das Zeitfenster erfasst. Außerdem ist für generierte Kalender (mit Stundenplänen oder regelmäßigen Terminen allgemein) eine Modellierung und Serialisierung der RRULES außerordentlich sinnvoll.
-
 ## Tests
 
 **Tests von Zeitzonen**
