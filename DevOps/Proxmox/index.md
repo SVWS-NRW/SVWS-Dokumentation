@@ -93,7 +93,35 @@ schreiben, löschen und reboot testen
 
 # proxmox installieren
 
+Die offizielle Quelle führt leider durch einen Fehler in der Reihenfolge oder fehlende PVE Teile zum Crash.
 https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_11_Bullseye
+
+Diese Anleitung hat die richtige Reihenfolge und Quellen vereint: 
+https://computingforgeeks.com/how-to-install-proxmox-ve-on-debian-bullseye/
+
+
+Hier nochmal alle Schritte aufgeführt: 
+ Änder des Hotnamen 
+ 
+		nano /etc/hostname 
+		nano /etc/hosts
+		
+```sh
+		apt update
+      	apt upgrade -y
+		apt autoremove
+		echo "deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription" | sudo tee /etc/apt/sources.list.d/pve-install-repo.list
+		wget http://download.proxmox.com/debian/proxmox-release-bullseye.gpg
+		mv proxmox-release-bullseye.gpg /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg
+		chmod +r /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg
+		apt update
+		apt full-upgrade -y
+		apt install firmware-realtek firmware-misc-nonfree
+		apt install proxmox-ve postfix open-iscsi
+     	reboot
+````
+   
+
 
 "keine gültige Subsciprtion" popup entfernen: 
 
