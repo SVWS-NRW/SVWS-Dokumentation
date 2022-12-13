@@ -31,20 +31,23 @@ Die Quelldatei als GraphML liegt im Unterordner ./graphics.
 
 Debian 11 updaten & upgraden
 
-hostnamen  in /etc/hosts und /etc/hostname anpassen
+hostnamen  in ``/etc/hosts`` und ``/etc/hostname`` anpassen
 
 in der Hertzner Webumgebung den Reverse einrichten, hier:
 
 proxmox.svws-nrw.de 
 
 Software: 
-
-		apt install -y sshfs cifs-utils 
+	
+``` bash
+apt install -y sshfs cifs-utils 
+```
 
 # Hilfreiche Tools
 
-		apt install -y net-tools dnsutils nmap curl zip
-
+``` bash
+apt install -y net-tools dnsutils nmap curl zip
+```
 
 ## Storage einbinden
 
@@ -54,9 +57,10 @@ Vorgehen analog zu:
 https://docs.hetzner.com/de/robot/storage-box/access/access-samba-cifs
 
 1) Einloggen per sft und als Hauptuser uXXXXXX 
-
-		sftp -P 23 uXXXXXX@uXXXXXX.your-storagebox.de
-
+	
+``` bash
+sftp -P 23 uXXXXXX@uXXXXXX.your-storagebox.de
+```
 Ein aussagekräftiges Backupverzeichnis anlegen. 
 
 2) In der Web-Konfigurations-Oberfläche einen Unteruser anlegen. 
@@ -66,22 +70,29 @@ Passwörter neu erstellen und gut abspeichern Ggf samba aktivieren
 
  Backup Verzeichnis in Debian anlegen und mounten ausprobieren:
 		
-```
-		mount.cifs -o user=uXXXXXX-sub1,pass=abcdefghi //uxxxxxx-sub1.your-storagebox.de/uxxxxxx-sub1 /backup
+``` bash
+mount.cifs -o user=uXXXXXX-sub1,pass=abcdefghi //uxxxxxx-sub1.your-storagebox.de/uxxxxxx-sub1 /backup
 ```
 
 4) dauerhaftes Mounten: 
 
 in /etc/fstab die folgenden eintrgäge machen: 
 
-```
+``` bash 
 //uxxxxxx-sub1.your-storagebox.de/uxxxxxx-sub1 /backup cifs iocharset=utf8,rw,credentials=/etc/backup-credentials.txt,file_mode=0660,dir_mode=0770 0 0
+```
+Anschließend noch mit ``nano /etc/backup-credentials.txt`` die credentials setzen.
 
-		nano /etc/backup-credentials.txt
-
+```bash 
 user=uxxxxxx-sub1
 pass=abcdefg
 ```
+
+```bash 
+chmod 400 /etc/backup-credentials.txt
+
+```
+
 
 Anschießend sollte das mounten funktionieren
 
@@ -160,20 +171,24 @@ Die UFW lässt sich schön komfortabel einrichten, zur Portweiterleitung mit def
 
 ### Literatur
 
-https://www.pcwelt.de/ratgeber/Ratgeber-Firewall-Linux-Firewall-fuer-Profis-mit-iptables-472858.html
+https://www.pcwelt.de/ratgeber/Ratgeber-Firewall-Linux-Firewall-fuer-Profis-mit-iptables-472858.html  
 https://schroederdennis.de/allgemein/proxmox-auf-rootserver-mit-nur-1-public-ip-addresse-pfsense-nat/
 ### Einrichtung IPtables
 Die beiden Iptable-Befehle organisieren die Weiterleitung allen anfragen auf das Netzwerkdevice enp7s0, so dass diese außer port 8006 und 22 
 weitergeleitet werden auf die 10.0.0.2
+````bash
+nano /etc/network/interfaces
+````
+Unter der physikalischen Netzwerkarte, hier ens1s0 direkt eintragen, dass die iptables geladen werden nachdem die Netwerkkarte aktivgeschaltet wurde. 
 
 ```
-		post-up   echo 1 > /proc/sys/net/ipv4/ip_forward
-        post-up   echo 1 > /proc/sys/net/ipv6/ip_forward
-		iptables -t nat -A PREROUTING -i enp7s0 -p udp -j DNAT --to 10.0.0.2
-		iptables -t nat -A PREROUTING -i enp7s0 -p tcp -m multiport ! --dport 22,8006 -j DNAT --to 10.0.0.2
+		post-up echo 1 > /proc/sys/net/ipv4/ip_forward 
+        post-up echo 1 > /proc/sys/net/ipv6/ip_forward 
+		post-up iptables -t nat -A PREROUTING -i enp1s0 -p udp -j DNAT --to 10.0.0.2
+		post-up iptables -t nat -A PREROUTING -i enp1s0 -p tcp -m multiport ! --dport 22,8006 -j DNAT --to 10.0.0.2
 ```
 		
-Die Befehle können in der nano /etc/network/interfaces direkt an dem device eingebunden werden. 
+Die Befehle können in der nano /etc/network/interfaces direkt an dem device eingebunden werden oder auch ohne post-up direkt im Betrieb geladen werden. 
 
 ### Alternativer Einrichtung
 Alternativ kann man diese Befehle auch direkt ausführen 
@@ -195,9 +210,13 @@ iptables -L PREROUTING
 
 Dem internen Networkdevice muss man ein Masquerading einrichten, so dass die Pakete auch auf ihrem Rückweg richtig zugeordnet werden. 
 
+````bash
+nano /etc/network/interfaces
+````
+
 ```sh
-post-up   iptables -t nat -A POSTROUTING -s '10.0.0.0/30' -o enp7s0 -j MASQUERADE
-post-down iptables -t nat -D POSTROUTING -s '10.0.0.0/30' -o enp7s0 -j MASQUERADE
+post-up   iptables -t nat -A POSTROUTING -s '10.0.0.0/30' -o enp1s0 -j MASQUERADE
+post-down iptables -t nat -D POSTROUTING -s '10.0.0.0/30' -o enp1s0 -j MASQUERADE
 ```
 	
 	

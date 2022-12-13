@@ -22,6 +22,28 @@ Die Anleitung findet man in dem Gitlabserver unter:
 Des Weiteren eine gute Dokumentation des Funktionsumfange und der Einstellungsmögliochkeiten unter: 
 
 https://docs.gitlab.com/runner/configuration/advanced-configuration.html
+
+## Installation unter Windows
+
+nach: https://docs.gitlab.com/runner/install/windows.html
+
++ Verzeichnis C:\GitLab-Runner anlegen und Schreibrechte setzen.
++ [Runner](https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-windows-amd64.exe) runterladen.
++ in den o.g. Ordner legen, ausführbar machen und in gitlab-runner.exe umbenennen. 
++ Registrierung token generieren (s.u.)
+
+
+		cd C:\GitLab-Runner
+		.\gitlab-runner.exe install
+		.\gitlab-runner.exe register
+		.\gitlab-runner.exe start
+
+ggf unter anderem user als Service starten: 
+		
+		.\gitlab-runner.exe install --user ENTER-YOUR-USERNAME --password ENTER-YOUR-PASSWORD
+
+
+Install GitLab Runner as a service and start it. You can either run the service using the Built-in System Account (recommended) or using a user account.
    
 ## Registrierung
 
@@ -44,9 +66,8 @@ Hat man nun custom statt docker bei dem Installationsscript gewählt, dann helfe
 		
 Nachdem man die Docker Installation abgeschlossen hat, muss unter /etc/gitlab-runner/config-toml im unteren Teil der Datei die folgenden Einträge haben
 
+````bash 
 
-```
-...
   executor = "docker"
   [runners.custom_build_dir]
   [runners.cache]
@@ -64,3 +85,26 @@ Nachdem man die Docker Installation abgeschlossen hat, muss unter /etc/gitlab-ru
     shm_size = 0
 	
 ```
+
+## updates
+
+Den Docker auf Gitlab auf pausierend setzen. Nicht alle pausieren lassen -> dann kann der Betrieb ungestört weiter laufen. 
+
+### Debian 
+
+unter root: 
+
+apt update && apt upgrade -y
+
+### Windows 
+
+cmd oder Powershell als Administrator öffnen
+
+cd C:\GitLab-Runner
+.\gitlab-runner.exe stop
+
+neuen Download unter dem o.g. link: [Runner](https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-windows-amd64.exe) runterladen.
+
+Datei ersetzen im Ordner und dann wieder als Prozess starten: 
+
+.\gitlab-runner.exe start
