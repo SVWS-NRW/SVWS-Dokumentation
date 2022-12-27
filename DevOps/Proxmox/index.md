@@ -104,18 +104,19 @@ schreiben, löschen und reboot testen
 
 # proxmox installieren
 
-Die offizielle Quelle führt leider durch einen Fehler in der Reihenfolge oder fehlende PVE Teile zum Crash.
+Die offizielle Quelle führt leider durch einen Fehler in der Reihenfolge oder fehlende PVE Teile zum Crash:
 https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_11_Bullseye
 
-Diese Anleitung hat die richtige Reihenfolge und Quellen vereint: 
+Die folgende Anleitung hat die richtige Reihenfolge und Quellen vereint: 
 https://computingforgeeks.com/how-to-install-proxmox-ve-on-debian-bullseye/
 
 
-Hier nochmal alle Schritte aufgeführt: 
- Änder des Hotnamen 
+Hier nochmal alle Schritte aufgeführt:   
+Zum Ändern des Hotnamens die folgenden Dateien ergänzen bzw. editieren: 
  
-		nano /etc/hostname 
-		nano /etc/hosts
+nano /etc/hostname 
+nano /etc/hosts
+		
 		
 ```sh
 		apt update
@@ -134,7 +135,7 @@ Hier nochmal alle Schritte aufgeführt:
    
 
 
-"keine gültige Subsciprtion" popup entfernen: 
+"keine gültige Subsciprtion" Popup entfernen: 
 
 https://tfta.de/forum/thread/31-proxmox-ve-keine-g%C3%BCltige-subscription-meldung-entfernen-bzw-deaktivieren/
 
@@ -147,14 +148,14 @@ mit leichten Anpassungen an der Firewall und certbot (s.u.)
 
 # Firewall bei Hetzner schärfen: 
 
-
-[TODO]
+Vor das Gesammte System der Proxmox Virtuaisierung lohnt es eine Umspannende Firewall zu legen. Dies muss man bei Portfreigaben beachten. 
+Es könnte zu Irritationen führen, wenn trotz geöffneter "innerer" Firwall noch weiterhin Ports geblockt werden. 
 
 # Firewall auf dem Proxmox 
 
-Ziel ist es jede Anfrage außer Port 8006 und Port 22 auf die dahinterliegende Firewall zu lenken. 
-Der erste Versuch mit UFW wurde verworfen und statt dessen direkt in die IPtabels geschrieben. 
-
+Proxmox kann einersetz auf dem Debianmuttersystem eine Firewall eingerichtet haben oder 
+andererseits eine über die WebGui bereitgestellte Firewall haben. Diese Firewall 
+kann automatisiert auf mehrere VMs angewendet werden oder nur spezifisch auh eine VM zugeschnitten sein.
 
 ## UFW [disabeld]
 
@@ -181,7 +182,7 @@ nano /etc/network/interfaces
 ````
 Unter der physikalischen Netzwerkarte, hier ens1s0 direkt eintragen, dass die iptables geladen werden nachdem die Netwerkkarte aktivgeschaltet wurde. 
 
-```
+```bash
 		post-up echo 1 > /proc/sys/net/ipv4/ip_forward 
         post-up echo 1 > /proc/sys/net/ipv6/ip_forward 
 		post-up iptables -t nat -A PREROUTING -i enp1s0 -p udp -j DNAT --to 10.0.0.2
@@ -219,7 +220,15 @@ post-up   iptables -t nat -A POSTROUTING -s '10.0.0.0/30' -o enp1s0 -j MASQUERAD
 post-down iptables -t nat -D POSTROUTING -s '10.0.0.0/30' -o enp1s0 -j MASQUERADE
 ```
 	
-	
+# Virtuelles Netz einrichten
+
+Unter dem Proxmox Node -> Netzwerk eine vmbr1 - Linux Bridge einrichten als Zwischennetzwerk mit CIDR 10.0.0.1/30 
+und eine vmbr2 mit 10.1.0.1/16 das das virtuelle Netz aufspannt. (Besser: vmbr0 und vmbr1) 
+
+
+Weitere Einrichtung des virtuellen Netzes siehe: [UFW_ReverseProxy_co](./UFW_ReverseProxy_co.md)
+
+
 
 # Proxmox Backups einrichten
 

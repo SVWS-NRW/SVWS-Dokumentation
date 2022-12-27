@@ -17,6 +17,8 @@ https://askubuntu.com/questions/1151289/ufw-rules-with-nat-masquerading
 
 https://en.wikipedia.org/wiki/Dnsmasq
 
+https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/
+
 # UFW einrichten
 
 Firewall (ufw) und hilfreiche Tools installieren 
@@ -65,8 +67,7 @@ In der /etc/dnsmasq.conf folgende Anpassungen machen:
 		domain=svws-nrw.de
 		dhcp-range=10.1.2.20,10.1.2.200,12h
 
-
-bei Bedarf schon mal fixe Einrtäge für zukünftige Server setzen: 
+bei Bedarf schon mal fixe Einträge für Server setzen: 
 
 		dhcp-host=92:FF:7C:A9:6A:52,wiki.svws-nrw.de,10.1.1.20
 		...
@@ -76,6 +77,19 @@ Und Neustarten des Dienstes
 		systemctl start dnsmasq
 
 Ggf. müssen bei den DHCP-Clients auch die Netzwerkkarten neu gestartet werden, um die IP Zuweisung per DHCP auszulösen. 
+
+### Mutliple Lans
+ 
+ 
+Um Schulnetze oder Schlträger zu simulieren benötigt man mehrere Netze und damit auch mehrere DHCP Dienste, dann benötigt der Server zunächst mehrer Netzwerkdevices. 
+Diese Devices in /etc/dnsmasq.conf eintragen
+
+interface=eth1
+interface=eth2
+interface=eth3
+interface=eth4
+
+
 
 ## Gateway bzw. Masqerading einrichten
 
@@ -307,6 +321,15 @@ in man Folgendes dort ergänzt:
 
 bei letsencrypt hat man zusätzlich das Problem, dass proxmox an einer anderen Stelle seine Zertifikate speichert. 
 Daher besser direkt auf der Proxmoxoberfläche das Cert-generieren anstoßen.
+
+
+
+# Portforwarding
+
+Für Services, wie wireguard, coturn etc. bietet es sich an ein Portforwarding nur für die entsprechenden Ports einzustellen. 
+
+
+
 		
 #### Literatur: 
 

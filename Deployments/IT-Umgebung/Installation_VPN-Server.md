@@ -4,7 +4,7 @@
 
 ### Auswahl der Maschine 
 
-Es gibt mehrer M�glichkeiten wie ein VPN-Server betrieben werden kann:
+Es gibt mehrer Möglichkeiten wie ein VPN-Server betrieben werden kann:
 
 - in einer Virtualisierungsumgebung (Proxmox, ESXi, ...) 
 - im Containersystem (Docker, LXH, ...)
@@ -12,9 +12,9 @@ Es gibt mehrer M�glichkeiten wie ein VPN-Server betrieben werden kann:
 - im Router (Fritzbox, ...)
 - als Teil einer Firewall (OpenSense, ...)
 
-### Beipiele f�r Hardwarel�sungen:
+### Beipiele für Hardwarelösungen:
 
-Hier gibt es mehrer Anbieter, die auch Hardwarel�sungen anbieten. Ein paar wenige Beispiele sind hier nach kurzer Suche im Internet exemplarisch zu finden:
+Hier gibt es mehrer Anbieter, die auch Hardwarelösungen anbieten. Ein paar wenige Beispiele sind hier nach kurzer Suche im Internet exemplarisch zu finden:
 
 Fritzbox: <br>
 https://www.computerbild.de/artikel/cb-News-Software-FritzOS-7.39-AVM-integriert-WireGuard-VPN-FritzBox-31230305.html
@@ -27,19 +27,19 @@ https://www.ovpn.com/de/guides/wireguard/opnsense
 
 ## WireGuard VPN-Server
 
-Die Entscheidung f�r den Wireguard VPN-Server in der Testumgebung des SVWS-Servers ist aufgrund verschiedener Rahmenbedingungen gefallen: 
+Die Entscheidung für den Wireguard VPN-Server in der Testumgebung des SVWS-Servers ist aufgrund verschiedener Rahmenbedingungen gefallen: 
 
  - performant, da fest im Linux-Kernel verankert
  - Open Source
  - einfache Installation per Skript
  - installierbar auf einem Server oder einer virtuellen Maschine 
- - ebenfalls als Hardware erh�ltlich
+ - ebenfalls als Hardware erhältlich
  - einfache Wartung und Konfiguration per script
- - m�gliche Weiterentwicklung (Konfiguration der VPN-Zug�nge von au�en)
+ - mögliche Weiterentwicklung (Konfiguration der VPN-Zugänge von außen)
 
 Im Weitern wird als Basis eine virtuelle Debian 11 Maschine auf einem Proxmoxsystem verwendet. 
 
-Ebenso ist die installation in einem LXH-Container m�glich, jedoch mit einigen Konfigurationen auf dem Muttersystem verbunden, auf die hier nicht weiter eingegangen wird. 
+Ebenso ist die installation in einem LXH-Container möglich, jedoch mit einigen Konfigurationen auf dem Muttersystem verbunden, auf die hier nicht weiter eingegangen wird. 
 Die Installation unterscheidet sich im Wesentlichen nicht von anderen Installationen auf anderen Virtualisierungen (ESXi, ...) oder echter Hardware.
 
 
@@ -48,26 +48,27 @@ Die Installation unterscheidet sich im Wesentlichen nicht von anderen Installati
 #### download debian 11 net install: <br>
 https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.1.0-amd64-netinst.iso
 
-Eine typische Debian Installation ausf�hren - einfach der Menuef�hrung folgen und je nach Bedarf auch auf das grafische Frontend verzichten. 
-Den SSH-Server direkt mit installieren, es wird in der Regel der SSH Zugang f�r die Wartung ben�tigt.
+Eine typische Debian Installation ausführen - einfach der Menueführung folgen und je nach Bedarf auch auf das grafische Frontend verzichten. 
+Den SSH-Server direkt mit installieren, es wird in der Regel der SSH Zugang für die Wartung benötigt.
 
 #### ggf aktualisieren
 
-Bei einem frisch installierten System sollte dieser Schritt nicht n�tig sein, 
-man kann es aber trotzdem einmal ausf�hren, um auch die letzten Aktualisierungen geladen zu haben: 
+Bei einem frisch installierten System sollte dieser Schritt nicht nötig sein, 
+man kann es aber trotzdem einmal ausführen, um auch die letzten Aktualisierungen geladen zu haben: 
 
 		apt update
 		apt upgrade -y
 				
-N�tzliche Helfer installieren: 		
+Nützliche Helfer installieren: 		
 		
 		apt install -y nmap curl git net-tools
 
 #### ggf das root login per ssh zulassen:
 
-Wenn man eine Fernsteuerung des Wireguard-Servers �ber SSH zulassen m�chte sollte eine Anmeldung per root Account zumindest aus dem lokalen Netz heraus erm�glicht werden. 
-Der ssh-root-login ist ohnehin in vielen Debian Installationen schon aktiviert, dies ist jedoch im Grunde ein vermeidbares Sicherheitsrisiko bei Maschinen, die auf diesem Port �ber das Internet erreichbar sind. 
-Abhilfe schafft hier entweder das Abschalten des rootlogins, eine vorgelagerte Firewall oder die Absicherung zum Beispiel mit [fail2ban](https://www.thomas-krenn.com/de/wiki/SSH_Login_unter_Debian_mit_fail2ban_absichern). 
+Wenn man eine Fernsteuerung des Wireguard-Servers über SSH zulassen möchte sollte eine Anmeldung per root Account zumindest aus dem lokalen Netz heraus ermöglicht werden. 
+Der ssh-root-login ist ohnehin in vielen Debian Installationen schon aktiviert, dies ist jedoch im Grunde ein vermeidbares Sicherheitsrisiko bei Maschinen, die auf diesem Port
+ über das Internet erreichbar sind. Abhilfe schafft hier entweder das Abschalten des rootlogins, eine vorgelagerte Firewall oder die Absicherung 
+ zum Beispiel mit [fail2ban](https://www.thomas-krenn.com/de/wiki/SSH_Login_unter_Debian_mit_fail2ban_absichern). 
 
 Falls der ssh-root-login zugelassen werden soll, muss die Datei sshd_config editiert werden: 
 
@@ -77,7 +78,7 @@ unter der auskommentierten Zeile
 
 		#PermitRootLogin prohibit-password
 		
-Folgendes einf�gen: 
+Folgendes einfügen: 
 
 		PermitRootLogin yes
 		
@@ -86,14 +87,21 @@ SSH neu starten:
 		sudo service sshd restart
 		
 
+## Alternative: LXC Container
+
+Hier müssen noch einige Voraussetzungen beachtet werden: 
+
+
+
 ## Installation von Wireguard per Script 
 
+Benötigt wird eich echter IPv4 Anschluss. (kein ds-light)
 Download des Installationsscrpits und Installation starten: 
 
 		wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
 
 (Quellen werden noch nachgearbeitet.)
-Als Port kann auch irgendein Port in den h�heren Bereichen gew�hlt werden, wie hier dargestellt port 58200. 
+Als Port kann auch irgendein Port in den höheren Bereichen gewählt werden, wie hier dargestellt port 58200. 
 
 ![Wireguard Installation Screenshot](./graphics/wireguard_1.png)
 
@@ -101,37 +109,37 @@ Als Port kann auch irgendein Port in den h�heren Bereichen gew�hlt werden, w
 
 ## Portfreigabe
 
-Um nun den Wireguard-Server aus dem Internet erreichen zu k�nnen und dar�ber eine VPN-Verbindung ins eigene Verwaltungsnetz herzustellen, 
-ben�tigt man eine Portfreigabe auf dem Router bzw. der eingesetzten Firewall. 
-Dies muss in der Regel durch den zust�ndigen IT-Dienstleister eingerichtet werden. 
+Um nun den Wireguard-Server aus dem Internet erreichen zu können und darüber eine VPN-Verbindung ins eigene Verwaltungsnetz herzustellen, 
+benötigt man eine Portfreigabe auf dem Router bzw. der eingesetzten Firewall. 
+Dies muss in der Regel durch den zuständigen IT-Dienstleister eingerichtet werden. 
 Exemplarisch wird hier die [Einrichtung einer Portfreigabe bei einer Fritzbox](Einrichtung_Portfreigabe.md) gezeigt. 
 
 
 ## Fernsteuerung per ssh
 
-Die Einrichtung der *Fernsteuerung per ssh* erm�glicht es auf dem SVWS-Server durch Absetzen einfacher Befehle VPN Verbindungen zu verwalten. 
-Im Folgenden wird die Arbeit �ber die Konsole des SVWS-Servers ausgef�hrt.
+Die Einrichtung der *Fernsteuerung per ssh* ermöglicht es auf dem SVWS-Server durch Absetzen einfacher Befehle VPN Verbindungen zu verwalten. 
+Im Folgenden wird die Arbeit über die Konsole des SVWS-Servers ausgeführt.
 
 ### SSH autologin einrichten
  
-Auf dem SVWS-Server als SVWS-Standart-Benutzer einen permanenten ssh Schl�ssel mit dem Maschine *wireguard* austauschen:
+Auf dem SVWS-Server als SVWS-Standart-Benutzer einen permanenten ssh Schlüssel mit dem Maschine *wireguard* austauschen:
 
 		ssh-keygen -t rsa -b 4096
 		ssh-copy-id -i ~/.ssh/id_rsa.pub root@wireguard
 
-Nun k�nnen Root Befehle auf dem Wireguard-Server auch vom SVWS-Server aus abgesetzt werden. 
+Nun können Root Befehle auf dem Wireguard-Server auch vom SVWS-Server aus abgesetzt werden. 
 
 	
 ### wireguard_user einrichten		
 
 Um einfach Wireguard-user einzurichten kann der Befehl wirguard_user benutzt werden. 
-Dieses Skript muss jedoch erst einmal heruntergeladen und als ausf�hrbare Datei im Wirguard-Server etabliert werden.
+Dieses Skript muss jedoch erst einmal heruntergeladen und als ausführbare Datei im Wirguard-Server etabliert werden.
 		
 		ssh root@wireguard
 		git clone https://github.com/familie-klein/wireguard_user/
 		
 (Quellen werden noch nachgearbeitet.)
-Wiregurad_user systemweit f�r root aufrufbar machen.
+Wiregurad_user systemweit für root aufrufbar machen.
 		
 		cp wireguard_user/wireguard_user /sbin/
 		chmod a+x /sbin/wireguard_user	
@@ -139,7 +147,7 @@ Wiregurad_user systemweit f�r root aufrufbar machen.
 		
 ### Benutzung vom terminal des SVWS-Servers aus
 
-So k�nnen Sie alle Wirguard-Benutzer auflisten: 
+So können Sie alle Wirguard-Benutzer auflisten: 
 
 		ssh wireguard -q -l root -t "wireguard_user -l"
 		
@@ -147,7 +155,7 @@ So k�nnen Sie alle Wirguard-Benutzer auflisten:
 		
 		ssh wireguard -q -l root -t "wireguard_user -u test -a"
 		
-Als R�ckmeldung gibt die Konsole die config datei f�r den Wireguard client aus.  		
+Als Rückmeldung gibt die Konsole die config datei für den Wireguard client aus.  		
 
 Alternativ kann diese Konfigurations-Datei auch gespeichert werden: 		
 
@@ -155,7 +163,7 @@ Alternativ kann diese Konfigurations-Datei auch gespeichert werden:
 		
 
 Man das config file auch direkt als QR-Code im Terminal angezeigen lassen.
-Dzu ben�tigt man das tool qrencode
+Dzu benötigt man das tool qrencode
 		
 		apt install qrencode
 		
@@ -172,7 +180,7 @@ bzw. inklusive Speichern des QRcodes und der config Datei:
 		ssh wireguard -q -l root -t "wireguard_user -u test -a" | tee test-user.conf > qrencode -o test-user.png -t PNG
 
 
-#### Beispiel: L�schen des users *test*:
+#### Beispiel: Löschen des users *test*:
 
 		ssh wireguard -q -l root -t "wireguard_user -u test -d"
 
@@ -192,3 +200,5 @@ https://github.com/angristan/wireguard-install/blob/88ae1c0d0f5d4f48252fd3be27b2
 https://blog.peterge.de/wireguard-lxc-unter-proxmox/
 
 https://www.youtube.com/watch?v=D1zp6n7ushM
+
+https://apfelcast.com/die-einfachste-opensource-vpn-wireguard-installation-auf-proxmox-lxc/
