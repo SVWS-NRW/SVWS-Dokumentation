@@ -1,5 +1,0 @@
-netsh advfirewall firewall add rule name="SVWS-Server  incoming TCP Port 443" dir=in action=allow protocol=TCP localport=443
-
-netsh advfirewall firewall add rule name="SVWS-Server TCP outgoing Port 443" dir=out action=allow protocol=TCP localport=443
-
-

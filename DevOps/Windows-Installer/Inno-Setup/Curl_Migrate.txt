@@ -1,1 +1,0 @@
-curl\bin\curl --user "root:svwsadmin" -k -X POST "https://localhost/api/schema/root/migrate/mdb/svwsdb" -H  "accept: application/json" -H  "Content-Type: multipart/form-data" -F "databasePassword=kakadu" -F "schemaUsername=svwsadmin" -F "schemaUserPassword=svwsadmin" -F "database=@C:/Schild-NRW/DB/GymAbi.mdb"
