@@ -12,10 +12,6 @@ Hier werden ebenso [Styleguide und Screendesign](./SVWS-UI-Framework/Styleguide.
 Hier können interessierte Entwickler und Programmierer weitere Informationen zur [Mitarbeit](Mitarbeit.md) erhalten. 
 
 
-## Der Notenmanager
- 
-Als ein Baustein des SVWS-Clients kann der [Notenmanager](Notenmanager.md) gesehen werden. 
-Hierzu gibt es neben dem Notenmanager innerhalb des SVWS-Client auch eine PHP-basierte Version für den Betrieb 
-zum Beispiel in einem angemieteten Webspace. Weitere Information dazu unter: [WeNoM](../../Projekte/WeNoM/index.md) - Der Web-Notenmanager.
+
 
 
