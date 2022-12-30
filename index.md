@@ -32,7 +32,7 @@ Im Vordergrund steht die Kapselung von Datenbank, Core-API und GUI.
 Von innen nach außen übernehmen die Schichten die folgenden Rollen:
 
 SVWS-Server:
-- svws-db: ?.
+- svws-db: Basisprojekt für die Datenbank
 - db-utils: Stellt Funktionalitäten zum Datenbank-Zugriff zur Verfügung.
 - core: (Hier passiert das Meiste)
 - open-API: Diese Schnittstelle nimmt Anfragen von Clients entgegen und liefert Antworten zurück.

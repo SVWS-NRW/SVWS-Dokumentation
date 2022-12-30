@@ -112,7 +112,7 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 ### Datenbankserver Einstellungen
 |DBKonfiguration||
 |---|---|
-|dbms| Datenbanksystem (MariaDB oder MSSQL, SQLite für Schulungsumgebungen)|
+|dbms| Datenbanksystem (MariaDB oder SQLite für Schulungsumgebungen)|
 |location| ServerURL|
 |defaultschema| Standart-Schema. Es können mehrere Schema verwendet werden.|
 
