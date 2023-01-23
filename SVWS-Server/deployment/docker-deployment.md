@@ -2,9 +2,15 @@
 =========================================================
 Es besteht die Möglichkeit, den SVWS als Container zu betreiben. Für folgende Szenarien eignet sich dieser Ansatz grundsätzlich:
 
-* Betrieb einer lokalen SVWS-Umgebung für die Entwicklung (PC, Notebook), siehe [Start einer lokalen SVWS-Umgebung](#Start-einer-lokalen-SVWS-Umgebung)
-* Aufbau einer kompletten SVWS-Umgebung für Test oder Live-Betrieb (Server), siehe [Start einer serverseitigen SVWS-Umgebung](#Start-einer-lokalen-SVWS-Umgebung)
+* Betrieb einer SVWS-Umgebung für die Entwicklung (PC, Notebook)
+* Betrieb einer SVWS-Umgebung für Test oder Live-Betrieb (Server)
 
+Die SVWS-Umgebung kann über mehrere Wege gestartet werden:
+ * [SVWS-Umgebung mit docker-compose starten](#docker-compose-starten)
+ * [SVWS-Umgebung mit Gradle starten](#gradle-starten)
+ * [Ausgewählte Services einer SVWS-Umgebung starten](#ausgewaehlte-services-starten)
+
+ 
 Die SVWS-Container-Images sind unter Docker (docker engine, docker desktop) lauffähig. Ein Betrieb unter anderen Container-Umgebungen wie z.B. [Podman](https://podman.io/), [Kubernetes](https://kubernetes.io/de/), [OpenShift](https://www.redhat.com/de/technologies/cloud-computing/openshift) ist grundsätzlich möglich, jedoch zum Zeitpunkt der Erstellung dieser Dokumentation nicht getestet (Stand 20.01.2023).
 
 # Lokale SVWS-Umgebung für die Entwicklung
@@ -13,7 +19,7 @@ Im folgenden wird der Ansatz beschrieben die SVWS-Images für die Entwicklung lo
 * Schnelles Rampup von SVWS-Datenbanken mit Testdaten
 * Einfaches Zurücksetzen und Wiederherstellen der SVWS-Datenbanken auf definierte Zustände. Dies ist insbesondere für die Ausführung von automatisierten API- und Integrationstests mit Abhängigkeit zu Testdaten hilfreich.
 
-Im Git-Repository des SVWSs befinden sich Scripts und Image-Definitionen zum Aufbau von docker-basierten SVWS-Systemumgebungen im Modul [deployment/docker](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker).
+Im Git-Repository des SVWSs befinden sich Scripts und Image-Definitionen zum Aufbau von docker-basierten SVWS-Systemumgebungen im Modul [./deployment/docker](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker).
 
 ## Systemvoraussetzungen
 Für die lokale Inbetriebnahme ist eine Installation von [Docker-Desktop](https://docs.docker.com/desktop/) auf dem Entwickler-PC notwendig.
@@ -21,8 +27,35 @@ Für die lokale Inbetriebnahme ist eine Installation von [Docker-Desktop](https:
 
 Wichtig: Bitte die [Nutzungsbedingungen](https://www.docker.com/legal/docker-subscription-service-agreement) der Fa. Docker Inc. für Docker Desktop beachten!
 
-## Start einer lokalen SVWS-Umgebung
-Es gibt Gradle-Tasks, mit denen eine komplette Umgebung bestehend aus der SVWS-Anwendung und einer SVWS-Datenbank gestartet werden.
+<a name="docker-compose-starten"></a>
+## SVWS-Umgebung mit docker-compose starten
+Die SVWS-Umgebung kann über die Console des verwendeten Betriebssystems mittels docker-compose gestartet werden. Dazu ausgehend von dem Verzeichnis [./deployment/docker](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/) folgenden Befehl auf der Console eingeben:
+
+```
+docker compose up
+```
+
+Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Backend, Frontend).
+
+Achtung: Vor dem Start der SVWS-Umgebung müssen zunächst die [Konfiguration der SVWS-Umgebung](#konfiguration) individuell angepasst werden.
+
+Nach dem Start kann der SVWS-Server standardmäßig über den Port 8443 erreicht werden. Auf die Datenbank kann standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden (not bound). Intern nutzt die Datenbank den Port 3306. Sollte ein Port-Binding auch außerhalb von Docker gewünscht sein, kann dies über die Angabe eines Port-Mappings (ports) Eintrag in der Datei erreicht werden:
+
+Beispiel:
+```
+version: "3"
+services:
+  mariadb:
+    ...
+    ports:
+        - "3306:13306"
+    ...
+```
+In diesem Beispiel wird der Port 3306 im Container auf den Port 13306 auf dem Host abgebildet.
+
+<a name="gradle-starten"></a>
+## SVWS-Umgebung mit Gradle starten
+Es existieren vordefinierte Gradle-Tasks, mit denen eine komplette Umgebung, bestehend aus der SVWS-Anwendung und einer SVWS-Datenbank, aus der Entwicklungsumgebung heraus gestartet werden können.
 
 Start einer Umgebung aus der Console:
 ```
@@ -31,11 +64,25 @@ Start einer Umgebung aus der Console:
 
 Die Gradle-Tasks nutzen [docker-compose](https://docs.docker.com/compose/) in der Version 3.
 
-Achtung: Vor dem Start der SVWS-Umgebung müssen zunächst die [Konfiguration der SVWS-Umgebung](#Konfiguration-der-SVWS-Umgebung) individuell angepasst werden.
+Achtung: Vor dem Start der SVWS-Umgebung müssen zunächst die [Konfiguration der SVWS-Umgebung](#konfiguration) individuell angepasst werden.
 
+<a name="ausgewaehlte-services-starten"></a>
+## Ausgewählte Services einer SVWS-Umgebung starten
+Es besteht die Möglichkeit nur einzelne, ausgewählte Services einer SVWS-Umgebung über docker zu betreiben. Also z.B. nur eine Datenbank oder nur die SVWS-Anwendung.
 
+Beispiel "nur Datenbank":
+```
+docker compose start mariadb
+```
+
+Beispiel "nur SVWS-Anwendung":
+```
+docker compose start svws
+```
+
+<a name="konfiguration"></a>
 ## Konfiguration der SVWS-Umgebung 
-Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über Umgebungsvariablen. Die Werte dieser Variablen werden in der Datei [.env]((https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/.env) definiert.
+Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über Umgebungsvariablen. Die Werte dieser Variablen werden in der Datei [./deployment/docker/.env](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/.env) definiert.
 Beispiel:
 ```
 INIT_SCRIPTS_DIR=/etc/app/svws/init-scripts
@@ -53,15 +100,15 @@ SVWS_TLS_KEY_ALIAS=your-keystore-key-alias
 ```
 | Variable | Beschreibung |
 | ----------- | ----------- |
-| INIT_SCRIPTS_DIR | [Optional] Pfad zu einem Verzeichnis im SVWS-Container für Initialisierungsscripts. Alle Shell-Scripts in diesem Verzeichnis werden beim Hochfahren des SVWS-Containers ausgeführt. So können z.B. [automatische Testdatenimporte](#Automatische-Testdatenimporte) in den Boot-Prozess integriert werden. |
-| TESTDB_PASSWORD | [Optional] Passwort der Testdatenbank (MS Access, SqlLite), das im Rahmen der [automatischen Testdatenimporte](#Automatische-Testdatenimporte) verwendet werden soll. |
+| INIT_SCRIPTS_DIR | [Optional] Pfad zu einem Verzeichnis im SVWS-Container für Initialisierungsscripts. Alle Shell-Scripts in diesem Verzeichnis werden beim Hochfahren des SVWS-Containers ausgeführt. So können z.B. [automatische Testdatenimporte](#automatische-initialisierung) in den Boot-Prozess integriert werden. |
+| TESTDB_PASSWORD | [Optional] Passwort der Testdatenbank (MS Access, SqlLite), das im Rahmen der [automatische Testdatenimporte](#automatische-initialisierung) verwendet werden soll. |
 | MYSQL_ROOT_PASSWORD | Passwort, das für den Root-User der MariaDB-Instanz verwendet werden soll |
 | MYSQL_DATABASE | Name des Datenbankschemas, mit dem sich der SVWS-Server verbindet (z.B. "gymabi") |
 | MYSQL_HOST | Name des Hosts, auf dem die SVWS-Datenbank läuft. Im Falle der Docker-Umgebung entspricht dieser Wert dem Service-Namen von docker-compose (also "mariadb"). |
 | MYSQL_USER | Datenbank-Benutzer, unter dem sich der SVWS-Server mit der Datenbank verbindet. |
 | MYSQL_PASSWORD | Passwort des Datenbank-Benutzers, unter dem sich der SVWS-Server mit der Datenbank verbindet. |
 | MARIADB_DATA_DIR | Pfad zum Daten-Verzeichnis innerhalb der MariaDB-Instanz. Wird benötigt, um die Daten im Datenbank-Container auf einem Volume zu sichern (volume mount). Pfad hängt von dem verwendeten MariaDB Basis-Image ab. |
-| MARIADB_LOG_DIR | Pfad zum Log-Verzeichnis innerhalb der MariaDB-Instanz. Wird benötigt, um die Loags im Datenbank-Container auf einem Volume zu sichern (volume mount). Pfad hängt von dem verwendeten MariaDB Basis-Image ab. |
+| MARIADB_LOG_DIR | Pfad zum Log-Verzeichnis innerhalb der MariaDB-Instanz. Wird benötigt, um die Logs im Datenbank-Container auf einem Volume zu sichern (volume mount). Pfad hängt von dem verwendeten MariaDB Basis-Image ab. |
 | SVWS_TLS_KEYSTORE_PATH | Unter diesem Pfad erwartet der SVWS den Java-Keystore für die Terminierung von SSL am Server |
 | SVWS_TLS_KEYSTORE_PASSWORD | Passwort des Keystores |
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore  |
@@ -73,9 +120,27 @@ Weitergehende und individuelle Konfigurationen können in der docker-compose.yml
 * [MariaDB](https://github.com/docker-library/docs/blob/master/mariadb/README.md)
 * [Eclipse Temurin](https://github.com/docker-library/docs/tree/master/eclipse-temurin)
 
-### Automatische Testdatenimporte
-TBD
+<a name="automatische-initialisierung"></a>
+## Automatische Initialisierung beim Start, Testdatenimporte
+Es besteht die Möglichkeit beim Start der SVWS-Container die Datenbank mit Testdaten zu initialisieren. Es existiert ein [Beispiel-Script](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/init-scripts/import-test-db.sh) für den Import einer Testdatenbank im Git-Repository.
 
+Funktionsweise: Beim Start der SVWS-Container wird der Inhalt des Ordners [init-scripts](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/init-scripts/) in den SVWS-Container eingebunden (per volume mount). Alle Shell-Scripts (*.sh) in diesem Ordner werden durch das Start-Script des Containers im Anschluss ausgeführt.
 
-## Start einer serverseitigen SVWS-Umgebung
-TBD
+### Aktivierung der automatischen Initialisierung
+Umgebungsvariable "INIT_SCRIPTS_DIR" muss gesetzt sein (vgl. [Konfiguration der SVWS-Umgebung](#Konfiguration-der-SVWS-Umgebung)). Sofern eine Testdatenbank importiert wird, muss zusätzlich das Passwort "TESTDB_PASSWORD" für die Quelldatenbank angegeben werden.
+
+Datei [./deployment/docker/.env](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/.env):
+```
+INIT_SCRIPTS_DIR=/etc/app/svws/init-scripts
+TESTDB_PASSWORD=your-testdb-pw
+...
+```
+
+### Deaktivierung der automatischen Initialisierung
+Umgebungsvariable "INIT_SCRIPTS_DIR" muss auskommentiert sein (vgl. [Konfiguration der SVWS-Umgebung](#Konfiguration-der-SVWS-Umgebung)).
+
+Datei [./deployment/docker/.env](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/.env):
+```
+#INIT_SCRIPTS_DIR=/etc/app/svws/init-scripts
+...
+```
