@@ -13,7 +13,7 @@ sidebar:
 	[
 		{ text: '', items:
 			[
-				{ text: 'SVWS-Server Repository', link: '/SVWS-Server/', collapsed: true, items:
+				{ text: 'SVWS-Server', link: '/SVWS-Server/', collapsed: true, items:
 					[
 						{ text: 'svws-core', link: '/SVWS-Server/svws-core/' },
 						{ text: 'svws-db', link: '/SVWS-Server/svws-db/' },

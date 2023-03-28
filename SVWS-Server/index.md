@@ -1,4 +1,22 @@
-# SVWS-Core-API
+# SVWS-Server
+
+
+
+## Zwiebelmodell Komponenten-Hierarchie
+
+![Übersicht-REST](./graphics/Zwiebelmodell_SVWS-Server_und_SVWS-Client.png)
+
+Von innen nach außen übernehmen die Schichten die folgenden Rollen:
+
+SVWS-Server:
+- svws-db: Basisprojekt für die Datenbank
+- db-utils: Stellt Funktionalitäten zum Datenbank-Zugriff zur Verfügung.
+- core: (Hier passiert das Meiste)
+- open-API: Diese Schnittstelle nimmt Anfragen von Clients entgegen und liefert Antworten zurück.
+
+SVWS-Client:
+- te-lib: Diese Komponente des Clients ist für die Kommunikation mit der Open-API verwantwortlich. Sie entält (auch) transpilierte Anteile aus den Server-Schichten 'core' und 'open-API'.
+- Web-UI: Die graphische Benutzeroberfläche für den Benutzer (mit vue.js-Komponenten)
 
 ## Übersicht zur Funktionalität der CORE-API
 

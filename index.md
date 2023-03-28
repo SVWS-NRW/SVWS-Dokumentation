@@ -1,49 +1,38 @@
-***SVWS - Dokumentation***
-====================
+# SVWS - Server
 
-Das Projekt zur Schaffung einer Open:API-Schnittstelle für die Schulverwaltung NRW.
-
-
-# Übersicht
-
-**Das Projekt:** 
-Die Schulverwaltungssoftware des Landes NRW wurde im Jahr 2000 erstmalig in Auftrag gegeben.
-Mittlerweile ist die Software 20 Jahre alt und es besteht dringender Bedarf an Modernisierung.
-Unter den bisherigen Entwicklern besteht der Konsens, dass es extrem schwierig sein wird, eine neue Software mit den bestehenden Ressourcen zu entwicklen, die den gleichen Funktionsumfang bietet, wie das jetzige Schild-NRW.
-
-Aus diesem Grund die Idee: Entwicklung eines REST-Servers, der eine offene API-Schnittstelle zur Verfügung stellt.
-Schild-NRW kann dann weiterhin in einer Übergangsphase auf die Datenbank zugreifen.
-Sobald aber alle Services der REST-Schnittstelle zur Verfügung stehen, kann Schild-NRW dann nach und nur noch als GUI dienen.
-
-
+Das Projekt zur Schaffung einer Schulverwaltungssoftware mit Open:API-Schnittstelle für die dezentrale Schulverwaltung NRW.
 
 ![Übersicht-REST](./graphics/700px-Uebersicht-REST-Server-01.png)
 
-
-
-In der Übersicht soll einen erster Eindruck vom zukünftigen Aufbau vermitteln.
+In der Übersicht soll einen erster Eindruck vom Aufbau des SVWS-Servers vermitteln.
 Im Vordergrund steht die Kapselung von Datenbank, Core-API und GUI.
 
 
-# Zwiebelmodell Komponenten-Hierarchie
+## Übersicht
 
-![Übersicht-REST](./graphics/Zwiebelmodell_SVWS-Server_und_SVWS-Client.png)
+Die Schulverwaltungssoftware des Landes NRW wurde im Jahr 2000 erstmalig in Auftrag gegeben.
+Mittlerweile ist die Software 20 Jahre alt und es besteht dringender Bedarf an Modernisierung.
+Unter den bisherigen Entwicklern besteht der Konsens, dass es extrem schwierig sein wird, eine neue Software 
+mit den bestehenden Ressourcen zu entwicklen, die den gleichen Funktionsumfang bietet, wie das jetzige Schild-NRW.
 
-Von innen nach außen übernehmen die Schichten die folgenden Rollen:
+Aus diesem Grund die Idee: Entwicklung eines REST-Servers, der eine offene API-Schnittstelle zur Verfügung stellt.
+Schild-NRW 3.0 kann dann weiterhin in einer Übergangsphase auf die Datenbank zugreifen.
+Sobald alle Services der REST-Schnittstelle zur Verfügung stehen, wird Schild-NRW 3.X auf diese Webservices umgesetellt 
+und vom direkten Datenbankzugriff abgekoppelt. Ebenso können weitere GUIs auf die API des SVWS-Servers zugreifen. 
 
-SVWS-Server:
-- svws-db: Basisprojekt für die Datenbank
-- db-utils: Stellt Funktionalitäten zum Datenbank-Zugriff zur Verfügung.
-- core: (Hier passiert das Meiste)
-- open-API: Diese Schnittstelle nimmt Anfragen von Clients entgegen und liefert Antworten zurück.
+## Github Quellen
 
-SVWS-Client:
-- te-lib: Diese Komponente des Clients ist für die Kommunikation mit der Open-API verwantwortlich. Sie entält (auch) transpilierte Anteile aus den Server-Schichten 'core' und 'open-API'.
-- Web-UI: Die graphische Benutzeroberfläche für den Benutzer (mit vue.js-Komponenten)
+[Github Repository](https://github.com/SVWS-NRW/SVWS-Server)
 
-[Projektanforderungen](Projektanforderungen.md)
+Unser Projekt ist Open Source!
 
-[FAQ](FAQ.md)
+## weitere Informationen 
+
+### [Hilfe und Handbuch] (https://help.svws-nrw.de/)
+
+### [Projektanforderungen](Projektanforderungen.md)
+
+### [FAQ](FAQ.md)
 
 
 ----
