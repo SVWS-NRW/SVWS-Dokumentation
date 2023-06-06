@@ -3,10 +3,9 @@ module.exports =
 title: 'SVWS Dokumentation',
 description: 'Dokumentation SVWS-Server NRW, Installation und Entwicklung',
 
+
 themeConfig:
 {
-
-logo: 'graphics/SVWS-Server_logo_full_transparent.png'
 
 sidebar:
 {
