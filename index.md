@@ -36,15 +36,14 @@ Hier finden Sie eine Übersicht über die Funktionen des SVWS-Servers und Hilfen
 ## Github Quellen
 
 Unser Projekt ist Open Source!  
-Hier finden Sie unser Software Repository:  
-[Github Repository](https://github.com/SVWS-NRW/SVWS-Server)
+Hier finden Sie unser Software Repository:[Github Repository](https://github.com/SVWS-NRW/SVWS-Server)
 
 In dieser Dokumentation können Sie sich über den technischen Aufbau des SVWS-Servers, 
 die Einrichtung einer Entwicklungsumgebung und den verschiedenen Deplomentszenarien informieren. 
 
 ## weitere Informationen 
 
-### [Mitarbeit]{Mitarbeit.md} 
+### [Mitarbeit](Mitarbeit.md)
 
 ### [Projektanforderungen](Projektanforderungen.md)
 
