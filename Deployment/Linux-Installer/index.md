@@ -29,7 +29,7 @@ Bisher getestet sind:
 
 ## Konfiguration
 
-Das Skript bietet verschiedene Optionen zur Konfiguration. Wenn Sie die Standardeinstellungen verwenden möchten, können Sie die Option **--default** verwenden, um die Konfiguration zu vereinfachen.
+Das Skript bietet verschiedene Optionen zur Konfiguration. Wenn Sie die Standardeinstellungen verwenden möchten, können Sie die vorgeschagenen default-Optionen verwenden, um die Konfiguration zu vereinfachen.
 
 Folgende Konfigurationen können vorgenommen werden:
 
