@@ -6,6 +6,9 @@ Projekt zur Erstellung einer Schulverwaltungssoftware mit Open:API-Schnittstelle
 
 ## Übersicht
 
+In dieser Dokumentation können Sie sich über den technischen Aufbau des SVWS-Servers,
+die Einrichtung einer Entwicklungsumgebung und den verschiedenen Deplomentszenarien informieren.
+
 In der folgenden Übersicht soll einen erster Eindruck vom Aufbau des SVWS-Servers vermittelt werden.
 Im Vordergrund steht die Kapselung von Datenbank und Core-API.
 
@@ -30,20 +33,20 @@ Mit dem update zu Schild 3.0 wird im technischen Backend die Grundlage für dies
 
 ## Hilfe und Handbuch 
 
-Hier finden Sie eine Übersicht über die Funktionen des SVWS-Servers und Hilfen für den Anwender: 
-[Hilfe und Handbuch](https://help.svws-nrw.de/)
+Hier finden Sie eine Übersicht über die Funktionen des SVWS-Servers und Hilfen für den Anwender: [help.swvs-nrw.de](https://help.svws-nrw.de/)
 
 ## Github Quellen
 
 Unser Projekt ist Open Source!  
-Hier finden Sie unser Software Repository:[Github Repository](https://github.com/SVWS-NRW/SVWS-Server)
 
-In dieser Dokumentation können Sie sich über den technischen Aufbau des SVWS-Servers, 
-die Einrichtung einer Entwicklungsumgebung und den verschiedenen Deplomentszenarien informieren. 
+Hier finden Sie unser Software Repository: [Github Repository](https://github.com/SVWS-NRW/SVWS-Server)
+
+Sie können unseren Quellcode und Testdatenbanken unter dem o.g. Repository bzw. unter [Github - Schulverwaltung NRW](https://github.com/SVWS-NRW) finden. 
+Wenn Sie an einer Mitarbeit am Projekt interessiert sind, so finden in dieser Dokumentation unter Entwicklungsumgebungen weitere Informationen zu den benötigten Voraussetzungen. 
+Per Github kann die Kontaktaufnahme zu unserem Entwicklerteam erfolgen. Ebenso sollen hier perspektivisch Issues aus der Open Source Gemeinschaft gesammelt werden. 
+
 
 ## weitere Informationen 
-
-### [Mitarbeit](Mitarbeit.md)
 
 ### [Projektanforderungen](Projektanforderungen.md)
 

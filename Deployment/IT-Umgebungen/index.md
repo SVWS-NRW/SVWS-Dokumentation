@@ -11,8 +11,8 @@ Andere Schulen haben IT-Dienstleister, die sie mit Serverinstallationen unterst�
 ## Einzelplatz-Rechner
 Grundsätzlich kann der SVWS-Server und die Schild3.0-Installation auf einem Windows-10-64Bit-Client ausgeführt werden. 
 Der SVWS-Server öffnet dabei den Port 443, so dass der SVWS-Client auch von anderen Computern im Netzwerk erreicht werden kann.
-Ein echter Server-Betrieb ist hier allerdings nicht gewährleistet, da der Einzelplatzrechner ja unter Umständen herunter gefahren wird.
-Diese Installationsvariante ist für sehr kleine Schulen ohne weitere IT-Umgebung bzw. IT-Unterstützung vorgesehen.
+Ein echter Server-Betrieb ist dadurch allerdings nicht gewährleistet, da der Einzelplatzrechner i.d.R. herunter gefahren wird.
+Diese Installationsvariante ist für sehr kleine Schulen ohne weitere IT-Umgebung bzw. IT-Unterstützung denkbar.
 
 ![Einzelplatzinstallation_einfach.png](./graphics/Einzelplatzinstallation_einfach.png)
 
