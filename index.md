@@ -12,7 +12,7 @@ die Einrichtung einer Entwicklungsumgebung und den verschiedenen Deplomentszenar
 In der folgenden Übersicht soll einen erster Eindruck vom Aufbau des SVWS-Servers vermittelt werden.
 Im Vordergrund steht die Kapselung von Datenbank und Core-API.
 
-![Übersicht-REST](./graphics/Uebersicht-REST-Server-01.png)
+![Übersicht-REST](./graphics/Uebersicht_SVWS-Server.png)
 
 Externe Services können über die REST-Schnittstelle nach erfolgreicher Anmeldung Daten vom SVWS-Server erhalten. 
 Ebenso greift die GUI auf die Daten zu und präsentiert diese dem jeweiligen Benutzer. 
