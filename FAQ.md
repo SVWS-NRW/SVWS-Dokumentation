@@ -3,7 +3,8 @@
 Inhaltsverzeichnis
   * [Fragen zum Projekt](#fragen-zum-projekt)
   * [Mitarbeit am Projekt](#mitarbeit-am-projekt)
-  * [Datenbankuser bei Migration](#datenbankuser-bei-migration)
+  * [Wo finde ich die nötigen Quellen](#wo-finde-ich-die-noetigen-quellen)
+  * [Datenbanken und Migration](#datenbanken-und-migration)
   * [Selbst signierte Zertifikate akzeptieren](#selbst-signierte-zertifikate-akzeptieren)
   * [](#)
 
@@ -14,9 +15,9 @@ Das Projekt SVWS-Server wurde erstmals im November 2019 im Ministerium für Schu
 
 Ein erster Web-Client auf Basis von NodeJS und Angular mit einem Jetty-Rest-Server wurde dort vorgestellt.
 
-Alle Beteiligten waren sich einige, dass es sinnvoll ist , diesen Weg weiter zu verfolgen.
+Alle Beteiligten waren sich einig, dass es sinnvoll ist , diesen Weg weiter zu verfolgen.
 
-Das Ziel, eionen plattformunabhängigen Web-Client zu schafenn, der nach und nach Schild-NRW ablösen soll, wurde dann formuliert.
+Das Ziel, einen plattformunabhängigen Web-Client zu schaffen, der nach und nach Schild-NRW ablösen soll, wurde dann formuliert.
 
 Die Auswahl der Programmiersprachen wurde hauptsächlich aus der Motivation getroffen, dass das Projekt als OpenSource später allen Schulen zur Verfügung stehen soll. Damit war die Entscheidung, dass ausschließlich plattformübergreifende Lösungen in Frage kommen getroffen. Das Core-Projekt wird in Java programmiert und soll so einen skalierbaren Serverbetrieb ermöglichen, der unabhängig vom genutzten Betriebssystem zur Verfügung gestellt werden kann.
 
@@ -26,22 +27,50 @@ Im Jahr 2020 wurde dann die Entscheidung getroffen zu VUE.js zu wechseln, da zu 
 
 Außerdem wurde sehr viel Wert darauf gelegt, dass die Statistiktabellen von IT.NRW in transpilierbarer Form im SVWS-Server zur Verfügung stehen, damit diese auch im Web-Client genutzt werden können.
 
-Im Juni 2021 wurde dann im MSB im Referat 133 eine Stelle geschaffen, die mit der Neuprogrammierung der Schulverwaltungssoftware betraut wurde. Seit dem werden auch externe Programmierer eingesetzt. Wobei die grundsätzliche Entscheidung, dass hier auch aus schulfachlicher Sicht immer auch Lehrerinnen und Lehrer bei der Entwicklung einbezogen werden sollen, damit die Software den Bezug zu den alltäglichen Verwaltungsvorgängen in Schule behält.
+Im Juni 2021 wurde dann im MSB im Referat 133 eine Stelle geschaffen, die mit der Neuprogrammierung der Schulverwaltungssoftware betraut wurde. Seit dem werden auch externe Programmierer eingesetzt. Wobei an der grundsätzlichen Entscheidung festgehalten werden soll, dass hier auch aus schulfachlicher Sicht immer auch Lehrerinnen und Lehrer bei der Entwicklung einbezogen werden sollen, damit die Software den Bezug zu den alltäglichen Verwaltungsvorgängen in Schule behält.
 Das ist auch der Grund, warum die Projektsprache weiterhin Deutsch ist, damit Kolleginnen und Kollegen sich leichter einlesen können.
 
 
 ## Mitarbeit am Projekt
 
 
+
+
+## Wo finde ich die nötigen Quellen?
+
+Das Repository steht auf GitHub.com zur Verfügung.
+
+https://github.com/SVWS-NRW/SVWS-Server
+
+Die empfohlene Entwicklungsumgebung ist Eclipse. Hierzu gibt es auch eine Anleitung:
+
+https://github.com/SVWS-NRW/SVWS-Server/blob/dev/README_Eclipse.md
+
+Die einzelnen Packages stehen auch auf Maven Central zur Verfügung:
+
+https://central.sonatype.com/search?smo=true&q=svws
+
+Die npm-Packages stehen auf npmjs.org zur Verfügung:
+
+https://www.npmjs.com/search?q=svws
+
+Ein Docker-Container des SVWS-Servers kann hier heruntergeladen werden:
+
+https://hub.docker.com/r/svwsnrw/svws-server
+
+
 ## 
 
 
-## Datenbankuser bei Migration
-Der root-Benutzer sollte nicht in der Konfiguration eingetragen sein. Deswegen ist dies auch so gar nicht vorgesehen. Die API um eine Migration vorzunehmen kann allerdings mit einem root-Benutzer durchgeführt werden und ist insbesondere für den Installer vorgesehen.
+## Datenbanken und Migration
 
-Im CORE_Projekt muss aber noch dieses bereits geplante, aber noch nicht umgesetzte, Feature ergänzt werden, dass dieser Teil der Schnittstelle per Default abgestellt ist und nur gezielt über die svwsconfig-Datei aktiviert werden kann. In dieser Konfigurationsdatei ist übrigens, wie oben beschrieben, der schildadmin vorgesehen. Dieser hat erhöhte Rechte, um Tabellen, etc. anzulegen.
+Um den SVWS-Server zu betreiben, muss eine Schild-NRW-Datenbank in die MariaDB migriert werden.
 
-Das Anlegen eines weiteren Schemas ist nur für Multi-DB-Umgebungen vorgesehen, welche in Schulungsumgebungen vorkommen. Schulträger sollten für unterschiedliche Schulen aus meiner Sicht sowieso unterschiedliche DB-Installationen verwenden, wodurch diese Problematik dann erst gar nicht auftaucht.
+Hierzu stehen Dummy-Datenbanken zur Verfügung:
+
+https://github.com/SVWS-NRW/SVWS-TestMDBs
+
+
 
 
 
