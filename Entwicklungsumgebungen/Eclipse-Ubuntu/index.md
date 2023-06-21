@@ -40,25 +40,6 @@ Die Datei eclipse.ini anpassen in den beiden Zeilen mit -Xms und -Xmx die folgen
 -Xmx32768m
 ...
 ```
-#### gradle.properties anlegen 
-
-```bash
-nano ~/.gradle/gradle.properties
-```
-
-und die nötigen Credentials eintragen: 
-```bash
-github_actor=YOUR_ACCOUNTNAME
-github_token=YOUR_TOKEN
-schild_access=KANN_MAN_WISSEN
-```
-
-### Java 17 installieren
-
-```bash
-sudo apt install openjdk-17-jre-headless 
-java -version
-```
 
 ### MariaDB installieren
 
@@ -103,7 +84,7 @@ svws Ordner auswählen
 Die Beispiel-Config ins Zielverzeichnis kopieren und umbenennen.
 
 ```bash
-cp ~/git/src/main/resources/svwsconfig.json.example #Zielverzeichnis#/svwsconfig.json
+cp ~/git/SVWS-Server/svws-server-app/src/main/resources/svwsconfig.json.example /git/SVWS-Server/svws-server-app/svwsconfig.json
 ```
 		
 In der 'svwsconfig.json' sollte der Port auf >=1024 (z.B. 3000) gesetzt werden. 
@@ -151,11 +132,13 @@ nano ~/git/SVWS-Server/svws-server-app/svwsconfig.json
 
 ### Alternativ im Terminal
 
+in den folgenden Unterverzeichnissen ausführen: 
++ ~/git/SVWS-Server
+
 ```bash
 ./gradlew clean
 ./gradlew build
 ```
 		
-in den folgenden Unterverzeichnissen ausführen: 
-+ ~/git/SVWS-Server 
-+ ~/git/SVWS-Client 
+ 
+

@@ -7,22 +7,8 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 
 # Maria db installieren
 
-+ download : Maria db 10.6 -> https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.5&os=windows&cpu=x86_64&pkg=msi&m=netcologne
++ download : Maria db 10.6
 + root user einrichten
-
-# JDK 17 installieren
-
-+ Download des jdk-17 -> https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.zip
-+ Entpacken in z.B. D:\svws_Entwicklungsumgebung\jdk-17\
-+ Path setzen: 
-    + Über das Windowssymbol den Editor für die Umgebungsvariablen öffnen 
-    + die Variable Path bearbeiten und einen weiteren Eintrag zum Java Verzeichnis einfügen
-
-
-![Umgebungsvariablen setzen](./graphics/Umgebungsvariablen_setzen_1.png)
-
-![Umgebungsvariablen setzen](./graphics/Umgebungsvariablen_setzen_2.png)
-
 
 # Eclipse installieren und konfigurieren
 
@@ -32,7 +18,7 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 
 ![Speicher hochsetzen](./graphics/eclipse.ini.png)
 
-+ Eclipse > Help > Marcet Place -> JSON editor suchen und "JSON Editor Plugin 1.1.2" installieren
++ Eclipse > Help > Marcet Place -> JSON editor suchen und "JSON Editor Plugin" installieren (empfohlen)
 
 ![](./graphics/eclipse_json.png)
 
@@ -51,25 +37,23 @@ Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokal
 ### Quellen aus GitLab eintragen:
 
 + Repositories in Eclipse clonen: rechte Maustaste Git > Clone a Git Repository
-+ URL und Passwort eingeben
-
-Hier benötigt man als "Passwort" in Eclipse den persönlichen Github Token.
-
-+ https://git.svws-nrw.de/SVWS-Server (Mono-Repository mit Core, DB, Client und UI-Components und Apps)
-
++ URL eingeben
++ https://github.com/SVWS-NRW/SVWS-Server (Mono-Repository mit Core, DB, Client und UI-Components und Apps)
 
 Anschließend git clone ausführen.
 
-## Gradle Projekte laden
+## Gradle Projekt laden
 
-Nun müssen nur noch in der "gradle perspektive" die im git Verzeichnis liegenden gradle Projekte importiert werden. 
++ Nun müssen nur noch in der "java perspektive" die im git Verzeichnis liegenden gradle Projekte importiert werden.
++ Import Project > Import existing Gradle-Project
++ Als Zielordner das Git Repository auswählen
 
 #### SVWS Einstellungen
 
 Die Beispiel-Config ins Zielverzeichnis kopieren und umbenennen.
 
 ```
- git/SVWS-Swerver/svws-server-app/src/main/resources/svwsconfig.json.example #Zielverzeichnis#/svwsconfig.json
+ git/SVWS-Swerver/svws-server-app/src/main/resources/svwsconfig.json.example git/SVWS-Swerver/svws-server-app/svwsconfig.json
 ```
 		
 Beispiel einer svwsconfig.json, bitte die userdaten und Passwörter entspechend anpassen:
@@ -102,6 +86,10 @@ Beispiel einer svwsconfig.json, bitte die userdaten und Passwörter entspechend 
 	}
 }
 ```
+
+# Checkstyle einrichten
+
+# Sonatype Server einrichten
 
 # Optionale Software 
 
