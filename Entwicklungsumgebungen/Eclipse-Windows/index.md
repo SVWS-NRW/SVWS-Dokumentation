@@ -48,7 +48,7 @@ Anschließend git clone ausführen.
 + Import Project > Import existing Gradle-Project
 + Als Zielordner das Git Repository auswählen
 
-#### SVWS Einstellungen
+## SVWS Einstellungen
 
 Die Beispiel-Config ins Zielverzeichnis kopieren und umbenennen.
 
@@ -89,7 +89,15 @@ Beispiel einer svwsconfig.json, bitte die userdaten und Passwörter entspechend 
 
 # Checkstyle einrichten
 
++ Checkstyle Plugin aus dem Eclipse-Marketplace installieren.
++ Eclipse Neustart
++ rechte Maustaste auf das SVWS-Server-Projekt > Checkstyle > aktivate Checkstyle
++ Windows > Show View > Other > Checkstyle > Checkstyle Problems
+
+
 # Sonatype Server einrichten
+
+Der Sonartype Server wird nur von den Core-Team-Mitgliedern genutzt.
 
 # Optionale Software 
 
