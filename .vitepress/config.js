@@ -31,7 +31,7 @@ sidebar:
 					[
 						{ text: 'IT-Umgebungen', link: '/Deployment/IT-Umgebungen/' },
 						{ text: 'Linux-Installer', link: '/Deployment/Linux-Installer/' },
-						{ text: 'Docker', link: '/Deployment/Docker/' },
+						{ text: 'Docker-Container', link: '/Deployment/Docker/' },
 						{ text: 'Windows-Installer', link: '/Deployment/Windows-Installer/' },
 					]
 				},

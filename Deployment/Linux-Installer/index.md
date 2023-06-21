@@ -1,5 +1,6 @@
 # Linux Installer
 
+## Download
 
 Download unter:   
 https://storage.svws-nrw.de/linux_installer/  
@@ -19,7 +20,7 @@ Bisher getestet sind:
 - Ein Debian-basiertes Betriebssystem
 - Zugriff mit Root-Rechten
 
-## Verwendung
+## Starten des Installationsskripts
 
 - Laden Sie das Skript auf den Zielcomputer herunter.
 - Öffnen Sie die Terminalanwendung und navigieren Sie zum Verzeichnis, in dem sich das Skript befindet.
@@ -73,7 +74,7 @@ Erläuterungen zu den einzelnen Punkten:
 | CONF_PATH | Hier finden Sie die Konfigurationsdatei des SVWS-Servers|
 | APP_PORT | Auf diesem Port ist der SVWS-Server erreichbar. i.d.R ist dies einer der höheren Ports z.B. 8443, da hier keine root rechte benötigt werden. Hier muss ggf ein ReverseProxy oder eine Portumlenkung eingerichtet werden, wenn man eine einfache URL verwenden möchte. |
 | SVWS_TLS_KEYSTORE_PATH | Es wird hier ein Keystore angelegt, um dieser Daten zu speichern |
-| SVWS_TLS_KEY_ALIAS |  |
+| SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore |
 
 ## Schuldaten anlegen 
 
@@ -92,7 +93,9 @@ Erläuterungen zu den einzelnen Punkten:
 - Stellen Sie sicher, dass alle Konfigurationen und Passwörter sicher gespeichert und aufbewahrt werden.
 - Beachten Sie, dass das Skript eine Internetverbindung benötigt, um bestimmte Pakete herunterzuladen und zu installieren.
 
-## Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit Iptables
+## Portumleitung
+
+Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit Iptables
 
 iptables -A PREROUTING -t nat -p tcp --dport 80 -j REDIRECT --to-port 8080
 

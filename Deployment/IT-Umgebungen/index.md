@@ -33,9 +33,14 @@ gewährleisten, muss in einer Übergangsphase noch der direkte Zugang zur MariaD
 
 ## Kommunaler Server im Rechenzentrum
 
-In großeren Umgebungen sind verschiedene Varianten der Installation denkbar. Der SVWS-Server soll perspektivisch natürlich auch die Funktionalität von Schild-Zentral übernehmen können. 
-Die Trennung der Schemata ist hier eine wichtige Datenschutz-Maßnahme. Aber auch die Aufteilung in verschiedene Container wird hier in Betracht gezogen.
-In Rechenzentren macht es aus Lizenzgründen Sinn auf Linux-Systeme zu setzen.
+In großeren Umgebungen sind verschiedene Varianten der Installation denkbar. So können mehrere SVWS-Server auch die Funktionalität von Schild-Zentral übernehmen. 
+Die Trennung der Schemata ist hier eine wichtige Datenschutz-Maßnahme. Dies kann innerhalb eines großen MariaDB-Servers oder auch mit mehreren kleinen MariaDB Instanzen erfolgen. 
+In Rechenzentren macht es aus lizenzgründen Sinn auf Linux-Systeme zu setzen, so dass hier mit Docker-Containern oder auch LX-Containern gearbeitet werden kann. Des Weiteren können auch einzelne virtuelle 
+Maschinen (KVM) in Virtualisierungssystemen wie zum Beispiel Proxmox, VMWare, HyperV, etc. erstellt und den jeweiligen Schulen zugeordnet werden. Es ist auch möglich, jedoch eher für Schulsysteme oder Depandancen 
+sinnvoll, mehrere Schulshemata über einem SVWS-Server bereitzustellen. 
+
+Welches Kombination der Installationsmöglichkeiten hier die Beste ist, 
+sollte sicherlich anhand der lokalen Gegebenheiten und den hier zugänglichen Ressourcen entschieden werden. 
 
 ![Serverinstallation_Schule_ohne_VPN_einfach.png](./graphics/Serverinstallation_Rechenzentrum_einfach.png)
 

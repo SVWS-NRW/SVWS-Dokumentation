@@ -1,14 +1,17 @@
-***SVWS-Installer***
-====================
+# Windows-Installer
 
-# Systemvoraussetzungen
+## Download
+
+https://storage.svws-nrw.de/windows_installer/
+
+## Systemvoraussetzungen
 
 + Windows 10 64bit
 + 16 GB RAM
 + Auflösung min 1920x1080 fullHD
 + 300 MB freier Speicherplatz
 
-# Installationshinweise
+## Installationshinweise
 
 Der SVWS-Installer wird für Windows64bit mit InnoSetup erstellt. 
 Er installiert die im Folgenden genannten Komponenten und startet alle Dienste. Eine Migration kann optional durchgeführt werden.
@@ -31,7 +34,7 @@ Der SVWS-Installer übernimmt die folgenden Aufgaben:
 + Anlegen der Freigaben für die Windows Firewall, damit der Server auch für andere Clients erreichbar ist.
 + Ggf. Migration aus einer bestehenden Datenbank in das neue Schema
 
-# Installationseinstellungen wählen
+## Installationseinstellungen wählen
 
 Zu Beginn des Installer erscheinen nach der Annahme der Lizenzvereinbarungen folgende Optionen:
 
@@ -40,7 +43,7 @@ Zu Beginn des Installer erscheinen nach der Annahme der Lizenzvereinbarungen fol
 
 
 
-### ***Achtung!***
+***Achtung!***
 
 
 *Es werden für MariaDB und den Datenbank-User Zufallskennwörter generiert!*
@@ -51,7 +54,7 @@ Zu Beginn des Installer erscheinen nach der Annahme der Lizenzvereinbarungen fol
 
 ---
 
-# Installation MariaDB
+## Installation MariaDB
 
 Der Installer erkennt anhand der Registry-Einträge, ob MariaDB bereits installiert ist und in welcher Version. 
 Wenn ein eigener MariaDB-Server installiert wird, muss entweder ein anderer Port verwendet werden, oder es muss später eine Verbindung zum bestehenden Server hergestellt werden.
@@ -65,14 +68,14 @@ Programmverzeichnis MariaDB:
 
 Die sort_buffer_size wird in der my.ini im data-Verzeichnis auf 16777216 gesetzt!
 
-# Installation JDK
+## Installation JDK
 Mit dem Installer wird auch das verwendetet JDK ausgeliefert. 
 Dieses ist an den SVWS-Server gekoppelt und kann in zukünftigen Versionen auch nur noch in Kombination mnit dem eigentlichen Server installiert 
 oder geupdated werden.
 
 Zielverzeichnis JDK: `C:\Programme\SVWS-Server\java`
 
-# Installation SVWS-Server
+## Installation SVWS-Server
 Die notwendigen Dateien des SVWS-Server werden standardmäßig unter 
 `C:/Programme/SVWS-Server/svws-server`  installiert. 
 Da diese mit der ausgeliferten OpebJDK-Version zusammen passen müssen, werden diese beiden Teile miteinander verbunden und können nicht separat installiert werden.
@@ -82,7 +85,7 @@ Die Dienste MariaDB und SVWS-Server werden in der Computerverwaltung registriert
 
 ![](./graphics/SVWSDienste.jpg)
 
-# Konfigurationsdatei editieren 
+## Konfigurationsdatei editieren 
 
 Man findet alle Einstellungsmöglichkeiten zum Betrieb des SVWS-Servers an zentraler Stelle in der Datei: 
 `svwsconfig.json`
@@ -94,9 +97,9 @@ Unter Windows im Verzeichnis:
 
 In dieser Datei wird die Serverkonfiguration gespeichert.
 
-## Parameter Beschreibung
+### Parameter Beschreibung
 
-### allgemeine Einstellungen
+#### allgemeine Einstellungen
 |Parameter 	|	Beschreibung |
 |---|---|
 | DisableDBRootAccess | Hier kann bei erhöhtem Sicherheitsbedarf der Root-Zugang zur Datenbank gesperrte werden. |  
@@ -109,14 +112,14 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 |LoggingEnabled | Schaltet das Logging ein.|
 |LoggingPath | Pfad zu den LOG-Dateien.|
 
-### Datenbankserver Einstellungen
+#### Datenbankserver Einstellungen
 |DBKonfiguration||
 |---|---|
 |dbms| Datenbanksystem (MariaDB oder SQLite für Schulungsumgebungen)|
 |location| ServerURL|
 |defaultschema| Standart-Schema. Es können mehrere Schema verwendet werden.|
 
-### Datenbankschemata Einstellungen
+#### Datenbankschemata Einstellungen
 |SchemaKonfiguration||
 |---|---|
 |name| Name des Datenbankschemas|
@@ -125,13 +128,13 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 | password | Passwort des Datenbankusers
 
 
-# Registrierung der Dienste
+## Registrierung der Dienste
 
 ![](./graphics/SVWSDienste.jpg)
 
 Die beiden Server werden als Windows Dienst registriert. Diese können in der Computerverwaltung überprüft werden.
 
-# Erstellen des Keystore/Zertifikat
+## Erstellen des Keystore/Zertifikat
 Im Keystore des SVWS-Server wird ein selbstsigniertes Zertifikat erstellt. 
 Der öffentliche Teil wird in den Ordner 
 
@@ -147,14 +150,14 @@ Bitte beachten Sie das nur Chrome und Edge automatisch diese Zertifikate nutzen.
 
 **Firefox** muss in der about:config die Einstellung security.enterprise_roots.enabled auf true gesetzt haben.
 
-# Uninstaller
+## Uninstaller
 Im Programmverzeichnis des SVWS-Server befindet sich auch ein signierter Uninstaller mit dem alle Installationsdateien wieder entfernt werden können.
 
 Bitte beachten Sie, dass Dateien, die nach der Installation hinzugefügt wurden nicht erfasst werden.
 
 Außerdem sollte kontrolliert werden, ob auch alle Dienste entfernt wurden. Windows 10 gibt in einigen Fällen die Dienste nicht schnell genug frei, so dass die Löschung scheitert.
 
-# Wichtige Pfade zu den Ordnern
+## Wichtige Pfade zu den Ordnern
 Als Default-Verzeichnisse werden bei der Installation  die folgenden Verzeichnisse vorgeschlagen:
 
 | Pfad | Beschreibung |
@@ -164,7 +167,7 @@ Als Default-Verzeichnisse werden bei der Installation  die folgenden Verzeichnis
 |`C:\Users\{Username}\AppData\Local\Temp`| Log-Files des Installers und Uninstallers|
 |`C:\Users\{Username}\Dokumente`|Das Zertifikat für die Browser|
 
-# Pakete im SVWS-Installer
+## Pakete im SVWS-Installer
 
 Unter folgender URL können die benötigten Pakete und Versionen für den Bau des Installers heruntergeladen werden.
 

@@ -1,5 +1,7 @@
-***Betrieb des SVWSs unter Docker***
-=========================================================
+# Docker-Container 
+
+## Betrieb des SVWSs unter Docker
+
 Es besteht die Möglichkeit, den SVWS als Container zu betreiben. Für folgende Szenarien eignet sich dieser Ansatz grundsätzlich:
 
 * Betrieb einer SVWS-Umgebung für die Entwicklung (PC, Notebook)
@@ -13,7 +15,7 @@ Die SVWS-Umgebung kann über mehrere Wege gestartet werden:
  
 Die SVWS-Container-Images sind unter Docker (docker engine, docker desktop) lauffähig. Ein Betrieb unter anderen Container-Umgebungen wie z.B. [Podman](https://podman.io/), [Kubernetes](https://kubernetes.io/de/), [OpenShift](https://www.redhat.com/de/technologies/cloud-computing/openshift) ist grundsätzlich möglich, jedoch zum Zeitpunkt der Erstellung dieser Dokumentation nicht getestet (Stand 20.01.2023).
 
-# Lokale SVWS-Umgebung für die Entwicklung
+## Lokale SVWS-Umgebung für die Entwicklung
 Im folgenden wird der Ansatz beschrieben die SVWS-Images für die Entwicklung lokal zu betreiben. Dieser Ansatz bietet in der Entwicklung folgende Vorteile:
 * Keine Notwendigkeit einer lokalen Installation von MariaDB
 * Schnelles Rampup von SVWS-Datenbanken mit Testdaten
