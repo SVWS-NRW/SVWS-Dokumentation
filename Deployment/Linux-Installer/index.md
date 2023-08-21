@@ -3,9 +3,7 @@
 ## Download
 
 Download unter:   
-https://storage.svws-nrw.de/linux_installer/  
-oder  
-https://www.svws.nrw.de/uploads/media/linux/0.6.2/install.zip  
+https://github.com/SVWS-NRW/SVWS-Server/releases
 
 
 Dieses Skript ist für die Installation des SVWS-Servers auf einem Debian-basierten System gedacht.  
@@ -80,10 +78,18 @@ Erläuterungen zu den einzelnen Punkten:
 
 ### Testdatenbank 
 
+Wenn Sie im Installer-Dialog die Frage nach den Testdaten mit "Ja" beantworten und den vorgeschlagenen Pfad nicht verändern, dann wird eine mitgelieferte Beispieldatenbank mit Dummy-Daten eingespielt.
+ 
+
 ### Migration der eigenen mdb
 
-### Leeres Schema erzeugen
+Wählen Sie im Installer-Dialog "Ja" und ändern Sie den vorgeschlagenen Pfad so, dass dieser auf eine Accessdatenbank zeigt, die Sie migrieren wollen.
+Momentan ist nur die Migration aus Access möglich. Die Migration aus anderen DBMS kann aber nachträglich ausgeführt werden. Dazu einfach eine leere Datanbank anlegen.
 
+### Leeres Schema / leere Datenbank erzeugen
+
+Wenn Sie eine MariaDB-Datenbank installieren und keine Testdaten importieren, wird automatisch eine leere SVWS-Datenbank erzeugt.
+Beim Start des Webclient erkennt die Applikation, dass die Datenbank leer ist und bietet entsprechende Menüpunkte zur Einrichtig, Backup und Migration.
 
 
 ## Wichtige Hinweise
