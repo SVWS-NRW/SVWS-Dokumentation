@@ -9,7 +9,7 @@ Hier findet man auch zu den Datenbanken passende Lupo Dateien etc., um sich pass
 
 [https://github.com/SVWS-NRW/SVWS-TestMDBs](https://github.com/SVWS-NRW/SVWS-TestMDBs)
 
-# Übersicht
+## Übersicht
 
 Es gibt mehrer Möglichkeiten ein Schemata in der Datenbank anzulegen bzw. zu befüllen: 
 
@@ -21,10 +21,10 @@ Es gibt mehrer Möglichkeiten ein Schemata in der Datenbank anzulegen bzw. zu be
 + aus einem SQL-Dump
 
 
-# Einfügen per SwaggerUI
+## Einfügen per SwaggerUI
 
 Eine Übersicht über die Webservices bietet die SwaggerUI. 
-Hier kann man über *Try it Out* - Buttons jeweils die Services ausprobieren bzw. benutzen. 
+Hier kann man über *Try it Out* - Buttons jeweils die Services ausprobieren bzw. benutzen.
 Die Swagger UI aufrufen:
 
 ```bash
@@ -33,14 +33,15 @@ Die Swagger UI aufrufen:
 
 ![SwaggerUI.png](./graphics/Swagger-01.png)
 
-**Achtung:** Um auf der SwaggerUI diesen Service bzw. die mit "Root" gekennzeichneten Services nutzen zu können, 
-muss man sich zuerst authentisieren, indem man auf ein rechts abgebildetes Schloss klickt. 
+
+   
+**Achtung:** Um auf der SwaggerUI diesen Service bzw. die mit "Root" gekennzeichneten Services nutzen zu können, muss man sich zuerst authentisieren, indem man auf ein rechts abgebildetes Schloss klickt. 
 
 
 Hier nun den User `root` der Maria-DB Installation und das entsprechende Passwort angeben. 
 
 
-**Hinweis** Möchte man andere - nicht root - Services nutzen, so muss man sich mit dem Schild 3.0-Benutzer bzw. SVSW-Benutzer authorisieren.
+**Hinweis** Möchte man andere - nicht "root - Services" nutzen, so muss man sich mit dem Schild 3.0-Benutzer bzw. SVSW-Benutzer authorisieren.
  
 
 
