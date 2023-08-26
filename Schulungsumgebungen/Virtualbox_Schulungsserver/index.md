@@ -42,7 +42,7 @@ Nun können Sie unter virtualbox mit dem Klonen-Button den Schulungsserver klone
 
 ```bash
 su -
-bash change_servername.sh
+bash change_servername.sh NEUER_SERVERNAME
 
 ```
 
