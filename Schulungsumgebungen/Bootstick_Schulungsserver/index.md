@@ -1,6 +1,6 @@
 # Bootsticks als Schulungsserver to go
 
-## Vhd umwandeln
+## VHD umwandeln
 
 1) fixed vhd size 
 vboxmanage clonehd SVWS-Server1.vhd SVWS-Server1-static.vhd --variant Fixed

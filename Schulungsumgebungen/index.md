@@ -1,9 +1,8 @@
 # Schulungsumgebungen
 
-Hier sind die verschiedenen Szenarien dokumentiert, in denen Schulungen stattfinden können.
+Hier sind die verschiedenen Szenarien dokumentiert, in denen Schulungen stattfinden können. 
+Bisher sind die folgenden Möglichkeiten getestet worden: 
 
-## SVWS & SchiLD3 Schulung Vor Ort
-
-## Schulungsserver per Bootstick
-
-## Proxmox als Schulungsserver
++ Schulungsserver per Virtualbox
++ Schulungsserver per Bootstick
++ Schulungsserver per Proxmox
