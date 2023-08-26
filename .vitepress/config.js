@@ -47,6 +47,15 @@ sidebar:
 						{ text: 'VS-Code', link: '/Entwicklungsumgebungen/VS-Code/' }
 					]
 				},
+				{ text: 'Schulungsumgebungen', link: '/Schulungsumgebungen/' , collapsed: true, items:
+					[
+						{ text: 'Virtualbox', link: '/Schulungsumgebungen/Virtualbox_Schulungsserver/' },
+						{ text: 'Bootstick', link: '/Schulungsumgebungen/Bootstick_Schulungsserver' },
+						{ text: 'Proxmox', link: '/Schulungsumgebungen/Proxmox_Schulungsserver/' }
+
+					]
+
+				},
 				{ text: 'Projekte', link: '/Projekte/' , collapsed: true, items:
 					[
 						{ text: 'WeNoM', link: '/Projekte/WeNoM/' },
