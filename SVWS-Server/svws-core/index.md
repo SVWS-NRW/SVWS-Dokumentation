@@ -6,6 +6,7 @@ In den CoreTypes werden meist in Ennumerations die Wichtigsten Kataloge in typis
 
 Beispiel:
 
+```
 /**
  * Ein Core-Type für die für die amtliche Schulstatistik erhobenen Religionen.
  */
@@ -22,6 +23,7 @@ public enum Religion {
 	}),
 	
 	....
+```
 	
 CoreTypes werden später nach Typescript transpiliert und stehen dadurch auch im Webclient zur Verfügung.
 Solche CoreTypes können am Ende auch mit Funktionen gefüllt werden, die z.B. Daten prüfen können.
