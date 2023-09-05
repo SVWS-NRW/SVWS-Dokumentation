@@ -30,20 +30,43 @@ sudo apt update && apt upgrade -y
 sudo apt install virtualbox
 ```
 
-## SVWS-Server VHD einbinden
+## bestehende SVWS-Server VM einbinden
 
-Laden Sie die VHD ins neue virtualbox Verzeichnis herunter, öffenen Sie virtual box und importieren Sie die virtuelle Maschine in virtualbox. Überprüfen Sie hier, unter "Ändern" - "Netzwerk", ob die Netzwerkschnittstelle als Netzwerkbrücke eingestellt ist. Falls Ihr Server mehrere Schnittstellen hat, müssen Sie entsprechend z.B. Ihren aktiven Wlan Adapter auswählen. Nur so erhällt auch der virtuelle Server ein aktives Netzwerk. 
+Als Fachberatung für Schulen können unter https://storage.svws-nrw.de/ oder ggf. auch über die FachberaterCloud eine fertige VM herunterladen. Diese liegt im VHD format vor und hat neben dem SVWS-Server, der Maria DB, einen Webserver mit Schulungsinformationen auch noch Schild 3 und Schild 2 in einer Dateifreigabe vorliegen.  
 
-## VHD personalisieren und klonen
+Entpacken Sie die virtuelle Maschine (VM) ins neue virtualbox Verzeichnis herunter, öffnen Sie virtualbox und importieren Sie die VM in virtualbox. Überprüfen Sie hier, unter "Ändern" - "Netzwerk", ob die Netzwerkschnittstelle als Netzwerkbrücke eingestellt ist. Falls Ihr Server mehrere Schnittstellen hat, müssen Sie entsprechend Ihre aktiven Schnittstelle auswählen, z.B. die Wlan-Karte. Nur so erhält auch der virtuelle Server ein aktives Netzwerk. Starten Sie den Server und lesen Sie die Informationen unter http://NAME_IHRES_SERVERS/ oder http://IP_IHRES_SERVERS/
 
-Sie können nun die VHD in virtualbox starten. Unter https://SVWS-Server1/ finden Sie eine Oberfläche mit den nötigen Informationen zu den Zugängen zur virtuellen Maschine. Sie können unter /netzlaufwerk zusätzliche Inhalte bzw. Übungsdatenbanken für Ihre Schulungsteilnehmer hinterlegen. Ebenso können Sie Ihre Übungsdatenbanken migrieren bevor Sie klonen.
+## VM personalisieren und klonen
 
-Nun können Sie unter virtualbox mit dem Klonen-Button den Schulungsserver klonen. Bitte beachten Sie dass hierbei neue MacAdressen generiert werden müssen und der Servername neu gesetzt werden muss. Um den Servernamen zu ändern, fahren Sie bitte einzeln die vituellen Machinen hoch und führen in der virtuellen Maschine als root-User das change_servername.sh skript aufrufen:
+Sie können unter /netzlaufwerk (bzw. smb://netzlaufwerk/ unter Linux oder \\NAME_IHRES_SERVERS\netzlaufwerk\) zusätzliche Schulungsinhalte bzw. Übungsdatenbanken für Ihre Schulungsteilnehmer hinterlegen. Ebenso können Sie Ihre Übungsdatenbanken migrieren bevor Sie klonen.
+
+Wenn Sie die Schulungsplattform nach Ihren wünschen verändert haben, können Sie unter virtualbox mit dem Klonen-Button den Schulungsserver klonen. Bitte beachten Sie dass hierbei *unbedingt*, dass neue MacAdressen generiert werden müssen und der Servername neu gesetzt werden muss. Die neue generierung der Macadressen kann im Klone-Dialog unter virtualbox ausgewählt werden. Um den Servernamen zu ändern, fahren Sie bitte *einzeln* die vituellen Machinen hoch und führen in der virtuellen Maschine als root-User das skrip ```change_servername.sh  ``` aus:
 
 ```bash
 su -
 bash change_servername.sh NEUER_SERVERNAME
-
 ```
 
+## VM updaten
 
+Um die VM auf den neusten Stand zu heben kann für die jeweiligen Komponenten ein update ausgeführt werden. loggen Sie sich mit root rechten in die VM ein und führen Sie die folgenden Befehle durch für das Update des Basissystems: 
+
+```bash
+su -
+apt update && apt upgrade -y
+```
+Für das update des SVWS-Servers laden Sie sich das aktuelle Linux Skript unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVWS-Server/releases) herunter unte führen Sie das update durch. Hier ein Beispiel für das update auf Version 0.7.0:
+
+```bash 
+wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v0.7.0/install-0.7.0.sh
+bash install.sh --update
+```
+Bitte beachten Sie, dass die in der Schulungsumgebung hinterlegte SchILD3 Version kompatibel sein muss mit dem installierten SVWS-Server. Informationen dazu finden Sie auf den Release Seiten des SVBWS-Servers, den Seiten von SchILD3 oder im Zweifel beim Start von SchILD3.  
+Laden Sie die SchILD3 Dateien herunter und entpacken Sie diese in das Netzlaufwerksfolder, wo schon die vorherige Version lag: 
+
+```bash
+wget https://github.com/SVWS-NRW/Schild3-BetaTest/releases/download/v3.0.73/Setup_SchILD3_v3.0.73.zip
+unzip Setup_SchILD3_v3.0.73.zip -d /netzlaufwerk/Schild3/
+```
+
+Bei SVWS-Versionen unterhalb von 0.7 muss ggf die Schulungsdatenbank noch einmal neu migriert werden. Ab 7.0 sollen bei Updateprozessen die Datenbanken automatisch mit geändert werden. Falls es hier zu problemem kommen, so melden Sie das bitte in der Community unter github. Z.B. als Issue https://github.com/SVWS-NRW/SVWS-Server/issues oder direkt per mail. 
