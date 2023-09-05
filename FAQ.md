@@ -15,11 +15,11 @@ Das Projekt SVWS-Server wurde erstmals im November 2019 im Ministerium für Schu
 
 Ein erster Web-Client auf Basis von NodeJS und Angular mit einem Jetty-Rest-Server wurde dort vorgestellt.
 
-Alle Beteiligten waren sich einig, dass es sinnvoll ist , diesen Weg weiter zu verfolgen.
+Alle Beteiligten waren sich einig, dass es sinnvoll ist, diesen Weg weiter zu verfolgen.
 
 Das Ziel, einen plattformunabhängigen Web-Client zu schaffen, der nach und nach Schild-NRW ablösen soll, wurde dann formuliert.
 
-Die Auswahl der Programmiersprachen wurde hauptsächlich aus der Motivation getroffen, dass das Projekt als OpenSource später allen Schulen zur Verfügung stehen soll. Damit war die Entscheidung, dass ausschließlich plattformübergreifende Lösungen in Frage kommen getroffen. Das Core-Projekt wird in Java programmiert und soll so einen skalierbaren Serverbetrieb ermöglichen, der unabhängig vom genutzten Betriebssystem zur Verfügung gestellt werden kann.
+Die Auswahl der Programmiersprachen wurde hauptsächlich aus der Motivation getroffen, dass das Projekt als OpenSource später allen Schulen zur Verfügung stehen soll. Damit war die Entscheidung, dass ausschließlich plattformübergreifende Lösungen in Frage kommen, getroffen. Das Core-Projekt wird in Java programmiert und soll so einen skalierbaren Serverbetrieb ermöglichen, der unabhängig vom genutzten Betriebssystem zur Verfügung gestellt werden kann.
 
 Die Auswahl von HTML, CSS, TypeScript mit VUE.JS wurde sehr stark von der Frage der Flexibilität geprägt. Außerdem hat das Projekt bisher wenig Altlasten was den Code angeht, der die Geschäftsprozesse der Schulverwaltung angeht. Bestehende Algorithmen und Abläufe bleiben in Schild-NRW-2.0 und Schild-NRW-3.0 erhalten. Es war allen beteiligten Entwicklern klar, dass neue Abschlussberechnungen und Gruppenprozesse usw. sowieso als Dienste völlig neu programmiert werden müssen. Außerdem kam eine Portierung aus dem Delphi-Code so gesehen auch nicht in Frage.
 
@@ -78,11 +78,11 @@ https://github.com/SVWS-NRW/SVWS-TestMDBs
 ## Selbst signierte Zertifikate akzeptieren
 Solange die Schulverwaltungssoftware auf eigenen Servern oder Desktop-Rechnern in den Schulen betrieben werden muss, wird es in kleineren Systemen wichtg sein, dass die Https-Aufrufe über ein selbst signiertes Zertifikat laufen können.
 
-Unschön wird es sein, wenn der User im Browser zunächst eine Fehlermeldung über eine unsichere Verbindung bekommt und dann den Browser über erweiterte Einstellungen dazu bringen muss das Zertifikat zu akzeptieren.
+Unschön wird es sein, wenn der User im Browser zunächst eine Fehlermeldung über eine unsichere Verbindung bekommt und dann den Browser über erweiterte Einstellungen dazu bringen muss, das Zertifikat zu akzeptieren.
 
 In größeren Umgebungen, wo Schuldatenbanken von Rechenzentren gehostet werden, sollte der Betreiber ein Zertifikat besitzen und in den Keystore des SVWS-Server importieren.
 
-Um das Problem auf Windows-Clients zu umgehen sollte mit dem Installer das SVWS-Server-Zertifikat im Windows Zertifikatsmanager importiert werden. 
+Um das Problem auf Windows-Clients zu umgehen, sollte mit dem Installer das SVWS-Server-Zertifikat im Windows Zertifikatsmanager importiert werden. 
 
 ausführen > cmd 
 
@@ -90,7 +90,7 @@ ausführen > cmd
 
 Unter Firefox kann eingestellt werden, dass auch auf diese Zertifikate zugegriffen werden soll. Dazu muss in diesem Ordner: C:\Program Files\Mozilla Firefox\defaults\pref (Bei Standard-Installation)
 
-Eine Datei mit dem Namen 'trustcert.js' mit folgfendem Inhalt angelegt werden:
+eine Datei mit dem Namen 'trustcert.js' mit folgendem Inhalt angelegt werden:
 
 		/* Allows Firefox reading Windows certificates */ pref("security.enterprise_roots.enabled", true);
 

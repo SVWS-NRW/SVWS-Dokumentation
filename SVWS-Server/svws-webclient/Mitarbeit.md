@@ -26,7 +26,7 @@ Nach jedem `npm i` muss dieser Schritt wiederholt werden.
 Es gibt eine `.prettierrc.json`, die das Projekt mit der _richtigen_ Formatierung versorgt. Die meisten Editoren können über Erweiterungen diese Formatierungsvorgabe direkt ausführen, alternativ kann man im Terminal `npm run format` ausführen, dann werden automatisch alle Dateien korrigiert. Vor jedem Einchecken des Codes sollte dies ausgeführt werden.
 
 # eslint
-Ebenso gibt es eine `.eslintrc.js`, die dafür sorgt, dass ESLint über den Code schaut und Fehler sowieso Warnungen ausgibt. Hier biten ebenfalls die meisten Editoren passende Erweiterungen an oder im Terminal kann der Linter mit `npm run lint:script` gestartet werden. Vor dem Einchecken bittte ebenfalls den neuen Code prüfen.
+Ebenso gibt es eine `.eslintrc.js`, die dafür sorgt, dass ESLint über den Code schaut und Fehler sowie Warnungen ausgibt. Hier bieten ebenfalls die meisten Editoren passende Erweiterungen an oder im Terminal kann der Linter mit `npm run lint:script` gestartet werden. Vor dem Einchecken bittte ebenfalls den neuen Code prüfen.
 
 # vue
 Es gibt ein Mixin, das jede Seite mit einem individuellen Titel versorgen kann, dazu die Option `title: "Ein Titel"` verwenden.

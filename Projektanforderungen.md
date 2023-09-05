@@ -65,7 +65,7 @@ Dabei sind zwei unterschiedliche Grundmodi zu beachten:
 
 Hier wird eine Schnittstelle benötigt, die den Text-/Excel-Export unterstützt.
 Außerdem wird es wichtig sein, auch ein Import-Schema zur Verfügung zu stellen.
-Die Ein- und Ausgabe soll ich an den Funktionen von Schild-NRW orientieren.
+Die Ein- und Ausgabe soll sich an den Funktionen von Schild-NRW orientieren.
 Der Benutzer soll hier in der Weiterarbeit mit anderen offenen Systemen (Office) unterstützt werden.
 
 2. maschineller Datenaustausch
@@ -76,7 +76,7 @@ Das Design dieser Schnittstelle sollte mit anderen Anbietern diskutiert werden.
 ### Dokumentenverwaltung ##
 
 Die Funktionalität Dokumente zu verwalten muss erhalten bleiben.
-Dabei ist aber zu bedenken, dass ggf. moderne System angeschlossen werden können.
+Dabei ist aber zu bedenken, dass ggf. moderne Systeme angeschlossen werden können.
 Wünschenswert wäre, wenn der SVWS-Server über ein active Directory eine OpenSource-Lösung ansteuern könnte.
 Ein Beispiel hierfür wäre eine angeschlossene Next-Cloud, die in gesicherter Form die Ablage der Dokumente verwaltet.
 
@@ -144,7 +144,7 @@ Es sollte ein Fachanwalt gefunden werden, der das Mandat für diese Überprüfun
 
 Alle Elemente des SVWS-Servers müssen die Richtlinien der IT-Sicherheit nach den IT-Grundschutz-Vorgaben des Bundesamt für Sicherheit in der Informationstechnik (BSI) erfüllen.
 
-Danach sollten die Bausteine des Grundschutz überprüft werden und ein Gremium geschaffen werden, das den Quellcode regelmäßig prüft.
+Danach sollten die Bausteine des Grundschutzes überprüft werden und ein Gremium geschaffen werden, das den Quellcode regelmäßig prüft.
 
 ## Barriere Konzept nach BITV #
 
