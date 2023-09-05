@@ -45,4 +45,48 @@ sollte sicherlich anhand der lokalen Gegebenheiten und den hier zugänglichen Re
 ![Serverinstallation_Schule_ohne_VPN_einfach.png](./graphics/Serverinstallation_Rechenzentrum_einfach.png)
 
 
+## FAQ
+
+### Was bedeuten die Begriffe SVWS-Server und Schild-NRW 3
+
+Der SVWS-Server ist ein in Java geschriebener Web-Server, der eine API und einen Webclient zur Verfügung stellt.
+Der Webclient wird bei in der Version 1.0.0 zunächst die Funktionalitäten von Kurs42 und Lupo übernehmen.
+Dieser muss also nur von Schulformen mit gymnasialer Oberstufe genutzt werden, wenn Blockung und Klausurterminplanung gewünscht sind.
+
+Schild-NRW 3 ist weiterhin ein in Delphi geschriebenes Programm, welches auf Windows-Systemen betrieben werden muss.
+Das Programm benötigt in einer Übergangsphase weiterhin Zugriff auf die Datenbank. Hier wird aber sukksesive auf die API umgestellt.
+Schild-NRW 3 wird in den kommenden Jahren noch genutzt werden müssen. Die Installation dieses Programm ist der Installation von Schild-NRW 2 sehr ähnlich.
+
+### Welche Browser werden vom SVWS-Webclient unterstützt?
+
+Der Webclient wird mit Firefox, Chrome, Edge und Safari getestet.
+
+### Warum wird ein selbstsigniertes Zertifikat genutzt und kann man das ändern?
+
+Bei der Installation wird ein selbstsigniertes Zertifikat erstellt, welches in einem internen Netzwerk genutzt werden kann.
+Eigene Zertifikate können in den Keystore des SVWS-Server geladen werden. Eine Anleitung dazu wird zur Verfügung gestellt werden.
+
+### Wird für jede Schule ein virtueller Server benötigt?
+
+Nein. Es können auch Server für mehrere Schulen bestrieben werden.
+Abhängig von den lokalen Begebenheiten, kann das sinnvoll sein.
+
+### Liegt die Datenbank auf einem seperaten Server?
+
+Das kann individuell konfiguriert werden.
+
+### Welche Systemvorraussetzungen müssen erfüllt werden?
+
+Dies muss noch umfassender getestet werden. In einer virtuellen Umgebung wird der SVWS-Server hier mit 2 Cores und 8 GB RAM betrieben.
+
+### Wer benötigt Zugriff auf den SVWS-Server?
+
+Alle Personen, die auch jetzt schon mit Schild-NRW arbeiten.
+
+### Benötigt der SVWS-Server eine Internetverbindung?
+
+Momentan eigentlich nicht. Jedoch werden in Zukunft viele Prozesse dazu kommen, die ein Internetverbindung benötigen.
+(Webnotenmanagaer, SchülerOnline, Digitales Zeugnis usw.)
+
+
 ---
