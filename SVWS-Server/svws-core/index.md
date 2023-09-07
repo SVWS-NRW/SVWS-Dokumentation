@@ -3,7 +3,7 @@
 Im Teilprojekt SVWS-Core werden grundlegende Kern-Komponenten gebündelt. Hierbei ist zu unterscheiden zwischen Teilen, die nur im Server zur Verfügung (Java-Package `de.svws_nrw.base`, im Folgenden kurz: *Base*) stehen und welche, die von Java nach Typescript transpiliert werden und sowohl im Server (Java-Package `de.svws_nrw.core`, im Folgenden kurt: *Core*) als auch im Client zur Verfügung stehen.
 
 
-## ** Base **
+## **Base**
 
 In diesem Package ist Java-spezifischer Code enthalten, welcher nicht für eine Nutzung im Client transpiliert wird. 
 
@@ -14,7 +14,7 @@ Dies sind u.a.
 	- zur *AES-Verschlüsselung* (`de.svws_nrw.base.crypto`).
 
 
-## ** Core **
+## **Core**
 
 Der *Core* besteht aus Java-Code, welcher nach Typescript transpiliert wird und somit sowohl im Server als auch in Clients zur Verfügung steht. Er kann grob in die folgenden Kategorien unterteilt werden:
 - Abstrakte Datenstrukturen (Java-Package `de.svws_nrw.core.adt`)
@@ -24,7 +24,7 @@ Der *Core* besteht aus Java-Code, welcher nach Typescript transpiliert wird und 
 - Hilfs-Klassen für die Handhabung von Core-DTOs (kurz: *Core-Utils* bzw. *Core-Manager*, Java-Package `de.svws_nrw.core.utils`)
 
 
-### ** Abstrakte Datenstrukturen **
+### **Abstrakte Datenstrukturen**
 
 In diesem Package werden Projekt-spezifische, transpilierbare Klassen für Datenstrukturen zur Verfügung gestellt. Dies sind u.a.
 
@@ -41,7 +41,7 @@ In diesem Package werden Projekt-spezifische, transpilierbare Klassen für Daten
 	- * HashMap3D *: Eine Klasse, welche die Zuordnung eines Wertes zu drei Schlüsselwerten erlaubt. Intern arbeitet die Datenstruktur mit geschachtelten Hash-Maps (siehe auch: `java.util.HashMap`)
 
 
-### ** Core-Algorithmen **
+### **Core-Algorithmen**
 
 Es werden zahlreiche - auch komplexere - Algorithmen zu schulfachlichen Aspekten zur Verfügung gestellt. Dies betrifft u.a.
 - Abschluss-Algorithmen
@@ -52,7 +52,7 @@ Es werden zahlreiche - auch komplexere - Algorithmen zu schulfachlichen Aspekten
 - Stundenplan-Algorithmen
 
 
-### ** Core-DTOs **
+### **Core-DTOs**
 
 Die *Core-DTOs* sind grundlegende Datenobjekte für den Transfer von Daten. Sie werden auch in anderen Teilprojekten des SVWS-Serves verwendet. Sie dienen u.a.
 - der Nutzung in Core-Algorithmen
@@ -68,7 +68,7 @@ Beispiele für Core-DTOs:
 - SchulabschlussAllgemeinbildendKatalogEintrag: Information zu einer Art eines allgemeinbildenden Schulabschlusses, welcher in der amtlichen Schulstatistik verwendet wird. (hier wird in **generischer** Form die Struktur von Informationen zu allgemeinbildenden Schulabschlüssen festgelegt)
 
 
-### ** Core-Types **
+### **Core-Types**
 
 Während in den *Core-DTOs* die Struktur von Informationen zum Schulsystem festgelegt wird, stellen die *Core-Types* als Aufzählungen die konkreten, typisierten und damit **speziellen** Informationen zum Schulsystem dar.
 Diese typisierte Information ist insbesondere für die *Core-Algorithmen* von Interesse. Diese bilden z.B. Prüfungsordnungen ab, die sich auf die einzelnen Aufzählungswerte beziehen. So haben u.a. die Fächer Deutsch und Mathematik oft eine besondere Bedeutung für die Belegprüfung oder die Abschlussberechnung, wodurch diese im Algorithmus konkret verwendet werden müssen. Einfache Überprüfungen/Validierungen können direkt im Code des *Core-Type* umgesetzt werden.
@@ -131,7 +131,7 @@ public enum SchulabschlussAllgemeinbildend {
 ```
 	
 
-### ** Core-Utils **  und ** Core-Manager **
+### **Core-Utils**  und **Core-Manager**
 
 Das Java-Package `de.svws_nrw.core.utils` stellt im Wesentlichen zwei Arten von Klassen zur Verfügung: Die *Core-Utils* und die *Core-Manager*. 
 
