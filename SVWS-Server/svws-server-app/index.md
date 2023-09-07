@@ -1,3 +1,5 @@
+# svws-server-app
+
 Die Klasse "Main" ist die Hauptklasse der Java-Kommandozeilenanwendung des SVWS-Servers. Die Klasse enthält die "main" Methode, die den Einstiegspunkt für die Anwendung darstellt. 
 Die Methode lädt zunächst die SVWS-Konfiguration und die Ressourcen des SVWS-Clients, die über die Open-API-Schnittstelle bereitgestellt werden. 
 Anschließend wird der Jetty-Embedded Http-Server mit der OpenAPI-Schnittstellen-Web-Applikation gestartet.
