@@ -58,9 +58,10 @@ sidebar:
 				},
 				{ text: 'Projekte', link: '/Projekte/' , collapsed: true, items:
 					[
-						{ text: 'WeNoM', link: '/Projekte/WeNoM/' },
+						{ text: 'SchülerOnline', link: '/Projekte/SchülerOnline/' },
 						{ text: 'ASD-Statistik Modul', link: '/Projekte/WeNoM/' },
-						{ text: 'xSchule', link: '/Projekte/xSchule/' }
+						{ text: 'xSchule', link: '/Projekte/xSchule/' },
+						{ text: 'WeNoM', link: '/Projekte/WeNoM/' },
 
 					]
 
