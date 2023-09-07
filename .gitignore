@@ -3,6 +3,7 @@ tmp
 /node_modules/
 /.classpath
 /.vitepress/dist
+/.vitepress/cache
 /dist/
 /.project
 /.settings
