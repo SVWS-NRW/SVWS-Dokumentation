@@ -29,16 +29,16 @@ Der *Core* besteht aus Java-Code, welcher nach Typescript transpiliert wird und 
 In diesem Package werden Projekt-spezifische, transpilierbare Klassen für Datenstrukturen zur Verfügung gestellt. Dies sind u.a.
 
 - Lineare Datenstrukturen:
-	- * LinkedCollection *: Eine einfache, unsortierte Collection, implementiert als doppelt verkettete Liste, welche keine null-Werte, jedoch Duplikate akzeptiert. Sie implementiert das Java-Interface `java.util.Collection`.
+	- *LinkedCollection*: Eine einfache, unsortierte Collection, implementiert als doppelt verkettete Liste, welche keine null-Werte, jedoch Duplikate akzeptiert. Sie implementiert das Java-Interface `java.util.Collection`.
 - Baumstrukturen:
-	- * ArrayMap *: Eine für das Arbeiten mit Werten aus Arrays und Enumerations spezialisierte Map, welche das Java-Interface `java.util.NavigableMap` implementiert
-	- * AVLMap *: Eine Implementierung des AVL-Baums als Map. Sie implementiert das Java-Interface `java.util.NavigableMap`.
-	- **: Diese Klasse ist eine Implementierung eines Minimum-Heaps. Die Wurzel eines Teilbaumes enthält immer das kleinste Element des Teilbaums. Duplikate sind zugelassen. Sie implementiert das Java-Interface `java.util.Queue`
+	- *ArrayMap*: Eine für das Arbeiten mit Werten aus Arrays und Enumerations spezialisierte Map, welche das Java-Interface `java.util.NavigableMap` implementiert
+	- *AVLMap*: Eine Implementierung des AVL-Baums als Map. Sie implementiert das Java-Interface `java.util.NavigableMap`.
+	- *MinHeap*: Diese Klasse ist eine Implementierung eines Minimum-Heaps. Die Wurzel eines Teilbaumes enthält immer das kleinste Element des Teilbaums. Duplikate sind zugelassen. Sie implementiert das Java-Interface `java.util.Queue`
 - Mengen:
-	- * AVLSet *: Eine Implementierung des Java-Interfaces `java.util.NavigableSet`. Sie dient zum Speichern eindeutiger Schlüssel-Werte und delegiert alle Anfragen an die Klasse {@link AVLMap} delegiert, indem ein Mapping auf einen Dummy-Wert erfolgt. NULL-Werte sind in dem Set nicht erlaubt.
+	- *AVLSet*: Eine Implementierung des Java-Interfaces `java.util.NavigableSet`. Sie dient zum Speichern eindeutiger Schlüssel-Werte und delegiert alle Anfragen an die Klasse {@link AVLMap} delegiert, indem ein Mapping auf einen Dummy-Wert erfolgt. NULL-Werte sind in dem Set nicht erlaubt.
 - Sonstige:
-	- * HashMap2D *: Eine Klasse, welche die Zuordnung eines Wertes zu zwei Schlüsselwerten erlaubt. Intern arbeitet die Datenstruktur mit geschachtelten Hash-Maps (siehe auch: `java.util.HashMap`)
-	- * HashMap3D *: Eine Klasse, welche die Zuordnung eines Wertes zu drei Schlüsselwerten erlaubt. Intern arbeitet die Datenstruktur mit geschachtelten Hash-Maps (siehe auch: `java.util.HashMap`)
+	- *HashMap2D*: Eine Klasse, welche die Zuordnung eines Wertes zu zwei Schlüsselwerten erlaubt. Intern arbeitet die Datenstruktur mit geschachtelten Hash-Maps (siehe auch: `java.util.HashMap`)
+	- *HashMap3D*: Eine Klasse, welche die Zuordnung eines Wertes zu drei Schlüsselwerten erlaubt. Intern arbeitet die Datenstruktur mit geschachtelten Hash-Maps (siehe auch: `java.util.HashMap`)
 
 
 ### **Core-Algorithmen**
