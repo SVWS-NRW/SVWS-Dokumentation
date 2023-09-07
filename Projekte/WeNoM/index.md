@@ -1,2 +1,2 @@
-# der Webnotenmanager (Wenom)
+# Webnotenmanager (Wenom)
 
