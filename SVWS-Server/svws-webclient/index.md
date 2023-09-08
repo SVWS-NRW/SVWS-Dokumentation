@@ -19,6 +19,9 @@ https://ui.svws-nrw.de
 
 Diese Seite wird mit histoire generiert.
 
+![SVWS-Webclient2](./graphics/SVWS-Webclient2.png)
+
+
 ## Mitarbeit 
 
 Hier können interessierte Entwickler und Programmierer weitere Informationen zur [Mitarbeit](Mitarbeit.md) erhalten. 
