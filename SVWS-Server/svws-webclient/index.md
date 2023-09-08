@@ -1,11 +1,21 @@
 # Der SVWS-Client
 
-Der SVWS-Client ist die graphische Oberfläche über die die Eingaben in den SVWS-Server erfolgen. 
+Der SVWS-Client ist die graphische Oberfläche über die die Eingaben in den SVWS-Server erfolgen.
+Zum Einsatz kommen node.js und VUE.js.
+Der Cleint selbst wird in Typescript programmiert.
+
+[Auswahl von VUE.js](./GUI-Auswahl.md)
 
 ## Entwicklung der Oberfläche
 
-Konzeptionelle Überlegungen zum Design und die damit verbundenen technischen Grundlagen und Angaben zu den Frameworks finden Sie unter [SVWS-UI-Framework](./SVWS-UI-Framework/index.md).
-Hier werden ebenso [Styleguide und Screendesign](./SVWS-UI-Framework/Styleguide.md) vorgestellt und das [Bedienkonzept der GUI-Komponenten](./SVWS-UI-Framework/Bedienkonzept.md) wird erläutert.
+Zu Beginn der Arbeiten wurde ein [Styleguide und Screendesign](./Styleguide.md) vorgestellt und das [Bedienkonzept der GUI-Komponenten](./Bedienkonzept.md) wird erläutert.
+
+Die UI-Komponenten werden von SVWS-NRW selbst entwicklelt.
+Diese stehen unter folgender URL zur Verfügung:
+
+https://ui.svws-nrw.de
+
+Diese Seite wird mit histoire generiert.
 
 ## Mitarbeit 
 
