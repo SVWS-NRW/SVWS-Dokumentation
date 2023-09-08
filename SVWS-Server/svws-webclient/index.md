@@ -1,5 +1,7 @@
 # Der SVWS-Client
 
+![SVWS-Webclient](./graphics/SVWS-Webclient.png)
+
 Der SVWS-Client ist die graphische Oberfläche über die die Eingaben in den SVWS-Server erfolgen.
 Zum Einsatz kommen node.js und VUE.js.
 Der Cleint selbst wird in Typescript programmiert.
