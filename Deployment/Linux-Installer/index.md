@@ -42,11 +42,11 @@ Hier finden Sie einen beispielhaften Dialog:
 ```
 MariaDB-Konfiguration:
 Möchten Sie die MySQL-Datenbank erstellen? (j/N): j
-MYSQL_ROOT_PASSWORD (default: 'abcd1234'): abcd1234
-MYSQL_DATABASE (default: 'svwsdb'): svwsdb
-MYSQL_HOST (default: 'localhost'): localhost
-MYSQL_USER (default: 'svwsadmin'): svwsadmin
-MYSQL_PASSWORD (default: 'abcd1234'): abcd1234
+MARIADB_ROOT_PASSWORD (default: 'abcd1234'): abcd1234
+MARIADB_DATABASE (default: 'svwsdb'): svwsdb
+MARIADB_HOST (default: 'localhost'): localhost
+MARIADB_USER (default: 'svwsadmin'): svwsadmin
+MARIADB_PASSWORD (default: 'abcd1234'): abcd1234
 Installationspfade:
 APP_PATH (default: '/opt/app/svws'): /opt/app/svws
 CONF_PATH (default: '/etc/app/svws/conf'): /etc/app/svws/conf

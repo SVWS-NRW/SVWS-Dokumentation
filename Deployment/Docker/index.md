@@ -89,11 +89,11 @@ Beispiel:
 ```
 INIT_SCRIPTS_DIR=/etc/app/svws/init-scripts
 TESTDB_PASSWORD=your-testdb-pw
-MYSQL_ROOT_PASSWORD=your-mariadb-root-pw
-MYSQL_DATABASE=your-svws-db-schema-name
-MYSQL_HOST=mariadb
-MYSQL_USER=your-mariadb-user
-MYSQL_PASSWORD=your-mariadb-pw
+MARIADB_ROOT_PASSWORD=your-mariadb-root-pw
+MARIADB_DATABASE=your-svws-db-schema-name
+MARIADB_HOST=mariadb
+MARIADB_USER=your-mariadb-user
+MARIADB_PASSWORD=your-mariadb-pw
 MARIADB_DATA_DIR=/var/lib/mysql/data
 MARIADB_LOG_DIR=/var/lib/mysql/log
 SVWS_TLS_KEYSTORE_PATH=/etc/app/svws/conf/keystore
@@ -104,11 +104,11 @@ SVWS_TLS_KEY_ALIAS=your-keystore-key-alias
 | ----------- | ----------- |
 | INIT_SCRIPTS_DIR | [Optional] Pfad zu einem Verzeichnis im SVWS-Container für Initialisierungsscripts. Alle Shell-Scripts in diesem Verzeichnis werden beim Hochfahren des SVWS-Containers ausgeführt. So können z.B. [automatische Testdatenimporte](#automatische-initialisierung) in den Boot-Prozess integriert werden. |
 | TESTDB_PASSWORD | [Optional] Passwort der Testdatenbank (MS Access, SqlLite), das im Rahmen der [automatische Testdatenimporte](#automatische-initialisierung) verwendet werden soll. |
-| MYSQL_ROOT_PASSWORD | Passwort, das für den Root-User der MariaDB-Instanz verwendet werden soll |
-| MYSQL_DATABASE | Name des Datenbankschemas, mit dem sich der SVWS-Server verbindet (z.B. "gymabi") |
-| MYSQL_HOST | Name des Hosts, auf dem die SVWS-Datenbank läuft. Im Falle der Docker-Umgebung entspricht dieser Wert dem Service-Namen von docker-compose (also "mariadb"). |
-| MYSQL_USER | Datenbank-Benutzer, unter dem sich der SVWS-Server mit der Datenbank verbindet. |
-| MYSQL_PASSWORD | Passwort des Datenbank-Benutzers, unter dem sich der SVWS-Server mit der Datenbank verbindet. |
+| MARIADB_ROOT_PASSWORD | Passwort, das für den Root-User der MariaDB-Instanz verwendet werden soll |
+| MARIADB_DATABASE | Name des Datenbankschemas, mit dem sich der SVWS-Server verbindet (z.B. "gymabi") |
+| MARIADB_HOST | Name des Hosts, auf dem die SVWS-Datenbank läuft. Im Falle der Docker-Umgebung entspricht dieser Wert dem Service-Namen von docker-compose (also "mariadb"). |
+| MARIADB_USER | Datenbank-Benutzer, unter dem sich der SVWS-Server mit der Datenbank verbindet. |
+| MARIADB_PASSWORD | Passwort des Datenbank-Benutzers, unter dem sich der SVWS-Server mit der Datenbank verbindet. |
 | MARIADB_DATA_DIR | Pfad zum Daten-Verzeichnis innerhalb der MariaDB-Instanz. Wird benötigt, um die Daten im Datenbank-Container auf einem Volume zu sichern (volume mount). Pfad hängt von dem verwendeten MariaDB Basis-Image ab. |
 | MARIADB_LOG_DIR | Pfad zum Log-Verzeichnis innerhalb der MariaDB-Instanz. Wird benötigt, um die Logs im Datenbank-Container auf einem Volume zu sichern (volume mount). Pfad hängt von dem verwendeten MariaDB Basis-Image ab. |
 | SVWS_TLS_KEYSTORE_PATH | Unter diesem Pfad erwartet der SVWS den Java-Keystore für die Terminierung von SSL am Server |
