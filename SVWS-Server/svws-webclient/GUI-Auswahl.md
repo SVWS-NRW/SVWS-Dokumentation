@@ -1,5 +1,5 @@
 # Auswahl des GUI-Frameworks
-## VUE.JS
+## Vue
 Nach einer längeren Entscheidungsphase wurde das vue.js Framework ausgewählt:
 
 
