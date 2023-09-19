@@ -1,4 +1,4 @@
-module.exports =
+﻿module.exports =
 {
 title: 'SVWS Dokumentation',
 description: 'Dokumentation SVWS-Server NRW, Installation und Entwicklung',
@@ -33,6 +33,7 @@ sidebar:
 						{ text: 'Linux-Installer', link: '/Deployment/Linux-Installer/' },
 						{ text: 'Docker-Container', link: '/Deployment/Docker/' },
 						{ text: 'Windows-Installer', link: '/Deployment/Windows-Installer/' },
+						{ text: 'Datenmigration', link: '/Deployment/Datenmigration/' }
 					]
 				},
 

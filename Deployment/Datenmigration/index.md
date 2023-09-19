@@ -1,4 +1,6 @@
-# Neue Schemata in der Datenbank des SVWS-Servers anlegen
+# Datenmigration
+
+Neue Schemata oder vorhandene Schemata in der Datenbank des SVWS-Servers anlegen.
 
 ## Download von Testdaten
 
