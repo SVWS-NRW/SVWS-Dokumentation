@@ -9,6 +9,7 @@ Inhaltsverzeichnis
   * [](#)
 
 
+
 ## Fragen zum Projekt
 
 Das Projekt SVWS-Server wurde erstmals im November 2019 im Ministerium für Schule und Bildung NRW (MSB) vorgestellt.
