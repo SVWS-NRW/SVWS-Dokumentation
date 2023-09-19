@@ -1,5 +1,6 @@
 # SVWS - Server Dokumentation
 
+
 (Platzhalter Logo) 
 
 Projekt zur Erstellung einer Schulverwaltungssoftware mit Open:API-Schnittstelle für die dezentrale Schulverwaltung in NRW.  
