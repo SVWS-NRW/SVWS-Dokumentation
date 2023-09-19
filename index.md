@@ -48,10 +48,8 @@ Wenn Sie an einer Mitarbeit am Projekt interessiert sind, so finden Sie in diese
 Per Github kann die Kontaktaufnahme zu unserem Entwicklerteam erfolgen. Ebenso sollen hier perspektivisch Issues aus der Open Source Gemeinschaft gesammelt werden. 
 
 
-## weitere Informationen 
+## [Projektanforderungen](Projektanforderungen.md)
 
-### [Projektanforderungen](Projektanforderungen.md)
+## [FAQ](FAQ/index.md)
 
-### [FAQ](FAQ.md)
-
-### [Impressum](https://www.schulministerium.nrw/impressum-haftungsausschluss-datenschutzbestimmungen)
+## [Impressum](https://www.schulministerium.nrw/impressum-haftungsausschluss-datenschutzbestimmungen)
