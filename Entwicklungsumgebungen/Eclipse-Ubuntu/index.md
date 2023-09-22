@@ -9,7 +9,7 @@ Installation unter Ubuntu 22.04
 
 ```bash
 sudo apt update && apt upgrade -y
-sudo apt install git curl git net-tools dnsutils nmap 
+sudo apt install git curl net-tools dnsutils nmap 
 cd ~
 ```
 
@@ -45,7 +45,7 @@ Die Datei eclipse.ini anpassen in den beiden Zeilen mit -Xms und -Xmx die folgen
 
 ```bash
 sudo apt install mariadb-server
-mariadb -version
+mariadb --version
 sudo mysql_secure_installation
 ```
 
