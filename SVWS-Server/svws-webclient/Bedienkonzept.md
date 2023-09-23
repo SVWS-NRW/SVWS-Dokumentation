@@ -23,7 +23,7 @@ Um den Platz auf dem Bildschirm bestmöglich zu nutzen, ist die Navigation am li
 
 ## Sidebar
 Die Sidebar kann unterschiedliche Zwecke erfüllen. Zum einen kann dort eine Tabelle mit Datensätzen eingesetzt werden oder aber eine Subnavigation eines einzelnen Moduls. In der Sidebar wie auch im Content-Bereich kann die Navigation auf mehreren Ebenen realisiert werden. In diesem Fall erscheint neben dem Titel der aktuellen Ebene ein Pfeil, um eine Ebene zurück zu navigieren.
-Filterung und Suche von Datensätzen steht immer zugehörig zur entsprechenden Tabelle. Je nach Kontext können hier verschiedene Filter zur Verfügung stehen. Um einzelne Datensätze zu bearbeiten steht in der jeweiligen Zeile ein Icon für das "Rechtsklick-Menü". Technisch sind Aktionen durch einen Rechtsklick zusätzlich umsetzbar – hier sollte aber immer auch eine Möglichkeit für einen einfachen Klick gegeben werden. Erstellen und Löschen eines Datensatzes ist immer direkt an der unteren Kante einer Tabelle möglich (Dieser Bereich bleibt immer im Viewport stehen. Längere Listen sind dahinter scrollbar). Um einen oder mehrere Datensätze zu markieren gibt es in jeder Reihe eine Checkbox. Im feststehenden Bereich können durch eine Checkbox alle Einträge markiert werden. Im leeren Feld einer Tabelle (oben links) kann ein Indikator platziert werden, ob und wie die aktuelle Ausgabe gefiltert ist.
+Filterung und Suche von Datensätzen steht immer zugehörig zur entsprechenden Tabelle. Je nach Kontext können hier verschiedene Filter zur Verfügung stehen. Um einzelne Datensätze zu bearbeiten, steht in der jeweiligen Zeile ein Icon für das "Rechtsklick-Menü". Technisch sind Aktionen durch einen Rechtsklick zusätzlich umsetzbar – hier sollte aber immer auch eine Möglichkeit für einen einfachen Klick gegeben werden. Erstellen und Löschen eines Datensatzes ist immer direkt an der unteren Kante einer Tabelle möglich. Dieser Bereich bleibt immer im Viewport stehen. Längere Listen sind dahinter scrollbar. Um einen oder mehrere Datensätze zu markieren, gibt es in jeder Reihe eine Checkbox. Im feststehenden Bereich können durch eine Checkbox alle Einträge markiert werden. Im leeren Feld einer Tabelle (oben links) kann ein Indikator platziert werden, ob und wie die aktuelle Ausgabe gefiltert ist.
 
 ## Content
 In der gesamten Oberfläche sollte alles Wichtige auf einen Blick erkennbar sein und nicht zu sehr mit Informationen überladen werden. Detaillierte Informationen können mit einem Tooltip angezeigt werden (z. B. "Letzte Änderung: 1.12.2020", der Tooltip zeigt dann ergänzend die genaue Uhrzeit und den User).
@@ -36,9 +36,9 @@ Je nach Bildschirmbreite können Input-Felder im Content-Bereich auf 1–3 Spalt
 
 
 
-Das Hauptfenster mit den Daten orientiert sich an der bisherigen Nutzerführung von Schild-NRW, jedoch bettet sich dieses Fenster in das Konzept mit der Side bar ein, so dass der User ohne großen Platzverlust auch an die anderen Perspektiven (Einstellungen, andere Modul) gelangen kann.
+Das Hauptfenster mit den Daten orientiert sich an der bisherigen Nutzerführung von Schild-NRW, jedoch bettet sich dieses Fenster in das Konzept mit der Sidebar ein, so dass der User ohne großen Platzverlust auch an die anderen Perspektiven (Einstellungen, andere Module) gelangen kann.
 Visuelle Elemente verdeutlichen dem User, wo Funktionen hinterlegt werden und werden auch über Tool-Tips angezeigt, so dass Funktionalitäten nicht "undokumentiert" sind.
-Die Vielzahl der Daten wird in den Tabs dargestellt. Im Oberen Bereich werden wichtige Informatioenen und Hinweise dazu eingeblendet, an welcher Stelle im Programm man sich befindet.
+Die Vielzahl der Daten wird in den Tabs dargestellt. Im oberen Bereich werden wichtige Informationen und Hinweise dazu eingeblendet, an welcher Stelle im Programm man sich befindet.
 Passende Iconsets müssen hierfür dann gefunden werden.
 
 ![](./graphics/BK_ModulA.png)
@@ -47,7 +47,7 @@ Passende Iconsets müssen hierfür dann gefunden werden.
 ## Weitere Navigations-Ebenen
 
 Weitere Ebenen können für die Aufgaben verwendet werden, die z.B. nicht an das Daten-Panel gebunden sind. Hier können bestimmte Gruppenprozesse, Einstellungen, Import/Export-Funktionen hinterlegt sein.
-Der User hat immer eine Übersicht, auf welcher Navigations-Ebene er sich befindet, kann aber über die Sidebar auch sehr schnelle wieder auf die Hauptebene zurück kehren.
+Der User hat immer eine Übersicht, auf welcher Navigationsebene er sich befindet, kann aber über die Sidebar auch sehr schnell wieder auf die Hauptebene zurück kehren.
 
 <!-- ![](./graphics/BK_ModulB.png) -->
 
@@ -55,7 +55,7 @@ Der User hat immer eine Übersicht, auf welcher Navigations-Ebene er sich befind
 Modale Fenster sind in diesem Konzept eher vermieden worden. An einigen Stellen wird man aber um solche Abfragen nicht herum kommen. Dazu sind drei Arten von Modalen Fenstern freigegeben worden, die folgende Funktionen nutzen.
 
 ### Einfaches Modales Fenster
-Für schnelle Optionale Entscheidungen, die der User während eines Use-Case zu treffen hat.
+Für schnelle optionale Entscheidungen, die der User während eines Use-Case zu treffen hat.
 
 ![](./graphics/BK_EinfachesModal.png)
 
@@ -68,7 +68,7 @@ Für komplexere Abfragen, wie zum Beispiel den Filter I, der aus dem Hauptfenste
 
 
 ### komplexes Modales Fenster
-Datenintensive Use-Cases, wie das Reporting mit Vorschau oder die Einstellungen für die Import und Exporte können mit dieser Variante umgestezt werden.
+Datenintensive Use-Cases, wie das Reporting mit Vorschau oder die Einstellungen für die Importe und Exporte können mit dieser Variante umgestezt werden.
 
 ![](./graphics/BK_KomplexesModal.png)
 

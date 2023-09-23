@@ -1,22 +1,20 @@
 # Projekte, die im Zusammenhang mit dem SVWS-Server stehen
 
-Hier werden einige Unterprojekt beschrieben, die im Laufe der Zeit wichtig geworden sind.
+Hier werden einige Unterprojekte beschrieben, die im Laufe der Zeit wichtig geworden sind.
 Hier sind Arbeitsgruppen im Bereich OZG oder Digitalisierung aufgeführt.
 Aber auch Arbeitsbereiche, die die allgemeine Modernisierung von Abläufen fördern soll.
 
 ## ASD-Statistikmodul im SVWS-Server
 
 Im Jahr 2022 wurde beschlossen, das Nachfolgeprodukt von ASDPC32 im SVWS-Server zu entwickeln.
-Ziel soll es hier sein, die komplette hauptamtliche Statistik, die alle Schulen in NRW einmal im Jahr abgeben müssen, 
-mit dem SVWS-Server zu machen.
+Ziel soll es hier sein, die komplette hauptamtliche Statistik, die alle Schulen in NRW einmal im Jahr abgeben müssen, mit dem SVWS-Server zu machen.
 
 Zur Beschreibung des Projekts.
 
 ## Webnotenmanager
 
-Zusammen mit dem SVWS-Server wird parallel ein Programm entwickelt, das es den Schulen ermöglichen soll ihre Noten
-von Kolleginnen und Kollegen einzuholen, ohne dass alle Daten im internet erreichbar sein müssen.
-So wird hier ein minimale Teilmenge der Daten auf einem Webserver gehostet, wo die Lehrkräfte ihre Noten eingeben können.
+Zusammen mit dem SVWS-Server wird parallel ein Programm entwickelt, das es den Schulen ermöglichen soll, ihre Noten von Kolleginnen und Kollegen einzuholen, ohne dass alle Daten im Internet erreichbar sein müssen.
+So wird hier eine minimale Teilmenge der Daten auf einem Webserver gehostet, wo die Lehrkräfte ihre Noten eingeben können.
 Diese Daten werden dann mit dem Bestand im SVWS-Server synchronisiert. 
 
 Zur Beschreibung des Projekts.
