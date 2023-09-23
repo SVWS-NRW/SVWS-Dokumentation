@@ -10,11 +10,10 @@ Hier wurden auch Klickdummies im SVWS-Desing erstellt:
 
 In diesem Beispiel für das Screendesign sieht man die Umsetzung der in den zuvor festgelegten Planungsschritten. 
 Eine Ausprägung der wichtigsten Elemente und Menüstrukturen sind zu sehen. 
-Das Konzept der Trenung der Bereiche und erste Use-Cases können dem Screendesign entnommen werden.
+Das Konzept der Trennung der Bereiche und erste Use-Cases können dem Screendesign entnommen werden.
 
-Im Styleguide werden die Farben und die Typographie, Abstände von Fenstern und das Aussehen von Elementen wie Schaltflächen und Buttons festegelegt.
-Dabei richtet sich das Aussehen nach den im Bedienkonzept festgelegten Grundwerten.
-
+Im Styleguide werden die Farben und die Typographie, Abstände von Fenstern und das Aussehen von Elementen wie Schaltflächen und Buttons festgelegt.
+Dabei richtet sich das Aussehen nach den im Bedienkonzept festgelegten Grundwerten. 
 
 # Farben
 ![](./graphics/Styleguide_Farben.png)
