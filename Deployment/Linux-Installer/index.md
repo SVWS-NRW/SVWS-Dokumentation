@@ -103,5 +103,5 @@ Beim Start des Webclient erkennt die Applikation, dass die Datenbank leer ist un
 
 Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit Iptables
 
-iptables -A PREROUTING -t nat -p tcp --dport 80 -j REDIRECT --to-port 8080
+iptables -A PREROUTING -t nat -p tcp --dport 443 -j REDIRECT --to-port 8443
 
