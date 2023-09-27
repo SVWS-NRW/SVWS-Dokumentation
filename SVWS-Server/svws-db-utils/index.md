@@ -33,14 +33,18 @@ Mit ```lupo_import.cmd``` bzw. ```lupo_import.sh``` können Lupodateien, die im 
 
  Argument short | Argument long | Beschreibung
  -------------- | ------------- | ------------
--j | --ja| Beantwortet alle Fragen beim Import automatisch mit "Ja"
+-j | --ja| Gibt an, dass alle vorhandenen Daten ersetzt werden sollen
 -f [FILE] | --file [FILE]| Der vollständige Dateiname, wo die LuPO-Datei liegt
 -cp [PATH] | --configPath [PATH]| Gibt den Pfad zu der SVWS-Konfigurationsdatei an, wenn diese nicht an einem Standardort liegt
+-rj | --replaceJahrgang | Gibt an, dass die Jahrgangs-spezifischen Informationen ersetzt werden sollen
+-rs, --replaceSchueler | Gibt an, dass die Schüler-spezifischen Informationen ersetzt werden sollen
 -td [DRIVER] | --tgtDrv [DRIVER]| Der Treiber für die Ziel-DB ("MDB", "MSSQL", "MYSQL", "MARIA_DB" oder "SQLITE")
 -tl [LOCATION] | --tgtLoc [LOCATION]| Der Ort, wo die Ziel-DB zu finden ist (Der Pfad einer Datei oder der Ort im Netzwerk, z.B. "localhost")
 -ts [SCHEMA_NAME] | --tgtDB [SCHEMA_NAME]| Der Schema-Name für die Ziel-DB (bei "MDB" und "SQLITE" nicht benötigt)
 -tu [USERNAME] | --tgtUser [USERNAME]| Der DB-Benutzer für die Ziel-DB
 -tp [PASSWORD] | --tgtPwd [PASSWORD]| Das DB-Kennwort für die Ziel-DB
+
+
 
 Beispiel:
 
