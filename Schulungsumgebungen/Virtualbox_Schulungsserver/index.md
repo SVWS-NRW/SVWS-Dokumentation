@@ -37,6 +37,12 @@ Als Fachberatung für Schulen können unter https://storage.svws-nrw.de/ oder gg
 
 Entpacken Sie die virtuelle Maschine (VM) ins neue virtualbox Verzeichnis, öffnen Sie virtualbox und importieren Sie die VM in virtualbox. Überprüfen Sie hier, unter _Ändern->Netzwerk_, ob die Netzwerkschnittstelle als Netzwerkbrücke eingestellt ist. Falls Ihr Server mehrere Schnittstellen hat, müssen Sie entsprechend Ihre aktiven Schnittstelle auswählen, z.B. die Wlan-Karte. Nur so erhält auch der virtuelle Server ein aktives Netzwerk. Starten Sie den Server und lesen Sie die Informationen unter http://NAME_IHRES_SERVERS/ oder http://IP_IHRES_SERVERS/
 
+## VM selber erstellen
+
+siehe dazu die Dokumentation des Schulungsproxmox hier wird ein analoges Vorgehen beschrieben:    https://doku.svws-nrw.de/Schulungsumgebungen/Proxmox_Schulungsserver/
+
+
+
 ## VM personalisieren und klonen
 
 Sie können unter /netzlaufwerk oder der gleichnamigen Dateifreigabe zusätzliche Schulungsinhalte bzw. Übungsdatenbanken für Ihre Schulungsteilnehmer hinterlegen. Ebenso können Sie Ihre Übungsdatenbanken migrieren bevor Sie klonen.
