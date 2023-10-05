@@ -1,32 +1,32 @@
 # **SVWS-Core**
 
-Im Teilprojekt SVWS-Core werden grundlegende Kern-Komponenten gebündelt. Hierbei ist zu unterscheiden zwischen Teilen, die nur im Server zur Verfügung (Java-Package `de.svws_nrw.base`, im Folgenden kurz: *Base*) stehen und welche, die von Java nach Typescript transpiliert werden und sowohl im Server (Java-Package `de.svws_nrw.core`, im Folgenden kurt: *Core*) als auch im Client zur Verfügung stehen.
+Im Teilprojekt SVWS-Core werden grundlegende Kern-Komponenten gebündelt. Hierbei ist zu unterscheiden zwischen Teilen, die nur im Server zur Verfügung (Java-Package `de.svws_nrw.base`, im Folgenden kurz: *Base*) stehen und welche, die von Java nach TypeScript transpiliert werden und sowohl im Server (Java-Package `de.svws_nrw.core`, im Folgenden kurz: *Core*) als auch im Client zur Verfügung stehen.
 
 
 ## **Base**
 
-In diesem Package ist Java-spezifischer Code enthalten, welcher nicht für eine Nutzung im Client transpiliert wird. 
+In diesem Package ist javaspezifischer Code enthalten, welcher nicht für eine Nutzung im Client transpiliert wird. 
 
 Dies sind u.a.
-- Hilfs-Klassen, wie z.B. `FileUtils.java`, welche in anderen Java-Teilprojekten genutzt werden, aber im Client in Typescript nicht benötigt werden.
-- Implementierungen von Klassen, welche durch den Transpiler eine Schittstellen-kompatible Typescript-spezifische Implementierung erhalten und daher selbst nicht transpiliert werden müssen. Dies betrifft z.B.
+- Hilfs-Klassen, wie z.B. `FileUtils.java`, welche in anderen Java-Teilprojekten genutzt werden, aber im Client in TypeScript nicht benötigt werden.
+- Implementierungen von Klassen, welche durch den Transpiler eine schittstellenkompatible, typescriptspezifische Implementierung erhalten und daher selbst nicht transpiliert werden müssen. Dies betrifft z.B.
 	- die Implementierung der Klassen zur *Kompression* (`de.svws_nrw.base.compression`) und 
 	- zur *AES-Verschlüsselung* (`de.svws_nrw.base.crypto`).
 
 
 ## **Core**
 
-Der *Core* besteht aus Java-Code, welcher nach Typescript transpiliert wird und somit sowohl im Server als auch in Clients zur Verfügung steht. Er kann grob in die folgenden Kategorien unterteilt werden:
+Der *Core* besteht aus Java-Code, welcher nach TypeScript transpiliert wird und somit sowohl im Server als auch in Clients zur Verfügung steht. Er kann grob in die folgenden Kategorien unterteilt werden:
 - Abstrakte Datenstrukturen (Java-Package `de.svws_nrw.core.adt`)
 - Algorithmen (kurz: *Core-Algorithmen* unterschiedliche Java-Packages)
 - Daten-Transfer-Objekte (kurz: *Core-DTO*, Java-Package `de.svws_nrw.core.data`)
 - Typen in Form von Aufzählungen (kurz: *Core-Types*, Java-Package `de.svws_nrw.core.types`)
-- Hilfs-Klassen für die Handhabung von Core-DTOs (kurz: *Core-Utils* bzw. *Core-Manager*, Java-Package `de.svws_nrw.core.utils`)
+- Hilfsklassen für die Handhabung von Core-DTOs (kurz: *Core-Utils* bzw. *Core-Manager*, Java-Package `de.svws_nrw.core.utils`)
 
 
 ### **Abstrakte Datenstrukturen**
 
-In diesem Package werden Projekt-spezifische, transpilierbare Klassen für Datenstrukturen zur Verfügung gestellt. Dies sind u.a.
+In diesem Package werden projektspezifische, transpilierbare Klassen für Datenstrukturen zur Verfügung gestellt. Dies sind u.a.
 
 - Lineare Datenstrukturen:
 	- *LinkedCollection*: Eine einfache, unsortierte Collection, implementiert als doppelt verkettete Liste, welche keine null-Werte, jedoch Duplikate akzeptiert. Sie implementiert das Java-Interface `java.util.Collection`.
@@ -35,7 +35,7 @@ In diesem Package werden Projekt-spezifische, transpilierbare Klassen für Daten
 	- *AVLMap*: Eine Implementierung des AVL-Baums als Map. Sie implementiert das Java-Interface `java.util.NavigableMap`.
 	- *MinHeap*: Diese Klasse ist eine Implementierung eines Minimum-Heaps. Die Wurzel eines Teilbaumes enthält immer das kleinste Element des Teilbaums. Duplikate sind zugelassen. Sie implementiert das Java-Interface `java.util.Queue`
 - Mengen:
-	- *AVLSet*: Eine Implementierung des Java-Interfaces `java.util.NavigableSet`. Sie dient zum Speichern eindeutiger Schlüssel-Werte und delegiert alle Anfragen an die Klasse {@link AVLMap} delegiert, indem ein Mapping auf einen Dummy-Wert erfolgt. NULL-Werte sind in dem Set nicht erlaubt.
+	- *AVLSet*: Eine Implementierung des Java-Interfaces `java.util.NavigableSet`. Sie dient zum Speichern eindeutiger Schlüsselwerte und delegiert alle Anfragen an die Klasse {@link AVLMap} delegiert, indem ein Mapping auf einen Dummywert erfolgt. NULL-Werte sind in dem Set nicht erlaubt.
 - Sonstige:
 	- *HashMap2D*: Eine Klasse, welche die Zuordnung eines Wertes zu zwei Schlüsselwerten erlaubt. Intern arbeitet die Datenstruktur mit geschachtelten Hash-Maps (siehe auch: `java.util.HashMap`)
 	- *HashMap3D*: Eine Klasse, welche die Zuordnung eines Wertes zu drei Schlüsselwerten erlaubt. Intern arbeitet die Datenstruktur mit geschachtelten Hash-Maps (siehe auch: `java.util.HashMap`)
@@ -57,7 +57,7 @@ Es werden zahlreiche - auch komplexere - Algorithmen zu schulfachlichen Aspekten
 Die *Core-DTOs* sind grundlegende Datenobjekte für den Transfer von Daten. Sie werden auch in anderen Teilprojekten des SVWS-Serves verwendet. Sie dienen u.a.
 - der Nutzung in Core-Algorithmen
 - werden mit Daten aus einem SVWS-Datenbankschema befüllt (Teilprojekt SVWS-DB-Utils)
-- dem Austausch von Daten über die Open-API-Schnittstelle des Servers (Teilprojekt SVWS-OpenApi)
+- dem Austausch von Daten über die OpenAPI-Schnittstelle des Servers (Teilprojekt SVWS-OpenApi)
 
 Wichtig: *Core-DTOs* enthalten selber keinen Code und dienen nur dem Austausch von Daten. Zugehöriger Code ist oft in den *Core-Util-* und *Core-Manager-Klassen*, aber auch in den *Core-Types*, zu finden.
 
@@ -100,9 +100,9 @@ public enum Geschlecht {
 
 ```
 
-Die Verknüpfung der "speziellen" Informationen der *Core-Types* mit den "generischen" Informationen der *Core-DTOs* erfolgt oft im Code der *Core-Types*. Die ist insbesondere für die "allgemeine" Schulstatistik von Interesse, da hier die Typsisierung von untergeordnetem Interesse ist und allgemeine Zuordnungsinformationen daraus mit eingeschränktem Aufwand generiert werden können. Diese Verknüpfung kann durch Festlegung im Java-Code bei der Aufzählung erfolgen. Ein Einlesen der Daten z.B. aus JSON-Dateien ist prinzipiell auch möglich, derzeit aber noch nicht umgesetzt. 
+Die Verknüpfung der "speziellen" Informationen der *Core-Types* mit den "generischen" Informationen der *Core-DTOs* erfolgt oft im Code der *Core-Types*. Die ist insbesondere für die "allgemeine" Schulstatistik von Interesse, da hier die Typisierung von untergeordnetem Interesse ist und allgemeine Zuordnungsinformationen daraus mit eingeschränktem Aufwand generiert werden können. Diese Verknüpfung kann durch Festlegung im Java-Code bei der Aufzählung erfolgen. Ein Einlesen der Daten z.B. aus JSON-Dateien ist prinzipiell auch möglich, derzeit aber noch nicht umgesetzt. 
 
-Im Folgenden ein Beispiel für die Verknüpfung bei den allgemeinbildenden Schulabschlüssen. Im Programmcode kann hier typisiert auf den Schulabschluss `SchulabschlussAllgemeinbildend.HA9` zugegriffen werden. Diese Bezeichnung ist Programm-intern und muss nicht zwingend angepasst werden, wenn die Berechnung des Abschlusses gleich bleibt, sich aber nur die Bezeichnung des Abschlusses ändert. In diesem Beispiel wurde die Bezeichnung "Hauptschulabschluss nach Klasse 9" bis zum Schuljahr 2021/2022 verwendet und dann ab dem Schuljahr 2022/23 die Bezeichnung "Erster Schulabschluss". Diese Umbenennung mit der Zuordnung zu den Schuljahren findet sich in den zugeordneten Objekten des *Core-DTO* vom Typ `SchulabschlussAllgemeinbildendKatalogEintrag` wieder.
+Im Folgenden ein Beispiel für die Verknüpfung bei den allgemeinbildenden Schulabschlüssen. Im Programmcode kann hier typisiert auf den Schulabschluss `SchulabschlussAllgemeinbildend.HA9` zugegriffen werden. Diese Bezeichnung ist programmintern und muss nicht zwingend angepasst werden, wenn die Berechnung des Abschlusses gleich bleibt, sich aber nur die Bezeichnung des Abschlusses ändert. In diesem Beispiel wurde die Bezeichnung "Hauptschulabschluss nach Klasse 9" bis zum Schuljahr 2021/2022 verwendet und dann ab dem Schuljahr 2022/23 die Bezeichnung "Erster Schulabschluss". Diese Umbenennung mit der Zuordnung zu den Schuljahren findet sich in den zugeordneten Objekten des *Core-DTO* vom Typ `SchulabschlussAllgemeinbildendKatalogEintrag` wieder.
 
 ```
 /**
@@ -138,7 +138,7 @@ Das Java-Package `de.svws_nrw.core.utils` stellt im Wesentlichen zwei Arten von 
 Die *Core-Utils* sind eine Sammlung von statischen Hilfs-Methoden, welche an anderen Stellen wiederverwendet werden können. Oft werden dabei *Core-DTOs* und *Core-Types* verwendet.
 
 Die *Core-Manager* sind meist komplexere Klassen, die den Umgang mit größeren Datenmengen in einem Kontext "managen" sollen. Ein Beispiel hierfür ist der Stundenplan-Manager, welche mit den Daten eines Stundenplans (siehe *Core-DTO* StundenplanKomplett) initialisiert wird und anschließend der Handhabung des Stundenplans in der Anwendung dient. Hierbei stellt er 
-- optimierte Zugriffmöglichkeiten auf die einzelnen Daten des Stundeplans zur Verfügung und 
+- optimierte Zugriffsmöglichkeiten auf die einzelnen Daten des Stundenplans zur Verfügung und 
 - ermöglicht auch die Manipulation des Stundenplans im Manager 
 - (eine Kommunikation der Daten zur Datenbank des SVWS-Server ist nicht Aufgabe des Manager und wird an anderer Stelle getrennt gehandhabt).
 

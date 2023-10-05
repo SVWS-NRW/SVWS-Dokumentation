@@ -12,10 +12,10 @@ SVWS-Server:
 - svws-db: Basisprojekt für die Datenbank
 - db-utils: Stellt Funktionalitäten zum Datenbank-Zugriff zur Verfügung.
 - core: (Hier passiert das Meiste)
-- open-API: Diese Schnittstelle nimmt Anfragen von Clients entgegen und liefert Antworten zurück.
+- OpenAPI: Diese Schnittstelle nimmt Anfragen von Clients entgegen und liefert Antworten zurück.
 
 SVWS-Client:
-- te-lib: Diese Komponente des Clients ist für die Kommunikation mit der Open-API verwantwortlich. Sie enthält (auch) transpilierte Anteile aus den Server-Schichten 'core' und 'open-API'.
+- ts-lib: Diese Komponente des Clients (TypeScript-lib) ist für die Kommunikation mit der OpenAPI verwantwortlich. Sie enthält (auch) transpilierte Anteile aus den Server-Schichten 'core' und 'OpenAPI'.
 - Web-UI: Die graphische Benutzeroberfläche für den Benutzer (mit vue.js-Komponenten)
 
 ## Übersicht zur Funktionalität der CORE-API
@@ -23,11 +23,11 @@ SVWS-Client:
 ![Übersicht-REST-Server-03](./graphics/Uebersicht-REST-Server-03.png)
 
 
-Die Core-Api soll zukünftig alle User-Interaktionen mit der Datenbank kontrollieren. Sie ist damit maßgeblich für den Schutz der Daten vor unerlaubten Zugriffen, aber auch für den konsistenten Zugriff auf die Datenbank zuständig. Außerdem stellt sie eine standartisierte Schnittstelle für die User-Interfaces dar.
+Die Core-API soll zukünftig alle User-Interaktionen mit der Datenbank kontrollieren. Sie ist damit maßgeblich für den Schutz der Daten vor unerlaubten Zugriffen, aber auch für die Konsistenz der Datenbank zuständig. Außerdem stellt sie eine standardisierte Schnittstelle für die User-Interfaces dar.
 
 
-## Die OPEN-API
-Die Schnittstelle ist auf Basis einer Open-API definiert:
+## Die OpenAPI
+Die Schnittstelle ist auf Basis einer OpenAPI definiert:
 
 
 ![Übersicht-REST-Server-04](./graphics/Uebersicht-REST-Server-04.png)
