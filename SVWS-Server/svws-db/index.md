@@ -36,18 +36,6 @@ im Repository, so dass Änderungen auch über DIFFs zurückverfolgt werden könn
 
 Ein MDB-Genarator wird in der Übergangsphase die Keytabs MDBs für SchILD-NRW 2.0 erzeugen. So müssen die Defaultdaten von IT.NRW nicht doppelt gepflegt werden. Die vom Projekt erzeugten MDBs sind seit der Version 2.0.24.2 von SchILD-NRW in Verwendung!
 
-<!-- Im Folgenden wird beschrieben, wie bestimmte Tabellen aktualisiert werden, wobei auch darauf eingegangen wird, warum und wie von den IT.NRW Tabellen abgewichen wurde und wie diese gepflegt werden sollten:
-
-+ [Schulver.mdb einlesen](Schulver_einlesen.md)
-+ [Datumswerte korrekt in CSV importieren](Statkue_Datumswerte.md)
-+ [Statkue_Fachklasse einlesen](Statkue_Fachklassen.md)
-+ [Statkue_ZulFaecher mit Mapping](Statkue_zulaessige_Faecher.md)
-+ [Statkue_SVWS_ZulaessigeJahrgaenge](Statkue_zulaessige_Jahrgaenge.md)
-+ [Statkue_ZulKuArt](Statkue_zulaessigeKursarten.md)
-+ [Statkue_SVWS_Fachgruppen mit Schulformen](Statkue_Fachgruppen.md) -->
-
-
-
 ## Modernisierung der Tabellenstrukturen
 Ein Ziel des Datenbankprojekts ist es, dass alle Tabellen in der dritten Normalform vorliegen.
 Dazu wurde zunächst die bestehende Datenbankstruktur übernommen und dann schrittweise angepasst. Die Diskussion über diese Vorgehensweise zeigt, dass dieser Weg kompliziert und fehleranfällig ist, da für SchILD-NRW 3.0 unter Umständen alte Strukturen (ggf. über Views) noch benötigt werden.
