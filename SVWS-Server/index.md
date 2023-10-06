@@ -10,9 +10,9 @@ Von innen nach außen übernehmen die Schichten die folgenden Rollen:
 
 SVWS-Server:
 - svws-db: Basisprojekt für die Datenbank
-- db-utils: Stellt Funktionalitäten zum Datenbank-Zugriff zur Verfügung.
+- db-utils: Stellt Funktionalitäten zum Datenbankzugriff zur Verfügung
 - core: (Hier passiert das Meiste)
-- OpenAPI: Diese Schnittstelle nimmt Anfragen von Clients entgegen und liefert Antworten zurück.
+- OpenAPI: Diese Schnittstelle nimmt Anfragen von Clients entgegen und liefert Antworten zurück
 
 SVWS-Client:
 - ts-lib: Diese Komponente des Clients (TypeScript-lib) ist für die Kommunikation mit der OpenAPI verwantwortlich. Sie enthält (auch) transpilierte Anteile aus den Server-Schichten 'core' und 'OpenAPI'.
@@ -27,7 +27,7 @@ Die Core-API soll zukünftig alle User-Interaktionen mit der Datenbank kontrolli
 
 
 ## Die OpenAPI
-Die Schnittstelle ist auf Basis einer OpenAPI definiert:
+Die Schnittstelle ist auf Basis von OpenAPI definiert:
 
 
 ![Übersicht-REST-Server-04](./graphics/Uebersicht-REST-Server-04.png)

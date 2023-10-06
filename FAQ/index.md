@@ -18,23 +18,23 @@ Ein erster Web-Client auf Basis von NodeJS und Angular mit einem Jetty-Rest-Serv
 
 Alle Beteiligten waren sich einig, dass es sinnvoll ist, diesen Weg weiter zu verfolgen.
 
-Das Ziel, einen plattformunabhängigen Web-Client zu schaffen, der nach und nach Schild-NRW ablösen soll, wurde dann formuliert.
+Das Ziel, einen plattformunabhängigen Web-Client zu schaffen, der nach und nach SchILD-NRW ablösen soll, wurde dann formuliert.
 
-Die Auswahl der Programmiersprachen wurde hauptsächlich aus der Motivation getroffen, dass das Projekt als OpenSource später allen Schulen zur Verfügung stehen soll. Damit war die Entscheidung, dass ausschließlich plattformübergreifende Lösungen in Frage kommen, getroffen. Das Core-Projekt wird in Java programmiert und soll so einen skalierbaren Serverbetrieb ermöglichen, der unabhängig vom genutzten Betriebssystem zur Verfügung gestellt werden kann.
+Die Auswahl der Programmiersprachen wurde hauptsächlich aus der Motivation getroffen, dass das Projekt als Open-Source später allen Schulen zur Verfügung stehen soll. Damit war die Entscheidung, dass ausschließlich plattformübergreifende Lösungen in Frage kommen, getroffen. Das Core-Projekt wird in Java programmiert und soll so einen skalierbaren Serverbetrieb ermöglichen, der unabhängig vom genutzten Betriebssystem zur Verfügung gestellt werden kann.
 
-Die Auswahl von HTML, CSS, TypeScript mit VUE.JS wurde sehr stark von der Frage der Flexibilität geprägt. Außerdem hat das Projekt bisher wenig Altlasten was den Code angeht, der die Geschäftsprozesse der Schulverwaltung angeht. Bestehende Algorithmen und Abläufe bleiben in Schild-NRW-2.0 und Schild-NRW-3.0 erhalten. Es war allen beteiligten Entwicklern klar, dass neue Abschlussberechnungen und Gruppenprozesse usw. sowieso als Dienste völlig neu programmiert werden müssen. Außerdem kam eine Portierung aus dem Delphi-Code so gesehen auch nicht in Frage.
+Die Auswahl von HTML, CSS, TypeScript mit VUE.JS wurde sehr stark von der Frage der Flexibilität geprägt. Außerdem hat das Projekt bisher wenig Altlasten bezüglich des Codes, der die Geschäftsprozesse der Schulverwaltung angeht. Bestehende Algorithmen und Abläufe bleiben in SchILD-NRW 2.0 und SchILD-NRW 3.0 erhalten. Es war allen beteiligten Entwicklern klar, dass neue Abschlussberechnungen und Gruppenprozesse usw. sowieso als Dienste völlig neu programmiert werden müssen. Außerdem kam eine Portierung aus dem Delphi-Code so gesehen auch nicht in Frage.
 
 Im Jahr 2020 wurde dann die Entscheidung getroffen zu VUE.js zu wechseln, da zu diesem Zeitpunkt noch nicht viele UI-Elemente umgesetzt waren und die Entwicklung mit VUE.js durch den noch viel stärker von der Open-Source-Community getriebenen Charakter viel besser zu der Philosophie des Projekts SVWS-Server passt.
 
 Außerdem wurde sehr viel Wert darauf gelegt, dass die Statistiktabellen von IT.NRW in transpilierbarer Form im SVWS-Server zur Verfügung stehen, damit diese auch im Web-Client genutzt werden können.
 
-Im Juni 2021 wurde dann im MSB im Referat 133 eine Stelle geschaffen, die mit der Neuprogrammierung der Schulverwaltungssoftware betraut wurde. Seit dem werden auch externe Programmierer eingesetzt. Wobei an der grundsätzlichen Entscheidung festgehalten werden soll, dass hier auch aus schulfachlicher Sicht immer auch Lehrerinnen und Lehrer bei der Entwicklung einbezogen werden sollen, damit die Software den Bezug zu den alltäglichen Verwaltungsvorgängen in Schule behält.
+Im Juni 2021 wurde dann im MSB im Referat 133 (jetzt 135) eine Stelle geschaffen, die mit der Neuprogrammierung der Schulverwaltungssoftware betraut wurde. Seit dem werden auch externe Programmierer eingesetzt. Wobei an der grundsätzlichen Entscheidung festgehalten werden soll, dass hier auch aus schulfachlicher Sicht immer auch Lehrerinnen und Lehrer bei der Entwicklung einbezogen werden sollen, damit die Software den Bezug zu den alltäglichen Verwaltungsvorgängen in Schule behält.
 Das ist auch der Grund, warum die Projektsprache weiterhin Deutsch ist, damit Kolleginnen und Kollegen sich leichter einlesen können.
 
 
 ## Mitarbeit am Projekt
 
-
+Hier können interessierte Entwickler und Programmierer weitere Informationen zur [Mitarbeit](../SVWS-Server/svws-webclient/Mitarbeit.md) erhalten.
 
 
 ## Wo finde ich die nötigen Quellen?
@@ -65,7 +65,7 @@ https://hub.docker.com/r/svwsnrw/svws-server
 
 ## Datenbanken und Migration
 
-Um den SVWS-Server zu betreiben, muss eine Schild-NRW-Datenbank in die MariaDB migriert werden.
+Um den SVWS-Server zu betreiben, muss eine SchILD-NRW-Datenbank in die MariaDB migriert werden.
 
 Hierzu stehen Dummy-Datenbanken zur Verfügung:
 

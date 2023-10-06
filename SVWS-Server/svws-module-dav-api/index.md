@@ -45,18 +45,18 @@ regelbasiert:~~
 | Admin                     | Alle                                | Alle   | Alle     |
 | Sekretariat               | Alle                                | Alle   | Alle     |
 -->
-Die Adressbuecher und darin enthaltenen Kontakte unterliegen einem Zugriffsschutz. Der angemeldete Benutzer sieht nur diejenigen Adressbuecher und Kontakte, für die er berechtigt ist. Dazu gibt es folgende Berechtigungen:
+Die Adressbuecher und darin enthaltenen Kontakte unterliegen einem Zugriffsschutz. Der angemeldete Benutzer sieht nur diejenigen Adressbücher und Kontakte, für die er berechtigt ist. Dazu gibt es folgende Berechtigungen:
 - Adressdaten ansehen zum Einsehen der verfügbaren Adressbücher
 - Lehrerdaten ansehen zum Einsehen und Laden der Visitenkarten von Lehrern
-- Schüler Individualdaten ansehen zum Einsehen und Laden der Visitenkarten von Schülern
-- Adressdaten Erzieher ansehen zum Einsehen und Laden der Visitenkarten von Erziehungsberechtigten
+- Schüler-Individualdaten ansehen zum Einsehen und Laden der Visitenkarten von Schülern
+- Erzieher-Adressdaten ansehen zum Einsehen und Laden der Visitenkarten von Erziehungsberechtigten
 
 In https://git.svws-nrw.de/svws/SVWS-Server/-/issues/578 werden notwendige Änderungen/Eweiterungen diskutiert.
 
 ## Kompatibilität mit CardDAV-Clients
 
 Das CardDAV API des SVWS-Servers liefert Adressdaten im VCard-Format
-(VCF) in den Versionen 4.0. Die Kompatibilität mit folgenden
+(VCF) in der Version 4.0. Die Kompatibilität mit folgenden
 Clientprogrammen ist gegeben:
 
 <table>
@@ -134,13 +134,13 @@ CardDAV-Adressbuch… öffnen:
 
 Im Dialog „Neues CardDAV Adressbuch“ die folgenden Eingaben machen:
 
-- Benutzername: Benutzername des persönlichen SVWS-Benutzeraccounts
+- Benutzername: Benutzername des persönlichen SVWS-Benutzerkontos
 
 - Adresse: URL zum CardDAV API des SVWS-Servers:
   https://\<server-adresse\>/db/\<svws-db-schema\>/carddav/
 
 Im Anschluss erscheint ein Dialog zur Passworteingabe des persönlichen
-SVWS-Benutzeraccounts:
+SVWS-Benutzerkontos:
 
 <img src="./media/media/image3.png"/>
 
@@ -148,7 +148,7 @@ Nach erfolgreicher Anmeldung am CardDAV-API des SVWS-Servers können im
 Dialog „Neues CardDAV-Adressbuch“ die zu synchronisierenden Adressbücher
 ausgewählt werden. Eine Mehrfachauswahl ist möglich. Die Liste der
 auswählbaren Adressbücher kann sich – abhängig von den Berechtigungen
-des SVWS-Benutzeraccounts – unterscheiden.
+des SVWS-Benutzerkontos – unterscheiden.
 
 <img src="./media/media/image4.png"/>
 
@@ -158,7 +158,7 @@ Adressbücher in Thunderbird angezeigt.
 Hinweis: Das Thunderbird-Adressbuch unterstützt keine gruppierte Anzeige
 der Kontakte innerhalb eines Adressbuchs (z.B. gruppiert nach Klasse,
 Jahrgang, Kurszugehörigkeit o.ä.). Die Adresslisten können daher sehr
-lange und unübersichtlich sein. Eine alternative Möglichkeit ist die
+lang und unübersichtlich sein. Eine alternative Möglichkeit ist die
 Verwendung des Thunderbird-Addons „Cardbook“, das eine gruppierte
 Anzeige der Kontakte ermöglicht.
 
@@ -183,9 +183,9 @@ weiteren Angaben unterhalb von „Verbindung“ im Dialog ergänzen:
 
 - URL: URL zum CardDAV API des SVWS-Servers:
 
-- Benutzername: Benutzername des persönlichen SVWS-Benutzeraccounts
+- Benutzername: Benutzername des persönlichen SVWS-Benutzerkontos
 
-- Passwort: Passwort des persönlichen SVWS-Benutzeraccounts
+- Passwort: Passwort des persönlichen SVWS-Benutzerkontos
 
 Mit der Schaltfläche „Überprüfen“ die Angaben prüfen. Im Erfolgsfall
 kann dann mit der Schaltfläche „Weiter“ der nächste Schritt des Wizards
@@ -249,13 +249,13 @@ Die für die Verbindung erforderlichen Angaben im Profil-Dialog erfassen:
 - DAV URL: URL zum CardDAV API des SVWS-Servers:
   https://\<server-adresse\>/db/\<svws-db-schema\>/carddav/
 
-- Username: Benutzername des persönlichen SVWS-Benutzeraccounts
+- Username: Benutzername des persönlichen SVWS-Benutzerkontos
 
-- Password: Passwort des persönlichen SVWS-Benutzeraccounts
+- Password: Passwort des persönlichen SVWS-Benutzerkontos
 
 - Synchronisation mode: Auf Outlook Server (Merge) stellen.
 
-- Synchronisation interval (minutes): Taktung für den Datenabgleic
+- Synchronisation interval (minutes): Taktung für den Datenabgleich
   zwischen Outlook und dem SVWS-Server in Minuten. Aufgrund der seltenen
   Änderungen an den Adressdaten, kann dieser Wert auch im Stundenbereich
   gewählt werden.
