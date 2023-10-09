@@ -7,7 +7,7 @@ Die Hilfsklassen lassen sich anhand der Java-Packages klassifizieren:
 - In `de.svws_nrw.db.utils.schema` finden sich Klassen, welche dem Schema-Management der SVWS-Datenbank dienen.
   - DBBackupManager: Diese Klasse stellt Methoden für den Export in eine SQLite-Datenbank und den Import aus einer SQLite-Datenbank zur Verfügung.
   - DBCoreTypeUpdater: Dient der automatischen Aktualisierung von statischen Daten, welche in DB-Tabellen des SVWS-Servers eingetragen werden, um von anderen Tabellen über geeignete Fremdschlüsselbeziehungen darauf zugreifen zu können. Die statischen Informationen beziehen sich dabei primär auf die *Core-Types*.
-  - DBMigrationManager: Diese Klasse stellt Methoden zur Verfügung, um ein SchILD2-Datenbankschema in ein SVWS-Datenbank-Schema zu übertragen.
+  - DBMigrationManager: Diese Klasse stellt Methoden zur Verfügung, um ein SchILD-NRW 2.0-Datenbankschema in ein SVWS-Datenbank-Schema zu übertragen.
   - DBRootManager: Diese Klasse dient dem administrativen Zugriff auf eine SVWS-Datenbank. Der in der DB-Konfiguration übergebene Benutzer muss über entsprechende administrative Rechte (z.B. root-Rechte) in der Datenbank verfügen.
   - DBSchemaManager: Diese Klasse stellt Hilfsfunktionen zur Verfügung, um auf ein SVWS-Datenbank-Schema zuzugreifen und dieses zu bearbeiten.
   - DBSchemaStatus: Diese Klasse stellt Methoden für den Zugriff auf den aktuellen Status eines Schemas zur Verfügung.
@@ -76,7 +76,7 @@ Beispiel:
 
  ##  migrate_db
 
- Mit ```migrate_db.cmd``` bzw. ```migrate_db.sh``` kann eine  vorliegende Datenbank in ein anderes Schema migriert werden. Grundlegender Prozess für die Migration von SchILD2 zu SVWS-Server.
+ Mit ```migrate_db.cmd``` bzw. ```migrate_db.sh``` kann eine  vorliegende Datenbank in ein anderes Schema migriert werden. Grundlegender Prozess für die Migration von SchILD-NRW 2.0 zu SVWS-Server.
 
 
 Argument short | Argument long | Beschreibung
@@ -84,7 +84,7 @@ Argument short | Argument long | Beschreibung
 -r [REVISION] | --revision [REVISION]| Gibt die maximale Revision an, bis zu der die migrierte DB maximal aktualisiert wird (Default: -1 für so weit wie möglich)
 -j | --ja| Beantwortet den Hinweise auf das notwendige Löschen der Ziel-DB automatisch mit "Ja"
 -d | --developerMode| Führt den Import im Developer-Mode durch. Dies bedeutet, dass die Datenbank nur für Testzwecke geeignet ist und entsprechend gekennzeichnet wird
--n [SCHULNUMMER] | --schulNummer [SCHULNUMMER]| Für Schildzentral-Quell-DBs. Gibt die Schulnummer an, für welche Daten aus der Quelldatenbank migriert werden sollen
+-n [SCHULNUMMER] | --schulNummer [SCHULNUMMER]| Für Schild*zentral*-Quell-DBs. Gibt die Schulnummer an, für welche Daten aus der Quelldatenbank migriert werden sollen
 -cp [PATH] | --configPath [PATH]| Gibt den Pfad zu der SVWS-Konfigurationsdatei an, wenn diese nicht an einem Standardort liegt
 -sd [DRIVER] | --srcDrv [DRIVER]| Der Treiber für die Quell-DB ("MDB", "MSSQL", "MYSQL", "MARIA_DB" oder "SQLITE")
 -sl [LOCATION] | --srcLoc [LOCATION]| Der Ort, wo die Quell-DB zu finden ist (Der Pfad einer Datei oder der Ort im Netzwerk, z.B. "localhost")

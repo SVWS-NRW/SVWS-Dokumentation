@@ -1,24 +1,23 @@
-***Installation unter Windows 10 64bit***
-====================
+# Installation unter Windows 10 64bit
 
 
-# Systemvoraussetzungen und Installationshinweise
-Die gesammte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokalem Laufwerk liegen.
+## Systemvoraussetzungen und Installationshinweise
+Die gesamte Entwicklungsumgebung belegt in etwa 3 GB und sollte auf einem lokalem Laufwerk liegen.
 
-# Maria db installieren
+### MariaDB installieren
 
-+ download : Maria db 10.6
++ download : MariaDB 10.6
 + root user einrichten
 
-# Eclipse installieren und konfigurieren
+### Eclipse installieren und konfigurieren
 
-+ Installieren eclipse-inst-win64.zip (aktuelle Version) (Eclipse IDE for Java Developers)-> https://www.eclipse.org/downloads/
-+ Einmaliger Start Eclipse und festlegen des Workspace: `D:\\svws_Entwicklungsumgebung\workspace\`
++ Installieren von eclipse-inst-win64.zip (aktuelle Version) (Eclipse IDE for Java Developers)-> https://www.eclipse.org/downloads/
++ Einmalig Eclipse starten und den Workspace festlegen: `D:\\svws_Entwicklungsumgebung\workspace\`
 + Bei Bedarf den Speicher hochsetzen: per texteditor `D:\svws_Entwicklungsumgebung\workspace\eclipse.ini` entsprechend z.B. aus der 512 eine 2048 machen
 
 ![Speicher hochsetzen](./graphics/eclipse.ini.png)
 
-+ Eclipse > Help > Marcet Place -> JSON editor suchen und "JSON Editor Plugin" installieren (empfohlen)
++ Eclipse > Help > Eclipse Marcetplace... -> JSON editor suchen und "JSON Editor Plugin" installieren (empfohlen)
 
 ![](./graphics/eclipse_json.png)
 

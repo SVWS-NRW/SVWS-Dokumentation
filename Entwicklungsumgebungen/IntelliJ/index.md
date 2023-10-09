@@ -1,8 +1,7 @@
-***Installation IntelliJ für Windows***
-====================
+# Installation IntelliJ für Windows
 
 
-# IntelliJ installieren und konfigurieren
+## IntelliJ installieren und konfigurieren
 
 + Installieren Sie die gewünschte IntelliJ-Edition (es gibt eine kostenlose Community Edition) -> https://www.jetbrains.com/de-de/idea/
 + Einmaliger Start IntelliJ

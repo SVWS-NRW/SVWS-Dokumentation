@@ -1,4 +1,4 @@
-# VS Code als Entwicklungsumgebung
+# Visual Studio Code als Entwicklungsumgebung
 Hier einige hilfreiche Tipps für VS Code im Einsatz zur Server/Client-Entwicklung.
 
 Praktische Erweiterungen sind diese hier (mit Befehl zur Installation unter *X Systemen):

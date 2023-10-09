@@ -1,4 +1,4 @@
-# macOS
+# Installation auf macOS
 Für die Entwicklung auf macOS ist der Einsatz von homebrew und Docker/Podman vorteilhaft. Dies gilt sowohl für Rechner mit Intel CPU als auch mit Mx.
 
 Homebrew (brew.sh) wird genutzt, um benötigte Software vom Terminal aus zu installieren, Docker/Podman ist für den Einsatz der MariaDB zu empfehlen.

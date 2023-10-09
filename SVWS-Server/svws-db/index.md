@@ -43,7 +43,7 @@ Fest steht jedenfalls, dass redundante Daten, nicht mehr verwendete Felder und V
 
 
 ## Rechtesystem und Benutzerführung in der Datenbanksoftware
-Als Default-DBMS wird MariaDB empfohlen. Für die SchILDzentral-Nachfolge wird aber weiterhin MS-SQL-Server unterstützt.
+Als Default-DBMS wird MariaDB empfohlen. Für die SchILD*zentral*-Nachfolge wird aber weiterhin MS-SQL-Server unterstützt.
 
 Zur Administration können die Standardbenutzer root (MariaDB) und sa (MS-SQL) verwendet werden. Diese Zugänge sollten ausschließlich dem DBMS-Administrator zur Verfügung stehen. Wahlweise können hier auch Zugänge mit Schema-übergreifenden Rechten für Administratoren angelegt werden.
 

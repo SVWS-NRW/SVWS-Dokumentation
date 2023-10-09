@@ -29,14 +29,14 @@ Der SVWS-Installer übernimmt die folgenden Aufgaben:
 + Registrieren und Starten des MariaDB-Dienstes
 + Registrieren und Starten des SVWS-Server-Dienstes
 + Anlegen eines leeren Schemas in MariaDB
-+ Anlegen eines selbst signierten SSL-Zertifikats
-+ Abspeichern des Zertifikats unter User/Dokumente
++ Anlegen eines selbstsignierten SSL-Zertifikats
++ Abspeichern des Zertifikats im Verzeichnis Dokumente des angemeldeten Benutzers
 + Anlegen der Freigaben für die Windows Firewall, damit der Server auch für andere Clients erreichbar ist.
 + Ggf. Migration aus einer bestehenden Datenbank in das neue Schema
 
 ## Installationseinstellungen wählen
 
-Zu Beginn des Installer erscheinen nach der Annahme der Lizenzvereinbarungen folgende Optionen:
+Zu Beginn der Installation erscheinen nach der Annahme der Lizenzvereinbarungen folgende Optionen:
 
 
 ![](./graphics/Installer_Auswahl_Dialog.jpg)
@@ -70,7 +70,7 @@ Die sort_buffer_size wird in der my.ini im data-Verzeichnis auf 16777216 gesetzt
 
 ## Installation JDK
 Mit dem Installer wird auch das verwendetet JDK ausgeliefert. 
-Dieses ist an den SVWS-Server gekoppelt und kann in zukünftigen Versionen auch nur noch in Kombination mnit dem eigentlichen Server installiert 
+Dieses ist an den SVWS-Server gekoppelt und kann in zukünftigen Versionen nur in Kombination mit dem eigentlichen Server installiert 
 oder geupdated werden.
 
 Zielverzeichnis JDK: `C:\Programme\SVWS-Server\java`
@@ -78,7 +78,7 @@ Zielverzeichnis JDK: `C:\Programme\SVWS-Server\java`
 ## Installation SVWS-Server
 Die notwendigen Dateien des SVWS-Server werden standardmäßig unter 
 `C:/Programme/SVWS-Server/svws-server`  installiert. 
-Da diese mit der ausgeliferten OpebJDK-Version zusammen passen müssen, werden diese beiden Teile miteinander verbunden und können nicht separat installiert werden.
+Da diese mit der ausgeliferten OpenJDK-Version zusammen passen müssen, werden diese beiden Teile miteinander verbunden und können nicht separat installiert werden.
 
 Die Aufrufe werden in Form von Batch-Dateien mit der Endung .cmd im Hauptverezichnis ausgeliefert.
 Die Dienste MariaDB und SVWS-Server werden in der Computerverwaltung registriert und automatisch gestartet.
@@ -102,13 +102,13 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 #### allgemeine Einstellungen
 |Parameter 	|	Beschreibung |
 |---|---|
-| DisableDBRootAccess | Hier kann bei erhöhtem Sicherheitsbedarf der Root-Zugang zur Datenbank gesperrte werden. |  
+| DisableDBRootAccess | Hier kann bei erhöhtem Sicherheitsbedarf der Root-Zugang zur Datenbank gesperrt werden. |  
 | UseHTTPDefaultv11 | Hier kann auf HTTP/1.1 herunter geschaltet werden. | 
-|PortHTTPS | Hier kann der Port von 443 auf einen anderen Port gesetzt werden, falls dieser schon belegt. |
+|PortHTTPS | Hier kann der Port von 443 auf einen anderen Port gesetzt werden, falls 443 schon belegt ist. |
 |UseCORSHeader | Die Verwendung des CORSHeader kann deaktiviert werden.|
 |TLSKeystorePath | Pfad zum Keystore für das Zertifikat|
 |TLSKeystorePassword | Das Passwort für den Keystore. (Wird automatisch generiert.)
-|ClientPath | Pfad zu den Dateien des SVWS-Cllient. (Webanwendung in Entwicklung)|
+|ClientPath | Pfad zu den Dateien des SVWS-Cllient. (Web-Anwendung in Entwicklung)|
 |LoggingEnabled | Schaltet das Logging ein.|
 |LoggingPath | Pfad zu den LOG-Dateien.|
 
@@ -117,30 +117,30 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 |---|---|
 |dbms| Datenbanksystem (MariaDB oder SQLite für Schulungsumgebungen)|
 |location| ServerURL|
-|defaultschema| Standart-Schema. Es können mehrere Schema verwendet werden.|
+|defaultschema| Standart-Schema. Es können mehrere Schemata verwendet werden.|
 
 #### Datenbankschemata Einstellungen
 |SchemaKonfiguration||
 |---|---|
 |name| Name des Datenbankschemas|
-| svwslogin| LogIn-Prozess auch über das DBMS möglich. (User muss dann im DBMS angelegt sein.) <br> Zur Zeit nicht unterstützt!|
-| username | Datenbankusername|
-| password | Passwort des Datenbankusers
+| svwslogin| Login-Prozess auch über das DBMS möglich. (User muss dann im DBMS angelegt sein.) <br> Zur Zeit nicht unterstützt!|
+| username | Datenbank-Username|
+| password | Passwort des Datenbank-Users
 
 
 ## Registrierung der Dienste
 
 ![](./graphics/SVWSDienste.jpg)
 
-Die beiden Server werden als Windows Dienst registriert. Diese können in der Computerverwaltung überprüft werden.
+Die beiden Server werden als Dienst registriert. Diese können in der Computerverwaltung überprüft werden.
 
 ## Erstellen des Keystore/Zertifikat
 Im Keystore des SVWS-Server wird ein selbstsigniertes Zertifikat erstellt. 
-Der öffentliche Teil wird in den Ordner 
+Der öffentliche Teil wird im Ordner 
 
 `C:\Users\{Username}\Dokumente` gespeichert. 
 
-Dieses Zertifikat muss dann in der Zertifikatsspeicher des Windowssystems installiert werden.
+Dieses Zertifikat muss anschließend in den Zertifikatsspeicher von Windows übertragen werden.
 
 ![](./graphics/SVWSZertifikat.jpg)
 
@@ -158,7 +158,7 @@ Bitte beachten Sie, dass Dateien, die nach der Installation hinzugefügt wurden 
 Außerdem sollte kontrolliert werden, ob auch alle Dienste entfernt wurden. Windows 10 gibt in einigen Fällen die Dienste nicht schnell genug frei, so dass die Löschung scheitert.
 
 ## Wichtige Pfade zu den Ordnern
-Als Default-Verzeichnisse werden bei der Installation  die folgenden Verzeichnisse vorgeschlagen:
+Als Default-Verzeichnisse werden bei der Installation folgende Verzeichnisse vorgeschlagen:
 
 | Pfad | Beschreibung |
 |---|---|

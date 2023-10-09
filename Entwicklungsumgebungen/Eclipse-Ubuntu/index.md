@@ -1,4 +1,4 @@
-# Installation auf einem Ubuntu
+# Installation auf Ubuntu
 
 ## Systemvoraussetzungen 
 Installation unter Ubuntu 22.04
@@ -30,9 +30,9 @@ tar -xvzf eclipse-jee-2022-09-R-linux-gtk-x86_64.tar.gz
 
 #### Anpassungen
 
-Es beitet sich an den Ordner mit der Eclipse umzubennen, da man so Konflikte mit möglichen späteren Versionen vermeidet.  
+Es bietet sich an den Eclipse-Ordner umzubenennen, da man so Konflikte mit möglichen späteren Versionen vermeidet.  
 
-Die Datei eclipse.ini anpassen in den beiden Zeilen mit -Xms und -Xmx die folgenden Werte schreiben: 
+Die Datei eclipse.ini anpassen. In den beiden Zeilen mit -Xms und -Xmx die folgenden Werte schreiben: 
 
 ```bash
 ...
@@ -68,9 +68,9 @@ sudo apt install dbeaver-ce
 ```
 
 ## Einrichtung 
-In Eclipe eine GIT-Perspective öffnen und die Repositories in Eclipse oder im Terminal clonen.
+In Eclipse eine GIT-Perspective öffnen und die Repositories in Eclipse oder im Terminal clonen.
 
-Für den aktuellen Entwicklungs branch in den dev-Branch wechseln, wenn dev-Branch aktiv ist.
+Für den aktuellen Entwicklungs-Branch in den dev-Branch wechseln, wenn dev-Branch aktiv ist.
 Check out as new Local Branch.
 
 import -> gradle -> existing projekt
@@ -88,7 +88,7 @@ cp ~/git/SVWS-Server/svws-server-app/src/main/resources/svwsconfig.json.example 
 ```
 		
 In der 'svwsconfig.json' sollte der Port auf >=1024 (z.B. 3000) gesetzt werden. 
-Eclipse benötigt beim Start des Servers auf Port 443 Root-Rechte. 
+Eclipse benötigt beim Start des Servers auf Port 443 root-Rechte. 
 In der Entwicklungsumgebung kann das so vermieden werden. 
 
 Beispiel einer svwsconfig.json, bitte die userdaten und Passwörter entspechend anpassen:

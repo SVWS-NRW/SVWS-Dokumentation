@@ -16,19 +16,19 @@ Bisher getestet sind:
 ## Voraussetzungen
 
 - Ein Debian-basiertes Betriebssystem
-- Zugriff mit Root-Rechten
+- Zugriff mit root-Rechten
 
 ## Starten des Installationsskripts
 
 - Laden Sie das Skript auf den Zielcomputer herunter.
 - Öffnen Sie die Terminalanwendung und navigieren Sie zum Verzeichnis, in dem sich das Skript befindet.
 - Geben Sie den Befehl ``chmod +x /install.sh`` ein und drücken Sie die Eingabetaste.
-- Geben Sie den Befehl ``./install.sh ein`` und drücken Sie die Eingabetaste.
+- Geben Sie den Befehl ``./install.sh``  ein und drücken Sie die Eingabetaste.
 - Folgen Sie den Anweisungen im Skript.
 
 ## Konfiguration
 
-Das Skript bietet verschiedene Optionen zur Konfiguration. Wenn Sie die Standardeinstellungen verwenden möchten, können Sie die vorgeschagenen default-Optionen verwenden, um die Konfiguration zu vereinfachen.
+Das Skript bietet verschiedene Optionen zur Konfiguration. Es werden Standardeinstellungen vorgeschlagen, um eine einfache Installation zu ermöglichen. Sie können die Einstellungen aber auch nach Bedarf individuell anpassen.
 
 Folgende Konfigurationen können vorgenommen werden:
 
@@ -41,7 +41,7 @@ Hier finden Sie einen beispielhaften Dialog:
 
 ```
 MariaDB-Konfiguration:
-Möchten Sie die MySQL-Datenbank erstellen? (j/N): j
+Möchten Sie MariaDB installieren? (j/N): j
 MARIADB_ROOT_PASSWORD (default: 'abcd1234'): abcd1234
 MARIADB_DATABASE (default: 'svwsdb'): svwsdb
 MARIADB_HOST (default: 'localhost'): localhost
@@ -64,21 +64,22 @@ Die Passwortvorschläge werden natürlich frisch generiert. Bitte sichern Sie un
 Erläuterungen zu den einzelnen Punkten: 
 | Variable |Erläuterung|
 |-------------|---------------|
-| MARIAD_ROOT_PASSWORD | Das Datenbank Passwort der Datenbankadministratoren |
-| MYSQL_DATABASE | Name der Datenbank |
-| MYSQL_HOST | Bei kleinen Installationen wird die Mariadb i.d.R. auf dem localen System (localhost) liegen. Ggf. kann hier auch die url zu einem separaten MariaDB-Server eingetragen werden.| 
-| MYSQL_USER | User mit Vollzugriff auf die o.g. Datenbank |
+| MariaDB_ROOT_PASSWORD | Das Datenbank Passwort der Datenbankadministratoren |
+| MariaDB_DATABASE | Name der Datenbank |
+| MariaDB_HOST | Bei kleinen Installationen wird die Mariadb i.d.R. auf dem localen System (localhost) liegen. Ggf. kann hier auch die url zu einem separaten MariaDB-Server eingetragen werden.| 
+| MariaDB_USER | User mit Vollzugriff auf die o.g. Datenbank |
+| MariaDB_PASSWORD | Das Datenbank Passwort für MariaDB_USER |
 | APP_PATH | Installationsverzeichnis des SVWS-Servers|
 | CONF_PATH | Hier finden Sie die Konfigurationsdatei des SVWS-Servers|
-| APP_PORT | Auf diesem Port ist der SVWS-Server erreichbar. i.d.R ist dies einer der höheren Ports z.B. 8443, da hier keine root rechte benötigt werden. Hier muss ggf ein ReverseProxy oder eine Portumlenkung eingerichtet werden, wenn man eine einfache URL verwenden möchte. |
-| SVWS_TLS_KEYSTORE_PATH | Es wird hier ein Keystore angelegt, um dieser Daten zu speichern |
+| APP_PORT | Auf diesem Port ist der SVWS-Server erreichbar. i.d.R. ist dies einer der höheren Ports z.B. 8443, da für diese keine root-Rechte benötigt werden. Hier muss ggf. ein ReverseProxy oder eine Portumleitung eingerichtet werden, wenn man eine einfache URL verwenden möchte. |
+| SVWS_TLS_KEYSTORE_PATH | Der Pfad des angelegten Keystores, um dort Daten zu speichern |
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore |
 
 ## Schuldaten anlegen 
 
 ### Testdatenbank 
 
-Wenn Sie im Installer-Dialog die Frage nach den Testdaten mit "Ja" beantworten und den vorgeschlagenen Pfad nicht verändern, dann wird eine mitgelieferte Beispieldatenbank mit Dummy-Daten eingespielt.
+Wenn Sie im Installer-Dialog die Frage nach den Testdaten mit "Ja" beantworten und den vorgeschlagenen Pfad nicht verändern, wird eine mitgelieferte Beispieldatenbank mit Dummy-Daten eingespielt.
  
 
 ### Migration der eigenen mdb
@@ -89,19 +90,19 @@ Momentan ist nur die Migration aus Access möglich. Die Migration aus anderen DB
 ### Leeres Schema / leere Datenbank erzeugen
 
 Wenn Sie eine MariaDB-Datenbank installieren und keine Testdaten importieren, wird automatisch eine leere SVWS-Datenbank erzeugt.
-Beim Start des Webclient erkennt die Applikation, dass die Datenbank leer ist und bietet entsprechende Menüpunkte zur Einrichtig, Backup und Migration.
+Beim Start des Web-Client erkennt die Applikation, dass die Datenbank leer ist und bietet entsprechende Menüpunkte zur Einrichtung, Backup und Migration.
 
 
 ## Wichtige Hinweise
 
-- Verwenden Sie dieses Skript auf eigene Gefahr.
+- Verwendung des Skripts geschieht auf eigene Gefahr.
 - Führen Sie das Skript nur auf einem Testsystem durch, bevor Sie es auf einem Produktivsystem verwenden.
 - Stellen Sie sicher, dass alle Konfigurationen und Passwörter sicher gespeichert und aufbewahrt werden.
 - Beachten Sie, dass das Skript eine Internetverbindung benötigt, um bestimmte Pakete herunterzuladen und zu installieren.
 
 ## Portumleitung
 
-Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit Iptables
+Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit iptables
 
 iptables -A PREROUTING -t nat -p tcp --dport 443 -j REDIRECT --to-port 8443
 

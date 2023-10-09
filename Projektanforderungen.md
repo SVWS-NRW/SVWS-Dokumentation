@@ -2,12 +2,12 @@
 
 ![Projektanforderung.png](./graphics/Projektanforderung.png)
 
-## Funktionsumfang Schild-NRW
+## Funktionsumfang SchILD-NRW
 
-Grundsätzlich soll das Ziel des Projekts sein, den gesamten Funktionsumfang von Schild-NRW sukzessive nachzubilden. Dabei sollen historisch bedingte Fehler und umständliche Benutzerführung abgestellt werden.
+Grundsätzlich soll das Ziel des Projekts sein, den gesamten Funktionsumfang von SchILD-NRW sukzessive nachzubilden. Dabei sollen historisch bedingte Fehler und umständliche Benutzerführung abgestellt werden.
 Die Umsetzung aller Funktionalitäten wird einige Zeit in Anspruch nehmen, so dass die Umsetzung modular erfolgen soll. Es werden zunächst die Grundfunktionen umgesetzt und dann nach und nach spezielle Verwaltungsaufgaben, die auch schulformspezifisch sein können.
 
-In der Zwischenzeit dient Schild-NRW3.0 weiterhin als Schulverwaltungsprogramm.
+In der Zwischenzeit dient SchILD-NRW 3.0 weiterhin als Schulverwaltungsprogramm.
 
 ### Schülerdatenverwaltung ##
 
@@ -42,19 +42,19 @@ Eine Plausibilitätsprüfung soll von IT.NRW auf diese Tabellen durchgeführt we
 
 Wünschenswert wäre es, wenn das Datenbanksystem dazu genutzt werden könnte, dass Statistiktabellen im laufenden Betrieb aktuell gehalten werden und eine Prüfung der Daten zu jeder Zeit angestoßen werden können.
 
-Das aktuelle Schnittstellenformat von ASDPC32 wird weiterhin über die Schild 3.0 Oberfläche unterstützt werden. 
+Das aktuelle Schnittstellenformat von ASDPC32 wird weiterhin über die SchILD-NRW 3.0 Oberfläche unterstützt werden. 
 Der zukünftige Austausch der ASD-Daten soll direkt aus dem SVWS-Server per Webservice zu den vom Land NRW bereitgestellten Schnittstellen erfolgen.
 
 ### Reporting ##
 
 Der gesamte Bereich der Reporting muss überführt und überarbeitet werden. Dabei sollte ein Konzept erstellt werden, wie in Zukunft mit dem gesamten Dokumentenmanagement umgegangen werden soll.
-Zur Diskussion steht z.B. ob ein Reporting, in der die User selber programmieren können, so wie es momentan in Schild-NRW ist, behalten sollen. Oder ob eine Kombination von fest vorgegebenen Reports durch das MSB und eine variable Reporting für die User existieren soll.
+Zur Diskussion steht z.B. ob ein Reporting, in der die User selber programmieren können, so wie es momentan in SchILD-NRW ist, behalten sollen. Oder ob eine Kombination von fest vorgegebenen Reports durch das MSB und eine variable Reporting für die User existieren soll.
 
 Dieser Punkt befindet sich noch sehr stark in der Konzeptphase.
 
 #### Zeugnisdruck ###
 
-In Anlehnung an den Punkt Reporting muss geklärt werden, wie der Zeugnisdruck standardisiert werden kann. Es ist jedoch weiterhin über Schild 3.0 Oberfläche möglich über das Reporting Tool die Zeugnisse zu drucken. 
+In Anlehnung an den Punkt Reporting muss geklärt werden, wie der Zeugnisdruck standardisiert werden kann. Es ist jedoch weiterhin über SchILD-NRW 3.0 Oberfläche möglich über das Reporting Tool die Zeugnisse zu drucken. 
 
 ### Datenaustausch ##
 
@@ -65,7 +65,7 @@ Dabei sind zwei unterschiedliche Grundmodi zu beachten:
 
 Hier wird eine Schnittstelle benötigt, die den Text-/Excel-Export unterstützt.
 Außerdem wird es wichtig sein, auch ein Import-Schema zur Verfügung zu stellen.
-Die Ein- und Ausgabe soll sich an den Funktionen von Schild-NRW orientieren.
+Die Ein- und Ausgabe soll sich an den Funktionen von SchILD-NRW orientieren.
 Der Benutzer soll hier in der Weiterarbeit mit anderen offenen Systemen (Office) unterstützt werden.
 
 2. maschineller Datenaustausch
@@ -82,7 +82,7 @@ Ein Beispiel hierfür wäre eine angeschlossene Next-Cloud, die in gesicherter F
 
 ### Kommunikation über E-Mail ##
 
-Schild-NRW kommuniziert auf zwei Wegen über E-Mail.
+SchILD-NRW kommuniziert auf zwei Wegen über E-Mail.
 Zum einen wird der Windows-Standard-Mail-Client aufgerufen oder
 es wird über einen hinterlegten SMTP-Server gesendet.
 
@@ -99,7 +99,7 @@ Auslaufende Prüfungsordnungen können so als veraltete Services erhalten bleibe
 
 Es muss geprüft werden, ob eine Technologie zur Verfügung steht, die es erlaubt, die Berechnugen auch an den WebClient weiterreichen zu können, da die Berechnungen teilweise sehr viel Performance in Anspruch nehmen.
 
-Diese Services sollen auch schon Schild-NRW3.0 zur Verfügung stehen.
+Diese Services sollen auch schon SchILD-NRW 3.0 zur Verfügung stehen.
 
 ## Skalierbarkeit #
 

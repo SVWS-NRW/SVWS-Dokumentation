@@ -45,7 +45,6 @@ sidebar:
 						{ text: 'Eclipse-Windows', link: '/Entwicklungsumgebungen/Eclipse-Windows/' },
 						{ text: 'IntelliJ', link: '/Entwicklungsumgebungen/IntelliJ/' },
 						{ text: 'macOS', link: '/Entwicklungsumgebungen/macOS/' },
-						{ text: 'Multipass', link: '/Entwicklungsumgebungen/Multipass/' },
 						{ text: 'VS-Code', link: '/Entwicklungsumgebungen/VS-Code/' }
 					]
 				},
