@@ -50,6 +50,7 @@ sidebar:
 				},
 				{ text: 'Schulungsumgebungen', link: '/Schulungsumgebungen/' , collapsed: true, items:
 					[
+                    	{ text: 'SchulungsClient', link: '/Schulungsumgebungen/SchulungsClient/' },
 						{ text: 'Virtualbox', link: '/Schulungsumgebungen/Virtualbox_Schulungsserver/' },
 						{ text: 'Bootstick', link: '/Schulungsumgebungen/Bootstick_Schulungsserver/' },
 						{ text: 'Proxmox', link: '/Schulungsumgebungen/Proxmox_Schulungsserver/' }

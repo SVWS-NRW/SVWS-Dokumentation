@@ -8,9 +8,18 @@ https://github.com/SVWS-NRW/SVWS-Server/releases
 
 Dieses Skript ist für die Installation des SVWS-Servers auf einem Debian-basierten System gedacht.  
 Bisher getestet sind:  
+
 - Debian 11
+- Debian 12
 - Ubuntu 22.04 LTS 
 - Ubuntu 22.10 
+
+## Wichtige Hinweise
+
+- Verwendung des Skripts geschieht auf eigene Gefahr.
+- Führen Sie das Skript nur auf einem Testsystem durch, bevor Sie es auf einem Produktivsystem verwenden.
+- Stellen Sie sicher, dass alle Konfigurationen und Passwörter sicher gespeichert und aufbewahrt werden.
+- Beachten Sie, dass das Skript eine Internetverbindung benötigt, um bestimmte Pakete herunterzuladen und zu installieren.
 
 
 ## Voraussetzungen
@@ -18,7 +27,7 @@ Bisher getestet sind:
 - Ein Debian-basiertes Betriebssystem
 - Zugriff mit root-Rechten
 
-## Starten des Installationsskripts
+## Installation  
 
 - Laden Sie das Skript auf den Zielcomputer herunter.
 - Öffnen Sie die Terminalanwendung und navigieren Sie zum Verzeichnis, in dem sich das Skript befindet.
@@ -26,9 +35,11 @@ Bisher getestet sind:
 - Geben Sie den Befehl ``./install.sh``  ein und drücken Sie die Eingabetaste.
 - Folgen Sie den Anweisungen im Skript.
 
+Nach dem Durchlauf des Skript haben Sie einen aktiv laufenden SVWS-Server!
+
 ## Konfiguration
 
-Das Skript bietet verschiedene Optionen zur Konfiguration. Es werden Standardeinstellungen vorgeschlagen, um eine einfache Installation zu ermöglichen. Sie können die Einstellungen aber auch nach Bedarf individuell anpassen.
+Das Skript bietet verschiedene Optionen zur Konfiguration, die hier vorgestellt werden sollen. Es werden Standardeinstellungen vorgeschlagen, um eine einfache Installation zu ermöglichen. Sie können die Einstellungen aber auch nach Bedarf individuell anpassen.
 
 Folgende Konfigurationen können vorgenommen werden:
 
@@ -39,7 +50,7 @@ Folgende Konfigurationen können vorgenommen werden:
 
 Hier finden Sie einen beispielhaften Dialog: 
 
-```
+```bash
 MariaDB-Konfiguration:
 Möchten Sie MariaDB installieren? (j/N): j
 MARIADB_ROOT_PASSWORD (default: 'abcd1234'): abcd1234
@@ -59,9 +70,11 @@ SVWS_TLS_KEY_ALIAS (default: ''):
 Möchten Sie Testdaten importieren? (j/N): N
 
 ```
-Die Passwortvorschläge werden natürlich frisch generiert. Bitte sichern Sie unbedingt die verwendeten Passwörter: Diese Daten werden vom Skript nicht gespeichert!  
+Die Passwortvorschläge werden vom Skript generiert. Bitte sichern Sie unbedingt die verwendeten Passwörter.  
+**Diese Daten werden vom Skript nicht gespeichert!  **
 
 Erläuterungen zu den einzelnen Punkten: 
+
 | Variable |Erläuterung|
 |-------------|---------------|
 | MariaDB_ROOT_PASSWORD | Das Datenbank Passwort der Datenbankadministratoren |
@@ -75,34 +88,60 @@ Erläuterungen zu den einzelnen Punkten:
 | SVWS_TLS_KEYSTORE_PATH | Der Pfad des angelegten Keystores, um dort Daten zu speichern |
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore |
 
-## Schuldaten anlegen 
+## Daten einpfelgen
 
-### Testdatenbank 
+### Testdatenbank anlegen
 
 Wenn Sie im Installer-Dialog die Frage nach den Testdaten mit "Ja" beantworten und den vorgeschlagenen Pfad nicht verändern, wird eine mitgelieferte Beispieldatenbank mit Dummy-Daten eingespielt.
- 
+Weitere Testdatenbanken finden Sie in unserem Repository auf Github:  
 
-### Migration der eigenen mdb
+https://github.com/SVWS-NRW/SVWS-TestMDBs
 
-Wählen Sie im Installer-Dialog "Ja" und ändern Sie den vorgeschlagenen Pfad so, dass dieser auf eine Accessdatenbank zeigt, die Sie migrieren wollen.
-Momentan ist nur die Migration aus Access möglich. Die Migration aus anderen DBMS kann aber nachträglich ausgeführt werden. Dazu einfach eine leere Datanbank anlegen.
+### Migration der eigenen Access Datenbank im Skript
 
-### Leeres Schema / leere Datenbank erzeugen
+Wählen Sie im Installer-Dialog "Ja" bei der Frage "Möchten Sie Testdaten importieren?" und ändern Sie den vorgeschlagenen Pfad so, dass dieser auf Ihre Accessdatenbank zeigt, die Sie migrieren wollen.
+Per Skript ist nur die Migration aus einer Accessdatenbank möglich. Die Migration aus anderen DBMS kann aber nachträglich ausgeführt werden. Ebenso ist eine nächträgliche Migration einer bestehenden DB per Weboberfläche möglich (s.u).
 
-Wenn Sie eine MariaDB-Datenbank installieren und keine Testdaten importieren, wird automatisch eine leere SVWS-Datenbank erzeugt.
-Beim Start des Web-Client erkennt die Applikation, dass die Datenbank leer ist und bietet entsprechende Menüpunkte zur Einrichtung, Backup und Migration.
+### Migration der eigenen Access Datenbank per Weboberfläche
 
+Wenn Sie bei der Installation der MariaDB-Datenbank im Skripe keine Testdaten importieren, wird automatisch eine leere SVWS-Datenbank erzeugt. Beim Start des Web-Client erkennt die Applikation, dass die Datenbank leer ist und bietet entsprechende Menüpunkte zur Einrichtung, Backup und Migration an. 
 
-## Wichtige Hinweise
+### weitere Möglichkeiten
 
-- Verwendung des Skripts geschieht auf eigene Gefahr.
-- Führen Sie das Skript nur auf einem Testsystem durch, bevor Sie es auf einem Produktivsystem verwenden.
-- Stellen Sie sicher, dass alle Konfigurationen und Passwörter sicher gespeichert und aufbewahrt werden.
-- Beachten Sie, dass das Skript eine Internetverbindung benötigt, um bestimmte Pakete herunterzuladen und zu installieren.
+Es gibt weitere Möglichkeiten zur Erstellung neuer Datenbanken bzw. zur Migration: 
+
++ per Swagger Oberfläche
++ per curl Befehl
++ per bash Skript
++ ... 
+
+siehe dazu: [Datenmigration](https://doku.svws-nrw.de/Deployment/Datenmigration/)
+
+## Sinnvolle 
 
 ## Portumleitung
 
-Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit iptables
+Eine einfache Möglichkeit den SVWS-Server unter einer "normalen" URL erreichen zu können und somit auf das Apendix der Ports verzichten zu können, wäre eine Portumleitung. Der bessere Weg, vor allem in größeren Netzwerken, wäre der Einsatz eines ReverseProxies.   
 
-iptables -A PREROUTING -t nat -p tcp --dport 443 -j REDIRECT --to-port 8443
+In beiden Fällen könnte man statt zum Beispiel ```https://meineServeradresse:8443/``` dann unter ```https://meineServeradresse/``` den SVWS-Server direkt erreichen.
+
+
+Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit iptables:
+
+```bash iptables -A PREROUTING -t nat -p tcp --dport 443 -j REDIRECT --to-port 8443 ```
+
+## ReverseProxy einrichten
+
+Alternativ zur Portumleitung kann der nginx Webserver als ReverseProxy eingesetzt werden.
+
+
+## UFW als Firewall einrichten
+
+Für die Linuxmaschine im Livebetrieb empfiehlt sich eine Firewall einzurichten. Dies ist unterveieln anderen Möglichkeiten schnell und einfach mit ```ufw``` zu erreichen. 
+
+
+
+
+## automatische Datenbanksicherung
+
 
