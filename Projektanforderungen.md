@@ -40,7 +40,7 @@ Alle Daten sollen statistikkonform gespeichert werden.
 Notwendige Schlüsseltabellen werden in dem Datenbankschema gespeichert und müssen aktualisierbar sein.
 Eine Plausibilitätsprüfung soll von IT.NRW auf diese Tabellen durchgeführt werden können.
 
-Wünschenswert wäre es, wenn das Datenbanksystem dazu genutzt werden könnte, dass Statistiktabellen im laufenden Betrieb aktuell gehalten werden und eine Prüfung der Daten zu jeder Zeit angestoßen werden können.
+Wünschenswert wäre es, wenn das Datenbanksystem dazu genutzt werden könnte, dass Statistiktabellen im laufenden Betrieb aktuell gehalten werden und eine Prüfung der Daten zu jeder Zeit angestoßen werden kann.
 
 Das aktuelle Schnittstellenformat von ASDPC32 wird weiterhin über die SchILD-NRW 3.0 Oberfläche unterstützt werden. 
 Der zukünftige Austausch der ASD-Daten soll direkt aus dem SVWS-Server per Webservice zu den vom Land NRW bereitgestellten Schnittstellen erfolgen.
@@ -109,7 +109,7 @@ Dabei werden folgende Varianten unbedingt benötigt:
 1) Einzelplatzinstallation
 
 Es muss für den Übergang einen Windows-Installer geben, der alle benötigten Teile installiert, die Datenbank einrichtet und die Dienste unter Windows startet.
-Dieser Server muss ggf. nur von einem anderen Client erreichbar sein, so das auch entsprechende Ports geöffnet werden müssen.
+Dieser Server muss ggf. nur von einem anderen Client erreichbar sein, so dass auch entsprechende Ports geöffnet werden müssen.
 
 2) Serverinstallation in der Schule
 
@@ -126,7 +126,7 @@ Für IT-Dienstleister und Kommunen müssen spezielle Installationspakte bereitst
 Der SVWS-Server muss in einer Sprache entwickelt werden, die plattformübergreifend einsetzbar ist.
 Dabei ist unbedingt wünschenswert, dass die Server in der Schule und in Kommunalen Rechenzentren unter Linux betrieben werden können, damit den Schulträgern an dieser Stelle Kosten erspart bleiben können.
 
-Auf der Clientseite muss eine Webapplikation dafür sorgen, dass unabhängig von gängigen Browsern und Endgeräte der SVWS-Client betrieben werden kann.
+Auf der Clientseite muss eine Webapplikation dafür sorgen, dass unabhängig von gängigen Browsern und Endgeräten der SVWS-Client betrieben werden kann.
 
 ## OpenSource Lizenz #
 
@@ -152,5 +152,5 @@ Der SVWS-Client muss die Vorgaben nach dem BITV-Konzept für barrierearme Softwa
 
 ## Clean Code #
 
-Das Befolgen eines Kodex um grundsätzlich sauberen und besser lesbaren Quellcode zu erzeugen, soll im Projekt durchgängig beachtet werden.
+Das Befolgen eines Kodex, um grundsätzlich sauberen und besser lesbaren Quellcode zu erzeugen, soll im Projekt durchgängig beachtet werden.
 Es ist wünschenswert, dass Ressourcen geschaffen werden, die die Einhaltung im Projekt überwachen.
