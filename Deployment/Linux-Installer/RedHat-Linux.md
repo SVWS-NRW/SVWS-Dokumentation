@@ -7,12 +7,14 @@ dnf install java-17-openjdk java-17-openjdk-devel
 java --version
 ```
 
-## Installation Zip und Wget
+## Installation benötigter Tools
 
 ```
 dnf -y install unzip
 dnf -y install tar
 dnf -y install wget
+dnf -y install net-tools
+dnf -y install nmap
 ```
 
 ## Download der SVWS-Server Pakete
@@ -74,7 +76,7 @@ cp ./svws/conf/svwsconfig-template-nodb.json /etc/app/svws/conf/svwsconfig.json
 }
 ```
 
-# Erstelle einen symbolischen Link zur Konfigurationsdatei
+## Erstelle einen symbolischen Link zur Konfigurationsdatei
 
 ln /etc/app/svws/conf/svwsconfig.json /opt/app/svws/svwsconfig.json
 
@@ -85,8 +87,8 @@ cp ./svws/svws-template.service /etc/systemd/system/svws.service
 ## Oder ServiceDatei für Systemd ertsellen und in etc/systemd/system  ablegen
 
 ```
-[UNIT]
-Descirption=SVWS-Server
+[Unit]
+Description=SVWS-Server
 
 [Service]
 WorkingDirectory=/opt/app/svws
@@ -134,7 +136,9 @@ rm -r ./init-scripts
 
 ## Firewall öffnen optional
 
+firewall-cmd --add-port=8443/TCP
 firewall-cmd --zone=public --permanent --add-port 8443/tcp
+firewall-cmd --runtime-to-permanent
 
 ## User auf der MariaDB einrichten
 
