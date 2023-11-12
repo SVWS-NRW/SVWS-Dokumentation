@@ -128,11 +128,16 @@ systemctl status svws.service
 
 rm -r ./svws
 
-# Lösche das Verzeichnis 'init-scripts' im Home-Verzeichnis
+## Lösche das Verzeichnis 'init-scripts' im Home-Verzeichnis
 
 rm -r ./init-scripts
 
-# Firewall öffnen optional
+## Firewall öffnen optional
 
 firewall-cmd --zone=public --permanent --add-port 8443/tcp
 
+## User auf der MariaDB einrichten
+
+Bei dieser Konstellation grift der SVWS-Server auf einen externen MariaDB-Server zu.
+Hierfür wird dort ein user benötigt der Schemata anlegen/löschen darf und auch von außerhalb zugreifen darf.
+Das Recht user anzulegen, die weniger Rechte haben wird auch benötigt.
