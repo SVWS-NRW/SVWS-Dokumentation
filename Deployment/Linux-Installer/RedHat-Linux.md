@@ -59,7 +59,7 @@ cp ./svws/conf/svwsconfig-template-nodb.json /etc/app/svws/conf/svwsconfig.json
   "UseCORSHeader" : false,
   "TempPath" : "tmp",
   "TLSKeyAlias" : "",
-  "TLSKeystorePath" : "/etc/app/svws/conf/keystore",
+  "TLSKeystorePath" : "/etc/app/svws/conf",
   "TLSKeystorePassword" : "test123",
   "ClientPath" : "./client",
   "LoggingEnabled" : true,
@@ -132,5 +132,7 @@ rm -r ./svws
 
 rm -r ./init-scripts
 
+# Firewall öffnen optional
 
+firewall-cmd --zone=public --permanent --add-port 8443/tcp
 
