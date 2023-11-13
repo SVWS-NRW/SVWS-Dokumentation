@@ -27,7 +27,7 @@ keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test
 
 # Erstelle svwsconfig.json im conf-Verzeichnis
 
-echo "{
+echo '{
   "EnableClientProtection" : null,
   "DisableDBRootAccess" : false,
   "DisableAutoUpdates" : false,
@@ -48,7 +48,7 @@ echo "{
     "defaultschema" : "",
     "SchemaKonfiguration" : []
   }
-}" > /etc/app/svws/conf/svwsconfig.json
+}' > /etc/app/svws/conf/svwsconfig.json
 
 # Erstelle einen symbolischen Link zur Konfigurationsdatei
 
