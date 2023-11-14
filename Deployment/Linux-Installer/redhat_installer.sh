@@ -39,6 +39,7 @@ echo '{
   "TLSKeystorePath" : "/etc/app/svws/conf",
   "TLSKeystorePassword" : "test123",
   "ClientPath" : "./client",
+  "AdminClientPath" : "./admin",
   "LoggingEnabled" : true,
   "LoggingPath" : "logs",
   "ServerMode" : "stable",
