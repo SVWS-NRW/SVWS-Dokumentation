@@ -64,6 +64,7 @@ cp ./svws/conf/svwsconfig-template-nodb.json /etc/app/svws/conf/svwsconfig.json
   "TLSKeystorePath" : "/etc/app/svws/conf",
   "TLSKeystorePassword" : "test123",
   "ClientPath" : "./client",
+  "AdminClientPath" : "./admin",
   "LoggingEnabled" : true,
   "LoggingPath" : "logs",
   "ServerMode" : "stable",
