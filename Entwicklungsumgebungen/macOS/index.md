@@ -10,10 +10,10 @@ Das Script nutzt noch die GitHub-Token. Wenn es jemand auf diesem Weg ausprobier
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # nun die benötigten Programme:
-brew install node git openjdk@17
+brew install node git openjdk@21
 
 # Java für den Server einrichten
-sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
+sudo ln -sfn /opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-21.jdk
 
 # den Docker Desktop:
 brew install --cask podman
@@ -42,12 +42,14 @@ tee svws-server-app/svwsconfig.json <<EOF
   "PortHTTP" : null,
   "UseHTTPDefaultv11" : false,
   "PortHTTPS" : 443,
+  "PortHTTPPrivilegedAccess" : null,
   "UseCORSHeader" : true,
   "TempPath" : "tmp",
   "TLSKeyAlias" : null,
   "TLSKeystorePath" : "./svws-server-app",
   "TLSKeystorePassword" : "svwskeystore",
   "ClientPath" : "/Users/DEIN_USER/SVWS-Server/svws-webclient/build/output",
+  "AdminClientPath" : "/Users/DEIN_USER/SVWS-Server/svws-webclient/admin/build/output",
   "LoggingEnabled" : true,
   "LoggingPath" : "logs",
   "ServerMode" : "dev",
@@ -82,11 +84,18 @@ svws-server-app/start_server.sh
 # nun läuft der Server. Entweder direkt mit dem Client über https://localhost verbinden
 # oder den dev-Server starten des Clients:
 
-cd svws-webclient/src/client/ts
+cd svws-webclient/client
 npm run dev
 
 # nun läuft auf http://localhost:3000 der dev-Server
 
 ```
 
-Anschließend muss noch eine Datenbank initialisiert werden, dazu sollte vorerst die Debug-Schnittstelle genutzt werden: https://localhost/debug
+Anschließend muss noch eine Datenbank initialisiert werden. Dazu kann der Admin-client verwendet werden:
+
+```bash
+cd svws-webclient/admin
+npm run dev
+```
+
+Der Admin-Client sollte auf einem lokalen Port verfügbar sein, vite wird beim Start die genaue Adresse ausgeben.
