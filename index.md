@@ -11,7 +11,8 @@ const datum = (t) => {
 # SVWS - Server Dokumentation
 
 <pre>Erstellungsdatum {{ datum(data.buildDate) }}</pre>
-(Platzhalter Logo) 
+
+![Logo-NRW](./graphics/wappenzeichen-nrw_farbig_rgb.png)
 
 Projekt zur Erstellung einer Schulverwaltungssoftware mit OpenAPI-Schnittstelle für die dezentrale Schulverwaltung in NRW.  
 
