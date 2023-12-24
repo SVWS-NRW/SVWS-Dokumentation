@@ -51,7 +51,7 @@ cp ./svws/conf/svwsconfig-template-nodb.json /etc/app/svws/conf/svwsconfig.json
 
 ## Anpassen der Variablen in der svwsconfig.json
 
-```
+```json
 {
   "EnableClientProtection" : null,
   "DisableDBRootAccess" : false,
