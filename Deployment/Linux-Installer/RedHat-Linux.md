@@ -105,41 +105,53 @@ WantedBy=multi-user.target
 
 ## Einrichten des SVWS-Service als Systemd-Service
 
-## Erstellen der Gruppe "svws" und des Nutzers "svws" ohne Login Shell (-s /bin/false)
+### Erstellen der Gruppe "svws" und des Nutzers "svws" ohne Login Shell (-s /bin/false)
 
 Der Nutzer wird der Gruppe "svws" zugewiesen und besitzt Lese-/Schreibzugriff auf die relevanten Verzeichnisse
 
+```bash
 /usr/sbin/groupadd -r svws
 /usr/sbin/useradd -r -s /bin/false -g svws svws
 
 chown -R svws:svws /opt/app/svws
 chown -R svws:svws /etc/app/svws/
+```
 
-## Aktualisieren der Systemd-Konfigurationen und Starten des Services
+### Aktualisieren der Systemd-Konfigurationen und Starten des Services
 
 Der Service wird automatisch gestartet, sobald das System hochfährt (systemctl enable)
 
+```bash
 systemctl daemon-reload
 systemctl start svws.service
 systemctl enable svws.service
+```
 
-## Überprüfen des Status des Services
+### Überprüfen des Status des Services
 
+```bash
 systemctl status svws.service
+```
 
 ## Lösche das Verzeichnis 'svws' im Home-Verzeichnis
 
+```bash
 rm -r ./svws
+```
 
 ## Lösche das Verzeichnis 'init-scripts' im Home-Verzeichnis
 
+```bash
 rm -r ./init-scripts
+```
 
 ## Firewall öffnen optional
 
+```bash
 firewall-cmd --add-port=8443/TCP
 firewall-cmd --zone=public --permanent --add-port 8443/tcp
 firewall-cmd --runtime-to-permanent
+```
 
 ## User auf der MariaDB einrichten
 
@@ -147,3 +159,8 @@ Bei dieser Konstellation greift der SVWS-Server auf einen externen MariaDB-Serve
 Hierfür wird dort ein user benötigt der Schemata anlegen/löschen darf und auch von außerhalb zugreifen darf.
 Das Recht user anzulegen, die weniger Rechte haben wird auch benötigt. 
 Sollte der User keine Rechte haben, Schemata anzulegen oder zu löschen, so muss das dann vorher vom Datenbankadministrator gemacht werden.
+
+
+## Download des Scripts mit den Befehlen
+
+![Download Script](redhat_installer.sh)
