@@ -14,6 +14,10 @@ Bisher getestet sind:
 - Ubuntu 22.04 LTS 
 - Ubuntu 22.10 
 
+RedHat basierte Systeme benötigen andere Befehle:
+
+[Installation Redhat](RedHat-Linux.md)
+
 ## Wichtige Hinweise
 
 - Verwendung des Skripts geschieht auf eigene Gefahr.
@@ -71,7 +75,7 @@ Möchten Sie Testdaten importieren? (j/N): N
 
 ```
 Die Passwortvorschläge werden vom Skript generiert. Bitte sichern Sie unbedingt die verwendeten Passwörter.  
-**Diese Daten werden vom Skript nicht gespeichert!  **
+**Diese Daten werden vom Skript nicht gespeichert!**
 
 Erläuterungen zu den einzelnen Punkten: 
 
@@ -87,6 +91,7 @@ Erläuterungen zu den einzelnen Punkten:
 | APP_PORT | Auf diesem Port ist der SVWS-Server erreichbar. i.d.R. ist dies einer der höheren Ports z.B. 8443, da für diese keine root-Rechte benötigt werden. Hier muss ggf. ein ReverseProxy oder eine Portumleitung eingerichtet werden, wenn man eine einfache URL verwenden möchte. |
 | SVWS_TLS_KEYSTORE_PATH | Der Pfad des angelegten Keystores, um dort Daten zu speichern |
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore |
+
 
 ## Daten einpfelgen
 
@@ -117,7 +122,20 @@ Es gibt weitere Möglichkeiten zur Erstellung neuer Datenbanken bzw. zur Migrati
 
 siehe dazu: [Datenmigration](https://doku.svws-nrw.de/Deployment/Datenmigration/)
 
-## Sinnvolle 
+## Sinnvolle Konfigurationen
+
+## MariDB für Schild-NRW3 zugänglich machen
+
+Solange Schild-NRW3 benötigt wird, muss die Datenbank und der Server für das Progrmm zugänglich gemacht werden.
+
+Erreichbarkeit des MariaDB-Server auch außerhalb von localhost setzen:
+```
+/etc/mysql/mariadb.conf.d/50-server.cnf
+bind-address 127.0.0.1 >> 0.0.0.0
+```
+
+Unter Umständen muss auch noch Port 3306 nach außen geöffnet werden, wenn eine Firewall eingerichtet ist.
+
 
 ## Portumleitung
 
@@ -138,10 +156,3 @@ Alternativ zur Portumleitung kann der nginx Webserver als ReverseProxy eingesetz
 ## UFW als Firewall einrichten
 
 Für die Linuxmaschine im Livebetrieb empfiehlt sich eine Firewall einzurichten. Dies ist unterveieln anderen Möglichkeiten schnell und einfach mit ```ufw``` zu erreichen. 
-
-
-
-
-## automatische Datenbanksicherung
-
-

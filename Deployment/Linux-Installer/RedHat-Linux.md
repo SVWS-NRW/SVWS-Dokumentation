@@ -3,7 +3,7 @@
 ## Installation openjdk
 
 ```
-dnf install java-17-openjdk java-17-openjdk-devel
+dnf install java-21-openjdk-devel.x86_64
 java --version
 ```
 
@@ -19,7 +19,7 @@ dnf -y install nmap
 
 ## Download der SVWS-Server Pakete
 
-wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v0.7.8/linux-installer-0.7.8.tar.gz
+wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v0.x.x/linux-installer-0.x.x.tar.gz
 
 
 ## Entpacken der SVWS-Serverdateien
