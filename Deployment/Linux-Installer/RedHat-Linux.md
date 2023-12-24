@@ -163,4 +163,4 @@ Sollte der User keine Rechte haben, Schemata anzulegen oder zu löschen, so muss
 
 ## Download des Scripts mit den Befehlen
 
-![Download Script](redhat_installer.sh)
+[Download Script](redhat_installer.sh)
