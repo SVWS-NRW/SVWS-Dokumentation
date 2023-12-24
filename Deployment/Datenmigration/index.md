@@ -15,18 +15,33 @@ Zu bestimmten Datenbanken sind auch passende Lupo Dateien etc. vorhanden, um sic
 
 Es gibt mehrer Möglichkeiten ein Schemata in der Datenbank anzulegen bzw. zu befüllen: 
 
-+ per GUI
++ per Admin-Webclient
 + per Swagger UI
 + per Curl Befehl
 + per Shell Skript
 + aus einer SQLite Datensicherung 
 + aus einem SQL-Dump
 
+## Benutzung des Admin-Webclient
+
+![adminclient.png](./graphics/adminclient.png)
+
+Melden Sie sich mit root und dem Kennwort an der MariaDB an.
+Sie können auch einen anderen Datenbankuser wählen, dieser sieht dann die vorhandenen Datenbanken entsprechnd seiner Rechte.
+
+Im Adminclient können je nach Rechtevergabe des Datenbankusers folgende Arbeiten erledigt werden:
+
+- Datenbankschema für SVWS anlegen und in die svwsconfig.json aufnehmen
+- Datenbank mit Schulnummer initialisieren
+- Schild-NRW2 Datenbank in Schema migrieren
+- SQLite-Backup ausführen
+- SQLite-Backup wieder einspielen
+- Datenbankschema löschen
 
 ## Einfügen per SwaggerUI
 
 Eine Übersicht über die Web-Services bietet die SwaggerUI. 
-Hier kann man über *Try it Out* - Buttons jeweils die Services ausprobieren bzw. benutzen.
+Hier kann man über *Try it Out* -- Buttons jeweils die Services ausprobieren bzw. benutzen.
 Die Swagger UI aufrufen:
 
 ```bash
@@ -64,7 +79,7 @@ Anschließend die folgenden Einträge unter der Maske ausfüllen:
 
 + **schema**: Hier steht der Name, der auch auf der Anmeldemaske dargestellt wird, z.B. Testschule. 
 + **Databasefile**: Hier können Sie z.B. eine SchILD-NRW 2.0-MDB-Datenbank aus der o.g. SVWS-TestMDBs einstellen.
-+ **databasePassword**: Hier das SchILD-NRW 2.0-Datenbankpasswort angeben.
++ **databasePassword**: Hier das SchILD-NRW 2.0 Access-Passwort angeben.
 + **SchemaUsername**: Einen beliebigen Usernamen angeben, z.B. svwsadmin, der bei der Einrichtung des Schemas auf der Datenbank für dieses Schema GRANT-Rechte erhält. 
 
 Es kann auch ein schon existierender Benutzer genommen werden. 
@@ -100,7 +115,7 @@ curl --user "root:mariabd_root_pw" -k -X "POST" "https://server.svws-nrw.de/api/
 	-H "accept: application/json"  \
 	-H "Content-Type: multipart/form-data" \
 	-F "databasePassword=kannManWissen" \
-	-F "schemaUsername=svwsadmin" \
+	-F "schemaUsername=svwsuser" \
 	-F "schemaUserPassword=svwsadmin_PW" \
 	-F "database=@/root/SVWS-TestMDBs/GOST_Abitur/Abi-Test-Daten-01/GymAbi.mdb"
 ```

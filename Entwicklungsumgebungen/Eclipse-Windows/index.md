@@ -114,7 +114,7 @@ Der Sonartype Server wird nur von den Core-Team-Mitgliedern genutzt.
 + download:  https://git-scm.com/download/win
 + Im MSB noch den Proxy eintragen: git config --global http.proxy http://10.64.128.22:3128
 
-# Installation in einer Proxy-Umgebun
+# Installation in einer Proxy-Umgebung
 
 ```
 Eclipse > Windows > Preferences > General > Network Connection

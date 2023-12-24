@@ -108,7 +108,8 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 |UseCORSHeader | Die Verwendung des CORSHeader kann deaktiviert werden.|
 |TLSKeystorePath | Pfad zum Keystore für das Zertifikat|
 |TLSKeystorePassword | Das Passwort für den Keystore. (Wird automatisch generiert.)
-|ClientPath | Pfad zu den Dateien des SVWS-Cllient. (Web-Anwendung in Entwicklung)|
+|ClientPath | Pfad zu den Dateien des SVWS-Client. (Web-Anwendung in Entwicklung)|
+|AdminClientPath | Pfad zu den Dateien des SVWS-Admin-Client. (Web-Anwendung in Entwicklung)|
 |LoggingEnabled | Schaltet das Logging ein.|
 |LoggingPath | Pfad zu den LOG-Dateien.|
 
@@ -169,24 +170,9 @@ Als Default-Verzeichnisse werden bei der Installation folgende Verzeichnisse vor
 
 ## Pakete im SVWS-Installer
 
-Unter folgender URL können die benötigten Pakete und Versionen für den Bau des Installers heruntergeladen werden.
-
 + curl
-	+ https://svws.nrw.de/uploads/media/svws-server-downloads/curl/7.72.0/curl-7.72.0-windows.zip
-	+ Sourcen: https://svws.nrw.de/uploads/media/svws-server-downloads/curl/7.72.0/src-curl-7_72_0.zip
 + mariadb
-	+ https://svws.nrw.de/uploads/media/svws-server-downloads/mariadb/10.5.7/mariadb-10.5.7-win.zip
-+ Sourcen: https://svws.nrw.de/uploads/media/svws-server-downloads/mariadb/10.5.7/server-mariadb-10.5.7.zip
 + innoextract
-	+ https://svws.nrw.de/uploads/media/svws-server-downloads/innoextract/1.9/innoextract-1.9-windows.zip
-	+ Sourcen: https://svws.nrw.de/uploads/media/svws-server-downloads/innoextract/1.9/innoextract-1.9.tar.gz
 + innosetup
-	+ https://svws.nrw.de/uploads/media/svws-server-downloads/innosetup/6.0.5/innosetup-6.0.5.exe
-	+ https://github.com/jrsoftware/issrc
 + jdk
-	+ https://svws.nrw.de/uploads/media/svws-server-downloads/jdk/12.0.2/jdk-12.0.2-win.zip
-	+ Sourcen: https://svws.nrw.de/uploads/media/svws-server-downloads/jdk/12.0.2/src-jdk-12-2.zip
 + winsw
-	+ https://svws.nrw.de/uploads/media/svws-server-downloads/winsw/2.10.3/
-	+ Sourcen: https://svws.nrw.de/uploads/media/svws-server-downloads/winsw/2.10.3/
-

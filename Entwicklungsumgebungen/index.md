@@ -1,7 +1,6 @@
 # Gitlab und GitHub
 
 Der Code wird auf dem Gitlab-Server der MSB entwickelt.
-https://git.svws-nrw.de
 
 Jedes Repository wird automatisch nach Github gespiegelt.
 https://github.com/SVWS-NRW
@@ -16,7 +15,7 @@ Entwickelt wird auf dem Gitlab-Server. Hierzu benötigen Entwickler die entsprec
 
 
 ### Dokumentation:
-https://git.svws-nrw.de/svws/svws-dokumentation
+
 Hier wird die gesamte Dokumentation - Entwickler- und Anwenderdokumentation - des Projekts erstellt.
 Diese wird mittels VitePress auch auf https://doku.svws-nrw.de öffentlich bereitgestellt.
 

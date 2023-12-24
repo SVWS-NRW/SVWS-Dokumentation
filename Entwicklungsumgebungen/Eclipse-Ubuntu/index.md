@@ -13,6 +13,19 @@ sudo apt install git curl net-tools dnsutils nmap
 cd ~
 ```
 
+### JDK21 installieren
+
+https://adoptium.net/de/installation/linux/
+
+```
+apt install -y wget apt-transport-https
+wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null
+echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+apt update # update if you haven't already
+apt install temurin-21-jdk
+```
+Für Ubuntu VERSION_CODENAME (Debian) ändern in UBUNTU_CODENAME. 
+
 ### Eclipse installieren
 
 #### Download Eclipse  
@@ -33,6 +46,8 @@ tar -xvzf eclipse-jee-2022-09-R-linux-gtk-x86_64.tar.gz
 Es bietet sich an den Eclipse-Ordner umzubenennen, da man so Konflikte mit möglichen späteren Versionen vermeidet.  
 
 Die Datei eclipse.ini anpassen. In den beiden Zeilen mit -Xms und -Xmx die folgenden Werte schreiben: 
+
+**Entfernen der Zeile -vm /pathtoJDK/ entfernen und in Eclipse kontrollieren, ob wirklich das JDK21 genommen wird!***
 
 ```bash
 ...
@@ -109,7 +124,8 @@ nano ~/git/SVWS-Server/svws-server-app/svwsconfig.json
   "TLSKeyAlias" : null,
   "TLSKeystorePath" : ".",
   "TLSKeystorePassword" : "svwskeystore",
-  "ClientPath" : "/home/YOUR_USERNAME/git/SVWS-Server/svws-webclient/build/output/",
+  "ClientPath" : "/home/YOUR_USERNAME/git/SVWS-Server/svws-webclient/client/build/output/",
+  "AdminClientPath" : "/home/YOUR_USERNAME/git/SVWS-Server/svws-webclient/admin/build/output/",
   "LoggingEnabled" : true,
   "LoggingPath" : "logs",
   "DBKonfiguration" : {
