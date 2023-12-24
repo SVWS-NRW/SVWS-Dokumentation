@@ -45,7 +45,7 @@ https://github.com/SVWS-NRW/SVWS-Server
 
 Die empfohlene Entwicklungsumgebung ist Eclipse. Hierzu gibt es auch eine Anleitung:
 
-https://github.com/SVWS-NRW/SVWS-Server/blob/dev/README_Eclipse.md
+https://doku.svws-nrw.de/Entwicklungsumgebungen/
 
 Die einzelnen Packages stehen auch auf Maven Central zur Verfügung:
 
