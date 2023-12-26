@@ -2,7 +2,7 @@
 
 ## Download
 
-https://storage.svws-nrw.de/windows_installer/
+https://github.com/SVWS-NRW/SVWS-Server/releases
 
 ## Systemvoraussetzungen
 
@@ -93,7 +93,42 @@ Man findet alle Einstellungsmöglichkeiten zum Betrieb des SVWS-Servers an zentr
 Unter Windows im Verzeichnis: 
 `C:\ProgramData\SVWS-Server\res`
 
-![](./graphics/Svwsconfig.json.jpg)
+```json
+{
+  "EnableClientProtection" : false,
+  "DisableDBRootAccess" : false,
+  "DisableAutoUpdates" : null,
+  "DisableTLS" : null,
+  "PortHTTP" : null,
+  "UseHTTPDefaultv11" : false,
+  "PortHTTPS" : null,
+  "PortHTTPPrivilegedAccess" : null,
+  "UseCORSHeader" : true,
+  "TempPath" : "./Temp",
+  "TLSKeyAlias" : null,
+  "TLSKeystorePath" : ".",
+  "TLSKeystorePassword" : "svwskeystore",
+  "ClientPath" : "./SVWS-Server/svws-webclient/client/build/output",
+  "AdminClientPath" : "./SVWS-Server/svws-webclient/admin/build/output",
+  "LoggingEnabled" : true,
+  "LoggingPath" : "logs",
+  "ServerMode" : "stable",
+  "DBKonfiguration" : {
+    "dbms" : "MARIA_DB",
+    "location" : "localhost",
+    "defaultschema" : "svwsdb",
+    "connectionRetries" : 0,
+    "retryTimeout" : 5000,
+    "SchemaKonfiguration" : [ {
+      "name" : "svwsdb",
+      "svwslogin" : false,
+      "username" : "svwsuser",
+      "password" : "svwspassword"
+    } ]
+  }
+}
+
+```
 
 In dieser Datei wird die Serverkonfiguration gespeichert.
 
@@ -168,7 +203,7 @@ Als Default-Verzeichnisse werden bei der Installation folgende Verzeichnisse vor
 |`C:\Users\{Username}\AppData\Local\Temp`| Log-Files des Installers und Uninstallers|
 |`C:\Users\{Username}\Dokumente`|Das Zertifikat für die Browser|
 
-## Pakete im SVWS-Installer
+## Pakete im SVWS-Installer von OpenSource-Fremdherstellern
 
 + curl
 + mariadb

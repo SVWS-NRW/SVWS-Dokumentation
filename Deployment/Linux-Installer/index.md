@@ -35,15 +35,30 @@ RedHat basierte Systeme benötigen andere Befehle:
 
 - Laden Sie das Skript auf den Zielcomputer herunter.
 - Öffnen Sie die Terminalanwendung und navigieren Sie zum Verzeichnis, in dem sich das Skript befindet.
-- Geben Sie den Befehl ``chmod +x /install.sh`` ein und drücken Sie die Eingabetaste.
-- Geben Sie den Befehl ``./install.sh``  ein und drücken Sie die Eingabetaste.
+- Geben Sie den Befehl ``chmod +x /install-0.x.x.sh`` ein und drücken Sie die Eingabetaste.
+- Geben Sie den Befehl ``./install-0.x.x.sh``  ein und drücken Sie die Eingabetaste.
 - Folgen Sie den Anweisungen im Skript.
 
 Nach dem Durchlauf des Skript haben Sie einen aktiv laufenden SVWS-Server!
 
+## Update der Linux-Installation
+
+- Laden Sie das Skript auf den Zielcomputer herunter.
+- Öffnen Sie die Terminalanwendung und navigieren Sie zum Verzeichnis, in dem sich das Skript befindet.
+- Geben Sie den Befehl ``chmod +x /install-0.x.x.sh`` ein und drücken Sie die Eingabetaste.
+- Achten Sie darauf, dass die Datei ``.env`` aus der Installation neben dem Install-Script liegt.
+- Geben Sie den Befehl ``./install-0.x.x.sh --update``  ein und drücken Sie die Eingabetaste.
+- Danach sollte der SVWS-Server in der aktuelen Version laufen.
+
 ## Konfiguration
 
 Das Skript bietet verschiedene Optionen zur Konfiguration, die hier vorgestellt werden sollen. Es werden Standardeinstellungen vorgeschlagen, um eine einfache Installation zu ermöglichen. Sie können die Einstellungen aber auch nach Bedarf individuell anpassen.
+
+Die gewählten Parameter werden in die Datei ``.env`` geschrieben.
+Aus dieser Datei werden die Werte für die Installation dann entnommen.
+Auch das Update bedient sich aus dieser Datei, um die Installationspfade zu ermitteln.
+Wenn diese Datei schon exiateirt, dann werden die Parameter nicht mehr abgefragt und die Installation startet sofort.
+Auf diese Weise kann also auch eine scriptgesteuerte Installation realisisert werden.
 
 Folgende Konfigurationen können vorgenommen werden:
 
