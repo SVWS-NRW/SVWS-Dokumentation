@@ -163,4 +163,4 @@ Sollte der User keine Rechte haben, Schemata anzulegen oder zu löschen, so muss
 
 ## Download des Scripts mit den Befehlen
 
-[Download Script](redhat_installer.sh)
+https://doku.svws-nrw.de/Deployment/Linux-Installer/redhat_installer.sh
