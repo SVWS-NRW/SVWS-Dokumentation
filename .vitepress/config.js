@@ -5,14 +5,24 @@ description: 'Dokumentation SVWS-Server NRW, Installation und Entwicklung',
 
 
 
+
+
+
 themeConfig:
 {
+
+
 
 sidebar:
 {
 
 '/':
 	[
+		search: {
+			provider: 'local'
+		}
+
+	
 		{ text: '', items:
 			[
 				{ text: 'SVWS-Server', link: '/SVWS-Server/', collapsed: true, items:
@@ -67,7 +77,8 @@ sidebar:
 
 					]
 
-				}
+				},
+				{ text: 'FAQs', link: '/FAQ/' }
 
 
 			]
