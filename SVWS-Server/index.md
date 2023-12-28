@@ -20,7 +20,7 @@ SVWS-Client:
 
 ## Übersicht zur Funktionalität der CORE-API
 
-![Übersicht-REST-Server-03](./graphics/Uebersicht-REST-Server-03.png)
+![Übersicht-REST-Server-03](./graphics/OpenAPI1.png)
 
 
 Die Core-API soll zukünftig alle User-Interaktionen mit der Datenbank kontrollieren. Sie ist damit maßgeblich für den Schutz der Daten vor unerlaubten Zugriffen, aber auch für die Konsistenz der Datenbank zuständig. Außerdem stellt sie eine standardisierte Schnittstelle für die User-Interfaces dar.
