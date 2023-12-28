@@ -1,13 +1,8 @@
 # Häufig gestellte Fragen
 
-Inhaltsverzeichnis
-  * [Fragen zum Projekt](#fragen-zum-projekt)
-  * [Mitarbeit am Projekt](#mitarbeit-am-projekt)
-  * [Wo finde ich die nötigen Quellen](#wo-finde-ich-die-noetigen-quellen)
-  * [Datenbanken und Migration](#datenbanken-und-migration)
-  * [Selbst signierte Zertifikate akzeptieren](#selbst-signierte-zertifikate-akzeptieren)
-  * [](#)
+## Fragen zum Deployment
 
+Alles rund um Migration, Installation 
 
 
 ## Fragen zum Projekt
@@ -60,9 +55,6 @@ Ein Docker-Container des SVWS-Servers kann hier heruntergeladen werden:
 https://hub.docker.com/r/svwsnrw/svws-server
 
 
-## 
-
-
 ## Datenbanken und Migration
 
 Um den SVWS-Server zu betreiben, muss eine SchILD-NRW-Datenbank in die MariaDB migriert werden.
@@ -70,9 +62,6 @@ Um den SVWS-Server zu betreiben, muss eine SchILD-NRW-Datenbank in die MariaDB m
 Hierzu stehen Dummy-Datenbanken zur Verfügung:
 
 https://github.com/SVWS-NRW/SVWS-TestMDBs
-
-
-
 
 
 
