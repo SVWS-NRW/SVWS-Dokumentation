@@ -1,7 +1,8 @@
 # Troubleshooting
 
 Sie haben Fragen zum Thema ... 
-
+ 
+ - in Bearbeitung - 
 
 ## Installation
 
