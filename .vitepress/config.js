@@ -65,11 +65,11 @@
 							{
 								text: 'Projekte', link: '/Projekte/', collapsed: true, items:
 									[
-										{ text: 'SchülerOnline', link: '/Projekte/SchülerOnline/' },
-										{ text: 'ASD-Statistik Modul', link: '/Projekte/ASD-Statistikmodul/' },
-										{ text: 'xSchule', link: '/Projekte/xSchule/' },
+										{ text: 'weblupo', link: '/Projekte/weblupo/' },
 										{ text: 'WeNoM', link: '/Projekte/WeNoM/' },
-										{ text: 'weblupo', link: '/Projekte/weblupo/' }
+										{ text: 'ASD-Statistik Modul', link: '/Projekte/ASD-Statistikmodul/' },
+										{ text: 'SchülerOnline', link: '/Projekte/SchülerOnline/' },										
+										{ text: 'xSchule', link: '/Projekte/xSchule/' }
 
 									]
 							},
