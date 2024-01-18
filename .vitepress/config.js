@@ -69,6 +69,7 @@
 										{ text: 'ASD-Statistik Modul', link: '/Projekte/ASD-Statistikmodul/' },
 										{ text: 'xSchule', link: '/Projekte/xSchule/' },
 										{ text: 'WeNoM', link: '/Projekte/WeNoM/' },
+										{ text: 'weblupo', link: '/Projekte/weblupo/' }
 
 									]
 							},
