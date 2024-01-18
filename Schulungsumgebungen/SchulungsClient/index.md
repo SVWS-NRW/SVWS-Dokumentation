@@ -21,4 +21,3 @@ Unter SchulungsClients sollen hier virtuelle Maschinen verstanden werden, die f√
 ## Bereitstellung der Schulungsmedien
 
 ## Installation Schild3
-
