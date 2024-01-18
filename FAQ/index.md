@@ -76,14 +76,18 @@ In größeren Umgebungen, wo Schuldatenbanken von Rechenzentren gehostet werden,
 
 Um das Problem auf Windows-Clients zu umgehen, sollte mit dem Installer das SVWS-Server-Zertifikat im Windows Zertifikatsmanager importiert werden. 
 
+```
 ausführen > cmd 
 
 	certmgr.msc
+```
 
-Unter Firefox kann eingestellt werden, dass auch auf diese Zertifikate zugegriffen werden soll. Dazu muss in diesem Ordner: C:\Program Files\Mozilla Firefox\defaults\pref (Bei Standard-Installation)
+Unter Firefox kann eingestellt werden, dass auch auf diese Zertifikate zugegriffen werden soll. Dazu muss in diesem Ordner: `C:\Program Files\Mozilla Firefox\defaults\pref` (Bei Standard-Installation)
 
 eine Datei mit dem Namen 'trustcert.js' mit folgendem Inhalt angelegt werden:
 
+```
 		/* Allows Firefox reading Windows certificates */ pref("security.enterprise_roots.enabled", true);
+```
 
 Für Chrome und Edge scheint das nicht notwendig zu sein.
