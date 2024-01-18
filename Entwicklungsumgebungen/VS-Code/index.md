@@ -59,3 +59,15 @@ code --install-extension ms-playwright.playwright
 code --install-extension richardwillis.vscode-gradle-extension-pack
 # Java für vs Code. Ein Paket für alles
 code --install-extension vscjava.vscode-java-pack
+```
+
+## Tipps
+
+Für die Entwicklung der verschiedenen Unterprojekte mit Vue und Typescript empfiehlt es sich,
+ein jeweils eigenes Fenster pro Unterprojekt zu öffnen.
+
+Um zum Beispiel am Cleint zu arbeiten, sollte ein neues Fenster unter `svws-webclient/client`
+angelegt werden, damit die Erweiterungen wie `volar` und `eslint` vernünftig funktionieren.
+
+Sind zu viele VS Code Fenster geöffnet, empfiehlt sich die Peacock-Erweiterung, mit der
+man die verschiedenen Fenster mit unterschiedlichen Farben ausstatten kann.
