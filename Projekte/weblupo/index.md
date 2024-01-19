@@ -4,18 +4,20 @@ Ein webbasiertes Laufbahnberatungs- und Planungstool für die gymnasiale Oberstu
 
 Beschreibung und Benutzung des Tools ist unter [hilfe.svws-nrw.de](https://hilfe.svws-nrw.de/gost/weblupo/) beschrieben. 
 
-# technischer Hintergrund
-Die User rufen eine Webseite auf und laden damit den ausführbaren Code herunter. Die von der Schule an die User verteilten .lp Dateien sind verschlüsselt und können hier geöffnet werden. Das bedeutet konkret, dass die Daten der User immer lokal auf ihrem PC, Tablet oder Handy bleiben und nicht zu Server gelangen. Außer beim erstmaligen Laden entsteht anschließend keine Last auf dem Server, so dass ein Server auch mehreren Schulen zur Verfügung gestellt werden kann. Nach verrichteter Fachwahl kann die Datei wieder lokal gespeichert werden. Dazu drücken die User den "Exportieren" Button und die Datei wird i.d.R. in den Downloadordner auf den verwendeten Client-Endgerät gespeichert. 
+# Technischer Hintergrund
+
+Die Nutzer erhalten von der Schule .lp-Dateien, die über einen WebLuPO Server geöffnet werden. Auf diesem Server wird eine Webseite aufgerufen und damit ausführbarer Code heruntergeladen. Das bedeutet konkret, dass die Daten der Nutzer immer lokal auf ihrem PC, Tablet oder Handy bleiben und nicht auf den Server übertragen werden. Außer beim erstmaligen Laden entsteht anschließend keine Last auf dem Server, sodass ein Server auch von mehreren Schulen genutzt werden kann. Die Schülerinnen und Schüler können damit am Webbrowser individuell ihre Laufbahnplanung durchführen. Nachdem die Planung abgeschlossen ist, kann die Datei lokal gespeichert werden. Dazu klicken Sie auf die Schaltfläche 'Exportieren' und die Datei wird normalerweise im Download-Ordner des verwendeten Endgeräts gespeichert. 
 
 # Systemvoraussetzungen
-Zur Bereitstellung ist ein einfacher Webspace ohne Datenbankanbindung, PHP o.Ä. schon ausreichend, um den Server zur Nutzung bereit zu stellen. Getestet wurde das Tool unter Debian 12 mit einem nginx oder einem Apache2 Webserver. Zur Erstellung der html Seiten aus den Quellen wird git und npm benötig. 
+
+Für die Bereitstellung des Servers ist ein einfacher Webspace ausreichend, ohne Datenbankanbindung oder PHP. Das Tool wurde unter Debian 12 mit einem nginx oder Apache2 Webserver getestet. Zur neuen Erstellung der HTML-Seiten aus den Quellen werden git und npm benötigt, für den einfachen download nur wget bzw. zip. 
 
 # Installation per zip download 
 
-Unter unserem [Github repository](https://github.com/SVWS-NRW/SVWS-Server/releases) kann die aktuelle SVWS-Laufbahnplanung-x.y.z.zip heruntergeladen werden. 
-Diese Datei in dem Webverzeichnis eines Hosters entpacken. Das wäre schon alles. 
+Die aktuelle SVWS-Laufbahnplanung-x.y.z.zip kann unter unserem  [Github repository](https://github.com/SVWS-NRW/SVWS-Server/releases) heruntergeladen werden. 
+Entpacken Sie diese Datei im Webverzeichnis Ihres Hosters.  
 
-Hier ein Beispiel für ein Debian 12 mit Apache2 als Webserver: 
+Hier ist ein Beispiel für ein Debian 12 mit Apache2 als Webserver: 
 
 ```bash
 cd /var/www/html/
@@ -25,9 +27,9 @@ unzip SVWS-Laufbahnplanung-0.8.8.zip
 
 ## Aktualisieren per zip download
 
-Im Grunde müssen die Dateien nur ersetzt werden. Um sicher zu gehen sollten vorher die alten Dateien entfernt werden. Das wäre schon alles. 
+Die Dateien müssen lediglich ersetzt werden. Es empfiehlt sich, vorher die alten Dateien zu entfernen, um sicherzugehen.  
 
-Hier ein Beispiel für ein Debian 12 mit Apache2 als Webserver:
+Hier ist ein Beispiel für ein Debian 12 mit Apache2 als Webserver:
 
 ```bash
 rm -rf /var/www/html/*
@@ -58,6 +60,7 @@ cp -r /var/www/SVWS-Server/svws-webclient/laufbahnplanung/build/output/* /var/ww
 ```
 
 ## Aktualisieren per Github 
+
 
 ```bash
 cd /var/www/SVWS-Server/
