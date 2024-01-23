@@ -1,10 +1,18 @@
-***GitLab-Server***
-=========================================================
-# 
+# Teamarbeit 
 
-Die Arbeit am SVWS Projekt findet seit November 2021 hauptsächlich auf dem GitLab-Server [git.svws-nrw.de](https://git.svws-nrw.de). 
-Aktuell zerfällt das Projekt in 3 Bereiche mit den dazu gehörenden Repositories: 
+Die Arbeit am SVWS Projekt findet seit November 2021 hauptsächlich auf dem eigenen GitLab-Server [git.svws-nrw.de](https://git.svws-nrw.de). 
 
-[SVWS-Server](https://git.svws-nrw.de/svws/SVWS-Server)  
-[SVWS-Dokumentation](https://git.svws-nrw.de/svws/svws-dokumentation)  
-[WebNotenManager](https://git.svws-nrw.de/phpprojekt/webnotenmanager)  
+## Organisationsstruktur
+
++ Projektleitung: Frank Pfotenhauer, MSB  
+
++ Technische Leitung: Thomas Bachran  
+
+## Das Team 
+
+Das Entwicklerteam des SVWS-Servers setzt sich größtenteils aus Lehrkräften zusammen, die für die Entwicklungsarbeit abgeordnet wurden. Zusätzlich sind externe Entwicklerfirmen sowie Mitarbeiter des Ministeriums für Schule und Bildung am Projekt beteiligt. Insgesamt sind etwa 20 Personen in die Entwicklung und das Projektmanagement des SVWS-Servers eingebunden. Das Team wird durch Fachberatungen für Schulen verstärkt, die insbesondere bei Testungen, Migrationsprozessen und dem Aufbau von Schulungsumgebungen unterstützen. 
+
+## Mitarbeit
+
+Wenn Sie an einer Mitarbeit am Projekt interessiert sind, finden Sie in dieser Dokumentation weitere Informationen zu den verwendeten Techniken und Entwicklungsumgebungen. Sie können über Github Kontakt zu unserem Entwicklerteam aufnehmen. Außerdem können [Bugs oder Issues](https://doku.svws-nrw.de/Teamarbeit/issues/) aus der Open-Source-Gemeinschaft gesammelt und direkt auf Github gemeldet werden. 
+

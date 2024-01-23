@@ -10,9 +10,14 @@ Alternative kann auf entsprechende Plugins der verwendeten Entwicklungsumgebung 
 
 ## Git Repositories
 
-Das Projekt wird auf dem eigenen gitlab unter [git.svws-nrw.de](https://git.svws-nrw.de) geführt und auf GitHub unter [SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server) gepushed.
+Das Projekt wird auf dem eigenen GitLab unter [git.svws-nrw.de](https://git.svws-nrw.de) geführt und auf GitHub unter [SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server) gepushed.
+Aktuell zerfällt das Projekt unter anderem in 3 Bereiche mit den dazu gehörenden Repositories: 
 
-Hier finden Sie auch [weitere Repositories](https://github.com/SVWS-NRW/), wie zum Beispiel Datenbanken, diese Dokumentation u.v.m..
+[SVWS-Server](https://git.svws-nrw.de/svws/SVWS-Server)  
+[SVWS-Dokumentation](https://git.svws-nrw.de/svws/svws-dokumentation)  
+[WebNotenManager](https://git.svws-nrw.de/phpprojekt/webnotenmanager)  
+
+Hier finden Sie auch [weitere Repositories](https://github.com/SVWS-NRW/), wie zum Beispiel Test-Datenbanken u.v.m..
 
 ## Workflow master & dev
 

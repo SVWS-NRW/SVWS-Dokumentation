@@ -1,8 +1,8 @@
 # Mitarbeit am SVWS-Client
 
-## GIT
+## Git Workflow
 
-Die Entwicklung des Client, wie auch des SVWS-Server, folgt dem [Gitflow-Workflow-Modell](.\Teamarbeit\workflow\).
+Die Entwicklung des Client, wie auch des SVWS-Server, folgt dem [Gitflow-Workflow-Modell](https://doku.svws-nrw.de/Teamarbeit/workflow/).
 
 Es folgen weitere, WebClient spezifische Hinweise:
 
