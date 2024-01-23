@@ -1,8 +1,7 @@
 ***Git Workflow***
 =========================================================
-# Software 
 
-Um an den Repositories mitzuarbeiten empfielt sich git.
+Um an den Repositories mitzuarbeiten empfielt sich git:
 
 + unter Linux: `apt install git`
 + unter Windows download [gitBash](https://gitforwindows.org/)
@@ -11,11 +10,11 @@ Alternative kann auf entsprechende Plugins der verwendeten Entwicklungsumgebung 
 
 ## Git Repositories
 
-Das Projekt wird auf dem eigenen gitlab unter [git.svws-nrw.de](https://git.svws-nrw.de) geführt und auf [github](https://github.com) unter [SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server) gepushed.
+Das Projekt wird auf dem eigenen gitlab unter [git.svws-nrw.de](https://git.svws-nrw.de) geführt und auf GitHub unter [SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server) gepushed.
 
 Hier finden Sie auch [weitere Repositories](https://github.com/SVWS-NRW/), wie zum Beispiel Datenbanken, diese Dokumentation u.v.m..
 
-# Workflow master & dev
+## Workflow master & dev
 
 Beim Development des SVWS-Servers wird die Versionierung im `master` branch festgehalten, der nur vom Release-Manager betreut wird. In unregelmäßigen Abständen wird ein Release zusammengestellt und über Github, docker ggf. npm veröffentlicht.
 
@@ -33,7 +32,7 @@ Größere Änderungen, z.B. weitere Tabs oder Cards, die auch die Bedienung des 
 
 Feature- und andere Branches werden als Fast-Forward Merger gemergt, um den master- und dev-Branch nicht unnötig mit Merge-Commits zu belasten. Falls sinnvoll, werden mehrere Commits auch als Squash-Commit vereint.
 
-Wenn in einem Feature-Branch oder am `dev`-Branch gearbeitet wird, ist es notwendig, vor dem Merge einen rebase durchzuführen, um unnötige Merge-Commits zu vermeiden. Bitte stellen Sie sicher, dass keine Merges erforderlich sind, bevor Sie eigene Änderungen hochladen. Wenn bereits Änderungen im lokalen Git-Repository vorgenommen wurden und auch im `origin/dev` Änderungen vorhanden sind, kann ein `git pull --rebase` helfen. Dadurch werden die eigenen Änderungen nach dem `pull` angehängt, anstatt einen Merge durchzuführen.
+Wenn in einem Feature-Branch oder am dev-Branch gearbeitet wird, ist es notwendig, vor dem Merge einen rebase durchzuführen, um unnötige Merge-Commits zu vermeiden. Bitte stellen Sie sicher, dass keine Merges erforderlich sind, bevor Sie eigene Änderungen hochladen. Wenn bereits Änderungen im lokalen Git-Repository vorgenommen wurden und auch im origin/dev Änderungen vorhanden sind, kann ein `git pull --rebase` helfen. Dadurch werden die eigenen Änderungen nach dem `pull` angehängt, anstatt einen Merge durchzuführen.
 
 Bei größeren Änderungen in einem Merge-Request sollte darauf geachtet werden, dass nur notwendige Änderungen im Diff entstehen und keine Veränderungen an nicht beteiligten Zeilen entstehen, z.B. durch Neuformatierung. Ein Merge Request sollte immer für die Reviewer nachvollziehbar sein und nicht mehr als ein Feature enthalten. Es ist besser, mehrere kleine Merge-Requests zu erstellen, anstatt wenige große, deren Auswirkungen nicht mehr abgeschätzt werden können.
 		
