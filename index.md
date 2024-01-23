@@ -55,9 +55,9 @@ Das Software Repository finden Sie hier: [Github Repository](https://github.com/
 
 Sie können unseren Quellcode und die Testdatenbanken unter dem o.g. Repository bzw. unter [Github - Schulverwaltung NRW](https://github.com/SVWS-NRW) finden.
 
-Wenn Sie an einer Mitarbeit am Projekt interessiert sind, so finden Sie in dieser Dokumentation unter Entwicklungsumgebungen weitere Informationen zu den benötigten Voraussetzungen.
+## Mitarbeit
 
-Per Github kann die Kontaktaufnahme zu unserem Entwicklerteam erfolgen. Ebenso sollen hier perspektivisch Issues aus der Open Source Gemeinschaft gesammelt werden. 
+Wenn Sie an einer Mitarbeit am Projekt interessiert sind, so finden Sie in dieser Dokumentation unter [Teamarbeit](https://doku.svws-nrw.de/SVWS-Server/Teamarbeit) weitere Informationen. Per Github kann die Kontaktaufnahme zu unserem Entwicklerteam erfolgen. Ebenso können hier [Bugs oder Issues](https://doku.svws-nrw.de/SVWS-Server/Teamarbeit/issues) aus der Open Source Gemeinschaft gesammelt werden.
 
 
 ## [Projektanforderungen](Projektanforderungen.md)

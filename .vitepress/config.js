@@ -52,6 +52,15 @@
 									]
 							},
 							{
+								text: 'Teamarbeit', link: '/Teamarbeit/', collapsed: true, items:
+									[
+										{ text: 'Git Workflow', link: '/Teamarbeit/workflow/' },
+										{ text: 'Bugs & Issues melden', link: '/Teamarbeit/issues/' },
+										{ text: 'Organisationsstruktur', link: '/Teamarbeit/Organisation/' }
+									]
+
+							},	
+							{
 								text: 'Schulungsumgebungen', link: '/Schulungsumgebungen/', collapsed: true, items:
 									[
 										{ text: 'SchulungsClient', link: '/Schulungsumgebungen/SchulungsClient/' },
@@ -68,7 +77,7 @@
 										{ text: 'weblupo', link: '/Projekte/weblupo/' },
 										{ text: 'WeNoM', link: '/Projekte/WeNoM/' },
 										{ text: 'ASD-Statistik Modul', link: '/Projekte/ASD-Statistikmodul/' },
-										{ text: 'SchülerOnline', link: '/Projekte/SchülerOnline/' },										
+										{ text: 'SchülerOnline', link: '/Projekte/SchülerOnline/' },					
 										{ text: 'xSchule', link: '/Projekte/xSchule/' }
 
 									]
