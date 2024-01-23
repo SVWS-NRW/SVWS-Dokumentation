@@ -55,8 +55,7 @@
 								text: 'Teamarbeit', link: '/Teamarbeit/', collapsed: true, items:
 									[
 										{ text: 'Git Workflow', link: '/Teamarbeit/workflow/' },
-										{ text: 'Bugs & Issues melden', link: '/Teamarbeit/issues/' },
-										{ text: 'Organisationsstruktur', link: '/Teamarbeit/Organisation/' }
+										{ text: 'Bugs & Issues melden', link: '/Teamarbeit/issues/' }
 									]
 
 							},	
@@ -67,7 +66,6 @@
 										{ text: 'Virtualbox', link: '/Schulungsumgebungen/Virtualbox_Schulungsserver/' },
 										{ text: 'Bootstick', link: '/Schulungsumgebungen/Bootstick_Schulungsserver/' },
 										{ text: 'Proxmox', link: '/Schulungsumgebungen/Proxmox_Schulungsserver/' }
-
 									]
 
 							},
