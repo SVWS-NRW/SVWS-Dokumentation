@@ -36,7 +36,8 @@
 										{ text: 'Linux-Installer', link: '/Deployment/Linux-Installer/' },
 										{ text: 'Docker-Container', link: '/Deployment/Docker/' },
 										{ text: 'Windows-Installer', link: '/Deployment/Windows-Installer/' },
-										{ text: 'Datenmigration', link: '/Deployment/Datenmigration/' }
+										{ text: 'Datenmigration', link: '/Deployment/Datenmigration/' },
+										{ text: 'Einrichtung', link: '/Deployment/Einrichtung/' }
 									]
 							},
 
