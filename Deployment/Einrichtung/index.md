@@ -44,6 +44,45 @@ Unter https://meinserver/admin steht dann ein Admin-Client zur Verfügung, mit d
 | connectionRetries | 0 | Gibt an, wieviele wiederholte Verbindungsversuche zur Datenbank stattfinden sollen. |
 | retryTimeout | 0 | Gibt an, wie hoch die Zeit zwischen zwei Verbindungsversuchen in Millisekunden sein soll. |
 
+### Beispieldatei für eine svwsconfig.json (mit einem Schema)
+
+``` json
+{
+  "EnableClientProtection" : false,
+  "DisableDBRootAccess" : false,
+  "DisableAutoUpdates" : null,
+  "DisableTLS" : null,
+  "PortHTTP" : null,
+  "UseHTTPDefaultv11" : false,
+  "PortHTTPS" : null,
+  "PortHTTPPrivilegedAccess" : null,
+  "UseCORSHeader" : true,
+  "TempPath" : "./Temp",
+  "TLSKeyAlias" : null,
+  "TLSKeystorePath" : ".",
+  "TLSKeystorePassword" : "svwskeystore",
+  "ClientPath" : "./SVWS-Server/svws-webclient/client/build/output",
+  "AdminClientPath" : "./SVWS-Server/svws-webclient/admin/build/output",
+  "LoggingEnabled" : true,
+  "LoggingPath" : "logs",
+  "ServerMode" : "stable",
+  "DBKonfiguration" : {
+    "dbms" : "MARIA_DB",
+    "location" : "localhost",
+    "defaultschema" : "svwsdb",
+    "connectionRetries" : 0,
+    "retryTimeout" : 5000,
+    "SchemaKonfiguration" : [ {
+      "name" : "svwsdb",
+      "svwslogin" : false,
+      "username" : "svwsuser",
+      "password" : "svwspassword"
+    } ]
+  }
+}
+
+```
+
 ### Servermode
 
 Der Servermode bestimmt, welche Komponenten im Web-Client gezeigt werden:
@@ -63,7 +102,57 @@ Folgende Prozesse werden vom Admin-Client unterstützt:
 - Migration einer Schild-NRW2-Datenbank in ein neues oder bestehendes Schema
 - Erstellen eines Backups aus einem bestehenden Schekata (SQLite-Format)
 - Einspielen eine Backups in ein bestehendes oder ein eues Schema
+- Setzen eines Schemas in die svwsconfig.json
 
-Die Anmeldung am Admin-Client erfolg mit Benutzername und Passwort eine MaraDB-Users.
+Die Anmeldung am Admin-Client erfolgt mit Benutzername und Passwort eines MaraDB-Users.
 Dabei muss nicht zwingend der Root-Benutzer genommen werden. Der Benutzer sieht die Datenbank-Schemata, auf die er entsprechende Rechte hat.
+
+### Symbole unter der Schemaliste
+
+#### Migration in ein neues Schema
+
+Hier wird automatisch ein neues Schema angelegt und mit den erforderlichen Tabellen befüllt.
+Es öffnet sich ein Dialog, in dem die erforderlichen Angaben zur Migration abgefragt werden.
+
+Es kann aus folgenden Datanbankformaten importiert werden:
+- Access
+- MySQL
+- MariaDB
+- SQL-Server (MSSQL)
+
+Access:
+
+***Quelldatenbank:*** Wählen Sie hier eine Schild-NRW-2 Access Datenbank (Endung .mdb) aus. Es gibt vereinzelt noch Datenbanken im Acces98-Format. Diese können nicht migriert werden! Kontaktieren Sie Ihren Fachberater!
+
+***Zieldatenbank***
+***Schema***
+Name des neuen Schemas im SVWS-Server.
+***Name des Datenbanknutzers***
+Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen kommen. Wenn man einen bestehenden Datenbankbenutzer noch einmal verwenden möchte, so muss natürlich das korrekte Passwort verwendet werden.
+Wenn der Datenbankbenutzer noch nicht existiert, so wird er vor der Migration angelegt.
+***Passwort des Datenbankbenutzers***
+Das Passwort des Datenbankbenutzers.
+
+Alle anderen DBMS:
+***Angabe einer Schulnummer***
+Diese Funktion ist für die Migration aus Schild-Zentral geschaffen worden.
+Durch die Angabe der Schulnummer werden nur die Daten dieser Schule in das neue Schema migriert. Der SVWS-Server unterstützt die Haltung von mehreren Schulen in einem Schema aus Datenschutzgründen nicht mehr.
+
+
+
+
+#### SQ-Lite Schema importieren
+
+#### Schema duplizieren
+
+#### Anlegen eines neuen SVWS-Schema
+
+Unter der Liste der Schemata kann mit dem Plussymbol ein neues SVWS-Schema angelegt werden.
+Das Schema wird dabei automatisch mit den erforderlichen Tabellen gefüllt und in der svwsconfig.json registriert.
+
+Man erhält somit eine leere Datenbank, die man mit einer Schulnummer initialisieren kann.
+
+
+
+
 
