@@ -120,14 +120,13 @@ Es kann aus folgenden Datanbankformaten importiert werden:
 - MariaDB
 - SQL-Server (MSSQL)
 
-1. Access:
+***1. Access:***
 
 ***Quelldatenbank:*** 
 
 Wählen Sie hier eine Schild-NRW-2 Access Datenbank (Endung .mdb) aus. Es gibt vereinzelt noch Datenbanken im Acces98-Format. Diese können nicht migriert werden! Kontaktieren Sie Ihren Fachberater!
 
 ***Zieldatenbank***
-
 
 ***Schema***
 
@@ -142,12 +141,46 @@ Wenn der Datenbankbenutzer noch nicht existiert, so wird er vor der Migration an
 
 Das Passwort des Datenbankbenutzers.
 
-2. Alle anderen DBMS:
+***2. Alle anderen DBMS:***
 
 ***Angabe einer Schulnummer***
 
 Diese Funktion ist für die Migration aus Schild-Zentral geschaffen worden.
 Durch die Angabe der Schulnummer werden nur die Daten dieser Schule in das neue Schema migriert. Der SVWS-Server unterstützt die Haltung von mehreren Schulen in einem Schema aus Datenschutzgründen nicht mehr.
+
+***Quelldatenbank:***
+
+***Datenbankhost**
+
+Name oder IP-Adresse unter der der Datenbankserver erreichbar ist. (hostname:port oder IP:port)
+Bei SQL-Server (MSSQL) muus das TCP-Protokoll aktiviert und freigegeben sein.
+
+***Datenbank-Schema***
+
+Name des Quellschemas auf dem Datenbankserver, der als Quelle dient.
+
+***Name des Datenbankbenutzers***
+
+Name des Users auf dem  Datenbankserver, der als Quelle dient.
+
+***Passwort des Datenbankbenutzers***
+
+Passwort des Users auf dem  Datenbankserver, der als Quelle dient.
+
+***Zieldatenbank***
+
+***Schema***
+
+Name des neuen Schemas im SVWS-Server. Dieses Schema wird automatisch erstellt.
+
+***Name des Datenbanknutzers***
+
+Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen kommen. Wenn man einen bestehenden Datenbankbenutzer noch einmal verwenden möchte, so muss natürlich das korrekte Passwort verwendet werden.
+Wenn der Datenbankbenutzer noch nicht existiert, so wird er vor der Migration angelegt.
+
+***Passwort des Datenbankbenutzers***
+
+Das Passwort des Datenbankbenutzers.
 
 #### SQ-Lite Schema importieren
 
