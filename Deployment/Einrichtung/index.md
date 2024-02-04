@@ -120,30 +120,42 @@ Es kann aus folgenden Datanbankformaten importiert werden:
 - MariaDB
 - SQL-Server (MSSQL)
 
-Access:
+1. Access:
 
-***Quelldatenbank:*** Wählen Sie hier eine Schild-NRW-2 Access Datenbank (Endung .mdb) aus. Es gibt vereinzelt noch Datenbanken im Acces98-Format. Diese können nicht migriert werden! Kontaktieren Sie Ihren Fachberater!
+***Quelldatenbank:*** 
+
+Wählen Sie hier eine Schild-NRW-2 Access Datenbank (Endung .mdb) aus. Es gibt vereinzelt noch Datenbanken im Acces98-Format. Diese können nicht migriert werden! Kontaktieren Sie Ihren Fachberater!
 
 ***Zieldatenbank***
+
+
 ***Schema***
+
 Name des neuen Schemas im SVWS-Server.
+
 ***Name des Datenbanknutzers***
+
 Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen kommen. Wenn man einen bestehenden Datenbankbenutzer noch einmal verwenden möchte, so muss natürlich das korrekte Passwort verwendet werden.
 Wenn der Datenbankbenutzer noch nicht existiert, so wird er vor der Migration angelegt.
+
 ***Passwort des Datenbankbenutzers***
+
 Das Passwort des Datenbankbenutzers.
 
-Alle anderen DBMS:
+2. Alle anderen DBMS:
+
 ***Angabe einer Schulnummer***
+
 Diese Funktion ist für die Migration aus Schild-Zentral geschaffen worden.
 Durch die Angabe der Schulnummer werden nur die Daten dieser Schule in das neue Schema migriert. Der SVWS-Server unterstützt die Haltung von mehreren Schulen in einem Schema aus Datenschutzgründen nicht mehr.
 
-
-
-
 #### SQ-Lite Schema importieren
 
+Ein aus einer anderen Datenbank erzeugtes SQ-Lite-Backup kann hier in ein neu angelegtes Schema importiert werden.
+
 #### Schema duplizieren
+
+Erzeugt eine Kopie eines Schemas in einem neuen Schema. Diese Funktion soll es erleichtern, eine Testdatenbank zu erstellen, wenn z.B. komplexere Arbeiten im Vorfeld getestet werden sollen.
 
 #### Anlegen eines neuen SVWS-Schema
 
@@ -153,6 +165,13 @@ Das Schema wird dabei automatisch mit den erforderlichen Tabellen gefüllt und i
 Man erhält somit eine leere Datenbank, die man mit einer Schulnummer initialisieren kann.
 
 
+## Menüpunkte im rechten Fensterbereich
 
+Diese Menüpunkte haben die gleichen Funktionen, wie die Menüpunkt eunter der Schemaliste.
+Nur werden diese Funktionen immer auf das ausgewählte und bestehende Schema ausgeführt.
 
+***In Config setzen***
 
+Diese Funktion setzt ein bestehendes Schema in die svwsconfig.json, so dass dieses Schema beim nächsten Start des SVWS-Servers mit in die Auswahlliste aufgenommen wird. Achtung! Dieses Schema muss initialisiert werden, also die Datenbankstruktur des SVWS-Servers haben!
+
+Sollte ein Datenbankadministrator keine Rechte besitzen, Schemata anzulegen oder zu löschen, so kann dieser dann aber so angelegte, leere Schemata verwalten.
