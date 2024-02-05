@@ -2,11 +2,11 @@
 
 ## Konfigurationsdatei svwsconfig.json
 
-Aus der svwsconfig.json werden beim Start des SVWS-Server die individuellen Einstellungen der jeweiligen Umgebung eingelesen.
-Die svwsconfig.json muss im Hauptverezichnis des SVWS-Servers liegen (z.B. /opt/app/svws/svwsconfig.json).
-Es kann aber auch, wie im Linux-Installer ein symbolischer Link erstellt werden.
+Aus der `svwsconfig.json` werden beim Start des SVWS-Server die individuellen Einstellungen der jeweiligen Umgebung eingelesen.
+Die `svwsconfig.json` muss im Hauptverezichnis des SVWS-Servers liegen (z.B. ``opt/app/svws/svwsconfig.json`).
+Es kann aber auch, wie im Linux-Installer, ein symbolischer Link erstellt werden.
 
-Ein Beispiel-Template der svwsconfig.json liegt unter: ./svws/conf/svwsconfig-template-nodb.json.
+Ein Beispiel-Template der `svwsconfig.json` liegt unter: `./svws/conf/svwsconfig-template-nodb.json`.
 Der SVWS-Server startet auch ohne einen Eintrag unter Schemakonfiguration und bietet dann beim Start keine Auswahl für eine Datenbank an.
 Unter https://meinserver/admin steht dann ein Admin-Client zur Verfügung, mit dem man erste Datenbanken migrieren oder Backups erstellen kann.
 
@@ -87,7 +87,7 @@ Unter https://meinserver/admin steht dann ein Admin-Client zur Verfügung, mit d
 
 Der Servermode bestimmt, welche Komponenten im Web-Client gezeigt werden:
 
-- dev: Absoluter Developermode es werden alle Komponenten gezeigt, auch die die noch in Entwicklung sind.
+- dev: Es werden alle Komponenten gezeigt, auch die, die noch in Entwicklung sind.
 - alpha: Es werden die Komponenten gezeigt, die für Alpha-Tester benötigt werden.
 - beta: Es werden die Komponenten gezeigt, die für Beta-Tester benötigt werden.
 - stable: Es werden nur Komponenten gezeigt, die für das Release freigegegeben wurden.
@@ -100,14 +100,17 @@ Folgende Prozesse werden vom Admin-Client unterstützt:
 - Anlegen von neuen (leeren) Schemata
 - Löschen von Schemata
 - Migration einer Schild-NRW2-Datenbank in ein neues oder bestehendes Schema
-- Erstellen eines Backups aus einem bestehenden Schekata (SQLite-Format)
+- Erstellen eines Backups aus einem bestehenden Schema (SQLite-Format)
 - Einspielen eine Backups in ein bestehendes oder ein eues Schema
-- Setzen eines Schemas in die svwsconfig.json
+- Setzen eines Schemas in die `svwsconfig.json`
 
-Die Anmeldung am Admin-Client erfolgt mit Benutzername und Passwort eines MaraDB-Users.
+Die Anmeldung am Admin-Client erfolgt mit Benutzername und Passwort eines MariaDB-Users.
 Dabei muss nicht zwingend der Root-Benutzer genommen werden. Der Benutzer sieht die Datenbank-Schemata, auf die er entsprechende Rechte hat.
 
-### Symbole unter der Schemaliste
+### Symbole unter der Schemaliste (nur für root)
+
+Entsprechend der Beschreibung, die als Tooltip erscheinen, können Schemata wie o.a. erstellt, verändert oder entfernt werden.
+Für diese Aktionen, die unter der Schemataliste dargestellt werden, werden grundsätzlich root-Rechte benötigt. Die Symbole werden auch nur dem root-Benutzer angezeigt.
 
 #### Migration in ein neues Schema
 
@@ -124,7 +127,7 @@ Es kann aus folgenden Datanbankformaten importiert werden:
 
 ***Quelldatenbank:*** 
 
-Wählen Sie hier eine Schild-NRW-2 Access Datenbank (Endung .mdb) aus. Es gibt vereinzelt noch Datenbanken im Acces98-Format. Diese können nicht migriert werden! Kontaktieren Sie Ihren Fachberater!
+Wählen Sie hier eine Schild-NRW-2 Access Datenbank (Endung .mdb) aus. Es gibt vereinzelt noch Datenbanken im Access98-Format. Diese können nicht migriert werden. Kontaktieren Sie Ihren Fachberater!
 
 ***Zieldatenbank***
 
@@ -134,7 +137,7 @@ Name des neuen Schemas im SVWS-Server.
 
 ***Name des Datenbanknutzers***
 
-Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen kommen. Wenn man einen bestehenden Datenbankbenutzer noch einmal verwenden möchte, so muss natürlich das korrekte Passwort verwendet werden.
+Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen zugreifen können. Wenn man einen bestehenden Datenbankbenutzer noch einmal verwenden möchte, so muss natürlich das korrekte Passwort verwendet werden.
 Wenn der Datenbankbenutzer noch nicht existiert, so wird er vor der Migration angelegt.
 
 ***Passwort des Datenbankbenutzers***
@@ -150,7 +153,7 @@ Durch die Angabe der Schulnummer werden nur die Daten dieser Schule in das neue 
 
 ***Quelldatenbank:***
 
-***Datenbankhost**
+***Datenbankhost***
 
 Name oder IP-Adresse unter der der Datenbankserver erreichbar ist. (hostname:port oder IP:port)
 Bei SQL-Server (MSSQL) muus das TCP-Protokoll aktiviert und freigegeben sein.
@@ -161,11 +164,11 @@ Name des Quellschemas auf dem Datenbankserver, der als Quelle dient.
 
 ***Name des Datenbankbenutzers***
 
-Name des Users auf dem  Datenbankserver, der als Quelle dient.
+Name des Users auf dem Datenbankserver, der als Quelle dient.
 
 ***Passwort des Datenbankbenutzers***
 
-Passwort des Users auf dem  Datenbankserver, der als Quelle dient.
+Passwort des Users auf dem Datenbankserver, der als Quelle dient.
 
 ***Zieldatenbank***
 
@@ -175,7 +178,7 @@ Name des neuen Schemas im SVWS-Server. Dieses Schema wird automatisch erstellt.
 
 ***Name des Datenbanknutzers***
 
-Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen kommen. Wenn man einen bestehenden Datenbankbenutzer noch einmal verwenden möchte, so muss natürlich das korrekte Passwort verwendet werden.
+Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen zugreifen können. Wenn man einen bestehenden Datenbankbenutzer noch einmal verwenden möchte, so muss natürlich das korrekte Passwort verwendet werden.
 Wenn der Datenbankbenutzer noch nicht existiert, so wird er vor der Migration angelegt.
 
 ***Passwort des Datenbankbenutzers***
@@ -184,7 +187,7 @@ Das Passwort des Datenbankbenutzers.
 
 #### SQ-Lite Schema importieren
 
-Ein aus einer anderen Datenbank erzeugtes SQ-Lite-Backup kann hier in ein neu angelegtes Schema importiert werden.
+Ein aus einer anderen Datenbank erzeugtes SQLite-Backup kann hier in ein neu angelegtes Schema importiert werden.
 
 #### Schema duplizieren
 
@@ -193,18 +196,18 @@ Erzeugt eine Kopie eines Schemas in einem neuen Schema. Diese Funktion soll es e
 #### Anlegen eines neuen SVWS-Schema
 
 Unter der Liste der Schemata kann mit dem Plussymbol ein neues SVWS-Schema angelegt werden.
-Das Schema wird dabei automatisch mit den erforderlichen Tabellen gefüllt und in der svwsconfig.json registriert.
+Das Schema wird dabei automatisch mit den erforderlichen Tabellen gefüllt und in der `svwsconfig.json` registriert.
 
 Man erhält somit eine leere Datenbank, die man mit einer Schulnummer initialisieren kann.
 
 
 ## Menüpunkte im rechten Fensterbereich
 
-Diese Menüpunkte haben die gleichen Funktionen, wie die Menüpunkt eunter der Schemaliste.
-Nur werden diese Funktionen immer auf das ausgewählte und bestehende Schema ausgeführt.
+Diese Menüpunkte haben die gleichen Funktionen, wie die Menüpunkte unter der Schemaliste.
+Nur werden diese Funktionen immer auf das ausgewählte und bestehende Schema ausgeführt und können somit auch von anderen Benutzern außer root verwendet werden. Diese Menüpunkte sind immer verfügbar.
 
 ***In Config setzen***
 
-Diese Funktion setzt ein bestehendes Schema in die svwsconfig.json, so dass dieses Schema beim nächsten Start des SVWS-Servers mit in die Auswahlliste aufgenommen wird. Achtung! Dieses Schema muss initialisiert werden, also die Datenbankstruktur des SVWS-Servers haben!
+Diese Funktion setzt ein bestehendes Schema in die `svwsconfig.json`, so dass dieses Schema beim nächsten Start des SVWS-Servers mit in die Auswahlliste aufgenommen wird. Achtung! Dieses Schema muss initialisiert werden, also die Datenbankstruktur des SVWS-Servers haben!
 
 Sollte ein Datenbankadministrator keine Rechte besitzen, Schemata anzulegen oder zu löschen, so kann dieser dann aber so angelegte, leere Schemata verwalten.
