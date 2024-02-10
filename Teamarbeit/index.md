@@ -1,6 +1,6 @@
 # Teamarbeit 
 
-Die Arbeit am SVWS Projekt findet seit November 2021 hauptsächlich auf dem eigenen GitLab-Server [git.svws-nrw.de](https://git.svws-nrw.de). 
+Die Arbeit am SVWS Projekt findet seit November 2021 hauptsächlich auf dem eigenen GitLab-Server [github.com/SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server). 
 
 ## Organisationsstruktur
 
