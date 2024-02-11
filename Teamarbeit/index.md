@@ -1,6 +1,6 @@
 # Teamarbeit 
 
-Die Arbeit am SVWS Projekt findet seit November 2021 hauptsächlich auf dem eigenen GitLab-Server [github.com/SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server). 
+Die Arbeit am SVWS Projekt findet seit November 2021 hauptsächlich in der eigenen GitHub-Organisation [github.com/SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server) statt. 
 
 ## Organisationsstruktur
 
@@ -10,7 +10,9 @@ Die Arbeit am SVWS Projekt findet seit November 2021 hauptsächlich auf dem eige
 
 ## Das Team 
 
-Das Entwicklerteam des SVWS-Servers setzt sich größtenteils aus Lehrkräften zusammen, die für die Entwicklungsarbeit abgeordnet wurden. Zusätzlich sind externe Entwicklerfirmen sowie Mitarbeiter des Ministeriums für Schule und Bildung am Projekt beteiligt. Insgesamt sind etwa 20 Personen in die Entwicklung und das Projektmanagement des SVWS-Servers eingebunden. Das Team wird durch Fachberatungen für Schulen verstärkt, die insbesondere bei Testungen, Migrationsprozessen und dem Aufbau von Schulungsumgebungen unterstützen. 
+Das Entwicklerteam des SVWS-Servers setzt sich teilweise aus Lehrkräften zusammen, die für die Entwicklungsarbeit abgeordnet wurden.
+Zusätzlich sind externe Entwicklerfirmen sowie Mitarbeiter des Ministeriums für Schule und Bildung am Projekt beteiligt. 
+Insgesamt sind etwa 20 Personen in die Entwicklung und das Projektmanagement des SVWS-Servers eingebunden. Das Team wird durch Fachberatungen für Schulen verstärkt, die insbesondere bei Testungen, Migrationsprozessen und dem Aufbau von Schulungsumgebungen unterstützen. 
 
 ## Mitarbeit
 
