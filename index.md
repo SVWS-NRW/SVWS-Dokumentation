@@ -16,6 +16,7 @@ const datum = (t) => {
 
 Projekt zur Erstellung einer Schulverwaltungssoftware mit OpenAPI-Schnittstelle für die dezentrale Schulverwaltung in NRW.  
 
+
 ## Übersicht
 
 In dieser Dokumentation können Sie sich über den technischen Aufbau des SVWS-Servers,
