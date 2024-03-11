@@ -9,7 +9,7 @@ Eine Schulung mit SchILD-NRW 2.0, SchILD-NRW 3.0 oder ASDPC32 kann online nur mi
 
 ## Aufsetzen des Proxmox-Servers
 
-Hier gibt es zwei grundlegende Ansätze: über einen Bootstick oder über eine Erweitereung einer Debian 12 Installation um die Proxmox Funktionalität. Insbesondere bei physikalischem Zugang zum Server ist der einfachste Weg der Bootstick. Bei einem gemieteten online Server ist die Einrichtung über eine vorhandene Debian istallation der bessere Weg. 
+Hier gibt es zwei grundlegende Ansätze: über einen Bootstick oder über eine Erweitereung einer Debian 12 Installation um die Proxmox Funktionalität. Insbesondere bei physikalischem Zugang zum Server ist der einfachste Weg der Bootstick. Bei einem gemieteten online Server ist die Einrichtung über eine vorhandene Debian Installation der bessere Weg. 
 
 ### Installation per Bootstick
 
