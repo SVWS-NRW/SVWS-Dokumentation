@@ -10,12 +10,12 @@ Alternative kann auf entsprechende Plugins der verwendeten Entwicklungsumgebung 
 
 ## Git Repositories
 
-Das Projekt wird auf dem eigenen GitLab unter [git.svws-nrw.de](https://git.svws-nrw.de) geführt und auf GitHub unter [SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server) gepushed.
-Aktuell zerfällt das Projekt unter anderem in 3 Bereiche mit den dazu gehörenden Repositories: 
+Das Projekt wird auf dem eigenen GitLab unter geführt und auf GitHub unter [SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server) gepushed.
+Aktuell enthält das Projekt unter anderem in 2 Bereiche mit den dazu gehörenden Repositories: 
 
-[SVWS-Server](https://git.svws-nrw.de/svws/SVWS-Server)  
-[SVWS-Dokumentation](https://git.svws-nrw.de/svws/svws-dokumentation)  
-[WebNotenManager](https://git.svws-nrw.de/phpprojekt/webnotenmanager)  
+[SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server)  
+[SVWS-Dokumentation](https://github.com/SVWS-NRW/SVWS-Dokumentation)  
+
 
 Hier finden Sie auch [weitere Repositories](https://github.com/SVWS-NRW/), wie zum Beispiel Test-Datenbanken u.v.m..
 
