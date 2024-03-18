@@ -10,8 +10,8 @@ Alternative kann auf entsprechende Plugins der verwendeten Entwicklungsumgebung 
 
 ## Git Repositories
 
-Das Projekt wird auf dem eigenen GitLab unter geführt und auf GitHub unter [SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server) gepushed.
-Aktuell enthält das Projekt unter anderem in 2 Bereiche mit den dazu gehörenden Repositories: 
+Das Projekt wird auf dem eigenen GitLab geführt und auf GitHub unter [SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server) gespiegelt.
+Aktuell enthält das Projekt unter anderem 2 Bereiche mit den dazu gehörenden Repositories: 
 
 [SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server)  
 [SVWS-Dokumentation](https://github.com/SVWS-NRW/SVWS-Dokumentation)  
