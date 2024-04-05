@@ -1,18 +1,23 @@
 ﻿module.exports = {
+
 	title: 'SVWS Dokumentation',
 	description: 'Dokumentation SVWS-Server NRW, Installation und Entwicklung',
+
 	themeConfig: {
-    lastUpdated: {
-      text: 'Diese Seite wurde zuletzt bearbeitet am',
-      formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium'
-      }
+      lastUpdated: {
+        text: 'Diese Seite wurde zuletzt bearbeitet am',
+        formatOptions: {
+          dateStyle: 'full',
+          timeStyle: 'medium'
+        }
     },
-		search: { provider: 'local' },
-		sidebar: {
-			'/': [
-				{
+	
+	search: { provider: 'local' 
+	},
+
+	sidebar: {
+		'/': [
+	    		{
 					text: '', items:
 						[
 							{
