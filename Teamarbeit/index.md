@@ -1,18 +1,18 @@
 # Teamarbeit 
 
-Die Arbeit am SVWS Projekt findet seit November 2021 hauptsächlich in der eigenen GitHub-Organisation [github.com/SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server) statt. 
+Die Arbeit am SVWS Projekt findet in der GitHub-Organisation [github.com/SVWS-NRW/SVWS-Server](https://github.com/SVWS-NRW/SVWS-Server) statt. 
 
 ## Organisationsstruktur
 
-+ Projektleitung: Frank Pfotenhauer, MSB  
++ Projektleitung: Frank Pfotenhauer, MSB
 
-+ Technische Leitung: Thomas Bachran  
++ Technische Leitung: Thomas Bachran
 
 ## Das Team 
 
-Das Entwicklerteam des SVWS-Servers setzt sich teilweise aus Lehrkräften zusammen, die für die Entwicklungsarbeit abgeordnet wurden.
-Zusätzlich sind externe Entwicklerfirmen sowie Mitarbeiter des Ministeriums für Schule und Bildung am Projekt beteiligt. 
-Insgesamt sind etwa 20 Personen in die Entwicklung und das Projektmanagement des SVWS-Servers eingebunden. Das Team wird durch Fachberatungen für Schulen verstärkt, die insbesondere bei Testungen, Migrationsprozessen und dem Aufbau von Schulungsumgebungen unterstützen. 
+Das Entwicklerteam des SVWS-Servers setzt sich zum Teil aus Lehrkräften zusammen, die für die Entwicklungsarbeit abgeordnet wurden.
+Zusätzlich sind externe Entwicklerfirmen sowie Mitarbeiter des Ministeriums für Schule und Bildung am Projekt beteiligt.
+Insgesamt sind etwa 20 Personen in die Entwicklung und das Projektmanagement des SVWS-Servers eingebunden. Das Team wird durch Fachberatungen für Schulen verstärkt, die insbesondere bei Testungen, Migrationsprozessen und dem Aufbau von Schulungsumgebungen unterstützen.
 
 ## Mitarbeit
 
