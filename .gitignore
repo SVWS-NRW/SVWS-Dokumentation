@@ -1,13 +1,10 @@
 tmp
-/bin/
-/node_modules/
-/.classpath
-/.vitepress/dist
-/.vitepress/cache
-/dist/
-/.project
-/.settings
-/.editorconfig
+node_modules/
+.vitepress/dist
+.vitepress/cache
+.project
+.settings
+.editorconfig
 .DS_Store
 
 # Ignore Gradle project-specific cache directory

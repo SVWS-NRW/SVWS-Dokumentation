@@ -44,15 +44,17 @@ Die Entwicklung findet grundsätzlich im `dev`-Branch statt und erfordert das An
 
 Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizenz](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)
 
-Größere Änderungen, z.B. weitere Tabs oder Cards, die auch die Bedienung des Clients ändern, werden über Feature-Branches eingebracht.
+Änderungen, z.B. weitere Tabs oder Cards, die auch die Bedienung des Clients ändern, werden über Feature-Branches eingebracht.
 
 Beim Anlegen eines neuen Feature-Branch gilt die Verabredung, den Branch mit dem verwendeten git-Kürzel/Benutzernamen zu versehen und das Feature zu nennen, z.B. `hmt/kaoa-card`. Alternativ können auch die von der jeweiligen Git-Plattform angebotenen Feature-Branch-Hilfen verwendet werden, die bei der Erstellung von Issues angezeigt werden.
 
-Feature- und andere Branches werden immer als Fast-Forward Merger gemergt, um den dev-Branch nicht unnötig mit Merge-Commits zu belasten. Falls sinnvoll, werden mehrere Commits auch als Squash-Commit vereint.
+Feature-Branches, die von den Release-Managern angelegt werden und in der Regel von mehreren Entwicklern gleichzeitig genutzt werden, verzichten auf das Kürzel und haben in der Regel die Form `feature/statistik`.
+
+Von Entwicklern angelegte Branches werden immer als Fast-Forward Merger gemergt, um den dev-Branch nicht unnötig mit Merge-Commits zu belasten. Falls sinnvoll, werden mehrere Commits auch als Squash-Commit vereint.
 
 Wenn ein Fast-Forward-Merge in den dev-Branch nicht mehr möglich ist, muss ein Rebase durchgefürt werden, um die zuvor eingespielten Änderungen im dev-Branch, z.B. verursacht durch andere Feature-Branches, in den eigenen Feature-Branch zu integrieren.
 
-Dazu kann entweder die auf der Git-Plattform zur Verfügung gestellte Funktion verwendet werden oder es muss lokal ein Rebase durchgeführt werden. Es reicht nicht, lokal ein Merge durchzuführen, denn das führt zu undurchsichtigen Merge-Requests und kann nicht übernommen werden.
+Dazu kann entweder die auf der Git-Plattform zur Verfügung gestellte Funktion verwendet werden oder es muss lokal ein Rebase durchgeführt werden. Es reicht nicht, lokal ein Merge durchzuführen, denn das führt zu undurchsichtigen Merge-Requests und kann nicht übernommen werden. In jedem Fall muss bei einem Rebase, ob lokal oder entfernt, die Gegenseite mit angepasst werden. Es wird daher empfohlen, auf Rebases vor einem Merge zu verzichten und dies erst mit dem Merge-Request durchzuführen.
 
 Bei größeren Änderungen in einem Merge-Request sollte darauf geachtet werden, dass nur notwendige Änderungen im Diff entstehen und keine Veränderungen an nicht beteiligten Zeilen entstehen, z.B. durch Neuformatierung. Ein Merge-Request sollte immer für die Reviewer nachvollziehbar sein und nicht mehr als ein Feature enthalten. Es ist besser, mehrere kleine Merge-Requests zu erstellen, anstatt wenige große, deren Auswirkungen nicht mehr abgeschätzt werden können.
 
@@ -71,10 +73,6 @@ Die Änderungen die hier eingespielt werden, müssen unmittelbar in den Developm
 Während der Release-Phase kann so am Development-Branch weiter entwickelt und neue Features hinzugefügt werden, die für das aktuelle Release jedoch noch nicht relevant sind.
 
 ## Workflow Bugfixes für Releases (Hotfixes)
-
-![Gitflow-Workflow-4](./graphics/Gitflow-Workflow-4.png)
-
-Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizenz](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)
 
 Sollte es einmal zu einer Situation kommen, wo ein Fehler in einem stabilen Release des Master-Branches kommt, dann muss ein Hotfix eingespielt werden. Dazu wird der Release-Branch verwendet, der zu dem betroffenen Release gehört. Hier wird ein Bugfix eingespielt, getestet und anschließend in den Master-Branch überführt und mit einem Minor-Release getaggt. Ebenfalls wird per Cherry-Picking der Bugfix in den Development-Branch übertragen.
 
