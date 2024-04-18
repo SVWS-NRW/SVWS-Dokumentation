@@ -30,7 +30,7 @@ Folgende Einschränkungen gibt es:
   anzulegen (MKCOL-Methode).
 
 - Es besteht keine Möglichkeit in Adressbüchern zu suchen
-  („CARDDAV:addressbook-query“ REPORT
+  „CARDDAV:addressbook-query“ REPORT
 
 **Keine Ermittlung von Differenzdaten bei der Synchronisation möglich**
 
@@ -78,6 +78,7 @@ selbstsignierte Zertifikate werden nicht akzeptiert, hat über HTTP aber
 auch nicht funktioniert: bei Versuch über HTTP zuzugreifen, wird kein
 Benutzername/Kennwort (Basic Auth) mitgesendet)
 
+```
 Logeintrag bei Test gegen Baikal: 172.18.0.1 \[25/Aug/2022:08:21:31
 +0000\] "PROPFIND /dav.php/ HTTP/1.1" 401 414 "-" "iOS/15.6.1 (19G82)
 accountsd/1.0" 0.013 "BODY: "\[\<?xml version=\x221.0\x22
@@ -86,6 +87,7 @@ encoding=\x22UTF-8\x22?\>\x0A\<A:propfind xmlns:A=\x22DAV:\x22\>\x0A
 \<A:principal-URL/\>\x0A \<A:resourcetype/\>\x0A
 \</A:prop\>\x0A\</A:propfind\>\x0A\] "Accept-Header: " \[\*/\*\]
 "Accept-Encoding: " \[-\] "Content-Type: " \[text/xml\]
+````
 
 Nicht erfolgreich: NextCloud (Server) Import über CardDAV ist kein
 Feature von NextCloud. NextCloud App scheint nur mit NextCloud Server

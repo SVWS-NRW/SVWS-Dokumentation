@@ -27,7 +27,11 @@ export default defineConfig(({ mode }) => {
 											{ text: 'svws-core', link: '/SVWS-Server/svws-core/' },
 											{ text: 'svws-db', link: '/SVWS-Server/svws-db/' },
 											{ text: 'svws-db-utils', link: '/SVWS-Server/svws-db-utils/' },
-											{ text: 'svws-module-dav-api', link: '/SVWS-Server/svws-module-dav-api/' },
+											{ text: 'svws-module-dav-api', link: '/SVWS-Server/svws-module-dav-api/', collapsed: true, items: [
+												{ text: 'Beschreibung der Implementierung des CardDav Protokolls', link: 'SVWS-Server/svws-module-dav-api/carddav-beschreibung der implementierung.md' },
+												{ text: 'CardDAV API - Limitierungen', link: 'SVWS-Server/svws-module-dav-api/carddav-limitierungen.md' },
+												{ text: 'CalDav Limitierungen', link: 'SVWS-Server/svws-module-dav-api/caldav-limitierungen.md' },
+											] },
 											{ text: 'svws-openapi', link: '/SVWS-Server/svws-openapi/' },
 											{ text: 'svws-server-app', link: '/SVWS-Server/svws-server-app/' },
 											{ text: 'svws-transpile', link: '/SVWS-Server/svws-transpile/' },

@@ -1,14 +1,5 @@
 # CardDAV API
 
-Inhaltsverzeichnis
-  * [Generierte Adressbücher](#generierte-adressbücher)
-    * [Zugriffschutz auf Adressdaten](#zugriffschutz-auf-adressdaten)
-    * [Kompatibilität mit CardDAV-Clients](#kompatibilität-mit-carddav-clients)
-  * [Anleitung: Import von Adressdaten über CardDAV](#anleitung-import-von-adressdaten-über-carddav)
-    * [Thunderbird Adressbuch (built-in)](#thunderbird-adressbuch-built-in)
-    * [Thunderbird Cardbook-Addon](#thunderbird-cardbook-addon)
-    * [Outlook CalDAV Synchonizer Addon](#outlook-caldav-synchroninizer-addon)
-
 ## Generierte Adressbücher
 
 Folgende Adressbücher können vom SVWS-Server in Clientprogramme mit
@@ -85,32 +76,27 @@ Clientprogrammen ist gegeben:
 <td>OK</td>
 <td>Thunderbird: Cardbook-Addon</td>
 <td>76.7</td>
-<td><a
-href="https://addons.thunderbird.net/de/thunderbird/addon/cardbook/">https://addons.thunderbird.net/de/thunderbird/addon/cardbook/</a></td>
+<td><a href="https://addons.thunderbird.net/de/thunderbird/addon/cardbook/">https://addons.thunderbird.net/de/thunderbird/addon/cardbook/</a></td>
 </tr>
 <tr class="odd">
 <td>X</td>
 <td>Thunderbird: TbSync</td>
 <td><p>3.0.2</p>
 <p>2.0.2</p></td>
-<td><p><a
-href="https://addons.thunderbird.net/de/thunderbird/addon/tbsync">https://addons.thunderbird.net/de/thunderbird/addon/tbsync</a></p>
-<p><a
-href="https://addons.thunderbird.net/de/thunderbird/addon/dav-4-tbsync">https://addons.thunderbird.net/de/thunderbird/addon/dav-4-tbsync</a></p></td>
+<td><p><a href="https://addons.thunderbird.net/de/thunderbird/addon/tbsync">https://addons.thunderbird.net/de/thunderbird/addon/tbsync</a></p>
+<p><a href="https://addons.thunderbird.net/de/thunderbird/addon/dav-4-tbsync">https://addons.thunderbird.net/de/thunderbird/addon/dav-4-tbsync</a></p></td>
 </tr>
 <tr class="even">
 <td>OK</td>
 <td>Outlook: CalDAV Synchronizer</td>
 <td>4.3.0</td>
-<td><a
-href="https://caldavsynchronizer.org/">https://caldavsynchronizer.org/</a></td>
+<td><a href="https://caldavsynchronizer.org/">https://caldavsynchronizer.org/</a></td>
 </tr>
 <tr class="odd">
 <td>X</td>
 <td>iOS</td>
 <td>15.6.1</td>
-<td>Einstellungen - Kontakte - Accounts - Account hinzufügen - Andere -
-CardDAV-Account hinzufügen</td>
+<td>Einstellungen - Kontakte - Accounts - Account hinzufügen - Andere - CardDAV-Account hinzufügen</td>
 </tr>
 </tbody>
 </table>
@@ -125,24 +111,23 @@ bewerkstelligt werden. Es ist also nicht zwingend erforderlich
 Zusatzsoftware zu installieren. Die Synchronisation mit dem SVWS-Server
 wird in folgenden Schritten eingerichtet:
 
-Adressbuch-Anwendung öffnen und im Menü den Menüeintrag Datei \> Neu \>
+Adressbuch-Anwendung öffnen und im Menü den Menüeintrag Datei > Neu >
 CardDAV-Adressbuch… öffnen:
 
-<img src="./media/media/image1.png"/>
-
-<img src="./media/media/image2.png"/>
+![alt text](media/image1.png)
+![alt text](media/image2.png)
 
 Im Dialog „Neues CardDAV Adressbuch“ die folgenden Eingaben machen:
 
 - Benutzername: Benutzername des persönlichen SVWS-Benutzerkontos
 
 - Adresse: URL zum CardDAV API des SVWS-Servers:
-  https://\<server-adresse\>/db/\<svws-db-schema\>/carddav/
+  https://server-adresse/db/svws-db-schema/carddav/
 
 Im Anschluss erscheint ein Dialog zur Passworteingabe des persönlichen
 SVWS-Benutzerkontos:
 
-<img src="./media/media/image3.png"/>
+![alt text](media/image3.png)
 
 Nach erfolgreicher Anmeldung am CardDAV-API des SVWS-Servers können im
 Dialog „Neues CardDAV-Adressbuch“ die zu synchronisierenden Adressbücher
@@ -150,7 +135,7 @@ ausgewählt werden. Eine Mehrfachauswahl ist möglich. Die Liste der
 auswählbaren Adressbücher kann sich – abhängig von den Berechtigungen
 des SVWS-Benutzerkontos – unterscheiden.
 
-<img src="./media/media/image4.png"/>
+![alt text](media/image4.png)
 
 Nach Bestätigung der Auswahl mit der Schaltfläche „Weiter“ werden die
 Adressbücher in Thunderbird angezeigt.
@@ -164,22 +149,22 @@ Anzeige der Kontakte ermöglicht.
 
 ## Thunderbird Cardbook-Addon
 
-Öffnen der CardBook-Anwendung und im Menü den Menüeintrag Adressbuch \>
+Öffnen der CardBook-Anwendung und im Menü den Menüeintrag Adressbuch >
 Neues Adressbuch aufrufen, um eine Wizard zur Einrichtung des
 Adressbuchs zu starten.
 
-<img src="./media/media/image5.png"/>
+![alt text](media/image5.png)
 
 Im Wizard-Dialog „Neues Adressbuch hinzufügen“ die Option „Im Netzwerk“
 auswählen und die Schaltfläche „Weiter“ betätigen.
 
-<img src="./media/media/image6.png"/>
+![alt text](media/image6.png)
 
 Im folgenden Wizard-Dialog dann unterhalb von „Art“ zunächst die Art des
 Netzwerk-Adressbuchs auf „CardDAV“ festlegen und im Anschluss die
 weiteren Angaben unterhalb von „Verbindung“ im Dialog ergänzen:
 
-<img src="./media/media/image7.png"/>
+![alt text](media/image7.png)
 
 - URL: URL zum CardDAV API des SVWS-Servers:
 
@@ -192,7 +177,7 @@ kann dann mit der Schaltfläche „Weiter“ der nächste Schritt des Wizards
 aufgerufen werden, in dem die zu importierenden Adressbücher ausgewählt
 werden können:
 
-<img src="./media/media/image8.png"/>
+![alt text](media/image8.png)
 
 Eine Mehrfachauswahl wird unterstützt.
 
@@ -201,7 +186,7 @@ Für eine zügigere Synchronisation bitte folgende Cardbook-Einstellungen verwen
 - Maximale Anzahl an Änderungen, die pro Synchronisation angestoßen werden: **1000**
 - Bei GET-Anfrage Karten gruppieren nach: **1000**
 
-<img src="./media/media/cardbook_settings.png" />
+![alt text](media/cardbook_settings.png)
 
 ## Outlook CalDAV-Synchroninizer-Addon
 
@@ -220,7 +205,7 @@ Installationsanleitung:
 Nach der Installation erscheint beim Aufruf des Outlook-Kalender ein
 neuer Menüeintrag „CalDav Synchronizer“:
 
-<img src="./media/media/image9.png"/>
+![alt text](media/image9.png)
 
 SVWS Adressbücher einrichten:
 
@@ -228,17 +213,17 @@ Um die Adressbücher vom SVWS-Server verbinden zu können, muss für jedes
 relevante Adressbuch ein „Synchronization Profile“ eingerichtet werden.
 Dies erfolgt über den Menüeintrag „Synchronisation Profiles“
 
-<img src="./media/media/image10.png"/>
+![alt text](media/image10.png)
 
 Es wird der Dialog „Options“ angezeigt. Dort die Schaltfläche „Add new
 profile“ betätigen und im Dialog „Select Profile Type“ die Option
 „Generisches Profil“ auswählen.
 
-<img src="./media/media/image11.png"/>
+![alt text](media/image11.png)
 
 Die für die Verbindung erforderlichen Angaben im Profil-Dialog erfassen:
 
-<img src="./media/media/image12.png"/>
+![alt text](media/image12.png)
 
 - Name: Beliebiger Name für das zu importierende Adressbuch. Entspricht
   dem späteren Anzeigenamen in Outlook.
@@ -247,7 +232,8 @@ Die für die Verbindung erforderlichen Angaben im Profil-Dialog erfassen:
   Bedarf ein neues Verzeichnis anlegen und auswählen.
 
 - DAV URL: URL zum CardDAV API des SVWS-Servers:
-  https://\<server-adresse\>/db/\<svws-db-schema\>/carddav/
+
+    https://server-adresse/db/svws-db-schema/carddav/
 
 - Username: Benutzername des persönlichen SVWS-Benutzerkontos
 
@@ -283,4 +269,4 @@ TIPP: Über die Sortierung der Kontaktliste nach dem Wert „Kategorien“
 werden die heruntergeladenen Kontaktdaten gruppiert angezeigt, z.B. nach
 Klasse, Jahrgang oder Kurs.
 
-<img src="./media/media/image13.png"/>
+![alt text](media/image13.png)
