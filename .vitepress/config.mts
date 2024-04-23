@@ -20,6 +20,9 @@ export default defineConfig(({ mode }) => {
 			search: {
 				provider: 'local'
 			},
+			 socialLinks: [
+     				{ icon: 'github', link: 'https://github.com/SVWS-NRW' }
+    			],
 			sidebar: {
 				'/': [
 					{ text: '', items: [
@@ -82,8 +85,5 @@ export default defineConfig(({ mode }) => {
 				]
 			}
 		}
-	}, 
- socialLinks: [
-      { icon: 'github', link: 'https://github.com/SVWS-NRW' }
-    ]
+	}
 })
