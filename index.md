@@ -8,7 +8,7 @@ const datum = (t) => {
   } catch (e) {console.log(e); return 'Datumsfehler'}
 }
 </script>
-# SVWS - Server Dokumentation
+# SVWS Dokumentation
 
 <pre>Erstellungsdatum {{ datum(data.buildDate) }}</pre>
 
