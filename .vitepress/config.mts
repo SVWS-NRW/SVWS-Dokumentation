@@ -21,7 +21,7 @@ export default defineConfig(({ mode }) => {
 				provider: 'local'
 			},
 			 nav: [
-      				{ text: 'Handbuch', link: 'https://help.svws-nrw.de' }
+      				{ text: 'Hilfe & Handbuch', link: 'https://help.svws-nrw.de' }
     			],
 			 socialLinks: [
      				{ icon: 'github', link: 'https://github.com/SVWS-NRW' }
