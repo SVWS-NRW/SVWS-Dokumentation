@@ -21,10 +21,12 @@ export default defineConfig(({ mode }) => {
 				provider: 'local'
 			},
 			 nav: [
+				{ text: 'UI', link: 'https://ui.svws-nrw.de' }
+				{ text: 'JavaDoc', link: 'https://javadoc.svws-nrw.de' }
       				{ text: 'Hilfe & Handbuch', link: 'https://help.svws-nrw.de' }
     			],
 			 socialLinks: [
-     				{ icon: 'github', link: 'https://github.com/SVWS-NRW' }
+     				{ icon: 'github', link: 'https://github.com/SVWS-NRW/SVWS-Dokumentation' }
     			],
 			sidebar: {
 				'/': [
