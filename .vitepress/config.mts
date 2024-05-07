@@ -21,8 +21,8 @@ export default defineConfig(({ mode }) => {
 				provider: 'local'
 			},
 			 nav: [
-				{ text: 'UI', link: 'https://ui.svws-nrw.de' }
-				{ text: 'JavaDoc', link: 'https://javadoc.svws-nrw.de' }
+				{ text: 'UI', link: 'https://ui.svws-nrw.de' },
+				{ text: 'JavaDoc', link: 'https://javadoc.svws-nrw.de' },
       				{ text: 'Hilfe & Handbuch', link: 'https://help.svws-nrw.de' }
     			],
 			 socialLinks: [
