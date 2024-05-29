@@ -13,17 +13,19 @@
     + Wähle **Git** im Dropdown-Menü aus
     + Füge den **Repository HTTPS Checkout Link** ein
     + Lege den Pfad für den lokalen Arbeitsbereich fest und klicke auf "Clone"
-    + GitLab erfordert **Username und Personal Token (an Stelle von Passwort)**.
-      + Das Token muss vorher erstellt werden. Dazu auf GitLab gehen unter Edit profile > Access Tokens ein neues Token anlegen
+    + GitLab bzw. GitHub erfordern **Username und einen Access Token** (an Stelle von Passwort).
+      + Das Token muss vorher erstellt werden. Dazu auf GitLab/GitHub im Browser anmelden unter
+          + GitLab: **Edit profile > Access Tokens** ein neues Token anlegen
+          + GitHub: **Profil > Settings > Developer Settings > Personal Access Tokens** ein neues Token anlegen
 3. IntelliJ fordert möglicherweise **weitere Einstellungen** an. Akzeptiere diese ggf. (z. B. Sprachpaket Deutsch).
 4. Unter **Project Settings**:
-    - Gehe zu **Build, Execution, Deployment -> Gradle** und verwende folgende Einstellungen:
+    - Gehe zu **Build, Execution, Deployment > Gradle** und verwende folgende Einstellungen:
         - **Build and run using**: Gradle (Default)
         - **Run Tests using**: Gradle (Default)
         - **Gradle Distribution**: Wrapper
         - **Gradle JVM**: temurin-21 (21.0.3)
-5. Gehe zu **File -> Projekt Structure -> Project**
-        - **SDK** auf Java 21 setzen
+5. Gehe zu **File > Projekt Structure > Project**
+    + **SDK** auf Java 21 setzen
 
 ## Datenbank starten
 + Navgieren zu FILE DOCKER COMPOSE?! TODO: Docker Compose einchecken und hier den Pfad einfügen
