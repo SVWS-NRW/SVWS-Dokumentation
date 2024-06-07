@@ -28,7 +28,7 @@
     + **SDK** auf Java 21 setzen
 
 ## Datenbank starten
-+ Navigiere zu **deployment/docker/example/local/docker-compose.yml**
++ Navigiere zu `deployment/docker/example/local/docker-compose.yml`
 + Führe `docker compose up` aus, um die Datenbank zu starten
 + Mit DBeaver testen ob die DB läuft
 
