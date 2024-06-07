@@ -74,7 +74,7 @@ Abhängig von den lokalen Gegebenheiten, kann das sinnvoll sein.
 
 Das kann individuell konfiguriert werden. Beide Varianten sind möglich.
 
-### Welche Systemvorraussetzungen müssen erfüllt werden?
+### Welche Systemvoraussetzungen müssen erfüllt werden?
 
 Dies muss noch umfassender getestet werden. In einer virtuellen Umgebung wird der SVWS-Server hier mit 2 Cores und 8 GB RAM betrieben.
 
@@ -84,7 +84,7 @@ Alle Personen, die auch jetzt schon mit SchILD-NRW arbeiten.
 
 ### Benötigt der SVWS-Server eine Internetverbindung?
 
-Momentan eigentlich nicht. Jedoch werden in Zukunft viele Prozesse dazu kommen, die ein Internetverbindung benötigen.
+Momentan eigentlich nicht. Jedoch werden in Zukunft viele Prozesse dazu kommen, die eine Internetverbindung benötigen.
 (Web-Notenmanager, SchülerOnline, digitales Zeugnis usw.)
 
 
