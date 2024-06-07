@@ -108,7 +108,7 @@ Erläuterungen zu den einzelnen Punkten:
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore |
 
 
-## Daten einpfelgen
+## Daten einpflegen
 
 ### Testdatenbank anlegen
 
