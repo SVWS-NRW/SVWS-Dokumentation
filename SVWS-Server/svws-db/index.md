@@ -47,7 +47,7 @@ Als Default-DBMS wird MariaDB empfohlen. Für die SchILD*zentral*-Nachfolge wird
 
 Zur Administration können die Standardbenutzer root (MariaDB) und sa (MS-SQL) verwendet werden. Diese Zugänge sollten ausschließlich dem DBMS-Administrator zur Verfügung stehen. Wahlweise können hier auch Zugänge mit Schema-übergreifenden Rechten für Administratoren angelegt werden.
 
-Bei Installationen für einzelne Schulen dient dieser Zugang ausschließlich der Schama-Verwaltung, falls es gewünscht ist, zwei oder mehr Schemata zu Testzwecken oder bei Schulverbünden zu nutzen. Für den Zugriff auf die Daten im wird im Client trotzdem ein Datenbankuser angelegt, der nur Berechtigungen auf das Schema hat!
+Bei Installationen für einzelne Schulen dient dieser Zugang ausschließlich der Schama-Verwaltung, falls es gewünscht ist, zwei oder mehr Schemata zu Testzwecken oder bei Schulverbünden zu nutzen. Für den Zugriff auf die Daten wird im Client trotzdem ein Datenbankuser angelegt, der nur Berechtigungen auf das Schema hat!
 
 In größeren Systemen, in denen mehrere Schulen auf einem Datenbankserver betrieben werden, wird für jede Schule ein eigener Datenbankuser angelegt, dessen Rechte auf den Zugriff der schuleigenen Schemata beschränkt sind, so dass schon auf DBMS-Ebene ein Zugriff auf die Daten einer anderen Schule ausgeschlossen wird.
 
