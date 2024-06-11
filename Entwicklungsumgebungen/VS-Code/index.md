@@ -49,7 +49,7 @@ code --install-extension johnpapa.vscode-peacock
 # automatische Template Strings für den Client
 code --install-extension meganrogge.template-string-converter
 # volar für vue/Client
-code --install-extension johnsoncodehk.volar
+code --install-extension vue.volar
 # Icons Vorschau
 code --install-extension antfu.iconify
 # Playwright Tests
@@ -71,3 +71,40 @@ angelegt werden, damit die Erweiterungen wie `volar` und `eslint` vernünftig fu
 
 Sind zu viele VS Code Fenster geöffnet, empfiehlt sich die Peacock-Erweiterung, mit der
 man die verschiedenen Fenster mit unterschiedlichen Farben ausstatten kann.
+
+## lokale Settings
+
+Diese Einstellungen werden genutzt:
+
+```json
+{
+	"[java]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
+  "[typescript, javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.tabSize": 2
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+	"files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "node_modules": true
+  },
+	"css.lint.unknownAtRules": "ignore",
+  "css.validate": false,
+  "npm.packageManager": "npm",
+	"editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "eslint.format.enable": true,
+  "eslint.workingDirectories": [],
+	"java.compile.nullAnalysis.mode": "automatic",
+	"java.configuration.updateBuildConfiguration": "automatic",
+	"typescript.tsdk": "node_modules/typescript/lib"
+}
+```
