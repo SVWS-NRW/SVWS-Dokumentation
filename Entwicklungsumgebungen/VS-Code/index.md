@@ -2,7 +2,9 @@
 
 ## Installation unter Ubuntu
 
- Vorbereitungen: 
+Es wird empfohlen, den Anweisungen auf der offiziellen Installationsseite von VS Code zu folgen, die hier veröffentlicht werden: https://code.visualstudio.com/docs/setup/linux
+
+Vorbereitungen: 
 
 ```bash
 sudo apt update && upgrade -y 
@@ -28,7 +30,7 @@ sudo apt update
 vscode installieren:
 
 ```bash
-sudo apt install -y temurin-21-jdk nodejs code 
+sudo apt install -y temurin-21-jdk nodejs code
 ```
 
 ## Hilfreiche PlugIns

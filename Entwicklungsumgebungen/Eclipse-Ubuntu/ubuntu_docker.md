@@ -18,8 +18,7 @@ echo \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
-```
-```bash
+
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
@@ -44,7 +43,7 @@ systemctl --user status docker
 
 Starten des Gradle-Tasks "docker > dockerbuildLatestTag"
 
-Hier wird in der lokaen Docker-Installation der Container zur Verfügung gestellt.
+Hier wird in der lokaen Docker-Installation der Container zur Verfügung gestellt:
 
 ```bash
 docker images
@@ -57,6 +56,8 @@ mariadb               10.7.3           daf0f023c28d   20 months ago   414MB
 
 ## Erzeugen eines eigenen keystore
 
+Diese Angaben bitte passend ergänzen, der folgende Befehl enthält Beispielwerte:
+
 ```bash
 keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test, S=test, C=test" -keystore ./keystore -storepass "test123" -keypass "test123"  -keyalg RSA
 ```
@@ -64,11 +65,11 @@ keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test
 ## Starten mit Docker-Compose
 
 Verzeichnis für das Dockerfile anlegen.
-In diesem Verszeichnis ein weiteres Verzeichnis keystore anlegen und dne selbst erzeugten keystore hinein kopieren.
+In diesem Verszeichnis ein weiteres Verzeichnis `keystore` anlegen und den selbst erzeugten Keystore hineinkopieren.
 
-docker-compose.yml im Verzeichnis anlegen.
+`docke-compose.yml` im Verzeichnis anlegen:
 
-```yml
+```yaml
 version: "3"
 services:
   mariadb:
@@ -113,9 +114,9 @@ services:
       - .env
 ```
 
-Eine Datei ".env" im Verzeichnis anlegen und die Parameter auf die eigene Umgebung anpassen.
+Eine Datei `.env` im Verzeichnis anlegen und die Parameter auf die eigene Umgebung anpassen:
 
-```
+```bash
 INIT_SCRIPTS_DIR=/etc/app/svws/init-scripts
 TESTDB_PASSWORD=Schild2AccessKennwort
 MariaDB_ROOT_PASSWORD=test
