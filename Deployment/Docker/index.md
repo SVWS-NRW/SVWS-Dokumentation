@@ -41,7 +41,7 @@ Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, S
 
 Achtung: Vor dem Start der SVWS-Umgebung müssen zunächst die [Konfiguration der SVWS-Umgebung](#konfiguration-der-svws-umgebung) individuell angepasst werden.
 
-Nach dem Start kann der SVWS-Server standardmäßig über den Port 8443 erreicht werden. Auf die Datenbank kann standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden (not bound). Intern nutzt die Datenbank den Port 3306. Sollte ein Port-Binding auch außerhalb von Docker gewünscht sein, kann dies über die Angabe eines Port-Mappings (ports) Eintrag in der Datei erreicht werden:
+Nach dem Start kann der SVWS-Server standardmäßig über den Port 8443 erreicht werden. Auf die Datenbank kann standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden (not bound). Intern nutzt die Datenbank den Port 3306. Für den Zugriff von SchILD 3 ist ein Port-Binding auch außerhalb von Docker nötig, dies wird über die Angabe eines Port-Mappings (ports) Eintrag in der Datei erreicht:
 
 Beispiel:
 ```
