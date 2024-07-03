@@ -93,7 +93,7 @@ curl --user "root:${MYSQLROOTPW}" \
 #
 
 ``` 
-Im Skript auskommentiert ist hier die Möglichkeit auch vorhandene Datenbanken zu migrieren. Die Methode ein SQLite Backup einzuspielen ist jedoch wesentlich performanter als die Mirgation eine Access Datenbank und sollte hier primär verwendet werden. 
+Im Skript auskommentiert ist hier die Möglichkeit auch vorhandene Datenbanken zu migrieren. Die Methode ein SQLite Backup einzuspielen ist jedoch wesentlich performanter als die Mirgation einer Access Datenbank und sollte hier primär verwendet werden. 
 
 
 
