@@ -33,7 +33,7 @@ Löschen der vorhanden Datenbanken auf der Konsole des SVWS-Servers per curl Auf
 ##
 # [Einstellungen]
 ##
-SERVERNAME=Bitte_Domainnamen angeben
+SERVERNAME=Bitte_Domainnamen_angeben
 PORT=8443   #i.d.R ist das so korrekt 
 MYSQLROOTPW=Bitte_PW_angeben
 MDB_PW=Bitte_PW_angeben
