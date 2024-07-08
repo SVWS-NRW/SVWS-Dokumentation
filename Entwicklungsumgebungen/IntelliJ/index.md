@@ -37,8 +37,34 @@
 1. **keystore.example** in  **keystore** umbenennen und in das Projekt Root Verzeichnis `./SVWS-Server` kopieren TODO: Pfad überprüfen und ggf. anpassen
 2. Die Datei **svwsconfig.json.example** in **svwsconfig.json** umbenennen (in den selben Pfad kopieren) und entsprechend konfigurieren:
     + Passe die Pfade für `clientPath` und `adminPath` an (Absolute Pfade zum Workspace erforderlich)
-    + Unten in der Datei findest du die **DBKonfiguration**. Verwende die Einstellungen aus der docker-compose.yml. TODO: Dateipfad ergänzen
+    + Unten in der Datei findest du die **DBKonfiguration**. Verwende die Einstellungen aus der docker-compose.yml
 
+## Konfiguration des Formatters und Cleanups
+### Konfiguration
+1. Lade das Plugin "Adapter for Eclipse Code Formatter" von folgender Seite herunter und installiere es: [Adapter for Eclipse Code Formatter](https://plugins.jetbrains.com/plugin/6546-adapter-for-eclipse-code-formatter).
+2. Konfiguriere das Plugin wie folgt:
+   1. Gehe in die Settings und wähle **Adapter for Eclipse Code Formatter** aus.
+   2. Wähle die Option **Use Eclipse's Code Formatter**.
+   3. Wähle in **Supported file types** die Option **Enable Java**.
+   4. Wähle in **Java formatter version** die Option **Bundled Eclipse [...]**.
+   5. Wähle in **Eclipse formatter config** die Option **Eclipse workspace/project folder or config file** und trage dort den Pfad zur Datei `config/eclipse/Eclipse_formatter.xml` ein.
+   6. Wähle als **Profile** "SVWS-Server" aus.
+   7. Stelle sicher, dass die Option **Optimize Imports [...]** nicht ausgewählt ist.
+
+3. Zusätzlich müssen noch die IntelliJ spezifischen Profile für den Formatter und das Cleanup importiert werden. Dies geschieht automatisch, sobald Gradle Tasks geladen oder das Projekt gebaut wird.
+   - **Wichtig:** Dies erfordert bei der ersten Konfiguration oder bei Änderungen dieser beiden Profile (`conig/intellij/IntelliJ_Formatter.xml` und `conig/intellij/IntelliJ_Formatter.xml`) nach dem Bauen bzw. laden der Gradle Tasks einen Neustart der IDE, da sonst die Änderungen noch nicht angewendet werden.
+   - Das Automatisierte Laden der beiden Profile hat zur Folge, das Änderungen am Formatter (unter `Code Styles`) und am Cleanup überschrieben werden.
+   - Änderungen an den Profilen, die für alle gültig sein sollen, können nach folgender Anleitung vorgenommen werden: TODO: Anleitung verlinken
+4. **Wichtig:** Es gibt in IntelliJ die Möglichkeit, den Formatter und das Cleanup als `Actions on Save` zu aktivieren, sodass sie beim Speichern einer Datei automatisch durchgeführt werden. Das ist für den Formatter (Option `Reformat Code`) auch in Ordnung, darf aber für das Cleanup (Option `Run code cleanup`) nicht gesetzt sein! Diese Option verwendet das falsche Profil und sie wird zudem nach dem Formatter ausgeführt, sodass nicht nur falsche cleanups gemacht werden, sondern auch falsche Formatierungen eingeführt werden. Das Cleanup muss daher händisch erfolgen.
+
+### Anwendung
+1. Formatter
+    - In aktueller Datei: STRG + ALT + L
+    - Weitere Scopes: Rechtsklick auf Datei/Directory in der Projektstruktur > Reformat Code (**OHNE** Cleanup. Dieses verwendet das falsche Profil!)
+2. Cleanup
+    - Code > Code Cleanup > Custom Scope auswählen, als Insepcation Profile `SVWS-Server-Cleanup` auswählen > Analyze
+    - **Wichtig:** Nach einem Cleanup muss noch mal formatiert werden, da anderfalls einige Formatierungen falsch sind
+    - Wendet ein Cleanup am besten einmalig kurz vor dem Commit einer Datei an
 ## Weite Konfigurationen
 + Gehe zu **Settings -> Editor -> File encoding**
   + Global Encoding auf "UTF-8" stellen
