@@ -64,7 +64,7 @@
 2. Cleanup
     - Code > Code Cleanup > Custom Scope auswählen, als Insepcation Profile `SVWS-Server-Cleanup` auswählen > Analyze
     - **Wichtig:** Nach einem Cleanup muss noch mal formatiert werden, da anderfalls einige Formatierungen falsch sind
-    - Wendet ein Cleanup am besten einmalig kurz vor dem Commit einer Datei an
+    - Wende ein Cleanup am besten einmalig kurz vor dem Commit einer Datei an
     - Man kann auch einen Shotcut definieren unter Settings > Keymap: Stelle Shortcuts für `Main Menu > Code > Inspect Code Actions > Code Cleanup...` und `Main Menu > Code > Analyze Code > Silent Code Cleanup` ein
     - Alternativ: Code > Analyze Code > Silent Code Cleanup - das macht dasselbe wie das Code Cleanup mit den Einstellungen, die man im Code Cleanup kofniguriert habt. Das heißt man spart sich den Dialog, wenn man immer dasselbe macht (z.B. Cleanup auf `Current File` mit dem eingstellten Profil)
 
