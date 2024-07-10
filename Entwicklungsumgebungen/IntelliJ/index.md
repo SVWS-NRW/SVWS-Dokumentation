@@ -85,7 +85,7 @@ So kannst du zukünftig dein Cleanup über ein Shortcut machen und gehst dabei a
     - **Wichtig:** Nach einem Cleanup muss noch mal formatiert werden, da anderfalls einige Formatierungen falsch sind. Benutze alternativ einen Shortcut mir Macro wie oben erklärt
     - Wende ein Cleanup am besten einmalig kurz vor dem Commit einer Datei an
     - **Wichtig:** Führe das Cleanup nur bei Java Dateien aus!
-3. Silent Code Cleanup
+3. Silent Code Cleanup \
 Dieses Cleanup arbeitet wie das normale Code Cleanup, aber spart sich den Dialog mit Einstellungen. Es verwendet als Profil das Profil, welches in den `Settings > Inspections` festgelegt ist. Der Scope wird dadurch definiert, dass man entweder den Cursor in eine Datei setzt, um diese zu cleanen oder indem man eine Datei oder ein Directory in der Projektstruktur auswählt
     - Gehe auf `Code > Analyze Code > Silent Code Cleanup`
     - **Wichtig:** Führe das Cleanup nur bei Java Dateien aus!
