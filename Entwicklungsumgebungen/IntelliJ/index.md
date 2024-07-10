@@ -39,8 +39,11 @@
     + Passe die Pfade für `clientPath` und `adminPath` an (Absolute Pfade zum Workspace erforderlich)
     + Unten in der Datei findest du die **DBKonfiguration**. Verwende die Einstellungen aus der docker-compose.yml
 
-## Konfiguration des Formatters und Cleanups
-### Konfiguration
+## Konfiguration des Formatters und der Inspections
+Der Formatter ist aktuell nur auf Java beschränkt, enhält allerdings auch einige Regeln, die allgemeingültig sind und Auswirkungen auf weitere Dateitypen haben können. \
+Die Inspections haben zwei Aufgaben: 1. Sie warnen in der IDE vor möglichen Fehlern und schlagen Verbesserungen vor. 2. Anhand der eingestellten Severity können durch ein Cleanup automatisiert einige Fixes vorgenommen werden. **Wichtig:** Das Inspections Profil ist aktuell so eingestellt, dass im Falle von Java Datein nur spezielle Fälle durch ein Cleanup tatsächlich gefixt werden, während andere nur im Editor gehighilightet werden. Diese Differenzierung gibt es in anderen Dateitypen nicht, was bei einem Cleanup zu ungewollten Fixes führen würde. Aus diesem Grund sollte ein Cleanup ausschließlich in Java Dateien vorgenommen werden!
+
+### Eclipse Formatter Adapter
 1. Lade das Plugin "Adapter for Eclipse Code Formatter" von folgender Seite herunter und installiere es: [Adapter for Eclipse Code Formatter](https://plugins.jetbrains.com/plugin/6546-adapter-for-eclipse-code-formatter).
 2. Konfiguriere das Plugin wie folgt:
    1. Gehe in die Settings und wähle **Adapter for Eclipse Code Formatter** aus.
@@ -51,24 +54,44 @@
    6. Wähle als **Profile** "SVWS-Server" aus.
    7. Stelle sicher, dass die Option **Optimize Imports [...]** nicht ausgewählt ist.
 
-3. Zusätzlich müssen noch die IntelliJ spezifischen Profile für den Formatter und das Cleanup importiert werden. Dies geschieht automatisch, sobald Gradle Tasks geladen oder das Projekt gebaut wird.
-   - **Wichtig:** Dies erfordert bei der ersten Konfiguration oder bei Änderungen dieser beiden Profile (`conig/intellij/IntelliJ_Formatter.xml` und `conig/intellij/IntelliJ_Formatter.xml`) nach dem Bauen bzw. laden der Gradle Tasks einen Neustart der IDE, da sonst die Änderungen noch nicht angewendet werden.
-   - Das Automatisierte Laden der beiden Profile hat zur Folge, das Änderungen am Formatter (unter `Code Styles`) und am Cleanup überschrieben werden.
+### Laden der Profile 
+Zusätzlich müssen noch die IntelliJ spezifischen Profile für den Formatter und die Inspections importiert werden. Dies geschieht automatisch, sobald Gradle Tasks geladen oder das Projekt gebaut wird.
+   - **Wichtig:** Dies erfordert bei der ersten Konfiguration oder bei Änderungen dieser beiden Profile (`conig/intellij/IntelliJ_Inspections.xml` und `conig/intellij/IntelliJ_Formatter.xml`) nach dem Bauen bzw. laden der Gradle Tasks einen Neustart der IDE, da sonst die Änderungen noch nicht angewendet werden.
+   - Das Automatisierte Laden der beiden Profile hat zur Folge, das Änderungen am Formatter (unter `Code Styles`) und am Cleanup/Inspections überschrieben werden und keine persönlichen Einstellungen mehr möglich sind. Es können eigene Profile erstellt werden, die jedoch bei jedem Reformat oder Cleanup gesetzt werden müssen, da per default immer die konfiguierten SVWS Profile genutzt werden!
    - Änderungen an den Profilen, die für alle gültig sein sollen, können nach folgender Anleitung vorgenommen werden: TODO: Anleitung verlinken
-4. **Wichtig:** Es gibt in IntelliJ die Möglichkeit, den Formatter und das Cleanup als `Actions on Save` zu aktivieren, sodass sie beim Speichern einer Datei automatisch durchgeführt werden. Das ist für den Formatter (Option `Reformat Code`) auch in Ordnung, darf aber für das Cleanup (Option `Run code cleanup`) nicht gesetzt sein! Diese Option verwendet das falsche Profil und sie wird zudem nach dem Formatter ausgeführt, sodass nicht nur falsche cleanups gemacht werden, sondern auch falsche Formatierungen eingeführt werden. Das Cleanup muss daher händisch erfolgen.
+4. **Wichtig:** Es gibt in IntelliJ die Möglichkeit, den Formatter und das Cleanup als `Actions on Save` zu aktivieren, sodass sie beim Speichern einer Datei automatisch durchgeführt werden. Das ist für den Formatter (Option `Reformat Code`) auch in Ordnung, darf aber für das Cleanup (Option `Run code cleanup`) nicht gesetzt sein! Diese Option wird **nach** dem Formatter ausgeführt, sodass falsche Formatierungen eingeführt werden. Das Cleanup muss daher händisch erfolgen.
+
+### Shortcuts (Empfohlen)
+Das Shortcut zur Formatierung innerhalb einer geöffnet Datei ist standardmäßig auf `STRG + ALT + L` festgelegt. 
+Für ein Cleanup existiert kein Shortcut, es kann aber eins gesetzt werden. Die Empfehlung an dieser Stelle ist allerdings, nicht einfach nur das Cleanup auf einen Shortcut zu legen, sondern eine Kombinatin aus Cleanup und Formatter. Das beugt vor, dass nach einem Cleanup die Formatierungen direkt korrigiert werden, ohne den Formatter explizit wieder aufrufen zu müssen.
+Gehe dabei wie folgt vor:
+1. Öffne eine Java-Datei
+2. Gehe auf `Edit > Macros > Start Macro Recording`
+3. In der geöffneten Datei gehe auf `Code > Analyze Code > Silent Code Cleanup` oder alternativ `Code > Code Cleanup` ([Was ist der Unterschied?](#anwendung))
+    - Im Falle vom normalen Code Cleanup: Wähle im Dialog das `SVWS-Server-Cleanup` Profil aus und als Scope `Current File`
+4. Drücke `STRG + ALT + L`, um die Datei zu formatieren
+5. Drücke `STRG + S`, um die Datei zu speichern
+6. Gehe auf `Edit > Macros > Stop Macro Recording`
+7. Benenne das Macro
+8. Gehe auf `File > Settings > Keymap` und wähle dort für Macros > [your Macro] einen Shortcut aus.
+So kannst du zukünftig dein Cleanup über ein Shortcut machen und gehst dabei auch gleich sicher, dass die Formatierung sofort korrigiert wird.
 
 ### Anwendung
 1. Formatter
-    - In aktueller Datei: STRG + ALT + L
-    - Weitere Scopes: Rechtsklick auf Datei/Directory in der Projektstruktur > Reformat Code (**OHNE** Cleanup. Dieses verwendet das falsche Profil!)
-2. Cleanup
-    - Code > Code Cleanup > Custom Scope auswählen, als Insepcation Profile `SVWS-Server-Cleanup` auswählen > Analyze
-    - **Wichtig:** Nach einem Cleanup muss noch mal formatiert werden, da anderfalls einige Formatierungen falsch sind
+    - In aktueller Datei: `STRG + ALT + L`
+    - Weitere Scopes: Rechtsklick auf Datei/Directory in der Projektstruktur > Reformat Code. Falls du dabei **Cleanup Code** gewählt hast, führe diesen Schritt 2 Mal durch, um eventuelle Korrekturen bei der Formatierung zu beheben.
+2. Code Cleanup
+    - `Code > Code Cleanup` und den Custom Scope auswählen, als Insepcation Profile `SVWS-Server-Cleanup` auswählen, dann `Analyze`
+    - **Wichtig:** Nach einem Cleanup muss noch mal formatiert werden, da anderfalls einige Formatierungen falsch sind. Benutze alternativ einen Shortcut mir Macro wie oben erklärt
     - Wende ein Cleanup am besten einmalig kurz vor dem Commit einer Datei an
-    - Man kann auch einen Shotcut definieren unter Settings > Keymap: Stelle Shortcuts für `Main Menu > Code > Inspect Code Actions > Code Cleanup...`´ein
+    - **Wichtig:** Führe das Cleanup nur bei Java Dateien aus!
+3. Silent Code Cleanup
+Dieses Cleanup arbeitet wie das normale Code Cleanup, aber spart sich den Dialog mit Einstellungen. Es verwendet als Profil das Profil, welches in den `Settings > Inspections` festgelegt ist. Der Scope wird dadurch definiert, dass man entweder den Cursor in eine Datei setzt, um diese zu cleanen oder indem man eine Datei oder ein Directory in der Projektstruktur auswählt
+    - Gehe auf `Code > Analyze Code > Silent Code Cleanup`
+    - **Wichtig:** Führe das Cleanup nur bei Java Dateien aus!
 
 ## Weite Konfigurationen
-+ Gehe zu **Settings -> Editor -> File encoding**
++ Gehe zu `Settings -> Editor -> File encoding`
   + Global Encoding auf "UTF-8" stellen
   + Project Encoding auf "UTF-8" stellen
 
