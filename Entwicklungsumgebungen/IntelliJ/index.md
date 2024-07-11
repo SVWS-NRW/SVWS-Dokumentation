@@ -56,8 +56,8 @@ Die Inspections haben zwei Aufgaben: 1. Sie warnen in der IDE vor möglichen Feh
 
 ### Laden der Profile 
 Zusätzlich müssen noch die IntelliJ spezifischen Profile für den Formatter und die Inspections importiert werden. Dies geschieht automatisch, sobald Gradle Tasks geladen oder das Projekt gebaut wird.
-   - **Wichtig:** Dies erfordert bei der ersten Konfiguration oder bei Änderungen dieser beiden Profile (`conig/intellij/IntelliJ_Inspections.xml` und `conig/intellij/IntelliJ_Formatter.xml`) nach dem Bauen bzw. laden der Gradle Tasks einen Neustart der IDE, da sonst die Änderungen noch nicht angewendet werden.
-   - Das Automatisierte Laden der beiden Profile hat zur Folge, das Änderungen am Formatter (unter `Code Styles`) und am Cleanup/Inspections überschrieben werden und keine persönlichen Einstellungen mehr möglich sind. Es können eigene Profile erstellt werden, die jedoch bei jedem Reformat oder Cleanup gesetzt werden müssen, da per default immer die konfiguierten SVWS Profile genutzt werden!
+   - **Wichtig:** Dies erfordert bei der ersten Konfiguration oder bei Änderungen dieser beiden Profile (`conig/intellij/IntelliJ_Inspections.xml` und `conig/intellij/IntelliJ_Formatter.xml`) nach dem Bauen bzw. laden der Gradle Tasks das Leeren der Caches, da sonst die Änderungen noch nicht angewendet werden. Gehe dafür zu `File > Invalidate Caches...`, wähle `Clear file system cache and Local History` und führe `Invalidate and Restart` aus.
+   - Das Automatisierte Laden der beiden Profile hat zur Folge, dass Änderungen am Formatter (unter `Code Styles`) und am Cleanup/Inspections überschrieben werden und keine persönlichen Einstellungen mehr möglich sind. Es können eigene Profile erstellt werden, die jedoch bei jedem Reformat oder Cleanup gesetzt werden müssen, da per default immer die konfiguierten SVWS Profile genutzt werden!
    - Änderungen an den Profilen, die für alle gültig sein sollen, können nach folgender Anleitung vorgenommen werden: TODO: Anleitung verlinken
 4. **Wichtig:** Es gibt in IntelliJ die Möglichkeit, den Formatter und das Cleanup als `Actions on Save` zu aktivieren, sodass sie beim Speichern einer Datei automatisch durchgeführt werden. Das ist für den Formatter (Option `Reformat Code`) auch in Ordnung, darf aber für das Cleanup (Option `Run code cleanup`) nicht gesetzt sein! Diese Option wird **nach** dem Formatter ausgeführt, sodass falsche Formatierungen eingeführt werden. Das Cleanup muss daher händisch erfolgen.
 
@@ -89,6 +89,9 @@ So kannst du zukünftig dein Cleanup über ein Shortcut machen und gehst dabei a
 Dieses Cleanup arbeitet wie das normale Code Cleanup, aber spart sich den Dialog mit Einstellungen. Es verwendet als Profil das Profil, welches in den `Settings > Inspections` festgelegt ist. Der Scope wird dadurch definiert, dass man entweder den Cursor in eine Datei setzt, um diese zu cleanen oder indem man eine Datei oder ein Directory in der Projektstruktur auswählt
     - Gehe auf `Code > Analyze Code > Silent Code Cleanup`
     - **Wichtig:** Führe das Cleanup nur bei Java Dateien aus!
+
+### Cleanup Highlighting
+Um die Stellen erkenntlich zu machen, die vom Cleanup verändert werden würden, werden diese in einem auffälligen Pink markiert und die Problematik in Form einer Warning erklärt. Sollten diese pinken Codestellen auffallen, ist das ein Hinweise darauf, dass ein Cleanup notwendig ist.
 
 ## Weite Konfigurationen
 + Gehe zu `Settings -> Editor -> File encoding`
