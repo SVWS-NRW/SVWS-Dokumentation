@@ -1,115 +1,126 @@
-# Installation IntelliJ für Windows
+# Installation für IntelliJ unter Windows 10
 
 ## Voraussetzungen
 
-+ **Java 21.03** muss in IntelliJ verfügbar sein
-+ **Docker** muss auf dem System installiert sein
-+ **DBeaver** sollte ebenfalls vorhanden sein
++ **IntelliJ IDEA Ultimate** (>=2024)
+  + Es gibt eine Community Edition: https://www.jetbrains.com/de-de/idea. Das Setup wurde nur für die ULTIMATE Edition getestet.
 
-## IntelliJ installieren und konfigurieren
+## IntelliJ konfigurieren
+1. Projekt clonen
+   + Gehe zu *File → New → Project from Version Control*
+   + Wähle *Git* im Dropdown-Menü aus
+   + Füge den *Repository HTTPS Checkout Link* ein
+   + Lege den Pfad für den lokalen Arbeitsbereich fest und klicke auf *Clone*
+   + Git erfordert **Username** und einen **Access Token** (kann in IntelliJ oder GitLab/GitHub erstellt werden)
+2. Java 21 installieren
+   + In IntelliJ auf *File → Project Structure → Project* gehen
+   + Unter SDK die Java Version temurin-21 (21.0.3) auswählen (ggf. vorher herunterladen)
+3. Gradle konfigurieren
+   + Gehe zu *File → Settings → Build, Execution, Deployment → Gradle* und verwende folgende Einstellungen:
+     + *Build and run using*: Gradle (Default)
+     + *Run Tests using*: Gradle (Default)
+     + *Gradle Distribution*: Wrapper
+     + *Gradle JVM*: temurin-21 (21.0.3)
+4. CheckStyle:
+   + Gehe zu *File → Settings → Plugins* und installiere **CheckStyle-IDEA** und starte die IDE neu
+   + Gehe zu *File → Settings → Tools → CheckStyle* und füge unter *Configuration File* die Datei aus `config/checkstyle/checkstyle.xml` hinzu
+   + Setze einen Haken bei **Active** für die eben importierte checkstyle File. Für alle anderen Konfigrationen entferne den Haken!
+5. SonarLint:
+   + Gehe zu *File → Settings → Plugins* und installiere **SonarLint** und starte die IDE neu
+   + Gehe zu *File → Settings → Tools → SonarLint* und erstelle eine neue Verbindung über das + Symbol.
+   + Gib der Verbindung einen Namen (zum Beispiel "SVWS SonarQube") und wähle *SonarQube* aus. Gib als URL `https://sonarqube.svws-nrw.de/` an.
+   + Klicke auf *Next* und gib einen Token an, den du vorher erstellen musst.
+   + Gehe zu *File → Settings → Tools → SonarLint → Project Settings* und hake *Bind project to SonarCloud/SonarQube* an
+   + Wähle in Connection die eben erstellte Connection und in *Project Key* aus der Liste *svws-server* aus
 
-1. Installieren Sie die gewünschte IntelliJ-Edition (>=2024) (es gibt eine kostenlose Community Edition) -> https://www.jetbrains.com/de-de/idea/
-2. Gehe zu **File -> New -> Project from Version Control**
-    + Wähle **Git** im Dropdown-Menü aus
-    + Füge den **Repository HTTPS Checkout Link** ein
-    + Lege den Pfad für den lokalen Arbeitsbereich fest und klicke auf "Clone"
-    + GitLab bzw. GitHub erfordern **Username und einen Access Token**
-      + Das Token muss vorher erstellt werden. Dazu auf GitLab/GitHub im Browser anmelden
-          + GitLab: **Edit profile > Access Tokens** ein neues Token anlegen
-          + GitHub: **Profil > Settings > Developer Settings > Personal Access Tokens** ein neues Token anlegen
-3. IntelliJ fordert möglicherweise **weitere Einstellungen** an. Akzeptiere diese ggf. (z.B. Sprachpaket Deutsch)
-4. Unter **Project Settings**:
-    - Gehe zu **Build, Execution, Deployment > Gradle** und verwende folgende Einstellungen:
-        - **Build and run using**: Gradle (Default)
-        - **Run Tests using**: Gradle (Default)
-        - **Gradle Distribution**: Wrapper
-        - **Gradle JVM**: temurin-21 (21.0.3)
-5. Gehe zu **File > Projekt Structure > Project**
-    + **SDK** auf Java 21 setzen
+## SVWS konfigurieren
 
-## Datenbank starten
-+ Navigiere zu `deployment/docker/example/local/docker-compose.yml`
-+ Führe `docker compose up` aus, um die Datenbank zu starten
-+ Mit DBeaver testen ob die DB läuft
+1. `svws-server-app/src/main/resources/keystore.example` in `keystore` umbenennen und in `svws-server-app` ablegen
+2. Die Datei `svws-server-app/src/main/resources/svwsconfig.json.example` in dasselbe Verzeichnis kopieren, in `svwsconfig.json` umbenennen und entsprechend konfigurieren:
+   + Passe den Pfad für **clientPath** an: `"[PathToYourWorkspace]\\svws-webclient\\client\\build\\output"`
+   + Passe den Pfad für **adminPath** an: `"[PathToYourWorkspace]\\svws-webclient\\admin\\build\\output"`
+   + Unten in der Datei findest du die **DBKonfiguration**. Verwende die Einstellungen aus `deployment/docker/example/local/docker-compose.yml`
 
-## Konfiguration der Dateien
-
-1. **keystore.example** in  **keystore** umbenennen und in das Projekt Root Verzeichnis `./SVWS-Server` kopieren TODO: Pfad überprüfen und ggf. anpassen
-2. Die Datei **svwsconfig.json.example** in **svwsconfig.json** umbenennen (in den selben Pfad kopieren) und entsprechend konfigurieren:
-    + Passe die Pfade für `clientPath` und `adminPath` an (Absolute Pfade zum Workspace erforderlich)
-    + Unten in der Datei findest du die **DBKonfiguration**. Verwende die Einstellungen aus der docker-compose.yml
-
-## Konfiguration des Formatters und der Inspections
-Der Formatter ist aktuell nur auf Java beschränkt, enhält allerdings auch einige Regeln, die allgemeingültig sind und Auswirkungen auf weitere Dateitypen haben können. \
-Die Inspections haben zwei Aufgaben: 1. Sie warnen in der IDE vor möglichen Fehlern und schlagen Verbesserungen vor. 2. Anhand der eingestellten Severity können durch ein Cleanup automatisiert einige Fixes vorgenommen werden. **Wichtig:** Das Inspections Profil ist aktuell so eingestellt, dass im Falle von Java Datein nur spezielle Fälle durch ein Cleanup tatsächlich gefixt werden, während andere nur im Editor gehighilightet werden. Diese Differenzierung gibt es in anderen Dateitypen nicht, was bei einem Cleanup zu ungewollten Fixes führen würde. Aus diesem Grund sollte ein Cleanup ausschließlich in Java Dateien vorgenommen werden!
+## Formatter und Inspections
+Damit der Codingstil innerhalb des Projekts trotz unterschiedlicher Entwickler einheitlich bleibt, wird ein Formatter verwendet. Dieser kann in allen Dateien angewendet werden, um den Code an die Richtlinien anzupassen. \
+Aktuell sind im Projekt nur Formatierungsregeln für Java konfiguriert. Die Formatierung anderer Dateiformate können daher abweichen und sollten aktuell unterlassen werden. \
+Inspections dienen in IntelliJ dazu, im Code Warnungen und Errors anzuzeigen, um die Codequalität zu verbessern.
 
 ### Eclipse Formatter Adapter
-1. Lade das Plugin "Adapter for Eclipse Code Formatter" von folgender Seite herunter und installiere es: [Adapter for Eclipse Code Formatter](https://plugins.jetbrains.com/plugin/6546-adapter-for-eclipse-code-formatter).
-2. Konfiguriere das Plugin wie folgt:
-   1. Gehe in die Settings und wähle **Adapter for Eclipse Code Formatter** aus.
-   2. Wähle die Option **Use Eclipse's Code Formatter**.
-   3. Wähle in **Supported file types** die Option **Enable Java**.
-   4. Wähle in **Java formatter version** die Option **Bundled Eclipse [...]**.
-   5. Wähle in **Eclipse formatter config** die Option **Eclipse workspace/project folder or config file** und trage dort den Pfad zur Datei `config/eclipse/Eclipse_formatter.xml` ein.
-   6. Wähle als **Profile** "SVWS-Server" aus.
-   7. Stelle sicher, dass die Option **Optimize Imports [...]** nicht ausgewählt ist.
+Es ist nicht möglich, dass die Eclipse Formatter Einstellungen 1 zu 1 auf IntelliJ übertragen werden. Aus diesem Grund wird ein Plugin benötigt, das die Einstellungen aus Eclipse in IntelliJ anwendet.
 
-### Laden der Profile 
-Zusätzlich müssen noch die IntelliJ spezifischen Profile für den Formatter und die Inspections importiert werden. Dies geschieht automatisch, sobald Gradle Tasks geladen oder das Projekt gebaut wird.
-   - **Wichtig:** Dies erfordert bei der ersten Konfiguration oder bei Änderungen dieser beiden Profile (`conig/intellij/IntelliJ_Inspections.xml` und `conig/intellij/IntelliJ_Formatter.xml`) nach dem Bauen bzw. laden der Gradle Tasks das Leeren der Caches, da sonst die Änderungen noch nicht angewendet werden. Gehe dafür zu `File > Invalidate Caches...`, wähle `Clear file system cache and Local History` und führe `Invalidate and Restart` aus.
-   - Das Automatisierte Laden der beiden Profile hat zur Folge, dass Änderungen am Formatter (unter `Code Styles`) und am Cleanup/Inspections überschrieben werden und keine persönlichen Einstellungen mehr möglich sind. Es können eigene Profile erstellt werden, die jedoch bei jedem Reformat oder Cleanup gesetzt werden müssen, da per default immer die konfiguierten SVWS Profile genutzt werden!
-   - Änderungen an den Profilen, die für alle gültig sein sollen, können nach folgender Anleitung vorgenommen werden: TODO: Anleitung verlinken
-4. **Wichtig:** Es gibt in IntelliJ die Möglichkeit, den Formatter und das Cleanup als `Actions on Save` zu aktivieren, sodass sie beim Speichern einer Datei automatisch durchgeführt werden. Das ist für den Formatter (Option `Reformat Code`) auch in Ordnung, darf aber für das Cleanup (Option `Run code cleanup`) nicht gesetzt sein! Diese Option wird **nach** dem Formatter ausgeführt, sodass falsche Formatierungen eingeführt werden. Das Cleanup muss daher händisch erfolgen.
+1. Lade das Plugin **Adapter for Eclipse Code Formatter** unter *File → Settings → Plugins* herunter und installiere es. Starte die IDE neu. Eine Konfiguration des Plugins ist nicht erforderlich, da dies später durch die Gradle Taske **initIntellij** automatisch passiert.
 
-### Shortcuts (Empfohlen)
-Das Shortcut zur Formatierung innerhalb einer geöffnet Datei ist standardmäßig auf `STRG + ALT + L` festgelegt. 
-Für ein Cleanup existiert kein Shortcut, es kann aber eins gesetzt werden. Die Empfehlung an dieser Stelle ist allerdings, nicht einfach nur das Cleanup auf einen Shortcut zu legen, sondern eine Kombinatin aus Cleanup und Formatter. Das beugt vor, dass nach einem Cleanup die Formatierungen direkt korrigiert werden, ohne den Formatter explizit wieder aufrufen zu müssen.
-Gehe dabei wie folgt vor:
-1. Öffne eine Java-Datei
-2. Gehe auf `Edit > Macros > Start Macro Recording`
-3. In der geöffneten Datei gehe auf `Code > Analyze Code > Silent Code Cleanup` oder alternativ `Code > Code Cleanup` ([Was ist der Unterschied?](#anwendung))
-    - Im Falle vom normalen Code Cleanup: Wähle im Dialog das `SVWS-Server-Cleanup` Profil aus und als Scope `Current File`
-4. Drücke `STRG + ALT + L`, um die Datei zu formatieren
-5. Drücke `STRG + S`, um die Datei zu speichern
-6. Gehe auf `Edit > Macros > Stop Macro Recording`
-7. Benenne das Macro
-8. Gehe auf `File > Settings > Keymap` und wähle dort für Macros > [your Macro] einen Shortcut aus.
-So kannst du zukünftig dein Cleanup über ein Shortcut machen und gehst dabei auch gleich sicher, dass die Formatierung sofort korrigiert wird.
+### Formatter und Inspections Profile
+Neben dem Eclipse Adapter wird zusätzlich noch ein IntelliJ Formatter Profil benötigt, welches den Eclipse Formatter ergänzt. Selbiges gilt für das Inspections Profil. Beide Profile befinden sich unter `config/intelliJ` und werden automatisch in die projektspezifischen Einstellungen von IntelliJ geladen. Führe hierfür **einen** der folgenden Schritte aus:
++ starte die Gradle Task **build**
++ starte die Gradle Task **ide → initIntelliJ**
++ führe **Reload all Gradle Projects** aus
+
+> <span style="color:red">**Wichtig!**</span>
+> + Jedes Mal, wenn sich die Profile `IntelliJ_Formatter.xml` oder `IntelliJ_Inspections.xml` ändern, müssen diese über einen der 3 oberen Schritte neu geladen werden. Anschließend ist ein Restart der IDE erforderlich!
+> + Das automatisierte Laden der Profile hat zur Folge, dass persönliche Einstellungen überschrieben werden. Die Konfiguration eigener Profile ist zwar dennoch möglich, allerdings muss in IntelliJ dann jedes Mal dieses auch wieder ausgewählt werden.
+> + Änderungen an den Profilen, die für alle gültig sein sollen, können nach folgender Anleitung vorgenommen werden: TODO: Anleitung verlinken
+
+### Shortcuts
+Das Shortcut zur Formatierung innerhalb einer geöffneten Datei ist standardmäßig auf `Strg` + `Alt` + `L` festgelegt.\
+Zusätzlich soll auch der Code durch einen einzelnen Shortcut analysiert und bereinigt werden, was durch die Nutzung von Macros mit Hilfe von Shortcuts vereinfacht werden kann. Die dafür vorgesehenen Macros können importiert werden.
+> <span style="color:red">**Wichtig!**</span>\
+> Der Import der Macros überschreibt alle bereits existenten Macros IDE weit und nicht nur projektspezifisch! Solltest du bereits Macros haben, die du behalten möchtest, musst du händisch eine ZIP vorbereiten, die alle Macros enthält. Gehe wie folgt vor:
+> + Wähle *File → Manage IDE Settings > Export Settings...*
+> + Wähle ausschließlich die **Macros** und speichere die ZIP 
+> + öffne in dieser ZIP die Datei `options/macros.xml`\
+> Aus dieser Datei müssen alle gewünschten `<macro>...</macro>` Tags in die zu importierende ZIP kopiert werden:
+> + Entpacke die Datei `config/intelliJ/macros.zip` aus dem Projekt und öffne darin `options/macros.xml`
+> + Füge in der Liste der Macros die kopierte Liste aus deiner eigenen Konfiguration hinzu
+> + Füge die Dateistruktur wieder einem Archiv hinzu\
+> Verwende im Folgenden die neu erstellte ZIP für den Import der Macros. Deine ZIP muss nun folgende Struktur haben:
+> ``` 
+> macros.zip
+> |-- options
+>       |-- macros.xml
+> |-- IntelliJ IDEA Global Settings 
+> ```
+Importiere die Macros und konfiguriere die Shortcuts wie folgt:
++ Wähle *File → Manage IDE Settings > Import Settings...* und importiere die Macros aus `config/intelliJ/macros.zip` oder deine selbst erstellte ZIP, falls du deine eigenen Macros nicht überschreiben möchtest.
++ Gehe zu *File → Settings → Keymap*
++ Unter *Macros* findest du die beiden Macros **CleanupAndReformat** und **FullCheckAndClean**
++ Rechtsklick auf das jeweilige Macro und dann **Add Keyboard Shortcut**
++ Teile nun den Macros einen Shortcut zu z.B. `STRG` + `ALT` + `Ö` für **CleanupAndReformat** und `STRG` + `ALT` + `Ä` für **FullCheckAndClean**.\
+Folgende Aktionen werden bei diesen Macros durchgeführt:
+
+**CleanupAndReformat** 
++ Silent Code Cleanup 
++ Formatierung
++ Speichern
+
+**FullCheckAndClean**
++ Silent Code Cleanup 
++ Formatierung
++ Sonarlint
++ Checkstyle
++ Speichern
+
+> <span style="color:red">**Wichtig!**</span>
+> + Diese Shortcuts dürfen ausschließlich in Java-Dateien angewendet werden!
+> + Diese Shortcuts dürfen nur angewendet werden, wenn alle Konfigurationen für CheckStyle, Sonarlint und die Formatter/Inspections Profile wie oben geschrieben, vorgenommen wurden!
+
+### Neustart der IDE
+Nach allen Konfigurationen muss die IDE neugestartet werden, damit alle Einstellungen übernommen werden.
 
 ### Anwendung
-1. Formatter
-    - In aktueller Datei: `STRG + ALT + L`
-    - Weitere Scopes: Rechtsklick auf Datei/Directory in der Projektstruktur > Reformat Code. Falls du dabei **Cleanup Code** gewählt hast, führe diesen Schritt 2 Mal durch, um eventuelle Korrekturen bei der Formatierung zu beheben.
-2. Code Cleanup
-    - `Code > Code Cleanup` und den Custom Scope auswählen, als Insepcation Profile `SVWS-Server-Cleanup` auswählen, dann `Analyze`
-    - **Wichtig:** Nach einem Cleanup muss noch mal formatiert werden, da anderfalls einige Formatierungen falsch sind. Benutze alternativ einen Shortcut mir Macro wie oben erklärt
-    - Wende ein Cleanup am besten einmalig kurz vor dem Commit einer Datei an
-    - **Wichtig:** Führe das Cleanup nur bei Java Dateien aus!
-3. Silent Code Cleanup \
-Dieses Cleanup arbeitet wie das normale Code Cleanup, aber spart sich den Dialog mit Einstellungen. Es verwendet als Profil das Profil, welches in den `Settings > Inspections` festgelegt ist. Der Scope wird dadurch definiert, dass man entweder den Cursor in eine Datei setzt, um diese zu cleanen oder indem man eine Datei oder ein Directory in der Projektstruktur auswählt
-    - Gehe auf `Code > Analyze Code > Silent Code Cleanup`
-    - **Wichtig:** Führe das Cleanup nur bei Java Dateien aus!
+Wird gerade eine Java-Datei bearbeitet, dann muss zum Abschluss diese formatiert und gereinigt werden, bevor sie eingechekt werden darf. Hierfür reicht es den eingestellten Shortcut `STRG` + `ALT` + `Ö` bzw. + `Ä` auszuführen.
 
-### Cleanup Highlighting
-Um die Stellen erkenntlich zu machen, die vom Cleanup verändert werden würden, werden diese in einem auffälligen Pink markiert und die Problematik in Form einer Warning erklärt. Sollten diese pinken Codestellen auffallen, ist das ein Hinweise darauf, dass ein Cleanup notwendig ist.
+> **Hinweis**\
+> Falls es Codestellen gibt, die durch eine solche Bereinigung verändert werden würden, dann werden diese in einem auffälligen Pink hinterlegt. Dies ist ein deutlicher Hinweis, dass `STRG` + `ALT` + `Ö` bzw. + `Ä` ausgeführt werden muss.
 
-## Weite Konfigurationen
-+ Gehe zu `Settings -> Editor -> File encoding`
-  + Global Encoding auf "UTF-8" stellen
-  + Project Encoding auf "UTF-8" stellen
+> <span style="color:red">**Wichtig!**</span>\
+> Die Macros dürfen niemals auf andere Dateien als Java-Dateien ausgeführt werden!\
+> Außerdem, da das Code Cleanup Formatierungen kaputt machen kann:
+> + Es darf keine *Actions on Save* für *Run code cleanup* gesetzt werden!
+> + Wenn das (Silent) Code Cleanup nicht über die Macros ausgeführt wird, ist zu beachten, dass im Anschluss unbedingt noch eine Formatierung der betroffenen Datei durchgeführen werden muss!
 
-## Style checker Konfigueren
-TODO: Derzeit sind die Stilvorlagen nicht entgültig geklärt. Die Idee ist, die Vorgaben in IntelliJ einzustellen und dann exportieren/importieren zu können
+## Run Configuration
 
-
-## Build und Ausführung
-
-1. Führe `gradle assemble` aus.
-2. Run **main()** in '''SVWS-Server\svws-server-app\src\main\java\de\svws_nrw\server\jetty'''
-
-## Erste Schritte
-
-1. Gehe auf https://localhost/admin und melde dich mit den Anmeldedaten aus der docker-compose.yml an
-2. Erstelle ein neues Schema über die GUI (über das Plus-Symbol)
-3. Fülle das neue Schema mit **Testdaten** aus diesem Repository über die Funktion "Schild2-Schema migrieren"
-4. Wähle das neue Schema auf https://localhost aus und melde dich ohne Passwort an
+1. Führe den Gradle Task `Tasks/build/build` aus.
+2. Run main() in `svws-Server\svws-server-app` Es ist sehr wichtig dass, `main()` innerhalb von `svws-server-app` ausgeführt wird.
