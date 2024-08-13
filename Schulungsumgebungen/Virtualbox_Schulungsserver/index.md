@@ -3,23 +3,9 @@
 In diesem Szenario stehen den Schulungsteilnehmern lokal vernetzte Windowsrechner zu Verfügung. Ein Server mit mehreren virtuellen Maschinen kann in diesem Netzwerk die Verteilung der SchILD-NRW 3.0 Software übernehmen.
 
 Das Szenario wurde getestet mit einem Ubuntu Mate und Virtualbox.
-Die VHD Festplatte der Virtualbox Maschine kann dabei einfach unter den Dozenten ausgetauscht, gewartet und idividualisiert werden. Hier reicht in der Regel ein Stick oder die Fachberater-Cloud als Austauschplattform der VHD-Datei.
-
+Die VHD Festplatte der Virtualbox Maschine kann dabei einfach unter den Dozenten ausgetauscht, gewartet und individualisiert werden. 
 
 Um einen Schulungsserver zu erstellen, laden Sie sich z.B. die aktuelle [Ubuntu Mate](https://ubuntu-mate.org/download/) für Ihre Architektur herunter. I.d.R. ist dies die 64-Bit PCs Version. 
-
-## Bootstick erstellen
-
-Laden Sie sich [Ventoy](https://www.ventoy.net/en/download.html) runter und erstellen Sie einen Bootstick (vgl. [Installationsanleitung](https://www.ventoy.net/en/doc_start.html)).
-Im Ventoy Bootstick können ISOs oder VHDs abgelegt werden und von diesen gebootet werden. 
-
-Speichern Sie die ISO von Ubuntu Mate in das Hauptverzeichnis des Sticks.
-
-## Ubuntu Mate installieren
-
-Beim Booten des Schulungsservers muss noch sichergestellt sein, dass die BIOS Einstellungen auf Legacy Boot stehen und der Stick vom BIOS erkannt wird. 
-
-Installieren Sie Ubuntu Mate. 
 
 ## Vitualbox installieren
 

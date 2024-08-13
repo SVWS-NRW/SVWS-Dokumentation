@@ -1,6 +1,6 @@
 # SchulungsClient
 
-Unter SchulungsClients sollen hier virtuelle Maschinen verstanden werden, die für einen Teilnehmenden bzw. einen Schulungsplatzinstanz zur Verfügung steht.
+Unter SchulungsClients sollen hier (virtuelle) Maschinen verstanden werden, die für einen Teilnehmenden bzw. einen Schulungsplatzinstanz zur Verfügung stehen.
 
 ## Anforderungen
 
