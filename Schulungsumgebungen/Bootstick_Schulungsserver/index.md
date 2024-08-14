@@ -9,9 +9,9 @@ Im Ventoy Bootstick können ISOs oder VHDs abgelegt werden und von diesen geboot
 
 ## Erstellen eines Schulungsclients 
 
-Mit Hilfe von Virtualbox kann eine VHD Datei erstellt werden. Dies wird unter [Schulungsserver per Virtualbox](Virtualbox_Schulungsserver/index.md) beschrieben. Die VHD Datei findet man im Virtualbox Verzeichnis. Diese Datei ins Hauptverzeichnis des Bootsticks Kopieren.
+Mit Hilfe von Virtualbox kann eine VHD Datei erstellt werden. Dies wird unter [Schulungsserver per Virtualbox](../Virtualbox_Schulungsserver/index.md) beschrieben. Die VHD Datei findet man im Virtualbox Verzeichnis. Diese Datei ins Hauptverzeichnis des Bootsticks Kopieren.
 
 ## Starten des Schulungsclients
 
-Stecken Sie den USB-Bootstick ein und starten Sie den Computer neu. In der Regel wird der Stick erkannt und im Bootmenue gibt es eine Auswahl, welches darauf befindliche Betriebssystem gestartet werden soll. Starten Sie den zuvor darauf kopierten  [SchulungClient](SchulungsClient/index.md)
+Stecken Sie den USB-Bootstick ein und starten Sie den Computer neu. In der Regel wird der Stick erkannt und im Bootmenue gibt es eine Auswahl, welches darauf befindliche Betriebssystem gestartet werden soll. Starten Sie den zuvor darauf kopierten  [SchulungClient](../SchulungsClient/index.md)
 
