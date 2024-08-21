@@ -20,7 +20,7 @@ Diese Installationsvariante ist für sehr kleine Schulen ohne weitere IT-Umgebun
 
 Die Variante einen eigenen Server in der Schule zu betreiben, der im Verwaltungsnetzwerk abgekoppelt vom pädagogischen Netzwerk betrieben wird, 
 ist die häufigste Installations-Art. Auch hier wird der Port 443 intern geöffnet, so dass der SVWS-Web-Client mit einem Web-Browser aufgerufen werden kann. 
-Der SVWS-Server kann hierbei sowohl auf einerm windows- als auch auf einem linuxbasierten Rechner betrieben werden. 
+Der SVWS-Server kann hierbei sowohl auf einem windows- als auch auf einem linuxbasierten Rechner betrieben werden. 
 Die Installation auf Linuxbasis ermöglicht den Schulen bzw. den Schulrägern eine komplett lizenzkostenfreie Installation des SVWS-Servers basierend auf Open Source Software. 
 
 Das Zertifikat, welches bei der Installation erstellt wird, sollte dann an die Clients per Gruppenrichtlinie oder manuell verteilt 
