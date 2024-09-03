@@ -36,8 +36,9 @@ Nun werden die neuen Einstellungen bei allen Entwicklern automatisch bei einem G
 Das Cleanup in IntelliJ ist anders aufgebaut als in Eclipse, wodurch die Konfiguration auch komplexer ist. \
 Kleiner Exkurs: In IntelliJ wird unter `Settings → Editor → Inspections` festgelegt, vor welchen Fehlern im Code gewarnt werden soll und welche Relevanz (Severity bzw. Level) dieser Fehler hat. Es ist sogar einstellbar, in welchen Farben ein Fehler dargestellt wird. Das Code Cleanup ist in IntelliJ mit diesen Inspections verknüpft. Es gibt einige Inepctions die, wenn sie aktiviert sind, bei einem Cleanup berücksichtigt werden. Welche das sind kann eingesehen werden, indem man im Inspections Fenster den Filter **Show only cleanup Inspections** setzt. Grunsätzlich gilt, dass jede dieser Inspection Reglen, wenn sie gesetzt ist und ein anderes Level als *Consideration* oder *No Highlighting* besitzt, bei einem Cleanup zu Code Veränderungen führt. \ Da dies jedoch nicht gewollt ist, wurde die spezielle Severity *Cleanup* definiert. Alle Inspections mit dieser Severity werden gecleaned und können vom Entwickler, außer in der Farbgebung, nicht verändert werden. Alle anderen Cleanup Inspections werden im Code zwar noch wie im Default eingestellt angezeigt, haben aber die Severity *Cosideration* erhalten, um bei einem Cleanup nichts ungewollt zu verändern. \
 Diese Verknüofung zwischen Inspections und Cleanups führt zu einer komplexen Überschreibungslogik der Workspace Einstellungen durch die Datei `config/intellij/IntelliJ_Inspections.xml`, die im folgenden Diagramm dargestellt wird. Grundsätzlich gilt, dass **IntelliJ_Inspections.xml** alle Cleanup relevanten Inspections für **Java** enthält.
-TODO: Diagramm einfügen
-Durch diese berschreibungslogik sind für den Entwickler folgende eigene Einstellungen noch möglich:
+
+
+Durch diese Überschreibungslogik sind für den Entwickler folgende eigene Einstellungen noch möglich:
 * Farbgebung der Inspections mit Severity *Cleanup*
 * Freie Einstellung aller Inspections, die nicht für ein Cleanup relevant sind
 * Eingeschränkte Einstellung aller Inspections, die für ein Cleanup relevant sind (Serverity nur auf Consideration oder No Highlighting setzbar, Editor Highlighting aber frei wählbar)
@@ -57,3 +58,4 @@ VSCode ist so konfiguriert, dass er keinen eigenen Formatter verwendet, sondern 
 
 ### Cleanup
 VSCode bietet nur eine sehr kleine Menge an Cleanup Optionen
+
