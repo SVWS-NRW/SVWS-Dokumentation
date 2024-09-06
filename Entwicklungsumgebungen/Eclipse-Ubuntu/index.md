@@ -155,6 +155,9 @@ in den folgenden Unterverzeichnissen ausführen:
 ./gradlew clean
 ./gradlew build
 ```
-		
+
+# Code Styles einrichten
+Die Code Styles in Eclipse werden automatisiert durch ein Gradle Project Reload oder Build in den Workspace geladen. Eigene Konfigurationen sind nicht möglich. \
+Wie die Code Styles für alle Entwickler angepasst werden können, kann in der Anleitung [Code Styles](../Code-Styles/index.md) nachgelesen werden.
  
 
