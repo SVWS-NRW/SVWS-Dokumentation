@@ -40,7 +40,7 @@ Diese Verknüpfung zwischen Inspections und Cleanups führt zu einer komplexen �
 Grundsätzlich gilt, dass **IntelliJ_Inspections.xml** alle Cleanup relevanten Inspections für **Java** enthält.
 <details>
 <summary>InstelliJ Inspections Merge Ablauf</summary>
-<img src="https://github.com/user-attachments/assets/2d63894a-e776-4ad9-abe1-05d0c3ec5fca" />
+<img src="./graphics/IntelliJinspectionsMerge.svg" />
 </details>
 Durch diese Überschreibungslogik sind für den Entwickler folgende eigene Einstellungen noch möglich:
 * Farbgebung aller Servities sowie neue Severities
