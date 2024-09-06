@@ -110,3 +110,7 @@ Diese Einstellungen werden genutzt:
 	"typescript.tsdk": "node_modules/typescript/lib"
 }
 ```
+
+# Code Styles einrichten
+Die Code Styles in VSCode werden automatisiert durch ein Gradle Project Reload oder Build in den Workspace geladen. Eigene Konfigurationen sind nicht möglich. \
+Wie die Code Styles für alle Entwickler angepasst werden können, kann in der Anleitung [Code Styles](../Code-Styles/index.md) nachgelesen werden.
