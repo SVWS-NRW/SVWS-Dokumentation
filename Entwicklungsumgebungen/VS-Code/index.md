@@ -100,6 +100,7 @@ Diese Einstellungen werden genutzt:
   },
 	"css.lint.unknownAtRules": "ignore",
   "css.validate": false,
+  // Diese Einstellung zeigt im File Explorer die in der package.json angelegten Scripte zur Ausführung an
   "npm.packageManager": "npm",
 	"editor.tabCompletion": "on",
   "editor.tabSize": 2,
@@ -108,5 +109,9 @@ Diese Einstellungen werden genutzt:
 	"java.compile.nullAnalysis.mode": "automatic",
 	"java.configuration.updateBuildConfiguration": "automatic",
 	"typescript.tsdk": "node_modules/typescript/lib"
+  // Um Dateien zu gruppieren, hier die UI-Komponenten mit Story und Test:
+  "explorer.fileNesting.patterns": {
+    "*.vue": "${capture}.story.vue, ${capture}.test.ts"
+  }
 }
 ```
