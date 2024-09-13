@@ -57,7 +57,7 @@ Das Skript bietet verschiedene Optionen zur Konfiguration, die hier vorgestellt 
 Die gewählten Parameter werden in die Datei ``.env`` geschrieben.
 Aus dieser Datei werden die Werte für die Installation dann entnommen.
 Auch das Update bedient sich aus dieser Datei, um die Installationspfade zu ermitteln.
-Wenn diese Datei schon exiateirt, dann werden die Parameter nicht mehr abgefragt und die Installation startet sofort.
+Wenn diese Datei schon existiert, dann werden die Parameter nicht mehr abgefragt und die Installation startet sofort.
 Auf diese Weise kann also auch eine scriptgesteuerte Installation realisisert werden.
 
 Folgende Konfigurationen können vorgenommen werden:
