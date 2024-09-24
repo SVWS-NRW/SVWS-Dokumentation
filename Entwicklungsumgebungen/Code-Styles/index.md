@@ -35,7 +35,7 @@ Nun werden die neuen Einstellungen bei allen Developern automatisch bei einem Gr
 
 ### Cleanup
 Das Cleanup in IntelliJ ist anders aufgebaut als in Eclipse, wodurch die Konfiguration komplexer ist, aber auch einige eigene Einstellungen zulässt. \
-Kleiner Exkurs: In IntelliJ wird unter `Settings → Editor → Inspections` festgelegt, vor welchen Fehlern im Code gewarnt werden soll und welche Relevanz (Severity) dieser Fehler hat. Es ist sogar einstellbar, in welchen Farben ein Fehler dargestellt wird. Das Code Cleanup ist in IntelliJ mit diesen Inspections verknüpft. Es gibt einige Inepctions, die bei einem Cleanup berücksichtigt werden, wenn sie aktiviert sind. Welche das sind kann eingesehen werden, indem man im Inspections Fenster den Filter **Show only cleanup Inspections** setzt. Grunsätzlich gilt, dass jede dieser Inspection Regeln, wenn sie gesetzt ist und ein anderes Level als *Consideration* oder *No Highlighting* besitzt, bei einem Cleanup zu Code Veränderungen führt. \
+Kleiner Exkurs: In IntelliJ wird unter `Settings → Editor → Inspections` festgelegt, vor welchen Fehlern im Code gewarnt werden soll und welche Relevanz (Severity) dieser Fehler hat. Es ist sogar einstellbar, in welchen Farben ein Fehler dargestellt wird. Das Code Cleanup ist in IntelliJ mit diesen Inspections verknüpft. Es gibt einige Inspections, die bei einem Cleanup berücksichtigt werden, wenn sie aktiviert sind. Welche das sind kann eingesehen werden, indem man im Inspections Fenster den Filter **Show only cleanup Inspections** setzt. Grundsätzlich gilt, dass jede dieser Inspection Regeln, wenn sie gesetzt ist und ein anderes Level als *Consideration* oder *No Highlighting* besitzt, bei einem Cleanup zu Code Veränderungen führt. \
 Da dies jedoch nicht gewollt ist, wurde die spezielle Severity *Cleanup* definiert. Alle Inspections mit dieser Severity werden gecleaned und können vom Developer, außer in der Farbgebung, nicht verändert werden. Alle anderen Cleanup Inspections werden im Code zwar noch wie im Default eingestellt angezeigt, haben aber die Severity *Cosideration* erhalten, um bei einem Cleanup nichts ungewollt zu verändern. \
 Diese Verknüpfung zwischen Inspections und Cleanups führt zu einer komplexen Überschreibungslogik der Workspace Einstellungen durch die Datei `config/intellij/IntelliJ_Inspections.xml`, die im folgenden Diagramm dargestellt wird. 
 Grundsätzlich gilt, dass **IntelliJ_Inspections.xml** alle Cleanup relevanten Inspections für **Java** enthält.
@@ -43,6 +43,7 @@ Grundsätzlich gilt, dass **IntelliJ_Inspections.xml** alle Cleanup relevanten I
 <summary>InstelliJ Inspections Merge Ablauf</summary>
 <img src="./graphics/IntelliJinspectionsMerge.svg" />
 </details>
+
 Durch diese Überschreibungslogik sind für den Developer folgende eigene Einstellungen noch möglich:
 * Farbgebung aller Servities sowie neue Severities
 * Freie Einstellung aller Inspections, die für ein Cleanup **nicht** relevant sind
