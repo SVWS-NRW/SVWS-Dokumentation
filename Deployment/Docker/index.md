@@ -1,51 +1,66 @@
 # Docker-Container 
 
-## Betrieb von SVWS unter Docker
+Der SVWS-Server kann als Container betrieben werden. Dies eignet sich insbesondere für die folgenden beisen Szenarien:
 
-Es besteht die Möglichkeit, den SVWS-Server als Container zu betreiben. Für folgende Szenarien eignet sich dieser Ansatz grundsätzlich:
+* Betrieb einer SVWS-Umgebung für Produktiv- oder Test-Betrieb [per docker-compose](#svws-umgebung-mit-docker-compose-starten)
+* Betrieb einer SVWS-Umgebung für die Entwicklung und Deployment [per Gradle](#svws-umgebung-mit-gradle-starten)
 
-* Betrieb einer SVWS-Umgebung für die Entwicklung (PC, Notebook)
-* Betrieb einer SVWS-Umgebung für Test oder Live-Betrieb (Server)
+Die SVWS-Container-Images sind unter Docker (docker engine, docker desktop) lauffähig. Ein Betrieb unter anderen Container-Umgebungen wie z.B. 
+[Podman](https://podman.io/), [Kubernetes](https://kubernetes.io/de/), [OpenShift](https://www.redhat.com/de/technologies/cloud-computing/openshift) 
+ist grundsätzlich möglich, jedoch noch nicht getestet (Stand 27.09.2024).
 
-Die SVWS-Umgebung kann über mehrere Wege gestartet werden:
- * [SVWS-Umgebung mit docker-compose starten](#svws-umgebung-mit-docker-compose-starten)
- * [SVWS-Umgebung mit Gradle starten](#svws-umgebung-mit-gradle-starten)
- * [Ausgewählte Services einer SVWS-Umgebung starten](#ausgewahlte-services-einer-svws-umgebung-starten)
+Im Git-Repository von SVWS befinden sich [Beispiele, Scripte und Image-Definitionen](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker) 
+zum Aufbau von Docker-basierten SVWS-Umgebungen.
 
-
-Die SVWS-Container-Images sind unter Docker (docker engine, docker desktop) lauffähig. Ein Betrieb unter anderen Container-Umgebungen wie z.B. [Podman](https://podman.io/), [Kubernetes](https://kubernetes.io/de/), [OpenShift](https://www.redhat.com/de/technologies/cloud-computing/openshift) ist grundsätzlich möglich, jedoch zum Zeitpunkt der Erstellung dieser Dokumentation nicht getestet (Stand 20.01.2023).
-
-## Lokale SVWS-Umgebung für die Entwicklung
-Im folgenden wird der Ansatz beschrieben, die SVWS-Images für die Entwicklung lokal zu betreiben. Dieser Ansatz bietet in der Entwicklung folgende Vorteile:
-* Keine Notwendigkeit einer lokalen Installation von MariaDB
-* Schnelles Rampup von SVWS-Datenbanken mit Testdaten
-* Einfaches Zurücksetzen und Wiederherstellen der SVWS-Datenbanken auf definierte Zustände. Dies ist insbesondere für die Ausführung von automatisierten API- und Integrationstests mit Abhängigkeit zu Testdaten hilfreich.
-
-Im Git-Repository von SVWS befinden sich Scripte und Image-Definitionen zum Aufbau von Docker-basierten SVWS-Systemumgebungen im Modul [./deployment/docker](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker).
 
 ## Systemvoraussetzungen
 Für die lokale Inbetriebnahme ist eine Installation von [Docker-Desktop](https://docs.docker.com/desktop/) auf dem Entwickler-PC notwendig.
+Bitte die [Nutzungsbedingungen](https://www.docker.com/legal/docker-subscription-service-agreement) der Fa. Docker Inc. für Docker Desktop beachten!
 
-
-Wichtig: Bitte die [Nutzungsbedingungen](https://www.docker.com/legal/docker-subscription-service-agreement) der Fa. Docker Inc. für Docker Desktop beachten!
-
-<a name="docker-compose-starten"></a>
-## SVWS-Umgebung mit docker-compose starten
-Die SVWS-Umgebung kann über die Konsole des verwendeten Betriebssystems mittels docker-compose gestartet werden. Dazu, ausgehend von dem Verzeichnis [./deployment/docker](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/), folgenden Befehl auf der Konsole eingeben:
+### Beispiel für eine Installation dee Docker-Umgebung in Debian 12
 
 ```bash
+## Install Docker on Debian 12
+apt update && apt upgrade -y
+apt install -y apt-transport-https ca-certificates zip p7zip-full curl gnupg-agent software-properties-common net-tools
+curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian  $(lsb_release -cs)  stable"
+apt update && apt install -y docker-ce docker-ce-cli containerd.io
+service docker status --no-pager
+```
+
+## SVWS-Umgebung mit docker-compose starten
+
+Die SVWS-Umgebung kann über die Konsole des verwendeten Betriebssystems mittels docker-compose gestartet werden. 
+Beispiele zur dazu obligatorischen docker-compose.yml und .env Datei befinden sich im [Github-Repository](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/example) .
+
+### Beipiel für einen aktuellen Testserver
+
+```bash
+# Arbeitsverzeichnis anlegen
+mkdir ~/docker && mkdir ~/docker/svws && cd ~/docker/svws
+#
+# download docker-comose.yml, .env, etc.
+wget https://github.com/SVWS-NRW/SVWS-Dokumentation/tree/main/Deployment/Docker/svws-docker-example.zip
+7z x svws-docker-example.zip
+#
+# SVWS Docker initialisieren
 docker compose up
 ```
 
-Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Backend, Frontend).
+Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Backend, Frontend). Ebenso sind die Volumes für den Keystore gemounted. 
 
-Achtung: Vor dem Start der SVWS-Umgebung muss zunächst die [Konfiguration der SVWS-Umgebung](#konfiguration-der-svws-umgebung) individuell angepasst werden.
+Achtung: Diese Umgebung ist nicht für Produktivbetrieb geeignet, dazu muss die [Konfiguration der SVWS-Umgebung](#konfiguration-der-svws-umgebung) individuell angepasst werden!
 
-Nach dem Start kann der SVWS-Server über den Port 8443 erreicht werden. Auf die Datenbank kann standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden (not bound). Intern nutzt die Datenbank den Port 3306. Für den Zugriff von SchILD 3 ist ein Port-Binding auch außerhalb von Docker nötig, dies wird über die Angabe eines Port-Mappings (ports) Eintrag in der Datei erreicht:
+Nach dem Start kann der SVWS-Server über den Port 8443 erreicht werden. 
+Auf die Datenbank kann standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden (not bound). 
+Intern nutzt die Datenbank den Port 3306. Für den Zugriff von SchILD 3 ist ein Port-Binding auch außerhalb von Docker nötig, 
+dies wird über die Angabe eines Port-Mappings (ports) Eintrag in der Datei erreicht. 
+In diesem Beispiel wird der Port 3306 im Container auf den Port 13306 auf dem Host abgebildet.:
 
 Beispiel:
 ```yaml
-version: "3"
+...
 services:
   mariadb:
     ...
@@ -53,10 +68,16 @@ services:
         - "3306:13306"
     ...
 ```
-In diesem Beispiel wird der Port 3306 im Container auf den Port 13306 auf dem Host abgebildet.
 
-<a name="gradle-starten"></a>
+
 ## SVWS-Umgebung mit Gradle starten
+
+Im folgenden wird der Ansatz beschrieben, die SVWS-Images für die Entwicklung lokal zu betreiben. Dieser Ansatz bietet in der Entwicklung folgende Vorteile:
+* Keine Notwendigkeit einer lokalen Installation von MariaDB
+* Schnelles Rampup von SVWS-Datenbanken mit Testdaten
+* Einfaches Zurücksetzen und Wiederherstellen der SVWS-Datenbanken auf definierte Zustände. 
+Dies ist insbesondere für die Ausführung von automatisierten API- und Integrationstests mit Abhängigkeit zu Testdaten hilfreich.
+
 Es existieren vordefinierte Gradle-Tasks, mit denen eine komplette Umgebung, bestehend aus der SVWS-Anwendung und einer SVWS-Datenbank, aus der Entwicklungsumgebung heraus gestartet werden können.
 
 Start einer Umgebung aus der Console:
@@ -68,7 +89,7 @@ Die Gradle-Tasks nutzen [docker-compose](https://docs.docker.com/compose/) in de
 
 Achtung: Vor dem Start der SVWS-Umgebung muss zunächst die [Konfiguration der SVWS-Umgebung](#konfiguration-der-svws-umgebung) individuell angepasst werden.
 
-<a name="ausgewaehlte-services-starten"></a>
+
 ## Ausgewählte Services einer SVWS-Umgebung starten
 Es besteht die Möglichkeit, nur einzelne ausgewählte Services einer SVWS-Umgebung über Docker zu betreiben. Also z.B. nur eine Datenbank oder nur die SVWS-Anwendung.
 
@@ -82,10 +103,11 @@ Beispiel "nur SVWS-Anwendung":
 docker compose start svws
 ```
 
-<a name="konfiguration"></a>
+
 ## Konfiguration der SVWS-Umgebung 
-Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über Umgebungsvariablen. Die Werte dieser Variablen werden in der Datei [./deployment/docker/example/svws+db+init/.env](https://github.com/SVWS-NRW/SVWS-Server/blob/dev/deployment/docker/example/svws%2Bdb%2Binit/.env) definiert.
-Beispiel:
+Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über Umgebungsvariablen. 
+Die Werte dieser Variablen werden in der Datei [.env](https://github.com/SVWS-NRW/SVWS-Server/blob/dev/deployment/docker/example/svws%2Bdb%2Binit/.env) definiert. 
+Hier ein Beispiel: 
 ```bash
 INIT_SCRIPTS_DIR=/etc/app/svws/init-scripts
 TESTDB_PASSWORD=your-testdb-pw
