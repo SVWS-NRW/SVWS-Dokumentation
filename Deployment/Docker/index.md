@@ -17,7 +17,7 @@ zum Aufbau von Docker-basierten SVWS-Umgebungen.
 Für die lokale Inbetriebnahme ist eine Installation von [Docker-Desktop](https://docs.docker.com/desktop/) auf dem Entwickler-PC notwendig.
 Bitte die [Nutzungsbedingungen](https://www.docker.com/legal/docker-subscription-service-agreement) der Fa. Docker Inc. für Docker Desktop beachten!
 
-### Beispiel für eine Installation dee Docker-Umgebung in Debian 12
+### Beispiel: Installation Docker-Umgebung in Debian 12
 
 ```bash
 ## Install Docker on Debian 12
@@ -34,7 +34,7 @@ service docker status --no-pager
 Die SVWS-Umgebung kann über die Konsole des verwendeten Betriebssystems mittels docker-compose gestartet werden. 
 Beispiele zur dazu obligatorischen docker-compose.yml und .env Datei befinden sich im [Github-Repository](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/example) .
 
-### Beipiel für einen aktuellen Testserver
+### Beipiel: aktuellen Testserver im Docker Container
 
 ```bash
 # Arbeitsverzeichnis anlegen
