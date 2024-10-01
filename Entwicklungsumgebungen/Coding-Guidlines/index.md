@@ -489,5 +489,3 @@ console.log(name);
 const name = 'Alice'
 console.log(name)
 ```
-
-Alle Nummerierungen wurden entsprechend angepasst, um eine durchgehende Reihenfolge zu gewährleisten.
