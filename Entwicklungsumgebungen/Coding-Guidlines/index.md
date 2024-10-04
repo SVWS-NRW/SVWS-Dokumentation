@@ -268,7 +268,9 @@ Wenn der Propertyname und der Wert denselben Namen haben, verwende die Kurzschre
 **Falsch:**
 ```typescript
 <template>
+
   <card-component :title="title"></card-component> <!-- Hier ist die explizite Bindung redundant -->
+
 </template>
 ```
 ---
@@ -279,14 +281,18 @@ Verwende direkte Callback-Zuweisungen anstelle von Inline-Funktionen.
 **Richtig:**
 ```typescript
 <template>
+
   <button @click="click">Click me</button>
+
 </template>
 ```
 
 **Falsch:**
 ```typescript
 <template>
+
   <button @click="(value) => click(value)">Click me</button>
+
 </template>
 ```
 
@@ -297,30 +303,32 @@ Vermeide `watch`-Anweisungen, wenn dieselbe Funktionalität durch `computed`-Pro
 
 **Richtig:**
 ```typescript
-<script setup>
-import { computed, ref } from 'vue';
+<script setup lang="ts">
 
-const firstName = ref('John');
-const lastName = ref('Doe');
+	import { computed, ref } from 'vue';
 
-const fullName = computed(() => firstName.value + ' ' + lastName.value);
+	const firstName = ref('John');
+	const lastName = ref('Doe');
+
+	const fullName = computed(() => firstName.value + ' ' + lastName.value);
+
 </script>
 ```
 
 **Falsch:**
 ```typescript
-<script setup>
-import { ref, watch } from 'vue';
+<script setup lang="ts">
 
-const firstName = ref('John');
-const lastName =
+	import { ref, watch } from 'vue';
 
- ref('Doe');
-let fullName = ref(firstName.value + ' ' + lastName.value);
+	const firstName = ref('John');
+	const lastName = ref('Doe');
+	let fullName = ref(firstName.value + ' ' + lastName.value);
 
-watch(firstName, (newVal) => {
-  fullName.value = newVal + ' ' + lastName.value;
-});
+	watch(firstName, (newVal) => {
+	  fullName.value = newVal + ' ' + lastName.value;
+	});
+
 </script>
 ```
 ---
@@ -331,14 +339,18 @@ Um sicherzustellen, dass Props reaktiv bleiben, sollten sie über Getter überge
 **Richtig:**
 ```typescript
 <template>
+
   <child-component :prop="getProp()"></child-component>
+
 </template>
 ```
 
 **Falsch:**
 ```typescript
 <template>
+
   <child-component :prop="prop"></child-component>
+
 </template>
 ```
 ---
@@ -354,38 +366,44 @@ Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` aus
 **Richtig:**
 ```typescript
 <template>
+
   <div v-if="isVisible">Visible</div> <!-- Logik in Funktion ausgelagert -->
   <card-component :title="noMaintenance ? 'Please log in' : 'Maintenance'" /> <!-- Inline Ternary ist erlaubt-->
+
 </template>
 
-<script setup>
-import { computed, ref } from 'vue';
+<script setup lang="ts">
 
-const noMaintenance = ref(true);
-const userRole = ref('admin');
+	import { computed, ref } from 'vue';
+	
+	const noMaintenance = ref(true);
+	const userRole = ref('admin');
+	
+	const isVisible = computed(() => {
+	  if (noMaintenance.value)
+	    if (userRole.value === 'admin') 
+	      return true;
+	  return false;
+	});
 
-const isVisible = computed(() => {
-  if (noMaintenance.value) {
-    if (userRole.value === 'admin') 
-      return true;
-  }
-  return false;
-});
 </script>
 ```
 
 **Falsch:**
 ```typescript
 <template>
+
   <!-- Theoretisch möglich, aber unübersichtlich -->
   <div v-if="noMaintenance && userRole === 'admin'">Visible</div>
+
 </template>
 
-<script setup>
-import { computed, ref } from 'vue';
+<script setup lang="ts">
 
-const noMaintenance = ref(true);
-const userRole = ref('admin');
+	import { computed, ref } from 'vue';
+	
+	const noMaintenance = ref(true);
+	const userRole = ref('admin');
 
 </script>
 ```
@@ -398,20 +416,26 @@ Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher
 **Richtig:**
 ```typescript
 <template>
+
   <div :style="{ color: 'red' }">Text</div>
+
 </template>
 ```
 
 **Falsch:**
 ```typescript
 <template>
+
   <div class="red-text">Text</div>
+
 </template>
 
 <style>
-.red-text {
-  color: red;
-}
+
+	.red-text {
+	  color: red;
+	}
+
 </style>
 ```
 
@@ -445,29 +469,34 @@ Um die Lesbarkeit und Wartbarkeit von Vue-Komponenten zu verbessern, ist es wich
 
 **Richtig:**
 ```typescript
+
 <script setup lang="ts">
-import { ref, computed } from "vue";
+
+	import { ref, computed } from "vue";
 	const username = ref("Admin");
 	const password = ref("");
 
-  const info = computed(() => props.info());
+	const info = computed(() => props.info());
 
-  function connect() {
-    // connecting
-  }
+	function connect() {
+		// connecting
+	}
+
 </script>
 ```
 
 **Falsch:**
 ```typescript
 <script setup lang="ts">
-import { ref, computed } from "vue";
- function connect() {
-    // connecting
-  }
+
+	import { ref, computed } from "vue";
+	function connect() {
+		// connecting
+	}
 	const username = ref("Admin");
-  const info = computed(() => props.info());
+	const info = computed(() => props.info());
 	const password = ref("");
+
 </script>
 ```
 ---
