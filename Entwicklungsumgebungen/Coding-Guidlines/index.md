@@ -119,7 +119,7 @@ public int sum(int shortName, int someLongName) throws ArithmeticException {
 ---
 
 # Java - Transpiler
-Java-Code, der transpiliert wird, muss einige Sonderregeln beachten.
+Java-Code, der transpiliert wird, muss einige Sonderregeln beachten. Dies betrifft folgende Unterprojekte: `svws-schulen`, `svws-asd`, `svws-core`
 
 ## 1. `@NotNull` und `@AllowNull` korrekt platzieren
 Die `@NotNull`- und `@AllowNull`-Annotation gehört direkt vor den Typ des Parameters oder der Variablen, um Klarheit zu gewährleisten und Missverständnisse zu vermeiden. Die Platzierung dieser Annotationen ist notwendig, damit korrekter TypeScript Code generiert werden kann.
@@ -160,22 +160,11 @@ list.stream().forEach(item -> process(item));
 
 ---
 
-## 3. `switch-Statements` statt `switch-Expressions` verwenden
+## 3. `switch-Statements` und `switch-Expressions` 
 
-Da `switch-Expressions` nicht transpiliert werden können, müssen weiterhin `switch-Statements` verwendet werden. 
+Grundsätzlich ist die Verwendung von `switch-Expressions` zu bevorzugen. Da diese aber nicht vollständig vom Transpiler unterstützt werden, kann auch die Verwendung von `switch-Statements` notwendig sein.
 
-**Richtig:**
-```java
-public String getDay(int day) {
-    switch (day) {
-        case 1: return "Monday";
-        case 2: return "Tuesday";
-        default: return "Unknown";
-    }
-}
-```
-
-**Falsch:**
+**switch-Expression (bevorzugt):**
 ```java
 public String getDay(int day) {
     return switch (day) {
@@ -183,6 +172,17 @@ public String getDay(int day) {
         case 2 -> "Tuesday";
         default -> "Unknown";
     };
+}
+```
+
+**switch-Statement (falls nicht transpilierbar):**
+```java
+public String getDay(int day) {
+    switch (day) {
+        case 1: return "Monday";
+        case 2: return "Tuesday";
+        default: return "Unknown";
+    }
 }
 ```
 ---
@@ -242,8 +242,8 @@ Vermeide High-Level-Funktionen und nutze klassische `for`-Schleifen.
 
 **Richtig:**
 ```typescript
-for (let i = 0; i < array.length; i++) 
-    process(array[i]);
+for (const element of array) 
+    process(element);
 
 ```
 
@@ -326,7 +326,7 @@ watch(firstName, (newVal) => {
 ---
 
 ## 4. Getter für reaktive Props verwenden
-Um sicherzustellen, dass Props reaktiv bleiben, sollten sie über Getter übergeben werden.
+Um sicherzustellen, dass Props reaktiv bleiben, sollten sie über Getter übergeben werden. Dies betrifft ausschließlich transpilierte Java-Objekte, die aus Routen kommen.
 
 **Richtig:**
 ```typescript
