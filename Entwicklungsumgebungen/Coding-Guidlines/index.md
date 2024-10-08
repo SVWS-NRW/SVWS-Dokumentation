@@ -3,29 +3,24 @@
 - [Allgemein](#allgemein)
   - [1. Einzeilige Befehle ohne Klammern](#1-einzeilige-befehle-ohne-klammern)
   - [2. Klammern bei gemischten Operatoren](#2-klammern-bei-gemischten-operatoren)
-
 - [Java](#java)
   - [1. `final` für unveränderliche Variablen](#1-final-für-unveränderliche-variablen)
   - [2. JavaDoc formatieren](#2-javadoc-formatieren)
-
 - [Java - Transpiler](#java---transpiler)
   - [1. `@NotNull` und `@AllowNull` korrekt platzieren](#1-notnull-und-allownull-korrekt-platzieren)
   - [2. Keine Streams verwenden](#2-keine-streams-verwenden)
   - [3. `switch-Statements` und `switch-Expressions`](#3-switch-statements-und-switch-expressions)
-
 - [TypeScript](#typescript)
   - [1. Explizite Null- und Undefined-Überprüfungen](#1-explizite-null--und-undefined-überprüfungen)
   - [2. `const` für unveränderliche Variablen](#2-const-für-unveränderliche-variablen)
-  - [3. `shallowRef` statt `ref` für transpilierte Java-Objekte](#3-shallowref-statt-ref-für-transpilierte-java-objekte)
+  - [3. `for of`-Schleifen bevorzugen](#3-for-of-schleifen-bevorzugen)
   - [4. Keine High-Level-Funktionen wie `map`, `filter`, `reduce`, `forEach`](#4-keine-high-level-funktionen-wie-map-filter-reduce-foreach)
-  - [5. `for of`-Schleifen bevorzugen](#5-for-of-schleifen-bevorzugen)
-
 - [Vue](#vue)
-  - [1. Formattierung in Tags](#1-formattierung-in-tags)
-  - [2. Kurzschreibweise für gleichnamige Props verwenden](#2-kurzschreibweise-für-gleichnamige-props-verwenden)
-  - [3. Direkte Callback-Zuweisung statt Inline-Funktionen](#3-direkte-callback-zuweisung-statt-inline-funktionen)
-  - [4. `watch` durch `computed` ersetzen](#4-watch-durch-computed-ersetzen)
-  - [5. Getter für reaktive Props verwenden](#5-getter-für-reaktive-props-verwenden)
+  - [1. Aufbau einer Single File Component](#1-aufbau-einer-single-file-component)
+  - [2. Formattierung in Tags](#2-formattierung-in-tags)
+  - [3. Kurzschreibweise für gleichnamige Props verwenden](#3-kurzschreibweise-für-gleichnamige-props-verwenden)
+  - [4. Direkte Callback-Zuweisung statt Inline-Funktionen](#4-direkte-callback-zuweisung-statt-inline-funktionen)
+  - [5. `watch` durch `computed` ersetzen](#5-watch-durch-computed-ersetzen)
   - [6. Keine lokalen Änderungen an globalen UI-Komponenten](#6-keine-lokalen-änderungen-an-globalen-ui-komponenten)
   - [7. Funktionen auslagern, statt sie inline zu verwenden](#7-funktionen-auslagern-statt-sie-inline-zu-verwenden)
   - [8. Inline-CSS für einzelne Attribute](#8-inline-css-für-einzelne-attribute)
@@ -33,6 +28,11 @@
   - [10. Funktionsdefinition mit `function`](#10-funktionsdefinition-mit-function)
   - [11. Strukturierung des Script-Bereichs in Vue-Komponenten](#11-strukturierung-des-script-bereichs-in-vue-komponenten)
   - [12. Immer Semikolon verwenden](#12-immer-semikolon-verwenden)
+  - [13. Verzichte auf Vue-Typendefinitionen](#13-verzichte-auf-vue-typendefinitionen)
+  - [14. ESLint statt Prettier](#14-eslint-statt-prettier)
+- [Vue - Transpiler](#vue---transpiler)
+  - [1. `shallowRef` statt `ref` für transpilierte Java-Objekte](#1-shallowref-statt-ref-für-transpilierte-java-objekte)
+  - [2. Getter für reaktive Props verwenden](#2-getter-für-reaktive-props-verwenden)
 
 
 # Allgemein
@@ -61,7 +61,7 @@ for (int i = 0; i < 10; i++) {
 
 if (condition) doSomething();
 
-for (int i = 0; i < 10; i+) doSometing();
+for (int i = 0; i < 10; i+) doSomething();
 ```
 ---
 
@@ -226,7 +226,7 @@ public String getDay(int day) {
 # TypeScript
 
 ## 1. Explizite Null- und Undefined-Überprüfungen
-Vermeide den Einsatz von `!!value`, um auf `Null` oder `Undefined` zu prüfen. Nutze stattdessen explizite Vergleiche, um potenzielle Fehlerquellen auszuschließen.
+Vermeide den Einsatz von `!!value`, um auf `null` oder `undefined` zu prüfen. Nutze stattdessen explizite Vergleiche, um potenzielle Fehlerquellen auszuschließen.
 
 **Richtig:**
 ```typescript
@@ -256,40 +256,9 @@ const name = "John";
 ```typescript
 let name = "John";
 ```
-
 ---
 
-## 3. `shallowRef` statt `ref` für transpilierte Java-Objekte
-Verwende `shallowRef` anstelle von `ref` für transpilierte Java-Objekte, um Probleme mit JavaScript-Proxies zu vermeiden.
-
-**Richtig:**
-```typescript
-const javaObject = shallowRef(transpiledJavaObject);
-```
-
-**Falsch:**
-```typescript
-const javaObject = ref(transpiledJavaObject);
-```
----
-
-## 4. Keine High-Level-Funktionen wie `map`, `filter`, `reduce`, `forEach`
-Vermeide High-Level-Funktionen und nutze klassische `for`-Schleifen.
-
-**Richtig:**
-```typescript
-for (const element of array) 
-  process(element);
-
-```
-
-**Falsch:**
-```typescript
-array.forEach(item => process(item));
-```
----
-
-## 5. `for of`-Schleifen bevorzugen
+## 3. `for of`-Schleifen bevorzugen
 Verwende `for of`-Schleifen, um über Arrays und Iterable-Objekte zu iterieren.
 
 **Richtig:**
@@ -308,16 +277,78 @@ array.forEach(item => {
   // handle item
 });
 ```
+---
 
+## 4. Keine High-Level-Funktionen wie `map`, `filter`, `reduce`, `forEach`
+Vermeide High-Level-Funktionen und nutze klassische `for of`-Schleifen.
+
+**Richtig:**
+```typescript
+for (const element of array) 
+  process(element);
+
+```
+
+**Falsch:**
+```typescript
+array.forEach(item => process(item));
+```
 ---
 
 # Vue
 
-## 1. Formattierung in Tags
+## 1. Aufbau einer Single File Component
+Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
+
+**Richtig:**
+```vue
+<template>
+
+  <!-- Do something -->
+
+</template>
+<script setup lang="ts">
+
+  // Do Something
+
+</script>
+<style>
+
+  /*
+  Some styles
+  */
+
+</style>
+```
+
+**Falsch:**
+```vue
+<script setup lang="ts">
+
+  // Do Something
+
+</script>
+<style>
+
+  /*
+  Some styles
+  */
+
+</style>
+<template>
+
+  <!-- Do something -->
+
+</template>
+```
+
+---
+
+## 2. Formattierung in Tags
 Innerhalb der Vue Tags `<template>`, `<script>` und `<style>` soll der Code eingerückt sein. Außerdem soll sich zwischen den Tags und dem Inhalt eine Leerzeile befinden.
 
 **Richtig:**
-```typescript
+```vue
 <script setup lang="ts">
 
   import { computed, ref } from 'vue';
@@ -331,7 +362,7 @@ Innerhalb der Vue Tags `<template>`, `<script>` und `<style>` soll der Code eing
 ```
 
 **Falsch:**
-```typescript
+```vue
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 
@@ -344,11 +375,11 @@ const fullName = computed(() => firstName.value + ' ' + lastName.value);
 
 ---
 
-## 2. Kurzschreibweise für gleichnamige Props verwenden
+## 3. Kurzschreibweise für gleichnamige Props verwenden
 Wenn der Propertyname und der Wert denselben Namen haben, verwende die Kurzschreibweise.
 
 **Richtig:**
-```typescript
+```vue
 <template>
 
   <card-component :title></card-component> <!-- Kurzschreibweise, da Property- und Wertname "title" übereinstimmen -->
@@ -357,7 +388,7 @@ Wenn der Propertyname und der Wert denselben Namen haben, verwende die Kurzschre
 ```
 
 **Falsch:**
-```typescript
+```vue
 <template>
 
   <card-component :title="title"></card-component> <!-- Hier ist die explizite Bindung redundant -->
@@ -366,11 +397,11 @@ Wenn der Propertyname und der Wert denselben Namen haben, verwende die Kurzschre
 ```
 ---
 
-## 3. Direkte Callback-Zuweisung statt Inline-Funktionen
+## 4. Direkte Callback-Zuweisung statt Inline-Funktionen
 Verwende direkte Callback-Zuweisungen anstelle von Inline-Funktionen.
 
 **Richtig:**
-```typescript
+```vue
 <template>
 
   <button @click="click">Click me</button>
@@ -379,7 +410,7 @@ Verwende direkte Callback-Zuweisungen anstelle von Inline-Funktionen.
 ```
 
 **Falsch:**
-```typescript
+```vue
 <template>
 
   <button @click="(value) => click(value)">Click me</button>
@@ -389,11 +420,11 @@ Verwende direkte Callback-Zuweisungen anstelle von Inline-Funktionen.
 
 ---
 
-## 4. `watch` durch `computed` ersetzen
+## 5. `watch` durch `computed` ersetzen
 Vermeide `watch`-Anweisungen, wenn dieselbe Funktionalität durch `computed`-Properties abgedeckt werden kann.
 
 **Richtig:**
-```typescript
+```vue
 <script setup lang="ts">
 
   import { computed, ref } from 'vue';
@@ -407,7 +438,7 @@ Vermeide `watch`-Anweisungen, wenn dieselbe Funktionalität durch `computed`-Pro
 ```
 
 **Falsch:**
-```typescript
+```vue
 <script setup lang="ts">
 
   import { ref, watch } from 'vue';
@@ -424,28 +455,6 @@ Vermeide `watch`-Anweisungen, wenn dieselbe Funktionalität durch `computed`-Pro
 ```
 ---
 
-## 5. Getter für reaktive Props verwenden
-Um sicherzustellen, dass Props reaktiv bleiben, sollten sie über Getter übergeben werden. Dies betrifft ausschließlich transpilierte Java-Objekte, die aus Routen kommen.
-
-**Richtig:**
-```typescript
-<template>
-
-  <child-component :prop="getProp()"></child-component>
-
-</template>
-```
-
-**Falsch:**
-```typescript
-<template>
-
-  <child-component :prop="prop"></child-component>
-
-</template>
-```
----
-
 ## 6. Keine lokalen Änderungen an globalen UI-Komponenten
 Vermeide lokale Anpassungen an globalen UI-Komponenten, da diese Auswirkungen auf andere Projekte haben. Notwendige Änderungen müssen abgesprochen werden.
 
@@ -455,7 +464,7 @@ Vermeide lokale Anpassungen an globalen UI-Komponenten, da diese Auswirkungen au
 Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` auslagern. Ternaries sind allerdings in Ordnung. 
 
 **Richtig:**
-```typescript
+```vue
 <template>
 
   <div v-if="isVisible">Visible</div> <!-- Logik in Funktion ausgelagert -->
@@ -481,7 +490,7 @@ Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` aus
 ```
 
 **Falsch:**
-```typescript
+```vue
 <template>
 
   <!-- Theoretisch möglich, aber unübersichtlich -->
@@ -505,7 +514,7 @@ Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` aus
 Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher und effizienter als eine separate Klasse. Hinweis: Die meisten Stylings können und sollen über Tailwind-Klassen gelöst werden, so auch das folgende Beispiel.
 
 **Richtig:**
-```typescript
+```vue
 <template>
 
   <div :style="{ color: 'red' }">Text</div>
@@ -514,7 +523,7 @@ Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher
 ```
 
 **Falsch:**
-```typescript
+```vue
 <template>
 
   <div class="red-text">Text</div>
@@ -541,14 +550,14 @@ Bevor du eigenes CSS hinzufügst, prüfe, ob [Tailwind](https://tailwindcss.com/
 Verwende named Functions, um diese von `computed` unterscheiden zu können, die mit Arrow-Funktionen definiert werden. Nur als anonyme Funktion, in Vue Lifecycle Hooks und in `routeData` dürfen sie verwendet werden, wenn sie als Props an die Komponenten weitergereicht werden.
 
 **Richtig:**
-```typescript
+```vue
 function sum(a: number, b: number): number {
   return a + b;
 }
 ```
 
 **Falsch:**
-```typescript
+```vue
 const sum = (a: number, b: number) => {
   return a + b;
 };
@@ -559,7 +568,7 @@ const sum = (a: number, b: number) => {
 Um die Lesbarkeit und Wartbarkeit von Vue-Komponenten zu verbessern, ist es wichtig, eine einheitliche Struktur im Script-Bereich zu wahren. Die folgende Reihenfolge sollte eingehalten werden: **`(shallow)ref`**, **`computed`**, **`functions`**. In größeren Komponenten ist eine thematisches Clustering aber dennoch möglich.
 
 **Richtig:**
-```typescript
+```vue
 
 <script setup lang="ts">
 
@@ -577,7 +586,7 @@ Um die Lesbarkeit und Wartbarkeit von Vue-Komponenten zu verbessern, ist es wich
 ```
 
 **Falsch:**
-```typescript
+```vue
 <script setup lang="ts">
 
   import { ref, computed } from "vue";
@@ -598,14 +607,95 @@ Um die Konsistenz und Lesbarkeit des Codes zu gewährleisten, sollte in allen Da
 
 **Richtig:**
 
-```typescript
-const name = 'Alice';
-console.log(name);
+```vue
+<script setup lang="ts">
+
+  const name = 'Alice';
+  console.log(name);
+
+</script>
 ```
 
 **Falsch:**
 
-```typescript
-const name = 'Alice'
-console.log(name)
+```vue
+<script setup lang="ts">
+
+  const name = 'Alice'
+  console.log(name)
+
+</script>
 ```
+---
+
+## 13. Verzichte auf Vue-Typendefinitionen 
+Nutze keine Typendefinitionen aus Vue wie zum Beispiel `Ref`, `Computed` oder `WriteableComputed`.
+
+**Richtig:**
+```vue
+<script setup lang="ts">
+
+  const foo = ref<boolean>(false);
+
+</script>
+```
+
+**Falsch:**
+```vue
+<script setup lang="ts">
+
+  const foo: Ref<boolean> = ref(false);
+
+</script>
+```
+---
+## 14. ESLint statt Prettier
+Verwende für die Formattierung des Codes keinen Prettier, sondern stattdessen die Korrekturen von ESLint.
+
+# Vue - Transpiler
+Die folgenden Regelungen beziehen sich ausschließlich auf transpilierte Java-Objekte.
+
+
+## 1. `shallowRef` statt `ref` für transpilierte Java-Objekte
+Verwende `shallowRef` anstelle von `ref` für transpilierte Java-Objekte, um Probleme mit JavaScript-Proxies zu vermeiden. Gib außerdem auch immer den Typ des `shallowRef` an.
+
+**Richtig:**
+```vue
+<script setup lang="ts">
+  
+  const javaObject = shallowRef<Typ>(transpiledJavaObject);
+
+</script>
+```
+
+**Falsch:**
+```vue
+<script setup lang="ts">
+  
+  const javaObject = ref(transpiledJavaObject);
+
+</script>
+```
+---
+## 2. Getter für reaktive Props verwenden
+Um sicherzustellen, dass Props reaktiv bleiben, sollten sie über Getter übergeben werden. Dies betrifft ausschließlich transpilierte Java-Objekte, die aus Routen kommen.
+
+**Richtig:**
+```vue
+<template>
+
+  <child-component :prop="getProp()"></child-component>
+
+</template>
+```
+
+**Falsch:**
+```vue
+<template>
+
+  <child-component :prop="prop"></child-component>
+
+</template>
+```
+---
+
