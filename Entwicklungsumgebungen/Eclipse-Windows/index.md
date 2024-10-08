@@ -93,6 +93,9 @@ Beispiel einer svwsconfig.json, bitte die userdaten und Passwörter entspechend 
 + rechte Maustaste auf das SVWS-Server-Projekt > Checkstyle > aktivate Checkstyle
 + Windows > Show View > Other > Checkstyle > Checkstyle Problems
 
+# Code Styles einrichten
+Die Code Styles in Eclipse werden automatisiert durch ein Gradle Project Reload oder Build in den Workspace geladen. Eigene Konfigurationen sind nicht möglich. \
+Wie die Code Styles für alle Entwickler angepasst werden können, kann in der Anleitung [Code Styles](../Code-Styles/index.md) nachgelesen werden.
 
 # Sonatype Server einrichten
 
