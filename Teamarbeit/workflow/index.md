@@ -85,3 +85,6 @@ Da mehrere parallele Releases nicht gewünscht sind, wird es nur ein "Rolling-Re
 ## Workflow Merge/Rebase
 
 Da das Arbeiten mit den unterschiedlichen Branches immer wieder Konflikte in Git erzeugen wird, werden Merge-Requests ausschließlich von den Release-Managern in die jeweiligen Branches überführt, um Merge-Commits zu verhindern und Merge-Konflikte zu beseitigen.
+
+## Best Practices Commits
+1. Soll der Code in einem MR komplett formattiert werden, dann sollte diese Formattierung in einem separaten Commit ausgeführt werden, um die Änderungen von tatsächlichen Änderungen unterscheiden zu können.
