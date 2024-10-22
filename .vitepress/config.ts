@@ -5,7 +5,7 @@ export default defineConfig(({ mode }) => {
 	const env = loadEnv(mode, process.cwd(), '');
 
 	return {
-		base: env.BASE,
+		base: env.BASE || '/SVWS-Dokumentation/',
 		title: 'SVWS Dokumentation',
 		description: 'Dokumentation SVWS-Server NRW, Installation und Entwicklung',
 		lastUpdated: true,
