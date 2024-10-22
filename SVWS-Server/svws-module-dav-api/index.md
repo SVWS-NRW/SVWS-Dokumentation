@@ -50,56 +50,14 @@ Das CardDAV API des SVWS-Servers liefert Adressdaten im VCard-Format
 (VCF) in der Version 4.0. Die Kompatibilität mit folgenden
 Clientprogrammen ist gegeben:
 
-<table>
-<colgroup>
-<col style="width: 5%" />
-<col style="width: 16%" />
-<col style="width: 10%" />
-<col style="width: 68%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th><strong>Client</strong></th>
-<th><strong>Version</strong></th>
-<th><strong>Hinweis</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>OK</td>
-<td>Thunderbird: Adressbuch</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>OK</td>
-<td>Thunderbird: Cardbook-Addon</td>
-<td>76.7</td>
-<td><a href="https://addons.thunderbird.net/de/thunderbird/addon/cardbook/">https://addons.thunderbird.net/de/thunderbird/addon/cardbook/</a></td>
-</tr>
-<tr class="odd">
-<td>X</td>
-<td>Thunderbird: TbSync</td>
-<td><p>3.0.2</p>
-<p>2.0.2</p></td>
-<td><p><a href="https://addons.thunderbird.net/de/thunderbird/addon/tbsync">https://addons.thunderbird.net/de/thunderbird/addon/tbsync</a></p>
-<p><a href="https://addons.thunderbird.net/de/thunderbird/addon/dav-4-tbsync">https://addons.thunderbird.net/de/thunderbird/addon/dav-4-tbsync</a></p></td>
-</tr>
-<tr class="even">
-<td>OK</td>
-<td>Outlook: CalDAV Synchronizer</td>
-<td>4.3.0</td>
-<td><a href="https://caldavsynchronizer.org/">https://caldavsynchronizer.org/</a></td>
-</tr>
-<tr class="odd">
-<td>X</td>
-<td>iOS</td>
-<td>15.6.1</td>
-<td>Einstellungen - Kontakte - Accounts - Account hinzufügen - Andere - CardDAV-Account hinzufügen</td>
-</tr>
-</tbody>
-</table>
+|| **Client**| **Version**|**Hinweis**|
+|-|-|-|-
+|OK|Thunderbird: Adressbuch|||
+|OK|Thunderbird: Cardbook-Addon|76.7|[https://addons.thunderbird.net/de/thunderbird/addon/cardbook/](https://addons.thunderbird.net/de/thunderbird/addon/cardbook/)|
+|X|Thunderbird: TbSync|3.0.2|[https://addons.thunderbird.net/de/thunderbird/addon/tbsync](https://addons.thunderbird.net/de/thunderbird/addon/tbsync)|
+|X|Thunderbird: TbSync|2.0.2|[https://addons.thunderbird.net/de/thunderbird/addon/dav-4-tbsync](https://addons.thunderbird.net/de/thunderbird/addon/dav-4-tbsync)|
+|OK|Outlook: CalDAV Synchronizer|4.3.0|[https://caldavsynchronizer.org/](https://caldavsynchronizer.org/)|
+|X|iOS|15.6.1|Einstellungen - Kontakte - Accounts - Account hinzufügen - Andere - CardDAV-Account hinzufügen|
 
 
 # Anleitung: Import von Adressdaten über CardDAV

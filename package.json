@@ -1,15 +1,27 @@
 {
   "private": true,
   "name": "@svws-nrw/svws-dokumentation",
+  "type": "module",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "serve": "vitepress serve",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "lint": "eslint '**/*.{ts,vue,md}' --cache"
   },
   "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "@eslint/markdown": "^6.2.1",
+    "@stylistic/eslint-plugin": "^2.2.1",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^20.16.14",
+    "@typescript-eslint/eslint-plugin": "^8.0.0-alpha.30",
+    "@typescript-eslint/parser": "^8.0.0-alpha.30",
+    "eslint": "^9.5.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "typescript-eslint": "^8.0.0-alpha.30",
     "vitepress": "^1.0.0-alpha.13"
   }
 }

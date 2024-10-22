@@ -145,7 +145,6 @@ Weitergehende und individuelle Konfigurationen können in der `docker-compose.ym
 * [MariaDB](https://github.com/docker-library/docs/blob/master/mariadb/README.md)
 * [Eclipse Temurin](https://github.com/docker-library/docs/tree/master/eclipse-temurin)
 
-<a name="automatische-initialisierung"></a>
 ## Automatische Initialisierung beim Start, Testdatenimporte
 Es besteht die Möglichkeit, beim Start der SVWS-Container die Datenbank mit Testdaten zu initialisieren. Es existiert ein [Beispiel-Script](https://github.com/SVWS-NRW/SVWS-Server/blob/dev/testing/svws/init-scripts/001import-test-db.sh) für den Import einer Testdatenbank im Git-Repository.
 

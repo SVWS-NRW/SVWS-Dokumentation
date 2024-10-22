@@ -144,7 +144,7 @@ siehe dazu: [Datenmigration](https://doku.svws-nrw.de/Deployment/Datenmigration/
 Solange Schild-NRW3 benötigt wird, muss die Datenbank und der Server für das Progrmm zugänglich gemacht werden.
 
 Erreichbarkeit des MariaDB-Server auch außerhalb von localhost setzen:
-```
+```shell
 /etc/mysql/mariadb.conf.d/50-server.cnf
 bind-address 127.0.0.1 >> 0.0.0.0
 ```

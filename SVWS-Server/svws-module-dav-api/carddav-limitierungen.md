@@ -37,7 +37,7 @@ Folgende Einschränkungen gibt es:
 Nach dem initialen Import von Adressdaten in einen CardDAV-Client 
 können diese "one-way" synchronisiert werden (Differenzdaten herunterladen,
 "sync-collection"-Request). Jedoch werden mit jedem derartigen Request
-<u>immer alle</u> Kontakte zurückgeliefert. Auch diejenigen, die seit
+_immer alle_ Kontakte zurückgeliefert. Auch diejenigen, die seit
 dem letzten Abruf unverändert geblieben sind. Dabei werden also mehr
 Daten übertragen als notwendig wäre (Prinzip Datensparsamkeit!,
 Performance!).
@@ -58,19 +58,14 @@ URI).
 Kompatibilität folgender Clients getestet (Readonly, generiere
 Adressbücher)
 
-Erfolgreich: Thunderbird built-in Adressbuch
-
-Erfolgreich: Thunderbird Addon "Cardbook"
-
-Erfolgreich: Outlook Extension "CalDAV Synchronizer" (Mit Anpassung der
+- Erfolgreich: Thunderbird built-in Adressbuch
+- Erfolgreich: Thunderbird Addon "Cardbook"
+- Erfolgreich: Outlook Extension "CalDAV Synchronizer" (Mit Anpassung der
 Options-Response in SVWSAuthenticator-Klasse)
-
-Nicht erfolgreich: Thunderbird Addon TbSync mit Addon Provider für
+- Nicht erfolgreich: Thunderbird Addon TbSync mit Addon Provider für
 CalDAV & CardDAV
-
-(Fehler bei Authentifizierung bzw. Initialisierung der Verbindung)
-
-Nicht erfolgreich: iOS (Einstellungen Kontakte Accounts Account
+- (Fehler bei Authentifizierung bzw. Initialisierung der Verbindung)
+- Nicht erfolgreich: iOS (Einstellungen Kontakte Accounts Account
 hinzufügen Andere CardDAV-Account hinzufügen)
 
 (Fehler bei Authentifizierung bzw. Initialisierung der Verbindung,
@@ -78,7 +73,7 @@ selbstsignierte Zertifikate werden nicht akzeptiert, hat über HTTP aber
 auch nicht funktioniert: bei Versuch über HTTP zuzugreifen, wird kein
 Benutzername/Kennwort (Basic Auth) mitgesendet)
 
-```
+```log
 Logeintrag bei Test gegen Baikal: 172.18.0.1 \[25/Aug/2022:08:21:31
 +0000\] "PROPFIND /dav.php/ HTTP/1.1" 401 414 "-" "iOS/15.6.1 (19G82)
 accountsd/1.0" 0.013 "BODY: "\[\<?xml version=\x221.0\x22

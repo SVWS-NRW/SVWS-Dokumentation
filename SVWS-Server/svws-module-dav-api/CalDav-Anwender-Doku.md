@@ -30,36 +30,10 @@ Das CalDAV API des SVWS-Servers liefert Adressdaten im iCalendar-Format
 (ICS). Die Kompatibilität mit folgenden
 Clientprogrammen ist gegeben:
 
-<table>
-<colgroup>
-<col style="width: 5%" />
-<col style="width: 16%" />
-<col style="width: 10%" />
-<col style="width: 68%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th><strong>Client</strong></th>
-<th><strong>Version</strong></th>
-<th><strong>Hinweis</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>OK</td>
-<td>Thunderbird: Kalender</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>OK</td>
-<td>Outlook: Kalender</td>
-<td>4.3.0</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| Client | Version               | Hinweis |
+|--------|-----------------------|---------|
+| OK     | Thunderbird: Kalender |         |
+| OK     | Outlook: Kalender     | 4.3.0   |
 
 
 # Anleitung: Import von Kalenderdaten über CalDAV

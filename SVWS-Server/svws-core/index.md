@@ -78,7 +78,7 @@ Codeteile, welche u.a. den Bezug zu *Core-DTOs* herstellen oder auch Zusammenhä
 
 Ein Beispiel für einen einfachen *Core-Type* ist das Geschlecht:
 
-``` Java
+```java
 /**
  * Der Core-Type für die in der Statistik zulässigen Arten des Geschlechts.
  */
@@ -104,7 +104,7 @@ Die Verknüpfung der "speziellen" Informationen der *Core-Types* mit den "generi
 
 Im Folgenden ein Beispiel für die Verknüpfung bei den allgemeinbildenden Schulabschlüssen. Im Programmcode kann hier typisiert auf den Schulabschluss `SchulabschlussAllgemeinbildend.HA9` zugegriffen werden. Diese Bezeichnung ist programmintern und muss nicht zwingend angepasst werden, wenn die Berechnung des Abschlusses gleich bleibt, sich aber nur die Bezeichnung des Abschlusses ändert. In diesem Beispiel wurde die Bezeichnung "Hauptschulabschluss nach Klasse 9" bis zum Schuljahr 2021/2022 verwendet und dann ab dem Schuljahr 2022/23 die Bezeichnung "Erster Schulabschluss". Diese Umbenennung mit der Zuordnung zu den Schuljahren findet sich in den zugeordneten Objekten des *Core-DTO* vom Typ `SchulabschlussAllgemeinbildendKatalogEintrag` wieder.
 
-```
+```java
 /**
  * Ein Core-Type für die Arten von allgemeinbildenden Schulabschlüssen.
  */

@@ -2,14 +2,14 @@
 
 ## Installation openjdk
 
-```
+```shell
 dnf install java-21-openjdk-devel.x86_64
 java --version
 ```
 
 ## Installation benötigter Tools
 
-```
+```shell
 dnf -y install unzip
 dnf -y install tar
 dnf -y install wget
@@ -87,7 +87,7 @@ cp ./svws/svws-template.service /etc/systemd/system/svws.service
 
 ## Oder ServiceDatei für Systemd ertsellen und in etc/systemd/system  ablegen
 
-```
+```toml
 [Unit]
 Description=SVWS-Server
 

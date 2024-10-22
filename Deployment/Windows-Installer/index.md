@@ -48,7 +48,7 @@ Zu Beginn der Installation erscheinen nach der Annahme der Lizenzvereinbarungen 
 
 *Es werden für MariaDB und den Datenbank-User Zufallskennwörter generiert!*
 
-*Ändern Sie diese nach Ihren Wünschen, aber <b>dokumentieren Sie in jedem Fall Ihre Eingabe</b>.*	
+*Ändern Sie diese nach Ihren Wünschen, aber **dokumentieren Sie in jedem Fall Ihre Eingabe**.*	
 
 *Ohne diese Kennwörter kann Ihnen später im Supportfall nicht geholfen werden!*
 
@@ -159,7 +159,7 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 |SchemaKonfiguration||
 |---|---|
 |name| Name des Datenbankschemas|
-| svwslogin| Login-Prozess auch über das DBMS möglich. (User muss dann im DBMS angelegt sein.) <br> Zur Zeit nicht unterstützt!|
+| svwslogin| Login-Prozess auch über das DBMS möglich. (User muss dann im DBMS angelegt sein.) — Zur Zeit nicht unterstützt!|
 | username | Datenbank-Username|
 | password | Passwort des Datenbank-Users
 

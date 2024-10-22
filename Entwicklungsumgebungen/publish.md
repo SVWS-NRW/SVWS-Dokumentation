@@ -18,7 +18,7 @@ Die gradle-Tasks zum Veröffentlichen von Artefakten benötigen Zugriff auf die 
 Erstellen einer gradle.properties-Datei im root-Projekt des SVWS mit folgenden Einträgen:
 
 gradle.properties:
-```
+```ini
 NEXUS_ACTOR=<Benutzername des Nexus Repository Manager Accounts>
 NEXUS_TOKEN=<Passwort des Nexus Repository Manager Accounts>
 ```
@@ -26,12 +26,12 @@ NEXUS_TOKEN=<Passwort des Nexus Repository Manager Accounts>
 #### Option Umgebungsvariablen
 Setzen zweier Umgebungsvariablen im lokalen System:
 MacOS/Linux
-```
+```bash
 export NEXUS_ACTOR=<Benutzername des Nexus Repository Manager Accounts>
 export NEXUS_TOKEN=<Passwort des Nexus Repository Manager Accounts>
 ```
 Windows
-```
+```ini
 NEXUS_ACTOR=<Benutzername des Nexus Repository Manager Accounts>
 NEXUS_TOKEN=<Passwort des Nexus Repository Manager Accounts>
 ```
@@ -62,7 +62,7 @@ Beispiel für Snapshot-Version:
 ## SNAPSHOT-Versionen veröffentlichen
 1. Versionsnummer festlegen. Wichtig: Versionsnummer muss das Postfix "-SNAPSHOT" enthalten
 2. gradle-Task "publishSnapshot" aufrufen
-```
+```shell
 gradlew publishSnapshot
 ```
 SNAPSHOT-Versionen werden im Repository 'svws-maven-snapshots' des SVWS Nexus veröffentlicht:
@@ -70,7 +70,7 @@ SNAPSHOT-Versionen werden im Repository 'svws-maven-snapshots' des SVWS Nexus ve
 ## RELEASE-Versionen veröffentlichen
 1. Versionsnummer festlegen. Wichtig: Versionsnummer darf keinen Postfix "-SNAPSHOT" enthalten
 2. gradle-Task "publishReleaseAll" aufrufen
-```
+```shell
 gradlew publishReleaseAll
 ```
 Release-Versionen werden im Repository 'svws-maven-releases' des SVWS Nexus und zusätzlich in github-Packages veröffentlicht:

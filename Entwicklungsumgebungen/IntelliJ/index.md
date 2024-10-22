@@ -57,30 +57,34 @@ Neben dem Eclipse Adapter wird zusätzlich noch ein IntelliJ Formatter Profil be
 + starte die Gradle Task **ide → initIntelliJ**
 + führe **Reload all Gradle Projects** aus
 
-> <span style="color:red">**Wichtig!**</span>
-> + Jedes Mal, wenn sich die Profile `IntelliJ_Formatter.xml` oder `IntelliJ_Inspections.xml` ändern, müssen diese über einen der 3 oberen Schritte neu geladen werden. Anschließend ist ein Restart der IDE erforderlich!
-> + Das automatisierte Laden der Profile hat zur Folge, dass persönliche Einstellungen überschrieben werden. Die Konfiguration eigener Profile ist zwar dennoch möglich, allerdings muss in IntelliJ dann jedes Mal dieses auch wieder ausgewählt werden.
-> + Änderungen an den Profilen, die für alle gültig sein sollen, können nach folgender Anleitung vorgenommen werden: TODO: Anleitung verlinken
+:::danger **Wichtig!**
++ Jedes Mal, wenn sich die Profile `IntelliJ_Formatter.xml` oder `IntelliJ_Inspections.xml` ändern, müssen diese über einen der 3 oberen Schritte neu geladen werden. Anschließend ist ein Restart der IDE erforderlich!
++ Das automatisierte Laden der Profile hat zur Folge, dass persönliche Einstellungen überschrieben werden. Die Konfiguration eigener Profile ist zwar dennoch möglich, allerdings muss in IntelliJ dann jedes Mal dieses auch wieder ausgewählt werden.
++ Änderungen an den Profilen, die für alle gültig sein sollen, können nach folgender Anleitung vorgenommen werden: TODO: Anleitung verlinken
+:::
 
 ### Shortcuts
 Das Shortcut zur Formatierung innerhalb einer geöffneten Datei ist standardmäßig auf `Strg` + `Alt` + `L` festgelegt.\
 Zusätzlich soll auch der Code durch einen einzelnen Shortcut analysiert und bereinigt werden, was durch die Nutzung von Macros mit Hilfe von Shortcuts vereinfacht werden kann. Die dafür vorgesehenen Macros können importiert werden.
-> <span style="color:red">**Wichtig!**</span>\
-> Der Import der Macros überschreibt alle bereits existenten Macros IDE weit und nicht nur projektspezifisch! Solltest du bereits Macros haben, die du behalten möchtest, musst du händisch eine ZIP vorbereiten, die alle Macros enthält. Gehe wie folgt vor:
-> + Wähle *File → Manage IDE Settings > Export Settings...*
-> + Wähle ausschließlich die **Macros** und speichere die ZIP 
-> + öffne in dieser ZIP die Datei `options/macros.xml`\
-> Aus dieser Datei müssen alle gewünschten `<macro>...</macro>` Tags in die zu importierende ZIP kopiert werden:
-> + Entpacke die Datei `config/intelliJ/macros.zip` aus dem Projekt und öffne darin `options/macros.xml`
-> + Füge in der Liste der Macros die kopierte Liste aus deiner eigenen Konfiguration hinzu
-> + Füge die Dateistruktur wieder einem Archiv hinzu\
-> Verwende im Folgenden die neu erstellte ZIP für den Import der Macros. Deine ZIP muss nun folgende Struktur haben:
-> ``` 
-> macros.zip
-> |-- options
->       |-- macros.xml
-> |-- IntelliJ IDEA Global Settings 
-> ```
+
+:::danger **Wichtig!**
+ Der Import der Macros überschreibt alle bereits existenten Macros IDE weit und nicht nur projektspezifisch! Solltest du bereits Macros haben, die du behalten möchtest, musst du händisch eine ZIP vorbereiten, die alle Macros enthält. Gehe wie folgt vor:
+ + Wähle *File → Manage IDE Settings > Export Settings...*
+ + Wähle ausschließlich die **Macros** und speichere die ZIP 
+ + öffne in dieser ZIP die Datei `options/macros.xml`\
+ Aus dieser Datei müssen alle gewünschten `<macro>...</macro>` Tags in die zu importierende ZIP kopiert werden:
+ + Entpacke die Datei `config/intelliJ/macros.zip` aus dem Projekt und öffne darin `options/macros.xml`
+ + Füge in der Liste der Macros die kopierte Liste aus deiner eigenen Konfiguration hinzu
+ + Füge die Dateistruktur wieder einem Archiv hinzu\
+ Verwende im Folgenden die neu erstellte ZIP für den Import der Macros. Deine ZIP muss nun folgende Struktur haben:
+ ``` shell
+ macros.zip
+ |-- options
+       |-- macros.xml
+ |-- IntelliJ IDEA Global Settings 
+ ```
+:::
+
 Importiere die Macros und konfiguriere die Shortcuts wie folgt:
 + Wähle *File → Manage IDE Settings > Import Settings...* und importiere die Macros aus `config/intelliJ/macros.zip` oder deine selbst erstellte ZIP, falls du deine eigenen Macros nicht überschreiben möchtest.
 + Gehe zu *File → Settings → Keymap*
@@ -101,9 +105,11 @@ Folgende Aktionen werden bei diesen Macros durchgeführt:
 + Checkstyle
 + Speichern
 
-> <span style="color:red">**Wichtig!**</span>
-> + Diese Shortcuts dürfen ausschließlich in Java-Dateien angewendet werden!
-> + Diese Shortcuts dürfen nur angewendet werden, wenn alle Konfigurationen für CheckStyle, Sonarlint und die Formatter/Inspections Profile wie oben geschrieben, vorgenommen wurden!
+:::danger **Wichtig!**
++ Diese Shortcuts dürfen ausschließlich in Java-Dateien angewendet werden!
++ Diese Shortcuts dürfen nur angewendet werden, wenn alle Konfigurationen für CheckStyle, Sonarlint und die Formatter/Inspections Profile wie oben geschrieben, vorgenommen wurden!
+:::
+
 
 ### Neustart der IDE
 Nach allen Konfigurationen muss die IDE neugestartet werden, damit alle Einstellungen übernommen werden.
@@ -114,11 +120,12 @@ Wird gerade eine Java-Datei bearbeitet, dann muss zum Abschluss diese formatiert
 > **Hinweis**\
 > Falls es Codestellen gibt, die durch eine solche Bereinigung verändert werden würden, dann werden diese in einem auffälligen Pink hinterlegt. Dies ist ein deutlicher Hinweis, dass `STRG` + `ALT` + `Ö` bzw. + `Ä` ausgeführt werden muss.
 
-> <span style="color:red">**Wichtig!**</span>\
-> Die Macros dürfen niemals auf andere Dateien als Java-Dateien ausgeführt werden!\
-> Außerdem, da das Code Cleanup Formatierungen kaputt machen kann:
-> + Es darf keine *Actions on Save* für *Run code cleanup* gesetzt werden!
-> + Wenn das (Silent) Code Cleanup nicht über die Macros ausgeführt wird, ist zu beachten, dass im Anschluss unbedingt noch eine Formatierung der betroffenen Datei durchgeführen werden muss!
+:::danger **Wichtig!**
+Die Macros dürfen niemals auf andere Dateien als Java-Dateien ausgeführt werden!\
+Außerdem, da das Code Cleanup Formatierungen kaputt machen kann:
++ Es darf keine *Actions on Save* für *Run code cleanup* gesetzt werden!
++ Wenn das (Silent) Code Cleanup nicht über die Macros ausgeführt wird, ist zu beachten, dass im Anschluss unbedingt noch eine Formatierung der betroffenen Datei durchgeführen werden muss!
+:::
 
 ## Run Configuration
 

@@ -43,15 +43,15 @@ Anschließend git clone ausführen.
 
 ## Gradle Projekt laden
 
-+ Nun müssen nur noch in der "java perspektive" die im git Verzeichnis liegenden gradle Projekte importiert werden.
++ Nun müssen nur noch in der "java perspektive" die im Git-Verzeichnis liegenden gradle-Projekte importiert werden.
 + Import Project > Import existing Gradle-Project
-+ Als Zielordner das Git Repository auswählen
++ Als Zielordner das Git-Repository auswählen
 
 ## SVWS Einstellungen
 
 Die Beispiel-Config ins Zielverzeichnis kopieren und umbenennen.
 
-```
+```shell
  git/SVWS-Swerver/svws-server-app/src/main/resources/svwsconfig.json.example git/SVWS-Swerver/svws-server-app/svwsconfig.json
 ```
 		
@@ -119,7 +119,7 @@ Der Sonartype Server wird nur von den Core-Team-Mitgliedern genutzt.
 
 # Installation in einer Proxy-Umgebung
 
-```
+```text
 Eclipse > Windows > Preferences > General > Network Connection
 ````
 

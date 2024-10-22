@@ -39,10 +39,10 @@ Kleiner Exkurs: In IntelliJ wird unter `Settings → Editor → Inspections` fes
 Da dies jedoch nicht gewollt ist, wurde die spezielle Severity *Cleanup* definiert. Alle Inspections mit dieser Severity werden gecleaned und können vom Developer, außer in der Farbgebung, nicht verändert werden. Alle anderen Cleanup Inspections werden im Code zwar noch wie im Default eingestellt angezeigt, haben aber die Severity *Cosideration* erhalten, um bei einem Cleanup nichts ungewollt zu verändern. \
 Diese Verknüpfung zwischen Inspections und Cleanups führt zu einer komplexen Überschreibungslogik der Workspace Einstellungen durch die Datei `config/intellij/IntelliJ_Inspections.xml`, die im folgenden Diagramm dargestellt wird. 
 Grundsätzlich gilt, dass **IntelliJ_Inspections.xml** alle Cleanup relevanten Inspections für **Java** enthält.
-<details>
-<summary>InstelliJ Inspections Merge Ablauf</summary>
-<img src="./graphics/IntelliJinspectionsMerge.svg" />
-</details>
+
+::: details InstelliJ Inspections Merge Ablauf
+![alt text](graphics/IntelliJinspectionsMerge.svg)
+:::
 
 Durch diese Überschreibungslogik sind für den Developer folgende eigene Einstellungen noch möglich:
 * Farbgebung aller Servities sowie neue Severities
