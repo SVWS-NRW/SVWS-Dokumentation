@@ -95,3 +95,15 @@ Links in der Auswahliste ist zu sehen, dass bei Physik noch eine halbe Stunde fe
 Wird der Mauszeiger über eine **Pausenzeit** bewegt, werden in dieser Ansicht die eingelanten Aufsichten angezeigt. Diese sind hier nicht zu bearbeiten.
 
 ![Aufsichten für Pausen anzeigen](./graphics/SVWS_stundenplan_aufsichtenAnzeigen.png "Lassen Sie sich die geplanten Aufsichten für die Pausen anzeigen.")
+
+## Räume zuweisen
+
+Ganz gleich, ob Stundenpläne verändert oder neu erstellt wurden, sind nach dem Hineinziehen von Unterrichten in das Klassenraster noch keine **Räume** zugewiesen.
+
+Diese Zuweisung kann im Anschluss über den Tab **Unterrichte** vorgenommen werden.
+
+Hierzu wird über **Klassen** die passende Klasse ausgewählt, um die Zahl der Unterrichte in der Auswahlliste zu reduzieren.
+
+Hier ist beim Unterricht des *Fachs* und des *Zeitrasterplatzes* mit einem Klick auf ````...```` ein Raum zu wählen.
+
+Ebenso können hier existierende Räume für andere Unterrichte verändert werden.

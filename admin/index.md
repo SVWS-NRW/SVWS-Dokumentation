@@ -1,6 +1,6 @@
 # SVWS Dokumentation
 
-![Logo-NRW](./graphics/wappenzeichen-nrw_farbig_rgb_300.png)
+![Logo-NRW](../graphics/wappenzeichen-nrw_farbig_rgb_300.png)
 
 Projekt zur Erstellung einer Schulverwaltungssoftware mit OpenAPI-Schnittstelle für die dezentrale Schulverwaltung in NRW.  
 
