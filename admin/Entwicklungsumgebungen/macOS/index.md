@@ -1,11 +1,9 @@
 # Installation auf macOS
-Für die Entwicklung auf macOS ist der Einsatz von homebrew und Docker/Podman vorteilhaft. Dies gilt sowohl für Rechner mit Intel CPU als auch mit Mx.
+Für die Entwicklung auf macOS ist der Einsatz von homebrew und Docker/Podman vorteilhaft. Dies gilt sowohl für Rechner mit Intel CPU als auch mit Silicon CPU.
 
 Homebrew (brew.sh) wird genutzt, um benötigte Software vom Terminal aus zu installieren, Docker/Podman ist für den Einsatz der MariaDB zu empfehlen.
 
-Das Script nutzt noch die GitHub-Token. Wenn es jemand auf diesem Weg ausprobiert, bitte die Doku an den entsprechenden Stellen anpassen.
-
-```bash
+```zsh
 # Installiere Homebrew:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -16,7 +14,7 @@ brew install node git openjdk@21
 sudo ln -sfn /opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-21.jdk
 
 # den Docker Desktop:
-brew install --cask podman
+brew install podman
 
 podman machine init
 podman machine start
@@ -32,8 +30,8 @@ cd SVWS-Server
 git checkout dev
 ./gradlew assemble
 
-# Bitte den Pfad unten anpassen:
-tee svws-server-app/svwsconfig.json <<EOF
+# Bitte den Pfad der Clients unten anpassen:
+tee svwsconfig.json <<EOF
 {
   "EnableClientProtection" : null,
   "DisableDBRootAccess" : false,
@@ -69,16 +67,12 @@ tee svws-server-app/svwsconfig.json <<EOF
 }
 EOF
 
-cd ..
-
-
 # alle Komponenten sind nun vorbereitet und können gestartet werden
 
 # Nun den Keystore noch nach svws-server-app/keystore kopieren:
 cp cp svws-server-app/src/main/resources/keystore.example svws-server-app/keystore
 
 # Dazu den Server starten, am besten in einem eigenen Terminal, z.B. dem von code:
-cd SVWS-Server
 svws-server-app/start_server.sh
 
 # nun läuft der Server. Entweder direkt mit dem Client über https://localhost verbinden
