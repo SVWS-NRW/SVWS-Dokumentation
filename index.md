@@ -17,10 +17,26 @@ const datum = (t: number) => {
 :::info Erstellungsdatum {{ datum(data.buildDate) }}
 :::
 
-![Logo-NRW](./graphics/wappenzeichen-nrw_farbig_rgb_300.png)
+![Logo-NRW](./graphics/wappenzeichen-nrw_farbig_rgb_300.png "Das Wappen von Nordrhein-Westfalen.")
 
-Projekt zur Erstellung einer Schulverwaltungssoftware mit OpenAPI-Schnittstelle für die dezentrale Schulverwaltung in NRW.  
+Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Client* und zum *SVWS-Sever*, zur Installation und zur Entwicklung dieser und eine Dokumentation der API für die dezentrale Schulverwaltung in NRW. Ebenso finden sich Dokumentationen zu weiteren Projekten.
 
+Navigieren Sie zu den übergreifenden Bereichen dieser Webseite über die Kopfzeile. 
 
-## Startseite
+Unter dem ersten Punkt **Benuzterhandbücher** finden Sie die Dokumentationen für die **Anwender** in der Schule.
 
+Die übrigen Punkte bieten Zugang zu technischen Informationen zu Installation, Administration und Entwicklung.
+
+## Impressum
+
+Ministerium für Schule und Bildung des Landes Nordrhein-Westfalen
+
+Völklinger Straße 49, 40221 Düsseldorf
+
+Telefon: +49 211 5867 40
+
+## Datenschutzhinweis aus dem Client
+
+Nehmen Sie den im SVWS-Client hinterlegten Datenschutzhinweis zur Kenntnis und beachten Sie den gültigen Rechtsrahmen.
+
+Sie erreichen den Datenschutzhunweis über ````Client Info```` im **App**-Menü im Reiter Datenschutz.
