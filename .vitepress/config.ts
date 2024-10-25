@@ -37,7 +37,7 @@ export default defineConfig(({ mode }) => {
 				},
 				{ text: 'Administration/Entwicklung', 
 					items: [
-						// { text: 'Installation (Todo)' },
+						{ text: 'Installation (Todo)', link: '/deployment' },  //Hier Hook für Deployment (test) 
 						{ text: 'Administration/Entwicklung', link: '/admin'},
 						{ text: 'Admin-Client', link: '/adminclient' }
 			 		]
@@ -112,6 +112,18 @@ export default defineConfig(({ mode }) => {
 						]
 						},
 						{ text: 'FAQs', link: '/admin/FAQ/' }
+					]
+					}
+				],
+				'/deployment': [
+					{ text: '', items: [
+						{ text: 'Deployment Base?', link: '/deployment/' },  //Testweise für Head of Deployment
+						{ text: 'IT-Umgebungen', link: '/deployment/IT-Umgebungen/' },
+						{ text: 'Linux-Installer', link: 'deployment/Linux-Installer/' },
+						{ text: 'Docker-Container', link: '/deployment/Docker/' },
+						{ text: 'Windows-Installer', link: '/deployment/Windows-Installer/' },
+						{ text: 'Datenmigration', link: '/deployment/Datenmigration/' },
+						{ text: 'Einrichtung', link: '/deployment/Einrichtung/' }
 					]
 					}
 				],
