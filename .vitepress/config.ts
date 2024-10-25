@@ -36,8 +36,8 @@ export default defineConfig(({ mode }) => {
 					]
 				},
 				{ text: 'Administration/Entwicklung', 
-					items: [ 
-						{ text: 'Installation (Todo)' },
+					items: [
+						// { text: 'Installation (Todo)' },
 						{ text: 'Administration/Entwicklung', link: '/admin'},
 						{ text: 'Admin-Client', link: '/adminclient' }
 			 		]
