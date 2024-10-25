@@ -37,9 +37,9 @@ export default defineConfig(({ mode }) => {
 				},
 				{ text: 'Administration/Entwicklung', 
 					items: [
-						{ text: 'Installation (Todo)', link: '/deployment' },  //Hier Hook für Deployment (test) 
-						{ text: 'Administration/Entwicklung', link: '/admin'},
-						{ text: 'Admin-Client', link: '/adminclient' }
+						{ text: 'Installation, Einrichtung, Migration', link: '/deployment' }, 
+						{ text: 'Admin-Client', link: '/adminclient' },
+						{ text: 'Entwicklung, Projekte, Schulungen', link: '/admin'}
 			 		]
 				},
 				{ text: 'UI-Bibliothek', link: 'https://ui.svws-nrw.de' },
@@ -73,15 +73,6 @@ export default defineConfig(({ mode }) => {
 							{ text: 'svws-webclient', link: '/admin/SVWS-Server/svws-webclient/' }
 						]
 						},
-						{ text: 'Deployment', link: '/admin/Deployment/', collapsed: true, items: [
-							{ text: 'IT-Umgebungen', link: '/admin/Deployment/IT-Umgebungen/' },
-							{ text: 'Linux-Installer', link: '/admin/Deployment/Linux-Installer/' },
-							{ text: 'Docker-Container', link: '/admin/Deployment/Docker/' },
-							{ text: 'Windows-Installer', link: '/admin/Deployment/Windows-Installer/' },
-							{ text: 'Datenmigration', link: '/admin/Deployment/Datenmigration/' },
-							{ text: 'Einrichtung', link: '/admin/Deployment/Einrichtung/' }
-						]
-						},
 						{ text: 'Entwicklungsumgebungen', link: '/admin/Entwicklungsumgebungen/', collapsed: true, items: [
 							{ text: 'Eclipse-Ubuntu', link: '/admin/Entwicklungsumgebungen/Eclipse-Ubuntu/' },
 							{ text: 'Eclipse-Windows', link: '/admin/Entwicklungsumgebungen/Eclipse-Windows/' },
@@ -111,15 +102,15 @@ export default defineConfig(({ mode }) => {
 
 						]
 						},
-						{ text: 'FAQs', link: '/admin/FAQ/' }
+						{ text: 'Technische FAQs', link: '/admin/FAQ/' }
 					]
 					}
 				],
 				'/deployment': [
 					{ text: '', items: [
-						{ text: 'Deployment Base?', link: '/deployment/' },  //Testweise für Head of Deployment
+						{ text: 'Deployment', link: '/deployment/' },
 						{ text: 'IT-Umgebungen', link: '/deployment/IT-Umgebungen/' },
-						{ text: 'Linux-Installer', link: 'deployment/Linux-Installer/' },
+						{ text: 'Linux-Installer', link: '/deployment/Linux-Installer/' },
 						{ text: 'Docker-Container', link: '/deployment/Docker/' },
 						{ text: 'Windows-Installer', link: '/deployment/Windows-Installer/' },
 						{ text: 'Datenmigration', link: '/deployment/Datenmigration/' },
