@@ -32,11 +32,16 @@ export default defineConfig(({ mode }) => {
 					text: 'Benutzerhandbücher',
 					items: [
 						{ text: 'SVWS-Client', link: '/client' },
-						{ text: 'Admin-Client', link: '/adminclient' },
 						{ text: 'Laufbahnplanung', link: '/laufbahnplanung' }
 					]
 				},
-				{ text: 'Administration/Entwicklung', link: '/admin'},
+				{ text: 'Administration/Entwicklung', 
+					items: [ 
+						{ text: 'Installation (Todo)' },
+						{ text: 'Administration/Entwicklung', link: '/admin'},
+						{ text: 'Admin-Client', link: '/adminclient' }
+			 		]
+				},
 				{ text: 'UI-Bibliothek', link: 'https://ui.svws-nrw.de' },
 				{ text: 'Java-API', link: 'https://javadoc.svws-nrw.de' },
 			],
