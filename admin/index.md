@@ -1,7 +1,5 @@
 # SVWS Dokumentation
 
-![Logo-NRW](../graphics/wappenzeichen-nrw_farbig_rgb_300.png)
-
 Projekt zur Erstellung einer Schulverwaltungssoftware mit OpenAPI-Schnittstelle für die dezentrale Schulverwaltung in NRW.  
 
 
@@ -34,7 +32,7 @@ Mit dem Update zu SchILD-NRW 3.0 wird im technischen Backend die Grundlage für 
 
 ## Hilfe und Handbuch 
 
-Hier finden Sie eine Übersicht über die Funktionen des SVWS-Servers und Hilfen für den Anwender: [help.swvs-nrw.de](https://help.svws-nrw.de/)
+Hier finden Sie eine Übersicht über die Funktionen des SVWS-Servers und Hilfen für den Anwender: [doku.swvs-nrw.de](https://doku.svws-nrw.de/)
 
 ## Github Quellen
 
@@ -53,4 +51,3 @@ Wenn Sie an einer Mitarbeit am Projekt interessiert sind, so finden Sie in diese
 
 ## [FAQ](FAQ/index.md)
 
-## [Impressum](https://www.schulministerium.nrw/impressum-haftungsausschluss-datenschutzbestimmungen)
