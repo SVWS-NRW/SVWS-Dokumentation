@@ -27,6 +27,22 @@ Unter dem ersten Punkt **Benuzterhandbücher** finden Sie die Dokumentationen f�
 
 Die übrigen Punkte bieten Zugang zu technischen Informationen zu Installation, Administration und Entwicklung.
 
+## Schulverwaltung NRW IT-Anwendungen
+
+Die Programme, die im Rahmen der Schulverwaltung NRW vom Ministerium für Schule und Bildung des Landes NRW
+zur Verfügung gestellt werden, erhalten Support durch das Fachberatersystem.
+
+Nähere Informationen erhalten Sie hier:
+
+https://www.svws.nrw.de/
+
+
+## Datenschutzhinweis aus dem Client
+
+Nehmen Sie den im SVWS-Client hinterlegten Datenschutzhinweis zur Kenntnis und beachten Sie den gültigen Rechtsrahmen.
+
+Sie erreichen den Datenschutzhunweis über ````Client Info```` im **App**-Menü im Reiter Datenschutz.
+
 ## Impressum
 
 Ministerium für Schule und Bildung des Landes Nordrhein-Westfalen
@@ -35,8 +51,11 @@ Völklinger Straße 49, 40221 Düsseldorf
 
 Telefon: +49 211 5867 40
 
-## Datenschutzhinweis aus dem Client
+https://www.schulministerium.nrw/
 
-Nehmen Sie den im SVWS-Client hinterlegten Datenschutzhinweis zur Kenntnis und beachten Sie den gültigen Rechtsrahmen.
+## Erklärung zur Barrierefreiheit
 
-Sie erreichen den Datenschutzhunweis über ````Client Info```` im **App**-Menü im Reiter Datenschutz.
+Dieses Angebot wird momentan auf Barrierefreiheit geprüft.
+Die Ergebnisse werden hier veröfffentlicht.
+
+Stand: 27. Oktober 2024
