@@ -32,13 +32,13 @@ export default defineConfig(({ mode }) => {
 					text: 'Benutzerhandbücher',
 					items: [
 						{ text: 'SVWS-Client', link: '/client' },
+						{ text: 'Admin-Client', link: '/adminclient' },
 						{ text: 'Laufbahnplanung', link: '/laufbahnplanung' }
 					]
 				},
 				{ text: 'Administration/Entwicklung', 
 					items: [
 						{ text: 'Installation, Einrichtung, Migration', link: '/deployment' }, 
-						{ text: 'Admin-Client', link: '/adminclient' },
 						{ text: 'Entwicklung, Projekte, Schulungen', link: '/admin'}
 			 		]
 				},

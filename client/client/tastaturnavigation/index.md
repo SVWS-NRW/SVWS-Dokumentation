@@ -36,7 +36,9 @@ Mit der ````Eingabetaste```` werden bei Fokus auf einem Listenelement die zugeh�
 
 Mit der ````Leertaste```` wird bei Fokus auf einem Listenelement oder einer Auswahlbox das Element für die Ausführung von Gruppenprozessen ausgewählt. Somit lassen sich also Auswahlboxen an- oder abwählen.
 
-![Auswahliste Listenelemente (Bechtel, Kerstin)](./graphics/svws_tastaturnavigation_auswahlliste_liste.png "Hier steht die Auswahl auf dem Listenelement Bechtel, Kerstin") ![Auswahl der Auswahlboxen](./graphics/svws_tastaturnavigation_auswahlliste_auswahlbox.png "Hier sind die Auswahlboxen aktiviert. Diese können mit den Pfeiltasten hoch und runter direkt angewählt und mit der Leertaste umgeschaltet werden.")
+![Auswahliste Listenelemente (Bechtel, Kerstin)](./graphics/svws_tastaturnavigation_auswahlliste_liste.png "Hier steht die Auswahl auf dem Listenelement Bechtel, Kerstin")
+
+![Auswahl der Auswahlboxen](./graphics/svws_tastaturnavigation_auswahlliste_auswahlbox.png "Hier sind die Auswahlboxen aktiviert. Diese können mit den Pfeiltasten hoch und runter direkt angewählt und mit der Leertaste umgeschaltet werden.")
 
 Im Beispiel sind die zwei Modi zu sehen. Links werden die *Listenelemente* durchgegangen, rechts sind die *Auswahlboxen* aktiv und werden mit den ````Pfeiltasten hoch```` und ````Pfeiltaste runter```` direkt angesprungen.
 
