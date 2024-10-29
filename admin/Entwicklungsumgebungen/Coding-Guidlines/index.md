@@ -343,9 +343,7 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
 **Richtig:**
 ```vue
 <template>
-
   <!-- Do something -->
-
 </template>
 <script setup lang="ts">
 
@@ -376,19 +374,21 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
 
 </style>
 <template>
-
   <!-- Do something -->
-
 </template>
 ```
 
 ---
 
 ## 2. Formatierung in Tags
-Innerhalb der Vue Tags `<template>`, `<script>` und `<style>` soll der Code eingerückt sein. Außerdem soll sich zwischen den Tags und dem Inhalt eine Leerzeile befinden.
+Innerhalb der Vue Tags `<template>`, `<script>` und `<style>` soll der Code eingerückt sein. Außerdem soll sich zwischen den Tags `<script>` und `<style>` und deren Inhalt eine Leerzeile befinden. Dies gilt nicht für `<template>` (wird von ESLint sonst kritisiert).
 
 **Richtig:**
 ```vue
+<template>
+  <span>Text</span>
+</template>
+
 <script setup lang="ts">
 
   import { computed, ref } from 'vue';
@@ -403,6 +403,12 @@ Innerhalb der Vue Tags `<template>`, `<script>` und `<style>` soll der Code eing
 
 **Falsch:**
 ```vue
+<template>
+
+  <span>Text</span>
+
+</template>
+
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 
@@ -421,18 +427,14 @@ Wenn der Propertyname und der Wert denselben Namen haben, verwende die Kurzschre
 **Richtig:**
 ```vue
 <template>
-
   <card-component :title></card-component> <!-- Kurzschreibweise, da Property- und Wertname "title" übereinstimmen -->
-
 </template>
 ```
 
 **Falsch:**
 ```vue
 <template>
-
   <card-component :title="title"></card-component> <!-- Hier ist die explizite Bindung redundant -->
-
 </template>
 ```
 ---
@@ -443,18 +445,14 @@ Verwende direkte Callback-Zuweisungen anstelle von Inline-Funktionen.
 **Richtig:**
 ```vue
 <template>
-
   <button @click="click">Click me</button>
-
 </template>
 ```
 
 **Falsch:**
 ```vue
 <template>
-
   <button @click="(value) => click(value)">Click me</button>
-
 </template>
 ```
 
@@ -506,10 +504,8 @@ Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` aus
 **Richtig:**
 ```vue
 <template>
-
   <div v-if="isVisible">Visible</div> <!-- Logik in Funktion ausgelagert -->
   <card-component :title="noMaintenance ? 'Please log in' : 'Maintenance'" /> <!-- Inline Ternary ist erlaubt-->
-
 </template>
 
 <script setup lang="ts">
@@ -532,10 +528,8 @@ Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` aus
 **Falsch:**
 ```vue
 <template>
-
   <!-- Theoretisch möglich, aber unübersichtlich -->
   <div v-if="noMaintenance && userRole === 'admin'">Visible</div>
-
 </template>
 
 <script setup lang="ts">
@@ -556,18 +550,14 @@ Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher
 **Richtig:**
 ```vue
 <template>
-
   <div :style="{ color: 'red' }">Text</div>
-
 </template>
 ```
 
 **Falsch:**
 ```vue
 <template>
-
   <div class="red-text">Text</div>
-
 </template>
 
 <style>
@@ -763,18 +753,14 @@ Um sicherzustellen, dass Props reaktiv bleiben, sollten sie über Getter überge
 **Richtig:**
 ```vue
 <template>
-
   <child-component :prop="getProp()"></child-component>
-
 </template>
 ```
 
 **Falsch:**
 ```vue
 <template>
-
   <child-component :prop="prop"></child-component>
-
 </template>
 ```
 ---
