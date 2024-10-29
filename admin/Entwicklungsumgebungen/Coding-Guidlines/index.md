@@ -3,6 +3,7 @@
 - [Allgemein](#allgemein)
   - [1. Einzeilige Befehle ohne Klammern](#1-einzeilige-befehle-ohne-klammern)
   - [2. Klammern bei gemischten Operatoren](#2-klammern-bei-gemischten-operatoren)
+  - [3. Interfaces statt konkreter Klassen](#3-interfaces-statt-konkreter-klassen)
 - [Java](#java)
   - [1. `final` für unveränderliche Variablen](#1-final-für-unveränderliche-variablen)
   - [2. JavaDoc formatieren](#2-javadoc-formatieren)
@@ -17,7 +18,7 @@
   - [4. Keine High-Level-Funktionen wie `map`, `filter`, `reduce`, `forEach`](#4-keine-high-level-funktionen-wie-map-filter-reduce-foreach)
 - [Vue](#vue)
   - [1. Aufbau einer Single File Component](#1-aufbau-einer-single-file-component)
-  - [2. Formattierung in Tags](#2-formattierung-in-tags)
+  - [2. Formatierung in Tags](#2-formatierung-in-tags)
   - [3. Kurzschreibweise für gleichnamige Props verwenden](#3-kurzschreibweise-für-gleichnamige-props-verwenden)
   - [4. Direkte Callback-Zuweisung statt Inline-Funktionen](#4-direkte-callback-zuweisung-statt-inline-funktionen)
   - [5. `watch` durch `computed` ersetzen](#5-watch-durch-computed-ersetzen)
@@ -29,11 +30,11 @@
   - [11. Strukturierung des Script-Bereichs in Vue-Komponenten](#11-strukturierung-des-script-bereichs-in-vue-komponenten)
   - [12. Immer Semikolon verwenden](#12-immer-semikolon-verwenden)
   - [13. Verzichte auf Vue-Typendefinitionen](#13-verzichte-auf-vue-typendefinitionen)
-  - [14. ESLint statt Prettier](#14-eslint-statt-prettier)
+  - [14. `Iterable<T>` statt spezifischer Container-Typen](#14-iterablet-statt-spezifischer-container-typen)
+  - [15. ESLint statt Prettier](#15-eslint-statt-prettier)
 - [Vue - Transpiler](#vue---transpiler)
   - [1. `shallowRef` statt `ref` für transpilierte Java-Objekte](#1-shallowref-statt-ref-für-transpilierte-java-objekte)
   - [2. Getter für reaktive Props verwenden](#2-getter-für-reaktive-props-verwenden)
-
 
 # Allgemein
 
@@ -84,6 +85,45 @@ if (a && b || c)
 
 boolean result = x instanceof String && y > 5;  // Ohne Klammern unklar, was zuerst ausgewertet wird
 ```
+---
+## 3. Interfaces statt konkreter Klassen
+Beim Design von Software sollte die Verwendung von Interfaces gegenüber konkreten Klassen bevorzugt werden, um Flexibilität, Erweiterbarkeit und Testbarkeit zu erhöhen. Durch die Nutzung von Interfaces wird die Abhängigkeit von bestimmten Implementierungen reduziert und es wird einfacher, den Code zu erweitern oder auszutauschen, ohne andere Teile des Systems zu verändern.
+
+**Empfohlene Interfaces für Sammlungen in Java**
+
+- **`List<E>`** statt **`ArrayList<E>`** oder **`LinkedList<E>`**
+- **`Set<E>`** statt **`HashSet<E>`** oder **`TreeSet<E>`**
+- **`Map<K, V>`** statt **`HashMap<K, V>`** oder **`TreeMap<K, V>`**
+- **`Queue<E>`** statt **`PriorityQueue<E>`**
+
+**Richtig:**
+
+```java
+import java.util.List;
+
+public class DataProcessor {
+	public void processData(List<Integer> data) {
+		for (Integer number : data) {
+			System.out.println(number);
+		}
+	}
+}
+```
+
+**Falsch:**
+
+```java
+import java.util.ArrayList;
+
+public class DataProcessor {
+	public void processData(ArrayList<Integer> data) {
+		for (Integer number : data) {
+			System.out.println(number);
+		}
+	}
+}
+```
+
 ---
 
 # Java
@@ -344,7 +384,7 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
 
 ---
 
-## 2. Formattierung in Tags
+## 2. Formatierung in Tags
 Innerhalb der Vue Tags `<template>`, `<script>` und `<style>` soll der Code eingerückt sein. Außerdem soll sich zwischen den Tags und dem Inhalt eine Leerzeile befinden.
 
 **Richtig:**
@@ -649,8 +689,48 @@ Nutze keine Typendefinitionen aus Vue wie zum Beispiel `Ref`, `Computed` oder `W
 </script>
 ```
 ---
-## 14. ESLint statt Prettier
-Verwende für die Formattierung des Codes keinen Prettier, sondern stattdessen die Korrekturen von ESLint.
+## 14. `Iterable<T>` statt spezifischer Container-Typen
+Wenn Funktionen als Props übergeben werden und Parameter wie Listen oder Arrays erwarten, sollte nach Möglichkeit `Iterable<T>` anstelle von `Array<T>`, `List<T>`, etc. verwendet werden. Dadurch wird der Code flexibler und universeller, da `Iterable<T>` sowohl Arrays als auch andere iterierbare Strukturen akzeptiert. Dies ermöglicht es, mit unterschiedlichen Datenstrukturen zu arbeiten, ohne die Funktion anpassen zu müssen. 
+
+**Richtig**
+
+```vue
+<script setup lang="ts">
+	const props = defineProps<{
+		processData: (data: Iterable<number>) => void;
+	}>();
+
+	// Props innerhalb einer Funktion verwenden, um die Reaktivität sicherzustellen
+	function handleProcess() {
+		props.processData([1, 2, 3]);   // Array
+		props.processData(new Set([4, 5, 6]));   // Set
+	}
+
+	handleProcess();
+</script>
+```
+**Falsch**
+
+```vue
+<script setup lang="ts">
+	const props = defineProps<{
+		processData: (data: Array<number>) => void;
+	}>();
+
+	// Props innerhalb einer Funktion verwenden, um die Reaktivität sicherzustellen
+	function handleProcess() {
+		props.processData([1, 2, 3]);   // Array
+	}
+
+	handleProcess();
+</script>
+```
+---
+
+## 15. ESLint statt Prettier
+Verwende für die Formatierung des Codes keinen Prettier, sondern stattdessen die Korrekturen von ESLint.
+
+---
 
 # Vue - Transpiler
 Die folgenden Regelungen beziehen sich ausschließlich auf transpilierte Java-Objekte.
