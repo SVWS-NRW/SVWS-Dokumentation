@@ -19,8 +19,35 @@ Die MariaDB-Datenbank kann separat betrieben werden. Diese kann aber auch auf de
 
 ![](./graphics/Rechenzentrum_Schild-NRW3.png)
 
+Schild-NRW 3 benötigt, so wie Schild-NRW 2, eine Konfigurationsdatei in der die notwendigen Angaben für die Zugänge stehen. Diese hat die Endung .con und enthält die URL (und Port) zum SVWS-Server und zur MariaDB-Datenbank.
+Das Programm Schild-NRW 3 kann nach wie vor über eine Dateifreigabe an die Windows-Clients ausgeliefert werden.
+
+Der momentan noch im Aufbau befindliche Web-Client steht über den SVWS-Server immer auch zur Verfügung und kann über die URL (und ggf. den Port) im Browser aufgerufen werden. Getestet werdne Firefox, Edge, Chrome und Safari.
+
 ## Installation SVWS-Server
+
+Da Schild-NRW 3 erst startet, wenn ein SVWS-Server zur Verfügunmg steht, sollte mit dieser Installation begonnen werden.
+
+https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Linux-Installer/index.md
+
+https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Windows-Installer/index.md
+
+Für IT-Dienstleister, die mehrere Schulen betreuen, kann es sinnvoll sein, den SVWS-Server ohne eine erste Datenbank zu installieren.
+Der SVWS-Server startet auch, wenn bei der Installation keine neue Datenbank erzeugt wird.
+
+Über den Admin-Client können dann die gewünschten Datenbanken Migriert oder erstellt werden.
 
 ## Installation Schild-NRW 3
 
+Die Installation von Schild-NRW 3 kann danach vorgenommen werden.
+
+https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Schnellinstallation_SVWS-Server_und_SchILD-NRW_3
+
+
 ## Konfigurationen
+
+Schild-NRW 3 bentig für jede Adtenbank eine .con-Datei, die im Unterordner "Connection-Files" der Schild-NRW 3-Arbeitsverzeichnis liegt.
+Diese .con-Datei ist eine reine Textdatei im UTF-8 Format.
+
+Der SVWS-Server erstellt bei der Installation eine svwsconfig.json. Diese Datei enthält alle benötigten Angaben für den Betrieb des SVWS-Servers.
+

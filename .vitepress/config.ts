@@ -113,6 +113,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Linux-Installer', link: '/deployment/Linux-Installer/' },
 						{ text: 'Docker-Container', link: '/deployment/Docker/' },
 						{ text: 'Windows-Installer', link: '/deployment/Windows-Installer/' },
+						{ text: 'Schild-NRW-3', link: '/deployment/Schild-NRW3/' },
 						{ text: 'Datenmigration', link: '/deployment/Datenmigration/' },
 						{ text: 'Einrichtung', link: '/deployment/Einrichtung/' }
 					]
