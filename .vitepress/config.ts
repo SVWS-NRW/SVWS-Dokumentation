@@ -38,7 +38,7 @@ export default defineConfig(({ mode }) => {
 				},
 				{ text: 'Administration/Entwicklung', 
 					items: [
-						{ text: 'Installation, Einrichtung, Migration', link: '/deployment' }, 
+						{ text: 'SVWS-Installation', link: '/deployment' }, 
 						{ text: 'Entwicklung, Projekte, Schulungen', link: '/admin'}
 			 		]
 				},
