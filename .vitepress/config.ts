@@ -155,7 +155,7 @@ export default defineConfig(({ mode }) => {
 									[
 										{ text: 'Schulbezogene Kataloge', collapsed: true, items:
 													[
-														{ text: 'Stammdaten der Schule', link: '/client/schule/kataloge/sb_stammdaten/' },
+														{ text: 'Stammdaten der Schule', link: '/client/schule/' },
 														{ text: 'Betriebe (Todo)', link: '/client/schule/kataloge/sb_betriebe/' },
 														{ text: 'Einwilligungsarten (Todo)', link: '/client/schule/kataloge/sb_einwilligungsarten/' },
 														{ text: 'Fächer', link: '/client/schule/kataloge/sb_faecher/' },
