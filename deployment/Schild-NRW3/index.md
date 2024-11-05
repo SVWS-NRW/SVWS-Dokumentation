@@ -63,7 +63,3 @@ Die Einstellungen des SVWS-Server können nach Bedarf gesetzt werden.
 Der Bereich der Schema-Einstellungen wird vom SVWS-Server z.B. durch den Admin-Client gesetzt!
 
 https://doku.svws-nrw.de/adminclient/administration/
-
-::: warning
-This is a warning message
-:::

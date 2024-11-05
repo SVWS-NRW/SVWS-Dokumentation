@@ -1,10 +1,10 @@
 # SVWS Dokumentation
 
-````
+::: danger
 Dieser Bereich hält Informationen zur Programmierung der SVWS-Projekte und zur API bereit.
-
 Es wird die Einrichtung von Entwicklungsumgebungen behandelt - nicht die Einrichtung, die zur Nutzung der Software durchgeführt wird.
-````
+:::
+
 
 Projekt zur Erstellung einer Schulverwaltungssoftware mit OpenAPI-Schnittstelle für die dezentrale Schulverwaltung in NRW.  
 
