@@ -159,9 +159,9 @@ export default defineConfig(({ mode }) => {
 														{ text: 'Stammdaten der Schule (Todo)' },
 														{ text: 'Betriebe (Todo)' },
 														{ text: 'Einwilligungsarten (Todo)' },
-														{ text: 'Fächer', link: '/client/schule/kataloge/faecher/' },
-														{ text: 'Förderschwerpunkte', link: '/client/schule/kataloge/foerderschwerpunkte/' },
-														{ text: 'Jahrgänge', link: '/client/schule/kataloge/jahrgaenge/' },
+														{ text: 'Fächer', link: '/client/schule/kataloge/sb_faecher/' },
+														{ text: 'Förderschwerpunkte', link: '/client/schule/kataloge/sb_foerderschwerpunkte/' },
+														{ text: 'Jahrgänge', link: '/client/schule/kataloge/sb_jahrgaenge/' },
 														{ text: 'Vermerkarten (Todo)' }
 													]
 										},
