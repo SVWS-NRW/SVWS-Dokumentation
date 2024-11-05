@@ -5,7 +5,7 @@ Im Beratungsbogen kann unter **Allgemein/Vorlage** eine Standardvorlage erstellt
 
 Im Beispiel sind *M* und *Sp* belegt, da diese Fächer - ebenso wie *D* - eine Pflichtbelegung darstellen.
 
-Der Einsatz solcher Vorlagen ist optional.
+Der Einsatz solcher Vorlagen ist optional, kann aber den Beratungsprozess entlasten. Besonders wenn SuS die Wahlen als Grundlage selbst ausfüllen, lassen sich hier Fehler abfangen.
 
 ![Eine Vorlage, bei der Mathe und Sport in der EF schon belegt sind.](./graphics/SVWS_Oberstufe_Beratung_1.png "Die Beratungsbögen können optional mit schon ausgefüllten Belegungen starten, etwa um Pflichtkurse schon einzutragen.") 
 
@@ -23,7 +23,7 @@ Im Feld rechts neben der Beratungsbogenvorlage können **Beratungslehrer der Stu
 
 ![Die Beratungslehrer werden in einem Jahrgang hinterlegt](./graphics/SVWS_Oberstufe_Beratung_4.png "Hinterlegen Sie die Beratungslehrer des Jahrgangs.") 
 
-Ganz unten können für den Ausdruck der Beratungsbögen oder einen Email-Versand **Textverlagen** eingetragen werden.
+Abschließend können **Textverlagen** für den Ausdruck der Beratungsbögen oder einen Email-Versand eingetragen werden. 
 
 ![Es können Textbausteine für den E-Mailversand eingetragen werden.](./graphics/SVWS_Oberstufe_Beratung_3.png "Tragen Sie passende Texte ein, die beim E-Mailversand verwendet werden.") 
 
