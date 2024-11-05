@@ -1,8 +1,8 @@
 # Zeitraster
 
-Die Katalogeinträge für *Räume*, *Pausenzeiten*, *Zeitraster*, *Klassen* und *Aufsichtsbereiche* werden bei der Stundenplanerstellung zusammengeführt.
+Die Vorlageneinträge für *Räume*, *Pausenzeiten*, *Zeitraster*, *Klassen* und *Aufsichtsbereiche* werden bei der Stundenplanerstellung zusammengeführt.
 
-Über *Kataloge ➜ Zeitraster* können Stundenraster angelegt werden.
+Über *Allgemeine Vorlagen ➜ Zeitraster* können Stundenraster angelegt werden.
 
 **Hinweis:** Die angelegten Stunden sollten sich mit den Pausenzeiten aus *Kataloge ➜ Pausenzeiten* decken.
 

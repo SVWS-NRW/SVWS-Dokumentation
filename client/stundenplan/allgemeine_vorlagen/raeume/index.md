@@ -1,12 +1,12 @@
 # Räume
 
-Die Katalogeinträge für *Räume*, *Pausenzeiten*, *Zeitraster*, *Klassen* und *Aufsichtsbereiche* werden bei der Stundenplanerstellung zusammengeführt.
+Die Vorlageneinträge für *Räume*, *Pausenzeiten*, *Zeitraster*, *Klassen* und *Aufsichtsbereiche* werden bei der Stundenplanerstellung zusammengeführt.
 
 ## Räume anlegen und verwalten
 
-Über diesen Katalog lassen sich *Räume* erfassen, die dann über den Stundenplan verplant werden können.
+Über diese Vorlage lassen sich *Räume* erfassen, die dann über den Stundenplan verplant werden können.
 
-![Der Katalog zu den Räumen](./graphics/SVWS_kataloge_raeume_üebersicht.png "Tragen Sie die Eigenschaften von Räumen ein.")
+![Die Vorlage zu den Räumen](./graphics/SVWS_kataloge_raeume_üebersicht.png "Tragen Sie die Eigenschaften von Räumen ein.")
 
 Erzeugen Sie über das **+** neue Räume, im Screenshot wird es durch den grünen Pfeil gezeigt.
 

@@ -1,10 +1,10 @@
 # Pausenzeiten
 
-Die Katalogeinträge für *Räume*, *Pausenzeiten*, *Zeitraster*, *Klassen* und *Aufsichtsbereiche* werden bei der Stundenplanerstellung zusammengeführt.
+Die **Allgemeinen Vorlagen** für *Räume*, *Pausenzeiten*, *Zeitraster*, *Klassen* und *Aufsichtsbereiche* werden bei der Stundenplanerstellung zusammengeführt.
 
-Über den Katalog lassen sich die Pausenzeiten der Schule definieren.
+Über diese Vorlage lassen sich die Pausenzeiten der Schule definieren.
 
-![Katalogübersicht der Pausenzeiten](./graphics/SVWS_kataloge_pausenzeiten.png "Die definierten Pausenzeiten lassen sich bearbeiten.")
+![Vorlagenübersicht der Pausenzeiten](./graphics/SVWS_kataloge_pausenzeiten.png "Die definierten Pausenzeiten lassen sich bearbeiten.")
 
 Im rechten Bereich lassen sich exitierende Pausenzeiten bearbeiten.
 
