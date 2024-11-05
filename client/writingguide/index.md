@@ -47,7 +47,49 @@ Andere Hervorhebungen können in *kursiv* gesetzt werden (siehe oben). Ebenso we
 
 Bei **Anleitungen** empfhielt es sich, die Funktionen, die im Zuge der Anleitung tatsächlich bedient zu werden, als ```Code```zu markieren. Also wäre alles, was tatsächlich anzuklicken ist, als Code hervorgehoben. Alternativen wären dann fett. Hier würde man schreiben: "Klicken Sie nun auf ```Weiter```, mit **Abbrechen** kehren Sie ohne Änderungen vorzunehmen zum vorherigen Fenster zurück."
 
-Wichtiger als das Einhalten eines globalen Schemas ist aber eher der spärliche Einsatz von Hervorhebungen und Konsistenz innerhalb des Artikels oder der thematischen Artieklreihe.  
+Wichtiger als das Einhalten eines globalen Schemas ist aber eher der spärliche Einsatz von Hervorhebungen und Konsistenz innerhalb des Artikels oder der thematischen Artieklreihe. 
+
+### Farbboxen
+
+````
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning ACHTUNG
+This is a warning.
+:::
+
+::: danger SUPER ACHTUNG
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
+````
 
 
+::: info
+This is an info box.
+:::
 
+::: tip
+This is a tip.
+:::
+
+::: warning ACHTUNG
+This is a warning.
+:::
+
+::: danger SUPER ACHTUNG
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
