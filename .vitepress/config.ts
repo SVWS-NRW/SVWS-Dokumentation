@@ -122,7 +122,6 @@ export default defineConfig(({ mode }) => {
 				'/client': [
 					{ text: '', items:
 						[
-							{ text: 'Diese Webseite', link: '/client/clientwebsite/' },
 							{ text: '━━━ Der Client ━━━', link: '/client/client/', collapsed: false, items:
 									[
 										{ text: 'Tastaturnavigation', link: '/client/client/tastaturnavigation' },
