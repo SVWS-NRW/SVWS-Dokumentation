@@ -155,13 +155,13 @@ export default defineConfig(({ mode }) => {
 									[
 										{ text: 'Schulbezogene Kataloge', collapsed: true, items:
 													[
-														{ text: 'Stammdaten der Schule (Todo)' },
-														{ text: 'Betriebe (Todo)' },
-														{ text: 'Einwilligungsarten (Todo)' },
+														{ text: 'Stammdaten der Schule', link: '/client/schule/kataloge/sb_stammdaten/' },
+														{ text: 'Betriebe (Todo)', link: '/client/schule/kataloge/sb_betriebe/' },
+														{ text: 'Einwilligungsarten (Todo)', link: '/client/schule/kataloge/sb_einwilligungsarten/' },
 														{ text: 'Fächer', link: '/client/schule/kataloge/sb_faecher/' },
 														{ text: 'Förderschwerpunkte', link: '/client/schule/kataloge/sb_foerderschwerpunkte/' },
 														{ text: 'Jahrgänge', link: '/client/schule/kataloge/sb_jahrgaenge/' },
-														{ text: 'Vermerkarten (Todo)' }
+														{ text: 'Vermerkarten (todo)', link: '/client/schule/kataloge/sb_vermerkarten/' }
 													]
 										},
 										{ text: 'Allgemeine Kataloge', collapsed: true, items:
