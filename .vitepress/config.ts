@@ -119,6 +119,13 @@ export default defineConfig(({ mode }) => {
 					]
 					}
 				],
+				'/laufbahnplanung' : [
+					{ text: '', items: [
+                    	{ text: 'Vorbereitung', link: '/laufbahnplanung/vorbereitung/' },
+						{ text: 'Beratung mit WebLuPO', link: '/laufbahnplanung/weblupo/' }
+					]
+					}
+				],
 				'/client': [
 					{ text: '', items:
 						[
@@ -210,7 +217,6 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Beratung', link: '/client/gost/beratung/' },
 										{ text: 'Laufbahnplanung', link: '/client/gost/laufbahn/' },
 										{ text: 'Fachwahlen', link: '/client/gost/fachwahlen/' },
-										{ text: 'WebLuPO', link: '/client/gost/weblupo/' },
 										{ text: 'Kursplanung', link: '/client/gost/kursplanung/' },
 										{ text: 'Klausurplanung', link: '/client/gost/klausurplanung/' }
 									]
