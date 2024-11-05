@@ -127,7 +127,6 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Tastaturnavigation', link: '/client/client/tastaturnavigation' },
 										{ text: 'Änderungen', link: '/client/client/änderungen/' },
 										{ text: 'FAQ', link: '/client/client/faq/' },
-										{ text: 'JSON-Dateien', link: '/client/client/json_files/' },
 									]
 							},
 							{ text: '━━━ Anleitungen ━━━', link: '/client/anleitungen/' },
@@ -245,6 +244,7 @@ export default defineConfig(({ mode }) => {
 									]
 							},
 							{ text: '━━━ Weiteres ━━━', link: '/client/weiteres/' },
+							{ text: 'JSON-Dateien', link: '/client/client/json_files/' },
 							{ text: 'Adressbücher', link: '/client/adressbuecher/' },
 							{ text: 'Kalender', link: '/client/kalender/' },
 							{ text: '-----------'},
