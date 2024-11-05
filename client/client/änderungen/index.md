@@ -26,7 +26,13 @@ Es ist nicht mehr vorgesehen, dass in einer Schule Quartale als eigene Lernabsch
 
 Quartalsnoten lassen sich nun aber direkt im **aktuellen Lernabschnitt** erfassen. Hierfür steht neben der Spalte für die *Note* eine neue Spalte für die *Quartal*snote zur Verfügung.
 
-![Quartalsnoten werden in den aktuellen Leistungsdaten erfasst](./graphics/SVWS_Informationen_Quartalsnoten.png "Erfassung der Quartalsnoten direkt im Lernbschnitt.") 
+![Quartalsnoten werden in den aktuellen Leistungsdaten erfasst](./graphics/SVWS_Informationen_Quartalsnoten.png "Erfassung der Quartalsnoten direkt im Lernbschnitt.")
+
+## Erfassung der Zuwanderungsgeschichtee
+
+Die **Vereinfachte Erfassung der Zuwanderungsgeschichte** wird vom neuen Datenbankserver nicht mehr unterstützt und damit bietet sich nur noch eine Option zur Erfassung der Zuwanderungsgeschichte.
+
+Bei der Statistik wird bei einem "nicht deutschen" Eintrag korrekt "Nicht deutsch" gemeldet, die übrige Zuwanderungsgeschichte wäre zukünftig einzupflegen. 
 
 **TODO: TEILLEISTUNGEN???**  
 
