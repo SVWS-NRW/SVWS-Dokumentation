@@ -22,6 +22,12 @@ Die MariaDB-Datenbank kann separat betrieben werden. Diese kann aber auch auf de
 Schild-NRW 3 benötigt, so wie Schild-NRW 2, eine Konfigurationsdatei in der die notwendigen Angaben für die Zugänge stehen. Diese hat die Endung .con und enthält die URL (und Port) zum SVWS-Server und zur MariaDB-Datenbank.
 Das Programm Schild-NRW 3 kann nach wie vor über eine Dateifreigabe an die Windows-Clients ausgeliefert werden.
 
+Wie im Schaubild zu sehen, kann der SVWS-Server und die MariaDB auf getrennten Servern liegen.
+Auch die Ports können in den Konfigurationsdateien eingestellt werden.
+Wie im unteren Schaubild zu sehen, kann auch alles auf einem Server bereitgestellt werden.
+Diese Auswahl hängt auch vom Grad der Virtualisierung ab, die vewendet wird.
+Auch die Anzahl der Server pro Schulen kann je nach Umgebung bestimmt werden.
+
 Der momentan noch im Aufbau befindliche Web-Client steht über den SVWS-Server immer auch zur Verfügung und kann über die URL (und ggf. den Port) im Browser aufgerufen werden. Getestet werdne Firefox, Edge, Chrome und Safari.
 
 ## Installation SVWS-Server
@@ -35,7 +41,7 @@ https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Windows-Inst
 Für IT-Dienstleister, die mehrere Schulen betreuen, kann es sinnvoll sein, den SVWS-Server ohne eine erste Datenbank zu installieren.
 Der SVWS-Server startet auch, wenn bei der Installation keine neue Datenbank erzeugt wird.
 
-Über den Admin-Client können dann die gewünschten Datenbanken Migriert oder erstellt werden.
+Über den Admin-Client können dann die gewünschten Datenbanken migriert oder erstellt werden.
 
 ## Installation Schild-NRW 3
 
@@ -46,8 +52,14 @@ https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Schnellinstallati
 
 ## Konfigurationen
 
-Schild-NRW 3 bentig für jede Adtenbank eine .con-Datei, die im Unterordner "Connection-Files" der Schild-NRW 3-Arbeitsverzeichnis liegt.
+Schild-NRW 3 bentig für jede Datenbank eine .con-Datei, die im Unterordner "Connection-Files" der Schild-NRW 3-Arbeitsverzeichnis liegt.
 Diese .con-Datei ist eine reine Textdatei im UTF-8 Format.
 
 Der SVWS-Server erstellt bei der Installation eine svwsconfig.json. Diese Datei enthält alle benötigten Angaben für den Betrieb des SVWS-Servers.
 
+https://doku.svws-nrw.de/deployment/Einrichtung/
+
+Die Einstellungen des SVWS-Server können nach Bedarf gesetzt werden.
+Der Bereich der Schema-Einstellunen wird vom SVWS-Server z.B. durch den Admin-Client gesetzt!
+
+https://doku.svws-nrw.de/adminclient/administration/
