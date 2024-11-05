@@ -1,4 +1,4 @@
-# SVWS Dokumentation
+# SVWS Entwickler Dokumentation
 
 ::: danger ACHTUNG!
 Dieser Bereich hält Informationen zur Programmierung der SVWS-Projekte und zur API bereit.
