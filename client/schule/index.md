@@ -13,7 +13,9 @@ Direkt oben auf der Seite werden Name und Schulnummer angezeigt, darunter lassen
 
 Geben Sie grundlegende Daten zur Verwendung eines SMTP-Mailservers zur Versendung von E-Mails ein.
 
-Die konkreten Anmeldedaten werden in der Schaltfläche **Aktueller Benutzer** oben links in der Kopfzeile bezogen auf eben den aktuellen Nutzer eingegeben.
+![Emaileinstellungen für die Schule](./graphics/SVWS_schule_übersicht_email.png "Eingabe der Daten für einen Emailserver zum Versand von Emails aus dem SVWS-Client.")
+
+Die **konkreten Anmeldedaten** werden in der Schaltfläche zum aktuell angemeldeten **Benutzer** ganz oben links in der Kopfteile des SVWS-Clients eingebenen.
 
 ## Katalogübersicht
 
