@@ -19,15 +19,6 @@ const datum = (t: number) => {
 
 ![Logo-NRW](./graphics/wappenzeichen-nrw_farbig_rgb_300.png "Das Wappen von Nordrhein-Westfalen.")
 
-## Impressum
-
-Ministerium für Schule und Bildung des Landes Nordrhein-Westfalen
-
-Völklinger Straße 49, 40221 Düsseldorf
-
-Telefon: +49 211 5867 40
-
-https://www.schulministerium.nrw/
 
 ## SVWS-Server, SVWS-Client und weitere Projekte
 
@@ -68,3 +59,13 @@ Dieses Angebot wird momentan auf Barrierefreiheit geprüft.
 Die Ergebnisse werden hier veröfffentlicht.
 
 Stand: 27. Oktober 2024
+
+## Impressum
+
+Ministerium für Schule und Bildung des Landes Nordrhein-Westfalen
+
+Völklinger Straße 49, 40221 Düsseldorf
+
+Telefon: +49 211 5867 40
+
+https://www.schulministerium.nrw/
