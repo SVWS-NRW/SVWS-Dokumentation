@@ -41,7 +41,7 @@ Beispiele zur dazu obligatorischen docker-compose.yml und .env Datei befinden si
 mkdir ~/docker && mkdir ~/docker/svws && cd ~/docker/svws
 #
 # download docker-comose.yml, .env, etc.
-wget https://github.com/SVWS-NRW/SVWS-Dokumentation/tree/main/Deployment/Docker/svws-docker-example.zip
+wget https://github.com/SVWS-NRW/SVWS-Dokumentation/tree/main/deployment/Docker/svws-docker-example.zip
 7z x svws-docker-example.zip
 #
 # SVWS Docker initialisieren
