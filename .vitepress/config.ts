@@ -128,14 +128,14 @@ export default defineConfig(({ mode }) => {
 				'/client': [
 					{ text: '', items:
 						[
-							{ text: '━━━ Der Client ━━━', link: '/client/client/', collapsed: false, items:
+							{ text: '⟿ Der Client ⇜', link: '/client/client/', collapsed: false, items:
 									[
 										{ text: 'Tastaturnavigation', link: '/client/client/tastaturnavigation' },
 										{ text: 'Änderungen', link: '/client/client/änderungen/' },
 										{ text: 'FAQ', link: '/client/client/faq/' },
 									]
 							},
-							{ text: '━━━ Anleitungen ━━━', link: '/client/anleitungen/' },
+							{ text: '⟿ Anleitungen ⇜', link: '/client/anleitungen/' },
 							{ text: 'Allgemeine Anleitungen', link: '/client/anleitungen_allgemein/', collapsed: true, items:
 									[
 										{ text: 'Anmeldung', link: '/client/anleitungen_allgemein/anmeldung/' },
@@ -149,7 +149,7 @@ export default defineConfig(({ mode }) => {
 									]
 							},
 							{ text: 'Zeugnisvorbereitung', link: '/client/anleitungen_zeugnisse/' },
-							{ text: '━━━ Apps ━━━', link: '/client/apps/' },
+							{ text: '⟿ Apps ⇜', link: '/client/apps/' },
 							{ text: 'Aktueller Benutzer', link: '/client/aktuellernutzer/' },
 							{ text: 'Schule', link: '/client/schule/', collapsed: true, items:
 									[
@@ -248,11 +248,11 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Benutzergruppen (Anzupassen)', link: '/client/einstellungen/benutzergruppen/' }
 									]
 							},
-							{ text: '━━━ Weiteres ━━━', link: '/client/weiteres/' },
+							{ text: '⟿ Weiteres ⇜', link: '/client/weiteres/' },
 							{ text: 'JSON-Dateien', link: '/client/client/json_files/' },
 							{ text: 'Adressbücher', link: '/client/adressbuecher/' },
 							{ text: 'Kalender', link: '/client/kalender/' },
-							{ text: '-----------'},
+							{ text: '―――'},
 							{ text: 'Writing Guidelines (Temp)', link: '/client/writingguide/' }
 						]
 					}
