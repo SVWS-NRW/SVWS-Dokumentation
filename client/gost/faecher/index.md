@@ -16,7 +16,7 @@ Hinweis: Durch Importe wird eventuell eine Kombination doppelt eingetragen.
 
 **Beispiel:**
 
-```
+```txt
 KR schließt ER aus
 und
 ER schließt KR aus.
