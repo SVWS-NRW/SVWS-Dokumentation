@@ -117,7 +117,7 @@ export default defineConfig(({ mode }) => {
 				'/client': [
 					{ text: '', items:
 						[
-							{ text: '**⟿ Der Client ⇜**', link: '/client/client/', collapsed: false, items: [
+							{ text: '⟿ Der Client ⇜', link: '/client/client/', collapsed: false, items: [
 								{ text: 'Tastaturnavigation', link: '/client/client/tastaturnavigation' },
 								{ text: 'Änderungen', link: '/client/client/änderungen/' },
 								{ text: 'FAQ', link: '/client/client/faq/' },
