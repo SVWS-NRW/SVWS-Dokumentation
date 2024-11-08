@@ -135,7 +135,7 @@ Es gibt weitere Möglichkeiten zur Erstellung neuer Datenbanken bzw. zur Migrati
 + per bash Skript
 + ... 
 
-siehe dazu: [Datenmigration](https://doku.svws-nrw.de/Deployment/Datenmigration/)
+siehe dazu: [Datenmigration](https://doku.svws-nrw.de/deployment/Datenmigration/)
 
 ## Sinnvolle Konfigurationen
 
