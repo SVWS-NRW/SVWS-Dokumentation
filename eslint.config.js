@@ -137,7 +137,7 @@ export default tseslint.config(
 		},
 		language: "markdown/gfm",
 		rules: {
-				"markdown/no-html": "error",
+				"markdown/no-html": ["error", { allowed: ["br"]}],
 				"markdown/fenced-code-language": "error",
 		}
 	}

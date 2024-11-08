@@ -1,18 +1,15 @@
 # Gitlab und GitHub
 
-Der Code wird auf dem Gitlab-Server der MSB entwickelt.
+Der Code wird auf dem Gitlab-Server des MSB entwickelt.
 
-Jedes Repository wird automatisch nach Github gespiegelt.
+Jedes Repository wird automatisch nach Github gespiegelt, dabei werden nur die protected Branches berücksichtigt.
 https://github.com/SVWS-NRW
 
 ![GitLab_GitHub.png](./graphics/GitLab_GitHub.png)
 
-
 Entwickelt wird auf dem Gitlab-Server. Hierzu benötigen Entwickler die entsprechenden Zugänge.
 
-
 ## Information für Entwickler im SVWS-Server-Projekt
-
 
 ### Dokumentation:
 

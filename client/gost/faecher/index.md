@@ -16,11 +16,11 @@ Hinweis: Durch Importe wird eventuell eine Kombination doppelt eingetragen.
 
 **Beispiel:**
 
-```` 
+```
 KR schließt ER aus
 und
 ER schließt KR aus.
-````
+```
 
 In einem solchen Fall kann eine der Eintragungen gelöscht werden.
 

@@ -18,8 +18,8 @@ Um die angezeigten Schüler einzugrenzen, bietet die Schülerauswahl auf der lin
 Über das hier im Screenshot blau markierte Feld lässt sich **suchen**. Hierbei wird die Eingabe mit sowohl den *Vor-* wie auch mit den *Nachnamen* abgeglichen und die Schülerauswahl wird auf die Funde reduziert.
 
 Im grünen Viereck sind die **Filter** aufgeführt.
-* Ein Filtern auf den **Status** lässt aktive oder auch Schüler mit Abschluss auswählen. Per Standard werden hier die Aktiven und Externen Schüler angezeigt, welche im normalen Schulbetrieb befindlichen Personen abbilden.<br>
-Es lassen sich hier auch mehrere Status gleichzeigt anwählen.
+* Ein Filtern auf den **Status** lässt aktive oder auch Schüler mit Abschluss auswählen. Per Standard werden hier die Aktiven und Externen Schüler angezeigt, welche im normalen Schulbetrieb befindlichen Personen abbilden.
+<br />Es lassen sich hier auch mehrere Status gleichzeigt anwählen.
 
   * Im Zuge der Aufnahme lassen sich Personen im Status *Warteliste* parken. Personen, die für das kommende Schuljahr aufgenommen wurden, erhalten den Status *Neuaufnahme*.
   * Schüler, die ihre Bildungslaufbahn an der Schule hinter sich haben, verfügen über den Status *Abgang* oder *Abschlus s*. Letzteren Status erhalten Sie, wenn sie einem von ihrem vorgesehenen BIldungsgang erhaltenen Abschluss erlangt haben.

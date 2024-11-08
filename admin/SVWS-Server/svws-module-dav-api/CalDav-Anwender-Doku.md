@@ -46,31 +46,31 @@ wird in folgenden Schritten eingerichtet:
 Kalenderanwendung öffnen und im Menü den Menüeintrag Datei \> Neu \>
 Kalender… öffnen:
 
-![alt text](media/caldav-import-1.png)
+![alt text](graphics/caldav-import-1.png)
 
 Im Dialog „Neuen Kalender erstellen“ wählen Sie die Option Netzwerk.
 
-![alt text](media/caldav-import-2.png)
+![alt text](graphics/caldav-import-2.png)
 
-Im nun folgenden Dialog geben Sie den Benutzername des persönlichen SVWS-Benutzeraccounts sowie die Adresse ```https://\<server-adresse\>/db/\<svws-db-schema\>/dav``` an.
+Im nun folgenden Dialog geben Sie den Benutzername des persönlichen SVWS-Benutzeraccounts sowie die Adresse `https://\<server-adresse\>/db/\<svws-db-schema\>/dav` an.
 
-![alt text](media/caldav-import-3.png)
+![alt text](graphics/caldav-import-3.png)
 
 Im Anschluss erscheint ein Dialog zur Passworteingabe des persönlichen
 SVWS-Benutzeraccounts:
 
-![alt text](media/caldav-import-4.png)
+![alt text](graphics/caldav-import-4.png)
 
 Nach erfolgreicher Anmeldung können nun die zu synchronisierenden Kalender
 ausgewählt werden. Eine Mehrfachauswahl ist möglich. Die Liste der
 auswählbaren Kalender kann sich – abhängig von den Berechtigungen
 des SVWS-Benutzeraccounts und den Leserechten an verschiedenen Kalendern – unterscheiden. Die Farben können frei gewählt werden und werden in der Anzeige des Thunderbird für Termine aus verschiedenen Kalendern genutzt.
 
-![alt text](media/caldav-import-5.png)
+![alt text](graphics/caldav-import-5.png)
 
 Nach Bestätigung der Auswahl mit der Schaltfläche „Abonnieren“ werden die
 Kalender in Thunderbird angezeigt.
 
-![alt text](media/caldav-import-6.png)
+![alt text](graphics/caldav-import-6.png)
 
 Das Schloss am Kalender symbolisiert einen Kalender, auf den nur Lesend zugegriffen werden kann.
