@@ -122,16 +122,17 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Änderungen', link: '/client/client/änderungen/' },
 								{ text: 'FAQ', link: '/client/client/faq/' },
 							] },
-							{ text: '⟿ Anleitungen ⇜', link: '/client/anleitungen/' },
-							{ text: 'Allgemeine Anleitungen', link: '/client/anleitungen_allgemein/', collapsed: true, items: [
-								{ text: 'Anmeldung', link: '/client/anleitungen_allgemein/anmeldung/' },
-								{ text: 'Stundenpläne (Verschieben zu Stundenpläne?)', link: '/client/anleitungen_allgemein/stundenplan/' }
+							{ text: '⟿ Anleitungen ⇜', link: '/client/anleitungen/', collapsed: false, items: [
+								{ text: 'Allgemeine Anleitungen', link: '/client/anleitungen_allgemein/', collapsed: true, items: [
+									{ text: 'Anmeldung', link: '/client/anleitungen_allgemein/anmeldung/' },
+									{ text: 'Stundenpläne (Verschieben zu Stundenpläne?)', link: '/client/anleitungen_allgemein/stundenplan/' }
+								] },
+								{ text: 'Schulformspezifisch', link: '/client/anleitungen_schulform/', collapsed: true, items: [
+									{ text: 'Oberstufe', link: '/client/anleitungen_schulform//anleitungen_gost/' },
+									{ text: 'Grundschule', link: '/client/anleitungen_schulform/anleitungen_gs/' }
+								] },
+								{ text: 'Zeugnisvorbereitung', link: '/client/anleitungen_zeugnisse/' }
 							] },
-							{ text: 'Schulformspezifisch', link: '/client/anleitungen_schulform/', collapsed: true, items: [
-								{ text: 'Oberstufe', link: '/client/anleitungen_schulform//anleitungen_gost/' },
-								{ text: 'Grundschule', link: '/client/anleitungen_schulform/anleitungen_gs/' }
-							] },
-							{ text: 'Zeugnisvorbereitung', link: '/client/anleitungen_zeugnisse/' },
 							{ text: '⟿ Apps ⇜', link: '/client/apps/' },
 							{ text: 'Aktueller Benutzer', link: '/client/aktuellernutzer/' },
 							{ text: 'Schule', link: '/client/schule/', collapsed: true, items: [
