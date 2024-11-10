@@ -83,7 +83,9 @@ Hier im Beispiel wäre die *Straße* eines Lernenden nicht relevant für die Sta
 
 Bitte füllen Sie diese Felder direkt so korrekt wie möglich aus und korrigieren Sie Einträge im Vorfeld der Statistik, um dann im Statistikzeitraum schon im Vorfeld für Entlastungen gesorgt zu haben.
 
-**Tipp:** Schauen Sie in die Schüsseltabellen und Eintragungshilfen von IT.NRW zur Statistik, oftmals lassen sich Fragestellungen durch eine klare Vorgabe direkt lösen.
+::: tip Tipp
+Schauen Sie in die Schüsseltabellen und Eintragungshilfen von IT.NRW zur Statistik, oftmals lassen sich Fragestellungen durch eine klare Vorgabe direkt lösen.
+:::
 
 ### Plausibilitätsfehler
 
