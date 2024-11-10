@@ -1,3 +1,5 @@
 # Anleitungen
 
-In diesem Unterabschnitt finden Sie Anleitungen, die sich keinem der anderen Unterthemen zuordnen lassen.
+In diesem Unterabschnitt finden Sie prozessbezogene Anleitungen.
+
+Die Apps **Oberstufe** und **Stundenplan** behinhalten ebenfalls ausführlichere Besprechungen der grundlegenden Vorgehens mit ihnen.
