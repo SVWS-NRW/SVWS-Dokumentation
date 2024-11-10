@@ -38,10 +38,10 @@ export default defineConfig(({ mode }) => {
 				{ text: 'Administration/Entwicklung',
 					items: [
 						{ text: 'SVWS-Installation', link: '/deployment' },
-						{ text: 'Entwicklung, Projekte, Schulungen', link: '/admin'}
+						{ text: 'Entwicklung, Projekte, Schulungen', link: '/admin'},
+						{ text: 'UI-Bibliothek', link: 'https://ui.svws-nrw.de' },
+						{ text: 'Java-API', link: 'https://javadoc.svws-nrw.de' }
 					] },
-				{ text: 'UI-Bibliothek', link: 'https://ui.svws-nrw.de' },
-				{ text: 'Java-API', link: 'https://javadoc.svws-nrw.de' },
 			],
 			socialLinks: [
 				{ icon: 'github', link: 'https://github.com/SVWS-NRW/SVWS-Dokumentation' }
