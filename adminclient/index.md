@@ -1,16 +1,18 @@
 # Administration
 
-Der SVWS-Server kann sehr flexibel konfiguriert werden. Dies soll dazu führen, dass der Server sich an die vielen verschiedenen Systemumgebungen anpassen und je nach Bedarf Skaliert werden kann.
+Der SVWS-Server kann sehr flexibel konfiguriert werden. Dies soll dazu führen, dass der Server an die vielen verschiedenen Systemumgebungen anpassen und je nach Bedarf skaliert werden kann.
 
 ## Administration in der eigenen Schule
 
 Der SVWS-Server kann auch weiterhin an der eigenen Schule auf einem Windows- oder Linux-Server betrieben werden.
 
-Weitere Hinweise zur Installation befinden sich im Bereich *Administration/Entwicklung* ➜ **SVWS-Installation**.  
+Weitere Hinweise zur Installation befinden sich im Bereich *Administration/Entwicklung* ➜ **SVWS-Installation**. 
 
-Es können auch verschiedene Datenbanken für eine Schule eingerichtet werden, zum Beispiel für den Produktivbetrieb, einen Testbetrieb und Schulungsbetrieb.
+Es können verschiedene Schemata, also "Datenbanken", für eine Schule eingerichtet werden, zum Beispiel für den Produktivbetrieb, einen Testbetrieb und Schulungsbetrieb.
 
-Um die Verwaltung der verschiedenen Systeme zu unterstützen, liefert der SVWS-Server einen Admin-Client aus.
+Um die Verwaltung der verschiedenen Systeme zu unterstützen, liefert der SVWS-Server einen *Admin-Client* aus.
+
+Der Admin-Client kann auch genutzt werden, um Backups zu erzeugen, wieder einzuspielen und eine Migration in die MariaDB anzustoßen.
 
 ## Administration an zentraler Stelle
 
