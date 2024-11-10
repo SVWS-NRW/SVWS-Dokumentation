@@ -124,8 +124,7 @@ export default defineConfig(({ mode }) => {
 							] },
 							{ text: '⇝ Anleitungen', link: '/client/anleitungen/', collapsed: false, items: [
 								{ text: 'Allgemeine Anleitungen', link: '/client/anleitungen_allgemein/', collapsed: true, items: [
-									{ text: 'Anmeldung', link: '/client/anleitungen_allgemein/anmeldung/' },
-									{ text: 'Stundenpläne (Verschieben zu Stundenpläne?)', link: '/client/anleitungen_allgemein/stundenplan/' }
+									{ text: 'Anmeldung', link: '/client/anleitungen_allgemein/anmeldung/' }
 								] },
 								{ text: 'Schulformspezifisch', link: '/client/anleitungen_schulform/', collapsed: true, items: [
 									{ text: 'Oberstufe', link: '/client/anleitungen_schulform//anleitungen_gost/' },
@@ -196,7 +195,7 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Stundenplan', link: '/client/stundenplan/', collapsed: true, items: [
 									{ text: 'Grundlagen zum Stundenplan', link: '/client/stundenplan/stundenplan_basisinformationen/' },
-									{ text: 'Hierhier: Stundenplananleitung?' },
+									{ text: 'Stundenpläne erstellen/bearbeiten', link: '/client/stundenplan/stundenplan_anleitung/' },
 									{ text: 'Allgemeine Vorlagen', link: '/client/stundenplan/allgemeine_vorlagen/', collapsed: true, items: [
 										{ text: 'Aufsichtsbereiche', link: '/client/stundenplan/allgemeine_vorlagen/aufsichtsbereiche/' },
 										{ text: 'Pausenzeiten', link: '/client/stundenplan/allgemeine_vorlagen/pausenzeiten/' },
