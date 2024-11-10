@@ -136,7 +136,7 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Aktueller Benutzer', link: '/client/aktuellernutzer/' },
 								{ text: 'Schule', link: '/client/schule/', collapsed: true, items: [
 									{ text: 'Schulbezogene Kataloge', collapsed: true, items: [
-										{ text: 'Stammdaten der Schule', link: '/client/schule/' },
+										{ text: 'Stammdaten der Schule', link: '/client/schule/kataloge/sb_stammdaten/' },
 										{ text: 'Betriebe (Todo)', link: '/client/schule/kataloge/sb_betriebe/' },
 										{ text: 'Einwilligungsarten (Todo)', link: '/client/schule/kataloge/sb_einwilligungsarten/' },
 										{ text: 'Fächer', link: '/client/schule/kataloge/sb_faecher/' },
