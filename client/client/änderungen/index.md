@@ -28,13 +28,11 @@ Quartalsnoten lassen sich nun aber direkt im **aktuellen Lernabschnitt** erfasse
 
 ![Quartalsnoten werden in den aktuellen Leistungsdaten erfasst](./graphics/SVWS_Informationen_Quartalsnoten.png "Erfassung der Quartalsnoten direkt im Lernbschnitt.")
 
-## Erfassung der Zuwanderungsgeschichtee
+## Erfassung der Zuwanderungsgeschichte
 
 Die **Vereinfachte Erfassung der Zuwanderungsgeschichte** wird vom neuen Datenbankserver nicht mehr unterstützt und damit bietet sich nur noch eine Option zur Erfassung der Zuwanderungsgeschichte.
 
 Bei der Statistik wird bei einem "nicht deutschen" Eintrag korrekt "Nicht deutsch" gemeldet, die übrige Zuwanderungsgeschichte wäre zukünftig einzupflegen. 
-
-**TODO: TEILLEISTUNGEN???**  
 
 ## Stundenplanverwaltung
 
