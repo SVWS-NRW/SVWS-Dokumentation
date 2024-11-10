@@ -97,4 +97,6 @@ Hier im Beispiel ist ein Geburtsjahr in einer Datenbank von 2022 nicht plausibel
 
 Im Browser installierte Plugins, etwa Screenreader, lassen sich somit auch mit dieser Webseite und im SVWS-Client verwenden.
 
-*Hinweis:* Für Drittsoftware wird kein Support unternommen und ein reibungsloses Funktionieren eines Plugins mit den Inhalten des SVWS-Clients kann nicht garantiert werden.
+::: info Drittsoftware
+Für Drittsoftware wird kein Support unternommen und ein reibungsloses Funktionieren eines externen Plugins mit den Inhalten des SVWS-Clients kann nicht garantiert werden.
+:::
