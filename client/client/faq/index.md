@@ -1,8 +1,17 @@
 # FAQ - Häufig gestellte Fragen
 
-## Wo finde ich die technische Dokumentation?
+## Wo finde ich die gesuchte Dokumenation?
 
-https://doku.svws-nrw.de
+Diese Webseite teilt sich im Groben in zwei Teile:
+
+* Unter **Benutzerhandbücher** finden Sie alles, was für Nutzer der Schulverwaltungssoftware relevant ist. 
+    * Die Dokumentation des *SVWS-Clients* selbst, vom Aufbau bis zu konkreten Anleitungen
+    * Die Beschreibung des *Admin-Clients*, mit dem SVWS-Administratoren in der Schule selbst Datenbank-Backups ablegen können oder mit dem mehrere Datenbanken parallel aufgesetzt werden können. Auch eine Migration lässt sich starten.
+    * Es finden sich Hinweise zur *Laufbahnplanung* aus Sicht eines Anwenders.
+* **Administration/Entwicklung** für technische Informationen
+    * Unter dem Punkt *SVWS-Installation* finden sich die Information für SVWS-Admins in der Schule oder IT-Dienstleister, mit denen sich die SVWS-Umgebung installieren lässt und eine Migration angestoßen wird.
+    * Unter *Einwicklung, Projekte, Schulungen* finden sich weitergehende Informatione für Interessierte, die in die Softwareenticklung einsteigen möchten. Dieser Bereich ist für Anwender in Schule und IT nicht relevant.
+    * Weiterhin sind für Entwickler über die Kopfzeile noch Links zur *UI-Bibliothek* und der *Java-API des SVWS-Servers* erreichbar. 
 
 ## Wie ist das Support-System rund um die Schulverwaltungssoftware NRW aufgebaut?
 
