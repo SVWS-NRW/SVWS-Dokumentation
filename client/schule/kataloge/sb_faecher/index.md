@@ -42,7 +42,7 @@ Hier lassen sich für Fächer wesentliche Einstellungen vornehmen.
 
 * Über den Haken **Sichtbar** lässt sich steuern, ob ein Fach in Dropdown-Menüs zur Auswahl gestellt wird oder nicht. Halten Sie die Listen übersichtlich, indem Sie alle nicht-verwendeten Fächer auf nicht-sichtbar stellen. Entfernen Sie hierzu die Haken.
 
-* Ist der Haken bei **Fach der Oberstufe** gesetzt, wird das Fach bei der entsprechenden Sortierungsfunktion beachtet. Weiterhin steht es zum konfigurieren als Oberstufenfach zur Verfügung und zur Laufbahnplanung konfiguriert werden kann.
+* Ist der Haken bei **Fach der Oberstufe** gesetzt, wird das Fach bei der entsprechenden Sortierungsfunktion beachtet. Weiterhin steht es zum konfigurieren als Oberstufenfach zur Verfügung und zur Laufbahnplanung konfiguriert werden kann und steht auch für WebLuPO zur Verfügung.
 
 * Über **Ist Prüfungsordnungs-Relevant** lässt sich steuern, ob das Fach grundsätzlich in z.B. Belegprüfungen herangezogen werden soll oder ignoriert wird.
 
@@ -52,4 +52,8 @@ Hier lassen sich für Fächer wesentliche Einstellungen vornehmen.
 
 * Soll das Fach in vorherigen Schuljahren abgeschlossen werden, aber in späteren Zeugnissen berücksichtigt werden, ist es hier über **Berücksichtigen beim Holen von abgeschlossenen Fächern** zu markieren.
 
-* Stellen Sie positive Werte für die **maximale Zeichenzahl in Fachbemerkungen** ein, um die frei oder nach Floskeln zu vergebende Fachbemerkungen in *Schüler ➜ aktueller Abschnitt ➜ Leistungsdaten* in der Eintragslänge zu begrenzen. **Hinweis:** Sollten Sie hier eine Grenze vorgeben wollen, achten Sie darauf, dass alle eventuell zugelassenen Floskeln diesen Anforderungen genügen.
+* Stellen Sie positive Werte für die **maximale Zeichenzahl in Fachbemerkungen** ein, um die frei oder nach Floskeln zu vergebende Fachbemerkungen in *Schüler ➜ aktueller Abschnitt ➜ Leistungsdaten* in der Eintragslänge zu begrenzen.
+
+::: tip Hinweise
+Sollten Sie bei der *maximalen Zeichenzahl* eine Grenze vorgeben wollen, achten Sie darauf, dass alle eventuell zugelassenen Floskeln diesen Anforderungen genügen.
+:::
