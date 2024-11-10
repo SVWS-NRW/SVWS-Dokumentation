@@ -5,15 +5,11 @@ In der Übersicht **Schule** werden allgemeine Angaben zur Schule aufgenommen.
 
 Zuerst wird der Katalog **Stammdaten der Schule** als Übersicht angezeigt.
 
-![Allgemeine Daten zur Schule](./graphics/SVWS_schule_übersicht.png "Es werden allgemeine Einstellungen zur Schule angezeigt und vorgenommen.")
-
 Direkt oben auf der Seite werden Name und Schulnummer angezeigt, darunter lassen sich die **Stammdaten** mit den drei Bezeichungen zur Schule wie auch die Adresse und andere **Kontaktdaten** angeben.
 
 ## E-Mail-Server
 
 Geben Sie grundlegende Daten zur Verwendung eines SMTP-Mailservers zur Versendung von E-Mails ein.
-
-![Emaileinstellungen für die Schule](./graphics/SVWS_schule_übersicht_email.png "Eingabe der Daten für einen Emailserver zum Versand von Emails aus dem SVWS-Client.")
 
 Die **konkreten Anmeldedaten** werden in der Schaltfläche zum aktuell angemeldeten **Benutzer** ganz oben links in der Kopfteile des SVWS-Clients eingebenen.
 
