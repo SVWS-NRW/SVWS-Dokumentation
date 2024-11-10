@@ -10,4 +10,6 @@ Achten Sie bei letzterer darauf, dass diese in die Felder der offziellen Zeugnis
 
 Stellen Sie zur korrekten Erfassung der Religionszugehörigkeiten das dazugehörende **Statistikkürzel** ein.
 
-**Hinweis:** Konsultieren Sie hierbei unbedingt die Eintragungshilfen und Schlüsseltabellen von IT.NRW der amtlichen Schulstatistik zur aktuell korrekten Erfassung der Religionszugehörigkeiten. Die zu erfassenden Religionszugehörigkeiten spiegeln mitunter politische Entscheidungen wieder.
+:: danger Konfessionen werden nach den Schlüsseltabellen zugeordnet
+Sie können an Ihrer Schule Konfessionen frei nach Bedarf erfassen. Konsultieren Sie bei der Einstellung der *Statistikzuordnung* unbedingt die Eintragungshilfen und Schlüsseltabellen von IT.NRW der amtlichen Schulstatistik zur aktuell korrekten Erfassung der Religionszugehörigkeiten. Diese spiegeln mitunter politische Entscheidungen wieder.
+:::
