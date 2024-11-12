@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => {
 		themeConfig: {
 			outline: {
 				label: 'Auf dieser Seite',
+				level: [1, 2, 3, 4]
 			},
 			docFooter: {
 				next: 'Nächste Seite',
@@ -76,9 +77,10 @@ export default defineConfig(({ mode }) => {
 							{ text: 'IntelliJ', link: '/admin/Entwicklungsumgebungen/IntelliJ/' },
 							{ text: 'macOS', link: '/admin/Entwicklungsumgebungen/macOS/' },
 							{ text: 'VS-Code', link: '/admin/Entwicklungsumgebungen/VS-Code/' },
-							{ text: 'Code-Vorgaben', link: '/admin/Entwicklungsumgebungen/Coding-Guidlines'},
-							{ text: 'Code-Styles', link: '/admin/Entwicklungsumgebungen/Code-Styles'},
-						] },
+							{ text: 'Coding Guidlines', link: '/admin/Entwicklungsumgebungen/Coding-Guidlines' },
+							{ text: 'Code Styles', link: '/admin/Entwicklungsumgebungen/Code-Styles' }
+						]
+						},
 						{ text: 'Teamarbeit', link: '/admin/Teamarbeit/', collapsed: true, items: [
 							{ text: 'Git Workflow', link: '/admin/Teamarbeit/workflow/' },
 						] },

@@ -1,44 +1,6 @@
 ---
 outline: 1
 ---
-# Inhaltsverzeichnis
-
-- [Allgemein](#allgemein)
-  - [1. Einzeilige Befehle ohne Klammern](#1-einzeilige-befehle-ohne-klammern)
-  - [2. Klammern bei gemischten Operatoren](#2-klammern-bei-gemischten-operatoren)
-  - [3. Interfaces statt konkreter Klassen](#3-interfaces-statt-konkreter-klassen)
-- [Java](#java)
-  - [1. `final` für unveränderliche Variablen](#1-final-für-unveränderliche-variablen)
-  - [2. JavaDoc formatieren](#2-javadoc-formatieren)
-- [Java - Transpiler](#java---transpiler)
-  - [1. `@NotNull` und `@AllowNull` korrekt platzieren](#1-notnull-und-allownull-korrekt-platzieren)
-  - [2. Keine Streams verwenden](#2-keine-streams-verwenden)
-  - [3. `switch-Statements` und `switch-Expressions`](#3-switch-statements-und-switch-expressions)
-- [TypeScript](#typescript)
-  - [1. Explizite Null- und Undefined-Überprüfungen](#1-explizite-null--und-undefined-überprüfungen)
-  - [2. `const` für unveränderliche Variablen](#2-const-für-unveränderliche-variablen)
-  - [3. `for of`-Schleifen bevorzugen](#3-for-of-schleifen-bevorzugen)
-  - [4. Keine High-Level-Funktionen wie `map`, `filter`, `reduce`, `forEach`](#4-keine-high-level-funktionen-wie-map-filter-reduce-foreach)
-- [Vue](#vue)
-  - [1. Aufbau einer Single File Component](#1-aufbau-einer-single-file-component)
-  - [2. Formatierung in Tags](#2-formatierung-in-tags)
-  - [3. Kurzschreibweise für gleichnamige Props verwenden](#3-kurzschreibweise-für-gleichnamige-props-verwenden)
-  - [4. Direkte Callback-Zuweisung statt Inline-Funktionen](#4-direkte-callback-zuweisung-statt-inline-funktionen)
-  - [5. `watch` durch `computed` ersetzen](#5-watch-durch-computed-ersetzen)
-  - [6. Keine lokalen Änderungen an globalen UI-Komponenten](#6-keine-lokalen-änderungen-an-globalen-ui-komponenten)
-  - [7. Funktionen auslagern, statt sie inline zu verwenden](#7-funktionen-auslagern-statt-sie-inline-zu-verwenden)
-  - [8. Inline-CSS für einzelne Attribute](#8-inline-css-für-einzelne-attribute)
-  - [9. Tailwind-Klassen statt benutzerdefiniertem CSS](#9-tailwind-klassen-statt-benutzerdefiniertem-css)
-  - [10. Funktionsdefinition mit `function`](#10-funktionsdefinition-mit-function)
-  - [11. Strukturierung des Script-Bereichs in Vue-Komponenten](#11-strukturierung-des-script-bereichs-in-vue-komponenten)
-  - [12. Immer Semikolon verwenden](#12-immer-semikolon-verwenden)
-  - [13. Verzichte auf Vue-Typendefinitionen](#13-verzichte-auf-vue-typendefinitionen)
-  - [14. `Iterable<T>` statt spezifischer Container-Typen](#14-iterablet-statt-spezifischer-container-typen)
-  - [15. ESLint statt Prettier](#15-eslint-statt-prettier)
-- [Vue - Transpiler](#vue---transpiler)
-  - [1. `shallowRef` statt `ref` für transpilierte Java-Objekte](#1-shallowref-statt-ref-für-transpilierte-java-objekte)
-  - [2. Getter für reaktive Props verwenden](#2-getter-für-reaktive-props-verwenden)
-
 # Allgemein
 
 ## 1. Einzeilige Befehle ohne Klammern
@@ -74,19 +36,22 @@ Wenn mehrere Operatoren in einem Ausdruck verwendet werden, setze Klammern, um d
 
 **Richtig:**
 ```java
+// Klar definierte Reihenfolge durch Klammern
 if ((a && b) || c) 
-  // Klar definierte Reihenfolge durch Klammern
+  return;
 
-boolean result = (x instanceof String) && (y > 5);  // Deutliche Priorität zwischen instanceof und Vergleich
+// Deutliche Priorität zwischen instanceof und Vergleich
+boolean result = (x instanceof String) && (y > 5);  
 ```
 
 **Falsch:**
 ```java
-if (a && b || c) 
-  // Unklare Reihenfolge, da && eine höhere Priorität als || hat
+// Unklare Reihenfolge, da && eine höhere Priorität als || hat
+if (a && b || c)
+  return;
 
-
-boolean result = x instanceof String && y > 5;  // Ohne Klammern unklar, was zuerst ausgewertet wird
+// Ohne Klammern unklar, was zuerst ausgewertet wird
+boolean result = x instanceof String && y > 5;  
 ```
 ---
 ## 3. Interfaces statt konkreter Klassen
@@ -106,9 +71,8 @@ import java.util.List;
 
 public class DataProcessor {
 	public void processData(List<Integer> data) {
-		for (Integer number : data) {
+		for (Integer number : data)
 			System.out.println(number);
-		}
 	}
 }
 ```
@@ -120,9 +84,8 @@ import java.util.ArrayList;
 
 public class DataProcessor {
 	public void processData(ArrayList<Integer> data) {
-		for (Integer number : data) {
+		for (Integer number : data)
 			System.out.println(number);
-		}
 	}
 }
 ```
@@ -348,12 +311,14 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
 <template>
   <!-- Do something -->
 </template>
+
 <script setup lang="ts">
 
   // Do Something
 
 </script>
-<style>
+
+<style lang="postcss">
 
   /*
   Some styles
@@ -369,6 +334,7 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
   // Do Something
 
 </script>
+
 <style>
 
   /*
@@ -376,6 +342,7 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
   */
 
 </style>
+
 <template>
   <!-- Do something -->
 </template>
@@ -402,6 +369,14 @@ Innerhalb der Vue Tags `<template>`, `<script>` und `<style>` soll der Code eing
   const fullName = computed(() => firstName.value + ' ' + lastName.value);
 
 </script>
+
+<style lang="postcss">
+
+  .my-class {
+    @apply flex;
+  }
+
+</style>
 ```
 
 **Falsch:**
@@ -420,6 +395,12 @@ const lastName = ref('Doe');
 
 const fullName = computed(() => firstName.value + ' ' + lastName.value);
 </script>
+
+<style lang="postcss">
+.my-class {
+  @apply flex;
+}
+</style>
 ```
 
 ---
@@ -430,14 +411,16 @@ Wenn der Propertyname und der Wert denselben Namen haben, verwende die Kurzschre
 **Richtig:**
 ```vue
 <template>
-  <card-component :title></card-component> <!-- Kurzschreibweise, da Property- und Wertname "title" übereinstimmen -->
+  <!-- Kurzschreibweise, da Property- und Wertname "title" übereinstimmen -->
+  <card-component :title></card-component>
 </template>
 ```
 
 **Falsch:**
 ```vue
 <template>
-  <card-component :title="title"></card-component> <!-- Hier ist die explizite Bindung redundant -->
+  <!-- Hier ist die explizite Bindung redundant -->
+  <card-component :title="title"></card-component>
 </template>
 ```
 ---
@@ -563,7 +546,7 @@ Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher
   <div class="red-text">Text</div>
 </template>
 
-<style>
+<style lang="postcss">
 
   .red-text {
     color: red;
@@ -575,7 +558,17 @@ Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher
 ---
 
 ## 9. Tailwind-Klassen statt benutzerdefiniertem CSS
-Bevor du eigenes CSS hinzufügst, prüfe, ob [Tailwind](https://tailwindcss.com/)-Klassen existieren, die denselben Effekt haben, um Redundanz zu vermeiden.
+Bevor du eigenes CSS hinzufügst, prüfe, ob [Tailwind](https://tailwindcss.com/)-Klassen existieren, die denselben Effekt haben, um Redundanz zu vermeiden. Soll eine Klasse mehrere Tailwind-Klassen anwenden, ist das wie folgt möglich:
+
+```vue
+<style lang="postcss">
+
+  .my-class {
+    @apply flex flex-col justify-between;
+  }
+
+</style>
+```
 
 ---
 
@@ -584,16 +577,24 @@ Verwende named Functions, um diese von `computed` unterscheiden zu können, die 
 
 **Richtig:**
 ```vue
-function sum(a: number, b: number): number {
-  return a + b;
-}
+<script setup lang="ts">
+
+  function sum(a: number, b: number): number {
+    return a + b;
+  }
+
+</script>
 ```
 
 **Falsch:**
 ```vue
-const sum = (a: number, b: number) => {
-  return a + b;
-};
+<script setup lang="ts">
+
+  const sum = (a: number, b: number) => {
+    return a + b;
+  };
+
+</script>
 ```
 ---
 
@@ -689,6 +690,7 @@ Wenn Funktionen als Props übergeben werden und Parameter wie Listen oder Arrays
 
 ```vue
 <script setup lang="ts">
+
 	const props = defineProps<{
 		processData: (data: Iterable<number>) => void;
 	}>();
@@ -700,12 +702,14 @@ Wenn Funktionen als Props übergeben werden und Parameter wie Listen oder Arrays
 	}
 
 	handleProcess();
+
 </script>
 ```
 **Falsch**
 
 ```vue
 <script setup lang="ts">
+
 	const props = defineProps<{
 		processData: (data: Array<number>) => void;
 	}>();
