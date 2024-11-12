@@ -1,3 +1,6 @@
+---
+outline: 1
+---
 # Inhaltsverzeichnis
 
 - [Allgemein](#allgemein)
