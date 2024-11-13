@@ -58,7 +58,7 @@ Die Swagger UI aufrufen:
 Hier nun den User `root` der MariaDB-Installation und das entsprechende Passwort angeben. 
 
 
-**Hinweis** Möchte man andere "nicht root - Services" nutzen, so muss man sich mit dem SchILD-NRW 3.0-Benutzer bzw. SVSW-Benutzer anmelden.
+**Hinweis** Möchte man andere "nicht root - Services" nutzen, so muss man sich mit dem SchILD-NRW 3.0-Benutzer bzw. SVWS-Benutzer anmelden.
  
 
 
