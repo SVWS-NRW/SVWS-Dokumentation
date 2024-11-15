@@ -451,7 +451,7 @@ Wenn der Propertyname und der Wert denselben Namen haben, verwende die Kurzschre
 ```vue
 <template>
   <!-- Kurzschreibweise, da Property- und Wertname "title" übereinstimmen -->
-  <card-component :title></card-component>
+  <card-component :title />
 </template>
 ```
 
@@ -459,7 +459,7 @@ Wenn der Propertyname und der Wert denselben Namen haben, verwende die Kurzschre
 ```vue
 <template>
   <!-- Hier ist die explizite Bindung redundant -->
-  <card-component :title="title"></card-component>
+  <card-component :title="title" />
 </template>
 ```
 ---
