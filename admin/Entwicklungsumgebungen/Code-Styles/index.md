@@ -1,3 +1,6 @@
+---
+outline: 3, 4
+---
 # Code Styles
 Im Projekt werden spezielle Code Styles vorgegeben, die für Eclipse, IntelliJ und VSCode aneinander angepasst wurden. Die Konfigurationen werden automatisch in die Entwicklungsumgebungen beim Laden der Gradle Projekte oder durch ein Build geladen und können nur bedingt von den Developern angepasst werden.
 Die vorgegebenen Code Styles unterteilen sich in die Formatierung des Codes und in einige Code Cleanup Regeln. Grundsätzlich verwenden alle drei IDEs die Formatierungsregeln aus Eclipse und erzwingen so gleiche Formatierungen. Cleanups können jedoch nicht zu 100% in allen IDEs gleich eingestellt werden, da IntelliJ wesentlich mehr Optionen bietet als Eclipse und VSCode. Daher sollten neben den Cleanups auch immer die Coding Guidlines (TODO: verlinken) zusätzlich beachtet werden. 
