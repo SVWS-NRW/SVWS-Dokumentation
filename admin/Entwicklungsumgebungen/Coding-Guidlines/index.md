@@ -1,8 +1,8 @@
 ---
-outline: 1
+outline: 2
 ---
-# Inhaltsverzeichnis
-
+# Coding Guidlines
+::: details Inhalt
 - [Allgemein](#allgemein)
   - [1. Einzeilige Befehle ohne Klammern](#1-einzeilige-befehle-ohne-klammern)
   - [2. Klammern bei gemischten Operatoren](#2-klammern-bei-gemischten-operatoren)
@@ -39,9 +39,10 @@ outline: 1
   - [1. `shallowRef` statt `ref` für transpilierte Java-Objekte](#1-shallowref-statt-ref-für-transpilierte-java-objekte)
   - [2. Getter für reaktive Props verwenden](#2-getter-für-reaktive-props-verwenden)
 
-# Allgemein
+:::
+## Allgemein
 
-## 1. Einzeilige Befehle ohne Klammern
+### 1. Einzeilige Befehle ohne Klammern
 Verzichte auf geschweifte Klammern bei einzeiligen Anweisungen. Schreibe die Anweisung aber dennoch in eine neue Zeile.
 
 **Richtig:**
@@ -69,27 +70,30 @@ for (int i = 0; i < 10; i+) doSomething();
 ```
 ---
 
-## 2. Klammern bei gemischten Operatoren
+### 2. Klammern bei gemischten Operatoren
 Wenn mehrere Operatoren in einem Ausdruck verwendet werden, setze Klammern, um die Priorität klar zu definieren und Missverständnisse zu vermeiden.
 
 **Richtig:**
 ```java
+// Klar definierte Reihenfolge durch Klammern:
 if ((a && b) || c) 
-  // Klar definierte Reihenfolge durch Klammern
+  return;
 
-boolean result = (x instanceof String) && (y > 5);  // Deutliche Priorität zwischen instanceof und Vergleich
+// Deutliche Priorität zwischen instanceof und Vergleich:
+boolean result = (x instanceof String) && (y > 5);  
 ```
 
 **Falsch:**
 ```java
-if (a && b || c) 
-  // Unklare Reihenfolge, da && eine höhere Priorität als || hat
+// Unklare Reihenfolge, da && eine höhere Priorität als || hat:
+if (a && b || c)
+  return;
 
-
-boolean result = x instanceof String && y > 5;  // Ohne Klammern unklar, was zuerst ausgewertet wird
+// Ohne Klammern unklar, was zuerst ausgewertet wird:
+boolean result = x instanceof String && y > 5;  
 ```
 ---
-## 3. Interfaces statt konkreter Klassen
+### 3. Interfaces statt konkreter Klassen
 Beim Design von Software sollte die Verwendung von Interfaces gegenüber konkreten Klassen bevorzugt werden, um Flexibilität, Erweiterbarkeit und Testbarkeit zu erhöhen. Durch die Nutzung von Interfaces wird die Abhängigkeit von bestimmten Implementierungen reduziert und es wird einfacher, den Code zu erweitern oder auszutauschen, ohne andere Teile des Systems zu verändern.
 
 **Empfohlene Interfaces für Sammlungen in Java**
@@ -106,9 +110,8 @@ import java.util.List;
 
 public class DataProcessor {
 	public void processData(List<Integer> data) {
-		for (Integer number : data) {
+		for (Integer number : data)
 			System.out.println(number);
-		}
 	}
 }
 ```
@@ -120,18 +123,17 @@ import java.util.ArrayList;
 
 public class DataProcessor {
 	public void processData(ArrayList<Integer> data) {
-		for (Integer number : data) {
+		for (Integer number : data)
 			System.out.println(number);
-		}
 	}
 }
 ```
 
 ---
 
-# Java
+## Java
 
-## 1. `final` für unveränderliche Variablen
+### 1. `final` für unveränderliche Variablen
 Nutze das Schlüsselwort `final`, um Variablen unveränderlich zu machen. Dadurch wird der Code klarer und verhindert unbeabsichtigte Änderungen an Werten, was zu sichereren Programmen führt.
 
 **Richtig:**
@@ -153,7 +155,7 @@ public class Example {
 ```
 ---
 
-## 2. JavaDoc formatieren
+### 2. JavaDoc formatieren
 JavaDoc-Kommentare dienen dazu, den Code für andere Entwickler verständlicher zu machen, indem sie die Funktion und den Zweck einer Methode oder Klasse klar und strukturiert beschreiben. Ein gut formatierter JavaDoc-Kommentar besteht aus einer kurzen Beschreibung der Methode, gefolgt von sogenannten "Tags" (z.B. `@param`, `@return`, `@throws`).\
 Zwischen der Methoden-/Klassenbeschreibung und den Tags muss immer eine leere Zeile stehen. Auch muss zwischen verschiedenen Arten von Tags eine Leerzeile sein. \
 In Javadoc-Kommentaren werden bestimmte Tags, die eine zusätzliche Beschreibung enthalten, nach folgenden Regeln formatiert:
@@ -197,10 +199,10 @@ public int sum(int shortName, int someLongName) throws ArithmeticException {
 ```
 ---
 
-# Java - Transpiler
+## Java - Transpiler
 Java-Code, der transpiliert wird, muss einige Sonderregeln beachten. Dies betrifft folgende Unterprojekte: `svws-schulen`, `svws-asd`, `svws-core`
 
-## 1. `@NotNull` und `@AllowNull` korrekt platzieren
+### 1. `@NotNull` und `@AllowNull` korrekt platzieren
 Die `@NotNull`- und `@AllowNull`-Annotation gehört direkt vor den Typ des Parameters oder der Variablen, um Klarheit zu gewährleisten und Missverständnisse zu vermeiden. Die Platzierung dieser Annotationen ist notwendig, damit korrekter TypeScript Code generiert werden kann.
 
 **Richtig:**
@@ -223,7 +225,7 @@ public void setName(final String name) {
 
 ---
 
-## 2. Keine Streams verwenden
+### 2. Keine Streams verwenden
 Streams müssen vermieden werden, da sie nicht transpiliert werden können. Nutze stattdessen klassische Schleifen.
 
 **Richtig:**
@@ -239,7 +241,7 @@ list.stream().forEach(item -> process(item));
 
 ---
 
-## 3. `switch-Statements` und `switch-Expressions` 
+### 3. `switch-Statements` und `switch-Expressions` 
 
 Grundsätzlich ist die Verwendung von `switch-Expressions` zu bevorzugen. Da diese aber nicht vollständig vom Transpiler unterstützt werden, kann auch die Verwendung von `switch-Statements` notwendig sein.
 
@@ -266,9 +268,9 @@ public String getDay(int day) {
 ```
 ---
 
-# TypeScript
+## TypeScript
 
-## 1. Explizite Null- und Undefined-Überprüfungen
+### 1. Explizite Null- und Undefined-Überprüfungen
 Vermeide den Einsatz von `!!value`, um auf `null` oder `undefined` zu prüfen. Nutze stattdessen explizite Vergleiche, um potenzielle Fehlerquellen auszuschließen.
 
 **Richtig:**
@@ -287,7 +289,7 @@ if (!!value)
 
 ---
 
-## 2. `const` für unveränderliche Variablen
+### 2. `const` für unveränderliche Variablen
 Nutze `const`, um Variablen zu definieren, die nicht neu zugewiesen werden, und so versehentliche Änderungen zu verhindern.
 
 **Richtig:**
@@ -301,7 +303,7 @@ let name = "John";
 ```
 ---
 
-## 3. `for of`-Schleifen bevorzugen
+### 3. `for of`-Schleifen bevorzugen
 Verwende `for of`-Schleifen, um über Arrays und Iterable-Objekte zu iterieren.
 
 **Richtig:**
@@ -322,7 +324,7 @@ array.forEach(item => {
 ```
 ---
 
-## 4. Keine High-Level-Funktionen wie `map`, `filter`, `reduce`, `forEach`
+### 4. Keine High-Level-Funktionen wie `map`, `filter`, `reduce`, `forEach`
 Vermeide High-Level-Funktionen und nutze klassische `for of`-Schleifen.
 
 **Richtig:**
@@ -338,9 +340,9 @@ array.forEach(item => process(item));
 ```
 ---
 
-# Vue
+## Vue
 
-## 1. Aufbau einer Single File Component
+### 1. Aufbau einer Single File Component
 Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
 
 **Richtig:**
@@ -348,12 +350,14 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
 <template>
   <!-- Do something -->
 </template>
+
 <script setup lang="ts">
 
   // Do Something
 
 </script>
-<style>
+
+<style lang="postcss">
 
   /*
   Some styles
@@ -369,6 +373,7 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
   // Do Something
 
 </script>
+
 <style>
 
   /*
@@ -376,6 +381,7 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
   */
 
 </style>
+
 <template>
   <!-- Do something -->
 </template>
@@ -383,7 +389,7 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
 
 ---
 
-## 2. Formatierung in Tags
+### 2. Formatierung in Tags
 Innerhalb der Vue Tags `<template>`, `<script>` und `<style>` soll der Code eingerückt sein. Außerdem soll sich zwischen den Tags `<script>` und `<style>` und deren Inhalt eine Leerzeile befinden. Dies gilt nicht für `<template>` (wird von ESLint sonst kritisiert).
 
 **Richtig:**
@@ -402,6 +408,14 @@ Innerhalb der Vue Tags `<template>`, `<script>` und `<style>` soll der Code eing
   const fullName = computed(() => firstName.value + ' ' + lastName.value);
 
 </script>
+
+<style lang="postcss">
+
+  .my-class {
+    @apply flex;
+  }
+
+</style>
 ```
 
 **Falsch:**
@@ -420,29 +434,37 @@ const lastName = ref('Doe');
 
 const fullName = computed(() => firstName.value + ' ' + lastName.value);
 </script>
+
+<style lang="postcss">
+.my-class {
+  @apply flex;
+}
+</style>
 ```
 
 ---
 
-## 3. Kurzschreibweise für gleichnamige Props verwenden
+### 3. Kurzschreibweise für gleichnamige Props verwenden
 Wenn der Propertyname und der Wert denselben Namen haben, verwende die Kurzschreibweise.
 
 **Richtig:**
 ```vue
 <template>
-  <card-component :title></card-component> <!-- Kurzschreibweise, da Property- und Wertname "title" übereinstimmen -->
+  <!-- Kurzschreibweise, da Property- und Wertname "title" übereinstimmen -->
+  <card-component :title />
 </template>
 ```
 
 **Falsch:**
 ```vue
 <template>
-  <card-component :title="title"></card-component> <!-- Hier ist die explizite Bindung redundant -->
+  <!-- Hier ist die explizite Bindung redundant -->
+  <card-component :title="title" />
 </template>
 ```
 ---
 
-## 4. Direkte Callback-Zuweisung statt Inline-Funktionen
+### 4. Direkte Callback-Zuweisung statt Inline-Funktionen
 Verwende direkte Callback-Zuweisungen anstelle von Inline-Funktionen.
 
 **Richtig:**
@@ -461,7 +483,7 @@ Verwende direkte Callback-Zuweisungen anstelle von Inline-Funktionen.
 
 ---
 
-## 5. `watch` durch `computed` ersetzen
+### 5. `watch` durch `computed` ersetzen
 Vermeide `watch`-Anweisungen, wenn dieselbe Funktionalität durch `computed`-Properties abgedeckt werden kann.
 
 **Richtig:**
@@ -496,12 +518,12 @@ Vermeide `watch`-Anweisungen, wenn dieselbe Funktionalität durch `computed`-Pro
 ```
 ---
 
-## 6. Keine lokalen Änderungen an globalen UI-Komponenten
+### 6. Keine lokalen Änderungen an globalen UI-Komponenten
 Vermeide lokale Anpassungen an globalen UI-Komponenten, da diese Auswirkungen auf andere Projekte haben. Notwendige Änderungen müssen abgesprochen werden.
 
 ---
 
-## 7. Funktionen auslagern, statt sie inline zu verwenden
+### 7. Funktionen auslagern, statt sie inline zu verwenden
 Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` auslagern. Ternaries sind allerdings in Ordnung. 
 
 **Richtig:**
@@ -547,7 +569,7 @@ Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` aus
 
 ---
 
-## 8. Inline-CSS für einzelne Attribute
+### 8. Inline-CSS für einzelne Attribute
 Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher und effizienter als eine separate Klasse. Hinweis: Die meisten Stylings können und sollen über Tailwind-Klassen gelöst werden, so auch das folgende Beispiel.
 
 **Richtig:**
@@ -563,7 +585,7 @@ Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher
   <div class="red-text">Text</div>
 </template>
 
-<style>
+<style lang="postcss">
 
   .red-text {
     color: red;
@@ -574,30 +596,48 @@ Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher
 
 ---
 
-## 9. Tailwind-Klassen statt benutzerdefiniertem CSS
-Bevor du eigenes CSS hinzufügst, prüfe, ob [Tailwind](https://tailwindcss.com/)-Klassen existieren, die denselben Effekt haben, um Redundanz zu vermeiden.
+### 9. Tailwind-Klassen statt benutzerdefiniertem CSS
+Bevor du eigenes CSS hinzufügst, prüfe, ob [Tailwind](https://tailwindcss.com/)-Klassen existieren, die denselben Effekt haben, um Redundanz zu vermeiden. Soll eine Klasse mehrere Tailwind-Klassen anwenden, ist das wie folgt möglich:
+
+```vue
+<style lang="postcss">
+
+  .my-class {
+    @apply flex flex-col justify-between;
+  }
+
+</style>
+```
 
 ---
 
-## 10. Funktionsdefinition mit `function`
+### 10. Funktionsdefinition mit `function`
 Verwende named Functions, um diese von `computed` unterscheiden zu können, die mit Arrow-Funktionen definiert werden. Nur als anonyme Funktion, in Vue Lifecycle Hooks und in `routeData` dürfen sie verwendet werden, wenn sie als Props an die Komponenten weitergereicht werden.
 
 **Richtig:**
 ```vue
-function sum(a: number, b: number): number {
-  return a + b;
-}
+<script setup lang="ts">
+
+  function sum(a: number, b: number): number {
+    return a + b;
+  }
+
+</script>
 ```
 
 **Falsch:**
 ```vue
-const sum = (a: number, b: number) => {
-  return a + b;
-};
+<script setup lang="ts">
+
+  const sum = (a: number, b: number) => {
+    return a + b;
+  };
+
+</script>
 ```
 ---
 
-## 11. Strukturierung des Script-Bereichs in Vue-Komponenten
+### 11. Strukturierung des Script-Bereichs in Vue-Komponenten
 Um die Lesbarkeit und Wartbarkeit von Vue-Komponenten zu verbessern, ist es wichtig, eine einheitliche Struktur im Script-Bereich zu wahren. Die folgende Reihenfolge sollte eingehalten werden: **`(shallow)ref`**, **`computed`**, **`functions`**. In größeren Komponenten ist eine thematisches Clustering aber dennoch möglich.
 
 **Richtig:**
@@ -634,7 +674,7 @@ Um die Lesbarkeit und Wartbarkeit von Vue-Komponenten zu verbessern, ist es wich
 ```
 ---
 
-## 12. Immer Semikolon verwenden
+### 12. Immer Semikolon verwenden
 
 Um die Konsistenz und Lesbarkeit des Codes zu gewährleisten, sollte in allen Dateien das Semikolon am Ende jeder Anweisung verwendet werden. Dies hilft, potenzielle Fehler zu vermeiden und die Codebasis einheitlich zu halten.
 
@@ -661,7 +701,7 @@ Um die Konsistenz und Lesbarkeit des Codes zu gewährleisten, sollte in allen Da
 ```
 ---
 
-## 13. Verzichte auf Vue-Typendefinitionen 
+### 13. Verzichte auf Vue-Typendefinitionen 
 Nutze keine Typendefinitionen aus Vue wie zum Beispiel `Ref`, `Computed` oder `WriteableComputed`.
 
 **Richtig:**
@@ -682,35 +722,38 @@ Nutze keine Typendefinitionen aus Vue wie zum Beispiel `Ref`, `Computed` oder `W
 </script>
 ```
 ---
-## 14. `Iterable<T>` statt spezifischer Container-Typen
+### 14. `Iterable<T>` statt spezifischer Container-Typen
 Wenn Funktionen als Props übergeben werden und Parameter wie Listen oder Arrays erwarten, sollte nach Möglichkeit `Iterable<T>` anstelle von `Array<T>`, `List<T>`, etc. verwendet werden. Dadurch wird der Code flexibler und universeller, da `Iterable<T>` sowohl Arrays als auch andere iterierbare Strukturen akzeptiert. Dies ermöglicht es, mit unterschiedlichen Datenstrukturen zu arbeiten, ohne die Funktion anpassen zu müssen. 
 
 **Richtig**
 
 ```vue
 <script setup lang="ts">
+
 	const props = defineProps<{
 		processData: (data: Iterable<number>) => void;
 	}>();
 
-	// Props innerhalb einer Funktion verwenden, um die Reaktivität sicherzustellen
+	// Props innerhalb einer Funktion verwenden, um die Reaktivität sicherzustellen:
 	function handleProcess() {
 		props.processData([1, 2, 3]);   // Array
 		props.processData(new Set([4, 5, 6]));   // Set
 	}
 
 	handleProcess();
+
 </script>
 ```
 **Falsch**
 
 ```vue
 <script setup lang="ts">
+
 	const props = defineProps<{
 		processData: (data: Array<number>) => void;
 	}>();
 
-	// Props innerhalb einer Funktion verwenden, um die Reaktivität sicherzustellen
+	// Props innerhalb einer Funktion verwenden, um die Reaktivität sicherzustellen:
 	function handleProcess() {
 		props.processData([1, 2, 3]);   // Array
 	}
@@ -720,16 +763,16 @@ Wenn Funktionen als Props übergeben werden und Parameter wie Listen oder Arrays
 ```
 ---
 
-## 15. ESLint statt Prettier
+### 15. ESLint statt Prettier
 Verwende für die Formatierung des Codes keinen Prettier, sondern stattdessen die Korrekturen von ESLint.
 
 ---
 
-# Vue - Transpiler
+## Vue - Transpiler
 Die folgenden Regelungen beziehen sich ausschließlich auf transpilierte Java-Objekte.
 
 
-## 1. `shallowRef` statt `ref` für transpilierte Java-Objekte
+### 1. `shallowRef` statt `ref` für transpilierte Java-Objekte
 Verwende `shallowRef` anstelle von `ref` für transpilierte Java-Objekte, um Probleme mit JavaScript-Proxies zu vermeiden. Gib außerdem auch immer den Typ des `shallowRef` an.
 
 **Richtig:**
@@ -750,7 +793,7 @@ Verwende `shallowRef` anstelle von `ref` für transpilierte Java-Objekte, um Pro
 </script>
 ```
 ---
-## 2. Getter für reaktive Props verwenden
+### 2. Getter für reaktive Props verwenden
 Um sicherzustellen, dass Props reaktiv bleiben, sollten sie über Getter übergeben werden. Dies betrifft ausschließlich transpilierte Java-Objekte, die aus Routen kommen.
 
 **Richtig:**
