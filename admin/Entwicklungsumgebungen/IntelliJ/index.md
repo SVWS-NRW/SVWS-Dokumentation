@@ -36,10 +36,9 @@
 ## SVWS konfigurieren
 
 1. `svws-server-app/src/main/resources/keystore.example` in `keystore` umbenennen und in `svws-server-app` ablegen
-2. Die Datei `svws-server-app/src/main/resources/svwsconfig.json.example` in dasselbe Verzeichnis kopieren, in `svwsconfig.json` umbenennen und entsprechend konfigurieren:
-   + Passe den Pfad für **clientPath** an: `"[PathToYourWorkspace]\\svws-webclient\\client\\build\\output"`
-   + Passe den Pfad für **adminPath** an: `"[PathToYourWorkspace]\\svws-webclient\\admin\\build\\output"`
-   + Unten in der Datei findest du die **DBKonfiguration**. Verwende die Einstellungen aus `deployment/docker/example/local/docker-compose.yml`
+2. Die Datei `svws-server-app/src/main/resources/svwsconfig.json.example` in `svws-server-app` kopieren, in `svwsconfig.json` umbenennen und entsprechend konfigurieren:
+   + Setze `"ServerMode" : "dev",`.
+   + In der **DBKonfiguration** die Einstellungen aus `deployment/docker/example/local/docker-compose.yml` verwenden.
 
 ## Formatter und Inspections
 Damit der Codingstil innerhalb des Projekts trotz unterschiedlicher Entwickler einheitlich bleibt, wird ein Formatter verwendet. Dieser kann in allen Dateien angewendet werden, um den Code an die Richtlinien anzupassen. \
