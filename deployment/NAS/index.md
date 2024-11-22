@@ -16,10 +16,12 @@ Achtung! Schreib-/Lese-Cache kann bei Strom- oder Netzwerkausfall zu Datenverlus
 3. VirtualMaschine-Manager
 
 
-## MariDB konfigurieren
+## MariaDB konfigurieren
+
+In der Einstellung des MariaDB-Pakets TCP freigeben.
 
 PHPmyAdmin aufrufen und den User root mit identischen Rechten duplizieren (Beispiel remote) aber mit Zugriff host=%.
-In der Einstellung des MariaDB-Pakets TCP freigeben.
+
 
 ## VirtualMaschine-Manager
 
@@ -27,8 +29,7 @@ Ein Debian-ISO-Image oder ein Ubuntu-Live-Server-Image herunterladen und im VM-M
 
 Eine VM mit dem gewünschten Image installieren.
 S-ATA-Treiber bei der Verwenung der Festplatte einstellen.
-Einstellung mit UEFI Bios booten.
-
+Einstellung mit UEFI Bios booten. Hier wurden zwei CPUs mit 8 GByte RAM gewählt.
 
 
 ## Installation des SVWS-Server mit dem Linux-installieren
@@ -36,13 +37,19 @@ Einstellung mit UEFI Bios booten.
 
 Mit wget das aktuellen install-x.x.x.sh von Github laden.
 
+https://github.com/SVWS-NRW/SVWS-Server/releases/latest
+
+
 ``` chmod +x install-x.x.x.sh
     ./install-x-x-x.sh
 ```
 
 Dabei die Installationsschritte, wie unter Linux-Installer beachten.
+
 https://doku.svws-nrw.de/deployment/Linux-Installer
 
+Aufruf des AdminClients ist nun möglich.
+Darin kann eine Migration oder ain Backup durchgeführt werden.
 
 ## Schild-NRW 3 Freigabe
 
@@ -56,6 +63,7 @@ Dort eine Admin.ini als Textdatei anlegen und bei GroupDir= die Url zum Arbeitsv
 Im SVWS-arbeitsverzeichnis einen Ordner Connection-Files und einen Ordner Schild-Reports anlegen.
 
 Basisreportsammlung herunterladen und im Report-Ordner entpacken.
+
 https://github.com/SVWS-NRW/Schild-NRW-Reports/releases
 
 Im Ordner Schild-NRW3 das Programm Schild_DBConfig.exe starten und die CON-Datei nach Eintragung aller Parameter in den Ordner Connection-Files speichern.
