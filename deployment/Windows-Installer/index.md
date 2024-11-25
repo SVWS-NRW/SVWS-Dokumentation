@@ -6,9 +6,9 @@ https://github.com/SVWS-NRW/SVWS-Server/releases
 
 ## Systemvoraussetzungen
 
-+ Windows 10 64bit
++ MS Windows 10 (64bit) oder 11 (64bit)
 + 16 GB RAM
-+ Auflösung min 1920x1080 fullHD
++ Auflösung mindestens 1920x1080 FullHD
 + 300 MB freier Speicherplatz
 
 ## Installationshinweise
@@ -39,59 +39,62 @@ Der SVWS-Installer übernimmt die folgenden Aufgaben:
 Zu Beginn der Installation erscheinen nach der Annahme der Lizenzvereinbarungen folgende Optionen:
 
 
-![](./graphics/Installer_Auswahl_Dialog.jpg)
+![Serverkonfiguration bei der Installation](./graphics/Installer_Auswahl_Dialog.jpg "Wählen Sie die Optionen für den Server und die Datenbank.")
 
+::: danger Speichern Sie Ihre Passwörter!
+Es werden für MariaDB und den Datenbank-User Zufallskennwörter generiert! Ändern Sie diese nach Ihren Wünschen oder verwenden Sie diese Vorschläge, aber **dokumentieren Sie in jedem Fall Ihre Eingabe**.
 
+Ohne diese Kennwörter kann Ihnen später im Supportfall nicht geholfen werden!
+:::
 
-***Achtung!***
-
-
-*Es werden für MariaDB und den Datenbank-User Zufallskennwörter generiert!*
-
-*Ändern Sie diese nach Ihren Wünschen, aber **dokumentieren Sie in jedem Fall Ihre Eingabe**.*	
-
-*Ohne diese Kennwörter kann Ihnen später im Supportfall nicht geholfen werden!*
 
 ---
 
 ## Installation MariaDB
 
 Der Installer erkennt anhand der Registry-Einträge, ob MariaDB bereits installiert ist und in welcher Version. 
-Wenn ein eigener MariaDB-Server installiert wird, muss entweder ein anderer Port verwendet werden, oder es muss später eine Verbindung zum bestehenden Server hergestellt werden.
-Ist die Option deaktiviert und es wird keine svwsconfig.json gefunden wird, dann erscheint eine Seite zur Angabe der Zugangsdaten zum bestehenden Server.
+
+Wenn ein eigener MariaDB-Server installiert wird, muss entweder ein anderer Port verwendet werden oder es muss später eine Verbindung zum bestehenden Server hergestellt werden.
+
+Ist die Option deaktiviert und es wird keine ````svwsconfig.json```` gefunden wird, dann erscheint eine Seite zur Angabe der Zugangsdaten zum bestehenden Server.
+
 Ist die Installation aktiviert wird der MariaDB-Server in den Programm-Verzeichnissen installiert. Der Dienst wird als Windows-Service registriert und gestartet.
-Mit dem Installer kann die MariaDB-Version zu zu späteren Zeitpunkten dann auch aktualisiert werden.
 
-Programmverzeichnis MariaDB: 
+Mit dem Installer kann die MariaDB-Version zu zu späteren Zeitpunkten aktualisiert werden.
 
-`C:\Programme\SVWS-Server\db Datenverzeichnis MariaDB: C:\ProgramData\SVWSServer\data`
+Programmverzeichnis MariaDB: ```` C:\Programme\SVWS-Server\db````
+
+Datenverzeichnis MariaDB: ````C:\ProgramData\SVWSServer\data````
 
 Die sort_buffer_size wird in der my.ini im data-Verzeichnis auf 16777216 gesetzt!
 
 ## Installation JDK
-Mit dem Installer wird auch das verwendetet JDK ausgeliefert. 
-Dieses ist an den SVWS-Server gekoppelt und kann in zukünftigen Versionen nur in Kombination mit dem eigentlichen Server installiert 
-oder geupdated werden.
+
+Mit dem Installer wird auch das verwendetet JDK ausgeliefert.
+
+Dieses ist an den SVWS-Server gekoppelt und kann in zukünftigen Versionen nur in Kombination mit dem eigentlichen Server installiert oder geupdated werden.
 
 Zielverzeichnis JDK: `C:\Programme\SVWS-Server\java`
 
 ## Installation SVWS-Server
+
 Die notwendigen Dateien des SVWS-Server werden standardmäßig unter 
-`C:/Programme/SVWS-Server/svws-server`  installiert. 
+`C:/Programme/SVWS-Server/svws-server` installiert.
+
 Da diese mit der ausgeliferten OpenJDK-Version zusammen passen müssen, werden diese beiden Teile miteinander verbunden und können nicht separat installiert werden.
 
 Die Aufrufe werden in Form von Batch-Dateien mit der Endung .cmd im Hauptverezichnis ausgeliefert.
+
 Die Dienste MariaDB und SVWS-Server werden in der Computerverwaltung registriert und automatisch gestartet.
 
-![](./graphics/SVWSDienste.jpg)
+![Windows-Dienste mit dem SVWS-Java-Service-Dienst](./graphics/SVWSDienste.jpg "Der Dienst für den SVWS-Java-Service ist hervorgehoben.")
 
 ## Konfigurationsdatei editieren 
 
 Man findet alle Einstellungsmöglichkeiten zum Betrieb des SVWS-Servers an zentraler Stelle in der Datei: 
 `svwsconfig.json`
 			
-Unter Windows im Verzeichnis: 
-`C:\ProgramData\SVWS-Server\res`
+Unter Windows im Verzeichnis: `C:\ProgramData\SVWS-Server\res`
 
 ```json
 {
@@ -178,7 +181,7 @@ Der öffentliche Teil wird im Ordner
 
 Dieses Zertifikat muss anschließend in den Zertifikatsspeicher von Windows übertragen werden.
 
-![](./graphics/SVWSZertifikat.jpg)
+![Https-Zertifikat in MS Windows installieren](./graphics/SVWSZertifikat.jpg "Installieren Sie das Zertifikat, um Browser-Nachfragen zu unterbinden.")
 
 **Ort:** Vertrauenwürdige Stammzertifikate
 
@@ -191,9 +194,10 @@ Im Programmverzeichnis des SVWS-Server befindet sich auch ein signierter Uninsta
 
 Bitte beachten Sie, dass Dateien, die nach der Installation hinzugefügt wurden nicht erfasst werden.
 
-Außerdem sollte kontrolliert werden, ob auch alle Dienste entfernt wurden. Windows 10 gibt in einigen Fällen die Dienste nicht schnell genug frei, so dass die Löschung scheitert.
+Außerdem sollte kontrolliert werden, ob auch alle Dienste entfernt wurden.   Windows 10 gibt in einigen Fällen die Dienste nicht schnell genug frei, so dass die Löschung scheitert.
 
 ## Wichtige Pfade zu den Ordnern
+
 Als Default-Verzeichnisse werden bei der Installation folgende Verzeichnisse vorgeschlagen:
 
 | Pfad | Beschreibung |
