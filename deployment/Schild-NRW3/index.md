@@ -1,14 +1,14 @@
-# Betrieb von Schild-NRW 3 und dem SVWS-Server
+# Betrieb von SchILD-NRW 3 und dem SVWS-Server
 
-Grundsätzlich benötigt Schild-NRW 3 immer einen laufenden SVWS-Server.
-Schild-NRW 3 prüft beim Start, ob der SVWS-Server erreichbar ist und vergleicht über die jeweiligen Versionsnummern, ob eine gültige Kombination vorliegt. Die gültigen Kombinationen können aus der Versionsgeschichte (Release Notes) entnommen werden.
+Grundsätzlich benötigt SchILD-NRW 3 immer einen laufenden SVWS-Server.
+SchILD-NRW 3 prüft beim Start, ob der SVWS-Server erreichbar ist und vergleicht über die jeweiligen Versionsnummern, ob eine gültige Kombination vorliegt. Die gültigen Kombinationen können aus der Versionsgeschichte (Release Notes) entnommen werden.
 
 Der SVWS-Server läuft unter Linux und Windows und ist in Java geschrieben.
 Über die API können nicht nur die Daten zur Visualisierung abgerufen werden, sondern auch Statistik-Kataloge.
 Zusätzlich können Operationen wie Backups oder Migrationen über den SVWS-Server abgewickelt werden.
-Momentan benötigt Schild-NRW 3 aber noch den direkten Zugriff auf die MariaDB-Datenbank.
+Momentan benötigt SchILD-NRW 3 aber noch den direkten Zugriff auf die MariaDB-Datenbank.
 
-Es ist geplant im Laufe des Jahres 2025 Schild-NRW 3 so umzustellen, dass Schild-NRW 3 alle notwendigen Operationen über die API ausführen kann.
+Es ist geplant im Laufe des Jahres 2025 SchILD-NRW 3 so umzustellen, dass SchILD-NRW 3 alle notwendigen Operationen über die API ausführen kann.
 Dann würde der Zugriff auf die MariaDB entfallen können. Ob das mit den zur Verfügung stehenden Ressourcen schon in 2025 leistbar ist, ist momentan noch unklar.
 
 ## Übersicht
@@ -19,8 +19,8 @@ Die MariaDB-Datenbank kann separat betrieben werden. Diese kann aber auch auf de
 
 ![](./graphics/Rechenzentrum_Schild-NRW3.png)
 
-Schild-NRW 3 benötigt, so wie Schild-NRW 2, eine Konfigurationsdatei in der die notwendigen Angaben für die Zugänge stehen. Diese hat die Endung .con und enthält die URL (und Port) zum SVWS-Server und zur MariaDB-Datenbank.
-Das Programm Schild-NRW 3 kann nach wie vor über eine Dateifreigabe an die Windows-Clients ausgeliefert werden.
+SchILD-NRW 3 benötigt, so wie SchILD-NRW 2, eine Konfigurationsdatei in der die notwendigen Angaben für die Zugänge stehen. Diese hat die Endung .con und enthält die URL (und Port) zum SVWS-Server und zur MariaDB-Datenbank.
+Das Programm SchILD-NRW 3 kann nach wie vor über eine Dateifreigabe an die Windows-Clients ausgeliefert werden.
 
 Wie im Schaubild zu sehen, kann der SVWS-Server und die MariaDB auf getrennten Servern liegen.
 Auch die Ports können in den Konfigurationsdateien eingestellt werden.
@@ -32,7 +32,7 @@ Der momentan noch im Aufbau befindliche Web-Client steht über den SVWS-Server i
 
 ## Installation SVWS-Server
 
-Da Schild-NRW 3 erst startet, wenn ein SVWS-Server zur Verfügunmg steht, sollte mit dieser Installation begonnen werden.
+Da SchILD-NRW 3 erst startet, wenn ein SVWS-Server zur Verfügunmg steht, sollte mit dieser Installation begonnen werden.
 
 https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Linux-Installer/index.md
 
@@ -43,16 +43,16 @@ Der SVWS-Server startet auch, wenn bei der Installation keine neue Datenbank erz
 
 Über den Admin-Client können dann die gewünschten Datenbanken migriert oder erstellt werden.
 
-## Installation Schild-NRW 3
+## Installation SchILD-NRW 3
 
-Die Installation von Schild-NRW 3 kann danach vorgenommen werden.
+Die Installation von SchILD-NRW 3 kann danach vorgenommen werden.
 
 https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Schnellinstallation_SVWS-Server_und_SchILD-NRW_3
 
 
 ## Konfigurationen
 
-Schild-NRW 3 benötigt für jede Datenbank eine .con-Datei, die im Unterordner "Connection-Files" des Schild-NRW 3-Arbeitsverzeichnisses liegt.
+SchILD-NRW 3 benötigt für jede Datenbank eine .con-Datei, die im Unterordner "Connection-Files" des SchILD-NRW 3-Arbeitsverzeichnisses liegt.
 Diese .con-Datei ist eine reine Textdatei im UTF-8 Format.
 
 Der SVWS-Server erstellt bei der Installation eine svwsconfig.json. Diese Datei enthält alle benötigten Angaben für den Betrieb des SVWS-Servers.
