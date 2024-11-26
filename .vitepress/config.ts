@@ -174,10 +174,14 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Lehrkräfte', link: '/client/lehrer/', collapsed: true, items: [
 									{ text: 'Individualdaten', link: '/client/lehrer/individualdaten/' },
+									{ text: 'Personaldaten', link: '/client/lehrer/personaldaten/' },
 									{ text: 'Unterricht', link: '/client/lehrer/unterricht/' },
 									{ text: 'Stundenplan', link: '/client/lehrer/stundenplan/' }
 								] },
-								{ text: 'Klassen', link: '/client/klassen/' },
+								{ text: 'Klassen', link: '/client/klassen/', collapsed: true, items: [
+									{ text: 'Klasse', link: '/client/klassen/klasse/' },
+									{ text: 'Stundenplan', link: '/client/klassen/stundenplan/' }
+								] },
 								{ text: 'Kurse', link: '/client/kurse/' },
 								{
 									text: 'Oberstufe', link: '/client/gost/', collapsed: true, items: [
