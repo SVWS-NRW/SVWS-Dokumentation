@@ -4,9 +4,9 @@ Unter den allgemeinen Daten der Lernabschnitte finden sich auf der linken Seite 
 
 ![Übersicht über Lernabschnitte](./graphics/SVWS_schueler_lernabschnitte_allgemein.png "Die Liste der Lernabschnitte und die Daten zum aktuell gewählten Abschnitt.")
 
-Wählt man hier einen Lernabschnitt, als ein *Halbjahr*, werden die Daten für diesen angezeigt.
+Wählt man hier einen Lernabschnitt - ein spezifisches *Halbjahr* - werden die Daten für diesen angezeigt.
 
-Einige der Daten werden automatisch ausgefüllt, andere sind einzutragen. Im Screenshot wurde der Lernabschnitt der Klasse 9 gewählt.
+Einige der Daten werden automatisch aus anderen Daten in der Datenbank ausgefüllt, andere sind einzutragen. Im Screenshot wurde der Lernabschnitt der Klasse 9 gewählt.
 
 ![Daten zur Klasse 9 bei dieser Schülern](./graphics/SVWS_schueler_lernabschnitte_klassendaten.png "Die Klassendaten sind teilweise direkt eingetragen, teilweise übernommen.")
 

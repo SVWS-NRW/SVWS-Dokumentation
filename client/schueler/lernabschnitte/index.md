@@ -6,6 +6,6 @@ Weiterhin wird der Untertab zu den **Leistungsdaten** angezeigt, in dem die Leis
 
 Diese Daten werden für den aktuellen und alle vorherigen Lernabschnitte gespeichert und können über den Lernabschnitt in der Auswahlliste angewählt werden.
 
-Die übrigen Untertabs sind stark dynamisch und hängen von der Schulform und dem Jahrgang ab.
+Die übrigen Untertabs werden dynamisch ein- und ausgeblendet und hängen von der Schulform und Jahrgang ab.
 
 Hier werden also je nach Bedarf auch Untertabs zu Zeugniskonferenzen, Abschluss- und Versetzungsberechnen, der ZP 10 und anderen zentralen Klausuren (ZK), dem schulischen Teil der Fachhochschulreife (FHR), dem Abitur und so weiter eingeblendet.
