@@ -56,7 +56,15 @@ export default tseslint.config(
 			"@stylistic/no-multi-spaces": "error",
 			"@stylistic/no-trailing-spaces": "error",
 			"@stylistic/indent": ["error", "tab", { "SwitchCase": 1 }],
-
+			"@stylistic/comma-dangle": ["warn", {
+        "arrays": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "objects": "always-multiline",
+        "functions": "never",
+        "importAttributes": "never",
+        "dynamicImports": "never"
+    	}],
 			"no-unused-vars": "off",
 			"no-dupe-class-members": "off",
 			"require-await": "off",
