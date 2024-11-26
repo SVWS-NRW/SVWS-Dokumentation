@@ -178,7 +178,10 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Unterricht', link: '/client/lehrer/unterricht/' },
 									{ text: 'Stundenplan', link: '/client/lehrer/stundenplan/' }
 								] },
-								{ text: 'Klassen', link: '/client/klassen/' },
+								{ text: 'Klassen', link: '/client/klassen/', collapsed: true, items: [
+									{ text: 'Klasse', link: '/client/klassen/klasse/' },
+									{ text: 'Stundenplan', link: '/client/klassen/stundenplan/' }
+								] },
 								{ text: 'Kurse', link: '/client/kurse/' },
 								{
 									text: 'Oberstufe', link: '/client/gost/', collapsed: true, items: [
