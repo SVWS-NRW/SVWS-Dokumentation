@@ -1,8 +1,10 @@
-Lernabschnitte - Allgemein
+# Lernabschnitte - Allgemein
 
 Unter den allgemeinen Daten der Lernabschnitte finden sich auf der linken Seite in der *Auswahlliste* die Übersicht über alle für diesen Schüler angelegten Lernabschnitte.
 
 ![Übersicht über Lernabschnitte](./graphics/SVWS_schueler_lernabschnitte_allgemein.png "Die Liste der Lernabschnitte und die Daten zum aktuell gewählten Abschnitt.")
+
+## Wahl eines Halbjahres
 
 Wählt man hier einen Lernabschnitt - ein spezifisches *Halbjahr* - werden die Daten für diesen angezeigt.
 
@@ -28,6 +30,6 @@ Bei der Gliederung und Organisationsform lassen sich die Werte abrufen, die für
 
 In der Organsiationsform etwa sind die unterschiedlichen Ganz- und Halbtagsoptionen auswählbar. Bei der Klassenart eine Profilklasse, der Standardfall der Regelklasse oder eine dediziert ausgewiesene Deutschförderklasse.
 
-Die **Förderschwerpunkte** dürfen leer bleiben. Schauen Sie in die Schlüsseltabellen und Eintragungshilfen von IT.NRW zur amtlichen Schulstatistik, welche Förderschwerpunkte in welcher Kombination der beiden Felder hier zulässig sind.
+Die **Förderschwerpunkte** dürfen leer bleiben. Schauen Sie in die Schlüsseltabellen und Eintragungshilfen von IT.NRW zur amtlichen Schulstatistik, welche Förderschwerpunkte in welcher Kombination der beiden Felder zulässig sind.
 
 Über die Checkboxen lassen sich die statistikrelevante **Schwerbehinderung**, die **Autismus**-Diagnose, **ASOF** und **zieldifferentes Lernen** in diesem Lernabschnitt erfassen.
