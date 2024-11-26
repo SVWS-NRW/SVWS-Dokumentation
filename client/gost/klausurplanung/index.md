@@ -1,7 +1,7 @@
 # Klausurplanung
 
 ## HINWEIS
-Es ist dringend zu empfehlen, zuvor die **Stundenplanung** der jeweiligen Jahrgangsstufe einzutragen.
+Es ist dringend zu empfehlen, zuvor die **Stundenplanung** der jeweiligen Jahrgangsstufe einzutragen.  
 Ebenso sollte eine vollständige **Raumliste** hinterlegt sein.
 
 ## Vorgaben erstellen
@@ -61,3 +61,30 @@ Es werden z.B. Terminkollisionen, mehr als drei Klausurbelegungen pro Woche, feh
 2. Export der GPU017.txt für Untis ist geplant.
 
 ## Klausurversäumnis/Nachschreiber 
+
+### Erfassung von Versäumnissen
+
+#### 1. Möglichkeit: Über die Klausurplanung:  
+* im Reiter **Schienen** in der Terminauswahl wird durch Anklicken der betroffenen KLausur eine Schülerliste angezeigt. 
+* Hinter jedem Namen kann über den angezeigten Button das Versäumnis erfasst werden, bei Bedarf (Beachtung DSGVO) auch ein Grund eingeragen werden. 
+
+* Bestätigung durch **"Nachschreibtermin erstellen"** übernimmt den Schüler in die Liste der Nachschreiber.  
+
+ ![gost_klausurplanung_nt_klausurplanung](.\graphics\gost_klausurplanung_nt_klausurplanung.png)
+
+#### 2. Möglichkeit: Über Schüler:  
+* Auswahl des Schülers (linke Leiste) -> Lernabschnitte -> Klausuren 
+* Die zu schreibenden Klausuren werden angezeigt, über den Button hinter der versäumten Klausur erfolgt die Erfassung.  
+ 
+ ![gost_klausurplanung_nt_schueler](.\graphics\gost_klausurplanung_nt_schueler.png)
+
+### Festlegung Nachschreibtermin
+
+Unter Nachschreiber können die Schüler mit Versäumnissen Nachschreibterminen zugewiesen werden.  
+Dazu wird zunächst ein Termin angelegt. Das kann
+* ein neu angelegter Termin sein (**+ Neuer Nachschreibtermin**)  
+oder  
+* einer der bestehenden Haupttermine sein (**Haupttermin zulassen**)
+
+Sind mögliche Nachschreibtermine angelegt, können die betroffenen Schüler per Drag&Drop passenden Terminen zugewiesen werden.  
+Hinweis: Nicht passende Termine (Schüler schriebt zu diesem Termin schon eine Klausur) werden unmittelbar angezeigt und können nicht ausgewählt werden. 
