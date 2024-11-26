@@ -20,8 +20,8 @@ Durchführen der Beratungen mit *WebLuPO* (Weblaufbahnplanung).
 
 **Überprüfen in Fachwahlen**
 
-Eventuell Nachberatungen
+Eventuell Nachberatungen.
 
-Weblupo ist fertig
+Weblupo ist fertig.
 
 

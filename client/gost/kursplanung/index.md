@@ -248,7 +248,7 @@ Dazu werden die Schüler erst einem Kurs (hier D-GK1) zugeordnet, dann werden we
 
 ### Kurs: Schülerzuordnung
 
-*in Bearbeitung*  
+*in Bearbeitung, ab Dezember 2024*  
 
 
 ### Blockungsmatrix
