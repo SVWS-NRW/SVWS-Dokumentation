@@ -4,13 +4,15 @@ In der App **Schüler** werden die zahlreichen Daten zu den Schülern erfasst.
 
 Im ersten Tab finden sich die persönlichen **Individualdaten**.
 
-**Hinweis:** Beachten Sie unbedingt die *statistikrelevanten* Felder, sind diese korrekt ausgefüllt, werden Fehler bei der Statistik oder diversen Berechnungen zu Abschluss und Schulpflicht vermieden.
+::: warning Statistikrelevante Felder beachten
+Beachten Sie unbedingt die *statistikrelevanten* Felder. Werden diese korrekt ausgefüllt, werden Fehler bei der Statistik oder diversen Berechnungen zu Abschluss und Schulpflicht vermieden.
+:::
 
 ## Allgemein
 
 ![Allgemeine Daten der Individualdaten (Name, Geschlecht, Geburtsort, Geburtsdatum)](./graphics/SVWS_schueler_individualdaten_basisdaten.png "Die allgemeinen Daten der Schüler.")
 
-Erfassen Sie **Namen** und **Rufname** der Schüler. Weitere Vornamen können im Feld **Alle Vornamen** aufgenommen werden.
+Erfassen Sie **Namen** und **Rufname** der Schüler. Die Auflistung *aller* Vornamen wird im Feld **Alle Vornamen** aufgenommen, so dass alle offiziellen Namen - etwa nach der Geburtsurkunde - auf Abschlusszeugnissen ausgegeben werden können.
 
 Im Feld **Geschlecht** sind die Werte *männlich*, *weiblich*, *divers* oder *Ohne Angabe* auswählbar.
 
