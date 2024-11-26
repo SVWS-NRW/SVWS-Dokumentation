@@ -174,6 +174,7 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Lehrkräfte', link: '/client/lehrer/', collapsed: true, items: [
 									{ text: 'Individualdaten', link: '/client/lehrer/individualdaten/' },
+									{ text: 'Personaldaten', link: '/client/lehrer/personaldaten/' },
 									{ text: 'Unterricht', link: '/client/lehrer/unterricht/' },
 									{ text: 'Stundenplan', link: '/client/lehrer/stundenplan/' }
 								] },
