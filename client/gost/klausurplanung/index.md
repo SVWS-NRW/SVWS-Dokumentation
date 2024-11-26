@@ -46,3 +46,18 @@ Zu beachten ist das rechte **Hinweisfenster**: Hier werden Terminkollisionen, ab
 Nach Auswahl eines der Termine (Ansicht "In Planung") wird für den ausgewählten Termin über **"+ Klausurraum anlegen"** ein oder mehrere Klausurräume angelegt.  
 Jedem der angelegten Räume kann per Drag&Drop ein oder mehrere der Klausuren des ausgewählten Termins zugewiesen.  
 ![gost_klausurplanung_raeume_1](.\graphics\gost_klausurplanung_raeume_1.png)
+
+## Schnellansicht Detailplan
+
+Im **Detailplan** erfolgt eine chronologische Ansicht aller Termine. Optional kann die Ansicht für das ganze Halbjahr oder nur 1. oder 2. Quartal eingestellt werden.  
+Hinweis: Eine jahrgangsübergreifende Ansicht ist hier nicht möglich.
+
+## Fehler und Hinweise
+Es werden z.B. Terminkollisionen, mehr als drei Klausurbelegungen pro Woche, fehlende Raumeinträge angezeigt.
+
+## Drucken/Export
+
+1. Oben rechts befinden sich verschiedene Formulare zur Darstellung der Klausurplanung.
+2. Export der GPU017.txt für Untis ist geplant.
+
+## Klausurversäumnis/Nachschreiber 
