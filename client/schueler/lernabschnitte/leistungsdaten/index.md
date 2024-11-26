@@ -8,7 +8,7 @@ In der Auswahlliste finden sich alle für diesen Schüler vorhandenen **Lernabsc
 
 ![Übersicht über die Fächer und und Kurse in einem Lernabschnitt](./graphics/SVWS_leistungsdaten_kopfzeileFachuebersicht.png "Verwalten Sie die Fächer und Kurse und tragen Sie Kursarten, Noten und so weiter ein.")
 
-Zu jedem **Fach** lassen sich die Lehrkraft und die Noten erfassen. Im SVWS-Client können neben der tatsächlichen **Halbjahresnote** auch eine **Quartalsnote**, etwa in der gymnasialen Oberstufe oder für Elternsprechtage, erfasst werden.  
+Zu jedem **Fach** lassen sich die Lehrkraft und die Noten erfassen. Im SVWS-Client können neben der tatsächlichen **Halbjahresnote** auch eine **Quartalsnote**, etwa in der gymnasialen Oberstufe oder für die Beratung an Elternsprechtagen, erfasst werden.  
 
 Normaler Fachunterricht im Klassenverband bekommt die Kursart *PUK*, dies steht für Pflichtunterricht im Klassenverband.
 
