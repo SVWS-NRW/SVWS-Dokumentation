@@ -2,6 +2,7 @@
 
 ## HINWEIS
 Es ist dringend zu empfehlen, zuvor die **Stundenplanung** der jeweiligen Jahrgangsstufe einzutragen.
+Ebenso sollte eine vollständige **Raumliste** hinterlegt sein.
 
 ## Vorgaben erstellen
 Es können für beide Quartale für jedes Fach und Kursart Vorgaben der jeweiligen Klausur eingestellt werden.  
@@ -38,4 +39,10 @@ Durch Anklicken des jeweiligen Kurses wird die Liste der Klausurschreibenden ang
 ## Klausurtermine im Kalender festlegen
 Im Kalender können die geblockten Termine per Drag&Drop gesetzt werden. Hierbei kann die Funktion **Jahrgangsübergreifend** genutzt werden, um bereits gesetzte Termine in anderen Jahrgangsstufen zu berücksichtigen.  
 Sobald ein Termin "geschoben" wird, werden im Kalender die Stundenplanlagen der in der Klausurschiene geblockten Kurse angezeigt.  
-Zu beachten ist das rechte **Hinweisfenster**: Hier werden Terminkollisionen, aber auch Warnungen bei drei und mehr KLausuren pro Woche von Schülern angezeigt.
+Zu beachten ist das rechte **Hinweisfenster**: Hier werden Terminkollisionen, aber auch Warnungen bei drei und mehr Klausuren pro Woche von Schülern angezeigt.
+
+## Räume und Startzeiten festlegen
+
+Nach Auswahl eines der Termine (Ansicht "In Planung") wird für den ausgewählten Termin über **"+ Klausurraum anlegen"** ein oder mehrere Klausurräume angelegt.  
+Jedem der angelegten Räume kann per Drag&Drop ein oder mehrere der Klausuren des ausgewählten Termins zugewiesen.  
+![gost_klausurplanung_raeume_1](.\graphics\gost_klausurplanung_raeume_1.png)
