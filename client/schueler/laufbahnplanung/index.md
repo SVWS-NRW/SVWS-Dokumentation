@@ -4,13 +4,13 @@
 **Todo** Screenshots 
 :::
 
-Gibt es für einen Schüler (m/w/d) schon eine Laufbahnplanung für die gymnasiale Oberstufe, wird dieser im Untertab **Laufbahnplanung** angezeigt.
+Gibt es für einen Schüler oder Schülerin schon eine Laufbahnplanung für die gymnasiale Oberstufe, wird dieser im Untertab **Laufbahnplanung** angezeigt.
 
 In der Oberfläche lassen sich auch alle Änderungen zur Laufbahnplanung durchführen, ebenso lassen sich Beratungsdaten und Beratungsbemerkungen setzen.
 
 Die Planung lässt sich als LuPO-Datei ````lp```` exportieren und importieren.
 
-Um Alternativen auszuprobieren, kann mittels ````PLanung merken```` die aktuelle Planung gespeichert werden. Eventuelle temporäre Änderungen werden dann im Anschluss mit einem Klick auf ````Planung wiederherstellen```` rückgängig machen. Sollen diese temporären Änderungen übernommen werden, können sie nun dauerhaft eingestellt werden.
+Um Alternativen auszuprobieren, kann mittels ````Planung merken```` die aktuelle Planung gespeichert werden. Eventuelle temporäre Änderungen werden dann im Anschluss mit einem Klick auf ````Planung wiederherstellen```` rückgängig machen. Sollen diese temporären Änderungen übernommen werden, können sie nun dauerhaft eingestellt werden.
 
 Modus:
 * Normal
