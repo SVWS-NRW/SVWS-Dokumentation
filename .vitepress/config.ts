@@ -158,7 +158,7 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Untis (Todo)' }
 									] }
 								] },
-								{ text: 'Schüler (Anpassen!)', link: '/client/schueler/', collapsed: true, items: [
+								{ text: 'Schüler', link: '/client/schueler/', collapsed: true, items: [
 									{ text: 'Individualdaten', link: '/client/schueler/individualdaten/' },
 									{ text: 'Erziehungsberechtigte', link: '/client/schueler/erziehungsberechtigte/' },
 									{ text: 'Ausbildungsbetriebe', link: '/client/schueler/ausbildungsbetriebe/' },
