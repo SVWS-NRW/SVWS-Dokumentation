@@ -168,7 +168,7 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Leistungsdaten', link: '/client/schueler/lernabschnitte/leistungsdaten/' }
 									] },
 									{ text: 'KAoA', link: '/client/schueler/kaoa/' },
-									{ text: 'Laufbahn', link: '/client/schueler/laufbahn/' },
+									{ text: 'Sprachen', link: '/client/schueler/sprachen/' },
 									{ text: 'Laufbahnplanung Sek II', link: '/client/schueler/laufbahnplanung/' },
 									{ text: 'Stundenplan', link: '/client/schueler/stundenplan/' }
 								] },
