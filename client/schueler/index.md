@@ -5,7 +5,7 @@
 
 ![Die Schaltfläche, um die Schülerdaten zu erreichen.](./graphics/SVWS_schueler_schaltfläche.png "Klicken Sie auf Schüler.")
 
-Der Schülerbildschirm zeigtauf der **linken Seite** alle ausgew#hlten Schüler, per Standard ist hier zuerst einmal die ganze Schule ausgewählt.
+Der Schülerbildschirm zeigtauf der **linken Seite** alle ausgewählten Schüler, per Standard ist hier zuerst einmal die ganze Schule ausgewählt.
 
 Auf der **rechten Seite** erscheinen die Daten zum ausgewählten Datensatz einer Person.
 
@@ -22,7 +22,7 @@ Im grünen Viereck sind die **Filter** aufgeführt.
 <br />Es lassen sich hier auch mehrere Status gleichzeigt anwählen.
 
   * Im Zuge der Aufnahme lassen sich Personen im Status *Warteliste* parken. Personen, die für das kommende Schuljahr aufgenommen wurden, erhalten den Status *Neuaufnahme*.
-  * Schüler, die ihre Bildungslaufbahn an der Schule hinter sich haben, verfügen über den Status *Abgang* oder *Abschlus s*. Letzteren Status erhalten Sie, wenn sie einem von ihrem vorgesehenen BIldungsgang erhaltenen Abschluss erlangt haben.
+  * Schüler, die ihre Bildungslaufbahn an der Schule hinter sich haben, verfügen über den Status *Abgang* oder *Abschluss*. Letzteren Status erhalten Sie, wenn sie einem von ihrem vorgesehenen BIldungsgang erhaltenen Abschluss erlangt haben.
 
 * Weiterhin lassen sich auf **Jahrgänge** und/oder **Klassen** filtern.
 * Ebenso stehen die eingerichteten **Kurse** zur Auswahl.
@@ -34,7 +34,8 @@ Im organen Oval lässt sich der Filter wieder aufheben. Dass die aktuelle Auswah
 
   ![Schülersumme im Fuß](./graphics/SVWS_schueler_auswahlSumme.png "Die Schülersumme wird im Fuß angezeigt.")
 
-  **Tipp:** Wenn die Schülerzahl der Schule oder des Jahrgangs bekannt ist, ist hier auch ersichlich, dass gerade ein Filter aktiv ist.
+::: tip Ist ein Filter aktiv? Wenn die Schülerzahl der Schule oder des Jahrgangs bekannt ist, ist hier auch ersichlich, dass gerade ein Filter aktiv ist.
+:::
 
   ----
 
