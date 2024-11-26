@@ -1,6 +1,8 @@
-# Laufbahn
+# Sprachen
 
-## Sprachenfolgen
+Im Tab **Sprachen** werden diese der Schülerinnen und Schüler erfasst.
+
+# Sprachenfolge
 
 Im Bereich der Sprachenfolgen werden die von Schülern belegten Sprachen in der Reihenfolge ihrer Belegung erfasst. Diese **Reihenfolge** lässt sich über **+** und **-** verändert. In der Regel beginnt die Sprachausbildung mit *Englisch*.
 
