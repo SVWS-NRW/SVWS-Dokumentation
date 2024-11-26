@@ -18,8 +18,8 @@ Handelt es sich um eine Sprache, die dem *gemeinsamen europäischen Refernzrahme
 
 Bei Sprachprüfungen lässt sich die **Sprache** angegeben, weiterhin um welche **Prüfungsart** es sich handelt. Bei einer Prüfung kann es sich um den *Herkunfssprachenlichen Unterricht* (HSU) oder eine *Feststellungsprüfung* handeln. Beachten Sie zum HSU und die für ihn geltenden Sprachen die aktuellen Rechtsvorschriften.
 
-**Hinweis zur Migration von SchILD-NRW 2:**
+::: tip Hinweis zur Migration von SchILD-NRW 2
 In der Vergangenheit wurden die Sprachprüfungen in der Sprachenfolge hinterlegt. Die Sprachprüfungen werden nun getrennt erfasst. Als Kürzel für die *Prüfungsart* wurden P und N in der Reihenfolge der Sprachenfolge eingetragen. Jedoch liegt keine verbindliche Dokumentation vor, welcher Schlüssel wann zu verwenden war. Daher gilt für die technische Erfassung im SVWS-Server für die **Sprachprüfungen**: 
-* P kennzeichnet die *Sprachprüfung im HSU*
-* N die *Feststellungsprüfung*
-
+* **P** kennzeichnet die *Sprachprüfung im HSU*
+* **N** die *Feststellungsprüfung*
+:::
