@@ -90,11 +90,15 @@ Um ein vorliegendes Ergebnis einer Berechnung oder den Grundzustand der Blockung
 
 ## Blockung aktivieren
 
-Durch Setzen des Hakens hinter eines der Blockungsergebnisse werden die weiteren Prozesse auf die jetzt aktivierte Blockung bezogen. Dazu gehören:  
+Durch Setzen des Hakens hinter eines der Blockungsergebnisse werden die weiteren Prozesse auf die jetzt aktivierte Blockung bezogen.  
+![Blockung-aktivieren](.\graphics\SVWS_Oberstufe_Kursplanung_8.png)
+
+
+Dazu gehören:  
 * Abgleich mit den Fachwahlen
 * Anzeigen der Kursbelegung der Schüler
 * Kursbelegungslisten
-* Rückführender Link aus der Laufbahnplanung zurück in die aktivierte Blockung:  
+* Rückführender Link aus der Schüler-Laufbahnplanung zurück in die aktivierte Blockung:  
 ![Rückfuehrungslink-Blockung](.\graphics\SVWS_Oberstufe_Kursplanung_7.png)
 
 ## Erstellen einer neuen Blockung
@@ -161,6 +165,12 @@ Der Regelkatalog wird immer wieder an Nutzerwünsche angepasst, die Formulierung
 
 Wurden alle Einstellungen gesetzt, kann die Blockung berechnet werden.  
 Siehe [Berechnungen durchführen](/client/gost/kursplanung/index.md#berechnungen-durchführen)
+
+## Übertragung in Leistungsdaten
+
+Der Übertrag ist nur im aktiven Abschnitt, nicht für vergangene Abschnitte möglich.  
+Ausgelöst wird der Übertrag durch **Sychronisieren**.  
+
 
 ## Beispiele und Praxistipps
 
