@@ -29,10 +29,10 @@ Zum Ablauf der Einrichtung/Erstellung einer **neuen Blockung** siehe [Erstellen 
 
 ![Blockungsuebersicht](./graphics/SVWS_Oberstufe_Kursplanung_2.png)  
 
-Die Blockungsübersicht zeigt die Lage der Kurse in den Schienen an, ebenso die Belegungszahl einer Schiene, die jeweilige Kursgröße.  
+Die Blockungsübersicht zeigt die Lage der Kurse in den Schienen an, ebenso die Belegungszahl einer Schiene und die jeweilige Kursgröße.  
 Im Falle einer **neu angelegten Blockung liegt noch keine Verteilung** vor.  
 
-Durch Anklicken eines Kursnamens kann dieser in seiner Bezeichnung ergänzt, jedoch nicht vollständig umbenannt werden. So kann *BI-LK2* zu *BI-LK-Koop* ergänzt werden.
+Durch Anklicken eines Kursnamens kann dieser in seiner Bezeichnung ergänzt, jedoch nicht vollständig umbenannt werden. So kann *BI-LK2* zu *BI-LK2-Koop* ergänzt werden.
 
 Hinweis: sollte eine Kursgröße in diesem Format angegeben sein: 14|3, so befinden sich in diesem Kurs 14 Schüler der eigenen Schule und 3 einer Koopschule (Status Extern)  
 **Weitere Funktionen** in dieser Übersicht werden unten stehend erläutert.  
@@ -40,11 +40,10 @@ Hinweis: sollte eine Kursgröße in diesem Format angegeben sein: 14|3, so befin
 
 
 ### Schülerlisten (nach Filter)   
+Rechts neben der Kursübersicht befinden sich **Schülerlisten**, deren Inhalt **gefiltert** werden kann:  
 
-![Blockungsschuelerlisten](./graphics/SVWS_Oberstufe_Kursplanung_3.png)
+![Blockungsschuelerlisten](./graphics/SVWS_Oberstufe_Kursplanung_3.png)  
 
-
-Rechts neben der Kursübersicht befinden sich **Schülerlisten**, deren Inhalt **gefiltert** werden kann:
 - **kein Filter**
 - **Fachfilter**: Schüler mit einem bestimmten gewählten Fach und Kursart filtern. Beispiel: Alle mit **Fachwahl Deutsch LK**
 - **Kursfilter**: Schüler eines gewählten Kurses filtern. Beispiel: Alle, die dem **Kurs D-LK1** zugewiesen sind.
@@ -75,14 +74,10 @@ Siehe dazu hier: [Erstellen einer neuen Blockung](/client/gost/kursplanung/index
 
 ![Berechnung](./graphics/SVWS_Oberstufe_Kursplanung_5.png)  
 
-Es kann gewählt werden, ob die Berechnungen von eigenen Client-PC (ausführlich) oder dem Server (schnell) berechnet werden sollen.  
-Unter **Ausführlich** können unter den ausgegebenen Ergebnissen bestimmte ausgewählt werden. 
-Unter **Schnell** können zu schlechte Ergebnisse unmittelbar gelöscht werden.
-
 
 ### Bewertungskriterien 
 
-In beiden Berechnungsszenarien werden die Ergebnisse mit vier Bewertungskriterien angegeben.  Durch Bewegung des Mauszeigers auf die Werte werden weitere Erklärungen dazu sichtbar (Fly-Over-Menü bzw. Tool-Tips).  
+Im Berechnungsszenario werden die Ergebnisse mit vier Bewertungskriterien angegeben.  Durch Bewegung des Mauszeigers auf die Werte werden weitere Erklärungen dazu sichtbar (Fly-Over-Menü bzw. Tool-Tips).  
 - Regelverletzungen (sollten 0 sein)
 - Fachwahlkonflikte (sollten 0 sein)
 - Kursdifferenzen (hängt von individuellen Bedingungen ab)
@@ -95,7 +90,12 @@ Um ein vorliegendes Ergebnis einer Berechnung oder den Grundzustand der Blockung
 
 ## Blockung aktivieren
 
-Ist die Blockung fertig, kann sie durch **Blockung aktivieren** in die Datenbestände (Kurse, SchülerLeistungsdaten, ...) übernommen werden.
+Durch Setzen des Hakens hinter eines der Blockungsergebnisse werden die weiteren Prozesse auf die jetzt aktivierte Blockung bezogen. Dazu gehören:  
+* Abgleich mit den Fachwahlen
+* Anzeigen der Kursbelegung der Schüler
+* Kursbelegungslisten
+* Rückführender Link aus der Laufbahnplanung zurück in die aktivierte Blockung:  
+![Rückfuehrungslink-Blockung](.\graphics\SVWS_Oberstufe_Kursplanung_7.png)
 
 ## Erstellen einer neuen Blockung
 
