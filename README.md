@@ -8,9 +8,9 @@ Im oberen Teil wird beschrieben, wie man sich eine Entwicklungsumgebung zum loka
 
 Grundsätzlich ist es möglich diese Doku mit einfachsten Hilfsmitteln oder auch direkt auf GitHub zu bearbeiten. Das Problem dabei ist jedoch, dass man nicht die Ausgabe prüfen kann und auch nicht auf mögliche Fehler hingewiesen wird. Für das Beheben einfacher Tippfehler ist keine Entwicklungsumgebung notwendig! Regelmäßiges Arbeiten an der Doku sollte schon aus praktischen Gründen mit einer Enwicklungsumgebung erfolgen.
 
-(Vitepress)[https://vitepress.org] ist ein statischer Seitengenerator, der (Markdown)[https://www.markdownguide.org/]-formatierte Seiten in HTML umwandelt und dabei (NodeJS)[https://nodejs.org] zur Generierung verwendet. Um also lokal diesen Schritt durchführen zu können und nicht erst durch GitHub eine Änderung prüfen zu lassen, muss NodeJS installiert werden.
+[Vitepress](https://vitepress.org) ist ein statischer Seitengenerator, der [Markdown](https://www.markdownguide.org/)-formatierte Seiten in HTML umwandelt und dabei [NodeJS](https://nodejs.org) zur Generierung verwendet. Um also lokal diesen Schritt durchführen zu können und nicht erst durch GitHub eine Änderung prüfen zu lassen, muss NodeJS installiert werden.
 
-Je nach Betriebssystem kann über die offizielle Seite von (NodeJS)[https://nodejs.org] die aktuelle Version heruntergeladen und installiert werden.
+Je nach Betriebssystem kann über die offizielle Seite von [NodeJS](https://nodejs.org) die aktuelle Version heruntergeladen und installiert werden.
 
 Anschließend empfiehlt es sich der Anleitung dieser Doku für die Installation von VS-Code zu folgen und die Erweiterungen für ESLint und Vue zu installieren, die dort auch aufgeführt sind.
 
