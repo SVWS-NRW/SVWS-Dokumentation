@@ -15,14 +15,14 @@ export default defineConfig(({ mode }) => {
 			},
 			docFooter: {
 				next: 'Nächste Seite',
-				prev: 'Vorherige Seite'
+				prev: 'Vorherige Seite',
 			},
 			lastUpdated: {
 				text: 'Diese Seite wurde zuletzt bearbeitet am',
 				formatOptions: {
 					dateStyle: 'full',
-					timeStyle: 'medium'
-				}
+					timeStyle: 'medium',
+				},
 			},
 			search: {
 				provider: 'local',
@@ -33,18 +33,18 @@ export default defineConfig(({ mode }) => {
 					items: [
 						{ text: 'SVWS-Client', link: '/client' },
 						{ text: 'Admin-Client', link: '/adminclient' },
-						{ text: 'Laufbahnplanung', link: '/laufbahnplanung' }
+						{ text: 'Laufbahnplanung', link: '/laufbahnplanung' },
 					] },
 				{ text: 'Administration/Entwicklung',
 					items: [
 						{ text: 'SVWS-Installation', link: '/deployment' },
 						{ text: 'Entwicklung, Projekte, Schulungen', link: '/admin'},
 						{ text: 'UI-Bibliothek', link: 'https://ui.svws-nrw.de' },
-						{ text: 'Java-API', link: 'https://javadoc.svws-nrw.de' }
+						{ text: 'Java-API', link: 'https://javadoc.svws-nrw.de' },
 					] },
 			],
 			socialLinks: [
-				{ icon: 'github', link: 'https://github.com/SVWS-NRW/SVWS-Dokumentation' }
+				{ icon: 'github', link: 'https://github.com/SVWS-NRW/SVWS-Dokumentation' },
 			],
 			sidebar: {
 				'/adminclient': [
@@ -78,7 +78,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'VS-Code', link: '/admin/Entwicklungsumgebungen/VS-Code/' },
 							{ text: 'Coding Guidlines', link: '/admin/Entwicklungsumgebungen/Coding-Guidlines' },
 							{ text: 'Code Styles', link: '/admin/Entwicklungsumgebungen/Code-Styles' },
-						]
+						],
 						},
 						{ text: 'Teamarbeit', link: '/admin/Teamarbeit/', collapsed: true, items: [
 							{ text: 'Git Workflow', link: '/admin/Teamarbeit/workflow/' },
@@ -87,17 +87,17 @@ export default defineConfig(({ mode }) => {
 							{ text: 'SchulungsClient', link: '/admin/Schulungsumgebungen/SchulungsClient/' },
 							{ text: 'Virtualbox', link: '/admin/Schulungsumgebungen/Virtualbox_Schulungsserver/' },
 							{ text: 'Bootstick', link: '/admin/Schulungsumgebungen/Bootstick_Schulungsserver/' },
-							{ text: 'Proxmox', link: '/admin/Schulungsumgebungen/Proxmox_Schulungsserver/' }
+							{ text: 'Proxmox', link: '/admin/Schulungsumgebungen/Proxmox_Schulungsserver/' },
 						] },
 						{ text: 'Projekte', link: '/admin/Projekte/', collapsed: true, items: [
 							{ text: 'weblupo', link: '/admin/Projekte/weblupo/' },
 							{ text: 'WeNoM', link: '/admin/Projekte/WeNoM/' },
 							{ text: 'ASD-Statistik Modul', link: '/Projekte/ASD-Statistikmodul/' },
 							{ text: 'SchülerOnline', link: '/admin/Projekte/SchülerOnline/' },
-							{ text: 'xSchule', link: '/admin/Projekte/xSchule/' }
+							{ text: 'xSchule', link: '/admin/Projekte/xSchule/' },
 						] },
-						{ text: 'Technische FAQs', link: '/admin/FAQ/' }
-					] }
+						{ text: 'Technische FAQs', link: '/admin/FAQ/' },
+					] },
 				],
 				'/deployment': [
 					{ text: '', items: [
@@ -107,14 +107,14 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Windows-Installer', link: '/deployment/Windows-Installer/' },
 						{ text: 'SchILD-NRW-3', link: '/deployment/Schild-NRW3/' },
 						{ text: 'Datenmigration', link: '/deployment/Datenmigration/' },
-						{ text: 'Einrichtung', link: '/deployment/Einrichtung/' }
-					] }
+						{ text: 'Einrichtung', link: '/deployment/Einrichtung/' },
+					] },
 				],
 				'/laufbahnplanung' : [
 					{ text: '', items: [
 						{ text: 'Vorbereitung', link: '/laufbahnplanung/vorbereitung/' },
-						{ text: 'Beratung mit WebLuPO', link: '/laufbahnplanung/weblupo/' }
-					] }
+						{ text: 'Beratung mit WebLuPO', link: '/laufbahnplanung/weblupo/' },
+					] },
 				],
 				'/client': [
 					{ text: '', items:
@@ -126,13 +126,13 @@ export default defineConfig(({ mode }) => {
 							] },
 							{ text: '⇝ Anleitungen', link: '/client/anleitungen/', collapsed: false, items: [
 								{ text: 'Allgemeine Anleitungen', link: '/client/anleitungen_allgemein/', collapsed: true, items: [
-									{ text: 'Anmeldung', link: '/client/anleitungen_allgemein/anmeldung/' }
+									{ text: 'Anmeldung', link: '/client/anleitungen_allgemein/anmeldung/' },
 								] },
 								{ text: 'Schulformspezifisch', link: '/client/anleitungen_schulform/', collapsed: true, items: [
 									{ text: 'Oberstufe', link: '/client/anleitungen_schulform//anleitungen_gost/' },
-									{ text: 'Grundschule', link: '/client/anleitungen_schulform/anleitungen_gs/' }
+									{ text: 'Grundschule', link: '/client/anleitungen_schulform/anleitungen_gs/' },
 								] },
-								{ text: 'Zeugnisvorbereitung', link: '/client/anleitungen_zeugnisse/' }
+								{ text: 'Zeugnisvorbereitung', link: '/client/anleitungen_zeugnisse/' },
 							] },
 							{ text: '⇝ Apps', link: '/client/apps/', collapsed: false, items: [
 								{ text: 'Aktueller Benutzer', link: '/client/aktuellernutzer/' },
@@ -144,19 +144,19 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Fächer', link: '/client/schule/kataloge/sb_faecher/' },
 										{ text: 'Förderschwerpunkte', link: '/client/schule/kataloge/sb_foerderschwerpunkte/' },
 										{ text: 'Jahrgänge', link: '/client/schule/kataloge/sb_jahrgaenge/' },
-										{ text: 'Vermerkarten (todo)', link: '/client/schule/kataloge/sb_vermerkarten/' }
+										{ text: 'Vermerkarten (todo)', link: '/client/schule/kataloge/sb_vermerkarten/' },
 									] },
 									{ text: 'Allgemeine Kataloge', collapsed: true, items: [
 										{ text: 'Religionen', link: '/client/schule/kataloge/religionen/' },
-										{ text: 'Schulen (Todo)' }
+										{ text: 'Schulen (Todo)' },
 									] },
 									{ text: 'Datenaustausch', link: '/client/schule/datenaustausch/', collapsed: true, items: [
 										{ text: 'ENM Notenmanager (Todo)' },
 										{ text: 'LuPO Laufbahnplanung', link: '/client/schule/datenaustausch/lupo/' },
 										{ text: 'WebNotenManager', link: '/client/schule/datenaustausch/wenom/' },
 										{ text: 'Kurs 42 (Todo)' },
-										{ text: 'Untis (Todo)' }
-									] }
+										{ text: 'Untis (Todo)' },
+									] },
 								] },
 								{ text: 'Schüler', link: '/client/schueler/', collapsed: true, items: [
 									{ text: 'Individualdaten', link: '/client/schueler/individualdaten/' },
@@ -165,22 +165,22 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Schulbesuch', link: '/client/schueler/schulbesuch/' },
 									{ text: 'Lernabschnitte', link: '/client/schueler/lernabschnitte/', collapsed: true, items: [
 										{ text: 'Allgemein', link: '/client/schueler/lernabschnitte/allgemein/' },
-										{ text: 'Leistungsdaten', link: '/client/schueler/lernabschnitte/leistungsdaten/' }
+										{ text: 'Leistungsdaten', link: '/client/schueler/lernabschnitte/leistungsdaten/' },
 									] },
 									{ text: 'KAoA', link: '/client/schueler/kaoa/' },
 									{ text: 'Sprachen', link: '/client/schueler/sprachen/' },
 									{ text: 'Laufbahnplanung Sek II', link: '/client/schueler/laufbahnplanung/' },
-									{ text: 'Stundenplan', link: '/client/schueler/stundenplan/' }
+									{ text: 'Stundenplan', link: '/client/schueler/stundenplan/' },
 								] },
 								{ text: 'Lehrkräfte', link: '/client/lehrer/', collapsed: true, items: [
 									{ text: 'Individualdaten', link: '/client/lehrer/individualdaten/' },
 									{ text: 'Personaldaten', link: '/client/lehrer/personaldaten/' },
 									{ text: 'Unterricht', link: '/client/lehrer/unterricht/' },
-									{ text: 'Stundenplan', link: '/client/lehrer/stundenplan/' }
+									{ text: 'Stundenplan', link: '/client/lehrer/stundenplan/' },
 								] },
 								{ text: 'Klassen', link: '/client/klassen/', collapsed: true, items: [
 									{ text: 'Klasse', link: '/client/klassen/klasse/' },
-									{ text: 'Stundenplan', link: '/client/klassen/stundenplan/' }
+									{ text: 'Stundenplan', link: '/client/klassen/stundenplan/' },
 								] },
 								{ text: 'Kurse', link: '/client/kurse/' },
 								{
@@ -191,13 +191,13 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Laufbahnplanung', link: '/client/gost/laufbahn/' },
 										{ text: 'Fachwahlen', link: '/client/gost/fachwahlen/' },
 										{ text: 'Kursplanung', link: '/client/gost/kursplanung/' },
-										{ text: 'Klausurplanung', link: '/client/gost/klausurplanung/' }
+										{ text: 'Klausurplanung', link: '/client/gost/klausurplanung/' },
 									] },
 								{ text: 'Statistik', link: '/client/statistik/', collapsed: true, items: [
 									{ text: 'Verschlüsselung ', link: '/client/statistik/verschluesselung/' },
 									{ text: 'Datenprüfung', link: '/client/statistik/datenpruefung/' },
 									{ text: 'Dokumente', link: '/client/statistik/dokumente/' },
-									{ text: 'Hilfe', link: '/client/statistik/hilfe/' }
+									{ text: 'Hilfe', link: '/client/statistik/hilfe/' },
 								] },
 								{ text: 'Stundenplan', link: '/client/stundenplan/', collapsed: true, items: [
 									{ text: 'Grundlagen zum Stundenplan', link: '/client/stundenplan/stundenplan_basisinformationen/' },
@@ -206,25 +206,23 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Aufsichtsbereiche', link: '/client/stundenplan/allgemeine_vorlagen/aufsichtsbereiche/' },
 										{ text: 'Pausenzeiten', link: '/client/stundenplan/allgemeine_vorlagen/pausenzeiten/' },
 										{ text: 'Räume', link: '/client/stundenplan/allgemeine_vorlagen/raeume/' },
-										{ text: 'Zeitraster', link: '/client/stundenplan/allgemeine_vorlagen/zeitraster/' }
-									] }
+										{ text: 'Zeitraster', link: '/client/stundenplan/allgemeine_vorlagen/zeitraster/' },
+									] },
 								] },
 								{ text: 'Einstellungen', link: '/client/einstellungen/', collapsed: true, items: [
 									{ text: 'Benutzer (Anzupassen)', link: '/client/einstellungen/benutzer/' },
-									{ text: 'Benutzergruppen (Anzupassen)', link: '/client/einstellungen/benutzergruppen/' }
+									{ text: 'Benutzergruppen (Anzupassen)', link: '/client/einstellungen/benutzergruppen/' },
 								] },
 							] },
 							{ text: '⇝ Weiteres', link: '/client/weiteres/', collapsed: false, items: [
 								{ text: 'JSON-Dateien', link: '/client/client/json_files/' },
 								{ text: 'Adressbücher', link: '/client/adressbuecher/' },
-								{ text: 'Kalender', link: '/client/kalender/' }
+								{ text: 'Kalender', link: '/client/kalender/' },
 							] },
-							{ text: '―――'},
-							{ text: 'Writing Guidelines (Temp)', link: '/client/writingguide/' }
-						]
-					}
-				]
-			}
-		}
+						],
+					},
+				],
+			},
+		},
 	}
 })

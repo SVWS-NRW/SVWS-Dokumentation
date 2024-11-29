@@ -1,8 +1,45 @@
-# Writing Guide für die Hilfeseiten
+# Dokumentation für den SVWS-Server und dessen Ableger
+
+Diese Readme-Datei ist nicht Teil der veröffentlichten Doku-Seite, die im Netz veröffentlich wird und beinhaltet Hinweise zur Einrichtung und Arbeit mit diesem Repository.
+
+Im oberen Teil wird beschrieben, wie man sich eine Entwicklungsumgebung zum lokalen Testen der Dokumentation einrichten kann, weiter unten gibt es Vorgaben zur Erstellung von Artikeln, die in die Doku aufgenommen werden sollen.
+
+## Einrichtung einer Entwicklungsumgebung
+
+Grundsätzlich ist es möglich diese Doku mit einfachsten Hilfsmitteln oder auch direkt auf GitHub zu bearbeiten. Das Problem dabei ist jedoch, dass man nicht die Ausgabe prüfen kann und auch nicht auf mögliche Fehler hingewiesen wird. Für das Beheben einfacher Tippfehler ist keine Entwicklungsumgebung notwendig! Regelmäßiges Arbeiten an der Doku sollte schon aus praktischen Gründen mit einer Enwicklungsumgebung erfolgen.
+
+[Vitepress](https://vitepress.org) ist ein statischer Seitengenerator, der [Markdown](https://www.markdownguide.org/)-formatierte Seiten in HTML umwandelt und dabei [NodeJS](https://nodejs.org) zur Generierung verwendet. Um also lokal diesen Schritt durchführen zu können und nicht erst durch GitHub eine Änderung prüfen zu lassen, muss NodeJS installiert werden.
+
+Je nach Betriebssystem kann über die offizielle Seite von [NodeJS](https://nodejs.org) die aktuelle Version heruntergeladen und installiert werden.
+
+Anschließend empfiehlt es sich der Anleitung dieser Doku für die Installation von VS-Code zu folgen und die Erweiterungen für ESLint und Vue zu installieren, die dort auch aufgeführt sind.
+
+Sobald dies eingerichtet ist, müssen ein paar Schritte regelmäßig durchgeführt werden, dazu öffnet man in VS Code über das Menü das `Terminal`.
+
+Nach jedem `Pull` mit Git, um das lokale Repository zu aktualisieren, muss nun ein Update der lokalen NodeJS-Module erfolgen:
+
+```bash
+# im Terminal diesen Befehl ausführen
+npm install
+```
+
+dadurch wird Vitepress auf die aktuelle Version gebracht, ebenso die verwendeten Bibliotheken, die bei der Entwicklung unterstützen.
+
+Beim allerersten Mal sollte man bei VS Code nun einmal das Fenster der Doku schließen und neu öffnen, damit alles funktioniert.
+
+Funktionieren bedeutet, dass Fehler in der `config.ts`, wo die Menüstruktur u.a. eingerichtet wird, rot unterschlängelt werden bzw. Warnungen gelb unterschlängelt werden. Das betrifft v.a. das Fehlen von Kommas, falsche Leerzeichen oder zu wenig/zu viele Tabs. Geht man mit dem Mauszeiger über den unterschlängelten Fehler, wird einem angezeigt, was falsch ist.
+
+Viele Fehler können dann per F1 und dem Befehl `ESLint: Fix all auto-fixable Problems` automatisch behoben werden.
+
+Auch Fehler in den Markdown-Dateien werden angezeigt.
+
+Die Regeln, auf denen die angezeigten Fehler beruhen gehen auf die verwendeten Einstellungen in der `eslint.config.js`-Datei zurück, die für die Prüfung aller Daten zuständig ist. Gleiches gilt für Typescript-Fehler, die ebenfalls über die vue-Erweiterung geprüft werden.
+
+## Writing Guide für die Hilfeseiten
 
 Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr werden Absprachen gesammelt, wie Objekte/Bereiche hier in der Dokumentation und im SVWS-Client heißen.
 
-## Alles
+### Alles
 
 * Der Plural von "Schema" ist "Schemata".
 * Neutrale Bezeichnungen, wo es möglich ist. "Schüler" bleiben so, wie sie sind.
@@ -10,7 +47,7 @@ Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr 
 * Sollen Pfeile verwendet werden, sollte ein echter Pfeil ➜ genutzt werden, keine Bastelllösungen wie > oder ->.
 * Die Laufbahnplanung in der Oberstufe heißt "Laufbahnplanung Oberstufe". 
 
-## SVWS-Client
+### SVWS-Client
 
 * Links im vertikalen Menü sind die **Apps**.
 * Das DataTable mit den eigentlichen Menüpunkten heißt **Auswahlliste**
@@ -18,13 +55,13 @@ Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr 
 * Unter den Tabs sind die **Untertabs**.
 * In manchen Bereichen steht noch eine **graue Schaltflächenleiste** (Bezeichnung Todo) zur Verfügung.
 
-## Web-Dokumentationen
+### Web-Dokumentationen
 
 Die Beschreibung der einzelnen Funktionen selbst sollte ohne lange Prozessbeschreibungen nur darlegen, was da ist und wie man es benutzt.
 
 Tatsächliche Anleitungen, Tutorials und Prozessbeschreibungen (ZP10) und vor allem auch Dinge, die mit aktuellen Vorgaben (Prüfungsordnungen usw.) zu tun haben, sollen soweit wie möglich in sinnvoll gegliederte  **Anleitungen** (usw.?) ausgelagert werden.
 
-### Grafiken und Schaubildern
+#### Grafiken und Schaubildern
 
 * Grafiken werden als .png (Logos, einheitliche Farbflächen, Schaubilder, UI usw.) gespeichert.
 * Schaubilder/Schemas sind GraphML-Dateien und werden miT *yEd* erstellt. Die GraphML-Dateien werden ebenfalls in /graphics/ abgelegt.
@@ -32,12 +69,12 @@ Tatsächliche Anleitungen, Tutorials und Prozessbeschreibungen (ZP10) und vor al
 * Alle Grafiken sollten direkt mit sinnvollen "Alternativtexten" und Mausover-Texten versehen werden.
 * In **Anleitungen** sollte wirklich *jeder* Schritt erwähnt und mit einem Screenshot versehen werden. Wir schreiben für nicht-technisch versierte Nutzer.
 
-## Technische Umsetzung
+### Technische Umsetzung
 Die Dokumentation wird aus vielen [Markdown](https://de.wikipedia.org/wiki/Markdown)-Dokumenten erzeugt, die ähnlich wie Wikipedia ein spezielles Formatierungsformat verwendet. Diese Dateien werden mit Hilfe von [vitepress](https://vitepress.dev/) und der Konfigurationsdatei zu einer HTML-Seite gebaut, die dann mit dem Browser angezeigt werden kann.
 
 Die Sammlung dieser Markdown-Dokumente werden in einem [Git](https://git-scm.com/)-Repository auf [GitHub](https://github.com) vorgehalten und können beliebig eingesehen, bearbeitet und verändert werden. Eine ausführliche Anleitung zu Git findet sich [hier](https://docs.github.com/de/get-started/using-git/about-git).
 
-## Hervorherhebungen
+### Hervorherhebungen
 
 Hervorhebungen in **fett** und *kursiv* sollten spärlich eingesetzt werden.
 
@@ -49,7 +86,7 @@ Bei **Anleitungen** empfhielt es sich, die Funktionen, die im Zuge der Anleitung
 
 Wichtiger als das Einhalten eines globalen Schemas ist aber eher der spärliche Einsatz von Hervorhebungen und Konsistenz innerhalb des Artikels oder der thematischen Artieklreihe. 
 
-### Farbboxen
+#### Farbboxen
 
 ```md
 ::: info
