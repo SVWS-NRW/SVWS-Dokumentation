@@ -87,4 +87,4 @@ oder
 * einer der bestehenden Haupttermine sein (**Haupttermin zulassen**)
 
 Sind mögliche Nachschreibtermine angelegt, können die betroffenen Schüler per Drag&Drop passenden Terminen zugewiesen werden.  
-Hinweis: Nicht passende Termine (Schüler schriebt zu diesem Termin schon eine Klausur) werden unmittelbar angezeigt und können nicht ausgewählt werden. 
+Hinweis: Nicht passende Termine (Schüler schreibt zu diesem Termin schon eine Klausur) werden unmittelbar angezeigt und können nicht ausgewählt werden. 
