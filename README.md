@@ -35,6 +35,25 @@ Auch Fehler in den Markdown-Dateien werden angezeigt.
 
 Die Regeln, auf denen die angezeigten Fehler beruhen gehen auf die verwendeten Einstellungen in der `eslint.config.js`-Datei zurück, die für die Prüfung aller Daten zuständig ist. Gleiches gilt für Typescript-Fehler, die ebenfalls über die vue-Erweiterung geprüft werden.
 
+## Vorschau und Prüfung
+
+Um während des Schreibens eine Vorschau für die Doku sehen zu können, kann man im Terminal folgenden Befehl eingeben:
+
+```bash
+npm run dev
+```
+
+Damit wird ein lokaler Webserver gestartet und man kann auf die angegebene Seite im Browser zugreifen. Die dargestellte Dokumentation aktualisiert sich selbständig mit jedem Speichern im Editor. Dadurch hat man die möglichkeit der Live-Vorschau, wie die Seite nach dem Hochladen aussieht.
+
+Um die Vorschau zu beenden, drückt man im Terminal `strg+c`.
+
+Bevor man einen Push zu Github macht, sollte zur Sicherheit ein Build durchgeführt werden, was auch auf Github durchgeführt wird. Ein Build ist die endgültige Erstellung der Seite, die auch prüft, ob tote Links vorhanden sind:
+
+```bash
+npm run build
+```
+
+
 ## Writing Guide für die Hilfeseiten
 
 Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr werden Absprachen gesammelt, wie Objekte/Bereiche hier in der Dokumentation und im SVWS-Client heißen.
