@@ -9,7 +9,7 @@ Kleine Grundschulen haben die Schulverwaltungssoftware gegebenfalls auf einem Re
 
 ## Einzelplatz-Rechner
 
-Mit Hilfe des Windows-Installers können der SVWS-Server und SchILD-NRW 3 auf einem einzelnen PC mit MS Windows 10 oder Windows 11 Betriebssystem 864 bit) installiert werden. 
+Mit Hilfe des Windows-Installers können der SVWS-Server und SchILD-NRW 3 auf einem einzelnen PC mit MS Windows 10 oder Windows 11 Betriebssystem (64 bit) installiert werden. 
 
 Der SVWS-Server öffnet dabei den Port 443, so dass der SVWS-Client auch von anderen Computern im Netzwerk erreicht werden kann.
 
