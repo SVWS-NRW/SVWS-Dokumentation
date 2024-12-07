@@ -20,8 +20,11 @@ Achtung! Schreib-/Lese-Cache kann bei Strom- oder Netzwerkausfall zu Datenverlus
 
 In der Einstellung des MariaDB-Pakets TCP freigeben.
 
+![MariaDB.png](./graphics/MariaDB.png)
+
 PHPmyAdmin aufrufen und den User root mit identischen Rechten duplizieren (Beispiel remote) aber mit Zugriff host=%.
 
+![phpMyAdmin.png](./graphics/phpMyAdmin.png)
 
 ## VirtualMaschine-Manager
 
@@ -57,8 +60,12 @@ Einen neuen Netzwerkfreigabe-Ordner anlegen.
 
 Darin zwei Unterordner Für Schild-NRW3 und das SVWS-Arbeitsverzeichnis anlegen.
 
+![Schild3-Ordner1.png](./graphics/Schild3-Ordner1.png)
+
 Das Schild-NRW3-ZIP-Paket herunterladen und im Schild-NRW3-Ordner entpacken.
 Dort eine Admin.ini als Textdatei anlegen und bei GroupDir= die Url zum Arbeitsverzeichis eintragen.
+
+![Schild3-Ordner2.png](./graphics/Schild3-Ordner2.png)
 
 Im SVWS-arbeitsverzeichnis einen Ordner Connection-Files und einen Ordner Schild-Reports anlegen.
 
