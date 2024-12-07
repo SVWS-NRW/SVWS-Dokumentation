@@ -43,7 +43,9 @@ Mit wget das aktuellen install-x.x.x.sh von Github laden.
 https://github.com/SVWS-NRW/SVWS-Server/releases/latest
 
 
-``` chmod +x install-x.x.x.sh
+``` bash
+    wget https://github.com/SVWS-NRW/SVWS-Server/releases/latest
+    chmod +x install-x.x.x.sh
     ./install-x-x-x.sh
 ```
 
