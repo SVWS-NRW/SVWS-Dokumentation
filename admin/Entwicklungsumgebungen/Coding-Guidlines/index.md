@@ -4,40 +4,45 @@ outline: 2
 # Coding Guidlines
 ::: details Inhalt
 - [Allgemein](#allgemein)
-  - [1. Einzeilige Befehle ohne Klammern](#1-einzeilige-befehle-ohne-klammern)
-  - [2. Klammern bei gemischten Operatoren](#2-klammern-bei-gemischten-operatoren)
-  - [3. Interfaces statt konkreter Klassen](#3-interfaces-statt-konkreter-klassen)
+  - [1. Einzeilige Befehle ohne Klammern](#_1-einzeilige-befehle-ohne-klammern)
+  - [2. Klammern bei gemischten Operatoren](#_2-klammern-bei-gemischten-operatoren)
+  - [3. Interfaces statt konkreter Klassen](#_3-interfaces-statt-konkreter-klassen)
+  - [4. Return-Statements immer in eine neue Zeile](#_4-return-statements-immer-in-eine-neue-zeile)
 - [Java](#java)
-  - [1. `final` für unveränderliche Variablen](#1-final-für-unveränderliche-variablen)
-  - [2. JavaDoc formatieren](#2-javadoc-formatieren)
-- [Java - Transpiler](#java---transpiler)
-  - [1. `@NotNull` und `@AllowNull` korrekt platzieren](#1-notnull-und-allownull-korrekt-platzieren)
-  - [2. Keine Streams verwenden](#2-keine-streams-verwenden)
-  - [3. `switch-Statements` und `switch-Expressions`](#3-switch-statements-und-switch-expressions)
+  - [1. `final` für unveränderliche Variablen](#_1-final-fur-unveranderliche-variablen)
+  - [2. JavaDoc formatieren](#_2-javadoc-formatieren)
+- [Java - Transpiler](#java-transpiler)
+  - [1. `@NotNull` und `@AllowNull` korrekt platzieren](#_1-notnull-und-allownull-korrekt-platzieren)
+  - [2. Keine Streams verwenden](#_2-keine-streams-verwenden)
+  - [3. `switch-Statements` und `switch-Expressions`](#_3-switch-statements-und-switch-expressions)
 - [TypeScript](#typescript)
-  - [1. Explizite Null- und Undefined-Überprüfungen](#1-explizite-null--und-undefined-überprüfungen)
-  - [2. `const` für unveränderliche Variablen](#2-const-für-unveränderliche-variablen)
-  - [3. `for of`-Schleifen bevorzugen](#3-for-of-schleifen-bevorzugen)
-  - [4. Keine High-Level-Funktionen wie `map`, `filter`, `reduce`, `forEach`](#4-keine-high-level-funktionen-wie-map-filter-reduce-foreach)
+  - [1. Explizite Null- und Undefined-Überprüfungen](#_1-explizite-null-und-undefined-uberprufungen)
+  - [2. `const` für unveränderliche Variablen](#_2-const-fur-unveranderliche-variablen)
+  - [3. `for of`-Schleifen bevorzugen](#_3-for-of-schleifen-bevorzugen)
+  - [4. Keine High-Level-Funktionen wie `map`, `filter`, `reduce`, `forEach`](#_4-keine-high-level-funktionen-wie-map-filter-reduce-foreach)
 - [Vue](#vue)
-  - [1. Aufbau einer Single File Component](#1-aufbau-einer-single-file-component)
-  - [2. Formatierung in Tags](#2-formatierung-in-tags)
-  - [3. Kurzschreibweise für gleichnamige Props verwenden](#3-kurzschreibweise-für-gleichnamige-props-verwenden)
-  - [4. Direkte Callback-Zuweisung statt Inline-Funktionen](#4-direkte-callback-zuweisung-statt-inline-funktionen)
-  - [5. `watch` durch `computed` ersetzen](#5-watch-durch-computed-ersetzen)
-  - [6. Keine lokalen Änderungen an globalen UI-Komponenten](#6-keine-lokalen-änderungen-an-globalen-ui-komponenten)
-  - [7. Funktionen auslagern, statt sie inline zu verwenden](#7-funktionen-auslagern-statt-sie-inline-zu-verwenden)
-  - [8. Inline-CSS für einzelne Attribute](#8-inline-css-für-einzelne-attribute)
-  - [9. Tailwind-Klassen statt benutzerdefiniertem CSS](#9-tailwind-klassen-statt-benutzerdefiniertem-css)
-  - [10. Funktionsdefinition mit `function`](#10-funktionsdefinition-mit-function)
-  - [11. Strukturierung des Script-Bereichs in Vue-Komponenten](#11-strukturierung-des-script-bereichs-in-vue-komponenten)
-  - [12. Immer Semikolon verwenden](#12-immer-semikolon-verwenden)
-  - [13. Verzichte auf Vue-Typendefinitionen](#13-verzichte-auf-vue-typendefinitionen)
-  - [14. `Iterable<T>` statt spezifischer Container-Typen](#14-iterablet-statt-spezifischer-container-typen)
-  - [15. ESLint statt Prettier](#15-eslint-statt-prettier)
+  - [1. Aufbau einer Single File Component](#_1-aufbau-einer-single-file-component)
+  - [2. Formatierung in Tags](#_2-formatierung-in-tags)
+  - [3. `v-if`, `v-else`, `v-show` und `v-for` immer nach Tagnamen](#_3-v-if-v-else-v-show-und-v-for-immer-nach-tagnamen)
+  - [4. Kurzschreibweise für gleichnamige Props verwenden](#_4-kurzschreibweise-fur-gleichnamige-props-verwenden)
+  - [5. Direkte Callback-Zuweisung statt Inline-Funktionen](#_5-direkte-callback-zuweisung-statt-inline-funktionen)
+  - [6. `watch` durch `computed` ersetzen](#_6-watch-durch-computed-ersetzen)
+  - [7. Keine lokalen Änderungen an globalen UI-Komponenten](#_7-keine-lokalen-anderungen-an-globalen-ui-komponenten)
+  - [8. Funktionen auslagern, statt sie inline zu verwenden](#_8-funktionen-auslagern-statt-sie-inline-zu-verwenden)
+  - [9. Inline-CSS für einzelne Attribute](#_9-inline-css-fur-einzelne-attribute)
+  - [10. Tailwind-Klassen statt benutzerdefiniertem CSS](#_10-tailwind-klassen-statt-benutzerdefiniertem-css)
+  - [11. Funktionsdefinition mit `function`](#_11-funktionsdefinition-mit-function)
+  - [12. Strukturierung des Script-Bereichs in Vue-Komponenten](#_12-strukturierung-des-script-bereichs-in-vue-komponenten)
+  - [13. Immer Semikolon verwenden](#_13-immer-semikolon-verwenden)
+  - [14. Verzichte auf Vue-Typendefinitionen](#_14-verzichte-auf-vue-typendefinitionen)
+  - [15. `Iterable<T>` statt spezifischer Container-Typen](#_15-iterable-t-statt-spezifischer-container-typen)
+  - [16. Arrow-Functions für komplexe Objekte und Routen](#_16-arrow-functions-fur-komplexe-objekte-und-routen)
+  - [17. `DeveloperNotificationException` bei Programmierfehlern](#_17-developernotificationexception-bei-programmierfehlern)
+  - [18. `UserNotificationException` bei Benutzerfehlern](#_18-usernotificationexception-bei-benutzerfehlern)
+  - [19. ESLint statt Prettier](#_19-eslint-statt-prettier)
 - [Vue - Transpiler](#vue---transpiler)
-  - [1. `shallowRef` statt `ref` für transpilierte Java-Objekte](#1-shallowref-statt-ref-für-transpilierte-java-objekte)
-  - [2. Getter für reaktive Props verwenden](#2-getter-für-reaktive-props-verwenden)
+  - [1. `shallowRef` statt `ref` für transpilierte Java-Objekte](#_1-shallowref-statt-ref-für-transpilierte-java-objekte)
+  - [2. Getter für reaktive Props verwenden](#_2-getter-für-reaktive-props-verwenden)
 
 :::
 ## Allgemein
@@ -129,6 +134,23 @@ public class DataProcessor {
 }
 ```
 
+---
+
+### 4. Return-Statements immer in eine neue Zeile  
+Return-Statements sollten immer in einer eigenen Zeile stehen. Das gilt auch für switches.
+
+**Richtig:**  
+
+```java
+if (x > 0)
+  return true;
+```
+
+**Falsch:**  
+
+```java
+if (x > 0) return true;
+```
 ---
 
 ## Java
@@ -260,9 +282,12 @@ public String getDay(int day) {
 ```java
 public String getDay(int day) {
   switch (day) {
-    case 1: return "Monday";
-    case 2: return "Tuesday";
-    default: return "Unknown";
+    case 1: 
+      return "Monday";
+    case 2: 
+      return "Tuesday";
+    default: 
+      return "Unknown";
   }
 }
 ```
@@ -444,7 +469,32 @@ const fullName = computed(() => firstName.value + ' ' + lastName.value);
 
 ---
 
-### 3. Kurzschreibweise für gleichnamige Props verwenden
+### 3. `v-if`, `v-else`, `v-show` und `v-for` immer nach Tagnamen
+Die Direktiven `v-if`, `v-else`, `v-show` und `v-for` müssen immer am Anfang des Elements stehen, um bedingte Anzeigen oder Schleifen sofort erkennen zu können.
+
+**Richtig:**  
+```vue
+<template>
+  <div v-if="isVisible" class="my-class">v-if</div>
+  <div v-else class="my-class">v-else</div>
+  <div v-show="isVisible" class="my-class">v-show</div>
+  <li v-for="item in items" :key="item.id">{{ item.name }}</li>
+</template>
+```
+
+**Falsch:**  
+```vue
+<template>
+  <div class="my-class" v-if="isVisible">v-if</div>
+  <div class="my-class" v-else>v-else</div>
+  <div class="my-class" v-show="isVisible">v-show</div>
+  <li :key="item.id" v-for="item in items">{{ item.name }}</li>
+</template>
+```
+
+---
+
+### 4. Kurzschreibweise für gleichnamige Props verwenden
 Wenn der Propertyname und der Wert denselben Namen haben, verwende die Kurzschreibweise.
 
 **Richtig:**
@@ -464,7 +514,7 @@ Wenn der Propertyname und der Wert denselben Namen haben, verwende die Kurzschre
 ```
 ---
 
-### 4. Direkte Callback-Zuweisung statt Inline-Funktionen
+### 5. Direkte Callback-Zuweisung statt Inline-Funktionen
 Verwende direkte Callback-Zuweisungen anstelle von Inline-Funktionen.
 
 **Richtig:**
@@ -483,7 +533,7 @@ Verwende direkte Callback-Zuweisungen anstelle von Inline-Funktionen.
 
 ---
 
-### 5. `watch` durch `computed` ersetzen
+### 6. `watch` durch `computed` ersetzen
 Vermeide `watch`-Anweisungen, wenn dieselbe Funktionalität durch `computed`-Properties abgedeckt werden kann.
 
 **Richtig:**
@@ -518,12 +568,12 @@ Vermeide `watch`-Anweisungen, wenn dieselbe Funktionalität durch `computed`-Pro
 ```
 ---
 
-### 6. Keine lokalen Änderungen an globalen UI-Komponenten
+### 7. Keine lokalen Änderungen an globalen UI-Komponenten
 Vermeide lokale Anpassungen an globalen UI-Komponenten, da diese Auswirkungen auf andere Projekte haben. Notwendige Änderungen müssen abgesprochen werden.
 
 ---
 
-### 7. Funktionen auslagern, statt sie inline zu verwenden
+### 8. Funktionen auslagern, statt sie inline zu verwenden
 Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` auslagern. Ternaries sind allerdings in Ordnung. 
 
 **Richtig:**
@@ -569,7 +619,7 @@ Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` aus
 
 ---
 
-### 8. Inline-CSS für einzelne Attribute
+### 9. Inline-CSS für einzelne Attribute
 Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher und effizienter als eine separate Klasse. Hinweis: Die meisten Stylings können und sollen über Tailwind-Klassen gelöst werden, so auch das folgende Beispiel.
 
 **Richtig:**
@@ -596,7 +646,7 @@ Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher
 
 ---
 
-### 9. Tailwind-Klassen statt benutzerdefiniertem CSS
+### 10. Tailwind-Klassen statt benutzerdefiniertem CSS
 Bevor du eigenes CSS hinzufügst, prüfe, ob [Tailwind](https://tailwindcss.com/)-Klassen existieren, die denselben Effekt haben, um Redundanz zu vermeiden. Soll eine Klasse mehrere Tailwind-Klassen anwenden, ist das wie folgt möglich:
 
 ```vue
@@ -611,7 +661,7 @@ Bevor du eigenes CSS hinzufügst, prüfe, ob [Tailwind](https://tailwindcss.com/
 
 ---
 
-### 10. Funktionsdefinition mit `function`
+### 11. Funktionsdefinition mit `function`
 Verwende named Functions, um diese von `computed` unterscheiden zu können, die mit Arrow-Funktionen definiert werden. Nur als anonyme Funktion, in Vue Lifecycle Hooks und in `routeData` dürfen sie verwendet werden, wenn sie als Props an die Komponenten weitergereicht werden.
 
 **Richtig:**
@@ -637,7 +687,7 @@ Verwende named Functions, um diese von `computed` unterscheiden zu können, die 
 ```
 ---
 
-### 11. Strukturierung des Script-Bereichs in Vue-Komponenten
+### 12. Strukturierung des Script-Bereichs in Vue-Komponenten
 Um die Lesbarkeit und Wartbarkeit von Vue-Komponenten zu verbessern, ist es wichtig, eine einheitliche Struktur im Script-Bereich zu wahren. Die folgende Reihenfolge sollte eingehalten werden: **`(shallow)ref`**, **`computed`**, **`functions`**. In größeren Komponenten ist eine thematisches Clustering aber dennoch möglich.
 
 **Richtig:**
@@ -674,7 +724,7 @@ Um die Lesbarkeit und Wartbarkeit von Vue-Komponenten zu verbessern, ist es wich
 ```
 ---
 
-### 12. Immer Semikolon verwenden
+### 13. Immer Semikolon verwenden
 
 Um die Konsistenz und Lesbarkeit des Codes zu gewährleisten, sollte in allen Dateien das Semikolon am Ende jeder Anweisung verwendet werden. Dies hilft, potenzielle Fehler zu vermeiden und die Codebasis einheitlich zu halten.
 
@@ -701,7 +751,7 @@ Um die Konsistenz und Lesbarkeit des Codes zu gewährleisten, sollte in allen Da
 ```
 ---
 
-### 13. Verzichte auf Vue-Typendefinitionen 
+### 14. Verzichte auf Vue-Typendefinitionen 
 Nutze keine Typendefinitionen aus Vue wie zum Beispiel `Ref`, `Computed` oder `WriteableComputed`.
 
 **Richtig:**
@@ -722,7 +772,7 @@ Nutze keine Typendefinitionen aus Vue wie zum Beispiel `Ref`, `Computed` oder `W
 </script>
 ```
 ---
-### 14. `Iterable<T>` statt spezifischer Container-Typen
+### 15. `Iterable<T>` statt spezifischer Container-Typen
 Wenn Funktionen als Props übergeben werden und Parameter wie Listen oder Arrays erwarten, sollte nach Möglichkeit `Iterable<T>` anstelle von `Array<T>`, `List<T>`, etc. verwendet werden. Dadurch wird der Code flexibler und universeller, da `Iterable<T>` sowohl Arrays als auch andere iterierbare Strukturen akzeptiert. Dies ermöglicht es, mit unterschiedlichen Datenstrukturen zu arbeiten, ohne die Funktion anpassen zu müssen. 
 
 **Richtig**
@@ -763,7 +813,220 @@ Wenn Funktionen als Props übergeben werden und Parameter wie Listen oder Arrays
 ```
 ---
 
-### 15. ESLint statt Prettier
+### 16. Arrow-Functions für komplexe Objekte und Routen
+Die Kommunikation von Child-Komponenten zu Parents geschieht in der Regel über emits. Dies ist erlaubt, wenn dabei nur einfache Typen übergeben werden (`boolean`, `number`, `string`) und kein Event Bubbling über verschachtelte Komponenten stattfindet. 
+Andernfalls müssen Arrow-Functions verwendet werden. Das ist auch beim Routing der Fall, um sicherzustellen, dass Funktionen im richtigen Kontext ausgeführt werden.
+
+::: details Beispiel Routing
+SBenutzerprofilAppProps.ts
+```typescript
+export interface BenutzerprofilAppProps {
+  // Komplexes Objekt als Arrow-Function:
+  benutzer: () => BenutzerDaten;
+  // Funktion als Arrow-Function prop statt emit:
+  patchBenutzerEMailDaten: (data: Partial<BenutzerEMailDaten>) => Promise<void>;
+}
+```
+RouteBenutzerprofil.ts
+```typescript
+public getProps(to: RouteLocationNormalized): BenutzerprofilAppProps {
+  return {
+    benutzer: () => this.data.benutzer,
+    patchBenutzerEMailDaten: this.data.patchBenutzerEMailDaten,
+  };
+}
+```
+RouteDataBenutzerprofil.ts
+```typescript
+public patchBenutzerEMailDaten = async (data: Partial<BenutzerEMailDaten>) => {
+  await api.server.patchBenutzerEmailDaten(data, api.schema);
+}
+
+public get benutzer(): BenutzerDaten {
+  return api.benutzerdaten;
+}
+```
+SBenutzerprofilApp.vue
+```vue
+<template>
+  <svws-ui-text-input @change="usernameSMTP => patchBenutzerEMailDaten({name: name ?? undefined})" />
+</template>
+```
+
+:::
+
+::: details Beispiel verschachtelte Parent-Child Kommunikation
+**Richtig**
+
+Parent-Komponente\
+Gibt die Funktion `handleAlert` als Arrow-Function Prop an die Intermediate-Komponente
+```vue
+<template>
+	<intermediate :on-log="(message: string) => console.log(message)" />
+</template>
+
+<script setup lang="ts">
+
+	import Intermediate from './Intermediate.vue';
+
+</script>
+```
+
+Intermediate-Komponente\
+Gibt die Funktion `handleAlert` als Arrow-Function Prop an die Child-Komponente weiter
+```vue
+<template>
+	<child :on-log />
+</template>
+
+<script setup lang="ts">
+
+	import Child from './Child.vue';
+
+	const props = defineProps<{
+		onLog: (message: string) => void;
+	}>();
+
+</script>
+```
+
+Child-Komponente\
+Führt die `handleAlert` Funktion im Parent-Kontext aus
+```vue
+<template>
+	<button @click="onLog('Hello!')">Hello!</button>
+</template>
+
+<script setup lang="ts">
+
+	const props = defineProps<{
+		onLog: (message: string) => void;
+	}>();
+
+</script>
+```
+
+**Falsch**
+
+Parent-Komponente\
+Hört auf das Event `@on-log` und führt die Funktion selbst aus
+```vue
+<template>
+	<intermediate @on-log="(message: string) => console.log(message)" />
+</template>
+
+<script setup lang="ts">
+
+	import Intermediate from './Intermediate.vue';
+
+</script>
+
+```
+
+Intermediate-Komponente\
+Reicht das `emit` des Childs weiter an den Parent durch
+```vue
+<template>
+	<child @on-child-log="(message: string) => emit('onLog', message)" />
+</template>
+
+<script setup lang="ts">
+
+	import Child from './Child.vue';
+
+	const emit = defineEmits<{
+		(e: 'onLog', message: string): void;
+	}>();
+
+</script>
+
+```
+
+Child-Komponente\
+Führt ein `emit` aus, wenn der Button geklickt ist.
+```vue
+<template>
+	<button @click="emit('onChildLog', 'Hello!')">Hello!</button>
+</template>
+
+<script setup lang="ts">
+
+	const emit = defineEmits<{
+		(e: 'onChildLog', message: string): void;
+	}>();
+
+</script>
+
+```
+
+:::
+
+
+---
+
+### 17. `DeveloperNotificationException` bei Programmierfehlern
+Mögliche Programmierfehler müssen abgefangen werden und es muss die spezielle Exception `DeveloperNotificationException` geworfen werden.
+
+**Richtig**
+```vue
+<script lang="ts" setup>
+
+  function add() {
+		const daten = getDaten();
+		if (daten === null)
+			throw new DeveloperNotificationException("Die add-Methode darf nur aufgerufen werden, wenn ein gültiger Wert ausgewählt wurde.");
+  }
+
+</script>
+```
+
+**Falsch**
+```vue
+<script lang="ts" setup>
+
+  function add() {
+		const daten = getDaten();
+		if (daten === null)
+			throw new Exception("Die add-Methode darf nur aufgerufen werden, wenn ein gültiger Wert ausgewählt wurde.");
+  }
+
+</script>
+```
+
+---
+
+### 18. `UserNotificationException` bei Benutzerfehlern
+Mögliche Benutzerfehler müssen abgefangen werden und es muss die spezielle Exception `UserNotificationException` geworfen werden.
+
+**Richtig**
+```vue
+<script lang="ts" setup>
+
+ addRaum = async (raum: Partial<StundenplanRaum>) => {
+		const id = this._state.value.auswahl?.id;
+		if ((raum.kuerzel === undefined) || raumExistsByKuerzel(raum.kuerzel))
+			throw new UserNotificationException('Ein Raum mit diesem Kürzel existiert bereits');
+	}
+
+</script>
+```
+
+**Falsch**
+```vue
+<script lang="ts" setup>
+
+ addRaum = async (raum: Partial<StundenplanRaum>) => {
+		const id = this._state.value.auswahl?.id;
+		if ((raum.kuerzel === undefined) || raumExistsByKuerzel(raum.kuerzel))
+			throw new Error('Ein Raum mit diesem Kürzel existiert bereits');
+	}
+
+</script>
+```
+
+---
+
+### 19. ESLint statt Prettier
 Verwende für die Formatierung des Codes keinen Prettier, sondern stattdessen die Korrekturen von ESLint.
 
 ---
