@@ -859,7 +859,7 @@ SBenutzerprofilApp.vue
 **Richtig**
 
 Parent-Komponente\
-Gibt die Funktion handleAlert als Arrow-Function Prop an die Intermediate-Komponente
+Gibt die Funktion `handleAlert` als Arrow-Function Prop an die Intermediate-Komponente
 ```vue
 <template>
 	<intermediate :on-log="(message: string) => console.log(message)" />
@@ -873,10 +873,10 @@ Gibt die Funktion handleAlert als Arrow-Function Prop an die Intermediate-Kompon
 ```
 
 Intermediate-Komponente\
-Gibt die Funktion handleAlert als Arrow-Function Prop an die Child-Komponente weiter
+Gibt die Funktion `handleAlert` als Arrow-Function Prop an die Child-Komponente weiter
 ```vue
 <template>
-	<child :on-log="props.onLog" />
+	<child :on-log />
 </template>
 
 <script setup lang="ts">
@@ -891,10 +891,10 @@ Gibt die Funktion handleAlert als Arrow-Function Prop an die Child-Komponente we
 ```
 
 Child-Komponente\
-Führt die handleAlert Funktion im Parent-Kontext aus
+Führt die `handleAlert` Funktion im Parent-Kontext aus
 ```vue
 <template>
-	<button @click="props.onLog('Hello!')">Hello!</button>
+	<button @click="onLog('Hello!')">Hello!</button>
 </template>
 
 <script setup lang="ts">
@@ -909,7 +909,7 @@ Führt die handleAlert Funktion im Parent-Kontext aus
 **Falsch**
 
 Parent-Komponente\
-Hört auf das Event @on-log und führt die Funktion selbst aus
+Hört auf das Event `@on-log` und führt die Funktion selbst aus
 ```vue
 <template>
 	<intermediate @on-log="(message: string) => console.log(message)" />
@@ -924,7 +924,7 @@ Hört auf das Event @on-log und führt die Funktion selbst aus
 ```
 
 Intermediate-Komponente\
-Reicht das emit des Childs weiter an den Parent durch
+Reicht das `emit` des Childs weiter an den Parent durch
 ```vue
 <template>
 	<child @on-child-log="(message: string) => emit('onLog', message)" />
@@ -943,7 +943,7 @@ Reicht das emit des Childs weiter an den Parent durch
 ```
 
 Child-Komponente\
-Führt ein emit aus, wenn der Button geklickt ist.
+Führt ein `emit` aus, wenn der Button geklickt ist.
 ```vue
 <template>
 	<button @click="emit('onChildLog', 'Hello!')">Hello!</button>
@@ -1018,7 +1018,7 @@ Mögliche Benutzerfehler müssen abgefangen werden und es muss die spezielle Exc
  addRaum = async (raum: Partial<StundenplanRaum>) => {
 		const id = this._state.value.auswahl?.id;
 		if ((raum.kuerzel === undefined) || raumExistsByKuerzel(raum.kuerzel))
-			throw new Exception('Ein Raum mit diesem Kürzel existiert bereits');
+			throw new Error('Ein Raum mit diesem Kürzel existiert bereits');
 	}
 
 </script>
