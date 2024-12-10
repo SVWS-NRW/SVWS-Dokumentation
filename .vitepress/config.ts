@@ -50,7 +50,10 @@ export default defineConfig(({ mode }) => {
 				'/adminclient': [
 					{ text: '', items: [
 						{ text: 'Übersicht', link: '/adminclient' },
-						{ text: 'Admin-Client', link: '/adminclient/administration' },
+						{ text: 'Admin-Client', link: '/adminclient/administration', collapsed: true, items: [
+							{ text: 'Schemata', link: '/adminclient/schemata/' },
+							{ text: 'Konfiguration', link: '/adminclient/konfiguration' }
+						] },
 					] },
 				],
 				'/admin': [
