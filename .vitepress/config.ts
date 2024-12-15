@@ -49,8 +49,8 @@ export default defineConfig(({ mode }) => {
 			sidebar: {
 				'/adminclient': [
 					{ text: '', items: [
-						{ text: 'Übersicht', link: '/adminclient' },
-						{ text: 'Admin-Client', link: '/adminclient/administration', collapsed: true, items: [
+						{ text: 'Admin-Client', link: '/adminclient' },
+						{ text: 'Bedienung des Clients', link: '/adminclient/administration', collapsed: true, items: [
 							{ text: 'Schemata', link: '/adminclient/schemata/' },
 							{ text: 'Konfiguration', link: '/adminclient/konfiguration' }
 						] },
