@@ -8,7 +8,19 @@ Im mittleren Bereich lässt sich ein bisheriges **SchILD-NRW-2-Schema** in diese
 
 Weiterhin lässt sich in das aktuelle Schema ein **Backup wiederherstellen**. Hierbei wird in eine .sqlite-Datei eingelesen und in die MariaDB migriert. Das aktuelle Schema wird hierbei mit dem Backup überschrieben.
 
-Sollte die Revision nicht dem aktuellen Stand entsprechen, kann über einen erscheinenden Schalter versucht werden, die Revision auf die aktuelle hochzuschreiben. 
+Sollte die Revision nicht dem aktuellen Stand entsprechen, kann über einen erscheinenden Schalter versucht werden, die Revision auf die aktuelle hochzuschreiben.
+
+### Admin-Benutzer
+
+Auf der rechten Seite werden alle Datenbank-Admin-Benutzer angezeigt, die in diesem Schema eingerichtet sind.
+
+![Liste der Admin-Benutzer](./graphics/SVWS_adminclient_admins.png "Die Liste der gesetzten Admin-Benutzer in der Datenbank.")
+
+Hierbei handelt es sich um die "tatsächlichen Datenbanknutzer", nicht den Schema-Admin oder den Datenbank-root.
+
+::: info Nutzerverwaltung
+Diese Nutzer werden in der Datenbank selbst über Client-Anwendungen verwaltet.
+:::
 
 ### Weitere Information zu einem Schema
 
