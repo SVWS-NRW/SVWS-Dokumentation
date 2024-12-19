@@ -14,23 +14,30 @@
    + Git erfordert **Username** und einen **Access Token** (kann in IntelliJ oder GitLab/GitHub erstellt werden)
 2. Java 21 installieren
    + In IntelliJ auf *File → Project Structure → Project* gehen
-   + Unter SDK die Java Version temurin-21 (21.0.3) auswählen (ggf. vorher herunterladen)
+   + Unter SDK die Java Version temurin-21 auswählen (ggf. vorher herunterladen)
 3. Gradle konfigurieren
    + Gehe zu *File → Settings → Build, Execution, Deployment → Gradle* und verwende folgende Einstellungen:
      + *Build and run using*: Gradle (Default)
      + *Run Tests using*: Gradle (Default)
      + *Gradle Distribution*: Wrapper
-     + *Gradle JVM*: temurin-21 (21.0.3)
+     + *Gradle JVM*: temurin-21
 4. CheckStyle:
    + Gehe zu *File → Settings → Plugins* und installiere **CheckStyle-IDEA** und starte die IDE neu
    + Gehe zu *File → Settings → Tools → CheckStyle* und füge unter *Configuration File* die Datei aus `config/checkstyle/checkstyle.xml` hinzu
    + Setze einen Haken bei **Active** für die eben importierte checkstyle File. Für alle anderen Konfigrationen entferne den Haken!
-5. SonarLint:
-   + Gehe zu *File → Settings → Plugins* und installiere **SonarLint** und starte die IDE neu
-   + Gehe zu *File → Settings → Tools → SonarLint* und erstelle eine neue Verbindung über das + Symbol.
-   + Gib der Verbindung einen Namen (zum Beispiel "SVWS SonarQube") und wähle *SonarQube* aus. Gib als URL `https://sonarqube.svws-nrw.de/` an.
-   + Klicke auf *Next* und gib einen Token an, den du vorher erstellen musst.
-   + Gehe zu *File → Settings → Tools → SonarLint → Project Settings* und hake *Bind project to SonarCloud/SonarQube* an
+5. SonarQube:
+   + Melde dich auf https://sonarqube.svws-nrw.de/ mit deinem GitLab Account an
+   + Gehe oben rechts über dein Profilbild auf **My Account** und dann auf den Reiter **Security**
+   + Generiere ein neues Token:
+     + **Name**: Frei wählbar
+     + **Type**: Project Analysis Token
+     + **Project**: svws-server
+     + **Expires in**: No Expiration
+   + Gehe in IntelliJ zu *File → Settings → Plugins* und installiere **SonarQube for IDE** und starte die IDE neu
+   + Gehe zu *File → Settings → Tools → SonarQube for IDE* und erstelle eine neue Verbindung über das + Symbol.
+   + Gib der Verbindung einen Namen und wähle *SonarQube Server* aus. Gib als URL `https://sonarqube.svws-nrw.de/` an.
+   + Klicke auf *Next* und das generierte Token an.
+   + Gehe zu *File → Settings → Tools → SonarQube for IDE → Project Settings* und hake *Bind project to SonarCloud/SonarQube* an
    + Wähle in Connection die eben erstellte Connection und in *Project Key* aus der Liste *svws-server* aus
 
 ## SVWS konfigurieren
