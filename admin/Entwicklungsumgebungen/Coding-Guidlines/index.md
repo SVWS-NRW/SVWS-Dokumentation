@@ -27,19 +27,20 @@ outline: 2
   - [4. Kurzschreibweise für gleichnamige Props verwenden](#_4-kurzschreibweise-fur-gleichnamige-props-verwenden)
   - [5. Direkte Callback-Zuweisung statt Inline-Funktionen](#_5-direkte-callback-zuweisung-statt-inline-funktionen)
   - [6. `watch` durch `computed` ersetzen](#_6-watch-durch-computed-ersetzen)
-  - [7. Keine lokalen Änderungen an globalen UI-Komponenten](#_7-keine-lokalen-anderungen-an-globalen-ui-komponenten)
+  - [7. Keine Änderungen an globalen UI-Komponenten](#_7-keine-anderungen-an-globalen-ui-komponenten)
   - [8. Funktionen auslagern, statt sie inline zu verwenden](#_8-funktionen-auslagern-statt-sie-inline-zu-verwenden)
-  - [9. Inline-CSS für einzelne Attribute](#_9-inline-css-fur-einzelne-attribute)
-  - [10. Tailwind-Klassen statt benutzerdefiniertem CSS](#_10-tailwind-klassen-statt-benutzerdefiniertem-css)
+  - [9. Tailwind-Klassen statt benutzerdefiniertem CSS](#_9-tailwind-klassen-statt-benutzerdefiniertem-css)
+  - [10. Inline-CSS für einzelne Attribute](#_10-inline-css-fur-einzelne-attribute)
   - [11. Funktionsdefinition mit `function`](#_11-funktionsdefinition-mit-function)
   - [12. Strukturierung des Script-Bereichs in Vue-Komponenten](#_12-strukturierung-des-script-bereichs-in-vue-komponenten)
   - [13. Immer Semikolon verwenden](#_13-immer-semikolon-verwenden)
   - [14. Verzichte auf Vue-Typendefinitionen](#_14-verzichte-auf-vue-typendefinitionen)
   - [15. `Iterable<T>` statt spezifischer Container-Typen](#_15-iterable-t-statt-spezifischer-container-typen)
-  - [16. Arrow-Functions für komplexe Objekte und Routen](#_16-arrow-functions-fur-komplexe-objekte-und-routen)
-  - [17. `DeveloperNotificationException` bei Programmierfehlern](#_17-developernotificationexception-bei-programmierfehlern)
-  - [18. `UserNotificationException` bei Benutzerfehlern](#_18-usernotificationexception-bei-benutzerfehlern)
-  - [19. ESLint statt Prettier](#_19-eslint-statt-prettier)
+  - [16. Arrow-Functions für komplexe Objekte und verschachtelte Komponenten](#_16-arrow-functions-fur-komplexe-objekte-und-verschachtelte-komponenten)
+  - [17. Arrow-Functions in Routen](#_17-arrow-functions-in-routen)
+  - [18. `DeveloperNotificationException` bei Programmierfehlern](#_18-developernotificationexception-bei-programmierfehlern)
+  - [19. `UserNotificationException` bei Benutzerfehlern](#_19-usernotificationexception-bei-benutzerfehlern)
+  - [20. ESLint statt Prettier](#_20-eslint-statt-prettier)
 - [Vue - Transpiler](#vue---transpiler)
   - [1. `shallowRef` statt `ref` für transpilierte Java-Objekte](#_1-shallowref-statt-ref-für-transpilierte-java-objekte)
   - [2. Getter für reaktive Props verwenden](#_2-getter-für-reaktive-props-verwenden)
@@ -178,7 +179,8 @@ public class Example {
 ---
 
 ### 2. JavaDoc formatieren
-JavaDoc-Kommentare dienen dazu, den Code für andere Entwickler verständlicher zu machen, indem sie die Funktion und den Zweck einer Methode oder Klasse klar und strukturiert beschreiben. Ein gut formatierter JavaDoc-Kommentar besteht aus einer kurzen Beschreibung der Methode, gefolgt von sogenannten "Tags" (z.B. `@param`, `@return`, `@throws`).\
+JavaDoc-Kommentare dienen dazu, den Code für andere Entwickler verständlicher zu machen, indem sie die Funktion und den Zweck einer Methode oder Klasse klar und strukturiert beschreiben. Sie müssen grundsätzlich für alle Methoden gesetzt werden, unabhängig von den Access Modifiers `public`, `private` etc.\
+Ein gut formatierter JavaDoc-Kommentar besteht aus einer kurzen Beschreibung der Methode, gefolgt von sogenannten "Tags" (z.B. `@param`, `@return`, `@throws`).\
 Zwischen der Methoden-/Klassenbeschreibung und den Tags muss immer eine leere Zeile stehen. Auch muss zwischen verschiedenen Arten von Tags eine Leerzeile sein. \
 In Javadoc-Kommentaren werden bestimmte Tags, die eine zusätzliche Beschreibung enthalten, nach folgenden Regeln formatiert:
 
@@ -568,8 +570,8 @@ Vermeide `watch`-Anweisungen, wenn dieselbe Funktionalität durch `computed`-Pro
 ```
 ---
 
-### 7. Keine lokalen Änderungen an globalen UI-Komponenten
-Vermeide lokale Anpassungen an globalen UI-Komponenten, da diese Auswirkungen auf andere Projekte haben. Notwendige Änderungen müssen abgesprochen werden.
+### 7. Keine Änderungen an globalen UI-Komponenten
+Vermeide Anpassungen an globalen UI-Komponenten (aus `SVWS-Server\svws-webclient\ui`), da diese Auswirkungen auf andere Projekte haben können. Notwendige Änderungen müssen abgesprochen werden.
 
 ---
 
@@ -603,7 +605,7 @@ Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` aus
 **Falsch:**
 ```vue
 <template>
-  <!-- Theoretisch möglich, aber unübersichtlich -->
+  <!-- Theoretisch möglich, aber unübersichtlich, daher auslagern -->
   <div v-if="noMaintenance && userRole === 'admin'">Visible</div>
 </template>
 
@@ -619,26 +621,25 @@ Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` aus
 
 ---
 
-### 9. Inline-CSS für einzelne Attribute
-Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher und effizienter als eine separate Klasse. Hinweis: Die meisten Stylings können und sollen über Tailwind-Klassen gelöst werden, so auch das folgende Beispiel.
+### 9. Tailwind-Klassen statt benutzerdefiniertem CSS
+Bevor eigenes CSS geschrieben wird, muss geprüft werden, ob [Tailwind](https://tailwindcss.com/)-Klassen existieren, die denselben Effekt haben, um Redundanz zu vermeiden. Soll eine Klasse mehrere Tailwind-Klassen anwenden, ist das wie folgt möglich:
 
-**Richtig:**
 ```vue
-<template>
-  <div :style="{ color: 'red' }">Text</div>
-</template>
-```
-
-**Falsch:**
-```vue
-<template>
-  <div class="red-text">Text</div>
-</template>
-
 <style lang="postcss">
 
-  .red-text {
-    color: red;
+  .my-class {
+    @apply flex flex-col justify-between;
+  }
+
+</style>
+```
+
+In Tailwind gibt es neben den fest definierten CSS Klassen auch Klassen, die sich noch weiter individualisieren lassen. Ein Beispiel hierfür ist die Klasse zum Setzen der 'background-color'. Hier gibt es die Möglichkeit direkt einen Farbwert im Hex-Format mitzugeben:
+```vue
+<style lang="postcss">
+
+  .my-class {
+    @apply bg-[#50d71e];
   }
 
 </style>
@@ -646,14 +647,27 @@ Wenn nur ein einzelnes CSS-Attribut verwendet wird, ist Inline-Styling einfacher
 
 ---
 
-### 10. Tailwind-Klassen statt benutzerdefiniertem CSS
-Bevor du eigenes CSS hinzufügst, prüfe, ob [Tailwind](https://tailwindcss.com/)-Klassen existieren, die denselben Effekt haben, um Redundanz zu vermeiden. Soll eine Klasse mehrere Tailwind-Klassen anwenden, ist das wie folgt möglich:
+### 10. Inline-CSS für einzelne Attribute
+Sollte für ein bestimmtes Styling keine Tailwind-Klasse zur Verfügung stehen, muss CSS verwendet werden. Wenn es sich dabei außerdem nur um ein einzelnes CSS Attribut handelt, dann soll dieses nicht in eine Klasse ausgelagert, sondern inline definiert werden.\
+Für das CSS-Attribut `scrollbar-width` existiert keine Tailwind-Klasse, daher wird dieses im folgenden Beispiel aufgegriffen:
 
+**Richtig:**
 ```vue
+<template>
+  <div :style="{ scrollbar-width: 'thin' }">Text</div>
+</template>
+```
+
+**Falsch:**
+```vue
+<template>
+  <div class="scrollbar">Text</div>
+</template>
+
 <style lang="postcss">
 
-  .my-class {
-    @apply flex flex-col justify-between;
+  .scrollbar {
+    scrollbar-width: thin;
   }
 
 </style>
@@ -813,53 +827,85 @@ Wenn Funktionen als Props übergeben werden und Parameter wie Listen oder Arrays
 ```
 ---
 
-### 16. Arrow-Functions für komplexe Objekte und Routen
-Die Kommunikation von Child-Komponenten zu Parents geschieht in der Regel über emits. Dies ist erlaubt, wenn dabei nur einfache Typen übergeben werden (`boolean`, `number`, `string`) und kein Event Bubbling über verschachtelte Komponenten stattfindet. 
-Andernfalls müssen Arrow-Functions verwendet werden. Das ist auch beim Routing der Fall, um sicherzustellen, dass Funktionen im richtigen Kontext ausgeführt werden.
+### 16. Arrow-Functions für komplexe Objekte und verschachtelte Komponenten
+Die Kommunikation von Child-Komponenten zu Parents geschieht in der Regel über emits. Dies ist erlaubt, wenn dabei nur einfache Typen übergeben werden (`boolean`, `number`, `string`) und kein Event Bubbling über verschachtelte Komponenten stattfindet. Andernfalls müssen Arrow-Functions als Props verwendet werden. Diese stellen auch die Reaktivität für komplexe Objekte sicher.
 
-::: details Beispiel Routing
-SBenutzerprofilAppProps.ts
-```typescript
-export interface BenutzerprofilAppProps {
-  // Komplexes Objekt als Arrow-Function:
-  benutzer: () => BenutzerDaten;
-  // Funktion als Arrow-Function prop statt emit:
-  patchBenutzerEMailDaten: (data: Partial<BenutzerEMailDaten>) => Promise<void>;
-}
-```
-RouteBenutzerprofil.ts
-```typescript
-public getProps(to: RouteLocationNormalized): BenutzerprofilAppProps {
-  return {
-    benutzer: () => this.data.benutzer,
-    patchBenutzerEMailDaten: this.data.patchBenutzerEMailDaten,
-  };
-}
-```
-RouteDataBenutzerprofil.ts
-```typescript
-public patchBenutzerEMailDaten = async (data: Partial<BenutzerEMailDaten>) => {
-  await api.server.patchBenutzerEmailDaten(data, api.schema);
-}
-
-public get benutzer(): BenutzerDaten {
-  return api.benutzerdaten;
-}
-```
-SBenutzerprofilApp.vue
+#### Direkte Beziehung
+::: details Richtig
+Parent.vue
 ```vue
 <template>
-  <svws-ui-text-input @change="usernameSMTP => patchBenutzerEMailDaten({name: name ?? undefined})" />
+  <child isVisible :benutzer="() => ({ name: 'Max Mustermann', id: 42 })" @update:isVisible="console.log("sichtbar")" />
 </template>
+```
+
+Child.vue
+```vue
+<template>
+	<p>{{ benutzer().name }}</p>
+	<button @click="emit("update:isVisible", !props.isVisible)">Toggle Visibility</button>
+</template>
+
+<script lang="ts" setup>
+
+	import { defineProps, defineEmits } from 'vue';
+
+	const props = defineProps({
+		isVisible: boolean,
+		benutzer: Function,
+	});
+
+  // Da keine Verschachtelung vorliegt, darf das boolean emittet werden:
+	const emit = defineEmits<{"update:isOpen": [isOpen: boolean]}>();
+
+</script>
 ```
 
 :::
 
-::: details Beispiel verschachtelte Parent-Child Kommunikation
-**Richtig**
+::: details Falsch
+Parent.vue
+```vue
+<template>
+  <!-- Benutzer wird nicht als Arrow-Function weitergegeben und Veränderungen von emits abgehört -->
+  <child :benutzer="{ name: 'Max Mustermann', id: 42 }" @update:benutzer="(benutzer) => console.log(benutzer)" />
+</template>
+```
+
+Child.vue
+```vue
+<template>
+	<p>{{ benutzer.name }}</p>
+	<button @click="emit("update:benutzer", benutzer)">Benutzer</button>
+</template>
+
+<script lang="ts" setup>
+
+	import { defineProps, defineEmits } from 'vue';
+
+	const props = defineProps<{ benutzer: Benutzer }>();
+
+  // Hier wird ein komplexes Objekt emittet
+	const emit = defineEmits<{ "update:benutzer": (benutzer: Benutzer) => void }>();
+
+</script>
+```
+
+Benutzerinterface
+```vue
+interface Benutzer {
+  name: string;
+  id: number;
+}
+```
+
+:::
+
+#### Verschachtelte Beziehung
+::: details Richtig
 
 Parent-Komponente\
-Gibt die Funktion `handleAlert` als Arrow-Function Prop an die Intermediate-Komponente
+Gibt die Funktion `handleAlert` als Arrow-Function Prop an die Intermediate-Komponente, damit diese aufgerufen werden kann, sobald sie gebraucht wird (in diesem Fall im Child). 
 ```vue
 <template>
 	<intermediate :on-log="(message: string) => console.log(message)" />
@@ -891,7 +937,7 @@ Gibt die Funktion `handleAlert` als Arrow-Function Prop an die Child-Komponente 
 ```
 
 Child-Komponente\
-Führt die `handleAlert` Funktion im Parent-Kontext aus
+Führt die `handleAlert` Funktion im Parent-Kontext aus, ohne emits ausführen zu müssen
 ```vue
 <template>
 	<button @click="onLog('Hello!')">Hello!</button>
@@ -905,9 +951,9 @@ Führt die `handleAlert` Funktion im Parent-Kontext aus
 
 </script>
 ```
+:::
 
-**Falsch**
-
+::: details Falsch
 Parent-Komponente\
 Hört auf das Event `@on-log` und führt die Funktion selbst aus
 ```vue
@@ -964,7 +1010,49 @@ Führt ein `emit` aus, wenn der Button geklickt ist.
 
 ---
 
-### 17. `DeveloperNotificationException` bei Programmierfehlern
+### 17. Arrow-Functions in Routen
+Api-Aufrufe müssen in den Routen statt in den Komponenten durchgeführt werden, sodass die Komponenten unabhängig von den Routen und den zu verwaltenden Daten definiert werden können. Zu diesem Zweck werden Arrow-Functions statt Emits verwendet, die ihren eigenen Kontext behalten. Außerdem müssen auch komplexe Objekte über eine Arrow-Function übergeben werden, damit diese ihre Reaktivität behalten.
+
+::: details Beispiel für Routing
+SBenutzerprofilAppProps.ts
+```typescript
+export interface BenutzerprofilAppProps {
+  // Komplexes Objekt als Arrow-Function:
+  benutzer: () => BenutzerDaten;
+  // Funktion als Arrow-Function prop statt emit:
+  patchBenutzerEMailDaten: (data: Partial<BenutzerEMailDaten>) => Promise<void>;
+}
+```
+RouteBenutzerprofil.ts
+```typescript
+public getProps(to: RouteLocationNormalized): BenutzerprofilAppProps {
+  return {
+    benutzer: () => this.data.benutzer,
+    patchBenutzerEMailDaten: this.data.patchBenutzerEMailDaten,
+  };
+}
+```
+RouteDataBenutzerprofil.ts
+```typescript
+public patchBenutzerEMailDaten = async (data: Partial<BenutzerEMailDaten>) => {
+  await api.server.patchBenutzerEmailDaten(data, api.schema);
+}
+
+public get benutzer(): BenutzerDaten {
+  return api.benutzerdaten;
+}
+```
+SBenutzerprofilApp.vue
+```vue
+<template>
+  <svws-ui-text-input @change="usernameSMTP => patchBenutzerEMailDaten({name: name ?? undefined})" />
+</template>
+```
+
+:::
+---
+
+### 18. `DeveloperNotificationException` bei Programmierfehlern
 Mögliche Programmierfehler müssen abgefangen werden und es muss die spezielle Exception `DeveloperNotificationException` geworfen werden.
 
 **Richtig**
@@ -995,8 +1083,8 @@ Mögliche Programmierfehler müssen abgefangen werden und es muss die spezielle 
 
 ---
 
-### 18. `UserNotificationException` bei Benutzerfehlern
-Mögliche Benutzerfehler müssen abgefangen werden und es muss die spezielle Exception `UserNotificationException` geworfen werden.
+### 19. `UserNotificationException` bei Benutzerfehlern
+Mögliche Benutzerfehler müssen abgefangen werden. Im besten Fall geschieht dies bereits durch eine Inputvalidierung. Sollte dies zum Beispiel durch hohe Komplexität nicht möglich sein, muss stattdessen bei Fehlern die spezielle Exception `UserNotificationException` geworfen werden.
 
 **Richtig**
 ```vue
@@ -1026,7 +1114,7 @@ Mögliche Benutzerfehler müssen abgefangen werden und es muss die spezielle Exc
 
 ---
 
-### 19. ESLint statt Prettier
+### 20. ESLint statt Prettier
 Verwende für die Formatierung des Codes keinen Prettier, sondern stattdessen die Korrekturen von ESLint.
 
 ---
@@ -1062,14 +1150,14 @@ Um sicherzustellen, dass Props reaktiv bleiben, sollten sie über Getter überge
 **Richtig:**
 ```vue
 <template>
-  <child-component :prop="getProp()"></child-component>
+  <child-component :title="someManger.getTitle()"></child-component>
 </template>
 ```
 
 **Falsch:**
 ```vue
 <template>
-  <child-component :prop="prop"></child-component>
+  <child-component :title="titleAusParent"></child-component>
 </template>
 ```
 ---
