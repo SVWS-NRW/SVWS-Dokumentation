@@ -179,7 +179,8 @@ public class Example {
 ---
 
 ### 2. JavaDoc formatieren
-JavaDoc-Kommentare dienen dazu, den Code für andere Entwickler verständlicher zu machen, indem sie die Funktion und den Zweck einer Methode oder Klasse klar und strukturiert beschreiben. Ein gut formatierter JavaDoc-Kommentar besteht aus einer kurzen Beschreibung der Methode, gefolgt von sogenannten "Tags" (z.B. `@param`, `@return`, `@throws`).\
+JavaDoc-Kommentare dienen dazu, den Code für andere Entwickler verständlicher zu machen, indem sie die Funktion und den Zweck einer Methode oder Klasse klar und strukturiert beschreiben. Sie müssen grundsätzlich für alle Methoden gesetzt werden, unabhängig von den Access Modifiers `public`, `private` etc.\
+Ein gut formatierter JavaDoc-Kommentar besteht aus einer kurzen Beschreibung der Methode, gefolgt von sogenannten "Tags" (z.B. `@param`, `@return`, `@throws`).\
 Zwischen der Methoden-/Klassenbeschreibung und den Tags muss immer eine leere Zeile stehen. Auch muss zwischen verschiedenen Arten von Tags eine Leerzeile sein. \
 In Javadoc-Kommentaren werden bestimmte Tags, die eine zusätzliche Beschreibung enthalten, nach folgenden Regeln formatiert:
 
@@ -604,7 +605,7 @@ Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` aus
 **Falsch:**
 ```vue
 <template>
-  <!-- Theoretisch möglich, aber unübersichtlich -->
+  <!-- Theoretisch möglich, aber unübersichtlich, daher auslagern -->
   <div v-if="noMaintenance && userRole === 'admin'">Visible</div>
 </template>
 
@@ -827,13 +828,84 @@ Wenn Funktionen als Props übergeben werden und Parameter wie Listen oder Arrays
 ---
 
 ### 16. Arrow-Functions für komplexe Objekte und verschachtelte Komponenten
-Die Kommunikation von Child-Komponenten zu Parents geschieht in der Regel über emits. Dies ist erlaubt, wenn dabei nur einfache Typen übergeben werden (`boolean`, `number`, `string`) und kein Event Bubbling über verschachtelte Komponenten stattfindet. Andernfalls müssen Arrow-Functions verwendet werden. Diese stellen auch die Reaktivität für komplexe Objekte sicher.
+Die Kommunikation von Child-Komponenten zu Parents geschieht in der Regel über emits. Dies ist erlaubt, wenn dabei nur einfache Typen übergeben werden (`boolean`, `number`, `string`) und kein Event Bubbling über verschachtelte Komponenten stattfindet. Andernfalls müssen Arrow-Functions als Props verwendet werden. Diese stellen auch die Reaktivität für komplexe Objekte sicher.
 
+#### Direkte Beziehung
+::: details Richtig
+Parent.vue
+```vue
+<template>
+  <child isVisible :benutzer="() => ({ name: 'Max Mustermann', id: 42 })" @update:isVisible="console.log("sichtbar")" />
+</template>
+```
 
+Child.vue
+```vue
+<template>
+	<p>{{ benutzer().name }}</p>
+	<button @click="emit("update:isVisible", !props.isVisible)">Toggle Visibility</button>
+</template>
+
+<script lang="ts" setup>
+
+	import { defineProps, defineEmits } from 'vue';
+
+	const props = defineProps({
+		isVisible: boolean,
+		benutzer: Function,
+	});
+
+  // Da keine Verschachtelung vorliegt, darf das boolean emittet werden:
+	const emit = defineEmits<{"update:isOpen": [isOpen: boolean]}>();
+
+</script>
+```
+
+:::
+
+::: details Falsch
+Parent.vue
+```vue
+<template>
+  <!-- Benutzer wird nicht als Arrow-Function weitergegeben und Veränderungen von emits abgehört -->
+  <child :benutzer="{ name: 'Max Mustermann', id: 42 }" @update:benutzer="(benutzer) => console.log(benutzer)" />
+</template>
+```
+
+Child.vue
+```vue
+<template>
+	<p>{{ benutzer.name }}</p>
+	<button @click="emit("update:benutzer", benutzer)">Benutzer</button>
+</template>
+
+<script lang="ts" setup>
+
+	import { defineProps, defineEmits } from 'vue';
+
+	const props = defineProps<{ benutzer: Benutzer }>();
+
+  // Hier wird ein komplexes Objekt emittet
+	const emit = defineEmits<{ "update:benutzer": (benutzer: Benutzer) => void }>();
+
+</script>
+```
+
+Benutzerinterface
+```vue
+interface Benutzer {
+  name: string;
+  id: number;
+}
+```
+
+:::
+
+#### Verschachtelte Beziehung
 ::: details Richtig
 
 Parent-Komponente\
-Gibt die Funktion `handleAlert` als Arrow-Function Prop an die Intermediate-Komponente
+Gibt die Funktion `handleAlert` als Arrow-Function Prop an die Intermediate-Komponente, damit diese aufgerufen werden kann, sobald sie gebraucht wird (in diesem Fall im Child). 
 ```vue
 <template>
 	<intermediate :on-log="(message: string) => console.log(message)" />
@@ -865,7 +937,7 @@ Gibt die Funktion `handleAlert` als Arrow-Function Prop an die Child-Komponente 
 ```
 
 Child-Komponente\
-Führt die `handleAlert` Funktion im Parent-Kontext aus
+Führt die `handleAlert` Funktion im Parent-Kontext aus, ohne emits ausführen zu müssen
 ```vue
 <template>
 	<button @click="onLog('Hello!')">Hello!</button>
