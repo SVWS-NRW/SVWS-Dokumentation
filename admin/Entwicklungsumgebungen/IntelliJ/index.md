@@ -26,6 +26,9 @@
    + Gehe zu *File → Settings → Tools → CheckStyle* und füge unter *Configuration File* die Datei aus `config/checkstyle/checkstyle.xml` hinzu
    + Setze einen Haken bei **Active** für die eben importierte checkstyle File. Für alle anderen Konfigrationen entferne den Haken!
 5. SonarQube:
+::: danger Achtung!
+Das im Folgenden generierte Token kann nur direkt nach dem Generieren eingesehen und kopiert werden. Danach nicht mehr!
+:::
    + Melde dich auf https://sonarqube.svws-nrw.de/ mit deinem GitLab Account an
    + Gehe oben rechts über dein Profilbild auf **My Account** und dann auf den Reiter **Security**
    + Generiere ein neues Token:
@@ -36,7 +39,7 @@
    + Gehe in IntelliJ zu *File → Settings → Plugins* und installiere **SonarQube for IDE** und starte die IDE neu
    + Gehe zu *File → Settings → Tools → SonarQube for IDE* und erstelle eine neue Verbindung über das + Symbol.
    + Gib der Verbindung einen Namen und wähle *SonarQube Server* aus. Gib als URL `https://sonarqube.svws-nrw.de/` an.
-   + Klicke auf *Next* und das generierte Token an.
+   + Klicke auf *Next* und füge das generierte Token ein.
    + Gehe zu *File → Settings → Tools → SonarQube for IDE → Project Settings* und hake *Bind project to SonarCloud/SonarQube* an
    + Wähle in Connection die eben erstellte Connection und in *Project Key* aus der Liste *svws-server* aus
 
