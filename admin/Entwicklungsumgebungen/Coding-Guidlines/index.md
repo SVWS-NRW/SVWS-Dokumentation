@@ -570,7 +570,7 @@ Vermeide `watch`-Anweisungen, wenn dieselbe Funktionalität durch `computed`-Pro
 ---
 
 ### 7. Keine Änderungen an globalen UI-Komponenten
-Vermeide Anpassungen an globalen UI-Komponenten (aus `SVWS-Server\svws-webclient\ui`), da diese Auswirkungen auf andere Projekte haben. Notwendige Änderungen müssen abgesprochen werden.
+Vermeide Anpassungen an globalen UI-Komponenten (aus `SVWS-Server\svws-webclient\ui`), da diese Auswirkungen auf andere Projekte haben können. Notwendige Änderungen müssen abgesprochen werden.
 
 ---
 
@@ -633,7 +633,7 @@ Bevor eigenes CSS geschrieben wird, muss geprüft werden, ob [Tailwind](https://
 </style>
 ```
 
-In Tailwind gibt es einige vorgefertigte Klassen, aber auch die Möglichkeit für benutzerdefinierte Klassen. Hier ein Beispiel mit einer benutzerdefinierten background-color:
+In Tailwind gibt es neben den fest definierten CSS Klassen auch Klassen, die sich noch weiter individualisieren lassen. Ein Beispiel hierfür ist die Klasse zum Setzen der 'background-color'. Hier gibt es die Möglichkeit direkt einen Farbwert im Hex-Format mitzugeben:
 ```vue
 <style lang="postcss">
 
@@ -647,7 +647,7 @@ In Tailwind gibt es einige vorgefertigte Klassen, aber auch die Möglichkeit fü
 ---
 
 ### 10. Inline-CSS für einzelne Attribute
-Sollte für ein bestimmtes Styling keine Tailwind-Klasse zur Verfügung stehen, kann CSS verwendet werden. Wenn es sich dabei außerdem nur um ein einzelnes Styling handeln, dann soll dieses nicht in eine Klasse ausgelagert, sondern inline definiert werden.\
+Sollte für ein bestimmtes Styling keine Tailwind-Klasse zur Verfügung stehen, muss CSS verwendet werden. Wenn es sich dabei außerdem nur um ein einzelnes CSS Attribut handelt, dann soll dieses nicht in eine Klasse ausgelagert, sondern inline definiert werden.\
 Für das CSS-Attribut `scrollbar-width` existiert keine Tailwind-Klasse, daher wird dieses im folgenden Beispiel aufgegriffen:
 
 **Richtig:**
@@ -1012,7 +1012,7 @@ Mögliche Programmierfehler müssen abgefangen werden und es muss die spezielle 
 ---
 
 ### 19. `UserNotificationException` bei Benutzerfehlern
-Mögliche Benutzerfehler müssen abgefangen werden. Im besten Fall geschieht diese bereits durch eine Inputvalidierung. Sollte dies zum Beispiel durch hohe Komplexität nicht möglich sein, muss stattdessen bei Fehlern die spezielle Exception `UserNotificationException` geworfen werden.
+Mögliche Benutzerfehler müssen abgefangen werden. Im besten Fall geschieht dies bereits durch eine Inputvalidierung. Sollte dies zum Beispiel durch hohe Komplexität nicht möglich sein, muss stattdessen bei Fehlern die spezielle Exception `UserNotificationException` geworfen werden.
 
 **Richtig**
 ```vue
