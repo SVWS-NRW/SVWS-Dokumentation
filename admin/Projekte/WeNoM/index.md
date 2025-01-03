@@ -51,6 +51,17 @@ Eintragen des Adminusers und des Passwortes:
 }
 ```
 
+Die Ordnerstruktur in ```/var/www/html```  sollte nun folgerndermaßen aussehen:
+
+```
+app
+config.json
+db
+public
+
+```
+Dabei muss das Documentroot in der apache2.conf auf den Ornder public zeigen!
+
 Der Webnotenmanager sollte jetzt erreichbar sein.
 
 ## Ersteinrichtung
