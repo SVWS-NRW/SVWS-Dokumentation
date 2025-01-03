@@ -4,12 +4,10 @@ Der Webnotenmanager (Abkürzung WeNoM) befindet sich derzeit in der Entwicklung 
 
 ## Systemvorraussetzungen (Stand 2.1.2025)
 
-Benötigt wird Webspace mit PHP8 und folgenden aktivierten Extension:
-1. PDO_SQLite
-
+Benötigt wird Webspace mit PHP8 und den benötigten Extensions.
 Alternativ kann auch ein Server mit einem Apache2-Webserver genommen werden.
 
-In der /etc/php/8.X/apache2/php.ini muss unter ``` Dynamic Extension ``` muss ``` extension=pdo_sqlite ``` auskommentiert werden.
+Installation Apache2 auf Debian 12:
 
 ``` bash
 apt update && apt upgrade -y
@@ -30,6 +28,11 @@ systemctl reload apache2.service
     AllowOverride All
 </Directory>
 ```
+
+PDO_SQLite
+
+In der /etc/php/8.X/apache2/php.ini muss unter ``` Dynamic Extension ``` muss ``` extension=pdo_sqlite ``` auskommentiert werden.
+
 
 ## Installation
 
@@ -57,6 +60,7 @@ Momentan muss das Client-Secret noch über die API abgerufen werden:
 https://meinnotenmanager.de/oauth/client_secret
 
 Auth: Basic-Auth mit den Credetials aus der config.json
+
 Headers ContentType application/x-www-form-urlencoded
 
 Das gewonnenene Secret kann dann im SVWS-Server mit der URL im Dialog Datenaustausch > Webnotenmanager eingegeben werden!
