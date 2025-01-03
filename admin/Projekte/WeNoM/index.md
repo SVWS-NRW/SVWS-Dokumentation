@@ -25,9 +25,11 @@ systemctl reload apache2.service
 
 Ändern in der /etc/apache2/apache2.conf:
 
+```
 <Directory /var/www/html>
     AllowOverride All
 </Directory>
+```
 
 ## Installation
 
