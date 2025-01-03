@@ -8,7 +8,26 @@ Benötigt wird Webspace mit PHP8 und folgenden aktivierten Extension:
 1. PDO_SQLite
 
 Alternativ kann auch ein Server mit einem Apache2-Webserver genommen werden.
+
 In der /etc/php/8.X/apache2/php.ini muss unter ``` Dynamic Extension ``` muss ``` extension=pdo_sqlite ``` auskommentiert werden.
+
+``` bash
+apt update && apt upgrade -y
+apt install apache2
+systemctl status apache2.service 
+apt install php php-fpm -y
+apt install php-sqlite3
+a2enmod proxy_fcgi setenvif
+a2enconf php8.2-fpm
+a2enmod rewrite
+systemctl reload apache2.service 
+```
+
+Ändern in der /etc/apache2/apache2.conf:
+
+<Directory /var/www/html>
+    AllowOverride All
+</Directory>
 
 ## Installation
 
