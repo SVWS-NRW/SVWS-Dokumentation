@@ -93,9 +93,9 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Proxmox', link: '/admin/Schulungsumgebungen/Proxmox_Schulungsserver/' },
 						] },
 						{ text: 'Projekte', link: '/admin/Projekte/', collapsed: true, items: [
-							{ text: 'weblupo', link: '/admin/Projekte/weblupo/' },
+							{ text: 'weblupo', link: '/admin/Projekte/WebLupo/' },
 							{ text: 'WeNoM', link: '/admin/Projekte/WeNoM/' },
-							{ text: 'ASD-Statistik Modul', link: '/Projekte/ASD-Statistikmodul/' },
+							{ text: 'ASD-Statistik', link: '/admin/Projekte/ASD-Statistik/' },
 							{ text: 'SchülerOnline', link: '/admin/Projekte/SchülerOnline/' },
 							{ text: 'xSchule', link: '/admin/Projekte/xSchule/' },
 						] },
