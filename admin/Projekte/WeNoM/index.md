@@ -24,8 +24,10 @@ systemctl reload apache2.service
 Ändern in der /etc/apache2/apache2.conf:
 
 ```
-<Directory /var/www/html>
-    AllowOverride All
+<Directory /var/www/>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
 </Directory>
 ```
 
@@ -60,7 +62,7 @@ db
 public
 
 ```
-Dabei muss das Documentroot in der apache2.conf auf den Ornder public zeigen!
+Dabei muss das Documentroot in der /etc/apache2/sites-available/000-default.conf (ggf. auch default-ssl.conf) auf den Ordner /var/www/html/public zeigen!
 
 Der Webnotenmanager sollte jetzt erreichbar sein.
 
@@ -74,6 +76,6 @@ Auth: Basic-Auth mit den Credetials aus der config.json
 
 Headers ContentType application/x-www-form-urlencoded
 
-Das gewonnenene Secret kann dann im SVWS-Server mit der URL im Dialog Datenaustausch > Webnotenmanager eingegeben werden!
+Das gewonnene Secret kann dann im SVWS-Server mit der URL im Dialog Datenaustausch > Webnotenmanager eingegeben werden!
 
 
