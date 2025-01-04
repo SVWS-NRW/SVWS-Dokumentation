@@ -2,7 +2,7 @@
 
 Ein webbasiertes Laufbahnberatungs- und Planungstool für die gymnasiale Oberstufe in NRW. 
 
-Beschreibung und Benutzung des Tools ist unter [hilfe.svws-nrw.de](https://hilfe.svws-nrw.de/gost/weblupo/) beschrieben. 
+Beschreibung und Benutzung des Tools ist unter [doku.svws-nrw.de](https://doku.svws-nrw.de/laufbahnplanung/) beschrieben. 
 
 # Technischer Hintergrund
 
