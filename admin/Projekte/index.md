@@ -9,7 +9,7 @@ Aber auch Arbeitsbereiche, die die allgemeine Modernisierung von Abläufen förd
 Im Jahr 2022 wurde beschlossen, das Nachfolgeprodukt von ASDPC32 im SVWS-Server zu entwickeln.
 Ziel soll es hier sein, die komplette hauptamtliche Schulstatistik, die alle Schulen in NRW einmal im Jahr abgeben müssen, mit dem SVWS-Server zu erstellen.
 
-[Zur Beschreibung des Projekts.](ASD-Statistikmodul/index.md)
+[Zur Beschreibung des Projekts.](ASD-Statistik/index.md)
 
 ## WeNoM der Webnotenmanager
 
