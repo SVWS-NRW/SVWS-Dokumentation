@@ -13,19 +13,18 @@ Installation Apache2 auf Debian 12:
 apt update && apt upgrade -y
 apt install apache2
 systemctl status apache2.service 
-apt install php php-fpm -y
-apt install php-sqlite3
+apt install php php-fpm php-sqlite3 -y
 a2enmod proxy_fcgi setenvif
 a2enconf php8.2-fpm
 a2enmod rewrite
 systemctl reload apache2.service 
 ```
 
-Ändern in der /etc/apache2/apache2.conf:
+In der /etc/apache2/apache2.conf ergänzen:
 
 ```
-<Directory /var/www/>
-        Options Indexes FollowSymLinks
+<Directory /var/www/html/>	
+        Options Indexes FollowSymLinks Includes ExecCGI
         AllowOverride All
         Require all granted
 </Directory>
