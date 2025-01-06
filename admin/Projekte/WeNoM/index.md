@@ -30,9 +30,14 @@ In der /etc/apache2/apache2.conf ergänzen:
 </Directory>
 ```
 
-PDO_SQLite
+### PDO_SQLite
 
 In der /etc/php/8.X/apache2/php.ini muss unter ``` Dynamic Extension ``` muss ``` extension=pdo_sqlite ``` auskommentiert werden.
+
+### PHP-Memory-Limit
+
+In der /etc/php/8.X/apache2/php.ini sollte der Wert ``` memory_limit=1024M ``` gesetzt werden.
+Bitte Informieren Sie sich bei Ihrem Hoster, welches MemoryLimit aktiv ist.
 
 
 ## Installation
@@ -51,6 +56,8 @@ Eintragen des Adminusers und des Passwortes:
 	"adminPassword": "StrengGeheim-MussErsetztWerden"
 }
 ```
+
+Das AdminPasswort muss mindesten 10 Zeichen lang sein!
 
 Die Ordnerstruktur in ```/var/www/html```  sollte nun folgerndermaßen aussehen:
 
