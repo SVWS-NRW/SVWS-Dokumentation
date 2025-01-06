@@ -1,3 +1,10 @@
+# Testserver installieren 
+
+Mit dem folgenden Skript kann für Testzwecke ein ENM-Server auf einem Debian 12 erstellt werden. Dieser wir direkt aus den Githubrepository geklont und 
+soll nur für Testzwecke und nicht für den Livebetrieb verwendet werden. Im Weiteren befindet sich auch ein Updateskript für diesen Server. 
+
+## Installationsskript Testserver
+
 ```bash
 #!/bin/bash
 # enmserver Test-Installation aus den Git-Repository erstellen auf Debian 12 - hier bitte Daten individuell anpassen:
@@ -79,3 +86,44 @@ chown -R www-data:www-data $INSTALLPATH
 #
 #
 echo "Bitte die Einstellungen in $INSTALLPATH/config.json im Anschluss kontrollieren!"
+```
+## UpdateSkript Testserver
+
+```bash
+#!/bin/bash
+
+########################## IHRE DATEN ###################
+# technical Adminuser
+ENM_TECH_ADMIN=YourTechadminUser
+ENM_TECH_ADMIN_PW=YourTechadminPW
+#########################################################
+
+##################### DATEN - INSTALLATION ######################################
+INSTALLPATH=/var/www/html
+#################################################################################
+
+
+rm -rf /var/www/html
+mkdir /var/www/html
+
+cd ~/SVWS-Server
+git reset --hard
+git pull
+
+./gradlew build
+
+cp ~/SVWS-Server/svws-webclient/enmserver/build/*.zip $INSTALLPATH/enmserver.zip
+cd $INSTALLPATH
+unzip enmserver.zip
+
+cp config.json.example config.json
+sed -i 's|"adminUser":.*$|"adminUser": "'${ENM_TECH_ADMIN}'",|' $INSTALLPATH/config.json
+sed -i 's|"adminPassword":.*$|"adminPassword": "'${ENM_TECH_ADMIN_PW}'"|' $INSTALLPATH/config.json
+
+
+chmod -R 777 $INSTALLPATH
+chown -R www-data:www-data $INSTALLPATH
+
+
+curl --request GET --url http://localhost/oauth/client_secret --user "${ENM_TECH_ADMIN}:${ENM_TECH_ADMIN_PW}" --header "Content-Type: application/x-www-form-urlencoded" > $INSTALLPATH/public/secret.html
+```
