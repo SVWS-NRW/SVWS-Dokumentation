@@ -2,7 +2,7 @@
 
 Der Webnotenmanager (Abkürzung WeNoM) befindet sich derzeit in der Entwicklung und wird Schulen die Eingabe von Leistungsdaten (Noten) von zu Hause aus ermöglichen. Der WeNoM wird auf PHP Basis mit Typescript und VUE.js entwickelt und wird eine benutzerfreundliche und intuitive Benutzeroberfläche bieten, um die Dateneingabe so einfach wie möglich zu gestalten. Die Software wird die eingegebenen Daten teilautomatisch mit dem SVWS-Server synchronisieren, um sicherzustellen, dass die Daten stets auf dem neuesten Stand sind und für interne Schulzwecke zur Verfügung stehen. Der WeNoM wird Schulen eine effiziente Möglichkeit bieten, um die Leistungsdaten ihrer Schülerinnen und Schüler zu verwalten und zu überwachen, und es Lehrkräften ermöglichen, schnell und einfach auf die benötigten Daten zuzugreifen.
 
-## Systemvorraussetzungen (Stand 2.1.2025)
+## Systemvorraussetzungen (Stand 6.1.2025)
 
 Benötigt wird Webspace mit PHP8 und den benötigten Extensions.
 Alternativ kann auch ein Server mit einem Apache2-Webserver genommen werden.
@@ -42,11 +42,11 @@ Bitte Informieren Sie sich bei Ihrem Hoster, welches MemoryLimit aktiv ist.
 
 ## Installation
 
-Entpacken aller Datenen in der enmserver-x.x.x.zip in das www Verzeichnis des Webservers.
-Freigabe der Ordner app, db und public mit entsprechenden Rechten.
-
-Umbenennen der config.json.example in config.json.
-Eintragen des Adminusers und des Passwortes:
++ Entpacken aller Datenen in der enmserver-x.x.x.zip in das www Verzeichnis des Webservers
++ Freigabe der Ordner app, db und public mit entsprechenden Rechten
++ Umbenennen der config.json.example in config.json
++ Ändern des Documentroot in `/var/www/html/public`
++ Eintragen des Adminusers und des Passwortes:
 
 ```json
 {
@@ -62,25 +62,29 @@ Das AdminPasswort muss mindesten 10 Zeichen lang sein!
 Die Ordnerstruktur in ```/var/www/html```  sollte nun folgerndermaßen aussehen:
 
 ```
-app
+/app
 config.json
-db
-public
-
+/db
+/public
 ```
-Dabei muss das Documentroot in der /etc/apache2/sites-available/000-default.conf (ggf. auch default-ssl.conf) auf den Ordner /var/www/html/public zeigen!
+Dabei muss das Documentroot in der `/etc/apache2/sites-available/000-default.conf` (ggf. auch `default-ssl.conf`) auf den Ordner `/var/www/html/public` zeigen!
 
-Der Webnotenmanager sollte jetzt erreichbar sein.
+Der Webnotenmanager sollte jetzt unter `http://localhost` bzw. der zu geordneten Domain/IP erreichbar sein.
 
 ## Ersteinrichtung
 
 Momentan muss das Client-Secret noch über die API abgerufen werden:
 
-https://meinnotenmanager.de/oauth/client_secret
++ https://meinnotenmanager.de/oauth/client_secret
++ Auth: Basic-Auth mit den Credetials aus der config.json
++ Headers ContentType application/x-www-form-urlencoded
 
-Auth: Basic-Auth mit den Credetials aus der config.json
+Der Zugehörige Curl-Befehl ist dann:
+```bash
+curl --request GET --url http://localhost/oauth/client_secret --user "${ENM_TECH_ADMIN}:${ENM_TECH_ADMIN_PW}" --header "Content-Type: application/x-www-form-urlencoded" > $INSTALLPATH/public/secret.html
+```
+(Bitte entsprechend die Variablen einsetzen.)
 
-Headers ContentType application/x-www-form-urlencoded
 
 Das gewonnene Secret kann dann im SVWS-Server mit der URL im Dialog Datenaustausch > Webnotenmanager eingegeben werden!
 
