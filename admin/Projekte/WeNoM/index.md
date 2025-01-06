@@ -88,4 +88,8 @@ curl --request GET --url http://localhost/oauth/client_secret --user "${ENM_TECH
 
 Das gewonnene Secret kann dann im SVWS-Server mit der URL im Dialog Datenaustausch > Webnotenmanager eingegeben werden!
 
+## Testserver 
+
+Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](./testinstall.md) aus den Repositoryquellen.  
+
 
