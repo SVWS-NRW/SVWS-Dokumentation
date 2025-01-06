@@ -28,7 +28,9 @@ sed -i "s|;extension=pdo_sqlite.*$|extension=pdo_sqlite|" /etc/php/${PHPVERSION}
 
 echo "
 <Directory ${INSTALLPATH}>
+   Options Indexes FollowSymLinks Includes ExecCGI
    AllowOverride All
+   Require all granted
 </Directory>" >> /etc/apache2/apache2.conf
 
 
@@ -77,6 +79,3 @@ chown -R www-data:www-data $INSTALLPATH
 #
 #
 echo "Bitte die Einstellungen in $INSTALLPATH/config.json im Anschluss kontrollieren!"
-`` 
-
-
