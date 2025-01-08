@@ -58,8 +58,8 @@ tee svwsconfig.json <<EOF
     "SchemaKonfiguration" : [ {
       "name" : "GymAbi",
       "svwslogin" : false,
-      "username" : "svwsadmin",
-      "password" : "svwsadmin"
+      "username" : "techUser",
+      "password" : "techPassword"
     } ],
     "connectionRetries" : 0,
     "retryTimeout" : 0
