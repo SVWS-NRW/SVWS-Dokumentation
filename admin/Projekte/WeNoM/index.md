@@ -32,7 +32,7 @@ In der /etc/apache2/apache2.conf ergänzen:
 
 ### PDO_SQLite
 
-In der /etc/php/8.X/apache2/php.ini muss unter ``` Dynamic Extension ``` muss ``` extension=pdo_sqlite ``` auskommentiert werden.
+In der /etc/php/8.X/apache2/php.ini muss unter ``` Dynamic Extension ``` die Zeile ``` extension=pdo_sqlite ``` auskommentiert werden.
 
 ### PHP-Memory-Limit
 
