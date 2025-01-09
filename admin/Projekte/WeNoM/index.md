@@ -42,7 +42,7 @@ Bitte Informieren Sie sich bei Ihrem Hoster, welches MemoryLimit aktiv ist.
 
 ## Installation
 
-+ Entpacken aller Datenen in der enmserver-x.x.x.zip in das www Verzeichnis des Webservers
++ Entpacken aller Dateinen aus der enmserver-x.x.x.zip in das /html Verzeichnis des Webservers
 + Freigabe der Ordner app, db und public mit entsprechenden Rechten
 + Umbenennen der config.json.example in config.json
 + Ändern des Documentroot im Apache in `/var/www/html/public` (siehe unten)
@@ -67,7 +67,7 @@ Erste Initialisierung:
 + Headers ContentType application/x-www-form-urlencoded
 
 Dieser Befehl kann mit Tools wie Insomnia, Postman oder Bruno abgesetzt werden.
-Oder auch einfach die o.g. URL in einem Browser eingeben! Hier sollte man aber die Konsole öffen, um die Response zu sehen. (STRG + SHIFT +i)
+Oder auch einfach die o.g. URL in einem Browser eingeben! Hier sollte man aber die Konsole öffen, um die Response zu sehen. (STRG+SHIFT+i)
 
 Gültige Responsecodes:
 204 Setup erfolgreich
