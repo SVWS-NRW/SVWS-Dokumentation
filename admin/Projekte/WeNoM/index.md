@@ -45,51 +45,48 @@ Bitte Informieren Sie sich bei Ihrem Hoster, welches MemoryLimit aktiv ist.
 + Entpacken aller Datenen in der enmserver-x.x.x.zip in das www Verzeichnis des Webservers
 + Freigabe der Ordner app, db und public mit entsprechenden Rechten
 + Umbenennen der config.json.example in config.json
-+ Ändern des Documentroot in `/var/www/html/public`
-+ Eintragen des Adminusers und des Passwortes:
-
-```json
-{
-	"debugMode": "true",
-	"database": "db/app.sqlite",
-	"adminUser": "admin",
-	"adminPassword": "StrengGeheim-MussErsetztWerden"
-}
-```
-
-Das AdminPasswort muss mindesten 10 Zeichen lang sein!
++ Ändern des Documentroot im Apache in `/var/www/html/public` (siehe unten)
 
 Die Ordnerstruktur in ```/var/www/html```  sollte nun folgerndermaßen aussehen:
 
 ```
 /app
-config.json
 /db
 /public
 ```
+
 Dabei muss das Documentroot in der `/etc/apache2/sites-available/000-default.conf` (ggf. auch `default-ssl.conf`) auf den Ordner `/var/www/html/public` zeigen!
 
-Der Webnotenmanager sollte jetzt unter `http://localhost` bzw. der zu geordneten Domain/IP erreichbar sein.
 
 ## Ersteinrichtung
 
-Momentan muss das Client-Secret noch über die API abgerufen werden:
+Erste Initialisierung:
 
-+ https://meinnotenmanager.de/oauth/client_secret
-+ Auth: Basic-Auth mit den Credetials aus der config.json
++ https://meinnotenmanager.de/api/setup
++ Auth: keine Authentisierung
 + Headers ContentType application/x-www-form-urlencoded
+
+Dieser Befehl kann mit Tools wie Insomnia, Postman oder Bruno abgesetzt werden.
+Oder auch einfach die o.g. URL in einem Browser eingeben! Hier sollte man aber die Konsole öffen, um die Response zu sehen. (STRG + SHIFT +i)
+
+Gültige Responsecodes:
+204 Setup erfolgreich
+409 Server ist schon initialisiert
+
+Der Webnotenmanager sollte jetzt unter `http://meinnotenmanager` erreichbar sein.
 
 Der Zugehörige Curl-Befehl ist dann:
 ```bash
-curl --request GET --url http://localhost/oauth/client_secret --user "${ENM_TECH_ADMIN}:${ENM_TECH_ADMIN_PW}" --header "Content-Type: application/x-www-form-urlencoded" > $INSTALLPATH/public/secret.html
+curl --request GET --url http://meinnotenmaganger/api/setup --header "Content-Type: application/x-www-form-urlencoded"
 ```
-(Bitte entsprechend die Variablen einsetzen.)
 
-
+Im Ordner /db befindet sich nun eine app.sqlite Datenbank und eine Datei client.sec. In dieser Datei steht das generierte Secret.
 Das gewonnene Secret kann dann im SVWS-Server mit der URL im Dialog Datenaustausch > Webnotenmanager eingegeben werden!
 
 ## Testserver 
 
+::: danger ACHTUNG!
+Nur für Demo-Umgebungen oder Testinstallationen!
+:::
+
 Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](./testinstall.md) aus den Repositoryquellen.  
-
-
