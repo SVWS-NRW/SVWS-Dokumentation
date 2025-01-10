@@ -99,7 +99,7 @@ Um den ENM-Server lokal nutzen zu können, muss PHP installiert sein. Ist dies b
 
 ```bash
 cd svws-webclient/enmserver
-php -S 127.0.0.1:1443 router.php
+php -S 127.0.0.1:2998 router.php
 ```
 
 Aber da eine PHP-Installation meist recht invasiv ist und podman sowieso schon vorhanden ist, kann auch ein Container
@@ -112,15 +112,15 @@ Dazu wird im `enmserver`-Verzeichnis ein Docker-Container gebaut und anschließe
 cd svws-webclient/enmserver
 # mit Podman ein neues Image bauen (siehe Dockerfile)
 podman build -t enmserver:latest .
-# den Container auf Port 1443 starten
-podman run -p 1443:443 -v ./src/php:/var/www --rm --name php enmserver
+# den Container auf Port 2998 starten
+podman run -p 2998:443 -v ./src/php:/var/www --rm --name php enmserver
 ```
 
 Das gebaute Image verwendet die vorgegebenen Pfade des ENM-Servers und erstellt ein neues Zertifikat. Dies muss nun
 geladen und als `localhost.pem` abgelegt werden:
 
 ```bash
-openssl s_client -showcerts -connect localhost:1443 </dev/null 2>/dev/null|openssl x509 -outform PEM >localhost.pem
+openssl s_client -showcerts -connect localhost:2998 </dev/null 2>/dev/null|openssl x509 -outform PEM >localhost.pem
 ```
 
 :::warning Achtung
