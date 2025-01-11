@@ -26,9 +26,9 @@ Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Client* und zum *SVWS-S
 
 Auf dieser Webseite finden Sie Informationen zur Installation und zur Entwicklung und eine Dokumentation der API für die dezentrale Schulverwaltung in NRW. Ebenso finden sich Dokumentationen zu weiteren Projekten.
 
-[![Users](./graphics/LandingUser.png "Icon für Benutzer.")](https://doku.svws-nrw.de/client/)
-[![Admins](./graphics/LandingAdmin.png "Icon für Admins.")](https://doku.svws-nrw.de/deployment/)
-[![Devs](./graphics/LandingDev.png "Icon für Developer.")](https://doku.svws-nrw.de/admin/)
+[![Users](./graphics/LandingUser.png "Icon für Benutzer.")](./client/)
+[![Admins](./graphics/LandingAdmin.png "Icon für Admins.")](./deployment/)
+[![Devs](./graphics/LandingDev.png "Icon für Developer.")](./admin/)
 
 Navigieren Sie zu den übergreifenden Bereichen dieser Webseite über die **Kopfzeile**. 
 

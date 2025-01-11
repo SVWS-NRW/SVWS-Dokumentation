@@ -1,4 +1,4 @@
-## Schematamanagement
+# Schematamanagement
 
 Im Bereich **Schema** lassen sich die auf dieser MariaDB laufenden Schemata auswählen.
 
@@ -10,7 +10,7 @@ Weiterhin lässt sich in das aktuelle Schema ein **Backup wiederherstellen**. Hi
 
 Sollte die Revision nicht dem aktuellen Stand entsprechen, kann über einen erscheinenden Schalter versucht werden, die Revision auf die aktuelle hochzuschreiben.
 
-### Admin-Benutzer
+## Admin-Benutzer
 
 Auf der rechten Seite werden alle Datenbank-Admin-Benutzer angezeigt, die in diesem Schema eingerichtet sind.
 
@@ -22,7 +22,7 @@ Hierbei handelt es sich um die "tatsächlichen Datenbanknutzer", nicht den Schem
 Diese Nutzer werden in der Datenbank selbst über Client-Anwendungen verwaltet.
 :::
 
-### Weitere Information zu einem Schema
+## Weitere Information zu einem Schema
 
 In der Schema-Übersicht links finden sich Angaben zur **Revision**, **Tainted** und **Config**.
 
@@ -43,7 +43,7 @@ In der Schema-Übersicht links finden sich Angaben zur **Revision**, **Tainted**
 
 Über die **Checkboxen ☑** lassen sich eine Schema oder mehrere Schemata anwählen und über einen dann darunter auftauchenden **Mülleimer 🗑** löschen.
 
-### Datenbank-Migration
+## Datenbank-Migration
 Klickt man auf **Datenbank migrieren**, öffnet sich der Dialog zur Auswahl von *Quelle* und *Ziel*:
 
 ![Migration einer Datenbank aus Acess, MySQL, Maria DB, MSSQL](./graphics/SVWS_adminclient_migration.png "Migration einer Datenbank aus MS Access, MySQL, Maria DB, MSSQL: Geben Sie die Daten für Quelle und Ziel ein.")
