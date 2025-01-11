@@ -1,4 +1,4 @@
-# Informationen zum SVWS-Client
+# Bedienkonzept des SVWS-Client
 
 Die offiziell unterstützte minimale Auflösung für die Verwendung des SVWS-Clients ist FullHD (1920 * 1080 Pixel). Nach modernen ergonomischen Gesichtspunkten für Bildschirmarbeitsplätze werden Monitore mit einer Mindestgröße von 21", besser 23", empfohlen.
 
