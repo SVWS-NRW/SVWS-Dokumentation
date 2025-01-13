@@ -7,14 +7,9 @@ soll nur für Testzwecke und nicht für den Livebetrieb verwendet werden. Im Wei
 
 ```bash
 #!/bin/bash
-# enmserver Test-Installation aus den Git-Repository erstellen auf Debian 12 - hier bitte Daten individuell anpassen:
-
-########################## IHRE DATEN ###################
-# technical Adminuser
-ENM_TECH_ADMIN=YourTechadminUser
-ENM_TECH_ADMIN_PW=YourTechadminPW
-#########################################################
-
+######################## enmserver Install ######################################
+# Test-Installation aus den Git-Repository erstellen
+# Achtung: nur http -> nicht für den Echtdatenbetieb geeignet ohne weitere Anpassungen!
 
 ##################### DATEN - INSTALLATION ######################################
 PHPVERSION=8.2
@@ -30,6 +25,7 @@ apt install -y curl zip unzip git dnsutils nmap net-tools nano mc ca-certificate
 a2enmod proxy_fcgi setenvif
 a2enconf php8.2-fpm
 a2enmod rewrite
+a2enmod headers
 
 sed -i "s|;extension=pdo_sqlite.*$|extension=pdo_sqlite|" /etc/php/${PHPVERSION}/apache2/php.ini
 
@@ -74,34 +70,20 @@ cp ~/SVWS-Server/svws-webclient/enmserver/build/*.zip $INSTALLPATH/enmserver.zip
 cd $INSTALLPATH
 unzip enmserver.zip
 #
-### Config Datei anpassen
-#
-cp config.json.example config.json
-sed -i 's|"adminUser":.*$|"adminUser": "'${ENM_TECH_ADMIN}'",|' $INSTALLPATH/config.json
-sed -i 's|"adminPassword":.*$|"adminPassword": "'${ENM_TECH_ADMIN_PW}'"|' $INSTALLPATH/config.json
-#
 #
 chmod -R 777 $INSTALLPATH
 chown -R www-data:www-data $INSTALLPATH
 #
 #
-echo "Bitte die Einstellungen in $INSTALLPATH/config.json im Anschluss kontrollieren!"
+echo "Installation beendet!"
 ```
 ## UpdateSkript Testserver
 
 ```bash
 #!/bin/bash
-
-########################## IHRE DATEN ###################
-# technical Adminuser
-ENM_TECH_ADMIN=YourTechadminUser
-ENM_TECH_ADMIN_PW=YourTechadminPW
-#########################################################
-
 ##################### DATEN - INSTALLATION ######################################
 INSTALLPATH=/var/www/html
 #################################################################################
-
 
 rm -rf /var/www/html
 mkdir /var/www/html
@@ -116,14 +98,12 @@ cp ~/SVWS-Server/svws-webclient/enmserver/build/*.zip $INSTALLPATH/enmserver.zip
 cd $INSTALLPATH
 unzip enmserver.zip
 
-cp config.json.example config.json
-sed -i 's|"adminUser":.*$|"adminUser": "'${ENM_TECH_ADMIN}'",|' $INSTALLPATH/config.json
-sed -i 's|"adminPassword":.*$|"adminPassword": "'${ENM_TECH_ADMIN_PW}'"|' $INSTALLPATH/config.json
-
-
 chmod -R 777 $INSTALLPATH
 chown -R www-data:www-data $INSTALLPATH
 
+curl --request GET --url http://localhost/api/setup  --header "Content-Type: application/x-www-form-urlencoded" 
 
-curl --request GET --url http://localhost/oauth/client_secret --user "${ENM_TECH_ADMIN}:${ENM_TECH_ADMIN_PW}" --header "Content-Type: application/x-www-form-urlencoded" > $INSTALLPATH/public/secret.html
+# NUR fuer Testzwecke geeignet:
+cat $INSTALLPATH/db/client.sec > $INSTALLPATH/public/secret.html
+mv $INSTALLPATH/enmserver.zip $INSTALLPATH/public/      
 ```
