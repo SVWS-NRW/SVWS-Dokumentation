@@ -22,7 +22,7 @@ systemctl reload apache2.service
 
 In der /etc/apache2/apache2.conf ergänzen:
 
-```
+```bash
 <Directory /var/www/html/>	
         Options Indexes FollowSymLinks Includes ExecCGI
         AllowOverride All
@@ -49,7 +49,7 @@ Bitte Informieren Sie sich bei Ihrem Hoster, welches MemoryLimit aktiv ist.
 
 Die Ordnerstruktur in ```/var/www/html```  sollte nun folgerndermaßen aussehen:
 
-```
+``` bash
 /app
 /db
 /public
