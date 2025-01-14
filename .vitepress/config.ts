@@ -1,4 +1,5 @@
-﻿import { defineConfig, loadEnv } from 'vite'
+﻿import { truncate } from 'fs';
+import { defineConfig, loadEnv } from 'vite'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig(({ mode }) => {
@@ -33,12 +34,19 @@ export default defineConfig(({ mode }) => {
 					items: [
 						{ text: 'SVWS-Webclient', link: '/webclient' },
 						{ text: 'SVWS-Adminclient', link: '/adminclient' },
-						{ text: 'Laufbahnplanung', link: '/laufbahnplanung' },
+						{ text: 'WebLuPO', link: '/weblupo' },
 					] },
-				{ text: 'Administration/Entwicklung',
+				{ text: 'Administration',
 					items: [
 						{ text: 'Installation', link: '/deployment' },
-						{ text: 'Entwicklung, Projekte, Schulungen', link: '/admin'},
+						{ text: 'Schulungen', link: '/schulungen' },
+					] },
+
+				{ text: 'Entwicklung',
+					items: [
+						{ text: 'SVWS-Server', link: '/development/' },
+						{ text: 'Projekte', link: '/projekte' },
+						{ text: 'Mitarbeit', link: '/teamarbeit' },
 						{ text: 'UI-Bibliothek', link: 'https://ui.svws-nrw.de' },
 						{ text: 'Java-API', link: 'https://javadoc.svws-nrw.de' },
 					] },
@@ -51,56 +59,68 @@ export default defineConfig(({ mode }) => {
 					{ text: '', items: [
 						{ text: 'SVWS-Adminclient', link: '/adminclient' },
 						{ text: 'Bedienungkonzept', link: '/adminclient/client/', collapsed: true},
-						{ text: 'Apps', link: '/adminclient/apps/', collapsed: true, items: [
+						{ text: 'Apps', link: '/adminclient/apps/', collapsed: false, items: [
 							{ text: 'Schemata', link: '/adminclient/apps/schemata/' },
 							{ text: 'Konfiguration', link: '/adminclient/apps/konfiguration' }
 						] },
 					] },
 				],
-				'/admin': [
+				'/schulungen': [
 					{ text: '', items: [
-						{ text: 'SVWS-Server', link: '/admin/SVWS-Server/', collapsed: true, items: [
-							{ text: 'svws-core', link: '/admin/SVWS-Server/svws-core/' },
-							{ text: 'svws-db', link: '/admin/SVWS-Server/svws-db/' },
-							{ text: 'svws-db-utils', link: '/admin/SVWS-Server/svws-db-utils/' },
-							{ text: 'svws-module-dav-api', link: '/admin/SVWS-Server/svws-module-dav-api/', collapsed: true, items: [
-								{ text: 'Beschreibung CalDav', link: 'admin/SVWS-Server/svws-module-dav-api/CalDav-Anwender-Doku' },
-								{ text: 'CalDav Limitierungen', link: '/admin/SVWS-Server/svws-module-dav-api/caldav-limitierungen' },
-								{ text: 'Beschreibung CardDav', link: '/admin/SVWS-Server/svws-module-dav-api/carddav-beschreibung der implementierung' },
-								{ text: 'CardDav Limitierungen', link: '/admin/SVWS-Server/svws-module-dav-api/carddav-limitierungen' },
-							] },
-							{ text: 'svws-openapi', link: '/admin/SVWS-Server/svws-openapi/' },
-							{ text: 'svws-server-app', link: '/admin/SVWS-Server/svws-server-app/' },
-							{ text: 'svws-transpile', link: '/admin/SVWS-Server/svws-transpile/' },
+						{ text: 'Schulungsumgebungen', link: '/schulungen/', collapsed: false, items: [
+							{ text: 'SchulungsClient', link: '/schulungen/SchulungsClient/' },
+							{ text: 'Virtualbox', link: '/schulungen/Virtualbox_Schulungsserver/' },
+							{ text: 'Bootstick', link: '/schulungen/Bootstick_Schulungsserver/' },
+							{ text: 'Proxmox', link: '/schulungen/Proxmox_Schulungsserver/' }
 						] },
-						{ text: 'Entwicklungsumgebungen', link: '/admin/Entwicklungsumgebungen/', collapsed: true, items: [
-							{ text: 'Eclipse-Ubuntu', link: '/admin/Entwicklungsumgebungen/Eclipse-Ubuntu/' },
-							{ text: 'Eclipse-Ubuntu (Docker)', link: '/admin/Entwicklungsumgebungen/Eclipse-Ubuntu/ubuntu_docker' },
-							{ text: 'Eclipse-Windows', link: '/admin/Entwicklungsumgebungen/Eclipse-Windows/' },
-							{ text: 'IntelliJ', link: '/admin/Entwicklungsumgebungen/IntelliJ/' },
-							{ text: 'macOS', link: '/admin/Entwicklungsumgebungen/macOS/' },
-							{ text: 'VS-Code', link: '/admin/Entwicklungsumgebungen/VS-Code/' },
-							{ text: 'Coding Guidlines', link: '/admin/Entwicklungsumgebungen/Coding-Guidlines' },
-							{ text: 'Code Styles', link: '/admin/Entwicklungsumgebungen/Code-Styles' },
+					] },
+				],
+				'/teamarbeit': [
+					{ text: '', items: [
+						{ text: 'Teamarbeit', link: '/teamarbeit/', collapsed: false, items: [
+							{ text: 'Git Workflow', link: '/teamarbeit/workflow/' }
+						] },
+					] },
+				],
+				'/projekte': [
+					{ text: '', items: [
+						{ text: 'Projekte', link: '/projekte/', collapsed: false, items: [
+							{ text: 'WebLupo', link: '/projekte/WebLupo/' },
+							{ text: 'WeNoM', link: '/projekte/WeNoM/' },
+							{ text: 'ASD-Statistik', link: '/projekte/ASD-Statistik/' },
+							{ text: 'SchülerOnline', link: '/projekte/SchülerOnline/' },
+							{ text: 'xSchule', link: '/projekte/xSchule/' }
+						] },
+					] },
+				],
+				'/development': [
+					{ text: '', items: [
+						{ text: 'SVWS-Server', link: '/development/SVWS-Server/', collapsed: false, items: [
+							{ text: 'svws-core', link: '/development/SVWS-Server/svws-core/' },
+							{ text: 'svws-db', link: '/development/SVWS-Server/svws-db/' },
+							{ text: 'svws-db-utils', link: '/development/SVWS-Server/svws-db-utils/' },
+							{ text: 'svws-module-dav-api', link: '/development/SVWS-Server/svws-module-dav-api/', collapsed: true, items: [
+								{ text: 'Beschreibung CalDav', link: 'development/SVWS-Server/svws-module-dav-api/CalDav-Anwender-Doku' },
+								{ text: 'CalDav Limitierungen', link: '/development/SVWS-Server/svws-module-dav-api/caldav-limitierungen' },
+								{ text: 'Beschreibung CardDav', link: '/development/SVWS-Server/svws-module-dav-api/carddav-beschreibung der implementierung' },
+								{ text: 'CardDav Limitierungen', link: '/development/SVWS-Server/svws-module-dav-api/carddav-limitierungen' },
+							] },
+							{ text: 'svws-openapi', link: '/development/SVWS-Server/svws-openapi/' },
+							{ text: 'svws-server-app', link: '/development/SVWS-Server/svws-server-app/' },
+							{ text: 'svws-transpile', link: '/development/SVWS-Server/svws-transpile/' },
+						] },
+						{ text: 'Entwicklungsumgebungen', link: '/development/Entwicklungsumgebungen/', collapsed: true, items: [
+							{ text: 'Eclipse-Ubuntu', link: '/development/Entwicklungsumgebungen/Eclipse-Ubuntu/' },
+							{ text: 'Eclipse-Ubuntu (Docker)', link: '/development/Entwicklungsumgebungen/Eclipse-Ubuntu/ubuntu_docker' },
+							{ text: 'Eclipse-Windows', link: '/development/Entwicklungsumgebungen/Eclipse-Windows/' },
+							{ text: 'IntelliJ', link: '/development/Entwicklungsumgebungen/IntelliJ/' },
+							{ text: 'macOS', link: '/development/Entwicklungsumgebungen/macOS/' },
+							{ text: 'VS-Code', link: '/development/Entwicklungsumgebungen/VS-Code/' },
+							{ text: 'Coding Guidlines', link: '/development/Entwicklungsumgebungen/Coding-Guidlines' },
+							{ text: 'Code Styles', link: '/development/Entwicklungsumgebungen/Code-Styles' },
 						],
 						},
-						{ text: 'Teamarbeit', link: '/admin/Teamarbeit/', collapsed: true, items: [
-							{ text: 'Git Workflow', link: '/admin/Teamarbeit/workflow/' },
-						] },
-						{ text: 'Schulungsumgebungen', link: '/admin/Schulungsumgebungen/', collapsed: true, items: [
-							{ text: 'SchulungsClient', link: '/admin/Schulungsumgebungen/SchulungsClient/' },
-							{ text: 'Virtualbox', link: '/admin/Schulungsumgebungen/Virtualbox_Schulungsserver/' },
-							{ text: 'Bootstick', link: '/admin/Schulungsumgebungen/Bootstick_Schulungsserver/' },
-							{ text: 'Proxmox', link: '/admin/Schulungsumgebungen/Proxmox_Schulungsserver/' },
-						] },
-						{ text: 'Projekte', link: '/admin/Projekte/', collapsed: true, items: [
-							{ text: 'WebLupo', link: '/admin/Projekte/WebLupo/' },
-							{ text: 'WeNoM', link: '/admin/Projekte/WeNoM/' },
-							{ text: 'ASD-Statistik', link: '/admin/Projekte/ASD-Statistik/' },
-							{ text: 'SchülerOnline', link: '/admin/Projekte/SchülerOnline/' },
-							{ text: 'xSchule', link: '/admin/Projekte/xSchule/' },
-						] },
-						{ text: 'Technische FAQs', link: '/admin/FAQ/' },
+						{ text: 'Technische FAQs', link: '/development/FAQ/' },
 					] },
 				],
 				'/deployment': [
@@ -116,22 +136,22 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Datensicherung', link: '/deployment/Datensicherung/' },
 					] },
 				],
-				'/laufbahnplanung' : [
+				'/weblupo' : [
 					{ text: '', items: [
-						{ text: 'Vorbereitung', link: '/laufbahnplanung/vorbereitung/' },
-						{ text: 'Beratung mit WebLuPO', link: '/laufbahnplanung/weblupo/' },
+						{ text: 'Vorbereitung', link: '/weblupo/vorbereitung/' },
+						{ text: 'Beratung mit WebLuPO', link: '/weblupo/weblupo/' },
 					] },
 				],
 				'/webclient': [
 					{ text: '', items:
 						[
-							{ text: 'SVWS-Webclient', link: '/webclient/', collapsed: true},
-							{ text: 'Bedienkonzept', link: '/webclient/client/', collapsed: true, items: [
+							{ text: 'SVWS-Webclient', link: '/webclient/', collapsed: false },
+							{ text: 'Bedienkonzept', link: '/webclient/client/', collapsed: false, items: [
 								{ text: 'Tastaturnavigation', link: '/webclient/client/tastaturnavigation' },
 								{ text: 'Änderungen', link: '/webclient/client/änderungen/' },
 								{ text: 'FAQ', link: '/webclient/client/faq/' },
 							] },
-							{ text: 'Apps', link: '/webclient/apps/', collapsed: true, items: [
+							{ text: 'Apps', link: '/webclient/apps/', collapsed: false, items: [
 								{ text: 'Aktueller Benutzer', link: '/webclient/aktuellernutzer/' },
 								{ text: 'Schule', link: '/webclient/schule/', collapsed: true, items: [
 									{ text: 'Schulbezogene Kataloge', collapsed: true, items: [
@@ -211,7 +231,7 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Benutzergruppen (Anzupassen)', link: '/webclient/einstellungen/benutzergruppen/' },
 								] },
 							] },
-							{ text: 'Anleitungen', link: '/webclient/anleitungen/', collapsed: true, items: [
+							{ text: 'Anleitungen', link: '/webclient/anleitungen/', collapsed: false, items: [
 								{ text: 'Allgemeine Anleitungen', link: '/webclient/anleitungen_allgemein/', collapsed: true, items: [
 									{ text: 'Anmeldung', link: '/webclient/anleitungen_allgemein/anmeldung/' },
 								] },
@@ -221,8 +241,8 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Zeugnisvorbereitung', link: '/webclient/anleitungen_zeugnisse/' },
 							] },
-							{ text: 'Weiteres', link: '/webclient/weiteres/', collapsed: true, items: [
-								{ text: 'JSON-Dateien', link: '/webclient/webclient/json_files/' },
+							{ text: 'Weiteres', link: '/webclient/weiteres/', collapsed: false, items: [
+								{ text: 'JSON-Dateien', link: '/webclient/client/json_files/' },
 								{ text: 'Adressbücher', link: '/webclient/adressbuecher/' },
 								{ text: 'Kalender', link: '/webclient/kalender/' },
 							] },
