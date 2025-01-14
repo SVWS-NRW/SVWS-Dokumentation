@@ -16,7 +16,7 @@ Hier gibt es zwei grundlegende Ansätze: über einen Bootstick oder über eine E
 Download der aktuellsten Proxmox VE z.B. unter https://www.proxmox.com/de/downloads/proxmox-virtual-environment/iso
 
 Setzen Sie einen Ventoy Bootstick auf und legen Sie die .iso in das Hauptverzeichnis des Bootsticks 
-siehe auch https://doku.svws-nrw.de/Schulungsumgebungen/Virtualbox_Schulungsserver/
+siehe auch Kapitel [virtualbox Schulungsserver](../Virtualbox_Schulungsserver/)
 
 Alternativ kann auch https://etcher.balena.io/ als bootstick verwendet werden. 
 
@@ -72,12 +72,6 @@ Für den Einsatz des Proxmox innerhalb eines Schulungsraumes benötigt man daher
 vmbr0 einrichten: statische IPv4 und Subnetz und das Gateway ein. z.B. 
 192.168.178.16/24 und Gateway: 192.168.178.1 bei einer klassischen Fritzbox
 
-
-
-
-
-## SVWS-Server installieren
-
 ## SVWS-Server im LCX Container
 
 In der Regel sollte man aus Performancegründen eher einen LXContainer als eine KVM aufsetzen. Solange nichts anderes angegeben wird kann und soll man die default Einstellungen verwenden.
@@ -95,8 +89,7 @@ Create CT - Button oben rechts
 
 ### SVWS-Server installieren
 
-Den Linux-Installer des SVWS-Server herunterladen und ausführen. 
-siehe: https://doku.svws-nrw.de/Deployment/Linux-Installer/
+zum [Linux-Installer](../../deployment/Linux-Installer/)
 
 
 

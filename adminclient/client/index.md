@@ -23,9 +23,6 @@ Dazu bekommt jede Schule ein eigenes Schema, das auch einen eigenen Schema-Daten
 
 Die Verwaltung der verschiedenen Schemata kann auch mit dem Admin-Client geschehen. Ebenso stehen den Schulträgern hierzu auch API-Endpunkte zur Verfügung, die die Schema-Verwaltung über eine priviligierte API ermöglichen.
 
-Hierzu findet sich mehr unter https://doku.svws-nrw.de/deployment/, konkret wird dies https://doku.svws-nrw.de/deployment/IT-Umgebungen/ ausgeführt.
-
-
 
 ## Login und Übersicht
 Rufen Sie den _[Server]/admin_ auf, um den **Admin Client** zu starten.

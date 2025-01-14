@@ -2,7 +2,7 @@
 
 Ein webbasiertes Laufbahnberatungs- und Planungstool für die gymnasiale Oberstufe in NRW. 
 
-Beschreibung und Benutzung des Tools ist unter [doku.svws-nrw.de](https://doku.svws-nrw.de/laufbahnplanung/) beschrieben. 
+Beschreibung und Benutzung des Tools ist unter [doku.svws-nrw.de](../WebLupo/) beschrieben. 
 
 # Technischer Hintergrund
 
@@ -39,7 +39,7 @@ unzip SVWS-Laufbahnplanung-0.8.8.zip
 ```
 
 # Installation aus den Github Quellen
-[Todo: testen]
+
 apache2, git und npm auf dem Server installieren.
 
 ```bash
@@ -61,7 +61,6 @@ cp -r /var/www/SVWS-Server/svws-webclient/laufbahnplanung/build/output/* /var/ww
 
 ## Aktualisieren per Github 
 
-
 ```bash
 cd /var/www/SVWS-Server/
 git pull
@@ -71,8 +70,3 @@ cd /var/www/SVWS-Server/svws-webclient/laufbahnplanung/
 npm run build
 cp -r /var/www/SVWS-Server/svws-webclient/laufbahnplanung/build/output/* /var/www/html/
 ```
-
-
-
- 
-
