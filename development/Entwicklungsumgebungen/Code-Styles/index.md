@@ -47,7 +47,7 @@ Diese Verknüpfung zwischen Inspections und Cleanups führt zu einer komplexen �
 Grundsätzlich gilt, dass **IntelliJ_Inspections.xml** alle Cleanup relevanten Inspections für **Java** enthält.
 
 ::: details InstelliJ Inspections Merge Ablauf
-![alt text](graphics/IntelliJinspectionsMerge.svg)
+![alt text](./graphics/IntelliJinspectionsMerge.svg)
 :::
 
 Durch diese Überschreibungslogik sind für den Developer folgende eigene Einstellungen noch möglich:

@@ -31,8 +31,7 @@ Das ist auch der Grund, warum die Projektsprache weiterhin Deutsch ist, damit Ko
 
 ## Mitarbeit am Projekt
 
-Hier können interessierte Entwickler und Programmierer weitere Informationen zur [Mitarbeit](../SVWS-Server/svws-webclient/Mitarbeit.md) erhalten.
-
+Hier können interessierte Entwickler und Programmierer weitere Informationen zur [Mitarbeit](../../teamarbeit/) erhalten.
 
 ## Wo finde ich die nötigen Quellen?
 

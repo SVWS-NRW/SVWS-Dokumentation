@@ -16,5 +16,5 @@ Insgesamt sind etwa 20 Personen in die Entwicklung und das Projektmanagement des
 
 ## Mitarbeit
 
-Wenn Sie an einer Mitarbeit am Projekt interessiert sind, finden Sie in dieser Dokumentation weitere Informationen zu den verwendeten Techniken und Entwicklungsumgebungen. Sie können über Github Kontakt zu unserem Entwicklerteam aufnehmen. Außerdem können [Bugs oder Issues](https://doku.svws-nrw.de/Teamarbeit/issues/) aus der Open-Source-Gemeinschaft gesammelt und direkt auf Github gemeldet werden. 
+Wenn Sie an einer Mitarbeit am Projekt interessiert sind, finden Sie in dieser Dokumentation weitere Informationen zu den verwendeten Techniken und Entwicklungsumgebungen. Sie können über Github Kontakt zu unserem Entwicklerteam aufnehmen. Außerdem können [Bugs oder Issues](./issues/) aus der Open-Source-Gemeinschaft gesammelt und direkt auf Github gemeldet werden. 
 
