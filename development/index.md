@@ -50,10 +50,10 @@ Sie können unseren Quellcode und die Testdatenbanken unter dem o.g. Repository 
 
 ## Mitarbeit
 
-Wenn Sie an einer Mitarbeit am Projekt interessiert sind, so finden Sie in dieser Dokumentation unter [Teamarbeit](./Teamarbeit/) weitere Informationen. Per Github kann die Kontaktaufnahme zu unserem Entwicklerteam erfolgen. Ebenso können hier [Bugs oder Issues](./Teamarbeit/issues/) aus der Open Source Gemeinschaft gesammelt werden.
+Wenn Sie an einer Mitarbeit am Projekt interessiert sind, so finden Sie in dieser Dokumentation unter [Teamarbeit](../teamarbeit/) weitere Informationen. Per Github kann die Kontaktaufnahme zu unserem Entwicklerteam erfolgen. Ebenso können hier Bugs oder Issues aus der Open Source Gemeinschaft gesammelt werden.
 
 
-## [Projektanforderungen](Projektanforderungen.md)
+## [Projektanforderungen](../teamarbeit/Projektanforderungen.md)
 
-## [FAQ](FAQ/index.md)
+## [FAQ](./FAQ/)
 

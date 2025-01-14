@@ -61,7 +61,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Bedienungkonzept', link: '/adminclient/client/', collapsed: true},
 						{ text: 'Apps', link: '/adminclient/apps/', collapsed: false, items: [
 							{ text: 'Schemata', link: '/adminclient/apps/schemata/' },
-							{ text: 'Konfiguration', link: '/adminclient/apps/konfiguration' }
+							{ text: 'Konfiguration', link: '/adminclient/apps/konfiguration' },
 						] },
 					] },
 				],
@@ -71,14 +71,14 @@ export default defineConfig(({ mode }) => {
 							{ text: 'SchulungsClient', link: '/schulungen/SchulungsClient/' },
 							{ text: 'Virtualbox', link: '/schulungen/Virtualbox_Schulungsserver/' },
 							{ text: 'Bootstick', link: '/schulungen/Bootstick_Schulungsserver/' },
-							{ text: 'Proxmox', link: '/schulungen/Proxmox_Schulungsserver/' }
+							{ text: 'Proxmox', link: '/schulungen/Proxmox_Schulungsserver/' },
 						] },
 					] },
 				],
 				'/teamarbeit': [
 					{ text: '', items: [
 						{ text: 'Teamarbeit', link: '/teamarbeit/', collapsed: false, items: [
-							{ text: 'Git Workflow', link: '/teamarbeit/workflow/' }
+							{ text: 'Git Workflow', link: '/teamarbeit/workflow/' },
 						] },
 					] },
 				],
@@ -89,7 +89,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'WeNoM', link: '/projekte/WeNoM/' },
 							{ text: 'ASD-Statistik', link: '/projekte/ASD-Statistik/' },
 							{ text: 'SchülerOnline', link: '/projekte/SchülerOnline/' },
-							{ text: 'xSchule', link: '/projekte/xSchule/' }
+							{ text: 'xSchule', link: '/projekte/xSchule/' },
 						] },
 					] },
 				],

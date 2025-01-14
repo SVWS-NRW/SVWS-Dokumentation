@@ -1,6 +1,6 @@
 # Installation SVWS-Server
 
-In diesem Abschnitt finden Sie verschiedene [IT-Umgebungen](./IT-Umgebungen), in denen der SVWS-Server 
+In diesem Abschnitt finden Sie verschiedene [IT-Umgebungen](./IT-Umgebungen/), in denen der SVWS-Server 
 eingesetzt werden kann. In der Nachfolge von SchILD-NRW wird weiterhin eine heterogene 
 IT in den Verwaltungsnetzstrukturen der Schulen angenommen, so dass Szenarien von der einfachen 
 Verwendung auf einem Sekretariats-PC bis hin zu der Installation in kommunalen Rechenzentren betrachtet werden. 
