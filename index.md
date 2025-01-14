@@ -19,20 +19,21 @@ const datum = (t: number) => {
 
 ![Logo-NRW](./graphics/wappenzeichen-nrw_farbig_rgb_300.png "Das Wappen von Nordrhein-Westfalen.")
 
+[![Users](./graphics/LandingUser.png "Icon für Benutzer.")](./webclient/)
+[![Admins](./graphics/LandingAdmin.png "Icon für Admins.")](./deployment/)
+[![Devs](./graphics/LandingDev.png "Icon für Developer.")](./development/)
 
 ## SVWS-Server, SVWS-Client und weitere Projekte
 
-Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Client* und zum *SVWS-Sever*. Der **SVWS-Client** ist eine Web-Applikation zur Unterstützung der Verwaltungsprozesse an den Schulen Nordrhein-Westfalens. Er schafft eine plattformübergreifende Benutzeroberfläche, die mit allen gängigen Browsern aufgerufen werden kann.
+
+
+Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Client* und zum *SVWS-Server*. Der **SVWS-Client** ist eine Web-Applikation zur Unterstützung der Verwaltungsprozesse an den Schulen Nordrhein-Westfalens. Er schafft eine plattformübergreifende Benutzeroberfläche, die mit allen gängigen Browsern aufgerufen werden kann.
 
 Auf dieser Webseite finden Sie Informationen zur Installation und zur Entwicklung und eine Dokumentation der API für die dezentrale Schulverwaltung in NRW. Ebenso finden sich Dokumentationen zu weiteren Projekten.
 
-[![Users](./graphics/LandingUser.png "Icon für Benutzer.")](./client/)
-[![Admins](./graphics/LandingAdmin.png "Icon für Admins.")](./deployment/)
-[![Devs](./graphics/LandingDev.png "Icon für Developer.")](./admin/)
-
 Navigieren Sie zu den übergreifenden Bereichen dieser Webseite über die **Kopfzeile**. 
 
-Unter dem ersten Punkt **Benuzterhandbücher** finden Sie die Dokumentationen für die **Anwender** in der Schule.
+Unter dem ersten Punkt **Benutzerhandbücher** finden Sie die Dokumentationen für die **Anwender** in der Schule.
 
 Die übrigen Punkte bieten Zugang zu technischen Informationen zu Installation, Administration und Entwicklung.
 
