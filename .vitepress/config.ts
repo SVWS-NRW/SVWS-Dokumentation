@@ -138,6 +138,7 @@ export default defineConfig(({ mode }) => {
 				],
 				'/weblupo' : [
 					{ text: '', items: [
+						{ text: 'Weblupo', link: '/weblupo/', collapsed: false },
 						{ text: 'Vorbereitung', link: '/weblupo/vorbereitung/' },
 						{ text: 'Beratung mit WebLuPO', link: '/weblupo/weblupo/' },
 					] },
