@@ -65,7 +65,11 @@ systemctl status apache2.service --no-pager
 #cp ~/SVWS-Server/svws-webclient/enmserver/build/*.zip $INSTALLPATH/enmserver.zip
 #
 cd $INSTALLPATH
+####### nächste Zeile auskommentieren, wenn optional gewählt wurde ein build erwünscht #######
 wget https://wenom.svws-nrw.de/enmserver.zip
+#
+#
+#
 unzip enmserver.zip
 #
 #
@@ -86,21 +90,28 @@ INSTALLPATH=/var/www/html
 rm -rf /var/www/html
 mkdir /var/www/html
 
-cd ~/SVWS-Server
-git reset --hard
-git pull
-
-./gradlew build
-
-cp ~/SVWS-Server/svws-webclient/enmserver/build/*.zip $INSTALLPATH/enmserver.zip
+###### optional #####
+#cd ~/SVWS-Server
+#git reset --hard
+#git pull
+#
+#./gradlew build
+#
+#cp ~/SVWS-Server/svws-webclient/enmserver/build/*.zip $INSTALLPATH/enmserver.zip
 cd $INSTALLPATH
+#
+####### nächste Zeile auskommentieren, wenn optional gewählt wurde ein build erwünscht #######
+wget https://wenom.svws-nrw.de/enmserver.zip
+#
+#
+#
 unzip enmserver.zip
-
+#
 chmod -R 777 $INSTALLPATH
 chown -R www-data:www-data $INSTALLPATH
-
+#
 curl --request GET --url http://localhost/api/setup  --header "Content-Type: application/x-www-form-urlencoded" 
-
+#
 # NUR fuer Testzwecke geeignet:
 cat $INSTALLPATH/db/client.sec > $INSTALLPATH/public/secret.html
 mv $INSTALLPATH/enmserver.zip $INSTALLPATH/public/      

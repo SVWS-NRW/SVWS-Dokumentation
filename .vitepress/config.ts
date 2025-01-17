@@ -138,7 +138,7 @@ export default defineConfig(({ mode }) => {
 				],
 				'/weblupo' : [
 					{ text: '', items: [
-						{ text: 'Weblupo', link: '/weblupo/'}
+						{ text: 'Weblupo', link: '/weblupo/' },
 					] },
 				],
 				'/webclient': [
@@ -237,7 +237,7 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Schulformspezifisch', link: '/webclient/anleitungen_schulform/', collapsed: true, items: [
 									{ text: 'Oberstufe', link: '/webclient/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
 										{ text: 'WebLuPO', link: '/webclient/anleitungen_schulform/anleitungen_gost/weblupo/' },
-								] },
+									] },
 									{ text: 'Grundschule', link: '/webclient/anleitungen_schulform/anleitungen_gs/' },
 								] },
 								{ text: 'Zeugnisvorbereitung', link: '/webclient/anleitungen_zeugnisse/' },
