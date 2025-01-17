@@ -8,7 +8,9 @@ Die betreuende Lehrkraft erzeugt mit dem SVWS-Client individuelle Laufbahnberatu
 
 ## Berabeitung in WebLuPO
 
-![weblupo Startseite](./graphics/weblupo_startseite.png "Der Startbildschirm von WebLuPO, hier ist die Beratungsdatei auszuwählen")
+![weblupo Startseite](./graphics/weblupo_startseite.png)
+
+Der Startbildschirm von WebLuPO, hier ist die Beratungsdatei auszuwählen.
 
 Die Webanwendung WebLuPO ermöglicht das Laden individueller LupO-Schülerdateien im Format `.lp`.
 
@@ -16,7 +18,9 @@ Dabei wird das ausführbare Programm im Browser ausgefüht. Hierbei wird weder e
 
 Die folgende Grafik zeigt die vier Bereiche der Laufbahnberatungstools.
 
-![weblupo Bereichsübersicht](./graphics/weblupo_bereiche.png "Die Oberfläche von WebLuPO")
+![weblupo Bereichsübersicht](./graphics/weblupo_bereiche.png) 
+
+Die Oberfläche von WebLuPO.
 
 Im ersten Bereich können Sie den Modus einstellen und haben Zugriff auf Speicher- und Bearbeitungsmöglichkeiten.   
 
