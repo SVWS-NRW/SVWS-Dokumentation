@@ -52,22 +52,20 @@ systemctl status apache2.service --no-pager
 ### optional:Java installieren und das SVWS-Server Projekt bauen
 # 
 #
-wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null
-echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
-apt update
-apt install temurin-21-jdk -y
+#wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null
+#echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+#apt update
+#apt install temurin-21-jdk -y
 #
-cd ~
-git clone $URL
-cd SVWS-Server
-bash ./gradlew build
+#cd ~
+#git clone $URL
+#cd SVWS-Server
+#bash ./gradlew build
 #
-
-
-### enmserver im Installationsverzeichnis entpacken
+#cp ~/SVWS-Server/svws-webclient/enmserver/build/*.zip $INSTALLPATH/enmserver.zip
 #
-cp ~/SVWS-Server/svws-webclient/enmserver/build/*.zip $INSTALLPATH/enmserver.zip
 cd $INSTALLPATH
+wget https://wenom.svws-nrw.de/enmserver.zip
 unzip enmserver.zip
 #
 #
