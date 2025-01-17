@@ -2,38 +2,36 @@
 
 WebLuPO ist ein webbasiertes Tool zur Laufbahnberatung und -planung iom Browser für die gymnasiale Oberstufe in NRW.
 
-## Vorbereitung im SVWS-Client
+In diesem Artikel wird die Benutzung einer `.lp`-Datei erklärt, die von den betreuenden Lehrkräften bereitgestellt wurde. Den passenden Link zur Webseite erhalten Sie ebenfalls von den Lehrkräften.
 
-Die betreuende Lehrkraft erzeugt mit dem SVWS-Client individuelle Laufbahnberatungsdateien, die an die Schülerinnen und Schüler verteilt
-
-## Berabeitung in WebLuPO
+## Berarbeitung in WebLuPO
 
 ![weblupo Startseite](./graphics/weblupo_startseite.png)
 
-Der Startbildschirm von WebLuPO, hier ist die Beratungsdatei auszuwählen.
+Startet man WebLuPO, ist auf diesem Bildschirm die individuelle `.lp`-Datei hochzuladen.
 
-Die Webanwendung WebLuPO ermöglicht das Laden individueller LupO-Schülerdateien im Format `.lp`.
+Klicken Sie auf `Datei auswählen` und navigieren Sie dann auf dem Rechner zur Datei.
 
-Dabei wird das ausführbare Programm im Browser ausgefüht. Hierbei wird weder ein bestimmtes Betriebssystem vorausgesetzt noch verlassen die Daten das Endgerät, an dem der Schüler arbeitet.
+::: info Die Verarbeitung findet auf dem lokalen Rechner statt
+Hierbei wird das WebKuPO nur im Browser auf dem aktuellen Rechner ausgefürht. Somit werden weder ein bestimmtes Betriebssystem vorausgesetzt noch verlassen die Daten das Endgerät, an dem gearbeitet wird.
+:::
 
-Die folgende Grafik zeigt die vier Bereiche der Laufbahnberatungstools.
+## Die Oberfläche von WebLuPO.
+
+Die folgende Grafik zeigt die vier Bereiche der Laufbahnberatungstools:
 
 ![weblupo Bereichsübersicht](./graphics/weblupo_bereiche.png) 
 
-Die Oberfläche von WebLuPO.
+* Im ersten Bereich können Sie den *Modus* einstellen und haben Zugriff auf Speicher- und Bearbeitungsmöglichkeiten.   
 
-Im ersten Bereich können Sie den Modus einstellen und haben Zugriff auf Speicher- und Bearbeitungsmöglichkeiten.   
+* Im zentralen zweiten Bereich werden die Kurswahlen vorgenommen. Der Modus *normal* und *hochschreiben* füllt automatisch die angegebenen Fachwahlen auf und passt sie so wie es sinnvoll erscheint an die höheren Jahrgänge an. Durch einen Doppelklick auf die einzelnen Felder der Tabelle im zweiten Bereich können Sie je nach Kontext zwischen *M* für *mündlich* und *S* für *schriftlich* und dann in der Q-Phase zwischen *M* für *Grundkurs mündlich* und *S* für *Grundkurs schriftlich*, dem immer schriftlichen *Leistungskurs*, *Projektkurs* und so weiter wählen.
 
-Der Modus *normal* und *hochschreiben* füllt automatisch die im zweiten Bereich angegebenen Fachwahlen auf und passt sie sinnvoll an die höheren Jahrgänge an.
+* Im dritten Bereich wird automatisch die Anzahl der belegten und anrechenbaren Kurse mit den belegten Stundenzahlen berechnet. Die Farbgebung von rot bis dunkelgrün gibt Ihnen direkt Feedback zur Anzahl der Kurse. Bei einer *roten* Farbe sind zu wenige Stunden im Halbjahr beziehungsweise der EF oder der ganzen Q-Phase belegt. *Hellgrün* eingefärbte Stunden entsprechend den Vorgaben. Eine Einfärbung in *Dunkelgrün* weist darauf hin, dass deutlich mehr Stunden als nötig gewählt wurden und das Abwahlen - jetzt oder später - möglich sein könnten.
 
-Durch einen Doppelklick auf die einzelnen Felder der Tabelle im zweiten Bereich können Sie zwischen Grundkurs, Leistungskurs und so weiter. wählen.  
+* Im vierten Bereich werden die Regeln für die Oberstufenbelegung algorithmisch ausgewertet und die noch zu erfüllenden Bedingungen angezeigt beziehungsweise es wird auf Fehlbelegungen hingewiesen. Hier kann der Modus *EF.1*, *Gesamtprüfung* oder *automatisch* gewählt werden.   
 
-Im dritten Bereich wird automatisch die Anzahl der belegten und anrechenbaren Kurse berechnet. Die Farbgebung von rot bis dunkelgrün gibt Ihnen direkt Feedback zur Anzahl der Kurse.
+Interessant ist auch die Einstellung ````Planung merken```` im ersten Bereich, die das Festhalten einer Einstellung in der Tabelle ermöglicht. Wird die Planung dann testweise geändert, kann die gemerkte Planung wiederhergestellt werden.
 
-Im vierten Bereich werden die Regeln für die Oberstufenbelegung algorithmisch ausgewertet und die noch zu erfüllenden Bedingungen angezeigt. Hier kann der Modus EF.1, Gesamtprüfung oder automatisch gewählt werden.   
+Somit können Schülerinnen und Schüler von diesem Ausgangspunkt aus schnell mehrere Planungen ausprobieren und wieder zurücksetzen. 
 
-Interessant ist auch die Einstellung ````Planung merken```` im ersten Bereich, die das Festhalten einer Einstellung in der Tabelle ermöglicht.
-
-Somit können Schülerinnen und Schüler von einem Ausgangspunkt aus schnell mehrere Planungen ausprobieren und wieder zurücksetzen. 
-
-**TODO Prozessbeschreibung und Übersicht eines Beratungsprozesses**
+## Exportieren der Wahlen
