@@ -12,7 +12,11 @@ Informationen zur Installation des WebLuPO-Servers und weitere technische Hinter
 
 ::: info Weitere Informationen
 Informationen mit allen Details und Anmerkungen finden sich im jeweiligen Artikel der **Tabs** in der **App Oberstufe**.
+
+Beachten Sie, dass das neue Dateiformat **nicht** mit den alten Dateien des Programms "LuPO" für MS Windows  kompatibel ist.
 :::
+
+[Installieren Sie bei Bedarf WebLuPO](../../../../projekte/WebLupo/) beziehungsweise installieren Sie eine geupdatete Version.
 
 ## Erzeugen der Laufbahnplanungsdateien
 
@@ -34,38 +38,38 @@ Nachdem diese **Allgemeine Vorlage** erzeugt wurde, lassen sich links in der Aus
 
 Unter dem **Tab Beratung** kann die Vorlage für WebLuPO definiert werden, in der schon Wahlen ausgefüllt. Zum Beispiel belegen alle Schüler Sport mit einem mündlichen Kurs oder Deutsch mit einem schriftlichen.
 
-HIER WEITER!
+### Exportieren der LuPO-Dateien für WebLuPO
 
-### Exportieren der LuPO-Dateien
+Wechseln Sie auf den **Tab Laufbahn**, hier steht der *Schalter* ````Export für alle```` zur Verfügung, über den die WebLuPO-Dateien erzeugt werden können.
 
-In **Laufbahnen**
-* **Export alle* (Alle in zip-Verzeichnis ausgegeben); Zip muss entpackt werden und je nach Schulorganisation an Schüler bringen
+:::info Einzelene Schüler exportieren
+Möchten Sie zu einem späteren Zeitpunkt nur einzelene Schüler nach-exportieren, gehen Sie in der **App Oberstufe** zum **Tab Laufbahnen** und wählen dort den oder die zu exportierende Person an, dann ändert sich *Export für alle* zu ````Exportiere Auswahl````.  
+:::
 
-Durchführen der Beratungen mit *WebLuPO* (Weblaufbahnplanung).
+Es wird eine gepackte .zip-Datei erzeugt, in der die WebLuPO-Dateien enthalten sind. Diese ist zu entpacken und die einzelnen Dateien sind je nach Schulorganisation an Schüler bringen.
 
-* Dann **Importiere alle**; wähle Dateien
+Lassen Sie die Schüler wählen und führen Sie die Beratungen entsprechend Ihrer Arbeitsprozesse durch.
 
-TODO:
+Hierzu müssen diese Dateien entsprechend des Wahl- und Beratungsprozesses an Ihrer Schule nun in WebLuPO eingelesen werden.
 
-### Einzelne Dateien
+[Installieren Sie bei Bedarf WebLuPO](../../../../projekte/WebLupo/) beziehungsweise installieren Sie eine geupdatete Version.
 
-Sie können bei Bedarf individuell für jeden Schüler oder jede Schülerin die jeweilige Laufbahnplanungsdatei exportieren.
+Navigieren Sie zur Beratung zu WebLuPO. Hier finden Sie die [Erläuterungen zur Bedienung von WebLuPo](../../../../weblupo/).
 
-Hierzu wählen Sie bitte in der App **Schüler** den Tab *Laufbahnplanung* aus.
+Bei der Wahl beziehungsweise fallen wieder WebLuPO-Dateien an, die dort exportiert werden und dann wieder im SVWS-Webclient eingelesen werden. 
 
-Im oberen Menü finden Sie den Punkt *Exportieren*, durch den eine .lp-Datei vom Server in Ihren Downloadordner gespeichert wird.
+## Weitereinlesen der WebLuPO-Dateien im SVWS-Webclient
 
-Falls der Tab *Laufbahnplanung* dort noch nicht zu sehen ist, muss für diesen Jahrgang unter *Oberstufe* ein neuer Abiturjahrgang angelegt werden.
+Gehen Sie wieder in der **App Oberstufe** in den **Tab Laufbahnen** und wählen Sie den betreffenden *Abitur-Jahrgang* an. 
 
-Nach entsprechender Bearbeitung kann diese Datei durch den *Import*-Button wieder ins System eingelesen werden.
+Klicken Sie nun auf ````Importieren...```` und wählen Sie im sich öffnenden Auswahlfenster die zu importierneden ````.lp````-Dateien aus.
 
-## Stufenweise 
+:::tip Mehrere Dateien anwählen
+Um alle Dateien auszuwählen, drücken Sie ````Strg + A````, um mehrere Dateien zu selektieren, klicken Sie die Dateien mit gedrückter ````Strg````-Taste an. Um Dateien *von* einem Schüler *bis* zu einem anderen anzuwählen, klicken Sie die oberste Datei an, dann klicken Sie mit gedrückter ````Shift````-Taste die untere Datei an. 
+:::
 
-Der Download einzelner Dateien kann auch für eine ganze Jahrgangstufe durchgeführt werden.
+Dann klicken Sie auf ````Öffnen```` und die Dateien werden wieder importiert. Die Wahlen stehen nun zur Verfügung.
 
-Gehen Sie hierzu auf den Tab *Laufbahnen* unter *Oberstufe* und drücken Sie den Button *Exportiere alle*. Eine gepackte ````.zip```` Datei wird daraufhin in Ihrem Downloadordner gespeichert.
-
-Diese Datei enthält die eindeutig benannten, individuellen .lp Dateien für jede Schülerin und jeden Schüler dieser Stufe.
-
-Nach der Bearbeitung können Sie diese Dateien wieder ins System importieren, indem Sie auf die Schaltfläche *Importieren* klicken.
-
+:::tip Springen Sie zu einer konkreten Person
+Wenn Sie auf das Link-Symbol vor einem Schüler klicken, springt die Ansicht direkt in die zugehörige Laufbahnplanung.
+:::
