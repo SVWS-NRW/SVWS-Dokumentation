@@ -237,7 +237,9 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Anmeldung', link: '/webclient/anleitungen_allgemein/anmeldung/' },
 								] },
 								{ text: 'Schulformspezifisch', link: '/webclient/anleitungen_schulform/', collapsed: true, items: [
-									{ text: 'Oberstufe', link: '/webclient/anleitungen_schulform//anleitungen_gost/' },
+									{ text: 'Oberstufe', link: '/webclient/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
+										{ text: 'Anmeldung', link: '/webclient/anleitungen_allgemein/anleitungen_gost/weblupo/' },
+								] },
 									{ text: 'Grundschule', link: '/webclient/anleitungen_schulform/anleitungen_gs/' },
 								] },
 								{ text: 'Zeugnisvorbereitung', link: '/webclient/anleitungen_zeugnisse/' },
