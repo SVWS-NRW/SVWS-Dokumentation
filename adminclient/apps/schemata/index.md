@@ -58,3 +58,7 @@ Hierbei besteht die Auswahl aus den Quellen *MS Access*, *MySQL*, *MariaDB*, *MS
 Hier im Beispiel wird ein Schema mit dem Namen "schildDB" einer fiktiven IP-Adresse abgerufen, um diese in in ein "svwsdb_FS" genanntes Schema zu migrieren. Hier wird das *_FS* angehängt, um kenntlich zu machen, dass es sich um eine Förderschule handelt.
 
 Bei einer Migration aus SchILDzentral ist eine *Schulnummer* zu übergeben.
+
+## Weiteres Datenbankmanagement für ITler
+
+Weitere Informationen zu technischerem Datenbankmanagement, das nicht über die grafische Oberfläche durchgeführt wird, wie Backups per Skript, finden IT-Dienstleister bei den [Informationen für IT-Administratoren](../../../deployment/).
