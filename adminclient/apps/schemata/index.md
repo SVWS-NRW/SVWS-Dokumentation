@@ -3,7 +3,7 @@
 Im Bereich **Schema** lassen sich die auf dieser MariaDB laufenden Schemata auswählen.
 
 ::: info MariaDB-root und Schema-Admin
-Hat man sich mit einem Schema-Admin und nicht mit dem MariaDB-root eingloggt, stehe nur die Schemata zur Verfügung, auf die dieser Schema-Admin Zugriff hat.
+Hat man sich mit einem Schema-Admin und nicht mit dem MariaDB-root eingloggt, stehen nur die Schemata zur Verfügung, auf die dieser Schema-Admin Zugriff hat.
 :::
 
 Zu jedem Schema werden dann rechts der **Name** und und weiter rechts die **Daten der Schule** angezeigt. Weiterhin werden die **Admin-Benutzer** der jeweiligen Datenbank mit ihrem Namen und Benutzernamen aufgeführt. 
