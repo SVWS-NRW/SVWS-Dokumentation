@@ -10,6 +10,8 @@ Zum Zugriff benötigen Sie entweder das **Root**passwort der MariaDB. In diesem 
 
 Alternativ kann man sich mit einem **Schema**-Admin einloggen, um die Schemata, auf die dieser Nutzer Zurgiff hat, zu verwalten. Etwa, um Backups einzuspielen. Loggt man sich mit einem Schema-Admin ein, stehen nicht alle Apps und Optionen zur Verfügung.
 
-::: warning Die Datenbanknutzer haben keinen Zugriff auf den Admin-Client
+::: warning Datenbanknutzer haben keinen Zugriff auf den Admin-Client
 Ein **Datenbanknutzer**, auch einer, der als *Administrator* in der Datenbank gekennzeichnet ist, hat keinen Zugriff auf den Admin-Client.
+
+*Nur-Lesende* Schema-Admins sind nicht vorgesehen.
 :::
