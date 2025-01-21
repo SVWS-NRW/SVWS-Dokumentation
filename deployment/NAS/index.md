@@ -11,9 +11,9 @@ Achtung! Schreib-/Lese-Cache kann bei Strom- oder Netzwerkausfall zu Datenverlus
 
 ## Installation benötigter Pakete
 
-1. mariaDB
-2. phpmyadmin (webstation, php8.0)
-3. VirtualMaschine-Manager
++ mariaDB
++ phpmyadmin (webstation, php8.0)
++ VirtualMaschine-Manager
 
 
 ## MariaDB konfigurieren
@@ -28,19 +28,19 @@ PHPmyAdmin aufrufen und den User root mit identischen Rechten duplizieren (Beisp
 
 ## VirtualMaschine-Manager
 
-Ein Debian-ISO-Image oder ein Ubuntu-Live-Server-Image herunterladen und im VM-Manager hinterlegen.
+Zunächst muss auf der NAS noch das Paket virtualMaschine Manager installiert werden. 
+Im VM-Manager dann eine Debian-ISO-Image oder ein Ubuntu-Live-Server-Image herunterladen und eine VM mit dem gewünschten Image installieren:
 
-Eine VM mit dem gewünschten Image installieren.
-S-ATA-Treiber bei der Verwenung der Festplatte einstellen.
-Einstellung mit UEFI Bios booten. Hier wurden zwei CPUs mit 8 GByte RAM gewählt.
++ Die Grafikkarte von vmvga auf vga einstellen
++ S-ATA-Treiber bei der Verwendung der Festplatte einstellen.
++ Einstellung mit UEFI Bios booten. 
+
+Hier wurden beispielsweise zwei CPUs mit 8 GByte RAM gewählt.
 
 
 ## Installation des SVWS-Server mit dem Linux-installieren
 
-
-Mit wget das aktuellen install-x.x.x.sh von Github laden.
-
-https://github.com/SVWS-NRW/SVWS-Server/releases/latest
+Mit wget das [aktuellen install-x.x.x.sh](https://github.com/SVWS-NRW/SVWS-Server/releases/latest) von Github laden.
 
 
 ``` bash
@@ -49,18 +49,13 @@ https://github.com/SVWS-NRW/SVWS-Server/releases/latest
     ./install-x-x-x.sh
 ```
 
-Dabei die Installationsschritte, wie unter Linux-Installer beachten.
-
-https://doku.svws-nrw.de/deployment/Linux-Installer
-
-Aufruf des AdminClients ist nun möglich.
-Darin kann eine Migration oder ain Backup durchgeführt werden.
+Dabei die Installationsschritte, wie unter [Linux-Installer](../Linux-Installer/) beachten. Der Aufruf des AdminClients ist nun möglich. Darin kann eine [Migration](../Datenmigration/) oder ein [Backup](../Datensicherung/) durchgeführt werden.
 
 ## Schild-NRW 3 Freigabe
 
-Einen neuen Netzwerkfreigabe-Ordner anlegen.
+Einen neuen Netzwerkfreigabe-Ordner anlegen. 
 
-Darin zwei Unterordner Für Schild-NRW3 und das SVWS-Arbeitsverzeichnis anlegen.
+Darin zwei Unterordner für Schild-NRW3 und das SVWS-Arbeitsverzeichnis anlegen.
 
 ![Schild3-Ordner1.png](./graphics/Schild3-Ordner1.png)
 
@@ -69,12 +64,10 @@ Dort eine Admin.ini als Textdatei anlegen und bei GroupDir= die Url zum Arbeitsv
 
 ![Schild3-Ordner2.png](./graphics/Schild3-Ordner2.png)
 
-Im SVWS-arbeitsverzeichnis einen Ordner Connection-Files und einen Ordner Schild-Reports anlegen.
++ Im SVWS-Arbeitsverzeichnis einen Ordner Connection-Files und einen Ordner Schild-Reports anlegen.
 
-Basisreportsammlung herunterladen und im Report-Ordner entpacken.
++ Die [Basisreportsammlung](https://github.com/SVWS-NRW/Schild-NRW-Reports/releases) herunterladen und im Report-Ordner entpacken.
 
-https://github.com/SVWS-NRW/Schild-NRW-Reports/releases
-
-Im Ordner Schild-NRW3 das Programm Schild_DBConfig.exe starten und die CON-Datei nach Eintragung aller Parameter in den Ordner Connection-Files speichern.
++ Im Ordner Schild-NRW3 das Programm Schild_DBConfig.exe starten und die CON-Datei nach Eintragung aller Parameter in den Ordner Connection-Files speichern. Vlg. hierzu auch [Schild-NRW3](../Schild-NRW3/)
 
 

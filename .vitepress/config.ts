@@ -127,13 +127,17 @@ export default defineConfig(({ mode }) => {
 					{ text: '', items: [
 						{ text: 'Installation', link: '/deployment/' },
 						{ text: 'IT-Umgebungen', link: '/deployment/IT-Umgebungen/' },
-						{ text: 'Linux-Installer', link: '/deployment/Linux-Installer/' },
-						{ text: 'Docker-Container', link: '/deployment/Docker/' },
-						{ text: 'Windows-Installer', link: '/deployment/Windows-Installer/' },
-						{ text: 'SchILD-NRW-3', link: '/deployment/Schild-NRW3/' },
+						{ text: 'Intallationsmethoden', link: '/deployment/installationsmethoden.md', collapsed: false, items: [
+							{ text: 'Linux-Installer', link: '/deployment/Linux-Installer/' },
+							{ text: 'Docker-Container', link: '/deployment/Docker/' },
+							{ text: 'NAS', link: '/deployment/NAS/' },
+							{ text: 'Windows-Installer', link: '/deployment/Windows-Installer/' },
+							{ text: 'SchILD-NRW-3', link: '/deployment/Schild-NRW3/' },
+						] },
 						{ text: 'Einrichtung', link: '/deployment/Einrichtung/' },
 						{ text: 'Datenmigration', link: '/deployment/Datenmigration/' },
 						{ text: 'Datensicherung', link: '/deployment/Datensicherung/' },
+						{ text: 'FAQ', link: '/deployment/FAQ.md' },
 					] },
 				],
 				'/weblupo' : [

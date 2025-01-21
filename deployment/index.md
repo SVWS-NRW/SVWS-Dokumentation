@@ -4,10 +4,7 @@ In diesem Abschnitt finden Sie Informationen zur Instllationen für verschiedene
 
 In Erweiterung, Alternative und Nachfolge zu SchILD-NRW wird weiterhin eine heterogene  IT in den Verwaltungsnetzstrukturen der Schulen angenommen, so dass Szenarien von der einfachen Verwendung auf einem Sekretariats-PC bis hin zu der Installation in kommunalen Rechenzentren betrachtet werden.
 
-In etwa finden Sie Informationen zur Installation bezüglich
-* [Linux-Installer](./Linux-Installer/),
-* [Docker](./Docker/)
-* [Windows-Installer](./Windows-Installer/).
+Sie finden in den [Installationsmethoden](./installationsmethoden.md) mehrer Anleitungen für diverse Systeme und Hardwarevoraussetzungen. 
 
 Unter dem Kapitel [Einrichtung](./Einrichtung/) wird beschrieben, wie ein neuer SVWS-Server ohne Datenbanken in Betrieb genommen werden kann.
 
