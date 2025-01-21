@@ -2,6 +2,10 @@
 
 Im Bereich **Schema** lassen sich die auf dieser MariaDB laufenden Schemata auswählen.
 
+::: info MariaDB-root und Schema-Admin
+Hat man sich mit einem Schema-Admin und nicht mit dem MariaDB-root eingloggt, stehe nur die Schemata zur Verfügung, auf die dieser Schema-Admin Zugriff hat.
+:::
+
 Zu jedem Schema werden dann rechts der **Name** und und weiter rechts die **Daten der Schule** angezeigt. Weiterhin werden die **Admin-Benutzer** der jeweiligen Datenbank mit ihrem Namen und Benutzernamen aufgeführt. 
 
 Im mittleren Bereich lässt sich ein bisheriges **SchILD-NRW-2-Schema** in dieses Schema **migrieren**. Dieser Vorgang überschreibt die im Schema aktuell vorliegenden Daten.
