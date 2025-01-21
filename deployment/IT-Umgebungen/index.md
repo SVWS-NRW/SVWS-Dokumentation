@@ -51,6 +51,28 @@ Welche Kombination der Installationsmöglichkeiten die Beste ist, sollte  anhand
 
 ![Serverinstallation_Schule_ohne_VPN_einfach.png](./graphics/Serverinstallation_Rechenzentrum_einfach.png "Ein komplexerer Aufbau in einem Rechenzentrum.")
 
+## ReverseProxy 
+
+Beim Betrieb eines RevereseProxyservers als Zugangsserver sind die folgenden Einstellungen empfehlenswert: 
+
+```bash 
+    client_max_body_size 100M;
+    add_header 'Content-Security-Policy' 'upgrade-insecure-requests';
+    proxy_set_header X-Content-Type-Options nosniff;
+    proxy_set_header X-Frame-Options "SAMEORIGIN";
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+    proxy_http_version 1.1;
+    proxy_read_timeout 300;
+    proxy_connect_timeout 300;
+    proxy_send_timeout 300;
+```
+
+Ggf. können die Einstellungen in der Paketgröße und den Timeouts je nach Größe der Schule und Geschwindigkeit der Internetverbindung noch angepasst werden. 
+
+
 ## FAQ
 
 ### Was bedeuten die Begriffe SVWS-Server und SchILD-NRW 3
