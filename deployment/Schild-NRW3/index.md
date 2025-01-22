@@ -60,6 +60,12 @@ https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Schnellinstallati
 SchILD-NRW 3 benötigt für jede Datenbank eine .con-Datei, die im Unterordner "Connection-Files" des SchILD-NRW 3-Arbeitsverzeichnisses liegt.
 Diese .con-Datei ist eine reine Textdatei im UTF-8 Format.
 
+::: danger Schema-Namen unter Windows!
+Achten Sie unter Windows darauf, das auch hier die Eintragungen in der .con-Datei auf Groß- und Kleinschreibung geachtet werden muss!
+
+Die REST-Aufrufe sind case sensitive und das betrifft auch den Schema-Namen.
+:::
+
 Der SVWS-Server erstellt bei der Installation eine svwsconfig.json. Diese Datei enthält alle benötigten Angaben für den Betrieb des SVWS-Servers.
 
 https://doku.svws-nrw.de/deployment/Einrichtung/
