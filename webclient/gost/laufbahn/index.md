@@ -28,3 +28,9 @@ Die Durchführung der Fachwahlen ist in WebLuPO beschrieben und analog zur Fachw
 Durch **Importieren** werden die bearbeiteten Laufbahndateien der Schüler wieder eingespielt.  
 In der vorliegenden Maske werden wie oben beschrieben aber nur die **Fehler in den Fachwahlen angezeigt, nicht hingegen die Fachwahlen selber**.  
 Zur Bearbeitung der Fachwahlen muss wieder in die interne Laufbahnplanung (**Zur Laufbahnplanung**) des Schülers gewechselt werden.
+
+## Nachträglich aufgenommene Schüler  
+
+Werden Schüler erst im Laufe der Oberstufe nachträglich in eine JAhrgangsstufe aufgenommen, so sind
++ in Schild die Lerabschnitte ab EF.1 zu ergänzen
++ in der Laufbahnplanung die vergangenen Abschnitte zu ergänzen
