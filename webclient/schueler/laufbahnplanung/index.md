@@ -17,6 +17,9 @@ Modus:
 * Hochschreiben
 * Manuell
 
+**Neuaufgenommene Schüler**:  
+Für nachträglich aufgenommene Schüler ist die Laufbahnplanung vollständig auch für vergangene Abschnitte zu ergänzen. Hierfür sind die jeweiligen Lernabschnitte zuvor anzulegen (in Schild).
+
 **Fachwahlen zurücksetzen** setzt die Wahl auf die *Allgemeine Vorlage* des Jahrgangs zurück.
 
 Mit **Fächer anzeigen** kann zwischen *alle* und *nur gewählte* umgeschaltet werden, so dass Zeilen mit nicht gewählten Fächern ausgeblendet werden. 
