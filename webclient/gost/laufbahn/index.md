@@ -31,6 +31,6 @@ Zur Bearbeitung der Fachwahlen muss wieder in die interne Laufbahnplanung (**Zur
 
 ## Nachträglich aufgenommene Schüler  
 
-Werden Schüler erst im Laufe der Oberstufe nachträglich in eine JAhrgangsstufe aufgenommen, so sind
-+ in Schild die Lerabschnitte ab EF.1 zu ergänzen
+Werden Schüler erst im Laufe der Oberstufe nachträglich in eine Jahrgangsstufe aufgenommen, so sind
++ in Schild die Lernabschnitte ab EF.1 zu ergänzen
 + in der Laufbahnplanung die vergangenen Abschnitte zu ergänzen
