@@ -58,7 +58,7 @@ Es werden z.B. Terminkollisionen, mehr als drei Klausurbelegungen pro Woche, feh
 ## Drucken/Export
 
 1. Oben rechts befinden sich verschiedene **Formulare** zur Darstellung der Klausurplanung.
-2. Export der GPU017.txt für **Untis** ist geplant.
+2. Export der GPU017.txt für **Untis**: App Schule -> Datenaustausch -> Untis.
 
 ## Klausurversäumnis/Nachschreiber 
 
