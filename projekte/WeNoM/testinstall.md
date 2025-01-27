@@ -95,6 +95,7 @@ mkdir /var/www/html
 #git reset --hard
 #git pull
 #
+#./gradlew clean
 #./gradlew build
 #
 #cp ~/SVWS-Server/svws-webclient/enmserver/build/*.zip $INSTALLPATH/enmserver.zip
