@@ -10,5 +10,5 @@ export { data }
 export default defineLoader({
 	async load(): Promise<Data> {
 		return { buildDate: Date.now() };
-	}
+	},
 })
