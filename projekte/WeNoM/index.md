@@ -24,15 +24,10 @@ In der /etc/apache2/apache2.conf ergänzen:
 
 ```bash
 <Directory /var/www/html/>	
-        Options Indexes FollowSymLinks Includes ExecCGI
-        AllowOverride All
+        AllowOverride none
         Require all granted
 </Directory>
 ```
-
-### PDO_SQLite
-
-In der /etc/php/8.X/apache2/php.ini muss unter ``` Dynamic Extension ``` die Zeile ``` extension=pdo_sqlite ``` auskommentiert werden.
 
 ### PHP-Memory-Limit
 
