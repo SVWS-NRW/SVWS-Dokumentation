@@ -1,12 +1,10 @@
-﻿import { truncate } from 'fs';
-import { defineConfig, loadEnv } from 'vite'
+﻿import { defineConfig, loadEnv } from 'vite'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig(({ mode }) => {
 	const env = loadEnv(mode, process.cwd(), '');
 	return {
-		// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
-		base: env.BASE === undefined ? '/SVWS-Dokumentation/' : env.BASE,
+		base: "./",
 		title: 'SVWS Dokumentation',
 		description: 'Dokumentation SVWS-Server NRW, Installation und Entwicklung',
 		lastUpdated: true,
