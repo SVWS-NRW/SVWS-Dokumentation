@@ -84,7 +84,7 @@ export default defineConfig(({ mode }) => {
 				'/projekte': [
 					{ text: '', items: [
 						{ text: 'Projekte', link: '/projekte/', collapsed: false, items: [
-							{ text: 'WebLupo', link: '/projekte/WebLupo/' },
+							{ text: 'WebLuPO', link: '/projekte/WebLupo/' },
 							{ text: 'WeNoM', link: '/projekte/WeNoM/' },
 							{ text: 'ASD-Statistik', link: '/projekte/ASD-Statistik/' },
 							{ text: 'SchülerOnline', link: '/projekte/SchülerOnline/' },
