@@ -1,6 +1,6 @@
 # WebLuPO 
 
-WebLuPO ist ein webbasiertes Tool zur Laufbahnberatung und -planung iom Browser für die gymnasiale Oberstufe in NRW. Eine Installationsanleitung befindet sich unter Entwicklung -> Projekte -> [WebLuPO](../projekte/WebLuPO/)
+WebLuPO ist ein webbasiertes Tool zur Laufbahnberatung und -planung iom Browser für die gymnasiale Oberstufe in NRW. Hier befindet sich die [Installationsanleitung und die technische Dokumentation](../projekte/WebLupo/)
 
 In diesem Artikel wird die Benutzung einer `.lp`-Datei erklärt, die von den betreuenden Lehrkräften bereitgestellt wurde. Den passenden Link zur Webseite erhalten Sie ebenfalls von den Lehrkräften.
 
