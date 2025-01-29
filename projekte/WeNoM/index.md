@@ -24,7 +24,8 @@ In der /etc/apache2/apache2.conf ergänzen:
 
 ```bash
 <Directory /var/www/html/>	
-        AllowOverride none
+        Options None
+        AllowOverride FileInfo
         Require all granted
 </Directory>
 ```
