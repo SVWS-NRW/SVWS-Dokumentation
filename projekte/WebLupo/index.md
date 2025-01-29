@@ -2,9 +2,9 @@
 
 Ein webbasiertes Laufbahnberatungs- und Planungstool für die gymnasiale Oberstufe in NRW. 
 
-Die Beschreibung und Benutzung des Tools für Anwender ist unter [doku.svws-nrw.de](../WebLupo/) zu finden. 
+Die Beschreibung und Benutzung des Tools für Anwender ist unter den Handbüchern -> [webLuPO](../../weblupo/) zu finden. 
 
-# Technischer Hintergrund
+## Technischer Hintergrund
 
 Die Nutzer erhalten von der Schule .lp-Dateien, die über einen WebLuPO Server geöffnet werden. Auf diesem Server wird eine Webseite aufgerufen und damit ausführbarer Code heruntergeladen.
 
@@ -14,13 +14,13 @@ Die Schülerinnen und Schüler können damit am Webbrowser individuell ihre Lauf
 
 Dazu klicken Sie auf die Schaltfläche `Exportieren` und die Datei wird normalerweise im Download-Ordner des verwendeten Endgeräts gespeichert. 
 
-# Systemvoraussetzungen
+## Systemvoraussetzungen
 
 Für die Bereitstellung des Servers ist ein einfacher Webspace ausreichend, ohne Datenbankanbindung oder PHP. Das Tool wurde unter Debian 12 mit einem nginx oder Apache2 Webserver getestet.
 
 Zur neuen Erstellung der HTML-Seiten aus den Quellen werden *git* und *npm* benötigt, für den einfachen Download nur *wget* beziehungsweise *zip*. 
 
-# Installation per zip download 
+## Installation per zip download 
 
 Die aktuelle SVWS-Laufbahnplanung-x.y.z.zip kann unter unserem  [Github repository](https://github.com/SVWS-NRW/SVWS-Server/releases) heruntergeladen werden. 
 
@@ -47,7 +47,7 @@ wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v0.8.8/SVWS-Laufb
 unzip SVWS-Laufbahnplanung-0.8.8.zip
 ```
 
-# Installation aus den Github Quellen
+## Installation aus den Github Quellen
 
 apache2, git und npm auf dem Server installieren.
 
