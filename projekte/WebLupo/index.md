@@ -2,7 +2,7 @@
 
 Ein webbasiertes Laufbahnberatungs- und Planungstool für die gymnasiale Oberstufe in NRW. 
 
-Die Beschreibung und Benutzung des Tools für Anwender ist unter den Handbüchern -> [webLuPO](../../weblupo/) zu finden. 
+Die Beschreibung und Benutzung des Tools für Anwender ist unter den Handbüchern -> [WebLuPO](../../weblupo/) zu finden. 
 
 ## Technischer Hintergrund
 
