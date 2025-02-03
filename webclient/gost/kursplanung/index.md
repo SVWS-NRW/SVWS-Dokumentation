@@ -20,7 +20,7 @@ Angezeigt wird eine Übersicht über eingerichtete Kurse, in welchen Schienen si
 ![Blockungsneuerstellen](./graphics/SVWS_Oberstufe_Kursplanung_4.png)
 
 Über das **+**-Symbol wird eine neue Blockung erstellt.  
-Es sollten dazu vollständige Fachwahlen für den gewählten Abschnitt vorliegen.  
+Es sollten dazu **vollständige Fachwahlen** für den gewählten Abschnitt vorliegen.  
 Zum Ablauf der Einrichtung/Erstellung einer **neuen Blockung** siehe [Erstellen einer neuen Blockung](#erstellen-einer-neuen-blockung)
 
 
