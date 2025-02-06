@@ -24,8 +24,8 @@ In der /etc/apache2/apache2.conf ergänzen:
 
 ```bash
 <Directory /var/www/html/>	
-        Options None
-        AllowOverride FileInfo
+        Options Indexes FollowSymLinks
+        AllowOverride All
         Require all granted
 </Directory>
 ```
