@@ -40,7 +40,6 @@ Bitte Informieren Sie sich bei Ihrem Hoster, welches MemoryLimit aktiv ist.
 
 + Entpacken aller Dateinen aus der enmserver-x.x.x.zip in das /html Verzeichnis des Webservers
 + Freigabe der Ordner app, db und public mit entsprechenden Rechten
-+ Umbenennen der config.json.example in config.json
 + Ändern des Documentroot im Apache in `/var/www/html/public` (siehe unten)
 
 Die Ordnerstruktur in ```/var/www/html```  sollte nun folgerndermaßen aussehen:
