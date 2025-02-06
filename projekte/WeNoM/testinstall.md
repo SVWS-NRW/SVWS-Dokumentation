@@ -37,6 +37,10 @@ echo "
 </Directory>" >> /etc/apache2/apache2.conf
 
 
+### optional - SSL Einrichtung
+# dies wird nicht benötigt, wenn ein ReverseProxy benutzt wird. 
+a2enmod ssl
+a2ensite default-ssl.conf
 
 ### DocumentRoot anpassen
 mkdir -p ${INSTALLPATH}/public
