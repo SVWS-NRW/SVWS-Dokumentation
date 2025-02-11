@@ -126,7 +126,7 @@ export default defineConfig(({ mode }) => {
 					{ text: '', items: [
 						{ text: 'Installation', link: '/deployment/' },
 						{ text: 'IT-Umgebungen', link: '/deployment/IT-Umgebungen/' },
-						{ text: 'Intallationsmethoden', link: '/deployment/installationsmethoden.md', collapsed: false, items: [
+						{ text: 'Installationsmethoden', link: '/deployment/installationsmethoden.md', collapsed: false, items: [
 							{ text: 'Linux-Installer', link: '/deployment/Linux-Installer/' },
 							{ text: 'Docker-Container', link: '/deployment/Docker/' },
 							{ text: 'NAS', link: '/deployment/NAS/' },
