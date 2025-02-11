@@ -17,15 +17,13 @@ const datum = (t: number) => {
 :::info Erstellungsdatum {{ datum(data.buildDate) }}
 :::
 
-![Logo-NRW](./graphics/wappenzeichen-nrw_farbig_rgb_300.png "Das Wappen von Nordrhein-Westfalen.")
-
 [![Users](./graphics/LandingUser.png "Icon für Benutzer.")](./webclient/)
 [![Admins](./graphics/LandingAdmin.png "Icon für Admins.")](./deployment/)
 [![Devs](./graphics/LandingDev.png "Icon für Developer.")](./development/)
 
 ## SVWS-Server, SVWS-Client und weitere Projekte
 
-
+![Übersicht der SVWS-Server-Umgebung mit Client-Programmen](./graphics/EinfachesUbersichtsschemaSVWS_SchILD_Extern.png "Zusammenspiel des SVWS-Servers mit unterschiedlichen Programmen.")
 
 Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Client* und zum *SVWS-Server*. Der **SVWS-Client** ist eine Web-Applikation zur Unterstützung der Verwaltungsprozesse an den Schulen Nordrhein-Westfalens. Er schafft eine plattformübergreifende Benutzeroberfläche, die mit allen gängigen Browsern aufgerufen werden kann.
 
