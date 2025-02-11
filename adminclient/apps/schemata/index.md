@@ -51,7 +51,7 @@ In der Schema-Übersicht links finden sich Angaben zur **Revision**, **Tainted**
 Klickt man auf **Datenbank migrieren**, öffnet sich der Dialog zur Auswahl von *Quelle* und *Ziel*:
 
 ![Migration einer Datenbank aus Acess, MySQL, Maria DB, MSSQL](./graphics/SVWS_adminclient_migration.png "Migration einer Datenbank aus MS Access, MySQL, Maria DB, MSSQL: Geben Sie die Daten für Quelle und Ziel ein.")
-*Die Migrationsoptinen im Admin Client.*
+*Die Migrationsoptionen im Admin Client.*
 
 Hierbei besteht die Auswahl aus den Quellen *MS Access*, *MySQL*, *MariaDB*, *MSSQL* und es sind die Daten einzugeben, um die Quelldatenbanken zu erreichen und das intendierte Ziel, das nun neu angelegt wird.
 
