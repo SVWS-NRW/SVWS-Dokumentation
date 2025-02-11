@@ -38,6 +38,8 @@ Im Adminclient können je nach Rechtevergabe des Datenbankusers folgende Arbeite
 - SQLite-Backup wieder einspielen
 - Datenbankschema löschen
 
+Zur Datenmigration mit dem AdminClient nutzen Sie das [Benutzerhandbuch zum AdminClient](../../adminclient/index.md).
+
 ## Einfügen per SwaggerUI
 
 Eine Übersicht über die Web-Services bietet die SwaggerUI. 
