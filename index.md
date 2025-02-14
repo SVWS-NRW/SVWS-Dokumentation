@@ -23,7 +23,7 @@ const datum = (t: number) => {
 
 ## SVWS-Server, SVWS-Client und weitere Projekte
 
-![Übersicht der SVWS-Server-Umgebung mit Client-Programmen](./graphics/EinfachesUbersichtsschemaSVWS_SchILD_Extern.png "Zusammenspiel des SVWS-Servers mit unterschiedlichen Programmen.")
+![Übersicht der SVWS-Server-Umgebung mit Client-Programmen](./graphics/SVWS-Server-LandingPage.png "Zusammenspiel des SVWS-Servers mit unterschiedlichen Programmen.")
 
 Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Client* und zum *SVWS-Server*. Der **SVWS-Client** ist eine Web-Applikation zur Unterstützung der Verwaltungsprozesse an den Schulen Nordrhein-Westfalens. Er schafft eine plattformübergreifende Benutzeroberfläche, die mit allen gängigen Browsern aufgerufen werden kann.
 
