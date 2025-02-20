@@ -174,7 +174,7 @@ export default defineConfig(({ mode }) => {
 										{ text: 'LuPO Laufbahnplanung', link: '/webclient/schule/datenaustausch/lupo/' },
 										{ text: 'WebNotenManager', link: '/webclient/schule/datenaustausch/wenom/' },
 										{ text: 'Kurs 42 (Todo)' },
-										{ text: 'Untis (Todo)' },
+										{ text: 'Untis', link: '/webclient/schule/datenaustausch/untis/' },
 									] },
 								] },
 								{ text: 'Schüler', link: '/webclient/schueler/', collapsed: true, items: [
