@@ -88,9 +88,11 @@ chown -R www-data:www-data $INSTALLPATH
 curl --request GET --url http://localhost/api/setup  --header "Content-Type: application/x-www-form-urlencoded"
 #
 echo ""
-echo "################# Installation beendet! ####################"
+echo ""
 echo "Das Secret für die Synchronisation mit dem SVWS-Server ist:"
 cat ${INSTALLPATH}/db/client.sec
+echo ""
+echo "################# Installation beendet! ####################"
 ```
 ## UpdateSkript Testserver
 
