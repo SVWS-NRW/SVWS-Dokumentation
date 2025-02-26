@@ -1,4 +1,4 @@
-# Bedienkonzept des SVWS-Client
+# Bedienkonzept des SVWS-Clients
 
 Die offiziell unterstützte minimale Auflösung für die Verwendung des SVWS-Clients ist FullHD (1920 * 1080 Pixel). Nach modernen ergonomischen Gesichtspunkten für Bildschirmarbeitsplätze werden Monitore mit einer Mindestgröße von 21", besser 23", empfohlen.
 
@@ -51,7 +51,13 @@ Der SVWS-Client wird über einen üblichen Internet Browser ausgeführt und arbe
 * Kehren Sie über den Browser über die **zurück**-Schaltfläche zu einer vorherigen Seite zurück.
 * Wurde über das linke Inhaltsverzeichnis ein Unterpunkt aufgerufen, lässt sich darüber eine vorherige Ebene anwählen.
 
-![Vor- und Zurücknavigation über den Browser](./graphics/SVWS_hilfe-root_SchaltflächenNavigation.png "Navigation über die Vor- und Zurückschaltflächen des Browsers oder über die Schaltflächen im Browser.") 
+![Vor- und Zurücknavigation über den Browser](./graphics/SVWS_hilfe-root_SchaltflächenNavigation.png "Navigation über die Vor- und Zurückschaltflächen des Browsers oder über die Schaltflächen im Browser.")
+
+Sofern Personen - wie Lehrkräfte oder Schüler - in Auswahllisten angezeigt werden, findet sich an vielen Stellen ein **Linksymbol 🔗**, über das direkt zu dieser Person gesprungen werden kann.
+
+::tip Oberstufenberatiung
+Diese Symbole finden  besonders in der **App Oberstufe** bei der Laufbahnberatung sehr nützlich.
+:::
 
 ### Zoom
 
