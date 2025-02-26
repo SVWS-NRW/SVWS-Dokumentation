@@ -18,11 +18,17 @@ Oben über der Auswahlliste der Kurse stehen Optionen zum **suchen** und **filte
 In den Filterbereichen sind *Mehrfachauswahlen* möglich.
 :::
 
-Über die **Checkboxen ☐** lassen sich mehrere oder auch alle Kurse auswählen, um Operationen über diese Auswahl durchzuführen. Wird eine Auswahl getroffen, schaltet der Client automatisch in den Modus für Gruppenprozesse.
+Die komplette Liste lässt sich über den Schalter **Nur sichtbare** auf die Kurse filtern, die den Haken bei **Ist sichtbar** in den Details gesetzt haben.
 
-Ganz oben unter der Überschrift **Kurse** lässt sich der zu bearbeitende Lernabschnitt wählen.
+Hiermit lassen sich Kurse, die man gerade nicht braucht, aber auch nicht permanent löschen möchte, aus allen Auswahllisten ausblenden.
+
+Über die **Checkboxen ☐** auf der linken Seite bei den Einträgen lassen sich mehrere oder auch alle Kurse auswählen, um Operationen über diese Auswahl durchzuführen. Wird eine Auswahl **☑** getroffen, schaltet der Client automatisch in den Modus für Gruppenprozesse.
+
+Ganz oben unter der Überschrift **Kurse** lässt sich der zu **bearbeitende Lernabschnitt** wählen.
 
 ## Neue Kurse hinzufügen
+
+
 
 ## Kurse bearbeiten
 
