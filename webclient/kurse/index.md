@@ -2,7 +2,7 @@
 
 In der **App Kurse** werden die Kurse der Schule verwaltet, die dann den Schülern in den Liestungsdaten der Lernabschnitte zugewiesen werden können.
 
-::: caution Blockung in der App Oberstufe
+::: warning Blockung in der App Oberstufe
 Hierbei ist zu beachten, dass die Blockungsmechaniken in der **App Oberstufe** ebenfalls in der Lage sind, im Zuge der Blockung erzeugte Kurse anzulegen, ohne dass diese hier in der App Kurse erzeugt werden müssen.
 
 Kurse lassen sich ebenfalls aus externen Programmen importieren.

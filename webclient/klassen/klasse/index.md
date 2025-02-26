@@ -16,7 +16,7 @@ Es öffnet sich nach Auswahl einer Klasse in der Auswahlliste, hier wurde die 05
 
 Ganz am Ende der Liste findet sich die Schaltfläche, mit der sich eine veränderte **Standardsortierung wiederherstellen** lässt.
 
-::: caution Einstellungen werden überschrieben
+::: warning Einstellungen werden überschrieben
 Hierbei werden alle Einstellungen überschrieben und die Sortierung richtet sich nach dem Jahrgang und der Parallelität.
 :::
 
