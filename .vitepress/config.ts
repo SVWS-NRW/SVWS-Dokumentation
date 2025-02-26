@@ -173,7 +173,7 @@ export default defineConfig(({ mode }) => {
 										{ text: 'ENM Notenmanager (Todo)' },
 										{ text: 'LuPO Laufbahnplanung', link: '/webclient/schule/datenaustausch/lupo/' },
 										{ text: 'WebNotenManager', link: '/webclient/schule/datenaustausch/wenom/' },
-										{ text: 'Kurs 42 (Todo)' },
+										{ text: 'Kurs 42', link: '/webclient/schule/datenaustausch/kurs42/' },
 										{ text: 'Untis', link: '/webclient/schule/datenaustausch/untis/' },
 									] },
 								] },
