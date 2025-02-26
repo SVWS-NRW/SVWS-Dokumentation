@@ -22,7 +22,7 @@ Weitere Daten sind die **Schulgliederung** oder die **Organisationsform** mit et
 
 ![Daten zur Schulgliederung, Organisationsform, Klassenart, Schwerbehinderung und so weiter](./graphics/SVWS_schueler_lernabschnitte_schulgliederung_usw.png "Tragen Sie weitere - statistikrelevante - Informationen ein.")
 
-Dsa Feld mit der **Prüfungsordnung** ist nicht statistikrelevant, wird aber für viele automatische Prüfungen wie Versetzungs- und Abschlussprüfungen abgerufen.
+Das Feld mit der **Prüfungsordnung** ist nicht statistikrelevant, wird aber für viele automatische Prüfungen wie Versetzungs- und Abschlussprüfungen abgerufen.
 
 Bei der Gliederung und Organisationsform lassen sich die Werte abrufen, die für die Schule zentral erfasst wurden. Tragen Sie ebenfalls die **Klassenart** ein.
 
