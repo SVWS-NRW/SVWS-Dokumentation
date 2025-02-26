@@ -10,6 +10,18 @@ Direkt oberhalb der Auswahlliste finden sich Felder zum **Suchen** nach einer fr
 
 Es öffnet sich nach Auswahl einer Klasse in der Auswahlliste, hier wurde die 05C gewählt, zuerst der Tab **Klassen** mit den Details. Es wird die Klasse mit der Klassenleitung angezeigt.
 
+Über die **Checkboxen ☐** links lassen sich mehrere oder alle Klassen auswählen, um Operationen über die Auswahl **☑** durchzuführen. Ein Beispiel wäre, Klassen zu löschen.
+
+![Fußzeile der Liste mit der Schaltfläche, die Standardsortierung wiederherzustellen oder eine neue Klasse anzulegen](./graphics/svws_klassen_standardsortierung_neueklasse.png "Stellen Sie die Standardsortierung wieder her oder legen Sie eine neue Klasse an.")
+
+Ganz am Ende der Liste findet sich die Schaltfläche, mit der sich eine veränderte **Standardsortierung wiederherstellen** lässt.
+
+::: caution Einstellungen werden überschrieben
+Hierbei werden alle Einstellungen überschrieben und die Sortierung richtet sich nach dem Jahrgang und der Parallelität.
+:::
+
+Über das **+** in dieser Fußzeile öffnet sich das Fenster, in der eine neue Klasse angelegt werden kann. Tragen Sie die passenden Einstellungen ein, die dann in den Klassendetails angezeigt werden.
+
 ## Klassendetails
 
 ![Details zu einer Klasse](./graphics/svws_klassen_hauptdetails.png "Wichtige Details zu einer Klasse.")
