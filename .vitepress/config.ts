@@ -197,7 +197,7 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Unterricht', link: '/webclient/lehrer/unterricht/' },
 									{ text: 'Stundenplan', link: '/webclient/lehrer/stundenplan/' },
 								] },
-								{ text: 'Klassen', link: '/webclient/klassen/', collapsed: true, items: [
+								{ text: 'Klassen', link: '/webclient/klassen/klasse/', collapsed: true, items: [
 									{ text: 'Klasse', link: '/webclient/klassen/klasse/' },
 									{ text: 'Stundenplan', link: '/webclient/klassen/stundenplan/' },
 								] },
