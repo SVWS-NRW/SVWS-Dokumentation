@@ -1,17 +1,5 @@
 # Klassen
 
-Die Katalogeinträge für *Räume*, *Pausenzeiten*, *Zeitraster*, *Klassen* und *Aufsichtsbereiche* werden bei der Stundenplanerstellung zusammengeführt.
+Die Auswahlliste mit den definierten Klassen und die Details zu den Klassen finden sich im **Tab Klasse**.
 
-## neue Klasse hinzufügen
-
-## Klasse bearbeiten
-
-### Klassenbezeichnung ändern 
-
-### Klassenlehrkraft ändern
-
-### Schüler aus Klasse entfernen oder hinzufügen
-
-
-
-
+Im **Tab Stundenplan** finden sich zur Ansicht einer Klasse zugewiesen Stundenpläne.
