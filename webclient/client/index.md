@@ -22,6 +22,8 @@ Verzweigen sich die Tabs, werden **Untertabs** eingeblendet.
 
 Hier die Untertabs können sich dynamisch verändern, zum Beispiel werden bei den Lernabschnitten je nach Bedarf die Untertabs zu Abschlussberechnungen eingeblendet.
 
+### Auswahllisten
+
 Gibt es etwas in einer Hauptliste auszuwählen, ist dies die **Auswahlliste**.
 
 ![Die Auswahlliste](./graphics/SVWS_Auswahliste.png "Treffen Sie eine Auswahl in der Auswahlliste.")
@@ -29,6 +31,12 @@ Gibt es etwas in einer Hauptliste auszuwählen, ist dies die **Auswahlliste**.
 Eventuell kann es auch zwei Auswahllisten geben. In der zweiten Auswahllisten wird eine weitere Unterauswahlen getroffen. In der Klausurplanung zum Beispiel wäre erst ein Jahrgang, dann ein Halbjahr für diesen zu wählen.
 
 An vielen Stellen lassen sich Listen mit dem Listeneinklappsymbol ![LIsteneinklappicon](./graphics/svws_listeneinklappsymbol.png "Klappen Sie Listen oder andere Elemente ein und aus.") einklappen, um mehr Platz für die Detailansichten zu haben. Möglichweise besonders hilfreich kann das in der **App Blockung** sein.
+
+### Gruppenprozesse
+
+In vielen Gruppenprozessen können über **Checkboxen ☐** links der Einträge mehrere oder auch alle Einträge der Liste gewählt werden.
+
+Wird mindestens eine Checkbox aktiviert, schaltet der Client automatisch in den Modus für **Gruppenprozesse**. Die für diese Auswahl möglichen Gruppenprozesse werden dann auf der rechten Seite im Detailbereich angezeigt.
 
 ## Weitere Bedienbereiche
 
