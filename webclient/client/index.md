@@ -28,6 +28,8 @@ Gibt es etwas in einer Hauptliste auszuwählen, ist dies die **Auswahlliste**.
 
 Eventuell kann es auch zwei Auswahllisten geben. In der zweiten Auswahllisten wird eine weitere Unterauswahlen getroffen. In der Klausurplanung zum Beispiel wäre erst ein Jahrgang, dann ein Halbjahr für diesen zu wählen.
 
+An vielen Stellen lassen sich Listen mit dem Listeneinklappsymbol ![LIsteneinklappicon](./graphics/svws_listeneinklappsymbol.png "Klappen Sie Listen oder andere Elemente ein und aus.") einklappen, um mehr Platz für die Detailansichten zu haben. Möglichweise besonders hilfreich kann das in der **App Blockung** sein.
+
 ## Weitere Bedienbereiche
 
 In einigen Bereichen gibt es nach den Untertabs noch eine weitere Unterteilung. Diese Zeile ist die **Schaltflächenleiste**.

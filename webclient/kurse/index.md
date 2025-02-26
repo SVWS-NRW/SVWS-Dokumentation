@@ -1,6 +1,6 @@
 # Kurse
 
-## neue Kurse hinzufügen
+## Neue Kurse hinzufügen
 
 ## Kurse bearbeiten
 
