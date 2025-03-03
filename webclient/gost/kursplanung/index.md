@@ -55,7 +55,19 @@ Weiterhin kann auf diese Eigenschaften gefiltert werden:
 
 Die **Symbole** hinter den Namen stehen für das **Geschlecht** und die Eigenschaft **mündlich** oder **schriftlich** belegt.
 
-
+## Umwahldialog  
+Weiter rechts (ggf. nach rechts scrollen oder Container einklappen) befindet sich die Belegungsmatrix des ausgewählten Schülers.  
+![Umwahldialog](./graphics/Oberstufe_SVWS-Kursplanung_Umwahl.png)  
+ 
+Hier können   
++ Kursbelegungen per **Drag&Drop** geändert werden  
++ Kurse durch **Verschieben** in die linke Fachwahlübersicht abgewählt werden.  
++ Schüler in Kursen **fixiert** werden (Setzen der Pinnadel)
+ 
+Die **Kursart** (GKS, GKM, LK1, LK2, AB3, AB4 usw.) kann hier - im Gegensatz zu Kurs42 - **nicht geändert werden**.  
+Dazu muss durch den Link links am Schülernamen in dessen Laufbahnplanung gewechselt werden.  
+Nach Umwahl der Kursart kann vom Laufbahndialog wieder direkt in die Kursplanung gewechselt werden.  
+[Laufbahnplanung](#./laufbahn/index.md)
 
 ## Blockung berechnen
 Um eine Blockung berechnen zu lassen, müssen zuvor
