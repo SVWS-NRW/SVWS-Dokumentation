@@ -103,7 +103,7 @@ Um ein vorliegendes Ergebnis einer Berechnung oder den Grundzustand der Blockung
 ## Blockung aktivieren
 
 Durch Setzen des Hakens hinter eines der Blockungsergebnisse werden die weiteren Prozesse auf die jetzt aktivierte Blockung bezogen.  
-![Blockung-aktivieren](.\graphics\SVWS_Oberstufe_Kursplanung_8.png)
+![Blockung-aktivieren](./graphics/SVWS_Oberstufe_Kursplanung_8.png)
 
 
 Dazu gehören:  
@@ -111,7 +111,7 @@ Dazu gehören:
 * Anzeigen der Kursbelegung der Schüler
 * Kursbelegungslisten
 * Rückführender Link aus der Schüler-Laufbahnplanung zurück in die aktivierte Blockung:  
-![Rückfuehrungslink-Blockung](.\graphics\SVWS_Oberstufe_Kursplanung_7.png)
+![Rückfuehrungslink-Blockung](./graphics/SVWS_Oberstufe_Kursplanung_7.png)
 
 ## Erstellen einer neuen Blockung
 
