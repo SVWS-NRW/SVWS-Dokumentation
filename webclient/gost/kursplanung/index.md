@@ -168,16 +168,16 @@ Siehe [Berechnungen durchführen](#berechnungen-durchführen)
 
 ## Übertragung in Leistungsdaten
 
-Der Übertrag ist nur im aktiven Abschnitt, nicht für vergangene Abschnitte möglich.  
+Der Übertrag der KUrse und Kursbelegungen ist nur im aktiven Abschnitt, nicht für vergangene Abschnitte möglich.  
 Ausgelöst wird der Übertrag durch **Übertragen**.  
 Es werden dadurch:
 + alle eingerichteten Kurse im Kurskatalog neu ein angelegt  
 + die Kurszuweisungen in die Leistungsdaten der Schüler eingetragen
 
-### Änderungen nach dem Übertrag durch Synchronisieren  
+### Änderungen durch Synchronisieren (nach einem Übertrag)    
 
 Nach dem Übertrag ändert sich der Button **Übertrag** in **Synchronisieren**  
-Synchronisation öffnet ein Hinwesfenster, dessen Text unbedingt gelesen werden sollte.
+Synchronisation öffnet ein Hinweisfenster, dessen Text unbedingt gelesen werden sollte.
 
 Die Synchronisation überträgt:  
 + Änderungen der Kurszugehörigkeit eines Schülers in dessen Leistungsdaten  
@@ -193,6 +193,11 @@ Die Synchronisation überträgt **nicht**
 
 Diese Eintragungen müssen eigenständig in der Kurstabelle oder den Schülerleistungsdaten vorgenommen werden.
 
+**WICHTIG:** Sobald in den Leistungsdaten der Schüler Einträge vorgenommen werden, steht die Funktion "Synchronisieren" nicht mehr zur Verfügung.  
+Es genügt dabei ein einziger Eintrag bei einem einzigen Schüler. Leistungsdaten sind dabei:  
++ Quartalsnoten, Zeugnisnoten  
++ Noten für Teilleistungen  
++ Fehlstunden (FSG, FSU)  
 
 
 ## Beispiele und Praxistipps
