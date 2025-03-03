@@ -72,8 +72,9 @@ Es werden z.B. Terminkollisionen, mehr als drei Klausurbelegungen pro Woche, feh
 
  ![gost_klausurplanung_nt_klausurplanung](.\graphics\gost_klausurplanung_nt_klausurplanung.png)
 
-#### 2. Möglichkeit: Über Schüler:  
-* Auswahl des Schülers (linke Leiste) -> Lernabschnitte -> Klausuren 
+#### 2. Möglichkeit: Über Schüler:
+
+* Auswahl des Schülers (linke Leiste) -> Lernabschnitte -> Klausuren
 * Die zu schreibenden Klausuren werden angezeigt, über den Button hinter der versäumten Klausur erfolgt die Erfassung.  
  
  ![gost_klausurplanung_nt_schueler](.\graphics\gost_klausurplanung_nt_schueler.png)
@@ -88,3 +89,4 @@ oder
 
 Sind mögliche Nachschreibtermine angelegt, können die betroffenen Schüler per Drag&Drop passenden Terminen zugewiesen werden.  
 Hinweis: Nicht passende Termine (Schüler schreibt zu diesem Termin schon eine Klausur) werden unmittelbar angezeigt und können nicht ausgewählt werden. 
+
