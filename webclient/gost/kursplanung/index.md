@@ -169,7 +169,15 @@ Siehe [Berechnungen durchführen](#berechnungen-durchführen)
 ## Übertragung in Leistungsdaten
 
 Der Übertrag ist nur im aktiven Abschnitt, nicht für vergangene Abschnitte möglich.  
-Ausgelöst wird der Übertrag durch **Sychronisieren**.  
+Ausgelöst wird der Übertrag durch **Übertragen**.  
+Es werden dadurch:
++ alle eingerichteten Kurse im Kurskatalog neu ein angelegt  
++ die Kurszuweisungen in die Leistungsdaten der Schüler eingetragen
+
+### Änderungen nach dem Übertrag durch Synchronisieren  
+
+Nach dem Übertrag ändert sich der Button **Übertrag** in **Synchronisieren**
+
 
 
 ## Beispiele und Praxistipps
