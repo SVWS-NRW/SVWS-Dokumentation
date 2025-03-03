@@ -178,7 +178,9 @@ Der Regelkatalog wird immer wieder an Nutzerwünsche angepasst, die Formulierung
 Wurden alle Einstellungen gesetzt, kann die Blockung berechnet werden.  
 Siehe [Berechnungen durchführen](#berechnungen-durchführen)
 
-## **Übertragung** in Leistungsdaten
+## **Übertragung** in Leistungsdaten  
+
+### Übertragen
 
 Der Übertrag der Kurse und Kursbelegungen ist nur im aktiven Abschnitt, nicht für vergangene Abschnitte möglich.  
 Ausgelöst wird der Übertrag durch **````Übertragen````**.  
