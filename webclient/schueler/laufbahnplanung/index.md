@@ -1,10 +1,13 @@
 # Laufbahnplanung
 
-:::danger Screenshots
-**Todo** Screenshots 
-:::
+![Schueler-Laufbahnplanung](./graphics/schueler_laufbahnplanung_1.png)
 
-Gibt es für einen Schüler oder Schülerin schon eine Laufbahnplanung für die gymnasiale Oberstufe, wird dieser im Untertab **Laufbahnplanung** angezeigt.
+Gibt es für einen Schüler oder Schülerin schon eine Laufbahnplanung für die gymnasiale Oberstufe, wird diese im Untertab **Laufbahnplanung** angezeigt.  
+ 
+**Neuaufgenommene Schüler**:  
+Für nachträglich aufgenommene Schüler ist die Laufbahnplanung vollständig auch für vergangene Abschnitte zu ergänzen. Hierfür sind die jeweiligen Lernabschnitte zuvor anzulegen (in Schild).  
+    
+
 
 In der Oberfläche lassen sich auch alle Änderungen zur Laufbahnplanung durchführen, ebenso lassen sich Beratungsdaten und Beratungsbemerkungen setzen.
 
@@ -16,11 +19,15 @@ Modus:
 * Normal
 * Hochschreiben
 * Manuell
+  
 
-**Neuaufgenommene Schüler**:  
-Für nachträglich aufgenommene Schüler ist die Laufbahnplanung vollständig auch für vergangene Abschnitte zu ergänzen. Hierfür sind die jeweiligen Lernabschnitte zuvor anzulegen (in Schild).
+Die **graue Schraffierung** im der Abbidung oben der EF.1 bedeutet, dass für den angezeigten Schüler bereits Leistungsdaten für den Abschnitt hinterlegt sind. Hier ist demnach keine Änderung in der Laufbahnplanung mehr möglich.  
+Dennoch notwendige Änderungen müssen dann erst in den Leistungsdaten getätigt werden. (Fach/Kurs löschen, Kursart oder Kurs ändern).  
+Der **Link hinter EF.1** zeigt an, dass ein Kursplanung für den Abschnitt vorliegt und verweist auf diesen.  
+Hinweis: Es ist möglich, dass Leistungsdaten ohne Kursplanung vorliegt, aber auch, dass eine Kursplanung ohne Leistungsdaten vorliegt.
 
-**Fachwahlen zurücksetzen** setzt die Wahl auf die *Allgemeine Vorlage* des Jahrgangs zurück.
 
-Mit **Fächer anzeigen** kann zwischen *alle* und *nur gewählte* umgeschaltet werden, so dass Zeilen mit nicht gewählten Fächern ausgeblendet werden. 
+Mit ````Fächer anzeigen```` kann zwischen *alle* und *nur gewählte* umgeschaltet werden, so dass Zeilen mit nicht gewählten Fächern ausgeblendet werden. 
 
+Im rechts nebenstehenden Bereich werden ggf. **Kommentare** hinterlassen und **Laufbahnfehler** entsprechend der Einstellungen angezeigt.
+![Schueler-Laufbahn-Beratung](./graphics/schueler_laufbahnplanung_2.png)
