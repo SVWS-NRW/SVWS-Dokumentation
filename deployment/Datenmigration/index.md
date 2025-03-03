@@ -1,13 +1,16 @@
 # Datenmigration
 
-Neue Schemata oder vorhandene Schemata in der Datenbank des SVWS-Servers anlegen.
+Bei der Datenmigration werden neue Schemata oder vorhandene Schemata in der Datenbank des SVWS-Servers angelegt und die Daten einer existierenden Datenbank in diese migriert.
+
+Zur Datenmigration mit dem AdminClient nutzen Sie das [Benutzerhandbuch zum AdminClient](../../adminclient/index.md).
 
 ## Download von Testdaten
 
-Für Testzwecke und Schulungen werden anonymisierte Datenbanken verschiedener Schulformen vorgehalten.
-Zu bestimmten Datenbanken sind auch passende Lupo Dateien etc. vorhanden, um sich passende Testfälle anzusehen.  
-**Die Daten sind vollständig anonymisiert!**
+Für Testzwecke und Schulungen werden anonymisierte Datenbanken verschiedener Schulformen vorgehalten. Zu bestimmten Datenbanken sind auch passende WebLuPO Dateien etc. vorhanden, um sich passende Testfälle anzusehen.
 
+::: danger Anonymisiert
+Die Daten sind vollständig anonymisiert!
+:::
 
 [https://github.com/SVWS-NRW/SVWS-TestMDBs](https://github.com/SVWS-NRW/SVWS-TestMDBs)
 
@@ -27,6 +30,7 @@ Es gibt mehrer Möglichkeiten ein Schemata in der Datenbank anzulegen bzw. zu be
 ![adminclient.png](./graphics/adminclient.png)
 
 Melden Sie sich mit root und dem Kennwort an der MariaDB an.
+
 Sie können auch einen anderen Datenbankuser wählen, dieser sieht dann die vorhandenen Datenbanken entsprechnd seiner Rechte.
 
 Im Adminclient können je nach Rechtevergabe des Datenbankusers folgende Arbeiten erledigt werden:
@@ -37,6 +41,10 @@ Im Adminclient können je nach Rechtevergabe des Datenbankusers folgende Arbeite
 - SQLite-Backup ausführen
 - SQLite-Backup wieder einspielen
 - Datenbankschema löschen
+
+::: tip Dokumentation des AdminClient
+Zur weiteren Information für das manuelle Management der Schemata und Migrationen konsultieren Sie das [Benutzerhandbuch zum AdminClient](../../adminclient/index.md).
+:::
 
 ## Einfügen per SwaggerUI
 
@@ -52,14 +60,15 @@ Die Swagger UI aufrufen:
 
 
    
-**Achtung:** Um auf der SwaggerUI diesen Service bzw. die mit "Root" gekennzeichneten Services nutzen zu können, muss man sich zuerst authentisieren, indem man auf ein rechts abgebildetes Schloss klickt. 
-
+::: danger Authentifikation für die SwaggerUI
+Um auf der SwaggerUI diesen Service bzw. die mit "Root" gekennzeichneten Services nutzen zu können, muss man sich zuerst authentisieren, indem man auf ein rechts abgebildetes Schloss klickt. 
 
 Hier nun den User `root` der MariaDB-Installation und das entsprechende Passwort angeben. 
+:::
 
+**Hinweis:**
 
-**Hinweis** Möchte man andere "nicht root - Services" nutzen, so muss man sich mit dem SchILD-NRW 3.0-Benutzer bzw. SVWS-Benutzer anmelden.
- 
+Möchte man andere "nicht root - Services" nutzen, so muss man sich mit dem SchILD-NRW 3.0-Benutzer bzw. SVWS-Schema-Benutzer anmelden.
 
 
 Dann unter dem Abschnitt  
@@ -67,12 +76,7 @@ Dann unter dem Abschnitt
 	-> *Try it Out*-Button  
 drücken, so dass man diese Ansicht erhält:
 
-
-
 ![SwaggerUI.png](./graphics/Swagger-02.png)
-
-
-
 
 
 Anschließend die folgenden Einträge unter der Maske ausfüllen:

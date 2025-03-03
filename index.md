@@ -17,19 +17,19 @@ const datum = (t: number) => {
 :::info Erstellungsdatum {{ datum(data.buildDate) }}
 :::
 
-![Logo-NRW](./graphics/wappenzeichen-nrw_farbig_rgb_300.png "Das Wappen von Nordrhein-Westfalen.")
-
 [![Users](./graphics/LandingUser.png "Icon für Benutzer.")](./webclient/)
 [![Admins](./graphics/LandingAdmin.png "Icon für Admins.")](./deployment/)
 [![Devs](./graphics/LandingDev.png "Icon für Developer.")](./development/)
 
 ## SVWS-Server, SVWS-Client und weitere Projekte
 
-
-
 Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Client* und zum *SVWS-Server*. Der **SVWS-Client** ist eine Web-Applikation zur Unterstützung der Verwaltungsprozesse an den Schulen Nordrhein-Westfalens. Er schafft eine plattformübergreifende Benutzeroberfläche, die mit allen gängigen Browsern aufgerufen werden kann.
 
-Auf dieser Webseite finden Sie Informationen zur Installation und zur Entwicklung und eine Dokumentation der API für die dezentrale Schulverwaltung in NRW. Ebenso finden sich Dokumentationen zu weiteren Projekten.
+Er wird in der ersten Übergangsphase parallel zu SchILD-NRW 3 benutzt.
+
+![Übersicht der SVWS-Server-Umgebung mit Client-Programmen](./graphics/SVWS-Server-LandingPage.png "Zusammenspiel des SVWS-Servers mit unterschiedlichen Programmen.")
+
+Außerdem finden Sie hier Informationen zur Installation und zur Entwicklung und eine Dokumentation der API für die dezentrale Schulverwaltung in NRW. Ebenso gibt es eine Dokumentationen zu weiteren Projekten.
 
 Navigieren Sie zu den übergreifenden Bereichen dieser Webseite über die **Kopfzeile**. 
 
@@ -63,7 +63,7 @@ Dieses Angebot wird momentan auf Barrierefreiheit geprüft.
 
 Die Ergebnisse werden hier veröfffentlicht.
 
-Stand: 27. Oktober 2024
+Stand: 21. Februar 2025
 
 ## Impressum
 

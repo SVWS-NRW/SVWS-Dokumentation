@@ -139,7 +139,18 @@ siehe dazu: [Datenmigration](https://doku.svws-nrw.de/deployment/Datenmigration/
 
 ## Sinnvolle Konfigurationen
 
-## MariDB für Schild-NRW3 zugänglich machen
+## eigenen Keystore mit Zertifikat erstellen
+
+``` bash
+keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test, S=test, C=test" -ext "SAN=DNS:localhost,IP:127.0.0.1,IP:10.1.0.1,DNS:meinserver,DNS:meinserver.mydomain.de" -keystore /etc/app/svws/conf/keystore -storepass test123 -keypass test123  -keyalg RSA
+
+keytool -export -keystore /etc/app/svws/conf/keystore -alias alias1 -file ./SVWS.cer -storepass test123
+```
+
+Mit diesen Befehlen kann ein eigener Keystore mit einem Zertifikat erstellt werden.
+Der zweite Befehl exportiert das Zertifikat, welches dann unter den Windows-Client installiert werden kann, so dass die Warnmeldungen im Browser verschwinden.
+
+## MariaDB für Schild-NRW3 zugänglich machen
 
 Solange Schild-NRW3 benötigt wird, muss die Datenbank und der Server für das Progrmm zugänglich gemacht werden.
 

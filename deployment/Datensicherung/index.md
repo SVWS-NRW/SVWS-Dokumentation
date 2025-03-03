@@ -10,11 +10,11 @@ Weitere Informationen dazu befinden sich im [Handbuch des Adminclients](../../ad
 
 Automatisierte SQLite Backups können z.B. per crontab gescriptet aufgerufen werden. 
 
-´´´bash 
+````bash 
 
 curl --user "rootUsername:MYSQLROOTPW" -k -X "GET"  "https://SERVERNAME:PORT/db/SCHEMA/export/sqlite" -H "accept: application/json"
 
-´´´
+````
 
 Hier bitte die Variabel rootUsername, MYSQLROOTPW, SERVERNAME, PORT und SCHEMA ersetzen bzw. vorher im Skript oder Terminal definieren. 
 
@@ -28,9 +28,9 @@ wie man mit kurzen Befehlen Backups anlegt und zurückspielt. Dies kann über ei
 
 ### mysqldump per cronjob
 
-´´´bash 
+````bash 
 mysqldump --user=USERNAME --password=PASSWORD DATABASENAME /path/to/mysql_dump.sql
-´´´
+````
 Sichert die Datenbank einmalig unter dem angegebenen path. Dies kann mit Crontab sinnvoll automatisiert werden.
 
 ### automysqlbackup
@@ -38,27 +38,27 @@ Sichert die Datenbank einmalig unter dem angegebenen path. Dies kann mit Crontab
 Das Linux Tool `automysqlbackup` ist für regelmäßige Sicherungen sehr komfortabler und einfach. 
 Es richtet unter `/var/lib/automysqlbackup` in entsprechenden Ordnern daily, weekly und monthly `.sql` Sicherungen ein. 
 
-´´´bash 
+````bash 
 apt install automysqlbackup
-´´´
+````
 In der config `/etc/default/automysqlbackup` kann ggf. das Backupverzeichnisse definiert oder die Zeiten bzw. Exklusionen editiert werden. 
 
 Regelmäßige backups müssen dann per cronjob eingerichtet werden. z.B:
 
-´´´bash 
+````bash 
 0  1 * * * /usr/sbin/automysqlbackup
-´´´
+````
 
 Aktuell muss unter Debian 12 in `/etc/mysql/debian.cnf` das rootpasswort für den Datenbankzugang eingetragen werden. Dazu Bitte die beiden Variablen in dieser Datei ergänzen: 
-´´´bash 
+````bash 
 USERNAME=root
 PASSWORD="the root password"
-´´´
+````
 Dann in der Datei `/etc/mysql/debian.cnf` die folgenden Zeilen aktivieren:
 
-´´´bash 
+````bash 
 ...
 USERNAME=`grep user /etc/mysql/debian.cnf ...
 ...
 PASSWORD=`grep password /etc/mysql/debian.cnf 
-´´´bash 
+````bash 

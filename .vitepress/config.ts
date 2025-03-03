@@ -126,7 +126,7 @@ export default defineConfig(({ mode }) => {
 					{ text: '', items: [
 						{ text: 'Installation', link: '/deployment/' },
 						{ text: 'IT-Umgebungen', link: '/deployment/IT-Umgebungen/' },
-						{ text: 'Intallationsmethoden', link: '/deployment/installationsmethoden.md', collapsed: false, items: [
+						{ text: 'Installationsmethoden', link: '/deployment/installationsmethoden.md', collapsed: false, items: [
 							{ text: 'Linux-Installer', link: '/deployment/Linux-Installer/' },
 							{ text: 'Docker-Container', link: '/deployment/Docker/' },
 							{ text: 'NAS', link: '/deployment/NAS/' },
@@ -173,8 +173,8 @@ export default defineConfig(({ mode }) => {
 										{ text: 'ENM Notenmanager (Todo)' },
 										{ text: 'LuPO Laufbahnplanung', link: '/webclient/schule/datenaustausch/lupo/' },
 										{ text: 'WebNotenManager', link: '/webclient/schule/datenaustausch/wenom/' },
-										{ text: 'Kurs 42 (Todo)' },
-										{ text: 'Untis (Todo)' },
+										{ text: 'Kurs 42', link: '/webclient/schule/datenaustausch/kurs42/' },
+										{ text: 'Untis', link: '/webclient/schule/datenaustausch/untis/' },
 									] },
 								] },
 								{ text: 'Schüler', link: '/webclient/schueler/', collapsed: true, items: [
@@ -197,7 +197,7 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Unterricht', link: '/webclient/lehrer/unterricht/' },
 									{ text: 'Stundenplan', link: '/webclient/lehrer/stundenplan/' },
 								] },
-								{ text: 'Klassen', link: '/webclient/klassen/', collapsed: true, items: [
+								{ text: 'Klassen', link: '/webclient/klassen/klasse/', collapsed: true, items: [
 									{ text: 'Klasse', link: '/webclient/klassen/klasse/' },
 									{ text: 'Stundenplan', link: '/webclient/klassen/stundenplan/' },
 								] },

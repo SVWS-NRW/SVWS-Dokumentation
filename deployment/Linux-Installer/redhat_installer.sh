@@ -23,7 +23,7 @@ unzip -d /opt/app/svws/client  ./svws/app/SVWS-Client.zip
 
 # Erstelle den SVWS-Keystore
 
-keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test, S=test, C=test" -keystore /etc/app/svws/conf/keystore -storepass test123 -keypass test123  -keyalg RSA
+keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test, S=test, C=test" -ext "SAN=DNS:localhost,IP:127.0.0.1,IP:10.1.0.1,DNS:meinserver,DNS:meinserver.mydomain.de" -keystore /etc/app/svws/conf/keystore -storepass test123 -keypass test123  -keyalg RSA
 
 # Erstelle svwsconfig.json im conf-Verzeichnis
 

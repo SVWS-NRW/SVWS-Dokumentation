@@ -1,4 +1,4 @@
-# Bedienkonzept des SVWS-Client
+# Bedienkonzept des SVWS-Clients
 
 Die offiziell unterstützte minimale Auflösung für die Verwendung des SVWS-Clients ist FullHD (1920 * 1080 Pixel). Nach modernen ergonomischen Gesichtspunkten für Bildschirmarbeitsplätze werden Monitore mit einer Mindestgröße von 21", besser 23", empfohlen.
 
@@ -22,11 +22,21 @@ Verzweigen sich die Tabs, werden **Untertabs** eingeblendet.
 
 Hier die Untertabs können sich dynamisch verändern, zum Beispiel werden bei den Lernabschnitten je nach Bedarf die Untertabs zu Abschlussberechnungen eingeblendet.
 
+### Auswahllisten
+
 Gibt es etwas in einer Hauptliste auszuwählen, ist dies die **Auswahlliste**.
 
 ![Die Auswahlliste](./graphics/SVWS_Auswahliste.png "Treffen Sie eine Auswahl in der Auswahlliste.")
 
 Eventuell kann es auch zwei Auswahllisten geben. In der zweiten Auswahllisten wird eine weitere Unterauswahlen getroffen. In der Klausurplanung zum Beispiel wäre erst ein Jahrgang, dann ein Halbjahr für diesen zu wählen.
+
+An vielen Stellen lassen sich Listen mit dem Listeneinklappsymbol ![LIsteneinklappicon](./graphics/svws_listeneinklappsymbol.png "Klappen Sie Listen oder andere Elemente ein und aus.") einklappen, um mehr Platz für die Detailansichten zu haben. Möglichweise besonders hilfreich kann das in der **App Blockung** sein.
+
+### Gruppenprozesse
+
+In vielen Gruppenprozessen können über **Checkboxen ☐** links der Einträge mehrere oder auch alle Einträge der Liste gewählt werden.
+
+Wird mindestens eine Checkbox aktiviert, schaltet der Client automatisch in den Modus für **Gruppenprozesse**. Die für diese Auswahl möglichen Gruppenprozesse werden dann auf der rechten Seite im Detailbereich angezeigt.
 
 ## Weitere Bedienbereiche
 
@@ -51,7 +61,13 @@ Der SVWS-Client wird über einen üblichen Internet Browser ausgeführt und arbe
 * Kehren Sie über den Browser über die **zurück**-Schaltfläche zu einer vorherigen Seite zurück.
 * Wurde über das linke Inhaltsverzeichnis ein Unterpunkt aufgerufen, lässt sich darüber eine vorherige Ebene anwählen.
 
-![Vor- und Zurücknavigation über den Browser](./graphics/SVWS_hilfe-root_SchaltflächenNavigation.png "Navigation über die Vor- und Zurückschaltflächen des Browsers oder über die Schaltflächen im Browser.") 
+![Vor- und Zurücknavigation über den Browser](./graphics/SVWS_hilfe-root_SchaltflächenNavigation.png "Navigation über die Vor- und Zurückschaltflächen des Browsers oder über die Schaltflächen im Browser.")
+
+Sofern Personen - wie Lehrkräfte oder Schüler - in Auswahllisten angezeigt werden, findet sich an vielen Stellen ein **Linksymbol 🔗**, über das direkt zu dieser Person gesprungen werden kann.
+
+::tip Oberstufenberatiung
+Diese Symbole finden  besonders in der **App Oberstufe** bei der Laufbahnberatung sehr nützlich.
+:::
 
 ### Zoom
 

@@ -34,24 +34,24 @@ In der Schema-Übersicht links finden sich Angaben zur **Revision**, **Tainted**
 * Ein Schema, das für die Entwicklung und zum Testen neuer Features gedacht ist, kann als  **Tainted** oder **Verschmutzt** markiert werden, damit dieses mit ihren Datenbanken nicht im echten Produktivbedtrieb zum Einsatz kommt.
 * Weiterhin ist es möglich, dass sich auf der MariaDB Schemata befinden, die aber nicht zum SVWS-Server gehören. Diese werden dann als nicht zur **Config** des SVWS-Servers gehörend markiert und werden von diesem bezüglich SVWS-Server und SVWS-Client ignoriert. Ein Beispiel könnte etwa ein Stundenplanprogramm eines anderen Herstellers oder die Datenbank der kommunalen Führerscheinstelle sein.
 
-## Operationen für ein neues Schema
+## Operationen für Schemata
 
-![Die Buttons unter einem Schema](./graphics/SVWS_adminclient_Schemabuttons.png "Die Buttons von links nach rechts: Migrieren, sqlite-image einspielen, Schema kopieren, Neues Schema anlegen.")
+![Die Buttons unter einem Schema](./graphics/SVWS_adminclient_schemamangement.png "Wählen Sie ein Schema und legen Sie mit dem + ein ein neues Schema an.")
+
 
 *Die Schaltflächen der Schemaverwaltung.*
 
-* Über das Icon mit den gestapelten Scheiben lässt sich eine SchILD-NRW-2-Datenbank in ein neues Schema migireren.
-* Über den drehenden Pfeil **↻** lässt sich ein gespeichertes sqlite-Image in ein *neues* Schema einspielen.
-* Mittels **Kopieren 🗐** wird ein existierendes Schema dupliziert. 
-* Das **+** legt ein neues, leeres Schema an, in das im Anschluss migriert, Backup eingespielt und so weiter werden kann.
+Das **+** legt ein neues, leeres Schema an, in das im Anschluss migriert, Backup eingespielt und so weiter werden kann.
 
 Über die **Checkboxen ☑** lassen sich eine Schema oder mehrere Schemata anwählen und über einen dann darunter auftauchenden **Mülleimer 🗑** löschen.
 
+Über **Backup** lässt sich eine .sqlite-Datei abspeichern. Diese Dateien lassen sich über **Backup wiederherstellen** wieder in das gewählte Schema einlesen.
+
 ## Datenbank-Migration
-Klickt man auf **Datenbank migrieren**, öffnet sich der Dialog zur Auswahl von *Quelle* und *Ziel*:
+Klickt man auf **SchILD2-Schema migrieren**, öffnet sich der Dialog zur Auswahl von *Quelle* und *Ziel*:
 
 ![Migration einer Datenbank aus Acess, MySQL, Maria DB, MSSQL](./graphics/SVWS_adminclient_migration.png "Migration einer Datenbank aus MS Access, MySQL, Maria DB, MSSQL: Geben Sie die Daten für Quelle und Ziel ein.")
-*Die Migrationsoptinen im Admin Client.*
+*Die Migrationsoptionen im Admin Client.*
 
 Hierbei besteht die Auswahl aus den Quellen *MS Access*, *MySQL*, *MariaDB*, *MSSQL* und es sind die Daten einzugeben, um die Quelldatenbanken zu erreichen und das intendierte Ziel, das nun neu angelegt wird.
 
