@@ -20,14 +20,18 @@ Modus:
 * Hochschreiben
 * Manuell
   
-
+### Kennzeichnungen 
 Die **graue Schraffierung** im der Abbidung oben der EF.1 bedeutet, dass für den angezeigten Schüler bereits Leistungsdaten für den Abschnitt hinterlegt sind. Hier ist demnach keine Änderung in der Laufbahnplanung mehr möglich.  
 Dennoch notwendige Änderungen müssen dann erst in den Leistungsdaten getätigt werden. (Fach/Kurs löschen, Kursart oder Kurs ändern).  
 Der **Link hinter EF.1** zeigt an, dass ein Kursplanung für den Abschnitt vorliegt und verweist auf diesen.  
-Hinweis: Es ist möglich, dass Leistungsdaten ohne Kursplanung vorliegt, aber auch, dass eine Kursplanung ohne Leistungsdaten vorliegt.
+Hinweis: Es ist möglich, dass Leistungsdaten ohne Kursplanung vorliegt, aber auch, dass eine Kursplanung ohne Leistungsdaten vorliegt.  
+  
+  **Konflikte** zwischen Leistungsdaten und Laufbahnplanung werden i.d.R. mit einem roten Kreuz gekennzeichnet. Der Konflikt ist in einem der beiden Dialge dann zu beheben.  
+  ![Schueler-Laufbahnplanung-Konflikt](./graphics/schueler_laufbahnplanung_3.png)  
 
-
+  
 Mit ````Fächer anzeigen```` kann zwischen *alle* und *nur gewählte* umgeschaltet werden, so dass Zeilen mit nicht gewählten Fächern ausgeblendet werden. 
-
+  
+  ---
 Im rechts nebenstehenden Bereich werden ggf. **Kommentare** hinterlassen und **Laufbahnfehler** entsprechend der Einstellungen angezeigt.
 ![Schueler-Laufbahn-Beratung](./graphics/schueler_laufbahnplanung_2.png)
