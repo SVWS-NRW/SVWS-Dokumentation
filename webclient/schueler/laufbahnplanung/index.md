@@ -26,7 +26,7 @@ Dennoch notwendige Änderungen müssen dann erst in den Leistungsdaten getätigt
 Der **Link hinter EF.1** zeigt an, dass ein Kursplanung für den Abschnitt vorliegt und verweist auf diesen.  
 Hinweis: Es ist möglich, dass Leistungsdaten ohne Kursplanung vorliegt, aber auch, dass eine Kursplanung ohne Leistungsdaten vorliegt.  
   
-  **Konflikte** zwischen Leistungsdaten und Laufbahnplanung werden i.d.R. mit einem roten Kreuz gekennzeichnet. Der Konflikt ist in einem der beiden Dialge dann zu beheben.  
+  **Konflikte** zwischen Leistungsdaten und Laufbahnplanung werden i.d.R. mit einem **roten Kreuz** gekennzeichnet. Der Konflikt ist in einem der beiden Dialge  zu beheben.  
   ![Schueler-Laufbahnplanung-Konflikt](./graphics/schueler_laufbahnplanung_3.png)  
 
   
