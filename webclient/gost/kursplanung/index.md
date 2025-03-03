@@ -176,7 +176,22 @@ Es werden dadurch:
 
 ### Änderungen nach dem Übertrag durch Synchronisieren  
 
-Nach dem Übertrag ändert sich der Button **Übertrag** in **Synchronisieren**
+Nach dem Übertrag ändert sich der Button **Übertrag** in **Synchronisieren**  
+Synchronisation öffnet ein Hinwesfenster, dessen Text unbedingt gelesen werden sollte.
+
+Die Synchronisation überträgt:  
++ Änderungen der Kurszugehörigkeit eines Schülers in dessen Leistungsdaten  
++ Kursartänderung eines vorhandenen Kurses
++ Lehrerwechsel eines Kurses  
++ Schienenwechsel eines Kurses  
++ neu eingerichteten Kurs in die Kurstabelle  
+
+Die Synchronisation überträgt **nicht**  
++ für einen Schüler **neu gewählte Fächer**
++ die **Abwahl eines Faches**  
++ das **Löschen eines Kurses** (auch leere Kurse werden nicht gelöscht)  
+
+Diese Eintragungen müssen eigenständig in der Kurstabelle oder den Schülerleistungsdaten vorgenommen werden.
 
 
 
