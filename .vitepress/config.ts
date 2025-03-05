@@ -218,7 +218,7 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Dokumente', link: '/webclient/statistik/dokumente/' },
 									{ text: 'Hilfe', link: '/webclient/statistik/hilfe/' },
 								] },
-								{ text: 'Stundenplan', link: '/webclient/stundenplan/', collapsed: true, items: [
+								{ text: 'Stundenplan', link: '/webclient/stundenplan/stundenplan_basisinformationen/', collapsed: true, items: [
 									{ text: 'Grundlagen zum Stundenplan', link: '/webclient/stundenplan/stundenplan_basisinformationen/' },
 									{ text: 'Stundenpläne erstellen/bearbeiten', link: '/webclient/stundenplan/stundenplan_anleitung/' },
 									{ text: 'Allgemeine Vorlagen', link: '/webclient/stundenplan/allgemeine_vorlagen/', collapsed: true, items: [
