@@ -1,6 +1,6 @@
 # Aufsichtsbereiche
 
-Die **Allgemeinen Vorlagen* für *Räume*, *Pausenzeiten*, *Zeitraster*, *Klassen* und *Aufsichtsbereiche* werden bei der Stundenplanerstellung zusammengeführt.
+Die **Allgemeinen Vorlagen** für *Räume*, *Pausenzeiten*, *Zeitraster*, *Klassen* und *Aufsichtsbereiche* werden bei der Stundenplanerstellung zusammengeführt.
 
 Über die Vorlage *Aufsichtsbereiche* lassen sich eben diese für die Schule definineren.
 
