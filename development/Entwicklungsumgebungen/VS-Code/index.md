@@ -118,9 +118,11 @@ Diese Einstellungen werden genutzt:
     "eslint.format.enable": true,
     "eslint.workingDirectories": [],
     // gruppierte Anzeige von Dateien, die zusammengehören
+	  "explorer.fileNesting.expand": true,
     "explorer.fileNesting.patterns": {
         "*.vue": "${capture}.story.vue, ${capture}.test.ts, ${capture}.css, ${capture}.story.md, ${capture}Props.ts",
-        "*.java": "${capture}.md"
+        "*.java": "${capture}.md",
+        "Route*.ts": "RouteData${capture}.ts"
     },
     // ganze Verzeichnisse herausfiltern, die man nicht sehen möchte
     "files.exclude": {
