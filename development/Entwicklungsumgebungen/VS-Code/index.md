@@ -80,40 +80,96 @@ Diese Einstellungen werden genutzt:
 
 ```json
 {
-	"[java]": {
-    "editor.insertSpaces": false,
-    "editor.tabSize": 4
-  },
-  "[typescript, javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.tabSize": 2
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  },
-	"files.exclude": {
-    "**/.classpath": true,
-    "**/.factorypath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "node_modules": true
-  },
-	"css.lint.unknownAtRules": "ignore",
-  "css.validate": false,
-  // Diese Einstellung zeigt im File Explorer die in der package.json angelegten Scripte zur Ausführung an
-  "npm.packageManager": "npm",
-	"editor.tabCompletion": "on",
-  "editor.tabSize": 2,
-  "eslint.format.enable": true,
-  "eslint.workingDirectories": [],
-	"java.compile.nullAnalysis.mode": "automatic",
-	"java.configuration.updateBuildConfiguration": "automatic",
-	"typescript.tsdk": "node_modules/typescript/lib",
-  // Um Dateien zu gruppieren, hier die UI-Komponenten mit Story und Test:
-  "explorer.fileNesting.patterns": {
-    "*.vue": "${capture}.story.vue, ${capture}.test.ts"
-  },
-  "tailwindCSS.experimental.configFile": "svws-webclient/ui/src/assets/styles/index.css"
+    "[java]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4
+    },
+    "[typescript, javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.tabSize": 2
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    // AI abschalten
+    "chat.commandCenter.enabled": false,
+    "css.lint.unknownAtRules": "ignore",
+    "css.validate": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.bracketPairColorization.enabled": true,
+    // Vorschläge auch aus Kommentaren machen
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "other": "on",
+        "strings": "on"
+    },
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "trailing",
+    // drei Linien im Editor auf den jeweiligen Spalten
+    "editor.rulers": [
+        80,
+        120,
+        160
+    ],
+    "editor.suggest.localityBonus": true,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "eslint.format.enable": true,
+    "eslint.workingDirectories": [],
+    // gruppierte Anzeige von Dateien, die zusammengehören
+    "explorer.fileNesting.patterns": {
+        "*.vue": "${capture}.story.vue, ${capture}.test.ts, ${capture}.css, ${capture}.story.md, ${capture}Props.ts",
+        "*.java": "${capture}.md"
+    },
+    // ganze Verzeichnisse herausfiltern, die man nicht sehen möchte
+    "files.exclude": {
+        "**/.eslintcache": true,
+        "**/.gradle": true,
+        "**/.histoire": true,
+        "**/.idea": true,
+        "**/.vscode": true,
+        "**/bin": true,
+        "**/build": true,
+        "**/coverage": true,
+        "**/dist": true,
+        "**/logs": true,
+        "**/node_modules": true
+    },
+    // AI abschalten
+    "gitlab.duo.enabledWithoutGitlabProject": false,
+    "gitlab.duoCodeSuggestions.enabled": false,
+    "gitlab.duoCodeSuggestions.openTabsContext": false,
+    "gitlab.keybindingHints.enabled": false,
+    "java.checkstyle.configuration": "${workspaceFolder}/config/checkstyle/checkstyle.xml",
+    "java.cleanup.actions": [
+        "addOverride",
+        "addDeprecated",
+        "invertEquals",
+        "addFinalModifier",
+        "lambdaExpressionFromAnonymousClass",
+        "renameFileToType"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.format.settings.profile": "SVWS-Server-Formatter",
+    "java.format.settings.url": "./config/eclipse/Eclipse_Formatter.xml",
+    "java.saveActions.cleanup": true,
+    // hier kann man aus dem Explorer heraus scripte starten, die in der package.json sind
+    "npm.packageManager": "npm",
+    "sonarlint.connectedMode.project": {
+        "connectionId": "https-sonarqube-svws-nrw-de",
+        "projectKey": "svws-server"
+    },
+    // Damit Tailwind funktioniert
+    "tailwindCSS.experimental.configFile": "svws-webclient/ui/src/assets/styles/index.css",
+    "typescript.preferences.preferTypeOnlyAutoImports": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "vue.autoInsert.dotValue": true,
+    "vue.format.script.initialIndent": true,
+    "vue.format.style.initialIndent": true,
+    "vue.inlayHints.missingProps": true,
+    "vue.inlayHints.optionsWrapper": true,
 }
 ```
 
