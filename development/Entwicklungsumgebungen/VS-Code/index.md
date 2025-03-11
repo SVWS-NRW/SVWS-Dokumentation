@@ -21,7 +21,7 @@ echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://packages.adoptium.n
 
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
 
-NODE_MAJOR=20
+NODE_MAJOR=22
 echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
 
 sudo apt update
@@ -68,7 +68,7 @@ code --install-extension vscjava.vscode-java-pack
 Für die Entwicklung der verschiedenen Unterprojekte mit Vue und Typescript empfiehlt es sich,
 ein jeweils eigenes Fenster pro Unterprojekt zu öffnen.
 
-Um zum Beispiel am Cleint zu arbeiten, sollte ein neues Fenster unter `svws-webclient/client`
+Um zum Beispiel am Client zu arbeiten, sollte ein neues Fenster unter `svws-webclient/client`
 angelegt werden, damit die Erweiterungen wie `volar` und `eslint` vernünftig funktionieren.
 
 Sind zu viele VS Code Fenster geöffnet, empfiehlt sich die Peacock-Erweiterung, mit der
@@ -108,11 +108,12 @@ Diese Einstellungen werden genutzt:
   "eslint.workingDirectories": [],
 	"java.compile.nullAnalysis.mode": "automatic",
 	"java.configuration.updateBuildConfiguration": "automatic",
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"typescript.tsdk": "node_modules/typescript/lib",
   // Um Dateien zu gruppieren, hier die UI-Komponenten mit Story und Test:
   "explorer.fileNesting.patterns": {
     "*.vue": "${capture}.story.vue, ${capture}.test.ts"
-  }
+  },
+  "tailwindCSS.experimental.configFile": "svws-webclient/ui/src/assets/styles/index.css"
 }
 ```
 
