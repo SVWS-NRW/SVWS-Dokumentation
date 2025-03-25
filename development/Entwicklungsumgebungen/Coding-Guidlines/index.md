@@ -44,6 +44,7 @@ outline: 2
 - [Vue - Transpiler](#vue---transpiler)
   - [1. `shallowRef` statt `ref` für transpilierte Java-Objekte](#_1-shallowref-statt-ref-für-transpilierte-java-objekte)
   - [2. Getter für reaktive Props verwenden](#_2-getter-für-reaktive-props-verwenden)
+- [Docker - Dockerfiles](#docker)
 
 :::
 ## Allgemein
@@ -1161,4 +1162,53 @@ Um sicherzustellen, dass Props reaktiv bleiben, sollten sie über Getter überge
 </template>
 ```
 ---
+## Docker
+Zum Erstellen von Dockerfiles bitte beachten, dass jedes RUN, COPY und ENV-Statement ein zusätzliches Layer erzeugen. Daher bitte möglichst zusammenfassen.
+**Richtig:**
+```docker
+FROM php:8.4-apache
+
+# Setzen der Environment-Variablen, die aber auch beim run gesetzt werden können
+ENV APACHE_DOCUMENT_ROOT=/var/www/public \
+ ENMROOT=/var/www/
+
+RUN <<EOF
+apt-get update
+DEBIAN_FRONTEND=noninteractive apt-get install -y ssl-cert
+rm -r /var/lib/apt/lists/*
+# neu generieren, da per default kein hostname angegeben ist
+openssl req -subj '/CN=localhost/O=enmserver/C=DE' -new -newkey rsa:2048 -days 3650 -nodes -x509 -keyout /etc/ssl/private/ssl-cert-snakeoil.key -out /etc/ssl/certs/ssl-cert-snakeoil.pem
+# Aktivieren des Rewrite-Moduls
+a2enmod ssl rewrite
+# die default ssl-Site aktivieren
+a2ensite default-ssl
+# anpassen des Standardpfads mit html zu public bzw env-var
+sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+# Setzen der zus. Konfiguration in das conf-Verzeichnis
+echo "<Directory \${ENMROOT}>
+    AllowOverride all
+    Require all granted
+</Directory>" > /etc/apache2/conf-enabled/enmserver.conf
+EOF
+```
+
+**Falsch:**
+```Docker
+FROM php:8.4-apache
+
+# Setzen der Environment-Variablen, die aber auch beim run gesetzt werden können
+ENV APACHE_DOCUMENT_ROOT=/var/www/public
+ENV ENMROOT=/var/www/
+RUN apt-get update
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y ssl-cert
+RUN rm -r /var/lib/apt/lists/*
+# neu generieren, da per default kein hostname angegeben ist
+RUN openssl req -subj '/CN=localhost/O=enmserver/C=DE' -new -newkey rsa:2048 -days 3650 -nodes -x509 -keyout /etc/ssl/private/ssl-cert-snakeoil.key -out /etc/ssl/certs/ssl-cert-snakeoil.pem
+# Aktivieren des Rewrite-Moduls
+RUN a2enmod ssl rewrite
+# die default ssl-Site aktivieren
+RUN a2ensite default-ssl
+# anpassen des Standardpfads mit html zu public bzw env-var
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+```
 

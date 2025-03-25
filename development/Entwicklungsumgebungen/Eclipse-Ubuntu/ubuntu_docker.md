@@ -76,15 +76,15 @@ services:
     restart: always
     image: mariadb:10.7.3
     environment:
-      MARIADB_ROOT_PASSWORD: "${MariaDB_ROOT_PASSWORD}"
-      MARIADB_DATABASE: "${MariaDB_DATABASE}"
-      MARIADB_USER: "${MariaDB_USER}"
-      MARIADB_PASSWORD: "${MariaDB_PASSWORD}"
+      MARIADB_ROOT_PASSWORD: "${MARIADB_ROOT_PASSWORD}"
+      MARIADB_DATABASE: "${MARIADB_DATABASE}"
+      MARIADB_USER: "${MARIADB_USER}"
+      MARIADB_PASSWORD: "${MARIADB_PASSWORD}"
 
     env_file:
       - .env
     healthcheck:
-      test: mysqladmin ping -h 127.0.0.1 -u $$MariaDB_USER --password=$$MariaDB_PASSWORD
+      test: mysqladmin ping -h 127.0.0.1 -u $$MARIADB_USER --password=$$MARIADB_PASSWORD
       interval: 1s
       timeout: 5s
       retries: 10
@@ -99,11 +99,11 @@ services:
     ports:
       - "8443:8443"
     environment:
-      MariaDB_HOST: "${MariaDB_HOST}"
-      MariaDB_ROOT_PASSWORD: "${MariaDB_ROOT_PASSWORD}"
-      MariaDB_DATABASE: "${MariaDB_DATABASE}"
-      MariaDB_USER: "${MariaDB_USER}"
-      MariaDB_PASSWORD: "${MariaDB_PASSWORD}"
+      MARIADB_HOST: "${MARIADB_HOST}"
+      MARIADB_ROOT_PASSWORD: "${MARIADB_ROOT_PASSWORD}"
+      MARIADB_DATABASE: "${MARIADB_DATABASE}"
+      MARIADB_USER: "${MARIADB_USER}"
+      MARIADB_PASSWORD: "${MARIADB_PASSWORD}"
       SVWS_TLS_KEY_ALIAS: "${SVWS_TLS_KEY_ALIAS}"
       SVWS_TLS_KEYSTORE_PATH: "${SVWS_TLS_KEYSTORE_PATH}"
       SVWS_TLS_KEYSTORE_PASSWORD: "${SVWS_TLS_KEYSTORE_PASSWORD}"
@@ -119,11 +119,11 @@ Eine Datei `.env` im Verzeichnis anlegen und die Parameter auf die eigene Umgebu
 ```bash
 INIT_SCRIPTS_DIR=/etc/app/svws/init-scripts
 TESTDB_PASSWORD=Schild2AccessKennwort
-MariaDB_ROOT_PASSWORD=test
-MariaDB_DATABASE=gymabi
-MariaDB_HOST=mariadb
-MariaDB_USER=test
-MariaDB_PASSWORD=test
+MARIADB_ROOT_PASSWORD=test
+MARIADB_DATABASE=gymabi
+MARIADB_HOST=mariadb
+MARIADB_USER=test
+MARIADB_PASSWORD=test
 SVWS_TLS_KEYSTORE_PASSWORD=test123
 SVWS_TLS_KEY_ALIAS=alias1
 SVWS_TLS_KEYSTORE_PATH=/etc/app/svws/conf/keystore

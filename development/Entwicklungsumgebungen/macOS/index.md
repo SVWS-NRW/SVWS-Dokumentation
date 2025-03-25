@@ -85,6 +85,14 @@ npm run dev
 
 ```
 
+::: tip
+Achtung, beim nächsten Neustart des Rechners muss auch die MariaDB neu gestartet werden:
+```shell
+podman machine start
+podman start mariadb
+```
+:::
+
 Anschließend muss noch eine Datenbank initialisiert werden. Dazu kann der Admin-client verwendet werden:
 
 ```bash
@@ -115,38 +123,3 @@ podman build -t enmserver:latest .
 # den Container auf Port 2998 starten
 podman run -p 2998:443 -v ./src/php:/var/www --rm --name php enmserver
 ```
-
-Das gebaute Image verwendet die vorgegebenen Pfade des ENM-Servers und erstellt ein neues Zertifikat. Dies muss nun
-geladen und als `localhost.pem` abgelegt werden:
-
-```bash
-openssl s_client -showcerts -connect localhost:2998 </dev/null 2>/dev/null|openssl x509 -outform PEM >localhost.pem
-```
-
-:::warning Achtung
-Im folgenden wird davon ausgegangen, dass zur Installation von Java `homebrew` verwendet wurde. Für andere Installationsarten gelten andere Verzeichnisse.
-:::
-
-Nun wird das Zertifikat in den Java-Keystore importiert:
-
-```bash
-keytool -import -trustcacerts -alias enmserver -file localhost.pem -keystore /opt/homebrew/Cellar/openjdk@21/21.0.5/libexec/openjdk.jdk/Contents/Home/lib/security/cacerts
-```
-
-Hier ist zu beachten, dass sich der Pfad mit jeder Java-Version ändern wird. Bitte entsprechend anpassen.
-
-Jedes Mal, wenn das Zertifikat auf diesem Weg neu impoertiert werden soll oder das alte aus anderen Gründen gelöscht werden soll, ist folgender Befehl zu nutzen:
-
-```bash
-keytool -delete -keystore /opt/homebrew/Cellar/openjdk@21/21.0.5/libexec/openjdk.jdk/Contents/Home/lib/security/cacerts
-```
-
-`keytool` fragt nun nach dem Alias, man antwortet mit `enmserver`, dies ist der frei vergebene Alias, der beim Import angegeben wurde.
-
-Um sich das aktuelle Zertifikat anzeigen zu lassen, wird dieser Befehl verwendet:
-
-```bash
-keytool -list -alias enmserver -keystore /opt/homebrew/Cellar/openjdk@21/21.0.5/libexec/openjdk.jdk/Contents/Home/lib/security/cacerts
-```
-
-Nun kann der SVWS-Server mit dem ENM-Server kommunizieren.
