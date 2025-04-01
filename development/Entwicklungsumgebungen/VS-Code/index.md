@@ -64,7 +64,7 @@ code --install-extension vscjava.vscode-java-pack
 ```
 
 ::: warning ACHTUNG
-Die vue- und Typescript-Erweiterung funktioniert nur, wenn vor der ersten Nutzung ein `assemble` mit Gradle durchgeführt
+Die Vue- und Typescript-Erweiterung funktioniert nur, wenn vor der ersten Nutzung ein `assemble` mit Gradle durchgeführt
 wurde und in den Client- bzw. UI-BVerzeichnissen eine `components.d.ts` Datei angelegt wurde. Ohne diese Datei werden keine Typen gefunden.
 :::
 
