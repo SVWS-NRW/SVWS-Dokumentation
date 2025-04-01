@@ -33,7 +33,7 @@ vscode installieren:
 sudo apt install -y temurin-21-jdk nodejs code
 ```
 
-## Hilfreiche PlugIns
+## Hilfreiche Erweiterungen
 
 Hier einige hilfreiche Tipps für VS Code im Einsatz zur Server/Client-Entwicklung.
 
@@ -62,6 +62,11 @@ code --install-extension richardwillis.vscode-gradle-extension-pack
 # Java für vs Code. Ein Paket für alles
 code --install-extension vscjava.vscode-java-pack
 ```
+
+::: warning ACHTUNG
+Die vue- und Typescript-Erweiterung funktioniert nur, wenn vor der ersten Nutzung ein `assemble` mit Gradle durchgeführt
+wurde und in den Client- bzw. UI-BVerzeichnissen eine `components.d.ts` Datei angelegt wurde. Ohne diese Datei werden keine Typen gefunden.
+:::
 
 ## Tipps
 
