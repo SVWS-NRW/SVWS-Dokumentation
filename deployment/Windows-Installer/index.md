@@ -174,7 +174,7 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 Die beiden Server werden als Dienst registriert. Diese können in der Computerverwaltung überprüft werden.
 
 ::: warning Rechte zum Starten der Dienste
-Mögliche Fehlerquelle: Das (Dienst-)Konto, mit dem der Dienst gestartet werden soll, muss auch die Berechtigungen hierfür haben.
+Mögliche Fehlerquelle: Das (Dienst-)Konto, mit dem der Dienst gestartet werden soll, muss auch die Berechtigungen hierfür haben. Eventuell hilft es, das MariaDB-Dienstkonto in die Default Controllers Policy mit der Berechtigung "Anmelden als Dienst" aufzunehmen (2025).
 :::
 
 ## Erstellen des Keystore/Zertifikat
