@@ -174,7 +174,7 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 Die beiden Server werden als Dienst registriert. Diese können in der Computerverwaltung überprüft werden.
 
 ::: warning Rechte zum Starten der Dienste
-Das (Dienst-)Konto, mit dem der Dienst gestartet werden soll, muss auch die Berechtigungen zum Starten der Dienste haben.
+Mögliche Fehlerquelle: Das (Dienst-)Konto, mit dem der Dienst gestartet werden soll, muss auch die Berechtigungen hierfür haben.
 :::
 
 ## Erstellen des Keystore/Zertifikat
