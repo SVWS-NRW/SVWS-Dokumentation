@@ -173,6 +173,10 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 
 Die beiden Server werden als Dienst registriert. Diese können in der Computerverwaltung überprüft werden.
 
+::: warning Rechte zum Starten der Dienste
+Das (Dienst-)Konto, mit dem der Dienst gestartet werden soll, muss auch die Berechtigungen zum Starten der Dienste haben.
+:::
+
 ## Erstellen des Keystore/Zertifikat
 Im Keystore des SVWS-Server wird ein selbstsigniertes Zertifikat erstellt. 
 Der öffentliche Teil wird im Ordner 
