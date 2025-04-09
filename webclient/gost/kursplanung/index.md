@@ -308,3 +308,10 @@ Dazu werden die Schüler erst einem Kurs (hier D-GK1) zugeordnet, dann werden we
 
 *in Bearbeitung*
 
+## Blockung exportieren (etwa nach Untis)
+
+::: warning Blockung exportieren und Stundenpläne importieren
+Nehmen Sie zum Export einer Blockung und dann zum Import von Stundenplänen bitte die Artikel in der **App Schule** zum **Datenaustausch** mit **Untis** zur Kenntnis.
+:::
+
+Der Datenaustausch findet im Format der Untis-Schnittstellendateien statt. Konsultieren Sie bitte zu diesen das Handbuch von Untis.
