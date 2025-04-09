@@ -5,7 +5,7 @@
 Zu jedem Abiturjahrgang kann in jedem Abschnitt eine oder mehrere Blockungen angelegt oder aus bestehenden Daten wieder hergestellt (restauriert) werden.
 Wiederherstellung erfolgt dann, wenn die vorliegende Datenbank bereits importierte Blockungen enthält.
 
-![Blockungsauswahl](./graphics/SVWS_Oberstufe_Kursplanung_1.png)
+![Blockungsauswahl](./graphics/SVWS_Oberstufe_Kursplanung_1.png "Für einen Abiturjahrgang lassen sich die in den Jahrgangsstufen/Halbjahren vorhandenen Blockungen anzeigen.")
 
 
 ### Fall Wiederherstellung und Weiterbearbeitung
@@ -17,7 +17,7 @@ Angezeigt wird eine Übersicht über eingerichtete Kurse, in welchen Schienen si
 
 ### Fall Neue Kursblockung
 
-![Blockungsneuerstellen](./graphics/SVWS_Oberstufe_Kursplanung_4.png)
+![Blockungsneuerstellen](./graphics/SVWS_Oberstufe_Kursplanung_4.png "Ein Klick auf das + erstellt eine neue Blockung.")
 
 Über das **+**-Symbol wird eine neue Blockung erstellt.  
 Es sollten dazu **vollständige Fachwahlen** für den gewählten Abschnitt vorliegen.  
@@ -27,7 +27,7 @@ Zum Ablauf der Einrichtung/Erstellung einer **neuen Blockung** siehe [Erstellen 
 
 ## Übersichten, Filter, Belegungsmatrix  
 
-![Blockungsuebersicht](./graphics/SVWS_Oberstufe_Kursplanung_2.png)  
+![Blockungsuebersicht](./graphics/SVWS_Oberstufe_Kursplanung_2.png "Sehen und planen Sie, in welcher Schiene welcher Kurs liegt.")  
 
 Die Blockungsübersicht zeigt die Lage der Kurse in den Schienen an, ebenso die Belegungszahl einer Schiene und die jeweilige Kursgröße.  
 Im Falle einer **neu angelegten Blockung liegt noch keine Verteilung** vor.  
@@ -42,7 +42,7 @@ Hinweis: sollte eine Kursgröße in diesem Format angegeben sein: 14|3, so befin
 ### Schülerlisten (nach Filter)   
 Rechts neben der Kursübersicht befinden sich **Schülerlisten**, deren Inhalt **gefiltert** werden kann:  
 
-![Blockungsschuelerlisten](./graphics/SVWS_Oberstufe_Kursplanung_3.png)  
+![Blockungsschuelerlisten](./graphics/SVWS_Oberstufe_Kursplanung_3.png "Über den Filter lassen sich die Schüler auf Kurse oder Fehler und Konflikte filtern")  
 
 - **kein Filter**
 - **Fachfilter**: Schüler mit einem bestimmten gewählten Fach und Kursart filtern. Beispiel: Alle mit **Fachwahl Deutsch LK**
@@ -57,7 +57,7 @@ Die **Symbole** hinter den Namen stehen für das **Geschlecht** und die Eigensch
 
 ## Umwahldialog  
 Weiter rechts (ggf. nach rechts scrollen oder Container einklappen) befindet sich die Belegungsmatrix des ausgewählten Schülers.  
-![Umwahldialog](./graphics/Oberstufe_SVWS-Kursplanung_Umwahl.png)  
+![Umwahldialog](./graphics/Oberstufe_SVWS-Kursplanung_Umwahl.png "Verändern Sie Kursbelegungen und verschieben Sie Kurse in andere Schienen.")  
  
 Hier können   
 + Kursbelegungen per **Drag&Drop** geändert werden  
@@ -84,7 +84,7 @@ Siehe dazu hier: [Erstellen einer neuen Blockung](#erstellen-einer-neuen-blockun
 
 ### Berechnungen durchführen
 
-![Berechnung](./graphics/SVWS_Oberstufe_Kursplanung_5.png)  
+![Berechnung](./graphics/SVWS_Oberstufe_Kursplanung_5.png "Klicken Sie auf Blocken... um neue Ergebnisse zu berechnen.")  
 
 
 ### Bewertungskriterien 
@@ -103,7 +103,7 @@ Um ein vorliegendes Ergebnis einer Berechnung oder den Grundzustand der Blockung
 ## Blockung aktivieren
 
 Durch Setzen des Hakens hinter eines der Blockungsergebnisse werden die weiteren Prozesse auf die jetzt aktivierte Blockung bezogen.  
-![Blockung-aktivieren](./graphics/SVWS_Oberstufe_Kursplanung_8.png)
+![Blockung-aktivieren](./graphics/SVWS_Oberstufe_Kursplanung_8.png "Der blaue Haken aktiviert eine Blockung und ein Ergebnis.")
 
 
 Dazu gehören:  
@@ -111,13 +111,13 @@ Dazu gehören:
 * Anzeigen der Kursbelegung der Schüler
 * Kursbelegungslisten
 * Rückführender Link aus der Schüler-Laufbahnplanung zurück in die aktivierte Blockung:  
-![Rückfuehrungslink-Blockung](./graphics/SVWS_Oberstufe_Kursplanung_7.png)
+![Rückfuehrungslink-Blockung](./graphics/SVWS_Oberstufe_Kursplanung_7.png "Mit einem Klick auf das Linksymbol springen Sie zurück zur aktiven Blockung.")
 
 ## Erstellen einer neuen Blockung
 
 ### Grundeinstellungen der Blockung
 
-![Einstellungen](./graphics/SVWS_Oberstufe_Kursplanung_6.png)  
+![Einstellungen](./graphics/SVWS_Oberstufe_Kursplanung_6.png "In der Blockungsmatrix finden sich viele Schalter, um das Verhalten der Berechnung zu steuern.")  
 
 **1**: **Hinzufügen** weiterer **Schienen**. Nicht benötigte Schienen können mit dem Papierkorb hinter der Schienennummer **gelöscht** werden.  
 
@@ -231,7 +231,7 @@ Im folgenden Beispiel werden **zunächst die Leistungskurse** und **anschließen
 
 Es sind einige erkennbare und nicht erkennbare Regeln und Fixierungen enthalten.:  
 
-![Beispiel1](./graphics/SVWS_Oberstufe_Kursplanung_Bsp1_LK-Regeln.png)  
+![Beispiel1](./graphics/SVWS_Oberstufe_Kursplanung_Bsp1_LK-Regeln.png "Hier wurden LK-Schinen geblockt und dann für andere Kurse gesperrt.")  
 
 + Einige **LKs** wurden in Schienen **fixiert** (schwarze Pinnnadeln).  
 
@@ -248,11 +248,11 @@ Es sind einige erkennbare und nicht erkennbare Regeln und Fixierungen enthalten.
 
 Einmaliges schnelles Blocken liefert evtl. noch Kollisionen, eine weitere Blockungsberechnung liefert in diesem Beispiel aber u.a. dieses Ergebnis:
 
-![Beispiel1-Ergebnis](./graphics/SVWS_Oberstufe_Kursplanung_Bsp1-Ergebnis.png) 
+![Beispiel1-Ergebnis](./graphics/SVWS_Oberstufe_Kursplanung_Bsp1-Ergebnis.png "Eine erste Berechnung hat die Schüler auf die LKs verteilt.") 
 
 Hier kann jetzt ein Ergebnis ausgewählt werden:
 
-![Beispiel1-Auswahl](./graphics/SVWS_Oberstufe_Kursplanung_Bsp1-Auswahl.png)
+![Beispiel1-Auswahl](./graphics/SVWS_Oberstufe_Kursplanung_Bsp1-Auswahl.png "Arbeiten Sie mit den Ergebnissen einer Berechnung, die Ihnen zielführend erscheinen.")
 
 Ebenso können definitiv unbrauchbare Ergbnisse gelöscht werden. Wird der Haken direkt bei **ID** gesetzt, werden alle Ergebnisse markiert.  
 Der Haken der Wunschergebnisses (und evtl. die Startvorlage) kann entfernt werden. Dann können alle anderen Ergbnisse auf einmal gelöscht werden.
@@ -272,10 +272,10 @@ Es kann (nicht nur in Sport) vorkommen, dass bereits vor dem Blocken ein Kurs ei
 Hier kann die Funktion **Kurse: Schülerzuordnung** eingesetzt werden.  
 
 1. **Leeren des Fußball-Kurses** SP-GK1-FB  
-![Beispiel1-Sport 1](./graphics/SVWS_Oberstufe_Kursplanung_Sport-1.png)
+![Beispiel1-Sport 1](./graphics/SVWS_Oberstufe_Kursplanung_Sport-1.png "Leeren Sie erst den Kurs, da die automatisch zugewiesenen Schüler eventuell nicht die sind, die Sie im Kurs einteilen möchte.")
 
 2. **Zuweisung** Schüler in SP-GK1-FB  
-![Beispiel1-Sport 1](./graphics/SVWS_Oberstufe_Kursplanung_Sport-2.png)  
+![Beispiel1-Sport 1](./graphics/SVWS_Oberstufe_Kursplanung_Sport-2.png "Weisen Sie Schüler dem Kurs zu. Dann können Sie die Schüler im Kurs fixieren.")  
 
 Ergänzend können die hier schon **Schüler in Ziel-Kursen fixiert** werden. 
 
@@ -293,8 +293,7 @@ Hier wird dargestellt, wie z.B. in einer **EF feste Gruppen für D, M und E-Kurs
 Über **Kurse: Schülerzuordnung** kann eine feste Schülergruppe mehreren Kursen zugewiesen (und dort fixiert) werden.  
 Dazu werden die Schüler erst einem Kurs (hier D-GK1) zugeordnet, dann werden weitere Kurse ausgewählt.  
 
-![Beispiel Kerngruppe](./graphics/SVWS_Oberstufe_Kursplanung_Zuordnung1.png)  
-
+![Beispiel Kerngruppe](./graphics/SVWS_Oberstufe_Kursplanung_Zuordnung1.png "Legen Sie Kerngruppen immer gleicher Schüler fest.")  
 
 
 ## Schüler individuell bearbeiten
