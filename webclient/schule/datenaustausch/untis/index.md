@@ -8,8 +8,7 @@ Ebenso nutzen Sie das Handbuch und den Untis-Support für den Im- und Export im 
 :::
 
 :::warning Beugen Sie Synchronisationsproblemen vor
-Der Ausgangspunkt für den Datenaustausch ist immer der **SVWS-Webclient**. Die Bezeichnungen der Klassen, Lehrkräfte, Fächer und Kurse werden im **SVWS-Webclient** festgelegt, und die entsprechenden Bezeichnungen in **Untis** oder anderen Stundenplanprogrammen müssen sich exakt daran anpassen.
-Achten Sie bitte unbedingt darauf, dass die Bezeichnungen für Kurse, Klassen, Lehrkräfte und so weiter in der SVWS-Datenbank und in Untis identisch sind. Achten Sie bitte auch darauf, dass SuS korrekt mit Vor- und Nachname und Geburtsdatum identisch angelegt sind. Tippfehler hier führen zu Problemen bei Datensynchronisationen!
+Achten Sie bitte unbedingt darauf, dass die Bezeichnungen für Kurse, Klassen, Lehrkräfte und so weiter in der SVWS-Datenbank, in Untis und anderen Programmen identisch ausfallen. Dies gilt ebenfalls für Schülerdaten wie Vor-, Nachname, Geburtsdatum und so weiter. Tippfehler führen mitunter zu Problemen bei Datensynchronisationen!
 
 Achten Sie bitte auch darauf, immer nur **aktuelle Untis-Dateien zu importieren** nicht alte oder welche, die Änderungen in Untis noch nicht behinhalten!
 :::
