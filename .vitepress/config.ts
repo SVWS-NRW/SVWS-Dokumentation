@@ -69,8 +69,8 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Schulungsumgebungen', link: '/schulungen/', collapsed: false, items: [
 							{ text: 'SchulungsClient', link: '/schulungen/SchulungsClient/' },
 							{ text: 'Virtualbox', link: '/schulungen/Virtualbox_Schulungsserver/' },
-							{ text: 'Bootstick', link: '/schulungen/Bootstick_Schulungsserver/' },
 							{ text: 'Proxmox', link: '/schulungen/Proxmox_Schulungsserver/' },
+							{ text: 'Docker', link: '/schulungen/Docker_Schulungsserver/' }
 						] },
 					] },
 				],
