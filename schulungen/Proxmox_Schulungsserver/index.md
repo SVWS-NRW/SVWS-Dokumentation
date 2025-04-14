@@ -90,7 +90,7 @@ Es können nun mehrere SVWS-Server als LX Container innerhalb des Schulungsnetze
 
 Falls Schulungen mit Schild 2.0, Schild 3.0 oder ASDPC durchgeführt werden sollen, können weiterhin die bestehenden Windows Rechner im Schulungsnetzwerdngenutzt werden. 
 
-Die Einrichtung von Schild3 bei einem bestehenden SVWS-Server kann unter Installationsmethoden [Schild-NRW-3](../deployment/Schild-NRW3) nachgelesen.werden. 
+Die Einrichtung von Schild3 bei einem bestehenden SVWS-Server kann unter Installationsmethoden (Schild3)[../deployment/Schild-NRW3] nachgelesen werden. 
 
 ## Onlineschulung
 

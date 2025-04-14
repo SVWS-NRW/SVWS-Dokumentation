@@ -10,15 +10,19 @@ Unter SchulungsClients sollen hier (virtuelle) Maschinen verstanden werden, die 
 + über den Client sollten Schulungsmedien bereitgestellt werden können, die individuell bearbeitbar sind 
 + der Client soll verschiedene Schulungsdatenbanken einbinden können
 + die Fortbilder sollen den Client auf Ihre Berüfnisse anpassen können
-+ der Client sollte auf verschiedenen Plattformen (Proxmox, VMWare, ... ) betrieben werden können
++ der Client sollte auf verschiedenen Plattformen (Proxmox, VMWare, HyperV, ... ) betrieben werden können
 + der Client sollte remote steuerbar sein (rdp,vnc, x2go, ...)
 + der Client sollte ressourcenschonend betrieben werden können
 
 ## Installation des Grundsystems
 
+Als Grundsystem auf der VM für den SVWS-Server ist es empfehlenswert ein Debain, aktuell Debian 12, zu verwenden. Es kann die Installation ohne graphisches Frontend in einer KVM oder alternativ ein LX Container gewählt werden. Es soll in hier nicht auf die verschiedenen Methoden der Erstellung von VMs oder Container unter dem jeweiligen Virtulaizer eingegangen werden. 
+
+Es ist zu beachten, dass nicht weitere Dienste auf den Ports 80,443 bzw. 8443 verwendet werden. 
+
 ## Installation des SVWS-Servers
 
-## Bereitstellung der Schulungsmedien
+Eine einfache Methode ist hier die Installation per linuxinstaller
 
 ## Installation Schild3
 
