@@ -50,7 +50,7 @@ docker compose up
 
 Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Backend, Frontend). Ebenso sind die Volumes für den Keystore gemounted. 
 
-Achtung: Diese Umgebung ist nicht für Produktivbetrieb geeignet, dazu muss die [Konfiguration der SVWS-Umgebung](#konfiguration-der-svws-umgebung) individuell angepasst werden!
+Achtung: Diese Umgebung ist nicht für Produktivbetrieb geeignet, dazu muss die [Konfiguration der SVWS-Umgebung](#konfiguration-der-svws-umgebung) individuell angepasst werden! Beim Beenden des Dockers werde alle Daten gelösch!
 
 Nach dem Start kann der SVWS-Server über den Port 8443 erreicht werden. 
 Auf die Datenbank kann standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden (not bound). 
