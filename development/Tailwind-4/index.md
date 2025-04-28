@@ -6,7 +6,7 @@ Durch die Umstellung auf Tailwind 4 haben sich einige Neuerungen im Umgang mit d
 Durch die Umstellung auf Tailwind 4 haben sich einige Neuerungen im Umgang mit dem Framework ergeben, die bereits in den Projekten ausgerollt wurden. So gibt es zum Beispiel keine `tailwind.config.ts`-Datei mehr, sondern es werden direkt Utility Klassen in CSS Dateien definiert. \
 Alle CSS Dateien werden in der Datei `ui\src\assets\styles\index.css` importiert. Diese Datei dient als zentrale CSS-Datei. Weitere Utility-Klassen wurden in unterschiedlichen CSS-Dateien definiert.
 * `ui\src\assets\styles\colors.css` enthält alle CSS-Variablen, die sich auf Farben beziehen. Diese wiederum nutzen Palettenfarben, die in `ui\src\assets\styles\palette.css` definiert sind. Die Farben in `colors.css` sind dabei jeweils für das light- und das dark-Theme definiert. Es wird automatisiert die Farbe geladen, je nachdem welches Theme geladen ist. Klassen wie `bg-ui dark:bg-ui-neutral` o.Ä. sind nicht mehr erforderlich.
-* `ui\src\assets\styles\borders.css` enthält Unitlity-Klassen, die sich auf Borders beziehen.
+* `ui\src\assets\styles\borders.css` enthält Utility-Klassen, die sich auf Borders beziehen.
 * `ui\src\assets\styles\dimensions.css` enthält Utility-Klassen, die sich auf Dimensionen beziehen, zum Beispiel die Größen von Modalen.
 * `ui\src\assets\styles\fonts.css` enthält alle Utility-Klassen, die sich auf Schriften beziehen.
 * `ui\src\assets\styles\icons.css` enthält alle Utility-Klassen, die sich auf Icons beziehen wie Icon-Größen oder alle definierten Icons von [Remix Icon](https://remixicon.com/).

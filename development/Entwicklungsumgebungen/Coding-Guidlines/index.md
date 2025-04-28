@@ -418,7 +418,7 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
 ---
 
 ### 2. Formatierung in Tags
-Innerhalb der Vue Tags `<template>` und `<script>`  soll der Code eingerückt sein. Außerdem soll sich zwischen dem Tag `<script>` und dessen Inhalt eine Leerzeile befinden. Dies gilt nicht für `<template>` (wird von ESLint sonst kritisiert). \
+Innerhalb der Vue Tags `<template>`, `<script>` und `<style>` soll der Code eingerückt sein. Außerdem soll sich zwischen den Tags `<script>` und `<style>` und deren Inhalt eine Leerzeile befinden. Dies gilt nicht für `<template>` (wird von ESLint sonst kritisiert).
 Beachte aber, dass `<style>`-Abschnitte vermieden werden sollen (siehe [Tailwind 4 Doku](../../Tailwind-4/index.md)).
 
 **Richtig:**
@@ -438,6 +438,14 @@ Beachte aber, dass `<style>`-Abschnitte vermieden werden sollen (siehe [Tailwind
 
 </script>
 
+<style>
+	/** Vermeide diesen Abschnitt, wenn möglich */
+	.my-class {
+		display: block;
+	}
+
+</style>
+
 ```
 
 **Falsch:**
@@ -447,6 +455,13 @@ Beachte aber, dass `<style>`-Abschnitte vermieden werden sollen (siehe [Tailwind
   <span>Text</span>
 
 </template>
+<style>
+
+	.my-class {
+		display: block;
+	}
+
+</style>
 
 <script setup lang="ts">
 import { computed, ref } from 'vue';
