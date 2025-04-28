@@ -119,7 +119,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Code Styles', link: '/development/Entwicklungsumgebungen/Code-Styles' },
 						],
 						},
-						{ text: 'Tailwind 4', link: '/development/Tailwind 4/' },
+						{ text: 'Tailwind 4', link: '/development/Tailwind-4/' },
 						{ text: 'Technische FAQs', link: '/development/FAQ/' },
 					] },
 				],
