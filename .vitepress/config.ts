@@ -70,7 +70,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'SchulungsClient', link: '/schulungen/SchulungsClient/' },
 							{ text: 'Virtualbox', link: '/schulungen/Virtualbox_Schulungsserver/' },
 							{ text: 'Proxmox', link: '/schulungen/Proxmox_Schulungsserver/' },
-							{ text: 'Docker', link: '/schulungen/Docker_Schulungsserver/' }
+							{ text: 'Docker', link: '/schulungen/Docker_Schulungsserver/' },
 						] },
 					] },
 				],
@@ -119,6 +119,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Code Styles', link: '/development/Entwicklungsumgebungen/Code-Styles' },
 						],
 						},
+						{ text: 'Tailwind 4', link: '/development/Tailwind-4/' },
 						{ text: 'Technische FAQs', link: '/development/FAQ/' },
 					] },
 				],
