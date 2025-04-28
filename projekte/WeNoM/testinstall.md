@@ -24,10 +24,10 @@ GITHUBURL=https://github.com/SVWS-NRW/SVWS-Server
 
 ### Apache2 und PHP installation
 apt update && apt upgrade -y
-apt install -y apache2 php php-fpm php-sqlite3
+apt install -y apache2 php${PHPVERSION} php${PHPVERSION}-fpm php${PHPVERSION}-sqlite3
 apt install -y curl zip unzip git dnsutils nmap net-tools nano mc ca-certificates gnupg2 lsb-release apt-transport-https gpg
 a2enmod proxy_fcgi setenvif
-a2enconf php8.2-fpm
+a2enconf php${PHPVERSION}-fpm
 a2enmod rewrite
 a2enmod headers
 
