@@ -44,6 +44,7 @@ In der /etc/apache2/apache2.conf ergänzen:
         Require all granted
 </Directory>
 ```
+In der etc/php/8.X/apache2/php.ini die SQLite3-Extension durch entfernen des Semikolos aktivieren!
 
 ### PHP-Memory-Limit
 
