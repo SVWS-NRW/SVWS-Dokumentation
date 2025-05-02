@@ -80,8 +80,6 @@ Es dürfen ausschließlich SVWS-definierte Farben verwendet werden. Tailwind Far
 **Erklärung:**  
 SVWS stellt ein konsistentes Farbsystem bereit, das einheitlich genutzt werden kann und den Kontrastrichtlinien von WCAG entspricht. Die genaue Verwendung der Farben in [SVWS UI](https://ui.svws-nrw.de/) unter `Farben` dokumentiert.
 
-Gerne, hier ist die neue **Regel 4** passend zum Stil der anderen:
-
 ---
 
 ### 4. Tailwind-Stateklassen verwenden (`hover:`, `focus:` usw.)
