@@ -1,0 +1,54 @@
+services:
+    mariadb:
+        image: mariadb:latest
+        restart: always
+        ports:
+            - 3306:3306
+        environment:
+            - MARIADB_ROOT_PASSWORD=xxxxxx
+            - MARIADB_DATABASE=svwsdb
+            - MARIADB_USER=svwsadmin
+            - MARIADB_PASSWORD=yyyyyy
+            - MARIADB_DATA_DIR=/var/lib/mysql
+            - MARIADB_LOG_DIR=/var/log/mysql
+        volumes:
+            - /volume1/DockerData/MariaDB/data:/var/lib/mysql
+            - /volume1/DockerData/MariaDB/logs:/var/log/mysql
+            - /volume1/DockerData/MariaDB/conf:/etc/mysql
+        healthcheck:
+            test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+            start_period: 10s
+            interval: 10s
+            timeout: 5s
+            retries: 3
+        networks:
+            - svws-net
+
+    svws-server:
+        image: svwsnrw/svws-server:latest
+        depends_on:
+            mariadb:
+                condition: service_healthy
+        ports:
+            - 8443:8443
+        environment:
+            - MARIADB_HOST=mariadb
+            - MARIADB_ROOT_PASSWORD=xxxxxx
+            - MARIADB_DATABASE=svwsdb
+            - MARIADB_USER=svwsadmin
+            - MARIADB_PASSWORD=yyyyyy
+            - INIT_SCRIPTS_DIR=/opt/app/svws/init-scripts
+            - SVWS_TLS_KEYSTORE_PATH=/etc/app/svws/conf/keystore
+            - SVWS_CONF_DIR=/etc/app/svws/conf
+            - SVWS_TLS_KEYSTORE_PASSWORD=zzzzz
+            - SVWS_TLS_KEY_ALIAS=svws-key
+            - SVWS_TLS_KEYSTORE_CREATE=false
+        volumes:
+            - /volume1/DockerData/SVWS/init-scripts:/opt/app/svws/init-scripts
+            - /volume1/DockerData/SVWS/conf/keystore:/etc/app/svws/conf/keystore
+            - /volume1/DockerData/SVWS/conf:/etc/app/svws/conf
+        networks:
+            - svws-net
+networks:
+    svws-net:
+        driver: bridge
