@@ -38,7 +38,7 @@ Unter https://meinserver/admin steht dann ein Admin-Client zur Verfügung, mit d
 | defaultschema | null | Name des Defaultschema, das beim Start im Client als erstes angeboten wird. (Optional.) |
 | SchemaKonfiguration | | Beginn der einzelnen Schemakonfigurationen. |
 | name |  "svwsdb" | Name des Datenbankschemas. |
-| svwslogin | false | Gibt an, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung genutzt wird oder nicht. | 
+| svwslogin | false | Gibt an, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung genutzt wird oder nicht. Achtung bei der Einstellung "true": Stimmen Admin innerhalb der Datenbank und der Admin des MariaDB Schemats nicht überein wird keine Verdingung aufgebaut. | 
 | username | "svwsuser" | Datenbankuser für das Schema im DBMS. |
 | password | "userpassword"| Passwort für den Datenbankuser. |
 | connectionRetries | 0 | Gibt an, wieviele wiederholte Verbindungsversuche zur Datenbank stattfinden sollen. |
