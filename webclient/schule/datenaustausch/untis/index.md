@@ -104,21 +104,23 @@ Falls fehlerhafte Unterrichtseinträge beim Import erkannt werden:
 
 ![Exportdialog für SVWS-Daten in Untis-Dateien](./graphics/svws_schule_datenaustausch_untis_export.png "Der Exportdialog, hier müssen Sie nichts ändern.")
 
-Sie können Ihre SVWS-Daten in Units übernehmen. Derzeit können folgende Daten exportiert werden:
-+ Klassenliste (GPU003.txt)
-+ Lehrerliste (GPU004.txt)
-+ Fächer und Kursliste (GPU006.txt)
-+ Schülerliste (GPU010.txt)
-+ Fachwahlen (GPU015.txt)
-+ Klausuren (GPU017.txt)
-+ Schienen (GPU019.txt)
-+ Blockung (bestehend aus GPU002.txt, GPU015.txt, GPU019.txt)
+Sie können ausgewählte Daten aus dem SVWS-Webclient für die Weiterverarbeitung in Untis exportieren. Derzeit stehen folgende Exportoptionen zur Verfügung:
+- **Klassenliste** (`GPU003.txt`)  
+- **Lehrerliste** (`GPU004.txt`)  
+- **Fächer- und Kursliste** (`GPU006.txt`)  
+- **Schülerliste** (`GPU010.txt`)  
+- **Fachwahlen** (`GPU015.txt`)  
+- **Klausurplanung** (`GPU017.txt`)  
+- **Schienen** (`GPU019.txt`)  
+- **Blockung** (bestehend aus `GPU002.txt`, `GPU015.txt`, `GPU019.txt`)
 
-Wählen Sie die zu exportierende Datenart. Da Untis die eigenen Schnittstellendaten erwartet, sollten für einen Import in Untis bestimmte Dateien nicht unbenannt werden.
+Wählen Sie im Exportdialog die gewünschte Datenart aus. Da Untis spezifische Schnittstellendateien erwartet, sollten Sie die vorgeschlagenen Dateinamen **nicht ändern**, wenn Sie die Daten direkt in Untis weiterverwenden möchten.
 
-Möchten Sie die Daten aus einem anderen Grund exportieren, können Sie der Datei auch einen passenden Namen geben.
+Falls Sie den Export zu anderen Zwecken durchführen, können Sie selbstverständlich einen abweichenden Dateinamen angeben.
 
-Klicken Sie dann auf `Speichern`, um die Datei an einem Ort Ihrer Wahl abzulegen.
+Klicken Sie abschließend auf **„Speichern“**, um die Datei an einem Speicherort Ihrer Wahl zu sichern.
+
+---
 
 ### Schüler IDs
 
@@ -132,6 +134,8 @@ Werden Schülerdaten exportiert, legen Sie fest, welche Art der SchülerID Sie n
 SVWS-IDs haben den Vorteil, dass diese unabhängig von Namensänderungen oder falschen beziehungsweise fehlerhaften Einträgen bei Name, Vorname und Geburtsdatum sind. Wird Untis bei Ihnen mit SVWS-Exporten befüllt, empfiehlt sich diese Wahl.
 
 Schüler-ID-Arten sollten in Untis nicht gemischt werden.
+
+---
 
 ### Unterrichte synchroniseren mit der GPU002.txt
 
