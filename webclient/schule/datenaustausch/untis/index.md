@@ -98,7 +98,7 @@ Falls fehlerhafte Unterrichtseinträge beim Import erkannt werden:
 - Typische Fehlerquellen: **Bezeichnungen nicht identisch, nicht vorhandene Kürzel, falsche Datumsbereiche, unvollständige Einträge**
 
 
-
+---
 
 # Exporte
 
