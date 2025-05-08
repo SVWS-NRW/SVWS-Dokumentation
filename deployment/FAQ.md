@@ -84,11 +84,11 @@ Bei einem MariaDB-Cluster müssen die Nodes entsprechende Rechte für das Anlege
 Das ist nicht in der Default Konfiguration der MariaDB.
 
 Der aktivierte BINLOG führte dazu, dass der Server sich weigert, dass u.A. trigger angelegt werden.  
-siehe auch: [https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html](https://github.com/SVWS-NRW/SVWS-Server/issues/url)
+siehe auch: [https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html](https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html)
 
 Nach Anpassen der Option in der Config  
 ```bash
-\--log\_bin\_trust\_function\_creators=ON
+log_bin_trust_function_creators=ON
 ```
 lassen sich dann auch neuen Schemas fehlerfrei anlegen.
 
