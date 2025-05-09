@@ -40,7 +40,7 @@ In den SVWS-Server können Sie *Stundenpläne* auf drei Arten mit unterschiedlic
 
 :::info Format der Dateien
 Alle Dateien sind UTF-8-codierte `.csv`-Dateien.  
-Trennzeichen: **Semikolon (;)**  
+Trennzeichen: **Semikolon ( ; )**  
 Textbegrenzung: **Doppelte Anführungszeichen ("")**
 :::
 
