@@ -36,7 +36,7 @@ Unter https://meinserver/admin steht dann ein Admin-Client zur Verfügung, mit d
 | DBKonfiguration | | Beginn der Datenbankkonfigurationen der verschiedenen Schemata. |
 | dbms | "MARIA_DB" | Momentan einziges unterstütztes DBMS MariaDB mindesten 10.6.x. |
 | location | "localhost" | Adresse des Datenbankservers (Hostename:Port) |
-| defaultschema | null | Name des Defaultschema, das beim Start im Client als erstes angeboten wird. (Optional.) |
+| defaultschema | null | Name des Defaultschema, das beim Start im Client als erstes angeboten wird. (Optional.) Ist kein Default gesetzt wird immer das letzte benutzte Schemata ausgewählt.|
 | SchemaKonfiguration | | Beginn der einzelnen Schemakonfigurationen. |
 | name |  "svwsdb" | Name des Datenbankschemas. |
 | svwslogin | false | Gibt an, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung genutzt wird oder nicht. (Deprecated: Bitte immer auf false lassen!) | 
