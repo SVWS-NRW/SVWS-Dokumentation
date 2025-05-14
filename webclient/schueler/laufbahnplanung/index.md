@@ -1,6 +1,6 @@
 # Laufbahnplanung
 
-![Schueler-Laufbahnplanung](./graphics/schueler_laufbahnplanung_1.png)
+![Die Planung der Schülerlaufbahn, indem für die Lernabschnitte Kursbelegungen gewält werden](./graphics/schueler_laufbahnplanung_1.png "Klicken Sie die zu belegenden Kurse an und legen Sie die Kursart fest.")
 
 Gibt es für einen Schüler oder Schülerin schon eine Laufbahnplanung für die gymnasiale Oberstufe, wird diese im Untertab **Laufbahnplanung** angezeigt.  
  
@@ -34,13 +34,14 @@ Der **Link hinter EF.1** zeigt an, dass ein Kursplanung für den Abschnitt vorli
 Es ist möglich, dass Leistungsdaten ohne Kursplanung vorliegen - aber auch, dass eine Kursplanung ohne Leistungsdaten vorliegt.  
 :::
 
-[Zurück zur Doku Kursplanung](../../gost/kursplanung/index.md)  
+Springen Sie zur detaillierten Dokumentation zur [Kursplanung](../../gost/kursplanung/index.md).
 
   
   **Konflikte** zwischen Leistungsdaten und Laufbahnplanung werden in der Regel mit einem **roten Kreuz** gekennzeichnet.
   
-  Der Konflikt ist in einem der beiden Dialoge zu beheben.  
-  ![Schueler-Laufbahnplanung-Konflikt](./graphics/schueler_laufbahnplanung_3.png)  
+  Der Konflikt ist in einem der beiden Dialoge zu beheben. 
+
+  ![In der Schüler-Laufbahnplanung werden Konflikte mit einem roten Kreuz angezeigt](./graphics/schueler_laufbahnplanung_3.png "Das rote Kreuz bei M zeigt einen Konflikt an." )  
 
   
 Mit ````Fächer anzeigen```` kann zwischen *alle* und *nur gewählte* umgeschaltet werden, so dass Zeilen mit nicht gewählten Fächern ausgeblendet werden. 
@@ -48,6 +49,6 @@ Mit ````Fächer anzeigen```` kann zwischen *alle* und *nur gewählte* umgeschalt
   ---
 Im rechts nebenstehenden Bereich werden ggf. **Kommentare** hinterlassen und **Laufbahnfehler** entsprechend der Einstellungen angezeigt.
 
-![Schueler-Laufbahn-Beratung](./graphics/schueler_laufbahnplanung_2.png)  
+![Schueler-Laufbahn-Beratung](./graphics/schueler_laufbahnplanung_2.png "Füllen Sie die Beratungsdaten aus und nehmen Sie Bemerkungen auf".)  
 
-[Zur Doku Kursplanung](../../gost/kursplanung/index.md) 
+Springen Sie zur detaillierten Dokumentation zur [Kursplanung](../../gost/kursplanung/index.md).
