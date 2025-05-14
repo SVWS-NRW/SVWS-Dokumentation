@@ -21,7 +21,7 @@ const datum = (t: number) => {
 [![Admins](./graphics/LandingAdmin.png "Icon für Admins.")](./deployment/)
 [![Devs](./graphics/LandingDev.png "Icon für Developer.")](./development/)
 
-Für die Installation und Nutzung der Software SchILD-NRW-3 findet sich deren Dokumentation im [Wiki von SchILD-NRW-3](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=SchILD-NRW).
+Für die Installation und Nutzung der Software **SchILD-NRW-3** findet sich deren Dokumentation im [Wiki von SchILD-NRW-3](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=SchILD-NRW).
 
 ## SVWS-Server, SVWS-Client und weitere Projekte
 
