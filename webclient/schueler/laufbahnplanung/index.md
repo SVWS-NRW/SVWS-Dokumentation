@@ -19,10 +19,12 @@ Um Alternativen auszuprobieren, kann mittels ````Planung merken```` die aktuelle
 
 Eventuelle temporäre Änderungen werden im Anschluss mit einem Klick auf ````Planung wiederherstellen```` rückgängig machen. Sollen diese temporären Änderungen übernommen werden, können sie nun dauerhaft eingestellt werden.
 
-Modus:
-* Normal
-* Hochschreiben
-* Manuell
+**Modus**
+
+* **Normal** - hierbei werden nur mögliche Kursarten/Abifächer/und so weiter durchgeschaltet.
+* **Manuell** - es werden alle Kursarten/Abifächer/... zur Wahl gestellt, auch wenn diese aufgrund der aktuellen Wahl nicht zulässig wären
+* **Hochschreiben** - Wählen Sie gerade die EF, werden die Wahlen automatisch bis zur Q2.2 mit ausgefüllt. Dieser Modus steht nicht zur Verfügung, wenn schon Lernabschnitte der EF begonnen wurden. 
+
   
 ### Kennzeichnungen 
 Die **graue Schraffierung** im der Abbidung oben der EF.1 bedeutet, dass für den angezeigten Schüler bereits Leistungsdaten für den Abschnitt hinterlegt sind. Hier ist demnach keine Änderung in der Laufbahnplanung mehr möglich.  
