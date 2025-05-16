@@ -85,6 +85,13 @@ Diese Einstellungen werden genutzt:
 
 ```json
 {
+    // ermöglicht strengere Anzeigen von Fehlern in JSON
+    "$schema": "http://json-schema.org/draft-07/schema#",  
+    "files.associations": {
+        // identifiziert settings.json als JSON und nicht JSON with Comments
+        "settings.json": "json"                     
+    },
+
     "[java]": {
         "editor.insertSpaces": false,
         "editor.tabSize": 4
@@ -179,6 +186,10 @@ Diese Einstellungen werden genutzt:
     "vue.inlayHints.optionsWrapper": true,
 }
 ```
+
+::: danger Achtung!
+Damit die Task `initVSCode`, die unter Anderem beim Build ausgeführt wird, richtig laufen kann, muss das JSON valide sein. Das bedeutet, dass keine Kommentare erlaubt sind! Bei der Kopie der Einstellungen müssen die Kommentare daher entfernt werden.
+:::
 
 # Code Styles einrichten
 Die Code Styles in VSCode werden automatisiert durch ein Gradle Project Reload oder Build in den Workspace geladen. Eigene Konfigurationen sind nicht möglich. \
