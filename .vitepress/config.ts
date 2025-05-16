@@ -43,11 +43,17 @@ export default defineConfig(({ mode }) => {
 
 				{ text: 'Entwicklung',
 					items: [
-						{ text: 'SVWS-Server', link: '/development/' },
+						{ text: 'SVWS-Server', items: [
+							{ text: 'Übersicht', link: '/development/SVWS-Server/'},
+							{ text: 'Entwicklungsumgebungen', link: '/development/Entwicklungsumgebungen/'},
+							{ text: 'Tailwind 4', link: '/development/Tailwind-4/' },
+							{ text: 'Gradle', link: '/development/Gradle/' },
+							{ text: 'Technische FAQs', link: '/development/FAQ/' },
+							{ text: 'UI-Bibliothek', link: 'https://ui.svws-nrw.de' },
+							{ text: 'Java-API', link: 'https://javadoc.svws-nrw.de' },
+						]},
 						{ text: 'Projekte', link: '/projekte' },
 						{ text: 'Mitarbeit', link: '/teamarbeit' },
-						{ text: 'UI-Bibliothek', link: 'https://ui.svws-nrw.de' },
-						{ text: 'Java-API', link: 'https://javadoc.svws-nrw.de' },
 					] },
 			],
 			socialLinks: [
@@ -70,7 +76,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'SchulungsClient', link: '/schulungen/SchulungsClient/' },
 							{ text: 'Virtualbox', link: '/schulungen/Virtualbox_Schulungsserver/' },
 							{ text: 'Proxmox', link: '/schulungen/Proxmox_Schulungsserver/' },
-							{ text: 'Docker', link: '/schulungen/Docker_Schulungsserver/' }
+							{ text: 'Docker', link: '/schulungen/Docker_Schulungsserver/' },
 						] },
 					] },
 				],
@@ -119,6 +125,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Code Styles', link: '/development/Entwicklungsumgebungen/Code-Styles' },
 						],
 						},
+						{ text: 'Tailwind 4', link: '/development/Tailwind-4/' },
 						{ text: 'Technische FAQs', link: '/development/FAQ/' },
 					] },
 				],

@@ -2,25 +2,27 @@
 
 Der SVWS-Client lässt sich auch über die Tastatur bedienen.
 
-## Schneller Bereichwechsel
+## Schneller Bereichwechsel über Fokusbereiche
 
-Mit der Tastenkombination ````Strg + Alt + Page Up```` beziehungweise ````Strg + Alt + Page Down```` kann zwischen den Bereichen **Apps** und vorhandenen Bereichen wie **Auswahllisten** oder unterschiedliche **Bereiche der Inhalte** in der aktuellen App hin- und herwechseln.
+Im SVWS-Client lassen sich Fokusbereiche direkt anspringen, indem die zum Bereich gehöhrende Nummer mit `Alt + NUMMER` angewählt wird.
 
-Ohne die Tastatursteuerung ist der aktuell fokussierte Bereich nicht erstichtlich drücken Sie ````Tab````, um durch die einzelnenen Elemente in einem Bereich vorwärts durchzuschalten.
+![Zeigen Sie mit Alt + 0 die Fokusbereiche](./graphics/svws_tastaturnavigation_fokusbereiche.png "mit Alt + 0 zeigen Sie in die Rot die Fokusbereiche an.")
 
-Drücken Sie ````Shift + Tab```` um die Bereiche rückwärts durchzuschalten.
+Zeigen Sie mit `Alt + 0` die Fokusbereiche an, ebenso blendet ein weitere Druck auf Àlt + 0`die roten Fokusbereichsrahmen auch wieder aus.
 
-Drücken Sie ````Strg + Alt + Page Up```` beziehungsweise ````Page Down````, um die **Bereiche** zu wechseln. Ein neuer Druck auf ````Tab```` hebt das aktuell fokussierte Element hervor und weitere Drücke auf ````Tab```` und ````Shift + Tab```` werden verwendet, um die Elemente durchzugehen.
+Sie können nun die Bereiche mit Alt und der passenden Zahl direkt anspringen, dort funktionieren die für Browser üblichen Navigationsmöglichkeiten, zum Beispiel können Sie mit `Tab` vor- und mit `Shift + Tab` zurückschalten.
 
-![Ein Druck auf Tab erzeugt den Fokus auf das akuelle Element (Klassen)](./graphics/svws_tastaturnavigation.png "Durch einen Druck auf Tab wird der Fokus auf das akuelle Element - hier Klassen - angezeigt.")
+::: info Die Fokusbereiche müssen nicht angezeigt sein, um sie zu erreichen.
+Sie können auch die Fokusbereiche direkt anspringen, ohne die Fokusbereiche zuvor angezeigt zu haben.
+:::
 
-Hier im Screenshot wurde mit ````Strg + Alt + Page Up```` der **App**-Bereich erreicht, dann wurde mit ````Tab```` der Fokus aktiviert. Die blaue Hervorhebung um *Schüler* zeigt an, dass dieser gerade angezeigt wird. Der schwarze Rahmen um *Klassen* ist der Fokus. Mit einem Druck auf ````Enter```` kann nun zu *Klassen* gewechselt werden.
+* `Alt + 1` springt immer in den App-Bereich
+* `Alt + 4` in die Auswahlliste und 
+* `Alt + 5`, `Alt + 6` und `Alt + 7` springt in die Tabs und dann absteigend in weitere Untertab-Bereiche.
 
-![Blauer Fokusrahmen in den Tabs](./graphics/svws_tastaturnavigation_fokus.png "Hier wurde mit Strg + Alt + Page Up in den Tab-Bereich gewechselt. Nach einem Druck auf Tab schalten sich die Tabs durch. Der blaue Rahmen zeigt den Fokus.")
+![Alt + 5, Alt + 6 und Alt + 7 springt in tabs und  Untertabs](./graphics/svws_tastaturnavigation_fokusbereiche_untertabs.png "Alt + 5 werden die Tabs ansprungen, 6 und 7 dann absteigend Ebenen von Untertabs.")
 
-Im Beispiel oben wurde auf den **Tab**-Bereich gewechselt. Aktuell sind die *Individualdaten* angezeigt. Schaltet man die Tabs mit mit ````Tab```` durch, zeigt der blaue Rahmen den jeweiligen Fokus an. Mit ````Enter```` kann dieser Tab nun aktiviert werden.
-
-Die Tasten ````Page Up```` und ````Page Down```` heißen auf deutschen Tastaturen manchmal auch ````Bild auf```` und ````Bild ab```` oder ````Bild```` mit einem kleinen Pfeil hoch oder runter. 
+Mit `Alt + 8` können Sie durch alle Fokusbereiche zykolisch durchschalten. Damit lassen sich also auch Fokusbereiche erreichen, die keiner festen Struktur zuzuordnen sind.
 
 ## Navigation in Auswahllisten
 
@@ -44,8 +46,20 @@ Im Beispiel sind die zwei Modi zu sehen. Links werden die *Listenelemente* durch
 
 ## Schneller Tab-Wechsel im Inhaltsbereich
 
-Mit der Tastenkombination ````Strg + Alt + Pfeiltaste links```` beziehungsweise ````Strg + Alt + Pfeiltaste rechts```` kann der aktuelle *Tab* im Inhaltsbereich gewechselt werden. 
+Mit der Tastenkombination ````Strg + Alt + Pfeiltaste links```` beziehungsweise ````Strg + Alt + Pfeiltaste rechts```` kann der aktuelle *Tab* im Inhaltsbereich gewechselt werden.
 
 ![Tabs vorwärts und rückwarts durchschalten](./graphics/svws_tastaturnavigation_tabsdurchschalten.png "Schalten Sie die Tabs vorwärts und rückwärts durch.")
 
-Hierbei wird dann der zugehörige Inhalt geladen.
+Dies funktioniert auch in Untertabs.
+
+:::info Schneller Bereichswechsel über Fokusbereiche
+Wechseln Sie die Tabs schnell mit `Alt + 5`, `Alt + 6` oder `Alt +7`, um in den jeweiligen Fokusbereich zu springen.
+:::
+
+Beim Wechsel wird die zugehörige Seite geladen.
+
+## Laufbahnplanung
+
+In der Laufbahnplanung in der Oberstufe kann mit den `Pfeiltasten` im Kurswahlbereich navigiert werden.
+
+Ein Druck auf `Enter` oder die `Leertaste` erzeugt den gleichen Effekt, wie ein Mausklick.

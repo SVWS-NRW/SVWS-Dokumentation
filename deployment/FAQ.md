@@ -84,11 +84,11 @@ Bei einem MariaDB-Cluster müssen die Nodes entsprechende Rechte für das Anlege
 Das ist nicht in der Default Konfiguration der MariaDB.
 
 Der aktivierte BINLOG führte dazu, dass der Server sich weigert, dass u.A. trigger angelegt werden.  
-siehe auch: [https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html](https://github.com/SVWS-NRW/SVWS-Server/issues/url)
+siehe auch: [https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html](https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html)
 
 Nach Anpassen der Option in der Config  
 ```bash
-\--log\_bin\_trust\_function\_creators=ON
+log_bin_trust_function_creators=ON
 ```
 lassen sich dann auch neuen Schemas fehlerfrei anlegen.
 
@@ -97,4 +97,81 @@ lassen sich dann auch neuen Schemas fehlerfrei anlegen.
 
 Momentan nicht. Jedoch werden in Zukunft viele Prozesse dazu kommen, die eine Internetverbindung benötigen, etwa ein Web-Notenmanager, Schnittstellen für SchülerOnline, digitales Zeugnisse, Updates oder Ähnliches.
 
+## Containerbetrieb
 
+### 1. Zielsetzung des Containereinsatzes
+
+Welcher Zweck steht im Vordergrund (z. B. Skalierung, Verfügbarkeit, Sicherheit, CI/CD, sonstiges)?
+
+Der Containereinsatz ist optional und kann in großen Systemen eine Unterstützung zur Automatisierten Bereitstellung leisten.
+Hier kann mit Hilfe von erstellten Scripten eine flexible und skalierbare Umgebung geschaffen werden.
+Mit dem Einsatz von Containern kann optional auch die Trennung der Daten von Schulen untereinander verbessert werden.
+Dies kann eine Alternative zu Virtuellen-Maschinen darstellen, um in großen Systemen kosteneffizienter zu arbeiten.
+
+### 2. Verwendung sicherer Images:
+
+Wird die im Image enthaltene Software regelmäßig auf Sicherheitsprobleme geprüft?
+    
+Die Images werden täglich mit Trivy auf aktuelle CVE-Sicherheitslücken geprüft.
+
+Werden gefundene Sicherheitsprobleme behoben und dokumentiert?
+
+Alle gemeldeten CVEs mit der Einstufung "high" und höher werden sofort behoben, wenn die Hersteller dafür eine Lösung bieten.
+
+Ist das verwendete Basis-Image aktuell (nicht „deprecated“)?
+
+Es wird ein aktuelles Ubuntu LTS-Image verwendet.
+
+Wird das Basis-Image bei Aktualisierungen mit aktualisiert?
+
+Das Basis-Image wird bei jedem Release mit den aktuellen Sicherheitspatches versorgt.
+
+Sind die Images mit eindeutigen Versionsnummern versehen?
+
+Die Release-Images sind mit dreistelligen Versionsnummern versehen.
+Major.Minor.Patch-Update
+
+### 3. Sichere Speicherung von Zugangsdaten:
+
+Werden Zugangsdaten in der Anwendung gespeichert?
+
+Benutzerzugänge mit Benutzernamen und Passwort für den SVWS-Client werden in der Datenbank gespeichert.
+Zugangsdaten des Servers werden pro Schule in einer Konfigurationsdatei außerhalb der Anwendung gespeichert.
+Eine optionale Speicherung in Umgebungsvariablen ist in Planung.
+
+Ist eine Verwaltung dieser Zugangsdaten notwendig?
+
+Eine Verwaltung der Zugangsdaten ist für das Rechtemanagement und für den Zugriff der Schild-NRW3-Anwenung erforderlich.
+
+Wenn ja, wie sollen sie gespeichert werden?
+
+Passwörter für Benutzerzugänge für den SVWS-Client werden in Form von BCrypt-Hashes in der Datenbank gespeichert.
+
+### 4. Eignung für Containerbetrieb:
+
+Ist die Anwendung für den Containerbetrieb geeignet?
+
+Grundsätzlich ist ein Betrieb unter Containern möglich und muss vom IT-Dienstleister individuell umgesetzt werden.
+Beispiele für den Betrieb unter Docker finden Sie im Bereich "Deployment".
+Hier werden auch exemplarisch Docker-Compose.yml Dateien zur Verfügung gestellt, die auf den eigenen Bedarf angepasst werden müssen.
+
+Wird nur ein Dienst pro Container betrieben?
+
+Die Anwendung benötigt eine Java-Laufzeitumgebung und kann optional mit einem MariaDB-Service in einem Container betrieben werden.
+Der Datenbank-Service ist aber optional und kann auch getrennt vom Container betrieben werden, so dass ein Betrieb mit nur einem Dienst möglich ist.
+
+### 5. Ressourcenlimitierung pro Container:
+
+Unterstützt die Anwendung Ressourcenlimits (CPU, RAM, Speicher, Netzbandbreite)?
+
+API-Endpunkte für sogenannte Health-Checks sind in Planung.
+
+Gibt es eine Dokumentation zum Verhalten der Anwendung bei Limitüberschreitungen?
+
+Ist bisher nicht geplant.
+
+### 6. Administrativer Fernzugriff:
+
+Haben die Container Fernwartungszugänge?
+
+Dies muss vom Betreiber der Container-Umgebung umgesetzt werden, wenn erforderlich.
