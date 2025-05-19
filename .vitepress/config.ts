@@ -93,7 +93,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'WebLuPO', link: '/projekte/WebLupo/' },
 							{ text: 'WeNoM', link: '/projekte/WeNoM/' },
 							{ text: 'ASD-Statistik', link: '/projekte/ASD-Statistik/' },
-							{ text: 'SchülerOnline', link: '/projekte/SchülerOnline/' },
+							{ text: 'Schulbewerbung.de', link: '/projekte/Schulbewerbung.de/' },
 							{ text: 'xSchule', link: '/projekte/xSchule/' },
 						] },
 					] },
