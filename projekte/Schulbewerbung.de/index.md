@@ -15,7 +15,7 @@ https://doku.svws-nrw.de/projekte/xSchule/
 Im SVWS-Client kann ein User mit entsprechenden Zugriffsrechten die betroffenen Schüler als zu meldende Abgänger auswählen. Wenn alle Daten kontrolliert sind, kann eine Autenthifizierung stattfinden und die Daten gesendet.
 
 ## Schule empfängt Daten für neue Schulbewerbung.de
-Über den Menüpunkt Datenimport SO2 im SVWS-Webclient empfängt der berechtigte User die Daten und bekommt eine Übersichtsliste.
+Über den Menüpunkt Datenimport Schulbewerbung.de im SVWS-Webclient empfängt der berechtigte User die Daten und bekommt eine Übersichtsliste.
 Der User wählt die Datensätze aus, die importiert werden sollen. Duplikate werden mit enem Warnhinweis angezeigt!
 Danach werden die Schüler in den Status "Neuaufnahme" importiert.
 
