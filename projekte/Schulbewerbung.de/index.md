@@ -8,17 +8,18 @@ Das Projekt Schulbewerbung.de wurde im Rahmen der Umsetzungen von Leistungen zum
 Die Möglichkeit des landesweiten digitalen Schülerwechsels soll mit dem SVWS-Server und Schulbewerbung.de umgesetzt werden.
 
 Als Austauschformat wurde *XSchule* gewählt, da es als bundesweites Format entwickelt wird und später bei anderen Prozessen auch benötigt wird.
+
 https://doku.svws-nrw.de/projekte/xSchule/
 
 
 ## Schule sendet Abgängerdaten an Schulbewerbung.de
 
-Im SVWS-Client kann ein User mit entsprechenden Zugriffsrechten die betroffenen Schüler als zu meldende Abgänger auswählen. Wurden alle Daten kontrolliert, kann eine Autenthifizierung stattfinden und die Daten können gesendet werden.
+Im SVWS-Client kann ein User mit entsprechenden Zugriffsrechten die betroffenen Schüler als zu meldende Abgänger auswählen. Wurden alle Daten kontrolliert, kann eine Authentifizierung stattfinden und die Daten können gesendet werden.
 
 ## Schule empfängt Daten für neue Schulbewerbung.de
 Über die **App Schule** ➜ Datenimport ➜ Schulbewerbung.de im SVWS-Webclient empfängt der berechtigte User die Daten und bekommt eine Übersichtsliste.
 
-Der User wählt die Datensätze aus, die importiert werden sollen. Duplikate werden mit enem Warnhinweis angezeigt!
+Der User wählt die Datensätze aus, die importiert werden sollen. Duplikate werden mit einem Warnhinweis angezeigt!
 
 Danach werden die Schüler in den Status "Neuaufnahme" importiert.
 
