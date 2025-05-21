@@ -2,8 +2,8 @@
 
 Mit dem folgenden Skript kann für ENM-Server auf einem Debian 12 erstellt werden. 
 
-[!WARNING]
-Für den Livebetrieb sind noch wesentliche Sicherheitseinstellungen nötig, die nicht mit dieser Installation abgedeckt werden. 
+> [!WARNING] Livebetrieb
+> Für den Livebetrieb sind noch wesentliche Sicherheitseinstellungen nötig, die nicht mit dieser Installation abgedeckt werden. 
 
 ## Installationsskript Testserver
 
@@ -96,7 +96,8 @@ echo "################# Installation beendet! ####################"
 ```
 ## UpdateSkript Testserver
 
-Achtung: Alle Daten werden auf dem Wenom durch dieses Skript gelöscht!
+>[!WARNING] Löschung der Daten
+> Alle Daten werden auf dem Wenom durch dieses Skript gelöscht!
 
 ```bash
 #!/bin/bash
