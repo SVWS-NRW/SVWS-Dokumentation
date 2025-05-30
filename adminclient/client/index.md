@@ -1,6 +1,5 @@
 # Bedienkonzept des SVWS-Adminclient
 
-
 Der SVWS-Server kann sehr flexibel konfiguriert werden. Dies soll dazu führen, dass der Server an die vielen verschiedenen Systemumgebungen anpassen und je nach Bedarf skaliert werden kann.
 
 ## Administration in der eigenen Schule
@@ -23,7 +22,6 @@ Dazu bekommt jede Schule ein eigenes Schema, das auch einen eigenen Schema-Daten
 
 Die Verwaltung der verschiedenen Schemata kann auch mit dem Admin-Client geschehen. Ebenso stehen den Schulträgern hierzu auch API-Endpunkte zur Verfügung, die die Schema-Verwaltung über eine priviligierte API ermöglichen.
 
-
 ## Login und Übersicht
 Rufen Sie den _[Server]/admin_ auf, um den **Admin Client** zu starten.
 
@@ -41,15 +39,8 @@ Im Admin-Client selbst gibt es wieder **Apps**, die zu unterschiedlichen Adminis
 
 Derzeit finden sich Apps zum Schemata-Management und zur Konfiguration des SVWS-Servers.
 
-![Übersicht der Schemata im Admin Client.](./graphics/SVWS_adminclient.png "Übersicht der Schemata im Admin Client.")
+![Übersicht der Schemata im Admin Client.](./graphics/SVWS_adminclient.png "Übersicht der Schemata im Admin Client und die Optionen zu diesen Schamata.")
 
-Oben links zeigt **Ro** an, dass der Rootuser angemeldet wurde.
-
-Melden Sie sich unten links mit einem Klick auf **Abmelden** ab.
-
-Wie im Client gewohnt, lässt sich hier auch die **Ansicht** ändern.
-
-In der Kopfzeile finden sich die Apps für das **Schemata**-Management und weitere **Konfiguration** des SVWS-Servers.
-
+Oben links zeigt **Ro** an, dass der Rootuser angemeldet wurde. Melden Sie sich unten ganz links mit einem Klick auf **Abmelden** ab.
 
 
