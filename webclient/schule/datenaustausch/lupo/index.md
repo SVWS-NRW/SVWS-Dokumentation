@@ -4,6 +4,9 @@ Beratungsdateien aus LuPO - dem bisherigen Programm! - können hier importiert w
 
 Im Dateiwahldialog ist die Lehrerdatei ".lup" anzugeben.
 
+>![WARNING] Gültige Schüler-IDs
+>Alle Schüler aus der LuPO-Datei müssen über gültige Schüler-IDs verfügen. Achten Sie hier besonders auf Schüler, die nach dem Initialexport händisch in LuPO angelegt wurden.
+
 ![Dialog zur Auwahl von Lupo-Dateien zum Import](./graphics/svws_schule_datenaustausch_lupo.png "Wählen Sie aus, welche Dateien Sie importieren möchten und welche Daten dabei im SVWS-Server überschrieben werden.")
 
 Wählen Sie, ob die importieren Laufbahndaten von Schüler ersetzt werden sollen. Üblicherweise ist der Haken zu setzen.
