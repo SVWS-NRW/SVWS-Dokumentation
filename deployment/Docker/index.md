@@ -57,7 +57,7 @@ services:
     ...
 ```
 
-Diese Pports müssen auf Ihre Umgebung angepasst werden, je nach Anforderung.
+Diese Ports müssen auf Ihre Umgebung angepasst werden, je nach Anforderung.
 
 ## Konfiguration der SVWS-Umgebung 
 Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über Umgebungsvariablen. 
@@ -71,8 +71,6 @@ MARIADB_DATABASE=your-svws-db-schema-name
 MARIADB_HOST=mariadb
 MARIADB_USER=your-mariadb-user
 MARIADB_PASSWORD=your-mariadb-pw
-MARIADB_DATA_DIR=/var/lib/mysql/data
-MARIADB_LOG_DIR=/var/lib/mysql/log
 SVWS_TLS_KEYSTORE_PATH=/etc/app/svws/conf/keystore
 SVWS_TLS_KEYSTORE_PASSWORD=your-keystore-pw
 SVWS_TLS_KEY_ALIAS=your-keystore-key-alias
