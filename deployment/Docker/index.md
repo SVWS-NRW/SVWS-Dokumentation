@@ -33,6 +33,11 @@ Diese Datei muss in einem Order entpackt werden und legt damit die geforterte Or
 
 Außerdem werden Volumes für die Daten der MariaDB angelegt, die später ja auch erhalten beleiben müssen.
 
+Im Ordner liegen dann eine docker-compose.yml und eine .env Datei, die angepasst werden muss.
+Im Ordner Volume werden dann für svws und mariadb entsprechende Ordner angelegt.
+
+Im Ordner svws/conf liegen zwei svwsconfig-template.json, eine für das Hochfahren mit Testdaten und eine Datei für das Hochfahren ohne Testdaten.
+
 Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Backend, Frontend). Ebenso sind die Volumes für den Keystore gemounted. 
 
 Nach dem Start kann der SVWS-Server über den Port 8443 erreicht werden. 
@@ -51,6 +56,9 @@ services:
         - "3306:3306"
     ...
 ```
+
+Diese Pports müssen auf Ihre Umgebung angepasst werden, je nach Anforderung.
+
 ## Konfiguration der SVWS-Umgebung 
 Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über Umgebungsvariablen. 
 Die Werte dieser Variablen werden in der Datei .env definiert. 
@@ -78,8 +86,6 @@ SVWS_TLS_KEY_ALIAS=your-keystore-key-alias
 | MARIADB_HOST | Name des Hosts, auf dem die SVWS-Datenbank läuft. Im Falle der Docker-Umgebung entspricht dieser Wert dem Service-Namen von docker-compose (also "mariadb"). |
 | MARIADB_USER | Datenbank-Benutzer, unter dem sich der SVWS-Server mit der Datenbank verbindet. |
 | MARIADB_PASSWORD | Passwort des Datenbank-Benutzers, unter dem sich der SVWS-Server mit der Datenbank verbindet. |
-| MARIADB_DATA_DIR | Pfad zum Daten-Verzeichnis innerhalb der MariaDB-Instanz. Wird benötigt, um die Daten im Datenbank-Container auf einem Volume zu sichern (volume mount). Pfad hängt von dem verwendeten MariaDB Basis-Image ab. |
-| MARIADB_LOG_DIR | Pfad zum Log-Verzeichnis innerhalb der MariaDB-Instanz. Wird benötigt, um die Logs im Datenbank-Container auf einem Volume zu sichern (volume mount). Pfad hängt von dem verwendeten MariaDB Basis-Image ab. |
 | SVWS_TLS_KEYSTORE_PATH | Unter diesem Pfad erwartet der SVWS den Java-Keystore für die Terminierung von SSL am Server |
 | SVWS_TLS_KEYSTORE_PASSWORD | Passwort des Keystores |
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore  |
