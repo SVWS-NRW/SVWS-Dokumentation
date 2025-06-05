@@ -15,7 +15,7 @@ zum Aufbau von Docker-basierten SVWS-Umgebungen.
 
 ## Systemvoraussetzungen Installation Docker-Umgebung
 Für die lokale Inbetriebnahme ist eine Installation von [Docker](https://docs.docker.com) auf dem Entwickler-PC notwendig.
-Bitte die [Nutzungsbedingungen](https://www.docker.com/legal/docker-subscription-service-agreement) der Fa. Docker Inc. für Docker Desktop beachten!
+Bitte die [Nutzungsbedingungen](https://www.docker.com/legal/docker-subscription-service-agreement) der Fa. Docker Inc. für Docker beachten!
 
 Bitte Informieren Sie sich auf der Dokumentationsseite von Docker über die notwendigen Schritte in Ihrer Umgebung.
 
@@ -23,7 +23,7 @@ Bitte Informieren Sie sich auf der Dokumentationsseite von Docker über die notw
 ## SVWS-Umgebung mit docker-compose starten
 
 Die SVWS-Umgebung kann über die Konsole des verwendeten Betriebssystems mittels docker-compose gestartet werden. 
-Beispiele zur dazu obligatorischen docker-compose.yml und .env Datei befinden sich im [Github-Repository](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/example) .
+Beispiele zur dazu obligatorischen docker-compose.yml und Dateien befinden sich im [Github-Repository](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/example) .
 
 ### Beipiel: aktuellen Testserver im Docker Container
 
