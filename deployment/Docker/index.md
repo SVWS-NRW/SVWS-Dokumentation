@@ -1,6 +1,6 @@
 # Docker-Container 
 
-Der SVWS-Server kann als Container betrieben werden. Dies eignet sich insbesondere für die folgenden beisen Szenarien:
+Der SVWS-Server kann als Container betrieben werden. Dies eignet sich insbesondere für die folgenden beiden Szenarien:
 
 * Betrieb einer SVWS-Umgebung für Produktiv- oder Test-Betrieb [per docker-compose](#svws-umgebung-mit-docker-compose-starten)
 
@@ -9,7 +9,7 @@ Die SVWS-Container-Images sind unter Docker (docker engine, docker desktop) lauf
 [Podman](https://podman.io/), [Kubernetes](https://kubernetes.io/de/), [OpenShift](https://www.redhat.com/de/technologies/cloud-computing/openshift) 
 ist grundsätzlich möglich, jedoch noch nicht getestet (Stand 27.09.2024).
 
-Im Git-Repository von SVWS befinden sich [Beispiele, Scripte und Image-Definitionen](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker) 
+Im Git-Repository von SVWS befinden sich [Beispiele, Skripte und Image-Definitionen](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker) 
 zum Aufbau von Docker-basierten SVWS-Umgebungen.
 
 
@@ -17,7 +17,7 @@ zum Aufbau von Docker-basierten SVWS-Umgebungen.
 Für die lokale Inbetriebnahme ist eine Installation von [Docker](https://docs.docker.com) auf dem Entwickler-PC notwendig.
 Bitte die [Nutzungsbedingungen](https://www.docker.com/legal/docker-subscription-service-agreement) der Fa. Docker Inc. für Docker beachten!
 
-Bitte Informieren Sie sich auf der Dokumentationsseite von Docker über die notwendigen Schritte in Ihrer Umgebung.
+Bitte informieren Sie sich auf der Dokumentationsseite von Docker über die notwendigen Schritte in Ihrer Umgebung.
 
 
 ## SVWS-Umgebung mit docker-compose starten
@@ -25,23 +25,23 @@ Bitte Informieren Sie sich auf der Dokumentationsseite von Docker über die notw
 Die SVWS-Umgebung kann über die Konsole des verwendeten Betriebssystems mittels docker-compose gestartet werden. 
 Beispiele zur dazu obligatorischen docker-compose.yml und Dateien befinden sich im [Github-Repository](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/example) .
 
-### Beipiel: aktuellen Testserver im Docker Container
+### Beispiel: aktuellen Testserver im Docker Container
 
 [Beispiel einer vorbereiteten Docker-Compose](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Docker/svws-docker-example.zip)
 
-Diese Datei muss in einem Order entpackt werden und legt damit die geforterte Ordnerumgebung an, so dass der Keystore beim ertsen Start des SVWS-Servers erzeugt wird und danach erhalten bleibt.
+Diese Datei muss in einem Ordner entpackt werden und legt damit die geforderte Ordnerumgebung an, so dass der Keystore beim ersten Start des SVWS-Servers erzeugt wird und danach erhalten bleibt.
 
-Außerdem werden Volumes für die Daten der MariaDB angelegt, die später ja auch erhalten beleiben müssen.
+Außerdem werden Volumes für die Daten der MariaDB angelegt, die später ja auch erhalten bleiben müssen.
 
 Im Ordner liegen dann eine docker-compose.yml und eine .env Datei, die angepasst werden muss.
 Im Ordner Volume werden dann für svws und mariadb entsprechende Ordner angelegt.
 
 Im Ordner svws/conf liegen zwei svwsconfig-template.json, eine für das Hochfahren mit Testdaten und eine Datei für das Hochfahren ohne Testdaten.
 
-Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Backend, Frontend). Ebenso sind die Volumes für den Keystore gemounted. 
+Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Backend, Frontend). Ebenso sind die Volumes für den Keystore gemountet. 
 
 Nach dem Start kann der SVWS-Server über den Port 8443 erreicht werden. 
-Auf die Datenbank kann standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden (not bound). 
+Auf die Datenbank kann standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden ("not bound"). 
 Intern nutzt die Datenbank den Port 3306. Für den Zugriff von SchILD 3 ist ein Port-Binding auch außerhalb von Docker nötig, 
 dies wird über die Angabe eines Port-Mappings (ports) Eintrag in der Datei erreicht. 
 In diesem Beispiel wird der Port 3306 im Container auf den Port 3306 auf dem Host abgebildet.:
@@ -92,7 +92,7 @@ SVWS_TLS_KEY_ALIAS=your-keystore-key-alias
 ## Automatische Initialisierung beim Start, Testdatenimporte
 Es besteht die Möglichkeit, beim Start der SVWS-Container die Datenbank mit Testdaten zu initialisieren. Es existiert ein [Beispiel-Script](https://github.com/SVWS-NRW/SVWS-Server/blob/dev/testing/svws/init-scripts/001import-test-db.sh) für den Import einer Testdatenbank im Git-Repository.
 
-Funktionsweise: Beim Start der SVWS-Container wird der Inhalt des Ordners [init-scripts](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/testing/svws/init-scripts) in den SVWS-Container eingebunden (per volume mount). Alle Shell-Scripts (*.sh) in diesem Ordner werden durch das Start-Script des Containers im Anschluss ausgeführt.
+Funktionsweise: Beim Start der SVWS-Container wird der Inhalt des Ordners [init-scripts](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/testing/svws/init-scripts) in den SVWS-Container eingebunden (per volume mount). Alle Shell-Skripte (*.sh) in diesem Ordner werden durch das Start-Skript des Containers im Anschluss ausgeführt.
 
 ### Aktivierung der automatischen Initialisierung
 Umgebungsvariable `INIT_SCRIPTS_DIR` muss gesetzt sein (vgl. [Konfiguration der SVWS-Umgebung](#Konfiguration-der-SVWS-Umgebung)). 
