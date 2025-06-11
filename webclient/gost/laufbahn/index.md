@@ -1,19 +1,22 @@
 # Laufbahnen
 
-![SVWS_Oberstufe_Laufbahn_1](./graphics/SVWS_Oberstufe_Laufbahn_1.png)  
+![Der Filter zur Anzeige der Schüler](./graphics/SVWS_Oberstufe_Laufbahn_1.png "Nutzen Sie die Schalter, um auf die gewünschten Schülermengen zu filtern.")  
 
-Es wird die Schülerliste angezeigt, i.d.R. sind anfangs alle Laufbahnen noch unvollständig und daher **mit Fehlern**.
-Später kann durch den Schieberegeler gewählt werden, ob  
+Es wird die Schülerliste angezeigt, in der Regel sind anfangs alle Laufbahnen noch unvollständig und daher **mit Fehlern**.
 
-+ **alle** Schüler
-+ nur welche **mit Laufbahnfehlern**
-+ zusätzlich auch **Externe** (Koop-)Schüler  
+Später kann durch die Schieberegeler gewählt werden, welche Schülermenge angezeigt werden soll.  
 
-angezeigt werden sollen.  
++ **alle** Schüler anzeigt werden. Dies ist der Status, wenn alle Regler ausgeschaltet sind.
++ **Nur Fehler** zeigt nur die Wahlen mit Laufbahnfehlern
++ Über **Externe ausblenden** werden externe Schüler ausgeblendet, die zwar in der Datenbank als Schüler des Jahrgangs erfasst sind, für die aber an dieser Schule keine Laufbahnwahlen verwaltet werden.
+* Der Schalter **Nur mit Fachwahlen** zeigt nur Schüler, die auch gewählt haben. Hierüber lassen sich etwa Schüler der kommenden EF ausblenden, die aber nicht in die EF wechseln.
+* Über **Neuaufnamen** werden auch neue Schüler angezeigt, die noch nicht den Status **aktiv** haben - zum Beispiel Schüler die für die kommende EF aufgenommen wurden. 
 
-Jede Schülerlaufbahnwahl kann direkt in svws-Client (interne Bearbeitung) oder per WebLuPO (externe Bearbeitung) durchgeführt werden.  
+Jede Schülerlaufbahnwahl kann direkt intern im SVWS-Client oder extern per WebLuPO durchgeführt werden. Nach dem Einlesen der Wahlen lassen sich dieser im SVWS-Client vollständig weiter verwalten.
 
-Intern gelangt man per **Zur Laufbahnplanung** in die individuelle Laufbahnplanung des jeweiligen Schülers.  
+![Nutzen Sie dsa Linksymbol, um direkt zur individuellen Laufbahn zu springen](./graphics/SVWS_Oberstufe_Laufbahn_Link.png "Nutzen Sie dsa Linksymbol, um direkt zur individuellen Laufbahn zu springen.")
+
+Im Client gelangt man über das Linksymbol 🔗 **Zur Laufbahnplanung** in die individuelle Laufbahnplanung des jeweiligen Schülers.  
 
 ## Export in WebLuPO
 
