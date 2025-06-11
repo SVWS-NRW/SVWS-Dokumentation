@@ -30,14 +30,14 @@ Auch die Ports können in den Konfigurationsdateien eingestellt werden.
 
 Wie im unteren Teils des Schaubilds zu sehen, kann auch alles auf einem Server bereitgestellt werden.
 
-Diese Auswahl hängt auch vom Grad der Virtualisierung ab, die vewendet wird.
+Diese Auswahl hängt auch vom Grad der Virtualisierung ab, die verwendet wird.
 Auch die Anzahl der Server pro Schulen kann je nach Umgebung bestimmt werden.
 
 Der momentan noch im Ausbau befindliche Web-Client steht über den SVWS-Server immer auch zur Verfügung und kann über die URL (und ggf. den Port) im Browser aufgerufen werden. Getestet werden Firefox, Edge, Chrome und Safari.
 
 ## Installation SVWS-Server
 
-Da SchILD-NRW 3 erst startet, wenn ein SVWS-Server zur Verfügunmg steht, sollte mit dieser Installation begonnen werden.
+Da SchILD-NRW 3 erst startet, wenn ein SVWS-Server zur Verfügung steht, sollte mit dieser Installation begonnen werden.
 
 https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Linux-Installer/index.md
 
