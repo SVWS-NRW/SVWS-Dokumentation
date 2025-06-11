@@ -2,7 +2,7 @@
 
 Bei der Datenmigration werden neue Schemata oder vorhandene Schemata in der Datenbank des SVWS-Servers angelegt und die Daten einer existierenden Datenbank in diese migriert.
 
-Zur Datenmigration mit dem AdminClient nutzen Sie das [Benutzerhandbuch zum AdminClient](../../adminclient/index.md).
+Zur Datenmigration mit dem Admin-Client nutzen Sie das [Benutzerhandbuch zum AdminClient](../../adminclient/index.md).
 
 ## Download von Testdaten
 
@@ -16,7 +16,7 @@ Die Daten sind vollständig anonymisiert!
 
 ## Übersicht
 
-Es gibt mehrer Möglichkeiten ein Schemata in der Datenbank anzulegen bzw. zu befüllen: 
+Es gibt mehrere Möglichkeiten ein Schema in der Datenbank anzulegen bzw. zu befüllen: 
 
 + per Admin-Webclient
 + per Swagger UI
@@ -31,7 +31,7 @@ Es gibt mehrer Möglichkeiten ein Schemata in der Datenbank anzulegen bzw. zu be
 
 Melden Sie sich mit root und dem Kennwort an der MariaDB an.
 
-Sie können auch einen anderen Datenbankuser wählen, dieser sieht dann die vorhandenen Datenbanken entsprechnd seiner Rechte.
+Sie können auch einen anderen Datenbankuser wählen, dieser sieht dann die vorhandenen Datenbanken entsprechend seiner Rechte.
 
 Im Adminclient können je nach Rechtevergabe des Datenbankusers folgende Arbeiten erledigt werden:
 
@@ -104,7 +104,7 @@ Falls ein schon existierender Benutzer verwendet wird, muss das anschließend ab
 -F "database=@%7"
 ```
 
-+ %1: Benutzer der Datenbank mit GRAND-Rechten zum Anlegen neuer Datenbanken
++ %1: Benutzer der Datenbank mit GRANT-Rechten zum Anlegen neuer Datenbanken
 + %2: Passwort der o.g. Benutzers
 + %3: Name der neu anzulegenden Datenbank - Achtung: existierende Datenbanken werden überschrieben!
 + %4: Das allseits bekannte SchILD-NRW 2.0 - Passwort, um die MDB-Datenbank zu öffnen. 
