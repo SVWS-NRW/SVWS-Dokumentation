@@ -12,7 +12,7 @@ Der SVWS-Client, mit dem sich die Inhalte über eine Weboberfläche aufrufen las
 
 Der Server muss zuerst nur von Schulformen mit gymnasialer Oberstufe genutzt werden, wenn Blockung und Klausurterminplanung gewünscht sind.
 
-SchILD-NRW 3 ist ein in Delphi geschriebenes Programm, welches auf Windows-Systemen betrieben werden muss. Es ist eine Clientanwendung, mit der auf den SVWS-Server und dessen Daten zugeriffen wird. SchILD-NRW 3 unterstützt viele für die Schul- und Leistungsdatenverwaltung hilfreiche Funktionen.
+SchILD-NRW 3 ist ein in Delphi geschriebenes Programm, welches auf Windows-Systemen betrieben werden muss. Es ist eine Clientanwendung, mit der auf den SVWS-Server und dessen Daten zugegriffen wird. SchILD-NRW 3 unterstützt viele für die Schul- und Leistungsdatenverwaltung hilfreiche Funktionen.
 
 Das Programm benötigt in einer Übergangsphase weiterhin Zugriff auf die Datenbank. Dieser Zugriff wird sukzessive auf Zugriffe über die API umgestellt.
 
@@ -40,7 +40,7 @@ Eigene Zertifikate können in den Keystore des SVWS-Server geladen werden. Eine 
 ## Reverse Proxy
 ### Was ist beim Betrieb hinter einem Reverse Proxy zu beachten?
 
-Beim Betrieb eines RevereseProxyservers als Zugangsserver sind die folgenden Einstellungen empfehlenswert: 
+Beim Betrieb eines Reverese-Proxy-Servers als Zugangsserver sind die folgenden Einstellungen empfehlenswert: 
 
 ```bash 
     client_max_body_size 100M;
@@ -72,7 +72,7 @@ Nein. Ein Server kann so konfiguriert werden, dass er von mehreren Schulen daten
 Abhängig von den lokalen Gegebenheiten, kann das sinnvoll sein.
 
 ## Datenbanken
-### Liegt die Datenbank auf einem seperaten Server?
+### Liegt die Datenbank auf einem separaten Server?
 
 Das kann individuell konfiguriert werden. Beide Varianten sind möglich.
 
@@ -83,19 +83,19 @@ Das kann individuell konfiguriert werden. Beide Varianten sind möglich.
 Bei einem MariaDB-Cluster müssen die Nodes entsprechende Rechte für das Anlegen von Triggern haben.
 Das ist nicht in der Default Konfiguration der MariaDB.
 
-Der aktivierte BINLOG führte dazu, dass der Server sich weigert, dass u.A. trigger angelegt werden.  
+Der aktivierte BINLOG führte dazu, dass der Server sich weigert, dass u.A. trigger angelegt werden.
 siehe auch: [https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html](https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html)
 
-Nach Anpassen der Option in der Config  
+Nach Anpassen der Option in der Config
 ```bash
 log_bin_trust_function_creators=ON
 ```
-lassen sich dann auch neuen Schemas fehlerfrei anlegen.
+lassen sich dann auch neue Schemata fehlerfrei anlegen.
 
 ## Internetzugriff 
 ### Benötigt der SVWS-Server eine Internetverbindung?
 
-Momentan nicht. Jedoch werden in Zukunft viele Prozesse dazu kommen, die eine Internetverbindung benötigen, etwa ein Web-Notenmanager, Schnittstellen für SchülerOnline, digitales Zeugnisse, Updates oder Ähnliches.
+Momentan nicht. Jedoch werden in Zukunft viele Prozesse dazu kommen, die eine Internetverbindung benötigen, etwa ein Web-Notenmanager, Schnittstellen für SchülerOnline, digitale Zeugnisse, Updates oder Ähnliches.
 
 ## Containerbetrieb
 
@@ -104,7 +104,7 @@ Momentan nicht. Jedoch werden in Zukunft viele Prozesse dazu kommen, die eine In
 Welcher Zweck steht im Vordergrund (z. B. Skalierung, Verfügbarkeit, Sicherheit, CI/CD, sonstiges)?
 
 Der Containereinsatz ist optional und kann in großen Systemen eine Unterstützung zur Automatisierten Bereitstellung leisten.
-Hier kann mit Hilfe von erstellten Scripten eine flexible und skalierbare Umgebung geschaffen werden.
+Hier kann mit Hilfe von erstellten Skripten eine flexible und skalierbare Umgebung geschaffen werden.
 Mit dem Einsatz von Containern kann optional auch die Trennung der Daten von Schulen untereinander verbessert werden.
 Dies kann eine Alternative zu Virtuellen-Maschinen darstellen, um in großen Systemen kosteneffizienter zu arbeiten.
 
@@ -141,7 +141,7 @@ Eine optionale Speicherung in Umgebungsvariablen ist in Planung.
 
 Ist eine Verwaltung dieser Zugangsdaten notwendig?
 
-Eine Verwaltung der Zugangsdaten ist für das Rechtemanagement und für den Zugriff der Schild-NRW3-Anwenung erforderlich.
+Eine Verwaltung der Zugangsdaten ist für das Rechtemanagement und für den Zugriff der Schild-NRW3-Anwendung erforderlich.
 
 Wenn ja, wie sollen sie gespeichert werden?
 
