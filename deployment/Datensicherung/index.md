@@ -2,13 +2,13 @@
 
 ## manuelle Sicherung im SQLite Format 
 
-Über die graphische Oberfläche des Adminclients kann sehr komfortabel eine Datensicherung im SQLite Format angelegt werden. 
-Der adminclient kann i.d.R. unter `https://URLdesSVWS-Servers/admin` aufgerufen werden. 
+Über die grafische Oberfläche des Adminclients kann sehr komfortabel eine Datensicherung im SQLite Format angelegt werden. 
+Der Admin-Client kann i.d.R. unter `https://URLdesSVWS-Servers/admin` aufgerufen werden. 
 Weitere Informationen dazu befinden sich im [Handbuch des Adminclients](../../adminclient/).
 
 ## automatisierte SQLite Backups
 
-Automatisierte SQLite Backups können z.B. per crontab gescriptet aufgerufen werden. 
+Automatisierte SQLite Backups können z.B. crontab gescriptet aufgerufen werden. 
 
 ````bash 
 
@@ -16,11 +16,11 @@ curl --user "rootUsername:MYSQLROOTPW" -k -X "GET"  "https://SERVERNAME:PORT/db/
 
 ````
 
-Hier bitte die Variabel rootUsername, MYSQLROOTPW, SERVERNAME, PORT und SCHEMA ersetzen bzw. vorher im Skript oder Terminal definieren. 
+Hier bitte die Variablen rootUsername, MYSQLROOTPW, SERVERNAME, PORT und SCHEMA ersetzen bzw. vorher im Skript oder Terminal definieren. 
 
 ## Backup mit Mariabackup
 
-Das Tool mariabackup kann auch auf Windows per msi Paket installiert werden. Die [Anleitung von Mariadb.com] (https://mariadb.com/kb/en/full-backup-and-restore-with-mariabackup/) beschreibt, 
+Das Tool mariabackup kann auch auf Windows per MSI-Paket installiert werden. Die [Anleitung von MariaDB.com] (https://mariadb.com/kb/en/full-backup-and-restore-with-mariabackup/) beschreibt, 
 wie man mit kurzen Befehlen Backups anlegt und zurückspielt. Dies kann über einen Cronjob oder die Windows Aufgabenplanung regelmäßig ausgeführt werden.
 
 
@@ -43,13 +43,13 @@ apt install automysqlbackup
 ````
 In der config `/etc/default/automysqlbackup` kann ggf. das Backupverzeichnisse definiert oder die Zeiten bzw. Exklusionen editiert werden. 
 
-Regelmäßige backups müssen dann per cronjob eingerichtet werden. z.B:
+Regelmäßige Backups müssen dann per cronjob eingerichtet werden. z.B:
 
 ````bash 
 0  1 * * * /usr/sbin/automysqlbackup
 ````
 
-Aktuell muss unter Debian 12 in `/etc/mysql/debian.cnf` das rootpasswort für den Datenbankzugang eingetragen werden. Dazu Bitte die beiden Variablen in dieser Datei ergänzen: 
+Aktuell muss unter Debian 12 in `/etc/mysql/debian.cnf` das rootpasswort für den Datenbankzugang eingetragen werden. Dazu bitte die beiden Variablen in dieser Datei ergänzen: 
 ````bash 
 USERNAME=root
 PASSWORD="the root password"
