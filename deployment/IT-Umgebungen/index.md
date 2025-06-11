@@ -3,9 +3,9 @@
 
 ## Szenarien
 
-Der SVWS-Server ist so ausgelegt, dass er in allen schulischen Umfeldern eingesetzt werden kann. Wichtige Grundlage ist dabei weiterhin der dezentrale Ansatz, der im Land NRW vertreten wird:   
+Der SVWS-Server ist so ausgelegt, dass er in allen schulischen Umfeldern eingesetzt werden kann. Wichtige Grundlage ist dabei weiterhin der dezentrale Ansatz, der im Land NRW vertreten wird:
 
-Kleine Grundschulen haben die Schulverwaltungssoftware gegebenfalls auf einem Rechner installiert, größere Schulen besitzen unter Umständen einen oder mehrere Server. Andere Schulen haben IT-Dienstleister, die sie mit Serverinstallationen unterstützen. Am oberen Ende findest sich der zentrale Einsatz in Rechenzentren. 
+Kleine Grundschulen haben die Schulverwaltungssoftware gegebenenfalls auf einem Rechner installiert, größere Schulen besitzen unter Umständen einen oder mehrere Server. Andere Schulen haben IT-Dienstleister, die sie mit Serverinstallationen unterstützen. Am oberen Ende findest sich der zentrale Einsatz in Rechenzentren. 
 
 ## Einzelplatz-Rechner
 
@@ -25,13 +25,13 @@ Die Variante einen Server in der Schule zu betreiben, der im Verwaltungsnetzwerk
 
 Auch hier wird der Port 443 intern geöffnet, so dass der SVWS-Web-Client mit einem Web-Browser im Verwaltungsnetz aufgerufen werden kann. 
 
-Der SVWS-Server kann hierbei sowohl auf einem windows- als auch auf einem linuxbasierten Rechner betrieben werden.
+Der SVWS-Server kann hierbei sowohl auf einem Windows- als auch auf einem Linux-basierten Rechner betrieben werden.
 
-Die Installation auf Linuxbasis ermöglicht den Schulen beziehungsweise den Schulrägern eine komplett lizenzkostenfreie Installation des SVWS-Servers basierend auf Open Source Software. 
+Die Installation auf Linux-Basis ermöglicht den Schulen beziehungsweise den Schulrägern eine komplett lizenzkostenfreie Installation des SVWS-Servers basierend auf Open Source Software. 
 
 Das bei der Installation erstellte Zertifikat sollte an die Clients per Gruppenrichtlinie oder manuell verteilt werden, damit der Browser die Verbindung auch als *sicher* einstuft und keine Warnung beim Aufrufen ausgibt.
 
-Alternativ kann der Server per Certbot gegebenfalls über einen dazwischengeschalteten ReverseProxy zertifiziert werden. 
+Alternativ kann der Server per Certbot gegebenenfalls über einen dazwischengeschalteten Reverse-Proxy zertifiziert werden. 
 
 Über eine Dateifreigabe im lokalen Netz oder eine Gruppenrichtlinie kann SchILD-NRW 3 auf den Windows-Clients verteilt werden. Vorerst muss SchILD-NRW 3 eine Verbindung zum SVWS-Server und auch direkt zur MariaDB des SVWS-Servers einrichten und aufbauen.
 
@@ -45,8 +45,8 @@ In größeren Umgebungen sind verschiedene Varianten der Installation denkbar. S
 
 Die Trennung der Schemata ist hier eine wichtige Datenschutzmaßnahme. Dies kann innerhalb eines großen MariaDB-Servers oder auch mit mehreren kleinen MariaDB Instanzen erfolgen. 
 
-In Rechenzentren macht es aus lizenzgründen Sinn auf Linux-Systeme zu setzen, so dass hier mit Docker-Containern oder auch LX-Containern gearbeitet werden kann.Des Weiteren können auch einzelne virtuelle Maschinen (KVM) in Virtualisierungssystemen wie zum Beispiel Proxmox, VMWare, HyperV, etc. erstellt und den jeweiligen Schulen zugeordnet werden. Es ist auch möglich, jedoch eher für Schulsysteme oder Dependancen sinnvoll, mehrere Schul-Schemata über einem SVWS-Server bereitzustellen. 
+In Rechenzentren macht es aus Lizenzgründen Sinn auf Linux-Systeme zu setzen, so dass hier mit Docker-Containern oder auch LXC-Containern gearbeitet werden kann.Des Weiteren können auch einzelne virtuelle Maschinen (KVM) in Virtualisierungssystemen wie zum Beispiel Proxmox, VMWare, HyperV, etc. erstellt und den jeweiligen Schulen zugeordnet werden. Es ist auch möglich, jedoch eher für Schulsysteme oder Dependenzen sinnvoll, mehrere Schul-Schemata über einem SVWS-Server bereitzustellen. 
 
-Welche Kombination der Installationsmöglichkeiten die Beste ist, sollte  anhand der lokalen Gegebenheiten und den hier zugänglichen Ressourcen entschieden werden. 
+Welche Kombination der Installationsmöglichkeiten die beste ist, sollte  anhand der lokalen Gegebenheiten und den hier zugänglichen Ressourcen entschieden werden. 
 
 ![Serverinstallation_Schule_ohne_VPN_einfach.png](./graphics/Serverinstallation_Rechenzentrum_einfach.png "Ein komplexerer Aufbau in einem Rechenzentrum.")
