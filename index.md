@@ -31,7 +31,7 @@ Er wird in der ersten Übergangsphase parallel zu SchILD-NRW 3 benutzt.
 
 ![Übersicht der SVWS-Server-Umgebung mit Client-Programmen](./graphics/SVWS-Server-LandingPage.png "Zusammenspiel des SVWS-Servers mit unterschiedlichen Programmen.")
 
-Außerdem finden Sie hier Informationen zur Installation und zur Entwicklung und eine Dokumentation der API für die dezentrale Schulverwaltung in NRW. Ebenso gibt es eine Dokumentationen zu weiteren Projekten.
+Außerdem finden Sie hier Informationen zur Installation und zur Entwicklung und eine Dokumentation der API für die dezentrale Schulverwaltung in NRW. Ebenso gibt es eine Dokumentation zu weiteren Projekten.
 
 Navigieren Sie zu den übergreifenden Bereichen dieser Webseite über die **Kopfzeile**. 
 
@@ -56,14 +56,14 @@ https://www.svws.nrw.de/
 
 Nehmen Sie den im SVWS-Client hinterlegten Datenschutzhinweis zur Kenntnis und beachten Sie den gültigen Rechtsrahmen.
 
-Sie erreichen den Datenschutzhunweis über ````Client Info```` im **App**-Menü im Reiter Datenschutz.
+Sie erreichen den Datenschutzhinweis über ````Client Info```` im **App**-Menü im Reiter Datenschutz.
 
 
 ## Erklärung zur Barrierefreiheit
 
 Dieses Angebot wird momentan auf Barrierefreiheit geprüft.
 
-Die Ergebnisse werden hier veröfffentlicht.
+Die Ergebnisse werden hier veröffentlicht.
 
 Stand: 21. Februar 2025
 
