@@ -16,7 +16,11 @@ Jede Schülerlaufbahnwahl kann direkt intern im SVWS-Client oder extern per WebL
 
 ![Nutzen Sie dsa Linksymbol, um direkt zur individuellen Laufbahn zu springen](./graphics/SVWS_Oberstufe_Laufbahn_Link.png "Nutzen Sie dsa Linksymbol, um direkt zur individuellen Laufbahn zu springen.")
 
-Im Client gelangt man über das Linksymbol 🔗 **Zur Laufbahnplanung** in die individuelle Laufbahnplanung des jeweiligen Schülers.  
+In der Auswahlliste gelangt man über das Linksymbol 🔗 **Zur Laufbahnplanung** in die individuelle Laufbahnplanung des jeweiligen Schülers.
+
+![Springen Sie zur individuellen Laufbahn oder der Sprachenfolge](./graphics/SVWS_Oberstufe_Laufbahn_MehrLinks.png "Springen Sie zur individuellen Laufbahn oder zur Sprachenfolge.")
+
+Wurde ein Schüler angewählt, finden sich oben rechts die Links, mit denen direkt zur **individuellen Laufbahn** oder, mitunter eine Fehlerquelle, zur **Sprachenfolge** gesprungen werden kann.
 
 ## Export in WebLuPO
 
