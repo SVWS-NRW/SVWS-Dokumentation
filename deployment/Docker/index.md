@@ -84,7 +84,7 @@ SVWS_TLS_CERT_C=COUNTRY
 
 | Variable | Beschreibung |
 | ----------- | ----------- |
-| INIT_SCRIPTS_DIR | [Optional] Pfad zu einem Verzeichnis im SVWS-Container für Initialisierungsskripts. Alle Shell-Skripts in diesem Verzeichnis werden beim Hochfahren des SVWS-Containers ausgeführt. So können z.B. [automatische Testdatenimporte](#automatische-initialisierung-beim-start-testdatenimporte) in den Boot-Prozess integriert werden. |
+| IMPORT_TEST_DATA | true Startet den automatischen Import, Default = false |
 | MARIADB_ROOT_PASSWORD | Passwort, das für den Root-User der MariaDB-Instanz verwendet werden soll |
 | MARIADB_DATABASE | Name des Datenbankschemas, mit dem sich der SVWS-Server verbindet (z.B. "gymabi") |
 | MARIADB_HOST | Name des Hosts, auf dem die SVWS-Datenbank läuft. Im Falle der Docker-Umgebung entspricht dieser Wert dem Service-Namen von docker-compose (also "mariadb"). |
