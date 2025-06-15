@@ -36,7 +36,7 @@ Außerdem werden Volumes für die Daten der MariaDB angelegt, die später ja auc
 Im Ordner liegen dann eine docker-compose.yml und eine .env Datei, die angepasst werden muss.
 Im Ordner Volume werden dann für svws und mariadb entsprechende Ordner angelegt.
 
-Im Ordner svws/conf liegen zwei svwsconfig-template.json, eine für das Hochfahren mit Testdaten und eine Datei für das Hochfahren ohne Testdaten.
+Im Ordner svws werden beim ersten hochfahren des Containers die svwsconfig.json und der Keystore angelegt. Diese können dort auch mit einer eigenen Konfiguration bzw. eigenen Zertifikatseinstellungen abgelegt werden. Im Ordner svws/logs werden später die LOG-Dateien erscheinen, wenn der logging-Pfad auf Defaulteinstellung bleibt.
 
 Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Backend, Frontend). Ebenso sind die Volumes für den Keystore gemountet. 
 
@@ -65,7 +65,7 @@ Die Werte dieser Variablen werden in der Datei .env definiert.
 
 Hier ein Beispiel: 
 ```bash
-INIT_SCRIPTS_DIR=/etc/app/svws/init-scripts
+IMPORT_TEST_DATA=true
 MARIADB_ROOT_PASSWORD=your-mariadb-root-pw
 MARIADB_DATABASE=your-svws-db-schema-name
 MARIADB_HOST=mariadb
@@ -74,6 +74,12 @@ MARIADB_PASSWORD=your-mariadb-pw
 SVWS_TLS_KEYSTORE_PATH=/etc/app/svws/conf/keystore
 SVWS_TLS_KEYSTORE_PASSWORD=your-keystore-pw
 SVWS_TLS_KEY_ALIAS=your-keystore-key-alias
+SVWS_TLS_CERT_CN=YOURCERTNAME
+SVWS_TLS_CERT_OU=SVWSOU
+SVWS_TLS_CERT_O=SVWSO
+SVWS_TLS_CERT_L=CITY
+SVWS_TLS_CERT_S=STATE
+SVWS_TLS_CERT_C=COUNTRY
 ```
 
 | Variable | Beschreibung |
@@ -87,35 +93,36 @@ SVWS_TLS_KEY_ALIAS=your-keystore-key-alias
 | SVWS_TLS_KEYSTORE_PATH | Unter diesem Pfad erwartet der SVWS den Java-Keystore für die Terminierung von SSL am Server |
 | SVWS_TLS_KEYSTORE_PASSWORD | Passwort des Keystores |
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore  |
-
+| SVWS_TLS_CERT_CN | Name des selbstsignierten Zertifikats Default:SVWSCERT|
+| SVWS_TLS_CERT_OU | Name der Organistationseinheit Default: SVWSOU |
+SVWS_TLS_CERT_O| Name der Organisation Default:SVWSO |
+| SVWS_TLS_CERT_L=CITY | Name des Ortes Default: Duesseldorf |
+| SVWS_TLS_CERT_S=STATE | Name des Bundeslands Name Default: NRW |
+| SVWS_TLS_CERT_C=COUNTRY | Name des Staates Default: Germany |
 
 ## Automatische Initialisierung beim Start, Testdatenimporte
-Es besteht die Möglichkeit, beim Start der SVWS-Container die Datenbank mit Testdaten zu initialisieren. Es existiert ein [Beispiel-Script](https://github.com/SVWS-NRW/SVWS-Server/blob/dev/testing/svws/init-scripts/001import-test-db.sh) für den Import einer Testdatenbank im Git-Repository.
+Es besteht die Möglichkeit, beim Start der SVWS-Container die Datenbank mit Testdaten zu initialisieren. Ansonsten kann anch dem Start des Containers der dmin-Client aufgerufen werden und weitere Daten können importiert werden.
 
-Funktionsweise: Beim Start der SVWS-Container wird der Inhalt des Ordners [init-scripts](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/testing/svws/init-scripts) in den SVWS-Container eingebunden (per volume mount). Alle Shell-Skripte (*.sh) in diesem Ordner werden durch das Start-Skript des Containers im Anschluss ausgeführt.
+Funktionsweise: Beim Start der SVWS-Container wird die Variable IMPORT_TEST_DATA ausgewertet. Wenn diese auf "true" steht, dann wird aus dem Repository von SVWS-NRW eine Testdatenbank heruntergeladen und importiert.
 
-### Aktivierung der automatischen Initialisierung
-Umgebungsvariable `INIT_SCRIPTS_DIR` muss gesetzt sein (vgl. [Konfiguration der SVWS-Umgebung](#Konfiguration-der-SVWS-Umgebung)). 
+Achtung! Wenn die Variable auf "true" stehen bleibt geschieht dies bei jedem Start. Dies ist nur für Entwickler erforderlich, die immer eine frische Testdatenbank benötigen.
 
-Datei [./deployment/docker/example/svws+db+init/.env](https://github.com/SVWS-NRW/SVWS-Server/blob/dev/deployment/docker/example/svws%2Bdb%2Binit/.env):
 ```bash
-INIT_SCRIPTS_DIR=/etc/app/svws/init-scripts
+IMPORT_TEST_DATA=true
 #...
 ```
 
 ### Deaktivierung der automatischen Initialisierung
 Umgebungsvariable `INIT_SCRIPTS_DIR` muss auskommentiert sein (vgl. [Konfiguration der SVWS-Umgebung](#Konfiguration-der-SVWS-Umgebung)).
 
-Datei [./deployment/docker/example/svws+db+init/.env](https://github.com/SVWS-NRW/SVWS-Server/blob/dev/deployment/docker/example/svws%2Bdb%2Binit/.env):
 ```bash
-#INIT_SCRIPTS_DIR=/etc/app/svws/init-scripts
+IMPORT_TEST_DATA=false
 #...
 ```
-Diese Zeile sollte nach dem ersten Start immer auskommentiert werden, es sei denn man möchte einen Container erstellen, der nach dem Start immer "frische" Testdaten haben soll.
 
-Sollten Sie auch beim ersten Start keine Testdaten wünschen, weil Sie mit Produktivdaten weiter arbeiten wollen. So benennen Sie bitte die im ZIP-Paket enthaltene svwsconfig-nodata.json >> svwsconfig-template.json um. Die ursprüngliche muss natürlich gelöscht oder auch umbenannt werden.
+Diese Zeile sollte nach dem ersten Start immer auskommentiert oder auf "false" gesetzt werden, es sei denn man möchte einen Container erstellen, der nach dem Start immer "frische" Testdaten haben soll.
 
-Es wird dann durch die Einträge in der .env ein leeres und nicht initialisiertes Schema angelegt, welches später über die API oder im Admin-Client mit Daten befüllt werden kann.
+Sie können in der .env Datei auch ein Schema ohne Migration angeben, dann wird dies beim ersten Start ohne Daten angelegt. Dies kann dann im Admin-Client befüllt werden.
 
 ```bash
 MARIADB_DATABASE=your-svws-db-schema-name
@@ -123,5 +130,3 @@ MARIADB_HOST=mariadb
 MARIADB_USER=your-mariadb-user
 MARIADB_PASSWORD=your-mariadb-pw
 ```
-
-Wichtig! Momentan benötigt der SVWS-Server noch mindestens ein gültiges (leeres) Schema in der Mariadb. Das wird noch behoben.
