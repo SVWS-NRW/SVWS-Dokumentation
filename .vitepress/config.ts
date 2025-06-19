@@ -147,6 +147,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Datenmigration', link: '/deployment/Datenmigration/' },
 						{ text: 'Datensicherung', link: '/deployment/Datensicherung/' },
 						{ text: 'FAQ', link: '/deployment/FAQ.md' },
+						{ text: 'Roadmap', link: '/deployment/roadmap.md' },
 					] },
 				],
 				'/weblupo' : [

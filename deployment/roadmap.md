@@ -13,13 +13,18 @@ Der Web-Client dient zu diese Zeit ausschließlich als Ersatz für die Programme
 
 An der Integration weiterer Funktionalitäten im Web-Client wird gearbeitet.
 
-## März 2025 Aufbau von Teststellungen
+## 2025 März Aufbau von Teststellungen
 
 Der Aufbau von Teststellungen kann flächendeckend beginnen. Schulen und deren IT-Dienstleister können Schild-NRW-3 mit dem SVWS-Server installieren und erproben.
 
 Eine doppelte Pflege der Daten sollte aber unter allen Umständen vermieden werden.
 
 Zum Zeitpunkt der Umstellung auf den Produktivbetrieb kann die Schild-NRW-2 Datenbank nochmals neu migriert werden und der Betrieb von Schild-NRW-3 kann beginnen.
+
+## 2025 August Erstellen eines ausreichenden STABLE-Mode
+
+Der SVWS-Client soll alle benötigten Tabs und Kataloge im Stable-Mode erhalten, so dass erste produktive Arbeiten auch außerhalb der gymnasialen Oberstufe stattfinden könenn.
+Dabei ist es wichtig, dass die schulformspezifischen Bedingungen eingearbeitet werden und die eingeblendeten Kataloge in das Testkonzept einbezogen sind.
 
 ## 2025 September Start in den Produktivbetrieb
 
@@ -34,11 +39,22 @@ Externe Module (Notenmodul, Prognos und Konferenzmodul) werden zu diesem Zeitpun
 ## 2025 Dezember Start Beta-Phase WebNotenManager (WeNoM)
 
 Der externe WebNotenManager zur Einholung der Noten über ein webbasiertes System wird als Beta-Version allen Schulen zur Verfügung gestellt.
+Dabei wird der WebNotenmanager den Schulen über das Open-Source Repository zur Verfügung gestellt.
+Die Software kann auf einem WebSpace bei einem Dienstleister mit entsprechendem AVV oder auch bei der jeweiligen Schulträger-IT betrieben werden.
+
+## 2026 Februar Erster Feld-Test Schulbewerbungen
+
+Es soll ein erster abgegrenzter Feldtest mit ausgesuchten Schulen stattfinden, die den digitalen Schülerwechsel mit dem SVWS-Server und schulbewerbung.de durchführen.
 
 ## 2026  Ausbau des Web-Clients für Grundschulen
 
 Ausbau des Web-Clients für weitere Schulformen. Zunächst sollen Grundschulen alle Funktionalitäten bekommen, die einen Betrieb des Web-Clients im Alltag ermöglichen.
+Hier wird es notwendig sein, dass Gruppenprozesse und Filterfunktionen wie gewohnt im SVWS-Client zur Verfügung stehen.
 
 ## 2027 Ablösung ASDPC32
 
 Geplante Ablösung des Programms ASDPC32 als Statistikprogramm durch den SVWS-Web-Client.
+
+## 2028 digitale Zeugnisausfertigung
+
+Die Arbeiten zur digitalen Zeugnisausfertigung sollen im SVWS-Server umgesetzt werden.
