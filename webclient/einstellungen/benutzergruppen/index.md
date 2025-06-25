@@ -27,7 +27,15 @@ Die Verwaltung von Benutzergruppen besteht aus vier Bereichen:
 3. Im dritten Bereich sind **alle möglichen Benutzer** aufgeführt, dies beinhaltet alle in der Datenbank angelegten Benutzer. Fügen Sie einen Benutzer durch einen Klick auf ihn zur aktuell gewählten Gruppe hinzu.
 4. Daneben finden sich **alle der gewählten Gruppe zugeordneten Benutzer**. Entfernen Sie diese mit einem Klick auf das Papierkorb-Symbol 🗑.
 
-**Hinweise:** Ist eine Person in mehreren Benztzergruppen, erhält sie die Rechte von allen. Beachten Sie auch, dass einzelnen Benutzern in der Benutzerverwaltung noch zusätzliche Einzelrechte gegeben werden können. 
+**Hinweise:** Ist eine Person in mehreren Benztzergruppen, erhält sie die Rechte von allen. Beachten Sie auch, dass einzelnen Benutzern in der Benutzerverwaltung noch zusätzliche Einzelrechte gegeben werden können.
+
+## "Funktionsbezogene" Rechte
+
+An einigen Stellen lassen sich Rechte "Funktionsbezogen" freigeben.
+
+Dies bedeutet, dass die Rechte an eine Funktion gekoppelt sind, im Normalfall ist das etwa eine Klassenleitung.
+
+Demnach gelten diese Rechte nur in der zugewiesenen Klasse, aber nicht für alle anderen.
 
 ## Beispiele
 
