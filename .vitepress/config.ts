@@ -131,7 +131,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Gradle', link: '/development/Gradle/' },
 						{ text: 'Tailwind 4', link: '/development/Tailwind-4/' },
 						{ text: 'APIs für externe Tools', link: '/ExterneAPIs/' },
-							{ text: 'Lernplattform Export', link: '/development/ExterneAPIs/lernplattformen.md' },
+							{ text: 'Lernplattform Export', link: '/development/ExterneAPIs/Lernplattformen' },
 						{ text: 'Technische FAQs', link: '/development/FAQ/' },
 					] },
 				],
