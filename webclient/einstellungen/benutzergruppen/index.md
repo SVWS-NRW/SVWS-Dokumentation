@@ -1,8 +1,11 @@
 # Benutzergruppen
 
+>![NOTE] Der SVWS-Server ist in der Entwicklung
+>Der SVWS-Server befindet sich noch in der Entwicklung und das Rechtemanagement ist einer der Punkte, an denen dies besonders deutlich hervor tritt. Viele vorgesehene Rechteeinstellungen können hier auftauchen, obwohl die Funtkionen dahinter noch nicht implementiert sind.
+
 ## Einführung
 
-Über für die an Ihrer Schule ausgefüllten Aufgaben passend definierte Benutzergruppen lassen sich die Zugriffsrechte der Benutzer gut steuern.
+Über für die an Ihrer Schule ausgefüllten Aufgaben passend definierte Benutzergruppen lassen sich die Zugriffsrechte der Benutzer steuern.
 
 Grundsätzlich sollten alle Benutzer so viele Rechte erhalten, wie sie benötigen, aber nicht mehr.
 
@@ -33,9 +36,11 @@ Die Verwaltung von Benutzergruppen besteht aus vier Bereichen:
 
 An einigen Stellen lassen sich Rechte "Funktionsbezogen" freigeben.
 
-Dies bedeutet, dass die Rechte an eine Funktion gekoppelt sind, im Normalfall ist das etwa eine Klassenleitung.
+Dies bedeutet, dass die Rechte an eine Funktion gekoppelt sind, im Normalfall ist das etwa eine Klassenleitung oder Jahrgangsleitung inder Oberstufe, in anderen Fällen etwa eine Abteilungsleitung.
 
-Demnach gelten diese Rechte nur in der zugewiesenen Klasse, aber nicht für alle anderen.
+Demnach gelten diese Rechte beispielsweise nur in der zugewiesenen Klasse, aber nicht für alle anderen.
+
+Die konkreten Details sind abhängig vom Kontext der jeweiligen Aufgabe der Rechte und der Funktion.
 
 ## Beispiele
 
