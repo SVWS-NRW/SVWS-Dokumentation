@@ -1,12 +1,5 @@
 # Häufig gestellte Fragen
 
-## Fragen zum Deployment
-
-Alles rund um Migration, Installation 
-
-- in Bearbeitung -
-
-
 ## Fragen zum Projekt
 
 Das Projekt SVWS-Server wurde erstmals im November 2019 im Ministerium für Schule und Bildung NRW (MSB) vorgestellt.
