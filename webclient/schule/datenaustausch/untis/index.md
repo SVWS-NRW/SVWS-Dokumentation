@@ -75,6 +75,14 @@ Die Datei `GPU015.txt` kann auch importiert werden, wenn Unterrichte in Untis no
 
 Wenn Sie mit dem SVWS-Client blocken und in Untis weiterarbeiten möchten, sollten Sie **einmalig eine `GPU002.txt` im SVWS-Client importieren**, damit die Unterrichtszuordnung eindeutig ist und keine Dopplungen auftreten. Der Zeitpunkt (vor oder nach dem Blocken) ist flexibel.
 
+![Blockung: Die Wahl des Lernabschnitts verändert das Halbajahr der drei Abiturjahrgänge.](./graphics/svws_schule_datenaustausch_blockung_lernabschnitt.png "Die Wahl des Lernabschnitts verändert das Halbajahr der drei Abiturjahrgänge." )
+
+Beim Export der Blockung zu Untis ist die Wahl des Lernabschnitts relevant. Für den Export nach Untis stehen immer die vom aktuell gewählten Lernabschnitt die drei kommenden Abiturjahrgänge aufsteigend in ihren jeweiligen Lernabschnitten zur Verfügung.
+
+Soll etwa ein kommender Lernabschnitt mit den dann aktuellen Abiturjahrgängen im richtigen Jahrgang und Lernabschnitt exportiert werden, ist dieser oben unter "Schule" zu wählen.
+
+Damit eine Blockung für einen Abiturjahrgang exportiert werden kann, muss es in diesem eine *aktive Blockung* geben.
+
 ---
 
 ## Übersicht wichtiger Untis-Dateien
