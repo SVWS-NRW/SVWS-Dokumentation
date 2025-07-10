@@ -78,28 +78,108 @@ Dabei muss das Documentroot in der `/etc/apache2/sites-available/000-default.con
 
 ## Ersteinrichtung
 
-Erste Initialisierung:
 
-+ https://meinnotenmanager.de/api/setup
-+ Auth: keine Authentisierung
-+ Headers ContentType application/x-www-form-urlencoded
+Zur ersten Initialisierung die folgende URL aufrufen: 
 
-Dieser Befehl kann mit Tools wie Insomnia, Postman oder Bruno abgesetzt werden.
-Oder auch einfach die o.g. URL in einem Browser eingeben! Hier sollte man aber die Konsole öffen, um die Response zu sehen. (STRG+SHIFT+i)
+https://meinnotenmanager.de/api/setup
+
+Über die Konsole des Browsers (F12) kann die Response überprüft werden.
 
 Gültige Responsecodes:
 204 Setup erfolgreich
 409 Server ist schon initialisiert
 
-Der Webnotenmanager sollte jetzt unter `http://meinnotenmanager` erreichbar sein.
+Alternativ kann mit Tools wie Insomnia, Postman oder Bruno oder direkt curl gearbeitet werden.
 
-Der Zugehörige Curl-Befehl ist dann:
++ Auth: keine Authentisierung
++ Headers ContentType application/x-www-form-urlencoded
+
+Der zugehörige Curl-Befehl ist:
+
 ```bash
 curl --request GET --url http://meinnotenmaganger/api/setup --header "Content-Type: application/x-www-form-urlencoded"
 ```
 
-Im Ordner /db befindet sich nun eine app.sqlite Datenbank und eine Datei client.sec. In dieser Datei steht das generierte *Secret*.
+Der Aufruf des o.g. api Befehls erzeugt im Ordner /db eine app.sqlite Datenbank und eine Datei client.sec. In dieser Datei steht das generierte *Secret*.
 
-Das gewonnene *Secret* kann im SVWS-Client  in der **App Schule** unter Datenaustausch ➜ Webnotenmanager zusammen mit der *URL* eingegeben werden!
+Dieses *Secret* kann im SVWS-Client in der **App Schule** unter Datenaustausch ➜ Webnotenmanager zusammen mit der *URL* eingegeben werden und ermöglich so die Synchronisation mit dem SVWS-Server.
+
+## Betrieb mit mehreren Mandanten
+
+Falls nur ein Server für mehrere Schulen bereitgestellt werden soll, so kann dies mit Hilfe von "virtual Hosts" im Apache bereitgestellt werden. 
+Es wird somit unter einer technischen Plattform mehrere Webnotenmanager für unterschiedliche Schulen in voneinander getrennten Bereichen bzw. mit verschiedenen Zugängen ihren jeweiligen Webnotenmanager betrieben werden können. (Alternativ kann dieses Ziel natürlich auch mit Docker erreicht werden.)
+
+Unter ``` /etc/apache2/sites-available/``` kann hierfür eine neue .conf Datei angelegt werden, so dass hier ein Trennung der Konfiguration Mandanten durch einzelne Dateien ermöglicht wird. In dieser Konfiguration kann der Speicherort der Datenbank mit der Umgebungsvariablen ```SetEnv ENM_DB_DIR Path_to_dir``` gesetzt werden. Diese Variable wird von der Wenominstallation ausgelesen und bestimmt damit je nach Servername, der in dieser virtual Host konfiguration angegeben ist, einen unterschiedlichen Speicherort von Sqlite Datenbank und Credentials. 
+
+### Beispielkonfiguration
+
+In dem folgenden Beispiel soll nun für "Schule1" ein separater Zugang zu eines separaten Datenbank inkl. Secret Credentials geschaffen werden: 
+
++ Separaten Speicherort für "Schule1" unter dem Ordener ```db``` der Wenom Installation anlegen. z.B: 
+
+```bash 
+mkdir /var/www/html/db/schule1
+```
+
++ Virtual Host unter ```/etc/apache2/sites-available/schule1.conf``` anlegen
+
+```bash 
+echo "
+<VirtualHost *:443>
+        ServerAdmin webmaster@localhost
+        ServerName schule1.your_domain.de
+
+        DocumentRoot /var/www/html/public
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        SSLEngine on
+
+        SSLCertificateFile      /etc/ssl/certs/ssl-cert-snakeoil.pem
+        SSLCertificateKeyFile   /etc/ssl/private/ssl-cert-snakeoil.key
+
+        <FilesMatch "\.(?:cgi|shtml|phtml|php)$">
+                SSLOptions +StdEnvVars
+        </FilesMatch>
+        <Directory /usr/lib/cgi-bin>
+                SSLOptions +StdEnvVars
+        </Directory>
+
+        SetEnv ENM_DB_DIR db/schule1
+
+</VirtualHost>
+
+" >> /etc/apache2/sites-available/schule1.conf
+
+```
+
+Hierbei ist zu beachten, dass ```schule1.your_domain.de```, ```SetEnv ENM_DB_DIR db/schule1``` und ```/etc/apache2/sites-available/schule1.conf``` entsprechend der vorhanden Domain (your_domain.de) und dem von Ihnen gewählten Schulnamen (schule1) angepasst werden. 
+
++ verlinken apache2 neu starten 
+
+```bash 
+ln -s /etc/apache2/sites-available/schule1.conf /etc/apache2/sites-enabled/schule1.conf
+systemctl restart apache2
+```
+
+## Reverse Proxy Einstellungen
+
+Beim Betrieb hinter einem Reverse Proxy muss darauf geachtet werden, dass die header Information korrekt durchgereicht wird. In oben genanntem Beispiel sind die folgenden Einstellungen in ```/etc/nginx/sites-available/schule1.conf``` zu ergänzen: 
+
+```bash 
+    add_header 'Content-Security-Policy' 'upgrade-insecure-requests';
+    proxy_set_header X-Content-Type-Options nosniff;
+    proxy_set_header X-Frame-Options "SAMEORIGIN";
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+    proxy_http_version 1.1;
+    proxy_read_timeout 300;
+    proxy_connect_timeout 300;
+    proxy_send_timeout 300;
+```
+
 
 
