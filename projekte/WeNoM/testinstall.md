@@ -91,11 +91,11 @@ chown -R www-data:www-data $INSTALLPATH
 #erzeugen des Secrets:
 curl --request GET --url http://localhost/api/setup  --header "Content-Type: application/x-www-form-urlencoded"
 #
-echo ""
-echo ""
-echo "Das Secret für die Synchronisation mit dem SVWS-Server ist:"
+echo -e "\n"
+echo -e "\n"
+echo -e "Das Secret für die Synchronisation mit dem SVWS-Server ist:\n"
 cat ${INSTALLPATH}/db/client.sec
-echo ""
+echo -e "\n"
 echo "################# Installation beendet! ####################"
 ```
 
