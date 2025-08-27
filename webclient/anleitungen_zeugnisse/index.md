@@ -14,7 +14,7 @@ Prüfen Sie im Zuge der Zeugniserstellung, diese Aspekte.
 
 ### Zu den Schülern
 
-* Ob die Individzualdaten der Schüler korrekt sind. Dies betrifft besonders im laufenden Schuljahr "mal so" aufgenommene Schüler.
+* Ob die Individualdaten der Schüler korrekt sind. Dies betrifft besonders im laufenden Schuljahr "mal so" aufgenommene Schüler.
 * Ob alle Schüler die notwendigen Leistungsdaten im Aktuellen Halbjahr gsetzt haben.
 
 ### Zu den Leistungsdaten und Abschnittsdaten
