@@ -345,3 +345,12 @@ Nehmen Sie zum Export einer Blockung und dann zum Import von Stundenplänen bitt
 Der Datenaustausch findet im Format der Untis-Schnittstellendateien statt. Konsultieren Sie bitte zu diesen das Handbuch von Untis.
 :::
 
+## Änderungen nach Übertrag in Leistungsdaten
+
+### Umwahl GKS-GKM
+
+### Abwahl eines Faches (auch LK-GK-ZK-Wechsel)
+
+### Neuwahl eines Faches (auch LK-GK-ZK-Wechsel)
+
+### Änderungen bei Wiederholern
