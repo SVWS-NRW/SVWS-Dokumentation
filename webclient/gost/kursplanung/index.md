@@ -345,12 +345,26 @@ Nehmen Sie zum Export einer Blockung und dann zum Import von Stundenplänen bitt
 Der Datenaustausch findet im Format der Untis-Schnittstellendateien statt. Konsultieren Sie bitte zu diesen das Handbuch von Untis.
 :::
 
-## Änderungen nach Übertrag in Leistungsdaten
+## Änderungen NACH Übertrag der Kursplanung in Leistungsdaten
 
 ### Umwahl GKS-GKM
 
+Aufruf **Schüler -> Lernabschnitte**, dann im aktuellen Abschnitt die Kursart des entsprechenden Kurses ändern.  
+In **Laufbahnplanung** kontrollieren, dort wird jetzt die neue Kursart im aktuellen Abschnitt angezeigt.  
+In **Oberstufe -> Kursplanung** (ist auch direkt über den Link aus der Laufbahnplanung erreichbar) wird die neue Kursart ebenfalls im entspechenden Kurs für den betroffenen Schüler angezeigt.
+
 ### Abwahl eines Faches (auch LK-GK-ZK-Wechsel)
 
+Aufruf **Schüler -> Lernabschnitte**, dann im aktuellen Abschnitt das entsprechende Fach auswählen und mit dem Papierkorb-Symbol löschen.  
+In **Laufbahnplanung** ist das abgewählte Fach im betroffenen Abschnitt mit einem roten Kreuz gekennzeichnet. Es kann durch Klick auf das rote Kreuz abgewählt werden.
+![Kursabwahl-1](./graphics/SVWS_Oberstufe_Kursplanung_Kursabwahl_1.png "Legen Sie Kerngruppen immer gleicher Schüler fest.")  
+In **Oberstufe -> Kursplanung** erscheint die Abwahl des Faches als roter Hinweis unter unter **Ungültige Kurszuordnungen**.  
+Bei gesetztem Haken und OK kann die jetzt nicht mehr gültige Kurszuordnung aufgehoben werden.
+![Kursabwahl-2](./graphics/SVWS_Oberstufe_Kursplanung_Kursabwahl_2.png)  
+![Kursabwahl-2](./graphics/SVWS_Oberstufe_Kursplanung_Kursabwahl_3.png)
+
 ### Neuwahl eines Faches (auch LK-GK-ZK-Wechsel)
+
+Aufruf **Schüler -> Lernabschnitte**, dann im aktuellen Abschnitt
 
 ### Änderungen bei Wiederholern
