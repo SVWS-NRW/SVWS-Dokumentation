@@ -356,15 +356,61 @@ In **Oberstufe -> Kursplanung** (ist auch direkt über den Link aus der Laufbahn
 ### Abwahl eines Faches (auch LK-GK-ZK-Wechsel)
 
 Aufruf **Schüler -> Lernabschnitte**, dann im aktuellen Abschnitt das entsprechende Fach auswählen und mit dem Papierkorb-Symbol löschen.  
-In **Laufbahnplanung** ist das abgewählte Fach im betroffenen Abschnitt mit einem roten Kreuz gekennzeichnet. Es kann durch Klick auf das rote Kreuz abgewählt werden.
+In **Laufbahnplanung** ist das abgewählte Fach im betroffenen Abschnitt mit einem roten Kreuz gekennzeichnet. Es kann durch Klick auf das rote Kreuz abgewählt werden.  
+
+In den weiteren Abschnitten kann das Fach wie gewohnt entfernt werden.
+
 ![Kursabwahl-1](./graphics/SVWS_Oberstufe_Kursplanung_Kursabwahl_1.png "Legen Sie Kerngruppen immer gleicher Schüler fest.")  
 In **Oberstufe -> Kursplanung** erscheint die Abwahl des Faches als roter Hinweis unter unter **Ungültige Kurszuordnungen**.  
-Bei gesetztem Haken und OK kann die jetzt nicht mehr gültige Kurszuordnung aufgehoben werden.
+Bei gesetztem Haken und OK kann die jetzt nicht mehr gültige Kurszuordnung aufgehoben werden.  
+
 ![Kursabwahl-2](./graphics/SVWS_Oberstufe_Kursplanung_Kursabwahl_2.png)  
-![Kursabwahl-2](./graphics/SVWS_Oberstufe_Kursplanung_Kursabwahl_3.png)
+![Kursabwahl-3](./graphics/SVWS_Oberstufe_Kursplanung_Kursabwahl_3.png)
 
 ### Neuwahl eines Faches (auch LK-GK-ZK-Wechsel)
 
-Aufruf **Schüler -> Lernabschnitte**, dann im aktuellen Abschnitt
+Aufruf **Schüler -> Lernabschnitte**, dann im aktuellen Abschnitt ein **Fach über '+' ergänzen**.  
 
-### Änderungen bei Wiederholern
+
+    **Hinweis:** Es wird i.d.R. das erste Fach Ihrer Fächertabelle als Anfangswert eingetragen. Nach Änderung auf die gewünschte Fachbezeichnung sortiert sich der Facheintrag entsprechend ein und steht nicht mehr in der ersten Zeile.  
+
+Jetzt muss zwingend noch **ein Kurs eingetragen werden**, das muss bei Mehrfachauswahl nicht der richtige sein. (Der passende Kurs wird in der Kursblockung festgelegt.)    
+Eine **Kursart** muss hier gewählt werden.   
+
+![Kurszuwahl-1](./graphics/SVWS_Oberstufe_Kursplanung_Kurszuwahl_1.png)
+
+In **Laufbahnplanung** ist jetzt das Fach mit der entprechend gewählten Kursart eingetragen. Die weiteren Abschnitte können hier ergänzt werden. 
+
+In **Oberstufe -> Kursplanung** erscheint das neue Fach beim Schüler in der Fachauflistung und kann **händisch gesetzt** werden oder über **"Verteilen" automatisch gesetzt** werden.  
+Dabei werden ggf. andere - nicht fixierte - Zuordnungen geändert.  
+
+Da es jetzt zu möglicherweise neuen Zuordnungen in anderen Kursen gekommen sein kann, sollte die **Kursblockung jetzt synchronisiert** werden.
+
+
+
+### Änderungen bei Wiederholern  
+
+Grundsätzlich ist es derzeit **nicht möglich**, Wiederholer vor der Versetzung der Datebank ins neue Schuljahr in deren neuen Abiturjahrgängen zu verwalten.  
+Diese Funktion ist aber **zukünftig geplant**.
+
+#### Fall 1: Keine Versetzung, keine Nachprüfung:
+
+Nach dem Übertrag der Datenbank ins neue Schuljahr stehen Wiederholer in der Kursplanung dem neuen Abiturjahrgang zur Verfügung.  
+Die zu wiederholenden Abschnitte sind als **nicht gewertet** markiert, dadurch können wie gewohnt in deren Laufbahnplanung Änderungen vorgenommen werden, auch wenn der aktuelle Abschnitt grau hinterlegt sein sollte.  
+Wichtig dafür ist, dass noch keine  Hochschreibung stattgefunden hat.  
+Änderungen nach einer Hochschreibung erfolgen wie oben beschrieben.  
+
+    **Praxistipp:** Es empfiehlt sich, mögliche Umwahlen von feststehenden Wiederholern noch vor dem Schuljahreswechsel abzufragen, um die Umwahl auch in der neuen Blockung sicher zu stellen.
+
+#### Fall 2: Keine Versetzung, aber Nachprüfung:
+
+Hier findet die Hochschreibung oft schon vor den Nachprüfungen statt.  
+Damit sind die Laufbahndaten grundsätzlich fixiert.  
+Unabhängig vom Abiturjahrgang - je nach Ausgang der Nachprüfung - müssen jetzt ggf. Kurszuordnungen erfolgen.  
+Diese werden in der Kursplanung **händisch** oder durch **"Verteilen" automatisch gesetzt**.  
+
+**WICHTIG:** Vor einer Synchronisation müssen jetzt bei den betroffenen Schülern die **Facheinträge in den Leistungsdaten manuell eingetragen** werden (Fächer ergänzen).  
+Dieses kann aus Gründen der derzeit noch einfacheren Bedienung **auch in Schild erfolgen**.  
+Es genügt, wenn **nur die Facheinträge** ergänzt werden, die Kurszuweisungen inklusive der individuellen Kursarten erfolgen durch die Synchronisation der Kursblocklung.  
+
+Jetzt noch erforderlich mögliche Umwahlen erfolgen wie oben beschrieben.
