@@ -21,6 +21,8 @@ const datum = (t: number) => {
 [![Admins](./graphics/LandingAdmin.png "Icon für Admins.")](./deployment/)
 [![Devs](./graphics/LandingDev.png "Icon für Developer.")](./development/)
 
+Für die Installation und Nutzung der Software **SchILD-NRW-3** findet sich deren Dokumentation im [Wiki von SchILD-NRW-3](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=SchILD-NRW).
+
 ## SVWS-Server, SVWS-Client und weitere Projekte
 
 Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Client* und zum *SVWS-Server*. Der **SVWS-Client** ist eine Web-Applikation zur Unterstützung der Verwaltungsprozesse an den Schulen Nordrhein-Westfalens. Er schafft eine plattformübergreifende Benutzeroberfläche, die mit allen gängigen Browsern aufgerufen werden kann.
@@ -29,7 +31,7 @@ Er wird in der ersten Übergangsphase parallel zu SchILD-NRW 3 benutzt.
 
 ![Übersicht der SVWS-Server-Umgebung mit Client-Programmen](./graphics/SVWS-Server-LandingPage.png "Zusammenspiel des SVWS-Servers mit unterschiedlichen Programmen.")
 
-Außerdem finden Sie hier Informationen zur Installation und zur Entwicklung und eine Dokumentation der API für die dezentrale Schulverwaltung in NRW. Ebenso gibt es eine Dokumentationen zu weiteren Projekten.
+Außerdem finden Sie hier Informationen zur Installation und zur Entwicklung und eine Dokumentation der API für die dezentrale Schulverwaltung in NRW. Ebenso gibt es eine Dokumentation zu weiteren Projekten.
 
 Navigieren Sie zu den übergreifenden Bereichen dieser Webseite über die **Kopfzeile**. 
 
@@ -54,14 +56,14 @@ https://www.svws.nrw.de/
 
 Nehmen Sie den im SVWS-Client hinterlegten Datenschutzhinweis zur Kenntnis und beachten Sie den gültigen Rechtsrahmen.
 
-Sie erreichen den Datenschutzhunweis über ````Client Info```` im **App**-Menü im Reiter Datenschutz.
+Sie erreichen den Datenschutzhinweis über ````Client Info```` im **App**-Menü im Reiter Datenschutz.
 
 
 ## Erklärung zur Barrierefreiheit
 
 Dieses Angebot wird momentan auf Barrierefreiheit geprüft.
 
-Die Ergebnisse werden hier veröfffentlicht.
+Die Ergebnisse werden hier veröffentlicht.
 
 Stand: 21. Februar 2025
 

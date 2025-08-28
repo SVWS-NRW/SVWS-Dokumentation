@@ -38,4 +38,5 @@ Im Debugging kann die Schnittstelle mit der SwaggerUI aufgerufen werden, mit der
 
 ![Übersicht-REST-Server-05](./graphics/Uebersicht-REST-Server-05.png)
 
+Rufen Sie die UI über `https://[Server]/debug` auf, um eine Übersicht über die API zu erzahlten.
 

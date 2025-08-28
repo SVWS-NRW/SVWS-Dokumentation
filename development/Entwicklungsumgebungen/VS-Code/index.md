@@ -25,11 +25,9 @@ NODE_MAJOR=22
 echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
 
 sudo apt update
-```
 
-vscode installieren:
+# nun die neuen Pakete installieren:
 
-```bash
 sudo apt install -y temurin-21-jdk nodejs code
 ```
 
@@ -68,23 +66,19 @@ Die Vue- und Typescript-Erweiterung funktioniert nur, wenn vor der ersten Nutzun
 wurde und in den Client- bzw. UI-BVerzeichnissen eine `components.d.ts` Datei angelegt wurde. Ohne diese Datei werden keine Typen gefunden.
 :::
 
-## Tipps
-
-Für die Entwicklung der verschiedenen Unterprojekte mit Vue und Typescript empfiehlt es sich,
-ein jeweils eigenes Fenster pro Unterprojekt zu öffnen.
-
-Um zum Beispiel am Client zu arbeiten, sollte ein neues Fenster unter `svws-webclient/client`
-angelegt werden, damit die Erweiterungen wie `volar` und `eslint` vernünftig funktionieren.
-
-Sind zu viele VS Code Fenster geöffnet, empfiehlt sich die Peacock-Erweiterung, mit der
-man die verschiedenen Fenster mit unterschiedlichen Farben ausstatten kann.
-
 ## lokale Settings
 
-Diese Einstellungen werden genutzt:
+Diese Einstellungen werden genutzt und sollten v.a. wegen einiger Einstellungen ausschließlich als Workspace-Settings verwendet werden:
 
 ```json
 {
+    // ermöglicht strengere Anzeigen von Fehlern in JSON
+    "$schema": "http://json-schema.org/draft-07/schema#",  
+    "files.associations": {
+        // identifiziert settings.json als JSON und nicht JSON with Comments
+        "settings.json": "json"                     
+    },
+
     "[java]": {
         "editor.insertSpaces": false,
         "editor.tabSize": 4
@@ -169,6 +163,7 @@ Diese Einstellungen werden genutzt:
         "projectKey": "svws-server"
     },
     // Damit Tailwind funktioniert
+    // Der so angegebene Pfad funktioniert natürlich nur, wenn VS Code den SVWS-Server Root-Pfad verwendet und muss als Workspace-Setting verwendet werden
     "tailwindCSS.experimental.configFile": "svws-webclient/ui/src/assets/styles/index.css",
     "typescript.preferences.preferTypeOnlyAutoImports": true,
     "typescript.tsdk": "node_modules/typescript/lib",
@@ -179,6 +174,10 @@ Diese Einstellungen werden genutzt:
     "vue.inlayHints.optionsWrapper": true,
 }
 ```
+
+::: danger Achtung!
+Damit die Task `initVSCode`, die unter Anderem beim Build ausgeführt wird, richtig laufen kann, muss das JSON valide sein. Das bedeutet, dass keine Kommentare erlaubt sind! Bei der Kopie der Einstellungen müssen die Kommentare daher entfernt werden.
+:::
 
 # Code Styles einrichten
 Die Code Styles in VSCode werden automatisiert durch ein Gradle Project Reload oder Build in den Workspace geladen. Eigene Konfigurationen sind nicht möglich. \

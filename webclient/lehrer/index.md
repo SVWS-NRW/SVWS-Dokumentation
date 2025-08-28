@@ -11,7 +11,7 @@ Diese Filter stehen zur Verfügung:
   * *Sekretariat*
   * *Angestelltes Personal ohne Identnummer*
   * *Externe Lehrkraft, z.B. abgeordnet oder im Rahmen einer Kooperation*
-  * *Stonstiges Personal*
+  * *Sonstiges Personal*
 
 ![Übersichtsliste der Lehrkräfte mit den Filtern](./graphics/SVWS_lehrkraefte_ListeUndFilter.png "Im hier grün markierten Bereich lassen sich Filter setzen, um die Auswahl in der Personalliste zu verfeiern.")
 

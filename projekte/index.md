@@ -33,4 +33,4 @@ Im Laufe des Projekts wurde entschieden, dass dieser Standard auch für NRW inte
 Im Jahr 2023 ging die Plattform SchülerOnline 2.0 online. Hier wurde es Schulen bereits mit SchILD-NRW 2.0 ermöglicht, Schülerwechsel auch online durchzuführen.
 Das Projekt mit dem SVWS-Server soll dies über einen Webservice ermöglichen und im SVWS-Client eine benutzerfreundliche Bedienung dieses Ablaufs schaffen.
 
-[Zur Beschreibung des Projekts.](./SchülerOnline/)
+[Zur Beschreibung des Projekts.](./Schulbewerbung.de/)

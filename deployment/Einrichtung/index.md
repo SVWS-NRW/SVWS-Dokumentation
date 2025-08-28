@@ -3,7 +3,7 @@
 ## Konfigurationsdatei svwsconfig.json
 
 Aus der `svwsconfig.json` werden beim Start des SVWS-Server die individuellen Einstellungen der jeweiligen Umgebung eingelesen.
-Die `svwsconfig.json` muss im Hauptverezichnis des SVWS-Servers liegen (z.B. ``opt/app/svws/svwsconfig.json`).
+Die `svwsconfig.json` muss im Hauptverzeichnis des SVWS-Servers liegen (z.B. ``opt/app/svws/svwsconfig.json`).
 Es kann aber auch, wie im Linux-Installer, ein symbolischer Link erstellt werden.
 
 Ein Beispiel-Template der `svwsconfig.json` liegt unter: `./svws/conf/svwsconfig-template-nodb.json`.
@@ -20,7 +20,7 @@ Unter https://meinserver/admin steht dann ein Admin-Client zur Verfügung, mit d
 | DisableTLS | null | Schaltet das TLS aus. |
 | PortHTTP | null | Port für HTTP bei NULL=80 |
 | UseHTTPDefaultv11 | false | Nutze HTTP V1.1 als Default |
-| PortHTTPS | null | Port für Https bei NULL=443 | 
+| PortHTTPS | null | Port für HTTPS bei NULL=443 | 
 | PortHTTPPrivilegedAccess | null | Port für die ROOT-API und den Admin-Client. Default 443. |
 | UseCORSHeader | true | Nutze CORSHeader. |
 | TempPath |  "./tmp" | Pfad für das temporäre Verzeichnis. |
@@ -32,16 +32,17 @@ Unter https://meinserver/admin steht dann ein Admin-Client zur Verfügung, mit d
 | LoggingEnabled | true | Einschalten des Loggings. |
 | LoggingPath | "./logs" | Pfad zu den Logdateien. |
 | ServerMode | null | Servermode NULL=dev. dev=Developermode alpha=Alphamode, beta=Betamode, stable=Stablemode |
+| PrivilegedDatabaseUser | null | Ist "null" gesetzt kann sich jeder MariaDB-User entsprechend der gesetzten Grants auf dem Adminclient einloggen und z.B. die eigenen Datenbanken sichern oder überspielen. Alternativ kann mit "root" z.B. nur diesem MariaDBUser das login im AdminClient gewährt werden. |
 | DBKonfiguration | | Beginn der Datenbankkonfigurationen der verschiedenen Schemata. |
-| dbms | "MARIA_DB" | Momentan einziges unterstütztes DBMS MariaDB mindesten 10.6.x. |
+| dbms | "MARIA_DB" | Momentan einziges unterstütztes DBMS MariaDB mindestens 10.6.x. |
 | location | "localhost" | Adresse des Datenbankservers (Hostename:Port) |
-| defaultschema | null | Name des Defaultschema, das beim Start im Client als erstes angeboten wird. (Optional.) |
+| defaultschema | null | Name des Default-Schema, das beim Start im Client als erstes angeboten wird. (Optional.) Ist kein Default gesetzt wird immer das letzte benutzte Schemata ausgewählt.|
 | SchemaKonfiguration | | Beginn der einzelnen Schemakonfigurationen. |
 | name |  "svwsdb" | Name des Datenbankschemas. |
-| svwslogin | false | Gibt an, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung genutzt wird oder nicht. | 
+| svwslogin | false | Gibt an, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung genutzt wird oder nicht. (Deprecated: Bitte immer auf false lassen!) | 
 | username | "svwsuser" | Datenbankuser für das Schema im DBMS. |
 | password | "userpassword"| Passwort für den Datenbankuser. |
-| connectionRetries | 0 | Gibt an, wieviele wiederholte Verbindungsversuche zur Datenbank stattfinden sollen. |
+| connectionRetries | 0 | Gibt an, wie viele wiederholte Verbindungsversuche zur Datenbank stattfinden sollen. |
 | retryTimeout | 0 | Gibt an, wie hoch die Zeit zwischen zwei Verbindungsversuchen in Millisekunden sein soll. |
 
 ### Beispieldatei für eine svwsconfig.json (mit einem Schema)
@@ -66,6 +67,7 @@ Unter https://meinserver/admin steht dann ein Admin-Client zur Verfügung, mit d
   "LoggingEnabled" : true,
   "LoggingPath" : "logs",
   "ServerMode" : "stable",
+  "PrivilegedDatabaseUser" : null,
   "DBKonfiguration" : {
     "dbms" : "MARIA_DB",
     "location" : "localhost",
@@ -101,7 +103,7 @@ Folgende Prozesse werden vom Admin-Client unterstützt:
 - Löschen von Schemata
 - Migration einer Schild-NRW2-Datenbank in ein neues oder bestehendes Schema
 - Erstellen eines Backups aus einem bestehenden Schema (SQLite-Format)
-- Einspielen eine Backups in ein bestehendes oder ein eues Schema
+- Einspielen eines Backups in ein bestehendes oder ein eues Schema
 - Setzen eines Schemas in die `svwsconfig.json`
 
 Die Anmeldung am Admin-Client erfolgt mit Benutzername und Passwort eines MariaDB-Users.
@@ -117,7 +119,7 @@ Für diese Aktionen, die unter der Schemataliste dargestellt werden, werden grun
 Hier wird automatisch ein neues Schema angelegt und mit den erforderlichen Tabellen befüllt.
 Es öffnet sich ein Dialog, in dem die erforderlichen Angaben zur Migration abgefragt werden.
 
-Es kann aus folgenden Datanbankformaten importiert werden:
+Es kann aus folgenden Datenbankformaten importiert werden:
 - Access
 - MySQL
 - MariaDB
@@ -156,7 +158,7 @@ Durch die Angabe der Schulnummer werden nur die Daten dieser Schule in das neue 
 ***Datenbankhost***
 
 Name oder IP-Adresse unter der der Datenbankserver erreichbar ist. (hostname:port oder IP:port)
-Bei SQL-Server (MSSQL) muus das TCP-Protokoll aktiviert und freigegeben sein.
+Bei SQL-Server (MSSQL) muss das TCP-Protokoll aktiviert und freigegeben sein.
 
 ***Datenbank-Schema***
 
@@ -195,7 +197,7 @@ Erzeugt eine Kopie eines Schemas in einem neuen Schema. Diese Funktion soll es e
 
 #### Anlegen eines neuen SVWS-Schema
 
-Unter der Liste der Schemata kann mit dem Plussymbol ein neues SVWS-Schema angelegt werden.
+Unter der Liste der Schemata kann mit dem Plus-Symbol ein neues SVWS-Schema angelegt werden.
 Das Schema wird dabei automatisch mit den erforderlichen Tabellen gefüllt und in der `svwsconfig.json` registriert.
 
 Man erhält somit eine leere Datenbank, die man mit einer Schulnummer initialisieren kann.
@@ -203,7 +205,7 @@ Man erhält somit eine leere Datenbank, die man mit einer Schulnummer initialisi
 
 ## Menüpunkte im rechten Fensterbereich
 
-Diese Menüpunkte haben die gleichen Funktionen, wie die Menüpunkte unter der Schemaliste.
+Diese Menüpunkte haben die gleichen Funktionen, wie die Menüpunkte unter der Schema-Liste.
 Nur werden diese Funktionen immer auf das ausgewählte und bestehende Schema ausgeführt und können somit auch von anderen Benutzern außer root verwendet werden. Diese Menüpunkte sind immer verfügbar.
 
 ***In Config setzen***

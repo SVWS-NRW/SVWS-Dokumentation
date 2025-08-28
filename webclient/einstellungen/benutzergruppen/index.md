@@ -1,8 +1,11 @@
 # Benutzergruppen
 
+>![NOTE] Der SVWS-Server ist in der Entwicklung
+>Der SVWS-Server befindet sich noch in der Entwicklung und das Rechtemanagement ist einer der Punkte, an denen dies besonders deutlich hervor tritt. Viele vorgesehene Rechteeinstellungen können hier auftauchen, obwohl die Funtkionen dahinter noch nicht implementiert sind.
+
 ## Einführung
 
-Über für die an Ihrer Schule ausgefüllten Aufgaben passend definierte Benutzergruppen lassen sich die Zugriffsrechte der Benutzer gut steuern.
+Über für die an Ihrer Schule ausgefüllten Aufgaben passend definierte Benutzergruppen lassen sich die Zugriffsrechte der Benutzer steuern.
 
 Grundsätzlich sollten alle Benutzer so viele Rechte erhalten, wie sie benötigen, aber nicht mehr.
 
@@ -27,7 +30,17 @@ Die Verwaltung von Benutzergruppen besteht aus vier Bereichen:
 3. Im dritten Bereich sind **alle möglichen Benutzer** aufgeführt, dies beinhaltet alle in der Datenbank angelegten Benutzer. Fügen Sie einen Benutzer durch einen Klick auf ihn zur aktuell gewählten Gruppe hinzu.
 4. Daneben finden sich **alle der gewählten Gruppe zugeordneten Benutzer**. Entfernen Sie diese mit einem Klick auf das Papierkorb-Symbol 🗑.
 
-**Hinweise:** Ist eine Person in mehreren Benztzergruppen, erhält sie die Rechte von allen. Beachten Sie auch, dass einzelnen Benutzern in der Benutzerverwaltung noch zusätzliche Einzelrechte gegeben werden können. 
+**Hinweise:** Ist eine Person in mehreren Benztzergruppen, erhält sie die Rechte von allen. Beachten Sie auch, dass einzelnen Benutzern in der Benutzerverwaltung noch zusätzliche Einzelrechte gegeben werden können.
+
+## "Funktionsbezogene" Rechte
+
+An einigen Stellen lassen sich Rechte "Funktionsbezogen" freigeben.
+
+Dies bedeutet, dass die Rechte an eine Funktion gekoppelt sind, im Normalfall ist das etwa eine Klassenleitung oder Jahrgangsleitung inder Oberstufe, in anderen Fällen etwa eine Abteilungsleitung.
+
+Demnach gelten diese Rechte beispielsweise nur in der zugewiesenen Klasse, aber nicht für alle anderen.
+
+Die konkreten Details sind abhängig vom Kontext der jeweiligen Aufgabe der Rechte und der Funktion.
 
 ## Beispiele
 

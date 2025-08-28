@@ -70,7 +70,7 @@ Die sort_buffer_size wird in der my.ini im data-Verzeichnis auf 16777216 gesetzt
 
 ## Installation JDK
 
-Mit dem Installer wird auch das verwendetet JDK ausgeliefert.
+Mit dem Installer wird auch das verwendete JDK ausgeliefert.
 
 Dieses ist an den SVWS-Server gekoppelt und kann in zukünftigen Versionen nur in Kombination mit dem eigentlichen Server installiert oder geupdated werden.
 
@@ -81,9 +81,9 @@ Zielverzeichnis JDK: `C:\Programme\SVWS-Server\java`
 Die notwendigen Dateien des SVWS-Server werden standardmäßig unter 
 `C:/Programme/SVWS-Server/svws-server` installiert.
 
-Da diese mit der ausgeliferten OpenJDK-Version zusammen passen müssen, werden diese beiden Teile miteinander verbunden und können nicht separat installiert werden.
+Da diese mit der ausgelieferten OpenJDK-Version zusammen passen müssen, werden diese beiden Teile miteinander verbunden und können nicht separat installiert werden.
 
-Die Aufrufe werden in Form von Batch-Dateien mit der Endung .cmd im Hauptverezichnis ausgeliefert.
+Die Aufrufe werden in Form von Batch-Dateien mit der Endung .cmd im Hauptverzeichnis ausgeliefert.
 
 Die Dienste MariaDB und SVWS-Server werden in der Computerverwaltung registriert und automatisch gestartet.
 
@@ -156,7 +156,7 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 |---|---|
 |dbms| Datenbanksystem (MariaDB oder SQLite für Schulungsumgebungen)|
 |location| ServerURL|
-|defaultschema| Standart-Schema. Es können mehrere Schemata verwendet werden.|
+|defaultschema| Standard-Schema. Es können mehrere Schemata verwendet werden.|
 
 #### Datenbankschemata Einstellungen
 |SchemaKonfiguration||
@@ -187,7 +187,7 @@ Dieses Zertifikat muss anschließend in den Zertifikatsspeicher von Windows übe
 
 ![Https-Zertifikat in MS Windows installieren](./graphics/SVWSZertifikat.jpg "Installieren Sie das Zertifikat, um Browser-Nachfragen zu unterbinden.")
 
-**Ort:** Vertrauenwürdige Stammzertifikate
+**Ort:** Vertrauenswürdige Stammzertifikate
 
 Bitte beachten Sie das nur Chrome und Edge automatisch diese Zertifikate nutzen. 
 

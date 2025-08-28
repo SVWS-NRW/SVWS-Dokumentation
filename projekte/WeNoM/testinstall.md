@@ -2,8 +2,8 @@
 
 Mit dem folgenden Skript kann für ENM-Server auf einem Debian 12 erstellt werden. 
 
-[!WARNING]
-Für den Livebetrieb sind noch wesentliche Sicherheitseinstellungen nötig, die nicht mit dieser Installation abgedeckt werden. 
+> [!WARNING] Livebetrieb
+> Für den Livebetrieb sind noch wesentliche Sicherheitseinstellungen nötig, die nicht mit dieser Installation abgedeckt werden. 
 
 ## Installationsskript Testserver
 
@@ -14,7 +14,7 @@ Für den Livebetrieb sind noch wesentliche Sicherheitseinstellungen nötig, die 
 # Achtung: nur http -> nicht für den Echtdatenbetieb geeignet ohne weitere Anpassungen!
 
 ##################### DATEN - INSTALLATION ######################################
-PHPVERSION=8.2
+PHPVERSION=8.4
 INSTALLPATH=/var/www/html
 DOWNLOADPATH=https://wenom.svws-nrw.de/enmserver.zip
 # optional 
@@ -24,10 +24,14 @@ GITHUBURL=https://github.com/SVWS-NRW/SVWS-Server
 
 ### Apache2 und PHP installation
 apt update && apt upgrade -y
-apt install -y apache2 php php-fpm php-sqlite3
-apt install -y curl zip unzip git dnsutils nmap net-tools nano mc ca-certificates gnupg2 lsb-release apt-transport-https gpg
+apt install -y curl zip unzip git dnsutils nmap net-tools nano mc ca-certificates gnupg2 lsb-release apt-transport-https gnupg
+wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list
+apt update
+apt install -y apache2 php${PHPVERSION} php${PHPVERSION}-fpm php${PHPVERSION}-sqlite3
+
 a2enmod proxy_fcgi setenvif
-a2enconf php8.2-fpm
+a2enconf php${PHPVERSION}-fpm
 a2enmod rewrite
 a2enmod headers
 
@@ -51,12 +55,11 @@ mkdir -p ${INSTALLPATH}/public
 sed -i "s|DocumentRoot.*$|DocumentRoot ${INSTALLPATH}/public|" /etc/apache2/sites-available/000-default.conf
 sed -i "s|DocumentRoot.*$|DocumentRoot ${INSTALLPATH}/public|" /etc/apache2/sites-available/default-ssl.conf
 #
-systemctl reload apache2.service 
-systemctl status apache2.service --no-pager
+apache2ctl configtest
+systemctl reload apache2.service
+apache2ctl status
 #
-
-
-
+################################################################
 ### optional:Java installieren und das SVWS-Server Projekt bauen
 # Bei Verwendung des optionalen Teils wird ein SVWS-Server gebaut und damit auch die Quellen des ENM-Servers. Dies ist nur in Testumgebungen empfehlenswert.
 #
@@ -71,12 +74,13 @@ systemctl status apache2.service --no-pager
 #bash ./gradlew build
 #
 #cp ~/SVWS-Server/svws-webclient/enmserver/build/*.zip $INSTALLPATH/enmserver.zip
-#
+###############################################################
 cd $INSTALLPATH
-####### nächste Zeile auskommentieren, wenn optional gewählt wurde ein build erwünscht #######
+#
+###############################################################
+### nächste Zeile und damit den download bitte auskommentieren, wenn oben "optional" das build aus dem Repository auskommentiert wurde #######
 wget $DOWNLOADPATH
-#
-#
+###############################################################
 #
 unzip enmserver.zip
 #
@@ -87,16 +91,33 @@ chown -R www-data:www-data $INSTALLPATH
 #erzeugen des Secrets:
 curl --request GET --url http://localhost/api/setup  --header "Content-Type: application/x-www-form-urlencoded"
 #
-echo ""
-echo ""
-echo "Das Secret für die Synchronisation mit dem SVWS-Server ist:"
+echo -e "\n\nDas Secret für die Synchronisation mit dem SVWS-Server ist:\n"
 cat ${INSTALLPATH}/db/client.sec
-echo ""
-echo "################# Installation beendet! ####################"
+echo "\n################# Installation beendet! ####################"
 ```
+
+## Zertifikat anpassen 
+In manchen Umgebungen benötigt der Wenom-Server ein eigenes selbst sigriertes Zertifikat für die 
+interne Kommunikation mit dem SVWS-Server. 
+Ggf benötigt man auch den Eintrag der lokalen IP in diesem Zertifikat, so dass der Anfängliche TLS Check ohne Fehler druchgeführt werden kann. 
+Hier ein Beispiel entweder den direkten IP Eintrag: 
+```bash
+openssl req -x509 -nodes -days 3650 -newkey rsa:4096 -keyout /etc/ssl/private/wenomtest-selfsigned.key -out /etc/ssl/certs/wenomtest-selfsigned.crt -subj "/C=DE/ST=NRW/L=NRW/O=NONE/CN=localhost" -addext "subjectAltName = IP:10.0.1.1" 
+```
+Oder ein Beispiel für den DNS Eintrag ins Zertifikat:
+
+```bash
+openssl req -x509 -nodes -days 3650 -newkey rsa:4096 -keyout /etc/ssl/private/wenomtest-selfsigned.key -out /etc/ssl/certs/wenomtest-selfsigned.crt -subj "/C=DE/ST=NRW/L=NRW/O=NONE/CN=localhost"-addext "subjectAltName = DNS:wenomtest2"
+```
+
+
+
+
+
 ## UpdateSkript Testserver
 
-Achtung: Alle Daten werden auf dem Wenom durch dieses Skript gelöscht!
+>[!WARNING] Löschung der Daten
+> Alle Daten werden auf dem Wenom durch dieses Skript gelöscht!
 
 ```bash
 #!/bin/bash
