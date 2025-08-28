@@ -372,7 +372,7 @@ Bei gesetztem Haken und OK kann die jetzt nicht mehr gültige Kurszuordnung aufg
 Aufruf **Schüler -> Lernabschnitte**, dann im aktuellen Abschnitt ein **Fach über '+' ergänzen**.  
 
 
-    **Hinweis:** Es wird i.d.R. das erste Fach Ihrer Fächertabelle als Anfangswert eingetragen. Nach Änderung auf die gewünschte Fachbezeichnung sortiert sich der Facheintrag entsprechend ein und steht nicht mehr in der ersten Zeile.  
+    Hinweis: Es wird i.d.R. das erste Fach Ihrer Fächertabelle als Anfangswert eingetragen. Nach Änderung auf die gewünschte Fachbezeichnung sortiert sich der Facheintrag entsprechend ein und steht nicht mehr in der ersten Zeile.  
 
 Jetzt muss zwingend noch **ein Kurs eingetragen werden**, das muss bei Mehrfachauswahl nicht der richtige sein. (Der passende Kurs wird in der Kursblockung festgelegt.)    
 Eine **Kursart** muss hier gewählt werden.   
@@ -400,7 +400,7 @@ Die zu wiederholenden Abschnitte sind als **nicht gewertet** markiert, dadurch k
 Wichtig dafür ist, dass noch keine  Hochschreibung stattgefunden hat.  
 Änderungen nach einer Hochschreibung erfolgen wie oben beschrieben.  
 
-    **Praxistipp:** Es empfiehlt sich, mögliche Umwahlen von feststehenden Wiederholern noch vor dem Schuljahreswechsel abzufragen, um die Umwahl auch in der neuen Blockung sicher zu stellen.
+    Praxistipp: Es empfiehlt sich, mögliche Umwahlen von feststehenden Wiederholern noch vor dem Schuljahreswechsel abzufragen, um die Umwahl auch in der neuen Blockung sicher zu stellen.
 
 #### Fall 2: Keine Versetzung, aber Nachprüfung:
 
