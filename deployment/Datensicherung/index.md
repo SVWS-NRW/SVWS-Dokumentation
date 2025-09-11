@@ -56,20 +56,19 @@ PASSWORD="the root password"
 ````
 Dann in der Datei `/etc/mysql/debian.cnf` die folgenden Zeilen aktivieren:
 
-````bash 
+```bash 
 ...
 USERNAME=`grep user /etc/mysql/debian.cnf ...
 ...
 PASSWORD=`grep password /etc/mysql/debian.cnf 
-````bash 
-
+```
 ## bekannte Probleme
 
 ### Veränderung der Groß- und Kleinschreibung nach Rückspielen der Datensicherung 
 
-In manchen Systemen tritt bei einem Dump und einem anschließenden Wiedereinspielen das Problem auf, dass die groß und kleinschreibung der Tebellenspalten durch den dump oder das Zurückspielen verändert wird. z.B. wird aus dem ursprünglichen Spalten namen '''allgAdrAnsprechpartner''' dann im zurückgespielten System ein '''allgadransprechpartner'''. Dies kann dann weder von Schild3 noch vom SVWS-Server sauber verwertet werden. 
+In manchen Systemen tritt bei einem Dump und einem anschließenden Wiedereinspielen das Problem auf, dass die groß und kleinschreibung der Tebellenspalten durch den dump oder das Zurückspielen verändert wird. z.B. wird aus dem ursprünglichen Spalten namen ```allgAdrAnsprechpartner``` dann im zurückgespielten System ein ```allgadransprechpartner```. Dies kann dann weder von Schild3 noch vom SVWS-Server sauber verwertet werden. 
 
-Hier ein Script, welches für die Version 1.0.12 des SVWS-Servers die Tabellenspalten in dem SQL Dump '''dump.sql'''wieder umbenennt. Der Parameter '''-i''' muss beim Mac gesetzt sein, ebenso wird beim Mac '''LC_ALL=C''' aufgrund der Anführungszeichen gesetzt sein. 
+Hier ein Script, welches für die Version 1.0.12 des SVWS-Servers die Tabellenspalten in dem SQL Dump ```dump.sql``` wieder umbenennt. Der Parameter ```-i``` muss beim Mac gesetzt sein, ebenso wird beim Mac ```LC_ALL=C``` aufgrund der Anführungszeichen gesetzt sein. 
 
 
 ```
@@ -192,7 +191,7 @@ s/`zuordnungreportvorlagen`/`ZuordnungReportvorlagen`/g
 
 Alternativ und etwas performanter kann dieses Skript unter node.js verwendet werden: 
 
-'''
+```js
 // Dieses Node-Script kann mit node entweder als Script ausgeführt werden:
 // node diesesScript.js
 // oder im Browser, in den Entwicklertools in der Console ausführen (Copy/Paste/Ausführen)
@@ -222,4 +221,4 @@ for (const db of dbs) {
 }
 
 console.log(out);
-'''
+```
