@@ -93,7 +93,7 @@ curl --request GET --url http://localhost/api/setup  --header "Content-Type: app
 #
 echo -e "\n\nDas Secret für die Synchronisation mit dem SVWS-Server ist:\n"
 cat ${INSTALLPATH}/db/client.sec
-echo "\n################# Installation beendet! ####################"
+echo -e "\n\n################# Installation beendet! ####################\n"
 ```
 
 ## Zertifikat anpassen 

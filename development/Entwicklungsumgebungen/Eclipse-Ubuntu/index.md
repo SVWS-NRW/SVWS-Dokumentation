@@ -28,7 +28,7 @@ Für Ubuntu VERSION_CODENAME (Debian) ändern in UBUNTU_CODENAME.
 
 ### Eclipse installieren
 
-#### Download Eclipse  
+#### per Download 
 
 https://www.eclipse.org/downloads/packages/
 
@@ -40,6 +40,12 @@ eclipse-jee-2022-09-R-linux-gtk-x86_64.tar.gz
 ```bash
 tar -xvzf eclipse-jee-2022-09-R-linux-gtk-x86_64.tar.gz
 ```
+#### per snap
+
+```bash
+snap install eclipse --classic
+```
+
 
 #### Anpassungen
 

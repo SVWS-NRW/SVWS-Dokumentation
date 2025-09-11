@@ -25,9 +25,10 @@ Bitte informieren Sie sich auf der Dokumentationsseite von Docker über die notw
 Die SVWS-Umgebung kann über die Konsole des verwendeten Betriebssystems mittels docker-compose gestartet werden. 
 Beispiele zur dazu obligatorischen docker-compose.yml und Dateien befinden sich im [Github-Repository](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/example) .
 
-### Beispiel: aktuellen Testserver im Docker Container
+### Beispiel: Testserver im Docker Container
 
 [Beispiel einer vorbereiteten Docker-Compose](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Docker/svws-docker-example.zip)
+
 
 Diese Datei muss in einem Ordner entpackt werden und legt damit die geforderte Ordnerumgebung an, so dass der Keystore beim ersten Start des SVWS-Servers erzeugt wird und danach erhalten bleibt.
 
@@ -130,3 +131,5 @@ MARIADB_HOST=mariadb
 MARIADB_USER=your-mariadb-user
 MARIADB_PASSWORD=your-mariadb-pw
 ```
+
+
