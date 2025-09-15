@@ -47,7 +47,7 @@ Der externe WebNotenManager zur Einholung der Noten über ein webbasiertes Syste
 Dabei wird der WebNotenmanager den Schulen über das Open-Source Repository zur Verfügung gestellt.
 Die Software kann auf einem Webspace bei einem Dienstleister mit entsprechendem AVV oder auch bei der jeweiligen Schulträger-IT betrieben werden.
 
-## 2024 Dezember - Durchführung eines Security-Audit für SVWS-Server und WebNotenManager
+## 2025 Dezember - Durchführung eines Security-Audit für SVWS-Server und WebNotenManager
 
 Durchführung einer intensiven Sicherheitsüberprüfung für das Zusammenspiel von SVWS-Server und WebNotenManager.
 Insbesondere die Passwortverwaltung, die Synchronisationsprozesse und die Datenschutzanalyse sollen hier geprüft werden.
