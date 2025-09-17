@@ -1,13 +1,28 @@
 #!/bin/bash
 
-# Entpacken der SVWS-Serverdateien
+## Dieses Skript installiert die Version 1.0.11 des SVWS-Server - ggf die Versionsnummer anpassen.
 
-tar xzf ./linux-installer-0.7.8.tar.gz
+# Installiere benötigte Software und hilfreiche tools
+
+dnf install java-21-openjdk-devel.x86_64
+java --version
+
+dnf -y install unzip
+dnf -y install tar
+dnf -y install wget
+dnf -y install net-tools
+dnf -y install nmap
+
+# Entpacken der SVWS-Serverdateien - ggf die Versionsnummer anpassen.
+
+wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v1.0.11/linux-installer-1.0.11.tar.gz
+tar xzf ./linux-installer-*
 
 # Erstelle Verzeichnisse
 
 mkdir -p /opt/app/svws
 mkdir /opt/app/svws/client
+mkdir /opt/app/svws/admin
 mkdir /opt/app/svws/conf
 mkdir -p /etc/app/svws/conf/
 
@@ -17,9 +32,10 @@ mkdir -p /etc/app/svws/conf/
 cp -r ./svws/app /opt/app/svws/
 cp -r ./svws/conf /etc/app/svws/conf/
 
-# Entpacke den Client in das Client-Verzeichnis
+# Entpacke die Clients in die entsprechenden Verzeichnisse
 
 unzip -d /opt/app/svws/client  ./svws/app/SVWS-Client.zip
+unzip -d /opt/app/svws/admin  ./svws/app/SVWS-Admin-Client.zip
 
 # Erstelle den SVWS-Keystore
 
@@ -53,7 +69,7 @@ echo '{
 
 # Erstelle einen symbolischen Link zur Konfigurationsdatei
 
-ln /etc/app/svws/conf/svwsconfig.json /opt/app/svws/svwsconfig.json
+ln -s /etc/app/svws/conf/svwsconfig.json /opt/app/svws/svwsconfig.json
 
 # Erstelle Service-Datei für Systemd-Service
 
@@ -75,7 +91,7 @@ WantedBy=multi-user.target" > /etc/systemd/system/svws.service
 
 # Erstellen der Gruppe "svws" und des Nutzers "svws" ohne Login Shell (-s /bin/false)
 
-Der Nutzer wird der Gruppe "svws" zugewiesen und besitzt Lese-/Schreibzugriff auf die relevanten Verzeichnisse
+# Der Nutzer wird der Gruppe "svws" zugewiesen und besitzt Lese-/Schreibzugriff auf die relevanten Verzeichnisse
 
 /usr/sbin/groupadd -r svws
 /usr/sbin/useradd -r -s /bin/false -g svws svws
@@ -90,7 +106,7 @@ systemctl daemon-reload
 systemctl start svws.service
 systemctl enable svws.service
 
-## Überprüfen des Status des Services
+# Überprüfen des Status des Services
 
 systemctl status svws.service
 

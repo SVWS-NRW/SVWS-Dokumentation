@@ -19,7 +19,7 @@ dnf -y install nmap
 
 ## Download der SVWS-Server Pakete
 
-wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v0.x.x/linux-installer-0.x.x.tar.gz
+wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v0.x.x/linux-installer-x.x.x.tar.gz
 
 
 ## Entpacken der SVWS-Serverdateien
@@ -38,8 +38,11 @@ mkdir -p /etc/app/svws/conf/
 cp -r ./svws/app /opt/app/svws/
 cp -r ./svws/conf /etc/app/svws/conf/
 
-## Entpacke den Client in das Client-Verzeichnis
+
+## Entpacke die Clients in die entsprechenden Verzeichnisse
+
 unzip -d /opt/app/svws/client  ./svws/app/SVWS-Client.zip
+unzip -d /opt/app/svws/admin  ./svws/app/SVWS-Admin-Client.zip
 
 ## Erstelle den SVWS-Keystore
 

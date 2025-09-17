@@ -1,26 +1,37 @@
 # Linux Installer
 
-## Download
+## Debian basierte Systeme:
 
 Download unter:
 https://github.com/SVWS-NRW/SVWS-Server/releases
 
-
 Dieses Skript ist für die Installation des SVWS-Servers auf einem Debian-basierten System gedacht.
-Bisher getestet sind:
+
+Bisher getestet unter:
 
 - Debian 11
 - Debian 12
+- Debian 13
 - Ubuntu 22.04 LTS 
 - Ubuntu 22.10 
+- Ubuntu 24.04 LTS
 
-RedHat basierte Systeme benötigen andere Befehle:
+## Redhat basierte Systeme
 
-[Installation Redhat](RedHat-Linux.md)
+Die Installation unter RedHat basierte Systeme kann hier nachgelesen werden:
+
+[Installation Redhat (RHL)](RedHat-Linux.md)
+
+Bisher getestet unter:
+
+- RedHat 9
+- Rocky-Linux 9 
+
+
 
 ## Wichtige Hinweise
 
-- Verwendung des Skripts geschieht auf eigene Gefahr.
+- Verwendung der Skripte geschieht auf eigene Gefahr.
 - Führen Sie das Skript nur auf einem Testsystem durch, bevor Sie es auf einem Produktivsystem verwenden.
 - Stellen Sie sicher, dass alle Konfigurationen und Passwörter sicher gespeichert und aufbewahrt werden.
 - Beachten Sie, dass das Skript eine Internetverbindung benötigt, um bestimmte Pakete herunterzuladen und zu installieren.
@@ -31,7 +42,7 @@ RedHat basierte Systeme benötigen andere Befehle:
 - Ein Debian-basiertes Betriebssystem
 - Zugriff mit root-Rechten
 
-## Installation  
+## Installation DEB
 
 - Laden Sie das Skript auf den Zielcomputer herunter.
 - Öffnen Sie die Terminalanwendung und navigieren Sie zum Verzeichnis, in dem sich das Skript befindet.

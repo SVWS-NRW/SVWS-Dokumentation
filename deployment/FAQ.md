@@ -3,6 +3,21 @@
 
 Hier eine Sammlung häufiger im Installationsprozess gestellter Fragen. 
 
+## Systemvoraussetzungen 
+### Welche Systemvoraussetzungen müssen erfüllt werden?
+
+Dies muss noch umfassender getestet werden. In einer virtuellen Testumgebung wird der SVWS-Server mit 2 Cores und 8 GB RAM betrieben.
+
+::: warning Mariadb Versionsnummer kontrollieren!
+Ab SVWS-Serverversion 1.0.5 wird eine Mariadb Version > 11.7 benötigt!
+::: 
+
+## Serveranzahl
+### Wird pro Schule ein eigener virtueller Server benötigt?
+
+Nein. Ein Server kann so konfiguriert werden, dass er von mehreren Schulen datenschutzsicher genutzt werden kann.
+Abhängig von den lokalen Gegebenheiten, kann das sinnvoll sein.
+
 ## SVWS-Server / Schild3
 ### Was bedeuten die Begriffe SVWS-Server und SchILD-NRW 3?
 
@@ -59,17 +74,7 @@ Beim Betrieb eines Reverese-Proxy-Servers als Zugangsserver sind die folgenden E
 
 Ggf. können die Einstellungen in der Paketgröße und den Timeouts je nach Größe der Schule und Geschwindigkeit der Internetverbindung noch angepasst werden. 
 
-## Systemvoraussetzungen 
-### Welche Systemvoraussetzungen müssen erfüllt werden?
 
-Dies muss noch umfassender getestet werden. In einer virtuellen Testumgebung wird der SVWS-Server mit 2 Cores und 8 GB RAM betrieben.
-
-
-## Serveranzahl
-### Wird pro Schule ein eigener virtueller Server benötigt?
-
-Nein. Ein Server kann so konfiguriert werden, dass er von mehreren Schulen datenschutzsicher genutzt werden kann.
-Abhängig von den lokalen Gegebenheiten, kann das sinnvoll sein.
 
 ## Datenbanken
 ### Liegt die Datenbank auf einem separaten Server?
