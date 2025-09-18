@@ -28,29 +28,40 @@ tar xzf ./linux-installer-0.7.8.tar.gz
 
 ## Erstelle Verzeichnisse
 
+```bash
 mkdir -p /opt/app/svws
 mkdir /opt/app/svws/client
 mkdir /opt/app/svws/conf
+mkdir /opt/app/svws/adminclient
 mkdir -p /etc/app/svws/conf/
+```
 
 
 ## Kopiere App, Konfigurationen und Zertifikate
+
+```bash
 cp -r ./svws/app /opt/app/svws/
 cp -r ./svws/conf /etc/app/svws/conf/
-
+```
 
 ## Entpacke die Clients in die entsprechenden Verzeichnisse
 
+```bash
 unzip -d /opt/app/svws/client  ./svws/app/SVWS-Client.zip
-unzip -d /opt/app/svws/admin  ./svws/app/SVWS-Admin-Client.zip
+unzip -d /opt/app/svws/adminclient  ./svws/app/SVWS-Admin-Client.zip
+```
 
 ## Erstelle den SVWS-Keystore
 
+```bash
 keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test, S=test, C=test" -keystore /etc/app/svws/conf/keystore -storepass test123 -keypass test123  -keyalg RSA
+```
 
 ## Erstelle svwsconfig.json
 
+```bash
 cp ./svws/conf/svwsconfig-template-nodb.json /etc/app/svws/conf/svwsconfig.json
+```
 
 ## Anpassen der Variablen in der svwsconfig.json
 
@@ -82,11 +93,15 @@ cp ./svws/conf/svwsconfig-template-nodb.json /etc/app/svws/conf/svwsconfig.json
 
 ## Erstelle einen symbolischen Link zur Konfigurationsdatei
 
+```bash
 ln /etc/app/svws/conf/svwsconfig.json /opt/app/svws/svwsconfig.json
+```
 
 ## Kopiere svws-template.service nach etc/systemd/system und dann Parameter darin (s.u.) ändern
 
+```bash
 cp ./svws/svws-template.service /etc/systemd/system/svws.service
+```
 
 ## Oder ServiceDatei für Systemd ertsellen und in etc/systemd/system  ablegen
 
