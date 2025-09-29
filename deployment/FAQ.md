@@ -15,10 +15,11 @@ Ab SVWS-Serverversion 1.0.5 wird eine Mariadb Version > 11.7 benötigt!
 ## Serveranzahl
 ### Wird pro Schule ein eigener virtueller Server benötigt?
 
-Nein. Ein Server kann so konfiguriert werden, dass er von mehreren Schulen datenschutzsicher genutzt werden kann.
+Nein. Ein Server kann so konfiguriert werden, dass er von mehreren Schulen datenschutzsicher genutzt werden kann. Jede Schule hat ihre Daten in einem eigenen *Schema* liegen. Schamata können über eigene Schema-Admin-Zugänge mit eigenen Passwörtern verwaltet werden.
+
 Abhängig von den lokalen Gegebenheiten, kann das sinnvoll sein.
 
-## SVWS-Server / Schild3
+## SVWS-Server / SchILD3
 ### Was bedeuten die Begriffe SVWS-Server und SchILD-NRW 3?
 
 Der SVWS-Server ist ein in Java geschriebener Web-Server, der eine API und einen Web-Client zur Verfügung stellt.
