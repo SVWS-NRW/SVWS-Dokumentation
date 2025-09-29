@@ -7,11 +7,11 @@ Letzte Aktualisierung: 2025-09-10
 Start in die öffentliche Betaphase für SchILD-NRW-3 und den SVWS-Server.
 Am 13. Oktober 2024 werden die Installationspakete auf GitHub zur Verfügung gestellt.
 
-Dabei soll SchILD-NRW-3 den Funktionsumfang von SchILD-NRW-2 ablösen und in Zusammenspiel mit dem SVWS-Web-Client die Möglichkeit bieten die gymnasiale Oberstufe an Gymnasien und Gesamtschulen in NRW ermöglichen.
+Dabei soll SchILD-NRW-3 den Funktionsumfang von SchILD-NRW-2 ablösen und in Zusammenspiel mit dem SVWS-Webclient die Möglichkeit bieten die gymnasiale Oberstufe an Gymnasien und Gesamtschulen in NRW ermöglichen.
 
-Der **Web-Client** dient zu dieser Zeit ausschließlich als Ersatz für die Programme *Kurs42* und *LuPO*!
+Der **Webclient** dient zu dieser Zeit ausschließlich als Ersatz für die Programme *Kurs42* und *LuPO*!
 
-An der Integration weiterer Funktionalitäten im Web-Client wird gearbeitet.
+An der Integration weiterer Funktionalitäten im Webclient wird gearbeitet.
 
 ## 2025 März - Aufbau von Teststellungen
 
@@ -23,7 +23,7 @@ Zum Zeitpunkt der Umstellung auf den Produktivbetrieb kann die SchILD-NRW-2 Date
 
 ## 2025 August - Erstellen eines ausreichenden Stable-Mode
 
-Der SVWS-Client soll alle benötigten Tabs und Kataloge im Stable-Mode erhalten, sodass erste produktive Arbeiten auch außerhalb der gymnasialen Oberstufe stattfinden können.
+Der SVWSclient soll alle benötigten Tabs und Kataloge im Stable-Mode erhalten, sodass erste produktive Arbeiten auch außerhalb der gymnasialen Oberstufe stattfinden können.
 
 Dabei ist es wichtig, dass die schulformspezifischen Bedingungen eingearbeitet werden und die eingeblendeten Kataloge in das Testkonzept einbezogen sind.
 
@@ -60,9 +60,9 @@ Insbesondere die Passwortverwaltung, die Synchronisationsprozesse und die Datens
 
 Es soll ein erster abgegrenzter Feldtest mit ausgesuchten Schulen stattfinden, die den digitalen Schülerwechsel mit dem SVWS-Server und schulbewerbung.de durchführen.
 
-## 2026  - Ausbau des Web-Clients für Grundschulen
+## 2026  - Ausbau des Webclients für Grundschulen
 
-Ausbau des Web-Clients für weitere Schulformen. Zunächst sollen Grundschulen alle Funktionalitäten bekommen, die einen Betrieb des Web-Clients im Alltag ermöglichen.
+Ausbau des Webclients für weitere Schulformen. Zunächst sollen Grundschulen alle Funktionalitäten bekommen, die einen Betrieb des Webclients im Alltag ermöglichen.
 
 Hier wird es notwendig sein, dass Gruppenprozesse und Filterfunktionen wie gewohnt im SVWS-Client zur Verfügung stehen.
 
@@ -78,7 +78,7 @@ SchILD-NRW 3 soll schrittweise auf die API des SVWS-Servers umgestellt werden, s
 
 ## 2027 - Ablösung ASDPC32
 
-Geplante Ablösung des Programms ASDPC32 als Statistikprogramm durch den SVWS-Web-Client.
+Geplante Ablösung des Programms ASDPC32 als Statistikprogramm durch den SVWS-Webclient.
 
 ## 2028 - Digitale Zeugnisausfertigung
 
