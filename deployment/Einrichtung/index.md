@@ -4,7 +4,7 @@
 
 Aus der `svwsconfig.json` werden beim Start des SVWS-Server die individuellen Einstellungen der jeweiligen Umgebung eingelesen.
 
-Die `svwsconfig.json` muss im Hauptverzeichnis des Datenverzeichnis des SVWS-Servers liegen (z.B. `opt/app/svws/svwsconfig.json` oder `S:\SVWS-Server-Data\`).
+Die `svwsconfig.json` muss im `res`-Verzeichnis des Datenverzeichnis des SVWS-Servers liegen (z.B. `opt/app/svws/res/svwsconfig.json` oder `S:\SVWS-Server-Data\res\`).
 Es kann auch, wie im Linux-Installer, ein symbolischer Link erstellt werden.
 
 Ein Beispiel-Template der `svwsconfig.json` liegt unter: `./svws/conf/svwsconfig-template-nodb.json`.
