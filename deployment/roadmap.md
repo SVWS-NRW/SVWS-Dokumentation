@@ -29,7 +29,7 @@ Dabei ist es wichtig, dass die schulformspezifischen Bedingungen eingearbeitet w
 ## 2025 Oktober - SVWS-Server und Schild-NRW 3 - Start in den Produktivbetrieb
 
 Ende der öffentlichen Betaphase und Start in den produktiven Betrieb.
-Alle Schulen, deren Tests erfolgreich waren haben nun die Möglichkeit, Schild-NRW-3 produktiv zu nutzen.
+Alle Schulen, deren Tests erfolgreich waren, haben nun die Möglichkeit, Schild-NRW-3 produktiv zu nutzen.
 
 Dabei ist ein Umstieg nach Abgabe der Statistik 2025/26 ratsam.
 Ein Umstieg zu diesem Zeitpunkt ist nicht verpflichtend. Die Planung hierzu kann individuell erfolgen.
@@ -39,7 +39,7 @@ Externe Module (Notenmodul, Prognos und Konferenzmodul) werden zeitnah auch für
 ## 2025 November - Erstellung der Architekturdokumenation für den SVWS-Server
 
 Die Architekturdokumenation für den Betrieb des SVWS-Servers soll auf Basis des Arch42-Standards erfolgen.
-Hier soll eine mitwachsende Dokumentation entstehen, die es den Betreibern und Entwicklern erleichtern soll Systementscheidungen zu treffen.
+Hier soll eine mitwachsende Dokumentation entstehen, die es den Betreibern und Entwicklern erleichtern soll, Systementscheidungen zu treffen.
 
 ## 2025 Dezember - Start Beta-Phase WebNotenManager (WeNoM)
 
@@ -52,7 +52,7 @@ Die Software kann auf einem Webspace bei einem Dienstleister mit entsprechendem 
 Durchführung einer intensiven Sicherheitsüberprüfung für das Zusammenspiel von SVWS-Server und WebNotenManager.
 Insbesondere die Passwortverwaltung, die Synchronisationsprozesse und die Datenschutzanalyse sollen hier geprüft werden.
 
-## 2026 Februar - Erster Feld-Test Schulbewerbungen
+## 2026 Februar - Erster Feldtest Schulbewerbungen
 
 Es soll ein erster abgegrenzter Feldtest mit ausgesuchten Schulen stattfinden, die den digitalen Schülerwechsel mit dem SVWS-Server und schulbewerbung.de durchführen.
 
@@ -66,7 +66,7 @@ Hier wird es notwendig sein, dass Gruppenprozesse und Filterfunktionen wie gewoh
 Die Abschlussberechnungen aller Schulformen inkl. Berufskolleg sollen vorangetrieben werden.
 Diese Abschlussberechnungen sollen dann auch für Schild-NRW 3 über die API zur Verfügung stehen.
 
-## 2026 Schrittweise umstellung auf API
+## 2026 Schrittweise Umstellung auf API
 
 Schild-NRW 3 soll schrittweise auf die API des SVWS-Servers umgestellt werden, so dass direkte Datenbankzugriffe nicht mehr oder nur noch lesend notwendig sind.
 
