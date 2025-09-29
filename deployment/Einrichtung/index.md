@@ -2,13 +2,16 @@
 
 ## Konfigurationsdatei svwsconfig.json
 
-Aus der `svwsconfig.json` werden beim Start des SVWS-Server die individuellen Einstellungen der jeweiligen Umgebung eingelesen.
-Die `svwsconfig.json` muss im Hauptverezichnis des SVWS-Servers liegen (z.B. ``opt/app/svws/svwsconfig.json`).
+Aus der `svwsconfig.json` werden beim Start des SVWS-Servers die individuellen Einstellungen der jeweiligen Umgebung eingelesen.
+
+Die `svwsconfig.json` muss im Hauptverzeichnis des Data-Pfads des SVWS-Servers liegen (z.B. ``opt/app/svws/svwsconfig.json` oder `S:\SVWSServer-Data\svwsconfig.json`).
 Es kann aber auch, wie im Linux-Installer, ein symbolischer Link erstellt werden.
 
 Ein Beispiel-Template der `svwsconfig.json` liegt unter: `./svws/conf/svwsconfig-template-nodb.json`.
+
 Der SVWS-Server startet auch ohne einen Eintrag unter Schemakonfiguration und bietet dann beim Start keine Auswahl für eine Datenbank an.
-Unter https://meinserver/admin steht dann ein Admin-Client zur Verfügung, mit dem man erste Datenbanken migrieren oder Backups erstellen kann.
+
+Unter https://meinserver/admin steht dann der Admin-Client zur Verfügung, mit dem man erste Datenbanken migrieren oder Backups erstellen kann.
 
 ### Beschreibung der Variablen
 
