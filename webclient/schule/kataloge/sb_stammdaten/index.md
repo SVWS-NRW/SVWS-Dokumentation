@@ -4,7 +4,7 @@
 
 Zu den Stammdaten der Schule gehören die **Bezeichnungen**, die auf Zeugnisse und in Reports ausgegeben werden können sowie die Kontaktdaten.
 
-:: tip Adressänderungen
+::: tip Adressänderungen
 Bitte denken Sie daran, sich bei einer Änderung der Adresse im Anschluss über das Bildungsportal anzumelden und die Änderung dort ebenfalls zu vermelden. 
 :::
 
