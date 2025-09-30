@@ -6,6 +6,13 @@ Der WeNoM wird auf PHP Basis mit Typescript und VUE.js entwickelt und wird eine 
 
 Der WeNoM wird Schulen eine effiziente Möglichkeit bieten, um die Leistungsdaten ihrer Schülerinnen und Schüler zu verwalten und zu überwachen, und es Lehrkräften ermöglichen, schnell und einfach auf die benötigten Daten zuzugreifen.
 
+![Informationsverbund SVWS-Server und WeNoM](./graphics/SVWS-Wenom-Verbund.png "Übersicht über die Datensynchronisation SVWS-Server und WeNoM.")
+
+Die Datensynchronisation findet über den SVWS-Server statt. Hier werden das Client-Secret und die Verbindungsparameter zum Webserver eingetragen.
+Es werden nun die schulspezifischen Einstellungen (Fehlstundenmodell, benötigte Daten usw.) zum Webnotenmangaer übermittelt. Zusätzlich werden für alle Lehrkräfte mit Klassen und Unterricht Verbindungsdaten und Unterrichte übermittelt.
+
+Nach der Übermittlung können sich die Lehrkräfte im Webnotenmanager anmelden.
+
 ## Systemvoraussetzungen
 
 Benötigt wird einfacher *Webspace mit PHP8* und den benötigten Extensions *php-fpm* und *php-sqlite3*.
