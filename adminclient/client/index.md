@@ -6,7 +6,7 @@ Der SVWS-Server kann sehr flexibel konfiguriert werden. Dies soll dazu führen, 
 
 Der SVWS-Server kann auch weiterhin an der eigenen Schule auf einem Windows- oder Linux-Server betrieben werden.
 
-Weitere Hinweise zur Installation befinden sich im Bereich *Administration/Entwicklung* ➜ **SVWS-Installation**. 
+Weitere Hinweise zur Installation befinden sich im Bereich *Administration* ➜ **SVWS-Installation**. 
 
 Es können verschiedene Schemata, also "Datenbanken", für eine Schule eingerichtet werden, zum Beispiel für den Produktivbetrieb, einen Testbetrieb und Schulungsbetrieb.
 
@@ -39,7 +39,7 @@ Im Adminclient selbst gibt es wieder **Apps**, die zu unterschiedlichen Administ
 
 Derzeit finden sich Apps zum Schemata-Management und zur Konfiguration des SVWS-Servers.
 
-![Übersicht der Schemata im Admin Client.](./graphics/SVWS_adminclient.png "Übersicht der Schemata im Admin Client und die Optionen zu diesen Schamata.")
+![Übersicht der Schemata im Admin Client.](./graphics/SVWS_adminclient.png "Übersicht der Schemata im Adminclient und die Optionen zu diesen Schamata.")
 
 Oben links zeigt **Ro** an, dass der Rootuser angemeldet wurde. Melden Sie sich unten ganz links mit einem Klick auf **Abmelden** ab.
 
