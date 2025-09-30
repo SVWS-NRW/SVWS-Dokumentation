@@ -1,12 +1,12 @@
 # Apps
 
-![Die Liste mit den Apps](./graphics/SVWS_apps.png "Die Apps des SVWS-Clients. Der Inhalt dieser Leiste ist Abhängig von der Schulform der Schule.")
+![Die Liste mit den Apps](./graphics/SVWS_apps.png "Die Apps des SVWS-Webclients. Der Inhalt dieser Leiste ist Abhängig von der Schulform der Schule.")
 
-Die großen Programmteile im SVWS-Client heißen **Apps**.
+Die großen Programmteile im SVWS-Webclient heißen **Apps**.
 
 Je nach Bildschirmbreite können die Apps als Menü oben oder links im Browser angezeigt werden.
 
-Die App-Leiste beginnt immer zuerst mit dem akuell angemeldeten Benutzer, hier im Screenshot *AD*, dann folgen die weiteren Apps.
+Die App-Leiste beginnt immer zuerst mit dem akuell angemeldeten Benutzer, hier im Screenshot *AD* für den "Admin", dann folgen die weiteren Apps.
 
 Je nach Schulform werden bei Ihnen eventuell Apps ausgeblendet oder weitere Apps werden eingeblendet. 
 
