@@ -17,7 +17,7 @@ Zusammen mit dem SVWS-Server wird parallel ein Programm entwickelt, das es den S
 So wird hier eine minimale Teilmenge der Daten auf einem Webserver gehostet, wo die Lehrkräfte Noten eingeben können.
 Diese Daten werden dann mit dem Bestand im SVWS-Server synchronisiert. 
 
-[Zur Beschreibung des Projekts.](./WeNoM/)
+[Zur Beschreibung des Projekts.](../wenom/)
 
 ## XSchule XML-Schnittstelle zum länderübergreifenden Datenaustausch
 

@@ -1,10 +1,13 @@
-# Webnotenmanager (WeNoM)
+# WeNoM
+**Installationsanleitung und technische Dokumentation**
 
-Der Webnotenmanager **WeNoM** befindet sich derzeit in der Entwicklung und wird Schulen die Eingabe von Leistungsdaten wie Noten von zu Hause aus ermöglichen.
+Der Webnotenmanager **WeNoM** befindet sich derzeit in der Entwicklung (vgl.[Roadmap](../deployment/roadmap.md)) und wird Schulen die Eingabe von Leistungsdaten wie Noten von zu Hause aus ermöglichen.
+
+[Benutzerhandbuch WeNoM](wenom_handbuch.md)
 
 Der WeNoM wird auf PHP Basis mit Typescript und VUE.js entwickelt und wird eine benutzerfreundliche und intuitive Benutzeroberfläche bieten, um die Dateneingabe so einfach wie möglich zu gestalten. Die Software wird die eingegebenen Daten teilautomatisch mit dem SVWS-Server synchronisieren, um sicherzustellen, dass die Daten stets auf dem neuesten Stand sind und für interne Schulzwecke zur Verfügung stehen.
 
-Der WeNoM wird Schulen eine effiziente Möglichkeit bieten, um die Leistungsdaten ihrer Schülerinnen und Schüler zu verwalten und zu überwachen, und es Lehrkräften ermöglichen, schnell und einfach auf die benötigten Daten zuzugreifen.
+
 
 ![Informationsverbund SVWS-Server und WeNoM](./graphics/SVWS-Wenom-Verbund.png "Übersicht über die Datensynchronisation SVWS-Server und WeNoM.")
 
@@ -27,11 +30,13 @@ bisher getestet:
 
 weitere erfolgreiche Installationen bitte gerne melden.
 
-Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](./testinstall.md) auf Debian 12.  
+Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](./wenom_testinstall.md) auf Debian 12.  
 
 Erläuterung der einzelnen Installationschritte: 
 
-## Installation Apache2 auf Debian 12
+## Installation 
+
+Grundlage: Apache2 auf Debian 12
 
 Die in diesem Abschnitt beschriebenen, vorbereitenden Tätigkeiten werden beim Betrieb eines eigen Servers benötigt.
 
@@ -81,6 +86,7 @@ Die Ordnerstruktur in ```/var/www/html```  sollte nun folgerndermaßen aussehen:
 ```
 
 Dabei muss das Documentroot in der `/etc/apache2/sites-available/000-default.conf` (ggf. auch `default-ssl.conf`) auf den Ordner `/var/www/html/public` zeigen!
+
 
 
 ## Ersteinrichtung

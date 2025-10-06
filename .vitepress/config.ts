@@ -91,10 +91,7 @@ export default defineConfig(({ mode }) => {
 				'/projekte': [
 					{ text: '', items: [
 						{ text: 'Projekte', link: '/projekte/', collapsed: false, items: [
-							{ text: 'WebLuPO', link: '/projekte/WebLupo/' },
-							{ text: 'WeNoM', link: '/projekte/WeNoM/', collapsed: true, items: [
-								{ text: 'Skript: Installation Testserver', link: '/projekte/WeNoM/testinstall.md' },
-							] },
+							{ text: 'WeNoM', link: '/wenom/'},
 							{ text: 'ASD-Statistik', link: '/projekte/ASD-Statistik/' },
 							{ text: 'Schulbewerbung.de', link: '/projekte/Schulbewerbung.de/' },
 							{ text: 'xSchule', link: '/projekte/xSchule/' },

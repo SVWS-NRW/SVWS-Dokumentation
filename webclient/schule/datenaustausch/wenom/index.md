@@ -1,8 +1,8 @@
 # WeNoM
 
-Synchronisation mit dem schuleigenen Webnotenmanager
+Informationen zur Synchronisation mit dem schuleigenen 
 
-## Einrichtung
+[Webnotenmanager](../../../../wenom/index.md)
 
-## Synchronisation
+
 

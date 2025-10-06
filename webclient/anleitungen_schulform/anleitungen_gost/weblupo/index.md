@@ -16,7 +16,7 @@ Informationen mit allen Details und Anmerkungen finden sich im jeweiligen Artike
 Beachten Sie, dass das neue Dateiformat **nicht** mit den alten Dateien des Programms "LuPO" für MS Windows  kompatibel ist.
 :::
 
-[Installieren Sie bei Bedarf WebLuPO](../../../../projekte/WebLupo/) beziehungsweise installieren Sie eine geupdatete Version.
+Installieren Sie bei Bedarf [WebLuPO](../../../../weblupo/index.md) beziehungsweise installieren Sie eine geupdatete Version.
 
 ## Erzeugen der Laufbahnplanungsdateien
 
@@ -52,9 +52,9 @@ Lassen Sie die Schüler wählen und führen Sie die Beratungen entsprechend Ihre
 
 Hierzu müssen diese Dateien entsprechend des Wahl- und Beratungsprozesses an Ihrer Schule nun in WebLuPO eingelesen werden.
 
-[Installieren Sie bei Bedarf WebLuPO](../../../../projekte/WebLupo/) beziehungsweise installieren Sie eine geupdatete Version.
+Installieren Sie bei Bedarf [WebLuPO](../../../../weblupo/index.md) beziehungsweise installieren Sie eine geupdatete Version.
 
-Navigieren Sie zur Beratung zu WebLuPO. Hier finden Sie die [Erläuterungen zur Bedienung von WebLuPo](../../../../weblupo/).
+Navigieren Sie zur Beratung zu WebLuPO. Hier finden Sie die [Erläuterungen zur Bedienung von WebLuPo](../../../../weblupo/weblupo_handbuch.md).
 
 Bei der Wahl beziehungsweise fallen wieder WebLuPO-Dateien an, die dort exportiert werden und dann wieder im SVWS-Webclient eingelesen werden. 
 
