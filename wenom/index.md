@@ -10,3 +10,5 @@ Der WebNotenManager wird parallel zum SVWS-Server entwickelt, so dass die erfass
 [Benutzerhandbuch WeNoM](wenom_handbuch.md)
 
 [Installationsanleitung und technische Dokumentation](wenom_installation.md)
+
+[Geschäftsprozesse WeNoM](geschaeftsprozesse.md)
