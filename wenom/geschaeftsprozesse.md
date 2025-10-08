@@ -68,14 +68,14 @@ Eine Ausführliche Besc hreibung der Geschäftsprozesse befindet sich im [Benutz
 
 ### Sichten aller Daten der Abteilung
 
-### Möglicher Nachtrag der Daten in Vertretung für Fachlehrkräfte und Klasswnlehrkräfte in dieser Abteilung
+### Möglicher Nachtrag der Daten in Vertretung für Fachlehrkräfte und Klassenleitungen in dieser Abteilung
 
 
 ## Schulleitung
 
 ### Sichten aller Daten der Schule
 
-### Möglicher Nachtrag der Daten in Vertretung für Fachlehrkräfte und Klasswnlehrkräfte
+### Möglicher Nachtrag der Daten in Vertretung für Fachlehrkräfte und Klassenleitungen
 
 
 ![WenomGeschaeftsprozesse.png](graphics/WenomGeschaeftsprozesse.png)
