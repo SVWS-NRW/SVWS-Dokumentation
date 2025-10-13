@@ -24,6 +24,8 @@ Sie können auch die Fokusbereiche direkt anspringen, ohne die Fokusbereiche zuv
 
 Mit `Alt + 8` können Sie durch alle Fokusbereiche zykolisch durchschalten. Damit lassen sich also auch Fokusbereiche erreichen, die keiner festen Struktur zuzuordnen sind.
 
+Sofern ein weitere direkter Zugriffsbereich sinnvoll ist, lässt sich ein solcher mit `Alt + 9` anspringen. Dies ist beispielweise der in der **App Noten** möglich, um "Bemerkungen" zu setzen.
+
 ## Navigation in Auswahllisten
 
 In **Auswahllisten**, also Schüler, Lehrkräfte, Kurse und so weiter, kann mit ````Pfeiltaste hoch```` und ````Pfeiltaste runter```` durch die Listenelemente oder die zugehörigen Auswahlboxen geschaltet werden.
