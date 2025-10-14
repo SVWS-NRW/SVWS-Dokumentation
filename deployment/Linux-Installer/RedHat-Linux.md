@@ -142,7 +142,7 @@ Der Service wird automatisch gestartet, sobald das System hochfährt (systemctl 
 ```bash
 systemctl daemon-reload
 systemctl start svws.service
-systemctl enable svws.service
+systemctl enable svws.serviceredhat_updater
 ```
 
 ### Überprüfen des Status des Services
@@ -181,4 +181,6 @@ Sollte der User keine Rechte haben, Schemata anzulegen oder zu löschen, so muss
 
 ## Download des Scripts mit den Befehlen
 
-https://doku.svws-nrw.de/Deployment/Linux-Installer/redhat_installer.zip
+[Redhat Installer Skript](redhat_installer.md)
+
+[Redhat Update Skript](redhat_update.md)

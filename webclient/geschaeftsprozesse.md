@@ -17,7 +17,7 @@
 ##### Kontakinformationen verwalten
 ##### E-Maileinstellungen verwalten
 
-#### Abteilungen
+#### Abteilungen*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
@@ -32,13 +32,13 @@
 ##### Adressen verwalten
 ##### Ansprechpartner hinzufügen
 
-#### Einwilligungsarten
+#### Einwilligungsarten*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
 ##### Allgemeine Informationen verwalten
 
-#### Entlassgründe
+#### Entlassgründe*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
@@ -52,34 +52,34 @@
 ##### Zeugniseigenschaften zuordnen
 ##### Statistikkürzel zuordnen
 
-#### Förderschwerpunkte
+#### Förderschwerpunkte*
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
 ##### Basisdaten bearbeiten
 ##### Allgemeine Informationen verwalten
 ##### Statistikkürzel zuordnen
 
-#### Jahrgänge
+#### Jahrgänge*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
 ##### Allgemeine Informationen verwalten
 ##### Statistikkürzel zuordnen
 
-#### Merkmale
+#### Merkmale*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
 ##### Allgemeine Informationen verwalten
 
-#### Vermerkarten
+#### Vermerkarten*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
 ##### Allgemeine Informationen verwalten
 ##### Zugeordnete Schüler anzeigen
 
-#### Lernplattformen
+#### Lernplattformen*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
@@ -87,25 +87,25 @@
 
 ### Allgemeine Kataloge
 
-#### Erzieherarten
+#### Erzieherarten*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
 ##### Allgemeine Informationen verwalten
 
-#### Fahrschülerarten
+#### Fahrschülerarten*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
 ##### Allgemeine Informationen verwalten
 
-#### Haltestellen
+#### Haltestellen*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
 ##### Allgemeine Informationen verwalten
 
-#### Kindergärten
+#### Kindergärten*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
@@ -118,20 +118,20 @@
 ##### Hinzufügen
 ##### Allgemeine Informationen verwalten
 
-#### Schulen
+#### Schulen*
 
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
 ##### Schulangaben verwalten
 ##### Statistikkürzel zuordnen
 
-#### Telefonarten
+#### Telefonarten*
 ##### Auswahlliste anzeigen
 ##### Hinzufügen
 
 ### Datenaustausch
 
-#### ENM Notenmanager
+#### ENM Notenmanager*
 
 ##### Verschlüsselte ENM Dateien importieren
 
@@ -142,7 +142,7 @@
 ##### Zurücksetzen der Leistungsdaten / aller Daten auf dem Wenom-Server
 ##### E-Mail Einstellungen für den Wenom-Server vornehmen und pushen
 
-#### Schulwechsel
+#### Schulwechsel*
 
 ##### Konfiguration der Schnittstelle
 ##### Schülerdatensätze importieren, anzeigen und übernehmen
@@ -165,11 +165,12 @@
 ##### Kurswahlen und Klausuren kompatibel zur individuellen Untisnotation exportieren
 ##### Schienen exportieren
 
-#### Lernplattformen
+#### Lernplattformen*
 
 ##### Auswahl der Lernplattform und angepasster Datenexport
 
-#### Reporting
+
+#### Reporting*
 
 #### Auswahl einer Reports
 #### Erstellen eines Reports in pdf
@@ -190,7 +191,7 @@
 #### Migrationshintergrund verwalten
 #### Schulbezogene Statusdaten verwalten
 
-### Sonstiges
+### Sonstiges*
 
 #### Vermerke anlegen und verwalten
 #### Einwilligungen anlegen und verwalten
@@ -206,11 +207,10 @@
 #### Details zu Ausbildungsbetrieben anzeigen
 #### Informationspflicht eintragen
 
-### KAoA (Kein Abschluss ohne Anschluss)
-
+### KAoA (Kein Abschluss ohne Anschluss)*
 #### KAoA Einträge anlegen und verwalten
 
-### Schulbesuch
+### Schulbesuch*
 #### Vorher besuchte Schule eintragen
 #### Vorher besuchten Kindergarten eintragen
 #### Entlassung von eigener Schule eintragen
@@ -220,7 +220,6 @@
 #### Liste der bisherigen Schulen erweitern und anzeigen
 
 ### Lernabschnitte
-
 #### Lernabschnitte anzeigen und Auswählen
 #### Basisdaten des jeweiligen Lernabschnitte anzeigen und verwalten
 #### Statistikkürzel zuordnen
@@ -231,9 +230,16 @@
 #### Nachprüfungen verwalten
 
 ### Sprachen
-
 #### Sprachenfolge und Referenzniveaus verwalten
 #### Sprachprüfungen und Feststellungsprüfungen eintragen
+
+### Laufbahnplanung
+#### Abschnittsbezogene Fachwahlen darstellen und bearbeiten
+#### Unterrichtsverpflichtungen aufsummieren und darstellen
+#### Laufbahnplanungen für LuPo importieren und exportieren
+#### Laufbahnwahlbogen drucken
+#### individuelle Beratungskommentare speichern
+#### Fehler und Hinweise in der Belegung darstellen
 
 ### Stundenplan
 #### Stundenplan anzeigen
@@ -265,15 +271,17 @@
 #### Ansicht individuell anpassen
 #### Stundenplan drucken
 
-### Unterricht
+### Unterricht*
 #### Unterrichtsverteilungsdaten zeigen
 #### Unterricht Halbjahresbezogen zuordnen
 
-### Einwilligungen
+### Einwilligungen*
 #### Status der Einwilligung verwalten
 
-### Lernplattformen
+### Lernplattformen*
 #### Zugangsdaten und Einwilligungen für Lernplattformen verwalten
+
+
 
 ## Klassen
 
@@ -296,7 +304,7 @@
 #### Ansicht individuell anpassen
 #### Stundenplan drucken
 
-### Kurse
+## Kurse
 
 ### Auswahlliste Kurse anzeigen
 #### Auswahlliste durchsuchen
@@ -312,7 +320,7 @@
 #### Lehrkraft ikl. Wochenstundenzahl anzeigen und zuordnen
 #### Zusätzliche Lehrkräfte anzeigen und zuordnen
 
-## Noten
+## Noten*
 
 ### Auswahlliste Lerngruppen anzeigen
 ### Schülerliste um Lerngruppern erweitern und beschränken

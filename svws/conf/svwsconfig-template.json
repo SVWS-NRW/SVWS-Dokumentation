@@ -1,0 +1,25 @@
+{
+  "EnableClientProtection" : null,
+  "DisableDBRootAccess" : false,
+  "DisableAutoUpdates" : false,
+  "UseHTTPDefaultv11" : false,
+  "PortHTTPS" : "${APP_PORT}",
+  "PortHTTPPrivilegedAccess" : null,
+  "UseCORSHeader" : false,
+  "TempPath" : "tmp",
+  "TLSKeyAlias" : "${SVWS_TLS_KEY_ALIAS}",
+  "TLSKeystorePath" : "${SVWS_TLS_KEYSTORE_PATH}",
+  "TLSKeystorePassword" : "${SVWS_TLS_KEYSTORE_PASSWORD}",
+  "ClientPath" : "./client",
+  "AdminClientPath" : "./adminclient",
+  "LoggingEnabled" : true,
+  "LoggingPath" : "logs",
+  "ServerMode" : "stable",
+  "PrivilegedDatabaseUser" : "root",
+  "DBKonfiguration" : {
+    "dbms" : "MARIA_DB",
+    "location" : "${MARIADB_HOST}",
+    "defaultschema" : "",
+    "SchemaKonfiguration" : []
+  }
+}
