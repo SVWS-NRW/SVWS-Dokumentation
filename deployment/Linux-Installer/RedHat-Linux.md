@@ -41,7 +41,7 @@ mkdir -p /etc/app/svws/conf/
 
 ```bash
 cp -r ./svws/app /opt/app/svws/
-cp -r ./svws/conf /etc/app/svws/conf/
+cp -r ./svws/conf /etc/app/svws/
 ```
 
 ## Entpacke die Clients in die entsprechenden Verzeichnisse
