@@ -1,14 +1,21 @@
-﻿import { defineConfig, loadEnv } from 'vite'
+﻿import { defineConfig, loadEnv } from 'vite';
+import footnote from 'markdown-it-footnote';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig(({ mode }) => {
 	const env = loadEnv(mode, process.cwd(), '');
+	
 	return {
 		// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 		base: env.BASE === undefined ? '/SVWS-Dokumentation/' : env.BASE,
 		title: 'SVWS Dokumentation',
 		description: 'Dokumentation SVWS-Server NRW, Installation und Entwicklung',
 		lastUpdated: true,
+		markdown: {
+			config: (md) => {
+				md.use(footnote);
+			},
+		},
 		themeConfig: {
 			outline: {
 				label: 'Auf dieser Seite',
@@ -270,3 +277,4 @@ export default defineConfig(({ mode }) => {
 		},
 	}
 })
+
