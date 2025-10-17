@@ -114,11 +114,7 @@ Im Intranet der Schule / des Schulträgers<y:LabelModel><y:SmartNodeLabelModel d
           <y:Geometry height="178.04079458879613" width="187.93345686524395" x="191.78734937837132" y="232.43762161301836"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#3366FF" raised="false" type="line" width="3.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="134.75291442871094" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="177.88121032714844" x="5.026123269047758" xml:space="preserve" y="21.643940080042597">Anmeldung mit Benutzername
-und Passwort
-ggf. mit 2FA
-
-Speicherung der 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="69.37645721435547" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="174.6291961669922" x="6.652130349125883" xml:space="preserve" y="54.33216868722033">Speicherung der 
 Daten in einer 
 SQLite-Datenbank 
 innerhalb der PHP-Umgebung<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
