@@ -1,3 +1,4 @@
+```bash 
 #!/bin/bash
 
 ## Dieses Skript installiert die Version 1.0.11 des SVWS-Server - ggf die Versionsnummer anpassen.
@@ -18,6 +19,7 @@ dnf -y install nmap
 wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v1.0.11/linux-installer-1.0.11.tar.gz
 tar xzf ./linux-installer-*
 
+
 # Erstelle Verzeichnisse
 
 mkdir -p /opt/app/svws
@@ -35,7 +37,7 @@ cp -r ./svws/conf /etc/app/svws/conf/
 # Entpacke die Clients in die entsprechenden Verzeichnisse
 
 unzip -d /opt/app/svws/client  ./svws/app/SVWS-Client.zip
-unzip -d /opt/app/svws/admin  ./svws/app/SVWS-Admin-Client.zip
+unzip -d /opt/app/svws/adminclient  ./svws/app/SVWS-Admin-Client.zip
 
 # Erstelle den SVWS-Keystore
 
@@ -111,3 +113,4 @@ systemctl enable svws.service
 systemctl status svws.service
 
 
+```
