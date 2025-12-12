@@ -30,15 +30,14 @@ Weitere erfolgreiche Installationen können gemeldet werden, dann nehmen wir sie
 
 Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](./4_testinstall_script.md) auf Debian 12.  
 
-Erläuterung der einzelnen Installationschritte:
+> [!IMPORTANT] Gehosteter Webspace
+> Beim Betrieb auf einem gehosteten Webspace kann direkt weiter unten mit der **Installation der WeNoM Pakete** begonnen werden. 
 
 ## Installation 
 
 Grundlage: Apache2 auf Debian 12
 
 Die in diesem Abschnitt zur **technischen Installation** beschriebenen, vorbereitenden Tätigkeiten werden beim Betrieb eines eigen Servers benötigt. Im Anschluss an die Installation von WeNoM selbst sind im SVWS-Server/SVWS-Webclient durch die Schuladministration durchzuführen.
-
-Beim Betrieb auf einem gehosteten Webspace kann direkt mit der [Installation der WeNoM Pakete](#Installation der WeNoM Pakete) begonnen werden. 
 
 ``` bash
 apt update && apt upgrade -y
