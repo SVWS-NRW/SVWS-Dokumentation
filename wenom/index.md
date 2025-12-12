@@ -1,14 +1,9 @@
 # WeNoM
 
-Der **WebNotenManager**, kurz WeNoM, ist eine online Plattform zur Erfassung und Verwaltung der (Teil-) Noten, Bemerkungen und Fehlstunden.
+Der **WebNotenManager WeNoM** ist eine Online-Plattform zur Erfassung und Verwaltung der (Teil-)Noten, Bemerkungen und Fehlstunden. Er befindet sich derzeit in der Entwicklung (siehe die [Roadmap](../deployment/roadmap.md)) und wird Schulen die Eingabe von Leistungsdaten wie Noten von jedem Internetzugang über einen Browser, etwa von zu Hause aus, unabhängig vom verwendeten Betriebssystem ermöglichen.
 
-Es bietet Schulen eine effiziente Möglichkeit, die nötigen Leistungsdaten ihrer Schülerinnen und Schüler für den aktuellen Lernabschnitt zu verwalten und ermöglicht Lehrkräften schnell und einfach online auf die benötigten Daten zuzugreifen.
+Der WebNotenManager bietet Schulen eine effiziente Möglichkeit, die nötigen Leistungsdaten ihrer Schülerinnen und Schüler für den aktuellen Lernabschnitt zu verwalten und ermöglicht Lehrkräften schnell und einfach online auf die benötigten Daten zuzugreifen.
 
-Der WebNotenManager wird parallel zum SVWS-Server entwickelt, so dass die erfassten Daten einfach mit dem SVWS-Server synchronisiert werden können und anschließend in der Schulverwaltung auf dem SVWS-Server weiterverarbeitet werden können. 
+Der WebNotenManager wird parallel zum SVWS-Server entwickelt, so dass die erfassten Daten einfach mit dem SVWS-Server synchronisiert werden können und anschließend in der Schulverwaltung auf dem SVWS-Server weiterverarbeitet werden können.
 
-
-[Benutzerhandbuch WeNoM](wenom_handbuch.md)
-
-[Installationsanleitung und technische Dokumentation](wenom_installation.md)
-
-[Geschäftsprozesse WeNoM](geschaeftsprozesse.md)
+Über diesen Bereich der Dokumentation stehen eine *Installationsanleitung*, das *Benutzerhandbuch* und eine Übersicht über die *Geschäftsprozesse* zur Verfügung.

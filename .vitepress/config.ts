@@ -91,7 +91,7 @@ export default defineConfig(({ mode }) => {
 				'/projekte': [
 					{ text: '', items: [
 						{ text: 'Projekte', link: '/projekte/', collapsed: false, items: [
-							{ text: 'WeNoM', link: '/wenom/'},
+							{ text: 'WeNoM', link: '/wenom/' },
 							{ text: 'ASD-Statistik', link: '/projekte/ASD-Statistik/' },
 							{ text: 'Schulbewerbung.de', link: '/projekte/Schulbewerbung.de/' },
 							{ text: 'xSchule', link: '/projekte/xSchule/' },
@@ -155,6 +155,22 @@ export default defineConfig(({ mode }) => {
 				'/weblupo' : [
 					{ text: '', items: [
 						{ text: 'Weblupo', link: '/weblupo/' },
+					] },
+				],
+				'/wenom' : [
+					{ text: '', items: [
+						{ text: 'WeNoM', link: '/wenom/index.md' },
+						{ text: 'Technische Installation', collapsed: false, items: [
+							{ text: 'Installation', link: '/wenom/installation/1_installation.md' },
+							{ text: 'Ersteinrichtung', link: '/wenom/installation/2_ersteinrichtung.md' },
+							{ text: 'Mehrere Mandanten', link: '/wenom/installation/3_mehrereMandanten_Beispiel.md' },
+							{ text: 'Skript zur Testinstallation', link: '/wenom/installation/4_testinstall_script.md' },
+						] },
+						{ text: 'Benutzerhandbuch Schule', collapsed: false, items: [
+							{ text: 'Schulische Einrichtung', link: '/wenom/benutzerhandbuch/1_erstinstallation_synchronisation.md'},
+							{ text: 'Leistungsdaten eintragen', link: '/wenom/benutzerhandbuch/2_leistungsdaten_lehrkraefte.md'},
+						] },
+						{ text: 'Geschäftsprozesse WeNoM', link: '/wenom/geschaeftsprozesse.md' },
 					] },
 				],
 				'/webclient': [

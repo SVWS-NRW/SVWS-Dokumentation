@@ -1,10 +1,10 @@
 # WeNoM Benutzerhandbuch
 
-WeNoM ist ein webbasiertes Tool zur Erfassung und Verwaltung von (Teil-)Noten, Bemerkungen und Fehlstunden.
 
 ## Ersteinrichtung
 
-Damit sich eine Lehrkraft anmelden kann, muss zuerst eine Synchronisation mit dem SVWS-Server eingerichtet werden. Erst dann werden die WeNoM-Daten, wie beispielsweise die persönlichen Lehrkraftzugänge, die Möglichkeit, E-Mails zu senden, oder die Klassen- und Kurslisten für die Notenerfassung, befüllt. Für die Einrichtung der Synchronisation wird ein sogenanntes Secret benötigt, das bei der Ersteinrichtung erzeugt wird. Dies ist Aufgabe der für die Schule zuständigen technischen Administration. 
+Damit sich eine Lehrkraft anmelden kann, muss zuerst eine Synchronisation mit dem SVWS-Server eingerichtet werden. Erst dann werden die WeNoM-Daten, wie beispielsweise die persönlichen Lehrkraftzugänge, die Möglichkeit, E-Mails zu senden, oder die Klassen- und Kurslisten für die Notenerfassung, befüllt. Für die Einrichtung der Synchronisation wird ein sogenanntes Secret benötigt, das bei der Ersteinrichtung erzeugt wird. Dies ist Aufgabe der für die Schule zuständigen technischen Administration.
+
 Die Einrichtung der Synchronisation wird in der [Installationsanleitung und technischen Dokumentation](wenom_installation.md) beschrieben. 
 
 ## Einrichtung der Synchronisation

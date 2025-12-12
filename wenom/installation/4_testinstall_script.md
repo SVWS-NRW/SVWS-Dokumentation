@@ -97,10 +97,13 @@ echo -e "\n\n################# Installation beendet! ####################\n"
 ```
 
 ## Zertifikat anpassen 
-In manchen Umgebungen benötigt der Wenom-Server ein eigenes selbst sigriertes Zertifikat für die 
-interne Kommunikation mit dem SVWS-Server. 
-Ggf benötigt man auch den Eintrag der lokalen IP in diesem Zertifikat, so dass der Anfängliche TLS Check ohne Fehler druchgeführt werden kann. 
-Hier ein Beispiel entweder den direkten IP Eintrag: 
+
+In manchen Umgebungen benötigt der Wenom-Server ein eigenes selbst sigriertes Zertifikat für die interne Kommunikation mit dem SVWS-Server. 
+
+Gegegenfalls benötigt man auch den Eintrag der lokalen IP in diesem Zertifikat, so dass der Anfängliche TLS Check ohne Fehler druchgeführt werden kann.
+
+Hier ein Beispiel entweder den direkten IP Eintrag:
+
 ```bash
 openssl req -x509 -nodes -days 3650 -newkey rsa:4096 -keyout /etc/ssl/private/wenomtest-selfsigned.key -out /etc/ssl/certs/wenomtest-selfsigned.crt -subj "/C=DE/ST=NRW/L=NRW/O=NONE/CN=localhost" -addext "subjectAltName = IP:10.0.1.1" 
 ```
@@ -109,10 +112,6 @@ Oder ein Beispiel für den DNS Eintrag ins Zertifikat:
 ```bash
 openssl req -x509 -nodes -days 3650 -newkey rsa:4096 -keyout /etc/ssl/private/wenomtest-selfsigned.key -out /etc/ssl/certs/wenomtest-selfsigned.crt -subj "/C=DE/ST=NRW/L=NRW/O=NONE/CN=localhost"-addext "subjectAltName = DNS:wenomtest2"
 ```
-
-
-
-
 
 ## UpdateSkript Testserver
 
