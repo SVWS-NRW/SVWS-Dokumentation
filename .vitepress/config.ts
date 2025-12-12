@@ -195,7 +195,7 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Vermerkarten (todo)', link: '/webclient/schule/kataloge/sb_vermerkarten/' },
 									] },
 									{ text: 'Allgemeine Kataloge', collapsed: true, items: [
-										{ text: 'Religionen', link: '/webclient/schule/kataloge/religionen/' },
+										{ text: 'Konfessionen', link: '/webclient/schule/kataloge/konfessionen/' },
 										{ text: 'Schulen (Todo)' },
 									] },
 									{ text: 'Datenaustausch', link: '/webclient/schule/datenaustausch/', collapsed: true, items: [
