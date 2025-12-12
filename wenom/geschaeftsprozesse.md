@@ -1,7 +1,7 @@
 # WeNoM Geschäftsprozesse
 
 
-Eine Ausführliche Besc hreibung der Geschäftsprozesse befindet sich im [Benutzerhandbuch WeNoM](wenom_handbuch.md).
+Eine ausführliche Beschreibung der Geschäftsprozesse befindet sich im **Benutzerhandbuch WeNoM**, das über das Inhaltsverzeichnis oben zu erreichen ist.
 
 ## technische Administration  
 
