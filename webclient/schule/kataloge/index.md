@@ -10,6 +10,10 @@ Der Arbeitsprozess ist hier also immer:
 1. Anlegen der Einträge in Katalogen, zum Beispiel *Fächer*.
 2. Dann können diese Einträge benutzt werden. Also zum Beispiel werden die Fächern in den Leistungsdaten des aktuellen Abschnitts den Lernenden hinzugefügt.
 
+Die Struktur der Kataloge ist immer gleich **TODO**.
+
+**TODO** Sortierung, Suchfeld, "Sichtbar" unten, 
+
 Einige Kataloge lassen sich pädagisch recht frei von der Schule konfigurieren, wie zum Beispieln die auf Zeugnissen verwendenten Floskeln.
 
 Andere Kataloge, wie etwa die angebotenen Jahrgänge mit den jeweilingen Prüfungsordnungen, sind sehr fundamental in der Struktur der Schule verankert.

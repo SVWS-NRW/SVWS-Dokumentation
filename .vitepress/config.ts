@@ -186,17 +186,15 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Aktueller Benutzer', link: '/webclient/aktuellernutzer/' },
 								{ text: 'Schule', link: '/webclient/schule/', collapsed: true, items: [
 									{ text: 'Schulbezogene Kataloge', collapsed: true, items: [
-										{ text: 'Stammdaten der Schule', link: '/webclient/schule/kataloge/sb_stammdaten/' },
-										//{ text: 'Betriebe (Todo)', link: '/webclient/schule/kataloge/sb_betriebe/' },
-										//{ text: 'Einwilligungsarten (Todo)', link: '/webclient/schule/kataloge/sb_einwilligungsarten/' },
-										{ text: 'Fächer', link: '/webclient/schule/kataloge/sb_faecher/' },
-										//{ text: 'Förderschwerpunkte', link: '/webclient/schule/kataloge/sb_foerderschwerpunkte/' },
-										//{ text: 'Jahrgänge', link: '/webclient/schule/kataloge/sb_jahrgaenge/' },
-										//{ text: 'Vermerkarten (todo)', link: '/webclient/schule/kataloge/sb_vermerkarten/' },
-									] },
-									{ text: 'Allgemeine Kataloge', collapsed: true, items: [
+										{ text: 'Stammdaten der Schule', link: '/webclient/schule/kataloge/stammdaten/' },
+										//{ text: 'Betriebe', link: '/webclient/schule/kataloge/betriebe/' },
+										//{ text: 'Beschäftigungsarten', link: '/webclient/schule/kataloge/beschaeftigungsarten/' },
+										//{ text: 'Einwilligungsarten', link: '/webclient/schule/kataloge/einwilligungsarten/' },
+										{ text: 'Fächer', link: '/webclient/schule/kataloge/faecher/' },
+										//{ text: 'Förderschwerpunkte', link: '/webclient/schule/kataloge/foerderschwerpunkte/' },
+										//{ text: 'Jahrgänge', link: '/webclient/schule/kataloge/jahrgaenge/' },
 										{ text: 'Konfessionen', link: '/webclient/schule/kataloge/konfessionen/' },
-										//{ text: 'Schulen (Todo)' },
+										//{ text: 'Vermerkarten', link: '/webclient/schule/kataloge/vermerkarten/' },
 									] },
 									{ text: 'Datenaustausch', link: '/webclient/schule/datenaustausch/', collapsed: true, items: [
 										//{ text: 'ENM Notenmanager (Todo)' },
