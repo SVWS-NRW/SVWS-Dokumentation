@@ -185,7 +185,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Apps', link: '/webclient/apps/', collapsed: false, items: [
 								{ text: 'Aktueller Benutzer', link: '/webclient/aktuellernutzer/' },
 								{ text: 'Schule', link: '/webclient/schule/', collapsed: true, items: [
-									{ text: 'Schulbezogene Kataloge', collapsed: true, items: [
+									{ text: 'Kataloge', collapsed: true, items: [
 										{ text: 'Stammdaten der Schule', link: '/webclient/schule/kataloge/stammdaten/' },
 										//{ text: 'Betriebe', link: '/webclient/schule/kataloge/betriebe/' },
 										//{ text: 'Beschäftigungsarten', link: '/webclient/schule/kataloge/beschaeftigungsarten/' },
