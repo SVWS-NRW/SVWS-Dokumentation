@@ -17,7 +17,7 @@ Einige Kataloge und die Details zu den Einträgen lassen sich pädagisch recht f
 Und wieder andere Kataloge, etwa die zur Verfügung stehenden Nationen oder welche Statistikbezeichnungen hier und dort zu verwenden sind, werden letzendlich durch das MSB und die Bundespolitik vorgegeben und hier passt sich die Schulrealität an die Rahmenbedingungen an.
 
 > [!IMPORTANT] Schauen Sie in die Schlüsseltabellen
-> Hierbei hilft ein Blick in die Schlüsseltabellen und Eintragungshilfen von IT.NRW. Über diese ist eindeutig zu klären, welche Fächer es an Ihrer Schulform gibt, wie diese zu erfassen sind oder welche Förderschwerpunkte in welcher Kombination zulässig ist.
+> Hierbei hilft ein Blick in die Schlüsseltabellen und Eintragungshilfen von IT.NRW. Über diese ist eindeutig zu klären, welche Fächer es an Ihrer Schulform gibt, wie diese zu erfassen sind oder welche Förderschwerpunkte in welcher Kombination zulässig sind.
 
 Hierbei ist ebenfalls zu beachten, dass es mehrere Katalogeinträge geben kann, die bei der Statistik alle auf den gleichen Statistikeintrag zusammenfasst werden. Beispielsweise könnte es an einem BK für die diversen Bildungsgänge ausdifferenzierend gleich mehrere *Fächer* für etwa "Deutsch" geben, die in der amtlichen Schulstatistik alle nur zu "Deutsch" werden. Ebenso könnten Sie an Ihrer Schule *Konfessionen* erfassen, die für das Land NRW nur als "andere" relevant sind.
 
