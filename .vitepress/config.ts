@@ -185,15 +185,31 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Apps', link: '/webclient/apps/', collapsed: false, items: [
 								{ text: 'Aktueller Benutzer', link: '/webclient/aktuellernutzer/' },
 								{ text: 'Schule', link: '/webclient/schule/', collapsed: true, items: [
+									{ text: 'Allgemein', link: '/webclient/schule/allgemein/stammdaten/', collapsed: true, items: [
+										{ text: 'Stammdaten der Schule', link: '/webclient/schule/allgemein/stammdaten/' },
+									] },
 									{ text: 'Kataloge', link: '/webclient/schule/kataloge/', collapsed: true, items: [
-										{ text: 'Stammdaten der Schule', link: '/webclient/schule/kataloge/stammdaten/' },
+										//{ text: 'Abteilungen', link: '/webclient/schule/kataloge/abteilungen/' },
 										//{ text: 'Betriebe', link: '/webclient/schule/kataloge/betriebe/' },
 										//{ text: 'Beschäftigungsarten', link: '/webclient/schule/kataloge/beschaeftigungsarten/' },
 										//{ text: 'Einwilligungsarten', link: '/webclient/schule/kataloge/einwilligungsarten/' },
+										//{ text: 'Entlassgründe', link: '/webclient/schule/kataloge/entlassgruende/' },
+										//{ text: 'Erzieherarten', link: '/webclient/schule/kataloge/erzieherarten/' },
 										{ text: 'Fächer', link: '/webclient/schule/kataloge/faecher/' },
+										//{ text: 'Fahrschülerarten', link: '/webclient/schule/kataloge/fahrschuelerarten/' },
+										//{ text: 'Floskelgrupppen', link: '/webclient/schule/kataloge/floskelgruppen/' },
+										//{ text: 'Floskeln', link: '/webclient/schule/kataloge/floskeln/' },
 										//{ text: 'Förderschwerpunkte', link: '/webclient/schule/kataloge/foerderschwerpunkte/' },
+										//{ text: 'Haltestellen', link: '/webclient/schule/kataloge/haltestellen/' },
 										//{ text: 'Jahrgänge', link: '/webclient/schule/kataloge/jahrgaenge/' },
+										//{ text: 'Kindergärten', link: '/webclient/schule/kataloge/kindergaerten/' },
 										{ text: 'Konfessionen', link: '/webclient/schule/kataloge/konfessionen/' },
+										//{ text: 'Vermerkarten', link: '/webclient/schule/kataloge/vermerkarten/' },
+										//{ text: 'Lernplattformen', link: '/webclient/schule/kataloge/lernplattformen/' },
+										//{ text: 'Orte', link: '/webclient/schule/kataloge/orte/' },
+										//{ text: 'Ortsteile', link: '/webclient/schule/kataloge/ortsteile/' },
+										//{ text: 'Schulen', link: '/webclient/schule/kataloge/schulen/' },
+										//{ text: 'Telefonarten', link: '/webclient/schule/kataloge/telefonarten/' },
 										//{ text: 'Vermerkarten', link: '/webclient/schule/kataloge/vermerkarten/' },
 									] },
 									{ text: 'Datenaustausch', link: '/webclient/schule/datenaustausch/', collapsed: true, items: [
