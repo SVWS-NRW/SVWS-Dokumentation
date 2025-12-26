@@ -38,7 +38,9 @@ Die Struktur der Katalog-Seiten im SVWS-Webclient ist einheitlich:
 
 Die Kataloge beginnen immer mit der Kopfzeile, in der sich das Suchfeld für die Einträge in der Auswahlliste und der Schalter, mit dem *nicht sichtbare Einträge* angezeigt werden können. Standardmäßig sind *nicht sichtbare Einträge* ausgeblendet.
 
-Es folgt die *Auswahlliste* mit den konkereten Katalogeinträgen.
+Es folgt die *Auswahlliste* mit den konkereten Katalogeinträgen. 
+
+Diese Liste lässt sich über die kleinen **Hoch-Runter-Pfeile ⇅** neben der *Bezeichnung* alphabetisch auf- oder absteigend sortieren. Sind in der Liste mehrere Felder aufgeführt, zum Beispiel bei *Fächern* die Fachbezeichung und das Fachkürzel, lässt sich nach mehreren Felder auf- oder absteigend sortieren.
 
 Unter der *Auswahlliste* befindet sich der Listenfuß. In diesem befindet sich eine Checkbox, mit der alle Katalogeinträge ausgewählt werden können. Rechts daneben wird die Anzahl der angezeigten Listeeinträge angezeigt.
 
