@@ -42,11 +42,15 @@ Es folgt die *Auswahlliste* mit den konkereten Katalogeinträgen.
 
 Diese Liste lässt sich über die kleinen **Hoch-Runter-Pfeile ⇅** neben der *Bezeichnung* alphabetisch auf- oder absteigend sortieren. Sind in der Liste mehrere Felder aufgeführt, zum Beispiel bei *Fächern* die Fachbezeichung und das Fachkürzel, lässt sich nach mehreren Felder auf- oder absteigend sortieren.
 
+Über und unter der Auswahlliste befindet sich eine **Checkbox ☐**. Über diese können alle Listeneintrage gesammelt an- beziehungsweise abgewählt werden.
+
+![Checkbox über und unter Listen, um alle Einträge an- oder abzuwählen](./graphics/svws_schule_kataloge_gesamtcheckbox.png "Mit der Checkbox im Listenkopf und Listenfuß lassen sich alle Einträge an- oder abwählen.")
+
 Unter der *Auswahlliste* befindet sich der Listenfuß. In diesem befindet sich eine Checkbox, mit der alle Katalogeinträge ausgewählt werden können. Rechts daneben wird die Anzahl der angezeigten Listeeinträge angezeigt.
 
 Klickt man in der *Auswahlliste* auf einen Eintrag, werden rechts davon die *Details* zu diesem Katalog angezeigt. Unterhalb der Details befindet sich der Schalter, um die *Sichtbarkeit* für diesen Katalogeintrag zu steuern.
 
-Je nach Katalog kann es zu kleinen Abweichungen dieser Struktur kommen.
+Je nach Katalog kann es in dem Sinne zu kleinen Abweichungen dieser Struktur kommen, in welchem zusätzliche Möglichkeiten angeboten werden.
 
 
 
