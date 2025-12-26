@@ -1,26 +1,51 @@
 # Kataloge
 
-Die Strukur einer Schule ist an vielen Stellen zu konfigurieren, um dann mit diesen Arbeiten zu können.
+An vielen Stellen im SVWS-Webclient lassen sich Menüauswahlen treffen, zum Beispiel, in welche Klasse ein Schüler geht oder welche Fächer belegt werden. Solche Auswahlen werden über **Kataloge** voreingestellt.
 
-Zum Beispiel sind *belegbare Fächer*, zur Auswahl stehende *Konfessionen*, *Floskeln für Zeugnisse* oder alles mögliche andere festzulegen.
+Andere Kataloge legen die zur Auswahl stehenden Konfessionen, Förderschwerpunkte, Jahrgänge, erfasste Betriebe und so weiter fest. Über die Kataloge wird also die Struktur der Schule eingestellt.
 
-Diese Konfiguration wird über die **Kataloge** vorgenommen.
+Die **Kataloge** sind über die **App Schule** zu erreichen.
 
-Der Arbeitsprozess ist hier also immer:
-1. Anlegen der Einträge in Katalogen, zum Beispiel *Fächer*.
-2. Dann können diese Einträge benutzt werden. Also zum Beispiel werden die Fächern in den Leistungsdaten des aktuellen Abschnitts den Lernenden hinzugefügt.
+![Über die App Schule werden die Kataloge erreicht](./graphics/svws_schule_kataloge_appschule.png "Klicken Sie auf die App Schule, anschließend können Sie die Kataloge aufklappen.")
 
-Die Struktur der Kataloge ist immer gleich **TODO**.
+Manche Kataloge enthalten Felder, die den amtlichen Daten für die Schulstatstik entsprechen. Diese Daten sind korrekt zu befüllen.
 
-**TODO** Sortierung, Suchfeld, "Sichtbar" unten, 
+## Statistische Rahmenbedingungen für Kataloge
 
-Einige Kataloge lassen sich pädagisch recht frei von der Schule konfigurieren, wie zum Beispieln die auf Zeugnissen verwendenten Floskeln.
+Einige Kataloge und die Details zu den Einträgen lassen sich pädagisch recht frei von der Schule konfigurieren, wie zum Beispiel die auf Zeugnisbemerkungen verwendenten Floskeln. Andere Kataloge, wie etwa die angebotenen Jahrgänge mit den jeweilingen Prüfungsordnungen, sind sehr fundamental in der Struktur der Schule verankert und/oder müssen Vorgaben von IT.NRW zur Statistik folgen.
 
-Andere Kataloge, wie etwa die angebotenen Jahrgänge mit den jeweilingen Prüfungsordnungen, sind sehr fundamental in der Struktur der Schule verankert.
+Und wieder andere Kataloge, etwa die zur Verfügung stehenden Nationen oder welche Statistikbezeichnungen hier und dort zu verwenden sind, werden letzendlich durch das MSB und die Bundespolitik vorgegeben und hier passt sich die Schulrealität an die Rahmenbedingungen an.
 
-Und wieder andere Kataloge, etwa die zur Verfügung stehenden Nationen oder welche Statistikbezeichnungen hier und dort zu verwendenn sind, werden letzendlich durch das MSB und die Bundespolitik vorgegeben und hier passt sich die Schulrealität an die Rahmenbedingungen an.
+> [!IMPORTANT] Schauen Sie in die Schlüsseltabellen
+> Hierbei hilft ein Blick in die Schlüsseltabellen und Eintragungshilfen von IT.NRW. Über diese ist eindeutig zu klären, welche Fächer es an Ihrer Schulform gibt, wie diese zu erfassen sind oder welche Förderschwerpunkte in welcher Kombination zulässig ist.
 
-**Tipps:**
-1. Schauen Sie was die aktuellen Statistikbezeichnungen und die statistische Erfassung angeht in die Schlüsseltabellen von IT.NRW zur Statistik.
-2. Je nach Schulform stehen Ihnen nicht alle Kataloge zur Verfügung. Ein einer Grundschule finden Sie die Kataloge zur Sekundarstufe II nicht, an einer weiterführenden Schule werden die Kindergärten nicht erfasst.
+Hierbei ist ebenfalls zu beachten, dass es mehrere Katalogeinträge geben kann, die bei der Statistik alle auf den gleichen Statistikeintrag zusammenfasst werden. Beispielsweise könnte es an einem BK für die diversen Bildungsgänge ausdifferenzierend gleich mehrere *Fächer* für etwa "Deutsch" geben, die in der amtlichen Schulstatistik alle nur zu "Deutsch" werden. Ebenso könnten Sie an Ihrer Schule *Konfessionen* erfassen, die für das Land NRW nur als "andere" relevant sind.
+
+Je nach Schulform stehen Ihnen nicht alle Kataloge zur Verfügung. Ein einer Grundschule finden Sie keine Kataloge zur Sekundarstufe II nicht. Im Gegensatz dazu findet an einer weiterführenden Schule keine Erfassung von Kindergärten statt.
+
+> [!IMPORTANT] Datenschtz beachten
+> Beachten Sie bitte schon beim Anlegen und Konfiguration der Katalogeinträge, die mitunter zukünftige Arbeitsprozesse für die Schule nahe- oder festlegen, auf die geltenden Bestimmungen zum Datenschutz.
+
+## Arbeiten mit Katalogen
+
+Der Arbeitsprozess mit den **Katalogen** ist hier:
+1. Anlegen der Einträge in Katalogen - zum Beispiel die unterrichteten *Fächer*.
+2. Anschließend können diese Einträge in den jeweiligen Bereichen des SVWS-Webclients benutzt werden. Nachdem also die Fächer konfiguriert sind, können diese in den individuellen Leistungsdaten des aktuellen Abschnitts den Lernenden hinzugefügt.
+
+Die Struktur der Katalog-Seiten im SVWS-Webclient ist einheitlich:
+
+![Struktur: Es gibt immer die Kopfzeile mit dem Suchfeld, der Zusammenfassund und die Details](./graphics/svws_schule_kataloge_struktur.png "Im Katalog gibt es immer den Kopf, die Auswahlliste, den Fuß und die Details.")
+
+Die Kataloge beginnen immer mit der Kopfzeile, in der sich das Suchfeld für die Einträge in der Auswahlliste und der Schalter, mit dem *nicht sichtbare Einträge* angezeigt werden können. Standardmäßig sind *nicht sichtbare Einträge* ausgeblendet.
+
+Es folgt die *Auswahlliste* mit den konkereten Katalogeinträgen.
+
+Unter der *Auswahlliste* befindet sich der Listenfuß. In diesem befindet sich eine Checkbox, mit der alle Katalogeinträge ausgewählt werden können. Rechts daneben wird die Anzahl der angezeigten Listeeinträge angezeigt.
+
+Klickt man in der *Auswahlliste* auf einen Eintrag, werden rechts davon die *Details* zu diesem Katalog angezeigt. Unterhalb der Details befindet sich der Schalter, um die *Sichtbarkeit* für diesen Katalogeintrag zu steuern.
+
+Je nach Katalog kann es zu kleinen Abweichungen dieser Struktur kommen.
+
+
+
 
