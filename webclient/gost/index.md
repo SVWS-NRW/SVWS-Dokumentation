@@ -13,6 +13,20 @@ Die Themen decken Vorbereitungen zu Laufbahnplanungen der neuen EF über die Wah
 > [!TIP] Tipp: Arbeiten Sie mit dem Linksymbol und dem Zurück-Button
 > Bei den Prozessen, in denen individuelle Laufbahnwahlen korrigiert, geblockt und schließlich zugewiesen werden, findet sich vor Personen an vielen Stelle das **Linksymbol 🔗**. Es empfiehlt sich, viel mit diesem Symbol und dem `Zurück-Button` des Browsers zu arbeiten.
 
+## Abiturjahrgang
+
+Für alle Tabs in der App Oberstufe stehen links in der Auswahlliste die **Abiturjahrgänge** zur Auswahl.
+
+![Alle Tabs der App Oberstufe haben linksseitig die Auswahlliste der Abiturjahrgänge](./graphics/svws_gost_abiturjahrgang.png "Konfigurieren Sie Ihre Abiturjahrgänge.")
+
+Unter der **Allgemeinen Vorlage** lässt sich die Vorlage für alle Abiturjahrgänge konfigurieren. Per Standard ist zuerst der **Tab Fächer** geöffnet. Die Einstellungen für den Abiturjahrgang werden im Artikel zu den Fächern beschrieben.
+
+Legen Sie mit dem **Plus +** einen neuen Abiturjahrgang an oder löschen Sie einen existierenden Jahrgang.
+
+Die **Stufe** wird basierend auf dem aktuell eingestellten Abschnitt, direkt oben sicht- und einstellbar unterhalb der App-Bezeichnung, angezeigt. Der Abiturjahrgang "EF" würde also im nächsten Schuljahr als "Q1" angezeigt.
+
+Sie können die Auswahlliste mit dem kleinen Symbol oben rechts, markiert durch den blauen Pfeil im Screenshot, minimieren.
+
 ## Orientierende Übersicht zur Planung in der App Oberstufe
 
 Grundsätzlich folgt die Planung eines Abiturjahrgangs den Tabs in der App Oberstufe von links nach rechts:

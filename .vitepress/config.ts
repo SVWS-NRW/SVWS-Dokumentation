@@ -247,7 +247,6 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Kurse', link: '/webclient/kurse/' },
 								{
 									text: 'Oberstufe', link: '/webclient/gost/', collapsed: true, items: [
-										{ text: 'Abiturjahrgang', link: '/webclient/gost/abiturjahrgang/' },
 										{ text: 'Fächer', link: '/webclient/gost/faecher/' },
 										{ text: 'Beratung', link: '/webclient/gost/beratung/' },
 										{ text: 'Laufbahnplanung', link: '/webclient/gost/laufbahn/' },
