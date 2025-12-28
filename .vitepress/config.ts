@@ -198,7 +198,7 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Fächer', link: '/webclient/schule/kataloge/faecher/' },
 										//{ text: 'Fahrschülerarten', link: '/webclient/schule/kataloge/fahrschuelerarten/' },
 										//{ text: 'Floskelgrupppen', link: '/webclient/schule/kataloge/floskelgruppen/' },
-										//{ text: 'Floskeln', link: '/webclient/schule/kataloge/floskeln/' },
+										//{ text: 'Floskeln (Platzhalter???)', link: '/webclient/schule/kataloge/floskeln/' },
 										//{ text: 'Förderschwerpunkte', link: '/webclient/schule/kataloge/foerderschwerpunkte/' },
 										//{ text: 'Haltestellen', link: '/webclient/schule/kataloge/haltestellen/' },
 										//{ text: 'Jahrgänge', link: '/webclient/schule/kataloge/jahrgaenge/' },

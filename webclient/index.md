@@ -7,5 +7,6 @@ Hier finden Sie
 + eine Übersicht über die unterschiedlichen [Apps](apps/index.md) zur Verwaltung von Schul-, Schüler- und Lehrerdaten wie auch zur Verwaltung von Fächern, Kursen und so weiter,
 + [Bedienungsanleitungen](anleitungen/index.md) zu diesen schulischen Prozessen.
 
-Hier eine Übersicht aller [Geschäftsprozesse](geschaeftsprozesse.md) des SVWS-Servers und SVWS-Webclients
+Der SVWS-Webclient arbeitet auf Basis des SVWS-Servers. Alle Änderungen über den SVWS-Webclient stehen damit wechselseitig anderen Client-Anwendungen zur Verfügung, die auf den SVWS-Server zugreifen.
 
+Hier eine Übersicht aller [Geschäftsprozesse](geschaeftsprozesse.md) des SVWS-Servers und SVWS-Webclients.
