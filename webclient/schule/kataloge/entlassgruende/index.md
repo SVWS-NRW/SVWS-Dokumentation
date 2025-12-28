@@ -6,6 +6,8 @@ Hierbei ist zu beachten, dass die **Bezeichnung** mit einem **Schlosssymbol 🔒
 
 ![Katalogübersicht der definierten Entlassgründe](./graphics/svws_kataloge_entlassgruende.png "Legen Sie an der Schule verwendete Entlassgründe fest.")
 
+## Eine Anwendung als Beispiel
+
 Der Entlassgrund wird in der **App Schüler** unter dem **Tab Schulbesuch** erfasst:
 
 ![App Schüler, dann Schulbesuch, dort Entlassung von eigener Schule](./graphics/svws_kataloge_entlassgruende_entlassen_schueler_schulbesuch.png "Navigieren Sie zu Schüler ➜ Schulbesuch und dort zum Bereich der Entlassung von der eigenen Schule.")

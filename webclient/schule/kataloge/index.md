@@ -52,6 +52,6 @@ Klickt man in der *Auswahlliste* auf einen Eintrag, werden rechts davon die *Det
 
 Je nach Katalog kann es in dem Sinne zu kleinen Abweichungen dieser Struktur kommen, in welchem zusätzliche Möglichkeiten angeboten werden.
 
+## Anwendungsfall
 
-
-
+Am Ende eines Katalogeintrags kann auch ein möglicher Anwendungsfall als Beispiel aufgeführt sein. Dieser erhebt keinen Anspruch auf eine vollständige Erklärung, was alles mit den Katalogeinträgen im Detail umgesetzt werden kann, sondern ist lediglich als kurzer, abrundender Ausblick zu verstehen.

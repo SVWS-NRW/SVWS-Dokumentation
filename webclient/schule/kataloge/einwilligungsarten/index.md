@@ -12,6 +12,8 @@ Bei der **Personenart** ist zu beachten, dass diese nach dem anlegen *nicht* meh
 
 ![Das Schloss bei der Personenart zeigt die Nichtveränderbarkeitan](./graphics/svws_kataloge_einwilligungsarten_personenart_schloss.png "Das Schlosssymbol bei der Personenart zeigt an, dass dieser Eintrag nicht mehr veränderbar ist.")
 
+## Eine Anwendung als Beispiel
+
 Die Einwilligungen werden für die Lehrkräfte in **Lehrkräfte ➜ Einwilligungen** beziehungsweise für Schülerinnen unter  **Schüler ➜ Sonstiges ➜ Einwilligungen** verwaltet:
 
 ![App Schüler, dort Sonstiges und dann Einwilligungen](./graphics/svws_kataloge_einwilligungsarten_schueler-einwilligungen.png "Verwalten Sie die Einwilligungen mit den gesetzten Einwilligungsarten in Schüler ➜ Sonstiges ➜ Einwilligungen*")
