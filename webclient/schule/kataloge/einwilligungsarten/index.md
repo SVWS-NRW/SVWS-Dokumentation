@@ -11,3 +11,10 @@ Weiterhin kann auch eine **Bemerkung** zur weiteren Erklärung gesetzt werden. *
 Bei der **Personenart** ist zu beachten, dass diese nach dem anlegen *nicht* mehr zu ändern ist. Eine Einwilligungsart wird also bei der Anlage entweder fest für *Schüler* oder für *Lehrer/Personal* vorgesehen. Soll im Nachgang eine Personenart noch einmal geändert werden, ist die Einwilligungsart zu entfernen und neu anzulegen.
 
 ![Das Schloss bei der Personenart zeigt die Nichtveränderbarkeitan](./graphics/svws_kataloge_einwilligungsarten_personenart_schloss.png "Das Schlosssymbol bei der Personenart zeigt an, dass dieser Eintrag nicht mehr veränderbar ist.")
+
+Die Einwilligungen werden für die Lehrkräfte in **Lehrkräfte ➜ Einwilligungen** beziehungsweise für Schülerinnen unter  **Schüler ➜ Sonstiges ➜ Einwilligungen** verwaltet:
+
+![App Schüler, dort Sonstiges und dann Einwilligungen](./graphics/svws_kataloge_einwilligungsarten_schueler-einwilligungen.png "Verwalten Sie die Einwilligungen mit den gesetzten Einwilligungsarten in Schüler ➜ Sonstiges ➜ Einwilligungen*")
+
+Hier wird für jede bei einer Person hinzugefügte *Abfragt* und *Zugestimmt* per Checkbox hinterlegt.
+
