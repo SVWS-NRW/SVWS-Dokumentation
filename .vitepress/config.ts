@@ -177,7 +177,7 @@ export default defineConfig(({ mode }) => {
 					{ text: '', items:
 						[
 							{ text: 'SVWS-Webclient', link: '/webclient/', collapsed: false, items: [
-								{ text: 'Supportkonzept und Nutzer', link: '/webclient/client/faq/' },
+								{ text: 'Supportkonzept', link: '/webclient/client/faq/' },
 								{ text: 'Bedienung im Browser', link: '/webclient/client/', collapsed: false },
 								{ text: 'Tastaturnavigation', link: '/webclient/client/tastaturnavigation' },
 								{ text: 'Änderungen', link: '/webclient/client/änderungen/' },
