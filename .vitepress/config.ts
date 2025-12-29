@@ -283,7 +283,7 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Oberstufe', link: '/webclient/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
 										{ text: 'WebLuPO', link: '/webclient/anleitungen_schulform/anleitungen_gost/weblupo/' },
 									] },
-									{ text: 'Grundschule', link: '/webclient/anleitungen_schulform/anleitungen_gs/' },
+									// { text: 'Grundschule', link: '/webclient/anleitungen_schulform/anleitungen_gs/' },
 								] },
 								{ text: 'Zeugnisvorbereitung', link: '/webclient/anleitungen_zeugnisse/' },
 							] },
