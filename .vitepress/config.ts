@@ -254,12 +254,12 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Kursplanung', link: '/webclient/gost/kursplanung/' },
 										{ text: 'Klausurplanung', link: '/webclient/gost/klausurplanung/' },
 									] },
-								{ text: 'Statistik', link: '/webclient/statistik/', collapsed: true, items: [
-									{ text: 'Verschlüsselung ', link: '/webclient/statistik/verschluesselung/' },
-									{ text: 'Datenprüfung', link: '/webclient/statistik/datenpruefung/' },
-									{ text: 'Dokumente', link: '/webclient/statistik/dokumente/' },
-									{ text: 'Hilfe', link: '/webclient/statistik/hilfe/' },
-								] },
+								{ text: 'Statistik', link: '/webclient/statistik/' }, //, collapsed: true, items: [
+								//	{ text: 'Verschlüsselung ', link: '/webclient/statistik/verschluesselung/' },
+								//	{ text: 'Datenprüfung', link: '/webclient/statistik/datenpruefung/' },
+								//	{ text: 'Dokumente', link: '/webclient/statistik/dokumente/' },
+								//	{ text: 'Hilfe', link: '/webclient/statistik/hilfe/' },
+								//] },
 								{ text: 'Stundenplan', link: '/webclient/stundenplan/stundenplan_basisinformationen/', collapsed: true, items: [
 									{ text: 'Grundlagen zum Stundenplan', link: '/webclient/stundenplan/stundenplan_basisinformationen/' },
 									{ text: 'Stundenpläne erstellen/bearbeiten', link: '/webclient/stundenplan/stundenplan_anleitung/' },
