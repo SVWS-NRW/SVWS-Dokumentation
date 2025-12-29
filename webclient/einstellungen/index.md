@@ -17,3 +17,11 @@ Die Seitenleiste mit den Apps ist oben:
 Weiterhin finden Sie an diesen Stellen die Schaltflächen zum `Abmelden` und im die **Client-Info** mit der Versionsnummer und dem Lesbarkeitshinweis bezüglich der Geschlechterverwendung.
 
 In der Client-Info findet sich auch ein Link auf das **Impressum**.
+
+---
+
+Beachten Sie an dieser Stelle auch die Möglichkeit, **Einstellungen für ihren aktuell angemeldeten Benutzer** vorzunehmen. Diese Einstellungen finden Sie immer oben links:
+
+![Einstellungen zum aktuellen Nutzer aufrufen (oben links)](./graphics/svws_einstellungen_aktuellerNutzer.png "Rufen Sie die Einstellungen für den aktuellen Nutzer auf.")
+
+Die Details zu diesen Einstellungen finden Sie im Bereich der **App Aktueller Benutzer**.
