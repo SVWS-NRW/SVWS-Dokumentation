@@ -281,7 +281,7 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Schulformspezifisch', link: '/webclient/anleitungen/anleitungen_schulform/', collapsed: true, items: [
 									{ text: 'Oberstufe', link: '/webclient/anleitungen/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
-										{ text: 'WebLuPO', link: '/webclient/anleitungen/anleitungen_schulform/anleitungen_gost/weblupo/' },
+										{ text: 'WebLuPO (Schulintern)', link: '/webclient/anleitungen/anleitungen_schulform/anleitungen_gost/weblupo/' },
 									] },
 									// { text: 'Grundschule', link: '/webclient/anleitungen/anleitungen_schulform/anleitungen_gs/' },
 								] },
