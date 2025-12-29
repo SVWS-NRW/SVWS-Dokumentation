@@ -276,16 +276,16 @@ export default defineConfig(({ mode }) => {
 								] },
 							] },
 							{ text: 'Anleitungen', link: '/webclient/anleitungen/', collapsed: false, items: [
-								{ text: 'Allgemeine Anleitungen', link: '/webclient/anleitungen_allgemein/', collapsed: true, items: [
-									{ text: 'Anmeldung', link: '/webclient/anleitungen_allgemein/anmeldung/' },
+								{ text: 'Allgemeine Anleitungen', link: '/webclient/anleitungen/anleitungen_allgemein/', collapsed: true, items: [
+									{ text: 'Anmeldung', link: '/webclient/anleitungen/anleitungen_allgemein/anmeldung/' },
 								] },
-								{ text: 'Schulformspezifisch', link: '/webclient/anleitungen_schulform/', collapsed: true, items: [
-									{ text: 'Oberstufe', link: '/webclient/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
-										{ text: 'WebLuPO', link: '/webclient/anleitungen_schulform/anleitungen_gost/weblupo/' },
+								{ text: 'Schulformspezifisch', link: '/webclient/anleitungen/anleitungen_schulform/', collapsed: true, items: [
+									{ text: 'Oberstufe', link: '/webclient/anleitungen/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
+										{ text: 'WebLuPO', link: '/webclient/anleitungen/anleitungen_schulform/anleitungen_gost/weblupo/' },
 									] },
-									// { text: 'Grundschule', link: '/webclient/anleitungen_schulform/anleitungen_gs/' },
+									// { text: 'Grundschule', link: '/webclient/anleitungen/anleitungen_schulform/anleitungen_gs/' },
 								] },
-								{ text: 'Zeugnisvorbereitung', link: '/webclient/anleitungen_zeugnisse/' },
+								{ text: 'Zeugnisvorbereitung', link: '/webclient/anleitungen/anleitungen_zeugnisse/' },
 							] },
 							{ text: 'Weiteres', link: '/webclient/weiteres/', collapsed: false, items: [
 								{ text: 'JSON-Dateien', link: '/webclient/client/json_files/' },
