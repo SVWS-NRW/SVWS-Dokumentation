@@ -1,1 +1,0 @@
-# Statistik Datenprüfung

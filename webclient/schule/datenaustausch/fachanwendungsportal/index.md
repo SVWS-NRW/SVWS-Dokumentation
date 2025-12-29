@@ -1,3 +1,0 @@
-# Fachanwendungsportal
-
-des Schulministeriums NRW
