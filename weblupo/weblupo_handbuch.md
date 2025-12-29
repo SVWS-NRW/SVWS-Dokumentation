@@ -4,7 +4,7 @@ WebLuPO ist ein webbasiertes Tool zur Laufbahnberatung und -planung im Browser f
 
 In diesem Artikel wird die Benutzung einer `.lp`-Datei erklärt, die von den betreuenden Lehrkräften bereitgestellt wurde. Den passenden Link zur Webseite erhalten Sie ebenfalls von den Lehrkräften.
 
-## Berarbeitung in WebLuPO
+## Bearbeitung in WebLuPO
 
 ![weblupo Startseite](./graphics/weblupo_startseite.png)
 
