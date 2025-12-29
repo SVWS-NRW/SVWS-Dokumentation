@@ -121,10 +121,11 @@ Für Drittsoftware wird kein Support unternommen und ein reibungsloses Funktioni
 
 ## Technische Hintergründe zu den unterschiedlichen Nuterarten
 
-Es gibt den **Datenbank-root**, dem **Datenbank-Admin** und die tatsächlichen **VWS-Benutzer**.
+Es gibt den **Datenbank-root**, dem **Datenbank-Admin** und die tatsächlichen **SVWS-Benutzer**.
+
+* Ein **normaler Nutzer** ist (meistens) eine reale Person mit individuellen Zugriffsrechten. An Nutzer vergebene *Rechte* regeln individuell für jeden Nutzer, welche Operationen auf der Datenbank erlaubt sind. Dies sind die Benutzer, über die mit den Daten gearbeitet wird. Einem solchen Benutzer können je nach verwendeten Client, etwa SchILD NRW 3, "Administratorrechte" zugewiesen werden, um zum Beispiel die Datenbank zu sichern und wiederherzustellen. Dieser Typ von Benutzer ist der einzige, mit dem im täglichen Betrieb gearbeitet wird. Die anderen Nutzer sind nur technisch relevant:
 
 * Der **Root-Benutzer** der MariaDB ist ein Super-Administrator-Zugang auf den MariaDB-Server an sich. Er hat Zugriffsrechte auf alle Datenbanken auf dem Server und kann diese anlegen und löschen. Er kann beliebige weitere Datenbank-Administratoren anlegen. Im täglichen Betrieb wird dieser Nutzer nicht benötigt und häufig wird nur die IT diesen Nutzer haben. Geht das Root-Kennwort für die MariaDB verloren, kann dieses Passwort nicht mehr angezeigt oder verändert werden und neue Schemata können nicht mehr angelegt werden.
 
 * Ein **Schema-Benutzer** ist ein Administrator-Zugang mit vollen Zugriffsrechten auf ein bestimmtes Schema, das heißt eine einzelne "Datenbank". In den Beispielen hier wird dieser oft *svws_admin* oder *svwsadmin* genannt. Ein Datenbank-Benutzer kann auch mit gleichem Namen und Passwort für mehrere Schemata/Datenbanken gelten. Er kann diese Datenbank nicht löschen, aber jede Veränderung innerhalb des Schemas/der Datenbank vornehmen. Zum Beispiel nutzt ein Client wie SchILD-NRW 3 diese Zugangsdaten, um auf die Datenbank zuzugreifen. Auch dieser Nutzer wird im täglichen Betrieb in der Regel nicht benötigt.
 
-* Ein **normaler Nutzer** ist (meistens) eine reale Person mit individuellen Zugriffsrechten. An Nutzer vergebene *Rechte* regeln individuell für jeden Nutzer, welche Operationen auf der Datenbank erlaubt sind. Dies sind die Benutzer, über die mit den Daten gearbeitet wird. Einem solchen Benutzer können je nach verwendeten Client, etwa SchILD NRW 3, "Administratorrechte" zugewiesen werden, um zum Beispiel die Datenbank zu sichern und wiederherzustellen. 
