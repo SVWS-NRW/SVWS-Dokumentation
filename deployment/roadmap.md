@@ -56,6 +56,11 @@ Durchführung einer intensiven Sicherheitsüberprüfung für das Zusammenspiel v
 
 Insbesondere die Passwortverwaltung, die Synchronisationsprozesse und die Datenschutzanalyse sollen hier geprüft werden.
 
+## 2026 Februar Ersten Prototyp für das Abitur 2030
+
+Die Laufbahnplanung soll die Änderungen zum 5. Abiturfach und den Projektkursen sowie weiteren Änderungen, die schon feststehen enthalten.
+Dies soll die Erzeugung erster Testfälle für die Laufbahnplanungen unterstützen.
+
 ## 2026 Februar - Erster Feldtest Schulbewerbungen
 
 Es soll ein erster abgegrenzter Feldtest mit ausgesuchten Schulen stattfinden, die den digitalen Schülerwechsel mit dem SVWS-Server und schulbewerbung.de durchführen.
