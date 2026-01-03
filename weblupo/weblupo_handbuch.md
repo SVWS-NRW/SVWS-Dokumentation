@@ -13,7 +13,7 @@ Startet man WebLuPO, ist auf diesem Bildschirm die individuelle `.lp`-Datei hoch
 Klicken Sie auf `Datei auswählen` und navigieren Sie dann auf dem Rechner zur Datei.
 
 ::: info Die Verarbeitung findet auf dem lokalen Rechner statt
-Hierbei wird das WebKuPO nur im Browser auf dem aktuellen Rechner ausgefürht. Somit werden weder ein bestimmtes Betriebssystem vorausgesetzt noch verlassen die Daten das Endgerät, an dem gearbeitet wird.
+Hierbei wird das WebLuPO nur im Browser auf dem aktuellen Rechner ausgeführt. Somit werden weder ein bestimmtes Betriebssystem vorausgesetzt noch verlassen die Daten das Endgerät, an dem gearbeitet wird.
 :::
 
 ## Die Oberfläche von WebLuPO.
@@ -26,7 +26,7 @@ Die folgende Grafik zeigt die vier Bereiche der Laufbahnberatungstools:
 
 * Im zentralen zweiten Bereich werden die Kurswahlen vorgenommen. Der Modus *normal* und *hochschreiben* füllt automatisch die angegebenen Fachwahlen auf und passt sie so wie es sinnvoll erscheint an die höheren Jahrgänge an. Durch einen Doppelklick auf die einzelnen Felder der Tabelle im zweiten Bereich können Sie je nach Kontext zwischen *M* für *mündlich* und *S* für *schriftlich* und dann in der Q-Phase zwischen *M* für *Grundkurs mündlich* und *S* für *Grundkurs schriftlich*, dem immer schriftlichen *Leistungskurs*, *Projektkurs* und so weiter wählen.
 
-* Im dritten Bereich wird automatisch die Anzahl der belegten und anrechenbaren Kurse mit den belegten Stundenzahlen berechnet. Die Farbgebung von rot bis dunkelgrün gibt Ihnen direkt Feedback zur Anzahl der Kurse. Bei einer *roten* Farbe sind zu wenige Stunden im Halbjahr beziehungsweise der EF oder der ganzen Q-Phase belegt. *Hellgrün* eingefärbte Stunden entsprechend den Vorgaben. Eine Einfärbung in *Dunkelgrün* weist darauf hin, dass deutlich mehr Stunden als nötig gewählt wurden und das Abwahlen - jetzt oder später - möglich sein könnten.
+* Im dritten Bereich wird automatisch die Anzahl der belegten und anrechenbaren Kurse mit den belegten Stundenzahlen berechnet. Die Farbgebung von rot bis dunkelgrün gibt Ihnen direkt Feedback zur Anzahl der Kurse. Bei einer *roten* Farbe sind zu wenige Stunden im Halbjahr beziehungsweise der EF oder der ganzen Q-Phase belegt. *Hellgrün* eingefärbte Stunden entsprechend den Vorgaben. Eine Einfärbung in *Dunkelgrün* weist darauf hin, dass deutlich mehr Stunden als nötig gewählt wurden und dass Abwahlen - jetzt oder später - möglich sein könnten.
 
 * Im vierten Bereich werden die Regeln für die Oberstufenbelegung algorithmisch ausgewertet und die noch zu erfüllenden Bedingungen angezeigt beziehungsweise es wird auf Fehlbelegungen hingewiesen. Hier kann der Modus *EF.1*, *Gesamtprüfung* oder *automatisch* gewählt werden.   
 
