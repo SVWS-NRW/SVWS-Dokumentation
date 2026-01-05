@@ -38,23 +38,23 @@ export default defineConfig(({ mode }) => {
 				{ text: 'Administration',
 					items: [
 						{ text: 'Installation', link: '/deployment' },
-						{ text: 'Schulungen', link: '/schulungen' },
+						{ text: 'FAQ', link: '/deployment/FAQ.md' },
+						{ text: 'Roadmap', link: '/deployment/roadmap.md' },
 					] },
 
 				{ text: 'Entwicklung',
 					items: [
-						{ text: 'SVWS-Server', items: [
-							{ text: 'Übersicht', link: '/development/SVWS-Server/'},
-							{ text: 'Entwicklungsumgebungen', link: '/development/Entwicklungsumgebungen/'},
-							{ text: 'Tailwind 4', link: '/development/Tailwind-4/' },
-							{ text: 'Gradle', link: '/development/Gradle/' },
-							{ text: 'APIs für externe Tools', link: '/development/ExterneAPIs/'},
-							{ text: 'Technische FAQs', link: '/development/FAQ/' },
-							{ text: 'UI-Bibliothek', link: 'https://ui.svws-nrw.de' },
-							{ text: 'Java-API', link: 'https://javadoc.svws-nrw.de' },
-						]},
+						{ text: 'SVWS-Server', link: '/development/SVWS-Server/'},
+						{ text: 'Entwicklungsumgebungen', link: '/development/Entwicklungsumgebungen/'},
+						{ text: 'Tailwind 4', link: '/development/Tailwind-4/' },
+						{ text: 'Gradle', link: '/development/Gradle/' },
+						{ text: 'APIs für externe Tools', link: '/development/ExterneAPIs/'},
+						{ text: 'UI-Bibliothek', link: 'https://ui.svws-nrw.de' },
+						{ text: 'FAQs Development', link: '/development/FAQ/' },
+						{ text: ' ', items:[]},
 						{ text: 'Projekte', link: '/projekte' },
 						{ text: 'Mitarbeit', link: '/teamarbeit' },
+						{ text: 'Schulungen', link: '/schulungen' },
 					] },
 			],
 			socialLinks: [
@@ -73,12 +73,7 @@ export default defineConfig(({ mode }) => {
 				],
 				'/schulungen': [
 					{ text: '', items: [
-						{ text: 'Schulungsumgebungen', link: '/schulungen/', collapsed: false, items: [
-							{ text: 'SchulungsClient', link: '/schulungen/SchulungsClient/' },
-							{ text: 'Virtualbox', link: '/schulungen/Virtualbox_Schulungsserver/' },
-							{ text: 'Proxmox', link: '/schulungen/Proxmox_Schulungsserver/' },
-							{ text: 'Docker', link: '/schulungen/Docker_Schulungsserver/' },
-						] },
+						{ text: 'Schulungen', link: '/schulungen/' },
 					] },
 				],
 				'/teamarbeit': [
@@ -100,7 +95,7 @@ export default defineConfig(({ mode }) => {
 				],
 				'/development': [
 					{ text: '', items: [
-						{ text: 'SVWS-Server', link: '/development/SVWS-Server/', collapsed: false, items: [
+						{ text: 'SVWS-Server', link: '/development/SVWS-Server/', collapsed: true, items: [
 							{ text: 'svws-core', link: '/development/SVWS-Server/svws-core/' },
 							{ text: 'svws-db', link: '/development/SVWS-Server/svws-db/' },
 							{ text: 'svws-db-utils', link: '/development/SVWS-Server/svws-db-utils/' },
@@ -125,29 +120,37 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Code Styles', link: '/development/Entwicklungsumgebungen/Code-Styles' },
 						],
 						},
-						{ text: 'Gradle', link: '/development/Gradle/' },
 						{ text: 'Tailwind 4', link: '/development/Tailwind-4/' },
+						{ text: 'Gradle', link: '/development/Gradle/' },
 						{ text: 'APIs für externe Tools', link: '/development/ExterneAPIs/' , collapsed: true, items: [
 							{ text: 'Lernplattform Export', link: '/development/ExterneAPIs/Lernplattformen' },
 						],
 						},
-						{ text: 'Technische FAQs', link: '/development/FAQ/' },
+						{ text: 'UI-Bibliothek', link: 'https://ui.svws-nrw.de' },
+						{ text: 'FAQs Development', link: '/development/FAQ/' },
 					] },
 				],
 				'/deployment': [
 					{ text: '', items: [
-						{ text: 'Installation', link: '/deployment/' },
+						{ text: 'Übersicht', link: '/deployment/' },
 						{ text: 'IT-Umgebungen', link: '/deployment/IT-Umgebungen/' },
 						{ text: 'Installationsmethoden', link: '/deployment/installationsmethoden.md', collapsed: false, items: [
 							{ text: 'Linux-Installer', link: '/deployment/Linux-Installer/' },
 							{ text: 'Docker-Container', link: '/deployment/Docker/' },
 							{ text: 'NAS', link: '/deployment/NAS/' },
 							{ text: 'Windows-Installer', link: '/deployment/Windows-Installer/' },
-							{ text: 'SchILD-NRW-3', link: '/deployment/Schild-NRW3/' },
+//							{ text: 'Testserver', link: '/deployment/Testserver/' },
 						] },
 						{ text: 'Einrichtung', link: '/deployment/Einrichtung/' },
 						{ text: 'Datenmigration', link: '/deployment/Datenmigration/' },
 						{ text: 'Datensicherung', link: '/deployment/Datensicherung/' },
+						{ text: 'Schulungsserver', link: '/deployment/Schulungsserver/', collapsed: true, items: [
+							{ text: 'SchulungsClient', link: '/deployment/Schulungsserver/SchulungsClient/' },
+							{ text: 'Docker SchulungsServer', link: '/deployment/Schulungsserver/Docker_Schulungsserver/' },
+							{ text: 'Proxmox SchulungsServer', link: '/deployment/Schulungsserver/Proxmox_Schulungsserver/' },
+							]
+						},
+						{ text: 'SchILD-NRW-3', link: '/deployment/Schild-NRW3/' },
 						{ text: 'FAQ', link: '/deployment/FAQ.md' },
 						{ text: 'Roadmap', link: '/deployment/roadmap.md' },
 					] },

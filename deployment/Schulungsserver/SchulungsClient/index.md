@@ -9,7 +9,7 @@ Unter SchulungsClients sollen hier (virtuelle) Maschinen verstanden werden, die 
 + der Client sollte updatefähig sein
 + über den Client sollten Schulungsmedien bereitgestellt werden können, die individuell bearbeitbar sind 
 + der Client soll verschiedene Schulungsdatenbanken einbinden können
-+ die Fortbilder sollen den Client auf Ihre Berüfnisse anpassen können
++ die Fortbilder sollen den Client auf Ihre Bedrüfnisse anpassen können
 + der Client sollte auf verschiedenen Plattformen (Proxmox, VMWare, HyperV, ... ) betrieben werden können
 + der Client sollte remote steuerbar sein (rdp,vnc, x2go, ...)
 + der Client sollte ressourcenschonend betrieben werden können
