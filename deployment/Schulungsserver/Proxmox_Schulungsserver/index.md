@@ -16,7 +16,6 @@ Hier gibt es zwei grundlegende Ansätze: per ISO oder über eine Erweiterung ein
 Download der aktuellsten Proxmox VE z.B. unter https://www.proxmox.com/de/downloads/proxmox-virtual-environment/iso
 
 Setzen Sie einen Ventoy Bootstick auf und legen Sie die .iso in das Hauptverzeichnis des Bootsticks.
-Das Vorgehen dazu ist hier analog im Kapitel [virtualbox Schulungsserver](../Virtualbox_Schulungsserver/) beschrieben. 
 
 Alternativ kann auch https://etcher.balena.io/ als bootstick verwendet werden. 
 

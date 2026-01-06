@@ -12,7 +12,6 @@ Der WebClient des SVWS-Servers ist dabei über Port 443 mit dem Https-Protokol h
 
 + [SchulungClient](SchulungsClient/index.md) - 
 Ein schneller Weg zu einem einzelnen Schulungsrechner
-+ [Virtualbox](Virtualbox_Schulungsserver/index.md) - mehrere Maschinen im Heimnetz 
 + [Proxmox](Proxmox_Schulungsserver/index.md) - online Schulungen oder präsenz Schulungen
 + [Schulungsserver per Docker](Docker_Schulungsserver/index.md) - ressourcenschonende cloudfähige Lösung
 
