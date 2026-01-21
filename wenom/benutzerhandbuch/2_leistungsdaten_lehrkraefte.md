@@ -53,7 +53,7 @@ Somit kann die Lehrkraft nachvollziehen, dass die Mahnung offiziell versendet be
 
 Im Bereich „Fehlstunden” können fachbezogene Fehlstunden (FS) als ganze Zahl eingegeben werden. Die Anzahl der unentschuldigten Fehlstunden (FSU) wird in der benachbarten Spalte eingetragen. 
 
-#### Eintragungen fachbezogene Bemerkungen
+#### Eintragungen fachbezogene Bemerkungen (FB)
 
 Durch Klicken auf „Fachbezogene Bemerkungen” öffnet sich ein modales Fenster. Zuerst ist der zuvor ausgewählte Schüler ausgewählt, es können können aber auch alle weiteren Schüler der entsprechenden Lehrgruppe auf der linken Seite ausgewählt werden.
 
