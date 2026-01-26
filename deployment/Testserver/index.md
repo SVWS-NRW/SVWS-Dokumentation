@@ -17,19 +17,19 @@ Das Skript install.sh ist in unseren [Githubquellen](https://github.com/SVWS-NRW
 
 Möchte man hier z.B. die Environmet Variablen z.B. beim Aufsetzen von mehreren Schulungsclients schon direkt mit übergeben, kann dies wie in dem folgenden Installationsscript beispielsweise umgesetzt werden:
 
-link to install_svws-testserver-linuxinstaller.sh
+[install_svws-testserver-linuxinstaller.sh](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Testserver/install_svws-testserver-linuxinstaller.sh)
 
 ## Installation auf Basis eines Docker Containers
 
 Diese etwas Methode ist im Vergleich zum Linuxinstaller etwas aufwändiger. Sie ermöglicht aber das schnelle Ausrollen eines SVWS-Server auf unterschiedlichen Releases und mit unterschiedlichen Mariadb Varianten. Ebenso ist das Wechseln zwischen den Releases zügig umsetzbar.
 
-link to install_svws-testserver-docker.sh
+[install_svws-testserver-docker.sh](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Testserver/install_svws-testserver-docker.sh)
 
 ## Installation auf Basis eines Builds aus den Github Quellen
 
 Dies kann z.B. für einen nightly build SVWS-Server genutzt werden oder zum Austesten verschiedener Branches. Hier wird die aktuellste Version des branches als Grundlage für den SVWS-Server genommen. 
 
-link to install_svws-testserver-from-scratch.sh
+[install_svws-testserver-from-scratch.sh](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Testserver/install_svws-testserver-docker.sh)
 
 ## Einspielen der Datenbanken
 

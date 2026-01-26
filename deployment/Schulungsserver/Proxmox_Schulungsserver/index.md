@@ -113,7 +113,7 @@ Als Grundlage für die SVWS-Server Installation wird hier ein Debian Linux 13 ve
 
 Hier ein Skript zum erstellen dieses Template Containers mit 4 Gb Ram, 2 CPU und 8GB Storage. Das Skript muss auf dem Terminal des Proxmoxservers ausgefürt werden.
 
-link to pve_create_lxc.sh
+[pve_create_lxc.sh](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Schulungsserver/Proxmox_Schulungsserver/pve_create_lxc.sh)
 
 
 
