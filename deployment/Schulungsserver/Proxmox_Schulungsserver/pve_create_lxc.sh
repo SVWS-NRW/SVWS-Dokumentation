@@ -1,11 +1,3 @@
-
-# Bereitstellung eines LXC-Container per Skript
-
-Als Grundlage für die SVWS-Server Installation wird hier ein Debian Linux 13 verwendet. Dies kann zum Beispiel über einen Proxmox-Sever als LX-Container bereitgestellt werden. 
-
-Hier ein Skript zum erstellen dieses Template Containers. Das Skript muss auf dem Terminal des Proxmoxservers ausgefürt werden.
-
-```bash 
 #!/bin/bash
 ###############################################################
 ### Das Skript Erstellt einen LCX auf eine Proxmox-PVE Node ###
@@ -17,7 +9,7 @@ Hier ein Skript zum erstellen dieses Template Containers. Das Skript muss auf de
 
 ### Variablen der Proxmoxungebung #############################
 
-NODE=mein.proxmox                                                       # Hostname des Proxmoxnode
+NODE=mein.proxmox.example.com                                                       # Hostname des Proxmoxnode
 
 LXC_TEMPLATE=local:vztmpl/debian-13-standard_13.1-1_amd64.tar.zst       # Pfad zum LCX Template auf dem o.g. Proxmox 
                                                                         # Syntax: VOLUMENAME:vztmpl/TEMPLATENAME
@@ -122,6 +114,7 @@ pct create $SNR \
 $LXC_TEMPLATE \
 --hostname $FQDN \
 --memory 4096 \
+--swap 0 \
 --cores 2 \
 --net0 name=eth0,bridge=$VSWITCH,firewall=1,gw=$GATEWAY,ip=$IPSNM \
 --storage $STORAGE \
@@ -140,4 +133,3 @@ $LXC_TEMPLATE \
 # --cpuunits $cpuunits
 # --net name=eth0,ip4=dhcp
 # Zeit einplanen, falls der DHCP oder andere Prozesse diese brauchen.
-```

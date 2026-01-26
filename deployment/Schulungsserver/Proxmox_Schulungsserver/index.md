@@ -76,8 +76,6 @@ dpkg-reconfigure locales
 Wenn kein Enterprise Support bei Proxmox abgeschlossen ist, kann kostenfrei die Community Version genutzt werden. Hierzu müssen in den Apt-Sources die Quellen für PVE und Ceph in der Enterprise version nur auskommentiert werden. Eine Anleitung hierzu befindet sich auf der (Proxmox Webseite)[https://pve.proxmox.com/wiki/Package_Repositories].
 
 
-
-
 ## Präsensschulung
 
 Bei der Präsentsschulung befinde sich alle Schulungsteilnehmer vorort und damit hinter der Firewall in einem Bereich, wo in der Regel auch ein DHCP Server das interne Netz managed. 
@@ -109,6 +107,13 @@ Bei der Onlineschulung werden im folgenden Server benötigt:
 + Webserver für die Schulungsunterlagen
 
 
+### Bereitstellung eines LXC-Container per Skript
+
+Als Grundlage für die SVWS-Server Installation wird hier ein Debian Linux 13 verwendet. Dies kann zum Beispiel über einen Proxmox-Sever als LX-Container bereitgestellt werden. 
+
+Hier ein Skript zum erstellen dieses Template Containers mit 4 Gb Ram, 2 CPU und 8GB Storage. Das Skript muss auf dem Terminal des Proxmoxservers ausgefürt werden.
+
+link to pve_create_lxc.sh
 
 
 
