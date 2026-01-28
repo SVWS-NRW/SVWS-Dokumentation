@@ -7,32 +7,26 @@ Ziel ist es ein Template für einen SVWS-Server zu erstellen. Anwendungen könne
 + Ausrollen auf Schulungsumgebungen
 + nächtlichen automatischen Zurücksetzung aller Datenbanken
 
-Dies soll als Grundlage für die Schulungsclients oder zur Entwicklung eine Nightly-Servers dienen. Im wesentlichen kann ein Testserver in 3 Varianten aufgesetzt werden: 
-
-
-## Installation mit dem Linuxinstaller
-
-Diese recht einfache Methode benötigt ein Debian 12 oder 13 als Basis und ist eine schnelle Methode, um einen Testserver im Betriebsstatus "stable" auf dem aktuellen Release zu erzeugen. 
-Das Skript install.sh ist in unseren [Githubquellen](https://github.com/SVWS-NRW/SVWS-Server/releases]) verfügbar.
-
-Möchte man hier z.B. die Environmet Variablen z.B. beim Aufsetzen von mehreren Schulungsclients schon direkt mit übergeben, kann dies wie in dem folgenden Installationsscript beispielsweise umgesetzt werden:
-
-[install_svws-testserver-linuxinstaller.sh](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Testserver/install_svws-testserver-linuxinstaller.sh)
-
-## Installation auf Basis eines Docker Containers
-
-Diese etwas Methode ist im Vergleich zum Linuxinstaller etwas aufwändiger. Sie ermöglicht aber das schnelle Ausrollen eines SVWS-Server auf unterschiedlichen Releases und mit unterschiedlichen Mariadb Varianten. Ebenso ist das Wechseln zwischen den Releases zügig umsetzbar.
-
-[install_svws-testserver-docker.sh](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Testserver/install_svws-testserver-docker.sh)
+Dies soll als Grundlage für die Schulungsclients oder zur Entwicklung eine Nightly-Servers dienen.
 
 ## Installation auf Basis eines Builds aus den Github Quellen
 
-Dies kann z.B. für einen nightly build SVWS-Server genutzt werden oder zum Austesten verschiedener Branches. Hier wird die aktuellste Version des branches als Grundlage für den SVWS-Server genommen. 
+Dieses Skript kann z.B. für einen nightly build SVWS-Server genutzt werden oder zum Austesten verschiedener Branches: 
 
-[install_svws-testserver-from-scratch.sh](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Testserver/install_svws-testserver-docker.sh)
+[install_testserver.sh](install_testserver.sh)
 
-## Einspielen der Datenbanken
+Es installiert einen SVWS-Testserver basierens auf den Github Quellen. 
 
-Das Einspielen der Datenbanken kann in einem separaten Skript erfolgen: 
+## Update per Skipt
 
+Mit dem Skript 
 
+[update_testserver.sh](update_testserver.sh) 
+
+## Zurücksettzen der Datenbanken per Skript
+
+Mit dem Skript
+
+[update_dbs.sh](update_dbs.sh)
+
+können alle Datenbanken gelöscht werden und neu eingespielt werden. Diese Skript kann zum Beispiel 
