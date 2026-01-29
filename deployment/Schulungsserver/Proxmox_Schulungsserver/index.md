@@ -115,5 +115,20 @@ Hier ein Skript zum erstellen dieses Template Containers mit 4 Gb Ram, 2 CPU und
 
 [pve_create_lxc.sh](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Schulungsserver/Proxmox_Schulungsserver/pve_create_lxc.sh)
 
+Die nötigen serverspezifischen Variablen können in einer.env Datei ausgelagert werden: 
 
+Hier ein Beispiel 
+```bash
+# Proxmox Infrastruktur
 
+LXC_TEMPLATE="local:vztmpl/debian-13-standard_13.1-1_amd64.tar.zst"
+GATEWAY="10.0.0.10"
+VSWITCH="Intranet"
+STORAGE="local-lvm"
+
+# Eistellungen für den neuen LXC
+
+SNR=200
+# IP=10.0.0.50 # (optional)
+# ROOTPW= # (optional)
+```

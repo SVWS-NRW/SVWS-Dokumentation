@@ -30,6 +30,9 @@ apt install -y unzip git curl net-tools wget
 # Download des Installers
 wget "https://github.com/SVWS-NRW/SVWS-Server/releases/download/v${SVWSVERSION}/install-${SVWSVERSION}.sh"
 
+# Fehlersuche
+wget -q  https://github.com/SVWS-NRW/SVWS-Server/releases/download/v1.1.1/linux-installer-1.1.1.tar.gz
+
 # Konfigurationsdatei (.env) erstellen
 cat <<EOF > .env
 CREATE_MARIADB=j

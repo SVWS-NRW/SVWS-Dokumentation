@@ -1,14 +1,34 @@
 #!/bin/bash
-############################################
-#### Installationvariablen festlegen #######
-SERVERNAME=nightly.example.com
-PORT=8443
-MYSQLROOTPW=
-BRANCH=dev
-TEMURINVERSION=temurin-21-jdk
-SERVERMODE=develop
-############################################
 
+# Hilfe-Funktion
+usage() {
+  echo "Usage: $0 -p <mysql_root_pw> -b <branch> -m <servermode>"
+  echo "  -p    Passwort für den MariaDB Root-User"
+  echo "  -b    Git Branch (z.B. dev oder master)"
+  echo "  -m    Server Mode (z.B. develop oder production)"
+  exit 1
+}
+
+# Parameter mit getopts einlesen
+while getopts "p:b:m:" opt; do
+  case $opt in
+    p) MYSQLROOTPW="$OPTARG" ;;
+    b) BRANCH="$OPTARG" ;;
+    m) SERVERMODE="$OPTARG" ;;
+    *) usage ;;
+  esac
+done
+
+# Prüfen, ob alle Variablen gesetzt sind
+if [ z -z "$MYSQLROOTPW" ] || [ -z "$BRANCH" ] || [ -z "$SERVERMODE" ]; then
+  echo "Fehler: Alle Parameter (-p, -b, -m) müssen angegeben werden."
+  usage
+fi
+
+TEMURINVERSION=temurin-21-jdk
+PORT=8443
+
+############################################
 # Softwarequellen einbinden & Softwareupdate
 apt update && apt upgrade -y
 apt install -y sudo wget apt-transport-https gpg
@@ -26,9 +46,12 @@ DELETE FROM mysql.db WHERE Db='test' OR Db='test\\_%';
 FLUSH PRIVILEGES;
 " > mysql_secure_installation.sql
 mysql < mysql_secure_installation.sql
+rm mysql_secure_installation.sql
 
 # user svws einrichten
-useradd	-m -G users -s /bin/bash svws
+if ! id "svws" &>/dev/null; then
+    useradd -m -G users -s /bin/bash svws
+fi
 
 # SVWS-Server Quellen einrichten und Server bauen
 mkdir -p /app/
@@ -37,7 +60,7 @@ cd /app/
 sudo -u svws git clone https://github.com/SVWS-NRW/SVWS-Server
 cd /app/SVWS-Server
 sudo -u svws git switch ${BRANCH}
-./gradlew build
+sudo -u svws ./gradlew build
 chown -R svws:svws /app/SVWS-Server
 
 ## Server einrichten
@@ -46,7 +69,7 @@ LENGTH=12
 CHARS="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 PASSWORD1=$(head /dev/urandom | tr -dc $CHARS | fold -w $LENGTH | head -n 1)
 
-keytool -genkey -noprompt -alias svws -dname "CN=test, OU=svws, O=svws, L=svws, S=NRW, C=DE" -keystore /app/SVWS-Server/keystore/keystore -storepass ${PASSWORD1} -keypass ${PASSWORD1} -keyalg RSA
+sudo -u svws keytool -genkey -noprompt -alias svws -dname "CN=test, OU=svws, O=svws, L=svws, S=NRW, C=DE" -keystore /app/SVWS-Server/keystore/keystore -storepass ${PASSWORD1} -keypass ${PASSWORD1} -keyalg RSA
 
 # svwsconfig.json erstellen
 cp /app/SVWS-Server/svws-server-app/src/main/resources/svwsconfig.json.example /app/SVWS-Server/svws-server-app/svwsconfig.json
@@ -62,29 +85,23 @@ sed -i \
 # SVWS-Server als Dienst einrichten
 chown -R svws:svws /app/SVWS-Server/
 
-
-#Erstelle eine Datei zur Beschreibung und Bedienung des Dienstes per systemd:
-
-echo "
-[Unit]
+echo "[Unit]
 Description=SVWS Server
 
 [Service]
 User=svws
 Type=simple
-WorkingDirectory = /app/SVWS-Server/svws-server-app
+WorkingDirectory=/app/SVWS-Server/svws-server-app
 ExecStart=/bin/bash /app/SVWS-Server/svws-server-app/start_server.sh
-Restart=on-failure 	# optional-auskommentieren, wenn gewünscht
-RestartSec=5s 		# optional-auskommentieren, wenn gewünscht
+Restart=on-failure
+RestartSec=5s
 StandardOutput=journal
 
 [Install]
-WantedBy=multi-user.target
-" > /etc/systemd/system/svws.service
+WantedBy=multi-user.target" > /etc/systemd/system/svws.service
 
-
-# Den Dienst nun noch fest einbinden, so dass er beim Neustart gestartet wird: 
+systemctl daemon-reload
 systemctl enable svws
-# Nun noch den Server folgenden Befehlen starten:
-
 systemctl start svws
+
+echo "Installation abgeschlossen."
