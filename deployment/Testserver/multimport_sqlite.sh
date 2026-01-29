@@ -17,8 +17,10 @@ fi
 # Default-Werte (falls weder .env noch CLI gesetzt)
 : "${SERVERNAME:=localhost}"
 
+
+
 usage() {
-    echo "Usage: $0 -rp <MARIADBROOTPW> -u <SCHEMA_USER> -p <SCHEMA_PW> -s <SERVERNAME>"
+    echo "Usage: $0 -rp <MARIADB_ROOT_PW> -u <SCHEMA_USER> -p <SCHEMA_PW> -s <SERVERNAME>"
     exit 1
 }
 
@@ -47,6 +49,22 @@ while [[ $# -gt 0 ]]; do
             ;;
     esac
 done
+
+# Pflichtparameter prüfen
+if [[ -z "$SCHEMA_USER" || -z "$SCHEMA_PW" ]]; then
+    SCHEMA_USER=svwsadmin
+    SCHEMA_PW=svwsadmin
+    echo "Achtung: unsicheres Passwort für die Schulungsdatebank gesetzt: svwsadmin. "
+    echo "Achtung: Bitte nach der Schulung löschen! "
+    usage
+fi
+# Pflichtparameter prüfen
+if [[ -z "$MARIADB_ROOT_PW" ]]; then
+    echo "Error: Maria DB Root Passwort muss übermittelt werden "
+    usage
+fi
+
+
 
 # Pflichtparameter prüfen
 if [[ -z "$MARIADB_ROOT_PW" || -z "$SCHEMA_USER" || -z "$SCHEMA_PW" || -z "$SERVERNAME" ]]; then
