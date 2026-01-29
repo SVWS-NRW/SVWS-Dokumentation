@@ -3,8 +3,8 @@
 set -e
 
 SERVERNAME=""
-PORT=8443 # (üblicherweise)
-MARIADB_ROOT_PW=""
+APP_PORT=8443 # (üblicherweise)
+MARIADB_ROOT_PASSWORD=""
 
 
 # Verzeichnis des Skripts ermitteln
@@ -30,13 +30,13 @@ echo "Lösche alle Datenbanken" | tee -a "$LOGFILE"
 date | tee -a "$LOGFILE"
 
 curl --user "root:${MARIADB_ROOT_PW}" -k -s \
-  "https://${SERVERNAME}:${PORT}/api/schema/liste/svws" \
+  "https://${SERVERNAME}:${APP_PORT}/api/schema/liste/svws" \
   -H 'accept: application/json' \
 | jq -r '.[].name' \
 | while read -r SCHEMA_NAME; do
     echo "Lösche Schema: ${SCHEMA_NAME}"
-    curl --user "root:${MARIADB_ROOT_PW}" -k -X POST \
-      "https://${SERVERNAME}:${PORT}/api/schema/root/destroy/${SCHEMA_NAME}" \
+    curl --user "root:${MARIADB_ROOT_PASSWORD}" -k -X POST \
+      "https://${SERVERNAME}:${APP_PORT}/api/schema/root/destroy/${SCHEMA_NAME}" \
       -H "accept: application/json"
     echo "${SCHEMA_NAME} gelöscht" | tee -a "$LOGFILE"
   done

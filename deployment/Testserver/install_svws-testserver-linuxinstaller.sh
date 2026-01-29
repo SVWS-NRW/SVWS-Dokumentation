@@ -25,7 +25,7 @@ fi
 
 # System-Updates und Abhängigkeiten
 apt update && apt upgrade -y 
-apt install -y unzip git curl net-tools wget
+apt install -y unzip git curl net-tools wget jq
 
 # Download des Installers
 wget "https://github.com/SVWS-NRW/SVWS-Server/releases/download/v${SVWSVERSION}/install-${SVWSVERSION}.sh"
