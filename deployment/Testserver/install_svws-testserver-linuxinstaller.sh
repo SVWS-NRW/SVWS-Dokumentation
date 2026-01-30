@@ -31,7 +31,7 @@ apt install -y unzip git curl net-tools wget jq
 wget "https://github.com/SVWS-NRW/SVWS-Server/releases/download/v${SVWSVERSION}/install-${SVWSVERSION}.sh"
 
 # Download des SVWS-Servers 
-wget -q  https://github.com/SVWS-NRW/SVWS-Server/releases/download/v1.1.1/linux-installer-1.1.1.tar.gz
+wget -q  https://github.com/SVWS-NRW/SVWS-Server/releases/download/v${SVWSVERSION}/linux-installer-${SVWSVERSION}.tar.gz
 
 # Konfigurationsdatei (.env) erstellen
 cat <<EOF > .env
