@@ -102,7 +102,7 @@ $LXC_TEMPLATE \
 --start 1
 
 # Beschreibung setzen
-DESCRIPTION=$(echo -e "# $FQDN\nPasswort: $ROOTPW  \nErstellt am $(date +%F)")
+DESCRIPTION=$(echo -e "# $FQDN  \nPasswort: $ROOTPW    \nErstellt am $(date +%F)")
 pct set $SNR --description "$DESCRIPTION"
 
 echo "Container $SNR wurde erfolgreich erstellt."
