@@ -32,7 +32,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 # 3. Pflichtparameter prüfen
-if [[ -z "$SNR" ]] || [[ -z "$SVWSVERSION" ]]; then
+if [[ -z "$CONTAINER_ID" ]] || [[ -z "$SVWSVERSION" ]]; then
     echo "Fehler: Container-Nummer (-nr) und SVWS-Version (-v) müssen angegeben werden."
     exit 1
 fi
@@ -43,21 +43,21 @@ if [[ -z "$ROOTPW" ]]; then
     echo "Passwort wurde automatisch generiert."
 fi
 
-echo "Konfiguriere Container $SNR..."
+echo "Konfiguriere Container $CONTAINER_ID..."
 
 # -----------------------------------------------------------
 # Befehle im Proxmox Container ausführen
 # -----------------------------------------------------------
 
-# Download des Installers
-pct exec $SNR -- wget -q https://github.com/SVWS-NRW/SVWS-Dokumentation/raw/refs/heads/main/deployment/Testserver/install_svws-testserver-linuxinstaller.sh -O install_svws-testserver-linuxinstaller.sh
+# Download/Update des Skripts im LXC
+pct exec $CONTAINER_ID -- wget -N https://github.com/SVWS-NRW/SVWS-Dokumentation/raw/refs/heads/main/deployment/Testserver/install_svws-testserver-linuxinstaller.sh -O install_svws-testserver-linuxinstaller.sh
 
 # .env im Container sauber neu erstellen (überschreiben mit '>')
-pct exec $SNR -- bash -c "echo 'PASSWORD=$ROOTPW' > .env"
-pct exec $SNR -- bash -c "echo 'SVWSVERSION=$SVWSVERSION' >> .env"
+pct exec $CONTAINER_ID -- bash -c "echo 'PASSWORD=$ROOTPW' > .env"
+pct exec $CONTAINER_ID -- bash -c "echo 'SVWSVERSION=$SVWSVERSION' >> .env"
 
 
 # Installer ausführen
-pct exec $SNR -- bash install_svws-testserver-linuxinstaller.sh -p "$ROOTPW" -v "$SVWSVERSION"
+pct exec $CONTAINER_ID -- bash install_svws-testserver-linuxinstaller.sh -p "$ROOTPW" -v "$SVWSVERSION"
 
 echo "Installation abgeschlossen."

@@ -31,7 +31,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 # 3. Pflichtparameter prüfen
-if [[ -z "$SNR" ]] || [[ -z "$MARIADB_ROOT_PASSWORD" ]]; then
+if [[ -z "$CONTAINER_ID" ]] || [[ -z "$MARIADB_ROOT_PASSWORD" ]]; then
     echo "Fehler: Container-Nummer (-nr) und das Mariadb-Root-Passwort(-p) müssen angegeben werden. Ggf über die .env Datei."
     exit 1
 fi
@@ -44,15 +44,15 @@ if [[ -z "$SCHEMA_PW" ]]; then
     echo "Bitte nach der Schulung die Datenbanken löschen."
 fi
 
-echo "Konfiguriere Container $SNR..."
+echo "Konfiguriere Container $CONTAINER_ID..."
 
 # -----------------------------------------------------------
 # Befehle im Proxmox Container ausführen
 # -----------------------------------------------------------
 
 # update Skriptversion
-pct exec $SNR -- wget -N https://github.com/SVWS-NRW/SVWS-Dokumentation/raw/refs/heads/main/deployment/Testserver/delete_all_svws_dbs.sh 
+pct exec $CONTAINER_ID -- wget -N https://github.com/SVWS-NRW/SVWS-Dokumentation/raw/refs/heads/main/deployment/Testserver/delete_all_svws_dbs.sh 
 
 
 # Installer ausführen
-pct exec $SNR -- bash  delete_all_svws_dbs.sh  -p "$MARIADB_ROOT_PASSWORD" -
+pct exec $CONTAINER_ID -- bash  delete_all_svws_dbs.sh  -p "$MARIADB_ROOT_PASSWORD" -

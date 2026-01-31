@@ -1,62 +1,41 @@
 #!/bin/bash
 
-# Standard-Dateiname für Umgebungsvariablen
-ENV_FILE=".env"
-
-# 1. .env Datei robust laden
+# --- KONFIGURATION ---
+# Standardwert aus .env im Proxmox laden (falls vorhanden)
 if [[ -f "$ENV_FILE" ]]; then
-    echo "Lade Konfiguration aus $ENV_FILE..."
-    while IFS='=' read -r key value || [[ -n "$key" ]]; do
-        # Ignoriere Kommentare und leere Zeilen
-        [[ $key =~ ^[[:space:]]*# ]] && continue
-        [[ -z "$key" ]] && continue
-
-        # Entferne Inline-Kommentare und trimme Leerzeichen
-        value=$(echo "$value" | cut -d'#' -f1 | xargs)
-        export "$key=$value"
-    done < "$ENV_FILE"
+    MARIA_DB_PASS=$(grep '^MARIADB_ROOT_PASSWORD=' "$ENV_FILE" | cut -d'=' -f2-)
 fi
 
-# 2. Parameter einlesen (Überschreibt Werte aus der .env)
+# Parameter einlesen
 while [[ $# -gt 0 ]]; do
     case "$1" in
-        -p) MARIADB_ROOT_PASSWORD="$2"; shift 2 ;;
-        -nr) SNR="$2"; shift 2 ;;
-        -) SVWSVERSION="$2"; shift 2 ;;
+        -p)  MARIA_DB_PASS="$2"; shift 2 ;; # Überschreibt .env Passwort
+        -nr) CONTAINER_ID="$2"; shift 2 ;;
         -h|--help)
-            echo "Usage: $0 [-p MARIADB_ROOT_PASSWORD] [-nr SNR]"
+            echo "Usage: $0 [-nr CONTAINER_ID] [-p MARIADB_ROOT_PASSWORD]"
             exit 0
             ;;
         *) echo "Unbekannter Parameter: $1"; exit 1 ;;
     esac
 done
 
-# 3. Pflichtparameter prüfen
-if [[ -z "$SNR" ]] || [[ -z "$SVWSVERSION" ]]; then
-    echo "Fehler: Container-Nummer (-nr) und SVWS-Version (-v) müssen angegeben werden."
+# Pflichtparameter prüfen
+if [[ -z "$CONTAINER_ID" ]]; then
+    echo "Fehler: Container-ID (-nr) muss angegeben werden."
     exit 1
 fi
 
-# 4. Passwort fallback
-if [[ -z "$SCHEMA_PW" ]]; then
-    SCHEMA_PW=svwsadmin
-    SCHEMA_USER=svwsadmin
-    echo "unsicheres Passwort für die Schulungsdatenbank wurde gesetzt: svwsadmin"
-    echo "Bitte nach der Schulung die Datenbanken löschen."
+# Download/Update des Skripts im LXC
+pct exec $CONTAINER_ID -- wget -N https://github.com/SVWS-NRW/SVWS-Dokumentation/raw/refs/heads/main/deployment/Testserver/multimport_sqlite.sh
+
+# Ausführung
+echo "Konfiguriere Container $CONTAINER_ID..."
+
+if [[ -n "$MARIA_DB_PASS" ]]; then
+    echo "Info: MariaDB Passwort gefunden. Übergebe an LXC $CONTAINER_ID..."
+    # Wir übergeben das Passwort an das Skript im Container
+    pct exec "$CONTAINER_ID" -- bash multimport_sqlite.sh -rp "$MARIA_DB_PASS"
+else
+    echo "Info: Kein Passwort angegeben. LXC-Skript nutzt eigene .env..."
+    pct exec "$CONTAINER_ID" -- bash multimport_sqlite.sh
 fi
-
-echo "Konfiguriere Container $SNR..."
-
-# -----------------------------------------------------------
-# Befehle im Proxmox Container ausführen
-# -----------------------------------------------------------
-
-# Download / update  des Skripts
-pct exec $SNR -- wget -N https://github.com/SVWS-NRW/SVWS-Dokumentation/raw/refs/heads/main/deployment/Testserver/multimport_sqlite.sh 
-
-
-
-# multiimport ausführen
-pct exec $SNR -- bash install_svws-testserver-linuxinstaller.sh -p "$ROOTPW" -v "$SVWSVERSION"
-
-echo "Installation abgeschlossen."

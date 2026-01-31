@@ -1,4 +1,3 @@
-GymAbiLite /app/SVWS-TestMDBs/GOST_Abitur/Abi-Test-Daten-01/GymAbi.sqlite
-ENM1 /app/SVWS-TestMDBs/ENM-Json/ENM-Testdaten-01/ENM_SVWS.sqlite
-ENM2 /app/SVWS-TestMDBs/ENM-Json/ENM-Testdaten-02/ENM_SVWS.sqlite
-ENM3 /app/SVWS-TestMDBs/ENM-Json/ENM-Testdaten-03/ENM_SVWS.sqlite
+/app/SVWS-Testdaten/Testdaten_GY.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/GOST_Abitur/Abi-Test-Daten-04/Gym_22_23_1.sqlite
+/app/SVWS-Testdaten/Testdaten_G.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/Grundschule/Grundschule_Stundenplan.sqlite
+/app/SVWS-Testdaten/Testdaten_GE.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/GE_Prognose/GEPrognose.sqlite

@@ -5,7 +5,7 @@ set -e
 SERVERNAME=""
 APP_PORT=8443 # (üblicherweise)
 MARIADB_ROOT_PASSWORD=""
-
+LOGFILE="svws-update.log"
 
 # Verzeichnis des Skripts ermitteln
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -23,7 +23,7 @@ fi
 : "${SERVERNAME:=localhost}"
 
 
-LOGFILE="svws-update.log"
+
 #################################
 
 echo "Lösche alle Datenbanken" | tee -a "$LOGFILE"

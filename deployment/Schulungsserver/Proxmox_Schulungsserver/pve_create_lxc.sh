@@ -49,7 +49,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 # Pflichtparameter prüfen
-if [[ -z "$SNR" ]]; then
+if [[ -z "$CONTAINER_ID" ]]; then
     echo "Fehler: Die Containernummer muss gesetzt werden gesetzt - Beispiel: pve_create_lxc.hs -nr 1020"
     exit 1
 fi
@@ -68,7 +68,7 @@ if [[ -z "$ROOTPW" ]]; then
 fi
 
 # Fallback für FQDN & IP
-[[ -z "$FQDN" ]] && FQDN="$SNR"
+[[ -z "$FQDN" ]] && FQDN="$CONTAINER_ID"
 if [[ -n "$IP" ]]; then
     IPSNM="${IP}/16"
 else
@@ -76,7 +76,7 @@ else
 fi
 
 echo "--- Konfiguration ---"
-echo "ID/SNR   : $SNR"
+echo "ID/SNR   : $CONTAINER_ID"
 echo "FQDN     : $FQDN"
 echo "IP       : $IPSNM"
 echo "Template : $LXC_TEMPLATE"
@@ -85,7 +85,7 @@ echo "---------------------"
 
 ### LXC erstellen #############################################
 
-pct create $SNR \
+pct create $CONTAINER_ID \
 $LXC_TEMPLATE \
 --hostname "$FQDN" \
 --memory 4096 \
@@ -103,9 +103,9 @@ $LXC_TEMPLATE \
 
 # Beschreibung setzen
 DESCRIPTION=$(echo -e "# $FQDN  \nPasswort: $ROOTPW    \nErstellt am $(date +%F)")
-pct set $SNR --description "$DESCRIPTION"
+pct set $CONTAINER_ID --description "$DESCRIPTION"
 
-echo "Container $SNR wurde erfolgreich erstellt."
+echo "Container $CONTAINER_ID wurde erfolgreich erstellt."
 if [[ "$PW_GENERATED" = true ]]; then
     echo "Generiertes Root-Passwort: $ROOTPW"
 fi
