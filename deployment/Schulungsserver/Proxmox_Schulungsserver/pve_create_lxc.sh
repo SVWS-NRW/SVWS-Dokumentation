@@ -29,19 +29,16 @@ fi
 
 # Variablen initialisieren (greift nun auf die exportierten Werte zu)
 ROOTPW=${ROOTPW:-""}
-SNR=${SNR:-""}
-IP=${IP:-""}
-FQDN=${FQDN:-""}
 
 # 3. Parameter einlesen (überschreibt .env Werte)
 while [[ $# -gt 0 ]]; do
     case "$1" in
         -p) ROOTPW="$2"; shift 2 ;;
-        -nr) SNR="$2"; shift 2 ;;
+        -nr) CONTAINER_ID="$2"; shift 2 ;;
         -ip) IP="$2"; shift 2 ;;
         -dn) FQDN="$2"; shift 2 ;;
         -h|--help)
-            echo "Usage: $0 [-p PASSWORD] -nr SNR [-ip IP] [-dn FQDN]"
+            echo "Usage: $0 [-p PASSWORD] -nr CONTAINER_ID [-ip IP] [-dn FQDN]"
             exit 0
             ;;
         *) echo "Unbekannter Parameter: $1"; exit 1 ;;
@@ -50,7 +47,7 @@ done
 
 # Pflichtparameter prüfen
 if [[ -z "$CONTAINER_ID" ]]; then
-    echo "Fehler: Die Containernummer muss gesetzt werden gesetzt - Beispiel: pve_create_lxc.hs -nr 1020"
+    echo "Fehler: Die Containernummer muss gesetzt werden gesetzt - Beispiel: pve_create_lxc.sh -nr 1020"
     exit 1
 fi
 
@@ -59,12 +56,6 @@ PW_GENERATED=false
 if [[ -z "$ROOTPW" ]]; then
     ROOTPW=$(openssl rand -base64 12)
     PW_GENERATED=true
-    
-    # Optional: Passwort lokal in die .env speichern, wenn es dort noch nicht war
-    if [[ -f "$ENV_FILE" ]] && ! grep -q "ROOTPW=" "$ENV_FILE"; then
-        echo "ROOTPW=$ROOTPW" >> "$ENV_FILE"
-        echo "Passwort wurde lokal in $ENV_FILE gespeichert."
-    fi
 fi
 
 # Fallback für FQDN & IP
@@ -76,10 +67,10 @@ else
 fi
 
 echo "--- Konfiguration ---"
-echo "ID/SNR   : $CONTAINER_ID"
-echo "FQDN     : $FQDN"
-echo "IP       : $IPSNM"
-echo "Template : $LXC_TEMPLATE"
+echo "CONTAINER_ID  : $CONTAINER_ID"
+echo "FQDN          : $FQDN"
+echo "IP            : $IPSNM"
+echo "Template      : $LXC_TEMPLATE"
 [[ "$PW_GENERATED" = true ]] && echo "Passwort : (wird automatisch generiert)" || echo "Passwort : (manuell gesetzt)"
 echo "---------------------"
 
