@@ -14,7 +14,7 @@ export LC_ALL=de_DE.UTF-8
 apt upgrade -y
 
 # Add Docker's official GPG key:
-apt install ca-certificates curl nmap 
+apt install -y ca-certificates curl nmap 
 install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
 chmod a+r /etc/apt/keyrings/docker.asc
