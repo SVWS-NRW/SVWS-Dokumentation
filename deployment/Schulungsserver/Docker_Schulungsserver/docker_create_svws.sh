@@ -61,14 +61,15 @@ chmod -R 777 "$FOLDER/volume"
 cat <<EOF > "$FOLDER/.env"
 IMPORT_TEST_DATA=false
 MARIADB_ROOT_PASSWORD=$PASSWORD
+MYSQL_ROOT_PASSWORD=$PASSWORD
 MARIADB_HOST=mariadb
 SVWS_TLS_KEYSTORE_PASSWORD=$PASSWORD
 SVWS_TLS_KEY_ALIAS=svws
 SVWS_TLS_KEYSTORE_PATH=.
-SVWS_TLS_CERT_CN=SVWS3TESTSERVER
-SVWS_TLS_CERT_OU=SVWSOU
-SVWS_TLS_CERT_O=SVWSO
-SVWS_TLS_CERT_L=D
+SVWS_TLS_CERT_CN=SVWS
+SVWS_TLS_CERT_OU=SVWS
+SVWS_TLS_CERT_O=SVWS
+SVWS_TLS_CERT_L=NRW
 SVWS_TLS_CERT_S=NRW
 SVWS_TLS_CERT_C=DE
 SERVERNAME=$FQDN
@@ -84,7 +85,7 @@ services:
     env_file:
       - .env
     healthcheck:
-      test: ["CMD-SHELL", "mariadb-admin ping -h localhost -u root -p$${MARIADB_ROOT_PASSWORD}"]
+      test: ["CMD-SHELL", "mariadb-admin ping -h localhost -u root -p${PASSWORD}"]
       start_period: 20s
       interval: 5s
       timeout: 5s
