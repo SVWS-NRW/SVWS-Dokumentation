@@ -27,23 +27,63 @@ Beispiele zur dazu obligatorischen docker-compose.yml und Dateien befinden sich 
 
 ### Beispiel: Testserver im Docker Container
 
-[Beispiel einer vorbereiteten Docker-Compose](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Docker/svws-docker-example.zip)
+Beispiel einer vorbereiteten Docker-Compose:
 
+```yaml
+services:
+  mariadb:
+    restart: always
+    image: mariadb:latest
+    container_name: svws1_mariadb
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb-admin ping -h localhost -u root -p20742{MARIADB_ROOT_PASSWORD}"]
+      start_period: 20s
+      interval: 5s
+      timeout: 5s
+      retries: 3
+    volumes:
+      - ./volume/mariadb:/var/lib/mysql
 
-Diese Datei muss in einem Ordner entpackt werden und legt damit die geforderte Ordnerumgebung an, so dass der Keystore beim ersten Start des SVWS-Servers erzeugt wird und danach erhalten bleibt.
+  svws-server:
+    image: svwsnrw/svws-server:1.2.1
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    container_name: svws1
+    ports:
+      - "8443:8443"
+    volumes:
+      - ./volume/svws:/opt/app/svws/conf
+    env_file:
+      - .env
 
-Außerdem werden Volumes für die Daten der MariaDB angelegt, die später ja auch erhalten bleiben müssen.
-
-Im Ordner liegen dann eine docker-compose.yml und eine .env Datei, die angepasst werden muss.
+```
+Beispiel der zugehörigen .env Datei wird weiter unten aufgeführt
+```bash 
+IMPORT_TEST_DATA=false
+MARIADB_ROOT_PASSWORD=
+MARIADB_HOST=mariadb
+SVWS_TLS_KEYSTORE_PASSWORD=
+SVWS_TLS_KEY_ALIAS=svws
+SVWS_TLS_KEYSTORE_PATH=.
+SVWS_TLS_CERT_CN=SVWSTESTSERVER
+SVWS_TLS_CERT_OU=SVWSOU
+SVWS_TLS_CERT_O=SVWSO
+SVWS_TLS_CERT_L=D
+SVWS_TLS_CERT_S=NRW
+SVWS_TLS_CERT_C=DE
+```
+Es müssen natürlich noch entsprechende Passwörter generiert bzw. in die .env Datei eingetragen werden. 
 Im Ordner Volume werden dann für svws und mariadb entsprechende Ordner angelegt.
 
-Im Ordner svws werden beim ersten hochfahren des Containers die svwsconfig.json und der Keystore angelegt. Diese können dort auch mit einer eigenen Konfiguration bzw. eigenen Zertifikatseinstellungen abgelegt werden. Im Ordner svws/logs werden später die LOG-Dateien erscheinen, wenn der logging-Pfad auf Defaulteinstellung bleibt.
+Im Ordner svws werden beim ersten Hochfahren des Containers die svwsconfig.json und der Keystore angelegt. Diese können dort auch mit einer eigenen Konfiguration bzw. eigenen Zertifikatseinstellungen abgelegt werden. Im Ordner svws/logs werden später die LOG-Dateien erscheinen, wenn der logging-Pfad auf Defaulteinstellung bleibt.
 
 Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Backend, Frontend). Ebenso sind die Volumes für den Keystore gemountet. 
 
 Nach dem Start kann der SVWS-Server über den Port 8443 erreicht werden. 
-Auf die Datenbank kann standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden ("not bound"). 
-Intern nutzt die Datenbank den Port 3306. Für den Zugriff von SchILD 3 ist ein Port-Binding auch außerhalb von Docker nötig, 
+Auf die Datenbank sollte standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden.  Intern nutzt die Datenbank den Port 3306. Für den Zugriff von SchILD 3 ist ein Port-Binding auch außerhalb von Docker nötig, 
 dies wird über die Angabe eines Port-Mappings (ports) Eintrag in der Datei erreicht. 
 In diesem Beispiel wird der Port 3306 im Container auf den Port 3306 auf dem Host abgebildet.:
 
@@ -64,17 +104,17 @@ Diese Ports müssen auf Ihre Umgebung angepasst werden, je nach Anforderung.
 Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über Umgebungsvariablen. 
 Die Werte dieser Variablen werden in der Datei .env definiert. 
 
-Hier ein Beispiel: 
+Hier ein weiteres Beispiel: 
 ```bash
 IMPORT_TEST_DATA=true
-MARIADB_ROOT_PASSWORD=your-mariadb-root-pw
-MARIADB_DATABASE=your-svws-db-schema-name
+MARIADB_ROOT_PASSWORD=
+MARIADB_DATABASE=svwsdb
 MARIADB_HOST=mariadb
 MARIADB_USER=your-mariadb-user
-MARIADB_PASSWORD=your-mariadb-pw
+MARIADB_PASSWORD=
 SVWS_TLS_KEYSTORE_PATH=/etc/app/svws/conf/keystore
-SVWS_TLS_KEYSTORE_PASSWORD=your-keystore-pw
-SVWS_TLS_KEY_ALIAS=your-keystore-key-alias
+SVWS_TLS_KEYSTORE_PASSWORD=
+SVWS_TLS_KEY_ALIAS=svws
 SVWS_TLS_CERT_CN=YOURCERTNAME
 SVWS_TLS_CERT_OU=SVWSOU
 SVWS_TLS_CERT_O=SVWSO
@@ -129,7 +169,7 @@ Sie können in der .env Datei auch ein Schema ohne Migration angeben, dann wird 
 MARIADB_DATABASE=your-svws-db-schema-name
 MARIADB_HOST=mariadb
 MARIADB_USER=your-mariadb-user
-MARIADB_PASSWORD=your-mariadb-pw
+MARIADB_PASSWORD=
 ```
 
 

@@ -55,7 +55,7 @@ fi
 # 5. Import-Logik
 {
     echo "===================================================="
-    echo "=== Start SVWS Import: $(date) ==="
+    echo "Start SVWS Import: $(date)"
     echo "Ziel-Server: $SERVERNAME:$PORT"
     echo "===================================================="
 

@@ -46,11 +46,31 @@ können alle Datenbanken gelöscht werden und neu eingespielt werden.
 
 ## .env Datei
 
-Die Sktipte können alle auf eine .env Datei zurückgreifen, die serverspezifisch eingerichtet werden kann. 
+Die Skripte können alle auf eine .env Datei zurückgreifen, die serverspezifisch eingerichtet werden kann. 
 
 hier eine Übersicht über die gesetzten Variablen:
 
+```bash
+CREATE_MARIADB=j
+CREATE_KEYSTORE=j
+MARIADB_ROOT_PASSWORD=
+APP_PATH=/opt/app/svws
+CONF_PATH=/etc/app/svws/conf
+APP_PORT=8443
+SVWS_TLS_KEYSTORE_PATH=/etc/app/svws/conf/keystore
+SVWS_TLS_KEYSTORE_PASSWORD=
+SVWS_TLS_KEY_ALIAS=svws
+INPUT_COMMON_NAME=svws
+INPUT_ORGANIZATIONAL_UNIT=svws
+INPUT_ORGANIZATION=svws
+INPUT_LOCALITY=NRW
+INPUT_STATE=NRW
+INPUT_COUNTRY=DE
+validity_days=3650
 MARIADB_ROOT_PW=
-SCHEMA_USER=myuser
+SCHEMA_USER=
 SCHEMA_PW=
-SERVERNAME=localhost
+SERVERNAME=
+```
+
+Bei den Skripten zum Import, Vervielfältigen oder Löschen der Datenbanken wird, falls kein Parameter im Skriptaufruf übergeben wird, entweder die auf dem Proxmox bzw Dockersystem liegende .env Datei oder danach die explizit im SVWS-Server vorgehaltene .env Datei ausgelesen. 

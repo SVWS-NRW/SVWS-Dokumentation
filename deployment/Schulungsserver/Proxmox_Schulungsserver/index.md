@@ -126,9 +126,7 @@ GATEWAY="10.0.0.10"
 VSWITCH="Intranet"
 STORAGE="local-lvm"
 
-# Eistellungen für den neuen LXC
+# Einstellungen für den neuen LXC
 
-SNR=200
-# IP=10.0.0.50 # (optional)
 # ROOTPW= # (optional)
 ```

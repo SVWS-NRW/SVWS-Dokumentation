@@ -66,10 +66,17 @@ MARIADB_HOST=mariadb
 SVWS_TLS_KEYSTORE_PASSWORD=$PASSWORD
 SVWS_TLS_KEY_ALIAS=svws
 SVWS_TLS_KEYSTORE_PATH=.
+<<<<<<< HEAD
 SVWS_TLS_CERT_CN=SVWS
 SVWS_TLS_CERT_OU=SVWS
 SVWS_TLS_CERT_O=SVWS
 SVWS_TLS_CERT_L=NRW
+=======
+SVWS_TLS_CERT_CN=SVWSTESTSERVER
+SVWS_TLS_CERT_OU=SVWSOU
+SVWS_TLS_CERT_O=SVWSO
+SVWS_TLS_CERT_L=D
+>>>>>>> 0435a14 (	geändert:       deployment/Docker/index.md)
 SVWS_TLS_CERT_S=NRW
 SVWS_TLS_CERT_C=DE
 SERVERNAME=$FQDN
@@ -82,6 +89,7 @@ services:
   mariadb:
     restart: always
     image: mariadb:latest
+    container_name: ${FQDN}_mariadb
     env_file:
       - .env
     healthcheck:
@@ -98,6 +106,7 @@ services:
     depends_on:
       mariadb:
         condition: service_healthy
+    container_name: $FQDN
     ports:
       - "$PORTNUMBER:8443"
     volumes:
