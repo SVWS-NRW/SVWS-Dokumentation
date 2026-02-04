@@ -1,7 +1,32 @@
 #!/bin/bash
 
+# --- Dynamische Konfiguration ---
+# Liste möglicher Pfade für die svwsconfig.json
+POSSIBLE_PATHS=(
+    "/opt/app/svws/conf/svwsconfig.json"
+    "/opt/app/svws/svwsconfig.json"
+    "/etc/svws/svwsconfig.json"
+)
+
+CONFIG_FILE=""
+
+# Suche nach der ersten existierenden Datei
+for path in "${POSSIBLE_PATHS[@]}"; do
+    if [[ -f "$path" ]]; then
+        CONFIG_FILE="$path"
+        break
+    fi
+done
+
+# --- Validierung der Konfigurationsdatei ---
+if [[ -z "$CONFIG_FILE" ]]; then
+    echo "Fehler: svwsconfig.json wurde in keinem der Standardpfade gefunden!"
+    exit 1
+else
+    echo "Info: Konfiguration gefunden unter: $CONFIG_FILE"
+fi
+
 # Konfiguration
-CONFIG_FILE="/opt/app/svws/svwsconfig.json"
 DB_NAME=""
 COUNT=0
 PASS=""
@@ -62,7 +87,7 @@ if mysqldump -h localhost -u root "$DB_NAME" > "$DUMP_FILE"; then
     for i in $(seq 1 "$COUNT"); do
         NEW_DB="${DB_NAME}_$i"
         echo "--------------------------------------"
-        echo "Esrtelle Klon: $NEW_DB"
+        echo "Erstelle Klon: $NEW_DB"
         
         # Datenbank in MariaDB anlegen
         mariadb -u root -e "CREATE DATABASE IF NOT EXISTS \`$NEW_DB\`;"
