@@ -61,10 +61,10 @@ Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr 
 ### Alles
 
 * Der Plural von "Schema" ist "Schemata".
-* Neutrale Bezeichnungen, wo es möglich ist. "Schüler" bleiben so, wie sie sind.
-* Der Schama ist der flauschige Schutzpatron aller Schemata.
+* Neutrale Bezeichnungen, wo es möglich ist. "Schüler" bleiben so, wie sie sind; ggf. "Schülerinnen" ebenfalls nutzen; im stringenten Wechsel sieht auch doof aus.
 * Sollen Pfeile verwendet werden, sollte ein echter Pfeil ➜ genutzt werden, keine Bastelllösungen wie > oder ->.
-* Die Laufbahnplanung in der Oberstufe heißt "Laufbahnplanung Oberstufe". 
+* Die Laufbahnplanung in der Oberstufe heißt "Laufbahnplanung Oberstufe".
+* Bei Screenshots ist STRENG darauf zu achten, dass nur anoymisierte Daten verwendet werden.
 
 ### SVWS-Client
 
@@ -74,13 +74,16 @@ Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr 
 * Unter den Tabs sind die **Untertabs**.
 * In manchen Bereichen steht noch eine **graue Schaltflächenleiste** (Bezeichnung Todo) zur Verfügung.
 
+### Schreibweisen und Groß- und Kleinschreibung
+SVVWS-Webclient, AdminClient, SchILD-NRW, WeNoM, GOSt, WebLuPO, ...
+
 ### Web-Dokumentationen
 
 Die Beschreibung der einzelnen Funktionen selbst sollte ohne lange Prozessbeschreibungen nur darlegen, was da ist und wie man es benutzt.
 
 Tatsächliche Anleitungen, Tutorials und Prozessbeschreibungen (ZP10) und vor allem auch Dinge, die mit aktuellen Vorgaben (Prüfungsordnungen usw.) zu tun haben, sollen soweit wie möglich in sinnvoll gegliederte  **Anleitungen** (usw.?) ausgelagert werden.
 
-#### Grafiken und Schaubildern
+#### Grafiken und Schaubilder
 
 * Grafiken werden als .png (Logos, einheitliche Farbflächen, Schaubilder, UI usw.) gespeichert.
 * Schaubilder/Schemas sind GraphML-Dateien und werden miT *yEd* erstellt. Die GraphML-Dateien werden ebenfalls in /graphics/ abgelegt.
