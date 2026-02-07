@@ -114,23 +114,24 @@ Wichtiger als das Einhalten eines globalen Schemas ist aber eher der spärliche 
 
 ```md
 ::: info
-This is an info box.
+This is an info box. Ich bin grau.
 :::
 
 ::: tip
-This is a tip.
+This is a tip. Ich bin etwas lila (eher blau).
 :::
 
 ::: warning ACHTUNG
-This is a warning.
+This is a warning. Ich bin gelb.
 :::
 
 ::: danger SUPER ACHTUNG
-This is a dangerous warning.
+This is a dangerous warning. Ich bin rot.
 :::
 
 ::: details
-This is a details block.
+This is a details block. Ich bin grau, so wie Info.
+Der Unterschied ist, dass ich zum AUSKLAPPEN bin.
 :::
 ```
 
