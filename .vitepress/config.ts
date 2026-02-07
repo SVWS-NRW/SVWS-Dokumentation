@@ -287,6 +287,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Anleitungen', link: '/webclient/anleitungen/', collapsed: false, items: [
 								{ text: 'Allgemeine Anleitungen', link: '/webclient/anleitungen/anleitungen_allgemein/', collapsed: true, items: [
 									{ text: 'Anmeldung', link: '/webclient/anleitungen/anleitungen_allgemein/anmeldung/' },
+									{ text: 'Schulbescheinigung drucken', link: '/webclient/anleitungen/anleitungen_allgemein/drucken_schulbescheinigung/' },
 								] },
 								{ text: 'Schulformspezifisch', link: '/webclient/anleitungen/anleitungen_schulform/', collapsed: true, items: [
 									{ text: 'Oberstufe', link: '/webclient/anleitungen/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [

@@ -1,0 +1,1 @@
+# Drucken einer Schulbescheinigung über die App Schüler
