@@ -225,12 +225,18 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Schüler', link: '/webclient/apps/schueler/', collapsed: true, items: [
 									{ text: 'Individualdaten', link: '/webclient/apps/schueler/individualdaten/' },
+									// { text: 'Sonstiges', link: '/webclient/apps/schueler/sonstiges/', collapsed: true, items: [
+									//	{ text: 'Vermerke', link: '/webclient/apps/schueler/sonstiges/vermerke/' },
+									//	{ text: 'Einwilligungen', link: '/webclient/apps/schueler/sonstiges/einwilligungen/' },
+									//	{ text: 'Lernplattformen', link: '/webclient/apps/schueler/sonstiges/lernplattformen/' },
+									// ] },
 									//{ text: 'Erziehungsberechtigte', link: '/webclient/apps/schueler/erziehungsberechtigte/' },
 									//{ text: 'Ausbildungsbetriebe', link: '/webclient/apps/schueler/ausbildungsbetriebe/' },
 									//{ text: 'Schulbesuch', link: '/webclient/apps/schueler/schulbesuch/' },
 									{ text: 'Lernabschnitte', link: '/webclient/apps/schueler/lernabschnitte/', collapsed: true, items: [
 										{ text: 'Allgemein', link: '/webclient/apps/schueler/lernabschnitte/allgemein/' },
 										{ text: 'Leistungsdaten', link: '/webclient/apps/schueler/lernabschnitte/leistungsdaten/' },
+										// { text: 'Förderempfehlungen', link: '/webclient/apps/schueler/lernabschnitte/foerderempfehlungen/' },
 									] },
 									//{ text: 'KAoA', link: '/webclient/apps/schueler/kaoa/' },
 									{ text: 'Sprachen', link: '/webclient/apps/schueler/sprachen/' },
