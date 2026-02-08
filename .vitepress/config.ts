@@ -33,7 +33,8 @@ export default defineConfig(({ mode }) => {
 					items: [
 						{ text: 'SVWS-Webclient', link: '/webclient' },
 						{ text: 'SVWS-Adminclient', link: '/adminclient' },
-						{ text: 'WebLuPO', link: '/weblupo' },
+						{ text: 'WebNotenManager (Alpha)', link: '/wenom' },
+						{ text: 'Laufbahnplanung SII mit WebLuPO', link: '/weblupo' },
 					] },
 				{ text: 'Administration',
 					items: [
