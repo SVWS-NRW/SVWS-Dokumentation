@@ -1,11 +1,14 @@
 # Import aus LuPO
 
-Beratungsdateien aus LuPO - dem bisherigen Programm! - können hier importiert werden.
+::: info LuPO und WebLuPO
+Die hier beschriebene Funktion bezieht sich auf den Import von Beratungsdateien aus dem bisherigen Windows-Programm "LuPO" Importieren Sie WebLuPO-Daten über die **App Oberstufe**.
+:::
 
-Im Dateiwahldialog ist die Lehrerdatei ".lup" anzugeben.
+::: warning Gültige Schüler-IDs
+Alle Schüler aus der LuPO-Datei müssen über gültige Schüler-IDs verfügen. Achten Sie hier besonders auf Schüler, die nach dem Initialexport händisch in LuPO angelegt wurden.
+:::
 
->![WARNING] Gültige Schüler-IDs
->Alle Schüler aus der LuPO-Datei müssen über gültige Schüler-IDs verfügen. Achten Sie hier besonders auf Schüler, die nach dem Initialexport händisch in LuPO angelegt wurden.
+Im Dateiwahldialog des Imports ist die Lehrerdatei ".lup" anzugeben, in der schon alle Schülerwahldateien durch einen Import in LuPO zusammengestellt wurden. Dieser Importdialog liest keine Schülerwahldateien ".lp" ein!
 
 ![Dialog zur Auwahl von Lupo-Dateien zum Import](./graphics/svws_schule_datenaustausch_lupo.png "Wählen Sie aus, welche Dateien Sie importieren möchten und welche Daten dabei im SVWS-Server überschrieben werden.")
 
