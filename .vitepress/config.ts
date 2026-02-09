@@ -255,15 +255,21 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Stundenplan', link: '/webclient/apps/klassen/stundenplan/' },
 								] },
 								{ text: 'Kurse', link: '/webclient/apps/kurse/' },
-								{
-									text: 'Oberstufe', link: '/webclient/apps/gost/', collapsed: true, items: [
-										{ text: 'Fächer', link: '/webclient/apps/gost/faecher/' },
-										{ text: 'Beratung', link: '/webclient/apps/gost/beratung/' },
-										{ text: 'Laufbahnplanung', link: '/webclient/apps/gost/laufbahn/' },
-										{ text: 'Fachwahlen', link: '/webclient/apps/gost/fachwahlen/' },
-										{ text: 'Kursplanung', link: '/webclient/apps/gost/kursplanung/' },
-										{ text: 'Klausurplanung', link: '/webclient/apps/gost/klausurplanung/' },
-									] },
+								{ text: 'Noten', link: '/webclient/apps/noten/', collapsed: true, items: [
+									{ text: 'Serververbindungen', link: '/webclient/apps/noten/serververbindungen/' },
+									{ text: 'Zugangsdaten', link: '/webclient/apps/noten/zugangsdaten/' },
+									{ text: 'Leistungsdaten', link: '/webclient/apps/noten/leistungsdaten/' },
+									{ text: 'Teilleistungen', link: '/webclient/apps/noten/teilleistungen/' },
+									{ text: 'Klassenleitung', link: '/webclient/apps/noten/klassenleitung/' },
+								] },
+								{ text: 'Oberstufe', link: '/webclient/apps/gost/', collapsed: true, items: [
+									{ text: 'Fächer', link: '/webclient/apps/gost/faecher/' },
+									{ text: 'Beratung', link: '/webclient/apps/gost/beratung/' },
+									{ text: 'Laufbahnplanung', link: '/webclient/apps/gost/laufbahn/' },
+									{ text: 'Fachwahlen', link: '/webclient/apps/gost/fachwahlen/' },
+									{ text: 'Kursplanung', link: '/webclient/apps/gost/kursplanung/' },
+									{ text: 'Klausurplanung', link: '/webclient/apps/gost/klausurplanung/' },
+								] },
 								{ text: 'Statistik', link: '/webclient/apps/statistik/' }, //, collapsed: true, items: [
 								//	{ text: 'Verschlüsselung ', link: '/webclient/apps/statistik/verschluesselung/' },
 								//	{ text: 'Datenprüfung', link: '/webclient/apps/statistik/datenpruefung/' },
