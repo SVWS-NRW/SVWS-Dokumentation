@@ -207,7 +207,6 @@ export default defineConfig(({ mode }) => {
 										//{ text: 'Jahrgänge', link: '/webclient/apps/schule/kataloge/jahrgaenge/' },
 										{ text: 'Kindergärten', link: '/webclient/apps/schule/kataloge/kindergaerten/' },
 										{ text: 'Konfessionen', link: '/webclient/apps/schule/kataloge/konfessionen/' },
-										//{ text: 'Vermerkarten', link: '/webclient/apps/schule/kataloge/vermerkarten/' },
 										//{ text: 'Lernplattformen', link: '/webclient/apps/schule/kataloge/lernplattformen/' },
 										{ text: 'Orte', link: '/webclient/apps/schule/kataloge/orte/' },
 										{ text: 'Ortsteile', link: '/webclient/apps/schule/kataloge/ortsteile/' },
