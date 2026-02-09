@@ -218,7 +218,6 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Datenaustausch', link: '/webclient/apps/schule/datenaustausch/', collapsed: true, items: [
 										//{ text: 'ENM Notenmanager (Todo)' },
 										{ text: 'LuPO Laufbahnplanung', link: '/webclient/apps/schule/datenaustausch/lupo/' },
-										//{ text: 'WebNotenManager', link: '/webclient/apps/schule/datenaustausch/wenom/' },
 										{ text: 'Kurs 42', link: '/webclient/apps/schule/datenaustausch/kurs42/' },
 										{ text: 'Untis', link: '/webclient/apps/schule/datenaustausch/untis/' },
 									] },
@@ -255,11 +254,15 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Kurse', link: '/webclient/apps/kurse/' },
 								//{ text: 'Noten', link: '/webclient/apps/noten/', collapsed: true, items: [
-								//	{ text: 'Serververbindungen', link: '/webclient/apps/noten/serververbindungen/' },
-								//	{ text: 'Zugangsdaten', link: '/webclient/apps/noten/zugangsdaten/' },
-								//	{ text: 'Leistungsdaten', link: '/webclient/apps/noten/leistungsdaten/' },
-								//	{ text: 'Teilleistungen', link: '/webclient/apps/noten/teilleistungen/' },
-								//	{ text: 'Klassenleitung', link: '/webclient/apps/noten/klassenleitung/' },
+								//	{ text: 'Administration', collapsed: false, items: [
+								//		{ text: 'Serververbindungen', link: '/webclient/apps/noten/serververbindungen/' },
+								//		{ text: 'Zugangsdaten', link: '/webclient/apps/noten/zugangsdaten/' },
+								//	] },
+								//	{ text: 'Noteneingabe', collapsed: false, items: [
+								//		{ text: 'Leistungsdaten', link: '/webclient/apps/noten/leistungsdaten/' },
+								//		{ text: 'Teilleistungen', link: '/webclient/apps/noten/teilleistungen/' },
+								//		{ text: 'Klassenleitung', link: '/webclient/apps/noten/klassenleitung/' },
+								//	] },
 								//] },
 								{ text: 'Oberstufe', link: '/webclient/apps/gost/', collapsed: true, items: [
 									{ text: 'Fächer', link: '/webclient/apps/gost/faecher/' },
