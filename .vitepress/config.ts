@@ -255,13 +255,13 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Stundenplan', link: '/webclient/apps/klassen/stundenplan/' },
 								] },
 								{ text: 'Kurse', link: '/webclient/apps/kurse/' },
-								{ text: 'Noten', link: '/webclient/apps/noten/', collapsed: true, items: [
-									{ text: 'Serververbindungen', link: '/webclient/apps/noten/serververbindungen/' },
-									{ text: 'Zugangsdaten', link: '/webclient/apps/noten/zugangsdaten/' },
-									{ text: 'Leistungsdaten', link: '/webclient/apps/noten/leistungsdaten/' },
-									{ text: 'Teilleistungen', link: '/webclient/apps/noten/teilleistungen/' },
-									{ text: 'Klassenleitung', link: '/webclient/apps/noten/klassenleitung/' },
-								] },
+								//{ text: 'Noten', link: '/webclient/apps/noten/', collapsed: true, items: [
+								//	{ text: 'Serververbindungen', link: '/webclient/apps/noten/serververbindungen/' },
+								//	{ text: 'Zugangsdaten', link: '/webclient/apps/noten/zugangsdaten/' },
+								//	{ text: 'Leistungsdaten', link: '/webclient/apps/noten/leistungsdaten/' },
+								//	{ text: 'Teilleistungen', link: '/webclient/apps/noten/teilleistungen/' },
+								//	{ text: 'Klassenleitung', link: '/webclient/apps/noten/klassenleitung/' },
+								//] },
 								{ text: 'Oberstufe', link: '/webclient/apps/gost/', collapsed: true, items: [
 									{ text: 'Fächer', link: '/webclient/apps/gost/faecher/' },
 									{ text: 'Beratung', link: '/webclient/apps/gost/beratung/' },
