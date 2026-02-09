@@ -11,7 +11,7 @@ Zu jedem Schema werden dann rechts der **Name** und und weiter rechts die **Date
 
 ## Admin-Benutzer
 
-Auf der rechten Seite werden alle Datenbank-Admin-Benutzer angezeigt, die in diesem Schema eingerichtet sind.
+Auf der rechten Seite werden alle Datenbank-Admin-Benutzer (mit der *Administrator*-Markierung) angezeigt, die in diesem Schema eingerichtet sind.
 
 ![Liste der Admin-Benutzer](./graphics/SVWS_adminclient_admins.png "Die Liste der gesetzten Admin-Benutzer in der Datenbank.")
 
@@ -57,7 +57,7 @@ Hierbei wählen Sie im Dropdown-Menü
 
 Bei MS Access wählen Sie die .mdb-Datei an, bei den anderen Optionen müssen Sie den *Host*, unter dem die DB zu erreichen ist, das *Datenbank-Schema* (den "Datenbanknamen") und einen *Datenbanknutzer* und das zugehörige *Passwort* angeben.
 
-:::Warning Host und Datenbanknutzer
+::: warning Host und Datenbanknutzer
 Achten Sie darauf, dass der SVWS-Server den Host auch erreichen kann, etwa über Grenzen eines virtuellen Servers hinweg.
 
 Beim **Datenbanknutzer** handelt es sich um einen **Zugang auf den Datenbankserver**, also etwa einen Root-Administrator oder sonstwie einen Zugang zur Datenbank selbst, nicht um einen *Nutzer-Administrator* innerhalb der Datenbank!

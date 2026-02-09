@@ -65,7 +65,7 @@ export default defineConfig(({ mode }) => {
 				'/adminclient': [
 					{ text: '', items: [
 						{ text: 'SVWS-Adminclient', link: '/adminclient' },
-						{ text: 'Bedienungkonzept', link: '/adminclient/client/', collapsed: true},
+						{ text: 'Bedienungkonzept', link: '/adminclient/bedienkonzept/', collapsed: true},
 						{ text: 'Apps', link: '/adminclient/apps/', collapsed: false, items: [
 							{ text: 'Schemata', link: '/adminclient/apps/schemata/' },
 							{ text: 'Konfiguration', link: '/adminclient/apps/konfiguration' },

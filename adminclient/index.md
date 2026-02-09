@@ -1,4 +1,4 @@
-# SVWS-Adminclient
+# SVWS-AdminClient
 
 Dies ist das **Benutzerhandbuch** für auf dem Zugriff über Browser vorgesehenen Administrationsclient des SVWS-Servers.
 
