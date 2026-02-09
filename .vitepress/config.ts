@@ -149,8 +149,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'SchulungsClient', link: '/deployment/Schulungsserver/SchulungsClient/' },
 							{ text: 'Docker SchulungsServer', link: '/deployment/Schulungsserver/Docker_Schulungsserver/' },
 							{ text: 'Proxmox SchulungsServer', link: '/deployment/Schulungsserver/Proxmox_Schulungsserver/' },
-							]
-						},
+						] },
 						{ text: 'SchILD-NRW-3', link: '/deployment/Schild-NRW3/' },
 						{ text: 'FAQ', link: '/deployment/FAQ.md' },
 						{ text: 'Roadmap', link: '/deployment/roadmap.md' },
