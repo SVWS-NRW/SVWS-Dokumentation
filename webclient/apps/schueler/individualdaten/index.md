@@ -22,7 +22,7 @@ Zu den Geburtsdaten lassen sich **Geburtsdatum**, der **Geburtsort** und eineven
 
 ![Die Kontaktdaten wie Adresse, Telefon, E-Mail](./graphics/SVWS_schueler_individualdaten_kontaktdaten.png "Erfassen Sie die Kontakgdaten der Schüler.")
 
-Über die Kontaktdaten werden eben diese Daten der Schüler erfasst. 
+Über die Kontaktdaten werden eben diese Daten der Schüler erfasst.
 
 Nach der Einschulung kann hier auch die **schulische E-Mailadresse** zur Kommunikation hinterlegt werden.
 
@@ -80,7 +80,7 @@ Der **Status** gibt an, welche Rolle die Person im Schulbetrieb spielt.
 
 * Schüler in der **Neuafaufnahme** sind an der Schule aufgenommen, aber noch nicht aktiv einer Klasse zugeordnet. In der Regel finden sich hier die Schüler, die aufgenommen werden, aber erst im kommenden Schuljahr dem Regelbetrieb zugeordnet werden.
 * Haben Sie Schüler, die noch nicht aufgenommen sind, aber für die dies eventuell noch geschehen könnte, können Sie die grundlegenden Daten, etwa zum Kontaktieren erfassen. Weisen Sie diesen Schülern den Status **Warteliste** zu.
-* Die aktuell beschulten Schüler sind **Aktiv**. 
+* Die aktuell beschulten Schüler sind **Aktiv**.
 * Eventuell haben Sie aktive Schüler, die aber gerade **Beurlaubt** sind. Diese werden mit dem entsprechend Status markiert.
 * **Externe** Schüler sind an einer anderen Schule gerade aktiv, werden aber bei Ihnen teilweise unterrichtet. Ein Beispiel wäre etwa ein über eine Kooperation zustande gekommener Leistungskurs.
 * Erreichen Schüler den Abschluss Ihres Bildungsganges oder Ihrer Prüfungsordnung, beenden Sie die Schulkarriere mit dem Status **Abschluss**.
