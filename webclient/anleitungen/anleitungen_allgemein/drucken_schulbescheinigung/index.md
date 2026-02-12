@@ -31,6 +31,6 @@
 
 5. **Schulbescheiniung drucken oder speichern**
    - Wie die Schulbescheinigung gedruckt oder gespeichert wird, hängt von Ihrem Internet-Browser ab.
-   - In der Regel können Sie die Schulbescheinigung mit der Tastenkombination Strg + P oder über den Menüpunkt "Drucken" ausdrucken.
-   - Alternativ können Sie die Schulbescheinigung auch als PDF-Datei speichern. Nutzen Sie dafür die Tastenkombination Strg + S oder den entsprechenden Menüpunkt, der z. B. "Seite speichern unter" heißen kann.
+   - In der Regel können Sie die Schulbescheinigung mit der Tastenkombination `Strg + P` oder über den Menüpunkt "Drucken" ausdrucken.
+   - Alternativ können Sie die Schulbescheinigung auch als PDF-Datei speichern. Nutzen Sie dafür die Tastenkombination `Strg + S` oder den entsprechenden Menüpunkt, der z. B. "Seite speichern unter" heißen kann.
    - Diese PDF-Datei können Sie dann mit einem PDF-Viewer Ihrer Wahl öffnen und weiterverarbeiten.
