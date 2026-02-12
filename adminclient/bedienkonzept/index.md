@@ -1,4 +1,4 @@
-# Bedienkonzept des SVWS-Adminclient
+# Bedienkonzept des SVWS-AdminClient
 
 Der SVWS-Server kann sehr flexibel konfiguriert werden. Dies soll dazu führen, dass der Server an die vielen verschiedenen Systemumgebungen anpassen und je nach Bedarf skaliert werden kann.
 
@@ -10,9 +10,9 @@ Weitere Hinweise zur Installation befinden sich im Bereich *Administration* ➜ 
 
 Es können verschiedene Schemata, also "Datenbanken", für eine Schule eingerichtet werden, zum Beispiel für den Produktivbetrieb, einen Testbetrieb und Schulungsbetrieb.
 
-Um die Verwaltung der verschiedenen Systeme zu unterstützen, liefert der SVWS-Server einen *Adminclient* aus.
+Um die Verwaltung der verschiedenen Systeme zu unterstützen, liefert der SVWS-Server einen *AdminClient* aus.
 
-Der Adminclient kann auch genutzt werden, um Backups zu erzeugen, wieder einzuspielen und eine Migration in die MariaDB anzustoßen.
+Der AdminClient kann auch genutzt werden, um Backups zu erzeugen, wieder einzuspielen und eine Migration in die MariaDB anzustoßen.
 
 ## Administration an zentraler Stelle
 
@@ -20,26 +20,26 @@ Der SVWS-Server kann auch an zentraler Stelle betrieben werden und mehrere Schul
 
 Dazu bekommt jede Schule ein eigenes Schema, das auch einen eigenen Schema-Datenbankbenutzer bekommt. Dadurch wird schon auf der Ebene der Schemata, der "Datenbanken" ausgeschlossen, dass Schulen auf Daten fremder Schulen zugreifen können.
 
-Die Verwaltung der verschiedenen Schemata kann auch mit dem Adminclient geschehen. Ebenso stehen den Schulträgern hierzu auch API-Endpunkte zur Verfügung, die die Schema-Verwaltung über eine priviligierte API ermöglichen.
+Die Verwaltung der verschiedenen Schemata kann auch mit dem AdminClient geschehen. Ebenso stehen den Schulträgern hierzu auch API-Endpunkte zur Verfügung, die die Schema-Verwaltung über eine priviligierte API ermöglichen.
 
 ## Login und Übersicht
-Rufen Sie den _[Server]/admin_ auf, um den **Admin Client** zu starten.
+Rufen Sie den _[Server]/admin_ auf, um den **AdminClient** zu starten.
 
 Bei einer lokalen Installation wäre dies _localhost/admin_. Sie können an dieser Stelle einen IP-Adresse oder einen Hostnamen verwenden.
 
-![Login Screen des Admin clients: root und password werden benötigt.](./graphics/svwsclient_adminclient_login.png "Login Screen des Admin Clients.")
+![Login Screen des Admin clients: root und password werden benötigt.](./graphics/svwsclient_adminclient_login.png "Login Screen des AdminClients.")
 
-::: Warning Einloggen mit dem MariaDB-root
+::: warning Einloggen mit dem MariaDB-root
 Loggen Sie sich mit dem root-Nutzer Ihrer MariaDB und dem **MaridaDB-root-Passwort** ein. Klicken Sie auf **Anmelden**.
 :::
 
-Im Adminclient selbst gibt es wieder **Apps**, die zu unterschiedlichen Administrationsbereichen führen.
+Im AdminClient selbst gibt es wieder **Apps**, die zu unterschiedlichen Administrationsbereichen führen.
 
 ![Die Apps](./graphics/SVWS_adminclient_apps.png "Die Apps im Adminclient.")
 
 Derzeit finden sich Apps zum Schemata-Management und zur Konfiguration des SVWS-Servers.
 
-![Übersicht der Schemata im Admin Client.](./graphics/SVWS_adminclient.png "Übersicht der Schemata im Adminclient und die Optionen zu diesen Schamata.")
+![Übersicht der Schemata im AdminClient.](./graphics/SVWS_adminclient.png "Übersicht der Schemata im AdminClient und die Optionen zu diesen Schamata.")
 
 Oben links zeigt **Ro** an, dass der Rootuser angemeldet wurde. Melden Sie sich unten ganz links mit einem Klick auf **Abmelden** ab.
 

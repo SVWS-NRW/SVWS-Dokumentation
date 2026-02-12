@@ -89,6 +89,11 @@ Die Dienste MariaDB und SVWS-Server werden in der Computerverwaltung registriert
 
 ![Windows-Dienste mit dem SVWS-Java-Service-Dienst](./graphics/SVWSDienste.jpg "Der Dienst für den SVWS-Java-Service ist hervorgehoben.")
 
+::: warning Port 443 für den SVWS-Server
+Der SVWS-Server wird immer auf Port 443 installiert.
+Dies kann nach der Installation in der svwsconfig.json korrigiert werden. Das sollte allerdings nur in Ausnahmefällen geschehen.
+:::
+
 ## Konfigurationsdatei editieren 
 
 Man findet alle Einstellungsmöglichkeiten zum Betrieb des SVWS-Servers an zentraler Stelle in der Datei: 

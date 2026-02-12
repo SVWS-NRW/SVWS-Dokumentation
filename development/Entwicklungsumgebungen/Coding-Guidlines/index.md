@@ -4,10 +4,9 @@ outline: 2
 # Coding Guidlines
 ::: details Inhalt
 - [Allgemein](#allgemein)
-  - [1. Einzeilige Befehle ohne Klammern](#_1-einzeilige-befehle-ohne-klammern)
-  - [2. Klammern bei gemischten Operatoren](#_2-klammern-bei-gemischten-operatoren)
-  - [3. Interfaces statt konkreter Klassen](#_3-interfaces-statt-konkreter-klassen)
-  - [4. Return-Statements immer in eine neue Zeile](#_4-return-statements-immer-in-eine-neue-zeile)
+  - [1. Klammern bei gemischten Operatoren](#_2-klammern-bei-gemischten-operatoren)
+  - [2. Interfaces statt konkreter Klassen](#_3-interfaces-statt-konkreter-klassen)
+  - [3. Return-Statements immer in eine neue Zeile](#_4-return-statements-immer-in-eine-neue-zeile)
 - [Java](#java)
   - [1. `final` für unveränderliche Variablen](#_1-final-fur-unveranderliche-variablen)
   - [2. JavaDoc formatieren](#_2-javadoc-formatieren)
@@ -49,35 +48,7 @@ outline: 2
 :::
 ## Allgemein
 
-### 1. Einzeilige Befehle ohne Klammern
-Verzichte auf geschweifte Klammern bei einzeiligen Anweisungen. Schreibe die Anweisung aber dennoch in eine neue Zeile.
-
-**Richtig:**
-```java
-if (condition)
-  doSomething();
-
-for (int i = 0; i < 10; i++)
-  doSomething();
-```
-
-**Falsch:**
-```java
-if (condition) {
-  doSomething();
-}
-
-for (int i = 0; i < 10; i++) {
-  doSomething();
-}
-
-if (condition) doSomething();
-
-for (int i = 0; i < 10; i+) doSomething();
-```
----
-
-### 2. Klammern bei gemischten Operatoren
+### 1. Klammern bei gemischten Operatoren
 Wenn mehrere Operatoren in einem Ausdruck verwendet werden, setze Klammern, um die Priorität klar zu definieren und Missverständnisse zu vermeiden.
 
 **Richtig:**
@@ -100,7 +71,7 @@ if (a && b || c)
 boolean result = x instanceof String && y > 5;  
 ```
 ---
-### 3. Interfaces statt konkreter Klassen
+### 2. Interfaces statt konkreter Klassen
 Beim Design von Software sollte die Verwendung von Interfaces gegenüber konkreten Klassen bevorzugt werden, um Flexibilität, Erweiterbarkeit und Testbarkeit zu erhöhen. Durch die Nutzung von Interfaces wird die Abhängigkeit von bestimmten Implementierungen reduziert und es wird einfacher, den Code zu erweitern oder auszutauschen, ohne andere Teile des Systems zu verändern.
 
 **Empfohlene Interfaces für Sammlungen in Java**
@@ -138,7 +109,7 @@ public class DataProcessor {
 
 ---
 
-### 4. Return-Statements immer in eine neue Zeile  
+### 3. Return-Statements immer in eine neue Zeile  
 Return-Statements sollten immer in einer eigenen Zeile stehen. Das gilt auch für switches.
 
 **Richtig:**  
@@ -297,7 +268,7 @@ public String getDay(int day) {
 ---
 
 ## TypeScript
-
+Neben den folgenden Regeln sind außerdem die Coding Guildines von [MDN](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide/JavaScript) zu beachten.
 ### 1. Explizite Null- und Undefined-Überprüfungen
 Vermeide den Einsatz von `!!value`, um auf `null` oder `undefined` zu prüfen. Nutze stattdessen explizite Vergleiche, um potenzielle Fehlerquellen auszuschließen.
 

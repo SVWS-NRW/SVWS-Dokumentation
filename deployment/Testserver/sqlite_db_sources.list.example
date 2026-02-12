@@ -1,0 +1,3 @@
+/app/SVWS-Testdaten/Testdaten_GY.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/GOST_Abitur/Abi-Test-Daten-04/Gym_22_23_1.sqlite
+/app/SVWS-Testdaten/Testdaten_G.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/Grundschule/Grundschule_Stundenplan.sqlite
+/app/SVWS-Testdaten/Testdaten_GE.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/GE_Prognose/GEPrognose.sqlite

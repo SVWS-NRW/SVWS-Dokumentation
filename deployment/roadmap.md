@@ -43,20 +43,25 @@ Die Architekturdokumenation für den Betrieb des SVWS-Servers soll auf Basis des
 
 Hier soll eine mitwachsende Dokumentation entstehen, die es den Betreibern und Entwicklern erleichtern soll, Systementscheidungen zu treffen.
 
-## 2025 Dezember - Start Beta-Phase WebNotenManager (WeNoM)
-
-Der externe WebNotenManager zur Einholung der Noten über ein webbasiertes System wird als Beta-Version allen Schulen zur Verfügung gestellt.
-Dabei wird der WebNotenmanager den Schulen über das Open-Source Repository zur Verfügung gestellt.
-
-Die Software kann auf einem Webspace bei einem Dienstleister mit entsprechendem AVV oder auch bei der jeweiligen Schulträger-IT betrieben werden.
-
 ## 2025 Dezember - Durchführung eines Security-Audit für SVWS-Server und WebNotenManager
 
 Durchführung einer intensiven Sicherheitsüberprüfung für das Zusammenspiel von SVWS-Server und WebNotenManager.
 
 Insbesondere die Passwortverwaltung, die Synchronisationsprozesse und die Datenschutzanalyse sollen hier geprüft werden.
 
-## 2026 Februar - Erster Feldtest Schulbewerbungen
+## 2026 März - Start Beta-Phase WebNotenManager (WeNoM)
+
+Der externe WebNotenManager zur Einholung der Noten über ein webbasiertes System wird als Beta-Version allen Schulen zur Verfügung gestellt.
+Dabei wird der WebNotenmanager den Schulen über das Open-Source Repository zur Verfügung gestellt.
+
+Die Software kann auf einem Webspace bei einem Dienstleister mit entsprechendem AVV oder auch bei der jeweiligen Schulträger-IT betrieben werden.
+
+## 2026 April Ersten Prototyp für das Abitur 2030
+
+Die Laufbahnplanung soll die Änderungen zum 5. Abiturfach und den Projektkursen sowie weiteren Änderungen, die schon feststehen enthalten.
+Dies soll die Erzeugung erster Testfälle für die Laufbahnplanungen unterstützen.
+
+## 2026 Erster Feldtest Schulbewerbungen
 
 Es soll ein erster abgegrenzter Feldtest mit ausgesuchten Schulen stattfinden, die den digitalen Schülerwechsel mit dem SVWS-Server und schulbewerbung.de durchführen.
 

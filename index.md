@@ -27,6 +27,8 @@ Für die Installation und Nutzung der Software **SchILD-NRW-3** findet sich dere
 
 Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Webclient* und zum *SVWS-Server*. Der **SVWS-Webclient** ist eine Web-Applikation zur Unterstützung der Verwaltungsprozesse an den Schulen Nordrhein-Westfalens. Er schafft eine plattformübergreifende Benutzeroberfläche, die mit allen gängigen Browsern aufgerufen werden kann.
 
+Der SVWS-Webclient greift auf den SVWS-Server zu, so dass erledigte Arbeiten wechselseitig auch anderen auf den SVWS-Server zugreifenden Client-Anwendungen zur Verfügung stehen.
+
 Er wird in der ersten Übergangsphase parallel zu SchILD-NRW 3 benutzt.
 
 ![Übersicht der SVWS-Server-Umgebung mit Client-Programmen](./graphics/SVWS-Server-LandingPage.png "Zusammenspiel des SVWS-Servers mit unterschiedlichen Programmen.")

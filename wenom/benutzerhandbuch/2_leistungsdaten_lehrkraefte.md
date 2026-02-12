@@ -1,95 +1,114 @@
-## Anmeldung einer Lehrkraft
+## Anmeldung
 
-Den **Lehrkräften** wurde in der Schule ein *Initialpasswort* gegeben, das sie unter Anwahl der URL ihres Wenom-Servers eingeben können. Der Benutzername ist die *dienstliche Emailadresse*.
+* Öffnen Sie die Web-Adresse des WeNoM-Servers, die Sie von Ihrer Schule erhalten haben.
+* Zum Anmelden gilt die *dienstliche Emailadresse* als **Benutzername** .
+* Als Kennwort ist das **Initialkennwort** zu verwenden, welches Ihnen **Lehrkräften** von der Schule mitgeteilt wurde.
 
-![WenomAnmeldung.png](graphics/WenomAnmeldung.png)
+![Das Anmeldefenster zum WebNotenManager](graphics/WenomAnmeldung.png "Loggen Sie sich mit Ihrer dienstlichen Emailadresse und dem erhlatenen Passwort beim WeNoM ein.")
 
-Nach dem Login öffnet sich in der Regel der Leistungsdatenreiter mit der vorausgewählten ersten Lerngruppe der Lehrkraft. 
+Nach dem Login öffnet sich der Leistungsdatenreiter mit der vorausgewählten ersten Lerngruppe der Lehrkraft. 
 
-Je nach Rolle der Lehrkraft kann die Ansicht variieren. Es wird zwischen den folgenden Möglichkeiten und den im Folgenden beschriebenen Geschäftsprozessen unterschieden:
+Je nach Rolle der Lehrkraft kann die Ansicht variieren. Es wird zwischen den folgenden Möglichkeiten unterschieden:
 
-+ Fachlehrkraft
-+ Klassenleitung
-+ Schulleitung bzw. Abteilungsleitung
+* Die **Fachlehrkraft** sieht nur die Leistungsdaten ihrer Klassenunterrichte und Kurse.
+* Die **Klassenleitung** sieht weitere Daten wie Zeugnisbemerkungen.
+* Die **Schulleitung** oder eine  **Abteilungsleitung/Stufenkoordination** sieht wie die Klassenleitung alle Daten der Schule oder Abteilung.
 
 ### Grundsätzliche Tabelleneinstellungen
 
 **GRAFIK TODO**
 
-In der Ansicht können Lerngruppen in die Tabellenübersicht aufgenommen beziehungsweise abgewählt werden. Am rechten Rand der Tabelle können Spalten ein- und ausgeblendet werden. Je nach Benutzer können bis zu drei verschiedene Tabellen aufgerufen werden. 
+In dieser Ansicht können Lerngruppen in die Tabellenübersicht aufgenommen beziehungsweise abgewählt werden. Am rechten Rand der Tabelle können Spalten ein- und ausgeblendet werden. Je nach Ihrer Rolle können bis zu drei unterschiedliche Tabellen aufgerufen werden:
 
-+ Leistungsdaten
-+ Teilleistungen
-+ Klassenleitung
++ **Leistungsdaten** - dies sind die Noten, Fehlstunden und Mahnungen bei Schülern.
++ **Teilleistungen** - werden an Ihrer Schule Teilleistungen zu Fächern erfasst, sind diese hier aufgeführt. Eine Teilleistung könnten Noten für Klausuren, Sonstige Mitarbeit oder ZP10-Noten sein.
++ **Klassenleitung** - als Klassenleitung können hier aufsummierte Fehlstunden oder die diversen Arten von Zeugnisbemerkungen eingegeben werden.
 
 ## Eintragungen der Fachlehrkraft
 
 
 ### Leistungsdaten
 
-![WenomLeistungsdaten.png](graphics/WenomLeistungsdaten.png)
+![Übersichtstabelle der Leistungsdaten](graphics/WenomLeistungsdaten.png "Geben Sie Noten, Mahnungen und Fehlstunden ein.")
 
 
 #### Noten eintragen
 
-Die **Fachlehrkraft** kann die Noten für ihren eigenen Unterricht in den Leistungs- bzw. Teilleistungsdaten eingeben. Hierbei können ganze Noten (1, 2, 3, …) bzw. gebrochene Notenwerte (3+, 3, 3-, …) eingegeben werden. In den Leistungsdaten können die folgenden Notenarten spaltenweise eingegeben werden: 
+Die **Fachlehrkraft** kann die Noten für ihren eigenen Unterricht in den Leistungsdaten eingeben. Hierbei ist die **Note** die Zeugnisnote. Es kann ebenfalls eine **Quartalsnote** vergeben werden.
 
-+ Quartalsnoten
-+ Note (als End- bzw. Zeugnisnote zu verstehen)
+Sofern **Teilleistungen** definiert sind, werden diese hier ebenfalls eingetragen.
+
+Es lassen sich ganze Noten (1, 2, 3, …) und Noten mit Tendenzen eingeben (3+, 3, 3-, …). Weiterhin können je nach Bedarf Leistungsstufen E1, E2 E3 oder Codes wie NB für "Nicht beurteilbar" oder NE für "Nicht erteilt" usw. eingetragen werden.
+
+::: tip Pfeiltasten verwenden
+Nutzen Sie bei Verwendung einer Tastatur die Coursertasten, um zwischen den Feldern und Spalten zu wechseln. Noten lassen sich gut mit dem Ziffernblock eintippen.
+:::
 
 #### Mahnungen setzen
 
-Unter den Leistungsdaten können Mahnungen neu gesetzt oder bereits ausgesprochene Mahnungen von der Lehrkraft nachgesehen werden. 
+Bei den Leistungsdaten können **Mahnungen** neu gesetzt oder bereits ausgesprochene Mahnungen von der Lehrkraft nachgesehen werden. Mahnungen werden über den Haken in der Checkbox vergeben.
 
-Ist die Checkbox mit einem Haken versehen und inaktiv, das heißt der Zustand der Checkbox kann nicht mehr verändert werden, dann handelt es sich um eine *ältere Mahnung*, die dem Schüler zum Beispiel im letzten Halbjahr durch die Vergabe eines Defizits ausgesprochen wurde.
+Ist das Feld *mit einem Haken versehen* und *inaktiv* - wird also ohne Checkbox angezeigt und ist nicht mehr veränderbar - dann handelt es sich um eine *ältere Mahnung*, die dem Schüler zum Beispiel im letzten Halbjahr durch die Vergabe eines Defizits ausgesprochen wurde.
 
-Mit dem entsprechenden Schüler ausgewählte Mahnungen sind am gesetzten Haken erkennbar und zusätzlich durch ihre rote Färbung. Diese können auch weiterhin von der Lehrkraft bearbeitet werden.
+Bei einer Schülerin neu gesetzte Mahnungen sind am gesetzten Haken und der *roten Färbung* erkennbar. Diese Mahnungen können weiterhin bearbeitet werden.
 
-Erst im Zuge der Weiterverarbeitung im SVWS-Webclient wird der Zustand einer versendeten beziehungsweise ausgesprochenen Mahnung erreicht. Das bedeutet, dass die Checkbox erst nach der Verarbeitung im SVWS-Webclient und der erneuten Synchronisation mit dem WeNoM-Server auf „angehakt” und „inaktiv” wechselt.
+::: info Update des Mahnungs-Status
+Werden die Noten und Mahnungen aus WeNoM in den SVWS-Webclient übertragen und dort verarbeitet, wird der Zustand der Mahnung auf *ausgesprochen* beziehungsweise *versendet* geändert. Dies bedeutet nach einer weiteren Rück-Synchronisation mit WeNoM, dass der Status hier auf *angehakt* und *inaktiv* wechselt.
+:::
 
-Somit kann die Lehrkraft nachvollziehen, dass die Mahnung offiziell versendet beziehungsweise ausgesprochen wurde. 
 
 #### Fachbezogene Fehlstunden eintragen
 
-Im Bereich „Fehlstunden” können fachbezogene Fehlstunden (FS) als ganze Zahl eingegeben werden. Die Anzahl der unentschuldigten Fehlstunden (FSU) wird in der benachbarten Spalte eingetragen. 
+Im Bereich **Fehlstunden** können *fachbezogene Fehlstunden* (FS) als ganze Zahl eingegeben werden. Die Anzahl der *unentschuldigten Fehlstunden* (FSU) wird in der benachbarten Spalte eingetragen. 
 
-#### Eintragungen fachbezogene Bemerkungen
+#### Eintragungen fachbezogene Bemerkungen (FB)
 
-Durch Klicken auf „Fachbezogene Bemerkungen” öffnet sich ein modales Fenster. Zuerst ist der zuvor ausgewählte Schüler ausgewählt, es können können aber auch alle weiteren Schüler der entsprechenden Lehrgruppe auf der linken Seite ausgewählt werden.
+Durch Klicken auf **Fachbezogene Bemerkungen** öffnet sich ein Eingabefenster. Es ist nun der zuvor ausgewählte Schüler ausgewählt und Sie können Bemerkungen erzeugen.
 
-Im unteren Bereich können vorformulierte Floskeln entweder durch Eingabe des Kürzels oder durch Anklicken übernommen und beim Schüler eingetragen werden.
+Im unteren Bereichd dieses Fensters können durch die Schule **vorformulierte Floskeln** entweder durch Eingabe des Kürzels oder durch Anklicken übernommen und beim Schüler eingetragen werden. Hierbei werden Platzhalter wie *$Vorname$* automatisch ausgefüllt.
 
-![WenomFachbezBem.png](graphics/WenomFachbezBem.png)
+Sie können im Anschluss Schüler der entsprechenden Lerngruppe auf der linken Seite durchklicken und für diese ebenfalls Bemerkungen erzeugen.
+
+![Auswahlliste der fachbezogenen Floskeln](graphics/WenomFachbezBem.png "Auswahlliste der fachbezogenen Floskeln.")
 
 
 ### Teilleistungen
-![WenomTeilleistungen.png](graphics/WenomTeilleistungen.png)
+![Übersicht der Teilleistungen zur Noteneingabe](graphics/WenomTeilleistungen.png "Vergeben Sie Noten für von der Schule definierte Teilleistungen.")
 
-Als Teilleistungen werden Unternoten eines Faches bezeichnet, dies sind zum Beispiel für *Sonstige Mitarbeit*, *Klausuren und Klassenarbeiten* oder *ZP10-Prüfungsleistungen*.
+Als **Teilleistungen** werden Unternoten eines Faches bezeichnet. Dies sind zum Beispiel Noten für *Sonstige Mitarbeit*, *Klausuren und Klassenarbeiten* oder *ZP10-Prüfungsleistungen*.
 
-Diese können je nach Schulform und Schule in ihrer Anzahl und in ihrer Bezeichnung variieren.
+::: info Teilleistungen variieren je nach Schule
+Die Schule kann Teilleistungen nach eigener Maßgabe definieren, daher können die Teilleistungen nach Schulform und Schule in ihrer Anzahl und in ihrer Bezeichnung variieren. Schulen verwenden eventuel keine Teilleistungen.
+:::
 
-Im Reiter „Teilleistungen” findet man eine Übersicht über alle in dieser Lerngruppe durch den zentralen SVWS-Server vorgegebenen Teilleistungsarten. 
+Im Tab Teilleistungen findet man eine Übersicht über alle in dieser Lerngruppe durch den zentralen SVWS-Server vorgegebenen Teilleistungsarten. 
 
 Alternativ zum Leistungsdatenreiter können hier auch die Quartals- und Endnoten eingetragen werden. 
 
 ## Eintragungen der Klassenleitung
 
-![WenomKlassenleitung.png](graphics/WenomKlassenleitung.png)
+![Eomtragen von Fehlstunden und Bemerkungen durch die Klassenleitungen](graphics/WenomKlassenleitung.png "Tragen Sie als Klassenleitung gesammlte Fehlstunden und unterschiedlichen Bemerkungen ein.")
 
 ### Klassenleitung: FS und FSU
 
-Der Reiter „Klassenleitung” ist nur für Klassenlehrkräfte sichtbar. Hier werden fachübergreifende Fehlstunden ("FS" für "Fehlstunden" und FSU für "Unentschuldigte Fehlstunden"), also die Gesamtfehlstunden, verwaltet, falls sich die Schule beziehungsweise die Abteilung für eine direkte Erfassung der Gesamtnoten entschieden hat. 
+Der **Tab Klassenleitung** ist nur für Klassenlehrkräfte sichtbar. Hier werden fachübergreifende Fehlstunden, also die Gesamtfehlstunden, verwaltet. *FS* steht für die *Summe der Fehlstunden* und *FSU* für die *Summe der Unentschuldigten Fehlstunden*.
+
+Die Erfassung von Gesamtfehlstunden gilt für den Fall, dass sich die Schule nicht für die Erfassung der fachbezogenen Fehlstunden entschieden hat.
 
 ### ASV, AUE und ZB
 
-Unter den Spalten ASV (Arbeits- und Sozialverhalten), AUE (außerunterrichtliches Engagement) und ZB (Zeugnisbemerkung) können jeweils in diesen unterschiedlichen Kontexten Bemerkungen eingetragen werden.
+Unter den Spalten
+* ASV - Arbeits- und Sozialverhalten,
+* AUE - Außerunterrichtliches Engagement und 
+* ZB - Zeugnisbemerkung
 
-Ebenso wie bei den fachbezogenen Bemerkungen kann hier auf vorformulierte Floskeln zurückgegriffen werden. Zum Bearbeiten des Textes öffnet sich ein modales Fenster (siehe auch fachbezogene Bemerkungen).
+können jeweils in diesen unterschiedlichen Kontexten Bemerkungen eingetragen werden.
+
+Ebenso wie bei den fachbezogenen Bemerkungen kann hier auf vorformulierte Floskeln zurückgegriffen werden. Zum Bearbeiten des Textes öffnet sich ein Fenster, in dem Floskeln ausgewählt oder manuell eingetragen werden können.
  
 
 ## Tätigkeiten der Schulleitung/Abteilungsleitung
 
-Die Schul- und Abteilungsleitung hat im Grunde die gleiche Ansicht wie eine Klassen- beziehungsweise die Fachlehrkraft. Es werden lediglich alle Lerngruppen der Schule beziehungsweise der Abteilung zur Auswahl präsentiert.
+Eine Schulleitung oder Abteilungsleitung/-koordination erhält die gleiche Ansicht wie eine Klassen- beziehungsweise die Fachlehrkraft. Es werden aber erweitert alle Lerngruppen der Schule beziehungsweise der Abteilung zugeordnete Klassen/Jahrgänge zur Auswahl angezeigt.
 
-Die Tätigkeiten beschränken sich hier stark auf das Sichten der Noten zu Beratungszwecken. Gegebenenfalls können Noten und Bemerkungen von erkrankten Lehrkräften eingesehen werden.
+Die hauptsächliche Tätigkeit ist hier das Sichten der Noten zu Beratungszwecken. Gegebenenfalls können Noten und Bemerkungen von erkrankten Lehrkräften nachgetragen werden.

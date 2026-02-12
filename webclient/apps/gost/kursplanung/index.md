@@ -1,5 +1,19 @@
 # Kursplanung 
 
+## Symbole
+Diese Symbole finden sich in vielen der Menüs. Hinweise zu ihrer Bedeutung:
+
+**Linksymbol 🔗**: Springen Sie direkt zu dieser Person. In der Kursplanung sind dies je nach Kontext die Kurswahlen oder die inviduellen Leistungsdaten. 
+
+![Link_Schülerfix_1](./../graphics/SVWS_Link_Schuelerfixierung_hellgrau.png): für diesen Schüler liegt bei der Kursplanung eine Fixierung vor.
+
+![Link_Schülerfix_2](./../graphics/SVWS_Link_Schuelerfixierung_grau.png): Die Schülerin  ist in angezeigten Kurs fixiert.
+
+![Link_Schülerfix_3](./../graphics/SVWS_Link_Schuelerfixierung_schwarz.png): Der Kurs ist in an seiner Position fixiert.
+
+**🛇**: Der Kurs ist für die Zuweisung von Schülern verboten.
+
+
 ## Blockungsübersicht
 
 Zu einem Abiturjahrgang können in jedem Lernabschnitt eine oder mehrere Blockungen angelegt oder aus bestehenden Daten wiederhergestellt (restauriert) werden.

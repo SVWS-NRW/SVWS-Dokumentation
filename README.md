@@ -61,10 +61,10 @@ Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr 
 ### Alles
 
 * Der Plural von "Schema" ist "Schemata".
-* Neutrale Bezeichnungen, wo es möglich ist. "Schüler" bleiben so, wie sie sind.
-* Der Schama ist der flauschige Schutzpatron aller Schemata.
+* Neutrale Bezeichnungen, wo es möglich ist. "Schüler" bleiben so, wie sie sind; ggf. "Schülerinnen" ebenfalls nutzen; im stringenten Wechsel sieht auch doof aus.
 * Sollen Pfeile verwendet werden, sollte ein echter Pfeil ➜ genutzt werden, keine Bastelllösungen wie > oder ->.
-* Die Laufbahnplanung in der Oberstufe heißt "Laufbahnplanung Oberstufe". 
+* Die Laufbahnplanung in der Oberstufe heißt "Laufbahnplanung Oberstufe".
+* Bei Screenshots ist STRENG darauf zu achten, dass nur anoymisierte Daten verwendet werden.
 
 ### SVWS-Client
 
@@ -74,19 +74,24 @@ Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr 
 * Unter den Tabs sind die **Untertabs**.
 * In manchen Bereichen steht noch eine **graue Schaltflächenleiste** (Bezeichnung Todo) zur Verfügung.
 
+### Schreibweisen und Groß- und Kleinschreibung
+SVVWS-Webclient, AdminClient, SchILD-NRW, WeNoM, GOSt, WebLuPO, ...
+
 ### Web-Dokumentationen
 
 Die Beschreibung der einzelnen Funktionen selbst sollte ohne lange Prozessbeschreibungen nur darlegen, was da ist und wie man es benutzt.
 
 Tatsächliche Anleitungen, Tutorials und Prozessbeschreibungen (ZP10) und vor allem auch Dinge, die mit aktuellen Vorgaben (Prüfungsordnungen usw.) zu tun haben, sollen soweit wie möglich in sinnvoll gegliederte  **Anleitungen** (usw.?) ausgelagert werden.
 
-#### Grafiken und Schaubildern
+#### Grafiken, Schaubilder und Links
 
 * Grafiken werden als .png (Logos, einheitliche Farbflächen, Schaubilder, UI usw.) gespeichert.
 * Schaubilder/Schemas sind GraphML-Dateien und werden miT *yEd* erstellt. Die GraphML-Dateien werden ebenfalls in /graphics/ abgelegt.
 * Ältere Versionen von Grafiken und Schaubildern bleiben in der Regel in /graphics/ erhalten.
 * Alle Grafiken sollten direkt mit sinnvollen "Alternativtexten" und Mausover-Texten versehen werden.
 * In **Anleitungen** sollte wirklich *jeder* Schritt erwähnt und mit einem Screenshot versehen werden. Wir schreiben für nicht-technisch versierte Nutzer.
+* Bei Grafiken und Links sind wenn möglich *relative* Links und keine absoluten Pfade zu verwenden!
+* Grafiken werden im normalen Light-Mode (weißer Hintergrund) aufgenommen.
 
 ### Technische Umsetzung
 Die Dokumentation wird aus vielen [Markdown](https://de.wikipedia.org/wiki/Markdown)-Dokumenten erzeugt, die ähnlich wie Wikipedia ein spezielles Formatierungsformat verwendet. Diese Dateien werden mit Hilfe von [vitepress](https://vitepress.dev/) und der Konfigurationsdatei zu einer HTML-Seite gebaut, die dann mit dem Browser angezeigt werden kann.
@@ -109,23 +114,24 @@ Wichtiger als das Einhalten eines globalen Schemas ist aber eher der spärliche 
 
 ```md
 ::: info
-This is an info box.
+This is an info box. Ich bin grau.
 :::
 
 ::: tip
-This is a tip.
+This is a tip. Ich bin etwas lila (eher blau).
 :::
 
 ::: warning ACHTUNG
-This is a warning.
+This is a warning. Ich bin gelb.
 :::
 
 ::: danger SUPER ACHTUNG
-This is a dangerous warning.
+This is a dangerous warning. Ich bin rot.
 :::
 
 ::: details
-This is a details block.
+This is a details block. Ich bin grau, so wie Info.
+Der Unterschied ist, dass ich zum AUSKLAPPEN bin.
 :::
 ```
 
