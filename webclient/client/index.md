@@ -119,7 +119,7 @@ Im Browser installierte Plugins, etwa Screenreader, lassen sich somit auch mit d
 Für Drittsoftware wird kein Support unternommen und ein reibungsloses Funktionieren eines externen Plugins mit den Inhalten des SVWS-Clients kann nicht garantiert werden.
 :::
 
-## Technische Hintergründe zu den unterschiedlichen Nuterarten
+## Technische Hintergründe zu den unterschiedlichen Nutzerarten
 
 Es gibt den **Datenbank-root**, dem **Datenbank-Admin** und die tatsächlichen **SVWS-Benutzer**.
 
