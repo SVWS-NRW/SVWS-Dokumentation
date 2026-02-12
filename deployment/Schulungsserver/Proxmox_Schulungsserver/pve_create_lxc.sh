@@ -17,28 +17,26 @@ STORAGE="local"
 if [[ -f "$ENV_FILE" ]]; then
     echo "Lade Konfiguration aus $ENV_FILE..."
     while IFS='=' read -r key value || [[ -n "$key" ]]; do
-        # Ignoriere Kommentare und leere Zeilen
         [[ $key =~ ^[[:space:]]*# ]] && continue
         [[ -z "$key" ]] && continue
-        
-        # Entferne Inline-Kommentare und trimme Leerzeichen
         value=$(echo "$value" | cut -d'#' -f1 | xargs)
         export "$key=$value"
     done < "$ENV_FILE"
 fi
 
-# Variablen initialisieren (greift nun auf die exportierten Werte zu)
+# Variablen initialisieren
 ROOTPW=${ROOTPW:-""}
 
-# 3. Parameter einlesen (überschreibt .env Werte)
+# 3. Parameter einlesen
 while [[ $# -gt 0 ]]; do
     case "$1" in
         -p) ROOTPW="$2"; shift 2 ;;
         -nr) CONTAINER_ID="$2"; shift 2 ;;
         -ip) IP="$2"; shift 2 ;;
         -dn) FQDN="$2"; shift 2 ;;
+        -mac) MAC_ADDR="$2"; shift 2 ;; 
         -h|--help)
-            echo "Usage: $0 [-p PASSWORD] -nr CONTAINER_ID [-ip IP] [-dn FQDN]"
+            echo "Usage: $0 [-p PASSWORD] -nr CONTAINER_ID [-ip IP] [-dn FQDN] [-mac MAC_ADDRESS]"
             exit 0
             ;;
         *) echo "Unbekannter Parameter: $1"; exit 1 ;;
@@ -47,7 +45,7 @@ done
 
 # Pflichtparameter prüfen
 if [[ -z "$CONTAINER_ID" ]]; then
-    echo "Fehler: Die Containernummer muss gesetzt werden gesetzt - Beispiel: pve_create_lxc.sh -nr 1020"
+    echo "Fehler: Die Containernummer muss gesetzt werden - Beispiel: $0 -nr 1020"
     exit 1
 fi
 
@@ -66,10 +64,17 @@ else
     IPSNM="dhcp"
 fi
 
+# Netzwerk-String zusammenbauen (fügt hwaddr nur hinzu, wenn definiert)
+NET_CONFIG="name=eth0,bridge=$VSWITCH,firewall=1,gw=$GATEWAY,ip=$IPSNM"
+if [[ -n "$MAC_ADDR" ]]; then
+    NET_CONFIG="$NET_CONFIG,hwaddr=$MAC_ADDR"
+fi
+
 echo "--- Konfiguration ---"
 echo "CONTAINER_ID  : $CONTAINER_ID"
 echo "FQDN          : $FQDN"
 echo "IP            : $IPSNM"
+echo "MAC           : ${MAC_ADDR:-Auto-generiert}"
 echo "Template      : $LXC_TEMPLATE"
 [[ "$PW_GENERATED" = true ]] && echo "Passwort : (wird automatisch generiert)" || echo "Passwort : (manuell gesetzt)"
 echo "---------------------"
@@ -82,7 +87,7 @@ $LXC_TEMPLATE \
 --memory 4096 \
 --swap 0 \
 --cores 2 \
---net0 name=eth0,bridge=$VSWITCH,firewall=1,gw=$GATEWAY,ip=$IPSNM \
+--net0 "$NET_CONFIG" \
 --storage $STORAGE \
 --rootfs ${STORAGE}:8 \
 --unprivileged 1 \
@@ -93,7 +98,7 @@ $LXC_TEMPLATE \
 --start 1
 
 # Beschreibung setzen
-DESCRIPTION=$(echo -e "# $FQDN  \nPasswort: $ROOTPW    \nErstellt am $(date +%F)")
+DESCRIPTION=$(echo -e "# $FQDN  \nPasswort: $ROOTPW    \nMAC: ${MAC_ADDR:-Standard} \nErstellt am $(date +%F)")
 pct set $CONTAINER_ID --description "$DESCRIPTION"
 
 echo "Container $CONTAINER_ID wurde erfolgreich erstellt."

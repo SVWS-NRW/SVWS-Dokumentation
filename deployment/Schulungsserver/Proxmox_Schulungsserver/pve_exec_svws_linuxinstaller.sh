@@ -21,7 +21,7 @@ fi
 while [[ $# -gt 0 ]]; do
     case "$1" in
         -p) ROOTPW="$2"; shift 2 ;;
-        -nr) SNR="$2"; shift 2 ;;
+        -nr) CONTAINER_ID="$2"; shift 2 ;;
         -v) SVWSVERSION="$2"; shift 2 ;;
         -h|--help)
             echo "Usage: $0 [-p PASSWORD] [-nr SNR] [-v VERSION]"
