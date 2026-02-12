@@ -18,6 +18,9 @@ Im Feld **Geschlecht** sind die Werte *männlich*, *weiblich*, *divers* oder *Oh
 
 Zu den Geburtsdaten lassen sich **Geburtsdatum**, der **Geburtsort** und eineventuell abweichender **Geburtsname** aufnehmen.
 
+Über die Schaltfläche **Schulbescheinigung drucken** wird in einem neuen Tab die Schulbescheinigung als PDF-Datei geöffnet.\
+[![Vorschaubild](./graphics/SVWS_schueler_individualdaten_Schulbescheinigung_Vorschau.png "Schulbescheinigung")](./graphics/SVWS_schueler_individualdaten_Schulbescheinigung.png "Schulbescheinigung")
+
 ## Wohnort und Kontaktdaten
 
 ![Die Kontaktdaten wie Adresse, Telefon, E-Mail](./graphics/SVWS_schueler_individualdaten_kontaktdaten.png "Erfassen Sie die Kontakgdaten der Schüler.")
