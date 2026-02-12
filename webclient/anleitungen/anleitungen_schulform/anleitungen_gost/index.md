@@ -2,15 +2,16 @@
 
 In diesem Bereich finden sich Anleitungen zur Gynmasialen Oberstufe, die nicht einem konkreten Tab zuzuordnen sind.
 
-Die Grundlagen zur Konfigurationen der Abiturjahrgänge mit den 
+Die Grundlagen zur Konfigurationen der Abiturjahrgänge mit den
+
 * Fächern,
-* der Vorlagen für die Beratungsbögen,
+* den Vorlagen für die Beratungsbögen,
 * der Laufbahnplanung,
 * der Übersicht von erfolgten und eingesammelten Fachwahlen
 * und dann die Blockung im Zuge der Kursplanung und
 * anschließend die Klausurplanung
 
-in der **App Oberstufe** beschrieben werden.
+werden in der **App Oberstufe** beschrieben.
 
 ## Laufbahnwahlen mit WebLuPO
 

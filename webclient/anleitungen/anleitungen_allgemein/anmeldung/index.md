@@ -26,21 +26,27 @@ Sollten mehrere Server parallel unter verschiedenen Ports laufen, wird der zulet
 :::
 
 ## 2 Verbinden
+
 Nach Eingabe der Serveradresse muss mit dem Server verbunden werden. Auch nach erfolgreicher Verbindung kann die Serveradresse unter 1 bearbeitet werden und trotz ausgegrautem Verbindungsknopf neu verbunden werden.
 
 Ist der Server nicht erreichbar, dann kommt eine Fehlermeldung dazu. Ebenso kommt eine Fehlermeldung, wenn der Server zwar erreichbar, aber keine Schemata vorhanden sind, an denen man sich anmelden kann.
 
 ## 3 DB-Schema
+
 Hier werden alle gültigen Schemata angezeigt, die auf dem verbundenen Server zur Verfügung stehen.
 
 ## 4 Benutzername
+
 Hier wird der Benutzername verwendet, der angemeldet werden soll und auf dem ausgewählten Schema verfügbar ist.
 
 ## 5 Passwort
+
 Das Passwort wird verdeckt eingegeben.
 
 ## 6 Anmelden
+
 Nach Eingabe des Benutzernamens und Passworts wird das ausgewählte Schema für die Anmeldung am Server verwendet.
 
 ## 7 Versionshinweis
+
 Die aktuell verwendete Version des SVWS-Clients wird hier angezeigt, ebenso der verwendete Commit, der als Link auf das GitHub-Repository verweist. Das Kopier-Icon an der Seite kann verwendet werden, wenn Fehlermeldungen geschrieben werden. Mit Hilfe der kopierten Daten ist die Fehlersuche für das Entwicklerteam detlich einfacher.

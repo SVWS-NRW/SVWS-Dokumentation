@@ -15,7 +15,7 @@
    - Wählen Sie im Schülercontainer den Schüler oder die Schülerin aus, für die oder den die Schulbescheinigung erstellt werden soll.
    - Der Name wird in der Liste hervorgehoben, im rechten Fensterteil erscheinen die Daten dieser Person.
    - Drücken Sie oben rechts auf die Schaltfläche "Schulbescheinigung drucken".
-   ::tipp Beim Druck einer einzelnen Schulbescheinignung werden normalerweise keine Optionen angeboten. Möchten Sie die Ausgabe der Schulbescheinigung anpassen, nutzen Sie den Gruppenprozess, indem Sie vor dem einen Namen das Kästchen durch Anklicken aktivieren. Sie Können dann einen Gruppenprozess für nur eine Person verwenden.::\
+   ::: tipp Beim Druck einer einzelnen Schulbescheinignung werden normalerweise keine Optionen angeboten. Möchten Sie die Ausgabe der Schulbescheinigung anpassen, nutzen Sie den Gruppenprozess, indem Sie vor dem einen Namen das Kästchen durch Anklicken aktivieren. Sie Können dann einen Gruppenprozess für nur eine Person verwenden. :::\
 
     b) **Schulbescheinigung für mehrere Schüler erstellen**
    - Wählen Sie im Schülercontainer die Schüler und Schülerinnen aus, für die eine Schulbescheinigung erstellt werden soll. Markieren Sie dazu vor jedem gewünschten Namen das Kästchen durch Aufklicken.
