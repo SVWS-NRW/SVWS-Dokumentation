@@ -18,8 +18,12 @@ Im Feld **Geschlecht** sind die Werte *männlich*, *weiblich*, *divers* oder *Oh
 
 Zu den Geburtsdaten lassen sich **Geburtsdatum**, der **Geburtsort** und eineventuell abweichender **Geburtsname** aufnehmen.
 
-Über die Schaltfläche **Schulbescheinigung drucken** wird in einem neuen Tab die Schulbescheinigung als PDF-Datei geöffnet.\
-[![Vorschaubild](./graphics/SVWS_schueler_individualdaten_Schulbescheinigung_Vorschau.png "Schulbescheinigung")](./graphics/SVWS_schueler_individualdaten_Schulbescheinigung.png "Schulbescheinigung")
+Über die Schaltfläche **Schulbescheinigung drucken** oben rechts im Fenster wird in einem neuen Tab die Schulbescheinigung zum aktuellen Schüler als PDF-Datei geöffnet.\
+![Schaltfläche Schulbescheinigung drucken](./graphics/SVWS_schueler_individualdaten_Schulbescheinigung2.png "Schaltfläche Schulbescheinigung drucken")
+
+[Beispiel für eine Schulbescheinigung](./graphics/SVWS_schueler_individualdaten_Schulbescheinigung.png "Schulbescheinigung")
+
+Unter dem Menüpunkt Anleitungen ist eine [ausführliche Anleitung zum Drucken einer Schulbescheinigung](../../../anleitungen/anleitungen_allgemein/drucken_schulbescheinigung/index.md "Anleitung Schulbescheinigung drucken") zu finden.
 
 ## Wohnort und Kontaktdaten
 
