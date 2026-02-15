@@ -23,7 +23,7 @@
    - Im rechten Fensterteil werden dann alle verfügbaren Gruppenprozesse angezeigt.
    - Klicken Sie auf `Schulbescheinigung drucken`.
    - Es klappt ein Fenster auf, in dem Sie verschiedene Optionen auswählen können.\
-   ![Gruppenprozess Schulbescheinigung](./Anleitung_allgemein_Schulbescheinigung_Gruppenprozess_Optionen.png "Optionen für den Gruppenprozess Schulbescheinigung.")
+   ![Gruppenprozess Schulbescheinigung](./graphics/Anleitung_allgemein_Schulbescheinigung_Gruppenprozess_Optionen.png "Optionen für den Gruppenprozess Schulbescheinigung.")
    - Um die Erstellung der Schulbescheinigungen zu starten, klicken Sie auf die Schaltfläche `Drucken`.
 
 4. **Schulbescheinigung ansehen**
