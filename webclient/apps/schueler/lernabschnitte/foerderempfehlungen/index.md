@@ -18,4 +18,10 @@ Am Ende des Fensters wird über unterschiedliche Daten das **weitere Vorgehen** 
 
 Ist die Fördermaßnahme vollständig formuliert, klicken Sie auf **Texteingabe abgeschlossen**.
 
-Beachten Sie hier, dass die Daten erst in die Datenbank geschrieben werden, wenn Sie auf `Speichern` klicken. Klicken Sie auf **Abbrechen** werden alle Eingaben verworfen. 
+Haben Sie eine Fördermaßnahme vollständig abgeschlossen, setzen Sie hier auch den Haken bei **Förderempfehlung abgeschlossen**.
+
+Beachten Sie hier, dass die Daten erst in die Datenbank geschrieben werden, wenn Sie auf `Speichern` klicken. Klicken Sie auf **Abbrechen** werden alle Eingaben verworfen.
+
+![Übersicht der FE zusammen mit dem Status, ob sie abgeschlossen sind](./graphics/svws_schueler_foerderempfehlungen_abschluss.png "In der Übersicht wird angezeigt, ob eine Förderempfehlung abgeschlossen ist.")
+
+In der Liste der Förderempfehlungen eines Lernabschnitts wird rechts unter **Empfehlung abgeschlossen** über den **Haken ✔** sichtbar gemacht, dass eine Förderempfehlung abgeschlossen ist. Ein **x** zeigt an, dass die Empfehlung mit ihren Maßnahmen noch aktiv ist oder wenn sie in der Vergangenheit liegt, nicht erfolgreich abgeschlossen werden konnte.
