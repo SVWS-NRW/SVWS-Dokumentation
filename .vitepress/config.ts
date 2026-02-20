@@ -180,11 +180,11 @@ export default defineConfig(({ mode }) => {
 					{ text: '', items:
 						[
 							{ text: 'SVWS-Webclient', link: '/webclient/', collapsed: false, items: [
-								{ text: 'Supportkonzept', link: '/webclient/client/supportkonzept/' },
-								{ text: 'Bedienung im Browser', link: '/webclient/client/' },
-								{ text: 'Gruppenprozesse', link: '/webclient/client/gruppenprozesse/' },
-								{ text: 'Tastaturnavigation', link: '/webclient/client/tastaturnavigation' },
-								{ text: 'Änderungen', link: '/webclient/client/änderungen/' },
+								{ text: 'Supportkonzept', link: '/webclient/dokumentationsartikel/supportkonzept/' },
+								{ text: 'Bedienung im Browser', link: '/webclient/dokumentationsartikel/' },
+								{ text: 'Gruppenprozesse', link: '/webclient/dokumentationsartikel/gruppenprozesse/' },
+								{ text: 'Tastaturnavigation', link: '/webclient/dokumentationsartikel/tastaturnavigation' },
+								{ text: 'Änderungen', link: '/webclient/dokumentationsartikel/änderungen/' },
 							] },
 							{ text: 'Apps', link: '/webclient/apps/', collapsed: false, items: [
 								{ text: 'Aktueller Benutzer', link: '/webclient/apps/aktuellernutzer/' },
