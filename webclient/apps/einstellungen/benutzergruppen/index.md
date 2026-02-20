@@ -1,15 +1,16 @@
 # Benutzergruppen
 
->![NOTE] Der SVWS-Server ist in der Entwicklung
->Der SVWS-Server befindet sich noch in der Entwicklung und das Rechtemanagement ist einer der Punkte, an denen dies besonders deutlich hervor tritt. Viele vorgesehene Rechteeinstellungen können hier auftauchen, obwohl die Funtkionen dahinter noch nicht implementiert sind.
+::: warning Der SVWS-Server ist in der Entwicklung
+Der SVWS-Server befindet sich in der Entwicklung und das Rechtemanagement ist einer der Punkte, an denen dies mitunter hervor tritt. Viele vorgesehene Rechteeinstellungen können hier auftauchen, obwohl die Funktionen dahinter noch nicht implementiert sind.
+:::
 
 ## Einführung
 
 Über für die an Ihrer Schule ausgefüllten Aufgaben passend definierte Benutzergruppen lassen sich die Zugriffsrechte der Benutzer steuern.
 
-Grundsätzlich sollten alle Benutzer so viele Rechte erhalten, wie sie benötigen, aber nicht mehr.
+Grundsätzlich sollen alle Benutzer so viele Rechte erhalten, wie sie für ihre Aufgaben benötigen - aber nicht mehr.
 
-An manchen Stellen erlauben die Rechte eine Unterscheidung, ob Daten nur angesehen oder auch geändert oder gelöscht werden können. Zum Beispiel sollten "Lehrer" die *Individualdaten* der Schüler ansehen, aber nicht ändern können. Die Änderung der Daten läuft unter Beachtung der geltenden Rechtslage über eventuelle *Abteilungsleitungen* beziehungsweise das *Sekretariat*.
+An manchen Stellen erlauben die Rechte eine Unterscheidung, ob Daten nur angesehen oder auch geändert beziehungsweise gelöscht werden können. Zum Beispiel sollten "Lehrer" die *Individualdaten* der Schüler ansehen, aber nicht ändern können. Die Änderung der Daten läuft unter Beachtung der geltenden Rechtslage über eventuelle *Abteilungsleitungen* beziehungsweise das *Sekretariat*.
 
 Manche Lehrkräfte sind in der Verwaltung der *Sekundarstufe II* und dem *Abitur* eingebunden. Die Verwaltung der Lehrkräfte selbst obliegt eventuell der *Schulleitung* oder einer Schulverwaltungskraft.
 
@@ -30,7 +31,9 @@ Die Verwaltung von Benutzergruppen besteht aus vier Bereichen:
 3. Im dritten Bereich sind **alle möglichen Benutzer** aufgeführt, dies beinhaltet alle in der Datenbank angelegten Benutzer. Fügen Sie einen Benutzer durch einen Klick auf ihn zur aktuell gewählten Gruppe hinzu.
 4. Daneben finden sich **alle der gewählten Gruppe zugeordneten Benutzer**. Entfernen Sie diese mit einem Klick auf das Papierkorb-Symbol 🗑.
 
-**Hinweise:** Ist eine Person in mehreren Benztzergruppen, erhält sie die Rechte von allen. Beachten Sie auch, dass einzelnen Benutzern in der Benutzerverwaltung noch zusätzliche Einzelrechte gegeben werden können.
+::: tip Zusammenwirken mehrerer Benutzergruppen 
+Ist eine Person in mehreren Benztzergruppen, erhält sie die Rechte von allen und zwar für einen Punkt immer das höchste Recht. Beachten Sie auch, dass einzelnen Benutzern in der Benutzerverwaltung noch zusätzliche Einzelrechte gegeben werden können.
+:::
 
 ## "Funktionsbezogene" Rechte
 

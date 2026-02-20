@@ -52,9 +52,15 @@ Einem Benutzer können mehrere Benutzergruppen zugewiesen werden, so dass dieser
 
 Zusätzlich können einem Benutzer indivdiuell weitere Rechte gegeben werden.
 
-Hier im Screenshot ist zu sehen, dass die Person der Gruppe *Lehrer* zugeordnet wurde und zusätzlich noch individuell die Rechte *Vermerke ändern* und *KAoA-Daten ändern* erhält. 
+Hier im Screenshot ist zu sehen, dass die Person der Gruppe *Lehrer* zugeordnet wurde und zusätzlich noch individuell die Rechte *Vermerke ändern* und *KAoA-Daten ändern* erhält.
 
-Die **Benutzergrupppe Administrator** nimmt eine Sonderrolle ein. Ein Admininistrator darf alles. Zusätzlich kann unter Umständen konkret die Rolle "Ist Administrator" abgefragt werden. Etwa für die Anmeldung im AdminClient muss der verwendete Benutzer auch ein Administrator sein.
+![Benutzer als Administrator gekennzeichnet](./graphics/SVWS_Benutzer_administrator.png "Ist ein Benutzer ein Administrator, wird dies hier angezeigt.")
 
-**Tipp:** Nutzen Sie für die tägliche Arbeit keinen Nutzer aus der Gruppe der Administratoren.
+Die **Benutzergrupppe Administrator** nimmt eine Sonderrolle ein. Ein Admininistrator darf alles. Zusätzlich kann unter Umständen konkret die Rolle "Ist Administrator" abgefragt werden. Etwa für die Anmeldung im AdminClient muss der verwendete SVWS-Benutzer auch ein Administrator sein.
+
+In der Benutzerverwaltung ist ein *Administrator* noch einmal oberhalb der Kompetenzen gekennzeichnet. 
+
+::: warning Administratoren dürfen alles
+Nutzen Sie für die tägliche Arbeit aufgrund der Anfälligkeit für Fehler keinen Nutzer aus der Gruppe der Administratoren.
+:::
 

@@ -289,8 +289,8 @@ export default defineConfig(({ mode }) => {
 									] },
 								] },
 								{ text: 'Einstellungen', link: '/webclient/apps/einstellungen/', collapsed: true, items: [
-									{ text: 'Benutzer (Anzupassen)', link: '/webclient/apps/einstellungen/benutzer/' },
-									{ text: 'Benutzergruppen (Anzupassen)', link: '/webclient/apps/einstellungen/benutzergruppen/' },
+									{ text: 'Benutzer', link: '/webclient/apps/einstellungen/benutzer/' },
+									{ text: 'Benutzergruppen', link: '/webclient/apps/einstellungen/benutzergruppen/' },
 								] },
 							] },
 							{ text: 'Anleitungen', link: '/webclient/anleitungen/', collapsed: false, items: [
