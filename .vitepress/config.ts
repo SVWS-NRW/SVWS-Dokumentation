@@ -307,7 +307,6 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Zeugnisvorbereitung', link: '/webclient/anleitungen/anleitungen_zeugnisse/' },
 							] },
 							{ text: 'Weiteres', link: '/webclient/weiteres/', collapsed: false, items: [
-								{ text: 'JSON-Dateien', link: '/webclient/weiteres/json_files/' },
 								{ text: 'Adressbücher', link: '/webclient/kommunikationsschnittstelle/adressbuecher/' },
 								{ text: 'Kalender', link: '/webclient/kommunikationsschnittstelle/kalender/' },
 							] },
