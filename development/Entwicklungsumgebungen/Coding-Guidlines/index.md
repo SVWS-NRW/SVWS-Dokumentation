@@ -342,7 +342,7 @@ array.forEach(item => process(item));
 ## Vue
 
 ### 1. Aufbau einer Single File Component
-Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`. Beachte aber, dass `<style>`-Abschnitte vermieden werden sollen (siehe [Tailwind 4 Doku](../../Tailwind-4/index.md)).
+Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`. Beachte aber, dass `<style>`-Abschnitte vermieden werden sollen.
 
 **Richtig:**
 ```vue
@@ -390,7 +390,7 @@ Verwende in einer SFC stets die Reihenfolge `<template>`, `<script>`, `<style>`.
 
 ### 2. Formatierung in Tags
 Innerhalb der Vue Tags `<template>`, `<script>` und `<style>` soll der Code eingerückt sein. Außerdem soll sich zwischen den Tags `<script>` und `<style>` und deren Inhalt eine Leerzeile befinden. Dies gilt nicht für `<template>` (wird von ESLint sonst kritisiert).
-Beachte aber, dass `<style>`-Abschnitte vermieden werden sollen (siehe [Tailwind 4 Doku](../../Tailwind-4/index.md)).
+Beachte aber, dass `<style>`-Abschnitte vermieden werden sollen.
 
 **Richtig:**
 ```vue
@@ -598,7 +598,8 @@ Keine Logik inline verwenden, sondern diese beispielsweise in ein `computed` aus
 ---
 
 ### 9. Tailwind-Klassen statt benutzerdefiniertem CSS
-Bevor eigenes CSS geschrieben wird, muss geprüft werden, ob [Tailwind](https://tailwindcss.com/)-Klassen existieren, die denselben Effekt haben, um Redundanz zu vermeiden. Für die Verwendung von Tailwind ist die Dokumentation von [Tailwind 4](../../Tailwind-4/index.md) zu beachten! \
+Bevor eigenes CSS geschrieben wird, muss geprüft werden, ob [Tailwind](https://tailwindcss.com/)-Klassen existieren, die denselben Effekt haben, um Redundanz zu vermeiden.
+
 In Tailwind gibt es neben den fest definierten CSS Klassen auch Klassen, die sich noch weiter individualisieren lassen. Ein Beispiel hierfür ist die Klasse zum Setzen des Paddings. Hier gibt es die Möglichkeit direkt einen Pixelwert mitzugeben:
 ```css
 /* MyComponent.css */

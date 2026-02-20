@@ -47,8 +47,6 @@ export default defineConfig(({ mode }) => {
 					items: [
 						{ text: 'SVWS-Server', link: '/development/SVWS-Server/'},
 						{ text: 'Entwicklungsumgebungen', link: '/development/Entwicklungsumgebungen/'},
-						{ text: 'Tailwind 4', link: '/development/Tailwind-4/' },
-						{ text: 'Gradle', link: '/development/Gradle/' },
 						{ text: 'APIs für externe Tools', link: '/development/ExterneAPIs/'},
 						{ text: 'FAQs Development', link: '/development/FAQ/' },
 						{ text: 'SVWS-Server bei GitHub', link: 'https://github.com/SVWS-NRW/SVWS-Server/' },
@@ -121,8 +119,6 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Code Styles', link: '/development/Entwicklungsumgebungen/Code-Styles' },
 						],
 						},
-						{ text: 'Tailwind 4', link: '/development/Tailwind-4/' },
-						{ text: 'Gradle', link: '/development/Gradle/' },
 						{ text: 'APIs für externe Tools', link: '/development/ExterneAPIs/' , collapsed: true, items: [
 							{ text: 'Lernplattform Export', link: '/development/ExterneAPIs/Lernplattformen' },
 						],
