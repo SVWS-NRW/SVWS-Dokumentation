@@ -32,7 +32,7 @@ export default defineConfig(({ mode }) => {
 					text: 'Benutzerhandbücher',
 					items: [
 						{ text: 'SVWS-Webclient', link: '/webclient' },
-						{ text: 'SVWS-Adminclient', link: '/adminclient' },
+						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: 'WebNotenManager (Alpha)', link: '/wenom' },
 						{ text: 'Laufbahnplanung SII mit WebLuPO', link: '/weblupo' },
 					] },
@@ -64,7 +64,7 @@ export default defineConfig(({ mode }) => {
 			sidebar: {
 				'/adminclient': [
 					{ text: '', items: [
-						{ text: 'SVWS-Adminclient', link: '/adminclient' },
+						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: 'Bedienungkonzept', link: '/adminclient/bedienkonzept/', collapsed: true},
 						{ text: 'Apps', link: '/adminclient/apps/', collapsed: false, items: [
 							{ text: 'Schemata', link: '/adminclient/apps/schemata/' },
