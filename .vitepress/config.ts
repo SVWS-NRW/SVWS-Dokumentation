@@ -52,7 +52,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'APIs für externe Tools', link: '/development/ExterneAPIs/'},
 						{ text: 'FAQs Development', link: '/development/FAQ/' },
 						{ text: 'SVWS-Server bei GitHub', link: 'https://github.com/SVWS-NRW/SVWS-Server/' },
-						{ text: ' ' },
+						{ text: ' ', items: [] },
 						{ text: 'Projekte', link: '/projekte' },
 						{ text: 'Mitarbeit', link: '/teamarbeit' },
 						{ text: 'Schulungen', link: '/schulungen' },
