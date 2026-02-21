@@ -1,6 +1,6 @@
 # Aktueller Benutzer
 
-Ganz oben links in der Kopfzeile werden Daten zum **aktuell angemeldeten Benutzer** angezeigt. Die angezeigten zwei Buchstaben basieren auf dem Nutzernamen. 
+Ganz oben links in der Kopfzeile werden Daten zum **aktuell angemeldeten Benutzer** angezeigt. Die angezeigten zwei Buchstaben basieren auf dem Nutzernamen.
 
 Hier kann dieser Nutzer auch selbst das **Passwort ändern**.
 
@@ -8,7 +8,7 @@ Hier kann dieser Nutzer auch selbst das **Passwort ändern**.
 
 Dieses wird zweimal eingebenen, dann wird die Änderung mit einem Klick auf _Passwort ändern_ ausgeführt.
 
-Weiter lassen sich die Daten für den Zugriff auf einen **SMTP-Server** zum Verschicken von E-Mails einstellen und mit welcher E-Mailadresse diese versendet werden sollen.
+Weiterhin lassen sich die Daten für den Zugriff auf einen **SMTP-Server** zum Verschicken von E-Mails einstellen und mit welcher E-Mailadresse diese versendet werden sollen.
 
 ![Anmeldeinformationen für den SMTP-Server](./graphics/SVWS_aktuellerNutzer_EMail.png "Geben Sie Ihre individuellen Anmeldedaten für den SMTP-Server ein.")
 
