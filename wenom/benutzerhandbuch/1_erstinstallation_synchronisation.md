@@ -1,9 +1,5 @@
 # Ersteinrichtung
 
-::: danger Dieser Inhalt ist nicht aktuell
-Dieser Teil der Anleitung ist nicht mehr aktuell und muss überarbeitet werden!
-:::
-
 Damit sich eine Lehrkraft anmelden kann, muss zuerst eine Synchronisation mit dem SVWS-Server eingerichtet werden. Erst dann werden die WeNoM-Daten, wie beispielsweise die persönlichen Lehrkraftzugänge, die Möglichkeit, E-Mails zu senden, oder die Klassen- und Kurslisten für die Notenerfassung, befüllt.
 
 Für die Einrichtung der Synchronisation wird ein sogenanntes *Secret* benötigt, das bei der Ersteinrichtung im Zuge der technischen Installation erzeugt wird. Dies ist Aufgabe der für die Schule zuständigen technischen Administration/IT-Abteilung.
@@ -16,7 +12,7 @@ Die Einrichtung der Synchronisation mit dem SVWS-Server obliegt der für die Sch
 
 Die Konfigurationsoberfläche für den WebNotenmanager befindet sich im Webclient des SVWS-Servers unter:
 
-Schule ➜ Datenaustausch ➜ WebNotenmanager. 
+Noten ➜ Serververbindungen ➜ Verbindung. 
 
  Hier werden das der schulfachlichen Administration vorliegende Secret und die URL eingetragen. Bitte hierbei auf die Schreibweise achten. Beispiel:
  
@@ -38,9 +34,6 @@ Hier könnte eine direkte Angabe der IP-Adresse statt des DNS-Namens erfolgen od
 ### Benutzung eines internen Zertifikats
 
 In manchen seltenen netzinternen Umgebungen kann die Frage auftreten, ob dem eigenen Zertifikat vertraut werden soll. Dies kann in Absprache mit dem technischen Admin durch Setzen des Hakens bestätigt werden. 
-
-![WenomZertifikat.png](graphics/WenomZertifikat.png)
-
 
 ### Verbindung prüfen 
 
@@ -69,8 +62,6 @@ Dabei wird anhand eines *Zeitstempels* in beiden Datenbeständen entschieden, we
 + Daten zurücksetzen
 + Daten und Benutzer zurücksetzen. 
 
-![WenomZuruecksetzen.png](graphics/WenomZuruecksetzen.png)
-
 Im normalen halbjährlichen Schulabschnittswechsel können mit dem Punkt `Daten zurücksetzen` alte Zeugnisdaten zur Sicherheit noch einmal aus dem über das Internet erreichbaren System genommen werden, sodass das neue Halbjahr sauber begonnen werden kann. 
 
 Falls ein Webnotenmanager aufgegeben werden soll und der schulfachliche Administrator somit die Löschung aller Daten auf dem Wenom-Server durchführen muss, kann dies über `Daten und Benutzer zurücksetzen` erreicht werden. 
@@ -79,7 +70,7 @@ Falls ein Webnotenmanager aufgegeben werden soll und der schulfachliche Administ
 
 Wenn ein neues Secret benötigt wird oder ein Wenom-Server gelöscht werden soll, können die noch eingetragenen Zugangsdaten unter `Verbindungsdaten einrichten` gelöscht bzw. erneuert werden. 
 
-![WenomEinrichtung2.png](graphics/WenomEinrichtung2.png)
+![WenomVerbindungLoeschen.png](graphics/WenomVerbindungLoeschen.png)
 
 ::: danger Achtung!
 Die Daten, die sich auf dem WeNoM-Server befinden, werden dabei nicht gelöscht. Es wird nur die Verbindungsmöglichkeit gelöscht. (Diese kann gegebenfalls auch wiederhergestellt werden, falls das Secret des WeNoM-Servers noch gültig ist.) 
@@ -93,6 +84,8 @@ Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialpass
 
 Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehler markiert und nicht zum WeNoM-Server übertragen. Ebenso werden nur die Dienstmailadressen und keine privaten E-Mail-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet.
 
-Falls unter **Einstellungen** eine gültige Emailadresse zum Versenden von Nachrichten für den WeNoM-Server eingetragen ist, können sich die Lehrkräfte statt des Initialpassworts ein neues Initialpasswort zuschicken lassen. 
+Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten für den WeNoM-Server eingetragen ist, können sich die Lehrkräfte statt des Initialpassworts ein neues Initialpasswort zuschicken lassen. 
+
+![WenomMail.png](graphics/WenomMail.png)
 
 (Diese Funktion ist in Version 1.0.12 noch nicht aktiviert.)

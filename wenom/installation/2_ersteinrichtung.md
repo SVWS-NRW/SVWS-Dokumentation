@@ -26,7 +26,10 @@ Der Aufruf des oben genannten api-Befehls erzeugt im Ordner */db* eine *app.sqli
 
 In dieser Datei steht das generierte *Secret*.
 
-Dieses *Secret* kann im SVWS-Client in der **App Schule** unter Datenaustausch ➜ Webnotenmanager zusammen mit der *URL* eingegeben werden und ermöglich so die Synchronisation mit dem SVWS-Server.
+Dieses *Secret* kann im SVWS-Client in der **App Schule** unter Noten ➜ Serververbingungen ➜ Verbindung zusammen mit der *URL* eingegeben werden und ermöglich so die Synchronisation mit dem SVWS-Server.
+
+Das Secret kann genauso auch durch die Eingabe der Verbindungsdaten im SVWS-Web-Client generiert werden.
+Bei der erstmaligen Eingabe der Daten wird der /api/setup Befehl einmal gesendet.
 
 Soll WeNoM auf einem Webserver mehrere WeNoM für mehrere Mandanten anbieten, nehmen Sie folgend die entsprechenden Artikel zur Kenntnis.
 
