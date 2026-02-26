@@ -12,11 +12,13 @@ Automatisierte SQLite Backups können z.B. crontab gescriptet aufgerufen werden.
 
 ````bash 
 
-curl --user "rootUsername:MYSQLROOTPW" -k -X "GET"  "https://SERVERNAME:PORT/db/SCHEMA/export/sqlite" -H "accept: application/json"
+curl --user "MARIADBUSER:MYSQLROOTPW" -k -X 'GET' \
+  'https://SERVERNAME:PORT/api/schema/export/SCHEMA_NAME/sqlite' \
+  -H 'accept: application/vnd.sqlite3'
 
 ````
 
-Hier bitte die Variablen rootUsername, MYSQLROOTPW, SERVERNAME, PORT und SCHEMA ersetzen bzw. vorher im Skript oder Terminal definieren. 
+Hier bitte die Variablen MARIADBUSER, MYSQLROOTPW, SERVERNAME, PORT und SCHEMA_NAME ersetzen bzw. vorher im Skript oder Terminal definieren. 
 
 ## Backup mit Mariabackup
 
