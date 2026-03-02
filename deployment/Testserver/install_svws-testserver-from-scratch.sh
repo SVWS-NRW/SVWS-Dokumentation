@@ -44,7 +44,7 @@ while getopts "p:b:m:" opt; do
 done
 
 # Prüfen, ob alle Variablen gesetzt sind
-if [ z -z "$MYSQLROOTPW" ] || [ -z "$BRANCH" ] || [ -z "$SERVERMODE" ]; then
+if [ -z "$MYSQLROOTPW" ] || [ -z "$BRANCH" ] || [ -z "$SERVERMODE" ]; then
   echo "Fehler: Alle Parameter (-p, -b, -m) müssen angegeben werden."
   usage
 fi
@@ -84,7 +84,8 @@ cd /app/
 sudo -u svws git clone https://github.com/SVWS-NRW/SVWS-Server
 cd /app/SVWS-Server
 sudo -u svws git switch ${BRANCH}
-sudo -u svws ./gradlew build
+# sudo -u svws ./gradlew build
+sudo -u svws ./gradlew build -x test --warning-mode all
 chown -R svws:svws /app/SVWS-Server
 
 ## Server einrichten
