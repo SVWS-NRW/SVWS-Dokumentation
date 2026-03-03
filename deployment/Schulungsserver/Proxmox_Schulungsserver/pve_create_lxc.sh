@@ -120,7 +120,7 @@ $LXC_TEMPLATE \
 --start 1
 
 # Beschreibung setzen
-DESCRIPTION=$(echo -e "# $FQDN  \nPasswort: $ROOTPW    \nMAC: ${MAC_ADDR:-Standard} \nErstellt am $(date +%F)")
+DESCRIPTION=$(echo -e "# $FQDN  \nPasswort: $ROOTPW    \nMAC: ${MAC_ADDR:-Standard}   \nErstellt am $(date +%F)")
 pct set $CONTAINER_ID --description "$DESCRIPTION"
 
 echo "Container $CONTAINER_ID wurde erfolgreich erstellt."

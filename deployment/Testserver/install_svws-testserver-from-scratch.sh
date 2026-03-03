@@ -2,32 +2,11 @@
 ########################################################################################
 ### Das Skript installiert den SVWS-Servers auf Basis des angegebene Github Branches ###
 ########################################################################################
-#  
-# Copyright (c) $(date +%Y)
-# 
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-# 
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-# 
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-########################################################################################
 
 # Hilfe-Funktion
 usage() {
-  echo "Usage: $0 -p <mysql_root_pw> -b <branch> -m <servermode>"
-  echo "  -p    Passwort für den MariaDB Root-User"
+  echo "Usage: $0 [-p <mysql_root_pw>] -b <branch> -m <servermode>"
+  echo "  -p    Passwort für den MariaDB Root-User (optional, sonst Zufallsgenerierung)"
   echo "  -b    Git Branch (z.B. dev oder master)"
   echo "  -m    Server Mode (z.B. develop oder production)"
   exit 1
@@ -43,10 +22,19 @@ while getopts "p:b:m:" opt; do
   esac
 done
 
-# Prüfen, ob alle Variablen gesetzt sind
-if [ -z "$MYSQLROOTPW" ] || [ -z "$BRANCH" ] || [ -z "$SERVERMODE" ]; then
-  echo "Fehler: Alle Parameter (-p, -b, -m) müssen angegeben werden."
+# Prüfen, ob Pflicht-Variablen gesetzt sind
+if [ -z "$BRANCH" ] || [ -z "$SERVERMODE" ]; then
+  echo "Fehler: Die Parameter -b (Branch) und -m (Mode) sind Pflicht."
   usage
+fi
+
+# Passwort generieren, falls nicht angegeben
+if [ -z "$MYSQLROOTPW" ]; then
+    GENERATED_PW=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 16)
+    MYSQLROOTPW="$GENERATED_PW"
+    PW_WAS_GENERATED=true
+else
+    PW_WAS_GENERATED=false
 fi
 
 TEMURINVERSION=temurin-21-jdk
@@ -55,11 +43,13 @@ PORT=8443
 ############################################
 # Softwarequellen einbinden & Softwareupdate
 apt update && apt upgrade -y
-apt install -y sudo wget apt-transport-https gpg
+apt install -y sudo wget apt-transport-https gpg git zip mariadb-server
+
+# Java (Adoptium) Setup
 wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null
 echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
 apt update
-apt install -y git zip ${TEMURINVERSION} mariadb-server
+apt install -y ${TEMURINVERSION}
 
 # MariaDB Server konfigurieren
 echo "
@@ -79,25 +69,24 @@ fi
 
 # SVWS-Server Quellen einrichten und Server bauen
 mkdir -p /app/
-chmod 777 /app
+chown svws:svws /app
 cd /app/
 sudo -u svws git clone https://github.com/SVWS-NRW/SVWS-Server
 cd /app/SVWS-Server
 sudo -u svws git switch ${BRANCH}
-# sudo -u svws ./gradlew build
-sudo -u svws ./gradlew build -x test --warning-mode all
-chown -R svws:svws /app/SVWS-Server
+
+# Build ohne Tests, inklusive explizitem OpenAPI-Schritt für Stabilität
+sudo -u svws ./gradlew :svws-openapi:assembleTranspiled assemble -x test
 
 ## Server einrichten
 # keystore PW generieren
-LENGTH=12
-CHARS="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-PASSWORD1=$(head /dev/urandom | tr -dc $CHARS | fold -w $LENGTH | head -n 1)
+PASSWORD1=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 12)
 
-sudo -u svws keytool -genkey -noprompt -alias svws -dname "CN=test, OU=svws, O=svws, L=svws, S=NRW, C=DE" -keystore /app/SVWS-Server/keystore/keystore -storepass ${PASSWORD1} -keypass ${PASSWORD1} -keyalg RSA
+sudo -u svws keytool -genkey -noprompt -alias svws -dname "CN=test, OU=svws, O=svws, L=svws, S=NRW, C=DE" -keystore /app/SVWS-Server/svws-server-app/keystore -storepass ${PASSWORD1} -keypass ${PASSWORD1} -keyalg RSA
 
 # svwsconfig.json erstellen
 cp /app/SVWS-Server/svws-server-app/src/main/resources/svwsconfig.json.example /app/SVWS-Server/svws-server-app/svwsconfig.json
+
 # svwsconfig Eintragungen anpassen
 sed -i \
   -e 's/"PortHTTPS"[[:space:]]*:[[:space:]]*null/"PortHTTPS" : '"$PORT"'/' \
@@ -112,6 +101,7 @@ chown -R svws:svws /app/SVWS-Server/
 
 echo "[Unit]
 Description=SVWS Server
+After=network.target mariadb.service
 
 [Service]
 User=svws
@@ -120,7 +110,6 @@ WorkingDirectory=/app/SVWS-Server/svws-server-app
 ExecStart=/bin/bash /app/SVWS-Server/svws-server-app/start_server.sh
 Restart=on-failure
 RestartSec=5s
-StandardOutput=journal
 
 [Install]
 WantedBy=multi-user.target" > /etc/systemd/system/svws.service
@@ -129,4 +118,9 @@ systemctl daemon-reload
 systemctl enable svws
 systemctl start svws
 
+echo "------------------------------------------------"
 echo "Installation abgeschlossen."
+if [ "$PW_WAS_GENERATED" = true ]; then
+    echo "WICHTIG: Das generierte MariaDB-Root-Passwort lautet: $MYSQLROOTPW"
+fi
+echo "------------------------------------------------"
