@@ -29,6 +29,13 @@
 # /app/SVWS-Testdaten/Testdaten_G.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/Grundschule/Grundschule_Stundenplan.sqlite
 # /app/SVWS-Testdaten/Testdaten_GE.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/GE_Prognose/GEPrognose.sqlite
 
+PACKAGES=(curl wget openssl)
+for pkg in "${PACKAGES[@]}"; do
+    if ! command -v "$pkg" &> /dev/null; then
+        echo "Installing $pkg..."
+        apt update && apt install -y "$pkg"
+    fi
+done
 
 set -e
 

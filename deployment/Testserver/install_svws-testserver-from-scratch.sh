@@ -81,21 +81,22 @@ sudo -u svws ./gradlew :svws-openapi:assembleTranspiled assemble -x test
 ## Server einrichten
 # keystore PW generieren
 PASSWORD1=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 12)
-
-sudo -u svws keytool -genkey -noprompt -alias svws -dname "CN=test, OU=svws, O=svws, L=svws, S=NRW, C=DE" -keystore /app/SVWS-Server/svws-server-app/keystore -storepass ${PASSWORD1} -keypass ${PASSWORD1} -keyalg RSA
+sudo -u svws keytool -genkey -noprompt -alias svws -dname "CN=test, OU=svws, O=svws, L=svws, S=NRW, C=DE" -keystore /app/SVWS-Server/svws-server-app/keystore -storepass ${PASSWORD1} -keypass ${PASSWORD1} -keyalg RSA -validity 1000
 
 # svwsconfig.json erstellen
 cp /app/SVWS-Server/svws-server-app/src/main/resources/svwsconfig.json.example /app/SVWS-Server/svws-server-app/svwsconfig.json
 
-# svwsconfig Eintragungen anpassen
-sed -i \
-  -e 's/"PortHTTPS"[[:space:]]*:[[:space:]]*null/"PortHTTPS" : '"$PORT"'/' \
-  -e 's/"ServerMode"[[:space:]]*:[[:space:]]*"[^"]*"/"ServerMode" : "'"${SERVERMODE}"'"/' \
-  -e 's/"TLSKeystorePassword"[[:space:]]*:[[:space:]]*"[^"]*"/"TLSKeystorePassword" : "'"${PASSWORD1}"'"/' \
-  -e 's/"defaultschema"[[:space:]]*:[[:space:]]*"[^"]*"/"defaultschema" : null/' \
+# svwsconfig Eintragungen anpassensed -i \
+  -e '/"PrivilegedDatabaseUser"[[:space:]]*:[[:space:]]*"root",/d' \
+  -e 's|"PortHTTPS"[[:space:]]*:[[:space:]]*null|"PortHTTPS" : '"$PORT"'|' \
+  -e 's|"ServerMode"[[:space:]]*:[[:space:]]*"[^"]*"|"ServerMode" : "'"${SERVERMODE}"'"|' \
+  -e 's|"TLSKeystorePassword"[[:space:]]*:[[:space:]]*"[^"]*"|"TLSKeystorePassword" : "'"${PASSWORD1}"'"|' \
+  -e 's|"defaultschema"[[:space:]]*:[[:space:]]*"[^"]*"|"defaultschema" : null|' \
+  -e 's|"ClientPath"[[:space:]]*:[[:space:]]*"[^"]*"|"ClientPath" : "/app/SVWS-Server/svws-webclient/client/build/output"|' \
+  -e 's|"AdminClientPath"[[:space:]]*:[[:space:]]*"[^"]*"|"AdminClientPath" : "/app/SVWS-Server/svws-webclient/admin/build/output"|' \
   -e '/"SchemaKonfiguration"[[:space:]]*:/,/]/c\    "SchemaKonfiguration" : [],' \
   /app/SVWS-Server/svws-server-app/svwsconfig.json
-
+  
 # SVWS-Server als Dienst einrichten
 chown -R svws:svws /app/SVWS-Server/
 
