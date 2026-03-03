@@ -1,3 +1,5 @@
-/app/SVWS-Testdaten/Testdaten_GY.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/GOST_Abitur/Abi-Test-Daten-01/GymAbiLite_26_27.sqlite
-/app/SVWS-Testdaten/Testdaten_G.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/Grundschule/Grundschule_Stundenplan.sqlite
-/app/SVWS-Testdaten/Testdaten_GE.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/GE_Prognose/GEPrognose.sqlite
+/app/SVWS-Testdaten/TestDB_GY.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/GOST_Abitur/Abi-Test-Daten-01/GymAbi_2025.sqlite
+/app/SVWS-Testdaten/TestDB_G.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/Grundschule/Grundschule_JB-2025.sqlite
+/app/SVWS-Testdaten/TestDB_GE.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/GE_Prognose/GEPrognose-2025.sqlite
+/app/SVWS-Testdaten/TestDB_BK.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/Berufskolleg/BK-Test-Daten-01/BK-Test-Daten-2025.sqlite
+/app/SVWS-Testdaten/TestDB_FS.sqlite https://github.com/SVWS-NRW/SVWS-TestMDBs/raw/refs/heads/main/Foerderschule/FS-Test-Daten-01/FS-Test-Daten-2025.sqlite
