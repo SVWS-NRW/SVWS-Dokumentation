@@ -86,7 +86,8 @@ sudo -u svws keytool -genkey -noprompt -alias svws -dname "CN=test, OU=svws, O=s
 # svwsconfig.json erstellen
 cp /app/SVWS-Server/svws-server-app/src/main/resources/svwsconfig.json.example /app/SVWS-Server/svws-server-app/svwsconfig.json
 
-# svwsconfig Eintragungen anpassensed -i \
+# svwsconfig Eintragungen anpassen
+sed -i \
   -e '/"PrivilegedDatabaseUser"[[:space:]]*:[[:space:]]*"root",/d' \
   -e 's|"PortHTTPS"[[:space:]]*:[[:space:]]*null|"PortHTTPS" : '"$PORT"'|' \
   -e 's|"ServerMode"[[:space:]]*:[[:space:]]*"[^"]*"|"ServerMode" : "'"${SERVERMODE}"'"|' \
