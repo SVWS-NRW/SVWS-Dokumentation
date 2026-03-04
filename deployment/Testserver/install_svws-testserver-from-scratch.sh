@@ -92,6 +92,7 @@ sed -i \
   -e 's|"PortHTTPS"[[:space:]]*:[[:space:]]*null|"PortHTTPS" : '"$PORT"'|' \
   -e 's|"ServerMode"[[:space:]]*:[[:space:]]*"[^"]*"|"ServerMode" : "'"${SERVERMODE}"'"|' \
   -e 's|"TLSKeystorePassword"[[:space:]]*:[[:space:]]*"[^"]*"|"TLSKeystorePassword" : "'"${PASSWORD1}"'"|' \
+  -e 's|"TLSKeyAlias"[[:space:]]*:[[:space:]]*null|"TLSKeyAlias" : "svws"|' \
   -e 's|"defaultschema"[[:space:]]*:[[:space:]]*"[^"]*"|"defaultschema" : null|' \
   -e 's|"ClientPath"[[:space:]]*:[[:space:]]*"[^"]*"|"ClientPath" : "/app/SVWS-Server/svws-webclient/client/build/output"|' \
   -e 's|"AdminClientPath"[[:space:]]*:[[:space:]]*"[^"]*"|"AdminClientPath" : "/app/SVWS-Server/svws-webclient/admin/build/output"|' \
