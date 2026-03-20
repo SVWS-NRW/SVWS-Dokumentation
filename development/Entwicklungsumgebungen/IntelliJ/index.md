@@ -33,8 +33,7 @@ Das im Folgenden generierte Token kann nur direkt nach dem Generieren eingesehen
    + Gehe oben rechts über dein Profilbild auf **My Account** und dann auf den Reiter **Security**
    + Generiere ein neues Token:
      + **Name**: Frei wählbar
-     + **Type**: Project Analysis Token
-     + **Project**: svws-server
+     + **Type**: User Token
      + **Expires in**: No Expiration
    + Gehe in IntelliJ zu *File → Settings → Plugins* und installiere **SonarQube for IDE** und starte die IDE neu
    + Gehe zu *File → Settings → Tools → SonarQube for IDE* und erstelle eine neue Verbindung über das + Symbol.
