@@ -141,6 +141,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Einrichtung', link: '/deployment/Einrichtung/' },
 						{ text: 'Datenmigration', link: '/deployment/Datenmigration/' },
 						{ text: 'Datensicherung', link: '/deployment/Datensicherung/' },
+						{ text: 'Updates', link: '/deployment/UpdateSVWS' },
 						{ text: 'Schulungsserver', link: '/deployment/Schulungsserver/', collapsed: true, items: [
 							{ text: 'SchulungsClient', link: '/deployment/Schulungsserver/SchulungsClient/' },
 							{ text: 'Docker SchulungsServer', link: '/deployment/Schulungsserver/Docker_Schulungsserver/' },
