@@ -209,6 +209,7 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Orte', link: '/webclient/apps/schule/kataloge/orte/' },
 										{ text: 'Ortsteile', link: '/webclient/apps/schule/kataloge/ortsteile/' },
 										//{ text: 'Schulen', link: '/webclient/apps/schule/kataloge/schulen/' },
+										//{ text: 'Teilleistungsarten', link: '/webclient/apps/schule/kataloge/teilleistungsarten/' },
 										//{ text: 'Telefonarten', link: '/webclient/apps/schule/kataloge/telefonarten/' },
 										{ text: 'Vermerkarten', link: '/webclient/apps/schule/kataloge/vermerkarten/' },
 									] },
