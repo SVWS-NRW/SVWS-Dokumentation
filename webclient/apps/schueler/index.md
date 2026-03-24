@@ -20,12 +20,12 @@ Um die angezeigten Schüler einzugrenzen, bietet die Schülerauswahl auf der lin
 
 Im grünen Viereck sind die **Filter** aufgeführt.
 
-* Mit dem Filtern auf den **Status** kann man bspw. aktive oder auch Schüler mit Abschluss auswählen. Per Standard ist *Aktiv* und *Extern* gesetzt, so dass die Schüler angezeigt werden, welche die im normalen Schulbetrieb befindlichen Personen abbilden.
+* Mit dem Filtern auf den **Status** kann man beispielsweise aktive oder auch Schüler mit Abschluss auswählen. Per Standard ist *Aktiv* und *Extern* gesetzt, so dass die Schüler angezeigt werden, welche die im normalen Schulbetrieb befindlichen Personen abbilden.
 \
 Es lassen sich mehrere Status gleichzeigt anwählen.
   * Im Zuge der Aufnahme lassen sich Personen im Status *Warteliste* parken. Personen, die für das kommende Schuljahr aufgenommen wurden, erhalten den Status *Aufnahme*.
   * Schüler, die ihre Bildungslaufbahn an der Schule hinter sich haben, verfügen über den Status *Abgang* oder *Abschluss*. Letzteren Status erhalten Sie, wenn sie einen von ihrem vorgesehenen Bildungsgang erhaltenen Abschluss erlangt haben.
-  * Unter *Ehemlige* werden die Personen gesammelt, die aufgrund der automatischen Löschfristen nur noch einen rudimentären Datensatz bspw. ohne Leistungsdaten haben. 
+  * Unter *Ehemlige* werden die Personen gesammelt, die aufgrund der automatischen Löschfristen nur noch einen rudimentären Datensatz, zum Beispiel ohne Leistungsdaten, haben. 
 
 * Weiterhin lassen sich die Schüler auf **Jahrgänge** und/oder **Klassen** filtern.
 * Ebenso stehen die eingerichteten **Kurse** zur Auswahl.
@@ -49,7 +49,7 @@ Es lassen sich mehrere Status gleichzeigt anwählen.
   
 ## Schüler hinzufügen (noch nicht implemeniert)
 
-Am unteren Ende des Schülercontainers ist die Schaltlfäche (+) zu finden, mit der man eine Schülerin oder einen Schüler der Datenbank hinzufügen kann (s. Screenshot).
+Am unteren Ende des Schülercontainers ist die Schaltlfäche (+) zu finden, mit der man eine Schülerin oder einen Schüler der Datenbank hinzufügen kann (siehe Screenshot).
 
 ![Schülerneuaufnahme](./graphics/SVWS_Schueler_hinzufuegen_plus.png "Über das + kann ein Schüler der Datenbank hinzugefügt werden.")
 Der Client zeigt dann ins Schnelleingabe-Fenster mit dem Titel "Neuen Schüler anlegen..." an. Hier werden zunächst die grundlegenden Daten für die Neuaufnahme eingetragen.
