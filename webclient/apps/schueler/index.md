@@ -25,7 +25,7 @@ Im grünen Viereck sind die **Filter** aufgeführt.
 Es lassen sich mehrere Status gleichzeigt anwählen.
   * Im Zuge der Aufnahme lassen sich Personen im Status *Warteliste* parken. Personen, die für das kommende Schuljahr aufgenommen wurden, erhalten den Status *Aufnahme*.
   * Schüler, die ihre Bildungslaufbahn an der Schule hinter sich haben, verfügen über den Status *Abgang* oder *Abschluss*. Letzteren Status erhalten Sie, wenn sie einen von ihrem vorgesehenen Bildungsgang erhaltenen Abschluss erlangt haben.
-  * Unter *Ehemlige* werden die Personen gesammelt, die aufgrund der automatischen Löschfristen nur noch einen rudimentären Datensatz bsplw. Leistungsdaten haben. 
+  * Unter *Ehemlige* werden die Personen gesammelt, die aufgrund der automatischen Löschfristen nur noch einen rudimentären Datensatz bspw. ohne Leistungsdaten haben. 
 
 * Weiterhin lassen sich die Schüler auf **Jahrgänge** und/oder **Klassen** filtern.
 * Ebenso stehen die eingerichteten **Kurse** zur Auswahl.
