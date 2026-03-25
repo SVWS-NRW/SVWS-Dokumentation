@@ -269,7 +269,9 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Beratung', link: '/webclient/apps/gost/beratung/' },
 									{ text: 'Laufbahnplanung', link: '/webclient/apps/gost/laufbahn/' },
 									{ text: 'Fachwahlen', link: '/webclient/apps/gost/fachwahlen/' },
-									{ text: 'Kursplanung', link: '/webclient/apps/gost/kursplanung/' },
+									{ text: 'Kursplanung', link: '/webclient/apps/gost/kursplanung/', collapsed: true, items: [
+										{ text: 'Beispiele, Infos, Tipps', link: '/webclient/apps/gost/kursplanung/beispiele_weiteres.md' },
+									] },
 									{ text: 'Klausurplanung', link: '/webclient/apps/gost/klausurplanung/' },
 								] },
 								{ text: 'Statistik', link: '/webclient/apps/statistik/' }, //, collapsed: true, items: [
