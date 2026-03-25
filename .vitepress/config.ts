@@ -191,6 +191,7 @@ export default defineConfig(({ mode }) => {
 									] },
 									{ text: 'Kataloge', link: '/webclient/apps/schule/kataloge/', collapsed: true, items: [
 										//{ text: 'Abteilungen', link: '/webclient/apps/schule/kataloge/abteilungen/' },
+										// Ankreuzkompetenzen
 										{ text: 'Betriebe', link: '/webclient/apps/schule/kataloge/betriebe/' },
 										//{ text: 'Beschäftigungsarten', link: '/webclient/apps/schule/kataloge/beschaeftigungsarten/' },
 										{ text: 'Einwilligungsarten', link: '/webclient/apps/schule/kataloge/einwilligungsarten/' },
@@ -205,6 +206,7 @@ export default defineConfig(({ mode }) => {
 										//{ text: 'Jahrgänge', link: '/webclient/apps/schule/kataloge/jahrgaenge/' },
 										{ text: 'Kindergärten', link: '/webclient/apps/schule/kataloge/kindergaerten/' },
 										{ text: 'Konfessionen', link: '/webclient/apps/schule/kataloge/konfessionen/' },
+										//{ text: 'Leitungsfunktionen', link: '/webclient/apps/schule/kataloge/leitungsfunktionen/' },
 										//{ text: 'Lernplattformen', link: '/webclient/apps/schule/kataloge/lernplattformen/' },
 										{ text: 'Orte', link: '/webclient/apps/schule/kataloge/orte/' },
 										{ text: 'Ortsteile', link: '/webclient/apps/schule/kataloge/ortsteile/' },
