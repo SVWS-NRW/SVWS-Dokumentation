@@ -101,9 +101,9 @@ Nachdem ein weiterer Kurs generiert wurde, können die Kurse per Drag & Drop wie
 Auf diese Weise lässt sich ein Kurs über zwei oder auch mehr Schienen verteilen.
 
 ::: danger Mehrfachkurse können extrem rechenintensiv sein!
-Für **jeden** Multikurs verläuft die Blockung **exponentiell langsamer**, da die Berechnung sehr ineffektiv wird (das Problem wird NP-vollständig statt bipartit).
+Für **jeden** Multikurs verläuft die Blockung **exponentiell langsamer**, da die Berechnung sehr ineffektiv wird (das Problem wird NP-vollständig).
 
-Um diese Verlangsamung zu verhindern sind Multikurse zuerst in der Schiene zu fixieren. Gleichzeitig sind auch Schüler fest zuzuordnen über die Pinnadel zu fixieren. Es gilt also: Was der Algorithmus gar nicht erst behandeln muss, kann die Verteilung nicht ineffizent machen.  
+Um diese Verlangsamung zu verhindern sind Multikurse zuerst in der Schiene zu fixieren. Gleichzeitig sind auch die Schüler fest zuzuordnen und über die Pinnadel zu fixieren. Es gilt also: Was der Algorithmus gar nicht erst behandeln muss, kann die Verteilung nicht ineffizent machen.  
 :::
 
 In den folgenden beiden Screenshots sind erst die Kurse in ihren Schienen fixiert, anschließend werden auch die Schülerinnen im Kurs selbst fixiert. Dies ist an den schwarzen Pinnadeln erkennbar.
