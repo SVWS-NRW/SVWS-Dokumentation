@@ -21,9 +21,9 @@ Verknüpfen Sie diese Subdomain mit einem SSL-Zertifikat für die sichere Verbin
 
 ![Bereich SSL Verwaltung](./graphics/all-inkl02.jpg "Verknüpfung SSL Zertifikat.")
 
-## FTP Verbindung aufbauen und Dateien hochladen
+## FTP Verbindung aufbauen, Dateien hochladen und entpacken
 
-Verbinden Sie sich mit Ihrem FTP-User und laden Sie die Dateien aus dem ZIP in das Verzeichnis, das mit der gewünschten Subdomain verknüpft wurde.
+Verbinden Sie sich mit Ihrem FTP-User und laden Sie die ZIP-Datei in das Verzeichnis, das mit der gewünschten Subdomain verknüpft wurde. Entpacken Sie die ZIP-Datei
 
 ![FTP Upload](./graphics/hosteurope01.png "Dateien per FTP übertragen.")
 
