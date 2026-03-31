@@ -15,7 +15,7 @@
 Loggen Sie sich in den Kundenbrereich - Technische Verwaltung (KAS) von All-Inkl ein.
 Legen Sie unter "Domains" eine Subdomain an.
 
-![Bereich Domain](./graphics/hosteurope04.png "Einrichtung Subdomain.")
+![Bereich Domain](./graphics/all-inkl01.jpg "Einrichtung Subdomain.")
 
 Verknüpfen Sie diese Subdomain mit einem SSL-Zertifikat für die sichere Verbindung.
 
