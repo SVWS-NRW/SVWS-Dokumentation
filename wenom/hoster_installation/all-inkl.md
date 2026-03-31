@@ -27,12 +27,13 @@ Verbinden Sie sich mit Ihrem FTP-User und laden Sie die ZIP-Datei in das Verzeic
 
 ![FTP Upload](./graphics/all-inkl03.jpg "Dateien per FTP übertragen und entpacken.")
 
+## Berchtigungen von Ordnern ändern
 Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner Public und App:
 
 ![Bereich Domain](./graphics/all-inkl04.jpg "Berechtigungen setzen.")
 
-![Bereich Domain](./graphics/all-inkl08.jpg "Berechtigungen setzen.")
+![Bereich Domain](./graphics/all-inkl09.jpg "Berechtigungen setzen.")
 
 Setzen Sie die Rechte  (auf alle Unterordner und Dateien) auf den Ordner db:
 
-![Bereich Domain](./graphics/all-inkl06.jpg "Berechtigungen setzen.")
+![Bereich Domain](./graphics/all-inkl10.jpg "Berechtigungen setzen.")
