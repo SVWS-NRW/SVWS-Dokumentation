@@ -37,3 +37,7 @@ Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner Public u
 Setzen Sie die Rechte  (auf alle Unterordner und Dateien) auf den Ordner db:
 
 ![Bereich Domain](./graphics/all-inkl10.jpg "Berechtigungen setzen.")
+
+Kontrollieren Sie, ob in den Subdomain-Einstellungen als Ziel der /public Ordner eingetragen ist.
+
+![Bereich Domain](./graphics/all-inkl12.jpg "Subdomain Einstellung")
