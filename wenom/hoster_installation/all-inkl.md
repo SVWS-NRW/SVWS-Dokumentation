@@ -29,8 +29,10 @@ Verbinden Sie sich mit Ihrem FTP-User und laden Sie die ZIP-Datei in das Verzeic
 
 Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner Public und App:
 
-![Bereich Domain](./graphics/hosteurope02.png "Einrichtung Subdomain.")
+![Bereich Domain](./graphics/all-inkl04.jpg "Berechtigungen setzen.")
+
+![Bereich Domain](./graphics/all-inkl08.jpg "Berechtigungen setzen.")
 
 Setzen Sie die Rechte  (auf alle Unterordner und Dateien) auf den Ordner db:
 
-![Bereich Domain](./graphics/hosteurope03.png "Einrichtung Subdomain.")
+![Bereich Domain](./graphics/all-inkl06.jpg "Berechtigungen setzen.")
