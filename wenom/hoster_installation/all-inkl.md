@@ -19,7 +19,7 @@ Legen Sie unter "Domains" eine Subdomain an.
 
 Verknüpfen Sie diese Subdomain mit einem SSL-Zertifikat für die sichere Verbindung.
 
-![Bereich SSL Verwaltung](./graphics/hosteurope05.png "Verknüpfung SSL Zertifikat.")
+![Bereich SSL Verwaltung](./graphics/all-inkl02.jpg "Verknüpfung SSL Zertifikat.")
 
 ## FTP Verbindung aufbauen und Dateien hochladen
 
