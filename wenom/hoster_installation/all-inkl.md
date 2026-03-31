@@ -25,7 +25,7 @@ Verknüpfen Sie diese Subdomain mit einem SSL-Zertifikat für die sichere Verbin
 
 Verbinden Sie sich mit Ihrem FTP-User und laden Sie die ZIP-Datei in das Verzeichnis, das mit der gewünschten Subdomain verknüpft wurde. Entpacken Sie die ZIP-Datei
 
-![FTP Upload](./graphics/all-inkl03.png "Dateien per FTP übertragen und entpacken.")
+![FTP Upload](./graphics/all-inkl03.jpg "Dateien per FTP übertragen und entpacken.")
 
 Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner Public und App:
 
