@@ -3,11 +3,8 @@
 ## Voraussetzung
 
 + Sie haben einen Webspace bei All-Inkl
-
 + Sie haben einen FTP-Zugang zum Dateisystem des Webhostings
-
 + Sie benötigen eine Subdomain
-
 + Sie benötigen ein Zertifikat
 
 ## Subdomain anlegen
@@ -27,7 +24,7 @@ Verbinden Sie sich mit Ihrem FTP-User und laden Sie die ZIP-Datei in das Verzeic
 
 ![FTP Upload](./graphics/all-inkl03.jpg "Dateien per FTP übertragen und entpacken.")
 
-## Berchtigungen von Ordnern ändern
+## Berechtigungen von Ordnern ändern
 Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner Public und App:
 
 ![Bereich Domain](./graphics/all-inkl04.jpg "Berechtigungen setzen.")

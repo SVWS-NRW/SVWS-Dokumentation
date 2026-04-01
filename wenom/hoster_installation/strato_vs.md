@@ -3,11 +3,8 @@
 ## Voraussetzung
 
 + Sie haben einen virtuellen Linux-Server bei Strato
-
 + Sie haben einen FTP-Zugang zum Dateisystem des Webhostings
-
 + Sie benötigen eine Subdomain
-
 + Sie benötigen ein Zertifikat
 
 ## Subdomain anlegen
@@ -40,7 +37,7 @@ Verbinden Sie sich mit Ihrem FTP-User und laden Sie die ZIP-Datei in das Verzeic
 
 
 
-## Berchtigungen von Ordnern ändern
+## Berechtigungen von Ordnern ändern
 Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner Public und App:
 
 ![Bereich Domain](./graphics/strato-VS_06.png "Berechtigungen setzen.")
