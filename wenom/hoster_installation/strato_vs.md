@@ -17,7 +17,7 @@ Legen Sie unter "Domains" eine Subdomain an.
 
 ![Bereich Domain](./graphics/strato_VS_01.png "Einrichtung Subdomain.")
 
-![Bereich SSL Verwaltung](./graphics/strato_VS_02.png "Verknüpfung SSL Zertifikat.")
+![Bereich SSL Verwaltung](./graphics/strato-VS_02.png "Verknüpfung SSL Zertifikat.")
 
 Wechseln Sie in das Dashbord Plesk von Strato zur Adminstrierung des virtuellen Servers.
 

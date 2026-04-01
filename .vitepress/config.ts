@@ -160,15 +160,20 @@ export default defineConfig(({ mode }) => {
 				'/wenom' : [
 					{ text: '', items: [
 						{ text: 'WeNoM', link: '/wenom/index.md' },
+						{ text: 'Benutzerhandbuch Schule', collapsed: false, items: [
+							{ text: 'Schulische Einrichtung', link: '/wenom/benutzerhandbuch/1_erstinstallation_synchronisation.md'},
+							{ text: 'Leistungsdaten eintragen', link: '/wenom/benutzerhandbuch/2_leistungsdaten_lehrkraefte.md'},
+						] },
 						{ text: 'Technische Installation', collapsed: false, items: [
 							{ text: 'Installation', link: '/wenom/installation/1_installation.md' },
 							{ text: 'Ersteinrichtung', link: '/wenom/installation/2_ersteinrichtung.md' },
 							{ text: 'Mehrere Mandanten', link: '/wenom/installation/3_mehrereMandanten_Beispiel.md' },
 							{ text: 'Skript zur Testinstallation', link: '/wenom/installation/4_testinstall_script.md' },
-						] },
-						{ text: 'Benutzerhandbuch Schule', collapsed: false, items: [
-							{ text: 'Schulische Einrichtung', link: '/wenom/benutzerhandbuch/1_erstinstallation_synchronisation.md'},
-							{ text: 'Leistungsdaten eintragen', link: '/wenom/benutzerhandbuch/2_leistungsdaten_lehrkraefte.md'},
+							{ text: 'Hosterspezifische Anleitungen',link: '/wenom/hoster_installation/', collapsed: false, items: [
+								{ text: 'All-Inkl', link: '/wenom/hoster_installation/all-inkl.md' },
+								{ text: 'Hosteurope', link: '/wenom/hoster_installation/hosteurope.md' },
+								{ text: 'Strato VS', link: '/wenom/hoster_installation/strato_vs.md' },
+							] },
 						] },
 						{ text: 'Geschäftsprozesse WeNoM', link: '/wenom/geschaeftsprozesse.md' },
 					] },
