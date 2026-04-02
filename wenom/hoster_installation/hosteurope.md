@@ -9,7 +9,7 @@
 
 ## Subdomain anlegen
 
-Loggen Sie sich in den Kundenbrereich (KIS) von Hosteurope ein.
+Loggen Sie sich in den Kundenbereich (KIS) von Hosteurope ein.
 Legen Sie unter "Domains" eine Subdomain an.
 
 ![Bereich Domain](./graphics/hosteurope04.png "Einrichtung Subdomain.")
