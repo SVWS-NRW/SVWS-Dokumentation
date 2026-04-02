@@ -9,7 +9,7 @@
 
 ## Subdomain anlegen
 
-Loggen Sie sich in den Kundenbrereich - Technische Verwaltung (KAS) von All-Inkl ein.
+Loggen Sie sich in den Kundenbereich - Technische Verwaltung (KAS) von All-Inkl ein.
 Legen Sie unter "Domains" eine Subdomain an.
 
 ![Bereich Domain](./graphics/all-inkl01.jpg "Einrichtung Subdomain.")
