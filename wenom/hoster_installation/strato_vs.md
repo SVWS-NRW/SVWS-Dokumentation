@@ -9,7 +9,7 @@
 
 ## Subdomain anlegen
 
-Loggen Sie sich in den Kundenbrereich - Server-Login bei Strato ein.
+Loggen Sie sich in den Kundenbereich - Server-Login bei Strato ein.
 Legen Sie unter "Domains" eine Subdomain an.
 
 ![Bereich Domain](./graphics/strato_VS_01.png "Einrichtung Subdomain.")
