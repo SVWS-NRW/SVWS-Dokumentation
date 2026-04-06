@@ -28,7 +28,7 @@ Bisher wurden getestet:
 
 Weitere erfolgreiche Installationen können gemeldet werden, dann nehmen wir sie gerne auf.
 
-Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](./4_testinstall_script.md) auf Debian 12.  
+Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](./testinstall_script.md) auf Debian 12.  
 
 > [!IMPORTANT] Gehosteter Webspace
 > Beim Betrieb auf einem gehosteten Webspace kann direkt weiter unten mit der **Installation der WeNoM Pakete** begonnen werden. 

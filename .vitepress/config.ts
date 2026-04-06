@@ -165,10 +165,10 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Leistungsdaten eintragen', link: '/wenom/benutzerhandbuch/2_leistungsdaten_lehrkraefte.md'},
 						] },
 						{ text: 'Technische Installation', collapsed: false, items: [
-							{ text: 'Installation', link: '/wenom/installation/1_installation.md' },
-							{ text: 'Ersteinrichtung', link: '/wenom/installation/2_ersteinrichtung.md' },
-							{ text: 'Mehrere Mandanten', link: '/wenom/installation/3_mehrereMandanten_Beispiel.md' },
-							{ text: 'Skript zur Testinstallation', link: '/wenom/installation/4_testinstall_script.md' },
+							{ text: 'Installation', link: '/wenom/installation/installation.md' },
+							{ text: 'Ersteinrichtung', link: '/wenom/installation/ersteinrichtung.md' },
+							{ text: 'Mehrere Mandanten', link: '/wenom/installation/mehrereMandanten_Beispiel.md' },
+							{ text: 'Skript zur Testinstallation', link: '/wenom/installation/testinstall_script.md' },
 							{ text: 'Hosterspezifische Anleitungen',link: '/wenom/hoster_installation/', collapsed: false, items: [
 								{ text: 'All-Inkl', link: '/wenom/hoster_installation/all-inkl.md' },
 								{ text: 'Hosteurope', link: '/wenom/hoster_installation/hosteurope.md' },
