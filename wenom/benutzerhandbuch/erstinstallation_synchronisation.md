@@ -1,5 +1,9 @@
 # Ersteinrichtung
 
+::: tip Voraussetzung für diesen Artikel
+Bevor der WebNotenManager durch die Schule konfiguriert werden kann, muss die **Technische Installation** abgeschlossen sein.
+:::
+
 Damit sich eine Lehrkraft anmelden kann, muss zuerst eine Synchronisation mit dem SVWS-Server eingerichtet werden. Erst dann werden die WeNoM-Daten, wie beispielsweise die persönlichen Lehrkraftzugänge, die Möglichkeit, E-Mails zu senden, oder die Klassen- und Kurslisten für die Notenerfassung, befüllt.
 
 Für die Einrichtung der Synchronisation wird ein sogenanntes *Secret* benötigt, das bei der Ersteinrichtung im Zuge der technischen Installation erzeugt wird. Dies ist Aufgabe der für die Schule zuständigen technischen Administration/IT-Abteilung.
