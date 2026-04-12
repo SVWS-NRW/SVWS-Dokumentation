@@ -179,7 +179,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Leistungsdaten eintragen', link: '/wenom/benutzerhandbuch/leistungsdaten_lehrkraefte.md'},
 							{ text: 'Sychronisation und schulische Administration', link: '/wenom/benutzerhandbuch/synchronisation_administration.md'},
 						] },
-						{ text: 'Technische Installation', collapsed: false, items: [
+						{ text: 'Technische Installation', link: '/wenom/installation/index.md', collapsed: false, items: [
 							{ text: 'Installation von WeNoM', link: '/wenom/installation/installation.md' },
 							{ text: 'Konfiguration der Verbindungen', link: '/wenom/installation/verbindungskonfiguration.md' },
 							{ text: 'Hosterspezifische Anleitungen',link: '/wenom/hoster_installation/', collapsed: false, items: [

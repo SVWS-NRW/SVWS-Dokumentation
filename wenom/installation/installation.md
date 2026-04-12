@@ -1,13 +1,5 @@
 # WeNoM - Installationsanleitung und technische Dokumentation
 
-Zur Verwendung von WeNoM nutzen Sie das links im Inhaltsverzeichnis angeführte Benutzerhandhbuch.
-
-Der WeNoM wird auf PHP Basis mit Typescript und VUE.js entwickelt und stellt eine benutzerfreundliche und intuitive Benutzeroberfläche bereit, um die Dateneingabe so einfach wie möglich zu gestalten.
-
-Die Software synchronisiert die eingegebenen Daten teilautomatisch mit dem SVWS-Server, um sicherzustellen, dass die Daten stets auf dem neuesten Stand sind und für interne Schulzwecke zur Verfügung stehen.
-
-![Informationsverbund SVWS-Server und WeNoM](./graphics/SVWS-Wenom-Verbund.png "Übersicht über die Datensynchronisation SVWS-Server und WeNoM.")
-
 ## Schnellübersicht Installationsschritte
 
 1. Es muss ein Webspace mit einem apache2-Server und php installiert werden. Sofern Sie nicht genau wissen, was Sie hier tun, nutzen Sie einen professionellen Webhoster. Webspaces sind fertig und entsprechend moderner Standards konfiguriert.
