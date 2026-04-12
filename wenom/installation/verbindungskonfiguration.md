@@ -1,5 +1,9 @@
 # Technische Ersteinrichtung von WeNoM
 
+## Generation des Secrets
+
+TODO
+
 Zur ersten Initialisierung folgende URL */api/setup* auf ihrer Domain aufrufen, ein Beispiel wäre etwa: 
 
     https://meinnotenmanager.de/api/setup
