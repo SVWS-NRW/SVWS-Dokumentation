@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="220" viewBox="0 0 920 220" role="img" aria-labelledby="title desc">
+  <title id="title">SVWS Konferenzuebersicht Logo</title>
+  <desc id="desc">Stilisiertes Logo mit Kachel-Icon und Schriftzug SVWS Konferenzuebersicht</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F3D3E"/>
+      <stop offset="100%" stop-color="#1E6F6B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7B32B"/>
+      <stop offset="100%" stop-color="#F28F3B"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0A2A2B" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="920" height="220" rx="28" fill="#F8FAFB"/>
+
+  <g transform="translate(36 30)" filter="url(#shadow)">
+    <rect x="0" y="0" width="160" height="160" rx="24" fill="url(#bg)"/>
+
+    <rect x="28" y="32" width="44" height="44" rx="8" fill="#E8F5F4"/>
+    <rect x="88" y="32" width="44" height="44" rx="8" fill="#BFE7E4"/>
+    <rect x="28" y="92" width="44" height="44" rx="8" fill="#BFE7E4"/>
+    <rect x="88" y="92" width="44" height="44" rx="8" fill="#E8F5F4"/>
+
+    <circle cx="80" cy="80" r="20" fill="url(#accent)"/>
+    <path d="M70 80 L78 88 L92 72" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(230 62)">
+    <text x="0" y="46" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="0.6" fill="#0F3D3E">SVWS</text>
+    <text x="0" y="98" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="600" letter-spacing="0.4" fill="#1E6F6B">Konferenzuebersicht</text>
+    <text x="0" y="132" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#425A5A">Benutzerhandbuch</text>
+  </g>
+</svg>

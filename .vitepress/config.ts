@@ -33,9 +33,10 @@ export default defineConfig(({ mode }) => {
 					items: [
 						{ text: 'SVWS-Webclient', link: '/webclient' },
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
-						{ text: '', items: []},
-						{ text: 'WebNotenManager (Alpha)', link: '/wenom' },
-						{ text: 'SVWS-Konferenzmodul (Bald)', link: '/svws_module/svws_konferenzmodul' },
+						{ text: '', items: [
+							{ text: 'WebNotenManager (Alpha)', link: '/wenom' },
+							{ text: 'SVWS-Konferenzübersicht (Bald)', link: '/svws_module/svws_konferenzuebersicht' },
+						] },
 						{ text: 'Laufbahnplanung SII mit WebLuPO', link: '/weblupo' },
 					] },
 				{ text: 'Administration',
@@ -52,8 +53,9 @@ export default defineConfig(({ mode }) => {
 						{ text: 'APIs für externe Tools', link: '/development/ExterneAPIs/'},
 						{ text: 'FAQs Development', link: '/development/FAQ/' },
 						{ text: 'SVWS-Server bei GitHub', link: 'https://github.com/SVWS-NRW/SVWS-Server/' },
-						{ text: ' ', items: [] },
-						{ text: 'Projekte', link: '/projekte' },
+						{ text: ' ', items: [
+							{ text: 'Projekte', link: '/projekte' },
+						] },
 						{ text: 'Mitarbeit', link: '/teamarbeit' },
 						{ text: 'Schulungen', link: '/schulungen' },
 					] },
@@ -152,6 +154,17 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SchILD-NRW-3', link: '/deployment/Schild-NRW3/' },
 						{ text: 'FAQ', link: '/deployment/FAQ.md' },
 						{ text: 'Roadmap', link: '/deployment/roadmap.md' },
+					] },
+				],
+				'/svws_module/svws_konferenzuebersicht' : [
+					{ text: '', items: [
+						{ text: 'SVWS-Konferenzübersicht', link: '/svws_module/svws_konferenzuebersicht/',  collapsed: false, items: [
+							{ text: 'Installation und Bereitstellung', link: '/svws_module/svws_konferenzuebersicht/installation.md' },
+							{ text: 'Login (Offline und Online)', link: '/svws_module/svws_konferenzuebersicht/Login.md' },
+							{ text: 'Verwendung in der Konferenz', link: '/svws_module/svws_konferenzuebersicht/verwendung.md' },
+							{ text: 'Fehlerbehebung', link: '/svws_module/svws_konferenzuebersicht/fehlerbehebung.md' },
+							{ text: 'Hinweise zum Datenschutz', link: '/svws_module/svws_konferenzuebersicht/datenschutz.md' },
+						] },
 					] },
 				],
 				'/weblupo' : [
