@@ -14,7 +14,7 @@ In dieser Konfiguration kann der Speicherort der Datenbank mit der Umgebungsvari
 
 In dem folgenden Beispiel soll nun für *"Schule1"* ein separater Zugang zu eines separaten Datenbank inklusive der *Secret Credentials* geschaffen werden: 
 
-+ Separaten Speicherort für "Schule1" unter dem Ordener ```db``` der Wenom Installation anlegen. Zum Beispiel: 
++ Separaten Speicherort für "Schule1" unter dem Ordner ```db``` der Wenom Installation anlegen. Zum Beispiel: 
 
 ```bash 
 mkdir /var/www/html/db/schule1
