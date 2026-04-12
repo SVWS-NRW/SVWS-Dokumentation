@@ -22,20 +22,17 @@ Mit einem `rechten Mausklick` öffnet sich in MS Windows das Kontextmenü, wähl
 
 Nach dem Entpacken liegen nun die `index.html` und der Unterordner `/assets/` in Ihrem Konferenzverzeichnis. Dieses Verzeichnis können Sie frei irgendwohin kopieren.
 
+In einer Netzwerkumgebung stellen Sie die App einfach über eine Ordner-/Dateifreigabe zur Verfügung, legen Sie das Konferenzmodul zum Beispiel in das *SVWS-Arbeitsverzeichnis*.
+
+::: tip Hinweise
 Blendet Ihr Betriebssystem Dateiendungen aus, sehen Sie die Datei nur als `index`.
 
 Das Icon der Datei variiert je nach installiertem Internetbrowser.
+:::
 
 ::: tip Betrieb über einen Webserver
 Hinweis für die IT: Ein einfacher statischer Webserver reicht aus, um die App im Schulnetz bereitzustellen.
-Alternativ stellen Sie die App einfach über eine Dateifreigabe im Netzwerk zur Verfügung.
 :::
-
-Starten Sie einen solchen beispeilsweise über
-
-```bash
-python -m http.server 8000
-```
 
 Die Datei `impressum.md` kann bearbeitet werden, falls man einen öffentlich erreichbaren Webserver betreibt und damit ein Impressum anzeigen muss.
 
