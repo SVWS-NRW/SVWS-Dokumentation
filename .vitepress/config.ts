@@ -188,8 +188,9 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Strato VS', link: '/wenom/hoster_installation/strato_vs.md' },
 							] },
 							{ text: 'Schulfachliche Konfiguration', link: '/wenom/installation/installation_schulfachlich.md' },
+							{ text: '―'},
 							{ text: 'Mehrere Mandanten', link: '/wenom/installation/mehrereMandanten_Beispiel.md' },
-							{ text: 'Skript zur Testinstallation', link: '/wenom/installation/testinstall_script.md' },
+							{ text: 'Skript zur Testinstallation', link: '/wenom/installation/testinstall_script.md' }
 						] },
 						{ text: 'Geschäftsprozesse WeNoM', link: '/wenom/geschaeftsprozesse.md' },
 					] },

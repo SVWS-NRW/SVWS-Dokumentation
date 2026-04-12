@@ -36,7 +36,7 @@ Beim Betrieb auf einem gehosteten Webspace kann direkt weiter unten mit der **In
 
 Grundlage: Apache2 auf Debian 12
 
-Die in diesem Abschnitt zur **technischen Installation** beschriebenen, vorbereitenden Tätigkeiten werden beim Betrieb eines eigen Servers benötigt. Im Anschluss an die Installation von WeNoM selbst sind im SVWS-Server/SVWS-Webclient durch die Schuladministration durchzuführen.
+Die in diesem Abschnitt zur **technischen Installation** beschriebenen, vorbereitenden Tätigkeiten werden beim Betrieb eines eigenen Servers benötigt. Im Anschluss an die Installation von WeNoM selbst sind im SVWS-Server/SVWS-Webclient durch die Schuladministration durchzuführen.
 
 ``` bash
 apt update && apt upgrade -y
