@@ -44,5 +44,5 @@ Beachten Sie die Datenschutzrichtlinien Ihrer Schule und des geltenden Rechtsrah
 
 * Die Anwendung verarbeitet den SVWS-Export durch den **SVWS-Webclient** als `enm.json.gz`. Andere Dateitypen - oder aus anderen Programmen exportierte Daten - werden nicht unterstützt.
 
-* Ankrezukompetenzen sind derzeit nicht unterstüzt.
+* Ankreuzkompetenzen sind derzeit nicht unterstüzt.
 

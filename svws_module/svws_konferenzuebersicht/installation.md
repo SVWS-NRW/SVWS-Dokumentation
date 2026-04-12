@@ -37,6 +37,8 @@ Starten Sie einen solchen beispeilsweise über
 python -m http.server 8000
 ```
 
+Die Datei `impressum.md` kann bearbeitet werden, falls man einen öffentlich erreichbaren Webserver betreibt und damit ein Impressum anzeigen muss.
+
 ## Lokale Nutzung (offline)
 
 Alle Daten bleiben im Browser und werden nicht im Netzwerk oder an Dritte übertragen.
