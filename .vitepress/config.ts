@@ -160,7 +160,7 @@ export default defineConfig(({ mode }) => {
 					{ text: '', items: [
 						{ text: 'SVWS-Konferenzübersicht', link: '/svws_module/svws_konferenzuebersicht/',  collapsed: false, items: [
 							{ text: 'Installation und Bereitstellung', link: '/svws_module/svws_konferenzuebersicht/installation.md' },
-							{ text: 'Login (Offline und Online)', link: '/svws_module/svws_konferenzuebersicht/Login.md' },
+							{ text: 'Login (Offline und Online)', link: '/svws_module/svws_konferenzuebersicht/login.md' },
 							{ text: 'Verwendung in der Konferenz', link: '/svws_module/svws_konferenzuebersicht/verwendung.md' },
 							{ text: 'Fehlerbehebung', link: '/svws_module/svws_konferenzuebersicht/fehlerbehebung.md' },
 							{ text: 'Hinweise zum Datenschutz', link: '/svws_module/svws_konferenzuebersicht/datenschutz.md' },
