@@ -2,7 +2,13 @@
 
 ## Generation des Secrets
 
-TODO
+??? Was ist ein Secret?
+
+Das Secret kann durch die Eingabe der Verbindungsdaten im SVWS-Web-Client generiert werden.
+
+Bei der erstmaligen Eingabe der Daten wird der /api/setup Befehl einmal gesendet.
+
+### Generation des Secrets durch einen direkten API-Aufruf
 
 Zur ersten Initialisierung folgende URL */api/setup* auf ihrer Domain aufrufen, ein Beispiel wäre etwa: 
 
@@ -31,10 +37,6 @@ Der Aufruf des oben genannten api-Befehls erzeugt im Ordner */db* eine *app.sqli
 In dieser Datei steht das generierte *Secret*.
 
 Dieses *Secret* kann im SVWS-Client in der **App Noten** unter **Serververbingungen** und dann bei der gewählten Verbindung zusammen mit der *URL* eingegeben werden und ermöglich so die Synchronisation mit dem SVWS-Server.
-
-Das Secret kann genauso auch durch die Eingabe der Verbindungsdaten im SVWS-Web-Client generiert werden.
-
-Bei der erstmaligen Eingabe der Daten wird der /api/setup Befehl einmal gesendet.
 
 Soll WeNoM auf einem Webserver mehrere WeNoM für mehrere Mandanten anbieten, nehmen Sie folgend die entsprechenden Artikel zur Kenntnis.
 

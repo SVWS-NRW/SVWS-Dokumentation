@@ -8,11 +8,17 @@ Die Software synchronisiert die eingegebenen Daten teilautomatisch mit dem SVWS-
 
 ![Informationsverbund SVWS-Server und WeNoM](./graphics/SVWS-Wenom-Verbund.png "Übersicht über die Datensynchronisation SVWS-Server und WeNoM.")
 
-Die Datensynchronisation findet über den SVWS-Server statt. Hier werden das Client-Secret und die Verbindungsparameter zum Webserver eingetragen.
+## Schnellübersicht Installationsschritte
 
-Es werden zuerst die schulspezifischen Einstellungen (Fehlstundenmodell, benötigte Daten usw.) zum Webnotenmangaer übermittelt. Zusätzlich werden für alle Lehrkräfte mit Klassen und Unterricht Verbindungsdaten und Unterrichte übermittelt.
+1. Es muss ein Webspace mit einem apache2-Server und php installiert werden. Sofern Sie nicht genau wissen, was Sie hier tun, nutzen Sie einen professionellen Webhoster. Webspaces sind fertig und entsprechend moderner Standards konfiguriert.
+2. Richten Sie eine Unterdomain für Ihre Webadresse ein. Dies könnte zum Beispiel die Subdomain ".noten", ".wenom" oder ähnlich sein und am Ende lautet die Adresse `noten.meine-schule.xyz`. Eventuell ist hier auch ein Zertifkat für die verschlüsselte Datenübertragung einzustellen. Weiteres finden Sie in der detaillierten Anleitung.
+3. Installieren Sie die WeNoM-Dateien auf dem Webserver entsprechend der Anleitung hier, im Wesentlichen werden die WeNoM-Dateien per FTP über das Netz in die korrekten Ordner kopiert.
+4. Konfigurieren Sie die Verbindung zwischen diesem WeNoM-Server mit ihrem SVWS-Server. Hierzu wird ein *Secret* generiert.
+5. Synrchonisieren Sie anschließend die Daten SVWS-Servers mit dem WeNoM-Server. Dies ist der Schritt, bei dem die konkreten Daten zur Schule, Fehlstundenmodell, Lehrkräften, Schülern, Fächer und so weiter - also die Leistungsdaten - übertragen werden.
+6. Fachlehrkräfte erhalten ihre Zugänge und tragen die Noten/Fehlstunden und so weiter ein.
+7. Diese Daten werden nun wieder vom WeNoM-Server zurück zum SVWS-Server synchronisiert.
 
-Nach der Übermittlung können sich die Lehrkräfte im Webnotenmanager anmelden.
+Die Schritte 1 bis 4 sind Teil der Erstinstallation und kann auch durch einen IT-Dienstleister erfolge, die Schritte 5 bis 7 werden in Turnus der Schuljahre immer wieder durchlaufen und durch schulfachliche Administration der Schule begleiet - dies kann die Schulleitung, Koordinatoren, ein Schul-Admin, Beauftragte und so weiter sein.
 
 ## Systemvoraussetzungen
 
@@ -30,10 +36,11 @@ Weitere erfolgreiche Installationen können gemeldet werden, dann nehmen wir sie
 
 Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](./testinstall_script.md) auf Debian 12.  
 
-> [!IMPORTANT] Gehosteter Webspace
-> Beim Betrieb auf einem gehosteten Webspace kann direkt weiter unten mit der **Installation der WeNoM Pakete** begonnen werden. 
+::: warning Gehosteter Webspace
+Beim Betrieb auf einem gehosteten Webspace kann direkt weiter unten mit der **Installation der WeNoM Pakete** begonnen werden. 
+:::
 
-## Installation 
+## Installation eines Webservers (optional)
 
 Grundlage: Apache2 auf Debian 12
 
