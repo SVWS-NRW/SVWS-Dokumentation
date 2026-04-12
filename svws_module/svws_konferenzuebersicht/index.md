@@ -38,9 +38,11 @@ Beachten Sie die Datenschutzrichtlinien Ihrer Schule und des geltenden Rechtsrah
 
 * Nutzen Sie einen aktuellen Browser, aktuelle Versionen von Firefox, Chrome, Edge oder Safari sind geeignet. Bei älteren Browsern kann die Verarbeitung großer Datenmengen problematisch sein.
 
-* Alle Änderungen werden nur lokal im Browser gehalten. Verwenden Sie die Exportfunktion, um Ihre Ergebnisse als Datei zu sichern, bevor Sie die Seite schließen. Nicht gespeicherte/exportierte Daten gehen beim Schließen des Browsers verloren.
+* Alle Änderungen werden nur lokal im Browser gehalten. Verwenden Sie die Exportfunktion, um Ihre Ergebnisse als Datei zu sichern oder sie zurück in den SVWS-Server zu sychronisieren, bevor Sie die Seite schließen. Nicht exportierte Daten gehen beim Schließen des Browsers verloren.
 
 * Die App selbst kann als statische Dateien auf einem zentralen Laufwerk oder einem Schulserver bereitgestellt werden. Jeder Nutzer, der die `index.html` gestartet hat, lädt dann die Seite im lokalen Browser des verwendeten Clients und damit eigene Konferenzdaten.
 
 * Die Anwendung verarbeitet den SVWS-Export durch den **SVWS-Webclient** als `enm.json.gz`. Andere Dateitypen - oder aus anderen Programmen exportierte Daten - werden nicht unterstützt.
+
+* Ankrezukompetenzen sind derzeit nicht unterstüzt.
 
