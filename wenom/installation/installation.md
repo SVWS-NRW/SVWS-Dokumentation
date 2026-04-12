@@ -60,12 +60,13 @@ In der */etc/apache2/apache2.conf* ergänzen:
 ```
 In der *etc/php/8.X/apache2/php.ini* die *SQLite3-Extension* durch entfernen des Semikolos aktivieren!
 
-### PHP-Memory-Limit
+**PHP-Memory-Limit:**
 
 In der */etc/php/8.X/apache2/php.ini* sollte der Wert ``` memory_limit=1024M ``` gesetzt werden.
 
-Bitte Informieren Sie sich bei Ihrem Hoster, welches MemoryLimit aktiv ist.
-
+::: tip Memory Limits variieren je nach Hoster
+Bitte informieren Sie sich bei Ihrem Hoster, welches *MemoryLimit* aktiv ist.
+:::
 
 ## Installation der WeNoM Pakete
 
@@ -83,4 +84,22 @@ Die Ordnerstruktur in ```/var/www/html```  sollte nun folgerndermaßen aussehen:
 
 Dabei muss das Documentroot in der `/etc/apache2/sites-available/000-default.conf` (ggf. auch `default-ssl.conf`) auf den Ordner `/var/www/html/public` zeigen!
 
-Im folgenden Inhaltsverzeichnis links folgend findet sich die Informationen für die Ersteinrichtung.
+## Ordner-, Unterordner- und Dateiberechtigungen
+
+1. Setzen Sie die korrekten Ordner-Berechtigungen (und Unterordner und Dateien) für `public`und `app`zum Lesen und Schreiben:
+    - **Besitzer**: `Lesen, Schreiben, Ausführen`
+    - **Gruppe**:  `Lesen, x, Ausführen`
+    - **Öffentlich**: `Lesen, x, Ausführen`
+    - Numerisch: `755`
+
+2. Setzen Sie die Ordner-Berechtigungen für den Ordner `db` (und Unterordner und Dateien) auf 
+    - **Besitzer**: `Lesen, Schreiben, Ausführen`
+    - **Gruppe**: `Lesen, Schreiben, Ausführen` 
+    - **Öffentlich**: *NICHTS erlaubt*
+    - Numerisch: `770`
+
+::: warning Kontrollieren Sie die Ordnerberechtigungen
+Kontrollieren Sie bitte diese Berechtigungen gewissenhaft!
+:::
+
+Folgen Sie dem Inhaltsverzeichnis zur **Konfiguration der Verbindungen**.

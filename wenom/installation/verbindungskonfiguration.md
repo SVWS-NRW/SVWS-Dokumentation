@@ -8,6 +8,16 @@ Das Secret kann durch die Eingabe der Verbindungsdaten im SVWS-Web-Client generi
 
 Bei der erstmaligen Eingabe der Daten wird der /api/setup Befehl einmal gesendet.
 
+Dieses *Secret* kann im SVWS-Client in der **App Noten** unter **Serververbingungen** und dann bei der gewählten Verbindung zusammen mit der *URL* eingegeben werden und ermöglich so die Synchronisation mit dem SVWS-Server.
+
+TODO: Bilder, schrittweise erklären der Verbindungen, lokaler Server -> externer WeNoM-Server 
+
+::: tip Konfiguration durch die Schule
+Hiermit endet die **technische Installation** durch die IT. Damit WeNoM von der Schule verwendet werden kann, sind durch die Schul-Administratoren des SVWS-Servers/SVWS-Webclients Einstellungen vorzunehmen.
+
+Diese folgen im Inhaltsverzeichnis nach den **Hosterspezifischen Anleitungen** zur Installation des WeNoM-Servers auf deren Webspaces.
+:::
+
 ### Generation des Secrets durch einen direkten API-Aufruf
 
 Zur ersten Initialisierung folgende URL */api/setup* auf ihrer Domain aufrufen, ein Beispiel wäre etwa: 
@@ -35,9 +45,3 @@ curl --request GET --url http://meinnotenmaganger/api/setup --header "Content-Ty
 Der Aufruf des oben genannten api-Befehls erzeugt im Ordner */db* eine *app.sqlite*-Datenbank und eine Datei *client.sec*.
 
 In dieser Datei steht das generierte *Secret*.
-
-Dieses *Secret* kann im SVWS-Client in der **App Noten** unter **Serververbingungen** und dann bei der gewählten Verbindung zusammen mit der *URL* eingegeben werden und ermöglich so die Synchronisation mit dem SVWS-Server.
-
-Soll WeNoM auf einem Webserver mehrere WeNoM für mehrere Mandanten anbieten, nehmen Sie folgend die entsprechenden Artikel zur Kenntnis.
-
-Hiermit endet die **technische Installation** durch die IT. Damit WeNoM von der Schule verwendet werden kann, sind durch die Schul-Administratoren des SVWS-Servers/SVWS-Webclients Einstellungen vorzunehmen.

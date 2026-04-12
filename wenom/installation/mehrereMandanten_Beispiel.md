@@ -2,9 +2,13 @@
 
 ## Grundlagen
 
-Falls nur ein Webserver bereitgestellt werden soll, der jedoch jeweils WeNoM für mehrere Schulen anbietet, kann dies mit Hilfe von "virtual Hosts" im Apache bereitgestellt werden.
+Falls nur ein Webserver bereitgestellt werden soll, der jedoch jeweils WeNoM-Server über eine jeweils eigene Subdomäne für mehrere Schulen anbietet, kann dies mit Hilfe von "virtual Hosts" im Apache bereitgestellt werden.
 
-Es wird somit unter einer technischen Plattform mehrere Webnotenmanager für unterschiedliche Schulen in voneinander getrennten Bereichen beziehungsweise. mit verschiedenen Zugängen ihren jeweiligen Webnotenmanager betrieben werden können. (Alternativ kann dieses Ziel natürlich auch mit Docker erreicht werden.)
+Es wird somit unter einer technischen Plattform ermöglicht, mehrere Webnotenmanager für unterschiedliche Schulen in voneinander getrennten Bereichen - beziehungsweise mit verschiedenen Zugängen - anzubieten. 
+
+::: tip Hinweis auf Docker
+Alternativ kann dieses Ziel natürlich auch mit Docker erreicht werden.
+:::
 
 Unter ``` /etc/apache2/sites-available/``` kann hierfür eine neue .conf-Datei angelegt werden, so dass hier ein Trennung der Konfiguration Mandanten durch einzelne Dateien ermöglicht wird.
 
@@ -14,7 +18,7 @@ In dieser Konfiguration kann der Speicherort der Datenbank mit der Umgebungsvari
 
 In dem folgenden Beispiel soll nun für *"Schule1"* ein separater Zugang zu eines separaten Datenbank inklusive der *Secret Credentials* geschaffen werden: 
 
-+ Separaten Speicherort für "Schule1" unter dem Ordner ```db``` der Wenom Installation anlegen. Zum Beispiel: 
++ Separaten Speicherort für *"Schule1"* unter dem Ordner ```db``` der Wenom Installation anlegen. Zum Beispiel: 
 
 ```bash 
 mkdir /var/www/html/db/schule1
@@ -53,7 +57,7 @@ echo "
 
 ```
 
-Hierbei ist zu beachten, dass ```schule1.your_domain.de```, ```SetEnv ENM_DB_DIR db/schule1``` und ```/etc/apache2/sites-available/schule1.conf``` entsprechend der vorhanden Domain (your_domain.de) und dem von Ihnen gewählten Schulnamen (schule1) angepasst werden. 
+Hierbei ist zu beachten, dass ```schule1.your_domain.xyz```, ```SetEnv ENM_DB_DIR db/schule1``` und ```/etc/apache2/sites-available/schule1.conf``` entsprechend der vorhanden Domain (your_domain.xyz) und dem von Ihnen gewählten Schulnamen (schule1) angepasst werden. 
 
 + verlinken apache2 neu starten 
 
@@ -79,6 +83,3 @@ Beim Betrieb hinter einem Reverse Proxy muss darauf geachtet werden, dass die he
     proxy_connect_timeout 300;
     proxy_send_timeout 300;
 ```
-
-
-
