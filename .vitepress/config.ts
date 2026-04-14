@@ -187,7 +187,6 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Hosteurope', link: '/wenom/hoster_installation/hosteurope.md' },
 								{ text: 'Strato VS', link: '/wenom/hoster_installation/strato_vs.md' },
 							] },
-							{ text: 'Schulfachliche Konfiguration', link: '/wenom/installation/installation_schulfachlich.md' },
 							{ text: '―'},
 							{ text: 'Mehrere Mandanten', link: '/wenom/installation/mehrereMandanten_Beispiel.md' },
 							{ text: 'Apache2-Webserver (optional)', link: '/wenom/installation/installation_webserver.md' },
