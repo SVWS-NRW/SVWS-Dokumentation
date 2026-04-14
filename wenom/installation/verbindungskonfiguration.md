@@ -2,11 +2,11 @@
 
 ## Generierung des Secrets
 
-Das Secret kann durch die Eingabe der Verbindungsdaten im SVWS-Web-Client generiert werden. Es dient der gesicherten Kommunikation (OAuth2) und muss einmal zum SVWS-Server transportiert werden.
+Damit der SVWS-Server und WeNoM gesichert kommunizieren können, wird ein *Secret* benötigt. Dies ist eine Art Passwort, das nur diesen beiden Partnern im Hintergrund bekannt ist (OAuth2).
 
-Bei der erstmaligen Eingabe der Daten wird der /api/setup Befehl einmal gesendet.
+Das Secret wird bei der erstmaligen Eingabe der Verbindungsdaten im SVWS-Webclient automatisch generiert, daher es wird der Befehl `/api/setup` einmal gesendet.
 
-Dieses *Secret* kann im SVWS-Client in der **App Noten** unter **Serververbingungen** und dann bei der gewählten Verbindung zusammen mit der *URL* eingegeben werden und ermöglich so die Synchronisation mit dem SVWS-Server.
+Dieses *Secret* kann im SVWS-Webclient in der **App Noten** unter **Serververbingungen** und dann bei der gewählten Verbindung zusammen mit der *URL* eingegeben werden und ermöglich so die Synchronisation mit dem SVWS-Server.
 
 TODO: Bilder, schrittweise erklären der Verbindungen, lokaler Server -> externer WeNoM-Server 
 
@@ -29,7 +29,7 @@ Gültige Responsecodes sind:
     204 Setup erfolgreich
     409 Server ist schon initialisiert
 
-Der Aufruf des oben genannten api-Befehls erzeugt im Ordner */db* eine *app.sqlite*-Datenbank und eine Datei *client.sec*.
+Der Aufruf des oben genannten api-Befehls erzeugt im Ordner */db* eine *app.sqlite*-Datenbank und eine Datei `client.sec`.
 
 In dieser Datei steht das generierte *Secret*.
 
