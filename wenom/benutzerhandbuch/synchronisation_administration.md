@@ -53,3 +53,7 @@ Falls unter **Mail** eine g√ºltige Emailadresse zum Versenden von Nachrichten f√
 ![WenomMail.png](graphics/WenomMail.png)
 
 (Diese Funktion ist in Version 1.0.12 noch nicht aktiviert.)
+
+## Einrichten einer Zwei-Faktor-Authentifizierung
+
+TODO
