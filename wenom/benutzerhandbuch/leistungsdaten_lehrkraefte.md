@@ -1,7 +1,7 @@
 ## Anmeldung
 
 * Öffnen Sie die Web-Adresse des WeNoM-Servers, die Sie von Ihrer Schule erhalten haben.
-* Zum Anmelden gilt die *dienstliche Emailadresse* als **Benutzername** .
+* Zum Anmelden gilt die *dienstliche Emailadresse* als **Benutzername**.
 * Als Kennwort ist das **Initialkennwort** zu verwenden, welches Ihnen **Lehrkräften** von der Schule mitgeteilt wurde.
 
 ![Das Anmeldefenster zum WebNotenManager](graphics/WenomAnmeldung.png "Loggen Sie sich mit Ihrer dienstlichen Emailadresse und dem erhlatenen Passwort beim WeNoM ein.")
