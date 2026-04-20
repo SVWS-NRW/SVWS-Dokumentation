@@ -176,7 +176,7 @@ export default defineConfig(({ mode }) => {
 					{ text: '', items: [
 						{ text: 'WeNoM', link: '/wenom/index.md' },
 						{ text: 'Benutzerhandbuch Schule', link: '/wenom/benutzerhandbuch/leistungsdaten_lehrkraefte.md', collapsed: false, items: [
-							{ text: 'Leistungsdaten eintragen', link: '/wenom/benutzerhandbuch/leistungsdaten_lehrkraefte.md'},
+							{ text: 'Anleitung für Lehrkräfte', link: '/wenom/benutzerhandbuch/leistungsdaten_lehrkraefte.md'},
 							{ text: 'Schulische Administration', link: '/wenom/benutzerhandbuch/synchronisation_administration.md'},
 						] },
 						{ text: 'Technische Installation', link: '/wenom/installation/index.md', collapsed: false, items: [
