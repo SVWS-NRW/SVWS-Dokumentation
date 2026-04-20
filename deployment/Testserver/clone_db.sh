@@ -153,6 +153,7 @@ else
     exit 1
 fi
 
+chown -R svws:svws $CONFIG_FILE
 unset MYSQL_PWD
 
 echo "--------------------------------------"
