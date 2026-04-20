@@ -12,22 +12,6 @@
 
 Die Schritte 1 bis 4 sind Teil der Erstinstallation und kann auch durch einen IT-Dienstleister erfolge, die Schritte 5 bis 7 werden in Turnus der Schuljahre immer wieder durchlaufen und durch schulfachliche Administration der Schule begleiet - dies kann die Schulleitung, Koordinatoren, ein Schul-Admin, Beauftragte und so weiter sein.
 
-## Systemvoraussetzungen
-
-Benötigt wird einfacher *Webspace mit PHP8* und den benötigten Extensions *php-fpm* und *php-sqlite3*.
-
-Alternativ kann ein eigener Server mit einem *Apache2-Webserver* oder einem *nginx-Webserver* als Basis verwendet werden. Hierbei genügen geringe Anforderungen and die Hardware. 
-
-Bisher wurden getestet:
-+ Debian 12, Apache2, php8.3, 4GB HDD, 2GB Ram, 1 Core
-+ Debian 12, nginx, php8.2, 4GB HDD, 2GB Ram, 1 Core
-+ Webhosting, Strato, php8.2
-+ ...
-
-Weitere erfolgreiche Installationen können gemeldet werden, dann nehmen wir sie gerne auf.
-
-Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](./testinstall_script.md) auf Debian 12.  
-
 ::: warning Gehosteter Webspace
 Beim Betrieb auf einem gehosteten Webspace kann direkt weiter unten mit der **Installation der WeNoM Pakete** begonnen werden. 
 :::

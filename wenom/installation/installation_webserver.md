@@ -1,5 +1,23 @@
 # Installation eines Webservers (optional)
 
+## Systemvoraussetzungen
+
+Benötigt wird einfacher *Webspace mit PHP8* und den benötigten Extensions *php-fpm* und *php-sqlite3*.
+
+Alternativ kann ein eigener Server mit einem *Apache2-Webserver* oder einem *nginx-Webserver* als Basis verwendet werden. Hierbei genügen geringe Anforderungen and die Hardware. 
+
+Bisher wurden getestet:
++ Debian 12, Apache2, php8.3, 4GB HDD, 2GB Ram, 1 Core
++ Debian 12, nginx, php8.2, 4GB HDD, 2GB Ram, 1 Core
++ Webhosting, Strato, php8.2
++ ...
+
+Weitere erfolgreiche Installationen können gemeldet werden, dann nehmen wir sie gerne auf.
+
+Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](./testinstall_script.md) auf Debian 12.
+
+## Installation Webserver
+
 Einen Apache2-Webserver sicher aufzusetzen erfordert Fachwissen, das in dieser Anleitung nicht vollständig vermittelt werden kann. 
 
 Grundlage: Apache2 auf Debian 12
