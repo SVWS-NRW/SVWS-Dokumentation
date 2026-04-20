@@ -1,4 +1,4 @@
-# Installation eines Webservers (optional)
+# Installation eines Webservers
 
 ## Systemvoraussetzungen
 

@@ -189,7 +189,7 @@ export default defineConfig(({ mode }) => {
 							] },
 							{ text: '―'},
 							{ text: 'Mehrere Mandanten', link: '/wenom/installation/mehrereMandanten_Beispiel.md' },
-							{ text: 'Apache2-Webserver (optional)', link: '/wenom/installation/installation_webserver.md' },
+							{ text: 'Eigener Webserver', link: '/wenom/installation/installation_webserver.md' },
 							{ text: 'Skript zur Testinstallation', link: '/wenom/installation/testinstall_script.md' },
 						] },
 						{ text: 'Geschäftsprozesse WeNoM', link: '/wenom/geschaeftsprozesse.md' },
