@@ -1,16 +1,21 @@
 
-# Synchronisation und administrative Arbeit mit WeNoM
+# Administrative Arbeit mit WeNoM
+
+## Ersteinrichtung der Kommunikation zwischen WeNoM und SVWS-Server
+
+Damit WeNoM und der SVWS-Server miteinander kommunizieren können, muss für diese ein "internes Passwort" (ein *Secret*) eingerichtet werden.
+
+Lesen Sie bei Bedarf hier die [Anleitung](../installation/verbindungskonfiguration.md) für diesen Schritt.
+
+## Synchronisation
 
 Nachdem die Installation und Ersteinrichtung und damit die erfolgreiche Verbindung zum WeNoM-Server im SVWS-Server eingerichtet wurde, kann die schulfachliche Administration auf der Konfigurationsoberfläche des SVWS-Servers die Synchronisation zwischen beiden Datenbeständen ausführen.
 
-
 ![WenomSVWS.png](graphics/WenomSVWS.png)
-
 
 In besonderen Fällen kann nur hoch- beziehungsweise runtergeladen werden. In der Regel werden die Datenbestände jedoch direkt synchronisiert, was einem Hochladen mit anschließendem Herunterladen entspricht.
 
 Dabei wird anhand eines *Zeitstempels* in beiden Datenbeständen entschieden, welcher Eintrag der neuere ist und dieser wird dann für den SVWS-Server übernommen. 
-
 
 ## Zurücksetzen / Daten löschen
 
