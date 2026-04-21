@@ -34,10 +34,11 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SVWS-Webclient', link: '/webclient' },
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: '', items: [
-							{ text: 'WebNotenManager (Alpha)', link: '/wenom' },
-							{ text: 'SVWS-Konferenzübersicht (Bald)', link: '/svws_module/svws_konferenzuebersicht' },
+							{ text: 'SVWS WebNotenManager (Alpha)', link: '/wenom' },
+							{ text: 'SVWS Konferenz (Alpha)', link: '/svws_module/svws_konferenzuebersicht' },
+							{ text: 'SVWS WebLuPO', link: '/weblupo' },
 						] },
-						{ text: 'Laufbahnplanung SII mit WebLuPO', link: '/weblupo' },
+						
 					] },
 				{ text: 'Administration',
 					items: [
@@ -169,20 +170,20 @@ export default defineConfig(({ mode }) => {
 				],
 				'/weblupo' : [
 					{ text: '', items: [
-						{ text: 'Weblupo', link: '/weblupo/' },
+						{ text: 'SVWS Weblupo', link: '/weblupo/' },
 					] },
 				],
 				'/wenom' : [
 					{ text: '', items: [
-						{ text: 'WeNoM', link: '/wenom/index.md' },
-						{ text: 'Benutzerhandbuch Schule', link: '/wenom/benutzerhandbuch/leistungsdaten_lehrkraefte.md', collapsed: false, items: [
-							{ text: 'Anleitung für Lehrkräfte', link: '/wenom/benutzerhandbuch/leistungsdaten_lehrkraefte.md'},
+						{ text: 'SVWS WeNoM', link: '/wenom/index.md' },
+						{ text: 'Benutzerhandbuch', link: '/wenom/benutzerhandbuch/anleitung_lehrkraefte.md', collapsed: false, items: [
+							{ text: 'Anleitung für Lehrkräfte', link: '/wenom/benutzerhandbuch/anleitung_lehrkraefte.md'},
 							{ text: 'Einrichten der TFA' },
-							{ text: 'Schulische Administration', link: '/wenom/benutzerhandbuch/synchronisation_administration.md'},
+							{ text: 'Schulische Administration', link: '/wenom/benutzerhandbuch/schulische_administration.md'},
 						] },
-						{ text: 'Technische Installation', link: '/wenom/installation/index.md', collapsed: false, items: [
-							{ text: 'Installation von WeNoM', link: '/wenom/installation/installation.md' },
-							{ text: 'Konfiguration der Verbindungen', link: '/wenom/installation/verbindungskonfiguration.md' },
+						{ text: 'Installation', link: '/wenom/installation/index.md', collapsed: false, items: [
+							{ text: 'Installationsanleitung', link: '/wenom/installation/installation.md' },
+							{ text: 'Ersteinrichtung', link: '/wenom/installation/ersteinrichtung.md' },
 							{ text: 'Hosterspezifische Anleitungen',link: '/wenom/hoster_installation/', collapsed: false, items: [
 								{ text: 'All-Inkl', link: '/wenom/hoster_installation/all-inkl.md' },
 								{ text: 'Hosteurope', link: '/wenom/hoster_installation/hosteurope.md' },
