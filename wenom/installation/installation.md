@@ -38,7 +38,7 @@ Alternativ können Sie die Einrichtung des Webservers unter der Artikel "[eigene
 
 Unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVWS-Server/releases) können neben dem SVWS-Server auch die Programmdateien des  zugehörigen WeNoM heruntergeladen werden: Dazu auf **SVWS-ENMServer-x.x.x.zip** klicken. 
 
-![Download Github.com](./graphics/download_github.png.png)
+![Download Github.com](./graphics/download_github.png)
 
 ### Kopieren der WeNoM Programmdateien
 

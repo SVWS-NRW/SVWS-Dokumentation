@@ -68,4 +68,4 @@ Sind die Zugangsdaten eingerichtet, kann die Verbindung jederzeit unter „Verbi
 
 ![WenomEinrichtung2.png](graphics/WenomEinrichtung2.png)
 
-Fahren Sie nun mit der **Synchronisation** fort, die im Benutzerhandbuch für die [schulfachliche Administration](../benutzerhandbuch/synchronisation_administration.md) beschrieben ist.
+Fahren Sie nun mit der **Synchronisation** fort, die im Benutzerhandbuch für die [schulfachliche Administration](../benutzerhandbuch/schulische_administration.md) beschrieben ist.
