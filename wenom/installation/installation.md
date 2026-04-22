@@ -1,46 +1,28 @@
 # WeNoM - Installationsanleitung
 
-## Schnellübersicht 
+## Technische Übersicht zu WeNoM 
 
-### [Technischer Teil](#technische-einrichtung)
+![Informationsverbund SVWS-Server und WeNoM](./graphics/SVWS-Wenom-Verbund.png "Übersicht über die Datensynchronisation SVWS-Server und WeNoM.")
 
-1. Optional: Richten Sie eine Unterdomain für Ihre Webadresse ein. "noten.meineSchule.de" oder "wenom.meineSchule.de" sein.
+Der WeNoM wird auf PHP Basis mit Typescript und VUE.js entwickelt und stellt eine benutzerfreundliche und intuitive Benutzeroberfläche bereit, um die Dateneingabe so einfach wie möglich zu gestalten.
 
-2. Kopieren Sie die [WeNoM Programmdateien](#kopieren-der-wenom-pakete) auf das Verzeichnis des Webserver.
+Die Software synchronisiert die eingegebenen Daten teilautomatisch mit dem SVWS-Server, um sicherzustellen, dass die Daten stets auf dem neuesten Stand sind und für interne Schulzwecke zur Verfügung stehen.
 
-3. Geben Sie dem Webserver auf das Verzeichnis /db Schreibrechte und reduzieren Sie ggf. die Schreib- und Leserechte auf das nötigste.
+## Voraussetzungen
 
-### [Ersteinrichtung](./ersteinrichtung.md)
-
-4. Konfigurieren Sie die Verbindung zwischen diesem WeNoM-Server mit ihrem SVWS-Server. Hierzu wird ein *Secret* generiert.
-
-### [Schulfachlicher Teil](../benutzerhandbuch/schulische_administration.md)
-
-5. Synrchonisieren Sie die Daten SVWS-Servers mit dem WeNoM-Server. Dies ist der Schritt, bei dem die konkreten Daten der Schule übertragen werden: 
-Alle Benutzerlogins, Fehlstundeneinstellungen, Lerngruppen, Fächer, Leistungsdaten, etc.
-
-6. Fachlehrkräfte erhalten ihre Zugänge und können ihre die Leistungsdaten, Fehlstunden, etc. eintragen. 
-
-
-Die Schritte 1 bis 4 sind Teil der Erstinstallation und kann auch durch einen IT-Dienstleister erfolgen. Die Schritte 5 bis 6 werden in Turnus der Schuljahre immer wieder durchlaufen und durch schulfachliche Administration der Schule begleitet. Dies können die Schulleitung, Koordinatoren, eine Schulverwaltungskraft oder anderweitig von der Schulleitung Beauftragte sein.
-
-## Technische Einrichtung
-
-### Voraussetzungen
-
-Es wir ein Webspace mit php8.2 oder höher und sqlite3 Modul benötigt und für den Webspace muss über ein Zertifikat eingerichtet sein. 
+Es wir ein Webspace mit php8.2 oder höher, inkl. sqlite3 Modul benötigt. Der Webspace muss über ein Zertifikat verfügen (http**s**\://...).  
 Dies alles liegt in der Regel bei den gängigen [Webhostern](../hoster_installation/index.md) fertig eingerichtet vor.
 
 Alternativ können Sie die Einrichtung des Webservers unter der Artikel "[eigener  Webserver](./installation_webserver.md)" nachlesen.
 
 
-### Download der WeNoM Programmdateien
+## Download der WeNoM Programmdateien
 
 Unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVWS-Server/releases) können neben dem SVWS-Server auch die Programmdateien des  zugehörigen WeNoM heruntergeladen werden: Dazu auf **SVWS-ENMServer-x.x.x.zip** klicken. 
 
 ![Download Github.com](./graphics/download_github.png)
 
-### Kopieren der WeNoM Programmdateien
+## Kopieren der WeNoM Programmdateien
 
 + Entpacken aller Dateinen aus der in das /html Verzeichnis des Webservers
 + Freigabe der Ordner app, db und public mit entsprechenden Rechten
@@ -57,7 +39,12 @@ Die Ordnerstruktur in ```/var/www/html/wenom``` sollte nun folgerndermaßen auss
 /public
 ```
 
-Dabei muss das Documentroot in der `/etc/apache2/sites-available/000-default.conf` (ggf. auch `default-ssl.conf`) auf den Ordner `/var/www/html/public` zeigen!
+::: warning Wichtig!
+Es muss das Documentroot auf den Ordner `./public` zeigen!
+:::
+
+Die Änderung des Dokumentroot kann unter den hosterspezifischen installationen oder der installation für den eignene Webserver bei bedarf nachgelesen werden. 
+
 
 ### Ordner-, Unterordner- und Dateiberechtigungen
 

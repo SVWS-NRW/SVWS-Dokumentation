@@ -31,3 +31,8 @@ Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner Public u
 Setzen Sie die Rechte  (auf alle Unterordner und Dateien) auf den Ordner db:
 
 ![Bereich Domain](./graphics/hosteurope03.png "Einrichtung Subdomain.")
+
+
+## Einrichtung 
+
+Weiter geht es mit der [Ersteinrichtung](../installation/ersteinrichtung.md) des Webnotenmamagers.

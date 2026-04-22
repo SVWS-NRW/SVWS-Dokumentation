@@ -5,7 +5,7 @@ Der Webnotemanager liegt derzeit als Alpha-Version zum Testen vor.
 Im Alpha Betrieb ist noch kein regulärer Einsatz an Schule vorgesehen. 
 :::
 
-::: tip Direkt zur [Anleitung für Lehrkräfte](./benutzerhandbuch/leistungsdaten_lehrkraefte.md)!
+::: tip Direkt zur [Anleitung für Lehrkräfte](./benutzerhandbuch/anleitung_lehrkraefte.md)!
 :::
 
 Der **WebNotenManager WeNoM** ist eine Online-Plattform zur Erfassung und Verwaltung der Zeugnisnoten, Quartalsnoten, Mahnungen, Teilleistungen, Bemerkungen und Fehlstunden. Er befindet sich derzeit in der Entwicklung (siehe die [Roadmap](../deployment/roadmap.md)) und die Eingabe von Leistungsdaten wie Noten von jedem Internetzugang über einen Browser, etwa von zu Hause aus, unabhängig vom verwendeten Betriebssystem ermöglichen.

@@ -43,3 +43,6 @@ Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner Public u
 ![Bereich Domain](./graphics/strato-VS_06.png "Berechtigungen setzen.")
 
 
+## Einrichtung 
+
+Weiter geht es mit der [Ersteinrichtung](../installation/ersteinrichtung.md) des Webnotenmamagers.

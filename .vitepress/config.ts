@@ -176,7 +176,7 @@ export default defineConfig(({ mode }) => {
 				'/wenom' : [
 					{ text: '', items: [
 						{ text: 'SVWS WeNoM', link: '/wenom/index.md' },
-						{ text: 'Benutzerhandbuch', link: '/wenom/benutzerhandbuch/anleitung_lehrkraefte.md', collapsed: false, items: [
+						{ text: 'Benutzerhandbuch', link: '/wenom/benutzerhandbuch/index.md', collapsed: false, items: [
 							{ text: 'Anleitung für Lehrkräfte', link: '/wenom/benutzerhandbuch/anleitung_lehrkraefte.md'},
 							{ text: 'Einrichten der TFA' },
 							{ text: 'Schulische Administration', link: '/wenom/benutzerhandbuch/schulische_administration.md'},
@@ -188,11 +188,8 @@ export default defineConfig(({ mode }) => {
 								{ text: 'All-Inkl', link: '/wenom/hoster_installation/all-inkl.md' },
 								{ text: 'Hosteurope', link: '/wenom/hoster_installation/hosteurope.md' },
 								{ text: 'Strato VS', link: '/wenom/hoster_installation/strato_vs.md' },
+								{ text: 'Eigener Webserver', link: '/wenom/installation/installation_webserver.md' },
 							] },
-							{ text: '―'},
-							{ text: 'Mehrere Mandanten', link: '/wenom/installation/mehrereMandanten_Beispiel.md' },
-							{ text: 'Eigener Webserver', link: '/wenom/installation/installation_webserver.md' },
-							{ text: 'Skript zur Testinstallation', link: '/wenom/installation/testinstall_script.md' },
 						] },
 						{ text: 'Geschäftsprozesse WeNoM', link: '/wenom/geschaeftsprozesse.md' },
 					] },

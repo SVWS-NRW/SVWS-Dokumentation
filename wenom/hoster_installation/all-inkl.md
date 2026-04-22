@@ -38,3 +38,7 @@ Setzen Sie die Rechte  (auf alle Unterordner und Dateien) auf den Ordner db:
 Kontrollieren Sie, ob in den Subdomain-Einstellungen als Ziel der /public Ordner eingetragen ist.
 
 ![Bereich Domain](./graphics/all-inkl12.jpg "Subdomain Einstellung")
+
+## Einrichtung 
+
+Weiter geht es mit der [Ersteinrichtung](../installation/ersteinrichtung.md) des Webnotenmamagers.
