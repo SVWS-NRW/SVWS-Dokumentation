@@ -4,7 +4,7 @@
 
 + Öffnen Sie die Web-Adresse des WeNoM-Servers, die Sie von Ihrer Schule erhalten haben.
 + Zum Anmelden gilt die **dienstliche Emailadresse** als **Benutzername**.
-+ Als Kennwort ist das **Initialkennwort** zu verwenden, welches Ihnen von der Schulischen Administration mitgeteilt wurde.
++ Als Kennwort ist das **Initialkennwort** zu verwenden, welches Ihnen von der schulischen Administration mitgeteilt wurde.
 
 
 ![Das Anmeldefenster zum WebNotenManager](graphics/WenomAnmeldung.png "Loggen Sie sich mit Ihrer dienstlichen Emailadresse und dem erhlatenen Passwort beim WeNoM ein.")
@@ -17,9 +17,9 @@ Haben Sie noch keine Zwei-Faktor-Authentisierung?
 
 Dann finden Sie hier den Artikel: [Einrichtung Zwei-Faktor-Authentisierung](einrichtungZweiterFaktor.md)
 
-### Login mit aktivierter Zweifaktor
+### Login mit aktivierter Zwei-Faktor-Authentifizierung
  
-Ist seitens der schulfachlichen Administration der zweite Faktor verpflichtend eingeschaltet, so erscheint nach der ersten Anmeldemaske aufgefordert zusätzlich die Eingabemaske für den 6-stelligen, zeitlich begrenzt gültigen zweiten Faktor.
+Ist seitens der schulfachlichen Administration der zweite Faktor verpflichtend eingeschaltet, so erscheint nach der ersten Anmeldemaske  zusätzlich die Eingabemaske für den 6-stelligen, zeitlich begrenzt gültigen zweiten Faktor.
 
 
 ![Zweiten Faktor Eingeben](./graphics/2fa_eingeben.png)
@@ -30,10 +30,10 @@ Ist seitens der schulfachlichen Administration der zweite Faktor verpflichtend e
 
 ![Tabellenansicht](./graphics/tabellenansicht.png)
 
-Über die links angezeigte Liste können Lerngruppen in die Tabellenübersicht aufgenommen beziehungsweise abgewählt werden. Am rechten Rand der Tabelle können Spalten ein- und ausgeblendet werden. Je nach Ihrer Rolle können bis zu drei teils unterschiedliche Tabellen aufgerufen werden:
+Über die links angezeigte Liste können Lerngruppen in die Tabellenübersicht aufgenommen beziehungsweise abgewählt werden. Am rechten Rand der Tabelle können Spalten ein- und ausgeblendet werden. Je nach Ihrer Rolle können bis zu drei, teils unterschiedliche Tabellen, aufgerufen werden:
 
 + **Leistungsdaten** - dies sind die Noten, Fehlstunden und Mahnungen bei Schülern.
-+ **Teilleistungen** - werden an Ihrer Schule Teilleistungen zu Fächern erfasst, sind diese hier aufgeführt. Eine Teilleistung könnten Noten für Klausuren, Sonstige Mitarbeit oder ZP10-Noten sein.
++ **Teilleistungen** - werden an Ihrer Schule Teilleistungen zu Fächern erfasst, sind diese hier aufgeführt. Teilleistungen könnten Noten für Klausuren, Sonstige Mitarbeit oder ZP10-Noten sein.
 + **Klassenleitung** - als Klassenleitung können hier aufsummierte Fehlstunden oder die diversen Arten von Zeugnisbemerkungen eingegeben werden.
 
 ## Ansichten der verschiedenen Benutzergruppen
@@ -60,10 +60,10 @@ Die **Fachlehrkraft** kann die Noten für ihren eigenen Unterricht in den Leistu
 
 Sofern **Teilleistungen** definiert sind, werden diese hier ebenfalls eingetragen.
 
-Es lassen sich ganze Noten (1, 2, 3, …) und Noten mit Tendenzen eingeben (3+, 3, 3-, …). Weiterhin können je nach Bedarf Leistungsstufen E1, E2 E3 oder Codes wie NB für "Nicht beurteilbar" oder NE für "Nicht erteilt" usw. eingetragen werden.
+Es lassen sich ganze Noten (1, 2, 3, …) und Noten mit Tendenzen eingeben (3+, 3, 3-, …). Weiterhin können je nach Bedarf Leistungsstufen E1, E2, E3 oder Codes wie NB für "Nicht beurteilbar" oder NE für "Nicht erteilt" usw. eingetragen werden.
 
 ::: tip Pfeiltasten verwenden
-Nutzen Sie bei Verwendung einer Tastatur die Coursertasten, um zwischen den Feldern und Spalten zu wechseln. Noten lassen sich gut mit dem Ziffernblock eintippen.
+Nutzen Sie bei Verwendung einer Tastatur die Cursortasten, um zwischen den Feldern und Spalten zu wechseln. Noten lassen sich gut mit dem Ziffernblock eintippen.
 :::
 
 #### Mahnungen setzen
@@ -81,13 +81,13 @@ Werden die Noten und Mahnungen aus WeNoM in den SVWS-Webclient übertragen und d
 
 #### Fachbezogene Fehlstunden eintragen
 
-Im Bereich **Fehlstunden** können *fachbezogene Fehlstunden* (FS) als ganze Zahl eingegeben werden. Die Anzahl der *unentschuldigten Fehlstunden* (FSU) wird in der benachbarten Spalte eingetragen. 
+Im Bereich **Fehlstunden** können *fachbezogene Fehlstunden* (FS) als ganze Zahl eingegeben werden. Die Anzahl der *unentschuldigten Fehlstunden* (FSU) wird in der benachbarten Spalte eingetragen und darf die Anzahl der gesamten Fehlstunden nicht übertreffen.
 
 #### Eintragungen fachbezogene Bemerkungen (FB)
 
 Durch Klicken auf **Fachbezogene Bemerkungen** öffnet sich ein Eingabefenster. Es ist nun der zuvor ausgewählte Schüler ausgewählt und Sie können Bemerkungen erzeugen.
 
-Im unteren Bereichd dieses Fensters können durch die Schule **vorformulierte Floskeln** entweder durch Eingabe des Kürzels oder durch Anklicken übernommen und beim Schüler eingetragen werden. Hierbei werden Platzhalter wie *$Vorname$* automatisch ausgefüllt.
+Im unteren Bereich dieses Fensters können durch die Schule **vorformulierte Floskeln** entweder durch Eingabe des Kürzels oder durch Anklicken übernommen und beim Schüler eingetragen werden. Hierbei werden Platzhalter wie *$Vorname$* automatisch ausgefüllt.
 
 Sie können im Anschluss Schüler der entsprechenden Lerngruppe auf der linken Seite durchklicken und für diese ebenfalls Bemerkungen erzeugen.
 
@@ -100,10 +100,10 @@ Sie können im Anschluss Schüler der entsprechenden Lerngruppe auf der linken S
 Als **Teilleistungen** werden Unternoten eines Faches bezeichnet. Dies sind zum Beispiel Noten für *Sonstige Mitarbeit*, *Klausuren und Klassenarbeiten* oder *ZP10-Prüfungsleistungen*.
 
 ::: info Teilleistungen variieren je nach Schule
-Die Schule kann Teilleistungen nach eigener Maßgabe definieren, daher können die Teilleistungen nach Schulform und Schule in ihrer Anzahl und in ihrer Bezeichnung variieren. Schulen verwenden eventuel keine Teilleistungen.
+Die Schule kann Teilleistungen nach eigener Maßgabe definieren, daher können die Teilleistungen nach Schulform und Schule in ihrer Anzahl und in ihrer Bezeichnung variieren. Schulen verwenden eventuell keine Teilleistungen.
 :::
 
-Im Tab Teilleistungen findet man eine Übersicht über alle in dieser Lerngruppe durch den zentralen SVWS-Server vorgegebenen Teilleistungsarten. 
+Im Reiter Teilleistungen findet man eine Übersicht über alle in dieser Lerngruppe durch den zentralen SVWS-Server vorgegebenen Teilleistungsarten. 
 
 Alternativ zum Leistungsdatenreiter können hier auch die Quartals- und Endnoten eingetragen werden. 
 

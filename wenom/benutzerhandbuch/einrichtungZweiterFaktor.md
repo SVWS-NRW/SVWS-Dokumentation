@@ -1,14 +1,14 @@
-# Einrichtung der Zwei-Faktor-Authentisierung 
+# Einrichtung der Zwei-Faktor-Authentifizierung 
 
-Damit der Umgang mit sensiblen Daten über das Internet weiter gesichert wird, ist es möglich, eine Zwei-Faktor-Authorisierung für jeden Benutzer einzurichten.
+Damit der Umgang mit sensiblen Daten über das Internet zusätzlich gesichert wird, ist es möglich, eine Zwei-Faktor-Authentifizierung für jeden Benutzer einzurichten.
 
 Ist diese weitere Sicherheitsebene durch die schulfachliche Administration eingeschaltet worden, erhält ein Benutzer beim nächsten Login die Aufforderung den *Zweiten Faktor* einzurichten.
 
-## Zweifaktor App installieren
+## Zwei-Faktor App installieren
 
 Sie benötigen eine Authenticator-App als diesen zweiten Faktor. Eine solche App kann in Varianten auf lokalen Desktopsystemen, Tablets oder auch Handys verwendet werden.
 
-Hier ein Beispiel einer Handy App:
+Hier ein Beispiel einer Handy-App:
 
 + Richten Sie eine neue Verbindung ein (oft ein Plus-Zeichen).
 + Scannen Sie den QRCode
@@ -19,4 +19,4 @@ Hier ein Beispiel einer Handy App:
 
 ![Zwei Faktor Usereinrichtung](./graphics/2fa_user.png "Tragen Sie den in der App angezeigten Code in zur Anmeldung ein.")
 
-Damit ist die Authentifizierung über einen zweiten Faktor eingerichtet und kann beim nächsten Login verwendet werden. 
+Damit ist die Authentifizierung über einen zweiten Faktor eingerichtet und kann beim nächsten Login verwendet werden.
