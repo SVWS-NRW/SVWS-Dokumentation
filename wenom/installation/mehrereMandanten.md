@@ -2,19 +2,20 @@
 
 ## Grundlagen
 
-Falls nur ein Webserver bereitgestellt werden soll, der jedoch jeweils WeNoM-Server über eine jeweils eigene Subdomäne für mehrere Schulen anbietet, kann dies mit Hilfe von "virtual Hosts" im Apache bereitgestellt werden.
+Falls lediglich ein einzelner Webserver bereitgestellt werden soll, der jedoch für mehrere Schulen jeweils eigene WeNoM-Server über unterschiedliche Subdomains anbietet, kann dies mithilfe von „Virtual Hosts“ im Apache2 Webserver realisiert werden. Auf diese Weise ist es möglich, auf einer gemeinsamen technischen Plattform mehrere Webnotenmanager für verschiedene Schulen bereitzustellen. Die einzelnen Instanzen sind dabei logisch voneinander getrennt und jeweils über eigene Zugänge erreichbar.
 
-Es wird somit unter einer technischen Plattform ermöglicht, mehrere Webnotenmanager für unterschiedliche Schulen in voneinander getrennten Bereichen - beziehungsweise mit verschiedenen Zugängen - anzubieten. 
+Alternativ kann dieses Ziel auch durch den Einsatz von Docker umgesetzt werden.
 
-::: tip Hinweis auf Docker
-Alternativ kann dieses Ziel natürlich auch mit Docker erreicht werden.
-:::
+Zur Konfiguration von Virtual Hosts kann im Verzeichnis ```/etc/apache2/sites-available/``` für jede Schule eine eigene .conf-Datei angelegt werden. Dadurch wird eine saubere Trennung der Mandanten durch separate Konfigurationsdateien ermöglicht. Innerhalb dieser Konfigurationsdateien kann der Speicherort der Datenbank über die Umgebungsvariable definiert werden:
 
-Unter ``` /etc/apache2/sites-available/``` kann hierfür eine neue .conf-Datei angelegt werden, so dass hier ein Trennung der Konfiguration Mandanten durch einzelne Dateien ermöglicht wird.
+```
+SetEnv ENM_DB_DIR <Pfad_zum_Verzeichnis>
+```
 
-In dieser Konfiguration kann der Speicherort der Datenbank mit der Umgebungsvariablen ```SetEnv ENM_DB_DIR Path_to_dir``` gesetzt werden. Diese Variable wird von der Wenominstallation ausgelesen und bestimmt damit je nach Servername, der in dieser virtual Host konfiguration angegeben ist, einen unterschiedlichen Speicherort von Sqlite Datenbank und Credentials. 
 
-## Beispielkonfiguration
+Diese Variable wird von der WeNoM-Installation ausgelesen und bestimmt – abhängig vom in der jeweiligen Virtual-Host-Konfiguration angegebenen Servernamen – den Speicherort der SQLite-Datenbank sowie der zugehörigen Zugangsdaten.
+
+## Beispielkonfiguration 
 
 In dem folgenden Beispiel soll nun für *"Schule1"* ein separater Zugang zu eines separaten Datenbank inklusive der *Secret Credentials* geschaffen werden: 
 
@@ -24,7 +25,11 @@ In dem folgenden Beispiel soll nun für *"Schule1"* ein separater Zugang zu eine
 mkdir /var/www/html/db/schule1
 ```
 
+## Umsetzung über einen Virtual Host Eintrag
+
 + Virtual Host unter ```/etc/apache2/sites-available/schule1.conf``` anlegen
+
+**Beispiel:**
 
 ```bash 
 echo "
@@ -59,12 +64,27 @@ echo "
 
 Hierbei ist zu beachten, dass ```schule1.your_domain.xyz```, ```SetEnv ENM_DB_DIR db/schule1``` und ```/etc/apache2/sites-available/schule1.conf``` entsprechend der vorhanden Domain (your_domain.xyz) und dem von Ihnen gewählten Schulnamen (schule1) angepasst werden. 
 
-+ verlinken apache2 neu starten 
+Nun noch die neue Seite unter ```sites-enabled```verlinken apache2 neu starten:
 
 ```bash 
 ln -s /etc/apache2/sites-available/schule1.conf /etc/apache2/sites-enabled/schule1.conf
 systemctl restart apache2
 ```
+
+## Umsetzung über einen .htaccess Eintrag
+
+Mit der einfachen Ergänzung in der Datei ```.htaccess``` im Ordner ```./public``` kann ebenso die Verwendung der Variablen je nach URL-Aufruf gesetzt werden. 
+
+**Beispiel:**
+
+```
+SetEnvIf Host "^wenom.(.*).schultraeger-url.de" dbfolder=db/$1
+```
+
+Hier wird beim Aufruf von  ```https://wenom.schule1.schultraeger-url.de``` der Ordner ```/db/schule1``` verwendet, beim Aufruf von ```https://wenom.schule2.schultraeger-url.de``` der Ordner ```/db/schule2```, u.s.w....  
+
+Dies ist relativ Komfortabel einzurichten im Vergleich zur ersten Methode, birgt jedoch die Gefahr, dass die .htaccess beim nächsten Update überschrieben wird. 
+
 
 ## Reverse Proxy Einstellungen
 
@@ -83,3 +103,5 @@ Beim Betrieb hinter einem Reverse Proxy muss darauf geachtet werden, dass die he
     proxy_connect_timeout 300;
     proxy_send_timeout 300;
 ```
+
+

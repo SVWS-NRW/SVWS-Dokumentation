@@ -53,4 +53,25 @@ Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten f�
 
 ## Einrichten einer Zwei-Faktor-Authentifizierung
 
-TODO
+Sie können unter **Noten-> Administration -> Zugangsdaten** individuell oder auch gruppenweise die Zwei-Faktor-Authentisierung aktivieren. 
+
+![Zwei Faktor Authentisierung](./graphics/2fa.png)
+
+Bei der Mehrfachauswahl von Benutzern können beispielsweise durch drücken des Buttons TOTP alle Benutzer verpflichtet werden die Zweifaktorautorisierung beim ersten Login einzurichten. 
+
+![Zwei Faktor Authentisierung Gruppenprozess](./graphics/2fa_GP.png)
+
+An dieser Stelle können auch einzelne bzw. alle Zweifaktor Authorisierungen zurückgesetzt werden. Dies wäre bei Verlust oder Diebstahl eines Endgerätes eine möglichkeit die Datenintegrität zu wahren. 
+
+Am grünen Haken unter 2FA erkennen man, dass die Zwei-Faktor-Authentisierung für diese Benutzer eingeschaltet ist 
+
+::: warning Synchronisation
+Die Einstellungen werden erst durch eine erneute Synchronisation auf dem WeNoM-Server übertragen 
+:::
+
+## Konfiguration
+
+![Konfiguration Notenmodul](./graphics/konfigurationNotenmodul.png)
+
+
+## Mail 

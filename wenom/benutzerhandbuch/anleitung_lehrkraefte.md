@@ -1,12 +1,42 @@
 # WenNoM - Anleitung für Lehrkräfte
 
-## Anmeldung
+## Erste Anmeldung
 
-* Öffnen Sie die Web-Adresse des WeNoM-Servers, die Sie von Ihrer Schule erhalten haben.
-* Zum Anmelden gilt die *dienstliche Emailadresse* als **Benutzername**.
-* Als Kennwort ist das **Initialkennwort** zu verwenden, welches Ihnen **Lehrkräften** von der Schule mitgeteilt wurde.
++ Öffnen Sie die Web-Adresse des WeNoM-Servers, die Sie von Ihrer Schule erhalten haben.
++ Zum Anmelden gilt die **dienstliche Emailadresse** als **Benutzername**.
++ Als Kennwort ist das **Initialkennwort** zu verwenden, welches Ihnen von der Schulischen Administration mitgeteilt wurde.
+
 
 ![Das Anmeldefenster zum WebNotenManager](graphics/WenomAnmeldung.png "Loggen Sie sich mit Ihrer dienstlichen Emailadresse und dem erhlatenen Passwort beim WeNoM ein.")
+
+## Zwei-Faktor-Authentisierung 
+
+### Einrichtung zweiter Faktor
+
+Haben Sie noch keine Zwei-Faktor-Authentisierung? 
+
+Dann finden Sie hier den Artikel: [Einrichtung Zwei-Faktor-Authentisierung](einrichtungZweiterFaktor.md)
+
+### Login mit aktivierter Zweifaktor
+ 
+Ist seitens der schulfachlichen Administration der zweite Faktor verpflichtend eingeschaltet, so erscheint nach der ersten Anmeldemaske aufgefordert zusätzlich die Eingabemaske für den 6-stelligen, zeitlich begrenzt gültigen zweiten Faktor.
+
+
+![Zweiten Faktor Eingeben](./graphics/2fa_eingeben.png)
+
+
+
+## Grundsätzliche Tabelleneinstellungen
+
+![Tabellenansicht](./graphics/tabellenansicht.png)
+
+Über die links angezeigte Liste können Lerngruppen in die Tabellenübersicht aufgenommen beziehungsweise abgewählt werden. Am rechten Rand der Tabelle können Spalten ein- und ausgeblendet werden. Je nach Ihrer Rolle können bis zu drei teils unterschiedliche Tabellen aufgerufen werden:
+
++ **Leistungsdaten** - dies sind die Noten, Fehlstunden und Mahnungen bei Schülern.
++ **Teilleistungen** - werden an Ihrer Schule Teilleistungen zu Fächern erfasst, sind diese hier aufgeführt. Eine Teilleistung könnten Noten für Klausuren, Sonstige Mitarbeit oder ZP10-Noten sein.
++ **Klassenleitung** - als Klassenleitung können hier aufsummierte Fehlstunden oder die diversen Arten von Zeugnisbemerkungen eingegeben werden.
+
+## Ansichten der verschiedenen Benutzergruppen
 
 Nach dem Login öffnet sich der Leistungsdatenreiter mit der vorausgewählten ersten Lerngruppe der Lehrkraft. 
 
@@ -15,16 +45,6 @@ Je nach Rolle der Lehrkraft kann die Ansicht variieren. Es wird zwischen den fol
 * Die **Fachlehrkraft** sieht nur die Leistungsdaten ihrer Klassenunterrichte und Kurse.
 * Die **Klassenleitung** sieht weitere Daten wie Zeugnisbemerkungen.
 * Die **Schulleitung** oder eine  **Abteilungsleitung/Stufenkoordination** sieht wie die Klassenleitung alle Daten der Schule oder Abteilung.
-
-### Grundsätzliche Tabelleneinstellungen
-
-**GRAFIK TODO**
-
-In dieser Ansicht können Lerngruppen in die Tabellenübersicht aufgenommen beziehungsweise abgewählt werden. Am rechten Rand der Tabelle können Spalten ein- und ausgeblendet werden. Je nach Ihrer Rolle können bis zu drei unterschiedliche Tabellen aufgerufen werden:
-
-+ **Leistungsdaten** - dies sind die Noten, Fehlstunden und Mahnungen bei Schülern.
-+ **Teilleistungen** - werden an Ihrer Schule Teilleistungen zu Fächern erfasst, sind diese hier aufgeführt. Eine Teilleistung könnten Noten für Klausuren, Sonstige Mitarbeit oder ZP10-Noten sein.
-+ **Klassenleitung** - als Klassenleitung können hier aufsummierte Fehlstunden oder die diversen Arten von Zeugnisbemerkungen eingegeben werden.
 
 ## Eintragungen der Fachlehrkraft
 

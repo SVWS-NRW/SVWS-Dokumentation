@@ -178,7 +178,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SVWS WeNoM', link: '/wenom/index.md' },
 						{ text: 'Benutzerhandbuch', link: '/wenom/benutzerhandbuch/index.md', collapsed: false, items: [
 							{ text: 'Anleitung für Lehrkräfte', link: '/wenom/benutzerhandbuch/anleitung_lehrkraefte.md'},
-							{ text: 'Einrichten der TFA' },
+							{ text: 'Einrichten der TFA', link: '/wenom/benutzerhandbuch/einrichtungZweiterFaktor.md' },
 							{ text: 'Schulische Administration', link: '/wenom/benutzerhandbuch/schulische_administration.md'},
 						] },
 						{ text: 'Installation', link: '/wenom/installation/index.md', collapsed: false, items: [
@@ -190,6 +190,7 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Strato VS', link: '/wenom/hoster_installation/strato_vs.md' },
 								{ text: 'Eigener Webserver', link: '/wenom/installation/installation_webserver.md' },
 							] },
+							{ text: 'mehrere Mandanten', link: '/wenom/installation/mehrereMandanten.md' },
 						] },
 						{ text: 'Geschäftsprozesse WeNoM', link: '/wenom/geschaeftsprozesse.md' },
 					] },
