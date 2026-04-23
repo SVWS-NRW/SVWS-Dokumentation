@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@eslint/markdown": "^7.1.0",
+    "@eslint/markdown": "^8.0.1",
     "@stylistic/eslint-plugin": "^5.2.2",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^25.5.0",
