@@ -8,46 +8,52 @@ Damit WeNoM und der SVWS-Server miteinander kommunizieren bzw. synchronisieren k
 
 Nachdem die Installation und Ersteinrichtung und damit die erfolgreiche Verbindung zum WeNoM-Server im SVWS-Server eingerichtet wurde, kann die schulfachliche Administration auf der Konfigurationsoberfläche des SVWS-Servers die Synchronisation zwischen beiden Datenbeständen ausführen.
 
-![WenomSVWS.png](graphics/WenomSVWS.png)
+![Administration zum Hoch- Runterladen und Synchronisieren und Daten löschen ](graphics/WenomSVWS.png "Syncrhonisieren Sie die Daten wie gewünscht oder entfernen Sie Daten.")
 
-In besonderen Fällen kann nur hoch- beziehungsweise runtergeladen werden. In der Regel werden die Datenbestände jedoch direkt synchronisiert, was einem Hochladen mit anschließendem Herunterladen entspricht.
+ In der Regel werden die Datenbestände *synchronisiert*, was einem Hochladen mit anschließendem Herunterladen entspricht.
 
-Dabei wird anhand eines *Zeitstempels* in beiden Datenbeständen entschieden, welcher Eintrag der neuere ist und dieser wird dann für den SVWS-Server übernommen.
+Dabei wird anhand eines *Zeitstempels* in beiden Datenbeständen entschieden, welcher Eintrag der Neuere ist und der Eintrag mit dem neuesten Datum wird für den SVWS-Server erhlaten beziehungseise von WeNoM übernommen.
+
+Beim Synchronisieren werden ebenfalls die Benutzer abgeglichen, so dass es für WeNoM ausschließlich Benutzer gibt, die im SVWS-Server vorhanden sind.
+
+In besonderen Fällen kann nur hoch- beziehungsweise runtergeladen werden, so dass kein beidseitiger Abgleich über die Datumsstempel stattfindet.
 
 ## Zurücksetzen / Daten löschen
 
 Über den Punkt **Zurücksetzen** bietet sich der schulfachlichen Administration die Möglichkeit,
 
-+ Daten zurücksetzen
-+ Daten und Benutzer zurücksetzen.
++ **Daten** zurücksetzen
++ **Daten und Benutzer** zurücksetzen.
 
-Im normalen halbjährlichen Schulabschnittswechsel können mit dem Punkt `Daten zurücksetzen` alte Zeugnisdaten zur Sicherheit noch einmal aus dem über das Internet erreichbaren System genommen werden, sodass das neue Halbjahr sauber begonnen werden kann.
+Im normalen halbjährlichen Schulabschnittswechsel können mit dem Punkt `Daten zurücksetzen` alte Zeugnisdaten zur Sicherheit aus dem über das Internet erreichbaren System genommen werden. Zum einen sind diese Daten dann überhaupt nicht mehr in WeNoM abrufbar und zum anderen kann ein neuer Lernabschnitt auf WeNoM sauber begonnen werden.
 
-Falls ein Webnotenmanager aufgegeben werden soll und der schulfachliche Administrator somit die Löschung aller Daten auf dem Wenom-Server durchführen muss, kann dies über `Daten und Benutzer zurücksetzen` erreicht werden.
+Falls ein installierter Webnotenmanager vollständig aufgegeben oder vollständig neu initialisiert werden soll und der schulfachliche Administrator somit die Löschung aller Daten auf dem WeNoM-Server durchführen muss, kann dies über den Schalter `Daten und Benutzer zurücksetzen` erreicht werden.
 
-### Verbindungsdaten löschen / erneuern
+### Verbindungsdaten löschen oder erneuern
 
-Wenn ein neues Secret benötigt wird oder ein Wenom-Server gelöscht werden soll, können die noch eingetragenen Zugangsdaten unter `Verbindungsdaten einrichten` gelöscht bzw. erneuert werden.
+Wenn ein neues Secret benötigt wird oder ein Wenom-Server gelöscht werden soll, können die noch eingetragenen Zugangsdaten unter `Verbindungsdaten einrichten` gelöscht beziehungsweise erneuert werden.
 
-![WenomVerbindungLoeschen.png](graphics/WenomVerbindungLoeschen.png)
+![WenomVerbindungLoeschen.png](graphics/WenomVerbindungLoeschen.png "Löschen Sie die Verbindungsdaten für einen WeNoM-Server.")
 
 ::: danger Achtung!
-Die *Daten*, die sich auf dem WeNoM-Server befinden, werden dabei nicht gelöscht. Es wird nur die *Verbindungsmöglichkeit* gelöscht.
+Die *Daten*, die sich auf dem WeNoM-Server befinden, werden dabei nicht gelöscht. Es wird lediglich nur die *Verbindungsmöglichkeit* entfernt.
 
-Diese kann gegebenfalls auch wiederhergestellt werden, falls das Secret des WeNoM-Servers noch gültig ist.
+Die Möglichkeit zur Verbindung kann gegebenfalls wiederhergestellt werden, falls das *Secret* des WeNoM-Servers noch gültig ist.
 :::
 
 ## Zugänge der Lehrkräfte
 
-Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialpasswort*. In Kombination mit der *Dienstlichen Emailadresse* ist dieses Kenntwort der individuelle Zugang zum WebNotenManager.
+Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialpasswort*. In Kombination mit der *Dienstlichen Emailadresse* als Benutzername ist dieses Kennwort der individuelle Zugang zum WebNotenManager.
 
-![WenomInitialkennwort.png](graphics/WenomInitialkennwort.png)
+![WenomInitialkennworte/Emailadressen einsehen im SVWS-Webclient](graphics/WenomInitialkennwort.png "Im SVWS-Webclient sind die Initialkennworte hinterlegt.")
 
-Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehler markiert und nicht zum WeNoM-Server übertragen. Ebenso werden nur die Dienstmailadressen und keine privaten E-Mail-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet.
+Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehler markiert und nicht zum WeNoM-Server übertragen.
 
-Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten für den WeNoM-Server eingetragen ist, können sich die Lehrkräfte statt des Initialpassworts ein neues Initialpasswort zuschicken lassen.
+Ebenso werden ausschließlich Dienstmailadressen und keine privaten E,Email-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet.
 
-![WenomMail.png](graphics/WenomMail.png)
+Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten für den WeNoM-Server eingetragen ist, können sich die Lehrkräfte ein neues Initialpasswort zuschicken lassen.
+
+![Wenom Email Konfiguration](graphics/WenomMail.png "Konfigurieren Sie Emaildaten, um automatisch Kennwörter versenden zu können.")
 
 (Diese Funktion ist in Version 1.0.12 noch nicht aktiviert.)
 
