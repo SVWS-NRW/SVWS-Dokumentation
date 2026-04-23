@@ -35,7 +35,7 @@ Wenn ein neues Secret benötigt wird oder ein Wenom-Server gelöscht werden soll
 
 ![WenomVerbindungLoeschen.png](graphics/WenomVerbindungLoeschen.png "Löschen Sie die Verbindungsdaten für einen WeNoM-Server.")
 
-::: danger Achtung!
+::: danger Achtung, die Daten sind nicht gelöscht!
 Die *Daten*, die sich auf dem WeNoM-Server befinden, werden dabei nicht gelöscht. Es wird lediglich nur die *Verbindungsmöglichkeit* entfernt.
 
 Die Möglichkeit zur Verbindung kann gegebenfalls wiederhergestellt werden, falls das *Secret* des WeNoM-Servers noch gültig ist.
@@ -63,17 +63,17 @@ Sie können unter **Noten-> Administration -> Zugangsdaten** individuell oder au
 
 ![Zwei Faktor Authentisierung](./graphics/2fa.png "Stellen Sie bei ausgewählten oder allen Benutzern ein, dass zwei Faktoren zur Authentisierung verwendet werden.")
 
-Bei der Mehrfachauswahl von Benutzern können über den `Schalter TOTP` alle Benutzer verpflichtet werden, die Zwei-Faktor-Autorisierung beim ersten Login einzurichten.
+Bei der Mehrfachauswahl von Benutzern können über den Eintrag `Zwei-Faktor-Authentifizierung mit TOTP` aus dem Dropdown-Menü alle Benutzer verpflichtet werden, die Zwei-Faktor-Autorisierung beim ersten Login einzurichten.
 
 ![Zwei Faktor Authentisierung Gruppenprozess](./graphics/2fa_GP.png "Setzen Sie alle oder ausgewählte Zwei-Faktor-Authentisierungen zurück.")
 
-An dieser Stelle können auch die einzelner Benutzer beziehungsweise alle Zwei-Faktor-Autorisierungen zurückgesetzt werden.
+An dieser Stelle können Autorisierungen einzelner Benutzer beziehungsweise alle Zwei-Faktor-Autorisierungen zurückgesetzt werden.
 
-Dies wäre bei Verlust oder Diebstahl eines Endgerätes eine Möglichkeit, die Sicherheit der Daten zu wahren und Fremdzugriffe auszuschließen. 
+Dies ist bei Verlust oder Diebstahl eines Endgerätes eine Möglichkeit, die Sicherheit der Daten zu wahren und Fremdzugriffe auszuschließen. 
 
 Am *grünen Haken* unter 2FA ist zu erkennen, dass die Zwei-Faktor-Authentisierung für diese Benutzer eingeschaltet ist.
 
-::: warning Synchronisation
+::: danger Weitere Synchronisation notwendig!
 Die Einstellungen werden erst durch eine erneute Synchronisation auf dem WeNoM-Server übertragen!
 :::
 
