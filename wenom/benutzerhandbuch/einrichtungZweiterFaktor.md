@@ -1,18 +1,22 @@
 # Einrichtung der Zwei-Faktor-Authentisierung 
 
-Im Umgang mit sensiblen Daten über das Internet wird es nötig sein eine Zweifaktor Authorisierung für jeden Benutzer einzurichten. Ist dies durch den schulfachliche Administrator eingeschaltet worden, so erhält der Benutzer beim nächsten login die Aufforderung den Zweiten Faktor einzurichten. 
+Damit der Umgang mit sensiblen Daten über das Internet weiter gesichert wird, ist es möglich, eine Zwei-Faktor-Authorisierung für jeden Benutzer einzurichten.
+
+Ist diese weitere Sicherheitsebene durch die schulfachliche Administration eingeschaltet worden, erhält ein Benutzer beim nächsten Login die Aufforderung den *Zweiten Faktor* einzurichten.
 
 ## Zweifaktor App installieren
 
-Sie benötigen eine Zwei-Faktor-App. Dies kann in mehreren verschiedenen Varianten auf localen Desktop systemen, iPads oder auch Handys hinterlegt sein. Hier ein Beispiel einer Handy App: 
+Sie benötigen eine Authenticator-App als diesen zweiten Faktor. Eine solche App kann in Varianten auf lokalen Desktopsystemen, Tablets oder auch Handys verwendet werden.
+
+Hier ein Beispiel einer Handy App:
 
 + Richten Sie eine neue Verbindung ein (oft ein Plus-Zeichen).
 + Scannen Sie den QRCode
 
-![Zwei Faktor Handy](./graphics/2fa_handy.png)
+![Zwei Faktor Handy](./graphics/2fa_handy.png "Scannen Sie den QR-Code.")
 
-+ Übertragen Sie den 6-stelligen Code, der auf dem Endgerät angezeigt wird, in die Eingabe unter TOTP Token (vgl. roter Kasten)
++ Übertragen Sie den 6-stelligen Code, der auf dem Endgerät angezeigt wird, in die Eingabe unter TOTP Token, im Screenshot wird dieser durch den roten Kasten hervorgehoben.
 
-![Zwei Faktor Usereinrichtung](./graphics/2fa_user.png)
+![Zwei Faktor Usereinrichtung](./graphics/2fa_user.png "Tragen Sie den in der App angezeigten Code in zur Anmeldung ein.")
 
-Damit ist die Zweifaktor Authentifizierung eingerichtet und kann beim nächsten login benutzt werden. 
+Damit ist die Authentifizierung über einen zweiten Faktor eingerichtet und kann beim nächsten Login verwendet werden. 
