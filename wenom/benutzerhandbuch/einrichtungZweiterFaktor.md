@@ -15,7 +15,7 @@ Hier ein Beispiel einer Handy-App:
 
 ![Zwei Faktor Handy](./graphics/2fa_handy.png "Scannen Sie den QR-Code.")
 
-+ Übertragen Sie den 6-stelligen Code, der auf dem Endgerät angezeigt wird, in die Eingabe unter TOTP Token, im Screenshot wird dieser durch den roten Kasten hervorgehoben.
++ Übertragen Sie den 6-stelligen Code, der auf dem Endgerät angezeigt wird, in die Eingabe unter TOTP Token, im Screenshot wird dieser durch den roten Kasten hervorgehoben. Bei diesen Verfahren werden *zeitbasierte Einmalkennworte* verwendet, die vom Nutzer in der Auth-App abzulesen und händisch bei einer Anmeldung bei einem Dienst einzugeben sind.
 
 ![Zwei Faktor Usereinrichtung](./graphics/2fa_user.png "Tragen Sie den in der App angezeigten Code in zur Anmeldung ein.")
 
