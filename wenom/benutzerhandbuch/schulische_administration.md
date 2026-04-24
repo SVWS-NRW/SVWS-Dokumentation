@@ -85,6 +85,8 @@ Im Tab **Konfiguration** eines WeNoM-Servers lässt sich einstellen, welche Spal
 
 Setzen Sie bei einer Klasse die Checkboxen wie beabsichtigt, um die jeweiligen Einträge für Benutzer schreibbar zu machen.
 
+Wenn Fehlstunden erfasst werden sollen - die Einträge in der Spalte **FS** sind angehakt - kann weiterhin über die Spalte **FS klassenweise** gesteuert werden, ob die Eingabe von Fehlstunden auf Fachebene möglich ist oder Fehlstunden eines Lernenden nur über die Klassenleitungen aufsummiert eingegeben werden. Für diesen Fall ist die Checkbox bei **FS klassenweise** anzuhaken. Sollen FS über die Fächer erfasst werden, ist die Spalte **FS klassenweise** ohne Haken zu konfigurieren.
+
 ![Stellen Sie ein, welche Spalten angezeigt werden](./graphics/konfigurationNotenmodulSpalten.png "Unterhalb der Klasseneinstellungen lassen sich Spalten ein- und ausblenden. Wählen Sie auch die angezeigten Teilleistungen.")
 
 Unterhalb der Checkbox-Matrix lassen sich *Spalten* vollständig ein- oder ausblenden.
