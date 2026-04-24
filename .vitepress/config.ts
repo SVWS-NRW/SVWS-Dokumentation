@@ -178,7 +178,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SVWS WeNoM', link: '/wenom/index.md' },
 						{ text: 'Benutzerhandbuch', link: '/wenom/benutzerhandbuch/index.md', collapsed: false, items: [
 							{ text: 'Anleitung für Lehrkräfte', link: '/wenom/benutzerhandbuch/anleitung_lehrkraefte.md'},
-							{ text: 'Einrichten der TFA', link: '/wenom/benutzerhandbuch/einrichtungZweiterFaktor.md' },
+							{ text: 'Einrichten der 2-Faktor-Authentifizierung', link: '/wenom/benutzerhandbuch/einrichtungZweiterFaktor.md' },
 							{ text: 'Schulische Administration', link: '/wenom/benutzerhandbuch/schulische_administration.md'},
 						] },
 						{ text: 'Installation', link: '/wenom/installation/index.md', collapsed: false, items: [
