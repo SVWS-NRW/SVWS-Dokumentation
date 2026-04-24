@@ -99,4 +99,8 @@ Eine Gruppe lässt sich auch aufklappen, so dass für eine Klasse abweichende  E
 
 Oben links können Sie über die beiden Schalter `Alles sperren` und `Alles freischalten` alle Checkboxen auf einmal setzen.
 
+::: tip Denken Sie ans Synchronisieren
+Zum Abschluss Ihrer Arbeiten synchronisieren Sie die Daten mit ihrem WeNoM.
+:::
+
 ## Mail
