@@ -81,9 +81,13 @@ Die Einstellungen werden erst durch eine erneute Synchronisation auf dem WeNoM-S
 
 Im Tab **Konfiguration** eines WeNoM-Servers lässt sich einstellen, welche Spalten bei der Noten- und Leistungsdateneingabe und im Klassenleitungsbereich jeweils klassenweise befüllt und geändert werden können.
 
-![Konfiguration Notenmodul](./graphics/konfigurationNotenmodul.png)
+![Konfiguration Notenmodul](./graphics/konfigurationNotenmodul.png "Über die Haken lässt sich einstellen, welche Daten verändert werden können.")
 
 Setzen Sie bei einer Klasse die Checkboxen wie beabsichtigt, um die jeweiligen Einträge für Benutzer schreibbar zu machen.
+
+Unterhalb der Checkbox-Matrix lassen sich Spalten vollständig ein- oder ausblenden.
+
+Hier können Sie auch steuern, welche **Teilleistungen** zur Noteneingabe angezeigt werden.
 
 ![Kopfzeile zum ändern einer kompletten Spalte](./graphics/WenomNotenKopfzeile.png "Ändern Sie Freigaben einer Spalte über die Kopfzeile.")
 
