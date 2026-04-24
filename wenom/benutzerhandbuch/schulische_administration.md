@@ -85,7 +85,9 @@ Im Tab **Konfiguration** eines WeNoM-Servers lässt sich einstellen, welche Spal
 
 Setzen Sie bei einer Klasse die Checkboxen wie beabsichtigt, um die jeweiligen Einträge für Benutzer schreibbar zu machen.
 
-Unterhalb der Checkbox-Matrix lassen sich Spalten vollständig ein- oder ausblenden.
+![Stellen Sie ein, welche Spalten angezeigt werden](./graphics/konfigurationNotenmodulSpalten.png "Unterhalb der Klasseneinstellungen lassen sich Spalten ein- und ausblenden. Wählen Sie auch die angezeigten Teilleistungen.")
+
+Unterhalb der Checkbox-Matrix lassen sich *Spalten* vollständig ein- oder ausblenden.
 
 Hier können Sie auch steuern, welche **Teilleistungen** zur Noteneingabe angezeigt werden.
 
