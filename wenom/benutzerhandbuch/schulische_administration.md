@@ -79,7 +79,24 @@ Die Einstellungen werden erst durch eine erneute Synchronisation auf dem WeNoM-S
 
 ## Konfiguration
 
+Im Tab **Konfiguration** eines WeNoM-Servers lässt sich einstellen, welche Spalten bei der Noten- und Leistungsdateneingabe und im Klassenleitungsbereich jeweils klassenweise befüllt und geändert werden können.
+
 ![Konfiguration Notenmodul](./graphics/konfigurationNotenmodul.png)
 
+Setzen Sie bei einer Klasse die Checkboxen wie beabsichtigt, um die jeweiligen Einträge für Benutzer schreibbar zu machen.
 
-## Mail 
+![Kopfzeile zum ändern einer kompletten Spalte](./graphics/WenomNotenKopfzeile.png "Ändern Sie Freigaben einer Spalte über die Kopfzeile.")
+
+Über die Kopfzeile lassen sich die Einträge auch für alle Klassen auf einmal umändern.
+
+![Klassen Gruppieren](./graphics/WenomKonfigurationGruppieren.png "Gruppieren Sie Klassen nach Jahrgängen oder Abteilungen.")
+
+Über das Dropdown-Menü "Gruppierung" können Sie Klassen nach *Jahrgängen* oder *Abteilungen* zusammenfassen und so übersichtlich mit wenigen Checkboxen im Gruppenkopf steuern. Heben Sie eine Gruppierung auf, indem Sie den Eintrag wieder auf *keine* stellen.
+
+Eine Gruppe lässt sich auch aufklappen, so dass für eine Klasse abweichende  Einstellungen vorgenommen werden können.
+
+![Alles komplett sperren](./graphics/WenomLeistungsdatenAllessperren.png "Sperren Sie alle Eingaben komplett.")
+
+Oben links können Sie über die beiden Schalter `Alles sperren` und `Alles freischalten` alle Checkboxen auf einmal setzen.
+
+## Mail
