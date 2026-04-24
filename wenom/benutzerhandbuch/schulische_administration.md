@@ -59,7 +59,7 @@ Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten f�
 
 ## Einrichten einer Zwei-Faktor-Authentifizierung
 
-Sie können unter **Noten-> Administration -> Zugangsdaten** individuell oder auch gruppenweise die Zwei-Faktor-Authentifizierung aktivieren.
+Sie können unter **Noten ➜ Administration ➜ Zugangsdaten** individuell oder auch gruppenweise die Zwei-Faktor-Authentifizierung aktivieren.
 
 ![Zwei Faktor Authentifizierung](./graphics/2fa.png "Stellen Sie bei ausgewählten oder allen Benutzern ein, dass zwei Faktoren zur Authentifizierung verwendet werden.")
 
