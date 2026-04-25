@@ -11,7 +11,7 @@ Dies soll als Grundlage für die Schulungsclients oder zur Entwicklung eine Nigh
 
 ## Installation mit dem Linuxinstaller
 
-Diese recht einfache Methode benötigt ein Debian 12 oder 13 als Basis und ist eine schnelle Methode, um einen Testserver im Betriebsstatus "stable" auf dem aktuellen Release zu erzeugen. 
+Diese Methode benötigt ein Debian 12 oder 13 als Basis und ist eine schnelle Methode, um einen Testserver im Betriebsstatus "stable" auf dem aktuellen Release zu erzeugen. 
 Das Skript install.sh ist in unseren [Githubquellen](https://github.com/SVWS-NRW/SVWS-Server/releases]) verfügbar.
 
 Möchte man hier z.B. die Environmet Variablen z.B. beim Aufsetzen von mehreren Schulungsclients schon direkt mit übergeben, kann dies wie in dem folgenden Installationsscript beispielsweise umgesetzt werden:
@@ -20,7 +20,7 @@ Möchte man hier z.B. die Environmet Variablen z.B. beim Aufsetzen von mehreren 
 
 ## Installation auf Basis eines Docker Containers
 
-Diese etwas Methode ist im Vergleich zum Linuxinstaller etwas aufwändiger. Sie ermöglicht aber das schnelle Ausrollen eines SVWS-Server auf unterschiedlichen Releases und mit unterschiedlichen Mariadb Varianten. Ebenso ist das Wechseln zwischen den Releases zügig umsetzbar.
+Diese Methode ist im Vergleich zum Linuxinstaller etwas aufwändiger. Sie ermöglicht aber das schnelle Ausrollen eines SVWS-Server auf unterschiedlichen Releases und mit unterschiedlichen MariaDB Varianten. Ebenso ist das Wechseln zwischen den Releases zügig umsetzbar.
 
 [install_svws-testserver-docker.sh](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Testserver/install_svws-testserver-docker.sh)
 

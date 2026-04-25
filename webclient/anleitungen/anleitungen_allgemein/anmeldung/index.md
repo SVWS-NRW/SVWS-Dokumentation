@@ -49,4 +49,4 @@ Nach Eingabe des Benutzernamens und Passworts wird das ausgewählte Schema für 
 
 ## 7 Versionshinweis
 
-Die aktuell verwendete Version des SVWS-Clients wird hier angezeigt, ebenso der verwendete Commit, der als Link auf das GitHub-Repository verweist. Das Kopier-Icon an der Seite kann verwendet werden, wenn Fehlermeldungen geschrieben werden. Mit Hilfe der kopierten Daten ist die Fehlersuche für das Entwicklerteam detlich einfacher.
+Die aktuell verwendete Version des SVWS-Clients wird hier angezeigt, ebenso der verwendete Commit, der als Link auf das GitHub-Repository verweist. Das Kopier-Icon an der Seite kann verwendet werden, wenn Fehlermeldungen geschrieben werden. Mit Hilfe der kopierten Daten ist die Fehlersuche für das Entwicklerteam deutlich einfacher.

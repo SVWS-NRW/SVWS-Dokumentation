@@ -26,7 +26,7 @@ Hierbei werden alle Einstellungen überschrieben und die Sortierung richtet sich
 
 ![Details zu einer Klasse](./graphics/svws_klassen_hauptdetails.png "Wichtige Details zu einer Klasse.")
 
-Zuoberst lässt sich über einen Haken anwählen, ob die Klasse als **Ist sichtbar** markiert ist. Diese Einstellung steuert mit dem Haken **✓**, ob die Klasse in Dropdown-Menüs zur Auswahl steht oder nicht. Haben Sie zum Beispiel eine 1D angelegt, sind im neuen Schuljahr aber nur dreizügig, kann die alte Klasse gelöscht werden und ist dann weg oder sie wird auf "nicht sichtbar" gestellt und kann dann bei Bedarf einfach wieder aktiviert werden.
+Zuoberst lässt sich über einen Haken anwählen, ob die Klasse als **Ist sichtbar** markiert ist. Diese Einstellung steuert mit dem Haken **✓**, ob die Klasse in Dropdown-Menüs zur Auswahl steht oder nicht. Haben Sie zum Beispiel eine 1D angelegt, sind im neuen Schuljahr aber nur dreizügig, kann die alte Klasse gelöscht werden und ist dann weg oder sie wird auf "nicht sichtbar" gestellt und kann dann bei Bedarf wieder aktiviert werden.
 
 Als **Kürzel** und **Beschreibung** können Sie freie Bezeichner wählen, ob die Klassen an Ihrer Schule die 8.1, 8.2 und so weiter oder die 8A, 8B und so weiter oder die "Igelklasse" oder die "Bieberklasse" sind, steht Ihnen frei.
 

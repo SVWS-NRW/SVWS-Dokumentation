@@ -204,7 +204,7 @@ Diese werden in der Kursplanung **händisch** oder durch **"Verteilen" automatis
 Vor einer Synchronisation müssen jetzt bei den betroffenen Schülern die **Facheinträge in den Leistungsdaten manuell eingetragen** werden (Fächer ergänzen).
 :::
 
-Dieses kann aus Gründen der derzeit noch einfacheren Bedienung **auch in Schild erfolgen**.  
+Dieses kann aus Gründen der derzeit noch komfortableren Bedienung **auch in Schild erfolgen**.  
 Es genügt, wenn **nur die Facheinträge** ergänzt werden, die Kurszuweisungen inklusive der individuellen Kursarten erfolgen durch die Synchronisation der Kursblocklung.  
 
 Jetzt noch erforderlich mögliche Umwahlen erfolgen wie oben beschrieben.

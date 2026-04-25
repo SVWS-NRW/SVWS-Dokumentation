@@ -148,6 +148,7 @@ export default tseslint.config(
 		rules: {
 				"markdown/no-html": ["error", { allowed: ["br"]}],
 				"markdown/fenced-code-language": "error",
+				"markdown/no-irregular-whitespace": "error",
 		}
 	}
 );

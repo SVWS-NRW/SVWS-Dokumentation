@@ -73,7 +73,7 @@ systemctl restart apache2
 
 ## Umsetzung über einen .htaccess Eintrag
 
-Mit der einfachen Ergänzung in der Datei ```.htaccess``` im Ordner ```./public``` kann ebenso die Verwendung der Variablen je nach URL-Aufruf gesetzt werden. 
+Mit der Ergänzung in der Datei `.htaccess` im Ordner `./public` kann ebenso die Verwendung der Variablen je nach URL-Aufruf gesetzt werden. 
 
 **Beispiel:**
 
@@ -81,14 +81,14 @@ Mit der einfachen Ergänzung in der Datei ```.htaccess``` im Ordner ```./public`
 SetEnvIf Host "^wenom.(.*).schultraeger-url.de" dbfolder=db/$1
 ```
 
-Hier wird beim Aufruf von  ```https://wenom.schule1.schultraeger-url.de``` der Ordner ```/db/schule1``` verwendet, beim Aufruf von ```https://wenom.schule2.schultraeger-url.de``` der Ordner ```/db/schule2```, u.s.w....  
+Hier wird beim Aufruf von  `https://wenom.schule1.schultraeger-url.de` der Ordner `/db/schule1` verwendet, beim Aufruf von `https://wenom.schule2.schultraeger-url.de` der Ordner `/db/schule2`, u.s.w....
 
-Dies ist relativ Komfortabel einzurichten im Vergleich zur ersten Methode, birgt jedoch die Gefahr, dass die .htaccess beim nächsten Update überschrieben wird. 
+Dies ist relativ komfortabel einzurichten im Vergleich zur ersten Methode, birgt jedoch die Gefahr, dass die `htaccess` beim nächsten Update überschrieben wird. 
 
 
 ## Reverse Proxy Einstellungen
 
-Beim Betrieb hinter einem Reverse Proxy muss darauf geachtet werden, dass die header Information korrekt durchgereicht wird. In oben genanntem Beispiel sind die folgenden Einstellungen in ```/etc/nginx/sites-available/schule1.conf``` zu ergänzen: 
+Beim Betrieb hinter einem Reverse Proxy muss darauf geachtet werden, dass die header Information korrekt durchgereicht wird. In oben genanntem Beispiel sind die folgenden Einstellungen in `/etc/nginx/sites-available/schule1.conf` zu ergänzen: 
 
 ```bash 
     add_header 'Content-Security-Policy' 'upgrade-insecure-requests';
@@ -103,5 +103,3 @@ Beim Betrieb hinter einem Reverse Proxy muss darauf geachtet werden, dass die he
     proxy_connect_timeout 300;
     proxy_send_timeout 300;
 ```
-
-

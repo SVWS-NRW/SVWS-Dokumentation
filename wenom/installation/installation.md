@@ -4,13 +4,13 @@
 
 ![Informationsverbund SVWS-Server und WeNoM](./graphics/SVWS-Wenom-Verbund.png "Übersicht über die Datensynchronisation SVWS-Server und WeNoM.")
 
-Der WeNoM wird auf PHP Basis mit Typescript und VUE.js entwickelt und stellt eine benutzerfreundliche und intuitive Benutzeroberfläche bereit, um die Dateneingabe so einfach wie möglich zu gestalten.
+Der WeNoM wird auf PHP-Basis mit Typescript und VUE.js entwickelt und stellt eine benutzerfreundliche und intuitive Benutzeroberfläche bereit, um die Dateneingabe so einfach wie möglich zu gestalten.
 
 Die Software synchronisiert die eingegebenen Daten teilautomatisch mit dem SVWS-Server, um sicherzustellen, dass die Daten stets auf dem neuesten Stand sind und für interne Schulzwecke zur Verfügung stehen.
 
 ## Voraussetzungen
 
-Es wir ein Webspace mit php8.2 oder höher, inkl. sqlite3 Modul benötigt. Der Webspace muss über ein Zertifikat verfügen (http**s**\://...).  
+Es wird ein Webspace mit php8.2 oder höher, inkl. sqlite3 Modul benötigt. Der Webspace muss über ein Zertifikat verfügen (http**s**\://...).  
 Dies alles liegt in der Regel bei den gängigen [Webhostern](../hoster_installation/index.md) fertig eingerichtet vor.
 
 Alternativ können Sie die Einrichtung des Webservers unter der Artikel "[eigener  Webserver](./installation_webserver.md)" nachlesen.
@@ -31,7 +31,7 @@ Unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVW
 ![Filezilla upload](./graphics/filezilla_upload.png)
 
 
-Die Ordnerstruktur in ```/var/www/html/wenom``` sollte nun folgerndermaßen aussehen:
+Die Ordnerstruktur in `/var/www/html/wenom` sollte nun folgerndermaßen aussehen:
 
 ``` bash
 /app

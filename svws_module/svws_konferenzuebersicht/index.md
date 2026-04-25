@@ -26,9 +26,9 @@ Dieses Handbuch richtet sich an:
 
 ## Starten der SVWS-Konferenzübersicht
 
-Achten Sie darauf, dass die App vollständig in einem Ordner abgelegt wurde (Sie haben die Index.html und im Unterordner /assets/ die Dateien app.js und app.css). Wenn Sie die Konferenzübersicht herunterladen und entpacken, ist alles direkt so, wie es sein soll.
+Achten Sie darauf, dass die App vollständig in einem Ordner abgelegt wurde (Sie haben die `inde.html` und im Unterordner `/assets/` die Dateien `app.js` und `app.css`). Wenn Sie die Konferenzübersicht herunterladen und entpacken, ist alles direkt so, wie es sein soll.
 
-Starten Sie nach dem Download und Entpacken einfach die `index.html`.
+Starten Sie nach dem Download die `index.html` durch das Öffnen der Datei mit Hilfe eines Browsers.
 
 ## Was ist zu beachten?
 

@@ -22,7 +22,7 @@ Mit einem `rechten Mausklick` öffnet sich in MS Windows das Kontextmenü, wähl
 
 Nach dem Entpacken liegen nun die `index.html` und der Unterordner `/assets/` in Ihrem Konferenzverzeichnis. Dieses Verzeichnis können Sie frei irgendwohin kopieren.
 
-In einer Netzwerkumgebung stellen Sie die App einfach über eine Ordner-/Dateifreigabe zur Verfügung, legen Sie das Konferenzmodul zum Beispiel in das *SVWS-Arbeitsverzeichnis*.
+In einer Netzwerkumgebung stellen Sie die App über eine Ordner-/Dateifreigabe zur Verfügung, legen Sie das Konferenzmodul zum Beispiel in das *SVWS-Arbeitsverzeichnis*.
 
 ::: tip Hinweise
 Blendet Ihr Betriebssystem Dateiendungen aus, sehen Sie die Datei nur als `index`.

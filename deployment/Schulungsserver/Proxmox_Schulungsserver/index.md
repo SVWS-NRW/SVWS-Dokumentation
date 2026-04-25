@@ -9,7 +9,7 @@ Eine Schulung mit SchILD-NRW 2.0, SchILD-NRW 3.0 oder ASDPC32 kann online nur mi
 
 ## Aufsetzen des Proxmox-Servers
 
-Hier gibt es zwei grundlegende Ansätze: per ISO oder über eine Erweiterung einer Debian 12 Installation um die Proxmox Funktionalität. Insbesondere bei physikalischem Zugang zum Server ist der einfachste Weg per ISO und Bootstick. Bei einem gemieteten online Server ist die Einrichtung über eine vorhandene Debian Installation der einfachere Weg. Dies ist jedoch nicht bei jeden Anbieter möglich ggf. kann dann auch per ISO installiert werden. 
+Hier gibt es zwei grundlegende Ansätze: per ISO oder über eine Erweiterung einer Debian 12 Installation um die Proxmox Funktionalität. Insbesondere bei physikalischem Zugang zum Servereignet sich der Weg per ISO und Bootstick. Bei einem gemieteten online Server ist die Einrichtung über eine vorhandene Debian Installation der empfohlene Weg. Dies ist jedoch nicht bei jeden Anbieter möglich, ggf. kann dann auch per ISO installiert werden. 
 
 ### Installation Vorort per ISO auf einem Bootstick
 
@@ -43,23 +43,23 @@ apt update && apt upgrade -y
 
 ### Einstellungen im Installationsdialog  
 
-Ggf. müssen hostnamen  in ```/etc/hosts``` und ```/etc/hostname``` anpassen
+Ggf. müssen hostnamen  in `/etc/hosts` und `/etc/hostname` anpassen
 in diesem Beispiel: proxmox.meine.domain
 und in der /etc/hosts die locale adresse als fixe IP ersetzen:
 zum Beispiel mit dem Editor nano:
 
-``` bash
+```bash
 nano /etc/hosts
 ```
-Diese sollte so aussehen für beispielsweise die ServerIP 192.168.178.16 und die Domain proxmox.meine.domain
+Diese sollte so aussehen für beispielsweise die Server-IP `19.168.178.16` und die Domain `proxmox.meine.domain`:
 
-``` bash
+```bash
 127.0.0.1       localhost
 192.168.178.16  proxmox.meine.domain proxmox
 ``` 
 
-Dies sollte auch die Netzwerkadresse in der /etc/network/interfaces sein, hier zum Beispiel für eine klassische Fritzbox installation: 
-``` bash
+Dies sollte auch die Netzwerkadresse in der `/etc/network/interfaces` sein, hier zum Beispiel für eine klassische FritzBox installation:
+```bash
 auto eth0
 iface eth0 inet static
 address 192.168.178.16/24
@@ -82,19 +82,17 @@ Bei der Präsentsschulung befinde sich alle Schulungsteilnehmer vorort und damit
 
 Für den Einsatz des Proxmox innerhalb eines Schulungsraumes benötigt man daher keine weitere Firwall oder Portweiterleitung. Hier reicht es eine internes virtuelle Bridge einzurichten, so dass die virtuellen Maschinen oder Container sich wie normals PCs im Schulungsnetz verhalten. Hier sind ggf Abstimmungen mit dem Netzwerkadministrator nötig, falls ein Macfilter o.Ä. die Vergabe der IPs im Internen Netz verhindert. Ggf müssen auch Anpassungen an der Firewall abgestimmt werden. 
 
-Es können nun mehrere SVWS-Server als LX Container innerhalb des Schulungsnetzes eingerichtet werden. Siehe dazu Einrichtung des [
-    Schulungsclient](../SchulungsClient/)
+Es können nun mehrere SVWS-Server als LX Container innerhalb des Schulungsnetzes eingerichtet werden. Siehe dazu Einrichtung des [Schulungsclient](../SchulungsClient/).
 
-Falls Schulungen mit Schild 2.0, Schild 3.0 oder ASDPC durchgeführt werden sollen, können weiterhin die bestehenden Windows Rechner im Schulungsnetzwerdngenutzt werden. 
+Falls Schulungen mit Schild 2.0, Schild 3.0 oder ASDPC durchgeführt werden sollen, können weiterhin die bestehenden Windows Rechner im Schulungsnetzwerdngenutzt werden.
 
-Die Einrichtung von Schild3 bei einem bestehenden SVWS-Server kann unter Installationsmethoden (Schild3)[../deployment/Schild-NRW3] nachgelesen werden. 
+Die Einrichtung von Schild3 bei einem bestehenden SVWS-Server kann unter Installationsmethoden (Schild3)[../deployment/Schild-NRW3] nachgelesen werden.
 
 ## Onlineschulung
 
 ### Netzwerkeinrichtung
 
-Zunächst muss bei einem angemieteten Server mit nur einer IP ein internes Netzwerk eingerichtet werden. Die einfachste methode ist hierbei per SDN
-
+Zunächst muss bei einem angemieteten Server mit nur einer IP ein internes Netzwerk eingerichtet werden. Hier wird häufig SDN verwendet.
 
 ### Übersicht über die Server 
 
@@ -117,7 +115,7 @@ Hier ein Skript zum erstellen dieses Template Containers mit 4 Gb Ram, 2 CPU und
 
 Die nötigen serverspezifischen Variablen können in einer.env Datei ausgelagert werden: 
 
-Hier ein Beispiel 
+Hier ein Beispiel:
 ```bash
 # Proxmox Infrastruktur
 

@@ -14,7 +14,7 @@ Im SVWS-Server lassen sich alle Daten hinterlegen, die für einen Stundenplan be
 
 Der SVWS-Client selbst ist kein Stundenplanprogramm, daher ist kein Erstellungsalgorithmus hinterlegt. Ebenso wird die Unterrichtsverteilung, auf welcher ein Stundenplan erzeugt wird, nicht über den SVWS-Client erstellt.
 
-Stundenpläne lassen sich manuell selbst erstellen und für einfachere Schulformen ist dies auch ein gangbarer Weg, zusammen mit den Leistungsdaten Stunden und Aufsichten zu planen.
+Stundenpläne lassen sich manuell selbst erstellen und für manche Schulformen ist dies auch ein gangbarer Weg, zusammen mit den Leistungsdaten, Stunden und Aufsichten zu planen.
 
 ## Zusammenhang der Kataloge mit dem Stundenplan
 
@@ -79,7 +79,7 @@ Eine Konsequenz hieraus ist, dass auch Stundenpläne zur Planung für die Zukunf
 
 Der aktuell gewählte Abschnitt ist mit einem Haken ✓ markiert, der aktuell Lernabschnitt der Schule ist **fett** hinterlegt.
 
-Der Stundenplan kann nun in einfachen Fällen manuell erstellt werden oder über ein Stundenplanprogramm berechnet werden.
+Der Stundenplan kann nun in weniger komplexen Fällen manuell erstellt werden oder über ein Stundenplanprogramm berechnet werden.
 
 Sind die grundsätzlichen Einstellungen vorhanden, wir ein kompletter Stundenplan über **Datenaustausch Untis** eingelesen und einem definierten Stundenplan zugewiesen.
 
@@ -99,7 +99,7 @@ Wählen Sie zuerst einen **Lernabschnitt**, dann den Bereich, ab dem der Stunden
 
 Ist der Haken bei der Einstellung gesetzt, **Fehler zu ignorieren**, werden keine Fehlermeldungen ausgeben, sondern nur Logeinträge erzeugt. Weiterhin werden Unterrichte ignoriert, bei denen die Kürzel für Klassen, Kurse und Lehrkräfte nicht in der SVWS-Datenbank vorhanden sind.
 
-Nach der Wahl einer Datei und einem Klick auf ```Stundenplan importieren``` wird der Stundenplan mit der gewählten Bezeichnung im Lernabschnitt angelegt.
+Nach der Wahl einer Datei und einem Klick auf `Stundenplan importieren` wird der Stundenplan mit der gewählten Bezeichnung im Lernabschnitt angelegt.
 
 ## Stundenplan manuell erstellen und anpassen
 
@@ -110,6 +110,3 @@ Auch wenn die Gymnasiale Oberstufe keine *Klasse*, sondern ein *Jahrgang* ist, i
 Wurde ein Wochentyp mit Wechselwochen eingerichtet, werden hier auch die Unterrichte in die passenden Wochen-Plätze gezogen.
 
 Lesen Sie für die detallierte Erklärung bitte **Anleitungen ➜ Stundenpläne**. 
-
-
-

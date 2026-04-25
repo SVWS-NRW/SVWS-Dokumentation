@@ -22,7 +22,7 @@ Es ist zu beachten, dass nicht weitere Dienste auf den Ports 80,443 bzw. 8443 ve
 
 ## Installation des SVWS-Servers
 
-Eine einfache Methode ist hier die Installation per linuxinstaller
+Eine Methode ist hier die Installation per Linuxinstaller
 
 ## Installation Schild3
 
@@ -95,8 +95,8 @@ curl --user "root:${MYSQLROOTPW}" \
 #	-F "schemaUserPassword=${DB_2_MYSQL_PW}" \ 
 #	-F "database=@${DB_2_PATH}"
 #
-
 ``` 
+
 Im Skript auskommentiert ist hier die Möglichkeit auch vorhandene Datenbanken zu migrieren. Die Methode ein SQLite Backup einzuspielen ist jedoch wesentlich performanter als die Mirgation einer Access Datenbank und sollte hier primär verwendet werden. 
 
 

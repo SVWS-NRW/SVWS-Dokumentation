@@ -16,7 +16,7 @@ https://github.com/SVWS-NRW/SVWS-DB-Scripte
 
 Die Verwendung für SchILD-NRW 2.0 Datenbanken ist nicht zu empfehlen, auch wenn das über die Abschaltung von Case-Sensitiven-Tabellennamen möglich wäre.
 Mit diesen Skripten kann über ein SQL-Tool eine leere SchILD-NRW 3.0 Datenbankstruktur erzeugt werden. 
-Das Migrationstool von SchILD-NRW 2.0 erlaubt die Migration der Datenbank von SchILD-NRW 2.0 in diese erzeugte Datenbankstruktur, so dass ein Übergang zu SchILD-NRW 3.0 einfach möglich ist.
+Das Migrationstool von SchILD-NRW 2.0 erlaubt die Migration der Datenbank von SchILD-NRW 2.0 in diese erzeugte Datenbankstruktur, so dass ein Übergang zu SchILD-NRW 3.0 möglich ist.
 Diese Arbeiten werden aber zukünftig vom SVWS-Server erledigt!
 
 Ziel ist es, dass SchILD-NRW nur noch in einer Übergangsphase auf die Datenbank direkt zugreifen kann. 
