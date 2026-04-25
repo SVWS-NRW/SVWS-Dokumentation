@@ -24,26 +24,26 @@ Unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVW
 
 ## Kopieren der WeNoM Programmdateien
 
-+ Entpacken aller Dateinen aus der in das /html Verzeichnis des Webservers
-+ Freigabe der Ordner app, db und public mit entsprechenden Rechten
-+ Ändern des Documentroot im Apache in `/var/www/html/public` (siehe unten)
++ Entpacken aller Dateinen aus der in das `/html` Verzeichnis des Webservers
++ Freigabe der Ordner `app`, `db` und `public` mit entsprechenden Rechten
++ Ändern des `DocumentRoot` im Apache in `/var/www/html/public` (siehe unten)
 
 ![Filezilla upload](./graphics/filezilla_upload.png)
 
 
 Die Ordnerstruktur in `/var/www/html/wenom` sollte nun folgerndermaßen aussehen:
 
-``` bash
+```bash
 /app
 /db
 /public
 ```
 
 ::: warning Wichtig!
-Es muss das Documentroot auf den Ordner `./public` zeigen!
+`DocumentRoot` in der Apache-Konfiguration muss auf den Ordner `./public` zeigen!
 :::
 
-Die Änderung des Dokumentroot kann unter den hosterspezifischen installationen oder der installation für den eignene Webserver bei bedarf nachgelesen werden. 
+Die Änderung des `DocumentRoot` kann unter den hosterspezifischen Installationen oder der Installation für den eignenen Webserver bei Bedarf nachgelesen werden. 
 
 
 ### Ordner-, Unterordner- und Dateiberechtigungen
