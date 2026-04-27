@@ -6,25 +6,29 @@
 + Zum Anmelden gilt die **dienstliche Emailadresse** als **Benutzername**.
 + Als Kennwort ist das **Initialkennwort** zu verwenden, welches Ihnen von der schulischen Administration mitgeteilt wurde.
 
-
 ![Das Anmeldefenster zum WebNotenManager](graphics/WenomAnmeldung.png "Loggen Sie sich mit Ihrer dienstlichen Emailadresse und dem erhlatenen Passwort beim WeNoM ein.")
 
-## Zwei-Faktor-Authentisierung 
+Nach der ersten Anmeldung am System verliert das Initialkennwort die Güligkeit und es wird **einmalig** das neue Passwort angezeigt.
+
+![Erstanmeldung](./graphics/erstanmeldung.png)
+
+Bitte nie die Passwörter im Browser speichern!  
+
+Notieren Sie sich das Passwort zum Beispiel in Ihrem Passwortmanager.
+
+## Zwei-Faktor-Authentisierung
 
 ### Einrichtung zweiter Faktor
 
-Haben Sie noch keine Zwei-Faktor-Authentisierung? 
+Haben Sie noch keine Zwei-Faktor-Authentisierung?
 
 Dann finden Sie hier den Artikel: [Einrichtung Zwei-Faktor-Authentisierung](einrichtungZweiterFaktor.md)
 
 ### Login mit aktivierter Zwei-Faktor-Authentifizierung
- 
+
 Ist seitens der schulfachlichen Administration der zweite Faktor verpflichtend eingeschaltet, so erscheint nach der ersten Anmeldemaske  zusätzlich die Eingabemaske für den 6-stelligen, zeitlich begrenzt gültigen zweiten Faktor.
 
-
 ![Zweiten Faktor Eingeben](./graphics/2fa_eingeben.png)
-
-
 
 ## Grundsätzliche Tabelleneinstellungen
 
@@ -38,21 +42,19 @@ Ist seitens der schulfachlichen Administration der zweite Faktor verpflichtend e
 
 ## Ansichten der verschiedenen Benutzergruppen
 
-Nach dem Login öffnet sich der Leistungsdatenreiter mit der vorausgewählten ersten Lerngruppe der Lehrkraft. 
+Nach dem Login öffnet sich der Leistungsdatenreiter mit der vorausgewählten ersten Lerngruppe der Lehrkraft.
 
 Je nach Rolle der Lehrkraft kann die Ansicht variieren. Es wird zwischen den folgenden Möglichkeiten unterschieden:
 
-* Die **Fachlehrkraft** sieht nur die Leistungsdaten ihrer Klassenunterrichte und Kurse.
-* Die **Klassenleitung** sieht weitere Daten wie Zeugnisbemerkungen.
-* Die **Schulleitung** oder eine  **Abteilungsleitung/Stufenkoordination** sieht wie die Klassenleitung alle Daten der Schule oder Abteilung.
++ Die **Fachlehrkraft** sieht nur die Leistungsdaten ihrer Klassenunterrichte und Kurse.
++ Die **Klassenleitung** sieht weitere Daten wie Zeugnisbemerkungen.
++ Die **Schulleitung** oder eine  **Abteilungsleitung/Stufenkoordination** sieht wie die Klassenleitung alle Daten der Schule oder Abteilung.
 
 ## Eintragungen der Fachlehrkraft
-
 
 ### Leistungsdaten
 
 ![Übersichtstabelle der Leistungsdaten](graphics/WenomLeistungsdaten.png "Geben Sie Noten, Mahnungen und Fehlstunden ein.")
-
 
 #### Noten eintragen
 
@@ -78,7 +80,6 @@ Bei einer Schülerin neu gesetzte Mahnungen sind am gesetzten Haken und der *rot
 Werden die Noten und Mahnungen aus WeNoM in den SVWS-Webclient übertragen und dort verarbeitet, wird der Zustand der Mahnung auf *ausgesprochen* beziehungsweise *versendet* geändert. Dies bedeutet nach einer weiteren Rück-Synchronisation mit WeNoM, dass der Status hier auf *angehakt* und *inaktiv* wechselt.
 :::
 
-
 #### Fachbezogene Fehlstunden eintragen
 
 Im Bereich **Fehlstunden** können *fachbezogene Fehlstunden* (FS) als ganze Zahl eingegeben werden. Die Anzahl der *unentschuldigten Fehlstunden* (FSU) wird in der benachbarten Spalte eingetragen und darf die Anzahl der gesamten Fehlstunden nicht übertreffen.
@@ -93,8 +94,8 @@ Sie können im Anschluss Schüler der entsprechenden Lerngruppe auf der linken S
 
 ![Auswahlliste der fachbezogenen Floskeln](graphics/WenomFachbezBem.png "Auswahlliste der fachbezogenen Floskeln.")
 
-
 ### Teilleistungen
+
 ![Übersicht der Teilleistungen zur Noteneingabe](graphics/WenomTeilleistungen.png "Vergeben Sie Noten für von der Schule definierte Teilleistungen.")
 
 Als **Teilleistungen** werden Unternoten eines Faches bezeichnet. Dies sind zum Beispiel Noten für *Sonstige Mitarbeit*, *Klausuren und Klassenarbeiten* oder *ZP10-Prüfungsleistungen*.
@@ -103,9 +104,15 @@ Als **Teilleistungen** werden Unternoten eines Faches bezeichnet. Dies sind zum 
 Die Schule kann Teilleistungen nach eigener Maßgabe definieren, daher können die Teilleistungen nach Schulform und Schule in ihrer Anzahl und in ihrer Bezeichnung variieren. Schulen verwenden eventuell keine Teilleistungen.
 :::
 
-Im Reiter Teilleistungen findet man eine Übersicht über alle in dieser Lerngruppe durch den zentralen SVWS-Server vorgegebenen Teilleistungsarten. 
+Im Reiter Teilleistungen findet man eine Übersicht über alle in dieser Lerngruppe durch den zentralen SVWS-Server vorgegebenen Teilleistungsarten.
 
-Alternativ zum Leistungsdatenreiter können hier auch die Quartals- und Endnoten eingetragen werden. 
+Alternativ zum Leistungsdatenreiter können hier auch die Quartals- und Endnoten eingetragen werden.
+
+## Gesperrte Lerngruppen
+
+Seitens der schulischen Administration können einzelne Lerngruppe für die Eingaben ganz oder auch nur teilweise gesperrt werden.
+
+![gesperrte Lerngruppen](./graphics/gesperrteLerngruppen.png)
 
 ## Eintragungen der Klassenleitung
 
@@ -120,14 +127,13 @@ Die Erfassung von Gesamtfehlstunden gilt für den Fall, dass sich die Schule nic
 ### ASV, AUE und ZB
 
 Unter den Spalten
-* ASV - Arbeits- und Sozialverhalten,
-* AUE - Außerunterrichtliches Engagement und 
-* ZB - Zeugnisbemerkung
++ ASV - Arbeits- und Sozialverhalten,
++ AUE - Außerunterrichtliches Engagement und
++ ZB - Zeugnisbemerkung
 
 können jeweils in diesen unterschiedlichen Kontexten Bemerkungen eingetragen werden.
 
 Ebenso wie bei den fachbezogenen Bemerkungen kann hier auf vorformulierte Floskeln zurückgegriffen werden. Zum Bearbeiten des Textes öffnet sich ein Fenster, in dem Floskeln ausgewählt oder manuell eingetragen werden können.
- 
 
 ## Tätigkeiten der Schulleitung/Abteilungsleitung
 

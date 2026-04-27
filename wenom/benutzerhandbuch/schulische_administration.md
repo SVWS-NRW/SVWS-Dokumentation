@@ -18,16 +18,15 @@ Beim Synchronisieren werden ebenfalls die Benutzer abgeglichen, so dass es für 
 
 In besonderen Fällen kann nur hoch- beziehungsweise heruntergeladen werden, so dass kein beidseitiger Abgleich über die Datumsstempel stattfindet.
 
-## Zurücksetzen / Daten löschen
+## Zurücksetzen, Daten löschen
 
-Über den Punkt **Zurücksetzen** bietet sich der schulfachlichen Administration die Möglichkeit,
+Über den Punkt **Synchronisation** bietet sich der schulfachlichen Administration die Möglichkeit Daten zu löschen.
 
-+ **Daten** zurücksetzen
-+ **Daten und Benutzer** zurücksetzen.
+![Daten zurücksetzen](./graphics/datenzurücksetzen.png)
 
-Im normalen, halbjährlichen Schulabschnittswechsel können mit dem Punkt `Daten zurücksetzen` alte Zeugnisdaten zur Sicherheit aus dem, über das Internet erreichbare, System genommen werden. Zum einen sind diese Daten dann überhaupt nicht mehr in WeNoM abrufbar und zum anderen kann ein neuer Lernabschnitt auf dem WeNoM sauber begonnen werden.
+Im normalen, halbjährlichen Schulabschnittswechsel können mit dem Punkt `Daten entfernen` alte Zeugnisdaten zur Sicherheit aus dem, über das Internet erreichbare, System genommen werden. Zum einen sind diese Daten dann überhaupt nicht mehr in WeNoM abrufbar und zum anderen kann ein neuer Lernabschnitt auf dem WeNoM sauber begonnen werden.
 
-Falls ein installierter Webnotenmanager vollständig aufgegeben oder vollständig neu initialisiert werden soll und der schulfachliche Administrator somit die Löschung aller Daten auf dem WeNoM-Server durchführen muss, kann dies über den Schalter `Daten und Benutzer zurücksetzen` erreicht werden.
+Falls ein installierter Webnotenmanager vollständig aufgegeben oder vollständig neu initialisiert werden soll und der schulfachliche Administrator somit die Löschung aller Daten auf dem WeNoM-Server durchführen muss, kann dies über den Schalter `Daten, Konfiguration und Benutzer entfernen` erreicht werden.
 
 ### Verbindungsdaten löschen oder erneuern
 
@@ -45,7 +44,6 @@ Die Möglichkeit zur Verbindung kann gegebenenfalls wiederhergestellt werden, fa
 
 Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialkennwort*. In Kombination mit der *Dienstlichen Emailadresse* als Benutzername ist dieses Kennwort der individuelle Erstzugang zum WebNotenManager.
 
-
 ![Lehrer-Zugangsdaten](./graphics/lehrer-zugangsdaten.png "Im SVWS-Webclient sind die Initialkennworte hinterlegt.")
 
 Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehler markiert und nicht zum WeNoM-Server übertragen.
@@ -54,11 +52,13 @@ Ebenso werden ausschließlich Dienstmailadressen und keine privaten Email-Adress
 
 ### Zurücksetzten auf das Initialkennwort
 
-Die Lehrkraft kann ein eigenes, der schulischen Administration unbekanntes Passwort setzen. Ist eine eigenes Passwort gesetzt worden, kann dies die schulische Administration an der roten Markierung neben dem Initialkennwort erkennen. 
+Die Lehrkraft erhält beim initialen Login ein neu generiertes und dem schulischen Administration unbekanntes Passwort vom Wenom-Server. Ist dieser Intitialisierende Vorgang abgeschlossen und wurde mit dem SVWS-Server erneut synchronisiert, wird dies mit einer roten Markierung neben dem Initialkennwort erkennbar gemacht.
 
 ![Zurücksetzen der Initialpasswörter](./graphics/initialpw_zuruecksetzen.png)
 
 Die schulische Administration kann mir dem Button *Passwort zurücksetzen* individuell für ausgesuchte Lehrkräfte oder auch für alle Lehrkräfte das Passwort auf das Initialkennwort zurücksetzen.
+
+![Zurücksetzen der Initialpasswörter](./graphics/initialpw_zuruecksetzen2.png)
 
 ### Einrichten einer Zwei-Faktor-Authentifizierung
 
