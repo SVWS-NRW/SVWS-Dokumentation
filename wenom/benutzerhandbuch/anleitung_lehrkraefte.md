@@ -127,6 +127,7 @@ Die Erfassung von Gesamtfehlstunden gilt für den Fall, dass sich die Schule nic
 ### ASV, AUE und ZB
 
 Unter den Spalten
+
 + ASV - Arbeits- und Sozialverhalten,
 + AUE - Außerunterrichtliches Engagement und
 + ZB - Zeugnisbemerkung
