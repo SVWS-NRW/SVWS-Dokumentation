@@ -41,23 +41,26 @@ Die *Daten*, die sich auf dem WeNoM-Server befinden, werden dabei nicht gelösch
 Die Möglichkeit zur Verbindung kann gegebenenfalls wiederhergestellt werden, falls das *Secret* des WeNoM-Servers noch gültig ist.
 :::
 
-## Zugänge der Lehrkräfte
+## Zugangsdaten der Lehrkräfte
 
-Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialpasswort*. In Kombination mit der *Dienstlichen Emailadresse* als Benutzername ist dieses Kennwort der individuelle Erstzugang zum WebNotenManager.
+Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialkennwort*. In Kombination mit der *Dienstlichen Emailadresse* als Benutzername ist dieses Kennwort der individuelle Erstzugang zum WebNotenManager.
 
-![WenomInitialkennworte/Emailadressen einsehen im SVWS-Webclient](graphics/WenomInitialkennwort.png "Im SVWS-Webclient sind die Initialkennworte hinterlegt.")
+
+![Lehrer-Zugangsdaten](./graphics/lehrer-zugangsdaten.png "Im SVWS-Webclient sind die Initialkennworte hinterlegt.")
 
 Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehler markiert und nicht zum WeNoM-Server übertragen.
 
-Ebenso werden ausschließlich Dienstmailadressen und keine privaten Email-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet.
+Ebenso werden ausschließlich Dienstmailadressen und keine privaten Email-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet. Liegt im Lehrerdatensatz kein gültiger Eintrag im Datenfeld *dienstliche Email* vor, so erhält diese Lehrkraft kein Login für den Webnotenmanager.
 
-Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten für den WeNoM-Server eingetragen ist, können sich die Lehrkräfte ein neues Initialpasswort zuschicken lassen.
+### Zurücksetzten auf das Initialkennwort
 
-![Wenom Email Konfiguration](graphics/WenomMail.png "Konfigurieren Sie Emaildaten, um automatisch Kennwörter versenden zu können.")
+Die Lehrkraft kann ein eigenes, der schulischen Administration unbekanntes Passwort setzen. Ist eine eigenes Passwort gesetzt worden, kann dies die schulische Administration an der roten Markierung neben dem Initialkennwort erkennen. 
 
-(Diese Funktion ist in Version 1.0.12 noch nicht aktiviert.)
+![Zurücksetzen der Initialpasswörter](./graphics/initialpw_zuruecksetzen.png)
 
-## Einrichten einer Zwei-Faktor-Authentifizierung
+Die schulische Administration kann mir dem Button *Passwort zurücksetzen* individuell für ausgesuchte Lehrkräfte oder auch für alle Lehrkräfte das Passwort auf das Initialkennwort zurücksetzen.
+
+### Einrichten einer Zwei-Faktor-Authentifizierung
 
 Sie können unter **Noten ➜ Administration ➜ Zugangsdaten** individuell oder auch gruppenweise die Zwei-Faktor-Authentifizierung aktivieren.
 
@@ -112,3 +115,9 @@ Zum Abschluss Ihrer Arbeiten synchronisieren Sie die Daten mit ihrem WeNoM.
 :::
 
 ## Mail
+
+Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten für den WeNoM-Server eingetragen ist, können sich die Lehrkräfte das Initialpasswort zuschicken lassen.
+
+![Wenom Email Konfiguration](graphics/WenomMail.png "Konfigurieren Sie Emaildaten, um automatisch Kennwörter versenden zu können.")
+
+(Diese Funktion ist in Version 1.2.2 noch nicht aktiviert.)
