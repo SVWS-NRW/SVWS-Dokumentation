@@ -38,7 +38,6 @@ export default defineConfig(({ mode }) => {
 							{ text: 'SVWS Konferenz (Alpha)', link: '/svws_module/svws_konferenzuebersicht' },
 							{ text: 'SVWS WebLuPO', link: '/weblupo' },
 						] },
-						
 					] },
 				{ text: 'Administration',
 					items: [

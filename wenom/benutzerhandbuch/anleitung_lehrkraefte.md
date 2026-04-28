@@ -12,21 +12,21 @@ Nach der ersten Anmeldung am System verliert das Initialkennwort die Güligkeit 
 
 ![Erstanmeldung](./graphics/erstanmeldung.png)
 
-Bitte nie die Passwörter im Browser speichern!  
+Bitte nie die Passwörter im Browser speichern!
 
 Notieren Sie sich das Passwort zum Beispiel in Ihrem Passwortmanager.
 
-## Zwei-Faktor-Authentisierung
+## Zwei-Faktor-Authentifizierung
 
 ### Einrichtung zweiter Faktor
 
-Haben Sie noch keine Zwei-Faktor-Authentisierung?
+Haben Sie noch keine Zwei-Faktor-Authentifizierung?
 
-Dann finden Sie hier den Artikel: [Einrichtung Zwei-Faktor-Authentisierung](einrichtungZweiterFaktor.md)
+Dann finden Sie hier den Artikel: [Einrichtung Zwei-Faktor-Authentifizierung](einrichtungZweiterFaktor.md)
 
 ### Login mit aktivierter Zwei-Faktor-Authentifizierung
 
-Ist seitens der schulfachlichen Administration der zweite Faktor verpflichtend eingeschaltet, so erscheint nach der ersten Anmeldemaske  zusätzlich die Eingabemaske für den 6-stelligen, zeitlich begrenzt gültigen zweiten Faktor.
+Ist seitens der schulfachlichen Administration der zweite Faktor verpflichtend eingeschaltet, so erscheint nach der ersten Anmeldemaske zusätzlich die Eingabemaske für den 6-stelligen, zeitlich begrenzt gültigen zweiten Faktor.
 
 ![Zweiten Faktor Eingeben](./graphics/2fa_eingeben.png)
 

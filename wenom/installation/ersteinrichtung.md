@@ -1,17 +1,17 @@
 # Ersteinrichtung WeNoM
 
-Die Einrichtung der Synchronisation mit dem SVWS-Server obliegt der für die Schule zuständigen **schulfachlichen Administration**, gegebenfalls also der Schulleitung, Stellvertretung oder Beauftragte/technische Koordinatoren/Schuladmins. Es werden somit höhere Rechte beim Benutzer des SVWS-Servers benötigt. 
+Die Einrichtung der Synchronisation mit dem SVWS-Server obliegt der für die Schule zuständigen **schulfachlichen Administration**, gegebenfalls also der Schulleitung, Stellvertretung oder Beauftragte/technische Koordinatoren/Schuladmins. Es werden somit höhere Rechte beim Benutzer des SVWS-Servers benötigt.
 Zur Einrichtung eines neuen WebNotenManagers im SVWS-Server das Pluszeichen unter **Noten -> Administration -> Serververbindungen -> Server** drücken.
 
 ![neuen Wenom erstellen](./graphics/neuer_wenom.png)
 
-(Es können mit einer Datenbank mehrer Webnotenmanager verknüpft werden, um z.B. in größeren Berufskollegs die Abteilungen autark voneinander arbeiten zu lassen.)
+(Es können mit einer Datenbank mehrer WebNotenManager verknüpft werden, um z.B. in größeren Berufskollegs die Abteilungen autark voneinander arbeiten zu lassen.)
 
 ## Generierung des Secrets
 
 Damit der SVWS-Server und WeNoM gesichert kommunizieren können, wird ein *Secret* benötigt. Dies wird im OAuth2-Verfahren verwendet, um die sendende Gegenstelle zu identifizieren.
 
-Das Secret wird bei der erstmaligen Eingabe der Verbindungsdaten im SVWS-Webclient automatisch generiert und im Webspace des WeNoM unter `./db/client.sec` abgespeichert. Das Secret aus dieser Datei muss unter *Secret* (vgl. Screenshot) eingefügt werden.
+Das Secret wird bei der erstmaligen Eingabe der Verbindungsdaten im SVWS-WebClient automatisch generiert und im Webspace des WeNoM unter `./db/client.sec` abgespeichert. Das Secret aus dieser Datei muss unter *Secret* (vgl. Screenshot) eingefügt werden.
 
 ![Secret Eintrag](./graphics/secret_eintrag.png)
 
@@ -29,7 +29,7 @@ Nach der Ersteinrichtung befinden sich noch keine Daten, also explizit auch kein
 
 ## Fehler bei der Einrichtung
 
-### Fehlerhafte Eingabe der URL 
+### Fehlerhafte Eingabe der URL
 
 die richtige Syntax ist hier die Eingabe von Beispielsweise `meinWeNoM.de`, ohne `https`://` und Backslash. Eine sicher Verbindung zu einem HTTPS-gesicherten Server ist auf jeden Fall Voraussetzung. Eine Verbindung zu einem HTTP-Server ist nicht zulässig.
 
@@ -49,14 +49,14 @@ In manchen netzinternen Umgebungen kann die Frage auftreten, ob dem eigenen Zert
 
 ## Alternativ: Generation des Secrets per API
 
-Wennn Sie ohne einen SVWS-Server das Secret generieren möchten und dieses dann an die schulische Administration übergeben wollen, können Sie dies per Api-Aufruf auslösen: 
+Wennn Sie ohne einen SVWS-Server das Secret generieren möchten und dieses dann an die schulische Administration übergeben wollen, können Sie dies per Api-Aufruf auslösen:
 
 Hinweis: Über die Konsole des Browsers (F12) kann die Serverantwort überprüft werden. Darüber hinaus gibt es kein sichtbares Feedback.
 
 Zur Initialisierung wird folgende URL */api/setup* auf ihrer Domain aufrufen, ein Beispiel wäre etwa:
 
 ```
-    https://meinnotenmanager.de/api/setup
+https://meinnotenmanager.de/api/setup
 ```
 
 Dies kann von jedem gängigen Browser aus ausgefürt werden.
@@ -64,8 +64,8 @@ Dies kann von jedem gängigen Browser aus ausgefürt werden.
 Gültige Responsecodes sind:
 
 ```
-    204 Setup erfolgreich
-    409 Server ist schon initialisier
+204 Setup erfolgreich
+409 Server ist schon initialisier
 ```
 
 Der Aufruf des oben genannten Api-Befehls erzeugt im Ordner */db* eine *app.sqlite*-Datenbank und eine Datei `client.sec`.

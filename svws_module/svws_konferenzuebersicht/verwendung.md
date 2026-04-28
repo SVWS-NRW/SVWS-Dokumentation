@@ -22,7 +22,7 @@ Hier im Beispiel wurde auch ein *Timer* gesetzt - mehr dazu findet sich weiter u
 
 ## Schülerlupe (Schnellansicht)
 
-Per Lupe-Icon oder Doppelklick auf einen Schüler öffnen Sie eine kompakte Schnellansicht: Notenübersicht, Fehlstunden und Bemerkungen für die Konferenz. 
+Per Lupe-Icon oder Doppelklick auf einen Schüler öffnen Sie eine kompakte Schnellansicht: Notenübersicht, Fehlstunden und Bemerkungen für die Konferenz.
 
 Hier in dieser Ansicht lassen sich auch **Fehlstunden** und die Zeugnisbemerkungen eintragen.
 
@@ -64,7 +64,7 @@ Der Export ist noch einmal zu bestätigen. Da hier im Beispiel mit einer Offline
 
 Arbeiten Sie im Online-Modus mit einer direkten Verbindung zum SVWS-Server, sind die Daten nach dem Export synchronisert.
 
-Alternativ können Sie *alle!* **Änderungen verwerfen** und die SVWS-Konferenzübersicht wieder auf den Ausgangszustand zurückstellen. 
+Alternativ können Sie *alle!* **Änderungen verwerfen** und die SVWS-Konferenzübersicht wieder auf den Ausgangszustand zurückstellen.
 
 ::: warning Keine automatische Synchronisierung
 Es findet keine automatische Synchronisierung statt. Nicht gespeicherte/exportierte Änderungen gehen verloren.
@@ -85,4 +85,3 @@ Achten Sie auch hier darauf, dass die gerade erstellte und damit korrekte Datei 
 ![Import erfolgreich](./graphics/konferenz_webclient_datenImportieren_importErfolgreich.png "Die Datei mit den Änderungen wurde importiert.")
 
 Ganz gleich, ob Sie im Offline- oder Onlinemodus gearbeitet haben: Die Eintragungen der SVWS-Konferenzübersicht sind nun im SVWS-Webclient über die **App Noten** und in den **Leistungsdaten** der **App Schüler** einsehbar.
-

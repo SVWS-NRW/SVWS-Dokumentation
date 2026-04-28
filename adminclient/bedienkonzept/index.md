@@ -1,12 +1,12 @@
 # Bedienkonzept des SVWS-AdminClient
 
-Der SVWS-Server kann sehr flexibel konfiguriert werden. Dies soll dazu führen, dass der Server an die vielen verschiedenen Systemumgebungen anpassen und je nach Bedarf skaliert werden kann.
+Der SVWS-Server kann sehr flexibel konfiguriert werden. Dies soll dazu führen, dass der Server an die vielen verschiedenen Systemumgebungen angepasst und je nach Bedarf skaliert werden kann.
 
 ## Administration in der eigenen Schule
 
 Der SVWS-Server kann auch weiterhin an der eigenen Schule auf einem Windows- oder Linux-Server betrieben werden.
 
-Weitere Hinweise zur Installation befinden sich im Bereich *Administration* ➜ **SVWS-Installation**. 
+Weitere Hinweise zur Installation befinden sich im Bereich *Administration* ➜ **SVWS-Installation**.
 
 Es können verschiedene Schemata, also "Datenbanken", für eine Schule eingerichtet werden, zum Beispiel für den Produktivbetrieb, einen Testbetrieb und Schulungsbetrieb.
 
@@ -18,14 +18,14 @@ Der AdminClient kann auch genutzt werden, um Backups zu erzeugen, wieder einzusp
 
 Der SVWS-Server kann auch an zentraler Stelle betrieben werden und mehrere Schulen auf einem MariaDB-Server zur Verfügung stellen.
 
-Dazu bekommt jede Schule ein eigenes Schema, das auch einen eigenen Schema-Datenbankbenutzer bekommt. Dadurch wird schon auf der Ebene der Schemata, der "Datenbanken" ausgeschlossen, dass Schulen auf Daten fremder Schulen zugreifen können.
+Dazu bekommt jede Schule ein eigenes Schema, das auch einen eigenen Schema-Datenbankbenutzer bekommt. Dadurch wird schon auf der Ebene der Schemata, der "Datenbanken", ausgeschlossen, dass Schulen auf Daten fremder Schulen zugreifen können.
 
-Die Verwaltung der verschiedenen Schemata kann auch mit dem AdminClient geschehen. Ebenso stehen den Schulträgern hierzu auch API-Endpunkte zur Verfügung, die die Schema-Verwaltung über eine priviligierte API ermöglichen.
+Die Verwaltung der verschiedenen Schemata kann auch mit dem AdminClient geschehen. Ebenso stehen den Schulträgern hierzu API-Endpunkte zur Verfügung, die die Schema-Verwaltung über eine priviligierte API ermöglichen.
 
 ## Login und Übersicht
-Rufen Sie den _[Server]/admin_ auf, um den **AdminClient** zu starten.
+Rufen Sie den `https://[Server]/admin` auf, um den **AdminClient** zu starten.
 
-Bei einer lokalen Installation wäre dies _localhost/admin_. Sie können an dieser Stelle einen IP-Adresse oder einen Hostnamen verwenden.
+Bei einer lokalen Installation wäre dies `https://localhost/admin`. Sie können an dieser Stelle eine IP-Adresse oder einen Hostnamen verwenden.
 
 ![Login Screen des Admin clients: root und password werden benötigt.](./graphics/svwsclient_adminclient_login.png "Login Screen des AdminClients.")
 
@@ -41,6 +41,4 @@ Derzeit finden sich Apps zum Schemata-Management und zur Konfiguration des SVWS-
 
 ![Übersicht der Schemata im AdminClient.](./graphics/SVWS_adminclient.png "Übersicht der Schemata im AdminClient und die Optionen zu diesen Schamata.")
 
-Oben links zeigt **Ro** an, dass der Rootuser angemeldet wurde. Melden Sie sich unten ganz links mit einem Klick auf **Abmelden** ab.
-
-
+Oben links zeigt **Ro** an, dass der root-Benutzer angemeldet wurde. Melden Sie sich unten ganz links mit einem Klick auf **Abmelden** ab.
