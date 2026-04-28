@@ -36,7 +36,6 @@ Verbinden Sie sich mit Ihrem FTP-Benutzer und laden Sie die ZIP-Datei in das Ver
 ![FTP Upload](./graphics/strato-VS_05.png "Dateien per FTP übertragen und entpacken.")  
 
 
-
 ## Berechtigungen von Ordnern ändern
 Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner `Public` und `App`:
 

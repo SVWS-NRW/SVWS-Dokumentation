@@ -1,6 +1,6 @@
 # Installation auf Rocky-Linux 9 oder RedHat 9
 
-Installation openjdk:
+Installation OpenJDK:
 
 ```bash
 dnf install java-21-openjdk-devel.x86_64

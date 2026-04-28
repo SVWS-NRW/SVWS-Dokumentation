@@ -61,7 +61,6 @@ echo "
 </VirtualHost>
 
 " >> /etc/apache2/sites-available/schule1.conf
-
 ```
 
 Hierbei ist zu beachten, dass `schule1.your_domain.xyz`, `SetEnv ENM_DB_DIR db/schule1` und `/etc/apache2/sites-available/schule1.conf` entsprechend der vorhanden Domain (your_domain.xyz) und dem von Ihnen gewählten Schulnamen (schule1) angepasst werden. 

@@ -38,7 +38,7 @@ Starten, pausieren oder nullen Sie den Timer über die danebenliegenden Tasten. 
 
 ![Anzeige eines Timers](./graphics/konferenz_timer.png "Definieren Sie einen Timer.")
 
- Wird der Timer auf **Repeat: an** gestellt, wird er beim Wechsel auf einen anderen Schülerdatensatz automatisch neu gestartet.
+Wird der Timer auf **Repeat: an** gestellt, wird er beim Wechsel auf einen anderen Schülerdatensatz automatisch neu gestartet.
 
 ## Ansicht Kompakt/nicht Kompakt
 

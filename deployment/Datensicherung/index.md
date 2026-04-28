@@ -10,7 +10,7 @@ Weitere Informationen dazu befinden sich im [Handbuch des AdminClients](../../ad
 
 ## Automatisierte SQLite Backups
 
-Automatisierte SQLite Backups können z.B. crontab gescriptet aufgerufen werden:
+Automatisierte SQLite Backups können z.B. crontab geskriptet aufgerufen werden:
 
 ```bash
 curl --user "MARIADBUSER:MYSQLROOTPW" -k -X 'GET' \
@@ -27,6 +27,7 @@ curl --user "MARIADBUSER:MYSQLROOTPW" -k -X 'GET' \
   -H 'accept: application/vnd.sqlite3' \
   --output BACKUP.sqlite
 ```
+
 Für eine höhere Geschwindigkeit kann, je nach Netzwerk, ein Aufruf direkt auf `localhost` erfolgen.
 
 Hier bitte die Variablen `MARIADBUSER`, `MYSQLROOTPW`, `SERVERNAME`, `PORT` und `SCHEMA_NAME` ersetzen bzw. vorher im Skript oder Terminal definieren.
@@ -85,7 +86,7 @@ PASSWORD=`grep password /etc/mysql/debian.cnf
 
 In manchen Systemen tritt bei einem Dump und einem anschließenden Wiedereinspielen das Problem auf, dass die Groß- und Kleinschreibung der Tebellenspalten durch den Dump oder das Zurückspielen verändert wird. Z.B. wird aus dem ursprünglichen Spaltennamen `allgAdrAnsprechpartner` dann im zurückgespielten System ein `allgadransprechpartner`. Dies kann dann weder von SchILD-NRW 3 noch vom SVWS-Server sauber verwertet werden.
 
-Hier ein Script, welches für die Version 1.0.12 des SVWS-Servers die Tabellenspalten in dem SQL-Dump `dump.sql` wieder umbenennt. Der Parameter `-i` muss beim Mac gesetzt sein, ebenso muss unter macOS `LC_ALL=C` aufgrund der Anführungszeichen gesetzt sein:
+Hier ein Skript, welches für die Version 1.0.12 des SVWS-Servers die Tabellenspalten in dem SQL-Dump `dump.sql` wieder umbenennt. Der Parameter `-i` muss beim Mac gesetzt sein, ebenso muss unter macOS `LC_ALL=C` aufgrund der Anführungszeichen gesetzt sein:
 
 ```bash
 LC_ALL=C sed -i '' -e '

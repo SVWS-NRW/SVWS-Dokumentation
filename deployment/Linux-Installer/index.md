@@ -90,8 +90,7 @@ SVWS_TLS_KEYSTORE_PASSWORD (default: 'abcd1234'): abcd1234
 SVWS_TLS_KEY_ALIAS (default: ''): ''
 ```
 
-Die Passwortvorschläge werden vom Skript generiert. Bitte sichern Sie unbedingt die verwendeten Passwörter.
-**Diese Daten werden vom Skript nicht gespeichert!**
+Die Passwortvorschläge werden vom Skript generiert. Bitte sichern Sie unbedingt die verwendeten Passwörter. **Diese Daten werden vom Skript nicht gespeichert!**
 
 Erläuterungen zu den einzelnen Punkten:
 
@@ -145,10 +144,10 @@ Eine Möglichkeit den SVWS-Server unter einer "normalen" URL erreichen zu könne
 
 In beiden Fällen könnte man statt zum Beispiel `https://meineServeradresse:8443/` dann unter `https://meineServeradresse/` den SVWS-Server direkt erreichen.
 
-Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit iptables:
+Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit `iptables`:
 
 ```bash
-bash iptables -A PREROUTING -t nat -p tcp --dport 443 -j REDIRECT --to-port 8443
+iptables -A PREROUTING -t nat -p tcp --dport 443 -j REDIRECT --to-port 8443
 ```
 
 ## Reverse-Proxy einrichten
