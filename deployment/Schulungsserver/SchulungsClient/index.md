@@ -1,12 +1,10 @@
 # SchulungsClient
 
-Unter SchulungsClients sollen hier (virtuelle) Maschinen verstanden werden, die für einen Teilnehmenden bzw. eine
-Schulungsplatzinstanz zur Verfügung stehen.
+Unter SchulungsClients sollen hier (virtuelle) Maschinen verstanden werden, die für einen Teilnehmenden bzw. eine Schulungsplatzinstanz zur Verfügung stehen.
 
 ## Anforderungen
 
-+ der SchulungsClient sollte eine virtuelle Maschine sein, so dass unabhängig von der zur Verfügung stehenden Hardware
-gearbeitet werden kann
++ der SchulungsClient sollte eine virtuelle Maschine sein, so dass unabhängig von der zur Verfügung stehenden Hardware gearbeitet werden kann
 + wenn möglich, sollen keine Lizensen an den Client gebunden sein, so dass dieser bedenkenlos weitergegeben werden kann
 + der Client sollte updatefähig sein
 + über den Client sollten Schulungsmedien bereitgestellt werden können, die individuell bearbeitbar sind
@@ -18,10 +16,7 @@ gearbeitet werden kann
 
 ## Installation des Grundsystems
 
-Als Grundsystem auf der VM für den SVWS-Server ist es empfehlenswert ein Debian, aktuell Debian 13, zu verwenden. Es
-kann die Installation ohne grafisches Frontend in einer KVM oder alternativ einem LX-Container gewählt werden. Es kann
-hier nicht auf die verschiedenen Methoden der Erstellung von VMs oder Containern unter dem jeweiligen Virtualizer
-eingegangen werden.
+Als Grundsystem auf der VM für den SVWS-Server ist es empfehlenswert ein Debian, aktuell Debian 13, zu verwenden. Es kann die Installation ohne grafisches Frontend in einer KVM oder alternativ einem LX-Container gewählt werden. Es kann hier nicht auf die verschiedenen Methoden der Erstellung von VMs oder Containern unter dem jeweiligen Virtualizer eingegangen werden.
 
 Es ist zu beachten, dass keine weiteren Dienste auf den Ports `80`, `443` bzw. `8443` verwendet werden.
 
@@ -102,6 +97,4 @@ curl --user "root:${MYSQLROOTPW}" \
 #
 ```
 
-Im Skript auskommentiert ist hier die Möglichkeit, auch vorhandene Datenbanken zu migrieren. Die Methode, ein
-SQLite-Backup einzuspielen, ist jedoch wesentlich performanter als die Mirgation einer Access-Datenbank und sollte hier
-primär verwendet werden.
+Im Skript auskommentiert ist hier die Möglichkeit, auch vorhandene Datenbanken zu migrieren. Die Methode, ein SQLite-Backup einzuspielen, ist jedoch wesentlich performanter als die Mirgation einer Access-Datenbank und sollte hier primär verwendet werden.

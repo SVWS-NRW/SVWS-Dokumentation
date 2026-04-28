@@ -2,19 +2,14 @@
 
 ## SVWS Schulungsumgebung
 
-Zu einer Schulung ohne SchILD-NRW 3 sind die grundlegenden Anforderungen niedrig: Sie benötigen einen Rechner mit
-Browser und eine Anzahl von SVWS-Servern, die auch online bereit gestellt werden können.
+Zu einer Schulung ohne SchILD-NRW 3 sind die grundlegenden Anforderungen niedrig: Sie benötigen einen Rechner mit Browser und eine Anzahl von SVWS-Servern, die auch online bereit gestellt werden können.
 
-Eine Schulung mit SchILD-NRW 2, SchILD-NRW 3 oder ASDPC32 kann online nur mit höherem Aufwand erfolgen: Sie benötigen
-entweder einen Windowsrechner oder eine Windows KVM im Schulungsnetz, die per VPN oder Guacamole erreichbar ist.
+Eine Schulung mit SchILD-NRW 2, SchILD-NRW 3 oder ASDPC32 kann online nur mit höherem Aufwand erfolgen: Sie benötigen entweder einen Windowsrechner oder eine Windows KVM im Schulungsnetz, die per VPN oder Guacamole erreichbar ist.
 
 
 ## Aufsetzen des Proxmox-Servers
 
-Hier gibt es zwei grundlegende Ansätze: per ISO oder über eine Erweiterung einer Debian 13 Installation um die
-Proxmox Funktionalität. Insbesondere bei physikalischem Zugang zum Server eignet sich der Weg per ISO und Bootstick.
-Bei einem gemieteten online-Server ist die Einrichtung über eine vorhandene Debian Installation der empfohlene Weg.
-Dies ist jedoch nicht bei jeden Anbieter möglich, ggf. kann dann auch per ISO installiert werden.
+Hier gibt es zwei grundlegende Ansätze: per ISO oder über eine Erweiterung einer Debian 13 Installation um die Proxmox Funktionalität. Insbesondere bei physikalischem Zugang zum Server eignet sich der Weg per ISO und Bootstick. Bei einem gemieteten online-Server ist die Einrichtung über eine vorhandene Debian Installation der empfohlene Weg. Dies ist jedoch nicht bei jeden Anbieter möglich, ggf. kann dann auch per ISO installiert werden.
 
 ### Installation Vor Ort per ISO auf einem Bootstick
 
@@ -30,8 +25,7 @@ Booten Sie von dem Stick und folgen sie dem Installationsdialog.
 
 #### Per ISO
 
-Die oben beschriebene ISO kann über die Konfigurationsoberfläche beim Dienstleister i.d.R. eingelesen werden,
-so dass der nächste Bootvorgang über diese ISO erfolgt.
+Die oben beschriebene ISO kann über die Konfigurationsoberfläche beim Dienstleister i.d.R. eingelesen werden, so dass der nächste Bootvorgang über diese ISO erfolgt.
 
 Der Installationsdialog des Prommox-Servers kann dann via VNC gesteuert werden.
 
@@ -66,8 +60,7 @@ Diese sollte so aussehen für beispielsweise die Server-IP `19.168.178.16` und d
 192.168.178.16  proxmox.meine.domain proxmox
 ```
 
-Dies sollte auch die Netzwerkadresse in der `/etc/network/interfaces` sein, hier zum Beispiel für eine klassische
-FritzBox installation:
+Dies sollte auch die Netzwerkadresse in der `/etc/network/interfaces` sein, hier zum Beispiel für eine klassische FritzBox installation:
 
 ```bash
 auto eth0
@@ -85,36 +78,25 @@ apt install -y net-tools dnsutils nmap curl zip wget
 dpkg-reconfigure locales
 ```
 
-Wenn kein Enterprise Support bei Proxmox abgeschlossen ist, kann kostenfrei die Community Version genutzt werden.
-Hierzu müssen in den Apt-Sources die Quellen für PVE und Ceph in der Enterprise-Version nur auskommentiert werden.
-Eine Anleitung hierzu befindet sich auf der (Proxmox Webseite)[https://pve.proxmox.com/wiki/Package_Repositories].
+Wenn kein Enterprise Support bei Proxmox abgeschlossen ist, kann kostenfrei die Community Version genutzt werden. Hierzu müssen in den Apt-Sources die Quellen für PVE und Ceph in der Enterprise-Version nur auskommentiert werden. Eine Anleitung hierzu befindet sich auf der (Proxmox Webseite)[https://pve.proxmox.com/wiki/Package_Repositories].
 
 ## Präsenzschulung
 
-Bei der Präsenzschulung befinden sich alle Schulungsteilnehmer vor Ort und damit hinter der Firewall in einem Bereich,
-wo in der Regel auch ein DHCP Server das interne Netz organisiert.
+Bei der Präsenzschulung befinden sich alle Schulungsteilnehmer vor Ort und damit hinter der Firewall in einem Bereich, wo in der Regel auch ein DHCP Server das interne Netz organisiert.
 
-Für den Einsatz des Proxmox innerhalb eines Schulungsraumes benötigt man daher keine weitere Firwall oder
-Portweiterleitung. Hier reicht es, eine interne virtuelle Bridge einzurichten, so dass die virtuellen Maschinen oder
-Container sich wie normals PCs im Schulungsnetz verhalten. Hier sind ggf Abstimmungen mit dem Netzwerkadministrator
-nötig, falls ein MAC-filter o.Ä. die Vergabe der IPs im internen Netz verhindert. Ggf müssen auch Anpassungen an der
-Firewall abgestimmt werden.
+Für den Einsatz des Proxmox innerhalb eines Schulungsraumes benötigt man daher keine weitere Firwall oder Portweiterleitung. Hier reicht es, eine interne virtuelle Bridge einzurichten, so dass die virtuellen Maschinen oder Container sich wie normals PCs im Schulungsnetz verhalten. Hier sind ggf Abstimmungen mit dem Netzwerkadministrator nötig, falls ein MAC-filter o.Ä. die Vergabe der IPs im internen Netz verhindert. Ggf müssen auch Anpassungen an der Firewall abgestimmt werden.
 
-Es können nun mehrere SVWS-Server als LX-Container innerhalb des Schulungsnetzes eingerichtet werden. Siehe dazu
-Einrichtung des [Schulungsclient](../SchulungsClient/).
+Es können nun mehrere SVWS-Server als LX-Container innerhalb des Schulungsnetzes eingerichtet werden. Siehe dazu Einrichtung des [Schulungsclient](../SchulungsClient/).
 
-Falls Schulungen mit SchILD-NRW 2, SchILD-NRW 3 oder ASDPC durchgeführt werden sollen, können weiterhin die bestehenden
-Windows-Rechner im Schulungsnetzwerk genutzt werden.
+Falls Schulungen mit SchILD-NRW 2, SchILD-NRW 3 oder ASDPC durchgeführt werden sollen, können weiterhin die bestehenden Windows-Rechner im Schulungsnetzwerk genutzt werden.
 
-Die Einrichtung von SchILD-NRW 3 bei einem bestehenden SVWS-Server kann unter Installationsmethoden
-(SchILD-NRW 3)[../deployment/Schild-NRW3] nachgelesen werden.
+Die Einrichtung von SchILD-NRW 3 bei einem bestehenden SVWS-Server kann unter Installationsmethoden (SchILD-NRW 3)[../deployment/Schild-NRW3] nachgelesen werden.
 
 ## Onlineschulung
 
 ### Netzwerkeinrichtung
 
-Zunächst muss bei einem angemieteten Server mit nur einer IP ein internes Netzwerk eingerichtet werden. Hier wird häufig
-SDN verwendet.
+Zunächst muss bei einem angemieteten Server mit nur einer IP ein internes Netzwerk eingerichtet werden. Hier wird häufig SDN verwendet.
 
 ### Übersicht über die Server
 
@@ -129,11 +111,9 @@ Bei der Onlineschulung werden die folgenden Server benötigt:
 
 ### Bereitstellung eines LXC-Container per Skript
 
-Als Grundlage für die SVWS-Server Installation wird hier ein Debian Linux 13 verwendet. Dies kann zum Beispiel über
-einen Proxmox-Sever als LX-Container bereitgestellt werden.
+Als Grundlage für die SVWS-Server Installation wird hier ein Debian Linux 13 verwendet. Dies kann zum Beispiel über einen Proxmox-Sever als LX-Container bereitgestellt werden.
 
-Hier ein Skript zum erstellen dieses Template-Containers mit 4 GB Ram, 2 CPU und 8GB Storage. Das Skript muss auf dem
-Terminal des Proxmoxservers ausgefürt werden:
+Hier ein Skript zum erstellen dieses Template-Containers mit 4 GB Ram, 2 CPU und 8GB Storage. Das Skript muss auf dem Terminal des Proxmoxservers ausgefürt werden:
 
 [pve_create_lxc.sh](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Schulungsserver/Proxmox_Schulungsserver/pve_create_lxc.sh)
 

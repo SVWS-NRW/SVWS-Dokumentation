@@ -1,7 +1,6 @@
 # Schulungsserver mit Docker
 
-Ziel dieses Artikels ist es, auf einem Host ein Dockersystem mit mehreren Docker Containern aufzusetzen. Diese Container
-sind leicht zu warten und können schnell wieder zurückgesetzt werden.
+Ziel dieses Artikels ist es, auf einem Host ein Dockersystem mit mehreren Docker Containern aufzusetzen. Diese Container sind leicht zu warten und können schnell wieder zurückgesetzt werden.
 
 
 ## Beispiel: Ein Testserver per Skript
@@ -57,11 +56,9 @@ docker compose up -d
 
 ## Beispiel: Mehrere Docker Container per `conf.txt` Datei
 
-Ziel ist es, mehrere Docker-Container anzulegen. Das Skript ermöglicht es simple Schulungspasswörter zu nutzen oder
-zwölfstellige Passwörter zu generieren. Alle Zugangsdaten werden dann in einem den `.env`-Datei gespeichert.
+Ziel ist es, mehrere Docker-Container anzulegen. Das Skript ermöglicht es simple Schulungspasswörter zu nutzen oder zwölfstellige Passwörter zu generieren. Alle Zugangsdaten werden dann in einem den `.env`-Datei gespeichert.
 
-Vorbereitend soll eine `conf.txt` Datei erstellt werden, die die Serverbezeichnungen, Ports und Passwörter enthält,
-die zum Generieren der Server ausgelesen werden.
+Vorbereitend soll eine `conf.txt` Datei erstellt werden, die die Serverbezeichnungen, Ports und Passwörter enthält, die zum Generieren der Server ausgelesen werden.
 
 Hier ein Beispiel zum Aufbau dieser Datei:
 

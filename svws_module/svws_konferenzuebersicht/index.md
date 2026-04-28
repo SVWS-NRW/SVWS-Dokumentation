@@ -2,7 +2,7 @@
 
 ![Logo Slim der SVWS-Konferenzübersicht](./graphics/svws-konferenz-logo-slim.svg)
 
-Die **SVWS-Konferenübersicht** dient dazu, alle Leistungsdaten einer Schülergruppe übersichtlich während einer Zeugniskonferenz zu präsentieren und auch zu ändern. 
+Die **SVWS-Konferenübersicht** dient dazu, alle Leistungsdaten einer Schülergruppe übersichtlich während einer Zeugniskonferenz zu präsentieren und auch zu ändern.
 
 ![Beispielansicht einer Konferenz](./graphics/konferenz_klassenuebersicht_preview.png "Beispielansicht für eine Konferenz in einer hypothetischen 9C.")
 
@@ -12,7 +12,7 @@ Die SVWS-Konferenzübersicht ist derzeit noch nicht als Release verfügbar, dies
 
 Sie können sich in einer Netzwerkumgebung direkt mit dem SVWS-Server verbinden oder die Datei `enm.json.gz` manuell laden, die über den SVWS-Webclient exportiert wurde, so dass das SVWS-Konferenzmodul auch vollständig offline genutzt werden kann.
 
-Die SVWS-Konferenzübersicht läuft im direkt in einem Browser, ohne dass ein weiterer Server zur Verfügung gestellt werden muss. Die Anwendung ist so gestaltet, dass alle Daten im Browser verarbeitet werden. 
+Die SVWS-Konferenzübersicht läuft im direkt in einem Browser, ohne dass ein weiterer Server zur Verfügung gestellt werden muss. Die Anwendung ist so gestaltet, dass alle Daten im Browser verarbeitet werden.
 
 Im **Offline-Modus** werden keine Schülerdaten oder Noten an Dritte weitergeleitet: Die Daten werden lediglich über die Dateien `enm.json.gz` eingelesen und aus der SVWS-Konferenzübersicht wieder exportiert.
 
@@ -45,4 +45,3 @@ Beachten Sie die Datenschutzrichtlinien Ihrer Schule und des geltenden Rechtsrah
 * Die Anwendung verarbeitet den SVWS-Export durch den **SVWS-Webclient** als `enm.json.gz`. Andere Dateitypen - oder aus anderen Programmen exportierte Daten - werden nicht unterstützt.
 
 * Ankreuzkompetenzen sind derzeit nicht unterstüzt.
-

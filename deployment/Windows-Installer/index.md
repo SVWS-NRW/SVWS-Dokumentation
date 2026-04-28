@@ -13,9 +13,7 @@ https://github.com/SVWS-NRW/SVWS-Server/releases
 
 ## Installationshinweise
 
-Der SVWS-Installer wird für Windows-64Bit mit InnoSetup erstellt.
-Er installiert die im Folgenden genannten Komponenten und startet alle Dienste. Eine Migration kann optional
-durchgeführt werden.
+Der SVWS-Installer wird für Windows-64Bit mit InnoSetup erstellt. Er installiert die im Folgenden genannten Komponenten und startet alle Dienste. Eine Migration kann optional durchgeführt werden.
 
 Der SVWS-Installer übernimmt die folgenden Aufgaben:
 
@@ -43,8 +41,7 @@ Zu Beginn der Installation erscheinen nach der Annahme der Lizenzvereinbarungen 
 ![Serverkonfiguration bei der Installation](./graphics/Installer_Auswahl_Dialog.jpg "Wählen Sie die Optionen für den Server und die Datenbank.")
 
 ::: danger Speichern Sie Ihre Passwörter!
-Es werden für MariaDB und den Datenbank-Benutzer Zufallskennwörter generiert! Ändern Sie diese nach Ihren Wünschen oder
-verwenden Sie diese Vorschläge, aber **dokumentieren Sie in jedem Fall Ihre Eingabe**.
+Es werden für MariaDB und den Datenbank-Benutzer Zufallskennwörter generiert! Ändern Sie diese nach Ihren Wünschen oder verwenden Sie diese Vorschläge, aber **dokumentieren Sie in jedem Fall Ihre Eingabe**.
 
 Ohne diese Kennwörter kann Ihnen später im Supportfall nicht geholfen werden!
 :::
@@ -54,14 +51,11 @@ Ohne diese Kennwörter kann Ihnen später im Supportfall nicht geholfen werden!
 
 Der Installer erkennt anhand der Registry-Einträge, ob MariaDB bereits installiert ist und in welcher Version.
 
-Wenn ein eigener MariaDB-Server installiert wird, muss entweder ein anderer Port verwendet werden oder es muss später
-eine Verbindung zum bestehenden Server hergestellt werden.
+Wenn ein eigener MariaDB-Server installiert wird, muss entweder ein anderer Port verwendet werden oder es muss später eine Verbindung zum bestehenden Server hergestellt werden.
 
-Ist die Option deaktiviert und es wird keine `svwsconfig.json` gefunden, dann erscheint eine Seite zur Angabe der
-Zugangsdaten zum bestehenden Server.
+Ist die Option deaktiviert und es wird keine `svwsconfig.json` gefunden, dann erscheint eine Seite zur Angabe der Zugangsdaten zum bestehenden Server.
 
-Ist die Installation aktiviert, wird der MariaDB-Server in den Programm-Verzeichnissen installiert. Der Dienst wird als
-Windows-Service registriert und gestartet.
+Ist die Installation aktiviert, wird der MariaDB-Server in den Programm-Verzeichnissen installiert. Der Dienst wird als Windows-Service registriert und gestartet.
 
 Mit dem Installer kann die MariaDB-Version zu späteren Zeitpunkten aktualisiert werden.
 
@@ -75,8 +69,7 @@ Die sort_buffer_size wird in der my.ini im data-Verzeichnis auf 16777216 gesetzt
 
 Mit dem Installer wird auch das verwendete JDK ausgeliefert.
 
-Dieses ist an den SVWS-Server gekoppelt und kann in zukünftigen Versionen nur in Kombination mit dem eigentlichen Server
-installiert oder aktulisiert werden.
+Dieses ist an den SVWS-Server gekoppelt und kann in zukünftigen Versionen nur in Kombination mit dem eigentlichen Server installiert oder aktulisiert werden.
 
 Zielverzeichnis JDK: `C:\Programme\SVWS-Server\java`
 
@@ -84,8 +77,7 @@ Zielverzeichnis JDK: `C:\Programme\SVWS-Server\java`
 
 Die notwendigen Dateien des SVWS-Server werden standardmäßig unter `C:/Programme/SVWS-Server/svws-server` installiert.
 
-Da diese mit der ausgelieferten OpenJDK-Version zusammen passen müssen, werden diese beiden Teile miteinander verbunden
-und können nicht separat installiert werden.
+Da diese mit der ausgelieferten OpenJDK-Version zusammen passen müssen, werden diese beiden Teile miteinander verbunden und können nicht separat installiert werden.
 
 Die Aufrufe werden in Form von Batch-Dateien mit der Endung `.cmd` im Hauptverzeichnis ausgeliefert.
 
@@ -94,17 +86,14 @@ Die Dienste MariaDB und SVWS-Server werden in der Computerverwaltung registriert
 ![Windows-Dienste mit dem SVWS-Java-Service-Dienst](./graphics/SVWSDienste.jpg "Der Dienst für den SVWS-Java-Service ist hervorgehoben.")
 
 ::: warning Port 443 für den SVWS-Server
-Der SVWS-Server wird immer auf Port 443 installiert.
-Dies kann nach der Installation in der `svwsconfig.json` geändert werden. Das sollte allerdings nur in Ausnahmefällen
-geschehen.
+Der SVWS-Server wird immer auf Port 443 installiert. Dies kann nach der Installation in der `svwsconfig.json` geändert werden. Das sollte allerdings nur in Ausnahmefällen geschehen.
 :::
 
 ## Konfigurationsdatei editieren
 
-Man findet alle Einstellungsmöglichkeiten zum Betrieb des SVWS-Servers an zentraler Stelle in der Datei:
-`svwsconfig.json`
+Man findet alle Einstellungsmöglichkeiten zum Betrieb des SVWS-Servers an zentraler Stelle in der Datei: `svwsconfig.json`
 
-Unter Windows im Verzeichnis: `C:\ProgramData\SVWS-Server\res`
+Unter Windows im Verzeichnis: `C:\ProgramData\SVWS-Server\res`:
 
 ```json
 {
@@ -184,14 +173,11 @@ In dieser Datei wird die Serverkonfiguration gespeichert.
 Die beiden Server werden als Dienst registriert. Diese können in der Computerverwaltung überprüft werden.
 
 ::: warning Rechte zum Starten der Dienste
-Mögliche Fehlerquelle: Das (Dienst-)Konto, mit dem der Dienst gestartet werden soll, muss auch die Berechtigungen
-hierfür haben. Eventuell hilft es, das MariaDB-Dienstkonto in die Default Controllers Policy mit der Berechtigung
-"Anmelden als Dienst" aufzunehmen (2025).
+Mögliche Fehlerquelle: Das (Dienst-)Konto, mit dem der Dienst gestartet werden soll, muss auch die Berechtigungen hierfür haben. Eventuell hilft es, das MariaDB-Dienstkonto in die Default Controllers Policy mit der Berechtigung "Anmelden als Dienst" aufzunehmen (2025).
 :::
 
 ## Erstellen des Keystore/Zertifikat
-Im Keystore des SVWS-Server wird ein selbstsigniertes Zertifikat erstellt. Der öffentliche Teil wird im Ordner
-`C:\Users\{Benutzername}\Dokumente` gespeichert.
+Im Keystore des SVWS-Server wird ein selbstsigniertes Zertifikat erstellt. Der öffentliche Teil wird im Ordner `C:\Users\{Benutzername}\Dokumente` gespeichert.
 
 Dieses Zertifikat muss anschließend in den Zertifikatsspeicher von Windows übertragen werden.
 
@@ -204,13 +190,11 @@ Bitte beachten Sie, dass nur Chrome und Edge automatisch diese Zertifikate nutze
 **Firefox** muss in der `about:config` die Einstellung `security.enterprise_roots.enabled` auf `true` gesetzt haben.
 
 ## Uninstaller
-Im Programmverzeichnis des SVWS-Server befindet sich auch ein signierter Uninstaller, mit dem alle Installationsdateien
-wieder entfernt werden können.
+Im Programmverzeichnis des SVWS-Server befindet sich auch ein signierter Uninstaller, mit dem alle Installationsdateien wieder entfernt werden können.
 
 Bitte beachten Sie, dass Dateien, die nach der Installation hinzugefügt wurden, nicht erfasst werden.
 
-Außerdem sollte kontrolliert werden, ob auch alle Dienste entfernt wurden. Windows 10 gibt in einigen Fällen die Dienste
-nicht schnell genug frei, so dass die Löschung scheitert.
+Außerdem sollte kontrolliert werden, ob auch alle Dienste entfernt wurden. Windows 10 gibt in einigen Fällen die Dienste nicht schnell genug frei, so dass die Löschung scheitert.
 
 ## Wichtige Pfade zu den Ordnern
 

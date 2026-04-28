@@ -59,15 +59,9 @@ Nach dem Durchlauf des Skripts haben Sie einen aktiv laufenden SVWS-Server!
 
 ## Konfiguration
 
-Das Skript bietet verschiedene Optionen zur Konfiguration, die hier vorgestellt werden sollen. Es werden
-Standardeinstellungen vorgeschlagen, um eine vereinfachte Installation zu ermöglichen. Sie können die Einstellungen aber
-auch nach Bedarf individuell anpassen.
+Das Skript bietet verschiedene Optionen zur Konfiguration, die hier vorgestellt werden sollen. Es werden Standardeinstellungen vorgeschlagen, um eine vereinfachte Installation zu ermöglichen. Sie können die Einstellungen aber auch nach Bedarf individuell anpassen.
 
-Die gewählten Parameter werden in die Datei `.env` geschrieben.
-Aus dieser Datei werden die Werte für die Installation dann entnommen.
-Auch das Update bedient sich aus dieser Datei, um die Installationspfade zu ermitteln.
-Wenn diese Datei schon existiert, dann werden die Parameter nicht mehr abgefragt und die Installation startet sofort.
-Auf diese Weise kann also auch eine skriptgesteuerte Installation realisiert werden.
+Die gewählten Parameter werden in die Datei `.env` geschrieben. Aus dieser Datei werden die Werte für die Installation dann entnommen. Auch das Update bedient sich aus dieser Datei, um die Installationspfade zu ermitteln. Wenn diese Datei schon existiert, dann werden die Parameter nicht mehr abgefragt und die Installation startet sofort. Auf diese Weise kann also auch eine skriptgesteuerte Installation realisiert werden.
 
 Folgende Konfigurationen können vorgenommen werden:
 
@@ -129,9 +123,7 @@ keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test
 keytool -export -keystore /etc/app/svws/conf/keystore -alias alias1 -file ./SVWS.cer -storepass test123
 ```
 
-Mit diesen Befehlen kann ein eigener Keystore mit einem Zertifikat erstellt werden.
-Der zweite Befehl exportiert das Zertifikat, welches dann unter den Windows-Client installiert werden kann, so dass die
-Warnmeldungen im Browser verschwinden.
+Mit diesen Befehlen kann ein eigener Keystore mit einem Zertifikat erstellt werden. Der zweite Befehl exportiert das Zertifikat, welches dann unter den Windows-Client installiert werden kann, so dass die Warnmeldungen im Browser verschwinden.
 
 ## MariaDB für Schild-NRW 3 zugänglich machen
 
@@ -149,13 +141,9 @@ Unter Umständen muss auch noch Port 3306 nach außen geöffnet werden, wenn ein
 
 ## Portumleitung
 
-Eine Möglichkeit den SVWS-Server unter einer "normalen" URL erreichen zu können und somit auf das Appendix der Ports
-verzichten zu können, wäre eine Portumleitung. Der bessere Weg, vor allem in größeren Netzwerken, wäre der Einsatz eines
-Reverse-Proxies.
+Eine Möglichkeit den SVWS-Server unter einer "normalen" URL erreichen zu können und somit auf das Appendix der Ports verzichten zu können, wäre eine Portumleitung. Der bessere Weg, vor allem in größeren Netzwerken, wäre der Einsatz eines Reverse-Proxies.
 
-In beiden Fällen könnte man statt zum Beispiel `https://meineServeradresse:8443/` dann unter
-`https://meineServeradresse/` den SVWS-Server direkt erreichen.
-
+In beiden Fällen könnte man statt zum Beispiel `https://meineServeradresse:8443/` dann unter `https://meineServeradresse/` den SVWS-Server direkt erreichen.
 
 Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit iptables:
 
@@ -170,5 +158,4 @@ Alternativ zur Portumleitung kann der nginx Webserver als Reverse-Proxy eingeset
 
 ## UFW als Firewall einrichten
 
-Für die Linuxmaschine im Livebetrieb empfiehlt sich eine Firewall einzurichten. Dazu ist bei vielen Distributionen die
-`ufw`-Firewall vorinstalliert.
+Für die Linuxmaschine im Livebetrieb empfiehlt sich eine Firewall einzurichten. Dazu ist bei vielen Distributionen die `ufw`-Firewall vorinstalliert.

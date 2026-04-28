@@ -175,11 +175,7 @@ firewall-cmd --runtime-to-permanent
 
 Benutzer auf der MariaDB einrichten:
 
-Bei dieser Konstellation greift der SVWS-Server auf einen externen MariaDB-Server zu.
-Hierfür wird dort ein Benutzer benötigt, der Schemata anlegen/löschen und auch von außerhalb zugreifen darf.
-Das Recht, Benutzer anzulegen, die weniger Rechte haben, wird auch benötigt.
-Sollte der Benutzer keine Rechte haben, Schemata anzulegen oder zu löschen, so muss dies vorher vom
-Datenbankadministrator gemacht werden.
+Bei dieser Konstellation greift der SVWS-Server auf einen externen MariaDB-Server zu. Hierfür wird dort ein Benutzer benötigt, der Schemata anlegen/löschen und auch von außerhalb zugreifen darf. Das Recht, Benutzer anzulegen, die weniger Rechte haben, wird auch benötigt. Sollte der Benutzer keine Rechte haben, Schemata anzulegen oder zu löschen, so muss dies vorher vom Datenbankadministrator gemacht werden.
 
 
 ## Download des Scripts mit den Befehlen

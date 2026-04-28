@@ -4,7 +4,7 @@ Dieses Kapitel hilft bei typischen Problemen:
 
 ## 1. Die Anwendung startet nicht
 
-- Prüfen Sie, ob Sie `index.html` im richtigen Ordner geöffnet haben und ob im Unterordner `/assets/`die Dateien `app.js` und `app.css` liegen.  
+- Prüfen Sie, ob Sie `index.html` im richtigen Ordner geöffnet haben und ob im Unterordner `/assets/`die Dateien `app.js` und `app.css` liegen.
 - Wenn Sie die App per Doppelklick öffnen, verwenden Sie einen aktuellen Browser.
 - Bei Nutzung eines lokalen Webservers prüfen Sie, ob der Server läuft und die Adresse korrekt ist.
 - Bei Dateisystem- oder Berechtigungsproblemen starten Sie den Browser neu oder speichern die Dateien in einem anderen Verzeichnis.

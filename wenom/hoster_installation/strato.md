@@ -1,4 +1,4 @@
-# Wenom Installation im Webspace Strato
+# WeNoM Installation im Webspace Strato
 
 ## Voraussetzung
 

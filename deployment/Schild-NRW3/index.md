@@ -1,32 +1,24 @@
 # Betrieb von SchILD-NRW 3 und dem SVWS-Server
 
-Grundsätzlich benötigt SchILD-NRW 3 immer einen laufenden SVWS-Server.
-SchILD-NRW 3 prüft beim Start, ob der SVWS-Server erreichbar ist und vergleicht über die jeweiligen Versionsnummern,
-ob eine gültige Kombination vorliegt. Die gültigen Kombinationen können aus der Versionsgeschichte (Release Notes)
-entnommen werden.
+Grundsätzlich benötigt SchILD-NRW 3 immer einen laufenden SVWS-Server. SchILD-NRW 3 prüft beim Start, ob der SVWS-Server erreichbar ist und vergleicht über die jeweiligen Versionsnummern, ob eine gültige Kombination vorliegt. Die gültigen Kombinationen können aus der Versionsgeschichte (Release Notes) entnommen werden.
 
-Der SVWS-Server läuft unter Linux und Windows und ist in Java geschrieben.
-Über die API können nicht nur die Daten zur Visualisierung abgerufen werden, sondern auch Statistik-Kataloge.
+Der SVWS-Server läuft unter Linux und Windows und ist in Java geschrieben. Über die API können nicht nur die Daten zur Visualisierung abgerufen werden, sondern auch Statistik-Kataloge.
 
 Zusätzlich können Operationen wie Backups oder Migrationen über den SVWS-Server abgewickelt werden.
 
 Momentan benötigt SchILD-NRW 3 noch den direkten Zugriff auf die MariaDB-Datenbank.
 
-Es ist geplant SchILD-NRW 3 so umzustellen, dass SchILD-NRW 3 alle notwendigen Operationen über die API ausführen kann.
-Dann wird der Zugriff auf die MariaDB entfallen können.
+Es ist geplant SchILD-NRW 3 so umzustellen, dass SchILD-NRW 3 alle notwendigen Operationen über die API ausführen kann. Dann wird der Zugriff auf die MariaDB entfallen können.
 
 ## Übersicht
 
-Der SVWS-Server kann auf Linux oder Windows betrieben werden. Dazu muss ein JDK installiert werden. Beide Installer,
-sowohl Linux, als auch Windows bringen das JDK mit.
+Der SVWS-Server kann auf Linux oder Windows betrieben werden. Dazu muss ein JDK installiert werden. Beide Installer, sowohl Linux, als auch Windows bringen das JDK mit.
 
 Die MariaDB-Datenbank kann separat betrieben werden. Diese kann aber auch auf dem selben Server installiert sein.
 
 ![Betrieb SchILD 3 im Rechenzentrum](./graphics/Rechenzentrum_Schild-NRW3.png "SchILD3 wird über ein Rechenzentrum betrieben.")
 
-SchILD-NRW 3 benötigt eine Konfigurationsdatei in der die notwendigen Angaben für die Zugänge stehen. Diese hat die
-Endung `.con` und enthält die URL (und Port) zum SVWS-Server und zur MariaDB-Datenbank. Diese Dateien liegen im
-SVWS-Arbeitsverzeichnis im Ordner `Connection-Files`.
+SchILD-NRW 3 benötigt eine Konfigurationsdatei in der die notwendigen Angaben für die Zugänge stehen. Diese hat die Endung `.con` und enthält die URL (und Port) zum SVWS-Server und zur MariaDB-Datenbank. Diese Dateien liegen im SVWS-Arbeitsverzeichnis im Ordner `Connection-Files`.
 
 Das Programm SchILD-NRW 3 kann nach wie vor über eine Dateifreigabe an die Windows-Clients ausgeliefert werden.
 
@@ -40,8 +32,7 @@ Diese Auswahl hängt auch vom Grad der Virtualisierung ab, die verwendet wird.
 
 Auch die Anzahl der Server pro Schulen kann je nach Umgebung bestimmt werden.
 
-Der momentan noch im Ausbau befindliche WebClient steht über den SVWS-Server immer zur Verfügung und kann über die URL
-(und ggf. den Port) im Browser aufgerufen werden.
+Der momentan noch im Ausbau befindliche WebClient steht über den SVWS-Server immer zur Verfügung und kann über die URL (und ggf. den Port) im Browser aufgerufen werden.
 
 ## Installation SVWS-Server
 
@@ -62,22 +53,18 @@ https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Schnellinstallati
 
 ## Konfigurationen
 
-SchILD-NRW 3 benötigt für jede Datenbank eine `.con`-Datei, die im Unterordner `Connection-Files` des
-SchILD-NRW 3-Arbeitsverzeichnisses liegt. Diese `.con`-Datei ist eine reine Textdatei im UTF-8 Format.
+SchILD-NRW 3 benötigt für jede Datenbank eine `.con`-Datei, die im Unterordner `Connection-Files` des SchILD-NRW 3-Arbeitsverzeichnisses liegt. Diese `.con`-Datei ist eine reine Textdatei im UTF-8 Format.
 
 ::: danger Schema-Namen unter Windows!
-Achten Sie unter Windows darauf, das auch hier bei den Eintragungen in der `.con`-Datei auf Groß- und Kleinschreibung
-geachtet werden muss!
+Achten Sie unter Windows darauf, das auch hier bei den Eintragungen in der `.con`-Datei auf Groß- und Kleinschreibung geachtet werden muss!
 
 Die REST-Aufrufe sind case sensitive und das betrifft auch den Schema-Namen.
 :::
 
-Der SVWS-Server erstellt bei der Installation eine `svwsconfig.json`. Diese Datei enthält alle benötigten Angaben für
-den Betrieb des SVWS-Servers.
+Der SVWS-Server erstellt bei der Installation eine `svwsconfig.json`. Diese Datei enthält alle benötigten Angaben für den Betrieb des SVWS-Servers.
 
 https://doku.svws-nrw.de/deployment/Einrichtung/
 
-Die Einstellungen des SVWS-Server können nach Bedarf gesetzt werden.
-Der Bereich der Schema-Einstellungen wird vom SVWS-Server z.B. durch den AdminClient gesetzt!
+Die Einstellungen des SVWS-Server können nach Bedarf gesetzt werden. Der Bereich der Schema-Einstellungen wird vom SVWS-Server z.B. durch den AdminClient gesetzt!
 
 https://doku.svws-nrw.de/adminclient/administration/

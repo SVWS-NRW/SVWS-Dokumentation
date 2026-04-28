@@ -16,7 +16,7 @@ Legen Sie unter "Domains" eine Subdomain an.
 
 ![Bereich SSL Verwaltung](./graphics/strato-VS_02.png "Verknüpfung SSL Zertifikat.")
 
-Wechseln Sie in das Dashbord Plesk von Strato zur Adminstrierung des virtuellen Servers.
+Wechseln Sie in das Dashbord Plesk von Strato zur Adminstration des virtuellen Servers.
 
 ![Bereich Plesk](./graphics/strato_VS_03.png "Verknüpfung DNS-Hostung.")
 
@@ -29,20 +29,20 @@ Setzen Sie das Zielverzeichnis.
 
 ## FTP Verbindung aufbauen, Dateien hochladen und entpacken
 
-Verbinden Sie sich mit Ihrem FTP-User und laden Sie die ZIP-Datei in das Verzeichnis, das mit der gewünschten Subdomain verknüpft wurde. Entpacken Sie die ZIP-Datei
+Verbinden Sie sich mit Ihrem FTP-Benutzer und laden Sie die ZIP-Datei in das Verzeichnis, das mit der gewünschten Subdomain verknüpft wurde. Entpacken Sie die ZIP-Datei
 
->Bemerkung: Diese Prozesse können auch mit Anwenungen wie z.B. **FileZilla** erledigt werden.
+>Bemerkung: Diese Prozesse können auch mit Anwendungen wie z.B. **FileZilla** erledigt werden.
 
 ![FTP Upload](./graphics/strato-VS_05.png "Dateien per FTP übertragen und entpacken.")  
 
 
 
 ## Berechtigungen von Ordnern ändern
-Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner Public und App:
+Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner `Public` und `App`:
 
 ![Bereich Domain](./graphics/strato-VS_06.png "Berechtigungen setzen.")
 
 
 ## Einrichtung 
 
-Weiter geht es mit der [Ersteinrichtung](../installation/ersteinrichtung.md) des Webnotenmamagers.
+Weiter geht es mit der [Ersteinrichtung](../installation/ersteinrichtung.md) des WebNotenManagers.

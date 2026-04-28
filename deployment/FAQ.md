@@ -6,8 +6,7 @@ Hier eine Sammlung häufiger, im Installationsprozess gestellter Fragen.
 ## Systemvoraussetzungen
 ### Welche Systemvoraussetzungen müssen erfüllt werden?
 
-Dies muss noch umfassender getestet werden. In einer virtuellen Testumgebung wird der SVWS-Server mit 2 Cores und 8 GB
-RAM betrieben.
+Dies muss noch umfassender getestet werden. In einer virtuellen Testumgebung wird der SVWS-Server mit 2 Cores und 8 GB RAM betrieben.
 
 ::: warning MariaDB Versionsnummer kontrollieren!
 Der SVWS-Server benötigt eine MariaDB Version > 11.7
@@ -16,9 +15,7 @@ Der SVWS-Server benötigt eine MariaDB Version > 11.7
 ## Serveranzahl
 ### Wird pro Schule ein eigener virtueller Server benötigt?
 
-Nein. Ein Server kann so konfiguriert werden, dass er von mehreren Schulen datenschutzsicher genutzt werden kann.
-Unterschiedliche Schulen können sich eine MariaDB teilen. Getrennte Schemata sorgen für eine interne Abgrenzung
-innerhalb des Datenbankservers.
+Nein. Ein Server kann so konfiguriert werden, dass er von mehreren Schulen datenschutzsicher genutzt werden kann. Unterschiedliche Schulen können sich eine MariaDB teilen. Getrennte Schemata sorgen für eine interne Abgrenzung innerhalb des Datenbankservers.
 
 Die Schamata können über eigene Schema-Admin-Zugänge mit eigenen Passwörtern verwaltet werden.
 
@@ -29,22 +26,15 @@ Abhängig von den lokalen Gegebenheiten, kann das sinnvoll sein.
 
 Der *SVWS-Server* ist ein in Java geschriebener Server, der eine REST-API und einen WebClient zur Verfügung stellt.
 
-Der *SVWS-WebClient*, mit dem sich die Inhalte über eine Weboberfläche aufrufen lassen, hat zunächst die
-Funktionalitäten von Kurs42 und Lupo übernommen, da diese Programme die neue Datenbankstruktur nicht mehr unterstützen.
-Nach und nach werden weitere Features hinzugefügt.
+Der *SVWS-WebClient*, mit dem sich die Inhalte über eine Weboberfläche aufrufen lassen, hat zunächst die Funktionalitäten von Kurs42 und Lupo übernommen, da diese Programme die neue Datenbankstruktur nicht mehr unterstützen. Nach und nach werden weitere Features hinzugefügt.
 
 Neben dem WebClient ist auch der *SVWS-AdminClient* zur Verwaltung der enthaltenen SVWS-Schemata enthalten.
 
-Der Server muss zuerst nur von Schulformen mit gymnasialer Oberstufe genutzt werden, wenn Blockung und
-Klausurterminplanung gewünscht sind. Ab dem Schuljahr 2027 wird auch die Statistik über den SVWS-Server durchgeführt,
-ab diesem Zeitpunkt müssen auch alle anderen Schulen in NRW den SVWS-Server verwenden.
+Der Server muss zuerst nur von Schulformen mit gymnasialer Oberstufe genutzt werden, wenn Blockung und Klausurterminplanung gewünscht sind. Ab dem Schuljahr 2027 wird auch die Statistik über den SVWS-Server durchgeführt, ab diesem Zeitpunkt müssen auch alle anderen Schulen in NRW den SVWS-Server verwenden.
 
-*SchILD-NRW 3* ist ein in Delphi geschriebenes Programm, welches auf Windows-Systemen betrieben werden muss. Es ist eine
-Clientanwendung, mit der auf den SVWS-Server und dessen Daten zugegriffen wird. SchILD-NRW 3 unterstützt viele für die
-Schul- und Leistungsdatenverwaltung hilfreiche Funktionen.
+*SchILD-NRW 3* ist ein in Delphi geschriebenes Programm, welches auf Windows-Systemen betrieben werden muss. Es ist eine Clientanwendung, mit der auf den SVWS-Server und dessen Daten zugegriffen wird. SchILD-NRW 3 unterstützt viele für die Schul- und Leistungsdatenverwaltung hilfreiche Funktionen.
 
-Das Programm benötigt in einer Übergangsphase weiterhin Zugriff auf die Datenbank. Dieser Zugriff wird sukzessive auf
-Zugriffe über die API umgestellt.
+Das Programm benötigt in einer Übergangsphase weiterhin Zugriff auf die Datenbank. Dieser Zugriff wird sukzessive auf Zugriffe über die API umgestellt.
 
 SchILD-NRW 3 wird in den kommenden Jahren auch weiter genutzt werden müssen.
 
@@ -56,8 +46,7 @@ Der Webclient wird mit Firefox, Chrome, Edge und Safari getestet.
 ## Zugriffsberechtigungen
 ### Wer benötigt Zugriff auf den SVWS-WebClient?
 
-Alle Personen, die auch jetzt schon mit SchILD-NRW arbeiten. Für SchILD werden weiterhin SchILD-Administratoren
-definiert.
+Alle Personen, die auch jetzt schon mit SchILD-NRW arbeiten. Für SchILD werden weiterhin SchILD-Administratoren definiert.
 
 Nur Datenbank-Administratoren benötigen Zugriff auf die MariaDB oder den AdminClient.
 
@@ -65,11 +54,9 @@ Nur Datenbank-Administratoren benötigen Zugriff auf die MariaDB oder den AdminC
 ## Zertifikate
 ### Warum wird ein selbstsigniertes Zertifikat genutzt und kann man das ändern?
 
-Bei der Installation wird ein selbstsigniertes Zertifikat erstellt, welches in einem internen Netzwerk verwendet werden
-kann.
+Bei der Installation wird ein selbstsigniertes Zertifikat erstellt, welches in einem internen Netzwerk verwendet werden kann.
 
-Eigene Zertifikate können in den Keystore des SVWS-Server geladen werden. Eine Anleitung dazu wird zur Verfügung
-gestellt.
+Eigene Zertifikate können in den Keystore des SVWS-Server geladen werden. Eine Anleitung dazu wird zur Verfügung gestellt.
 
 ## Reverse-Proxy
 ### Was ist beim Betrieb hinter einem Reverse-Proxy zu beachten?
@@ -91,8 +78,7 @@ Beim Betrieb eines Reverese-Proxy-Servers als Zugangsserver sind die folgenden E
     proxy_send_timeout 300;
 ```
 
-Gegebenenfalls können die Einstellungen in der Paketgröße und den Timeouts je nach Größe der Schule und Geschwindigkeit
-der Internetverbindung angepasst werden.
+Gegebenenfalls können die Einstellungen in der Paketgröße und den Timeouts je nach Größe der Schule und Geschwindigkeit der Internetverbindung angepasst werden.
 
 
 ## Datenbanken
@@ -104,11 +90,9 @@ Das kann individuell konfiguriert werden. Beide Varianten sind möglich.
 ## MariaDB-Cluster
 ### Was ist beim Betrieb mit einem MariaDB-Cluster zu beachten?
 
-Bei einem MariaDB-Cluster müssen die Nodes entsprechende Rechte für das Anlegen von Triggern haben. Per Default ist das
-in der MariaDB so nicht konfiguriert.
+Bei einem MariaDB-Cluster müssen die Nodes entsprechende Rechte für das Anlegen von Triggern haben. Per Default ist das in der MariaDB so nicht konfiguriert.
 
-Der aktivierte `BINLOG` führte dazu, dass der Server sich weigert, dass u.A. Trigger angelegt werden.
-siehe auch: [https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html](https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html)
+Der aktivierte `BINLOG` führte dazu, dass der Server sich weigert, dass u.A. Trigger angelegt werden. siehe auch: [https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html](https://dev.mysql.com/doc/refman/8.0/en/stored-programs-logging.html)
 
 Nach Anpassen der Option in der Config:
 
@@ -121,9 +105,7 @@ lassen sich dann auch neue Schemata fehlerfrei anlegen.
 ## Internetzugriff
 ### Benötigt der SVWS-Server eine Internetverbindung?
 
-Momentan muss der SVWS-Server nicht an das Internet angebunden sein. Jedoch werden in Zukunft viele Prozesse dazu
-kommen, die eine Internetverbindung benötigen, etwa ein WebNotenManager, Schnittstellen für SchülerOnline, digitale
-Zeugnisse, Updates oder Ähnliches.
+Momentan muss der SVWS-Server nicht an das Internet angebunden sein. Jedoch werden in Zukunft viele Prozesse dazu kommen, die eine Internetverbindung benötigen, etwa ein WebNotenManager, Schnittstellen für SchülerOnline, digitale Zeugnisse, Updates oder Ähnliches.
 
 ## Containerbetrieb
 
@@ -131,11 +113,9 @@ Zeugnisse, Updates oder Ähnliches.
 
 >Welcher Zweck steht im Vordergrund (z. B. Skalierung, Verfügbarkeit, Sicherheit, CI/CD, sonstiges)?
 
-Der Containereinsatz ist optional und kann in großen Systemen eine Unterstützung zur automatisierten Bereitstellung
-leisten. Hier kann mit Hilfe von erstellten Skripten eine flexible und skalierbare Umgebung geschaffen werden.
+Der Containereinsatz ist optional und kann in großen Systemen eine Unterstützung zur automatisierten Bereitstellung leisten. Hier kann mit Hilfe von erstellten Skripten eine flexible und skalierbare Umgebung geschaffen werden.
 
-Mit dem Einsatz von Containern kann optional auch die Trennung der Daten von Schulen untereinander verbessert werden.
-Dies kann eine Alternative zu Virtuellen-Maschinen darstellen, um in großen Systemen kosteneffizienter zu arbeiten.
+Mit dem Einsatz von Containern kann optional auch die Trennung der Daten von Schulen untereinander verbessert werden. Dies kann eine Alternative zu Virtuellen-Maschinen darstellen, um in großen Systemen kosteneffizienter zu arbeiten.
 
 ### 2. Verwendung sicherer Images:
 
@@ -145,8 +125,7 @@ Die Images werden täglich mit Trivy auf aktuelle CVE-Sicherheitslücken geprüf
 
 >Werden gefundene Sicherheitsprobleme behoben und dokumentiert?
 
-Alle gemeldeten CVEs mit der Einstufung "high" und höher werden sofort behoben, wenn die Hersteller dafür eine Lösung
-bieten.
+Alle gemeldeten CVEs mit der Einstufung "high" und höher werden sofort behoben, wenn die Hersteller dafür eine Lösung bieten.
 
 >Ist das verwendete Basis-Image aktuell (nicht „deprecated“)?
 
@@ -171,8 +150,7 @@ Eine optionale Speicherung in Umgebungsvariablen ist in Planung.
 
 >Ist eine Verwaltung dieser Zugangsdaten notwendig?
 
-Eine Verwaltung der Zugangsdaten ist für das Rechtemanagement und für den Zugriff der SchILD-NRW 3-Anwendung
-erforderlich.
+Eine Verwaltung der Zugangsdaten ist für das Rechtemanagement und für den Zugriff der SchILD-NRW 3-Anwendung erforderlich.
 
 >Wenn ja, wie sollen sie gespeichert werden?
 
@@ -182,19 +160,15 @@ Passwörter für Benutzerzugänge für den SVWS-Client werden in Form von BCrypt
 
 >Ist die Anwendung für den Containerbetrieb geeignet?
 
-Grundsätzlich ist ein Betrieb unter Containern möglich und muss vom IT-Dienstleister individuell umgesetzt werden.
-Beispiele für den Betrieb unter Docker finden Sie im Bereich "Deployment".
+Grundsätzlich ist ein Betrieb unter Containern möglich und muss vom IT-Dienstleister individuell umgesetzt werden. Beispiele für den Betrieb unter Docker finden Sie im Bereich "Deployment".
 
-Hier werden auch exemplarisch `Docker-Compose.yml` Dateien zur Verfügung gestellt, die auf den eigenen Bedarf angepasst
-werden müssen.
+Hier werden auch exemplarisch `Docker-Compose.yml` Dateien zur Verfügung gestellt, die auf den eigenen Bedarf angepasst werden müssen.
 
 >Wird nur ein Dienst pro Container betrieben?
 
-Die Anwendung benötigt eine Java-Laufzeitumgebung und kann optional mit einem MariaDB-Service in einem Container
-betrieben werden.
+Die Anwendung benötigt eine Java-Laufzeitumgebung und kann optional mit einem MariaDB-Service in einem Container betrieben werden.
 
-Der Datenbank-Service ist aber optional und kann auch getrennt vom Container betrieben werden, so dass ein Betrieb mit
-nur einem Dienst möglich ist.
+Der Datenbank-Service ist aber optional und kann auch getrennt vom Container betrieben werden, so dass ein Betrieb mit nur einem Dienst möglich ist.
 
 ### 5. Ressourcenlimitierung pro Container:
 

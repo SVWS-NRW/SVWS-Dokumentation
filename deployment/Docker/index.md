@@ -5,28 +5,22 @@ Der SVWS-Server kann als Container betrieben werden. Dies eignet sich insbesonde
 * Betrieb einer SVWS-Umgebung für Produktiv- oder Test-Betrieb [per docker-compose](#svws-umgebung-mit-docker-compose-starten)
 
 
-Die SVWS-Container-Images sind unter Docker (docker engine, docker desktop) lauffähig. Ein Betrieb unter anderen Container-Umgebungen wie z.B.
-[Podman](https://podman.io/), [Kubernetes](https://kubernetes.io/de/), [OpenShift](https://www.redhat.com/de/technologies/cloud-computing/openshift)
-ist grundsätzlich möglich, jedoch noch nicht getestet (Stand 27.09.2024).
+Die SVWS-Container-Images sind unter Docker (docker engine, docker desktop) lauffähig. Ein Betrieb unter anderen Container-Umgebungen wie z.B. [Podman](https://podman.io/), [Kubernetes](https://kubernetes.io/de/), [OpenShift](https://www.redhat.com/de/technologies/cloud-computing/openshift) ist grundsätzlich möglich, jedoch noch nicht getestet (Stand 27.09.2024).
 
-Im Git-Repository von SVWS befinden sich [Beispiele, Skripte und Image-Definitionen](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker)
-zum Aufbau von Docker-basierten SVWS-Umgebungen.
+Im Git-Repository von SVWS befinden sich [Beispiele, Skripte und Image-Definitionen](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker) zum Aufbau von Docker-basierten SVWS-Umgebungen.
 
 
 ## Systemvoraussetzungen Installation Docker-Umgebung
-Für die lokale Inbetriebnahme ist eine Installation von [Docker](https://docs.docker.com) auf dem Entwickler-PC
-notwendig.
-Bitte die [Nutzungsbedingungen](https://www.docker.com/legal/docker-subscription-service-agreement) der Fa. Docker Inc.
-für Docker beachten!
+Für die lokale Inbetriebnahme ist eine Installation von [Docker](https://docs.docker.com) auf dem Entwickler-PC notwendig.
+
+Bitte die [Nutzungsbedingungen](https://www.docker.com/legal/docker-subscription-service-agreement) der Fa. Docker Inc. für Docker beachten!
 
 Bitte informieren Sie sich auf der Dokumentationsseite von Docker über die notwendigen Schritte in Ihrer Umgebung.
 
 
 ## SVWS-Umgebung mit docker-compose starten
 
-Die SVWS-Umgebung kann über die Konsole des verwendeten Betriebssystems mittels docker-compose gestartet werden.
-Beispiele zur dazu obligatorischen docker-compose.yml und Dateien befinden sich im
-[Github-Repository](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/example) .
+Die SVWS-Umgebung kann über die Konsole des verwendeten Betriebssystems mittels docker-compose gestartet werden. Beispiele zur dazu obligatorischen docker-compose.yml und Dateien befinden sich im [Github-Repository](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/example) .
 
 ### Beispiel: Testserver im Docker Container
 
@@ -81,21 +75,15 @@ SVWS_TLS_CERT_S=NRW
 SVWS_TLS_CERT_C=DE
 ```
 
-Es müssen natürlich noch entsprechende Passwörter generiert bzw. in die .env Datei eingetragen werden.
-Im Ordner Volume werden dann für `svws` und `mariadb` entsprechende Ordner angelegt.
+Es müssen natürlich noch entsprechende Passwörter generiert bzw. in die .env Datei eingetragen werden. Im Ordner Volume werden dann für `svws` und `mariadb` entsprechende Ordner angelegt.
 
-Im Ordner `svws` werden beim ersten Hochfahren des Containers die `svwsconfig.json` und der Keystore angelegt. Diese
-können dort auch mit einer eigenen Konfiguration bzw. eigenen Zertifikatseinstellungen abgelegt werden. Im Ordner
-`svws/logs` werden später die Log-Dateien erscheinen, wenn der Logging-Pfad auf Defaulteinstellung bleibt.
+Im Ordner `svws` werden beim ersten Hochfahren des Containers die `svwsconfig.json` und der Keystore angelegt. Diese können dort auch mit einer eigenen Konfiguration bzw. eigenen Zertifikatseinstellungen abgelegt werden. Im Ordner `svws/logs` werden später die Log-Dateien erscheinen, wenn der Logging-Pfad auf Defaulteinstellung bleibt.
 
-Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Server, Clients).
-Ebenso sind die Volumes für den Keystore gemountet.
+Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Server, Clients). Ebenso sind die Volumes für den Keystore gemountet.
 
 Nach dem Start kann der SVWS-Server über den Port 8443 erreicht werden.
 
-Auf die Datenbank sollte standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden. Intern nutzt die
-Datenbank den Port 3306. Für den Zugriff von SchILD-NRW 3 ist ein Port-Binding auch außerhalb von Docker nötig,
-dies wird über die Angabe eines Port-Mappings `ports`-Eintrag in der Datei erreicht.
+Auf die Datenbank sollte standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden. Intern nutzt die Datenbank den Port 3306. Für den Zugriff von SchILD-NRW 3 ist ein Port-Binding auch außerhalb von Docker nötig, dies wird über die Angabe eines Port-Mappings `ports`-Eintrag in der Datei erreicht.
 
 In diesem Beispiel wird der Port 3306 im Container auf den Port 3306 auf dem Host abgebildet:
 
@@ -112,8 +100,7 @@ services:
 Diese Ports müssen auf Ihre Umgebung angepasst werden, je nach Anforderung.
 
 ## Konfiguration der SVWS-Umgebung
-Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über Umgebungsvariablen.
-Die Werte dieser Variablen werden in der Datei `.env` definiert.
+Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über Umgebungsvariablen. Die Werte dieser Variablen werden in der Datei `.env` definiert.
 
 Hier ein weiteres Beispiel:
 
@@ -157,8 +144,7 @@ SVWS_TLS_CERT_C=COUNTRY
 ### Deaktivierung der automatischen Initialisierung
 Umgebungsvariable `INIT_SCRIPTS_DIR` muss auskommentiert sein (vgl. [Konfiguration der SVWS-Umgebung](#Konfiguration-der-SVWS-Umgebung)).
 
-Sie können in der `.env` Datei auch ein Schema ohne Migration angeben, dann wird dies beim ersten Start ohne Daten
-angelegt. Dies kann dann im AdminClient befüllt werden.
+Sie können in der `.env` Datei auch ein Schema ohne Migration angeben, dann wird dies beim ersten Start ohne Daten angelegt. Dies kann dann im AdminClient befüllt werden.
 
 ```bash
 MARIADB_DATABASE=your-svws-db-schema-name

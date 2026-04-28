@@ -79,5 +79,3 @@ Eine ausführliche Beschreibung der Geschäftsprozesse befindet sich im **Benutz
 
 
 ![WenomGeschaeftsprozesse.png](graphics/WenomGeschaeftsprozesse.png)
-
-

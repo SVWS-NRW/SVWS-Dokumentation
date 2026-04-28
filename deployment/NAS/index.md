@@ -2,8 +2,7 @@
 
 ## Aktivierung des SSD-Caches
 
-Wenn vorhanden, dann sollten SSDs mit dem internen Cache verwendet werden.
-Dadurch werden Datenbankzugriffe deutlich beschleunigt.
+Wenn vorhanden, dann sollten SSDs mit dem internen Cache verwendet werden. Dadurch werden Datenbankzugriffe deutlich beschleunigt.
 
 Dazu im Speichermanager die SSD zu einem RAID1-Cache aktivieren.
 
@@ -22,16 +21,13 @@ In der Einstellung des MariaDB-Pakets TCP freigeben.
 
 ![MariaDB.png](./graphics/MariaDB.png)
 
-phpMyAdmin aufrufen und den Benutzer root mit identischen Rechten duplizieren (Beispiel `remote`) aber mit Zugriff
-`host=%`.
+phpMyAdmin aufrufen und den Benutzer root mit identischen Rechten duplizieren (Beispiel `remote`) aber mit Zugriff `host=%`.
 
 ![phpMyAdmin.png](./graphics/phpMyAdmin.png)
 
 ## Virtual-Maschine-Manager
 
-Zunächst muss auf der NAS noch das Paket Virtual-Maschine-Manager installiert werden.
-Im VM-Manager dann ein Debian-ISO-Image oder ein Ubuntu-Live-Server-Image herunterladen und eine VM mit dem gewünschten
-Image installieren:
+Zunächst muss auf der NAS noch das Paket Virtual-Maschine-Manager installiert werden. Im VM-Manager dann ein Debian-ISO-Image oder ein Ubuntu-Live-Server-Image herunterladen und eine VM mit dem gewünschten Image installieren:
 
 + Die Grafikkarte von vmVGA auf VGA einstellen
 + SATA-Treiber bei der Verwendung der Festplatte einstellen.
@@ -50,9 +46,7 @@ chmod +x install-x.x.x.sh
 ./install-x-x-x.sh
 ```
 
-Dabei die Installationsschritte, wie unter [Linux-Installer](../Linux-Installer/) beachten. Der Aufruf des AdminClient
-ist nun möglich. Darin kann eine [Migration](../Datenmigration/) oder ein [Backup](../Datensicherung/) durchgeführt
-werden.
+Dabei die Installationsschritte, wie unter [Linux-Installer](../Linux-Installer/) beachten. Der Aufruf des AdminClient ist nun möglich. Darin kann eine [Migration](../Datenmigration/) oder ein [Backup](../Datensicherung/) durchgeführt werden.
 
 ## Schild-NRW 3 Freigabe
 
@@ -62,17 +56,12 @@ Darin zwei Unterordner für Schild-NRW 3 und das SVWS-Arbeitsverzeichnis anlegen
 
 ![Schild3-Ordner1.png](./graphics/Schild3-Ordner1.png)
 
-Das Schild-NRW 3-ZIP-Paket herunterladen und im `Schild-NRW 3`-Ordner entpacken.
-Dort eine `Admin.ini` als Textdatei anlegen und bei `GroupDir=` die URL zum Arbeitsverzeichnis eintragen.
+Das Schild-NRW 3-ZIP-Paket herunterladen und im `Schild-NRW 3`-Ordner entpacken. Dort eine `Admin.ini` als Textdatei anlegen und bei `GroupDir=` die URL zum Arbeitsverzeichnis eintragen.
 
 ![Schild3-Ordner2.png](./graphics/Schild3-Ordner2.png)
 
 + Im SVWS-Arbeitsverzeichnis einen Ordner `Connection-Files` und einen Ordner `Schild-Reports` anlegen.
-
-+ Die [Basisreportsammlung](https://github.com/SVWS-NRW/Schild-NRW-Reports/releases) herunterladen und im Report-Ordner
-entpacken.
-
-+ Im Ordner `Schild-NRW 3` das Programm `Schild_DBConfig.exe` starten und die CON-Datei nach Eintragung aller Parameter
-in den Ordner Connection-Files speichern. Vergleiche hierzu auch [Schild-NRW 3](../Schild-NRW3/)
++ Die [Basisreportsammlung](https://github.com/SVWS-NRW/Schild-NRW-Reports/releases) herunterladen und im Report-Ordner entpacken.
++ Im Ordner `Schild-NRW 3` das Programm `Schild_DBConfig.exe` starten und die CON-Datei nach Eintragung aller Parameter in den Ordner Connection-Files speichern. Vergleiche hierzu auch [Schild-NRW 3](../Schild-NRW3/)
 
 

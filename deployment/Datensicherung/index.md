@@ -2,10 +2,10 @@
 
 ## Manuelle Sicherung im SQLite Format
 
-Über die grafische Oberfläche des Adminclients kann sehr komfortabel eine Datensicherung im SQLite Format angelegt
-werden.
+Über die grafische Oberfläche des Adminclients kann sehr komfortabel eine Datensicherung im SQLite Format angelegt werden.
 
 Der AdminClient kann i.d.R. unter `https://URLdesSVWS-Servers/admin` aufgerufen werden.
+
 Weitere Informationen dazu befinden sich im [Handbuch des AdminClients](../../adminclient/).
 
 ## Automatisierte SQLite Backups
@@ -29,14 +29,11 @@ curl --user "MARIADBUSER:MYSQLROOTPW" -k -X 'GET' \
 ```
 Für eine höhere Geschwindigkeit kann, je nach Netzwerk, ein Aufruf direkt auf `localhost` erfolgen.
 
-Hier bitte die Variablen `MARIADBUSER`, `MYSQLROOTPW`, `SERVERNAME`, `PORT` und `SCHEMA_NAME` ersetzen bzw. vorher im
-Skript oder Terminal definieren.
+Hier bitte die Variablen `MARIADBUSER`, `MYSQLROOTPW`, `SERVERNAME`, `PORT` und `SCHEMA_NAME` ersetzen bzw. vorher im Skript oder Terminal definieren.
 
 ## Backup mit Mariabackup
 
-Das Tool `mariabackup` kann auch auf Windows per MSI-Paket installiert werden. Die [Anleitung von MariaDB.com] (https://mariadb.com/kb/en/full-backup-and-restore-with-mariabackup/) beschreibt,
-wie man mit kurzen Befehlen Backups anlegt und zurückspielt. Dies kann über einen Cronjob oder die Windows
-Aufgabenplanung regelmäßig ausgeführt werden.
+Das Tool `mariabackup` kann auch auf Windows per MSI-Paket installiert werden. Die [Anleitung von MariaDB.com] (https://mariadb.com/kb/en/full-backup-and-restore-with-mariabackup/) beschreibt, wie man mit kurzen Befehlen Backups anlegt und zurückspielt. Dies kann über einen Cronjob oder die Windows Aufgabenplanung regelmäßig ausgeführt werden.
 
 
 ## Automatisiertes Backup per mysqldump
@@ -51,16 +48,13 @@ Sichert die Datenbank einmalig unter dem angegebenen Pfad. Dies kann mit Crontab
 
 ### automysqlbackup
 
-Das Linux Tool `automysqlbackup` ist für regelmäßige Sicherungen eine weitere Möglichkeit.
-Es richtet unter `/var/lib/automysqlbackup` in entsprechenden Ordnern `daily`, `weekly` und `monthly` `.sql`-Sicherungen
-ein:
+Das Linux Tool `automysqlbackup` ist für regelmäßige Sicherungen eine weitere Möglichkeit. Es richtet unter `/var/lib/automysqlbackup` in entsprechenden Ordnern `daily`, `weekly` und `monthly` `.sql`-Sicherungen ein:
 
 ```bash
 apt install automysqlbackup
 ```
 
-In der Konfigurationsdatei `/etc/default/automysqlbackup` kann ggf. das Backupverzeichniss definiert oder die Zeiten bzw.
-Ausnahmen editiert werden.
+In der Konfigurationsdatei `/etc/default/automysqlbackup` kann ggf. das Backupverzeichniss definiert oder die Zeiten bzw. Ausnahmen editiert werden.
 
 Regelmäßige Backups müssen dann per cronjob eingerichtet werden. z.B:
 
@@ -69,8 +63,7 @@ Regelmäßige Backups müssen dann per cronjob eingerichtet werden. z.B:
 0  1 * * * /usr/sbin/automysqlbackup
 ```
 
-Aktuell muss unter Debian 12 in `/etc/mysql/debian.cnf` das root-Passwort für den Datenbankzugang eingetragen werden.
-Dazu bitte die beiden Variablen in dieser Datei ergänzen:
+Aktuell muss unter Debian 12 in `/etc/mysql/debian.cnf` das root-Passwort für den Datenbankzugang eingetragen werden. Dazu bitte die beiden Variablen in dieser Datei ergänzen:
 
 ```bash
 USERNAME=root
@@ -90,15 +83,9 @@ PASSWORD=`grep password /etc/mysql/debian.cnf
 
 ### Veränderung der Groß- und Kleinschreibung nach Rückspielen der Datensicherung
 
-In manchen Systemen tritt bei einem Dump und einem anschließenden Wiedereinspielen das Problem auf, dass die Groß- und
-Kleinschreibung der Tebellenspalten durch den Dump oder das Zurückspielen verändert wird. Z.B. wird aus dem
-ursprünglichen Spaltennamen `allgAdrAnsprechpartner` dann im zurückgespielten System ein `allgadransprechpartner`. Dies
-kann dann weder von SchILD-NRW 3 noch vom SVWS-Server sauber verwertet werden.
+In manchen Systemen tritt bei einem Dump und einem anschließenden Wiedereinspielen das Problem auf, dass die Groß- und Kleinschreibung der Tebellenspalten durch den Dump oder das Zurückspielen verändert wird. Z.B. wird aus dem ursprünglichen Spaltennamen `allgAdrAnsprechpartner` dann im zurückgespielten System ein `allgadransprechpartner`. Dies kann dann weder von SchILD-NRW 3 noch vom SVWS-Server sauber verwertet werden.
 
-Hier ein Script, welches für die Version 1.0.12 des SVWS-Servers die Tabellenspalten in dem SQL-Dump `dump.sql` wieder
-umbenennt. Der Parameter `-i` muss beim Mac gesetzt sein, ebenso muss unter macOS `LC_ALL=C` aufgrund der
-Anführungszeichen gesetzt sein.
-
+Hier ein Script, welches für die Version 1.0.12 des SVWS-Servers die Tabellenspalten in dem SQL-Dump `dump.sql` wieder umbenennt. Der Parameter `-i` muss beim Mac gesetzt sein, ebenso muss unter macOS `LC_ALL=C` aufgrund der Anführungszeichen gesetzt sein:
 
 ```bash
 LC_ALL=C sed -i '' -e '
