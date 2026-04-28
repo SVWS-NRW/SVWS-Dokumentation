@@ -27,8 +27,7 @@ In der **Auswahlliste der Schemata** links finden sich Angaben zur **Revision**,
 
 * Die **Revision** kennzeichnet die technischen Struktur der Datenbank. Diese kann relevant sein, wenn externe Programme direkt auf die Datenbank zugreifen und diese Programme relativ zum Datenbankschema veralten. Über die Revision kann auf Kompatibilität geprüft werden, um Fehler zu vermeiden. Normalererweise liegt jedoch die API zwischen der Datenbank und dem zugreifenden Programm.
 * Ein Schema, das für die Entwicklung und zum Testen neuer Features gedacht ist, kann als  **Tainted** oder **Verschmutzt** markiert werden, damit dieses mit ihren Datenbanken nicht im echten Produktivbetrieb zum Einsatz kommt. Dies sollte im Produktivbetrieb an Schulen nicht vorkommen.
-* Weiterhin ist es möglich, dass sich auf der MariaDB Schemata befinden, die nicht zum SVWS-Server gehören. Diese werden dann als nicht zur **Config** des SVWS-Servers gehörend markiert und werden von diesem bezüglich SVWS-Server und SVWS-Client ignoriert. Ein Beispiel könnte etwa ein Stundenplanprogramm eines
-anderen Herstellers oder die Datenbank der kommunalen Führerscheinstelle sein.
+* Weiterhin ist es möglich, dass sich auf der MariaDB Schemata befinden, die nicht zum SVWS-Server gehören. Diese werden dann als nicht zur **Config** des SVWS-Servers gehörend markiert und werden von diesem bezüglich SVWS-Server und SVWS-Client ignoriert. Ein Beispiel könnte etwa ein Stundenplanprogramm eines anderen Herstellers oder die Datenbank der kommunalen Führerscheinstelle sein.
 
 ## Operationen für Schemata
 
