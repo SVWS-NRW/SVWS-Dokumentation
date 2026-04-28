@@ -68,7 +68,7 @@ INSTALLPATH=/var/www/html
 SERVER_IP=10.x.y.z
 ```
 
-Den Apache2 von Port 80 auf 443 (HTTPS) durch Überschreiben der 000-default.conf umleiten:
+Den Apache2 von Port 80 auf 443 (HTTPS) durch Überschreiben der `000-default.conf` umleiten:
 
 ```bash
 echo "<VirtualHost *:80>
@@ -134,4 +134,4 @@ unzip -o SVWS-ENMServer-${SVWSVERSION}.zip
 
 ## Einrichtung 
 
-Weiter geht es mit der [Ersteinrichtung](./ersteinrichtung.md) des Webnotenmamagers.
+Weiter geht es mit der [Ersteinrichtung](./ersteinrichtung.md) des WebNotenManagers.

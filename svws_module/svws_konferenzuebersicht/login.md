@@ -8,7 +8,7 @@ Wenn Sie die Anwendung online mit einem SVWS-Server nutzen, geben Sie Benutzerna
 
 Im linken Bereich sind nun die Login-Daten anzugeben:
 
-- SVWS-Server-URL beziehungsweise die Server-IP-Adresse im lokalen Netzwerk, tragen Sie hier das Präfix `https://` mit ein. Verbinden Sie sich also beispielsweise mit `https://name-des-svws-servers` oder `https://127.0.0.1`. Haben Sie den Server auf einem bestimmten Port liegen, tragen Sie diesen ebenfalls ein, für den Port *8443* zum Beispiel wäre dies `https://mein-verwaltungsserver:8443`. Fragen Sie im Zweifel Ihre IT für die konkreten Daten.  
+- SVWS-Server-URL beziehungsweise die Server-IP-Adresse im lokalen Netzwerk, tragen Sie hier das Präfix `https://` mit ein. Verbinden Sie sich also beispielsweise mit `https://name-des-svws-servers` oder `https://127.0.0.1`. Haben Sie den Server auf einem bestimmten Port liegen, tragen Sie diesen ebenfalls ein, für den Port *8443* zum Beispiel wäre dies `https://mein-verwaltungsserver:8443`. Fragen Sie im Zweifel Ihre IT für die konkreten Daten.
 - Den Schema-Namen auf dem Server, dies ist der **Name Ihrer "Datenbank"**.
 - Einen Datenbank-Benutzernamen, mit dem Sie sich etwa normalerweise auch im SWVS-Webclient oder in anderen Programmen anmelden. In der Konferenzübersicht hat dieser die üblichen Rechte zum Ansehen und Ändern von Schüler-Leistungsdaten.
 - Das zugehörige Passwort.

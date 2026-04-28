@@ -1,9 +1,9 @@
-```bash 
+```bash
 #!/bin/bash
 
 ## Dieses Skript installiert die Version 1.0.11 des SVWS-Server - ggf die Versionsnummer anpassen.
 
-# Installiere benötigte Software und hilfreiche tools
+# Installiere benötigte Software und hilfreiche Tools
 
 dnf install java-21-openjdk-devel.x86_64
 java --version
@@ -111,6 +111,4 @@ systemctl enable svws.service
 # Überprüfen des Status des Services
 
 systemctl status svws.service
-
-
 ```

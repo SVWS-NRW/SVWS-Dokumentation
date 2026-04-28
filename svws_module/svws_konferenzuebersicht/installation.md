@@ -56,14 +56,8 @@ Alle Daten bleiben im Browser und werden nicht im Netzwerk oder an Dritte übert
 
 ## Online-Abruf (optional)
 
-- Für den Online-Abruf werden die **SVWS-Server-URL**, das Schema (also den **Namen Ihrer "Datenbank"**) sowie **Ein normaler Datenbank-Benutzername** und **Passwort** benötigt (Basic Auth). Hierbei ist zu beachten, dass der Datenbank-Benutzer die üblichen Rechte hat, also gegebenfalls nicht alle Klassen sehen/ändern kann. 
+- Für den Online-Abruf werden die **SVWS-Server-URL**, das Schema (also den **Namen Ihrer "Datenbank"**) sowie **Ein normaler Datenbank-Benutzername** und **Passwort** benötigt (Basic Auth). Hierbei ist zu beachten, dass der Datenbank-Benutzer die üblichen Rechte hat, also gegebenfalls nicht alle Klassen sehen/ändern kann.
 - Bei Verbindungsproblemen prüfen Sie bitte:
   - den Netzwerkzugang zum SVWS-Server
   - Gültigkeit des Service-Zertifikats - selbstsignierte Zertifikate müssen vom System/Browser *vertraut* werden, klicken Sie hierzu *Zertifikat vertrauen* an.
   - Die für sichere Kommunikation im Netzwerk verantwortliche CORS-Konfiguration, falls die App aus dem Browser eines Client-Rechners auf einen Server zugreift.
-
-
-
-
-
-

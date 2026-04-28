@@ -1,34 +1,34 @@
 # SchulungsClient
 
-Unter SchulungsClients sollen hier (virtuelle) Maschinen verstanden werden, die für einen Teilnehmenden bzw. einen Schulungsplatzinstanz zur Verfügung stehen.
+Unter SchulungsClients sollen hier (virtuelle) Maschinen verstanden werden, die für einen Teilnehmenden bzw. eine Schulungsplatzinstanz zur Verfügung stehen.
 
 ## Anforderungen
 
-+ der SchulungsClient sollte eine virtuelle Maschine sein, so dass unabhängig von der zur Verfügung stehenden Hardware geabreitet werden kann
-+ wenn möglich sollen keine Lizensen an den Client gebunden sein, so dass dieser bedenkenlos weitergegeben werden kann.
++ der SchulungsClient sollte eine virtuelle Maschine sein, so dass unabhängig von der zur Verfügung stehenden Hardware gearbeitet werden kann
++ wenn möglich, sollen keine Lizensen an den Client gebunden sein, so dass dieser bedenkenlos weitergegeben werden kann
 + der Client sollte updatefähig sein
-+ über den Client sollten Schulungsmedien bereitgestellt werden können, die individuell bearbeitbar sind 
++ über den Client sollten Schulungsmedien bereitgestellt werden können, die individuell bearbeitbar sind
 + der Client soll verschiedene Schulungsdatenbanken einbinden können
-+ die Fortbilder sollen den Client auf Ihre Bedrüfnisse anpassen können
-+ der Client sollte auf verschiedenen Plattformen (Proxmox, VMWare, HyperV, ... ) betrieben werden können
-+ der Client sollte remote steuerbar sein (rdp,vnc, x2go, ...)
++ die Fortbilder sollen den Client auf Ihre Bedürfnisse anpassen können
++ der Client sollte auf verschiedenen Plattformen (Proxmox, VMWare, HyperV, usw.) betrieben werden können
++ der Client sollte entfernt steuerbar sein (rdp,vnc, x2go, usw.)
 + der Client sollte ressourcenschonend betrieben werden können
 
 ## Installation des Grundsystems
 
-Als Grundsystem auf der VM für den SVWS-Server ist es empfehlenswert ein Debain, aktuell Debian 12, zu verwenden. Es kann die Installation ohne graphisches Frontend in einer KVM oder alternativ ein LX Container gewählt werden. Es soll in hier nicht auf die verschiedenen Methoden der Erstellung von VMs oder Container unter dem jeweiligen Virtulaizer eingegangen werden. 
+Als Grundsystem auf der VM für den SVWS-Server ist es empfehlenswert ein Debian, aktuell Debian 13, zu verwenden. Es kann die Installation ohne grafisches Frontend in einer KVM oder alternativ einem LX-Container gewählt werden. Es kann hier nicht auf die verschiedenen Methoden der Erstellung von VMs oder Containern unter dem jeweiligen Virtualizer eingegangen werden.
 
-Es ist zu beachten, dass nicht weitere Dienste auf den Ports 80,443 bzw. 8443 verwendet werden. 
+Es ist zu beachten, dass keine weiteren Dienste auf den Ports `80`, `443` bzw. `8443` verwendet werden.
 
 ## Installation des SVWS-Servers
 
-Eine Methode ist hier die Installation per Linuxinstaller
+Eine Methode ist hier die Installation per Linux-Installer
 
-## Installation Schild3
+## Installation SchILD-NRW 3
 
 ## Zurücksetzen und Einspielen neuer Datenbanken
 
-Löschen der vorhanden Datenbanken auf der Konsole des SVWS-Servers per curl Aufruf:
+Löschen der vorhanden Datenbanken auf der Konsole des SVWS-Servers per `curl` Aufruf:
 
 ```bash
 #!/bin/bash
@@ -38,7 +38,7 @@ Löschen der vorhanden Datenbanken auf der Konsole des SVWS-Servers per curl Auf
 # [Einstellungen]
 ##
 SERVERNAME=Bitte_Domainnamen_angeben
-PORT=8443   #i.d.R ist das so korrekt 
+PORT=8443   #i.d.R ist das so korrekt
 MYSQLROOTPW=Bitte_PW_angeben
 MDB_PW=Bitte_PW_angeben
 #
@@ -53,12 +53,12 @@ DB_1_PATH=/SVWS-TestMDBs/DB1.sqlite
 # [Beispiel: Datenbanken download]
 ##
 # wget https://github.com/SVWS-NRW/Schulungsunterlagen/blob/master/LeistungsdatenSekII/DB/1_Gym_Jg10_ohneWahlen.sqlite
-# mkdir /SVWS-TestMDBs                
+# mkdir /SVWS-TestMDBs
 # mv 1_Gym_Jg10_ohneWahlen.sqlite /SVWS-TestMDBs/DB1.sqlite
 #
-## 
+##
 # [Löschen der DB1]
-## 
+##
 echo "DB1 wird gelöscht"
 curl --user "root:${MYSQLROOTPW}" \
 	-k -X "POST" "https://${SERVERNAME}:${PORT}/api/schema/root/destroy/${DB_1_NAME}" \
@@ -73,7 +73,7 @@ curl --user "root:${MYSQLROOTPW}" \
   -H "Content-Type: multipart/form-data" \
   -F "database=@${DB_1_PATH}" \
   -F "schemaUsername=${DB_1_USER}" \
-  -F "schemaUserPassword=${DB_1_MYSQL_PW}" 
+  -F "schemaUserPassword=${DB_1_MYSQL_PW}"
 
 #
 ##
@@ -92,12 +92,9 @@ curl --user "root:${MYSQLROOTPW}" \
 #	-H "Content-Type: multipart/form-data" \
 #	-F "databasePassword=${MDB_PW}" \
 #	-F "schemaUsername=${DB_2_USER}" \
-#	-F "schemaUserPassword=${DB_2_MYSQL_PW}" \ 
+#	-F "schemaUserPassword=${DB_2_MYSQL_PW}" \
 #	-F "database=@${DB_2_PATH}"
 #
-``` 
+```
 
-Im Skript auskommentiert ist hier die Möglichkeit auch vorhandene Datenbanken zu migrieren. Die Methode ein SQLite Backup einzuspielen ist jedoch wesentlich performanter als die Mirgation einer Access Datenbank und sollte hier primär verwendet werden. 
-
-
-
+Im Skript auskommentiert ist hier die Möglichkeit, auch vorhandene Datenbanken zu migrieren. Die Methode, ein SQLite-Backup einzuspielen, ist jedoch wesentlich performanter als die Mirgation einer Access-Datenbank und sollte hier primär verwendet werden.

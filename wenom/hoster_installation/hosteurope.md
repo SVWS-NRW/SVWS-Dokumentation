@@ -20,19 +20,19 @@ Verknüpfen Sie diese Subdomain mit einem SSL-Zertifikat für die sichere Verbin
 
 ## FTP Verbindung aufbauen und Dateien hochladen
 
-Verbinden Sie sich mit Ihrem FTP-User und laden Sie die Dateien aus dem ZIP in das Verzeichnis, das mit der gewünschten Subdomain verknüpft wurde.
+Verbinden Sie sich mit Ihrem FTP-Benutzer und laden Sie die Dateien aus dem ZIP in das Verzeichnis, das mit der gewünschten Subdomain verknüpft wurde.
 
 ![FTP Upload](./graphics/hosteurope01.png "Dateien per FTP übertragen.")
 
-Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner Public und App:
+Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner `Public` und `App`:
 
 ![Bereich Domain](./graphics/hosteurope02.png "Einrichtung Subdomain.")
 
-Setzen Sie die Rechte  (auf alle Unterordner und Dateien) auf den Ordner db:
+Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf den Ordner `db`:
 
 ![Bereich Domain](./graphics/hosteurope03.png "Einrichtung Subdomain.")
 
 
-## Einrichtung 
+## Einrichtung
 
-Weiter geht es mit der [Ersteinrichtung](../installation/ersteinrichtung.md) des Webnotenmamagers.
+Weiter geht es mit der [Ersteinrichtung](../installation/ersteinrichtung.md) des WebNotenManagers.

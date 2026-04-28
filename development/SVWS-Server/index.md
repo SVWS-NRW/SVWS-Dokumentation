@@ -23,7 +23,7 @@ SVWS-Client:
 ![Übersicht-REST-Server-03](./graphics/OpenAPI1.png)
 
 
-Die Core-API soll zukünftig alle User-Interaktionen mit der Datenbank kontrollieren. Sie ist damit maßgeblich für den Schutz der Daten vor unerlaubten Zugriffen, aber auch für die Konsistenz der Datenbank zuständig. Außerdem stellt sie eine standardisierte Schnittstelle für die User-Interfaces dar.
+Die Core-API soll zukünftig alle Benutzer-Interaktionen mit der Datenbank kontrollieren. Sie ist damit maßgeblich für den Schutz der Daten vor unerlaubten Zugriffen, aber auch für die Konsistenz der Datenbank zuständig. Außerdem stellt sie eine standardisierte Schnittstelle für die Benutzeroberfläche dar.
 
 
 ## Die OpenAPI

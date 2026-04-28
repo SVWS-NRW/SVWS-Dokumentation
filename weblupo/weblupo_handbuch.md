@@ -30,7 +30,7 @@ Die folgende Grafik zeigt die vier Bereiche der Laufbahnberatungstools:
 
 * Im vierten Bereich werden die Regeln für die Oberstufenbelegung algorithmisch ausgewertet und die noch zu erfüllenden Bedingungen angezeigt beziehungsweise es wird auf Fehlbelegungen hingewiesen. Hier kann der Modus *EF.1*, *Gesamtprüfung* oder *automatisch* gewählt werden.   
 
-Interessant ist auch die Einstellung ````Planung merken```` im ersten Bereich, die das Festhalten einer Einstellung in der Tabelle ermöglicht. Wird die Planung dann testweise geändert, kann die gemerkte Planung wiederhergestellt werden.
+Interessant ist auch die Einstellung `Planung merken` im ersten Bereich, die das Festhalten einer Einstellung in der Tabelle ermöglicht. Wird die Planung dann testweise geändert, kann die gemerkte Planung wiederhergestellt werden.
 
 Somit können Schülerinnen und Schüler von diesem Ausgangspunkt aus schnell mehrere Planungen ausprobieren und wieder zurücksetzen. 
 
