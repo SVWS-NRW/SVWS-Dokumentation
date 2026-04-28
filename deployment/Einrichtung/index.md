@@ -2,51 +2,56 @@
 
 ## Konfigurationsdatei svwsconfig.json
 
-Aus der `svwsconfig.json` werden beim Start des SVWS-Server die individuellen Einstellungen der jeweiligen Umgebung eingelesen.
+Aus der `svwsconfig.json` werden beim Start des SVWS-Server die individuellen Einstellungen der jeweiligen Umgebung
+eingelesen.
 
-Die `svwsconfig.json` muss im `res`-Verzeichnis des Datenverzeichnis des SVWS-Servers liegen (z.B. `opt/app/svws/res/svwsconfig.json` oder `S:\SVWS-Server-Data\res\`).
+Die `svwsconfig.json` muss im `res`-Verzeichnis des Datenverzeichnis des SVWS-Servers liegen (z.B.
+`opt/app/svws/res/svwsconfig.json` oder `S:\SVWS-Server-Data\res\`).
+
 Es kann auch, wie im Linux-Installer, ein symbolischer Link erstellt werden.
 
 Ein Beispiel-Template der `svwsconfig.json` liegt unter: `./svws/conf/svwsconfig-template-nodb.json`.
 
-Der SVWS-Server startet auch ohne einen Eintrag unter Schemakonfiguration und bietet dann beim Start keine Auswahl für eine Datenbank an.
+Der SVWS-Server startet auch ohne einen Eintrag unter Schemakonfiguration und bietet dann beim Start keine Auswahl für
+eine Datenbank an.
 
-Unter https://meinserver/admin steht dann ein Admin-Client zur Verfügung, mit dem man erste Datenbanken migrieren oder Backups erstellen kann.
+Unter `https://meinserver/admin` steht dann ein AdminClient zur Verfügung, mit dem man erste Datenbanken migrieren oder
+Backups erstellen kann.
 
 ### Beschreibung der Variablen
 
 | Variable |Default |Erläuterung|
 |-------------|---------------|---------------|
-|EnableClientProtection| null| Gibt an, ob die Dateien des Web-Clients auch über eine Authentifizierung an der Datenbank geschützt sind. |
-| DisableDBRootAccess | false | Sperrt die Root-Enpunkte in der API |
-| DisableAutoUpdates | false | Schaltet die Automatische Ausführung von Datenbankupdates bei Start des Servers aus. |
-| DisableTLS | null | Schaltet das TLS aus. |
-| PortHTTP | null | Port für HTTP bei NULL=80 |
-| UseHTTPDefaultv11 | false | Nutze HTTP V1.1 als Default |
-| PortHTTPS | null | Port für HTTPS bei NULL=443 | 
-| PortHTTPPrivilegedAccess | null | Port für die ROOT-API und den Admin-Client. Default 443. |
-| UseCORSHeader | true | Nutze CORSHeader. |
-| TempPath |  "./tmp" | Pfad für das temporäre Verzeichnis. |
-| TLSKeyAlias | null | Alias für den TLSKey. |
-| TLSKeystorePath | "." | Pfad für den Keystore mit genau dem Dateinamen "keystore". |
-| TLSKeystorePassword | "svwskeystore" | Passwort für den Keystore |
-| ClientPath | ".../opt/app/svws/client" | Pfad zum SVWS-Web-Client in der Installation. |
-| AdminClientPath | "../opt/app/svws/adminclient" | Pfad zum Admin-Client in der Installation. |
-| LoggingEnabled | true | Einschalten des Loggings. |
-| LoggingPath | "./logs" | Pfad zu den Logdateien. |
-| ServerMode | null | Servermode NULL=dev. dev=Developermode alpha=Alphamode, beta=Betamode, stable=Stablemode |
-| PrivilegedDatabaseUser | null | Ist "null" gesetzt kann sich jeder MariaDB-User entsprechend der gesetzten Grants auf dem Adminclient einloggen und z.B. die eigenen Datenbanken sichern oder überspielen. Alternativ kann mit "root" z.B. nur diesem MariaDBUser das login im AdminClient gewährt werden. |
+| EnableClientProtection| `null`| Gibt an, ob die Dateien des WebClients auch über eine Authentifizierung an der Datenbank geschützt sind. |
+| DisableDBRootAccess | `false` | Sperrt die Root-Enpunkte in der API |
+| DisableAutoUpdates | `false` | Schaltet die Automatische Ausführung von Datenbankupdates beim Start des Servers aus. |
+| DisableTLS | `null` | Schaltet das TLS aus. |
+| PortHTTP | `null` | Port für HTTP bei NULL=80 |
+| UseHTTPDefaultv11 | `false` | Nutze HTTP V1.1 als Default |
+| PortHTTPS | `null` | Port für HTTPS bei NULL=443 |
+| PortHTTPPrivilegedAccess | `null` | Port für die ROOT-API und den AdminClient. Default 443. |
+| UseCORSHeader | `true` | Nutze CORSHeader. |
+| TempPath |  `./tmp` | Pfad für das temporäre Verzeichnis. |
+| TLSKeyAlias | `null` | Alias für den TLSKey. |
+| TLSKeystorePath | `.` | Pfad für den Keystore mit genau dem Dateinamen `keystore`. |
+| TLSKeystorePassword | `svwskeystore` | Passwort für den Keystore |
+| ClientPath | `/opt/app/svws/client` | Pfad zum SVWS-Web-Client in der Installation. |
+| AdminClientPath | `/opt/app/svws/adminclient` | Pfad zum Admin-Client in der Installation. |
+| LoggingEnabled | `true` | Einschalten des Loggings. |
+| LoggingPath | `./logs` | Pfad zu den Logdateien. |
+| ServerMode | `null` | Servermode NULL=dev. dev=Developermode alpha=Alphamode, beta=Betamode, stable=Stablemode |
+| PrivilegedDatabaseUser | ``null` | Ist "null" gesetzt, kann sich jeder MariaDB-User entsprechend der gesetzten Grants auf dem Adminclient einloggen und z.B. die eigenen Datenbanken sichern oder überspielen. Alternativ kann mit "root" z.B. nur diesem MariaDB-Benutzer das Login im AdminClient gewährt werden. |
 | DBKonfiguration | | Beginn der Datenbankkonfigurationen der verschiedenen Schemata. |
-| dbms | "MARIA_DB" | Momentan einziges unterstütztes DBMS MariaDB mindestens 10.6.x. |
-| location | "localhost" | Adresse des Datenbankservers (Hostename:Port) |
-| defaultschema | null | Name des Default-Schema, das beim Start im Client als erstes angeboten wird. (Optional.) Ist kein Default gesetzt wird immer das letzte benutzte Schemata ausgewählt.|
+| dbms | `MARIA_DB` | Momentan einziges unterstütztes DBMS MariaDB mindestens 10.6.x. |
+| location | `localhost` | Adresse des Datenbankservers (Hostename:Port) |
+| defaultschema | `null` | Name des Default-Schema, das beim Start im Client als erstes angeboten wird. (Optional.) Ist kein Default gesetzt, wird immer das zuletzt benutzte Schema ausgewählt.|
 | SchemaKonfiguration | | Beginn der einzelnen Schemakonfigurationen. |
-| name |  "svwsdb" | Name des Datenbankschemas. |
-| svwslogin | false | Gibt an, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung genutzt wird oder nicht. (Deprecated: Bitte immer auf false lassen!) | 
-| username | "svwsuser" | Datenbankuser für das Schema im DBMS. |
-| password | "userpassword"| Passwort für den Datenbankuser. |
-| connectionRetries | 0 | Gibt an, wie viele wiederholte Verbindungsversuche zur Datenbank stattfinden sollen. |
-| retryTimeout | 0 | Gibt an, wie hoch die Zeit zwischen zwei Verbindungsversuchen in Millisekunden sein soll. |
+| name |  ´svwsdb` | Name des Datenbankschemas. |
+| svwslogin | `false` | Gibt an, ob der SVWS-Anmeldename und das zugehörige Passwort auch für die Datenbankverbindung genutzt wird oder nicht. (Deprecated: Bitte immer auf `false` lassen!) |
+| username | `svwsuser` | Datenbankbenutzer für das Schema im DBMS. |
+| password | `userpassword` | Passwort für den Datenbankbenutzer. |
+| connectionRetries | `0` | Gibt an, wie viele wiederholte Verbindungsversuche zur Datenbank stattfinden sollen. |
+| retryTimeout | `0` | Gibt an, wie hoch die Zeit zwischen zwei Verbindungsversuchen in Millisekunden sein soll. |
 
 ### Beispieldatei für eine svwsconfig.json (mit einem Schema)
 
@@ -85,7 +90,6 @@ Unter https://meinserver/admin steht dann ein Admin-Client zur Verfügung, mit d
     } ]
   }
 }
-
 ```
 
 ### Servermode
@@ -99,25 +103,29 @@ Der Servermode bestimmt, welche Komponenten im Web-Client gezeigt werden:
 
 ## AdminClient Web-Applikation zur Verwaltung von Datenbank-Schemata
 
-Der *AdminClient* bietet eine Web-Applikation, die die Verwaltung von Datenbank-Schemata innerhalb eines grafischen Frontends ermöglicht.
+Der *AdminClient* bietet eine Web-Applikation, die die Verwaltung von Datenbank-Schemata innerhalb eines grafischen
+Frontends ermöglicht.
 
 Folgende Prozesse werden vom Admin-Client unterstützt:
 - Anlegen von neuen (leeren) Schemata
 - Löschen von Schemata
-- Migration einer Schild-NRW2-Datenbank in ein neues oder bestehendes Schema
+- Migration einer Schild-NRW 2-Datenbank in ein neues oder bestehendes Schema
 - Erstellen eines Backups aus einem bestehenden Schema (SQLite-Format)
-- Einspielen eines Backups in ein bestehendes oder ein eues Schema
+- Einspielen eines Backups in ein bestehendes oder ein neues Schema
 - Setzen eines Schemas in die `svwsconfig.json`
 
-Die Anmeldung am Admin-Client erfolgt mit Benutzername und Passwort eines MariaDB-Users.
+Die Anmeldung am AdminClient erfolgt mit Benutzername und Passwort eines MariaDB-Benutzers.
 
-Dabei muss nicht zwingend der Root-Benutzer genommen werden. Der Benutzer sieht die Datenbank-Schemata, auf die er entsprechende Rechte hat.
+Dabei muss nicht zwingend der Root-Benutzer genommen werden. Der Benutzer sieht die Datenbank-Schemata, auf die er
+entsprechende Rechte hat.
 
 ### Symbole unter der Schemaliste (nur für root)
 
-Entsprechend der Beschreibung, die als Tooltip erscheinen, können Schemata wie o.a. erstellt, verändert oder entfernt werden.
+Entsprechend der Beschreibung, die als Tooltip erscheinen, können Schemata wie o.a. erstellt, verändert oder entfernt
+werden.
 
-Für diese Aktionen, die unter der Schemataliste dargestellt werden, werden grundsätzlich Datenbankserver-root-Rechte benötigt. Die Symbole zum Verwalten der Schamata an sich werden auch nur dem root-Benutzer angezeigt.
+Für diese Aktionen, die unter der Schemataliste dargestellt werden, werden grundsätzlich Datenbankserver-root-Rechte
+benötigt. Die Symbole zum Verwalten der Schemata an sich werden auch nur dem root-Benutzer angezeigt.
 
 #### Migration in ein neues Schema
 
@@ -131,81 +139,89 @@ Es kann aus folgenden Datenbankformaten importiert werden:
 - MariaDB
 - SQL-Server (MSSQL)
 
-***1. Access:***
+**1. Access:**
 
-***Quelldatenbank:*** 
+**Quelldatenbank:**
 
-Wählen Sie hier eine Schild-NRW-2 Access Datenbank (Endung .mdb) aus. Es gibt vereinzelt noch Datenbanken im Access98-Format. Diese können nicht migriert werden. Kontaktieren Sie Ihren Fachberater!
+Wählen Sie hier eine Schild-NRW 2 Access-Datenbank (Endung .mdb) aus. Es gibt vereinzelt noch Datenbanken im
+Access98-Format. Diese können nicht migriert werden. Kontaktieren Sie Ihren Fachberater!
 
-***Zieldatenbank***
+**Zieldatenbank**
 
-***Schema***
+**Schema**
 
 Name des neuen Schemas im SVWS-Server.
 
-***Name des Schema-Datenbanknutzers***
+**Name des Schema-Datenbanknutzers**
 
-Schema-Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen zugreifen können. Es können auch mehrere Schulen mit dem gleichen Schema-Admin etwa durch IT-Dienstleister verwaltet werden.
+Schema-Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann
+man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen zugreifen können. Es können auch
+mehrere Schulen mit dem gleichen Schema-Admin etwa durch IT-Dienstleister verwaltet werden.
 
-Wenn man einen bestehenden Schema-Datenbankbenutzer noch einmal verwenden möchte, muss natürlich das korrekte Passwort verwendet werden.
+Wenn man einen bestehenden Schema-Datenbankbenutzer noch einmal verwenden möchte, muss natürlich das korrekte Passwort
+verwendet werden.
 
 Wenn der Datenbankbenutzer noch nicht existiert, wird er vor der Migration angelegt.
 
-***Passwort des Schema-Datenbankbenutzers***
+**Passwort des Schema-Datenbankbenutzers**
 
 Das Passwort des Schema-Datenbankbenutzers.
 
-***2. Alle anderen DBMS:***
+**2. Alle anderen DBMS:**
 
-***Angabe einer Schulnummer***
+**Angabe einer Schulnummer**
 
 Diese Funktion ist für die Migration aus *Schild-Zentral* geschaffen worden.
 
-Durch die Angabe der Schulnummer werden nur die Daten dieser Schule in das neue Schema migriert. Der SVWS-Server unterstützt die Haltung von mehreren Schulen in einem Schema aus Datenschutzgründen nicht mehr.
+Durch die Angabe der Schulnummer werden nur die Daten dieser Schule in das neue Schema migriert. Der SVWS-Server
+unterstützt die Haltung von mehreren Schulen in einem Schema aus Datenschutzgründen nicht mehr.
 
-***Quelldatenbank:***
+**Quelldatenbank:**
 
-***Datenbankhost***
+**Datenbankhost**
 
 Name oder IP-Adresse unter der der Datenbankserver erreichbar ist. (hostname:port oder IP:port)
 
 Bei SQL-Server (MSSQL) muss das TCP-Protokoll aktiviert und freigegeben sein.
 
-***Datenbank-Schema***
+**Datenbank-Schema**
 
 Name des Quellschemas auf dem Datenbankserver, der als Quelle dient.
 
-***Name des Datenbankbenutzers***
+**Name des Datenbankbenutzers**
 
-Name des Users auf dem Datenbankserver, der als Quelle dient.
+Name des Benutzers auf dem Datenbankserver, der als Quelle dient.
 
-***Passwort des Datenbankbenutzers***
+**Passwort des Datenbankbenutzers**
 
-Passwort des Users auf dem Datenbankserver, der als Quelle dient.
+Passwort des Benutzers auf dem Datenbankserver, der als Quelle dient.
 
-***Zieldatenbank***
+**Zieldatenbank**
 
-***Schema***
+**Schema**
 
 Name des neuen Schemas im SVWS-Server. Dieses Schema wird automatisch erstellt.
 
-***Name des Datenbanknutzers***
+**Name des Datenbanknutzers**
 
-Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen zugreifen können. Wenn man einen bestehenden Datenbankbenutzer noch einmal verwenden möchte, so muss natürlich das korrekte Passwort verwendet werden.
+Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man
+schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen zugreifen können. Wenn man einen
+bestehenden Datenbankbenutzer noch einmal verwenden möchte, so muss natürlich das korrekte Passwort verwendet werden.
 
 Wenn der Datenbankbenutzer noch nicht existiert, so wird er vor der Migration angelegt.
 
-***Passwort des Datenbankbenutzers***
+**Passwort des Datenbankbenutzers**
 
 Das Passwort des Datenbankbenutzers.
 
-#### SQ-Lite Schema importieren
+#### SQLite Schema importieren
 
 Ein aus einer anderen Datenbank erzeugtes SQLite-Backup kann hier in ein neu angelegtes Schema importiert werden.
 
 #### Schema duplizieren
 
-Erzeugt eine Kopie eines Schemas in einem neuen Schema. Diese Funktion soll es erleichtern, eine Testdatenbank zu erstellen, wenn z.B. komplexere Arbeiten im Vorfeld getestet werden sollen.
+Erzeugt eine Kopie eines Schemas in einem neuen Schema. Diese Funktion soll es erleichtern, eine Testdatenbank zu
+erstellen, wenn z.B. komplexere Arbeiten im Vorfeld getestet werden sollen.
 
 #### Anlegen eines neuen SVWS-Schema
 
@@ -220,14 +236,17 @@ Man erhält somit eine leere Datenbank, die man mit einer Schulnummer initialisi
 
 Diese Menüpunkte haben die gleichen Funktionen, wie die Menüpunkte unter der Schema-Liste.
 
-Nur werden diese Funktionen immer auf das ausgewählte und bestehende Schema ausgeführt und können somit auch von anderen Benutzern außer root verwendet werden. Diese Menüpunkte sind immer verfügbar.
+Nur werden diese Funktionen immer auf das ausgewählte und bestehende Schema ausgeführt und können somit auch von anderen
+Benutzern außer root verwendet werden. Diese Menüpunkte sind immer verfügbar.
 
-***In Config setzen***
+**In Config setzen**
 
-Diese Funktion setzt ein bestehendes Schema in die `svwsconfig.json`, so dass dieses Schema beim nächsten Start des SVWS-Servers mit in die Auswahlliste aufgenommen wird.
+Diese Funktion setzt ein bestehendes Schema in die `svwsconfig.json`, so dass dieses Schema beim nächsten Start des
+SVWS-Servers mit in die Auswahlliste aufgenommen wird.
 
 ::: warning Schema initialisieren
 Achtung! Dieses Schema muss initialisiert werden, also die Datenbankstruktur des SVWS-Servers haben!
 :::
 
-Sollte ein Datenbankadministrator keine Rechte besitzen, Schemata anzulegen oder zu löschen, so kann dieser dann aber so angelegte, leere Schemata verwalten.
+Sollte ein Datenbankadministrator keine Rechte besitzen, Schemata anzulegen oder zu löschen, so kann dieser dann aber
+so angelegte, leere Schemata verwalten.

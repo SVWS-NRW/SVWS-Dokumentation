@@ -22,52 +22,57 @@ In der Einstellung des MariaDB-Pakets TCP freigeben.
 
 ![MariaDB.png](./graphics/MariaDB.png)
 
-phpMyAdmin aufrufen und den User root mit identischen Rechten duplizieren (Beispiel remote) aber mit Zugriff host=%.
+phpMyAdmin aufrufen und den Benutzer root mit identischen Rechten duplizieren (Beispiel `remote`) aber mit Zugriff
+`host=%`.
 
 ![phpMyAdmin.png](./graphics/phpMyAdmin.png)
 
-## VirtualMaschine-Manager
+## Virtual-Maschine-Manager
 
-Zunächst muss auf der NAS noch das Paket Virtual-Maschine-Manager installiert werden. 
-Im VM-Manager dann eine Debian-ISO-Image oder ein Ubuntu-Live-Server-Image herunterladen und eine VM mit dem gewünschten Image installieren:
+Zunächst muss auf der NAS noch das Paket Virtual-Maschine-Manager installiert werden.
+Im VM-Manager dann ein Debian-ISO-Image oder ein Ubuntu-Live-Server-Image herunterladen und eine VM mit dem gewünschten
+Image installieren:
 
 + Die Grafikkarte von vmVGA auf VGA einstellen
 + SATA-Treiber bei der Verwendung der Festplatte einstellen.
-+ Einstellung mit UEFI BIOS booten. 
++ Einstellung mit UEFI BIOS booten.
 
 Hier wurden beispielsweise zwei CPUs mit 8 GByte RAM gewählt.
 
 
-## Installation des SVWS-Server mit dem Linux-installieren
+## Installation des SVWS-Server mit dem Linux-Installer installieren
 
-Mit wget das [aktuellen install-x.x.x.sh](https://github.com/SVWS-NRW/SVWS-Server/releases/latest) von GitHub laden.
+Mit wget den [aktuellen install-x.x.x.sh](https://github.com/SVWS-NRW/SVWS-Server/releases/latest) von GitHub laden.
 
-
-``` bash
-    wget https://github.com/SVWS-NRW/SVWS-Server/releases/latest
-    chmod +x install-x.x.x.sh
-    ./install-x-x-x.sh
+```bash
+wget https://github.com/SVWS-NRW/SVWS-Server/releases/latest
+chmod +x install-x.x.x.sh
+./install-x-x-x.sh
 ```
 
-Dabei die Installationsschritte, wie unter [Linux-Installer](../Linux-Installer/) beachten. Der Aufruf des Admin-Client ist nun möglich. Darin kann eine [Migration](../Datenmigration/) oder ein [Backup](../Datensicherung/) durchgeführt werden.
+Dabei die Installationsschritte, wie unter [Linux-Installer](../Linux-Installer/) beachten. Der Aufruf des AdminClient
+ist nun möglich. Darin kann eine [Migration](../Datenmigration/) oder ein [Backup](../Datensicherung/) durchgeführt
+werden.
 
 ## Schild-NRW 3 Freigabe
 
-Einen neuen Netzwerkfreigabe-Ordner anlegen. 
+Einen neuen Netzwerkfreigabe-Ordner anlegen.
 
-Darin zwei Unterordner für Schild-NRW3 und das SVWS-Arbeitsverzeichnis anlegen.
+Darin zwei Unterordner für Schild-NRW 3 und das SVWS-Arbeitsverzeichnis anlegen.
 
 ![Schild3-Ordner1.png](./graphics/Schild3-Ordner1.png)
 
-Das Schild-NRW3-ZIP-Paket herunterladen und im Schild-NRW3-Ordner entpacken.
-Dort eine Admin.ini als Textdatei anlegen und bei GroupDir= die URL zum Arbeitsverzeichnis eintragen.
+Das Schild-NRW 3-ZIP-Paket herunterladen und im `Schild-NRW 3`-Ordner entpacken.
+Dort eine `Admin.ini` als Textdatei anlegen und bei `GroupDir=` die URL zum Arbeitsverzeichnis eintragen.
 
 ![Schild3-Ordner2.png](./graphics/Schild3-Ordner2.png)
 
-+ Im SVWS-Arbeitsverzeichnis einen Ordner Connection-Files und einen Ordner Schild-Reports anlegen.
++ Im SVWS-Arbeitsverzeichnis einen Ordner `Connection-Files` und einen Ordner `Schild-Reports` anlegen.
 
-+ Die [Basisreportsammlung](https://github.com/SVWS-NRW/Schild-NRW-Reports/releases) herunterladen und im Report-Ordner entpacken.
++ Die [Basisreportsammlung](https://github.com/SVWS-NRW/Schild-NRW-Reports/releases) herunterladen und im Report-Ordner
+entpacken.
 
-+ Im Ordner Schild-NRW3 das Programm Schild_DBConfig.exe starten und die CON-Datei nach Eintragung aller Parameter in den Ordner Connection-Files speichern. Vergleiche hierzu auch [Schild-NRW3](../Schild-NRW3/)
++ Im Ordner `Schild-NRW 3` das Programm `Schild_DBConfig.exe` starten und die CON-Datei nach Eintragung aller Parameter
+in den Ordner Connection-Files speichern. Vergleiche hierzu auch [Schild-NRW 3](../Schild-NRW3/)
 
 

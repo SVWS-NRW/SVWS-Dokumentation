@@ -148,7 +148,7 @@ SVWS_TLS_CERT_C=COUNTRY
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore  |
 | SVWS_TLS_CERT_CN | Name des selbstsignierten Zertifikats Default:SVWSCERT|
 | SVWS_TLS_CERT_OU | Name der Organistationseinheit Default: SVWSOU |
-SVWS_TLS_CERT_O| Name der Organisation Default:SVWSO |
+| SVWS_TLS_CERT_O| Name der Organisation Default:SVWSO |
 | SVWS_TLS_CERT_L=CITY | Name des Ortes Default: Duesseldorf |
 | SVWS_TLS_CERT_S=STATE | Name des Bundeslands Name Default: NRW |
 | SVWS_TLS_CERT_C=COUNTRY | Name des Staates Default: Germany |

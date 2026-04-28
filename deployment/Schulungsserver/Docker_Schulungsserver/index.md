@@ -1,11 +1,12 @@
 # Schulungsserver mit Docker
 
-Ziel dieses Artikels ist es auf einem host ein Dockersystem mit mehreren Docker Containern aufzusetzen. Diese Container sind leicht zu warten und können schnell wieder zurückgesetzt werden. 
+Ziel dieses Artikels ist es, auf einem Host ein Dockersystem mit mehreren Docker Containern aufzusetzen. Diese Container
+sind leicht zu warten und können schnell wieder zurückgesetzt werden.
 
 
-## Beispiel: Ein Testserver per skript
+## Beispiel: Ein Testserver per Skript
 
-```bash 
+```bash
 
 #!/bin/bash
 
@@ -48,33 +49,33 @@ cd docker
 curl -L -o svws-docker-example.zip https://github.com/SVWS-NRW/SVWS-Dokumentation/raw/main/deployment/Docker/svws-docker-example.zip
 unzip svws-docker-example.zip
 
-# .env Datei ggf. anpassen 
+# .env Datei ggf. anpassen
 
 # Start the SVWS Server
 docker compose up -d
-
-
 ```
 
-## Beispiel: Mehrere Docker Container per conf.txt Datei
+## Beispiel: Mehrere Docker Container per `conf.txt` Datei
 
-Ziel ist es mehrer Docker Container anzulegen. Das Skript ermöglicht es simple Schulungspasswörter zu nutzen oder 12 stellige Passwörter zu generieren. Alle Zugangsdaten werden dann in einem den .env Datei gespeichert. 
+Ziel ist es, mehrere Docker-Container anzulegen. Das Skript ermöglicht es simple Schulungspasswörter zu nutzen oder
+zwölfstellige Passwörter zu generieren. Alle Zugangsdaten werden dann in einem den `.env`-Datei gespeichert.
 
-Vorbereitend soll eine conf.txt Datei erstellt werden, die die Serverbezeichnungen, Ports und Passwörter enthält, die zum Generieren der Server ausgelesen werden. 
+Vorbereitend soll eine `conf.txt` Datei erstellt werden, die die Serverbezeichnungen, Ports und Passwörter enthält,
+die zum Generieren der Server ausgelesen werden.
 
-Hier ein Beispiel zum Aufbau dieser Datei: 
+Hier ein Beispiel zum Aufbau dieser Datei:
 
-
-```bash                                  
+```bash
+# Datei conf.txt
 SERVERNAME="svws01" DB_ROOT_PASSWORD="geheim1" MYSQLPORT="3301" KEYSTORE_PASSWORD="keystore1" PORT="8441"
 SERVERNAME="svws02" DB_ROOT_PASSWORD="geheim2" MYSQLPORT="3302" KEYSTORE_PASSWORD="keystore2" PORT="8442"
 SERVERNAME="svws03" DB_ROOT_PASSWORD="geheim3" MYSQLPORT="3303" KEYSTORE_PASSWORD="keystore3"
 PORT="8443"
 ```
 
+Das Sktipt nutzt diese Datei nun:
 
-```bash 
-
+```bash
 #!/bin/bash
 
 # Ensure running with Bash
@@ -175,7 +176,4 @@ EOF
     docker compose up -d
     cd ..
 done < "$filename"
-
-
 ```
-

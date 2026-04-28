@@ -1,4 +1,4 @@
-```bash 
+```bash
 #!/bin/bash
 
 sysstemctl stop svws
