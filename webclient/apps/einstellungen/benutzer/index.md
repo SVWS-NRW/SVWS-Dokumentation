@@ -56,11 +56,10 @@ Hier im Screenshot ist zu sehen, dass die Person der Gruppe *Lehrer* zugeordnet 
 
 ![Benutzer als Administrator gekennzeichnet](./graphics/SVWS_Benutzer_administrator.png "Ist ein Benutzer ein Administrator, wird dies hier angezeigt.")
 
-Die **Benutzergrupppe Administrator** nimmt eine Sonderrolle ein. Ein Admininistrator darf alles. Zusätzlich kann unter Umständen konkret die Rolle "Ist Administrator" abgefragt werden. Etwa für die Anmeldung im AdminClient muss der verwendete SVWS-Benutzer auch ein Administrator sein.
+Die **Benutzergrupppe Administrator** nimmt eine Sonderrolle ein. Ein Admininistrator darf alles.
 
 In der Benutzerverwaltung ist ein *Administrator* noch einmal oberhalb der Kompetenzen gekennzeichnet.
 
 ::: warning Administratoren dürfen alles
 Nutzen Sie für die tägliche Arbeit aufgrund der Anfälligkeit für Fehler keinen Nutzer aus der Gruppe der Administratoren.
 :::
-

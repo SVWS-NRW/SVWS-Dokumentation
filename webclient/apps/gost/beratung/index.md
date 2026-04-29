@@ -29,4 +29,3 @@ Im Feld rechts neben der Beratungsbogenvorlage können **Beratungslehrer der Stu
 Abschließend können **Textverlagen** für den Ausdruck der Beratungsbögen oder einen Email-Versand eingetragen werden. 
 
 ![Es können Textbausteine für den E-Mailversand eingetragen werden.](./graphics/SVWS_Oberstufe_Beratung_3.png "Tragen Sie passende Texte ein, die beim E-Mailversand verwendet werden.") 
-
