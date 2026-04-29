@@ -50,6 +50,11 @@ Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehle
 
 Ebenso werden ausschließlich Dienstmailadressen und keine privaten Email-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet. Liegt im Lehrerdatensatz kein gültiger Eintrag im Datenfeld *dienstliche Email* vor, so erhält diese Lehrkraft kein Login für den Webnotenmanager.
 
+::: warning SVWS User vs Wenom User
+Die Personengruppe der SVWS Benutzer entspricht nicht den WeNoM Benutzer: Die unter Noten -> Administration -> Zugangsdaten aufgeführte Personengruppe sind Unterrichtende oder mit Koordination und Klassenleitung Beauftragte. 
+:::
+
+
 ### Zurücksetzten auf das Initialkennwort
 
 Die Lehrkraft erhält beim initialen Login ein neu generiertes und dem schulischen Administration unbekanntes Passwort vom Wenom-Server. Ist dieser Intitialisierende Vorgang abgeschlossen und wurde mit dem SVWS-Server erneut synchronisiert, wird dies mit einer roten Markierung neben dem Initialkennwort erkennbar gemacht.
