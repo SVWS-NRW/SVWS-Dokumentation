@@ -31,8 +31,7 @@ Es gibt mehrere Möglichkeiten, ein Schema in der Datenbank anzulegen bzw. zu be
 
 Melden Sie sich als root an der MariaDB an.
 
-Sie können auch einen anderen Datenbankbenutzer wählen, dieser sieht dann die vorhandenen Datenbanken entsprechend seiner
-Rechte.
+Sie können auch einen anderen Datenbankbenutzer wählen, dieser sieht dann die vorhandenen Datenbanken entsprechend seiner Rechte.
 
 Im AdminClient können je nach Rechtevergabe des Datenbankbenutzers folgende Arbeiten erledigt werden:
 
@@ -81,7 +80,6 @@ drücken, so dass man diese Ansicht erhält:
 
 ![SwaggerUI.png](./graphics/Swagger-02.png)
 
-
 Anschließend die folgenden Einträge unter der Maske ausfüllen:
 
 + **schema**: Hier steht der Name, der auch auf der Anmeldemaske dargestellt wird, z.B. Testschule.
@@ -92,7 +90,6 @@ Anschließend die folgenden Einträge unter der Maske ausfüllen:
 Es kann auch ein schon existierender Benutzer genommen werden. Falls ein schon existierender Benutzer verwendet wird, muss das anschließend abgefragte Passwort natürlich passen.
 
 + **SchemaUserPasswort**: Passwort des o.g. (neu angelegten) MariaDB-Benutzers.
-
 
 # Schema per Curl erstellen
 

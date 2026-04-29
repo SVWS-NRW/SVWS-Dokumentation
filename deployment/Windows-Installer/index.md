@@ -41,9 +41,9 @@ Zu Beginn der Installation erscheinen nach der Annahme der Lizenzvereinbarungen 
 ![Serverkonfiguration bei der Installation](./graphics/Installer_Auswahl_Dialog.jpg "Wählen Sie die Optionen für den Server und die Datenbank.")
 
 ::: danger Speichern Sie Ihre Passwörter!
-Es werden für MariaDB und den Datenbank-Benutzer Zufallskennwörter generiert! Ändern Sie diese nach Ihren Wünschen oder verwenden Sie diese Vorschläge, aber **dokumentieren Sie in jedem Fall Ihre Eingabe**.
+Es werden für MariaDB und den Datenbank-Benutzer Zufallspasswörter generiert! Ändern Sie diese nach Ihren Wünschen oder verwenden Sie diese Vorschläge, aber **dokumentieren Sie in jedem Fall Ihre Eingabe**.
 
-Ohne diese Kennwörter kann Ihnen später im Supportfall nicht geholfen werden!
+Ohne diese Passwörter kann Ihnen später im Supportfall nicht geholfen werden!
 :::
 
 

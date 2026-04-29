@@ -38,7 +38,7 @@ Hier wurden beispielsweise zwei CPUs mit 8 GByte RAM gewählt.
 
 ## Installation des SVWS-Server mit dem Linux-Installer installieren
 
-Mit wget den [aktuellen install-x.x.x.sh](https://github.com/SVWS-NRW/SVWS-Server/releases/latest) von GitHub laden.
+Mit `wget` den [aktuellen install-x.x.x.sh](https://github.com/SVWS-NRW/SVWS-Server/releases/latest) von GitHub laden.
 
 ```bash
 wget https://github.com/SVWS-NRW/SVWS-Server/releases/latest

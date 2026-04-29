@@ -10,7 +10,7 @@ Nachdem die Installation und Ersteinrichtung und damit die erfolgreiche Verbindu
 
 ![Administration zum Hoch- Runterladen und Synchronisieren und Daten löschen ](graphics/WenomSVWS.png "Syncrhonisieren Sie die Daten wie gewünscht oder entfernen Sie Daten.")
 
- In der Regel werden die Datenbestände *synchronisiert*, was einem Hochladen mit anschließendem Herunterladen entspricht.
+In der Regel werden die Datenbestände *synchronisiert*, was einem Hochladen mit anschließendem Herunterladen entspricht.
 
 Dabei wird anhand eines *Zeitstempels* in beiden Datenbeständen entschieden, welcher Eintrag der Neuere ist und der Eintrag mit dem neuesten Datum wird für den SVWS-Server erhalten beziehungsweise vom WeNoM übernommen.
 

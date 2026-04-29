@@ -6,7 +6,6 @@ Ziel dieses Artikels ist es, auf einem Host ein Dockersystem mit mehreren Docker
 ## Beispiel: Ein Testserver per Skript
 
 ```bash
-
 #!/bin/bash
 
 # Ensure running with Bash

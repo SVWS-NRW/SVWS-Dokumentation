@@ -4,9 +4,7 @@ Die in diesem Abschnitt zur **technischen Installation** beschriebenen, vorberei
 
 ## Systemvoraussetzungen
 
-Die Installation erfolgt auf einem Debian 13-Server mit Root-Rechten.
-Auf dem Webspace müssen PHP 8 sowie die benötigten Erweiterungen php-fpm und php-sqlite3 installiert sein.
-Die Hardwareanforderungen sind dabei gering.
+Die Installation erfolgt auf einem Debian 13-Server mit Root-Rechten. Auf dem Webspace müssen PHP 8 sowie die benötigten Erweiterungen php-fpm und php-sqlite3 installiert sein. Die Hardwareanforderungen sind dabei gering.
 
 Bisher wurden getestet:
 

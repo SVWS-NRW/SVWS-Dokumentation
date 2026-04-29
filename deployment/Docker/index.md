@@ -55,7 +55,6 @@ services:
       - ./volume/svws:/opt/app/svws/conf
     env_file:
       - .env
-
 ```
 
 Beispiel der zugehörigen .env Datei wird weiter unten aufgeführt:
