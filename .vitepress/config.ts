@@ -245,13 +245,13 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Schüler', link: '/webclient/apps/schueler/', collapsed: true, items: [
 									{ text: 'Individualdaten', link: '/webclient/apps/schueler/individualdaten/' },
-									// { text: 'Sonstiges', link: '/webclient/apps/schueler/sonstiges/', collapsed: true, items: [
-									//	{ text: 'Vermerke', link: '/webclient/apps/schueler/sonstiges/vermerke/' },
-									//	{ text: 'Einwilligungen', link: '/webclient/apps/schueler/sonstiges/einwilligungen/' },
-									//	{ text: 'Lernplattformen', link: '/webclient/apps/schueler/sonstiges/lernplattformen/' },
-									// ] },
-									//{ text: 'Erziehungsberechtigte', link: '/webclient/apps/schueler/erziehungsberechtigte/' },
-									//{ text: 'Ausbildungsbetriebe', link: '/webclient/apps/schueler/ausbildungsbetriebe/' },
+									{ text: 'Sonstiges', link: '/webclient/apps/schueler/sonstiges/', collapsed: true, items: [
+										{ text: 'Vermerke', link: '/webclient/apps/schueler/sonstiges/vermerke/' },
+										{ text: 'Einwilligungen', link: '/webclient/apps/schueler/sonstiges/einwilligungen/' },
+										{ text: 'Lernplattformen', link: '/webclient/apps/schueler/sonstiges/lernplattformen/' },
+									] },
+									{ text: 'Erziehungsberechtigte', link: '/webclient/apps/schueler/erziehungsberechtigte/' },
+									{ text: 'Betriebe', link: '/webclient/apps/schueler/ausbildungsbetriebe/' },
 									//{ text: 'Schulbesuch', link: '/webclient/apps/schueler/schulbesuch/' },
 									{ text: 'Lernabschnitte', link: '/webclient/apps/schueler/lernabschnitte/', collapsed: true, items: [
 										{ text: 'Allgemein', link: '/webclient/apps/schueler/lernabschnitte/allgemein/' },
@@ -265,7 +265,7 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Lehrkräfte', link: '/webclient/apps/lehrer/', collapsed: true, items: [
 									{ text: 'Individualdaten', link: '/webclient/apps/lehrer/individualdaten/' },
-									//{ text: 'Personaldaten', link: '/webclient/apps/lehrer/personaldaten/' },
+									{ text: 'Personaldaten', link: '/webclient/apps/lehrer/personaldaten/' },
 									//{ text: 'Unterricht', link: '/webclient/apps/lehrer/unterricht/' },
 									{ text: 'Stundenplan', link: '/webclient/apps/lehrer/stundenplan/' },
 								] },
@@ -274,17 +274,17 @@ export default defineConfig(({ mode }) => {
 									{ text: 'Stundenplan', link: '/webclient/apps/klassen/stundenplan/' },
 								] },
 								{ text: 'Kurse', link: '/webclient/apps/kurse/' },
-								//{ text: 'Noten', link: '/webclient/apps/noten/', collapsed: true, items: [
-								//	{ text: 'Administration', collapsed: false, items: [
-								//		{ text: 'Serververbindungen', link: '/webclient/apps/noten/serververbindungen/' },
-								//		{ text: 'Zugangsdaten', link: '/webclient/apps/noten/zugangsdaten/' },
-								//	] },
-								//	{ text: 'Noteneingabe', collapsed: false, items: [
-								//		{ text: 'Leistungsdaten', link: '/webclient/apps/noten/leistungsdaten/' },
-								//		{ text: 'Teilleistungen', link: '/webclient/apps/noten/teilleistungen/' },
-								//		{ text: 'Klassenleitung', link: '/webclient/apps/noten/klassenleitung/' },
-								//	] },
-								//] },
+								{ text: 'Noten', link: '/webclient/apps/noten/', collapsed: true, items: [
+									{ text: 'Administration', collapsed: false, items: [
+										{ text: 'Serververbindungen', link: '/webclient/apps/noten/serververbindungen/' },
+										{ text: 'Zugangsdaten', link: '/webclient/apps/noten/zugangsdaten/' },
+								] },
+									{ text: 'Noteneingabe', collapsed: false, items: [
+										{ text: 'Leistungsdaten', link: '/webclient/apps/noten/leistungsdaten/' },
+										{ text: 'Teilleistungen', link: '/webclient/apps/noten/teilleistungen/' },
+										{ text: 'Klassenleitung', link: '/webclient/apps/noten/klassenleitung/' },
+									] },
+								] },
 								{ text: 'Oberstufe', link: '/webclient/apps/gost/', collapsed: true, items: [
 									{ text: 'Fächer', link: '/webclient/apps/gost/faecher/' },
 									{ text: 'Beratung', link: '/webclient/apps/gost/beratung/' },
