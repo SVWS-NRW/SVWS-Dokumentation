@@ -275,15 +275,8 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Kurse', link: '/webclient/apps/kurse/' },
 								{ text: 'Noten', link: '/webclient/apps/noten/', collapsed: true, items: [
-									{ text: 'Administration', collapsed: false, items: [
-										{ text: 'Serververbindungen', link: '/webclient/apps/noten/serververbindungen/' },
-										{ text: 'Zugangsdaten', link: '/webclient/apps/noten/zugangsdaten/' },
-								] },
-									{ text: 'Noteneingabe', collapsed: false, items: [
-										{ text: 'Leistungsdaten', link: '/webclient/apps/noten/leistungsdaten/' },
-										{ text: 'Teilleistungen', link: '/webclient/apps/noten/teilleistungen/' },
-										{ text: 'Klassenleitung', link: '/webclient/apps/noten/klassenleitung/' },
-									] },
+									{ text: 'Administration', link: 'webclient/apps/noten/administration' },
+									{ text: 'Noteneingabe', link: 'webclient/apps/noten/noteneingabe' },
 								] },
 								{ text: 'Oberstufe', link: '/webclient/apps/gost/', collapsed: true, items: [
 									{ text: 'Fächer', link: '/webclient/apps/gost/faecher/' },
