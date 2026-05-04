@@ -3,20 +3,22 @@
 ## Voraussetzungen
 
 - Für den Druck einer Schulbescheinigung müssen Sie die Berechtigung dazu haben. Sollte die Schaltfläche nicht sichtbar sein, wenden Sie sich bitte an Ihre SchILD-Administration.
-- Die notwendigen Daten der betreffenden Schülerinnen und Schüler (wie Adresse, Geburtsdatum usw.)  müssen eingetragen sein.
+- Die notwendigen Daten der betreffenden Schülerinnen und Schüler (wie Adresse, Geburtsdatum usw.) müssen eingetragen sein.
 
 ## Schritte
 
 1. **Login durchführen**\
-   Melden Sie sich mit Ihren Zugangsdaten beim Webclient an.
+   Melden Sie sich mit Ihren Zugangsdaten beim WebClient an.
 2. **App Schüler öffnen**\
-   Navigieren Sie auf der linken Seite des Webclients zur App Schüler.
+   Navigieren Sie auf der linken Seite des WebClients zur App Schüler.
 3. **a) Schulbescheinigung für einen einzelnen Schüler erstellen**
    - Wählen Sie im Schülercontainer den Schüler oder die Schülerin aus, für die oder den die Schulbescheinigung erstellt werden soll.
    - Der Name wird in der Liste hervorgehoben, im rechten Fensterteil erscheinen die Daten dieser Person.
    - Drücken Sie oben rechts auf die Schaltfläche `Schulbescheinigung drucken`.
 
-   ::: tip Beim Druck einer einzelnen Schulbescheinignung werden normalerweise keine Optionen angeboten. Möchten Sie die Ausgabe der Schulbescheinigung anpassen, nutzen Sie den Gruppenprozess, indem Sie vor dem einen Namen das Kästchen durch Anklicken aktivieren. Sie Können dann einen Gruppenprozess für nur eine Person verwenden. :::
+   ::: tip Tipp
+   Beim Druck einer einzelnen Schulbescheinignung werden normalerweise keine Optionen angeboten. Möchten Sie die Ausgabe der Schulbescheinigung anpassen, nutzen Sie den Gruppenprozess, indem Sie vor dem einen Namen das Kästchen durch Anklicken aktivieren. Sie Können dann einen Gruppenprozess für nur eine Person verwenden.
+   :::
 
    **b) Schulbescheinigung für mehrere Schüler erstellen**
    - Wählen Sie im Schülercontainer die Schüler und Schülerinnen aus, für die eine Schulbescheinigung erstellt werden soll. Markieren Sie dazu vor jedem gewünschten Namen das Kästchen (Checkbox) durch Anklicken.

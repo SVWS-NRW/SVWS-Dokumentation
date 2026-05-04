@@ -1,7 +1,7 @@
 # Benutzergruppen
 
 ::: warning Der SVWS-Server ist in der Entwicklung
-Der SVWS-Server befindet sich in der Entwicklung und das Rechtemanagement ist einer der Punkte, an denen dies mitunter hervor tritt. Viele vorgesehene Rechteeinstellungen können hier auftauchen, obwohl die Funktionen dahinter noch nicht implementiert sind.
+Der SVWS-Server befindet sich in der Entwicklung und das Rechtemanagement ist einer der Punkte, an denen dies mitunter hervortritt. Viele vorgesehene Rechteeinstellungen können hier auftauchen, obwohl die Funktionen dahinter noch nicht implementiert sind.
 :::
 
 ## Einführung
@@ -16,7 +16,7 @@ Manche Lehrkräfte sind in der Verwaltung der *Sekundarstufe II* und dem *Abitur
 
 Andere Rollen beziehen sich auf die Verwaltung der Datenbank und die Konfiguration der Schule oder von Leistungsdaten im Hintergrund. Zum Beispiel wären hier die diversen Kataloge wie die Unterrichtsfächer, das Erzeugen von Datenbank-Backups oder das Exportieren von Leistungsdaten über das Notenmodul zu nennnen.
 
-Die Gruppe der **Administratoren** übernimnmt eine Sonderrolle: diese Gruppe verfügt über alle Kompetenzen und teilweise wird auch der Status des Administratoren-Benutzers abgefragt, zum Beispiel beim Login in den AdminClient.
+Die Gruppe der **Administratoren** übernimnmt eine Sonderrolle: diese Gruppe verfügt über alle Kompetenzen.
 
 Generieren Sie für Ihre Schule passende Benutzergruppen und beachten Sie, dass sich einem **Benutzer** auch noch individuell weitere Einzelrechte zuweisen lassen.
 
@@ -27,11 +27,11 @@ Die Verwaltung von Benutzergruppen besteht aus vier Bereichen:
 ![Benutzergruppen, deren Kompetenzen und wer zugeordnet ist](./graphics/SVWS_Aufbau_Benutzergruppenverwaltung.png "Definieren Sie Benutzgruppen, deren Rechte und wer darin zugeordnet ist.")
 
 1. Links in der Auswahlliste stehen alle definierten **Benutzergruppen**. Über das **+** unten rechts in der Liste lassen sich neue Gruppen anlegen.
-2. Wurde eine Benutzergruppe ausgewählt, lassen sich die **Rechte** für diese Gruppe nach Kategorien und Einzelrechten sortiert vergeben. Ein Recht, das nicht vergeben ist, wird durch eine leere Checkbox ☐ dargestellt. Ein gebebenes Recht wird durch eine abgehackte Checkbox ☑ angezeigt. Dies gilt auch, wenn in einer Rechtegruppe alle Rechte zugeodnet sind. Sind in einer Rechtegruppe nicht alle Rechte gegeben, wird dies durch eine mit einem Punkt gefüllte Checkbox angezeigt (siehe Screenshot).
+2. Wurde eine Benutzergruppe ausgewählt, lassen sich die **Rechte** für diese Gruppe nach Kategorien und Einzelrechten sortiert vergeben. Ein Recht, das nicht vergeben ist, wird durch eine leere Checkbox ☐ dargestellt. Ein gebebenes Recht wird durch eine abgehakte Checkbox ☑ angezeigt. Dies gilt auch, wenn in einer Rechtegruppe alle Rechte zugeodnet sind. Sind in einer Rechtegruppe nicht alle Rechte gegeben, wird dies durch eine mit einem Punkt gefüllte Checkbox angezeigt (siehe Screenshot).
 3. Im dritten Bereich sind **alle möglichen Benutzer** aufgeführt, dies beinhaltet alle in der Datenbank angelegten Benutzer. Fügen Sie einen Benutzer durch einen Klick auf ihn zur aktuell gewählten Gruppe hinzu.
 4. Daneben finden sich **alle der gewählten Gruppe zugeordneten Benutzer**. Entfernen Sie diese mit einem Klick auf das Papierkorb-Symbol 🗑.
 
-::: tip Zusammenwirken mehrerer Benutzergruppen 
+::: tip Zusammenwirken mehrerer Benutzergruppen
 Ist eine Person in mehreren Benztzergruppen, erhält sie die Rechte von allen und zwar für einen Punkt immer das höchste Recht. Beachten Sie auch, dass einzelnen Benutzern in der Benutzerverwaltung noch zusätzliche Einzelrechte gegeben werden können.
 :::
 
@@ -39,7 +39,7 @@ Ist eine Person in mehreren Benztzergruppen, erhält sie die Rechte von allen un
 
 An einigen Stellen lassen sich Rechte "Funktionsbezogen" freigeben.
 
-Dies bedeutet, dass die Rechte an eine Funktion gekoppelt sind, im Normalfall ist das etwa eine Klassenleitung oder Jahrgangsleitung inder Oberstufe, in anderen Fällen etwa eine Abteilungsleitung.
+Dies bedeutet, dass die Rechte an eine Funktion gekoppelt sind, im Normalfall ist das etwa eine Klassenleitung oder Jahrgangsleitung in der Oberstufe, in anderen Fällen etwa eine Abteilungsleitung.
 
 Demnach gelten diese Rechte beispielsweise nur in der zugewiesenen Klasse, aber nicht für alle anderen.
 
@@ -57,4 +57,4 @@ Auf der anderen Seite wäre es einer Benutzergruppe Sekretariat erlaubt, die Ind
 
 ![Benutzergruppe "Sekretariat": Ändern von Individualdaten, keine Einsicht von Leistungsdaten](./graphics/SVWS_Benutzergruppe_Sekretariat.png "Das Sekretariat darf Individualdaten ändern, aber keine Leistungsdaten einsehen.")
 
-Dem Sekretariat ist hier auch das Anlegen und Ändern von Vermerken gestattet, die KAoA-Daten werden jedoch nicht vom Sekretariat gepfleft.
+Dem Sekretariat ist hier auch das Anlegen und Ändern von Vermerken gestattet, die KAoA-Daten werden jedoch nicht vom Sekretariat gepflegt.

@@ -14,7 +14,7 @@ Die Seitenleiste mit den Apps ist oben:
 
 ![Einstellungssymbol oben rechts](./graphics/svws_einstellungen_links.png "Ist die Seitenleiste mit den Apps oben in der Kopfzeile, finden Sie die Einstellungen oben rechts.")
 
-Weiterhin finden Sie an diesen Stellen die Schaltflächen zum `Abmelden` und im die **Client-Info** mit der Versionsnummer und dem Lesbarkeitshinweis bezüglich der Geschlechterverwendung.
+Weiterhin finden Sie an diesen Stellen die Schaltflächen zum `Abmelden` und die **Client-Info** mit der Versionsnummer und dem Lesbarkeitshinweis bezüglich der Geschlechterverwendung.
 
 In der Client-Info findet sich auch ein Link auf das **Impressum**.
 
