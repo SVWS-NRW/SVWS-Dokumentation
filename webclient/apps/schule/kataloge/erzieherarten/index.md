@@ -10,6 +10,6 @@ Wurde bei der Anlage ein Fehler gemacht, ist der Eintrag anzuhaken und dann mit 
 
 ## Eine Anwendung als Beispiel
 
-Sie können diese Erzieherarten nun in der **App Schule** im **Reiter Erziehungsberechtigte** bei bei den Erzieherdaten setzen:
+Sie können diese Erzieherarten nun in der **App Schule** im **Tab Erziehungsberechtigte** bei bei den Erzieherdaten setzen:
 
 ![Setzen Sie in der App Schule bei den Erziehungsberchtigten die Erzieherart für den Eintrag](./graphics/svws_kataloge_erzieherarten_schueler_erzieher.png "Setzen Sie in der App Schule bei den Erziehungsberechtigten die Erzieherart für den Eintrag.")

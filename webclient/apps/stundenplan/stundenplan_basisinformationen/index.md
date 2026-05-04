@@ -4,7 +4,7 @@
 
 ## Stundenpläne abrufen und nutzen
 
-Fertige Stundenpläne können über die **App Stundenpläne** abgerufen werden. Etwa kann man sich in den **Reitern** in dieser App die *Pausen*, zu den *Zeitrastern* oder *Klassen* zugeordneten Unterichte abrufen.
+Fertige Stundenpläne können über die **App Stundenpläne** abgerufen werden. Etwa kann man sich in den **Tabs** in dieser App die *Pausen*, zu den *Zeitrastern* oder *Klassen* zugeordneten Unterichte abrufen.
 
 Weiterhin sind derzeit aktive Stundenpläne auch über die Apps zu *Schülern*, *Lehrkräften* oder *Klassen* zu den jeweils gewählten Einträgen abrufbar.
 
@@ -30,7 +30,7 @@ Daher verfügt jeder definierte Stundenplan eigene "Stundenplan-Kataloge", die b
 
 Mit dem SVWS-Client lassen sich für die Schule **Stundenpläne** erstellen.
 
-![Die Stundenpläne werden verwaltet und ihre Daten lassen sich über die Reiter einstellen](./graphics/SVWS_stundenplan_grunddaten.png "Wählen Sie in der Auswahlliste den Stundenplan oder legen Sie einen neuen an. Dann stellen Sie die Grundaten ein und navigieren über die Reiter zu den weiteren Einstellungen.")
+![Die Stundenpläne werden verwaltet und ihre Daten lassen sich über die Tabs einstellen](./graphics/SVWS_stundenplan_grunddaten.png "Wählen Sie in der Auswahlliste den Stundenplan oder legen Sie einen neuen an. Dann stellen Sie die Grundaten ein und navigieren über die Tabs zu den weiteren Einstellungen.")
 
 Die Voraussetzung hierfür sind, dass unter den jeweiligen Katalogen schon die notwendigen Daten eingetragen sind. Um einen Stundenplan zu erstellen, ist es notwendig, dass diese Daten vorhanden und *korrekt befüllt* sind:
 * Die Schule muss über ein **Zeitraster** verfügen.
@@ -106,7 +106,7 @@ Nach der Wahl einer Datei und einem Klick auf **Stundenplan importieren** wird d
 
 Um einen Stundenplan komplett neu zu erstellen oder einen existierenden anzupassen, werden Unterrichte - die über eine Zuordnung von Klassen- und Kursunterrichten in den Leistungsdaten stammen - über Drag & Drop in das in die Rasterübersicht unter **Klassen** gezogen.
 
-Auch wenn die Gymnasiale Oberstufe keine *Klasse*, sondern ein *Jahrgang* ist, ist sie hier unter dem Reiter Klassen zu verwalten.
+Auch wenn die Gymnasiale Oberstufe keine *Klasse*, sondern ein *Jahrgang* ist, ist sie hier unter dem Tab Klassen zu verwalten.
 
 Wurde ein Wochentyp mit Wechselwochen eingerichtet, werden hier auch die Unterrichte in die passenden Wochen-Plätze gezogen.
 

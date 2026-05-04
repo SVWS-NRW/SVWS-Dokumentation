@@ -104,7 +104,7 @@ Als **Teilleistungen** werden Unternoten eines Faches bezeichnet. Dies sind zum 
 Die Schule kann Teilleistungen nach eigener Maßgabe definieren, daher können die Teilleistungen nach Schulform und Schule in ihrer Anzahl und in ihrer Bezeichnung variieren. Schulen verwenden eventuell keine Teilleistungen.
 :::
 
-Im Reiter Teilleistungen findet man eine Übersicht über alle in dieser Lerngruppe durch den zentralen SVWS-Server vorgegebenen Teilleistungsarten.
+Im Tab Teilleistungen findet man eine Übersicht über alle in dieser Lerngruppe durch den zentralen SVWS-Server vorgegebenen Teilleistungsarten.
 
 Alternativ zum Leistungsdatenreiter können hier auch die Quartals- und Endnoten eingetragen werden.
 

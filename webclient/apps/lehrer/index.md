@@ -27,4 +27,4 @@ Ein blauer Punkt macht kenntlich, dass ein Filter aktiv ist:
 
 Ein Klick auf den Filtertrichter setzt die Filter zurück.
 
-Wurde eine Person angewählt, sind auf der rechten Seite die Details über diverse Reiter etwa zu Stammdaten, Einsätzen und so weiter zu erfassen.
+Wurde eine Person angewählt, sind auf der rechten Seite die Details über diverse Tabs etwa zu Stammdaten, Einsätzen und so weiter zu erfassen.

@@ -18,9 +18,9 @@ Sie können auch die Fokusbereiche direkt anspringen, ohne die Fokusbereiche zuv
 
 * `Alt + 1` springt immer in den App-Bereich
 * `Alt + 4` in die Auswahlliste und 
-* `Alt + 5`, `Alt + 6` und `Alt + 7` springt in die Reiter und dann absteigend in weitere Unterreiter-Bereiche.
+* `Alt + 5`, `Alt + 6` und `Alt + 7` springt in die Tabs und dann absteigend in weitere Untertab-Bereiche.
 
-![Alt + 5, Alt + 6 und Alt + 7 springt in Reiter und Unterreiter](./graphics/svws_tastaturnavigation_fokusbereiche_untertabs.png "Alt + 5 werden die Reiter ansprungen, 6 und 7 dann absteigende Ebenen von Unterreitern.")
+![Alt + 5, Alt + 6 und Alt + 7 springt in Tabs und Untertabs](./graphics/svws_tastaturnavigation_fokusbereiche_untertabs.png "Alt + 5 werden die Tabs ansprungen, 6 und 7 dann absteigende Ebenen von Untertabs.")
 
 Mit `Alt + 8` können Sie durch alle Fokusbereiche zyklisch durchschalten. Damit lassen sich also auch Fokusbereiche erreichen, die keiner festen Struktur zuzuordnen sind.
 
@@ -46,16 +46,16 @@ Mit der `Leertaste` wird bei Fokus auf einem Listenelement oder einer Auswahlbox
 
 Im Beispiel sind die zwei Modi zu sehen. Links werden die *Listenelemente* durchgegangen, rechts sind die *Auswahlboxen* aktiv und werden mit den `Pfeiltasten hoch` und `Pfeiltaste runter` direkt angesprungen.
 
-## Schneller Reiterwechsel im Inhaltsbereich
+## Schneller Tabwechsel im Inhaltsbereich
 
-Mit der Tastenkombination `Strg + Alt + Pfeiltaste links` beziehungsweise `Strg + Alt + Pfeiltaste rechts` kann der aktuelle *Reiter* im Inhaltsbereich gewechselt werden.
+Mit der Tastenkombination `Strg + Alt + Pfeiltaste links` beziehungsweise `Strg + Alt + Pfeiltaste rechts` kann der aktuelle *Tab* im Inhaltsbereich gewechselt werden.
 
-![Reiter vorwärts und rückwarts durchschalten](./graphics/svws_tastaturnavigation_tabsdurchschalten.png "Schalten Sie die Reiter vorwärts und rückwärts durch.")
+![Tab vorwärts und rückwarts durchschalten](./graphics/svws_tastaturnavigation_tabsdurchschalten.png "Schalten Sie die Tabs vorwärts und rückwärts durch.")
 
-Dies funktioniert auch in Unterreitern.
+Dies funktioniert auch in Untertabs.
 
 :::info Schneller Bereichswechsel über Fokusbereiche
-Wechseln Sie die Reiter schnell mit `Alt + 5`, `Alt + 6` oder `Alt +7`, um in den jeweiligen Fokusbereich zu springen.
+Wechseln Sie die Tabs schnell mit `Alt + 5`, `Alt + 6` oder `Alt +7`, um in den jeweiligen Fokusbereich zu springen.
 :::
 
 Beim Wechsel wird die zugehörige Seite geladen.

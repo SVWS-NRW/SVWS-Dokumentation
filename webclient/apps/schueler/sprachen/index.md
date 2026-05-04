@@ -1,6 +1,6 @@
 # Sprachen
 
-Im Reiter **Sprachen** werden diese der Schülerinnen und Schüler erfasst.
+Im Tab **Sprachen** werden diese der Schülerinnen und Schüler erfasst.
 
 # Sprachenfolge
 

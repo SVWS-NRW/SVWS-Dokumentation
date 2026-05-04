@@ -2,7 +2,7 @@
 
 ## Tab Blockung
 
-![Kurs42-Datenimport: Ansicht der Reiter](./graphics/svws_schule_datenaustausch_kurs_tabs.png "Die Reiter aus dem Datenimport zu Kurs42: Blockung und Räume.")
+![Kurs42-Datenimport: Ansicht der Tabs](./graphics/svws_schule_datenaustausch_kurs_tabs.png "Die Tabs aus dem Datenimport zu Kurs42: Blockung und Räume.")
 
 Importieren Sie eine mit Kurs42 erstellte Blockung. Hierbei sind folgende Dateien erst aus Kurs42 zu exportieren und dann hier zu importieren:
 + Blockung.txt
@@ -23,11 +23,11 @@ Ein Import kann nur erfolgreich sein, wenn die Daten aus Kurs42 zu den Daten der
 + Die Blockung wird anschließend nur korrekt dargestellt, wenn die Laufbahnplanungsdaten im Client bereits vorhanden sind, weil die Fachwahlen nicht aus Kurs 42 importiert werden. Daher müssen die Wahlen vor dem Import im Client abgeschlossen sein oder als jahrgangsbezogener Import aus WebLuPO erfolgen.
 :::
 
-![Dialog zu Datei wählen](./graphics/svws_schule_datenaustausch_kurs_dateiwahl.png "Der Dialog Datei wählen ist für beide Reiter identisch.")
+![Dialog zu Datei wählen](./graphics/svws_schule_datenaustausch_kurs_dateiwahl.png "Der Dialog Datei wählen ist für beide Tabs identisch.")
 
 ## Tab Räume
 
-Wurden in Kurs42 noch Räume angelegt, die im SVWS-Server nicht enthalten sind, können Sie diese über den **Reiter Räume** importieren.
+Wurden in Kurs42 noch Räume angelegt, die im SVWS-Server nicht enthalten sind, können Sie diese über den **Tab Räume** importieren.
 
 Dies sollten Sie tun, bevor die Blockung importiert wird.
 

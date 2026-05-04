@@ -2,7 +2,7 @@
 
 ![Die Planung der Schülerlaufbahn, indem für die Lernabschnitte Kursbelegungen gewält werden](./graphics/schueler_laufbahnplanung_1.png "Klicken Sie die zu belegenden Kurse an und legen Sie die Kursart fest.")
 
-Gibt es für einen Schüler oder Schülerin schon eine Laufbahnplanung für die gymnasiale Oberstufe, wird diese im Reiter **Laufbahnplanung** angezeigt.
+Gibt es für einen Schüler oder Schülerin schon eine Laufbahnplanung für die gymnasiale Oberstufe, wird diese im Tab **Laufbahnplanung** angezeigt.
 
 ## Neuaufgenommene Schüler
 Für nachträglich aufgenommene Schüler ist die Laufbahnplanung vollständig auch für vergangene Abschnitte zu ergänzen. Hierfür sind die jeweiligen Lernabschnitte zuvor anzulegen (dies ist derzeit in SchILD-NRW vorzunehmen).

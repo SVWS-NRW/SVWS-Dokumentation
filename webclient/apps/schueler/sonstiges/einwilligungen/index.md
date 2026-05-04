@@ -1,6 +1,6 @@
 Einwilligungen (Schüler)
 
-Verwalten Sie die *abgefragten* und *gegebenen* **Einwilligungen** von Schülern in der **App Schüller** über den **Reiter Sonstiges ➜ Einwilligungen**.
+Verwalten Sie die *abgefragten* und *gegebenen* **Einwilligungen** von Schülern in der **App Schüler** über den **Tab Sonstiges ➜ Einwilligungen**.
 
 ![Liste der Einwilligungen](./graphics/svws_schueler_einwilligungen.png "Haken Sie Abfragestatus und eine eventuell gegebene Einwilligung an.")
 

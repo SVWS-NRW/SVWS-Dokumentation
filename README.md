@@ -65,7 +65,6 @@ Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr 
 * Sollen Pfeile verwendet werden, sollte ein echter Pfeil ➜ genutzt werden, keine Bastelllösungen wie > oder ->.
 * Die Laufbahnplanung in der Oberstufe heißt "Laufbahnplanung Oberstufe".
 * Bei Screenshots ist STRENG darauf zu achten, dass nur anoymisierte Daten verwendet werden.
-* Reiter statt Tabs, dann ist es überall einheitlich
 
 ### SVWS-Client
 

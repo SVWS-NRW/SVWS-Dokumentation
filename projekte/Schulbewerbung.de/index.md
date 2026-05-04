@@ -36,7 +36,7 @@ Hier wird nun die Liste der Schülerinnen und Schüler zur Kontrolle angeboten. 
 Nach entsprechender Authentifizierung werden XSchule-XMLs erstellt und an Schulbewerbung.de übergeben. Dort wird ein Merkmal gesetzt, so dass eine zweite Übermittlung erkannt werden kann. Die Schülerinnen und Schüler beziehungsweise deren Erziehungsberechtigte bekommen dann einen Zugangscode, mit dem sie ihre Daten in Schulbewerbung.de kontrollieren können und sich eine neue Schule aussuchen können.
 
 ### Fall 2:
-Ein für Schulbewerbung.de zuständige Lehrkraft mit entsprechenden Rechten meldet sich an und klickt in der **App Schule** auf den Reiter Datenaustausch ➜ Schulbewerbung.de.
+Ein für Schulbewerbung.de zuständige Lehrkraft mit entsprechenden Rechten meldet sich an und klickt in der **App Schule** auf den Tab Datenaustausch ➜ Schulbewerbung.de.
 
 Nach dem Klick auf den entsprechenden Button zum Abholen der Daten erscheint eine Meldung "Wir haben neue Schülerdaten für Sie!".
 

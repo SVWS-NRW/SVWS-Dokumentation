@@ -22,7 +22,7 @@ Sie können an dieser Stelle auch die Standardsortierung der Sekundarstufe II an
 
 ![Die Allgemeinen Daten der Fächer wie das Kürzel oder die Bezeichnung](./graphics/SVWS_kataloge_faecher_Allgemein.png "Stellen Sie die allgemeinen Daten und Daten zum Zeugnis eines Faches ein oder lassen Sie sich den Stundenplan anzeigen.")
 
-Über die Reiter lassen sich mit **Fach** die Daten des Faches festlegen. Wurde für die Schule ein **Stundenplan** hinterlegt, in dem dieses Fach eingeplant ist, lässt sich hier auch direkt eine Übersicht aufrufen.
+Über die Tabs lassen sich mit **Fach** die Daten des Faches festlegen. Wurde für die Schule ein **Stundenplan** hinterlegt, in dem dieses Fach eingeplant ist, lässt sich hier auch direkt eine Übersicht aufrufen.
 
 ## Allgemeine Daten
 

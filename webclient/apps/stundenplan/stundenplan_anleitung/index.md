@@ -8,7 +8,7 @@ Wird ein neuer Stundenplan erstellt, müssen zuerst die **Grunddaten**, **Kalend
 
 Weiterhin müssen **Unterrichte** für die Schülergruppen, Klassen oder Jahrgänge in der Oberstufe, vorhanden sein.
 
-![Wählen Sie die Reiter für Pausen oder Klassen](./graphics/SVWS_stundenplan_pausen_klassen_bearbeiten.png "Bearbeiten Sie die Pausenaufsichten oder Klassen.")
+![Wählen Sie die Tabs für Pausen oder Klassen](./graphics/SVWS_stundenplan_pausen_klassen_bearbeiten.png "Bearbeiten Sie die Pausenaufsichten oder Klassen.")
 
 Sie können nun Pläne für die **Pausen**aufsichten und **Klassen** erstellen und bearbeiten.
 
@@ -58,7 +58,7 @@ Hier im Beispiel wird der Stundenplan der *09a* fertig gestellt.
 
 ![Beispielscreenshot mit dem kompletten Stundenplan](./graphics/SVWS_stundenplan_uebersicht.png "Übersicht eines ganzen Stundenplans.")
 
-Der Ausschnitt aus dem Stundenplan wurde hier so gewählt, dass zum einen die Unterreiter der **Klassenauswahl**, der Auswahl des **Wochentyps** und der Modus **Einzelstunden** oder **Doppelstunden** zu sehen sind.
+Der Ausschnitt aus dem Stundenplan wurde hier so gewählt, dass zum einen die Untertabs der **Klassenauswahl**, der Auswahl des **Wochentyps** und der Modus **Einzelstunden** oder **Doppelstunden** zu sehen sind.
 
 Wird der Doppelstundenmodus angewählt, werden per Drag & Drop gleich zwei aufeinander folgende Stunden verplant.
 
@@ -100,7 +100,7 @@ Wird der Mauszeiger über eine **Pausenzeit** bewegt, werden in dieser Ansicht d
 
 Ganz gleich, ob Stundenpläne verändert oder neu erstellt wurden, sind nach dem Hineinziehen von Unterrichten in das Klassenraster noch keine **Räume** zugewiesen.
 
-Diese Zuweisung kann im Anschluss über den Reiter **Unterrichte** vorgenommen werden.
+Diese Zuweisung kann im Anschluss über den Tab **Unterrichte** vorgenommen werden.
 
 Hierzu wird über **Klassen** die passende Klasse ausgewählt, um die Zahl der Unterrichte in der Auswahlliste zu reduzieren.
 

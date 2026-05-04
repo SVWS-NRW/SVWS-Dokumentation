@@ -58,7 +58,7 @@ https://www.svws.nrw.de/
 
 Nehmen Sie den im SVWS-WebClient hinterlegten Datenschutzhinweis zur Kenntnis und beachten Sie den gültigen Rechtsrahmen.
 
-Sie erreichen den Datenschutzhinweis über **Client Info** im **App**-Menü im Reiter Datenschutz.
+Sie erreichen den Datenschutzhinweis über **Client Info** im **App**-Menü im Tab Datenschutz.
 
 
 ## Erklärung zur Barrierefreiheit

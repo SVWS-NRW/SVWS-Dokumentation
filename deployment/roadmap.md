@@ -22,7 +22,7 @@ Zum Zeitpunkt der Umstellung auf den Produktivbetrieb kann die SchILD-NRW 2 Date
 
 ## 2025 August - Erstellen eines ausreichenden Stable-Mode
 
-Der WebClient soll alle benötigten Reiter und Kataloge im Stable-Mode erhalten, sodass erste produktive Arbeiten auch außerhalb der gymnasialen Oberstufe stattfinden können.
+Der WebClient soll alle benötigten Tabs und Kataloge im Stable-Mode erhalten, sodass erste produktive Arbeiten auch außerhalb der gymnasialen Oberstufe stattfinden können.
 
 Dabei ist es wichtig, dass die schulformspezifischen Bedingungen eingearbeitet werden und die eingeblendeten Kataloge in das Testkonzept einbezogen sind.
 

@@ -5,9 +5,12 @@ Es ist dringend zu empfehlen, zuvor die **Stundenplanung** der jeweiligen Jahrga
 Ebenso sollte eine vollständige **Raumliste** hinterlegt sein.
 
 ## Vorgaben erstellen
-Es können für beide Quartale für jedes Fach und Kursart Vorgaben der jeweiligen Klausur eingestellt werden. Im System ist bereits einen Standard-Vorlage eingestellt, die aufgerufen und individuell bearbeiet werden kann. ![gost_klausurplanung_vorlage_1](.\graphics\gost_klausurplanung_vorlage_1.png)
+Es können für beide Quartale für jedes Fach und Kursart Vorgaben der jeweiligen Klausur eingestellt werden. Im System ist bereits eine Standardvorlage eingestellt, die aufgerufen und individuell bearbeitet werden kann.
+
+![gost_klausurplanung_vorlage_1](.\graphics\gost_klausurplanung_vorlage_1.png)
 
 Zusätzliche Fächer könen mit **+** ergänzt werden. Verändert werden können diese Parameter:
+
 ![gost_klausurplanung_vorlage_2](.\graphics\gost_klausurplanung_vorlage_2.png)
 
 
@@ -15,7 +18,7 @@ Zusätzliche Fächer könen mit **+** ergänzt werden. Verändert werden können
 Mit "Vorlage importieren" kann nun für jedes Halbjahr die Vorlage importiert werden. Hier können von der Vorlage abweichende Einstellungen vorgenommen werden.
 
 ## Klausurtermine blocken
-Im Reiter "Schienen" findet sich die Auflistung der im gewählten Abschnitt anzusetzenden Klausuren.
+Im Tab "Schienen" findet sich die Auflistung der im gewählten Abschnitt anzusetzenden Klausuren.
 
  ### Termin manuell setzen
  Mit **+ Termin** werden Terminlagen ergänzt, Klausuren werden per Drag & Drop in die Termine gesetzt.
@@ -62,7 +65,7 @@ Es werden z.B. Terminkollisionen, mehr als drei Klausurbelegungen pro Woche, feh
 ### Erfassung von Versäumnissen
 
 #### 1. Möglichkeit: Über die Klausurplanung:
-* im Reiter **Schienen** in der Terminauswahl wird durch Anklicken der betroffenen Klausur eine Schülerliste angezeigt.
+* im Tab **Schienen** in der Terminauswahl wird durch Anklicken der betroffenen Klausur eine Schülerliste angezeigt.
 * Hinter jedem Namen kann über den angezeigten Button das Versäumnis erfasst werden, bei Bedarf (Beachtung DSGVO) auch ein Grund eingeragen werden.
 * Bestätigung durch **"Nachschreibtermin erstellen"** übernimmt den Schüler in die Liste der Nachschreiber.
 

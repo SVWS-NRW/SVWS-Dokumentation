@@ -2,7 +2,7 @@
 
 In der App **Schüler** werden die zahlreichen Daten zu den Schülern erfasst.
 
-Im ersten Reiter finden sich die persönlichen **Individualdaten**.
+Im ersten Tab finden sich die persönlichen **Individualdaten**.
 
 ::: warning Statistikrelevante Felder beachten
 Beachten Sie unbedingt die *statistikrelevanten* Felder. Werden diese korrekt ausgefüllt, werden Fehler bei der Statistik oder diversen Berechnungen zu Abschluss und Schulpflicht vermieden.

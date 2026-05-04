@@ -16,9 +16,9 @@ Bei den Prozessen, in denen individuelle Laufbahnwahlen korrigiert, geblockt und
 
 ## Abiturjahrgang
 
-Für alle Reiter in der App Oberstufe stehen links in der Auswahlliste die **Abiturjahrgänge** zur Auswahl.
+Für alle Tabs in der App Oberstufe stehen links in der Auswahlliste die **Abiturjahrgänge** zur Auswahl.
 
-![Alle Reiter der App Oberstufe haben linksseitig die Auswahlliste der Abiturjahrgänge](./graphics/svws_gost_abiturjahrgang.png "Konfigurieren Sie Ihre Abiturjahrgänge.")
+![Alle Tabs der App Oberstufe haben linksseitig die Auswahlliste der Abiturjahrgänge](./graphics/svws_gost_abiturjahrgang.png "Konfigurieren Sie Ihre Abiturjahrgänge.")
 
 Unter der **Allgemeinen Vorlage** lässt sich die Vorlage für alle Abiturjahrgänge konfigurieren. Per Standard ist zuerst der **Tab Fächer** geöffnet. Die Einstellungen für den Abiturjahrgang werden im Artikel zu den Fächern beschrieben.
 
@@ -30,9 +30,9 @@ Sie können die Auswahlliste mit dem kleinen Symbol oben rechts, markiert durch 
 
 ## Orientierende Übersicht zur Planung in der App Oberstufe
 
-Grundsätzlich folgt die Planung eines Abiturjahrgangs den Reiter in der App Oberstufe von links nach rechts:
+Grundsätzlich folgt die Planung eines Abiturjahrgangs den Tabs in der App Oberstufe von links nach rechts:
 
-![App Oberstufe Übersicht über die Reiter](./graphics/svws_gost_uebersichtAppOberstufe.png "Folgen Sie den Reiter von links nach rechts als grobe Orientierung.")
+![App Oberstufe Übersicht über die Tabs](./graphics/svws_gost_uebersichtAppOberstufe.png "Folgen Sie den Tabs von links nach rechts als grobe Orientierung.")
 
 1. Legen Sie die **Fächer** der Oberstufe zuerst als **Allgemeine Vorlage** und dann als konkrete **Vorlage für einen Abiturjahrgang** an. Hieraus folgt, welche Fächer in welchem Halbjahr der Oberstufe als was für eine Kursart (GKS, GKM, LK, ...) wählbar ist und in welche Fachkombinationen eventuell gefordert oder gegenseitig ausgeschlossen sind.
 2. Als nächstes sind die **Beratung**svorlagen wieder allgemein und für einen konkreten Abiturjahrgang festzulegen. Dies ist faktisch eine Vor-Ausfüllung für den WebLuPO-Wahlbogen mit sinnvollen Standardwerten, zum Beispiel belegen erst einmal alle Deutsch und Mathe schriftlich.

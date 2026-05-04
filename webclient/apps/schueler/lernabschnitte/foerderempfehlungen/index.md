@@ -1,6 +1,6 @@
 # Förderempfehlungen für Schüler
 
-Verwalten Sie die Förderempfehlungen über die **App Schüler** und dort mit dem **Reiter Lernabschnitte ➜ Förderempfehlungen**.
+Verwalten Sie die Förderempfehlungen über die **App Schüler** und dort mit dem **Tab Lernabschnitte ➜ Förderempfehlungen**.
 
 ![Förderempfehlungen erreichen Sie über Schüler Lernabschnitte Förderempfehlungen](./graphics/svws_schueler_foerderempfehlungen.png "Verwalten Sie die Förderempfehlungen einer Schülerin.")
 

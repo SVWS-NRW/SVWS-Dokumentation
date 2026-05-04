@@ -9,5 +9,5 @@ Es können auch *Quartalsnoten*, *Fehlstunden*, die unterschiedlichen Arten von 
 ![Übersicht App Noten](./graphics/svws_noten.png "Administration und Noteneingabe in der App Noten.")
 
 ::: tip Benutzerhandbuch des WebNotenManagers
-In diesem Bereich wird die **App Noten** mit ihren Reitern besprochen. Konsultieren Sie für die detaillierte Erläuterung und für Installationsanleitungen das [Benutzerhandbuch WeNoM](../../../wenom/index.md).
+In diesem Bereich wird die **App Noten** mit ihren Tabs besprochen. Konsultieren Sie für die detaillierte Erläuterung und für Installationsanleitungen das [Benutzerhandbuch WeNoM](../../../wenom/index.md).
 :::

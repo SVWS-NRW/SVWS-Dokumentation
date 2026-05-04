@@ -10,17 +10,17 @@ Die Programmpunkte im SVWS-Client heißen **Apps**.
 
 Je nach Schulform werden mitunter andere Apps angezeigt.
 
-In einer App werden nach Bedarf **Reiter** angezeigt.
+In einer App werden nach Bedarf **Tabs** angezeigt.
 
-![Eventuelle Reiter in einer App](./graphics/SVWS_Tabs.png "Gibt es Reiter, werden diese angezeigt.")
+![Eventuelle Tabs in einer App](./graphics/SVWS_Tabs.png "Gibt es Tabs, werden diese angezeigt.")
 
-Die Reiter können sich auch dymanisch ändern, etwa je nach Jahrgang wird KAoA ein- oder ausgeblendet.
+Die Tabs können sich auch dymanisch ändern, etwa je nach Jahrgang wird KAoA ein- oder ausgeblendet.
 
-Verzweigen sich die Reiter, werden **Unterreiter** eingeblendet.
+Verzweigen sich die Tabs, werden **Untertabs** eingeblendet.
 
-![Die Reiter unter den Reiter heißen "Unterreiter"](./graphics/SVWS_TabsUntertabs.png "Weitere Unterpunkte sind über Unterreiter zu erreichen.")
+![Die Tabs unter den Tabs heißen "Untertabs"](./graphics/SVWS_TabsUntertabs.png "Weitere Unterpunkte sind über Untertabs zu erreichen.")
 
-Hier die Unterreiter können sich dynamisch verändern, zum Beispiel werden bei den Lernabschnitten je nach Bedarf die Unterreiter zu Abschlussberechnungen eingeblendet.
+Hier die Untertabs können sich dynamisch verändern, zum Beispiel werden bei den Lernabschnitten je nach Bedarf die Untertabs zu Abschlussberechnungen eingeblendet.
 
 ### Auswahllisten
 
@@ -40,9 +40,9 @@ Wird mindestens eine Checkbox aktiviert, schaltet der Client automatisch in den 
 
 ## Weitere Bedienbereiche
 
-In einigen Bereichen gibt es nach den Unterreiter noch eine weitere Unterteilung. Diese Zeile ist die **Schaltflächenleiste**.
+In einigen Bereichen gibt es nach den Untertabs noch eine weitere Unterteilung. Diese Zeile ist die **Schaltflächenleiste**.
 
-![Unter den Reiter und Unterreitern folgt eine Schaltflächenleiste](./graphics/SVWS_Schaltflächenleiste.png "Treffen Sie eine weitere Eingrenzung durch die Schaltflächenleiste.")
+![Unter den Tabs und Untertabs folgt eine Schaltflächenleiste](./graphics/SVWS_Schaltflächenleiste.png "Treffen Sie eine weitere Eingrenzung durch die Schaltflächenleiste.")
 
 Eventuell stehen dann noch weitere Auswahllisten zur Verfügung. Hier im Beispiel nimmt diese Liste die Form einer **Tabelle** an, aus der die Fächer gewählt werden können.
 
