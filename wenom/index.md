@@ -1,7 +1,7 @@
-# WeNoM - WebNotenManager (Alpha)
+# WeNoM - WebNotenManager (Beta)
 
-::: warning Alpha Version
-Der Webnotemanager liegt derzeit als Alpha-Version zum Testen vor. Im Alpha Betrieb ist noch kein regulärer Einsatz an Schule vorgesehen.
+::: warning Beta Version
+Der Webnotemanager liegt derzeit als Beta-Version zum Testen vor. Im Beta-Betrieb ist noch kein regulärer Einsatz an Schule vorgesehen.
 :::
 
 ::: tip Direkt zur [Anleitung für Lehrkräfte](./benutzerhandbuch/anleitung_lehrkraefte.md)!
