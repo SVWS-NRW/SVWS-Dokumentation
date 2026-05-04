@@ -15,16 +15,16 @@ Diese Filter stehen zur Verfügung:
 
 ![Übersichtsliste der Lehrkräfte mit den Filtern](./graphics/SVWS_lehrkraefte_ListeUndFilter.png "Im hier grün markierten Bereich lassen sich Filter setzen, um die Auswahl in der Personalliste zu verfeiern.")
 
-Über die nächsten beiden Schalter werden **Nur Sichtbare** oder **Nur Statistik-Relevante** Personen angezeigt. 
+Über die nächsten beiden Schalter werden **Nur Sichtbare** oder **Nur Statistik-Relevante** Personen angezeigt.
 
-Über den ersten Schalter lassen sich etwa ehemalige Lehrkräfte aus der Liste ausblenden, die jedoch noch in der Datenbank erfasst sind, da sie in den den Leistungsdaten vergangener Lernabschnitte noch vorkommen.
+Über den ersten Schalter lassen sich etwa ehemalige Lehrkräfte aus der Liste ausblenden, die jedoch in der Datenbank erfasst sind, da sie in den den Leistungsdaten vergangener Lernabschnitte noch vorkommen.
 
 Über den zweiten Schalter können Personen ein- und ausgeblendet werden, die als Personal erfasst sind, aber nicht für die Statistik heranzuziehen sind.
 
 Ein blauer Punkt macht kenntlich, dass ein Filter aktiv ist:
 
-![Ein blauer Punkt dient als Filtermarkierung](./graphics/SVWS_lehrkraefte_filterIndikator.png "Klicken Sie auf den Filtertrichter, um die Filter zurück zu setzen.")
+![Ein blauer Punkt dient als Filtermarkierung](./graphics/SVWS_lehrkraefte_filterIndikator.png "Klicken Sie auf den Filtertrichter, um die Filter zurückzusetzen.")
 
-Ein Klick auf den Filtertrichter setzt die Filter zurück. 
+Ein Klick auf den Filtertrichter setzt die Filter zurück.
 
-Wurde eine Person angewählt, sind auf der rechten Seite die Details über diverse Tabs etwa zu Stammdaten, Einsätzen und so weiter zu erfassen.
+Wurde eine Person angewählt, sind auf der rechten Seite die Details über diverse Reiter etwa zu Stammdaten, Einsätzen und so weiter zu erfassen.

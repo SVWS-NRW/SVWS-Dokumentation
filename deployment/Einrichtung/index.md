@@ -36,7 +36,7 @@ Unter `https://meinserver/admin` steht dann ein AdminClient zur Verfügung, mit 
 | LoggingEnabled | `true` | Einschalten des Loggings. |
 | LoggingPath | `./logs` | Pfad zu den Logdateien. |
 | ServerMode | `null` | Servermode NULL=dev. dev=Developermode alpha=Alphamode, beta=Betamode, stable=Stablemode |
-| PrivilegedDatabaseUser | ``null` | Ist "null" gesetzt, kann sich jeder MariaDB-Benutzer entsprechend der gesetzten Grants auf dem Adminclient einloggen und z.B. die eigenen Datenbanken sichern oder überspielen. Alternativ kann mit "root" z.B. nur diesem MariaDB-Benutzer das Login im AdminClient gewährt werden. |
+| PrivilegedDatabaseUser | ``null` | Ist "null" gesetzt, kann sich jeder MariaDB-Benutzer entsprechend der gesetzten Grants auf dem AdminClient einloggen und z.B. die eigenen Datenbanken sichern oder überspielen. Alternativ kann mit "root" z.B. nur diesem MariaDB-Benutzer das Login im AdminClient gewährt werden. |
 | DBKonfiguration | | Beginn der Datenbankkonfigurationen der verschiedenen Schemata. |
 | dbms | `MARIA_DB` | Momentan einziges unterstütztes DBMS MariaDB mindestens 10.6.x. |
 | location | `localhost` | Adresse des Datenbankservers (Hostename:Port) |

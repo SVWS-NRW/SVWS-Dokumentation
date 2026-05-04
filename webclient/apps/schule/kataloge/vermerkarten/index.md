@@ -6,8 +6,9 @@ Die Vermerke sind über **Vermerkarten** strukturiert, die sich hier im Katalog 
 
 ![Kataloge Vermerkarten](./graphics/svws_kataloge_vermerkarten.png "Legen Sie Vermerkarten an, die später bei Schülern genutzt werden sollen.")
 
-> [!IMPORTANT] Datenschutzbestimmungen beachten
-> Beachten Sie bitte schon bei der Anlange von Vermerkarten die geltenden Bestimmungen zum Datenschutz!
+::: warning Datenschutzbestimmungen beachten
+Beachten Sie bitte schon bei der Anlange von Vermerkarten die geltenden Bestimmungen zum Datenschutz!
+:::
 
 ## Eine Anwendung als Beispiel
 

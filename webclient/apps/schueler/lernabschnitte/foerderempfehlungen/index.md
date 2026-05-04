@@ -1,6 +1,6 @@
 # Förderempfehlungen für Schüler
 
-Verwalten Sie die Förderempfehlungen über die **App Schüler** und dort mit dem **Tab Lernabschnitte ➜ Förderempfehlungen**.
+Verwalten Sie die Förderempfehlungen über die **App Schüler** und dort mit dem **Reiter Lernabschnitte ➜ Förderempfehlungen**.
 
 ![Förderempfehlungen erreichen Sie über Schüler Lernabschnitte Förderempfehlungen](./graphics/svws_schueler_foerderempfehlungen.png "Verwalten Sie die Förderempfehlungen einer Schülerin.")
 
@@ -10,7 +10,7 @@ Wurde ein Lernabschnitt angewählt, lässt sich über das **Plus +** eine Förde
 
 ![Die Maske der Förderempfehlungen zu Diagnose, Maßnahmen und Verantwortlichkeiten](./graphics/svws_schueler_foerderempfehlungen_beispiel.png "Ein sehr rudimentäres Beispiel, wie eine Förderempfehlung ausgefüllt werden könnte.")
 
-Im Beispiel oben finden Sie ein Beispiel den auszufüllenden Inhalten. Die Angabe der **Fächer**, für die diese Maßnahme gilt, ist verpflichtend, andere Felder sind optional auszufüllen.
+Im Beispiel oben finden Sie ein Beispiel zu den auszufüllenden Inhalten. Die Angabe der **Fächer**, für die diese Maßnahme gilt, ist verpflichtend, andere Felder sind optional auszufüllen.
 
 In den drei Feldern zur **Diagnose** ist diese kompetenzorientiert aufzunehmen. Unter **Maßnahme** und **Verantwortlichkeit** werden konkrete Maßnahmen festgehalten, wie die gewünschten Kompetenzbereiche erreicht werden können. Unter Verantwortklichkeit lassen sich eben diese und auch konkrete Maßnahmen in Bezug auf die **Schüler** und **Erziehungsberechtigten** festhalten.
 
@@ -20,7 +20,7 @@ Ist die Fördermaßnahme vollständig formuliert, klicken Sie auf **Texteingabe 
 
 Haben Sie eine Fördermaßnahme vollständig abgeschlossen, setzen Sie hier auch den Haken bei **Förderempfehlung abgeschlossen**.
 
-Beachten Sie hier, dass die Daten erst in die Datenbank geschrieben werden, wenn Sie auf `Speichern` klicken. Klicken Sie auf **Abbrechen** werden alle Eingaben verworfen.
+Beachten Sie hier, dass die Daten erst in die Datenbank geschrieben werden, wenn Sie auf **Speichern** klicken. Klicken Sie auf **Abbrechen** werden alle Eingaben verworfen.
 
 ![Übersicht der FE zusammen mit dem Status, ob sie abgeschlossen sind](./graphics/svws_schueler_foerderempfehlungen_abschluss.png "In der Übersicht wird angezeigt, ob eine Förderempfehlung abgeschlossen ist.")
 

@@ -10,17 +10,17 @@ Die Programmpunkte im SVWS-Client heißen **Apps**.
 
 Je nach Schulform werden mitunter andere Apps angezeigt.
 
-In einer App werden nach Bedarf **Tabs** angezeigt.
+In einer App werden nach Bedarf **Reiter** angezeigt.
 
-![Eventuelle Tabs in einer App](./graphics/SVWS_Tabs.png "Gibt es Tabs, werden diese angezeigt.")
+![Eventuelle Reiter in einer App](./graphics/SVWS_Tabs.png "Gibt es Reiter, werden diese angezeigt.")
 
-Die Tabs können sich auch dymanisch ändern, etwa je nach Jahrgang wird KAoA ein- oder ausgeblendet.
+Die Reiter können sich auch dymanisch ändern, etwa je nach Jahrgang wird KAoA ein- oder ausgeblendet.
 
-Verzweigen sich die Tabs, werden **Untertabs** eingeblendet.
+Verzweigen sich die Reiter, werden **Unterreiter** eingeblendet.
 
-![Die Tabs unter den Tabs heißen "Untertabs"](./graphics/SVWS_TabsUntertabs.png "Weitere Unterpunkte sind über Untertabs zu erreichen.")
+![Die Reiter unter den Reiter heißen "Unterreiter"](./graphics/SVWS_TabsUntertabs.png "Weitere Unterpunkte sind über Unterreiter zu erreichen.")
 
-Hier die Untertabs können sich dynamisch verändern, zum Beispiel werden bei den Lernabschnitten je nach Bedarf die Untertabs zu Abschlussberechnungen eingeblendet.
+Hier die Unterreiter können sich dynamisch verändern, zum Beispiel werden bei den Lernabschnitten je nach Bedarf die Unterreiter zu Abschlussberechnungen eingeblendet.
 
 ### Auswahllisten
 
@@ -40,9 +40,9 @@ Wird mindestens eine Checkbox aktiviert, schaltet der Client automatisch in den 
 
 ## Weitere Bedienbereiche
 
-In einigen Bereichen gibt es nach den Untertabs noch eine weitere Unterteilung. Diese Zeile ist die **Schaltflächenleiste**.
+In einigen Bereichen gibt es nach den Unterreiter noch eine weitere Unterteilung. Diese Zeile ist die **Schaltflächenleiste**.
 
-![Unter den Tabs und Untertrabs folgt eine Schaltflächenleiste](./graphics/SVWS_Schaltflächenleiste.png "Treffen Sie eine weitere Eingrenzung durch die Schaltflächenleiste.")
+![Unter den Reiter und Unterreitern folgt eine Schaltflächenleiste](./graphics/SVWS_Schaltflächenleiste.png "Treffen Sie eine weitere Eingrenzung durch die Schaltflächenleiste.")
 
 Eventuell stehen dann noch weitere Auswahllisten zur Verfügung. Hier im Beispiel nimmt diese Liste die Form einer **Tabelle** an, aus der die Fächer gewählt werden können.
 
@@ -54,7 +54,7 @@ Weiterhin können manche Bereiche als **Kacheln** oder auch **Cards** angeordnet
 
 ## Bedienung des SVWS-Clients
 
-Der SVWS-Client wird über einen üblichen Internet Browser ausgeführt und arbeitet mit den großen Render-Engines für Browser zusammen.
+Der SVWS-Client läuft auf allen modernen Browsern und ist unabhängig vom verwendeten Betriebssystem.
 
 ### Navigation
 
@@ -65,13 +65,13 @@ Der SVWS-Client wird über einen üblichen Internet Browser ausgeführt und arbe
 
 Sofern Personen - wie Lehrkräfte oder Schüler - in Auswahllisten angezeigt werden, findet sich an vielen Stellen ein **Linksymbol 🔗**, über das direkt zu dieser Person gesprungen werden kann.
 
-::tip Oberstufenberatiung
-Diese Symbole finden  besonders in der **App Oberstufe** bei der Laufbahnberatung sehr nützlich.
+::tip Oberstufenberatung
+Diese Symbole sind besonders in der **App Oberstufe** bei der Laufbahnberatung sehr nützlich.
 :::
 
 ### Zoom
 
-Die Funktionen des Browsers werden somit direkt unterstützt, zum Beispiel können Sie das Fenster **zoomen**. Klicken Sie hierzu auf die Zoom-Schaltflächen Ihres Browers oder drücken Sie **Strg und +** oder **Strg + und -**. Über die Maus können Sie Zoomen, indem Sie **Strg** und mit dem **Mausrad hoch** oder **runter** rollen.
+Die Funktionen des Browsers wird direkt unterstützt, zum Beispiel können Sie das Fenster **zoomen**. Klicken Sie hierzu auf die Zoom-Schaltflächen Ihres Browers oder drücken Sie `Strg +` oder `Strg -`. Über die Maus können Sie Zoomen, indem Sie **Strg** und mit dem **Mausrad hoch** oder **runter** rollen.
 
 ### Skalierung
 
@@ -79,15 +79,15 @@ In der SVWS-Oberfläche lässt sich weiterhin unter **Ansicht** die **Skalierung
 
 ### Kontraste
 
-**Dark Mode:** Ebenso lässt sich im SVWS-Client ein *helles* oder *dunkles* Thema wählen. 
+**Dark Mode:** Ebenso lässt sich im SVWS-Client ein *helles* oder *dunkles* Thema wählen.
 
 ### Fensterbreite des SVWS-Clients
 
-Das Fenster passt sich an die Breite des Browserfensters an. 
+Das Fenster passt sich an die Breite des Browserfensters an.
 
 ![Schaltflächen zum Ändern der Ansicht, zum Abmelden und zur Client-Info](./graphics/SVWS_hilfe-root_Ansicht.png "Die Schaltfläche zum Ändern der Ansicht wird je nach Breite des Browserfensters oben rechts oder unten links angezeigt.")
 
-Die Schaltflächen zum Abmelden und Ändern der Ansicht finden sich je nach Broweserbreite oben rechts oder unten links. Weitehrin wird hier die Version des SVWS-Clients über die Client-Info angezeigt.
+Die Schaltflächen zum Abmelden und Ändern der Ansicht finden sich je nach Broweserbreite oben rechts oder unten links. Weiterhin wird hier die Version des SVWS-Clients über die Client-Info angezeigt.
 
 ### Statistikrelevante Felder
 
@@ -95,9 +95,9 @@ Im SVWS-Client werden Felder, die für die **Amtliche Schulstatistik** relevant 
 
 ![Kennzeichung der Statistikrelevanten Felder](./graphics/SVWS_hilfe-root_Statistikrelevanz.png "Die Farbe und das Diagramm-Icon weisen auf die Statistikrelevanz hin.")
 
-Hier im Beispiel wäre die *Straße* eines Lernenden nicht relevant für die Statistik, der *Wohnort* hingebgen schon. 
+Hier im Beispiel wäre die *Straße* eines Lernenden nicht relevant für die Statistik, der *Wohnort* hingegen schon.
 
-Bitte füllen Sie diese Felder direkt so korrekt wie möglich aus und korrigieren Sie Einträge im Vorfeld der Statistik, um dann im Statistikzeitraum schon im Vorfeld für Entlastungen gesorgt zu haben.
+Bitte füllen Sie diese Felder direkt so korrekt wie möglich aus und korrigieren Sie Einträge im Vorfeld der Statistik, um dann im Statistikzeitraum für Entlastung gesorgt zu haben.
 
 ::: tip Tipp
 Schauen Sie in die Schüsseltabellen und Eintragungshilfen von IT.NRW zur Statistik, oftmals lassen sich Fragestellungen durch eine klare Vorgabe direkt lösen.
@@ -105,7 +105,7 @@ Schauen Sie in die Schüsseltabellen und Eintragungshilfen von IT.NRW zur Statis
 
 ### Plausibilitätsfehler
 
-An manchen Stellen werden offensichtliche Plausbilitätsfehler durch ein rotes Feld markiert. 
+An manchen Stellen werden offensichtliche Plausbilitätsfehler durch ein rotes Feld markiert.
 
 ![Rotes Geburtsdatum zeigt einen Plausbilitätsfehler](./graphics/SVWS_hilfe-root_plausibilitätsfehlert.png "Dieses Geburtsdatum wirkt unwahrscheinlich und wird rot markiert.")
 
@@ -116,16 +116,15 @@ Hier im Beispiel ist ein Geburtsjahr in einer Datenbank von 2022 nicht plausibel
 Im Browser installierte Plugins, etwa Screenreader, lassen sich somit auch mit dieser Webseite und im SVWS-Client verwenden.
 
 ::: info Drittsoftware
-Für Drittsoftware wird kein Support unternommen und ein reibungsloses Funktionieren eines externen Plugins mit den Inhalten des SVWS-Clients kann nicht garantiert werden.
+Für Drittsoftware wird kein Support übernommen und ein reibungsloses Funktionieren eines externen Plugins mit den Inhalten des SVWS-Clients kann nicht garantiert werden.
 :::
 
 ## Technische Hintergründe zu den unterschiedlichen Nutzerarten
 
 Es gibt den **Datenbank-root**, dem **Datenbank-Admin** und die tatsächlichen **SVWS-Benutzer**.
 
-* Ein **normaler Nutzer** ist (meistens) eine reale Person mit individuellen Zugriffsrechten. An Nutzer vergebene *Rechte* regeln individuell für jeden Nutzer, welche Operationen auf der Datenbank erlaubt sind. Dies sind die Benutzer, über die mit den Daten gearbeitet wird. Einem solchen Benutzer können je nach verwendeten Client, etwa SchILD NRW 3, "Administratorrechte" zugewiesen werden, um zum Beispiel die Datenbank zu sichern und wiederherzustellen. Dieser Typ von Benutzer ist der einzige, mit dem im täglichen Betrieb gearbeitet wird. Die anderen Nutzer sind nur technisch relevant:
+* Ein **normaler Nutzer** ist (meistens) eine reale Person mit individuellen Zugriffsrechten. An Nutzer vergebene *Rechte* regeln individuell für jeden Nutzer, welche Operationen auf der Datenbank erlaubt sind. Dies sind die Benutzer, über die mit den Daten gearbeitet wird. Einem solchen Benutzer können je nach verwendeten Client, etwa SchILD-NRW 3, "Administratorrechte" zugewiesen werden, um zum Beispiel die Datenbank zu sichern und wiederherzustellen. Dieser Typ von Benutzer ist der einzige, mit dem im täglichen Betrieb gearbeitet wird. Die anderen Nutzer sind nur technisch relevant:
 
-* Der **Root-Benutzer** der MariaDB ist ein Super-Administrator-Zugang auf den MariaDB-Server an sich. Er hat Zugriffsrechte auf alle Datenbanken auf dem Server und kann diese anlegen und löschen. Er kann beliebige weitere Datenbank-Administratoren anlegen. Im täglichen Betrieb wird dieser Nutzer nicht benötigt und häufig wird nur die IT diesen Nutzer haben. Geht das Root-Kennwort für die MariaDB verloren, kann dieses Passwort nicht mehr angezeigt oder verändert werden und neue Schemata können nicht mehr angelegt werden.
+* Der **Root-Benutzer** der MariaDB ist ein Super-Administrator-Zugang auf dem MariaDB-Server an sich. Er hat Zugriffsrechte auf alle Schemata auf dem Server und kann diese anlegen und löschen. Er kann beliebige weitere Datenbank-Administratoren anlegen. Im täglichen Betrieb wird dieser Nutzer nicht benötigt und häufig wird nur die IT diesen Nutzer haben. Geht das Root-Kennwort für die MariaDB verloren, kann dieses Passwort nicht mehr angezeigt oder verändert werden und neue Schemata können nicht mehr angelegt werden.
 
 * Ein **Schema-Benutzer** ist ein Administrator-Zugang mit vollen Zugriffsrechten auf ein bestimmtes Schema, das heißt eine einzelne "Datenbank". In den Beispielen hier wird dieser oft *svws_admin* oder *svwsadmin* genannt. Ein Datenbank-Benutzer kann auch mit gleichem Namen und Passwort für mehrere Schemata/Datenbanken gelten. Er kann diese Datenbank nicht löschen, aber jede Veränderung innerhalb des Schemas/der Datenbank vornehmen. Zum Beispiel nutzt ein Client wie SchILD-NRW 3 diese Zugangsdaten, um auf die Datenbank zuzugreifen. Auch dieser Nutzer wird im täglichen Betrieb in der Regel nicht benötigt.
-

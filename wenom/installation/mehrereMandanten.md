@@ -14,13 +14,13 @@ SetEnv ENM_DB_DIR <Pfad_zum_Verzeichnis>
 
 Diese Variable wird von der WeNoM-Installation ausgelesen und bestimmt – abhängig vom in der jeweiligen Virtual-Host-Konfiguration angegebenen Servernamen – den Speicherort der SQLite-Datenbank sowie der zugehörigen Zugangsdaten.
 
-## Beispielkonfiguration 
+## Beispielkonfiguration
 
 In dem folgenden Beispiel soll nun für *"Schule1"* ein separater Zugang zu einer separaten Datenbank inklusive der *Secret Credentials* geschaffen werden:
 
-+ Separaten Speicherort für *"Schule1"* unter dem Ordner `db` der Wenom Installation anlegen. Zum Beispiel:
++ Separaten Speicherort für *"Schule1"* unter dem Ordner `db` der WeNoM Installation anlegen. Zum Beispiel:
 
-```bash 
+```bash
 mkdir /var/www/html/db/schule1
 ```
 
@@ -33,7 +33,7 @@ mkdir /var/www/html/db/schule1
 Achtung, in diesem Beispiel wird ein selbstsigniertes Zertifikat verwendet. Nutzen Sie Dienste wie Let's Encrypt, um von Browsern akzeptierte Zertifikate für einen sicheren Zugang zu erstellen.
 :::
 
-```bash 
+```bash
 echo "
 <VirtualHost *:443>
         ServerAdmin webmaster@localhost
@@ -63,11 +63,11 @@ echo "
 " >> /etc/apache2/sites-available/schule1.conf
 ```
 
-Hierbei ist zu beachten, dass `schule1.your_domain.xyz`, `SetEnv ENM_DB_DIR db/schule1` und `/etc/apache2/sites-available/schule1.conf` entsprechend der vorhanden Domain (your_domain.xyz) und dem von Ihnen gewählten Schulnamen (schule1) angepasst werden. 
+Hierbei ist zu beachten, dass `schule1.your_domain.xyz`, `SetEnv ENM_DB_DIR db/schule1` und `/etc/apache2/sites-available/schule1.conf` entsprechend der vorhanden Domain (your_domain.xyz) und dem von Ihnen gewählten Schulnamen (schule1) angepasst werden.
 
 Nun noch die neue Seite unter `sites-enabled` verlinken und den Apache-Server neu starten:
 
-```bash 
+```bash
 ln -s /etc/apache2/sites-available/schule1.conf /etc/apache2/sites-enabled/schule1.conf
 systemctl restart apache2
 ```
@@ -84,14 +84,14 @@ SetEnvIf Host "^wenom.(.*).schultraeger-url.de" dbfolder=db/$1
 
 Hier wird beim Aufruf von `https://wenom.schule1.schultraeger-url.de` der Ordner `/db/schule1` verwendet, beim Aufruf von `https://wenom.schule2.schultraeger-url.de` der Ordner `/db/schule2`, u.s.w...
 
-Dies ist relativ komfortabel einzurichten im Vergleich zur ersten Methode, birgt jedoch die Gefahr, dass die `htaccess` beim nächsten Update überschrieben wird. 
+Dies ist relativ komfortabel einzurichten im Vergleich zur ersten Methode, birgt jedoch die Gefahr, dass die `htaccess` beim nächsten Update überschrieben wird.
 
 
 ## Reverse Proxy Einstellungen
 
-Beim Betrieb hinter einem Reverse Proxy muss darauf geachtet werden, dass die Header-Information korrekt durchgereicht wird. In oben genanntem Beispiel sind die folgenden Einstellungen in `/etc/nginx/sites-available/schule1.conf` zu ergänzen: 
+Beim Betrieb hinter einem Reverse Proxy muss darauf geachtet werden, dass die Header-Information korrekt durchgereicht wird. In oben genanntem Beispiel sind die folgenden Einstellungen in `/etc/nginx/sites-available/schule1.conf` zu ergänzen:
 
-```bash 
+```bash
     add_header 'Content-Security-Policy' 'upgrade-insecure-requests';
     proxy_set_header X-Content-Type-Options nosniff;
     proxy_set_header X-Frame-Options "SAMEORIGIN";

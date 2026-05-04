@@ -1,6 +1,6 @@
 # Fahrschülerarten
 
-Über diesen Katalog werden die Fahrschülerarten definiert, die an Ihrer Schule relevant sind. 
+Über diesen Katalog werden die Fahrschülerarten definiert, die an Ihrer Schule relevant sind.
 
 Legen Sie einen neuen Eintrag mit dem **Plus +** fest.
 

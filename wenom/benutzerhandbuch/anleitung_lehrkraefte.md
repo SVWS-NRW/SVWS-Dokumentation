@@ -77,7 +77,7 @@ Ist das Feld *mit einem Haken versehen* und *inaktiv* - wird also ohne Checkbox 
 Bei einer Schülerin neu gesetzte Mahnungen sind am gesetzten Haken und der *roten Färbung* erkennbar. Diese Mahnungen können weiterhin bearbeitet werden.
 
 ::: info Update des Mahnungs-Status
-Werden die Noten und Mahnungen aus WeNoM in den SVWS-Webclient übertragen und dort verarbeitet, wird der Zustand der Mahnung auf *ausgesprochen* beziehungsweise *versendet* geändert. Dies bedeutet nach einer weiteren Rück-Synchronisation mit WeNoM, dass der Status hier auf *angehakt* und *inaktiv* wechselt.
+Werden die Noten und Mahnungen aus WeNoM in den SVWS-WebClient übertragen und dort verarbeitet, wird der Zustand der Mahnung auf *ausgesprochen* beziehungsweise *versendet* geändert. Dies bedeutet nach einer weiteren Rück-Synchronisation mit WeNoM, dass der Status hier auf *angehakt* und *inaktiv* wechselt.
 :::
 
 #### Fachbezogene Fehlstunden eintragen

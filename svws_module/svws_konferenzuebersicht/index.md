@@ -10,7 +10,7 @@ Die **SVWS-Konferenübersicht** dient dazu, alle Leistungsdaten einer Schülergr
 Die SVWS-Konferenzübersicht ist derzeit noch nicht als Release verfügbar, dieser ist jedoch kurzfristig zu erwarten.
 :::
 
-Sie können sich in einer Netzwerkumgebung direkt mit dem SVWS-Server verbinden oder die Datei `enm.json.gz` manuell laden, die über den SVWS-Webclient exportiert wurde, so dass das SVWS-Konferenzmodul auch vollständig offline genutzt werden kann.
+Sie können sich in einer Netzwerkumgebung direkt mit dem SVWS-Server verbinden oder die Datei `enm.json.gz` manuell laden, die über den SVWS-WebClient exportiert wurde, so dass das SVWS-Konferenzmodul auch vollständig offline genutzt werden kann.
 
 Die SVWS-Konferenzübersicht läuft im direkt in einem Browser, ohne dass ein weiterer Server zur Verfügung gestellt werden muss. Die Anwendung ist so gestaltet, dass alle Daten im Browser verarbeitet werden.
 
@@ -42,6 +42,6 @@ Beachten Sie die Datenschutzrichtlinien Ihrer Schule und des geltenden Rechtsrah
 
 * Die App selbst kann als statische Dateien auf einem zentralen Laufwerk oder einem Schulserver bereitgestellt werden. Jeder Nutzer, der die `index.html` gestartet hat, lädt dann die Seite im lokalen Browser des verwendeten Clients und damit eigene Konferenzdaten.
 
-* Die Anwendung verarbeitet den SVWS-Export durch den **SVWS-Webclient** als `enm.json.gz`. Andere Dateitypen - oder aus anderen Programmen exportierte Daten - werden nicht unterstützt.
+* Die Anwendung verarbeitet den SVWS-Export durch den **SVWS-WebClient** als `enm.json.gz`. Andere Dateitypen - oder aus anderen Programmen exportierte Daten - werden nicht unterstützt.
 
 * Ankreuzkompetenzen sind derzeit nicht unterstüzt.

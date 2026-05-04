@@ -10,7 +10,7 @@ Im linken Bereich sind nun die Login-Daten anzugeben:
 
 - SVWS-Server-URL beziehungsweise die Server-IP-Adresse im lokalen Netzwerk, tragen Sie hier das Präfix `https://` mit ein. Verbinden Sie sich also beispielsweise mit `https://name-des-svws-servers` oder `https://127.0.0.1`. Haben Sie den Server auf einem bestimmten Port liegen, tragen Sie diesen ebenfalls ein, für den Port *8443* zum Beispiel wäre dies `https://mein-verwaltungsserver:8443`. Fragen Sie im Zweifel Ihre IT für die konkreten Daten.
 - Den Schema-Namen auf dem Server, dies ist der **Name Ihrer "Datenbank"**.
-- Einen Datenbank-Benutzernamen, mit dem Sie sich etwa normalerweise auch im SWVS-Webclient oder in anderen Programmen anmelden. In der Konferenzübersicht hat dieser die üblichen Rechte zum Ansehen und Ändern von Schüler-Leistungsdaten.
+- Einen Datenbank-Benutzernamen, mit dem Sie sich etwa normalerweise auch im SWVS-WebClient oder in anderen Programmen anmelden. In der Konferenzübersicht hat dieser die üblichen Rechte zum Ansehen und Ändern von Schüler-Leistungsdaten.
 - Das zugehörige Passwort.
 
 Nutzen Sie ein eigenes **Zertifikat**, klicken Sie an, dass dem **Zertifikat vertrauen**.
@@ -23,9 +23,9 @@ Wenn die Verbindung fehlschlägt, prüfen Sie URL/Adresse, die Zugangsdaten, die
 
 Wenn kein direkter Serverzugriff möglich oder gewünscht ist:
 
-1. Exportieren Sie die `enm.json.gz` im SVWS-Webclient über die **App Schule ➜ Datenaustausch ➜ ENM Notenmanager**. Speichern Sie diese Datei an einem sinnvollen Ort. Beachten Sie den Datenschutz.
+1. Exportieren Sie die `enm.json.gz` im SVWS-WebClient über die **App Schule ➜ Datenaustausch ➜ ENM Notenmanager**. Speichern Sie diese Datei an einem sinnvollen Ort. Beachten Sie den Datenschutz.
 
-![Datenexport im SVWS-Webclient über die App Schule Datenaustausch](./graphics/konferenz_webclient_datenExportieren.png "Exportieren Sie die gesammelten Daten aus dem SVWS-Webclient.")
+![Datenexport im SVWS-WebClient über die App Schule Datenaustausch](./graphics/konferenz_webclient_datenExportieren.png "Exportieren Sie die gesammelten Daten aus dem SVWS-WebClient.")
 
 2. Laden Sie diese Datei nun im SVWS-Konferenzmodul im rechten Bereich hoch, indem Sie `Datei auswählen` anklicken. Achten Sie hier unbedingt darauf, die korrekte Datei zu nutzen und nicht zum Beispiel eine alte aus dem letzten Lernabschnitt.
 3. Darstellung der Daten prüfen
