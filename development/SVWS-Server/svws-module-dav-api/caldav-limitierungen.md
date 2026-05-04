@@ -14,7 +14,7 @@ Für die CardDav-Api wurde bisher nur der Weg der generierten Adressbücher eing
 
 **Fehlende Konfiguration für Standardwerte**
 
-Es gibt eine Reihe von Standardwerten, die in der SWVS-Konfiguration hinterlegt werden sollten. Dies ist bisher nicht umgesetzt, auch die Clients fragen diese Werte nicht an. 
+Es gibt eine Reihe von Standardwerten, die in der SVWS-Konfiguration hinterlegt werden sollten. Dies ist bisher nicht umgesetzt, auch die Clients fragen diese Werte nicht an. 
 
 ## Tests
 
