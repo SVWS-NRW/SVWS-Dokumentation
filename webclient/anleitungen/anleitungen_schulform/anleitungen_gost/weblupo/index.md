@@ -11,7 +11,7 @@ Nach erfolgreicher Bearbeitung kann die Datei durch Drücken des `Exportieren`-B
 Informationen zur Installation des WebLuPO-Clients und weitere technische Hintergrundinformationen finden Sie auf dieser Webseite im Bereich der technischen Dokumentationen unter *Administration/Entwicklung* und dann im Bereich der *Projekte*.
 
 ::: info Weitere Informationen
-Informationen mit allen Details und Anmerkungen finden sich im jeweiligen Artikel der **Tabs** in der **App Oberstufe**.
+Informationen mit allen Details und Anmerkungen finden sich im jeweiligen Artikel der **Reiter** in der **App Oberstufe**.
 
 Beachten Sie, dass das neue Dateiformat **nicht** mit den alten Dateien des Programms "LuPO" für MS Windows  kompatibel ist.
 :::

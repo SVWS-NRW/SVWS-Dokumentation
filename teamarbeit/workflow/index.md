@@ -44,7 +44,7 @@ Die Entwicklung findet grundsätzlich im `dev`-Branch statt und erfordert das An
 
 Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizenz](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)
 
-Änderungen, z.B. weitere Tabs oder Cards, die auch die Bedienung des Clients ändern, werden über Feature-Branches eingebracht.
+Änderungen, z.B. weitere Reiter oder Cards, die auch die Bedienung des Clients ändern, werden über Feature-Branches eingebracht.
 
 Beim Anlegen eines neuen Feature-Branch gilt die Verabredung, den Branch mit dem verwendeten git-Kürzel/Benutzernamen zu versehen und das Feature zu nennen, z.B. `hmt/kaoa-card`. Alternativ können auch die von der jeweiligen Git-Plattform angebotenen Feature-Branch-Hilfen verwendet werden, die bei der Erstellung von Issues angezeigt werden.
 

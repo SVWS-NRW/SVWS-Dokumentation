@@ -2,7 +2,7 @@
 
 ## Tab Blockung
 
-![Kurs42-Datenimport: Ansicht der Tabs](./graphics/svws_schule_datenaustausch_kurs_tabs.png "Die Tabs aus dem Datenimport zu Kurs42: Blockung und Räume.")
+![Kurs42-Datenimport: Ansicht der Reiter](./graphics/svws_schule_datenaustausch_kurs_tabs.png "Die Reiter aus dem Datenimport zu Kurs42: Blockung und Räume.")
 
 Importieren Sie eine mit Kurs42 erstellte Blockung. Hierbei sind folgende Dateien erst aus Kurs42 zu exportieren und dann hier zu importieren:
 + Blockung.txt

@@ -8,4 +8,4 @@ Diese Daten werden für den aktuellen und alle vorherigen Lernabschnitte gespeic
 
 Die übrigen Unterreiter werden dynamisch ein- und ausgeblendet und hängen von der Schulform und Jahrgang ab.
 
-Hier werden also je nach Bedarf auch Untertabs zu Zeugniskonferenzen, Abschluss- und Versetzungsberechnen, der ZP 10 und anderen zentralen Klausuren (ZK), dem schulischen Teil der Fachhochschulreife (FHR), dem Abitur und so weiter eingeblendet.
+Hier werden also je nach Bedarf auch Unterreiter zu Zeugniskonferenzen, Abschluss- und Versetzungsberechnen, der ZP 10 und anderen zentralen Klausuren (ZK), dem schulischen Teil der Fachhochschulreife (FHR), dem Abitur und so weiter eingeblendet.

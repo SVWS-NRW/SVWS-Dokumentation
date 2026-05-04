@@ -18,7 +18,7 @@ Sie können auch die Fokusbereiche direkt anspringen, ohne die Fokusbereiche zuv
 
 * `Alt + 1` springt immer in den App-Bereich
 * `Alt + 4` in die Auswahlliste und 
-* `Alt + 5`, `Alt + 6` und `Alt + 7` springt in die Tabs und dann absteigend in weitere Untertab-Bereiche.
+* `Alt + 5`, `Alt + 6` und `Alt + 7` springt in die Reiter und dann absteigend in weitere Unterreiter-Bereiche.
 
 ![Alt + 5, Alt + 6 und Alt + 7 springt in Reiter und Unterreiter](./graphics/svws_tastaturnavigation_fokusbereiche_untertabs.png "Alt + 5 werden die Reiter ansprungen, 6 und 7 dann absteigende Ebenen von Unterreitern.")
 
