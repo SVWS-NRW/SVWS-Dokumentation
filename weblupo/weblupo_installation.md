@@ -14,7 +14,7 @@ Das bedeutet konkret, dass die Daten der Nutzer immer lokal auf ihrem PC, Tablet
 
 Die Schülerinnen und Schüler können damit am Webbrowser individuell ihre Laufbahnplanung durchführen. Nachdem die Planung abgeschlossen ist, kann die Datei lokal gespeichert werden.
 
-Dazu klicken Sie auf die Schaltfläche `Exportieren` und die Datei wird normalerweise im Download-Ordner des verwendeten Endgeräts gespeichert.
+Dazu klicken Sie auf die Schaltfläche **Exportieren** und die Datei wird normalerweise im Download-Ordner des verwendeten Endgeräts gespeichert.
 
 ## Systemvoraussetzungen
 
@@ -22,7 +22,7 @@ Für die Bereitstellung des Clients ist ein einfacher Webspace ausreichend, ohne
 
 ## Installation per zip download
 
-Die aktuelle SVWS-Laufbahnplanung-x.y.z.zip kann vom [Github repository](https://github.com/SVWS-NRW/SVWS-Server/releases) heruntergeladen werden.
+Die aktuelle `SVWS-Laufbahnplanung-x.y.z.zip` kann vom [Github repository](https://github.com/SVWS-NRW/SVWS-Server/releases) heruntergeladen werden.
 
 Entpacken Sie diese Datei im Webverzeichnis Ihres Hosters.
 
@@ -34,9 +34,9 @@ wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v0.8.8/SVWS-Laufb
 unzip SVWS-Laufbahnplanung-0.8.8.zip
 ```
 
-## Aktualisieren per zip-download
+## Aktualisieren per zip-Download
 
-Die Dateien müssen lediglich ersetzt werden. Um sicher zu gehen, empfiehlt es  sich, zuvor die alten Dateien zu entfernen.
+Die Dateien müssen lediglich ersetzt werden. Um sicher zu gehen, empfiehlt es sich, zuvor die alten Dateien zu entfernen.
 
 Hier ist ein Beispiel für ein Debian 12 mit Apache2 als Webserver:
 

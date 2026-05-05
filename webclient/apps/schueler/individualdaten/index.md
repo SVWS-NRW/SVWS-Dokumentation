@@ -16,10 +16,9 @@ Erfassen Sie **Namen** und **Rufname** der Schüler. Die Auflistung *aller* Vorn
 
 Im Feld **Geschlecht** sind die Werte *männlich*, *weiblich*, *divers* oder *Ohne Angabe* auswählbar.
 
-Zu den Geburtsdaten lassen sich **Geburtsdatum**, der **Geburtsort** und eineventuell abweichender **Geburtsname** aufnehmen.
+Zu den Geburtsdaten lassen sich **Geburtsdatum**, der **Geburtsort** und ein eventuell abweichender **Geburtsname** aufnehmen.
 
-Über die Schaltfläche **Schulbescheinigung drucken** oben rechts im Fenster wird in einem neuen Tab die Schulbescheinigung zum aktuellen Schüler als PDF-Datei geöffnet.\
-![Schaltfläche Schulbescheinigung drucken](./graphics/SVWS_schueler_individualdaten_Schulbescheinigung2.png "Schaltfläche Schulbescheinigung drucken")
+Über die Schaltfläche **Schulbescheinigung drucken** oben rechts im Fenster wird in einem neuen Tab die Schulbescheinigung zum aktuellen Schüler als PDF-Datei geöffnet. ![Schaltfläche Schulbescheinigung drucken](./graphics/SVWS_schueler_individualdaten_Schulbescheinigung2.png "Schaltfläche Schulbescheinigung drucken")
 
 [Beispiel für eine Schulbescheinigung](./graphics/SVWS_schueler_individualdaten_Schulbescheinigung.png "Schulbescheinigung")
 
@@ -27,7 +26,7 @@ Unter dem Menüpunkt Anleitungen ist eine [ausführliche Anleitung zum Drucken e
 
 ## Wohnort und Kontaktdaten
 
-![Die Kontaktdaten wie Adresse, Telefon, E-Mail](./graphics/SVWS_schueler_individualdaten_kontaktdaten.png "Erfassen Sie die Kontakgdaten der Schüler.")
+![Die Kontaktdaten wie Adresse, Telefon, E-Mail](./graphics/SVWS_schueler_individualdaten_kontaktdaten.png "Erfassen Sie die Kontaktdaten der Schüler.")
 
 Über die Kontaktdaten werden eben diese Daten der Schüler erfasst.
 
@@ -43,9 +42,9 @@ Beachten Sie beim Eintrag der **Konfession** auch die aktuellen Vorgaben zu dies
 
 Die Konfessionen werden in ihrem Katalog statistikonform aufgenommen.
 
-Haken Sie über **Konfessione aufs Zeugnis** an, ob die Konfession über die Zeugnisformulare ausgebene werden soll oder nicht.
+Haken Sie über **Konfession aufs Zeugnis** an, ob die Konfession über die Zeugnisformulare ausgegeben werden soll oder nicht.
 
-Ist ein Schüler über die Konfession automatisch einem Religionunsunterricht zugeordnet oder diesen eben nicht, werden die **Abnmeldungen vom Religionsunterricht** und **Wiederanmeldungen** über diese Datumsfelder erfasst.
+Ist ein Schüler über die Konfession automatisch einem Religionunsunterricht zugeordnet oder eben nicht, werden die **Abmeldungen vom Religionsunterricht** und **Wiederanmeldungen** über diese Datumsfelder erfasst.
 
 Die Felder sind statstikrelevant, liegen aber keine Meldungen vor, sind auch Leereinsträge zulässig.
 
@@ -55,7 +54,7 @@ Ist der Haken bei **Migrationshintergrund vorhanden** gesetzt, können die Herku
 
 ![Bei aktiviertem Haken "Migrationshintergrund vorhanden" kann dieser erfasst werden](./graphics/SVWS_schueler_individualdaten_Migrationshintergrund.png "Bei aktiviertem Haken unter Migrationshintergrund vorhanden, kann dieser erfasst werden.")
 
-Erfassen Sie **Zuzzugsjahr**, **Genurtsland** und die **Verkehrssprache** in der Familie. Weiterhin die Geburtsländer der Eltern.
+Erfassen Sie **Zuzugsjahr**, **Geburtsland** und die **Verkehrssprache** in der Familie. Weiterhin die Geburtsländer der Eltern.
 
 Hat ein Schüler einen Migrationshintergrund, sind diese Daten statistikrelevant.
 
@@ -73,11 +72,11 @@ Weiterhin werden mit dem **Anmeldedatum** das Datum der Schulanmeldung und das *
 
 Das Aufnahmedatum ist in der Regel der Beginn des Schuljahres, ansonsten das Datum, an dem bei einem Wechsel im laufenden Schuljahr die offzielle Beschulung begann.
 
-Die Felder, ob ein Schüler **Volljährig** ist ider die **Schulpflicht** erfüllt wurde, werden automatisch ausgefüllt. Analog gilt dies auch für die Schulpflicht der SII.
+Die Felder, ob ein Schüler **Volljährig** ist oder die **Schulpflicht** erfüllt wurde, werden automatisch ausgefüllt. Analog gilt dies auch für die Schulpflicht der SII.
 
 Setzen Sie die Haken bei **Masern Impfnachweis** und **BAFöG** nach Bedarf.
 
-Über **Keine Auskunft an Dritte** lässt sich ein Datensatz so markieren, dass besondere Vorsicht bei Auskunftsanfragen walten zu lassen ist.
+Über **Keine Auskunft an Dritte** lässt sich ein Datensatz so markieren, dass besondere Vorsicht bei Auskunftsanfragen geboten ist.
 
 ![Die große Warnung wird gezeigt, wenn der Haken bei "Keine Auskunft an Dritte" gesetzt wurde](./graphics/SVWS_schueler_individualdaten_KeineAuskunftAnDritte.png "Bei gesetztem Haken erscheint eine große Warnung.")
 
@@ -85,7 +84,7 @@ Der **Status** gibt an, welche Rolle die Person im Schulbetrieb spielt.
 
 ![Die unterschiedlichen Status, die für Schüler vergeben werden können.](./graphics/SVWS_schueler_individualdaten_Statusdaten_Dropdown.png "Die Status der Schüler, die vergeben werden können. Die aktiven Schüler haben den Status Aktiv oder Extern.")
 
-* Schüler in der **Neuafaufnahme** sind an der Schule aufgenommen, aber noch nicht aktiv einer Klasse zugeordnet. In der Regel finden sich hier die Schüler, die aufgenommen werden, aber erst im kommenden Schuljahr dem Regelbetrieb zugeordnet werden.
+* Schüler in der **Neuaufnahme** sind an der Schule aufgenommen, aber noch nicht aktiv einer Klasse zugeordnet. In der Regel finden sich hier die Schüler, die aufgenommen werden, aber erst im kommenden Schuljahr dem Regelbetrieb zugeordnet werden.
 * Haben Sie Schüler, die noch nicht aufgenommen sind, aber für die dies eventuell noch geschehen könnte, können Sie die grundlegenden Daten, etwa zum Kontaktieren erfassen. Weisen Sie diesen Schülern den Status **Warteliste** zu.
 * Die aktuell beschulten Schüler sind **Aktiv**.
 * Eventuell haben Sie aktive Schüler, die aber gerade **Beurlaubt** sind. Diese werden mit dem entsprechend Status markiert.

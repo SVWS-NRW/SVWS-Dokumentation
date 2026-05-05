@@ -35,7 +35,7 @@ Loggen Sie sich mit dem root-Nutzer Ihrer MariaDB und dem **MaridaDB-root-Passwo
 
 Im AdminClient selbst gibt es wieder **Apps**, die zu unterschiedlichen Administrationsbereichen führen.
 
-![Die Apps](./graphics/SVWS_adminclient_apps.png "Die Apps im Adminclient.")
+![Die Apps](./graphics/SVWS_adminclient_apps.png "Die Apps im AdminClient.")
 
 Derzeit finden sich Apps zum Schemata-Management und zur Konfiguration des SVWS-Servers.
 

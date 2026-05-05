@@ -24,13 +24,13 @@ In besonderen Fällen kann nur hoch- beziehungsweise heruntergeladen werden, so 
 
 ![Daten zurücksetzen](./graphics/datenzurücksetzen.png)
 
-Im normalen, halbjährlichen Schulabschnittswechsel können mit dem Punkt `Daten entfernen` alte Zeugnisdaten zur Sicherheit aus dem, über das Internet erreichbare, System genommen werden. Zum einen sind diese Daten dann überhaupt nicht mehr in WeNoM abrufbar und zum anderen kann ein neuer Lernabschnitt auf dem WeNoM sauber begonnen werden.
+Im normalen, halbjährlichen Schulabschnittswechsel können mit dem Punkt **Daten entfernen** alte Zeugnisdaten zur Sicherheit aus dem, über das Internet erreichbare, System genommen werden. Zum einen sind diese Daten dann überhaupt nicht mehr in WeNoM abrufbar und zum anderen kann ein neuer Lernabschnitt auf dem WeNoM sauber begonnen werden.
 
-Falls ein installierter Webnotenmanager vollständig aufgegeben oder vollständig neu initialisiert werden soll und der schulfachliche Administrator somit die Löschung aller Daten auf dem WeNoM-Server durchführen muss, kann dies über den Schalter `Daten, Konfiguration und Benutzer entfernen` erreicht werden.
+Falls ein installierter WebNotenManager vollständig aufgegeben oder vollständig neu initialisiert werden soll und der schulfachliche Administrator somit die Löschung aller Daten auf dem WeNoM-Server durchführen muss, kann dies über den Schalter `Daten, Konfiguration und Benutzer entfernen` erreicht werden.
 
 ### Verbindungsdaten löschen oder erneuern
 
-Wenn ein neues Secret benötigt wird oder ein Wenom-Server gelöscht werden soll, können die noch eingetragenen Zugangsdaten unter `Verbindungsdaten einrichten` gelöscht, beziehungsweise erneuert werden.
+Wenn ein neues Secret benötigt wird oder ein WeNoM-Server gelöscht werden soll, können die noch eingetragenen Zugangsdaten unter `Verbindungsdaten einrichten` gelöscht, beziehungsweise erneuert werden.
 
 ![WenomVerbindungLoeschen.png](graphics/WenomVerbindungLoeschen.png "Löschen Sie die Verbindungsdaten für einen WeNoM-Server.")
 
@@ -44,11 +44,11 @@ Die Möglichkeit zur Verbindung kann gegebenenfalls wiederhergestellt werden, fa
 
 Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialkennwort*. In Kombination mit der *Dienstlichen Emailadresse* als Benutzername ist dieses Kennwort der individuelle Erstzugang zum WebNotenManager.
 
-![Lehrer-Zugangsdaten](./graphics/lehrer-zugangsdaten.png "Im SVWS-Webclient sind die Initialkennworte hinterlegt.")
+![Lehrer-Zugangsdaten](./graphics/lehrer-zugangsdaten.png "Im SVWS-WebClient sind die Initialkennworte hinterlegt.")
 
 Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehler markiert und nicht zum WeNoM-Server übertragen.
 
-Ebenso werden ausschließlich Dienstmailadressen und keine privaten Email-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet. Liegt im Lehrerdatensatz kein gültiger Eintrag im Datenfeld *dienstliche Email* vor, so erhält diese Lehrkraft kein Login für den Webnotenmanager.
+Ebenso werden ausschließlich Dienstmailadressen und keine privaten Email-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet. Liegt im Lehrerdatensatz kein gültiger Eintrag im Datenfeld *dienstliche Email* vor, so erhält diese Lehrkraft kein Login für den WebNotenManager.
 
 ::: warning SVWS-Benutzer vs WeNoM-Benutzer
 Die Personengruppe der SVWS-Benutzer entspricht nicht den WeNoM-Benutzern: Die unter Noten -> Administration -> Zugangsdaten aufgeführte Personengruppe sind Unterrichtende oder mit Koordination und Klassenleitung Beauftragte. 

@@ -1,14 +1,14 @@
-# Stundenplan 
+# Stundenplan
 
 Wurde ein **Stundenplan** für eine Person hinterlegt, wird dieser hier nun angezeigt.
 
-::: info Schüleransicht ist nur-lesen
+::: info Schüleransicht ist Nur-Lesen
 Der Stundenplan lässt sich in dieser Ansicht nicht bearbeiten.
 :::
 
 ![Beispielstundenplan](./graphics/svws_schueler_stundenplan.png "Ein Ausschnitt aus einem Stundenplan.")
 
-Oben rechts lässt sich unter **Stundenplan** auswählen, welcher von mehreren Stundenplänen gelten soll. Direkt oben links im Kopf steht dann, für welchen Zeitraum dieser Stundenplan gültig ist.
+Oben rechts lässt sich unter **Stundenplan** auswählen, welcher von mehreren Stundenplänen angezeigt werden soll. Direkt oben links im Kopf steht dann, für welchen Zeitraum dieser Stundenplan gültig ist.
 
 Über **Keine leeren Stunden** werden eventuell leere Stundenzeilen ausgeblendet.
 

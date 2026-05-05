@@ -58,7 +58,7 @@ Navigieren Sie zur Beratung zu WebLuPO. Hier finden Sie die [Erläuterungen zur 
 
 Bei der Wahl fallen wieder WebLuPO-Dateien an, die dort exportiert werden und dann wieder im SVWS-WebClient eingelesen werden.
 
-## Weitereinlesen der WebLuPO-Dateien im SVWS-Webclient
+## Weitereinlesen der WebLuPO-Dateien im SVWS-WebClient
 
 Gehen Sie wieder in der **App Oberstufe** in den **Tab Laufbahnen** und wählen Sie den betreffenden *Abitur-Jahrgang* an.
 

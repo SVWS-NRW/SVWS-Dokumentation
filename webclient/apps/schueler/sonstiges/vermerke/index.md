@@ -1,8 +1,8 @@
-Vermerke bei Schülern setzen
+## Vermerke bei Schülern setzen
 
 Setzen Sie in der **App Schüler** über den **Tab Sonstiges Vermerke** beliebige Anmerkungen zu Schülern.
 
-Vermerke werden durch **Vermerkarten** gegliedert und sortiert. Neue Vermerkarten lassen sich über die **App Schule** im **Katalog Vermerkarten** erzeugen. Eine Vermerkart, die (noch)) bei einer Person gesetzt ist, kann im Katalog nicht mehr verändert oder gelöscht werden.
+Vermerke werden durch **Vermerkarten** gegliedert und sortiert. Neue Vermerkarten lassen sich über die **App Schule** im **Katalog Vermerkarten** erzeugen. Eine Vermerkart, die (noch) bei einer Person gesetzt ist, kann im Katalog nicht mehr verändert oder gelöscht werden.
 
 ![Übersicht der gesetzten Vermerke](./graphics/svws_schueler_vermerke.png "Erzeugen Sie Vermerke, um Informationen über Schülerinnen festzuhalten.")
 

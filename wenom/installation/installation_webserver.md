@@ -124,7 +124,7 @@ SVWSVERSION=1.2.2
 
 
 ```bash
-echo "Download und Entpacken Wenom von $DOWNLOADPATH"
+echo "Download und Entpacken WeNoM von $DOWNLOADPATH"
 cd $INSTALLPATH
 wget $DOWNLOADPATH
 unzip -o SVWS-ENMServer-${SVWSVERSION}.zip

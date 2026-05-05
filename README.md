@@ -75,7 +75,7 @@ Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr 
 * In manchen Bereichen steht noch eine **graue Schaltflächenleiste** (Bezeichnung Todo) zur Verfügung.
 
 ### Schreibweisen und Groß- und Kleinschreibung
-SVVWS-Webclient, AdminClient, SchILD-NRW, WeNoM, GOSt, WebLuPO, ...
+SVVWS-WebClient bzw. WebClient oder auch SVWS-Client, AdminClient, SchILD-NRW, WeNoM, GOSt, WebLuPO, ...
 
 ### Web-Dokumentationen
 
@@ -86,7 +86,7 @@ Tatsächliche Anleitungen, Tutorials und Prozessbeschreibungen (ZP10) und vor al
 #### Grafiken, Schaubilder und Links
 
 * Grafiken werden als .png (Logos, einheitliche Farbflächen, Schaubilder, UI usw.) gespeichert.
-* Schaubilder/Schemas sind GraphML-Dateien und werden miT *yEd* erstellt. Die GraphML-Dateien werden ebenfalls in /graphics/ abgelegt.
+* Schaubilder/Schemas sind GraphML-Dateien und werden mit *yEd* erstellt. Die GraphML-Dateien werden ebenfalls in /graphics/ abgelegt.
 * Ältere Versionen von Grafiken und Schaubildern bleiben in der Regel in /graphics/ erhalten.
 * Alle Grafiken sollten direkt mit sinnvollen "Alternativtexten" und Mausover-Texten versehen werden.
 * In **Anleitungen** sollte wirklich *jeder* Schritt erwähnt und mit einem Screenshot versehen werden. Wir schreiben für nicht-technisch versierte Nutzer.
@@ -108,7 +108,7 @@ Andere Hervorhebungen können in *kursiv* gesetzt werden (siehe oben). Ebenso we
 
 Bei **Anleitungen** empfhielt es sich, die Funktionen, die im Zuge der Anleitung tatsächlich bedient zu werden, als `Code`zu markieren. Also wäre alles, was tatsächlich anzuklicken ist, als Code hervorgehoben. Alternativen wären dann fett. Hier würde man schreiben: "Klicken Sie nun auf `Weiter`, mit **Abbrechen** kehren Sie ohne Änderungen vorzunehmen zum vorherigen Fenster zurück."
 
-Wichtiger als das Einhalten eines globalen Schemas ist aber eher der spärliche Einsatz von Hervorhebungen und Konsistenz innerhalb des Artikels oder der thematischen Artieklreihe. 
+Wichtiger als das Einhalten eines globalen Schemas ist aber eher der spärliche Einsatz von Hervorhebungen und Konsistenz innerhalb des Artikels oder der thematischen Artikelreihe. 
 
 #### Farbboxen
 

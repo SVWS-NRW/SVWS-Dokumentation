@@ -39,9 +39,9 @@ Das Programm benötigt in einer Übergangsphase weiterhin Zugriff auf die Datenb
 SchILD-NRW 3 wird in den kommenden Jahren auch weiter genutzt werden müssen.
 
 ## Browserunterstützung
-### Welche Browser werden vom SVWS-Webclient unterstützt?
+### Welche Browser werden vom SVWS-WebClient unterstützt?
 
-Der Webclient wird mit Firefox, Chrome, Edge und Safari getestet.
+Der WebClient wird mit Firefox, Chrome, Edge und Safari getestet.
 
 ## Zugriffsberechtigungen
 ### Wer benötigt Zugriff auf den SVWS-WebClient?

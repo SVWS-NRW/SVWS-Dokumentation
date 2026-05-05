@@ -31,7 +31,7 @@ export default defineConfig(({ mode }) => {
 				{
 					text: 'Benutzerhandbücher',
 					items: [
-						{ text: 'SVWS-Webclient', link: '/webclient' },
+						{ text: 'SVWS-WebClient', link: '/webclient' },
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: '', items: [
 							{ text: 'SVWS WebNotenManager (Beta)', link: '/wenom' },
@@ -197,7 +197,7 @@ export default defineConfig(({ mode }) => {
 				'/webclient': [
 					{ text: '', items:
 						[
-							{ text: 'SVWS-Webclient', link: '/webclient/', collapsed: false, items: [
+							{ text: 'SVWS-WebClient', link: '/webclient/', collapsed: false, items: [
 								{ text: 'Supportkonzept', link: '/webclient/dokumentationsartikel/supportkonzept/' },
 								{ text: 'Bedienung im Browser', link: '/webclient/dokumentationsartikel/' },
 								{ text: 'Gruppenprozesse', link: '/webclient/dokumentationsartikel/gruppenprozesse/' },

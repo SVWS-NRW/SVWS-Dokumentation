@@ -1,6 +1,6 @@
 # Update des SVWS-Servers
 
-Um den SVWS-Server zusammen mit dem SVWS-Webclient und dem SVWS-AdminClient auf die jeweils aktuelle Version zu aktualisieren, gehen Sie wie folgt vor.
+Um den SVWS-Server zusammen mit dem SVWS-WebClient und dem SVWS-AdminClient auf die jeweils aktuelle Version zu aktualisieren, gehen Sie wie folgt vor.
 
 Laden Sie die jeweils neue Version des SVWS-Servers über die Webseite des [MSB für Schulverwaltungsofware](https://www.svws.nrw.de) herunter. Server, WebClient und AdminClient werden mit dem gleichen Installationspaket ausgeliefert.
 

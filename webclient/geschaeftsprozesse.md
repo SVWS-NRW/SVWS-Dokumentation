@@ -1,6 +1,6 @@
 # Geschäftsprozesse
 
-**SVWS-Server und SVWS-Webclient**
+**SVWS-Server und SVWS-WebClient**
 
 ## Aktueller Benutzer
 

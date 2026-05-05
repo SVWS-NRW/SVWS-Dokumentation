@@ -1,6 +1,6 @@
 # Telefonarten
 
-In diesem Katalog werden die **Telefonarten** erfasst, die genutzt werden, um Telefon- und Faxnummern zu erfassen.
+In diesem Katalog werden die **Telefonarten** erfasst, die genutzt werden, um verschiedene Telefonnummern zu erfassen.
 
 ![Katalog Telefonarten](./graphics/svws_kataloge_telefonarten.png "Erfassen Sie die Arten von Nummern für Telefon und Fax.")
 

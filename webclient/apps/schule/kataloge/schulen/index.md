@@ -12,8 +12,8 @@ Haben Sie ein **Kürzel** vergeben, lässt sich in Feldern, in denen die Schule 
 
 Eine Schule wird zum Beispiel bei einem Schulwechsel in der **App Schule ➜ Schulbesuch** im Bereich **Wechsel zu aufnehmender Schule** benötigt.
 
-![App Schüler, dann Schulbesuch und Wechsel zu aufnhemender Schule](./graphics/svws_kataloge_schulen_schulwechsel.png "Setzen Sie den Haken bei Wechsel bevorstehend, dann kann eine Schule eingegeben werden.")
+![App Schüler, dann Schulbesuch und Wechsel zu aufnehmender Schule](./graphics/svws_kataloge_schulen_schulwechsel.png "Setzen Sie den Haken bei Wechsel bevorstehend, dann kann eine Schule eingegeben werden.")
 
 Hier im Beispiel ist zu sehen, dass im Feld das vergebene **Kürzel** getippt wurde und es steht direkt die zu dem Kürzel gehörende Schule zur Auswahl.
 
-Dieses Vorgehen ist bei allen anderen Feldern, in denen Schulen einzugeben sind zu verwenden.
+Dieses Vorgehen ist bei allen anderen Feldern, in denen Schulen einzugeben sind, zu verwenden.

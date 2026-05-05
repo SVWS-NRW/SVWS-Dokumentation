@@ -54,7 +54,7 @@ Hier kann man über *Try it Out* Buttons jeweils die angeführten Services auspr
 
 Die Swagger UI aufrufen:
 
-```url
+```text
 https://<Server>/debug/
 ```
 

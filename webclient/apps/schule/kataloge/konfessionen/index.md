@@ -10,7 +10,7 @@ Achten Sie bei letzterer darauf, dass diese in die Felder der offziellen Zeugnis
 
 Stellen Sie zur korrekten Erfassung der Religionszugehörigkeiten das dazugehörende **Statistikkürzel** ein. Hier gilt: es ist möglich, unterschiedliche Konfessionen zu erfassen, die dann für die Statistik nur zu einem Statistikeintrag zusammengefasst werden.
 
-Weiterhin lassen sich hier auch Einträge wie in allen Katalogen durch Entfernen des Hakens auf nicht *"sichtbar"* stellen. Über der Auswahlliste links lässt sich mit einem Schalter umstellen, dass auch nicht-sichtbare Einträge angezeigt werden. 
+Weiterhin lassen sich hier auch Einträge wie in allen Katalogen durch Entfernen des Hakens auf nicht *sichtbar* stellen. Über der Auswahlliste links lässt sich mit einem Schalter umstellen, dass auch nicht-sichtbare Einträge angezeigt werden.
 
 ::: danger Konfessionen werden nach den Schlüsseltabellen zugeordnet
 Sie können an Ihrer Schule Konfessionen frei nach Bedarf erfassen. Konsultieren Sie bei der Einstellung der *Statistikzuordnung* die Eintragungshilfen und Schlüsseltabellen von IT.NRW der amtlichen Schulstatistik zur aktuell durch das MSB festgelegten korrekten Erfassung der Religionszugehörigkeiten.
