@@ -24,11 +24,11 @@ Klicken Sie auf die gewünschte Gruppe, hier das Fach `Deutsch`.
 
 ![](./graphics/svws_noteneingabe_deutsch_noteneingabe.png "Nun können die Noten und Daten eingebeben werden.")
 
-Nun können Sie die Noten und Daten für jeden Schülerinnendatensatz eingeben. Welche Spalten angezeigt werden und welche Daten eingegeben werden können, hängt davon ab, was in der Administration für diese Lerngruppe konfiguriert wurden.
+Nun können Sie die Noten und Daten für jeden Schülerinnendatensatz eingeben. Welche Spalten angezeigt werden und welche Daten eingegeben werden können, hängt davon ab, was in der Administration für diese Lerngruppe konfiguriert wurde.
 
 ## Weitere Bereiche unter "Noteneingabe"
 
-Sollen Teilleistungen, Ankreuztkompetenzen oder Daten durch Klassenleitungen erfasst werden, finden Sie diese Bereiche ebenfalls unter *Noteneingabe*, wie im ersten Screenshot auf dieser Seite zu sehen ist.
+Sollen Teilleistungen, Ankreuzkompetenzen oder Daten durch Klassenleitungen erfasst werden, finden Sie diese Bereiche ebenfalls unter *Noteneingabe*. Die weiteren Punkte sind ebenfalls im ersten Screenshot auf dieser Seite zu sehen.
 
 ![Teilleistungen](./graphics/svws_noteneingabe_teilleistungen.png "Filtern Sie auf Lerngruppen und erfassen Sie Teilleistungen für Fächer.")
 
@@ -46,7 +46,7 @@ Durch Anklicken der Bereiche bei **ASV**, **AUE** und **ZB** öffnet sich der Fl
 
 Alternativ kann ein Text manuell eingeben werden.
 
-Hierbei werden Platzhalter wie $Vorname$ automatisch durch das System ausgefüllt.
+Hierbei werden Platzhalter wie *$Vorname$* automatisch durch das System ausgefüllt.
 
 Übernehmen Sie Ihre Floskeln durch einen Klick auf `Anwenden` oder verwerfen Sie Änderungen mit einem Klick auf `zurücksetzen`.
 
