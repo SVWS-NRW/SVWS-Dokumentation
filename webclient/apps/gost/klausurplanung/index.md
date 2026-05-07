@@ -9,7 +9,7 @@ Es können für beide Quartale für jedes Fach und Kursart Vorgaben der jeweilig
 
 ![gost_klausurplanung_vorlage_1](.\graphics\gost_klausurplanung_vorlage_1.png)
 
-Zusätzliche Fächer könen mit **+** ergänzt werden. Verändert werden können diese Parameter:
+Zusätzliche Fächer können mit **+** ergänzt werden. Verändert werden können diese Parameter:
 
 ![gost_klausurplanung_vorlage_2](.\graphics\gost_klausurplanung_vorlage_2.png)
 
@@ -21,9 +21,9 @@ Mit "Vorlage importieren" kann nun für jedes Halbjahr die Vorlage importiert we
 Im Tab "Schienen" findet sich die Auflistung der im gewählten Abschnitt anzusetzenden Klausuren.
 
  ### Termin manuell setzen
- Mit **+ Termin** werden Terminlagen ergänzt, Klausuren werden per Drag & Drop in die Termine gesetzt.
+ Mit **+ Termin** werden Terminlagen ergänzt. Klausuren werden per Drag & Drop in die Termine gesetzt.
 
- Es wird auf Kollisionen hingewiesen, wenn zwei KLausuren an einen Termin gesetzt werden, in denen Schüler gleichzeitig eine Klausur schreiben - Facharbeiten werden nicht berücksichtigt.
+ Es wird auf Kollisionen hingewiesen, wenn zwei Klausuren auf denselben Termin gesetzt werden und Schüler dadurch zeitgleich beide Klausuren schreiben müssten - Facharbeiten werden nicht berücksichtigt.
 
 ### Termine automatisch blocken (ist zu bevorzugen)
 Die Termine können nach Schienen oder nach Fächern geblockt werden. Der Algorithmus sucht immer nach möglichst wenigen Terminen.
@@ -65,9 +65,9 @@ Es werden z.B. Terminkollisionen, mehr als drei Klausurbelegungen pro Woche, feh
 ### Erfassung von Versäumnissen
 
 #### 1. Möglichkeit: Über die Klausurplanung:
-* im Tab **Schienen** in der Terminauswahl wird durch Anklicken der betroffenen Klausur eine Schülerliste angezeigt.
-* Hinter jedem Namen kann über den angezeigten Button das Versäumnis erfasst werden, bei Bedarf (Beachtung DSGVO) auch ein Grund eingeragen werden.
-* Bestätigung durch **"Nachschreibtermin erstellen"** übernimmt den Schüler in die Liste der Nachschreiber.
+* Im Tab **Schienen** in der Terminauswahl wird durch Anklicken der betroffenen Klausur eine Schülerliste angezeigt.
+* Hinter jedem Namen kann über den angezeigten Button das Versäumnis erfasst werden, bei Bedarf (Beachtung DSGVO) auch ein Grund eingetragen werden.
+* Mit der Bestätigung über **"Nachschreibtermin erstellen"** wird der Schüler in die Liste der Nachschreiber übernommen.
 
  ![gost_klausurplanung_nt_klausurplanung](.\graphics\gost_klausurplanung_nt_klausurplanung.png)
 
