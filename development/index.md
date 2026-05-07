@@ -6,7 +6,7 @@ Es wird die Einrichtung von Entwicklungsumgebungen behandelt - nicht die Einrich
 :::
 
 
-Projekt zur Erstellung einer Schulverwaltungssoftware mit OpenAPI-Schnittstelle für die dezentrale Schulverwaltung in NRW.  
+Projekt zur Erstellung einer Schulverwaltungssoftware mit OpenAPI-Schnittstelle für die dezentrale Schulverwaltung in NRW.
 
 ## Übersicht
 
@@ -17,11 +17,11 @@ Im Vordergrund steht die Kapselung von Datenbank und Core-API.
 
 ![Übersicht-REST](./graphics/Uebersicht_SVWS-Server.png)
 
-Externe Services können über die REST-Schnittstelle nach erfolgreicher Anmeldung Daten vom SVWS-Server erhalten. 
+Externe Services können über die REST-Schnittstelle nach erfolgreicher Anmeldung Daten vom SVWS-Server erhalten.
 
-Ebenso greift die GUI auf die Daten zu und präsentiert diese dem jeweiligen Benutzer. 
+Ebenso greift die GUI auf die Daten zu und präsentiert diese dem jeweiligen Benutzer.
 
-Dieser Web-Client wird mit dem SVWS-Server zusammen ausgeliefert und steht mit Installation des Servers zur Verfügung. 
+Dieser Web-Client wird mit dem SVWS-Server zusammen ausgeliefert und steht mit Installation des Servers zur Verfügung.
 
 ## Übergang von SchILD-NRW 2.0 zum SVWS-Server
 
@@ -34,15 +34,15 @@ Aus diesem Grund entschied man sich zur Entwicklung eines REST-Servers, der eine
 
 SchILD-NRW 3.0 kann dann weiterhin in einer Übergangsphase auf die Datenbank zugreifen. Sobald alle Services der REST-Schnittstelle zur Verfügung stehen, wird SchILD-NRW 3.X auf diese Webservices umgestellt und vom direkten Datenbankzugriff abgekoppelt. Ebenso können weitere GUIs auf die API des SVWS-Servers zugreifen.
 
-Mit dem Update zu SchILD-NRW 3.0 wird im technischen Backend die Grundlage für diese Modernisierung geschaffen. 
+Mit dem Update zu SchILD-NRW 3.0 wird im technischen Backend die Grundlage für diese Modernisierung geschaffen.
 
-## Hilfe und Handbuch 
+## Hilfe und Handbuch
 
-Hier finden Sie eine Übersicht über die Funktionen des SVWS-Servers und Hilfen für den Anwender: [doku.swvs-nrw.de](https://doku.svws-nrw.de/)
+Hier finden Sie eine Übersicht über die Funktionen des SVWS-Servers und Hilfen für den Anwender: [doku.svws-nrw.de](https://doku.svws-nrw.de/)
 
 ## Github Quellen
 
-Unser Projekt ist Open Source!  
+Unser Projekt ist Open Source!
 
 Das Software Repository finden Sie hier: [Github Repository](https://github.com/SVWS-NRW/SVWS-Server)
 

@@ -1,6 +1,6 @@
 # Geschäftsprozesse
 
-**SVWS-Server und SVWS-Webclient**
+**SVWS-Server und SVWS-WebClient**
 
 Eine Ausführliche Beschreibung der Geschäftsprozesse befindet sich im [Benutzerhandbuch](../index.md).
 
@@ -10,15 +10,15 @@ Eine Ausführliche Beschreibung der Geschäftsprozesse befindet sich im [Benutze
 |   |   |   |   |
 |---|---|---|---|
 | Passwort ändern ||||
-| Emaildaten verwalten ||||
+| E-Maildaten verwalten ||||
 | Ansicht einstellen ||||
 
 ## Schule
 
 ### Schulbezogene Kataloge
 
-#### Stammdaten der Schule 
- 
+#### Stammdaten der Schule
+
 |   |   |   |   |
 |---|---|---|---|
 | Stammdaten verwalten ||||
@@ -244,7 +244,7 @@ Eine Ausführliche Beschreibung der Geschäftsprozesse befindet sich im [Benutze
 |   |   |   |   |
 |---|---|---|---|
 | Auswahlliste durchsuchen ||||
-| Filtern des Auswahlliste |||| 
+| Filtern des Auswahlliste ||||
 | Auswahlliste sortieren ||||
 | Schüler hinzufügen ||||
 | Markieren einzelner Schüler und in Gruppenprozessen bearbeiten ||||
@@ -681,4 +681,4 @@ Eine Ausführliche Beschreibung der Geschäftsprozesse befindet sich im [Benutze
 | Benutzergruppen definieren und Rechte zuweisen  ||||
 | Benutzer der Gruppe anzeigen und verlinken ||||
 
-¹ Diese Prozesse sind noch in Planung bzw. befinden sich in der Entwicklung. 
+¹ Diese Prozesse sind noch in Planung bzw. befinden sich in der Entwicklung.

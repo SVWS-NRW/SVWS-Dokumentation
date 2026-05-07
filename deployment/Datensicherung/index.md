@@ -2,7 +2,7 @@
 
 ## Manuelle Sicherung im SQLite Format
 
-Über die grafische Oberfläche des Adminclients kann sehr komfortabel eine Datensicherung im SQLite Format angelegt werden.
+Über die grafische Oberfläche des AdminClients kann sehr komfortabel eine Datensicherung im SQLite Format angelegt werden.
 
 Der AdminClient kann i.d.R. unter `https://URLdesSVWS-Servers/admin` aufgerufen werden.
 

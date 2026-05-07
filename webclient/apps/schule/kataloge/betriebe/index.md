@@ -21,4 +21,3 @@ Im Block **Adresse** lassen sich die Adresse und Kontaktdaten des Betriebs erfas
 ![Ansprechpartner für Betriebe verwalten](./graphics/svws_schule_kataloge_betriebe_ansprechpartner.png "Verwalten Sie Ihre Ansprechpartner für einen Betrieb.")
 
 Sie können über das **Plus +** eine Liste aus Ansprechpartnern anlegen und verwalten.
-

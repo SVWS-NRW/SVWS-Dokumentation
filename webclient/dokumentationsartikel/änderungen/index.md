@@ -17,7 +17,7 @@ Außerdem wird somit der vielfach von Schulen geäußerte Wunsch ermöglicht, di
 
 ## Markierung von Schülern
 
-Schüler und Schülerinnen werden über die Checkboxen auf eine Art markiert, um dann auf dieser Gruppe weitere Funktionen auszuführen.  
+Schüler und Schülerinnen werden über die Checkboxen auf eine Art markiert, um dann auf dieser Gruppe weitere Funktionen auszuführen.
 
 
 ## Abschaffung des Quartalsbetriebs
@@ -32,14 +32,14 @@ Quartalsnoten lassen sich nun aber direkt im **aktuellen Lernabschnitt** erfasse
 
 Die **Vereinfachte Erfassung der Zuwanderungsgeschichte** wird vom neuen Datenbankserver nicht mehr unterstützt und damit bietet sich nur noch eine Option zur Erfassung der Zuwanderungsgeschichte.
 
-Bei der Statistik wird bei einem "nicht deutschen" Eintrag korrekt "Nicht deutsch" gemeldet, die übrige Zuwanderungsgeschichte wäre zukünftig einzupflegen. 
+Bei der Statistik wird bei einem "nicht deutschen" Eintrag korrekt "Nicht deutsch" gemeldet, die übrige Zuwanderungsgeschichte wäre zukünftig einzupflegen.
 
 ## Stundenplanverwaltung
 
-SVWS-Server und SVWS-Client erlauben nun die Verwaltung eines Stundenplans für die Schülerinnen und Schüler. 
+SVWS-Server und SVWS-Client erlauben nun die Verwaltung eines Stundenplans für die Schülerinnen und Schüler.
 
 ## Verwaltung von Adressbüchern und Kalendern
 
 ## Neues Konzept zur Ansicht bei den Lernabschnitten und Leistungsdaten
 
-## Konzept zum Druck aus dem SVWS-Webclient
+## Konzept zum Druck aus dem SVWS-WebClient

@@ -121,7 +121,7 @@ Der Sonartype Server wird nur von den Core-Team-Mitgliedern genutzt.
 
 ```text
 Eclipse > Windows > Preferences > General > Network Connection
-````
+```
 
 den Http und den Https-Proxy eintragen. (Sollte er automatisch finden, wenn konfiguriert.)
 

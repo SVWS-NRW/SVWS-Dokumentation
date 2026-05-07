@@ -4,11 +4,11 @@
 
 ![Jahrgänge an einem Gynmasium](./graphics/svws_kataloge_jahrgänge_einfach.png "Die Jahrgänge eines unkomplizierten Gynmasium.")
 
-Für jeden Jahrgang an der Schule sind **Kürzel** und **Bezeichung** zu erfassen. Es empfhielt sich, das Kürzel in der Tat sehr kurz zu halten, da ihm in Benutzeroberflächen oder Druckausgaben mitunter nicht viel Raum eingeräumt wird.
+Für jeden Jahrgang an der Schule sind **Kürzel** und **Bezeichung** zu erfassen. Es empfiehlt sich, das Kürzel in der Tat sehr kurz zu halten, da ihm in Benutzeroberflächen oder Druckausgaben mitunter nicht viel Raum eingeräumt wird.
 
-Im Dropdown-Menü für die **Schulgliederung** lassen sich die für die Schule eingerichteteten Gliederungen auswählen. Als Standard wird ````*** Standard für diese Schulform```` gewählt.
+Im Dropdown-Menü für die **Schulgliederung** lassen sich die für die Schule eingerichteteten Gliederungen auswählen. Als Standard wird **\*\*\* Standard für diese Schulform** gewählt.
 
-Wichtig ist der **Statistikjahrgang**, über diesen wird eindeutig eingestellt, um was für einen formal vorgesehenen Jahrgang es sich handelt. Hier können auch nur in den *amtlichen Schuldaten* definierte Bezeichnungen ausgewählt werden.
+Wichtig ist der **Statistikjahrgang**, über diesen wird eindeutig eingestellt, um was für einen formal vorgesehenen Jahrgang es sich handelt. Hier können auch nur die in den *amtlichen Schuldaten* definierte Bezeichnungen ausgewählt werden.
 
 Über den **Folgejahrgang** wird der nach der Schulform, Bildungsgang und/oder APO vorgesehene Folgejahrgang eingestellt. Abschlussjahrgänge, hier die Q2 oder Jahrgang 04 an der Grundschule, haben keinen Folgejahrgang.
 

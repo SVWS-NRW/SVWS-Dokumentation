@@ -4,7 +4,7 @@
 
 ![Die Kopfzeile in der App Schüler, um die Leistungsdaten aufzurücken](./graphics/SVWS_leistungsdaten_kopf.png "Rufen Sie die Leistungsdaten in der App Schüler auf.")
 
-In der Auswahlliste finden sich alle für diesen Schüler vorhandenen **Lernabschnitte**. Wird einer dieser Lernabschnitte ausgewählt, werden die für in diesem Lernabschnitt belegten Fächer und Kurse anzeigt.
+In der Auswahlliste finden sie alle für diesen Schüler vorhandenen **Lernabschnitte**. Wird einer dieser Lernabschnitte ausgewählt, werden die für in diesem Lernabschnitt belegten Fächer und Kurse anzeigt.
 
 ![Übersicht über die Fächer und und Kurse in einem Lernabschnitt](./graphics/SVWS_leistungsdaten_kopfzeileFachuebersicht.png "Verwalten Sie die Fächer und Kurse und tragen Sie Kursarten, Noten und so weiter ein.")
 
@@ -22,8 +22,6 @@ Handelt es sich bei dem Unterricht um einen **Kurs**, ist der betreffende Kurs �
 
 Werden Einträge über die Checkboxen angewählt, lassen sie sich unten rechts mit dem roten Mülleimer 🗑 löschen.
 
-Mit dem ***+*** lassen sich manuell Unterrichte hinzufügen und dann konfigurieren.
+Mit dem **+** lassen sich manuell Unterrichte hinzufügen und dann konfigurieren.
 
 ![Löschen und manuelles Hinzufügen von Unterrichten](./graphics/SVWS_leistungsdaten_kurse_hinzufuegenUndentfernen.png "Wählen Sie Unterrichte mit Checkboxen an, um diese zu löschen. Mit dem + werden neue Unterrichte hinzufügt.")
-
-

@@ -1,5 +1,5 @@
 # Erziehungsberechtige
 
-## unterschiedliche Arten von Erziehungsberechtigen
+## Unterschiedliche Arten von Erziehungsberechtigen
 
-## Weitere Arten von Ansprechpartner
+## Weitere Arten von Ansprechpartnern

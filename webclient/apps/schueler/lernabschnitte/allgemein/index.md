@@ -1,6 +1,6 @@
 # Lernabschnitte - Allgemein
 
-Unter den allgemeinen Daten der Lernabschnitte finden sich auf der linken Seite in der *Auswahlliste* die Übersicht über alle für diesen Schüler angelegten Lernabschnitte.
+Unter den allgemeinen Daten der Lernabschnitte finden sie auf der linken Seite in der *Auswahlliste* die Übersicht über alle für diesen Schüler angelegten Lernabschnitte.
 
 ![Übersicht über Lernabschnitte](./graphics/SVWS_schueler_lernabschnitte_allgemein.png "Die Liste der Lernabschnitte und die Daten zum aktuell gewählten Abschnitt.")
 
@@ -26,7 +26,7 @@ Das Feld mit der **Prüfungsordnung** ist nicht statistikrelevant, wird aber fü
 
 Bei der Gliederung und Organisationsform lassen sich die Werte abrufen, die für die Schule zentral erfasst wurden. Tragen Sie ebenfalls die **Klassenart** ein.
 
-![Mögliche Einträge in den Feldern "Organisationsform" und "Klassenart"](./graphics/SVWS_schueler_lernabschnitte_auswahlfelder.png "Mögliche Einträge der Dropdown-Felder für Organisatiosnform und Klassenart.")
+![Mögliche Einträge in den Feldern "Organisationsform" und "Klassenart"](./graphics/SVWS_schueler_lernabschnitte_auswahlfelder.png "Mögliche Einträge der Dropdown-Felder für Organisationsform und Klassenart.")
 
 In der Organsiationsform etwa sind die unterschiedlichen Ganz- und Halbtagsoptionen auswählbar. Bei der Klassenart eine Profilklasse, der Standardfall der Regelklasse oder eine dediziert ausgewiesene Deutschförderklasse.
 

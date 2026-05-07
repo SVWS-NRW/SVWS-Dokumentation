@@ -2,7 +2,7 @@
 
 Ein neuer Stundenplan kann mit Hilfe von *Drag & Drop* erstellt werden, ebenso lassen sich existierende, auch aus einem Stundenplanprogramm importierte, Stundenpläne verändern.
 
-Lesen Sie bitte den Artikel der `App Stundenplan` für eine ausführlichere Erkläuterung der einzelnen Elemente eines Stundenplans.
+Lesen Sie bitte den Artikel der **App Stundenplan** für eine ausführlichere Erkläuterung der einzelnen Elemente eines Stundenplans.
 
 Wird ein neuer Stundenplan erstellt, müssen zuerst die **Grunddaten**, **Kalenderwochen**, **Pausenzeiten**, **Zeitraster** und **Räume** entsprechend der Kriterien erstellt werden. Konsultieren Sie hierzu die Artikel der jeweiligen Themen und den Artikel zur *App Stundenplan*.
 
@@ -12,7 +12,7 @@ Weiterhin müssen **Unterrichte** für die Schülergruppen, Klassen oder Jahrgä
 
 Sie können nun Pläne für die **Pausen**aufsichten und **Klassen** erstellen und bearbeiten.
 
-Bearbeiten Sie eine Klasse, wählen Sie die betreffende `Klasse`, hier im Screenshot grün dargestellt.
+Bearbeiten Sie eine Klasse, wählen Sie die betreffende **Klasse**, hier im Screenshot grün dargestellt.
 
 **Hinweis:** Der Stundenplan im Beispiel arbeitet exemplarisch mit A- und B-Wochen.
 
@@ -20,15 +20,15 @@ Bearbeiten Sie eine Klasse, wählen Sie die betreffende `Klasse`, hier im Screen
 
 ![Eine Übersicht der Pausenaufsichten](./graphics/SVWS_stundenplan_pausen_uebersicht.png "Eine Übersicht der definierten Pausenaufsichten.")
 
-Auf der linken Seite sind alle Lehrkräfte zu sehen, die per `Drag & Drop` in den *Kacheln* rechts in die *Zeitplätze* gezogen werden können.
+Auf der linken Seite sind alle Lehrkräfte zu sehen, die per Drag & Drop in den *Kacheln* rechts in die *Zeitplätze* gezogen werden können.
 
 Bei einer Aufsicht kann eine Lehrkraft zum Beispiel im Bereich **AUS**gang in *Alle* für beide Wochentypen oder nur in die *A-* oder *B-Woche* gezogen werden.
 
 Ebenso ist zu sehen, dass Montag in der Aufsicht AUS jeweils zwei Lehrkräfte hinein gezogen wurden. Mehrfachbelegungen sind somit möglich.
 
-![Einragen von Lehrkräften per Drag & Drop](./graphics/SVWS_stundenplan_pausen_lehrkraftEintragen.png "Lehrkräfte werden per Drag & Drop in die Zeitslots gezogen.")
+![Eintragen von Lehrkräften per Drag & Drop](./graphics/SVWS_stundenplan_pausen_lehrkraftEintragen.png "Lehrkräfte werden per Drag & Drop in die Zeitraster gezogen.")
 
-Hier im Beispiel werden die Lehrkräfte *ALBE* und *BALD* Montags in der Aufsicht AUS in die A- und die B-Woche gezogen.
+Hier im Beispiel werden die Lehrkräfte *ALBE* und *BALD* montags in der Aufsicht AUS in die A- und die B-Woche gezogen.
 
 Um eine Aufsicht zu entfernen, ziehen wir sie aus dem Plan nach links in die Auswahlliste zurück.
 
@@ -48,13 +48,13 @@ In der Übersichtsliste werden auch die Einsätze der Lehrkräfte gezeigt.
 
 In der Übersichtsliste sind nun auch die Summen der Aufsichtseinsätze zu sehen. Hierbei zeigt das Feld **Minute/Zahl der Aufsichten** an.
 
-Im Beispiel von ALBE ist zu sehen, dass diese Lehrkraft 75 Minuten in 1.5 Aufsichten eingesetzt ist. Diese Lehrkraft hat hier eine Stundenaufsicht mit *60 Minuten* und einer Wertigkeit von *1* sowie eine halbe Stunde alle zwei Wochen, daher werden *15 Minuten* und eine *0,5*-Aufsicht angerechnet. 
+Im Beispiel von ALBE ist zu sehen, dass diese Lehrkraft 75 Minuten in 1,5 Aufsichten eingesetzt ist. Diese Lehrkraft hat hier eine Stundenaufsicht mit *60 Minuten* und einer Wertigkeit von *1* sowie eine halbe Stunde alle zwei Wochen, daher werden *15 Minuten* und eine *0,5*-Aufsicht angerechnet.
 
 ## Stundenpläne bearbeiten
 
 Im **Klassen**modus lassen sich für Klassen Stundenpläne anlegen. Die Jahrgänge der Oberstufe werden hierbei technisch auch als Klassen behandelt.
 
-Hier im Beispiel wird der Stundenplan der *09a* fertig gestellt. 
+Hier im Beispiel wird der Stundenplan der *09a* fertig gestellt.
 
 ![Beispielscreenshot mit dem kompletten Stundenplan](./graphics/SVWS_stundenplan_uebersicht.png "Übersicht eines ganzen Stundenplans.")
 
@@ -104,6 +104,6 @@ Diese Zuweisung kann im Anschluss über den Tab **Unterrichte** vorgenommen werd
 
 Hierzu wird über **Klassen** die passende Klasse ausgewählt, um die Zahl der Unterrichte in der Auswahlliste zu reduzieren.
 
-Hier ist beim Unterricht des *Fachs* und des *Zeitrasterplatzes* mit einem Klick auf `...` ein Raum zu wählen.
+Hier ist beim Unterricht des *Fachs* und des *Zeitrasterplatzes* mit einem Klick auf **...** ein Raum zu wählen.
 
 Ebenso können hier existierende Räume für andere Unterrichte verändert werden.

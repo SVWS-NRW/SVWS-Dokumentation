@@ -1,7 +1,7 @@
 # WeNoM - WebNotenManager (Beta)
 
-::: warning Beta Version
-Der Webnotemanager liegt derzeit als Beta-Version zum Testen vor. Im Beta-Betrieb ist noch kein regulärer Einsatz an Schule vorgesehen.
+::: warning Beta-Version
+Der WebNotenManager liegt derzeit als Beta-Version zum Testen vor. Im Beta-Betrieb ist noch kein regulärer Einsatz an Schulen vorgesehen.
 :::
 
 ::: tip Direkt zur [Anleitung für Lehrkräfte](./benutzerhandbuch/anleitung_lehrkraefte.md)!
@@ -11,6 +11,6 @@ Der **WebNotenManager WeNoM** ist eine zum SVWS-Server ergänzende Online-Plattf
 
 Der WebNotenManager bietet Schulen eine effiziente Möglichkeit, die nötigen Leistungsdaten ihrer Schülerinnen und Schüler für den aktuellen Lernabschnitt zu verwalten und ermöglicht Lehrkräften online auf die benötigten Daten zuzugreifen.
 
-Der WebNotenManager wird parallel zum SVWS-Server und SVWS-Webclient entwickelt, so dass die erfassten Daten mit dem SVWS-Server synchronisiert werden können und anschließend in der Schulverwaltung auf dem SVWS-Server weiterverarbeitet werden können.
+Der WebNotenManager wird parallel zum SVWS-Server und SVWS-WebClient entwickelt, so dass die erfassten Daten mit dem SVWS-Server synchronisiert werden können und anschließend in der Schulverwaltung auf dem SVWS-Server weiterverarbeitet werden können.
 
 Über diesen Bereich der Dokumentation stehen eine *Installationsanleitung*, das *Benutzerhandbuch* und eine Übersicht über die *Geschäftsprozesse* zur Verfügung.

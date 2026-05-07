@@ -1,6 +1,6 @@
 # Abiturberechnungen
 
-## Reiter Abitur
+## Tab Abitur
 
 ### Ansicht Zulassung
 

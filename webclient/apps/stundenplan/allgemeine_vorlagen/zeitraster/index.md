@@ -24,7 +24,7 @@ Analog lässt sich bei einer Anwahl des **Wochentags** dieser mit der dann **Woc
 
 ![Fügen Sie Stunden mit Beginn- und Endzeit hinzu](./graphics/SVWS_Zeitraster_StundenHinzuegen.png "Geben Sie Beginn und Ende einer Stunde ein und fügen Sie diese hinzu.")
 
-Beim Hinzufügen von Stunden lassen sich die Zeiten für **Beginn** und **Ende** angegeben. 
+Beim Hinzufügen von Stunden lassen sich die Zeiten für **Beginn** und **Ende** angegeben.
 
 Die Schaltfläche **Stundenzeiten aktualsieren** passt alle schon für diese Woche in der aktuellen Spalte eingetragenen Stunden an die neue Zeit an.
 

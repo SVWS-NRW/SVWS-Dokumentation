@@ -1,8 +1,8 @@
 # Stundenplan Allgemein Vorlagen
 
-In der **App Stundenplan** können zuest Allgemein Vorlagen definiert werden, mit denen sich dann konkreten Stundenpläne erstellen lassen.
+In der **App Stundenplan** können zuerst Allgemeine Vorlagen definiert werden, mit denen sich dann konkreten Stundenpläne erstellen lassen.
 
-Als eine solche Vorlage bietet es sich somit an, das Zeitraster der Schule mit den Stunden- und Pausenzeiten anzulegen und zu speichern. 
+Als eine solche Vorlage bietet es sich somit an, das Zeitraster der Schule mit den Stunden- und Pausenzeiten anzulegen und zu speichern.
 
 ## Raster als Vorlage erstellen
 
@@ -16,9 +16,9 @@ Alternativ können Sie das grundlegende Raster mit Stunden, Wechselpausen und Pa
 
 Konfigurieren Sie die Daten, wann Unterrichtsbeginn ist, welche Raumwechselzeiten Sie vorsehen und wann die Pausen mit welchen Längen sind.
 
-Dann klicken Sie auf `+ Mo-Fr / 1.-9. erstellen`.
+Dann klicken Sie auf **+ Mo-Fr / 1.-9. erstellen**.
 
-Alternativ kann ein existierende Raster *importiert* werden beziehungsweise ist es möglich, dass gerade erstelle zu *exportieren*.
+Alternativ kann ein existierendes Raster *importiert* werden beziehungsweise ist es möglich, dass gerade erstelle zu *exportieren*.
 
 ## Ein Raster bearbeiten
 
@@ -28,7 +28,7 @@ Das nun erstellte Stundenplanraster kann nun weiter bearbeitet werden. Sie könn
 
 Im Screenshot wurde die 9. Stunde ganz links angewählt und somit lässt sie sich in allen Wochentagen auf einmal löschen oder verschieben.
 
-Alternativ lässt sich die Stunde bearbeiten, in dem die Paramater rechts bearbeitet werden. Damit lassen sich nun auch die Pausenzeiten noch individuell anpassen, verschieben oder ganz löschen.
+Alternativ lässt sich die Stunde bearbeiten, in dem die Parameter rechts bearbeitet werden. Damit lassen sich nun auch die Pausenzeiten noch individuell anpassen, verschieben oder ganz löschen.
 
 Dieses Löschen und Bearbeiten lässt sich auch nur für eine Stunde an einem bestimmten Wochentag vornehmen.
 

@@ -42,27 +42,27 @@ Existierende Kurse können im Bereich rechts bearbeitet werden.
 
 Über den Haken bei **Ist sichtbar** ☑ lässt sich steuern, ob der Kurs in der Auswahlliste und an anderen Stellen im SVWS-Client angezeigt werden soll. Dieser Haken wird genutzt, wenn man einen Kurs nicht dauerhaft löschen, sondern nur aktuell nicht nutzen möchte.
 
-Das Feld für **Kürzel** ist frei wählbar, hier sollten jedoch keine allzulangen Bezeichner gewählt werden, da die Spaklten in Übersichtslisten nicht von langen Kürzeln ausgehen.
+Das Feld für **Kürzel** ist frei wählbar, hier sollten jedoch keine allzu langen Bezeichner gewählt werden, da die Spalten in Übersichtslisten nicht von langen Kürzeln ausgehen.
 
-Weiter unten rechts findet sich die **Zeugnisbezeichnung** wo eine vom Fach abweichende, freie Bezeichnung eingegeben werden kann, die dann auf dem Zeugnis ausgeben wird. Diese Bezeichnung wird im Standardfall einfach frei gelassen.
+Weiter unten rechts findet sich die **Zeugnisbezeichnung** wo eine vom Fach abweichende, freie Bezeichnung eingegeben werden kann, die dann auf dem Zeugnis ausgeben wird. Diese Bezeichnung wird im Standardfall frei gelassen.
 
 Bei **Lehrer** und **Fach** werden Einträge aus den jeweiligen Katalogen gewählt.
 
 Die **Kursart** folgt aus der jeweiligen Prüfungsordnung.
 
-Die **Wochenstunden** sind entsprechend der Planung in der Schule zu setzen und über die Auswahllisten bei **Jahrgänge** lassen sich einer oder mehrer Jahrgänge anhaken, für die dieser Kurs gilt.
+Die **Wochenstunden** sind entsprechend der Planung in der Schule zu setzen und über die Auswahllisten bei **Jahrgänge** lassen sich ein oder mehrere Jahrgänge anhaken, für die dieser Kurs gilt.
 
 Über die **Fortschreibungsart** wird gesteuert, wie sich der Kurs beim Schuljahreswechsel verhält:
 + *keine* - das Schuljahr wird gewechselt, der Kurs wird nicht im neuen Lernabschnitt angelegt.
 + *Nur Definition, Jahrgang hochschreiben* - der Kurs wird ohne Schüler ins neue Schuljahr übernommen, der Jahrgang wird einen Jahrgang hochgeschrieben.
 + *Nur Definition, Jahrgang wird beibehalten* - der Kurs findet sich genauso wie jetzt im neuen Schuljahr wieder, nur ohne die Schüler.
-+ *Komplett* - der Kurs wird im neuen Lernabschnitt mit den erhöhten Jahrgang und den Schülern wieder angelegt.
++ *Komplett* - der Kurs wird im neuen Lernabschnitt mit dem erhöhten Jahrgang und den Schülern wieder angelegt.
 
 ::: tip Beispiel
 Wählen Sie die Fortschreibungsart so, wie es in der Organisationsstruktur Ihrer Schule Sinn macht. AGn oder Kurse, die einen Jahrgang in ihrer Bezeichnung haben, werden nicht in einen Folgejahrgang hochgeschrieben.
 :::
 
-Wenn im SVWS-Client eine Blockung hinterlegt ist beziehungsweise eine erstellt wird, sind die Kurse in parallelen **Schienen** angeordnet. Diese Schienen werden auch in der Kursansicht angezeigt und lassen sich ändern. Das Ändern von Schienen ist nur wohlüberlegt durchzuführen.
+Wenn im SVWS-Client eine Blockung hinterlegt ist, beziehungsweise eine erstellt wird, sind die Kurse in parallelen **Schienen** angeordnet. Diese Schienen werden auch in der Kursansicht angezeigt und lassen sich ändern. Das Ändern von Schienen ist nur wohlüberlegt durchzuführen.
 
 ## Die Schüler-Kursliste
 
@@ -70,14 +70,10 @@ Rechts von den Details werden die zu diesem Kurs zugeordneten Schüler angezeigt
 
 ![Kursliste der Schüler](./graphics/svws_kurse_kursliste.png "Verwalten Sie die im Kurs befindlichen Schüler.")
 
-Über den Filter **Status** lassen sich Schüler mit anderen Stati ein- und ausblenden. Per Standard werden nur Schüler angezeigt, die entweder *aktiv* sind oder als *extern*e Schüler am Kurs teilnehmen. Zum Beispiel lassen sich auch Schüler anzeigen, die *beurlaubt*, in der *Neuaufnahme* sind oder einen anderen Status haben. 
+Über den Filter **Status** lassen sich Schüler mit anderen Stati ein- und ausblenden. Per Standard werden nur Schüler angezeigt, die entweder *aktiv* sind oder als *extern*e Schüler am Kurs teilnehmen. Zum Beispiel lassen sich auch Schüler anzeigen, die *beurlaubt*, in der *Neuaufnahme* sind oder einen anderen Status haben.
 
 ::: tip Beispiel
 Beachten Sie an dieser Stelle das Linksymbol 🔗, mit dem man direkt zu einem Schülerdatensatz springen kann.
 
-Von dort kann man mit dem `Zurück`-Knopf des Browsers wieder zur Kursansicht zurückkehren.
+Von dort kann man mit dem **Zurück**-Knopf des Browsers wieder zur Kursansicht zurückkehren.
 :::
-
-
-
-

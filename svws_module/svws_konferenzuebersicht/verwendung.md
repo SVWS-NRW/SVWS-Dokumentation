@@ -56,11 +56,11 @@ Nach der Bearbeitung klicken Sie auf **Änderungen (x)**, um eine druckerfreundl
 
 Über **Log drucken** öffnet sich ein Dialog, mit dem Sie einen Speicherort für für ein Logdatei als .pdf mit den Änderungen auswählen.
 
-Die **Exportfunktion** nutzt den Weg, der bei Zugang zur App gewählt wurde, um die Daten wieder aus der SVWS-Konferenzübersicht herauszuschreiben, also entweder findet eine Online-Synchronisation mit dem SVWS-Server über API statt oder es wird wieder eine Notendatei erstellt, die sich über den SVWS-Webclient einlesen lässt.
+Die **Exportfunktion** nutzt den Weg, der bei Zugang zur App gewählt wurde, um die Daten wieder aus der SVWS-Konferenzübersicht herauszuschreiben, also entweder findet eine Online-Synchronisation mit dem SVWS-Server über API statt oder es wird wieder eine Notendatei erstellt, die sich über den SVWS-WebClient einlesen lässt.
 
 ![Export starten](./graphics/konferenz_aenderungen_export.png "Bei einem Export wird noch einmal nachgefragt. Klicken Sie auf Export starten.")
 
-Der Export ist noch einmal zu bestätigen. Da hier im Beispiel mit einer Offline-Notendatei gearbeitet wurde, wird eine veränderte Datei erzeugt, diese heißt `enm.changed.json.gz`, die nun wieder im SVWS-Webclient eingelesen werden kann.
+Der Export ist noch einmal zu bestätigen. Da hier im Beispiel mit einer Offline-Notendatei gearbeitet wurde, wird eine veränderte Datei erzeugt, diese heißt `enm.changed.json.gz`, die nun wieder im SVWS-WebClient eingelesen werden kann.
 
 Arbeiten Sie im Online-Modus mit einer direkten Verbindung zum SVWS-Server, sind die Daten nach dem Export synchronisert.
 
@@ -72,11 +72,11 @@ Es findet keine automatische Synchronisierung statt. Nicht gespeicherte/exportie
 Denken Sie daher an regelmäßige Sicherungen.
 :::
 
-## Einlesen der Daten im SVWS-Webclient
+## Einlesen der Daten im SVWS-WebClient
 
-Wenn Sie im Online-Modus arbeiten, sind die Daten nach einem Export synchronisert. Arbeiten Sie im Offline-Modus mit den Im- und Exportdateien, müssen Sie im Anschluss an den Export die `enm.changed.json.gz` im SVWS-Webclient noch einmal wieder einlesen.
+Wenn Sie im Online-Modus arbeiten, sind die Daten nach einem Export synchronisert. Arbeiten Sie im Offline-Modus mit den Im- und Exportdateien, müssen Sie im Anschluss an den Export die `enm.changed.json.gz` im SVWS-WebClient noch einmal wieder einlesen.
 
-![Geänderte Daten im Webclient wieder importieren](./graphics/konferenz_webclient_datenImportieren.png "Wählen Sie, welche Daten importiert werden sollen.")
+![Geänderte Daten im WebClient wieder importieren](./graphics/konferenz_webclient_datenImportieren.png "Wählen Sie, welche Daten importiert werden sollen.")
 
 Gehen Sie hierzu in **App Schule ➜ Datenaustausch ➜ ENM-Notenmanager** und klicken Sie unter *Lehrkraftdaten und Konferenzdaten importieren* auf die Schalter `Datei auswählen`.
 
@@ -84,4 +84,4 @@ Achten Sie auch hier darauf, dass die gerade erstellte und damit korrekte Datei 
 
 ![Import erfolgreich](./graphics/konferenz_webclient_datenImportieren_importErfolgreich.png "Die Datei mit den Änderungen wurde importiert.")
 
-Ganz gleich, ob Sie im Offline- oder Onlinemodus gearbeitet haben: Die Eintragungen der SVWS-Konferenzübersicht sind nun im SVWS-Webclient über die **App Noten** und in den **Leistungsdaten** der **App Schüler** einsehbar.
+Ganz gleich, ob Sie im Offline- oder Onlinemodus gearbeitet haben: Die Eintragungen der SVWS-Konferenzübersicht sind nun im SVWS-WebClient über die **App Noten** und in den **Leistungsdaten** der **App Schüler** einsehbar.
