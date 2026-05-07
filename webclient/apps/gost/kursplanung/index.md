@@ -85,7 +85,7 @@ Weiter rechts (gegebenfalls müssen Sie nach rechts scrollen oder den Container 
 Hier können
 + Kursbelegungen per **Drag & Drop** geändert werden
 + Kurse durch **Verschieben** in die linke Fachwahlübersicht abgewählt werden
-+ Schüler in Kursen **fixiert** werden (Setzen der Pinnadel)
++ Schüler in Kursen **fixiert** werden (Setzen der Pinnnadel)
 
 Die **Kursart** (GKS, GKM, LK1, LK2, AB3, AB4 usw.) kann hier - im Gegensatz zu Kurs42 - **nicht geändert werden**. Um die Kursarten zu ändern, muss durch den Link links am Schülernamen in dessen Laufbahnplanung gewechselt werden.
 
