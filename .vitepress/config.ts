@@ -35,7 +35,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: '', items: [
 							{ text: 'SVWS WebNotenManager (Beta)', link: '/wenom' },
-							{ text: 'SVWS Konferenz (Alpha)', link: '/svws_module/svws_konferenzuebersicht' },
+							{ text: 'SVWS Konferenz (Beta)', link: '/svws_module/svws_konferenzuebersicht' },
 							{ text: 'SVWS WebLuPO', link: '/weblupo' },
 						] },
 					] },
