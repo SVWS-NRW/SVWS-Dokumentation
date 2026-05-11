@@ -34,7 +34,19 @@ Das Icon der Datei variiert je nach installiertem Internetbrowser.
 Hinweis für die IT: Ein einfacher statischer Webserver reicht aus, um die App im Schulnetz bereitzustellen.
 :::
 
-Die Datei `impressum.md` kann bearbeitet werden, falls man einen öffentlich erreichbaren Webserver betreibt und damit ein Impressum anzeigen muss.
+### Erzeugen eines Impressums
+
+Die Datei `impressum.example.js` kann verwendet werden, um ein eigenes Impressum zu setzen, falls man einen öffentlich erreichbaren Webserver betreibt und damit eines anzeigen muss.
+
+![Das Impressum wurde noch nicht gesetzt](./graphics/konferenz_impressum_ungesetzt.png "Das Impressum wurde noch nicht gesetzt.")
+
+Bennen Sie zuerst die Datei in `impressum.js` um und editieren Sie diese dann mit den gewünschten Daten mit einem Texteditor. Speichern Sie diese Datei.
+
+![Die umbenannte Datei impressum.js](./graphics/konferenz_impressum_js.png "Die umbenannte Datei impressum.js.")
+
+Anschließend wird das Impressum wie eingestellt angezeigt.
+
+![Dsa gesetzte Impressum](./graphics/konferenz_impressum_gesetzt.png "Ein definiertes Impressum (auszugsweise).")
 
 ## Lokale Nutzung (offline)
 
