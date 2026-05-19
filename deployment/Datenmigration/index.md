@@ -139,3 +139,88 @@ sed -i -e 's/zuordnungreportvorlagen/ZuordnungReportvorlagen/g' -e 's/versetzung
 ```
 
 Anschließend kann ein `restore` durchgeführt werden und die Migration sollte keine Probleme mit den Tabellennamen haben.
+
+## Migrationsfehler im Logfile erkennen
+Der Migrationsprozess wird im Logfile *svws_schema_SchemaName.log* dokumentiert.
+Dort werden alle relevanten Schritte sowie mögliche Warnungen und Fehler protokolliert.
+
+Im Rahmen von Migrationen realer Datenbanken sind bereits folgende Fehlerbilder aufgetreten:
+
+### Inkonsistenter Eintrag in den Benutzergruppen 
+Die Migration bricht nach *Aktualisierung auf Revision 2* ab. Die zugehörige Log-Datei zeigt folgenden Fehler an:     
+```  - Setze die DB-Revision auf 1
+    * Aktualisiere auf Revision 2
+      - Verwerfe: 0 Trigger
+      - Verwerfe: 0 Indizes
+      - Verwerfe: 0 Fremdschlüssel
+      - Verwerfe: 0 Unique-Constraints
+      - Erstelle: 0 Tabellen
+      - Hinzufügen: 0 Spalten
+      - Ausführen: 4 Befehle...
+        1 - Initialisierung Kurs_Schueler: Entfernen von Einträgen (sollte keiner vorhanden sein...) (0)
+        2 - Entfernen fehlerhafter Kurs-Einträge in den Leistungsdaten (Zuordnung zu Lernabschnitten) (0)
+        3 - Entfernen fehlerhafter Kurs-Einträge in den Leistungsdaten (Kurs mit nicht passenden Fächern) (0)
+        4 - Initialisierung Kurs_Schueler: Befüllen mit Daten (0)
+        Erzeuge einen AES-Schlüssel und ein RSA-Schlüsselpaar für die Schule.
+      - Hinzufügen: 6 Unique-Constraints...
+        LehrerAbschnittsdaten_UC1
+        LehrerAnrechnung_UC1
+        LehrerEntlastung_UC1
+        LehrerFunktionen_UC1
+        LehrerMehrleistung_UC1
+        SchuelerLeistungsdaten_UC1
+      - Hinzufügen: 0 Indizes
+      - Hinzufügen: 81 Fremdschlüssel...
+        BenutzerAllgemein_Credential_FK
+        K_Ankreuzfloskeln_Fach_ID_FK
+        K_AllgAdresse_K_Adressart_FK
+        BenutzergruppenKompetenzen_Benutzergruppen_FK
+  [Fehler]
+  -> Migration fehlgeschlagen! (Fehler beim Aktualsieren der Ziel-DB)
+  Fehler bei der Migration (driver='MARIA_DB', location='localhost:3306', user='test')
+```
+**Wo liegt der Fehler?**    
+Ein Fehleintag bei den Benutzergruppen führt zum Abbruch der Migration. In SchILD-NRW2 existiert eine Benutzergruppe ohne Bezeichnung.
+
+**Lösung in SchILD2**
+Unter *Extras/Benutzerverwaltung* befindet sich bei den Benutzergruppen ein leerer Eintrag. Dieser Eintrag muss gelöscht werden:    
+![benutzergruppen-01.png](./graphics/benutzergruppen-01.png)
+
+
+**Korrektur in der Datenbank**    
+Der fehlerhafte Eintrag befindet sich in der Tabelle *Usergroups*.
+
+
+## Inkonsistenzen in der Jahrgangstabelle
+Die Migration bricht mit einem unerwartetem Fehler ab:
+```
+Beim Migrieren gab es einen unterwarteten Fehler: Fetch failed for POST: /api/schema/migrate/Test/mdb
+```
+**Wo liegt der Fehler?**    
+Die Ursache ist anhand dieser Fehlermeldung nicht unmittelbar erkennbar. In diesem Fall trat der Fehler auf, weil die Jahrgangstabelle Inkonsistenzen aufwies. Es existierten mehrere Einträge mit demselben internen Kürzel:    
+![jahrgaenge-01.png](./graphics/jahrgaenge-01.png)
+
+**Lösung in SchILD2**
+Nach Ändern der Statistik-Bezeichnung läutet die Migration fehlerfrei durch. 
+
+## Fehlender Primärschlüssel
+Insbesondere Access-Datenbanken können Tabellen ohne Primärschlüssel enthalten. In diesem Fall bricht die Migration mit einem Fehler ab, da die SVWS-Datenbank für alle Tabellen einen Primärschlüssel benötigt.
+
+Mithilfe der Log-Datei kann man die fehlerhafte Tabelle identifizieren. In diesem Fall war es die Tabelle *EigeneSchule_Schulformen*:    
+![primaryKey.png](./graphics/primaryKey.png)
+
+**Korrektur**    
+Bei fehlendem Primärschlüssel muss die SchILD2-Datenabank zunächst in eine konsistente SchILD2-DB überführt werden. Dazu findet man hier unter kleine Windows Hilfsprogramme ein [Migrationstool](https://www.svws.nrw.de/schild-nrw2/schild-nrw2-tools-download).
+
+Anschließend kann die Migration mit der korrigierten SchILD2-Datenbank erneut durchgeführt werden.
+
+
+
+
+
+
+
+
+
+
+
