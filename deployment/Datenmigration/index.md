@@ -180,7 +180,7 @@ Die Migration bricht nach *Aktualisierung auf Revision 2* ab. Die zugehörige Lo
   Fehler bei der Migration (driver='MARIA_DB', location='localhost:3306', user='test')
 ```
 **Wo liegt der Fehler?**    
-Ein Fehleintag bei den Benutzergruppen führt zum Abbruch der Migration. In SchILD-NRW2 existiert eine Benutzergruppe ohne Bezeichnung.
+Ein Fehleintrag bei den Benutzergruppen führt zum Abbruch der Migration. In SchILD-NRW2 existiert eine Benutzergruppe ohne Bezeichnung.
 
 **Lösung in SchILD2**
 Unter *Extras/Benutzerverwaltung* befindet sich bei den Benutzergruppen ein leerer Eintrag. Dieser Eintrag muss gelöscht werden:    
