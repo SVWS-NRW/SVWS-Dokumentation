@@ -10,16 +10,16 @@ Die Software synchronisiert die eingegebenen Daten teilautomatisch mit dem SVWS-
 
 ## Voraussetzungen
 
-Es wird ein Webspace mit php8.2 oder höher, inkl. sqlite3 Modul benötigt. Der Webspace muss über ein Zertifikat verfügen (http**s**\://...).
+Es wird ein Webspace mit mindestens php8.2 oder höher, inkl. sqlite3 Modul benötigt. Der Webspace muss über ein Zertifikat verfügen (http**s**\://...).
 
 Dies alles liegt in der Regel bei den gängigen [Webhostern](../hoster_installation/index.md) fertig eingerichtet vor.
 
 Alternativ können Sie die Einrichtung des Webservers unter der Artikel "[eigener  Webserver](./installation_webserver.md)" nachlesen.
 
 ::: tip Standard: Trennung von SVWS-Server und Webserver mit WeNoM
-Der Screenshot oben bildet den Standardfall ab, dass zum einen der SVWS-Server mit dem SVWS-Webclient im geschlossenen Verwaltungsnetz laufen und zum anderen der WebNotenManager auf einem davon vollständig unabhängigen - externen - Webserver aufgesetzt wird.
+Der Screenshot oben bildet den Standardfall ab, dass zum einen der SVWS-Server mit dem SVWS-WebClient im geschlossenen Verwaltungsnetz laufen und zum anderen der WebNotenManager auf einem davon vollständig unabhängigen - externen - Webserver aufgesetzt wird.
 
-Sollen hingegen ein *Webserver mit WeNoM* auf dem gleichen virtuellen oder physischen Server wie der *SVWS-Server/SVWS-Webclient* im Verwaltungsnetz laufen, müssen entweder der Standardport des SVWS-Webclients oder des Webservers angepasst werden. In beiden Fällen ist der Standard Port 443 und daher käme es beim Betrieb auf dem gleichen Server zu einer Kollision. 
+Sollen hingegen ein *Webserver mit WeNoM* auf dem gleichen virtuellen oder physischen Server wie der *SVWS-Server/SVWS-Webclient* im Verwaltungsnetz laufen, müssen entweder der Standardport des SVWS-WebClients oder des Webservers angepasst werden. In beiden Fällen ist der Standard-Port 443 und daher käme es beim Betrieb auf dem gleichen Server zu einer Kollision.
 :::
 
 ## Download der WeNoM Programmdateien

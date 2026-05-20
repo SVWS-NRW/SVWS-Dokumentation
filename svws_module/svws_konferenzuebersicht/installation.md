@@ -46,7 +46,7 @@ Bennen Sie zuerst die Datei in `impressum.js` um und editieren Sie diese dann mi
 
 Anschließend wird das Impressum wie eingestellt angezeigt.
 
-![Dsa gesetzte Impressum](./graphics/konferenz_impressum_gesetzt.png "Ein definiertes Impressum (auszugsweise).")
+![Das gesetzte Impressum](./graphics/konferenz_impressum_gesetzt.png "Ein definiertes Impressum (auszugsweise).")
 
 ## Lokale Nutzung (offline)
 

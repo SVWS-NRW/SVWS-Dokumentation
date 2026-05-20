@@ -6,7 +6,7 @@
 
 2. Kopieren Sie die WeNoM-Programmdateien auf das Verzeichnis des Webservers.
 
-3. Geben Sie dem Webserver auf das Verzeichnis `db` Schreibrechte und reduzieren Sie gegebenfalls die Schreib- und Leserechte auf das Nötigste.
+3. Geben Sie dem Webserver auf das Verzeichnis `db` Schreibrechte und reduzieren Sie gegebenenfalls die Schreib- und Leserechte auf das Nötigste.
 
 ## [Ersteinrichtung](./ersteinrichtung.md)
 
