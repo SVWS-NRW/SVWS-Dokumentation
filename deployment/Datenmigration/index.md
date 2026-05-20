@@ -191,7 +191,7 @@ Unter *Extras/Benutzerverwaltung* befindet sich bei den Benutzergruppen ein leer
 Der fehlerhafte Eintrag befindet sich in der Tabelle *Usergroups*.
 
 
-## Inkonsistenzen in der Jahrgangstabelle
+### Inkonsistenzen in der Jahrgangstabelle
 Die Migration bricht mit einem unerwartetem Fehler ab:
 ```
 Beim Migrieren gab es einen unterwarteten Fehler: Fetch failed for POST: /api/schema/migrate/Test/mdb
@@ -203,7 +203,7 @@ Die Ursache ist anhand dieser Fehlermeldung nicht unmittelbar erkennbar. In dies
 **Lösung in SchILD2**
 Nach Ändern der Statistik-Bezeichnung läutet die Migration fehlerfrei durch. 
 
-## Fehlender Primärschlüssel
+### Fehlender Primärschlüssel
 Insbesondere Access-Datenbanken können Tabellen ohne Primärschlüssel enthalten. In diesem Fall bricht die Migration mit einem Fehler ab, da die SVWS-Datenbank für alle Tabellen einen Primärschlüssel benötigt.
 
 Mithilfe der Log-Datei kann man die fehlerhafte Tabelle identifizieren. In diesem Fall war es die Tabelle *EigeneSchule_Schulformen*:    
