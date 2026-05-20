@@ -1,4 +1,4 @@
-# WenNoM - Anleitung für Lehrkräfte
+# WeNoM - Anleitung für Lehrkräfte
 
 ## Erste Anmeldung
 
@@ -60,8 +60,6 @@ Je nach Rolle der Lehrkraft kann die Ansicht variieren. Es wird zwischen den fol
 
 Die **Fachlehrkraft** kann die Noten für ihren eigenen Unterricht in den Leistungsdaten eingeben. Hierbei ist die **Note** die Zeugnisnote. Es kann ebenfalls eine **Quartalsnote** vergeben werden.
 
-Sofern **Teilleistungen** definiert sind, werden diese hier ebenfalls eingetragen.
-
 Es lassen sich ganze Noten (1, 2, 3, …) und Noten mit Tendenzen eingeben (3+, 3, 3-, …). Weiterhin können je nach Bedarf Leistungsstufen E1, E2, E3 oder Codes wie NB für "Nicht beurteilbar" oder NE für "Nicht erteilt" usw. eingetragen werden.
 
 ::: tip Pfeiltasten verwenden
@@ -116,7 +114,7 @@ Seitens der schulischen Administration können einzelne Lerngruppe für die Eing
 
 ## Eintragungen der Klassenleitung
 
-![Eomtragen von Fehlstunden und Bemerkungen durch die Klassenleitungen](graphics/WenomKlassenleitung.png "Tragen Sie als Klassenleitung gesammlte Fehlstunden und unterschiedlichen Bemerkungen ein.")
+![Eintragen von Fehlstunden und Bemerkungen durch die Klassenleitungen](graphics/WenomKlassenleitung.png "Tragen Sie als Klassenleitung gesammelte Fehlstunden und unterschiedliche Bemerkungen ein.")
 
 ### Klassenleitung: FS und FSU
 
