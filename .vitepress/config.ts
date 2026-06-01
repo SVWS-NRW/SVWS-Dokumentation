@@ -113,9 +113,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'svws-transpile', link: '/development/SVWS-Server/svws-transpile/' },
 						] },
 						{ text: 'Entwicklungsumgebungen', link: '/development/Entwicklungsumgebungen/', collapsed: true, items: [
-							{ text: 'Eclipse-Ubuntu', link: '/development/Entwicklungsumgebungen/Eclipse-Ubuntu/' },
-							{ text: 'Eclipse-Ubuntu (Docker)', link: '/development/Entwicklungsumgebungen/Eclipse-Ubuntu/ubuntu_docker' },
-							{ text: 'Eclipse-Windows', link: '/development/Entwicklungsumgebungen/Eclipse-Windows/' },
+							{ text: 'Eclipse', link: '/development/Entwicklungsumgebungen/Eclipse/' },
 							{ text: 'IntelliJ', link: '/development/Entwicklungsumgebungen/IntelliJ/' },
 							{ text: 'macOS', link: '/development/Entwicklungsumgebungen/macOS/' },
 							{ text: 'VS-Code', link: '/development/Entwicklungsumgebungen/VS-Code/' },
