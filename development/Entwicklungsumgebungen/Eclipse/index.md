@@ -101,6 +101,21 @@ Beispiel:
 }
 ```
 
+## Keystore Beispiel aus dem Projekt verwenden
+
+Kopiere den keystore.example als keystore in das Verzeichnis ` ~/git/SVWS-Server/svws-server-app/ `.
+Mit diesem Keystore funktionieren die Zuigangsdaten aus der Beispiel config.json.
+
+## Eigenen Keystore mit Zertifikat erstellen
+
+```bash
+keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test, S=test, C=test" -ext "SAN=DNS:localhost,IP:127.0.0.1,IP:10.1.0.1,DNS:meinserver,DNS:meinserver.mydomain.de" -keystore /etc/app/svws/conf/keystore -storepass test123 -keypass test123  -keyalg RSA
+
+keytool -export -keystore /etc/app/svws/conf/keystore -alias alias1 -file ./SVWS.cer -storepass test123
+```
+
+Mit diesen Befehlen kann ein eigener Keystore mit einem Zertifikat erstellt werden. Der zweite Befehl exportiert das Zertifikat, welches dann unter den Windows-Client installiert werden kann, so dass die Warnmeldungen im Browser verschwinden.
+
 ## Bauen und aktualisieren
 
 ### In Eclipse
@@ -129,3 +144,10 @@ Wenn das Checkstyle-Plugin installiert ist, kann es direkt auf dem Projekt aktiv
 - Rechtsklick auf das Projekt `SVWS-Server`
 - `Checkstyle -> Activate Checkstyle`
 - Optional die Ansicht `Checkstyle Problems` einblenden
+
+## Mapstruct einrichten
+
+Beim Neuanlegen des Projekts sollte Mapstruct automatisch funktionieren.
+Bei Problemen kann diese Seite helfen.
+
+[Mapstruct Probleme](mapStruct_eclipse_setup.md)
