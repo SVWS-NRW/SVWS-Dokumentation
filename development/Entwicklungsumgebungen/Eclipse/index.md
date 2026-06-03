@@ -1,6 +1,6 @@
 # Eclipse fuer die SVWS-Entwicklung
 
-Diese Anleitung beschreibt nur die Einrichtung von Eclipse fuer die Arbeit am SVWS-Projekt. Betriebssystemspezifische Installationsschritte sind bewusst ausgelassen.
+Diese Anleitung beschreibt nur die Einrichtung von Eclipse für die Arbeit am SVWS-Projekt. Betriebssystemspezifische Installationsschritte sind bewusst ausgelassen.
 
 ## Voraussetzungen
 
@@ -12,7 +12,7 @@ Diese Anleitung beschreibt nur die Einrichtung von Eclipse fuer die Arbeit am SV
 
 - Eine aktuelle Version von Eclipse IDE for Java Developers oder Eclipse IDE for Enterprise Java and Web Developers installieren
 - Beim ersten Start einen lokalen Workspace festlegen
-- Bei Bedarf die Speicherwerte in der `eclipse.ini` erhoehen
+- Bei Bedarf die Speicherwerte in der `eclipse.ini` erhöhen
 
 Beispiel:
 
@@ -35,7 +35,7 @@ Beispiel:
 
 ### Optionale Plugins
 
-- JSON Editor Plugin fuer die Bearbeitung der `svwsconfig.json`
+- JSON Editor Plugin für die Bearbeitung der `svwsconfig.json`
 - Checkstyle Plugin, wenn die Checkstyle-Ansicht in Eclipse genutzt werden soll
 
 ## Repository einbinden
@@ -46,7 +46,7 @@ Repository:
 
 - `https://github.com/SVWS-NRW/SVWS-Server`
 
-Anschliessend in Eclipse:
+Anschließend in Eclipse:
 
 - `Window -> Perspective -> Open Perspective -> Other -> Git`
 - `Clone a Git Repository`
@@ -55,7 +55,7 @@ Anschliessend in Eclipse:
 
 - In die Java-Perspektive wechseln
 - `Import -> Gradle -> Existing Gradle Project`
-- Das lokale Repository-Verzeichnis auswaehlen
+- Das lokale Repository-Verzeichnis auswählen
 
 ## SVWS-Konfiguration anlegen
 
@@ -66,13 +66,13 @@ cp ~/git/SVWS-Server/svws-server-app/src/main/resources/svwsconfig.json.example 
   ~/git/SVWS-Server/svws-server-app/svwsconfig.json
 ```
 
-Fuer die lokale Entwicklung sollte `PortHTTPS` auf einen Wert groesser oder gleich `1024` gesetzt werden, zum Beispiel `3000`. So laesst sich der Server ohne erhoehte Rechte aus Eclipse starten.
+Fuer die lokale Entwicklung sollte `PortHTTPS` auf einen Wert größer oder gleich `1024` gesetzt werden, zum Beispiel `3000`. So lässt sich der Server ohne erhöhte Rechte aus Eclipse starten.
 
 Wichtige Pfade in der `svwsconfig.json`:
 
-- `ClientPath` auf das Webclient-Build-Verzeichnis setzen
-- `AdminClientPath` auf das Adminclient-Build-Verzeichnis setzen
-- Datenbankzugang fuer die lokale MariaDB hinterlegen
+- `ClientPath` auf das WebClient-Build-Verzeichnis setzen
+- `AdminClientPath` auf das AdminClient-Build-Verzeichnis setzen
+- Datenbankzugang für die lokale MariaDB hinterlegen
 
 Beispiel:
 
@@ -103,8 +103,8 @@ Beispiel:
 
 ## Keystore Beispiel aus dem Projekt verwenden
 
-Kopiere den keystore.example als keystore in das Verzeichnis ` ~/git/SVWS-Server/svws-server-app/ `.
-Mit diesem Keystore funktionieren die Zuigangsdaten aus der Beispiel config.json.
+Kopiere den `keystore.example` als `keystore` in das Verzeichnis ` ~/git/SVWS-Server/svws-server-app/ `.
+Mit diesem Keystore funktionieren die Zugangsdaten aus der Beispiel `config.json`.
 
 ## Eigenen Keystore mit Zertifikat erstellen
 
@@ -120,8 +120,8 @@ Mit diesen Befehlen kann ein eigener Keystore mit einem Zertifikat erstellt werd
 
 ### In Eclipse
 
-- Gradle-Tasks fuer die benoetigten Teilprojekte ausfuehren, zum Beispiel `clean` und `build`
-- Nach Aenderungen an Gradle-Konfigurationen ein Project Reload ausfuehren
+- Gradle-Tasks für die benoetigten Teilprojekte ausfuehren, zum Beispiel `clean` und `build`
+- Nach Änderungen an Gradle-Konfigurationen ein Project Reload ausführen
 
 ### Im Terminal
 
@@ -148,6 +148,7 @@ Wenn das Checkstyle-Plugin installiert ist, kann es direkt auf dem Projekt aktiv
 ## Mapstruct einrichten
 
 Beim Neuanlegen des Projekts sollte Mapstruct automatisch funktionieren.
+
 Bei Problemen kann diese Seite helfen.
 
 [Mapstruct Probleme](mapStruct_eclipse_setup.md)
