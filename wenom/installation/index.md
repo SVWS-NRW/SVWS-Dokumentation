@@ -2,7 +2,7 @@
 
 ## [Technischer Teil](./installation.md)
 
-1. Optional: Richten Sie eine Subdomain für Ihre Webadresse ein. Zum Beispiel `noten.meineSchule.de` oder `wenom.meineSchule.de`.
+1. Richten Sie eine Subdomain für Ihre Webadresse ein. Zum Beispiel `noten.meineSchule.de` oder `wenom.meineSchule.de`.
 
 2. Kopieren Sie die WeNoM-Programmdateien auf das Verzeichnis des Webservers.
 
