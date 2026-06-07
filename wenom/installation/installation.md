@@ -16,6 +16,8 @@ Dies alles liegt in der Regel bei den gängigen [Webhostern](../hoster_installat
 
 Alternativ können Sie die Einrichtung des Webservers unter der Artikel "[eigener  Webserver](./installation_webserver.md)" nachlesen.
 
+Der WeNoM ist über eine **eigene Subdomain** aufzurufen. Richten Sie sich also *wenom.*, *noten.* oder in einer anderen Wunschvariante als Subdomain ein.
+
 ::: tip Standard: Trennung von SVWS-Server und Webserver mit WeNoM
 Der Screenshot oben bildet den Standardfall ab, dass zum einen der SVWS-Server mit dem SVWS-WebClient im geschlossenen Verwaltungsnetz laufen und zum anderen der WebNotenManager auf einem davon vollständig unabhängigen - externen - Webserver aufgesetzt wird.
 
