@@ -31,12 +31,12 @@ Nach der Ersteinrichtung befinden sich noch keine Daten, also explizit auch kein
 
 ### Fehlerhafte Eingabe der URL
 
-Achte Sie auf die vollständig korrekte Syntax. Bei der URL ist das Eingabe von beispielsweise `meinWeNoM.de`, ohne `https`://` und Backslash. Die verschlüsselte Verbindung zu einem HTTPS-gesicherten Server ist notwendig. Eine Verbindung zu einem HTTP-Server - ohne das S - ist nicht zulässig.
+Achten Sie auf die vollständig korrekte Syntax. Bei der URL ist das die Eingabe von beispielsweise `meinWeNoM.de`, ohne `https`://` und Backslash. Die verschlüsselte Verbindung zu einem HTTPS-gesicherten Server ist notwendig. Eine Verbindung zu einem HTTP-Server - ohne das S - ist nicht zulässig.
 
 + Prüfen Sie also, ob Sie das `https://` als Präfix korrekt gesetzt haben.
 + Prüfen Sie, ob gegebenfalls Dopplungen vorliegen: `https://https://meinWeNoM.de`.
 + Prüfen Sie auf Sonderzeichen, die fälschlicherweise verwendet wurden: `https://mein%WeNoM.de`.
-+ Prüfen Sie, ob Sie einen Backslash zu viel am Ende erzeugt wurde: `https://meinWeNoM.de/`.
++ Prüfen Sie, ob ein Backslash zu viel am Ende vorhanden ist: `https://meinWeNoM.de/`.
 
 ### Abweichungen des internen Names
 
@@ -52,7 +52,7 @@ Dies kann in Absprache mit dem technischen Admin durch Setzen des Hakens bestät
 
 ## Alternativ: Generation des Secrets per API
 
-Wennn Sie ohne einen SVWS-Server das Secret generieren möchten und dieses dann an die schulische Administration übergeben wollen, können Sie dies per Api-Aufruf auslösen:
+Wenn Sie ohne einen SVWS-Server das Secret generieren möchten und dieses dann an die schulische Administration übergeben wollen, können Sie dies per Api-Aufruf auslösen:
 
 >[!TIP] Prüfung der Serverantwort in der Debug-Konsole des Browsers
 >Über die Konsole des Browsers (üblicherweise F12) kann die Serverantwort überprüft werden. Darüber hinaus gibt es kein sichtbares Feedback.
