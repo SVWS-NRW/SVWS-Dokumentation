@@ -1,6 +1,6 @@
 # Login - online oder per Datei
 
-![Loginfenster der Konferenzübersicht](./graphics/konferenz_login-daten-smaller.png "Loggen Sie sich entweder über den SVWS-Server ein oder laden Sie eine vorher exportierte Notendatei hoch.")
+![Loginfenster der Konferenzübersicht](./graphics/konferenz_login-daten.png "Loggen Sie sich entweder über den SVWS-Server ein oder laden Sie eine vorher exportierte Notendatei hoch.")
 
 ## Online-Abruf vom SVWS-Server
 
@@ -8,7 +8,7 @@ Wenn Sie die Anwendung online mit einem SVWS-Server nutzen, geben Sie Benutzerna
 
 Im linken Bereich sind nun die Login-Daten anzugeben:
 
-- SVWS-Server-URL beziehungsweise die Server-IP-Adresse im lokalen Netzwerk, tragen Sie hier das Präfix `https://` mit ein. Verbinden Sie sich also beispielsweise mit `https://name-des-svws-servers` oder `https://127.0.0.1`. Haben Sie den Server auf einem bestimmten Port liegen, tragen Sie diesen ebenfalls ein, für den Port *8443* zum Beispiel wäre dies `https://mein-verwaltungsserver:8443`. Fragen Sie im Zweifel Ihre IT für die konkreten Daten.
+- SVWS-Server-URL beziehungsweise die Server-IP-Adresse im lokalen Netzwerk, tragen Sie hier das Präfix `https://` mit ein. Verbinden Sie sich also beispielsweise mit `https://name-des-svws-servers` oder `https://127.0.0.1`. Haben Sie den Server auf einem bestimmten Port liegen, tragen Sie diesen ebenfalls ein, für den Port *8443* zum Beispiel wäre dies `https://mein-verwaltungsserver:8443`. Im Screenshot ist das Beispiel für den Port `443`zu sehen. Fragen Sie im Zweifel Ihre IT für die konkreten Daten.
 - Den Schema-Namen auf dem Server, dies ist der **Name Ihrer "Datenbank"**.
 - Einen Datenbank-Benutzernamen, mit dem Sie sich etwa normalerweise auch im SVWS-WebClient oder in anderen Programmen anmelden. In der Konferenzübersicht hat dieser die üblichen Rechte zum Ansehen und Ändern von Schüler-Leistungsdaten.
 - Das zugehörige Passwort.
@@ -35,6 +35,10 @@ Alternativ laden Sie eine Exportdatei `enm.json.gz` per Drag & Drop oder über d
 :::
 
 Nach dem Upload sehen Sie eine kurze Bestätigung und den Namen der geladenen Datei.
+
+## Darstellung
+
+Schon auf dem Startbildschirm können Sie oben rechts wählen, ob die SVWS-Konferenzübersicht im dunklen oder hellen Schema angezeigt werden soll oder ob die Systemeinstellung übernommen wird.
 
 ## Eventuelle Startprobleme
 

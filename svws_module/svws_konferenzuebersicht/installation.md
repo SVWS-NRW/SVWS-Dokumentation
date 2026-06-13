@@ -8,6 +8,26 @@
 
 ## Installation der App auf einem Rechner oder im Netzwerk
 
+![Unterschiedliche Arten, das Modul zu starten](./graphics/konferenz_dateien_zum_starten.png "Es gibt mehrere Möglichkeiten, das SVWS-Konferenzmodul zu starten.")
+
+Das SVWS-Konferenzmodul steht als ausführbare .exe oder als Browser-startbare Datei bereit.
+
+Wenn Sie die .exe starten, wird eine vom sonstigen Betriebssystem und den dort installierten Programmen vollständig selbstständige Umbegung mit allen nötigen Komponeten bereitgestellt.
+
+Die .zip-Datei muss entpackt werden, dann lässt sich die index.html starten und das SVWS-Konferenzmodul läuft in ihrem Browser.
+
+>[!NOTE] Dateiendungen werden von MS Windows per Standard ausgeblendet.
+>Beachten Sie, dass unter MS Windows die Dateiendungen häufig per Standard im Explorer nicht zu sehen sind.
+>Ihre Dateien heißen dort also nur SVWS-Konferenzübersicht.Setup.VERSION oder index.
+
+### Starte der ausführbaren .exe-Datei
+
+Sie können die ausführbare .exe-Datei direkt starten, sofern Sie auf Ihrem Computer mit Ihrem Betriebssystem-Benutzer die Rechte hierfür haben.
+
+Teilweise werden Ihnen die Rechte durch die IT nicht eingeräumt, eigene ausführbare Dateien zu starten.
+
+### Starten der browserbasierten index.html
+
 Die Konferenzübersicht läuft in einem Browser und setzt daher kein bestimmtes Betriebssystem voraus!
 
 ![Die heruntergeladene zip](./graphics/konferenz_zip.png "Die heruntergeladene .zip-Datei ist noch zu entpacken.")
