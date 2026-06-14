@@ -10,21 +10,26 @@
 
 ![Unterschiedliche Arten, das Modul zu starten](./graphics/konferenz_dateien_zum_starten.png "Es gibt mehrere Möglichkeiten, das SVWS-Konferenzmodul zu starten.")
 
-Das SVWS-Konferenzmodul steht als ausführbare .exe oder als Browser-startbare Datei bereit.
+Das SVWS-Konferenzmodul steht als *ausführbare .exe* für MS Windows, als *appimage* für Linux oder als *Browser-startbare Datei* bereit.
 
-Wenn Sie die .exe starten, wird eine vom sonstigen Betriebssystem und den dort installierten Programmen vollständig selbstständige Umbegung mit allen nötigen Komponeten bereitgestellt.
+* Wenn Sie die .exe in MS Windows starten, wird eine vom sonstigen Betriebssystem und den dort installierten Programmen vollständig selbstständige Umbegung mit allen nötigen Komponeten bereitgestellt.
+Hierbei wird ein Desktop-Icon installiert, über welches das SVWS-Konferenzmodul direkt gestartet werden kann. 
 
-Die .zip-Datei muss entpackt werden, dann lässt sich die index.html starten und das SVWS-Konferenzmodul läuft in ihrem Browser.
+* Die .zip-Datei muss entpackt werden, dann lässt sich die `index.html` starten und das SVWS-Konferenzmodul läuft in ihrem Browser. Diese Version kann damit auf jedem Betriebssystem startet, das einen aktuellen Browser unterstützt.
+
+* Die .appimage-Datei kann unter Linux mit `chmod +x` ausführbar gemacht und dann per `./appimage` gestartet werden.
+
+### Starte der ausführbaren .exe-Datei
+
+Sie können die ausführbare .exe-Datei in MS Windows direkt starten, sofern Sie auf Ihrem Computer mit Ihrem Betriebssystem-Benutzer die Rechte hierfür haben.
+
+Teilweise werden Ihnen die Rechte durch die IT nicht eingeräumt, eigene ausführbare Dateien zu starten.
+
+Hierbei wird ein Desktop-Icon installiert.
 
 >[!NOTE] Dateiendungen werden von MS Windows per Standard ausgeblendet.
 >Beachten Sie, dass unter MS Windows die Dateiendungen häufig per Standard im Explorer nicht zu sehen sind.
 >Ihre Dateien heißen dort also nur SVWS-Konferenzübersicht.Setup.VERSION oder index.
-
-### Starte der ausführbaren .exe-Datei
-
-Sie können die ausführbare .exe-Datei direkt starten, sofern Sie auf Ihrem Computer mit Ihrem Betriebssystem-Benutzer die Rechte hierfür haben.
-
-Teilweise werden Ihnen die Rechte durch die IT nicht eingeräumt, eigene ausführbare Dateien zu starten.
 
 ### Starten der browserbasierten index.html
 
