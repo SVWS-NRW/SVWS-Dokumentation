@@ -36,6 +36,7 @@ export default defineConfig(({ mode }) => {
 						{ text: '', items: [
 							{ text: 'SVWS WebNotenManager (Beta)', link: '/wenom' },
 							{ text: 'SVWS Konferenz (Beta)', link: '/svws_module/svws_konferenzuebersicht' },
+							{ text: 'SVWS Prognos (Alpha)', link: '/svws_module/svws_prognos' },
 							{ text: 'SVWS WebLuPO', link: '/weblupo' },
 						] },
 					] },
@@ -162,6 +163,19 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Verwendung in der Konferenz', link: '/svws_module/svws_konferenzuebersicht/verwendung.md' },
 							{ text: 'Fehlerbehebung', link: '/svws_module/svws_konferenzuebersicht/fehlerbehebung.md' },
 							{ text: 'Hinweise zum Datenschutz', link: '/svws_module/svws_konferenzuebersicht/datenschutz.md' },
+						] },
+					] },
+				],
+				'/svws_module/svws_prognos' : [
+					{ text: '', items: [
+						{ text: 'SVWS Prognos', link: '/svws_module/svws_prognos/',  collapsed: false, items: [
+							{ text: 'Installation und Bereitstellung' },
+							{ text: 'Verwendung und Aufbau', collapsed: false, items: [
+								{ text: 'Verbindung mit dem Server' },
+								{ text: 'Verwendung' },
+							] } ,
+							{ link: '/svws_module/svws_prognos/server_verbinden.md' },
+							{ text: 'Begriffe, Konventionen und Fehlersuche' },
 						] },
 					] },
 				],
