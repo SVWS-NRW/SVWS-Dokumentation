@@ -26,7 +26,7 @@ Abhängig von den lokalen Gegebenheiten, kann das sinnvoll sein.
 
 Der *SVWS-Server* ist ein in Java geschriebener Server, der eine REST-API und einen WebClient zur Verfügung stellt.
 
-Der *SVWS-WebClient*, mit dem sich die Inhalte über eine Weboberfläche aufrufen lassen, hat zunächst die Funktionalitäten von Kurs42 und Lupo übernommen, da diese Programme die neue Datenbankstruktur nicht mehr unterstützen. Nach und nach werden weitere Features hinzugefügt.
+Der *SVWS-Client*, mit dem sich die Inhalte über eine Weboberfläche aufrufen lassen, hat zunächst die Funktionalitäten von Kurs42 und Lupo übernommen, da diese Programme die neue Datenbankstruktur nicht mehr unterstützen. Nach und nach werden weitere Features hinzugefügt.
 
 Neben dem WebClient ist auch der *SVWS-AdminClient* zur Verwaltung der enthaltenen SVWS-Schemata enthalten.
 
@@ -39,12 +39,12 @@ Das Programm benötigt in einer Übergangsphase weiterhin Zugriff auf die Datenb
 SchILD-NRW 3 wird in den kommenden Jahren auch weiter genutzt werden müssen.
 
 ## Browserunterstützung
-### Welche Browser werden vom SVWS-WebClient unterstützt?
+### Welche Browser werden vom SVWS-Client unterstützt?
 
 Der WebClient wird mit Firefox, Chrome, Edge und Safari getestet.
 
 ## Zugriffsberechtigungen
-### Wer benötigt Zugriff auf den SVWS-WebClient?
+### Wer benötigt Zugriff auf den SVWS-Client?
 
 Alle Personen, die auch jetzt schon mit SchILD-NRW arbeiten. Für SchILD werden weiterhin SchILD-Administratoren definiert.
 

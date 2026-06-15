@@ -1,6 +1,6 @@
 # Noten Administration
 
-Über den Bereich **Administration** können die verbundenen WeNoM-Server sowie des **Lokale Notenmodul des SVWS-Webclients** konfiguriert werden.
+Über den Bereich **Administration** können die verbundenen WeNoM-Server sowie des **Lokale Notenmodul des SVWS-Clients** konfiguriert werden.
 
 ::: tip WeNoM Benutzerhandbuch
 Dies ist eine Kurzübersicht zur Orientierung in der App Noten.
@@ -14,7 +14,7 @@ Im lokalen Notenmodul ist nur der **Tab Konfiguration** sichtbar, über den sich
 
 ![Lokales Notenmodul](./graphics/svws_noten_administration_lokal.png "Wählen Sie hier das Lokale Notenmodul des SVWS-Servers.")
 
-Wählen Sie hier das **Lokale Notenmodul** des SVWS-Webclients aus. Wurden WeNoM-Server konfiguriert, finden Sie diese hier ebenfalls und diese lassen sich in gleicher Weise für die Eingabe von Noten und anderer Daten einstellen.
+Wählen Sie hier das **Lokale Notenmodul** des SVWS-Clients aus. Wurden WeNoM-Server konfiguriert, finden Sie diese hier ebenfalls und diese lassen sich in gleicher Weise für die Eingabe von Noten und anderer Daten einstellen.
 
 ![Tab Konfiguration](./graphics/svws_noten_administration_lokal_konfiguration.png "Konfiguieren Sie für die gewünschten Gruppen, welche Daten eingegeben werden können.")
 

@@ -42,4 +42,4 @@ SVWS-Server und SVWS-Client erlauben nun die Verwaltung eines Stundenplans für 
 
 ## Neues Konzept zur Ansicht bei den Lernabschnitten und Leistungsdaten
 
-## Konzept zum Druck aus dem SVWS-WebClient
+## Konzept zum Druck aus dem SVWS-Client

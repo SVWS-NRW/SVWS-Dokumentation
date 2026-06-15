@@ -44,7 +44,7 @@ Die Möglichkeit zur Verbindung kann gegebenenfalls wiederhergestellt werden, fa
 
 Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialkennwort*. In Kombination mit der *Dienstlichen Emailadresse* als Benutzername ist dieses Kennwort der individuelle Erstzugang zum WebNotenManager.
 
-![Lehrer-Zugangsdaten](./graphics/lehrer-zugangsdaten.png "Im SVWS-WebClient sind die Initialkennworte hinterlegt.")
+![Lehrer-Zugangsdaten](./graphics/lehrer-zugangsdaten.png "Im SVWS-Client sind die Initialkennworte hinterlegt.")
 
 Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehler markiert und nicht zum WeNoM-Server übertragen.
 

@@ -1,6 +1,6 @@
 # Issues & Bugs melden
 
-Haben Sie einen Fehler im SVWS-Server oder im SVWS-WebClient entdeckt?
+Haben Sie einen Fehler im SVWS-Server oder im SVWS-Client entdeckt?
 
 Bitte überprüfen Sie, ob dieser Fehler noch nachvollziehbar oder reproduzierbar ist, zum Beispiel mit einem unserer Testserver wie [stable.svws-nrw.de](https://stable.svws-nrw.de).
 

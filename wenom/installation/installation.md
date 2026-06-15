@@ -19,9 +19,9 @@ Alternativ können Sie die Einrichtung des Webservers unter der Artikel "[eigene
 Der WeNoM ist über eine **eigene Subdomain** aufzurufen. Richten Sie sich also *wenom.*, *noten.* oder in einer anderen Wunschvariante als Subdomain ein.
 
 ::: tip Standard: Trennung von SVWS-Server und Webserver mit WeNoM
-Der Screenshot oben bildet den Standardfall ab, dass zum einen der SVWS-Server mit dem SVWS-WebClient im geschlossenen Verwaltungsnetz laufen und zum anderen der WebNotenManager auf einem davon vollständig unabhängigen - externen - Webserver aufgesetzt wird.
+Der Screenshot oben bildet den Standardfall ab, dass zum einen der SVWS-Server mit dem SVWS-Client im geschlossenen Verwaltungsnetz laufen und zum anderen der WebNotenManager auf einem davon vollständig unabhängigen - externen - Webserver aufgesetzt wird.
 
-Sollen hingegen ein *Webserver mit WeNoM* auf dem gleichen virtuellen oder physischen Server wie der *SVWS-Server/SVWS-Webclient* im Verwaltungsnetz laufen, müssen entweder der Standardport des SVWS-WebClients oder des Webservers angepasst werden. In beiden Fällen ist der Standard-Port 443 und daher käme es beim Betrieb auf dem gleichen Server zu einer Kollision.
+Sollen hingegen ein *Webserver mit WeNoM* auf dem gleichen virtuellen oder physischen Server wie der *SVWS-Server/SVWS-Client* im Verwaltungsnetz laufen, müssen entweder der Standardport des SVWS-Clients oder des Webservers angepasst werden. In beiden Fällen ist der Standard-Port 443 und daher käme es beim Betrieb auf dem gleichen Server zu einer Kollision.
 :::
 
 ## Download der WeNoM Programmdateien

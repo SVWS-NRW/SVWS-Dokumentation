@@ -6,7 +6,7 @@ Letzte Aktualisierung: 2025-09-10
 
 Start in die öffentliche Betaphase für SchILD-NRW-3 und den SVWS-Server. Am 13. Oktober 2024 werden die Installationspakete auf GitHub zur Verfügung gestellt.
 
-Dabei soll SchILD-NRW 3 den Funktionsumfang von SchILD-NRW 2 ablösen und in Zusammenspiel mit dem SVWS-WebClient die Möglichkeit bieten, die gymnasiale Oberstufe an Gymnasien und Gesamtschulen in NRW ermöglichen.
+Dabei soll SchILD-NRW 3 den Funktionsumfang von SchILD-NRW 2 ablösen und in Zusammenspiel mit dem SVWS-Client die Möglichkeit bieten, die gymnasiale Oberstufe an Gymnasien und Gesamtschulen in NRW ermöglichen.
 
 Der **WebClient** dient zu dieser Zeit ausschließlich als Ersatz für die Programme *Kurs42* und *LuPO*!
 

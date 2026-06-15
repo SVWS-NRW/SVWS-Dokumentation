@@ -1,6 +1,6 @@
 # Geschäftsprozesse
 
-**SVWS-Server und SVWS-WebClient**
+**SVWS-Server und SVWS-Client**
 
 Eine Ausführliche Beschreibung der Geschäftsprozesse befindet sich im [Benutzerhandbuch](../index.md).
 

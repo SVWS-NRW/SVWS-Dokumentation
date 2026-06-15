@@ -1,15 +1,15 @@
 # Datenaustausch mit Untis
 
-In der **App Schule** des SVWS-WebClients können Sie unter dem Menüpunkt **Schule ➜ Datenaustausch ➜ Untis** Daten im Format des externen Programms *Untis* austauschen.
+In der **App Schule** des SVWS-Clients können Sie unter dem Menüpunkt **Schule ➜ Datenaustausch ➜ Untis** Daten im Format des externen Programms *Untis* austauschen.
 
 :::info Untis-Support
 Konsultieren Sie für den konkreten Aufbau der jeweilgen `.txt`-Dateien das über die Webseite des Herstellers abrufbare Untis-Handbuch.
 
-Ebenso nutzen Sie das Handbuch und den Untis-Support für den Im- und Export im Programm Untis. Diese Dokumentation beschreibt primär die Nutzung im SVWS-WebClient.
+Ebenso nutzen Sie das Handbuch und den Untis-Support für den Im- und Export im Programm Untis. Diese Dokumentation beschreibt primär die Nutzung im SVWS-Client.
 :::
 
 :::warning Beugen Sie Synchronisationsproblemen vor
-Achten Sie bitte unbedingt darauf, dass die Bezeichnungen für Kurse, Klassen, Lehrkräfte und Fächer in der SVWS-Datenbank, in Untis und anderen Programmen exakt übereinstimmen. Dies gilt ebenfalls für Schülerdaten wie Vor-, Nachname und Geburtsdatum. Der **Ausgangspunkt** für den Import von Daten sollte immer der SVWS-WebClient sein. Die Bezeichnungen der Klassen, Lehrkräfte, Fächer und Kurse sollten im SVWS-WebClient festgelegt, und die entsprechenden Bezeichnungen in Untis oder anderen Programmen müssen sich exakt daran anpassen. Auch Tippfehler führen mitunter zu Problemen bei einer Datensynchronisation!
+Achten Sie bitte unbedingt darauf, dass die Bezeichnungen für Kurse, Klassen, Lehrkräfte und Fächer in der SVWS-Datenbank, in Untis und anderen Programmen exakt übereinstimmen. Dies gilt ebenfalls für Schülerdaten wie Vor-, Nachname und Geburtsdatum. Der **Ausgangspunkt** für den Import von Daten sollte immer der SVWS-Client sein. Die Bezeichnungen der Klassen, Lehrkräfte, Fächer und Kurse sollten im SVWS-Client festgelegt, und die entsprechenden Bezeichnungen in Untis oder anderen Programmen müssen sich exakt daran anpassen. Auch Tippfehler führen mitunter zu Problemen bei einer Datensynchronisation!
 
 Achten Sie bitte auch darauf, immer nur **aktuelle Untis-Dateien zu importieren** nicht alte oder welche, die Änderungen in Untis noch nicht beinhalten!
 :::
@@ -30,7 +30,7 @@ In den SVWS-Server können Sie *Stundenpläne* auf drei Arten mit unterschiedlic
 + *Stundenplan GPU001.txt und GPU002.txt*: Mehrwochenpläne werden unterstützt, sofern die Pläne schon mit der korrekten Anzahl an Wochen gerechnet wurden. In der `GPU002.txt` werden von Untis die Unterrichte selbst codiert.
 + *Stundenplan GPP002.txt und GPU014.txt*: Es werden Mehrwochenpläne unterstützt, achten Sie bitte auf die Ausführungen im SVWS-Client. Achtung: Die `GPP002.txt` ist **nicht** die `GPU002.txt`.
 
-### Schritte zum Import im SVWS-WebClient
+### Schritte zum Import im SVWS-Client
 
 1. Gehen Sie zu **Schule ➜ Datenaustausch ➜ Untis**
 2. Wählen Sie die passende Importvariante
@@ -110,7 +110,7 @@ Falls fehlerhafte Unterrichtseinträge beim Import erkannt werden:
 
 ![Exportdialog für SVWS-Daten in Untis-Dateien](./graphics/svws_schule_datenaustausch_untis_export.png "Der Exportdialog, hier müssen Sie nichts ändern.")
 
-Sie können ausgewählte Daten aus dem SVWS-WebClient für die Weiterverarbeitung in Untis exportieren. Derzeit stehen folgende Exportoptionen zur Verfügung:
+Sie können ausgewählte Daten aus dem SVWS-Client für die Weiterverarbeitung in Untis exportieren. Derzeit stehen folgende Exportoptionen zur Verfügung:
 - **Klassenliste** (`GPU003.txt`)
 - **Lehrerliste** (`GPU004.txt`)
 - **Fächer- und Kursliste** (`GPU006.txt`)

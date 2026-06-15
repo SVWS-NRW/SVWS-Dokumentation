@@ -8,7 +8,7 @@ Das Teilprojekt ist in weiten Teilen so aufgebaut, dass es nicht direkt vom SVWS
 - der Java-Code aus dem Teilprojekt SVWS-Core übersetzt wird
 - die Client-REST-API anhand der API-Definition aus dem Teilprojekt SVWS-OpenApi generiert wird
 
-Das Ergebnis wird dann im npm-Modul `core` in dem Teilprojekt SVWS-WebClient abgelegt, so dass dieses Modul als npm-Artefakt zur Verfügung steht.
+Das Ergebnis wird dann im npm-Modul `core` in dem Teilprojekt SVWS-Client abgelegt, so dass dieses Modul als npm-Artefakt zur Verfügung steht.
 
 ## Kommandozeilen-Anwendung CoreTranspiler
 

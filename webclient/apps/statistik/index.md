@@ -1,6 +1,6 @@
 # Statistik
 
-Es ist geplant, ASDPC als Programm für die jährliche Schulstatistik des Landes NRW abzulösen und hierfür den SVWS-WebClient zu verwenden.
+Es ist geplant, ASDPC als Programm für die jährliche Schulstatistik des Landes NRW abzulösen und hierfür den SVWS-Client zu verwenden.
 
 In der **App Statistik** können Sie Ihre jährliche Statistik für das Schulministerium erstellen.
 

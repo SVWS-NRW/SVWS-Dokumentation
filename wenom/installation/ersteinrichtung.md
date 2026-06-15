@@ -11,7 +11,7 @@ Zur Einrichtung eines neuen WebNotenManagers im SVWS-Server das Pluszeichen unte
 
 Damit der SVWS-Server und WeNoM gesichert kommunizieren können, wird ein *Secret* benötigt. Dies wird im OAuth2-Verfahren verwendet, um die sendende Gegenstelle zu identifizieren.
 
-Das Secret wird bei der erstmaligen Eingabe der Verbindungsdaten im SVWS-WebClient automatisch generiert und im Webspace des WeNoM unter `./db/client.sec` abgespeichert. Das Secret aus dieser Datei muss unter *Secret* (vgl. Screenshot) eingefügt werden.
+Das Secret wird bei der erstmaligen Eingabe der Verbindungsdaten im SVWS-Client automatisch generiert und im Webspace des WeNoM unter `./db/client.sec` abgespeichert. Das Secret aus dieser Datei muss unter *Secret* (vgl. Screenshot) eingefügt werden.
 
 ![Secret Eintrag](./graphics/secret_eintrag.png)
 

@@ -8,7 +8,7 @@ Für eine ausführliche Anleitung zur **Noteneingabe** konsultieren Sie bitte da
 
 ## Schnellanleitung
 
-Um Noten im Notenmodul des SVWS-Webclients einzugeben, navigieren Sie über die **App Noten** zur Bereich **Noteneingabe ➜ Leistungsdaten**.
+Um Noten im Notenmodul des SVWS-Clients einzugeben, navigieren Sie über die **App Noten** zur Bereich **Noteneingabe ➜ Leistungsdaten**.
 
 ![App Noten, dann die Noteneingabe](./graphics/svws_noteneingabe.png "Sie finden die Noteneingabe über die App Noten.")
 
@@ -53,5 +53,5 @@ Hierbei werden Platzhalter wie *$Vorname$* automatisch durch das System ausgefü
 :::tip Wollen Sie mehr wissen?
 Konsultieren Sie für eine detaillierte Anleitung das [Benutzerhandbuch WeNoM](../../../../wenom/index.md).
 
-Für die Noteneingabe springen Sie in die [Anleitung für Lehrkräfte](../../../../wenom/benutzerhandbuch/anleitung_lehrkraefte.md). Die Anleitung dort beginnt mit der **Anmeldung an einem WeNoM-Server**. Sofern Sie direkt mit dem *Lokalen Notenmodul des SVWS-Webclients* arbeiten, entfällt der Bereich mit der Anmeldung und Sie gehen über die **App Noten**.
+Für die Noteneingabe springen Sie in die [Anleitung für Lehrkräfte](../../../../wenom/benutzerhandbuch/anleitung_lehrkraefte.md). Die Anleitung dort beginnt mit der **Anmeldung an einem WeNoM-Server**. Sofern Sie direkt mit dem *Lokalen Notenmodul des SVWS-Clients* arbeiten, entfällt der Bereich mit der Anmeldung und Sie gehen über die **App Noten**.
 :::

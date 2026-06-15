@@ -1,8 +1,8 @@
 # Gruppenprozesse
 
-In einigen Auswahllisten schaltet der SVWS-WebClient in den Modus für die **Mehrfachauswahl** beziehungsweise die **Gruppenprozesse**, sobald über die Checkbox vor dem Eintrag mindestens eine Eintrag ausgewählt wurde.
+In einigen Auswahllisten schaltet der SVWS-Client in den Modus für die **Mehrfachauswahl** beziehungsweise die **Gruppenprozesse**, sobald über die Checkbox vor dem Eintrag mindestens eine Eintrag ausgewählt wurde.
 
-Der Modus für das Bearbeiten von ganzen Gruppen ist im SVWS-WebClient direkt in jede App integriert.
+Der Modus für das Bearbeiten von ganzen Gruppen ist im SVWS-Client direkt in jede App integriert.
 
 ![Mehrfachauswahl in der App Schüler](./graphics/svws_gruppenprozesse_mehrfachauswahl.png "Führen Sie eine Mehrfachauswahl aus.")
 

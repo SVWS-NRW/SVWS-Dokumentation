@@ -6,7 +6,7 @@ Viele der Grundlagen wie das Zuweisen von Fächern/Kursen wird hier stark erweit
 
 Diese Blockung lässt sich dann den Lernenden eines Jahrgangs zuweisen und hierbei werden automatisch die geplanten Kurse angelegt.
 
-Weiterhin unterstützt der SVWS-WebClient auch eine Klausurplanung basierend auf den Kurswahlen.
+Weiterhin unterstützt der SVWS-Client auch eine Klausurplanung basierend auf den Kurswahlen.
 
 Die Themen decken Vorbereitungen zu Laufbahnplanungen der neuen EF über die Wahlen bis hin zu Kurswahlen und zum Abitur ab. Nehmen Sie hier auch das Benutzerhandbuch zu WebLuPO zur Kenntnis, das in der Kopfzeile verlinkt ist.
 

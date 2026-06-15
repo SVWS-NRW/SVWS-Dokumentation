@@ -1,6 +1,6 @@
 # Kataloge
 
-An vielen Stellen im SVWS-WebClient lassen sich Menüauswahlen treffen, zum Beispiel, in welche Klasse ein Schüler geht oder welche Fächer belegt werden. Solche Auswahlen werden über **Kataloge** voreingestellt.
+An vielen Stellen im SVWS-Client lassen sich Menüauswahlen treffen, zum Beispiel, in welche Klasse ein Schüler geht oder welche Fächer belegt werden. Solche Auswahlen werden über **Kataloge** voreingestellt.
 
 Andere Kataloge legen die zur Auswahl stehenden Konfessionen, Förderschwerpunkte, Jahrgänge, erfasste Betriebe und so weiter fest. Über die Kataloge wird also die Struktur der Schule eingestellt.
 
@@ -32,9 +32,9 @@ Beachten Sie bitte schon beim Anlegen und Konfiguration der Katalogeinträge, di
 
 Der Arbeitsprozess mit den **Katalogen** ist hier:
 1. Anlegen der Einträge in Katalogen - zum Beispiel die unterrichteten *Fächer*.
-2. Anschließend können diese Einträge in den jeweiligen Bereichen des SVWS-WebClients benutzt werden. Nachdem also die Fächer konfiguriert sind, können diese in den individuellen Leistungsdaten des aktuellen Abschnitts den Lernenden hinzugefügt werden.
+2. Anschließend können diese Einträge in den jeweiligen Bereichen des SVWS-Clients benutzt werden. Nachdem also die Fächer konfiguriert sind, können diese in den individuellen Leistungsdaten des aktuellen Abschnitts den Lernenden hinzugefügt werden.
 
-Die Struktur der Katalog-Seiten im SVWS-WebClient ist einheitlich:
+Die Struktur der Katalog-Seiten im SVWS-Client ist einheitlich:
 
 ![Struktur: Es gibt immer die Kopfzeile mit dem Suchfeld, der Zusammenfassung und die Details](./graphics/svws_schule_kataloge_struktur.png "Im Katalog gibt es immer den Kopf, die Auswahlliste, den Fuß und die Details.")
 

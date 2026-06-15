@@ -2,7 +2,7 @@
 
 Über die **App Noten** lassen sich im Bereich **Administration** schon konfigurierte Server des WebNotenManagers WeNoM für die Schule verfügbar machen und für das Einsammeln von Noten konfigurieren.
 
-Über den Bereich **Noteneingabe** steht eine lokale Möglichkeit bereit, direkt im SVWS-WebClient Noten zu erfassen.
+Über den Bereich **Noteneingabe** steht eine lokale Möglichkeit bereit, direkt im SVWS-Client Noten zu erfassen.
 
 Es können auch *Quartalsnoten*, *Fehlstunden*, die unterschiedlichen Arten von *Zeugnisbemerkungen* und *Teilleistungen* erfasst werden.
 

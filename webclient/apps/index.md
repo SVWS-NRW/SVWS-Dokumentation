@@ -1,8 +1,8 @@
 # Apps
 
-![Die Liste mit den Apps](./graphics/SVWS_apps.png "Die Apps des SVWS-WebClients. Der Inhalt dieser Leiste ist abhängig von der Schulform der Schule.")
+![Die Liste mit den Apps](./graphics/SVWS_apps.png "Die Apps des SVWS-Clients. Der Inhalt dieser Leiste ist abhängig von der Schulform der Schule.")
 
-Die großen Programmteile im SVWS-WebClient heißen **Apps**.
+Die großen Programmteile im SVWS-Client heißen **Apps**.
 
 Je nach Bildschirmbreite können die Apps als Menü oben oder links im Browser angezeigt werden.
 

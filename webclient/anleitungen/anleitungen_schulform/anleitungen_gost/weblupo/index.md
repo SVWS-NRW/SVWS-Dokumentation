@@ -22,7 +22,7 @@ Installieren Sie bei Bedarf [WebLuPO](../../../../../weblupo/index.md) beziehung
 
 Eine ausführliche Beschreibung aller möglichen Einstellungen finden sich in der Client-Dokumentation unter der App **Oberstufe**. Hier wird eine Übersicht über die Vorbereitung des Beratungsprozesses in WebLuPO gegeben.
 
-Im zweiten Halbjahr der Jahrgangsstufe 10 (G9) müssen im SVWS-WebClient die *Fächer der Oberstufe* auf Korrektheit kontrolliert werden. Hierzu sind unter der **App Schule** ➜ *Fächer* alle Fächer der Oberstufe als solche über den entsprechenden Haken zu markieren. Dies ist nach der Ersteinrichtung in der Regel schon korrekt.
+Im zweiten Halbjahr der Jahrgangsstufe 10 (G9) müssen im SVWS-Client die *Fächer der Oberstufe* auf Korrektheit kontrolliert werden. Hierzu sind unter der **App Schule** ➜ *Fächer* alle Fächer der Oberstufe als solche über den entsprechenden Haken zu markieren. Dies ist nach der Ersteinrichtung in der Regel schon korrekt.
 
 ### Tab Fächer
 
@@ -56,9 +56,9 @@ Installieren Sie bei Bedarf [WebLuPO](../../../../../weblupo/index.md) beziehung
 
 Navigieren Sie zur Beratung zu WebLuPO. Hier finden Sie die [Erläuterungen zur Bedienung von WebLuPo](../../../../../weblupo/weblupo_handbuch.md).
 
-Bei der Wahl fallen wieder WebLuPO-Dateien an, die dort exportiert werden und dann wieder im SVWS-WebClient eingelesen werden.
+Bei der Wahl fallen wieder WebLuPO-Dateien an, die dort exportiert werden und dann wieder im SVWS-Client eingelesen werden.
 
-## Weitereinlesen der WebLuPO-Dateien im SVWS-WebClient
+## Weitereinlesen der WebLuPO-Dateien im SVWS-Client
 
 Gehen Sie wieder in der **App Oberstufe** in den **Tab Laufbahnen** und wählen Sie den betreffenden *Abitur-Jahrgang* an.
 

@@ -6,7 +6,7 @@
 
 ## Notendateien erzeugen
 
-### SVWS-Webclient
+### SVWS-Client
 
 ### SVWS-GradeHub
 

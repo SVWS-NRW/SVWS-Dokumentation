@@ -1,8 +1,8 @@
 # Installation SVWS-Server
 
-Die Schulverwaltungssoftware besteht aus dem *SVWS-Server*, der die Datenbank und eine API-Schnittstelle bündelt, dem *SVWS-WebClient* zum Zugriff auf die Daten durch Nutzer und eventuell greifen weitere Client-Programme auf den SVWS-Server zu, wie etwa SchILD-NRW-3.
+Die Schulverwaltungssoftware besteht aus dem *SVWS-Server*, der die Datenbank und eine API-Schnittstelle bündelt, dem *SVWS-Client* zum Zugriff auf die Daten durch Nutzer und eventuell greifen weitere Client-Programme auf den SVWS-Server zu, wie etwa SchILD-NRW-3.
 
-In diesem Abschnitt finden Sie Informationen zur Installationen des SVWS-Servers mit dem SVWS-WebClient für verschiedene [IT-Umgebungen](./IT-Umgebungen/), in denen der SVWS-Server eingesetzt werden kann.
+In diesem Abschnitt finden Sie Informationen zur Installationen des SVWS-Servers mit dem SVWS-Client für verschiedene [IT-Umgebungen](./IT-Umgebungen/), in denen der SVWS-Server eingesetzt werden kann.
 
 In Erweiterung, Alternative und Nachfolge zu SchILD-NRW wird weiterhin eine heterogene IT in den Verwaltungsnetzstrukturen der Schulen angenommen, so dass Szenarien von der Einzelplatzverwendung auf einem Sekretariats-PC bis hin zu der Installation in kommunalen Rechenzentren betrachtet werden.
 

@@ -16,7 +16,7 @@ In der Auswahlliste sind die für die Schule konfigurierten Fächer auszuwählen
 
 Über das **Plus +** unterhalb der Liste lassen sich neue Fächer anlegen.
 
-Sie können an dieser Stelle auch die Standardsortierung der Sekundarstufe II anwenden lassen. Dabei geht jedoch die aktuell hinterlegt Sortierreihenfolge verloren. Die vom SVWS-WebClient eingestellte Standardsortierung orientiert an den Fachbereichen der Gymnasialen Oberstufe. Die Sortierung von Fächern, die nicht einem Fachbereich der gymnasialen Oberstufe zugeordnet werden können, bleibt erhalten. Soll die Reihenfolge geändert werden, bestätigen Sie mit **OK**, andernfalls klicken Sie auf **Abbrechen**.
+Sie können an dieser Stelle auch die Standardsortierung der Sekundarstufe II anwenden lassen. Dabei geht jedoch die aktuell hinterlegt Sortierreihenfolge verloren. Die vom SVWS-Client eingestellte Standardsortierung orientiert an den Fachbereichen der Gymnasialen Oberstufe. Die Sortierung von Fächern, die nicht einem Fachbereich der gymnasialen Oberstufe zugeordnet werden können, bleibt erhalten. Soll die Reihenfolge geändert werden, bestätigen Sie mit **OK**, andernfalls klicken Sie auf **Abbrechen**.
 
 ## Allgemein und Zeugnisdaten
 
