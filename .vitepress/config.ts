@@ -31,7 +31,7 @@ export default defineConfig(({ mode }) => {
 				{
 					text: 'Benutzerhandbücher',
 					items: [
-						{ text: 'SVWS-Client', link: '/webclient' },
+						{ text: 'SVWS-Client', link: '/svws-client' },
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: '', items: [
 							{ text: 'SVWS WebNotenManager (Beta)', link: '/wenom' },
@@ -192,137 +192,137 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Geschäftsprozesse WeNoM', link: '/wenom/geschaeftsprozesse.md' },
 					] },
 				],
-				'/webclient': [
+				'/svws-client': [
 					{ text: '', items:
 						[
-							{ text: 'SVWS-Client', link: '/webclient/', collapsed: false, items: [
-								{ text: 'Supportkonzept', link: '/webclient/dokumentationsartikel/supportkonzept/' },
-								{ text: 'Bedienung im Browser', link: '/webclient/dokumentationsartikel/' },
-								{ text: 'Gruppenprozesse', link: '/webclient/dokumentationsartikel/gruppenprozesse/' },
-								{ text: 'Tastaturnavigation', link: '/webclient/dokumentationsartikel/tastaturnavigation' },
-								{ text: 'Änderungen', link: '/webclient/dokumentationsartikel/änderungen/' },
+							{ text: 'SVWS-Client', link: '/svws-client/', collapsed: false, items: [
+								{ text: 'Supportkonzept', link: '/svws-client/dokumentationsartikel/supportkonzept/' },
+								{ text: 'Bedienung im Browser', link: '/svws-client/dokumentationsartikel/' },
+								{ text: 'Gruppenprozesse', link: '/svws-client/dokumentationsartikel/gruppenprozesse/' },
+								{ text: 'Tastaturnavigation', link: '/svws-client/dokumentationsartikel/tastaturnavigation' },
+								{ text: 'Änderungen', link: '/svws-client/dokumentationsartikel/änderungen/' },
 							] },
-							{ text: 'Apps', link: '/webclient/apps/', collapsed: false, items: [
-								{ text: 'Aktueller Benutzer', link: '/webclient/apps/aktuellernutzer/' },
-								{ text: 'Schule', link: '/webclient/apps/schule/', collapsed: true, items: [
-									{ text: 'Allgemein', link: '/webclient/apps/schule/allgemein/stammdaten/', collapsed: true, items: [
-										{ text: 'Stammdaten der Schule', link: '/webclient/apps/schule/allgemein/stammdaten/' },
+							{ text: 'Apps', link: '/svws-client/apps/', collapsed: false, items: [
+								{ text: 'Aktueller Benutzer', link: '/svws-client/apps/aktuellernutzer/' },
+								{ text: 'Schule', link: '/svws-client/apps/schule/', collapsed: true, items: [
+									{ text: 'Allgemein', link: '/svws-client/apps/schule/allgemein/stammdaten/', collapsed: true, items: [
+										{ text: 'Stammdaten der Schule', link: '/svws-client/apps/schule/allgemein/stammdaten/' },
 									] },
-									{ text: 'Kataloge', link: '/webclient/apps/schule/kataloge/', collapsed: true, items: [
-										//{ text: 'Abteilungen', link: '/webclient/apps/schule/kataloge/abteilungen/' },
+									{ text: 'Kataloge', link: '/svws-client/apps/schule/kataloge/', collapsed: true, items: [
+										//{ text: 'Abteilungen', link: '/svws-client/apps/schule/kataloge/abteilungen/' },
 										// Ankreuzkompetenzen
-										{ text: 'Betriebe', link: '/webclient/apps/schule/kataloge/betriebe/' },
-										//{ text: 'Beschäftigungsarten', link: '/webclient/apps/schule/kataloge/beschaeftigungsarten/' },
-										{ text: 'Einwilligungsarten', link: '/webclient/apps/schule/kataloge/einwilligungsarten/' },
-										{ text: 'Entlassgründe', link: '/webclient/apps/schule/kataloge/entlassgruende/' },
-										{ text: 'Erzieherarten', link: '/webclient/apps/schule/kataloge/erzieherarten/' },
-										{ text: 'Fächer', link: '/webclient/apps/schule/kataloge/faecher/' },
-										{ text: 'Fahrschülerarten', link: '/webclient/apps/schule/kataloge/fahrschuelerarten/' },
-										//{ text: 'Floskelgrupppen', link: '/webclient/apps/schule/kataloge/floskelgruppen/' },
-										//{ text: 'Floskeln (Platzhalter???)', link: '/webclient/apps/schule/kataloge/floskeln/' },
-										//{ text: 'Förderschwerpunkte', link: '/webclient/apps/schule/kataloge/foerderschwerpunkte/' },
-										//{ text: 'Haltestellen', link: '/webclient/apps/schule/kataloge/haltestellen/' },
-										//{ text: 'Jahrgänge', link: '/webclient/apps/schule/kataloge/jahrgaenge/' },
-										{ text: 'Kindergärten', link: '/webclient/apps/schule/kataloge/kindergaerten/' },
-										{ text: 'Konfessionen', link: '/webclient/apps/schule/kataloge/konfessionen/' },
-										//{ text: 'Leitungsfunktionen', link: '/webclient/apps/schule/kataloge/leitungsfunktionen/' },
-										{ text: 'Lernplattformen', link: '/webclient/apps/schule/kataloge/lernplattformen/' },
-										{ text: 'Orte', link: '/webclient/apps/schule/kataloge/orte/' },
-										{ text: 'Ortsteile', link: '/webclient/apps/schule/kataloge/ortsteile/' },
-										//{ text: 'Schulen', link: '/webclient/apps/schule/kataloge/schulen/' },
-										//{ text: 'Teilleistungsarten', link: '/webclient/apps/schule/kataloge/teilleistungsarten/' },
-										//{ text: 'Telefonarten', link: '/webclient/apps/schule/kataloge/telefonarten/' },
-										{ text: 'Vermerkarten', link: '/webclient/apps/schule/kataloge/vermerkarten/' },
+										{ text: 'Betriebe', link: '/svws-client/apps/schule/kataloge/betriebe/' },
+										//{ text: 'Beschäftigungsarten', link: '/svws-client/apps/schule/kataloge/beschaeftigungsarten/' },
+										{ text: 'Einwilligungsarten', link: '/svws-client/apps/schule/kataloge/einwilligungsarten/' },
+										{ text: 'Entlassgründe', link: '/svws-client/apps/schule/kataloge/entlassgruende/' },
+										{ text: 'Erzieherarten', link: '/svws-client/apps/schule/kataloge/erzieherarten/' },
+										{ text: 'Fächer', link: '/svws-client/apps/schule/kataloge/faecher/' },
+										{ text: 'Fahrschülerarten', link: '/svws-client/apps/schule/kataloge/fahrschuelerarten/' },
+										//{ text: 'Floskelgrupppen', link: '/svws-client/apps/schule/kataloge/floskelgruppen/' },
+										//{ text: 'Floskeln (Platzhalter???)', link: '/svws-client/apps/schule/kataloge/floskeln/' },
+										//{ text: 'Förderschwerpunkte', link: '/svws-client/apps/schule/kataloge/foerderschwerpunkte/' },
+										//{ text: 'Haltestellen', link: '/svws-client/apps/schule/kataloge/haltestellen/' },
+										//{ text: 'Jahrgänge', link: '/svws-client/apps/schule/kataloge/jahrgaenge/' },
+										{ text: 'Kindergärten', link: '/svws-client/apps/schule/kataloge/kindergaerten/' },
+										{ text: 'Konfessionen', link: '/svws-client/apps/schule/kataloge/konfessionen/' },
+										//{ text: 'Leitungsfunktionen', link: '/svws-client/apps/schule/kataloge/leitungsfunktionen/' },
+										{ text: 'Lernplattformen', link: '/svws-client/apps/schule/kataloge/lernplattformen/' },
+										{ text: 'Orte', link: '/svws-client/apps/schule/kataloge/orte/' },
+										{ text: 'Ortsteile', link: '/svws-client/apps/schule/kataloge/ortsteile/' },
+										//{ text: 'Schulen', link: '/svws-client/apps/schule/kataloge/schulen/' },
+										//{ text: 'Teilleistungsarten', link: '/svws-client/apps/schule/kataloge/teilleistungsarten/' },
+										//{ text: 'Telefonarten', link: '/svws-client/apps/schule/kataloge/telefonarten/' },
+										{ text: 'Vermerkarten', link: '/svws-client/apps/schule/kataloge/vermerkarten/' },
 									] },
-									{ text: 'Datenaustausch', link: '/webclient/apps/schule/datenaustausch/', collapsed: true, items: [
+									{ text: 'Datenaustausch', link: '/svws-client/apps/schule/datenaustausch/', collapsed: true, items: [
 										//{ text: 'ENM Notenmanager (Todo)' },
-										{ text: 'LuPO Laufbahnplanung', link: '/webclient/apps/schule/datenaustausch/lupo/' },
-										{ text: 'Kurs 42', link: '/webclient/apps/schule/datenaustausch/kurs42/' },
-										{ text: 'Untis', link: '/webclient/apps/schule/datenaustausch/untis/' },
+										{ text: 'LuPO Laufbahnplanung', link: '/svws-client/apps/schule/datenaustausch/lupo/' },
+										{ text: 'Kurs 42', link: '/svws-client/apps/schule/datenaustausch/kurs42/' },
+										{ text: 'Untis', link: '/svws-client/apps/schule/datenaustausch/untis/' },
 									] },
 								] },
-								{ text: 'Schüler', link: '/webclient/apps/schueler/', collapsed: true, items: [
-									{ text: 'Individualdaten', link: '/webclient/apps/schueler/individualdaten/' },
-									{ text: 'Sonstiges', link: '/webclient/apps/schueler/sonstiges/', collapsed: true, items: [
-										{ text: 'Vermerke', link: '/webclient/apps/schueler/sonstiges/vermerke/' },
-										{ text: 'Einwilligungen', link: '/webclient/apps/schueler/sonstiges/einwilligungen/' },
-										{ text: 'Lernplattformen', link: '/webclient/apps/schueler/sonstiges/lernplattformen/' },
+								{ text: 'Schüler', link: '/svws-client/apps/schueler/', collapsed: true, items: [
+									{ text: 'Individualdaten', link: '/svws-client/apps/schueler/individualdaten/' },
+									{ text: 'Sonstiges', link: '/svws-client/apps/schueler/sonstiges/', collapsed: true, items: [
+										{ text: 'Vermerke', link: '/svws-client/apps/schueler/sonstiges/vermerke/' },
+										{ text: 'Einwilligungen', link: '/svws-client/apps/schueler/sonstiges/einwilligungen/' },
+										{ text: 'Lernplattformen', link: '/svws-client/apps/schueler/sonstiges/lernplattformen/' },
 									] },
-									{ text: 'Erziehungsberechtigte', link: '/webclient/apps/schueler/erziehungsberechtigte/' },
-									{ text: 'Betriebe', link: '/webclient/apps/schueler/ausbildungsbetriebe/' },
-									//{ text: 'Schulbesuch', link: '/webclient/apps/schueler/schulbesuch/' },
-									{ text: 'Lernabschnitte', link: '/webclient/apps/schueler/lernabschnitte/', collapsed: true, items: [
-										{ text: 'Allgemein', link: '/webclient/apps/schueler/lernabschnitte/allgemein/' },
-										{ text: 'Leistungsdaten', link: '/webclient/apps/schueler/lernabschnitte/leistungsdaten/' },
-										// { text: 'Förderempfehlungen', link: '/webclient/apps/schueler/lernabschnitte/foerderempfehlungen/' },
+									{ text: 'Erziehungsberechtigte', link: '/svws-client/apps/schueler/erziehungsberechtigte/' },
+									{ text: 'Betriebe', link: '/svws-client/apps/schueler/ausbildungsbetriebe/' },
+									//{ text: 'Schulbesuch', link: '/svws-client/apps/schueler/schulbesuch/' },
+									{ text: 'Lernabschnitte', link: '/svws-client/apps/schueler/lernabschnitte/', collapsed: true, items: [
+										{ text: 'Allgemein', link: '/svws-client/apps/schueler/lernabschnitte/allgemein/' },
+										{ text: 'Leistungsdaten', link: '/svws-client/apps/schueler/lernabschnitte/leistungsdaten/' },
+										// { text: 'Förderempfehlungen', link: '/svws-client/apps/schueler/lernabschnitte/foerderempfehlungen/' },
 									] },
-									//{ text: 'KAoA', link: '/webclient/apps/schueler/kaoa/' },
-									{ text: 'Sprachen', link: '/webclient/apps/schueler/sprachen/' },
-									{ text: 'Laufbahnplanung Sek II', link: '/webclient/apps/schueler/laufbahnplanung/' },
-									{ text: 'Stundenplan', link: '/webclient/apps/schueler/stundenplan/' },
+									//{ text: 'KAoA', link: '/svws-client/apps/schueler/kaoa/' },
+									{ text: 'Sprachen', link: '/svws-client/apps/schueler/sprachen/' },
+									{ text: 'Laufbahnplanung Sek II', link: '/svws-client/apps/schueler/laufbahnplanung/' },
+									{ text: 'Stundenplan', link: '/svws-client/apps/schueler/stundenplan/' },
 								] },
-								{ text: 'Lehrkräfte', link: '/webclient/apps/lehrer/', collapsed: true, items: [
-									{ text: 'Individualdaten', link: '/webclient/apps/lehrer/individualdaten/' },
-									{ text: 'Personaldaten', link: '/webclient/apps/lehrer/personaldaten/' },
-									//{ text: 'Unterricht', link: '/webclient/apps/lehrer/unterricht/' },
-									{ text: 'Stundenplan', link: '/webclient/apps/lehrer/stundenplan/' },
+								{ text: 'Lehrkräfte', link: '/svws-client/apps/lehrer/', collapsed: true, items: [
+									{ text: 'Individualdaten', link: '/svws-client/apps/lehrer/individualdaten/' },
+									{ text: 'Personaldaten', link: '/svws-client/apps/lehrer/personaldaten/' },
+									//{ text: 'Unterricht', link: '/svws-client/apps/lehrer/unterricht/' },
+									{ text: 'Stundenplan', link: '/svws-client/apps/lehrer/stundenplan/' },
 								] },
-								{ text: 'Klassen', link: '/webclient/apps/klassen/klasse/', collapsed: true, items: [
-									{ text: 'Klasse', link: '/webclient/apps/klassen/klasse/' },
-									{ text: 'Stundenplan', link: '/webclient/apps/klassen/stundenplan/' },
+								{ text: 'Klassen', link: '/svws-client/apps/klassen/klasse/', collapsed: true, items: [
+									{ text: 'Klasse', link: '/svws-client/apps/klassen/klasse/' },
+									{ text: 'Stundenplan', link: '/svws-client/apps/klassen/stundenplan/' },
 								] },
-								{ text: 'Kurse', link: '/webclient/apps/kurse/' },
-								{ text: 'Noten', link: '/webclient/apps/noten/', collapsed: true, items: [
-									{ text: 'Administration', link: 'webclient/apps/noten/administration' },
-									{ text: 'Noteneingabe', link: 'webclient/apps/noten/noteneingabe' },
+								{ text: 'Kurse', link: '/svws-client/apps/kurse/' },
+								{ text: 'Noten', link: '/svws-client/apps/noten/', collapsed: true, items: [
+									{ text: 'Administration', link: '/svws-client/apps/noten/administration' },
+									{ text: 'Noteneingabe', link: '/svws-client/apps/noten/noteneingabe' },
 								] },
-								{ text: 'Oberstufe', link: '/webclient/apps/gost/', collapsed: true, items: [
-									{ text: 'Fächer', link: '/webclient/apps/gost/faecher/' },
-									{ text: 'Beratung', link: '/webclient/apps/gost/beratung/' },
-									{ text: 'Laufbahnplanung', link: '/webclient/apps/gost/laufbahn/' },
-									{ text: 'Fachwahlen', link: '/webclient/apps/gost/fachwahlen/' },
-									{ text: 'Kursplanung', link: '/webclient/apps/gost/kursplanung/', collapsed: true, items: [
-										{ text: 'Beispiele, Infos, Tipps', link: '/webclient/apps/gost/kursplanung/beispiele_weiteres.md' },
+								{ text: 'Oberstufe', link: '/svws-client/apps/gost/', collapsed: true, items: [
+									{ text: 'Fächer', link: '/svws-client/apps/gost/faecher/' },
+									{ text: 'Beratung', link: '/svws-client/apps/gost/beratung/' },
+									{ text: 'Laufbahnplanung', link: '/svws-client/apps/gost/laufbahn/' },
+									{ text: 'Fachwahlen', link: '/svws-client/apps/gost/fachwahlen/' },
+									{ text: 'Kursplanung', link: '/svws-client/apps/gost/kursplanung/', collapsed: true, items: [
+										{ text: 'Beispiele, Infos, Tipps', link: '/svws-client/apps/gost/kursplanung/beispiele_weiteres.md' },
 									] },
-									{ text: 'Klausurplanung', link: '/webclient/apps/gost/klausurplanung/' },
+									{ text: 'Klausurplanung', link: '/svws-client/apps/gost/klausurplanung/' },
 								] },
-								{ text: 'Statistik', link: '/webclient/apps/statistik/' }, //, collapsed: true, items: [
-								//	{ text: 'Verschlüsselung ', link: '/webclient/apps/statistik/verschluesselung/' },
-								//	{ text: 'Datenprüfung', link: '/webclient/apps/statistik/datenpruefung/' },
-								//	{ text: 'Dokumente', link: '/webclient/apps/statistik/dokumente/' },
-								//	{ text: 'Hilfe', link: '/webclient/apps/statistik/hilfe/' },
+								{ text: 'Statistik', link: '/svws-client/apps/statistik/' }, //, collapsed: true, items: [
+								//	{ text: 'Verschlüsselung ', link: '/svws-client/apps/statistik/verschluesselung/' },
+								//	{ text: 'Datenprüfung', link: '/svws-client/apps/statistik/datenpruefung/' },
+								//	{ text: 'Dokumente', link: '/svws-client/apps/statistik/dokumente/' },
+								//	{ text: 'Hilfe', link: '/svws-client/apps/statistik/hilfe/' },
 								//] },
-								{ text: 'Stundenplan', link: '/webclient/apps/stundenplan/stundenplan_basisinformationen/', collapsed: true, items: [
-									{ text: 'Grundlagen zum Stundenplan', link: '/webclient/apps/stundenplan/stundenplan_basisinformationen/' },
-									{ text: 'Stundenpläne erstellen/bearbeiten', link: '/webclient/apps/stundenplan/stundenplan_anleitung/' },
-									{ text: 'Allgemeine Vorlagen', link: '/webclient/apps/stundenplan/allgemeine_vorlagen/', collapsed: true, items: [
-										{ text: 'Aufsichtsbereiche', link: '/webclient/apps/stundenplan/allgemeine_vorlagen/aufsichtsbereiche/' },
-										{ text: 'Pausenzeiten', link: '/webclient/apps/stundenplan/allgemeine_vorlagen/pausenzeiten/' },
-										{ text: 'Räume', link: '/webclient/apps/stundenplan/allgemeine_vorlagen/raeume/' },
-										{ text: 'Zeitraster', link: '/webclient/apps/stundenplan/allgemeine_vorlagen/zeitraster/' },
+								{ text: 'Stundenplan', link: '/svws-client/apps/stundenplan/stundenplan_basisinformationen/', collapsed: true, items: [
+									{ text: 'Grundlagen zum Stundenplan', link: '/svws-client/apps/stundenplan/stundenplan_basisinformationen/' },
+									{ text: 'Stundenpläne erstellen/bearbeiten', link: '/svws-client/apps/stundenplan/stundenplan_anleitung/' },
+									{ text: 'Allgemeine Vorlagen', link: '/svws-client/apps/stundenplan/allgemeine_vorlagen/', collapsed: true, items: [
+										{ text: 'Aufsichtsbereiche', link: '/svws-client/apps/stundenplan/allgemeine_vorlagen/aufsichtsbereiche/' },
+										{ text: 'Pausenzeiten', link: '/svws-client/apps/stundenplan/allgemeine_vorlagen/pausenzeiten/' },
+										{ text: 'Räume', link: '/svws-client/apps/stundenplan/allgemeine_vorlagen/raeume/' },
+										{ text: 'Zeitraster', link: '/svws-client/apps/stundenplan/allgemeine_vorlagen/zeitraster/' },
 									] },
 								] },
-								{ text: 'Einstellungen', link: '/webclient/apps/einstellungen/', collapsed: true, items: [
-									{ text: 'Benutzer', link: '/webclient/apps/einstellungen/benutzer/' },
-									{ text: 'Benutzergruppen', link: '/webclient/apps/einstellungen/benutzergruppen/' },
+								{ text: 'Einstellungen', link: '/svws-client/apps/einstellungen/', collapsed: true, items: [
+									{ text: 'Benutzer', link: '/svws-client/apps/einstellungen/benutzer/' },
+									{ text: 'Benutzergruppen', link: '/svws-client/apps/einstellungen/benutzergruppen/' },
 								] },
 							] },
-							{ text: 'Anleitungen', link: '/webclient/anleitungen/', collapsed: false, items: [
-								{ text: 'Allgemeine Anleitungen', link: '/webclient/anleitungen/anleitungen_allgemein/', collapsed: true, items: [
-									{ text: 'Anmeldung', link: '/webclient/anleitungen/anleitungen_allgemein/anmeldung/' },
-									{ text: 'Schulbescheinigung drucken', link: '/webclient/anleitungen/anleitungen_allgemein/drucken_schulbescheinigung/' },
+							{ text: 'Anleitungen', link: '/svws-client/anleitungen/', collapsed: false, items: [
+								{ text: 'Allgemeine Anleitungen', link: '/svws-client/anleitungen/anleitungen_allgemein/', collapsed: true, items: [
+									{ text: 'Anmeldung', link: '/svws-client/anleitungen/anleitungen_allgemein/anmeldung/' },
+									{ text: 'Schulbescheinigung drucken', link: '/svws-client/anleitungen/anleitungen_allgemein/drucken_schulbescheinigung/' },
 								] },
-								{ text: 'Schulformspezifisch', link: '/webclient/anleitungen/anleitungen_schulform/', collapsed: true, items: [
-									{ text: 'Oberstufe', link: '/webclient/anleitungen/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
-										{ text: 'WebLuPO (Schulintern)', link: '/webclient/anleitungen/anleitungen_schulform/anleitungen_gost/weblupo/' },
+								{ text: 'Schulformspezifisch', link: '/svws-client/anleitungen/anleitungen_schulform/', collapsed: true, items: [
+									{ text: 'Oberstufe', link: '/svws-client/anleitungen/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
+										{ text: 'WebLuPO (Schulintern)', link: '/svws-client/anleitungen/anleitungen_schulform/anleitungen_gost/weblupo/' },
 									] },
-									// { text: 'Grundschule', link: '/webclient/anleitungen/anleitungen_schulform/anleitungen_gs/' },
+									// { text: 'Grundschule', link: '/svws-client/anleitungen/anleitungen_schulform/anleitungen_gs/' },
 								] },
-								{ text: 'Zeugnisvorbereitung', link: '/webclient/anleitungen/anleitungen_zeugnisse/' },
+								{ text: 'Zeugnisvorbereitung', link: '/svws-client/anleitungen/anleitungen_zeugnisse/' },
 							] },
-							//{ text: 'Weiteres', link: '/webclient/weiteres/', collapsed: false, items: [
-							//	{ text: 'Adressbücher', link: '/webclient/kommunikationsschnittstelle/adressbuecher/' },
-							//	{ text: 'Kalender', link: '/webclient/kommunikationsschnittstelle/kalender/' },
+							//{ text: 'Weiteres', link: '/svws-client/weiteres/', collapsed: false, items: [
+							//	{ text: 'Adressbücher', link: '/svws-client/kommunikationsschnittstelle/adressbuecher/' },
+							//	{ text: 'Kalender', link: '/svws-client/kommunikationsschnittstelle/kalender/' },
 							//] },
 						],
 					},

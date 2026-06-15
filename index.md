@@ -17,7 +17,7 @@ const datum = (t: number) => {
 :::info Erstellungsdatum {{ datum(data.buildDate) }}
 :::
 
-[![Users](./graphics/LandingUser.png "Icon für Benutzer.")](./webclient/)
+[![Users](./graphics/LandingUser.png "Icon für Benutzer.")](./svws-client/)
 [![Admins](./graphics/LandingAdmin.png "Icon für Admins.")](./deployment/)
 [![Devs](./graphics/LandingDev.png "Icon für Developer.")](./development/)
 

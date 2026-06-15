@@ -111,12 +111,12 @@ Denken Sie daher an regelmäßige Sicherungen.
 
 Wenn Sie im Online-Modus arbeiten, sind die Daten nach einem Export synchronisert. Arbeiten Sie im Offline-Modus mit den Im- und Exportdateien, müssen Sie im Anschluss an den Export die `enm.changed.json.gz` im SVWS-Client noch einmal wieder einlesen.
 
-![Geänderte Daten im WebClient wieder importieren](./graphics/konferenz_webclient_datenImportieren.png "Wählen Sie, welche Daten importiert werden sollen.")
+![Geänderte Daten im WebClient wieder importieren](./graphics/konferenz_client_datenImportieren.png "Wählen Sie, welche Daten importiert werden sollen.")
 
 Gehen Sie hierzu in **App Schule ➜ Datenaustausch ➜ ENM-Notenmanager** und klicken Sie unter *Lehrkraftdaten und Konferenzdaten importieren* auf die Schalter `Datei auswählen`.
 
 Achten Sie auch hier darauf, dass die gerade erstellte und damit korrekte Datei ausgewählt wird. Achten Sie hierbei auf Erstellungsdatum/-zeit der Datei.
 
-![Import erfolgreich](./graphics/konferenz_webclient_datenImportieren_importErfolgreich.png "Die Datei mit den Änderungen wurde importiert.")
+![Import erfolgreich](./graphics/konferenz_client_datenImportieren_importErfolgreich.png "Die Datei mit den Änderungen wurde importiert.")
 
 Ganz gleich, ob Sie im Offline- oder Onlinemodus gearbeitet haben: Die Eintragungen der SVWS-Konferenzübersicht sind nun im SVWS-Client über die **App Noten** und in den **Leistungsdaten** der **App Schüler** einsehbar.

@@ -25,7 +25,7 @@ Wenn kein direkter Serverzugriff möglich oder gewünscht ist:
 
 1. Exportieren Sie die `enm.json.gz` im SVWS-Client über die **App Schule ➜ Datenaustausch ➜ ENM Notenmanager**. Speichern Sie diese Datei an einem sinnvollen Ort. Beachten Sie den Datenschutz.
 
-![Datenexport im SVWS-Client über die App Schule Datenaustausch](./graphics/konferenz_webclient_datenExportieren.png "Exportieren Sie die gesammelten Daten aus dem SVWS-Client.")
+![Datenexport im SVWS-Client über die App Schule Datenaustausch](./graphics/konferenz_client_datenExportieren.png "Exportieren Sie die gesammelten Daten aus dem SVWS-Client.")
 
 2. Laden Sie diese Datei nun im SVWS-Konferenzmodul im rechten Bereich hoch, indem Sie `Datei auswählen` anklicken. Achten Sie hier unbedingt darauf, die korrekte Datei zu nutzen und nicht zum Beispiel eine alte aus dem letzten Lernabschnitt.
 3. Darstellung der Daten prüfen
