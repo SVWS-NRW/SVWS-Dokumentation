@@ -3,18 +3,19 @@
 In diesem Bereich finden sich Beispiele, wie die Einrichtung des WeNoM-Servers bei spezifischen Hostern vorgenommen werden kann. Im Anschluss folgen Sie dann den Informationen für die **Schulfachliche Konfiguration des WeNoM-Servers** und des SVWS-Servers, die wieder für alle Hoster gleich sind.
 
 ::: warning Keine Hoster-Empfehlungen!
-Diese Beispiele stellen keine Empfehlungen für den jeweiligen Hoster dar oder raten von anderen ab. Die hier aufgelisteten Hoster sind alphabetisch sortiert.
 
-Bitte prüfen Sie selbst, ob der gewählte Hoster Ihren Anforderungen und Rahmenbendindungen zu Sicherheit und Datenschutz entspricht.
+Die folgenden Beispiele stellen weder Empfehlungen für bestimmte Hoster dar noch sprechen sie gegen andere Anbieter. Die aufgelisteten Hoster sind ausschließlich alphabetisch sortiert.
 
-Ebenso kann keine Garantie für die Aktualität bezüglich von Einstellungen und Benutzeroberfläche bei den Hostern übernommen werden.
+Bitte prüfen Sie eigenständig, ob ein gewählter Hoster Ihre Anforderungen sowie die geltenden Rahmenbedingungen hinsichtlich Sicherheit und Datenschutz erfüllt.
+
+Für die Aktualität der dargestellten Einstellungen, Abläufe und Benutzeroberflächen der Hoster kann keine Gewähr übernommen werden.
+
 :::
 
 ## Voraussetzungen
-
 Die Voraussetzungen für den Betrieb von WeNoM sind:
 
-+ Sie haben einen Server im Internet, typischerweise ist dies bei einem Hoster und in vielen Fällen ist das auch schon ein konfigurierter Apache2-Webserver mit ebenfalls schon installierter php-Umgebung.
-+ Sie haben einen sFTP-Zugang zum Dateisystem des Webhostings. Über diesen werden die WeNoM-Dateien hochgeladen.
-+ Optional: Sie benötigen eine Subdomain z.B.: `wenom.meine-schuladresse.xyz`
-+ Sie benötigen ein Zertifikat - oft dies wird von vielen Hostern (mitunter kostenfrei) zur Verfügung gestellt. Das Zertifikat ist für die verschlüsselte Verbindung `https://` notwendig.
++ Sie verfügen über einen Server im Internet. Typischerweise handelt es sich dabei um ein Hosting-Angebot bei einem Hoster. In vielen Fällen steht dort bereits ein vorkonfigurierter Apache2-Webserver inklusive installierter PHP-Umgebung zur Verfügung.
++ Sie besitzen einen sFTP-Zugang zum Dateisystem des Webhostings. Über diesen werden die WeNoM-Dateien auf den Server übertragen.
+Optional: Sie verwenden eine eigene Subdomain, z. B. wenom.meine-schuladresse.xyz.
++ Sie benötigen ein SSL-/TLS-Zertifikat für die verschlüsselte Verbindung über https://. Viele Hoster stellen entsprechende Zertifikate kostenfrei zur Verfügung.

@@ -86,6 +86,11 @@ Gegebenenfalls können die Einstellungen in der Paketgröße und den Timeouts je
 
 Das kann individuell konfiguriert werden. Beide Varianten sind möglich.
 
+## Fehler beim Erstellen der Trigger
+
+Bei aktiviertem Binary Logging dürfen Trigger und Funktionen in MariaDB standardmäßig nicht ohne zusätzliche Freigabe erstellt werden. Ist die Option log_bin_trust_function_creators für den verwendeten MariaDB-Benutzer bzw. Server nicht gesetzt, bricht das Anlegen eines neuen SVWS-MariaDB-Schemas beim Erstellen der Trigger ab. Ursache ist Fehler 1419, durch den MariaDB das Anlegen der Trigger blockiert.
+
+Zur Behebung wird der Parameter log_bin_trust_function_creators auf dem Datenbankserver aktiviert. Dadurch ist das Erstellen der benötigten Trigger erlaubt. 
 
 ## MariaDB-Cluster
 ### Was ist beim Betrieb mit einem MariaDB-Cluster zu beachten?
