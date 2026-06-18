@@ -30,7 +30,7 @@
 Das im Folgenden generierte Token kann nur direkt nach dem Generieren eingesehen und kopiert werden. Danach nicht mehr!
 :::
    + Melde dich auf https://sonarqube.svws-nrw.de/ mit deinem GitLab Account an
-   + Gehe oben rechts über dein Profilbild auf **My Account** und dann auf den Reiter **Security**
+   + Gehe oben rechts über dein Profilbild auf **My Account** und dann auf den Tab **Security**
    + Generiere ein neues Token:
      + **Name**: Frei wählbar
      + **Type**: User Token

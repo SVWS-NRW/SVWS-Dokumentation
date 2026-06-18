@@ -11,11 +11,11 @@ Zur Einrichtung eines neuen WebNotenManagers im SVWS-Server das Pluszeichen unte
 
 Damit der SVWS-Server und WeNoM gesichert kommunizieren können, wird ein *Secret* benötigt. Dies wird im OAuth2-Verfahren verwendet, um die sendende Gegenstelle zu identifizieren.
 
-Das Secret wird bei der erstmaligen Eingabe der Verbindungsdaten im SVWS-WebClient automatisch generiert und im Webspace des WeNoM unter `./db/client.sec` abgespeichert. Das Secret aus dieser Datei muss unter *Secret* (vgl. Screenshot) eingefügt werden.
+Das Secret wird bei der erstmaligen Eingabe der Verbindungsdaten im SVWS-Client automatisch generiert und im Webspace des WeNoM unter `./db/client.sec` abgespeichert. Das Secret aus dieser Datei muss unter *Secret* (vgl. Screenshot) eingefügt werden.
 
 ![Secret Eintrag](./graphics/secret_eintrag.png)
 
-Alternativ können Sie das Secret auch direkt **ohne SVWS-Server** per [API Aufruf](#alternativ-generation-des-secrets-durch-einen-direkten-api-aufruf) generieren.
+Alternativ können Sie das Secret auch direkt **ohne SVWS-Server** per API Aufruf generieren. Navigieren Sie hierzu mit im Inhaltsverzeichnis zu *Alternativ: Generation des Secrets per API* in diesem Artikel.
 
 Ist das Secret erfolgreich eingtragen, kann jederzeit die Verbindung zum WeNoM geprüft werden:
 
@@ -27,15 +27,16 @@ Ist das Secret erfolgreich eingtragen, kann jederzeit die Verbindung zum WeNoM g
 Nach der Ersteinrichtung befinden sich noch keine Daten, also explizit auch keine Logindaten auf dem WeNoM. Dazu benötigt es einer Synchronisation bzw. ein Hochladen der Daten. Dies kann im Benutzerhandbuch [schulische Administration](../benutzerhandbuch/schulische_administration.md) nachgelesen werden.
 
 
-## Fehler bei der Einrichtung
+## Hinweise und Fehlersuche zur Einrichtung
 
 ### Fehlerhafte Eingabe der URL
 
-die richtige Syntax ist hier die Eingabe von Beispielsweise `meinWeNoM.de`, ohne `https`://` und Backslash. Eine sicher Verbindung zu einem HTTPS-gesicherten Server ist auf jeden Fall Voraussetzung. Eine Verbindung zu einem HTTP-Server ist nicht zulässig.
+Achten Sie auf die vollständig korrekte Syntax. Bei der URL ist das die Eingabe von beispielsweise `meinWeNoM.de`, ohne `https`://` und Backslash. Die verschlüsselte Verbindung zu einem HTTPS-gesicherten Server ist notwendig. Eine Verbindung zu einem HTTP-Server - ohne das S - ist nicht zulässig.
 
-+ Prüfen Sie, ob Sie ggf Dopplungen haben: `https://https//meinWeNoM.de`.
-+ Prüfen Sie auf Sonderzeichen, die sich eingeschlichen haben können: `https://mein%WeNoM.de`.
-+ Prüfen Sie, ob Sie ein Backslash zu viel am Ende haben: `https://meinWeNoM.de/`.
++ Prüfen Sie also, ob Sie das `https://` als Präfix korrekt gesetzt haben.
++ Prüfen Sie, ob gegebenfalls Dopplungen vorliegen: `https://https://meinWeNoM.de`.
++ Prüfen Sie auf Sonderzeichen, die fälschlicherweise verwendet wurden: `https://mein%WeNoM.de`.
++ Prüfen Sie, ob ein Backslash zu viel am Ende vorhanden ist: `https://meinWeNoM.de/`.
 
 ### Abweichungen des internen Names
 
@@ -45,13 +46,16 @@ Hier könnte eine direkte Angabe der IP-Adresse statt des DNS-Namens erfolgen.
 
 ### Benutzung eines internen Zertifikats
 
-In manchen netzinternen Umgebungen kann die Frage auftreten, ob dem eigenen Zertifikat vertraut werden soll. Dies kann in Absprache mit dem technischen Admin durch Setzen des Hakens bestätigt werden.
+In manchen netzinternen Umgebungen kann die Frage auftreten, ob dem eigenen Zertifikat vertraut werden soll.
+
+Dies kann in Absprache mit dem technischen Admin durch Setzen des Hakens bestätigt werden.
 
 ## Alternativ: Generation des Secrets per API
 
-Wennn Sie ohne einen SVWS-Server das Secret generieren möchten und dieses dann an die schulische Administration übergeben wollen, können Sie dies per Api-Aufruf auslösen:
+Wenn Sie ohne einen SVWS-Server das Secret generieren möchten und dieses dann an die schulische Administration übergeben wollen, können Sie dies per Api-Aufruf auslösen:
 
-Hinweis: Über die Konsole des Browsers (F12) kann die Serverantwort überprüft werden. Darüber hinaus gibt es kein sichtbares Feedback.
+>[!TIP] Prüfung der Serverantwort in der Debug-Konsole des Browsers
+>Über die Konsole des Browsers (üblicherweise F12) kann die Serverantwort überprüft werden. Darüber hinaus gibt es kein sichtbares Feedback.
 
 Zur Initialisierung wird folgende URL */api/setup* auf ihrer Domain aufrufen, ein Beispiel wäre etwa:
 
@@ -59,7 +63,7 @@ Zur Initialisierung wird folgende URL */api/setup* auf ihrer Domain aufrufen, ei
 https://meinnotenmanager.de/api/setup
 ```
 
-Dies kann von jedem gängigen Browser aus ausgefürt werden.
+Dies kann von jedem gängigen Browser aus ausgeführt werden.
 
 Gültige Responsecodes sind:
 

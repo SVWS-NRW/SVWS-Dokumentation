@@ -42,7 +42,7 @@ dem letzten Abruf unverändert geblieben sind. Dabei werden also mehr
 Daten übertragen als notwendig wäre (Prinzip Datensparsamkeit!,
 Performance!).
 
-Der Grund hierfür ist, dass im SWVS-Datenmodell eine Änderungshistorie
+Der Grund hierfür ist, dass im SVWS-Datenmodell eine Änderungshistorie
 fehlt, anhand derer die Veränderungen von Adressdaten nachvollzogen
 werden kann.
 
@@ -82,7 +82,7 @@ encoding=\x22UTF-8\x22?\>\x0A\<A:propfind xmlns:A=\x22DAV:\x22\>\x0A
 \<A:principal-URL/\>\x0A \<A:resourcetype/\>\x0A
 \</A:prop\>\x0A\</A:propfind\>\x0A\] "Accept-Header: " \[\*/\*\]
 "Accept-Encoding: " \[-\] "Content-Type: " \[text/xml\]
-````
+```
 
 Nicht erfolgreich: NextCloud (Server) Import über CardDAV ist kein
 Feature von NextCloud. NextCloud App scheint nur mit NextCloud Server

@@ -38,6 +38,12 @@ Wenn Sie die Anwendung mit Online-Abruf nutzen, gelten folgende Prinzipien:
 
 Für den Online-Abruf sollten Sie prüfen, dass die Verbindung zum SVWS-Server im Schulnetz sicher ist und vertrauenswürdige Zertifikate verwendet werden.
 
+## Setzen eines Impressums
+
+Läuft das SVWS-Konferenzmodul nur in einem lokalen Browser oder geschlossenen Verwaltungsnetz, muss kein Impressum gesetzt werden.
+
+Soll das SVWS-Konferenzmodul über das Internet abgerufen werden können, ist ein Impressum zu konfigurieren. Konsultieren Sie hierzu die [Installationsanleitung](installation.md).
+
 ## Organisatorische Hinweise
 
 Auch wenn die Anwendung selbst keine Daten nach außen sendet, sollten organisatorische Maßnahmen getroffen werden:

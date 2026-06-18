@@ -17,17 +17,17 @@ const datum = (t: number) => {
 :::info Erstellungsdatum {{ datum(data.buildDate) }}
 :::
 
-[![Users](./graphics/LandingUser.png "Icon für Benutzer.")](./webclient/)
+[![Users](./graphics/LandingUser.png "Icon für Benutzer.")](./svws-client/)
 [![Admins](./graphics/LandingAdmin.png "Icon für Admins.")](./deployment/)
 [![Devs](./graphics/LandingDev.png "Icon für Developer.")](./development/)
 
 Für die Installation und Nutzung der Software **SchILD-NRW-3** findet sich deren Dokumentation im [Wiki von SchILD-NRW-3](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=SchILD-NRW).
 
-## SVWS-Server, SVWS-Webclient und weitere Projekte
+## SVWS-Server, SVWS-Client und weitere Projekte
 
-Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Webclient* und zum *SVWS-Server*. Der **SVWS-Webclient** ist eine Web-Applikation zur Unterstützung der Verwaltungsprozesse an den Schulen Nordrhein-Westfalens. Er schafft eine plattformübergreifende Benutzeroberfläche, die mit allen gängigen Browsern aufgerufen werden kann.
+Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Client* und zum *SVWS-Server*. Der **SVWS-Client** ist eine Web-Applikation zur Unterstützung der Verwaltungsprozesse an den Schulen Nordrhein-Westfalens. Er schafft eine plattformübergreifende Benutzeroberfläche, die mit allen gängigen Browsern aufgerufen werden kann.
 
-Der SVWS-Webclient greift auf den SVWS-Server zu, so dass erledigte Arbeiten wechselseitig auch anderen auf den SVWS-Server zugreifenden Client-Anwendungen zur Verfügung stehen.
+Der SVWS-Client greift auf den SVWS-Server zu, so dass erledigte Arbeiten wechselseitig auch anderen auf den SVWS-Server zugreifenden Client-Anwendungen zur Verfügung stehen.
 
 Er wird in der ersten Übergangsphase parallel zu SchILD-NRW 3 benutzt.
 
@@ -41,7 +41,7 @@ Unter dem ersten Punkt **Benutzerhandbücher** finden Sie die Dokumentationen f�
 
 Die übrigen Punkte bieten Zugang zu technischen Informationen zu Installation, Administration und Entwicklung.
 
-* Der SVWS-Webclient bietet eine Datenverwaltung für Schul-, Lehrkraft-, Schüler- und Schülerinnen- und Leistungsdaten.
+* Der SVWS-Client bietet eine Datenverwaltung für Schul-, Lehrkraft-, Schüler- und Schülerinnen- und Leistungsdaten.
 * **WebLuPO** dient zur  Laufbahnberatung in der gymnasialen Oberstufe.
 * Der Client unterstützt die Erstellung von **Blockungen** und **Klausurplänen** und
 * die Verwaltung von **Stundenplänen**.
@@ -54,11 +54,11 @@ Nähere Informationen erhalten Sie hier:
 
 https://www.svws.nrw.de/
 
-## Datenschutzhinweis aus dem Webclient
+## Datenschutzhinweis aus dem WebClient
 
-Nehmen Sie den im SVWS-Webclient hinterlegten Datenschutzhinweis zur Kenntnis und beachten Sie den gültigen Rechtsrahmen.
+Nehmen Sie den im SVWS-Client hinterlegten Datenschutzhinweis zur Kenntnis und beachten Sie den gültigen Rechtsrahmen.
 
-Sie erreichen den Datenschutzhinweis über ````Client Info```` im **App**-Menü im Reiter Datenschutz.
+Sie erreichen den Datenschutzhinweis über **Client Info** im **App**-Menü im Tab Datenschutz.
 
 
 ## Erklärung zur Barrierefreiheit

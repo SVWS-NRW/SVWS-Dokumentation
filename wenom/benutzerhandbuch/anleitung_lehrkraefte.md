@@ -1,4 +1,4 @@
-# WenNoM - Anleitung für Lehrkräfte
+# WeNoM - Anleitung für Lehrkräfte
 
 ## Erste Anmeldung
 
@@ -60,8 +60,6 @@ Je nach Rolle der Lehrkraft kann die Ansicht variieren. Es wird zwischen den fol
 
 Die **Fachlehrkraft** kann die Noten für ihren eigenen Unterricht in den Leistungsdaten eingeben. Hierbei ist die **Note** die Zeugnisnote. Es kann ebenfalls eine **Quartalsnote** vergeben werden.
 
-Sofern **Teilleistungen** definiert sind, werden diese hier ebenfalls eingetragen.
-
 Es lassen sich ganze Noten (1, 2, 3, …) und Noten mit Tendenzen eingeben (3+, 3, 3-, …). Weiterhin können je nach Bedarf Leistungsstufen E1, E2, E3 oder Codes wie NB für "Nicht beurteilbar" oder NE für "Nicht erteilt" usw. eingetragen werden.
 
 ::: tip Pfeiltasten verwenden
@@ -77,7 +75,7 @@ Ist das Feld *mit einem Haken versehen* und *inaktiv* - wird also ohne Checkbox 
 Bei einer Schülerin neu gesetzte Mahnungen sind am gesetzten Haken und der *roten Färbung* erkennbar. Diese Mahnungen können weiterhin bearbeitet werden.
 
 ::: info Update des Mahnungs-Status
-Werden die Noten und Mahnungen aus WeNoM in den SVWS-Webclient übertragen und dort verarbeitet, wird der Zustand der Mahnung auf *ausgesprochen* beziehungsweise *versendet* geändert. Dies bedeutet nach einer weiteren Rück-Synchronisation mit WeNoM, dass der Status hier auf *angehakt* und *inaktiv* wechselt.
+Werden die Noten und Mahnungen aus WeNoM in den SVWS-Client übertragen und dort verarbeitet, wird der Zustand der Mahnung auf *ausgesprochen* beziehungsweise *versendet* geändert. Dies bedeutet nach einer weiteren Rück-Synchronisation mit WeNoM, dass der Status hier auf *angehakt* und *inaktiv* wechselt.
 :::
 
 #### Fachbezogene Fehlstunden eintragen
@@ -104,7 +102,7 @@ Als **Teilleistungen** werden Unternoten eines Faches bezeichnet. Dies sind zum 
 Die Schule kann Teilleistungen nach eigener Maßgabe definieren, daher können die Teilleistungen nach Schulform und Schule in ihrer Anzahl und in ihrer Bezeichnung variieren. Schulen verwenden eventuell keine Teilleistungen.
 :::
 
-Im Reiter Teilleistungen findet man eine Übersicht über alle in dieser Lerngruppe durch den zentralen SVWS-Server vorgegebenen Teilleistungsarten.
+Im Tab Teilleistungen findet man eine Übersicht über alle in dieser Lerngruppe durch den zentralen SVWS-Server vorgegebenen Teilleistungsarten.
 
 Alternativ zum Leistungsdatenreiter können hier auch die Quartals- und Endnoten eingetragen werden.
 
@@ -116,7 +114,7 @@ Seitens der schulischen Administration können einzelne Lerngruppe für die Eing
 
 ## Eintragungen der Klassenleitung
 
-![Eomtragen von Fehlstunden und Bemerkungen durch die Klassenleitungen](graphics/WenomKlassenleitung.png "Tragen Sie als Klassenleitung gesammlte Fehlstunden und unterschiedlichen Bemerkungen ein.")
+![Eintragen von Fehlstunden und Bemerkungen durch die Klassenleitungen](graphics/WenomKlassenleitung.png "Tragen Sie als Klassenleitung gesammelte Fehlstunden und unterschiedliche Bemerkungen ein.")
 
 ### Klassenleitung: FS und FSU
 

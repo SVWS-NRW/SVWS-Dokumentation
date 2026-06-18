@@ -8,6 +8,31 @@
 
 ## Installation der App auf einem Rechner oder im Netzwerk
 
+![Unterschiedliche Arten, das Modul zu starten](./graphics/konferenz_dateien_zum_starten.png "Es gibt mehrere Möglichkeiten, das SVWS-Konferenzmodul zu starten.")
+
+Das SVWS-Konferenzmodul steht als *ausführbare .exe* für MS Windows, als *appimage* für Linux oder als *Browser-startbare Datei* bereit.
+
+* Wenn Sie die .exe in MS Windows starten, wird eine vom sonstigen Betriebssystem und den dort installierten Programmen vollständig selbstständige Umbegung mit allen nötigen Komponeten bereitgestellt.
+Hierbei wird ein Desktop-Icon installiert, über welches das SVWS-Konferenzmodul direkt gestartet werden kann. 
+
+* Die .zip-Datei muss entpackt werden, dann lässt sich die `index.html` starten und das SVWS-Konferenzmodul läuft in ihrem Browser. Diese Version kann damit auf jedem Betriebssystem startet, das einen aktuellen Browser unterstützt.
+
+* Die .appimage-Datei kann unter Linux mit `chmod +x` ausführbar gemacht und dann per `./appimage` gestartet werden.
+
+### Starte der ausführbaren .exe-Datei
+
+Sie können die ausführbare .exe-Datei in MS Windows direkt starten, sofern Sie auf Ihrem Computer mit Ihrem Betriebssystem-Benutzer die Rechte hierfür haben.
+
+Teilweise werden Ihnen die Rechte durch die IT nicht eingeräumt, eigene ausführbare Dateien zu starten.
+
+Hierbei wird ein Desktop-Icon installiert.
+
+>[!NOTE] Dateiendungen werden von MS Windows per Standard ausgeblendet.
+>Beachten Sie, dass unter MS Windows die Dateiendungen häufig per Standard im Explorer nicht zu sehen sind.
+>Ihre Dateien heißen dort also nur SVWS-Konferenzübersicht.Setup.VERSION oder index.
+
+### Starten der browserbasierten index.html
+
 Die Konferenzübersicht läuft in einem Browser und setzt daher kein bestimmtes Betriebssystem voraus!
 
 ![Die heruntergeladene zip](./graphics/konferenz_zip.png "Die heruntergeladene .zip-Datei ist noch zu entpacken.")
@@ -34,7 +59,19 @@ Das Icon der Datei variiert je nach installiertem Internetbrowser.
 Hinweis für die IT: Ein einfacher statischer Webserver reicht aus, um die App im Schulnetz bereitzustellen.
 :::
 
-Die Datei `impressum.md` kann bearbeitet werden, falls man einen öffentlich erreichbaren Webserver betreibt und damit ein Impressum anzeigen muss.
+### Erzeugen eines Impressums
+
+Die Datei `impressum.example.js` kann verwendet werden, um ein eigenes Impressum zu setzen, falls man einen öffentlich erreichbaren Webserver betreibt und damit eines anzeigen muss.
+
+![Das Impressum wurde noch nicht gesetzt](./graphics/konferenz_impressum_ungesetzt.png "Das Impressum wurde noch nicht gesetzt.")
+
+Bennen Sie zuerst die Datei in `impressum.js` um und editieren Sie diese dann mit den gewünschten Daten mit einem Texteditor. Speichern Sie diese Datei.
+
+![Die umbenannte Datei impressum.js](./graphics/konferenz_impressum_js.png "Die umbenannte Datei impressum.js.")
+
+Anschließend wird das Impressum wie eingestellt angezeigt.
+
+![Das gesetzte Impressum](./graphics/konferenz_impressum_gesetzt.png "Ein definiertes Impressum (auszugsweise).")
 
 ## Lokale Nutzung (offline)
 

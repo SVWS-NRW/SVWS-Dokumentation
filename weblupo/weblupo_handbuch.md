@@ -10,7 +10,7 @@ In diesem Artikel wird die Benutzung einer `.lp`-Datei erklärt, die von den bet
 
 Startet man WebLuPO, ist auf diesem Bildschirm die individuelle `.lp`-Datei hochzuladen.
 
-Klicken Sie auf `Datei auswählen` und navigieren Sie dann auf dem Rechner zur Datei.
+Klicken Sie auf **Datei auswählen** und navigieren Sie dann auf dem Rechner zur Datei.
 
 ::: info Die Verarbeitung findet auf dem lokalen Rechner statt
 Hierbei wird das WebLuPO nur im Browser auf dem aktuellen Rechner ausgeführt. Somit werden weder ein bestimmtes Betriebssystem vorausgesetzt noch verlassen die Daten das Endgerät, an dem gearbeitet wird.
@@ -30,7 +30,7 @@ Die folgende Grafik zeigt die vier Bereiche der Laufbahnberatungstools:
 
 * Im vierten Bereich werden die Regeln für die Oberstufenbelegung algorithmisch ausgewertet und die noch zu erfüllenden Bedingungen angezeigt beziehungsweise es wird auf Fehlbelegungen hingewiesen. Hier kann der Modus *EF.1*, *Gesamtprüfung* oder *automatisch* gewählt werden.
 
-Interessant ist auch die Einstellung `Planung merken` im ersten Bereich, die das Festhalten einer Einstellung in der Tabelle ermöglicht. Wird die Planung dann testweise geändert, kann die gemerkte Planung wiederhergestellt werden.
+Interessant ist auch die Einstellung **Planung merken** im ersten Bereich, die das Festhalten einer Einstellung in der Tabelle ermöglicht. Wird die Planung dann testweise geändert, kann die gemerkte Planung wiederhergestellt werden.
 
 Somit können Schülerinnen und Schüler von diesem Ausgangspunkt aus schnell mehrere Planungen ausprobieren und wieder zurücksetzen.
 

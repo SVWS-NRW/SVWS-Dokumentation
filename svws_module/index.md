@@ -1,3 +1,3 @@
 # Weitere Module
 
-In diesem Bereich sind weitere Module beschrieben, die den SVWS-Server und SVWS-WebClient erweitern.
+In diesem Bereich sind weitere Module beschrieben, die den SVWS-Server und SVWS-Client erweitern.
