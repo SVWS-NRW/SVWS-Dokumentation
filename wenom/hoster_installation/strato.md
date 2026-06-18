@@ -9,7 +9,7 @@
 
 ## Subdomain anlegen (optional)
 
-Falls Sie ihren Wenom Server unter einer Subdomain betreiben wollen, wie zum Beispiel wenom.IhreWebseite.de muss diese noch angelegt weden. Loggen Sie sich dazu in den Kundenbereich - Server-Login bei Strato ein.
+Falls Sie ihren Wenom Server unter einer Subdomain betreiben wollen, wie zum Beispiel wenom.IhreWebseite.de, muss diese noch angelegt weden. Loggen Sie sich dazu in den Kundenbereich - Server-Login bei Strato ein.
 Legen Sie unter "Domains" eine Subdomain an.
 
 ![Bereich Domain](./graphics/strato_VS_01.png "Einrichtung Subdomain.")
