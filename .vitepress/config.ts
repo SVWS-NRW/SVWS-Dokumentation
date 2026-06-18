@@ -186,7 +186,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Hosterspezifische Anleitungen',link: '/wenom/hoster_installation/', collapsed: false, items: [
 								{ text: 'All-Inkl', link: '/wenom/hoster_installation/all-inkl.md' },
 								{ text: 'Hosteurope', link: '/wenom/hoster_installation/hosteurope.md' },
-								{ text: 'Strato VS', link: '/wenom/hoster_installation/strato_vs.md' },
+								{ text: 'Strato', link: '/wenom/hoster_installation/strato.md' },
 								{ text: 'Eigener Webserver', link: '/wenom/installation/installation_webserver.md' },
 							] },
 							{ text: 'mehrere Mandanten', link: '/wenom/installation/mehrereMandanten.md' },
