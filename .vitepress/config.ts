@@ -35,6 +35,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: '', items: [
 							{ text: 'SVWS WebNotenManager (Beta)', link: '/wenom' },
+							{ text: 'SVWS ENM GradeHub', link: '/svws_module/svws_gradehub' },
 							{ text: 'SVWS Konferenz', link: '/svws_module/svws_konferenzuebersicht' },
 							{ text: 'SVWS Prognos', link: '/svws_module/svws_prognos' },
 							{ text: 'SVWS WebLuPO', link: '/weblupo' },
@@ -155,12 +156,19 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Roadmap', link: '/deployment/roadmap.md' },
 					] },
 				],
+				'/svws_module/svws_gradehub' : [
+					{ text: '', items: [
+						{ text: 'SVWS-Konferenzübersicht', link: '/svws_module/svws_gradehub/',  collapsed: false, items: [
+							{ text: 'Dokumentation im Entstehen' },
+						] },
+					] },
+				],
 				'/svws_module/svws_konferenzuebersicht' : [
 					{ text: '', items: [
 						{ text: 'SVWS-Konferenzübersicht', link: '/svws_module/svws_konferenzuebersicht/',  collapsed: false, items: [
-							{ text: 'Installation und Bereitstellung', link: '/svws_module/svws_konferenzuebersicht/installation.md' },
 							{ text: 'Login - Lokal und Server', link: '/svws_module/svws_konferenzuebersicht/login.md' },
 							{ text: 'Verwendung in der Konferenz', link: '/svws_module/svws_konferenzuebersicht/verwendung.md' },
+							{ text: 'Installation und Bereitstellung', link: '/svws_module/svws_konferenzuebersicht/installation.md' },
 							{ text: 'Fehlerbehebung', link: '/svws_module/svws_konferenzuebersicht/fehlerbehebung.md' },
 							{ text: 'Hinweise zum Datenschutz', link: '/svws_module/svws_konferenzuebersicht/datenschutz.md' },
 						] },
@@ -169,13 +177,11 @@ export default defineConfig(({ mode }) => {
 				'/svws_module/svws_prognos' : [
 					{ text: '', items: [
 						{ text: 'SVWS Prognos', link: '/svws_module/svws_prognos/',  collapsed: false, items: [
+							{ text: 'Verbindung mit dem Server', link: '/svws_module/svws_prognos/server_verbinden.md' },
+							{ text: 'Übersicht Prognos [i.E.]' },
+							{ text: 'Jahrgangsprognosen [i.E.]' },
+							{ text: 'Manuelle Prognosen [i.E.]' },
 							{ text: 'Installation und Bereitstellung', link: '/svws_module/svws_prognos/installation.md' },
-							{ text: 'Verwendung und Aufbau', collapsed: false, items: [
-								{ text: 'Verbindung mit dem Server', link: '/svws_module/svws_prognos/server_verbinden.md' },
-								{ text: 'Übersicht Prognos [leer]' },
-								{ text: 'Jahrgangsprognosen [leer]' },
-								{ text: 'Manuelle Prognosen [leer]' },
-							] } ,
 							{ text: 'Begriffe, Konventionen und Fehlersuche' },
 						] },
 					] },
