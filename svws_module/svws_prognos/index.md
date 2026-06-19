@@ -1,6 +1,6 @@
 # SVWS Prognos
 
-Willkommen beim Anwenderhandbuch für SVWS-Prognos
+Willkommen beim Anwenderhandbuch für SVWS-Prognos.
 
 >[!CAUTION] Release: Bald
 >Das Prognosewerkzeug ist noch nicht veröffentlicht, entsprechend ist hier auch im Inhaltsverzeichnis noch nicht alles hinterlegt.

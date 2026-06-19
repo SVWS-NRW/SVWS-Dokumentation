@@ -169,12 +169,13 @@ export default defineConfig(({ mode }) => {
 				'/svws_module/svws_prognos' : [
 					{ text: '', items: [
 						{ text: 'SVWS Prognos', link: '/svws_module/svws_prognos/',  collapsed: false, items: [
-							{ text: 'Installation und Bereitstellung' },
+							{ text: 'Installation und Bereitstellung', link: '/svws_module/svws_prognos/installation.md' },
 							{ text: 'Verwendung und Aufbau', collapsed: false, items: [
-								{ text: 'Verbindung mit dem Server' },
-								{ text: 'Verwendung' },
+								{ text: 'Verbindung mit dem Server', link: '/svws_module/svws_prognos/server_verbinden.md' },
+								{ text: 'Übersicht Prognos [leer]' },
+								{ text: 'Jahrgangsprognosen [leer]' },
+								{ text: 'Manuelle Prognosen [leer]' },
 							] } ,
-							{ link: '/svws_module/svws_prognos/server_verbinden.md' },
 							{ text: 'Begriffe, Konventionen und Fehlersuche' },
 						] },
 					] },
