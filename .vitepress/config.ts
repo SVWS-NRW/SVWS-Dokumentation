@@ -159,7 +159,10 @@ export default defineConfig(({ mode }) => {
 				'/svws_module/svws_gradehub' : [
 					{ text: '', items: [
 						{ text: 'SVWS-Konferenzübersicht', link: '/svws_module/svws_gradehub/',  collapsed: false, items: [
-							{ text: 'Dokumentation im Entstehen' },
+							{ text: 'Die Dokumentation ist im Entstehen' },
+							{ text: 'Verwendung' },
+							{ text: 'Administration' },
+							{ text: 'Installation' },
 						] },
 					] },
 				],
@@ -168,7 +171,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SVWS-Konferenzübersicht', link: '/svws_module/svws_konferenzuebersicht/',  collapsed: false, items: [
 							{ text: 'Login - Lokal und Server', link: '/svws_module/svws_konferenzuebersicht/login.md' },
 							{ text: 'Verwendung in der Konferenz', link: '/svws_module/svws_konferenzuebersicht/verwendung.md' },
-							{ text: 'Installation und Bereitstellung', link: '/svws_module/svws_konferenzuebersicht/installation.md' },
+							{ text: 'Installation', link: '/svws_module/svws_konferenzuebersicht/installation.md' },
 							{ text: 'Fehlerbehebung', link: '/svws_module/svws_konferenzuebersicht/fehlerbehebung.md' },
 							{ text: 'Hinweise zum Datenschutz', link: '/svws_module/svws_konferenzuebersicht/datenschutz.md' },
 						] },
@@ -181,7 +184,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Übersicht Prognos [i.E.]' },
 							{ text: 'Jahrgangsprognosen [i.E.]' },
 							{ text: 'Manuelle Prognosen [i.E.]' },
-							{ text: 'Installation und Bereitstellung', link: '/svws_module/svws_prognos/installation.md' },
+							{ text: 'Installation', link: '/svws_module/svws_prognos/installation.md' },
 							{ text: 'Begriffe, Konventionen und Fehlersuche' },
 						] },
 					] },

@@ -6,6 +6,8 @@ WebLuPo ist ein webbasiertes Laufbahnberatungs- und Planungstool für die gymnas
 
 Die Beschreibung und Benutzung des Tools für Anwender ist unter den Benutzerhandbüchern [WebLuPO Handbuch](weblupo_handbuch.md) zu finden.
 
+Laden Sie **WebLuPo** auf der [Seite des MSB für Schulverwaltungssoftware](https://www.svws.nrw.de/) im Bereich für [Tools und Module](https://www.svws.nrw.de/svws-server-schild-nrw-3/svws-server-tools-module) herunter.
+
 ## Technischer Hintergrund
 
 Die Nutzer erhalten von der Schule `.lp`-Dateien, die über einen Link zum WebLuPO-Client geöffnet werden können. Dieser Client wird ausschließlich im Browser ausgeführt und versendet keine Daten.
