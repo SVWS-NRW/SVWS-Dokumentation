@@ -1,7 +1,7 @@
 # WeNoM - WebNotenManager (Beta)
 
 ::: warning Beta-Version
-Der WebNotenManager liegt derzeit als Beta-Version zum Testen vor. Im Beta-Betrieb ist noch kein regulärer Einsatz an Schulen vorgesehen.
+Der WebNotenManager liegt derzeit als Pre-Release-Version vor.
 :::
 
 ::: tip Direkt zur [Anleitung für Lehrkräfte](./benutzerhandbuch/anleitung_lehrkraefte.md)!
