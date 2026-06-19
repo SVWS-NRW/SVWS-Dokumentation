@@ -1,4 +1,4 @@
-# WebLuPO
+# WebLuPO Installation
 
 **Installationsanleitung und technische Dokumentation**
 

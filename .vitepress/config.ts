@@ -182,7 +182,10 @@ export default defineConfig(({ mode }) => {
 				],
 				'/weblupo' : [
 					{ text: '', items: [
-						{ text: 'SVWS Weblupo', link: '/weblupo/' },
+						{ text: 'SVWS Weblupo', link: '/weblupo/', collapsed: false, items: [
+							{ text: 'Benutzerhandbuch', link: '/weblupo/weblupo_handbuch.md' },
+							{ text: 'Installation', link: '/weblupo/weblupo_installation.md' },
+						] },
 					] },
 				],
 				'/wenom' : [
