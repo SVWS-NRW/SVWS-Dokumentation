@@ -14,6 +14,8 @@ in Nordrhein-Westfalen.
 
 Die App liest Noten und Lernabschnittsdaten direkt aus Ihrem SVWS-Server und berechnet, welchen Schulabschluss ein Schüler oder eine Schülerin nach dem aktuellen Stand voraussichtlich erreichen würde.
 
+Veränderte Daten können auf Wunsch zurück in den SVWS-Server übertragen werden.
+
 >[!NOTE] Berechnungsgrundlage
 >Die Berechnungen sind gemäß der Ausbildungsordnung Sekundarstufe I, gültig ab 01.08.2020 (APO-SI20).
 

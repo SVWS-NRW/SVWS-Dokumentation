@@ -1,23 +1,38 @@
-Das Dashboard ist die Startseite nach dem erfolgreichen Verbinden mit dem SVWS-Server. Von hier aus erreichen Sie alle Funktionen der App.
+## SVWS Prognos Übersicht
 
-Aufbau des Dashboards
-Das Dashboard zeigt sechs Kacheln:
+Nach dem Verbinden mit einem SVWS-Schema wird auf der Hauptseite von *SVWS Prognos* eine Übersicht der Funktionen angezeigt.
 
-┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
-│       8         │  │       9         │  │      10         │
-│  Jahrgang 8     │  │  Jahrgang 9     │  │  Jahrgang 10    │
-│  Schülerprognos.│  │  Schülerprognos.│  │  Schülerprognos.│
-└─────────────────┘  └─────────────────┘  └─────────────────┘
+!["SVWS Prognos Übersicht"](./graphics/svws_prognos_uebersicht.png "Die Hauptseite von SVWS Prognos")
 
-┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
-│  ✏ Manuelle     │  │  📊 Auswertungen│  │  🏫 Schuldaten  │
-│  Prognose       │  │  (folgt)        │  │  Schema: ...    │
-│  JSON importier.│  │                 │  │  Server: ...    │
-└─────────────────┘  └─────────────────┘  └─────────────────┘
-Jahrgangs-Kacheln (8 / 9 / 10)
-Ein Klick auf eine der drei Jahrgangs-Kacheln öffnet die Schülerübersicht für diesen Jahrgang. Dort sehen Sie alle Klassen und Schülerinnen und Schüler aus Ihrem SVWS-System für den aktuellen Schuljahresabschnitt.
+In der Kopfzeile können Sie einen *hellen* oder *dunklen Modus* wählen oder die Systemeinstellung behalten.
 
-→ Mehr dazu: Jahrgangsprognose
+Ebenso können Sie sich **Abmelden** und damit Prognos verlassen. Es werden keine Daten gespeichert.
+
+>[!TIP]Noten Speichern
+>Veränderte Daten, zum Beispiel Noten, können aus den Detailübersichten der Schüler in den SVWS-Server zurück gespeichert werden.
+
+!["Abmelden oben rechts"](./graphics/svws_prognos_hauptseite_abmelden.png "Melden Sie sich aus Prognos ab.")
+
+Unter der Hauptseite sehen Sie die Kacheln mit den Funktionen von SVWS-Prognos.
+
+!["Zusammenfassung der Schuldaten"](./graphics/svws_prognos_hauptseite_schuldaten.png "Die Daten der aktuellen Datenbank.")
+
+Unten rechts sehen Sie eine Zusammenfassung der Datenbank, mit der Sie gerade verbunden sind.
+
+## Abschluss-Auswertungen
+
+!["Zeigen Sie Auswertungen an"](./graphics/svws_prognos_uebersicht_auswertungen.png "Greifen Sie auf die Auswertungen der Abschlüsse zu.")
+
+Direkt daneben wird eine statistische Zusammenfassung, in der Sie eine *Abschlussverteilung* aufrufen könen, ebenso werden Grenz- und *Risikofälle* angezeigt, ebenso haben Sie Zugriff auf noch *offenen Prognosen*.
+
+!["Kopfzeile der Auswerung"](./graphics/svws_prognos_auswertung_kopf.png "In der Kopfzeile greifen Sie auf die Auswertungen und Risikofälle zu.")
+
+Über die Kopfzeile können Sie den gewünschten **Lernabschnitt** wählen. Anschließend haben Sie Zugriff auf *Abschluss-Zusammenfassungen*, *Risikofälle* und noch *Offene Prognosen*.
+
+
+Ein Klick auf die Jahrgangs-Kacheln öffnet die Schülerübersicht für diesen Jahrgang. Hier sind 
+
+
 
 Manuelle Prognose
 Die Kachel „Manuelle Prognose” öffnet ein Eingabeformular, in das Sie Noten ohne Verbindung zu einem bestimmten Schüler eingeben können. Dies ist nützlich für:
