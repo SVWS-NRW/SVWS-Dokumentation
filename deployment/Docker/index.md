@@ -1,30 +1,28 @@
 # Docker-Container
 
-Der SVWS-Server kann als Container betrieben werden. Dies eignet sich insbesondere für die folgenden beiden Szenarien:
+Der SVWS-Server kann in einem Docker-Container betrieben werden.
 
-* Betrieb einer SVWS-Umgebung für Produktiv- oder Test-Betrieb [per docker-compose](#svws-umgebung-mit-docker-compose-starten)
-
-
-Die SVWS-Container-Images sind unter Docker (docker engine, docker desktop) lauffähig. Ein Betrieb unter anderen Container-Umgebungen wie z.B. [Podman](https://podman.io/), [Kubernetes](https://kubernetes.io/de/), [OpenShift](https://www.redhat.com/de/technologies/cloud-computing/openshift) ist grundsätzlich möglich, jedoch noch nicht getestet (Stand 27.09.2024).
-
-Im Git-Repository von SVWS befinden sich [Beispiele, Skripte und Image-Definitionen](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker) zum Aufbau von Docker-basierten SVWS-Umgebungen.
-
+Die bereitgestellten SVWS-Container-Images sind mit Docker (Docker Engine und Docker Desktop) kompatibel. Der Einsatz in anderen Container-Umgebungen wie Podman, Kubernetes oder OpenShift ist grundsätzlich möglich, wurde jedoch bislang nicht getestet (Stand: Mitte 2026).
 
 ## Systemvoraussetzungen Installation Docker-Umgebung
-Für die lokale Inbetriebnahme ist eine Installation von [Docker](https://docs.docker.com) auf dem Entwickler-PC notwendig.
 
-Bitte die [Nutzungsbedingungen](https://www.docker.com/legal/docker-subscription-service-agreement) der Fa. Docker Inc. für Docker beachten!
+Für die lokale Inbetriebnahme ist eine Installation von Docker auf dem Zielsystem erforderlich.
 
-Bitte informieren Sie sich auf der Dokumentationsseite von Docker über die notwendigen Schritte in Ihrer Umgebung.
+Bitte beachten Sie die Nutzungsbedingungen der [Docker Inc.](https://docs.docker.com) sowie die aktuelle Dokumentation von Docker zur Installation und Konfiguration in Ihrer jeweiligen Umgebung.
 
+### Kurzanleitung
 
-## SVWS-Umgebung mit docker-compose starten
++ Installieren Sie Docker auf ihrem System.
++ Erstellen Sie einen Ordner für ihrem SVWS-Container.
++ Erstellen Sie dort die Datei `docker-compose.yml`
++ Erstellen Sie dort die Datei `.env`und geben Sie die ihre Passwörter ein.
++ Erstellen Sie dort die laut 'docker-compose.ylm' benötigten Unterordner.
 
-Die SVWS-Umgebung kann über die Konsole des verwendeten Betriebssystems mittels docker-compose gestartet werden. Beispiele zur dazu obligatorischen docker-compose.yml und Dateien befinden sich im [Github-Repository](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker/example) .
+Starten Sie den SVWS-Server (und ggf. den intergrierten MariaDB-Server) mit `docker compose up -d`
 
-### Beispiel: Testserver im Docker Container
+### Beispiel: docker-compose.yml
 
-Beispiel einer vorbereiteten Docker-Compose:
+Beispielkonfigurationen für die erforderliche `docker-compose.yml`:
 
 ```yaml
 services:
@@ -44,11 +42,11 @@ services:
       - ./volume/mariadb:/var/lib/mysql
 
   svws-server:
-    image: svwsnrw/svws-server:1.3.0
+    image: svwsnrw/svws-server:1.3.2
     depends_on:
       mariadb:
         condition: service_healthy
-    container_name: svws1
+    container_name: svws1_server
     ports:
       - "8443:8443"
     volumes:
@@ -57,7 +55,16 @@ services:
       - .env
 ```
 
-Beispiel der zugehörigen .env Datei wird weiter unten aufgeführt:
+Mit dieser Konfiguration werden folgende Dienste gestartet:
+
++ MariaDB-Datenbank
++ SVWS-Server einschließlich des bereitgestellten Web-Clients
+
+## Beispiel .env Datei
+
+In der Envionment Datei, kurz `.env` werden die individuellen Passwörter bzw. Pfade gespeichert. Diese ist in der Regel versteckt und wird vom Datesystem nicht direkt angezeigt.
+
+Beispiel einer .env Datei zu dem o.g. `docker-compose.yml`
 
 ```bash
 IMPORT_TEST_DATA=false
@@ -74,17 +81,21 @@ SVWS_TLS_CERT_S=NRW
 SVWS_TLS_CERT_C=DE
 ```
 
-Es müssen natürlich noch entsprechende Passwörter generiert bzw. in die .env Datei eingetragen werden. Im Ordner Volume werden dann für `svws` und `mariadb` entsprechende Ordner angelegt.
+Vor dem ersten Start müssen geeignete Passwörter gesetzt werden.
 
-Im Ordner `svws` werden beim ersten Hochfahren des Containers die `svwsconfig.json` und der Keystore angelegt. Diese können dort auch mit einer eigenen Konfiguration bzw. eigenen Zertifikatseinstellungen abgelegt werden. Im Ordner `svws/logs` werden später die Log-Dateien erscheinen, wenn der Logging-Pfad auf Defaulteinstellung bleibt.
+Beim ersten Start werden im Verzeichnis `volume` die Unterverzeichnisse `mariadb` und `svws` angelegt.
 
-Es werden nun Services für eine komplette SVWS-Umgebung gestartet: Datenbank, SVWS-Anwendung (Server, Clients). Ebenso sind die Volumes für den Keystore gemountet.
+Im Verzeichnis `svws` werden automatisch die Datei `svwsconfig.json` sowie ein Java-Keystore erzeugt. Alternativ können dort bereits vorhandene Konfigurationsdateien oder eigene Zertifikate hinterlegt werden. Sofern die Standardkonfiguration verwendet wird, werden die Log-Dateien im Verzeichnis `svws/logs` gespeichert.
 
-Nach dem Start kann der SVWS-Server über den Port 8443 erreicht werden.
+Zusätzlich werden die erforderlichen Volumes für Konfiguration und Zertifikate eingebunden.
 
-Auf die Datenbank sollte standardmäßig nicht außerhalb der Docker-Umgebung zugegriffen werden. Intern nutzt die Datenbank den Port 3306. Für den Zugriff von SchILD-NRW 3 ist ein Port-Binding auch außerhalb von Docker nötig, dies wird über die Angabe eines Port-Mappings `ports`-Eintrag in der Datei erreicht.
+Nach dem erfolgreichen Start ist der SVWS-Server über Port 8443 erreichbar.
 
-In diesem Beispiel wird der Port 3306 im Container auf den Port 3306 auf dem Host abgebildet:
+### Kommunikation mit Schild3
+
+Standardmäßig ist die Datenbank ausschließlich innerhalb des Docker-Netzwerks erreichbar. Intern verwendet MariaDB den Port 3306.
+
+Soll SchILD-NRW 3 direkt auf die Datenbank zugreifen, muss ein entsprechendes Port-Mapping konfiguriert werden. Dies erfolgt über den Eintrag ports in der docker-compose.yml.
 
 ```yaml
 #...
@@ -96,30 +107,15 @@ services:
 #    ...
 ```
 
-Diese Ports müssen auf Ihre Umgebung angepasst werden, je nach Anforderung.
+Diese Ports müssen auf Ihre Umgebung angepasst bzw. ergänzt werden, je nach Anforderung.
+
+### weitere Beispiele
+
+Im Git-Repository von SVWS befinden sich [Beispiele, Skripte und Image-Definitionen](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker) zum Aufbau von Docker-basierten SVWS-Umgebungen.
 
 ## Konfiguration der SVWS-Umgebung
-Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über Umgebungsvariablen. Die Werte dieser Variablen werden in der Datei `.env` definiert.
 
-Hier ein weiteres Beispiel:
-
-```bash
-IMPORT_TEST_DATA=true
-MARIADB_ROOT_PASSWORD=
-MARIADB_DATABASE=svwsdb
-MARIADB_HOST=mariadb
-MARIADB_USER=your-mariadb-user
-MARIADB_PASSWORD=
-SVWS_TLS_KEYSTORE_PATH=/etc/app/svws/conf/keystore
-SVWS_TLS_KEYSTORE_PASSWORD=
-SVWS_TLS_KEY_ALIAS=svws
-SVWS_TLS_CERT_CN=YOURCERTNAME
-SVWS_TLS_CERT_OU=SVWSOU
-SVWS_TLS_CERT_O=SVWSO
-SVWS_TLS_CERT_L=CITY
-SVWS_TLS_CERT_S=STATE
-SVWS_TLS_CERT_C=COUNTRY
-```
+Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt das Setzen der folgenden Umgebungsvariablen i der `.env` Datei.
 
 | Variable | Beschreibung |
 | ----------- | ----------- |
@@ -131,17 +127,17 @@ SVWS_TLS_CERT_C=COUNTRY
 | MARIADB_PASSWORD | Passwort des Datenbank-Benutzers, unter dem sich der SVWS-Server mit der Datenbank verbindet. |
 | SVWS_TLS_KEYSTORE_PATH | Unter diesem Pfad erwartet der SVWS den Java-Keystore für die Terminierung von SSL am Server |
 | SVWS_TLS_KEYSTORE_PASSWORD | Passwort des Keystores |
-| SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore  |
-| SVWS_TLS_CERT_CN | Name des selbstsignierten Zertifikats Default:SVWSCERT|
+| SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore |
+| SVWS_TLS_CERT_CN | Name des selbstsignierten Zertifikats Default:SVWSCERT |
 | SVWS_TLS_CERT_OU | Name der Organistationseinheit Default: SVWSOU |
-| SVWS_TLS_CERT_O| Name der Organisation Default:SVWSO |
+| SVWS_TLS_CERT_O | Name der Organisation Default:SVWSO |
 | SVWS_TLS_CERT_L=CITY | Name des Ortes Default: Duesseldorf |
 | SVWS_TLS_CERT_S=STATE | Name des Bundeslands Name Default: NRW |
 | SVWS_TLS_CERT_C=COUNTRY | Name des Staates Default: Germany |
 
-
 ### Deaktivierung der automatischen Initialisierung
-Umgebungsvariable `INIT_SCRIPTS_DIR` muss auskommentiert sein (vgl. [Konfiguration der SVWS-Umgebung](#Konfiguration-der-SVWS-Umgebung)).
+
+Umgebungsvariable `INIT_SCRIPTS_DIR` muss auskommentiert sein (vgl. [Konfiguration der SVWS-Umgebung](#konfiguration-der-svws-umgebung)).
 
 Sie können in der `.env` Datei auch ein Schema ohne Migration angeben, dann wird dies beim ersten Start ohne Daten angelegt. Dies kann dann im AdminClient befüllt werden.
 
