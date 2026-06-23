@@ -15,12 +15,12 @@ Bitte beachten Sie die Nutzungsbedingungen der [Docker Inc.](https://docs.docker
 + Installieren Sie Docker auf ihrem System.
 + Erstellen Sie einen Ordner für ihrem SVWS-Container.
 + Erstellen Sie dort die Datei `docker-compose.yml`
-+ Erstellen Sie dort die Datei `.env`und geben Sie die ihre Passwörter ein.
-+ Erstellen Sie dort die laut 'docker-compose.ylm' benötigten Unterordner.
++ Erstellen Sie dort die Datei `.env` und geben Sie die ihre Passwörter ein.
++ Erstellen Sie dort die laut `docker-compose.ylm` benötigten Unterordner.
 
-Starten Sie den SVWS-Server (und ggf. den intergrierten MariaDB-Server) mit `docker compose up -d`
+Starten Sie den SVWS-Server (und ggf. den intergrierten MariaDB-Server) mit `docker compose up -d`.
 
-### Beispiel: docker-compose.yml
+### Beispiel: `docker-compose.yml`
 
 Beispielkonfigurationen für die erforderliche `docker-compose.yml`:
 
@@ -58,13 +58,13 @@ services:
 Mit dieser Konfiguration werden folgende Dienste gestartet:
 
 + MariaDB-Datenbank
-+ SVWS-Server einschließlich des bereitgestellten Web-Clients
++ SVWS-Server einschließlich des bereitgestellten SVWS-Clients
 
 ## Beispiel .env Datei
 
-In der Envionment Datei, kurz `.env` werden die individuellen Passwörter bzw. Pfade gespeichert. Diese ist in der Regel versteckt und wird vom Datesystem nicht direkt angezeigt.
+In der Environment-Datei, kurz `.env` werden die individuellen Passwörter bzw. Pfade gespeichert. Diese ist in der Regel versteckt und wird vom Dateisystem nicht direkt angezeigt.
 
-Beispiel einer .env Datei zu dem o.g. `docker-compose.yml`
+Beispiel einer `.env`-Datei zu dem o.g. `docker-compose.yml`
 
 ```bash
 IMPORT_TEST_DATA=false
@@ -111,21 +111,20 @@ Diese Ports müssen auf Ihre Umgebung angepasst bzw. ergänzt werden, je nach An
 
 ### weitere Beispiele
 
-Im Git-Repository von SVWS befinden sich [Beispiele, Skripte und Image-Definitionen](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker) zum Aufbau von Docker-basierten SVWS-Umgebungen.
+Im Git-Repository des SVWS-Server befinden sich [Beispiele, Skripte und Image-Definitionen](https://github.com/SVWS-NRW/SVWS-Server/tree/dev/deployment/docker) zum Aufbau von Docker-basierten SVWS-Umgebungen.
 
 ## Konfiguration der SVWS-Umgebung
 
-Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt das Setzen der folgenden Umgebungsvariablen i der `.env` Datei.
+Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über das Setzen der folgenden Umgebungsvariablen in der `.env`-Datei.
 
 | Variable | Beschreibung |
 | ----------- | ----------- |
-| IMPORT_TEST_DATA | true Startet den automatischen Import, Default = false |
 | MARIADB_ROOT_PASSWORD | Passwort, das für den Root-User der MariaDB-Instanz verwendet werden soll |
 | MARIADB_DATABASE | Name des Datenbankschemas, mit dem sich der SVWS-Server verbindet (z.B. "gymabi") |
 | MARIADB_HOST | Name des Hosts, auf dem die SVWS-Datenbank läuft. Im Falle der Docker-Umgebung entspricht dieser Wert dem Service-Namen von docker-compose (also "mariadb"). |
 | MARIADB_USER | Datenbank-Benutzer, unter dem sich der SVWS-Server mit der Datenbank verbindet. |
 | MARIADB_PASSWORD | Passwort des Datenbank-Benutzers, unter dem sich der SVWS-Server mit der Datenbank verbindet. |
-| SVWS_TLS_KEYSTORE_PATH | Unter diesem Pfad erwartet der SVWS den Java-Keystore für die Terminierung von SSL am Server |
+| SVWS_TLS_KEYSTORE_PATH | Unter diesem Pfad erwartet der SVWS-Server den Java-Keystore für die Terminierung von SSL am Server |
 | SVWS_TLS_KEYSTORE_PASSWORD | Passwort des Keystores |
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore |
 | SVWS_TLS_CERT_CN | Name des selbstsignierten Zertifikats Default:SVWSCERT |
@@ -134,16 +133,3 @@ Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt das Setzen der folg
 | SVWS_TLS_CERT_L=CITY | Name des Ortes Default: Duesseldorf |
 | SVWS_TLS_CERT_S=STATE | Name des Bundeslands Name Default: NRW |
 | SVWS_TLS_CERT_C=COUNTRY | Name des Staates Default: Germany |
-
-### Deaktivierung der automatischen Initialisierung
-
-Umgebungsvariable `INIT_SCRIPTS_DIR` muss auskommentiert sein (vgl. [Konfiguration der SVWS-Umgebung](#konfiguration-der-svws-umgebung)).
-
-Sie können in der `.env` Datei auch ein Schema ohne Migration angeben, dann wird dies beim ersten Start ohne Daten angelegt. Dies kann dann im AdminClient befüllt werden.
-
-```bash
-MARIADB_DATABASE=your-svws-db-schema-name
-MARIADB_HOST=mariadb
-MARIADB_USER=your-mariadb-user
-MARIADB_PASSWORD=
-```
