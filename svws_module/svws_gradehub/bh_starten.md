@@ -39,4 +39,4 @@ Unter Umständen ist kein Kennwort notwendig.
 
 Im Anschluss öffnet sich die Maske zur Eingabe von Noten, Fehlstunden und weiterer Daten.
 
-Nutzen Sie hierzu das **Benutzerhandbuch des Externen SVWS Notenmoduls GradeHub**, das links im Inhaltsverzeichnis aufgeführt ist.
+Nutzen Sie hierzu das [Benutzerhandbuch des Externen SVWS Notenmoduls GradeHub](/svws_module/svws_gradehub/bh_gradehub_verwenden.md), das links im Inhaltsverzeichnis aufgeführt ist oder folgen Sie dem Link.
