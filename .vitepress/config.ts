@@ -159,10 +159,10 @@ export default defineConfig(({ mode }) => {
 				'/svws_module/svws_gradehub' : [
 					{ text: '', items: [
 						{ text: 'SVWS-Konferenzübersicht', link: '/svws_module/svws_gradehub/',  collapsed: false, items: [
-							{ text: 'Die Dokumentation ist im Entstehen' },
-							{ text: 'Verwendung' },
-							{ text: 'Administration' },
-							{ text: 'Installation' },
+							{ text: 'GradeHub starten', link:'/svws_module/svws_gradehub/bh_starten.md' },
+							{ text: 'GradeHub verwenden', link: '/svws_module/svws_gradehub/bh_gradehub_verwenden.md' },
+							{ text: '*Administration' },
+							{ text: 'Installation', link: '/svws_module/svws_gradehub/installation.md' },
 						] },
 					] },
 				],

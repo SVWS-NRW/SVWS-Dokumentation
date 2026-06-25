@@ -1,40 +1,42 @@
 # Benutzerhandbuch SVWS-GradeHub
 
-## Login
+## GradeHub installieren und starten
 
-1. ENM-Datei auswählen
-Wenn Sie mit einer ENM-Datei arbeiten, geht das so:
+Um das Externe SVWS Notenmodul GradeHub zu starten, müssen Sie es aufrufen.
 
-Klicken Sie auf der Startseite auf ENM-Datei öffnen.
-Wählen Sie die Datei aus dem Dateisystem aus.
-Die Anwendung lädt und entpackt die ENM-Daten automatisch.
-Was erwartet die App?
-Eine gültige ENM-Datei im SVWS-Format
-Ggf. eine gzip-komprimierte Datei
-Schüler-, Lerngruppen- und Leistungsdaten
-2. SVWS-Verbindung nutzen
-Bei direkter Verbindung zum SVWS-Server:
+Liegt das Modul schon vor, etwa weil die Schule Ihnen einen Link oder eine Internetadresse hat zukommen lassen oder weil das Modul schon auf den Lehrerzimmer-Rechnern liegt, brauchen Sie keinen Download und Sie können die Datei direkt starten. Eventuell hat die IT einen Link auf dem Desktop der Computer abgelegt.
 
-Geben Sie die Server-URL ein.
-Tragen Sie das Schema ein.
-Geben Sie Ihren Benutzernamen und Ihr Passwort ein.
-Klicken Sie auf Daten laden.
-Die Anwendung prüft, ob der enm/v2-Endpunkt verfügbar ist. Falls nicht, kann sie auf ältere API-Versionen zurückgreifen.
+>[!TIP] Tipp für die IT
+>Wenn Sie die IT der Schule sind, legen Sie einen Link auf den Desktops an.
 
-3. Prüfen nach dem Laden
-Nach dem Laden sehen Sie:
+Ansonsten laden Sie das Modul herunter und installieren Sie es. Ihr Schule wird Ihnen hierfür einen Link zur Verfügung stellen.
 
-verfügbare Lerngruppen und Kurse
-Anzahl der Schüler
-Vorhandene Leistungsdaten
-Wenn ein Fehler auftritt
-Prüfen Sie die Datei auf Beschädigungen.
-Kontrollieren Sie URL, Schema, Benutzername und Passwort.
-Verwenden Sie bei Bedarf den Offline-Modus mit ENM-Export.
+* Entpacken Sie die Datei. Unter MS-Windows ist mit der `rechten Maustaste` auf die Datei zu klicken, dann wählen Sie `Alle extrahieren...`.
+* Wählen Sie einen Speicherort für die Dateien.
+* Navigieren Sie zu diesem Speicherort und starten Sie die Datei `index.html`.
 
-## Passwörter
+>[!TIP] MS Windows blendet Dateiendungen aus
+>MS Windows blendet per Standard die Dateiendungen aus. Damit wäre die die startende Datei nur die `index`.
 
-## Dateneingabe
+## Lehrernoten-Datei laden & Login
 
-## Speichern, Rückspielen
+![Login für die Lehrkräfte](./graphics/svws_gradehub_lehrkraft-login.png "Wählen Sie die Lehrkraft-Notendatei und klicken Sie auf 'Lehrerdatei laden'.")
 
+Sie haben eine Lehrkraft-Notendatei erhalten oder diese liegt auf einem der für die Noteneingabe vorgesehen Computer.
+
+Klicken Sie `Datei auswählen` an und navigieren Sie zu Ihrer Lehrkraft-Datei. Wählen Sie diese aus.
+
+![Eine Lehrkraftdatei wurde ausgewählt](./graphics/svws_gradehub_lehrkraft-login_beispiel.png "Es wurde eine gültige .json-Lehrkraftnotendatei ausgewählt.")
+
+Klicken Sie dann auf `Lehrerdatei laden`.
+
+>[!TIP]Administrationsmenü
+>Unter Umständen kann es sein, dass Sie den Administrations-Bereich oberhalb des Logins sehen. Dies ist auch der Fall, wenn Sie die Windows-Exe gestartet haben. Ignorieren Sie diesen Teil und nutzen Sie den normalen Login über die Lehrkraft-Notendatei darunter.
+
+Geben Sie bei Bedarf Ihr *Initialkennwort* ein, das Sie von der Schule erhalten haben oder Ihr *Kennwort* ein, dass Sie nach einem vorherigen Login selbst erzeugt hatten.
+
+Unter Umständen ist kein Kennwort notwendig.
+
+Im Anschluss öffnet sich die Maske zur Eingabe von Noten, Fehlstunden und weiterer Daten.
+
+Nutzen Sie hierzu das **Benutzerhandbuch des Externen SVWS Notenmoduls GradeHub**, das links im Inhaltsverzeichnis aufgeführt ist.

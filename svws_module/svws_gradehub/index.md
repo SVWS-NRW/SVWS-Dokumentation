@@ -1,9 +1,5 @@
 # Das externe Notenmodul SVWS GradeHub
 
->[!CAUTION]Die Dokumention entsteht
->Die Dokumentation ist im Entstehen und komplettiert sich in den nächsten Tagen.
->Nehmen Sie bitte unbedingt die beiden Anleitungen - zur Bedienung und zur Administration - zum Download als pdf auf der Downloadseite zur Kenntnis.
-
 Mit dem externen **SVWS Notenmodul für Lehrkräfte GradeHub** lassen sich Noten über Lehrkraftdateien einsammeln und anschließend wieder über den SVWS-Client einlesen.
 
 Das Notenmodul läuft entweder für sich vollständig isoliert auf einem lokalen Rechner und verfügt über keine direkte Verbindung zum SVWS-Server, der Datenaustausch findet ausschließlich über Dateien statt.
