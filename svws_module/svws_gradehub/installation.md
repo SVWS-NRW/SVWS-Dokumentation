@@ -108,7 +108,8 @@ Wenn GradeHub über einen statischen Webserver (z. B. den SVWS-Jetty-Server) aus
 
 Speichern Sie die Datei. Es ist kein Neustart und kein Neubau nötig. Beim nächsten Seitenaufruf erkennt GradeHub den Mail-Server automatisch, und der Button *Dateien versenden* erscheint im Adminbereich.
 
-Hinweis: Port 3001 muss in der Firewall des Servers nach außen freigegeben sein.
+>[!TIP]Firewall
+>Port 3001 muss in der Firewall des Servers nach außen freigegeben sein.
 
 
 
