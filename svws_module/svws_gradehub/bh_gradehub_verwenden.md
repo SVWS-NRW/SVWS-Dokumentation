@@ -135,5 +135,5 @@ Hier wird die originale Lehrkraft-Notendatei wieder mit der neuen Version übers
 
 Nun müssen Sie Ihre **gespeicherte Lehrkraft-Notendatei** wieder der Schule zur Verfügung stellen.
 
->[!CAUTION] Die richtige Datgei wieder abgeben
+>[!CAUTION] Die richtige Datei wieder abgeben
 >Haben Sie nicht nur die Datei im Verwaltungsnetz verwendet & überschrieben, sondern die Arbeit an einem anderen Ort erledigt, achten Sie bitte darauf, die wirklich korrekte Lehrkraft-Notendatei wieder abzugeben.
