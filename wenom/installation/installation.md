@@ -87,4 +87,7 @@ $impressumPath = $dbPath.'/Impressum.md';
 $datenschutzPath = $dbPath.'/Datenschutz.md';
 ```
 
+>[!TIP]Großschreibung
+>Beachten Sie bitte die großen "I" und "D".
+
 Liegt eine der beiden Dateien nicht vor, wird für die Nutzer bei `Impressum` der Link inaktiv und bei `Datenschutz` der Standardtext angezeigt.
