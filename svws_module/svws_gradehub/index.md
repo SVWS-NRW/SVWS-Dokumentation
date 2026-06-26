@@ -17,3 +17,7 @@ Im *Admin-Modus* kann der Notenmanager weiterhin
 
 >[!TIP]GradeHub ist als Übergangslösung vorgesehen
 >Für Schulen, die den WeNoM noch nicht im Einsatz haben, stellen wir eine Übergangslösung für die Noteneingabe zur Verfügung. Diese Lösung wird vorübergehend bereitgestellt und ermöglicht es, die Noteneingabe auch vor der Einführung des WeNoM weiterhin zuverlässig durchzuführen. Sie dient als temporäre Unterstützung, bis der WeNoM flächendeckend verfügbar ist.
+
+>[!CAUTION] Nicht kompatiel mit ENM
+>GradeHub und die Notendateien des SVWS-Clients sind nicht kompatibel mit dem ENM2 von SchILD-NRW2 und ebenso nicht kompatibel mit dem SchILD-NRW-3 ENM3m das mit .nm3-Dateien arbeitet. Sofern Sie Noten mit dem ENM3 und SchILD-NRW-3 verarbeiten wollen, ist dies weiterhin möglich.
+>Für das Externe SVWS Notenmodul GradeHub erstellen Sie die Notendateien bitte mit dem SVWS-Client oder mit GradeHub selbst.
