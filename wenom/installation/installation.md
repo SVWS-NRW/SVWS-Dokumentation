@@ -71,3 +71,20 @@ Die Änderung des `DocumentRoot` kann unter den hosterspezifischen Installatione
 ::: warning Kontrollieren Sie die Ordnerberechtigungen
 Kontrollieren Sie bitte diese Berechtigungen gewissenhaft!
 :::
+
+## Impressum und Datenschutzhinweis
+
+Für WeNoM-Instanzen, die über das freie Internet erreichbar sind, ist ein Impressum zu setzen.
+
+Erzeugen Sie im Pfad der Datenbank eine Datei *Impressum.md*, in die Sie Ihre Daten eintragen. 
+
+Sie können den Standard-Datenschutzhinweis in WeNoM ändern, indem Sie auch eine *Datenschutz.md* erzeugen und eigene Eintragungen vornehmen.
+
+Wenn an den Pfaden nichts verändert wurde, ist der Standardpfad `wenom_verzeichnis/db/` für die beiden Dateien. Nutzen Sie andere Pfade, etwa für mehrere WeNoM-Instanzen, müssen diese verwenden.
+
+```
+$impressumPath = $dbPath.'/Impressum.md';
+$datenschutzPath = $dbPath.'/Datenschutz.md';
+```
+
+Liegt eine der beiden Dateien nicht vor, wird für die Nutzer bei `Impressum` der Link inaktiv und bei `Datenschutz` der Standardtext angezeigt.
