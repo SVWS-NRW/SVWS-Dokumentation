@@ -7,6 +7,10 @@ Diese Anleitung beschreibt
 
 GradeHub dient als Übergangslösung zur Noteneingabe, bis WeNoM flächendeckend verfügbar ist.
 
+>[!TIP]GradeHub und der SVWS Client
+>Sie können mit dem SVWS-Client ebenfalls Lehrkraft-Notendateien erzeugen. Nutzen Sie hierfür den **Datenaustausch** in der **App Schule**. Diese Dateien sind jedoch nicht verschlüsselt.
+> Entsprechend können Sie im SVWS-Client auch keine Lehrkraft-Notendateien einlesen, die verschlüsselt mit GradeHub erzeugt wurden. Sie können aber die unverschlüsselten Lehrkraft-Notendateien, die mit dem SVWS-Client erstellt wurden, mit GradeHub ganz wie erwartet verarbeiten und im Anschluss wieder mit dem SVWS-Client einlesen.
+
 ## Starten im Administratormodus
 
 ![Der Administratorenbereich](./graphics/svws_gradehub_admin_login.png "GradeHub startet im Administratorenmodus.")
@@ -106,9 +110,8 @@ Wählen Sie einen Speicherort für die Dateien.
 
 Die Lehrkräfte können nun Ihre Lehrkraft-Notendateien ausfüllen.
 
->[!TIP]SVWS Client
->Sie können mit dem SVWS-Client ebenfalls Lehrkraft-Notendateien erzeugen. Nutzen Sie hierfür den **Datenaustausch** in der **App Schule**. Diese Dateien sind jedoch nicht verschlüsselt.
-> Entsprechend können Sie im SVWS-Client auch keine Lehrkraft-Notendateien einlesen, die verschlüsselt mit GradeHub erzeugt wurden.
+>[!TIP]Datenschutz
+>Beachten Sie beim Bereitstellen, Bearbeiten und Einsammeln der Lehrkraft-Notendateien auf die geltenden Bestimmungen zum Datenschutz.
 
 ## Dateien zurückspielen
 

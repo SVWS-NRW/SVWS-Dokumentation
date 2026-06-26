@@ -48,3 +48,9 @@ cd /var/www/html/
 wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v0.8.8/SVWS-Laufbahnplanung-0.8.8.zip
 unzip SVWS-Laufbahnplanung-0.8.8.zip
 ```
+
+## Setzen eines Impressums und Hinweise zum Datenschutz
+
+Wenn WebLuPO im freien Internet zu erreichen ist, ist ein Impressum zu setzen.
+
+Erzeugen Sie hierzu eine Datei *Impressum.md* - achten Sie auf das große "I" - auf der Ebene des Webservers und befüllen Sie diese Datei mit Ihren Daten.
