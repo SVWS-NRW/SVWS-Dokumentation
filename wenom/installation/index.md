@@ -1,6 +1,6 @@
 # Schnellübersicht Installation
 
-## [Technischer Teil](./installation.md)
+[Technischer Teil](./installation.md)
 
 1. Richten Sie eine Subdomain für Ihre Webadresse ein. Zum Beispiel `noten.meineSchule.de` oder `wenom.meineSchule.de`.
 
@@ -8,11 +8,11 @@
 
 3. Geben Sie dem Webserver auf das Verzeichnis `db` Schreibrechte und reduzieren Sie gegebenenfalls die Schreib- und Leserechte auf das Nötigste.
 
-## [Ersteinrichtung](./ersteinrichtung.md)
+[Ersteinrichtung](./ersteinrichtung.md)
 
 4. Konfigurieren Sie die Verbindung zwischen diesem WeNoM-Server mit Ihrem SVWS-Server. Hierzu wird ein *Secret* generiert.
 
-## [Schulfachlicher Teil](../benutzerhandbuch/schulische_administration.md)
+[Schulfachlicher Teil](../benutzerhandbuch/schulische_administration.md)
 
 5. Synchronisieren Sie die Daten des SVWS-Servers mit dem WeNoM-Server. Dies ist der Schritt, bei dem die konkreten Daten der Schule übertragen werden:
 
