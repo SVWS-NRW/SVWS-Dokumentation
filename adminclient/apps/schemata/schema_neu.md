@@ -124,6 +124,8 @@ Geben Sie die Daten für Ihren **Server** ein. Wählen Sie das **zu konfiguriere
 
 ![Starten Sie die DBConfig als Windows-Administrator](./graphics/SVWS_adminclient_schema_schild_connectionfiles_winAdmin.png "Dsa Vorausfüllen kann daran hängen, ob das Config-Programm als Windows-Admin gestartet wird.")
 
+Unabhängig davon, ob die Felder schon ausgefüllt sind oder nicht, lassen sich hier alle Eintragungen auch von Hand vornehmen.
+
 Kontrollieren Sie die übrigen Daten wie das SVWS-Arbeitsverzeichnis.
 
 Klicken Sie auf `Verbindungstest`.
