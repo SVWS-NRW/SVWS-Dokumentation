@@ -119,6 +119,11 @@ Gehen Sie hierzu in das *Installationsverzeichnis von SchILD-NRW 3*. Starten Sie
 
 Geben Sie die Daten für Ihren **Server** ein. Wählen Sie das **zu konfigurierende Schema** und geben Sie den **Schema-Admin** mit dem **passenden Passwort** ein. Eventuell ist dieser schon ausgefüllt.
 
+>[!TIP]Ausgefüllte Felder
+>Sind die Felder nicht vorausgefüllt kann es sich lohnen auszuprobieren, die *SchILD_DBConfig* als Windows-Admin über das `Kontextmenü der rechten Maustaste` zu starten. Möglicherweise führt dies dazu, dass Felder schon befüllt sind.
+
+![Starten Sie die DBConfig als Windows-Administrator](./graphics/SVWS_adminclient_schema_schild_connectionfiles_winAdmin.png "Dsa Vorausfüllen kann daran hängen, ob das Config-Programm als Windows-Admin gestartet wird.")
+
 Kontrollieren Sie die übrigen Daten wie das SVWS-Arbeitsverzeichnis.
 
 Klicken Sie auf `Verbindungstest`.
