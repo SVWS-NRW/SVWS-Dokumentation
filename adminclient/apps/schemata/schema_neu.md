@@ -6,7 +6,7 @@ In diesem Artikel wird beschrieben, wie Sie eine Schule vollständig neu im SVWS
 
 >[!CAUTION]Installation und AdminClient
 >Zuerst muss der SVWS-Server installiert werden, anschließend loggen Sie sich mit dem SVWS-AdminClient als *root* ein.
->Gehen Sie zu *https://SERVERADRESSE/admin* und geben Sie den Nutzernamen *root* das *root-Kennwort* ein. Dieses Kennwort haben Sie bei der Installation des SVWS-Servers gesetzt.
+>Gehen Sie zu *https://SERVERADRESSE/admin* und geben Sie nun den Nutzernamen *root* sowie das *root-Kennwort* ein. Dieses Kennwort haben Sie bei der Installation des SVWS-Servers gesetzt.
 
 ## Legen Sie ein Schema an
 
@@ -27,7 +27,7 @@ Vergeben Sie einen sinnvollen **Schemanamen**, einen **Schema-Admin-Benutzername
 >[!TIP]Schema-Admin
 >Hierbei ist zu beachten, dass der Schema-Admin nur zum technischen Zugriff verwendet wird. Sie können einen existierenden Schema-Admin verwenden, der dann das bekannte Passwort verwendet. In den Beispielen auf dieser Seite wird üblicherweise *svwsadmin* verwendet. Ihre Bezeichnungen sind aber frei wählbar.
 >Es handelt sich NICHT um einen tatsächlichen Datenbank-Benutzer.
->Der Datenbank-root hat immer Zugriff auf alle Schemata, diesen geben Sie hier NICHT an, den brauchten Sie nur weiter oben zum Einloggen im SVWS-AdminClient.
+>Der Datenbank-root hat immer Zugriff auf alle Schemata - diesen geben Sie hier NICHT an, den brauchten Sie nur weiter oben zum Einloggen im SVWS-AdminClient.
 
 Klicken Sie anschließend auf `Schema anlegen`.
 
