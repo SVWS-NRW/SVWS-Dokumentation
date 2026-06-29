@@ -71,7 +71,8 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: 'Bedienungkonzept', link: '/adminclient/bedienkonzept/', collapsed: true},
 						{ text: 'Apps', link: '/adminclient/apps/', collapsed: false, items: [
-							{ text: 'Schemata', link: '/adminclient/apps/schemata/' },
+							{ text: 'Schemata & Migration', link: '/adminclient/apps/schemata/' },
+							{ text: 'Schema-Neuanlage', link: '/adminclient/apps/schemata/schema_neu.md' },
 							{ text: 'Konfiguration', link: '/adminclient/apps/konfiguration' },
 						] },
 					] },
