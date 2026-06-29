@@ -6,7 +6,7 @@ In diesem Artikel wird beschrieben, wie Sie eine Schule vollständig neu im SVWS
 
 >[!CAUTION]Installation und AdminClient
 >Zuerst muss der SVWS-Server installiert werden, anschließend loggen Sie sich mit dem SVWS-AdminClient als *root* ein.
->Gehen Sie zu *https://SERVERADRESSE/admin* und geben Sie den Nutzernamen *root* das *MariaDB-root-Kennwort* ein. Dieses Kennwort haben Sie bei der Installation des SVWS-Servers gesetzt.
+>Gehen Sie zu *https://SERVERADRESSE/admin* und geben Sie den Nutzernamen *root* das *root-Kennwort* ein. Dieses Kennwort haben Sie bei der Installation des SVWS-Servers gesetzt.
 
 ## Legen Sie ein Schema an
 
@@ -16,11 +16,7 @@ Wählen Sie in der Schema-Liste das `+` an und legen Sie ein neues Schema an.
 
 Wenn Sie ein neues Schema erzeugen, werden Ihnen einige Optionen angeboten.
 
-Von unten nach oben:
-* Da hier im Beispiel schon Schemata bestehen und eines angewählt ist, wird angeboten, dieses angewählte Schema in ein neues zu duplizieren. Das wollen wir hier nicht.
-* Das Angebot, aus einer SchILD-2-Datenbank zu migieren, ist hier auch nicht gewünscht.
-* Ebenso soll kein Backup importiert werden, um das Schema zu befüllen.
-* Wählen Sie `Leeres Schema` an, denn es soll eine neue Datenbank angelegt werden.
+Keine der unteren Optionen sind hier gewünscht: Wählen Sie `Leeres Schema` an, denn es soll eine neue Datenbank angelegt werden.
 
 Geben Sie nun die grundlegenden Daten für das neue Schema ein.
 
@@ -29,10 +25,9 @@ Geben Sie nun die grundlegenden Daten für das neue Schema ein.
 Vergeben Sie einen sinnvollen **Schemanamen**, einen **Schema-Admin-Benutzernamen** und ein **Passwort** für diesen Schema-Admin-Benutzer.
 
 >[!TIP]Schema-Admin
->Hierbei ist zu beachten, dass der Schema-Admin nur zum technischen Zugriff verwendet wird. Sie können einen existierenden Schema-Admin verwenden, der dann das bekannte Passwort verwendet. In den Beipspielen auf dieser Seite wird üblicherweise *svwsadmin* verwendet. Ihre Bezeichnungen sind aber frei wählbar.
+>Hierbei ist zu beachten, dass der Schema-Admin nur zum technischen Zugriff verwendet wird. Sie können einen existierenden Schema-Admin verwenden, der dann das bekannte Passwort verwendet. In den Beispielen auf dieser Seite wird üblicherweise *svwsadmin* verwendet. Ihre Bezeichnungen sind aber frei wählbar.
 >Es handelt sich NICHT um einen tatsächlichen Datenbank-Benutzer.
->Alle Schemata mit dem gleichen Schema-Admin können von diesem im AdminClient verwaltet werden. Vergeben Sie unterschiedliche Schema-Admin-Namen, wenn Sie die Schemataverwaltung vollständig voneinander trennen möchten.
->Der Datenbank-root hat immer Zugriff auf alle Schemata, diesen geben Sie hier NICHT an.
+>Der Datenbank-root hat immer Zugriff auf alle Schemata, diesen geben Sie hier NICHT an, den brauchten Sie nur weiter oben zum Einloggen im SVWS-AdminClient.
 
 Klicken Sie anschließend auf `Schema anlegen`.
 
@@ -48,7 +43,7 @@ Das neue Schema ist nun in der Auswahlliste links zu sehen.
 
 ![Schema initialisieren](./graphics/SVWS_adminclient_schema_neu_initialisieren.png "Wir wählen Initialsieren aus dem Schulkatalog.")
 
-Für dieses Schema werden wieder Optionen angeboten, die hier nicht verwendet werden sollen. Weder soll das neue Schema als **Backup** gespeichert weden, noch wollen wir ein **Backup wiederherstellen** oder aus **SchILD2 migrieren**.
+Für dieses Schema werden wieder Optionen angeboten, die hier nicht verwendet werden sollen.
 
 Wählen Sie `Initialisieren aus dem Schulkatalog` aus. Der Schulkatalog enthält alle Schulen in NRW.
 
@@ -66,8 +61,7 @@ Das Schema - also Ihre neue Schuldatenbank - ist nun initialisiert und kann verw
 
 Sie sehen nun oben rechts die grundlegenden Daten Ihrer Schule wie die Bezeichung und die Schulnummer.
 
-Ebenso wurde ein erster Datenbanknutzer angelegt. Es handelt sich um einen **Administrator** mit dem Login **Admin** und 
-**KEINEM PASSWORT**.
+Ebenso wurde ein erster Datenbanknutzer angelegt. Es handelt sich um einen **Administrator** mit dem Login **Admin** und **KEINEM PASSWORT**.
 
 ## Starten Sie das Schema
 
@@ -109,4 +103,26 @@ Ihre Datenbank ist nun angelegt und verwenbar. Die nächsten Schritte können se
 * Kontrollieren Sie alle Kataloge und befüllen Sie diese
 * ... 
 
+## SchILD-NRW 3
 
+Anschließend können Sie sich mit dem **Admin** oder mit einem der gegebenfalls neu angelegten Datenbankbenutzern in SchILD-NRW 3 anmelden und auch diesen Client verwenden.
+
+SchILD-NRW 3 und der SVWS-Client greifen beide auf das gleiche Schema mit den gleichen Daten zu und Änderungen über das eine Programm stehen damit auch im anderen zur Verfügung.
+
+Sie müssen zuerst eine Datei anlegen, in der die Anmeldedaten für das Schema hinterlegt ist. Diese Datei liegt im Ordner 
+
+![Connection File für SchILD NRW 3](./graphics/SVWS_adminclient_schema_neu_schild3connectionfile.png "Starten Sie die SchILD_DBConfig.exe.")
+
+Gehen Sie hierzu in das *Installationsverzeichnis von SchILD-NRW 3*. Starten Sie dort die *SchILD_DBConfig.exe*. Per Standard blendet MS Windows die Dateiendung aus, daher wird eventuell nur *SchILD_DBConfig* angezeigt.
+
+![Connectionfiles erstellen](./graphics/SVWS_adminclient_schema_schild_connectionfiles.png "Geben Sie Ihre Daten ein.")
+
+Geben Sie die Daten für Ihren **Server** ein. Wählen Sie das **zu konfigurierende Schema** und geben Sie den **Schema-Admin** mit dem **passenden Passwort** ein. Eventuell ist dieser schon ausgefüllt.
+
+Kontrollieren Sie die übrigen Daten wie das SVWS-Arbeitsverzeichnis.
+
+Klicken Sie auf `Verbindungstest`.
+
+Wenn alles funktioniert, können Sie auf `Datei speichern` klicken.
+
+Starten Sie anschließend SchILD-NRW-3 und loggen Sie sich in Ihrem neuen Schema ein. In der Regel gibt es an Ihrer Schule auch nur ein Schema, so dass SchILD-NRW-3 dieses sofort lädt.
