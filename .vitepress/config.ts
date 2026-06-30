@@ -160,10 +160,14 @@ export default defineConfig(({ mode }) => {
 				'/svws_module/svws_gradehub' : [
 					{ text: '', items: [
 						{ text: 'SVWS GradeHub', link: '/svws_module/svws_gradehub/',  collapsed: false, items: [
-							{ text: 'Nutzerinstallation/Login', link:'/svws_module/svws_gradehub/bh_starten.md' },
-							{ text: 'Leistungsdaten eintragen', link: '/svws_module/svws_gradehub/bh_gradehub_verwenden.md' },
-							{ text: 'Administration Noten', link: '/svws_module/svws_gradehub/administration_noten.md' },
-							{ text: 'Adminstration Installation', link: '/svws_module/svws_gradehub/installation.md' },
+							{ text: 'Benutzerhandbuch', link:'/svws_module/svws_gradehub/bh_starten.md', collapsed: false, items: [
+								{ text: 'Nutzerinstallation/Login', link:'/svws_module/svws_gradehub/bh_starten.md' },
+								{ text: 'Leistungsdaten eintragen', link: '/svws_module/svws_gradehub/bh_gradehub_verwenden.md' },
+							] },
+							{ text: 'Administration', link: '/svws_module/svws_gradehub/administration_noten.md', collapsed: false, items: [
+								{ text: 'Administration Noten', link: '/svws_module/svws_gradehub/administration_noten.md' },
+								{ text: 'Adminstration Installation', link: '/svws_module/svws_gradehub/installation.md' },
+							] },
 						] },
 					] },
 				],
