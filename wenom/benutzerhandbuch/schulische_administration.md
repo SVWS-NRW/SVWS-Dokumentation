@@ -119,6 +119,26 @@ Oben links können Sie über die beiden Schalter `Alles sperren` und `Alles frei
 Zum Abschluss Ihrer Arbeiten synchronisieren Sie die Daten mit ihrem WeNoM.
 :::
 
+## Benutzerrechte für WeNoM-administrierende Lehrkräfte
+
+Soll ein Datenbank-Nutzer auch die oben erklärte Konfiguration vornehmen können, ist dieser Nutzer mit den passenden Rechten auszustatten. Ansonsten sieht ein Nutzer - auch ein *Administrator*, der zusätzlich auch *Lehrer* ist - nur die selbst unterrichteten Klassen.
+
+Sie können zur Konfiugration der Klassen/Jahrgänge/Abteilungen einen *Administrator, der kein Lehrer ist* verwenden.
+
+Sie können aber auch einem Lehrer (ob Administrator oder nicht) auch die Nutzerrechte des Notenmoduls freischalten. 
+
+Gehen Sie über die **App Einstellungen ⚙** in **Benutzerverwaltung ➜ Benutzergruppen**. Erzeugen Sie eine neue Benutzergruppe oder wählen Sie eine existiernde, die die WeNoM-Konfiguration übernehmen soll.
+
+![Nutzerrechte freischalten](./graphics/konfiguration_Nutzerrechte_notenmodul.png "Schalten Sie die Rechte frei, das Notenmodul zu konfigurieren.")
+
+Navigieren Sie zum Bereich **Notenmodul** und aktiveren Sie den Bereich **Administration Notenmodul**.
+
+Sie können auch einem individuellen **Benutzer** diese Rechte gezielt zuweisen, ohne über Benutzergruppen zu gehen.
+
+Haben Sie diese Rechte zugewiesen, wird in der **App Noten** der unten im Screenshot aufgeführte Bereich mit allen Einstellungen freigeschaltet:
+
+![Konfigurationsrechte sind freigeschaltet](./graphics/konfiguration_Nutzerrechte_notenmodul_AppNoten.png "Die Rechte sind nun für den Benutzer/die Benutzergruppe freigeschaltet.")
+
 ## Mail
 
 Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten für den WeNoM-Server eingetragen ist, können sich die Lehrkräfte das Initialpasswort zuschicken lassen.
