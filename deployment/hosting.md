@@ -57,7 +57,7 @@ Die Anzahl der Schulen muss im Rahmen der Bedingungen vor Ort gewählt werden. D
 
 Durch den Wegfall der Produkte Kurs42 und Lupo können zu Beginn der Einführung von SchILD-NRW 3 schon einige Aufwände verringert werden. Auch die Zentralisierung der Systeme und die einheitlicheren Supportbedingungen können hier helfen, Kosten zu reduzieren.
 
-Perspektivisch wird dies noch durch die Ablösung anderer Module unterstützt werden. (Notenmodule, Konferenzmodule, Prognos, ASDPC32)
+Perspektivisch wird dies noch durch die Ablösung anderer Module unterstützt werden. (Notenmodule, Konferenzmodule, SVWS-Prognos, ASDPC32)
 
 Die Unterstützung weiterer Online-Funktionen, wie z.B. Schulbewerbung.de und auch die einheitliche Erstellung von digitalen Zeugnissen, sollen hier die Schulträger entlasten.
 

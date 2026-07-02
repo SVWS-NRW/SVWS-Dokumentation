@@ -1,22 +1,22 @@
-# WebLuPO Benutzerhandbuch
+# SVWS-WebLuPO Benutzerhandbuch
 
-WebLuPO ist ein webbasiertes Tool zur Laufbahnberatung und -planung im Browser für die gymnasiale Oberstufe in NRW. Hier befindet sich die [Installationsanleitung und die technische Dokumentation](weblupo_installation.md)
+SVWS-WebLuPO ist ein webbasiertes Tool zur Laufbahnberatung und -planung im Browser für die gymnasiale Oberstufe in NRW. Hier befindet sich die [Installationsanleitung und die technische Dokumentation](weblupo_installation.md)
 
 In diesem Artikel wird die Benutzung einer `.lp`-Datei erklärt, die von den betreuenden Lehrkräften bereitgestellt wurde. Den passenden Link zur Webseite erhalten Sie ebenfalls von den Lehrkräften.
 
-## Bearbeitung in WebLuPO
+## Bearbeitung in SVWS-WebLuPO
 
 ![weblupo Startseite](./graphics/weblupo_startseite.png)
 
-Startet man WebLuPO, ist auf diesem Bildschirm die individuelle `.lp`-Datei hochzuladen.
+Startet man SVWS-WebLuPO, ist auf diesem Bildschirm die individuelle `.lp`-Datei hochzuladen.
 
 Klicken Sie auf **Datei auswählen** und navigieren Sie dann auf dem Rechner zur Datei.
 
 ::: info Die Verarbeitung findet auf dem lokalen Rechner statt
-Hierbei wird das WebLuPO nur im Browser auf dem aktuellen Rechner ausgeführt. Somit werden weder ein bestimmtes Betriebssystem vorausgesetzt noch verlassen die Daten das Endgerät, an dem gearbeitet wird.
+Hierbei wird das SVWS-WebLuPO nur im Browser auf dem aktuellen Rechner ausgeführt. Somit werden weder ein bestimmtes Betriebssystem vorausgesetzt noch verlassen die Daten das Endgerät, an dem gearbeitet wird.
 :::
 
-## Die Oberfläche von WebLuPO.
+## Die Oberfläche von SVWS-WebLuPO.
 
 Die folgende Grafik zeigt die vier Bereiche der Laufbahnberatungstools:
 

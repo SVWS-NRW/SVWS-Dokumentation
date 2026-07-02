@@ -1,8 +1,8 @@
-# WeNoM - Anleitung für Lehrkräfte
+# SVWS-WeNoM - Anleitung für Lehrkräfte
 
 ## Erste Anmeldung
 
-+ Öffnen Sie die Web-Adresse des WeNoM-Servers, die Sie von Ihrer Schule erhalten haben.
++ Öffnen Sie die Web-Adresse des SVWS-WeNoM-Servers, die Sie von Ihrer Schule erhalten haben.
 + Zum Anmelden gilt die **dienstliche Emailadresse** als **Benutzername**.
 + Als Kennwort ist das **Initialkennwort** zu verwenden, welches Ihnen von der schulischen Administration mitgeteilt wurde.
 
@@ -75,7 +75,7 @@ Ist das Feld *mit einem Haken versehen* und *inaktiv* - wird also ohne Checkbox 
 Bei einer Schülerin neu gesetzte Mahnungen sind am gesetzten Haken und der *roten Färbung* erkennbar. Diese Mahnungen können weiterhin bearbeitet werden.
 
 ::: info Update des Mahnungs-Status
-Werden die Noten und Mahnungen aus WeNoM in den SVWS-Client übertragen und dort verarbeitet, wird der Zustand der Mahnung auf *ausgesprochen* beziehungsweise *versendet* geändert. Dies bedeutet nach einer weiteren Rück-Synchronisation mit WeNoM, dass der Status hier auf *angehakt* und *inaktiv* wechselt.
+Werden die Noten und Mahnungen aus SVWS-WeNoM in den SVWS-Client übertragen und dort verarbeitet, wird der Zustand der Mahnung auf *ausgesprochen* beziehungsweise *versendet* geändert. Dies bedeutet nach einer weiteren Rück-Synchronisation mit SVWS-WeNoM, dass der Status hier auf *angehakt* und *inaktiv* wechselt.
 :::
 
 #### Fachbezogene Fehlstunden eintragen

@@ -1,10 +1,10 @@
-# WeNoM - Installationsanleitung
+# SVWS-WeNoM - Installationsanleitung
 
-## Technische Übersicht zum WeNoM
+## Technische Übersicht zum SVWS-WeNoM
 
 ![Informationsverbund SVWS-Server und WeNoM](./graphics/SVWS-Wenom-Verbund.png "Übersicht über die Datensynchronisation SVWS-Server und WeNoM.")
 
-Der WeNoM wird auf PHP-Basis mit TypeScript und vue entwickelt und stellt eine benutzerfreundliche und intuitive Benutzeroberfläche bereit, um die Dateneingabe so einfach wie möglich zu gestalten.
+Der SVWS-WeNoM wird auf PHP-Basis mit TypeScript und vue entwickelt und stellt eine benutzerfreundliche und intuitive Benutzeroberfläche bereit, um die Dateneingabe so einfach wie möglich zu gestalten.
 
 Die Software synchronisiert die eingegebenen Daten teilautomatisch mit dem SVWS-Server, um sicherzustellen, dass die Daten stets auf dem neuesten Stand sind und für interne Schulzwecke zur Verfügung stehen.
 
@@ -16,21 +16,21 @@ Dies alles liegt in der Regel bei den gängigen [Webhostern](../hoster_installat
 
 Alternativ können Sie die Einrichtung des Webservers unter der Artikel "[eigener  Webserver](./installation_webserver.md)" nachlesen.
 
-Der WeNoM ist über eine **eigene Subdomain** aufzurufen. Richten Sie sich also *wenom.*, *noten.* oder in einer anderen Wunschvariante als Subdomain ein.
+Der SVWS-WeNoM ist über eine **eigene Subdomain** aufzurufen. Richten Sie sich also *wenom.*, *noten.* oder in einer anderen Wunschvariante als Subdomain ein.
 
-::: tip Standard: Trennung von SVWS-Server und Webserver mit WeNoM
+::: tip Standard: Trennung von SVWS-Server und Webserver mit SVWS-WeNoM
 Der Screenshot oben bildet den Standardfall ab, dass zum einen der SVWS-Server mit dem SVWS-Client im geschlossenen Verwaltungsnetz laufen und zum anderen der WebNotenManager auf einem davon vollständig unabhängigen - externen - Webserver aufgesetzt wird.
 
-Sollen hingegen ein *Webserver mit WeNoM* auf dem gleichen virtuellen oder physischen Server wie der *SVWS-Server/SVWS-Client* im Verwaltungsnetz laufen, müssen entweder der Standardport des SVWS-Clients oder des Webservers angepasst werden. In beiden Fällen ist der Standard-Port 443 und daher käme es beim Betrieb auf dem gleichen Server zu einer Kollision.
+Sollen hingegen ein *Webserver mit SVWS-WeNoM* auf dem gleichen virtuellen oder physischen Server wie der *SVWS-Server/SVWS-Client* im Verwaltungsnetz laufen, müssen entweder der Standardport des SVWS-Clients oder des Webservers angepasst werden. In beiden Fällen ist der Standard-Port 443 und daher käme es beim Betrieb auf dem gleichen Server zu einer Kollision.
 :::
 
-## Download der WeNoM Programmdateien
+## Download der SVWS-WeNoM Programmdateien
 
-Unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVWS-Server/releases) können neben dem SVWS-Server auch die Programmdateien des  zugehörigen WeNoM heruntergeladen werden: Dazu auf **SVWS-ENMServer-x.x.x.zip** klicken.
+Unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVWS-Server/releases) können neben dem SVWS-Server auch die Programmdateien des  zugehörigen SVWS-WeNoM heruntergeladen werden: Dazu auf **SVWS-ENMServer-x.x.x.zip** klicken.
 
 ![Download Github.com](./graphics/download_github.png)
 
-## Kopieren der WeNoM Programmdateien
+## Kopieren der SVWS-WeNoM Programmdateien
 
 + Entpacken aller Dateinen aus der in das `/html` Verzeichnis des Webservers
 + Freigabe der Ordner `app`, `db` und `public` mit entsprechenden Rechten
@@ -74,13 +74,13 @@ Kontrollieren Sie bitte diese Berechtigungen gewissenhaft!
 
 ## Impressum und Datenschutzhinweis
 
-Für WeNoM-Instanzen, die über das freie Internet erreichbar sind, ist ein Impressum zu setzen.
+Für SVWS-WeNoM-Instanzen, die über das freie Internet erreichbar sind, ist ein Impressum zu setzen.
 
 Erzeugen Sie im Pfad der Datenbank eine Datei *Impressum.md*, in die Sie Ihre Daten eintragen. 
 
-Sie können den Standard-Datenschutzhinweis in WeNoM ändern, indem Sie auch eine *Datenschutz.md* erzeugen und eigene Eintragungen vornehmen.
+Sie können den Standard-Datenschutzhinweis in SVWS-WeNoM ändern, indem Sie auch eine *Datenschutz.md* erzeugen und eigene Eintragungen vornehmen.
 
-Wenn an den Pfaden nichts verändert wurde, ist der Standardpfad `wenom_verzeichnis/db/` für die beiden Dateien. Nutzen Sie andere Pfade, etwa für mehrere WeNoM-Instanzen, müssen diese verwenden.
+Wenn an den Pfaden nichts verändert wurde, ist der Standardpfad `wenom_verzeichnis/db/` für die beiden Dateien. Nutzen Sie andere Pfade, etwa für mehrere SVWS-WeNoM-Instanzen, müssen diese verwenden.
 
 ```
 $impressumPath = $dbPath.'/Impressum.md';

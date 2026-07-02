@@ -1,6 +1,6 @@
 # Installationen bei konkreten Hostern
 
-In diesem Bereich finden sich Beispiele, wie die Einrichtung des WeNoM-Servers bei spezifischen Hostern vorgenommen werden kann. Im Anschluss folgen Sie dann den Informationen für die **Schulfachliche Konfiguration des WeNoM-Servers** und des SVWS-Servers, die wieder für alle Hoster gleich sind.
+In diesem Bereich finden sich Beispiele, wie die Einrichtung des SVWS-WeNoM-Servers bei spezifischen Hostern vorgenommen werden kann. Im Anschluss folgen Sie dann den Informationen für die **Schulfachliche Konfiguration des SVWS-WeNoM-Servers** und des SVWS-Servers, die wieder für alle Hoster gleich sind.
 
 ::: warning Keine Hoster-Empfehlungen!
 
@@ -13,9 +13,9 @@ Für die Aktualität der dargestellten Einstellungen, Abläufe und Benutzeroberf
 :::
 
 ## Voraussetzungen
-Die Voraussetzungen für den Betrieb von WeNoM sind:
+Die Voraussetzungen für den Betrieb von SVWS-WeNoM sind:
 
 + Sie verfügen über einen Server im Internet. Typischerweise handelt es sich dabei um ein Hosting-Angebot bei einem Hoster. In vielen Fällen steht dort bereits ein vorkonfigurierter Apache2-Webserver inklusive installierter PHP-Umgebung zur Verfügung.
-+ Sie besitzen einen sFTP-Zugang zum Dateisystem des Webhostings. Über diesen werden die WeNoM-Dateien auf den Server übertragen.
++ Sie besitzen einen sFTP-Zugang zum Dateisystem des Webhostings. Über diesen werden die SVWS-WeNoM-Dateien auf den Server übertragen.
 Optional: Sie verwenden eine eigene Subdomain, z. B. wenom.meine-schuladresse.xyz.
 + Sie benötigen ein SSL-/TLS-Zertifikat für die verschlüsselte Verbindung über https://. Viele Hoster stellen entsprechende Zertifikate kostenfrei zur Verfügung.

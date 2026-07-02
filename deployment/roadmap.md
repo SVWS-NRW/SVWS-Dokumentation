@@ -36,7 +36,7 @@ Dabei ist ein Umstieg nach Abgabe der Statistik 2025/26 ratsam.
 
 Ein Umstieg zu diesem Zeitpunkt ist nicht verpflichtend. Die Planung hierzu kann individuell erfolgen.
 
-Externe Module (Notenmodul WeNoM, Prognos und Konferenzmodul) werden zeitnah auch für SchILD-NRW 3 zur Verfügung stehen.
+Externe Module (Notenmodul SVWS-WeNoM, Prognos und Konferenzmodul) werden zeitnah auch für SchILD-NRW 3 zur Verfügung stehen.
 
 ## 2025 November - Erstellung der Architekturdokumenation für den SVWS-Server
 
@@ -50,7 +50,7 @@ Durchführung einer intensiven Sicherheitsüberprüfung für das Zusammenspiel v
 
 Insbesondere die Passwortverwaltung, die Synchronisationsprozesse und die Datenschutzanalyse sollen hier geprüft werden.
 
-## 2026 März - Start Beta-Phase WebNotenManager (WeNoM)
+## 2026 März - Start Beta-Phase WebNotenManager (SVWS-WeNoM)
 
 Der externe WebNotenManager zur Einholung der Noten über ein webbasiertes System wird als Beta-Version allen Schulen zur Verfügung gestellt.
 

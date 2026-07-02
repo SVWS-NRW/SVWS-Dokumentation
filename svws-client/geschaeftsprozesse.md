@@ -135,7 +135,7 @@
 
 ##### Verschlüsselte ENM Dateien importieren
 
-#### WeNoM
+#### SVWS-WeNoM
 
 ##### Verbingungsdaten zum Wenom-Server einrichten und testen
 ##### Synchronisation der Leistungsdaten des aktuellen Halbjahres

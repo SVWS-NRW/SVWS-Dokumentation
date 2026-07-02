@@ -1,12 +1,12 @@
-# WebLuPO Installation
+# SVWS-WebLuPO Installation
 
 **Installationsanleitung und technische Dokumentation**
 
-WebLuPo ist ein webbasiertes Laufbahnberatungs- und Planungstool für die gymnasiale Oberstufe in NRW.
+SVWS-WebLuPo ist ein webbasiertes Laufbahnberatungs- und Planungstool für die gymnasiale Oberstufe in NRW.
 
 Die Beschreibung und Benutzung des Tools für Anwender ist unter den Benutzerhandbüchern [WebLuPO Handbuch](weblupo_handbuch.md) zu finden.
 
-Laden Sie **WebLuPo** auf der [Seite des MSB für Schulverwaltungssoftware](https://www.svws.nrw.de/) im Bereich für [Tools und Module](https://www.svws.nrw.de/svws-server-schild-nrw-3/svws-server-tools-module) herunter.
+Laden Sie **SVWS-WebLuPo** auf der [Seite des MSB für Schulverwaltungssoftware](https://www.svws.nrw.de/) im Bereich für [Tools und Module](https://www.svws.nrw.de/svws-server-schild-nrw-3/svws-server-tools-module) herunter.
 
 ## Technischer Hintergrund
 
@@ -51,6 +51,8 @@ unzip SVWS-Laufbahnplanung-0.8.8.zip
 
 ## Setzen eines Impressums und Hinweise zum Datenschutz
 
-Wenn WebLuPO im freien Internet zu erreichen ist, ist ein Impressum zu setzen.
+Wenn SVWS-WebLuPO im freien Internet zu erreichen ist, ist ein Impressum zu setzen.
 
-Erzeugen Sie hierzu eine Datei *Impressum.md* - achten Sie auf das große "I" - auf der Ebene des Webservers und befüllen Sie diese Datei mit Ihren Daten.
+Erzeugen Sie hierzu eine Datei *Impressum.md* - achten Sie auf das große "I" - auf der *Root-Ebene* des Webservers und befüllen Sie diese Datei mit Ihren Daten.
+
+Ebenso können Sie einen eigen Datenschutz-Hinweis einfügen, indem Sie eine Datei *Datenschutz.md* anlegen und entsprechend ausfüllen.

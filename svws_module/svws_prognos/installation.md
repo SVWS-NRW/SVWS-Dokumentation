@@ -56,7 +56,7 @@ Rufen Sie die App im Browser unter https://ihr-schulserver.de/prognos/ auf.
 > Im Web-Browser-Betrieb muss der SVWS-Server CORS-Anfragen von Ihrer Domain erlauben (Cross Origin Ressource Sharing zwischen Browsers und Servern). Wenden Sie sich dazu an Ihren SVWS-Administrator.
 
 >[!CAUTION]Impressum
->Sofern Sie SVWS Prognos vom Web aus erreichbar aufsetzen, vergessen Sie bitte nicht, ein Impressum zu setzen, indem Sie Ihre Daten in die Datei *impressum.example.js* eintragen und diese in *impressum.js* umbenennen.
->Wenn SVWS Prognos nur in Ihrem internen Netzwerk läuft, benötigen Sie kein Impressum. 
+>Sofern Sie SVWS-Prognos vom Web aus erreichbar aufsetzen, vergessen Sie bitte nicht, ein Impressum zu setzen, indem Sie Ihre Daten in die Datei *impressum.example.js* eintragen und diese in *impressum.js* umbenennen.
+>Wenn SVWS-Prognos nur in Ihrem internen Netzwerk läuft, benötigen Sie kein Impressum. 
 
 Nach der Installation [verbinden Sie sich bitte mit dem SVWS-Server](server_verbinden.md).

@@ -42,7 +42,7 @@ Unter dem ersten Punkt **Benutzerhandb체cher** finden Sie die Dokumentationen f�
 Die 체brigen Punkte bieten Zugang zu technischen Informationen zu Installation, Administration und Entwicklung.
 
 * Der SVWS-Client bietet eine Datenverwaltung f체r Schul-, Lehrkraft-, Sch체ler- und Sch체lerinnen- und Leistungsdaten.
-* **WebLuPO** dient zur  Laufbahnberatung in der gymnasialen Oberstufe.
+* **SVWS-WebLuPO** dient zur  Laufbahnberatung in der gymnasialen Oberstufe.
 * Der Client unterst체tzt die Erstellung von **Blockungen** und **Klausurpl채nen** und
 * die Verwaltung von **Stundenpl채nen**.
 

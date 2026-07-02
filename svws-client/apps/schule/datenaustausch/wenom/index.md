@@ -1,4 +1,4 @@
-# WeNoM
+# SVWS-WeNoM
 
 Informationen zur Synchronisation mit dem schuleigenen 
 

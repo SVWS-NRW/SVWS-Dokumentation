@@ -1,4 +1,4 @@
-# Der Beratungsprozesses mit WebLuPO
+# Der Beratungsprozesses mit SVWS-WebLuPO
 
 ## Kurze Funktionsbeschreibung
 
@@ -8,7 +8,7 @@ Die Datei kann über eine von der jeweiligen Schule zur Verfügung gestellten We
 
 Nach erfolgreicher Bearbeitung kann die Datei durch Drücken des `Exportieren`-Buttons wieder auf dem Client-Endgerät gespeichert und von den Oberstufenkoordinatoren eingesammelt werden.
 
-Informationen zur Installation des WebLuPO-Clients und weitere technische Hintergrundinformationen finden Sie auf dieser Webseite im Bereich der technischen Dokumentationen unter *Administration/Entwicklung* und dann im Bereich der *Projekte*.
+Informationen zur Installation des SVWS-WebLuPO-Clients und weitere technische Hintergrundinformationen finden Sie auf dieser Webseite im Bereich der technischen Dokumentationen unter *Administration/Entwicklung* und dann im Bereich der *Projekte*.
 
 ::: info Weitere Informationen
 Informationen mit allen Details und Anmerkungen finden sich im jeweiligen Artikel der **Tabs** in der **App Oberstufe**.
@@ -20,7 +20,7 @@ Installieren Sie bei Bedarf [WebLuPO](../../../../../weblupo/index.md) beziehung
 
 ## Erzeugen der Laufbahnplanungsdateien
 
-Eine ausführliche Beschreibung aller möglichen Einstellungen finden sich in der Client-Dokumentation unter der App **Oberstufe**. Hier wird eine Übersicht über die Vorbereitung des Beratungsprozesses in WebLuPO gegeben.
+Eine ausführliche Beschreibung aller möglichen Einstellungen finden sich in der Client-Dokumentation unter der App **Oberstufe**. Hier wird eine Übersicht über die Vorbereitung des Beratungsprozesses in SVWS-WebLuPO gegeben.
 
 Im zweiten Halbjahr der Jahrgangsstufe 10 (G9) müssen im SVWS-Client die *Fächer der Oberstufe* auf Korrektheit kontrolliert werden. Hierzu sind unter der **App Schule** ➜ *Fächer* alle Fächer der Oberstufe als solche über den entsprechenden Haken zu markieren. Dies ist nach der Ersteinrichtung in der Regel schon korrekt.
 
@@ -36,29 +36,29 @@ Nachdem diese **Allgemeine Vorlage** erzeugt wurde, lassen sich links in der Aus
 
 ### Tab Beratung
 
-Unter dem **Tab Beratung** kann die Vorlage für WebLuPO definiert werden, in der schon Wahlen vorausgefüllt sind. Zum Beispiel belegen alle Schüler Sport mit einem mündlichen Kurs oder Deutsch mit einem schriftlichen.
+Unter dem **Tab Beratung** kann die Vorlage für SVWS-WebLuPO definiert werden, in der schon Wahlen vorausgefüllt sind. Zum Beispiel belegen alle Schüler Sport mit einem mündlichen Kurs oder Deutsch mit einem schriftlichen.
 
-### Exportieren der LuPO-Dateien für WebLuPO
+### Exportieren der LuPO-Dateien für SVWS-WebLuPO
 
-Wechseln Sie auf den **Tab Laufbahn**, hier steht der *Schalter* `Export für alle` zur Verfügung, über den die WebLuPO-Dateien erzeugt werden können.
+Wechseln Sie auf den **Tab Laufbahn**, hier steht der *Schalter* `Export für alle` zur Verfügung, über den die SVWS-WebLuPO-Dateien erzeugt werden können.
 
 :::info Einzelene Schüler exportieren
 Möchten Sie zu einem späteren Zeitpunkt nur einzelene Schüler nach-exportieren, gehen Sie in der **App Oberstufe** zum **Tab Laufbahnen** und wählen dort den oder die zu exportierende Person an, dann ändert sich *Export für alle* zu `Exportiere Auswahl`.
 :::
 
-Es wird eine gepackte `.zip`-Datei erzeugt, in der die WebLuPO-Dateien enthalten sind. Diese ist zu entpacken und die einzelnen Dateien sind je nach Schulorganisation an Schüler zu bringen.
+Es wird eine gepackte `.zip`-Datei erzeugt, in der die SVWS-WebLuPO-Dateien enthalten sind. Diese ist zu entpacken und die einzelnen Dateien sind je nach Schulorganisation an Schüler zu bringen.
 
 Lassen Sie die Schüler wählen und führen Sie die Beratungen entsprechend Ihrer Arbeitsprozesse durch.
 
-Hierzu müssen diese Dateien entsprechend des Wahl- und Beratungsprozesses an Ihrer Schule nun in WebLuPO eingelesen werden.
+Hierzu müssen diese Dateien entsprechend des Wahl- und Beratungsprozesses an Ihrer Schule nun in SVWS-WebLuPO eingelesen werden.
 
 Installieren Sie bei Bedarf [WebLuPO](../../../../../weblupo/index.md) beziehungsweise installieren Sie eine aktualisierte Version.
 
-Navigieren Sie zur Beratung zu WebLuPO. Hier finden Sie die [Erläuterungen zur Bedienung von WebLuPo](../../../../../weblupo/weblupo_handbuch.md).
+Navigieren Sie zur Beratung zu SVWS-WebLuPO. Hier finden Sie die [Erläuterungen zur Bedienung von WebLuPo](../../../../../weblupo/weblupo_handbuch.md).
 
-Bei der Wahl fallen wieder WebLuPO-Dateien an, die dort exportiert werden und dann wieder im SVWS-Client eingelesen werden.
+Bei der Wahl fallen wieder SVWS-WebLuPO-Dateien an, die dort exportiert werden und dann wieder im SVWS-Client eingelesen werden.
 
-## Weitereinlesen der WebLuPO-Dateien im SVWS-Client
+## Weitereinlesen der SVWS-WebLuPO-Dateien im SVWS-Client
 
 Gehen Sie wieder in der **App Oberstufe** in den **Tab Laufbahnen** und wählen Sie den betreffenden *Abitur-Jahrgang* an.
 

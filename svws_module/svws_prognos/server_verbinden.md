@@ -20,14 +20,14 @@ Die URL beginnt immer mit `https://`. Eine unverschlüsselte  http://-Verbindung
 
 Klicken Sie nach dem Ausfüllen auf `Verbinden`.
 
-SVWS Prognos wird nun 
+SVWS-Prognos wird nun 
 * Erreichbarkeit des SVWS-Servers prüfen
 * Ihre Benutzerdaten authentifizieren
 * Die verfügbaren Schuljahresabschnitte laden
 * Sie zur Benutzeroberfläche weiterleiten
 * Verbindung beenden
 
-Über den Button `Abmelden` auf dem Dashboard können Sie aktuelle SVWS Prognos-Sitzung beenden. Sie werden zum Verbindungsformular zurückgeleitet. Alle Daten im Speicher werden gelöscht.
+Über den Button `Abmelden` auf dem Dashboard können Sie aktuelle SVWS-Prognos-Sitzung beenden. Sie werden zum Verbindungsformular zurückgeleitet. Alle Daten im Speicher werden gelöscht.
 
 ## Fehlermeldungen beim Verbinden
 
@@ -37,4 +37,4 @@ SVWS Prognos wird nun
 * *Seite lädt nicht* die Firewall oder Proxy blockiert, Sie müssen Ihre IT-Abteilung kontaktieren.
 * *SSL-Zertifikatsfehler*. Etwas funktioniert mit dem selbstsigniertes Zertifikat auf dem Server nicht, nutzen Sie die Hilfe auf der Anmeldeseite.
 
-Nutzen Sie nun [SVWS Prognos](./prognos.md).
+Nutzen Sie nun [SVWS-Prognos](./prognos.md).

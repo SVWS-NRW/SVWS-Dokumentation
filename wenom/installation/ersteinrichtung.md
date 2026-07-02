@@ -1,4 +1,4 @@
-# Ersteinrichtung WeNoM
+# Ersteinrichtung SVWS-WeNoM
 
 Die Einrichtung der Synchronisation mit dem SVWS-Server obliegt der für die Schule zuständigen **schulfachlichen Administration**, gegebenfalls also der Schulleitung, Stellvertretung oder Beauftragte/technische Koordinatoren/Schuladmins. Es werden somit höhere Rechte beim Benutzer des SVWS-Servers benötigt.
 Zur Einrichtung eines neuen WebNotenManagers im SVWS-Server das Pluszeichen unter **Noten -> Administration -> Serververbindungen -> Server** drücken.
@@ -9,22 +9,22 @@ Zur Einrichtung eines neuen WebNotenManagers im SVWS-Server das Pluszeichen unte
 
 ## Generierung des Secrets
 
-Damit der SVWS-Server und WeNoM gesichert kommunizieren können, wird ein *Secret* benötigt. Dies wird im OAuth2-Verfahren verwendet, um die sendende Gegenstelle zu identifizieren.
+Damit der SVWS-Server und SVWS-WeNoM gesichert kommunizieren können, wird ein *Secret* benötigt. Dies wird im OAuth2-Verfahren verwendet, um die sendende Gegenstelle zu identifizieren.
 
-Das Secret wird bei der erstmaligen Eingabe der Verbindungsdaten im SVWS-Client automatisch generiert und im Webspace des WeNoM unter `./db/client.sec` abgespeichert. Das Secret aus dieser Datei muss unter *Secret* (vgl. Screenshot) eingefügt werden.
+Das Secret wird bei der erstmaligen Eingabe der Verbindungsdaten im SVWS-Client automatisch generiert und im Webspace des SVWS-WeNoM unter `./db/client.sec` abgespeichert. Das Secret aus dieser Datei muss unter *Secret* (vgl. Screenshot) eingefügt werden.
 
 ![Secret Eintrag](./graphics/secret_eintrag.png)
 
 Alternativ können Sie das Secret auch direkt **ohne SVWS-Server** per API Aufruf generieren. Navigieren Sie hierzu mit im Inhaltsverzeichnis zu *Alternativ: Generation des Secrets per API* in diesem Artikel.
 
-Ist das Secret erfolgreich eingtragen, kann jederzeit die Verbindung zum WeNoM geprüft werden:
+Ist das Secret erfolgreich eingtragen, kann jederzeit die Verbindung zum SVWS-WeNoM geprüft werden:
 
 ![Verbindung prüfen](./graphics/verbingung_pruefen.png)
 
 
-## Synchronisation und Konfiguration des WeNoM
+## Synchronisation und Konfiguration des SVWS-WeNoM
 
-Nach der Ersteinrichtung befinden sich noch keine Daten, also explizit auch keine Logindaten auf dem WeNoM. Dazu benötigt es einer Synchronisation bzw. ein Hochladen der Daten. Dies kann im Benutzerhandbuch [schulische Administration](../benutzerhandbuch/schulische_administration.md) nachgelesen werden.
+Nach der Ersteinrichtung befinden sich noch keine Daten, also explizit auch keine Logindaten auf dem SVWS-WeNoM. Dazu benötigt es einer Synchronisation bzw. ein Hochladen der Daten. Dies kann im Benutzerhandbuch [schulische Administration](../benutzerhandbuch/schulische_administration.md) nachgelesen werden.
 
 
 ## Hinweise und Fehlersuche zur Einrichtung

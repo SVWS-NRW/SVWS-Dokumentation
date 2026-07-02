@@ -20,7 +20,7 @@ Ein Import kann nur erfolgreich sein, wenn die Daten aus Kurs42 zu den Daten der
 
 + Wurde die Kurs42-Datei quartalsweisein in einem vorherigen Lernabschnitt verwaltet, so ist in der Datei *Blockung.txt* der Eintrag *Abschnitt* entsprechend auf das Halbjahr zu korrigieren, für welches die Blockung importiert werden soll.
 + Die Datei *Schueler.txt* muss die korrekten *Schüler-IDs* beinhalten. Sind diese fehlerhaft, so kommt es gegebenfalls zu fehlerhaften oder fehlenden Zuordnungen.
-+ Die Blockung wird anschließend nur korrekt dargestellt, wenn die Laufbahnplanungsdaten im Client bereits vorhanden sind, weil die Fachwahlen nicht aus Kurs 42 importiert werden. Daher müssen die Wahlen vor dem Import im Client abgeschlossen sein oder als jahrgangsbezogener Import aus WebLuPO erfolgen.
++ Die Blockung wird anschließend nur korrekt dargestellt, wenn die Laufbahnplanungsdaten im Client bereits vorhanden sind, weil die Fachwahlen nicht aus Kurs 42 importiert werden. Daher müssen die Wahlen vor dem Import im Client abgeschlossen sein oder als jahrgangsbezogener Import aus SVWS-WebLuPO erfolgen.
 :::
 
 ![Dialog zu Datei wählen](./graphics/svws_schule_datenaustausch_kurs_dateiwahl.png "Der Dialog Datei wählen ist für beide Tabs identisch.")

@@ -1,6 +1,6 @@
-# WebLuPO
+# SVWS-WebLuPO
 
-WebLuPO ist ein **webbasiertes Tool zur Laufbahnberatung und -planung für die gymnasiale Oberstufe in NRW**.
+SVWS-WebLuPO ist ein **webbasiertes Tool zur Laufbahnberatung und -planung für die gymnasiale Oberstufe in NRW**.
 
 Schülerinnen und Schülern und den Beratungslehrkräften der gymnasialen Oberstufe wird hierdurch ein plattformunabhängiges Tool zur Verfügung gestellt in dem die zeitliche Planung der Schullaufbahn der gymnasialen Oberstufe sowie die rechtlichen Grundlagen und Belegungsverpflichtungen dargestellt werden.
 

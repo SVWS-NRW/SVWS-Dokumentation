@@ -1,7 +1,7 @@
-# WeNoM Geschäftsprozesse
+# SVWS-WeNoM Geschäftsprozesse
 
 
-Eine ausführliche Beschreibung der Geschäftsprozesse befindet sich im **Benutzerhandbuch WeNoM**, das über das Inhaltsverzeichnis oben zu erreichen ist.
+Eine ausführliche Beschreibung der Geschäftsprozesse befindet sich im **Benutzerhandbuch SVWS-WeNoM**, das über das Inhaltsverzeichnis oben zu erreichen ist.
 
 ## technische Administration  
 

@@ -34,11 +34,11 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SVWS-Client', link: '/svws-client' },
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: '', items: [
-							{ text: 'SVWS WebNotenManager', link: '/wenom' },
-							{ text: 'SVWS ENM GradeHub', link: '/svws_module/svws_gradehub' },
-							{ text: 'SVWS Konferenz', link: '/svws_module/svws_konferenzuebersicht' },
-							{ text: 'SVWS Prognos', link: '/svws_module/svws_prognos' },
-							{ text: 'SVWS WebLuPO', link: '/weblupo' },
+							{ text: 'SVWS-WebNotenManager', link: '/wenom' },
+							{ text: 'SVWS-ENM GradeHub', link: '/svws_module/svws_gradehub' },
+							{ text: 'SVWS-Konferenz', link: '/svws_module/svws_konferenzuebersicht' },
+							{ text: 'SVWS-Prognos', link: '/svws_module/svws_prognos' },
+							{ text: 'SVWS-WebLuPO', link: '/weblupo' },
 						] },
 					] },
 				{ text: 'Administration',
@@ -92,7 +92,7 @@ export default defineConfig(({ mode }) => {
 				'/projekte': [
 					{ text: '', items: [
 						{ text: 'Projekte', link: '/projekte/', collapsed: false, items: [
-							{ text: 'WeNoM', link: '/wenom/' },
+							{ text: 'SVWS-WeNoM', link: '/wenom/' },
 							{ text: 'ASD-Statistik', link: '/projekte/ASD-Statistik/' },
 							{ text: 'Schulbewerbung.de', link: '/projekte/Schulbewerbung.de/' },
 							{ text: 'xSchule', link: '/projekte/xSchule/' },
@@ -184,7 +184,7 @@ export default defineConfig(({ mode }) => {
 				],
 				'/svws_module/svws_prognos' : [
 					{ text: '', items: [
-						{ text: 'SVWS Prognos', link: '/svws_module/svws_prognos/',  collapsed: false, items: [
+						{ text: 'SVWS-Prognos', link: '/svws_module/svws_prognos/',  collapsed: false, items: [
 							{ text: 'Verbindung mit dem Server', link: '/svws_module/svws_prognos/server_verbinden.md' },
 							{ text: 'Übersicht Prognos [i.E.]' },
 							{ text: 'Jahrgangsprognosen [i.E.]' },
@@ -196,7 +196,7 @@ export default defineConfig(({ mode }) => {
 				],
 				'/weblupo' : [
 					{ text: '', items: [
-						{ text: 'SVWS Weblupo', link: '/weblupo/', collapsed: false, items: [
+						{ text: 'SVWS-WebLuPO', link: '/weblupo/', collapsed: false, items: [
 							{ text: 'Benutzerhandbuch', link: '/weblupo/weblupo_handbuch.md' },
 							{ text: 'Installation', link: '/weblupo/weblupo_installation.md' },
 						] },
@@ -204,7 +204,7 @@ export default defineConfig(({ mode }) => {
 				],
 				'/wenom' : [
 					{ text: '', items: [
-						{ text: 'SVWS WeNoM', link: '/wenom/index.md' },
+						{ text: 'SVWS-WeNoM', link: '/wenom/index.md' },
 						{ text: 'Benutzerhandbuch', link: '/wenom/benutzerhandbuch/index.md', collapsed: false, items: [
 							{ text: 'Anleitung für Lehrkräfte', link: '/wenom/benutzerhandbuch/anleitung_lehrkraefte.md'},
 							{ text: 'Einrichten der 2-Faktor-Authentifizierung', link: '/wenom/benutzerhandbuch/einrichtungZweiterFaktor.md' },

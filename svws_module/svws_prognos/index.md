@@ -1,4 +1,4 @@
-# SVWS Prognos
+# SVWS-Prognos
 
 Willkommen beim Anwenderhandbuch für SVWS-Prognos.
 
@@ -22,4 +22,4 @@ Veränderte Daten können auf Wunsch zurück in den SVWS-Server übertragen werd
 Hierbei werden die Daten für SVWS-Prognos ausschließlich auf dem Client-Rechner verarbeitet. Derzeit werden keine Daten zurück an den SVWS-Server oder die Festplatte des Clients geschrieben.
 
 >[!TIP] Fehler in der Berechnung melden
->Wenn Sie einen Fehler in der Berechnung melden möchten, schreiben Sie ein Issue auf dem GitHub von SVWS Prognos, nutzen den Support im Forum oder wenden sich mit der Fehlerbeschreibung an die Fachberatung Ihrer Schule.
+>Wenn Sie einen Fehler in der Berechnung melden möchten, schreiben Sie ein Issue auf dem GitHub von SVWS-Prognos, nutzen den Support im Forum oder wenden sich mit der Fehlerbeschreibung an die Fachberatung Ihrer Schule.

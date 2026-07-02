@@ -1,8 +1,8 @@
-## SVWS Prognos Übersicht
+## SVWS-Prognos Übersicht
 
-Nach dem Verbinden mit einem SVWS-Schema wird auf der Hauptseite von *SVWS Prognos* eine Übersicht der Funktionen angezeigt.
+Nach dem Verbinden mit einem SVWS-Schema wird auf der Hauptseite von *SVWS-Prognos* eine Übersicht der Funktionen angezeigt.
 
-!["SVWS Prognos Übersicht"](./graphics/svws_prognos_uebersicht.png "Die Hauptseite von SVWS Prognos")
+!["SVWS-Prognos Übersicht"](./graphics/svws_prognos_uebersicht.png "Die Hauptseite von SVWS-Prognos")
 
 In der Kopfzeile können Sie einen *hellen* oder *dunklen Modus* wählen oder die Systemeinstellung behalten.
 

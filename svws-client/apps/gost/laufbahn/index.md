@@ -12,7 +12,7 @@ Später kann durch die Schieberegeler gewählt werden, welche Schülermenge ange
 * Der Schalter **Nur mit Fachwahlen** zeigt nur Schüler, die auch gewählt haben. Hierüber lassen sich etwa Schüler der kommenden EF ausblenden, die aber nicht in die EF wechseln.
 * Über **Neuaufnamen** werden auch neue Schüler angezeigt, die noch nicht den Status **aktiv** haben - zum Beispiel Schüler, die für die kommende EF aufgenommen wurden.
 
-Jede Schülerlaufbahnwahl kann direkt intern im SVWS-Client oder extern per WebLuPO durchgeführt werden. Nach dem Einlesen der Wahlen lassen sich diese im SVWS-Client vollständig weiter verwalten.
+Jede Schülerlaufbahnwahl kann direkt intern im SVWS-Client oder extern per SVWS-WebLuPO durchgeführt werden. Nach dem Einlesen der Wahlen lassen sich diese im SVWS-Client vollständig weiter verwalten.
 
 ![Nutzen Sie das Linksymbol, um direkt zur individuellen Laufbahn zu springen](./graphics/SVWS_Oberstufe_Laufbahn_Link.png "Nutzen Sie dsa Linksymbol, um direkt zur individuellen Laufbahn zu springen.")
 
@@ -22,13 +22,13 @@ In der Auswahlliste gelangt man über das Linksymbol 🔗 **Zur Laufbahnplanung*
 
 Wurde ein Schüler angewählt, finden sich oben rechts die Links, mit denen direkt zur **individuellen Laufbahn** oder, mitunter eine Fehlerquelle, zur **Sprachenfolge** gesprungen werden kann.
 
-## Export in WebLuPO
+## Export in SVWS-WebLuPO
 
-Für die Verwendung von WebLuPO können durch **Exportieren alle** für die ganze Stufe die individuellen Laufbahndateien exportiert werden.
+Für die Verwendung von SVWS-WebLuPO können durch **Exportieren alle** für die ganze Stufe die individuellen Laufbahndateien exportiert werden.
 
-Die Durchführung der Fachwahlen ist in WebLuPO beschrieben und analog zur Fachwahl in der internen individuellen Laufbahnplanung.
+Die Durchführung der Fachwahlen ist in SVWS-WebLuPO beschrieben und analog zur Fachwahl in der internen individuellen Laufbahnplanung.
 
-## Import aus WebLuPO
+## Import aus SVWS-WebLuPO
 
 Durch **Importieren** werden die bearbeiteten Laufbahndateien der Schüler wieder eingespielt.
 
@@ -47,7 +47,7 @@ Achten Sie darauf, dass in LuPO und dem SVWS-Server die Fächer - "Fächer der O
 
 Wenn Sie einen Fehler bekommen, dass die Datei nicht eingelesen kann, probieren Sie in LuPO die Funktion **Datei ➜ Datei komprimieren** aufzurufen.
 
-Beachten Sie: Die Schülerdateien `.lpo` werden vom SVWS-Server *nicht* verarbeitet, er liest zum Import die Lehrerdatei `.lup` ein. WebLuPO-Dateien enden auf `.lp`.
+Beachten Sie: Die Schülerdateien `.lpo` werden vom SVWS-Server *nicht* verarbeitet, er liest zum Import die Lehrerdatei `.lup` ein. SVWS-WebLuPO-Dateien enden auf `.lp`.
 :::
 
 ## Nachträglich aufgenommene Schüler

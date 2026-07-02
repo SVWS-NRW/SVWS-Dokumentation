@@ -2,7 +2,7 @@
 
 ## Grundlagen
 
-Falls lediglich ein einzelner Webserver bereitgestellt werden soll, der jedoch für mehrere Schulen jeweils eigene WeNoM-Server über unterschiedliche Subdomains anbietet, kann dies mithilfe von „Virtual Hosts“ im Apache2-Webserver realisiert werden. Auf diese Weise ist es möglich, auf einer gemeinsamen technischen Plattform mehrere WebNotenManager für verschiedene Schulen bereitzustellen. Die einzelnen Instanzen sind dabei logisch voneinander getrennt und jeweils über eigene Zugänge erreichbar.
+Falls lediglich ein einzelner Webserver bereitgestellt werden soll, der jedoch für mehrere Schulen jeweils eigene SVWS-WeNoM-Server über unterschiedliche Subdomains anbietet, kann dies mithilfe von „Virtual Hosts“ im Apache2-Webserver realisiert werden. Auf diese Weise ist es möglich, auf einer gemeinsamen technischen Plattform mehrere WebNotenManager für verschiedene Schulen bereitzustellen. Die einzelnen Instanzen sind dabei logisch voneinander getrennt und jeweils über eigene Zugänge erreichbar.
 
 Alternativ kann dieses Ziel auch durch den Einsatz von Docker umgesetzt werden.
 
@@ -12,13 +12,13 @@ Zur Konfiguration von Virtual Hosts kann im Verzeichnis `/etc/apache2/sites-avai
 SetEnv ENM_DB_DIR <Pfad_zum_Verzeichnis>
 ```
 
-Diese Variable wird von der WeNoM-Installation ausgelesen und bestimmt – abhängig vom in der jeweiligen Virtual-Host-Konfiguration angegebenen Servernamen – den Speicherort der SQLite-Datenbank sowie der zugehörigen Zugangsdaten.
+Diese Variable wird von der SVWS-WeNoM-Installation ausgelesen und bestimmt – abhängig vom in der jeweiligen Virtual-Host-Konfiguration angegebenen Servernamen – den Speicherort der SQLite-Datenbank sowie der zugehörigen Zugangsdaten.
 
 ## Beispielkonfiguration
 
 In dem folgenden Beispiel soll nun für *"Schule1"* ein separater Zugang zu einer separaten Datenbank inklusive der *Secret Credentials* geschaffen werden:
 
-+ Separaten Speicherort für *"Schule1"* unter dem Ordner `db` der WeNoM Installation anlegen. Zum Beispiel:
++ Separaten Speicherort für *"Schule1"* unter dem Ordner `db` der SVWS-WeNoM Installation anlegen. Zum Beispiel:
 
 ```bash
 mkdir /var/www/html/db/schule1

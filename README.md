@@ -75,7 +75,7 @@ Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr 
 * In manchen Bereichen steht noch eine **graue Schaltflächenleiste** (Bezeichnung Todo) zur Verfügung.
 
 ### Schreibweisen und Groß- und Kleinschreibung
-SVVWS-WebClient bzw. WebClient oder auch SVWS-Client, AdminClient, SchILD-NRW, WeNoM, GOSt, WebLuPO, ...
+SVWS-Client, SVWS-AdminClient, SchILD-NRW, SVWS-WeNoM, GOSt, SVWS-WebLuPO, ...
 
 ### Web-Dokumentationen
 

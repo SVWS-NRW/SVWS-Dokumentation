@@ -1,9 +1,9 @@
 # Noteneingabe
 
-:::tip WeNoM-Benutzerhandbuch
+:::tip SVWS-WeNoM-Benutzerhandbuch
 Bei dieser Anleitung handelt es sich um eine Übersicht zur Orientierung. 
 
-Für eine ausführliche Anleitung zur **Noteneingabe** konsultieren Sie bitte das [Benutzerhandbuch WeNoM](../../../../wenom/index.md).
+Für eine ausführliche Anleitung zur **Noteneingabe** konsultieren Sie bitte das [Benutzerhandbuch SVWS-WeNoM](../../../../wenom/index.md).
 :::
 
 ## Schnellanleitung
@@ -51,7 +51,7 @@ Hierbei werden Platzhalter wie *$Vorname$* automatisch durch das System ausgefü
 Übernehmen Sie Ihre Floskeln durch einen Klick auf `Anwenden` oder verwerfen Sie Änderungen mit einem Klick auf `zurücksetzen`.
 
 :::tip Wollen Sie mehr wissen?
-Konsultieren Sie für eine detaillierte Anleitung das [Benutzerhandbuch WeNoM](../../../../wenom/index.md).
+Konsultieren Sie für eine detaillierte Anleitung das [Benutzerhandbuch SVWS-WeNoM](../../../../wenom/index.md).
 
-Für die Noteneingabe springen Sie in die [Anleitung für Lehrkräfte](../../../../wenom/benutzerhandbuch/anleitung_lehrkraefte.md). Die Anleitung dort beginnt mit der **Anmeldung an einem WeNoM-Server**. Sofern Sie direkt mit dem *Lokalen Notenmodul des SVWS-Clients* arbeiten, entfällt der Bereich mit der Anmeldung und Sie gehen über die **App Noten**.
+Für die Noteneingabe springen Sie in die [Anleitung für Lehrkräfte](../../../../wenom/benutzerhandbuch/anleitung_lehrkraefte.md). Die Anleitung dort beginnt mit der **Anmeldung an einem SVWS-WeNoM-Server**. Sofern Sie direkt mit dem *Lokalen Notenmodul des SVWS-Clients* arbeiten, entfällt der Bereich mit der Anmeldung und Sie gehen über die **App Noten**.
 :::

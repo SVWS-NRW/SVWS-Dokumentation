@@ -48,7 +48,7 @@ Hier lassen sich für Fächer wesentliche Einstellungen vornehmen.
 
 * Über den Haken **Sichtbar** lässt sich steuern, ob ein Fach in Dropdown-Menüs zur Auswahl gestellt wird oder nicht. Halten Sie die Listen übersichtlich, indem Sie alle nicht-verwendeten Fächer auf nicht-sichtbar stellen. Entfernen Sie zum Setzen der Nicht-Sichtbarkeit den Haken.
 
-* Ist der Haken bei **Fach der Oberstufe** gesetzt, wird das Fach bei der entsprechenden Sortierungsfunktion beachtet. Weiterhin steht es als Oberstufenfach zur Verfügung und kann im Zuge der Laufbahnplanung für einen Abiturjahrgang konfiguriert werden und steht damit für die Laufbahnplanung mit WebLuPO zur Verfügung.
+* Ist der Haken bei **Fach der Oberstufe** gesetzt, wird das Fach bei der entsprechenden Sortierungsfunktion beachtet. Weiterhin steht es als Oberstufenfach zur Verfügung und kann im Zuge der Laufbahnplanung für einen Abiturjahrgang konfiguriert werden und steht damit für die Laufbahnplanung mit SVWS-WebLuPO zur Verfügung.
 
 * Über **Ist Prüfungsordnungs-Relevant** lässt sich steuern, ob das Fach grundsätzlich zu Belegprüfungen oder Ähnlichem herangezogen werden soll.
 

@@ -1,20 +1,20 @@
-# Administrative Arbeit mit WeNoM
+# Administrative Arbeit mit SVWS-WeNoM
 
-## Ersteinrichtung WeNoM
+## Ersteinrichtung SVWS-WeNoM
 
-Damit WeNoM und der SVWS-Server miteinander kommunizieren bzw. synchronisieren können, muss ein erstmalig internes Passwort, ein sogenanntes *Secret* eingerichtet werden. Eine Beschreibung der Einrichtung befindet sich unter [technische Ersteinrichtung](../installation/ersteinrichtung.md).
+Damit SVWS-WeNoM und der SVWS-Server miteinander kommunizieren bzw. synchronisieren können, muss ein erstmalig internes Passwort, ein sogenanntes *Secret* eingerichtet werden. Eine Beschreibung der Einrichtung befindet sich unter [technische Ersteinrichtung](../installation/ersteinrichtung.md).
 
 ## Synchronisation
 
-Nachdem die Installation und Ersteinrichtung und damit die erfolgreiche Verbindung zum WeNoM-Server im SVWS-Server eingerichtet wurde, kann die schulfachliche Administration auf der Konfigurationsoberfläche des SVWS-Servers die Synchronisation zwischen beiden Datenbeständen ausführen.
+Nachdem die Installation und Ersteinrichtung und damit die erfolgreiche Verbindung zum SVWS-WeNoM-Server im SVWS-Server eingerichtet wurde, kann die schulfachliche Administration auf der Konfigurationsoberfläche des SVWS-Servers die Synchronisation zwischen beiden Datenbeständen ausführen.
 
 ![Administration zum Hoch- Runterladen und Synchronisieren und Daten löschen ](graphics/WenomSVWS.png "Syncrhonisieren Sie die Daten wie gewünscht oder entfernen Sie Daten.")
 
 In der Regel werden die Datenbestände *synchronisiert*, was einem Hochladen mit anschließendem Herunterladen entspricht.
 
-Dabei wird anhand eines *Zeitstempels* in beiden Datenbeständen entschieden, welcher Eintrag der Neuere ist und der Eintrag mit dem neuesten Datum wird für den SVWS-Server erhalten beziehungsweise vom WeNoM übernommen.
+Dabei wird anhand eines *Zeitstempels* in beiden Datenbeständen entschieden, welcher Eintrag der Neuere ist und der Eintrag mit dem neuesten Datum wird für den SVWS-Server erhalten beziehungsweise vom SVWS-WeNoM übernommen.
 
-Beim Synchronisieren werden ebenfalls die Benutzer abgeglichen, so dass es für den WeNoM ausschließlich Benutzer gibt, die im SVWS-Server vorhanden sind.
+Beim Synchronisieren werden ebenfalls die Benutzer abgeglichen, so dass es für den SVWS-WeNoM ausschließlich Benutzer gibt, die im SVWS-Server vorhanden sind.
 
 In besonderen Fällen kann nur hoch- beziehungsweise heruntergeladen werden, so dass kein beidseitiger Abgleich über die Datumsstempel stattfindet.
 
@@ -24,20 +24,20 @@ In besonderen Fällen kann nur hoch- beziehungsweise heruntergeladen werden, so 
 
 ![Daten zurücksetzen](./graphics/datenzurücksetzen.png)
 
-Im normalen, halbjährlichen Schulabschnittswechsel können mit dem Punkt **Daten entfernen** alte Zeugnisdaten zur Sicherheit aus dem, über das Internet erreichbare, System genommen werden. Zum einen sind diese Daten dann überhaupt nicht mehr in WeNoM abrufbar und zum anderen kann ein neuer Lernabschnitt auf dem WeNoM sauber begonnen werden.
+Im normalen, halbjährlichen Schulabschnittswechsel können mit dem Punkt **Daten entfernen** alte Zeugnisdaten zur Sicherheit aus dem, über das Internet erreichbare, System genommen werden. Zum einen sind diese Daten dann überhaupt nicht mehr in SVWS-WeNoM abrufbar und zum anderen kann ein neuer Lernabschnitt auf dem SVWS-WeNoM sauber begonnen werden.
 
-Falls ein installierter WebNotenManager vollständig aufgegeben oder vollständig neu initialisiert werden soll und der schulfachliche Administrator somit die Löschung aller Daten auf dem WeNoM-Server durchführen muss, kann dies über den Schalter `Daten, Konfiguration und Benutzer entfernen` erreicht werden.
+Falls ein installierter WebNotenManager vollständig aufgegeben oder vollständig neu initialisiert werden soll und der schulfachliche Administrator somit die Löschung aller Daten auf dem SVWS-WeNoM-Server durchführen muss, kann dies über den Schalter `Daten, Konfiguration und Benutzer entfernen` erreicht werden.
 
 ### Verbindungsdaten löschen oder erneuern
 
-Wenn ein neues Secret benötigt wird oder ein WeNoM-Server gelöscht werden soll, können die noch eingetragenen Zugangsdaten unter `Verbindungsdaten einrichten` gelöscht, beziehungsweise erneuert werden.
+Wenn ein neues Secret benötigt wird oder ein SVWS-WeNoM-Server gelöscht werden soll, können die noch eingetragenen Zugangsdaten unter `Verbindungsdaten einrichten` gelöscht, beziehungsweise erneuert werden.
 
-![WenomVerbindungLoeschen.png](graphics/WenomVerbindungLoeschen.png "Löschen Sie die Verbindungsdaten für einen WeNoM-Server.")
+![WenomVerbindungLoeschen.png](graphics/WenomVerbindungLoeschen.png "Löschen Sie die Verbindungsdaten für einen SVWS-WeNoM-Server.")
 
 ::: danger Achtung, die Daten sind nicht gelöscht!
-Die *Daten*, die sich auf dem WeNoM-Server befinden, werden dabei nicht gelöscht. Es wird lediglich die *Verbindungsmöglichkeit* entfernt.
+Die *Daten*, die sich auf dem SVWS-WeNoM-Server befinden, werden dabei nicht gelöscht. Es wird lediglich die *Verbindungsmöglichkeit* entfernt.
 
-Die Möglichkeit zur Verbindung kann gegebenenfalls wiederhergestellt werden, falls das *Secret* des WeNoM-Servers noch gültig ist.
+Die Möglichkeit zur Verbindung kann gegebenenfalls wiederhergestellt werden, falls das *Secret* des SVWS-WeNoM-Servers noch gültig ist.
 :::
 
 ## Zugangsdaten der Lehrkräfte
@@ -46,12 +46,12 @@ Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialkenn
 
 ![Lehrer-Zugangsdaten](./graphics/lehrer-zugangsdaten.png "Im SVWS-Client sind die Initialkennworte hinterlegt.")
 
-Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehler markiert und nicht zum WeNoM-Server übertragen.
+Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehler markiert und nicht zum SVWS-WeNoM-Server übertragen.
 
 Ebenso werden ausschließlich Dienstmailadressen und keine privaten Email-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet. Liegt im Lehrerdatensatz kein gültiger Eintrag im Datenfeld *dienstliche Email* vor, so erhält diese Lehrkraft kein Login für den WebNotenManager.
 
-::: warning SVWS-Benutzer vs WeNoM-Benutzer
-Die Personengruppe der SVWS-Benutzer entspricht nicht den WeNoM-Benutzern: Die unter Noten -> Administration -> Zugangsdaten aufgeführte Personengruppe sind Unterrichtende oder mit Koordination und Klassenleitung Beauftragte. 
+::: warning SVWS-Benutzer vs SVWS-WeNoM-Benutzer
+Die Personengruppe der SVWS-Benutzer entspricht nicht den SVWS-WeNoM-Benutzern: Die unter Noten -> Administration -> Zugangsdaten aufgeführte Personengruppe sind Unterrichtende oder mit Koordination und Klassenleitung Beauftragte. 
 :::
 
 
@@ -82,12 +82,12 @@ Dies ist bei Verlust oder Diebstahl eines Endgerätes eine Möglichkeit, die Sic
 Am *grünen Haken* unter 2FA ist zu erkennen, dass die Zwei-Faktor-Authentifizierung für diese Benutzer eingeschaltet ist.
 
 ::: danger Weitere Synchronisation notwendig!
-Die Einstellungen werden erst durch eine erneute Synchronisation auf dem WeNoM-Server übertragen!
+Die Einstellungen werden erst durch eine erneute Synchronisation auf dem SVWS-WeNoM-Server übertragen!
 :::
 
 ## Konfiguration
 
-Im Tab **Konfiguration** eines WeNoM-Servers lässt sich einstellen, welche Spalten bei der Noten- und Leistungsdateneingabe und im Klassenleitungsbereich jeweils klassenweise befüllt und geändert werden können.
+Im Tab **Konfiguration** eines SVWS-WeNoM-Servers lässt sich einstellen, welche Spalten bei der Noten- und Leistungsdateneingabe und im Klassenleitungsbereich jeweils klassenweise befüllt und geändert werden können.
 
 ![Konfiguration Notenmodul](./graphics/konfigurationNotenmodul.png "Über die Haken lässt sich einstellen, welche Daten verändert werden können.")
 
@@ -116,10 +116,10 @@ Eine Gruppe lässt sich auch aufklappen, so dass für eine Klasse abweichende  E
 Oben links können Sie über die beiden Schalter `Alles sperren` und `Alles freischalten` alle Checkboxen auf einmal setzen.
 
 ::: tip Denken Sie ans Synchronisieren
-Zum Abschluss Ihrer Arbeiten synchronisieren Sie die Daten mit ihrem WeNoM.
+Zum Abschluss Ihrer Arbeiten synchronisieren Sie die Daten mit ihrem SVWS-WeNoM.
 :::
 
-## Benutzerrechte für WeNoM-administrierende Lehrkräfte
+## Benutzerrechte für SVWS-WeNoM-administrierende Lehrkräfte
 
 Soll ein Datenbank-Nutzer auch die oben erklärte Konfiguration vornehmen können, ist dieser Nutzer mit den passenden Rechten auszustatten. Ansonsten sieht ein Nutzer - auch ein *Administrator*, der zusätzlich auch *Lehrer* ist - nur die selbst unterrichteten Klassen.
 
@@ -127,7 +127,7 @@ Sie können zur Konfiugration der Klassen/Jahrgänge/Abteilungen einen *Administ
 
 Sie können aber auch einem Lehrer (ob Administrator oder nicht) auch die Nutzerrechte des Notenmoduls freischalten. 
 
-Gehen Sie über die **App Einstellungen ⚙** in **Benutzerverwaltung ➜ Benutzergruppen**. Erzeugen Sie eine neue Benutzergruppe oder wählen Sie eine existiernde, die die WeNoM-Konfiguration übernehmen soll.
+Gehen Sie über die **App Einstellungen ⚙** in **Benutzerverwaltung ➜ Benutzergruppen**. Erzeugen Sie eine neue Benutzergruppe oder wählen Sie eine existiernde, die die SVWS-WeNoM-Konfiguration übernehmen soll.
 
 ![Nutzerrechte freischalten](./graphics/konfiguration_Nutzerrechte_notenmodul.png "Schalten Sie die Rechte frei, das Notenmodul zu konfigurieren.")
 
@@ -141,7 +141,7 @@ Haben Sie diese Rechte zugewiesen, wird in der **App Noten** der unten im Screen
 
 ## Mail
 
-Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten für den WeNoM-Server eingetragen ist, können sich die Lehrkräfte das Initialpasswort zuschicken lassen.
+Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten für den SVWS-WeNoM-Server eingetragen ist, können sich die Lehrkräfte das Initialpasswort zuschicken lassen.
 
 ![Wenom Email Konfiguration](graphics/WenomMail.png "Konfigurieren Sie Emaildaten, um automatisch Kennwörter versenden zu können.")
 

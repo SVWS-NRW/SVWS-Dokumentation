@@ -14,7 +14,7 @@ Ziel soll es hier sein, die komplette hauptamtliche Schulstatistik, die alle Sch
 
 [Zur Beschreibung des Projekts.](./ASD-Statistik/)
 
-## WeNoM der WebNotenManager
+## SVWS-WeNoM der WebNotenManager
 
 Zusammen mit dem SVWS-Server wird parallel ein Programm entwickelt, das es den Schulen ermöglichen soll, ihre Noten von Kolleginnen und Kollegen einzuholen, ohne dass alle Daten im Internet erreichbar sein müssen.
 

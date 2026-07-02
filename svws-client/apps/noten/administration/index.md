@@ -1,11 +1,11 @@
 # Noten Administration
 
-Über den Bereich **Administration** können die verbundenen WeNoM-Server sowie des **Lokale Notenmodul des SVWS-Clients** konfiguriert werden.
+Über den Bereich **Administration** können die verbundenen SVWS-WeNoM-Server sowie des **Lokale Notenmodul des SVWS-Clients** konfiguriert werden.
 
-::: tip WeNoM Benutzerhandbuch
+::: tip SVWS-WeNoM Benutzerhandbuch
 Dies ist eine Kurzübersicht zur Orientierung in der App Noten.
 
-Um **WeNoM-Serververbindungen** zu konfigurieren und für eine ausführliche Anleitung zur **Noteneingabe**, konsultieren Sie bitte das [Benutzerhandbuch WeNoM](../../../../wenom/index.md).
+Um **SVWS-WeNoM-Serververbindungen** zu konfigurieren und für eine ausführliche Anleitung zur **Noteneingabe**, konsultieren Sie bitte das [Benutzerhandbuch WeNoM](../../../../wenom/index.md).
 
 Um im aktuellen Theme weiterzulesen, wechseln Sie im Benutzerhandbuch in den Bereich zum [**Tab Konfiguration**](../../../../wenom/benutzerhandbuch/schulische_administration.md#konfiguration).
 :::
@@ -14,7 +14,7 @@ Im lokalen Notenmodul ist nur der **Tab Konfiguration** sichtbar, über den sich
 
 ![Lokales Notenmodul](./graphics/svws_noten_administration_lokal.png "Wählen Sie hier das Lokale Notenmodul des SVWS-Servers.")
 
-Wählen Sie hier das **Lokale Notenmodul** des SVWS-Clients aus. Wurden WeNoM-Server konfiguriert, finden Sie diese hier ebenfalls und diese lassen sich in gleicher Weise für die Eingabe von Noten und anderer Daten einstellen.
+Wählen Sie hier das **Lokale Notenmodul** des SVWS-Clients aus. Wurden SVWS-WeNoM-Server konfiguriert, finden Sie diese hier ebenfalls und diese lassen sich in gleicher Weise für die Eingabe von Noten und anderer Daten einstellen.
 
 ![Tab Konfiguration](./graphics/svws_noten_administration_lokal_konfiguration.png "Konfiguieren Sie für die gewünschten Gruppen, welche Daten eingegeben werden können.")
 
@@ -27,5 +27,5 @@ Darunter lassen sich Spalten vollständig ausblenden und es kann konfiguriert we
 Sollen *Teilleistungen* erfasst werden, können die zur Verfügung stehenden Teilleistungen an dieser Stelle angehakt werden.
 
 :::tip Wollen Sie mehr wissen?
-Konsultieren Sie das WeNoM-Benutzerhandbuch für eine ausführliche Anleitung. Ebenso wird dort auch der Bereich **Administration ➜ Zugangsdaten** erläutert.
+Konsultieren Sie das SVWS-WeNoM-Benutzerhandbuch für eine ausführliche Anleitung. Ebenso wird dort auch der Bereich **Administration ➜ Zugangsdaten** erläutert.
 :::
