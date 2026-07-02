@@ -13,9 +13,12 @@ Für die Aktualität der dargestellten Einstellungen, Abläufe und Benutzeroberf
 :::
 
 ## Voraussetzungen
+
 Die Voraussetzungen für den Betrieb von WeNoM sind:
 
 + Sie verfügen über einen Server im Internet. Typischerweise handelt es sich dabei um ein Hosting-Angebot bei einem Hoster. In vielen Fällen steht dort bereits ein vorkonfigurierter Apache2-Webserver inklusive installierter PHP-Umgebung zur Verfügung.
 + Sie besitzen einen sFTP-Zugang zum Dateisystem des Webhostings. Über diesen werden die WeNoM-Dateien auf den Server übertragen.
-Optional: Sie verwenden eine eigene Subdomain, z. B. wenom.meine-schuladresse.xyz.
++ Optional: Sie verwenden eine eigene Subdomain, z. B. wenom.meine-schuladresse.xyz.
 + Sie benötigen ein SSL-/TLS-Zertifikat für die verschlüsselte Verbindung über https://. Viele Hoster stellen entsprechende Zertifikate kostenfrei zur Verfügung.
+
+In den Hosterspezifischen Anleitungen 
