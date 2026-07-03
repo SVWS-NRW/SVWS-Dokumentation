@@ -6,12 +6,12 @@ Nach dem Verbinden mit einem SVWS-Schema wird auf der Hauptseite von *SVWS-Progn
 
 In der Kopfzeile können Sie einen *hellen* oder *dunklen Modus* wählen oder die Systemeinstellung behalten.
 
-Ebenso können Sie sich **Abmelden** und damit Prognos verlassen. Es werden keine Daten gespeichert.
+Ebenso können Sie sich **Abmelden** und damitSVWS-Prognos verlassen. Es werden keine Daten gespeichert.
 
 >[!TIP]Noten Speichern
 >Veränderte Daten, zum Beispiel Noten, können aus den Detailübersichten der Schüler in den SVWS-Server zurück gespeichert werden.
 
-!["Abmelden oben rechts"](./graphics/svws_prognos_hauptseite_abmelden.png "Melden Sie sich aus Prognos ab.")
+!["Abmelden oben rechts"](./graphics/svws_prognos_hauptseite_abmelden.png "Melden Sie sich ausSVWS-Prognos ab.")
 
 Unter der Hauptseite sehen Sie die Kacheln mit den Funktionen von SVWS-Prognos.
 

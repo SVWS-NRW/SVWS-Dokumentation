@@ -511,7 +511,7 @@ Eine Ausführliche Beschreibung der Geschäftsprozesse befindet sich im [Benutze
 
 |   |   |   |   |
 |---|---|---|---|
-| WebLuPO Dateien exportieren und importieren ||||
+| SVWS-WebLuPO Dateien exportieren und importieren ||||
 | Laufbahnwahlbögen drucken ||||
 | Laufbahnen filtern ||||
 | Laufbahnfehler anzeigen ||||

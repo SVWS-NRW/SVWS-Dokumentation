@@ -6,7 +6,7 @@ Tragen Sie die SMTP-Zugangsdaten ein (Host, Port, Benutzername, Passwort, Absend
 Aktivieren Sie TLS verwenden, wenn Ihr SMTP-Server eine verschlüsselte Verbindung erfordert.
 Klicken Sie auf Verbindung testen, um die Erreichbarkeit des Mail-Servers zu prüfen.
 Klicken Sie auf Übernehmen, um die Konfiguration zu speichern.
-Die SMTP-Konfiguration wird verschlüsselt in der GradeHub-Konfigurationsdatei (.ghb) gespeichert, wenn Sie die Konfiguration sichern.
+Die SMTP-Konfiguration wird verschlüsselt in der SVWS-GradeHub-Konfigurationsdatei (.ghb) gespeichert, wenn Sie die Konfiguration sichern.
 
 Dateien versenden
 Wählen Sie die gewünschten Lehrkräfte aus.

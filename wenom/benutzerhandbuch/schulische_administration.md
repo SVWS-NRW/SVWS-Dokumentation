@@ -26,7 +26,7 @@ In besonderen Fällen kann nur hoch- beziehungsweise heruntergeladen werden, so 
 
 Im normalen, halbjährlichen Schulabschnittswechsel können mit dem Punkt **Daten entfernen** alte Zeugnisdaten zur Sicherheit aus dem, über das Internet erreichbare, System genommen werden. Zum einen sind diese Daten dann überhaupt nicht mehr in SVWS-WeNoM abrufbar und zum anderen kann ein neuer Lernabschnitt auf dem SVWS-WeNoM sauber begonnen werden.
 
-Falls ein installierter WebNotenManager vollständig aufgegeben oder vollständig neu initialisiert werden soll und der schulfachliche Administrator somit die Löschung aller Daten auf dem SVWS-WeNoM-Server durchführen muss, kann dies über den Schalter `Daten, Konfiguration und Benutzer entfernen` erreicht werden.
+Falls ein installierter SVWS-WebNotenManager vollständig aufgegeben oder vollständig neu initialisiert werden soll und der schulfachliche Administrator somit die Löschung aller Daten auf dem SVWS-WeNoM-Server durchführen muss, kann dies über den Schalter `Daten, Konfiguration und Benutzer entfernen` erreicht werden.
 
 ### Verbindungsdaten löschen oder erneuern
 
@@ -42,13 +42,13 @@ Die Möglichkeit zur Verbindung kann gegebenenfalls wiederhergestellt werden, fa
 
 ## Zugangsdaten der Lehrkräfte
 
-Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialkennwort*. In Kombination mit der *Dienstlichen Emailadresse* als Benutzername ist dieses Kennwort der individuelle Erstzugang zum WebNotenManager.
+Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialkennwort*. In Kombination mit der *Dienstlichen Emailadresse* als Benutzername ist dieses Kennwort der individuelle Erstzugang zum SVWS-WebNotenManager.
 
 ![Lehrer-Zugangsdaten](./graphics/lehrer-zugangsdaten.png "Im SVWS-Client sind die Initialkennworte hinterlegt.")
 
 Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehler markiert und nicht zum SVWS-WeNoM-Server übertragen.
 
-Ebenso werden ausschließlich Dienstmailadressen und keine privaten Email-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet. Liegt im Lehrerdatensatz kein gültiger Eintrag im Datenfeld *dienstliche Email* vor, so erhält diese Lehrkraft kein Login für den WebNotenManager.
+Ebenso werden ausschließlich Dienstmailadressen und keine privaten Email-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet. Liegt im Lehrerdatensatz kein gültiger Eintrag im Datenfeld *dienstliche Email* vor, so erhält diese Lehrkraft kein Login für den SVWS-WebNotenManager.
 
 ::: warning SVWS-Benutzer vs SVWS-WeNoM-Benutzer
 Die Personengruppe der SVWS-Benutzer entspricht nicht den SVWS-WeNoM-Benutzern: Die unter Noten -> Administration -> Zugangsdaten aufgeführte Personengruppe sind Unterrichtende oder mit Koordination und Klassenleitung Beauftragte. 

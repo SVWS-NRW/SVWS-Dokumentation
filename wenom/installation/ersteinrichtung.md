@@ -5,7 +5,7 @@ Zur Einrichtung eines neuen WebNotenManagers im SVWS-Server das Pluszeichen unte
 
 ![neuen Wenom erstellen](./graphics/neuer_wenom.png)
 
-(Es können mit einer Datenbank mehrer WebNotenManager verknüpft werden, um z.B. in größeren Berufskollegs die Abteilungen autark voneinander arbeiten zu lassen.)
+(Es können mit einer Datenbank mehrer SVWS-WebNotenManager verknüpft werden, um z.B. in größeren Berufskollegs die Abteilungen autark voneinander arbeiten zu lassen.)
 
 ## Generierung des Secrets
 

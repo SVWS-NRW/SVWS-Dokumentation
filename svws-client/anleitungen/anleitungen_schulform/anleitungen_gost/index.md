@@ -15,7 +15,7 @@ werden in der **App Oberstufe** beschrieben.
 
 ## Laufbahnwahlen mit SVWS-WebLuPO
 
-Bezüglich der Laufbahnwahlen mit SVWS-WebLuPO finden Sie in diesem Bereich unter **Oberstufe ➜ WebLuPO** die Anleitung, wie SVWS-WebLuPO durch die Abteilungsleitung GOSt/GOSt-Koordination oder durch Beratungslehrkräfte SVWS-WebLuPO für einen konkreten Abiturjahrgang aufzusetzen ist.
+Bezüglich der Laufbahnwahlen mit SVWS-WebLuPO finden Sie in diesem Bereich unter **Oberstufe ➜ SVWS-WebLuPO** die Anleitung, wie SVWS-WebLuPO durch die Abteilungsleitung GOSt/GOSt-Koordination oder durch Beratungslehrkräfte SVWS-WebLuPO für einen konkreten Abiturjahrgang aufzusetzen ist.
 
 Im **Benutzerhandbuch SVWS-WebLuPO**, das in der Kopfzeile dieser Webseite verlinkt ist, finden Sie die Anleitung für Nutzer beziehungsweise die Installationsanleitung.
 

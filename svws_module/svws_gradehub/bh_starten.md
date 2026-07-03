@@ -1,8 +1,8 @@
 # Benutzerhandbuch SVWS-GradeHub
 
-## GradeHub installieren und starten
+## SVWS-GradeHub installieren und starten
 
-Um das Externe SVWS Notenmodul GradeHub zu starten, müssen Sie es aufrufen.
+Um das Externe SVWS Notenmodul SVWS-GradeHub zu starten, müssen Sie es aufrufen.
 
 Liegt das Modul schon vor, etwa weil die Schule Ihnen einen Link oder eine Internetadresse hat zukommen lassen oder weil das Modul schon auf den Lehrerzimmer-Rechnern liegt, brauchen Sie keinen Download und Sie können die Datei direkt starten. Eventuell hat die IT einen Link auf dem Desktop der Computer abgelegt.
 
@@ -39,4 +39,4 @@ Unter Umständen ist kein Kennwort notwendig.
 
 Im Anschluss öffnet sich die Maske zur Eingabe von Noten, Fehlstunden und weiterer Daten.
 
-Nutzen Sie hierzu das [Benutzerhandbuch des Externen SVWS Notenmoduls GradeHub](/svws_module/svws_gradehub/bh_gradehub_verwenden.md), das links im Inhaltsverzeichnis aufgeführt ist oder folgen Sie dem Link.
+Nutzen Sie hierzu das [Benutzerhandbuch des Externen SVWS Notenmoduls SVWS-GradeHub](/svws_module/svws_gradehub/bh_gradehub_verwenden.md), das links im Inhaltsverzeichnis aufgeführt ist oder folgen Sie dem Link.

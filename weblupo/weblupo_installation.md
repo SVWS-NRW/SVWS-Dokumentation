@@ -10,7 +10,7 @@ Laden Sie **SVWS-WebLuPo** auf der [Seite des MSB für Schulverwaltungssoftware]
 
 ## Technischer Hintergrund
 
-Die Nutzer erhalten von der Schule `.lp`-Dateien, die über einen Link zum WebLuPO-Client geöffnet werden können. Dieser Client wird ausschließlich im Browser ausgeführt und versendet keine Daten.
+Die Nutzer erhalten von der Schule `.lp`-Dateien, die über einen Link zum SVWS-WebLuPO-Client geöffnet werden können. Dieser Client wird ausschließlich im Browser ausgeführt und versendet keine Daten.
 
 Das bedeutet konkret, dass die Daten der Nutzer immer lokal auf ihrem PC, Tablet oder Handy bleiben und nicht auf einen Server übertragen werden. Außer beim erstmaligen Laden entsteht anschließend keine Last auf dem Server, sodass ein Server auch von mehreren Schulen genutzt werden kann.
 

@@ -2,7 +2,7 @@
 
 ## Grundlagen
 
-Falls lediglich ein einzelner Webserver bereitgestellt werden soll, der jedoch für mehrere Schulen jeweils eigene SVWS-WeNoM-Server über unterschiedliche Subdomains anbietet, kann dies mithilfe von „Virtual Hosts“ im Apache2-Webserver realisiert werden. Auf diese Weise ist es möglich, auf einer gemeinsamen technischen Plattform mehrere WebNotenManager für verschiedene Schulen bereitzustellen. Die einzelnen Instanzen sind dabei logisch voneinander getrennt und jeweils über eigene Zugänge erreichbar.
+Falls lediglich ein einzelner Webserver bereitgestellt werden soll, der jedoch für mehrere Schulen jeweils eigene SVWS-WeNoM-Server über unterschiedliche Subdomains anbietet, kann dies mithilfe von „Virtual Hosts“ im Apache2-Webserver realisiert werden. Auf diese Weise ist es möglich, auf einer gemeinsamen technischen Plattform mehrere SVWS-WebNotenManager für verschiedene Schulen bereitzustellen. Die einzelnen Instanzen sind dabei logisch voneinander getrennt und jeweils über eigene Zugänge erreichbar.
 
 Alternativ kann dieses Ziel auch durch den Einsatz von Docker umgesetzt werden.
 

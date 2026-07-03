@@ -1,6 +1,6 @@
 # Installation des SVWS-GradeHub
 
-Laden Sie den **SVWS Externen Notenmanager für Lehrkräfte GradeHub** auf der [Seite des MSB für Schulverwaltungssoftware](https://www.svws.nrw.de/) im Bereich für [Tools und Module](https://www.svws.nrw.de/svws-server-schild-nrw-3/svws-server-tools-module) herunter.
+Laden Sie den **Externen Notenmanager für Lehrkräfte SVWS-GradeHub** auf der [Seite des MSB für Schulverwaltungssoftware](https://www.svws.nrw.de/) im Bereich für [Tools und Module](https://www.svws.nrw.de/svws-server-schild-nrw-3/svws-server-tools-module) herunter.
 
 Die Dateien stehen als mehrere Optionen zur Verfügung:
 
@@ -18,7 +18,7 @@ In allen Varianten findet die Verarbeitung von Daten ausschließlich auf dem Cli
 
 Laden Sie ausführbare Datei *SVWS-GradeHub-Setup-x.x.x.exe* herunter. Die "x" stehen hierbei für die Versionsnummer.
 
-Führen Sie auf Ihrem MS-Windows-System die Datei aus. Hierbei wird ein Desktop-Symbol installiert, über das Sie SVWS GradeHub starten können.
+Führen Sie auf Ihrem MS-Windows-System die Datei aus. Hierbei wird ein Desktop-Symbol installiert, über das Sie SVWS SVWS-GradeHub starten können.
 
 >[!TIP] Installation abgeschlossen
 Fahren Sie nun mit dem **Nutzerhandbuch für Anwender** oder dem **Nutzerhandbuch für Administratoren** fort.
@@ -44,7 +44,7 @@ Fahren Sie nun mit dem **Nutzerhandbuch für Anwender** oder dem **Nutzerhandbuc
 
 Sie können die Webserver-Datei auch im Webroot-Verzeichnis eines Webservers abllegen.
 
-In diesem Fall wäre SVWS GradeHub zum Beispiel, wenn Sie den Webserver mit einer solchen Subdomain und einem solchen Ordner verwenden, über https://svws-server.schule.xyz/gradehub/ erreichbar.
+In diesem Fall wäre SVWS SVWS-GradeHub zum Beispiel, wenn Sie den Webserver mit einer solchen Subdomain und einem solchen Ordner verwenden, über https://svws-server.schule.xyz/gradehub/ erreichbar.
 
 
 Sofern Ihr Webserver nicht nur im internen Verwaltungsnetz, sondern auch über das Internet erreichbar ist, ist ein *Impressum* zu setzen.
@@ -53,7 +53,7 @@ Editieren Sie hierzu die Datei *impressum.example.js* und bennnen Sie diese in *
 
 ## Konfiguration zur Laufzeit
 
-In allen Server-Varianten lässt sich GradeHub zur Laufzeit über die *config.js* konfigurieren. Sie kann jederzeit angepasst werden.
+In allen Server-Varianten lässt sich SVWS-GradeHub zur Laufzeit über die *config.js* konfigurieren. Sie kann jederzeit angepasst werden.
 
 * **admintoolVisible** *true* oder *false*: Adminbereich ein- oder ausblenden
 * **mailServerUrl**	*URL-String* oder *leer*:	URL des Node.js-Mail-Servers (nur bei separatem Betrieb nötig)
@@ -96,7 +96,7 @@ Für den Dauerbetrieb empfiehlt sich ein Prozessmanager:
 
 ### Optionale Mail-Funktion neben Jetty
 
-Wenn GradeHub über einen statischen Webserver (z. B. den SVWS-Jetty-Server) ausgeliefert wird und der E-Mail-Versand trotzdem genutzt werden soll, kann server.js parallel auf einem anderen Port betrieben werden.
+Wenn SVWS-GradeHub über einen statischen Webserver (z. B. den SVWS-Jetty-Server) ausgeliefert wird und der E-Mail-Versand trotzdem genutzt werden soll, kann server.js parallel auf einem anderen Port betrieben werden.
 
 **Voraussetzung:** Node.js ist auf dem Server verfügbar und gradehub-*-node-server.zip wurde entpackt und gestartet (z. B. auf Port 3001, s. Option C).
 
@@ -106,7 +106,7 @@ Wenn GradeHub über einen statischen Webserver (z. B. den SVWS-Jetty-Server) aus
       mailServerUrl: 'https://svws-server.schule.de:3001',
     }
 
-Speichern Sie die Datei. Es ist kein Neustart und kein Neubau nötig. Beim nächsten Seitenaufruf erkennt GradeHub den Mail-Server automatisch, und der Button *Dateien versenden* erscheint im Adminbereich.
+Speichern Sie die Datei. Es ist kein Neustart und kein Neubau nötig. Beim nächsten Seitenaufruf erkennt SVWS-GradeHub den Mail-Server automatisch, und der Button *Dateien versenden* erscheint im Adminbereich.
 
 >[!TIP]Firewall
 >Port 3001 muss in der Firewall des Servers nach außen freigegeben sein.

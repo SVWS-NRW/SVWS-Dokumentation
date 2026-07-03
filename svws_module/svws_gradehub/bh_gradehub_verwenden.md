@@ -1,12 +1,12 @@
 # Bedienung des Externen SVWS Notenmoduls
 
-Nach der Anmeldung mit der Lehrkraft-Notendatei ist eine Übersicht über das **Externe SVWS Notenmoduls GradeHub** zu sehen:
+Nach der Anmeldung mit der Lehrkraft-Notendatei ist eine Übersicht über das **Externe SVWS Notenmoduls SVWS-GradeHub** zu sehen:
 
-![Haupteseite von GradeHub](./graphics/svws_gradehub_hauptseite.png "Die Hauptseite von GradeHub.")
+![Hauptseite von SVWS-GradeHub](./graphics/svws_gradehub_hauptseite.png "Die Hauptseite von SVWS-GradeHub.")
 
 Oben rechts können Sie in einen *hellen Modus* oder *dunklen Modus* umschalten beziehungsweise die *Systemeinstellung* übernehmen.
 
-Weiterhin findet sich hier der Knopf, mit dem Sie sich ausloggen können und GradeHub damit beenden.
+Weiterhin findet sich hier der Knopf, mit dem Sie sich ausloggen können und SVWS-GradeHub damit beenden.
 
 Auf dieser Hauptseite werden die in der Lehrkraftdatei vorhandenen *Lerngruppen* angezeigt. Lerngruppen sind die von der Lehrkraft unterrichteten Klassen oder Kurse. Mit einem Klick auf diese Lerngruppen öffnet sich die Übersicht, in der die Daten für diese Lerngruppe eingegeben werden können.
 
@@ -22,7 +22,7 @@ Hier im Beispiel werden auch Tendenznoten der Sekundarstufe I verwendet.
 
 Es können noch weitere Eintragungen in Notenfelder gemacht werden, eine Zusammenfassung hierzu finden Sie in der Fußzeile unterhalb der Schülermenge:
 
-![Hilfe zu GradeHub und Eintragungen](./graphics/svws_gradehub_leistungsdaten_hilfe.png "In der Fußzeile erhalten Sie wichtige Informationen.")
+![Hilfe zu SVWS-GradeHub und Eintragungen](./graphics/svws_gradehub_leistungsdaten_hilfe.png "In der Fußzeile erhalten Sie wichtige Informationen.")
 
 Zum einen finden sich hier Hinweise zur Bedienung:
 * Sie können mit der **Pfeil-nach-unten-Taste `↓`**  oder mit der **Enter-Taste `↵`** eine Zeile nach unten wechseln.
@@ -50,7 +50,7 @@ Hier ist unbedingt der Speichern-Knopf zu beachten: erst wenn Sie `Speichern`, w
 In den Daten selbst sehen Sie Änderungen in Grün hervorgehoben.
 
 >[!CAUTION]Ohne Speichern gehen Änderungen verloren
->Schließen Sie GradeHub nun oder loggen Sie sich aus, werden die Eintragungen verworfen.
+>Schließen Sie SVWS-GradeHub nun oder loggen Sie sich aus, werden die Eintragungen verworfen.
 >Bei einem Klick auf Logout werden Sie gewarnt, dass es noch ungespeicherte Änderungen gibt.
 
 ## Eingabe weiterer Daten
@@ -69,7 +69,7 @@ Tragen Sie fachbezogene Bemerkungen bei Wunsch direkt in das Freitextfeld **Fach
 
 Beachten Sie auch hier, dass geänderte Felder in Grün markiert werden.
 
-Soll der Floskeleditor verwendet werden, stehen alle über den SVWS-Client im Katalog Floskeln definierten Floskeln zur Verfügung. Diese werden mit in die Lehrkraft-Notendatei exportiert und können dann in GradeHub verwendet werden.
+Soll der Floskeleditor verwendet werden, stehen alle über den SVWS-Client im Katalog Floskeln definierten Floskeln zur Verfügung. Diese werden mit in die Lehrkraft-Notendatei exportiert und können dann in SVWS-GradeHub verwendet werden.
 
 Im Floskeleditor lassen sich im **Filter** links Floskeln auf (Teil-)Worte einschränken und ganz rechts gibt es einen Filter für einen **Jahrgang**. Es stehen alle Jahrgänge zur Verfügung, die in der gesamten Lehrkraft-Notendatei enthalten sind.
 
@@ -101,12 +101,12 @@ In den Felder für die Bemerkungen
 * Zeugnisbemerkungen **ZB**
 wird nach einem `Doppelklick` das jeweilige Floskelfenster geöffnet.
 
-Wie oben bei den Fachbezogenen Floskeln beschriben, können hier Freitexte eingegeben werden oder es kann auf die in der jeweiligen Floskelgruppe in der SVWS-Datenbank definierten und mit in GradeHub exportierten Floskeln zurückgegriffen werden.
+Wie oben bei den Fachbezogenen Floskeln beschriben, können hier Freitexte eingegeben werden oder es kann auf die in der jeweiligen Floskelgruppe in der SVWS-Datenbank definierten und mit in SVWS-GradeHub exportierten Floskeln zurückgegriffen werden.
 
 >[!CAUTION] Speichern
 >Achten Sie auch hier auch hier darauf, gemachte Änderungen zu speichern.
 
-Über den Schalter `Lerngruppen` oben links kehren Sie zur Hauptseite von GradeHub zurück.
+Über den Schalter `Lerngruppen` oben links kehren Sie zur Hauptseite von SVWS-GradeHub zurück.
 
 ## Speichern und Logout
 

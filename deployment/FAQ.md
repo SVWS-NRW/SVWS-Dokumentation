@@ -110,7 +110,7 @@ lassen sich dann auch neue Schemata fehlerfrei anlegen.
 ## Internetzugriff
 ### Benötigt der SVWS-Server eine Internetverbindung?
 
-Momentan muss der SVWS-Server nicht an das Internet angebunden sein. Jedoch werden in Zukunft viele Prozesse dazu kommen, die eine Internetverbindung benötigen, etwa ein WebNotenManager, Schnittstellen für SchülerOnline, digitale Zeugnisse, Updates oder Ähnliches.
+Momentan muss der SVWS-Server nicht an das Internet angebunden sein. Jedoch werden in Zukunft viele Prozesse dazu kommen, die eine Internetverbindung benötigen, etwa ein SVWS-WebNotenManager, Schnittstellen für SchülerOnline, digitale Zeugnisse, Updates oder Ähnliches.
 
 ## Containerbetrieb
 

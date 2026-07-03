@@ -35,7 +35,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: '', items: [
 							{ text: 'SVWS-WebNotenManager', link: '/wenom' },
-							{ text: 'SVWS-ENM GradeHub', link: '/svws_module/svws_gradehub' },
+							{ text: 'SVWS-GradeHub', link: '/svws_module/svws_gradehub' },
 							{ text: 'SVWS-Konferenz', link: '/svws_module/svws_konferenzuebersicht' },
 							{ text: 'SVWS-Prognos', link: '/svws_module/svws_prognos' },
 							{ text: 'SVWS-WebLuPO', link: '/weblupo' },
@@ -159,7 +159,7 @@ export default defineConfig(({ mode }) => {
 				],
 				'/svws_module/svws_gradehub' : [
 					{ text: '', items: [
-						{ text: 'SVWS GradeHub', link: '/svws_module/svws_gradehub/',  collapsed: false, items: [
+						{ text: 'SVWS-GradeHub', link: '/svws_module/svws_gradehub/',  collapsed: false, items: [
 							{ text: 'Benutzerhandbuch', link:'/svws_module/svws_gradehub/bh_starten.md', collapsed: false, items: [
 								{ text: 'Nutzerinstallation/Login', link:'/svws_module/svws_gradehub/bh_starten.md' },
 								{ text: 'Leistungsdaten eintragen', link: '/svws_module/svws_gradehub/bh_gradehub_verwenden.md' },
@@ -186,7 +186,7 @@ export default defineConfig(({ mode }) => {
 					{ text: '', items: [
 						{ text: 'SVWS-Prognos', link: '/svws_module/svws_prognos/',  collapsed: false, items: [
 							{ text: 'Verbindung mit dem Server', link: '/svws_module/svws_prognos/server_verbinden.md' },
-							{ text: 'Übersicht Prognos [i.E.]' },
+							{ text: 'ÜbersichtSVWS-Prognos [i.E.]' },
 							{ text: 'Jahrgangsprognosen [i.E.]' },
 							{ text: 'Manuelle Prognosen [i.E.]' },
 							{ text: 'Installation', link: '/svws_module/svws_prognos/installation.md' },

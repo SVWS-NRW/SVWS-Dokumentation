@@ -6,7 +6,7 @@ Zur Datenmigration mit dem AdminClient nutzen Sie das [Benutzerhandbuch zum Admi
 
 ## Download von Testdaten
 
-Für Testzwecke und Schulungen werden anonymisierte Datenbanken verschiedener Schulformen vorgehalten. Zu bestimmten Datenbanken sind auch passende WebLuPO Dateien etc. vorhanden, um sich passende Testfälle anzusehen.
+Für Testzwecke und Schulungen werden anonymisierte Datenbanken verschiedener Schulformen vorgehalten. Zu bestimmten Datenbanken sind auch passende SVWS-WebLuPO Dateien etc. vorhanden, um sich passende Testfälle anzusehen.
 
 ::: danger Anonymisiert
 Die Daten sind vollständig anonymisiert!

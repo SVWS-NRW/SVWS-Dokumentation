@@ -1,9 +1,9 @@
 # Import aus LuPO
 
-::: info LuPO und WebLuPO
+::: info LuPO und SVWS-WebLuPO
 Die hier beschriebene Funktion bezieht sich auf den Import von Beratungsdateien aus dem bisherigen Windows-Programm "LuPO".
 
-Importieren Sie WebLuPO-Daten über die **App Oberstufe**.
+Importieren Sie SVWS-WebLuPO-Daten über die **App Oberstufe**.
 :::
 
 ::: warning Gültige Schüler-IDs
@@ -16,7 +16,7 @@ Im Dateiwahldialog des Imports ist die Lehrerdatei `.lup` anzugeben, in der scho
 
 Wählen Sie, ob die importieren Laufbahndaten von Schüler ersetzt werden sollen. Üblicherweise ist der Haken zu setzen.
 
-Wurde der obere Haken angewählt, können Sie auch Daten ersetzen, die eigentlich in den WebLuPO-Dateien durch die Schule vorher eingestellt wurden. Dies betrifft:
+Wurde der obere Haken angewählt, können Sie auch Daten ersetzen, die eigentlich in den SVWS-WebLuPO-Dateien durch die Schule vorher eingestellt wurden. Dies betrifft:
 + Texte für den Beratungsbogen
 + Wählbare Fächer
 + Einstellungen zu Zusatzkursen

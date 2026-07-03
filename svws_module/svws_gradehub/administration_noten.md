@@ -1,25 +1,25 @@
-# Administration im externen SVWS Notenmodul GradeHub
+# Administration im externen SVWS Notenmodul SVWS-GradeHub
 
 Diese Anleitung beschreibt
-* die Einrichtung von GradeHub,
+* die Einrichtung von SVWS-GradeHub,
 * die Erstellung der Notendateien für Lehrkräfte sowie
 * die Vorbereitung des späteren Notenimports.
 
-GradeHub dient als Übergangslösung zur Noteneingabe, bis WeNoM flächendeckend verfügbar ist.
+SVWS-GradeHub dient als Übergangslösung zur Noteneingabe, bis WeNoM flächendeckend verfügbar ist.
 
 >[!TIP]GradeHub und der SVWS Client
 >Sie können mit dem SVWS-Client ebenfalls Lehrkraft-Notendateien erzeugen. Nutzen Sie hierfür den **Datenaustausch** in der **App Schule**. Diese Dateien sind jedoch nicht verschlüsselt.
-> Entsprechend können Sie im SVWS-Client auch keine Lehrkraft-Notendateien einlesen, die verschlüsselt mit GradeHub erzeugt wurden. Sie können aber die unverschlüsselten Lehrkraft-Notendateien, die mit dem SVWS-Client erstellt wurden, mit GradeHub ganz wie erwartet verarbeiten und im Anschluss wieder mit dem SVWS-Client einlesen.
+> Entsprechend können Sie im SVWS-Client auch keine Lehrkraft-Notendateien einlesen, die verschlüsselt mit SVWS-GradeHub erzeugt wurden. Sie können aber die unverschlüsselten Lehrkraft-Notendateien, die mit dem SVWS-Client erstellt wurden, mit SVWS-GradeHub ganz wie erwartet verarbeiten und im Anschluss wieder mit dem SVWS-Client einlesen.
 
 ## Starten im Administratormodus
 
 ![Der Administratorenbereich](./graphics/svws_gradehub_admin_login.png "GradeHub startet im Administratorenmodus.")
 
-Startet GradeHub im Modus für Administratoren, finden Sie diesen oberhalb dem normalen Bereich für Lehrkräfte. 
+Startet SVWS-GradeHub im Modus für Administratoren, finden Sie diesen oberhalb dem normalen Bereich für Lehrkräfte. 
 
 Die ausführbare Datei für MS Windows startet immer im Administratorenmodus.
 
-Um das Externe SVWS Notenmodul GradeHub in der Webserver-Variante im Modus für Adminstratoren zu starten, ist dieser in der Datei `config.js` auf `true`zu stellen und eventuelle Kommentarzeichen vor der Zeile `//` sind zu entfernen.
+Um das Externe SVWS Notenmodul SVWS-GradeHub in der Webserver-Variante im Modus für Adminstratoren zu starten, ist dieser in der Datei `config.js` auf `true`zu stellen und eventuelle Kommentarzeichen vor der Zeile `//` sind zu entfernen.
 
 ```
 window.GRADEHUB_CONFIG = {
@@ -27,15 +27,15 @@ window.GRADEHUB_CONFIG = {
 }
 ```
 
-Entsprechend können Sie GradeHub wieder in den Lehrkraft-Modus versetzen, indem Sie die Zeile `admintoolVisible: true` wieder auskommentieren oder auf `false`setzen.
+Entsprechend können Sie SVWS-GradeHub wieder in den Lehrkraft-Modus versetzen, indem Sie die Zeile `admintoolVisible: true` wieder auskommentieren oder auf `false`setzen.
 
-## Notendateien mit GradeHub erzeugen
+## Notendateien mit SVWS-GradeHub erzeugen
 
 >[!TIP]Verschlüsselung von Lehrkraft-Notendateien
->Notendateien, die Sie mit GradeHub erzeugen, sind verschlüsselt und über individuelle Passwörter gesichert.
+>Notendateien, die Sie mit SVWS-GradeHub erzeugen, sind verschlüsselt und über individuelle Passwörter gesichert.
 >Notendateien, die Sie mit dem SVWS-Client erzeugen, sind nicht verschlüsselt.
 
-Die GradeHub-Instanz, mit der Sie die Notendateien erzeugen, muss im Verwaltungsnetz gestartet werden.
+Die SVWS-GradeHub-Instanz, mit der Sie die Notendateien erzeugen, muss im Verwaltungsnetz gestartet werden.
 
 Geben Sie im Bereich **Vom SVWS-Server laden** die Daten Ihres SVWS-Servers ein. Die *Basis-URL* und der *Port* (der Teil mit Doppelpunkt und den Zahlen hinter der URL *":xxxx"*) sind im Zweifel bei Ihrer zuständigen IT zu erfragen. Standardmäßig könnte man 443 probieren.
 
@@ -43,11 +43,11 @@ Geben Sie im Bereich **Vom SVWS-Server laden** die Daten Ihres SVWS-Servers ein.
 
 ### Lehrerliste laden und einzelne Datensätze direkt bearbeiten
 
-Wenn Sie auf `Lehrerliste laden` klicken, holt sich GradeHub die Liste der Lehrkräfte vom SVWS-Server.
+Wenn Sie auf `Lehrerliste laden` klicken, holt sich SVWS-GradeHub die Liste der Lehrkräfte vom SVWS-Server.
 
 Sie können anschließend im Dropdown-Menü eine Lehrkraft auswählen und über `Vom Server laden` direkt in die Ansicht für diese Lehrkraft springen und normale Eintragungen vornehmen.
 
-Konsultieren Sie hierfür bitte das **Benutzerhandbuch für die Bedienung von GradeHub**.
+Konsultieren Sie hierfür bitte das **Benutzerhandbuch für die Bedienung von SVWS-GradeHub**.
 
 Wenn Sie in diesem Modus `Speichern` wählen, bekommen Sie die Option, eventuelle Änderungen über `Zum Server speichern` direkt in den SVWS-Server zu schreiben, ohne dass Notendateien verwendet werden.
 
@@ -55,11 +55,11 @@ Wenn Sie in diesem Modus `Speichern` wählen, bekommen Sie die Option, eventuell
 
 Sofern Sie Notendateien für alle oder ausgewählte Lehrkräfte erzeugen wollen, klicken Sie auf den roten Button `Adminbereich`.
 
-![Der Adminbereich von GradeHub](./graphics/svws_gradehub_admin_adminbereich.png "Der Adminbereich von GradeHub nach dem ersten Start.")
+![Der Adminbereich von SVWS-GradeHub](./graphics/svws_gradehub_admin_adminbereich.png "Der Adminbereich von SVWS-GradeHub nach dem ersten Start.")
 
-Der Admin-Bereich von GradeHub startet mit der Lehrkraftliste. Hier im Screenshot ist zu sehen, dass der Bereich **Passwörter generieren** ausgegraut ist und nicht zur Verfügung steht und auch keine **Notenpasswörter** erzeugt wurden.
+Der Admin-Bereich von SVWS-GradeHub startet mit der Lehrkraftliste. Hier im Screenshot ist zu sehen, dass der Bereich **Passwörter generieren** ausgegraut ist und nicht zur Verfügung steht und auch keine **Notenpasswörter** erzeugt wurden.
 
-In dieser Beispieldatenbank sind auch keine dienstlichen Emailadressen hinterlegt und werden daher nicht nach GradeHub exportiert. Wurde GradeHub für den Emailversand durch die Administration eingerichtet, werden die dienstlichen Emailadressen zum Notenversand verwendet.
+In dieser Beispieldatenbank sind auch keine dienstlichen Emailadressen hinterlegt und werden daher nicht nach SVWS-GradeHub exportiert. Wurde SVWS-GradeHub für den Emailversand durch die Administration eingerichtet, werden die dienstlichen Emailadressen zum Notenversand verwendet.
 
 Klicken Sie auf `Schlüssel generieren`. Im Anschluss sehen Sie eine Zusammenfassung wie diese hier:
 
@@ -73,14 +73,14 @@ Sie müssen nun ihre **Konfiguration** ``Speichern``.
 
 ![Der Dialog zum Speichern](./graphics/svws_gradehub_admin_konfigurationspeichern_dialog.png "Wählen Sie im Dialog ein Passwort und die Art der Speicherung.")
 
-Sie müssen die Schlüssel und die Konfiguration von GradeHub speichern. Es stehen die Optionen zur Verfügung, die Konfiguration an den Server zu senden. Klicken Sie hierzu auf `Auf Server Speichern`. Das Passwort, das Sie hier vergeben, müssen Sie für die Schule sichern und an einem geeigneten Ort digital oder physisch aufbewahren.
+Sie müssen die Schlüssel und die Konfiguration von SVWS-GradeHub speichern. Es stehen die Optionen zur Verfügung, die Konfiguration an den Server zu senden. Klicken Sie hierzu auf `Auf Server Speichern`. Das Passwort, das Sie hier vergeben, müssen Sie für die Schule sichern und an einem geeigneten Ort digital oder physisch aufbewahren.
 
-Wenn Sie GradeHub unabhängig vom SVWS-Server im Admin-Modus betreiben möchten, können Sie die Konfigurationsdatei auch `Als Datei herunterladen`. Hierbei wird eine Datei namens `gradehub-config.ghd` erzeugt, für die Sie einen sicheren Speicherort wählen. Auch hier ist ein Passwort zu vergeben.
+Wenn Sie SVWS-GradeHub unabhängig vom SVWS-Server im Admin-Modus betreiben möchten, können Sie die Konfigurationsdatei auch `Als Datei herunterladen`. Hierbei wird eine Datei namens `gradehub-config.ghd` erzeugt, für die Sie einen sicheren Speicherort wählen. Auch hier ist ein Passwort zu vergeben.
 
 >[!WARNING] Bewahren Sie die Konfigurationsdatei auf
 >Die Konfigurationsdatei (gradehub-config.ghd) muss sorgfältig aufbewahrt werden. Sie wird für den Import der von den Lehrkräften zurückgegebenen Notendateien benötigt.
 
-Um GradeHub wieder mit existierenden Schlüsseln zu versehen, klicken Sie auf `Laden`, geben Sie das **Kennwort** ein klicken Sie bei aktiver Server-Verbindung auf `Vom Server laden` oder bei Verwendung der Datei auf `Aus Datei laden`und wählen Sie dann die gradehub-config.ghd aus.
+Um SVWS-GradeHub wieder mit existierenden Schlüsseln zu versehen, klicken Sie auf `Laden`, geben Sie das **Kennwort** ein klicken Sie bei aktiver Server-Verbindung auf `Vom Server laden` oder bei Verwendung der Datei auf `Aus Datei laden`und wählen Sie dann die gradehub-config.ghd aus.
 
 ### Passwörter generieren
 
