@@ -42,14 +42,14 @@ Fahren Sie nun mit dem **Nutzerhandbuch für Anwender** oder dem **Nutzerhandbuc
 
 ## Webserver-Variante 
 
-Sie können die Webserver-Datei auch im Webroot-Verzeichnis eines Webservers abllegen.
+Sie können die Webserver-Datei auch im Webroot-Verzeichnis eines Webservers ablegen.
 
 In diesem Fall wäre SVWS SVWS-GradeHub zum Beispiel, wenn Sie den Webserver mit einer solchen Subdomain und einem solchen Ordner verwenden, über https://svws-server.schule.xyz/gradehub/ erreichbar.
 
 
 Sofern Ihr Webserver nicht nur im internen Verwaltungsnetz, sondern auch über das Internet erreichbar ist, ist ein *Impressum* zu setzen.
 
-Editieren Sie hierzu die Datei *impressum.example.js* und bennnen Sie diese in *impressum.js* um.
+Editieren Sie hierzu die Datei *impressum.example.js* und benennen Sie diese in *impressum.js* um.
 
 ## Konfiguration zur Laufzeit
 
