@@ -5,7 +5,7 @@ bekannte Beispiele von Migrationsfehlern inklusive Lösungsansätzen.
 
 ## Fehlender Primärschlüssel
 
-Insbesondere älteren Access-Datenbanken können Tabellen ohne Primärschlüssel enthalten. In diesem Fall bricht die Migration mit einem Fehler ab, da die SVWS-Datenbank für alle Tabellen einen Primärschlüssel benötigt.
+Insbesondere ältere Access-Datenbanken können Tabellen ohne Primärschlüssel enthalten. In diesem Fall bricht die Migration mit einem Fehler ab, da die SVWS-Datenbank für alle Tabellen einen Primärschlüssel benötigt.
 
 Mithilfe der Log-Datei kann man die fehlerhafte Tabelle identifizieren. In diesem Fall war es die Tabelle *EigeneSchule_Schulformen*:
 ![primaryKey.png](./graphics/primaryKey.png)

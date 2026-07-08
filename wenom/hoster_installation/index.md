@@ -4,9 +4,9 @@ In diesem Bereich finden sich Beispiele, wie die Einrichtung des SVWS-WeNoM-Serv
 
 ::: warning Keine Hoster-Empfehlungen!
 
-Die folgenden Beispiele stellen weder Empfehlungen für bestimmte Hoster dar noch sprechen sie gegen andere Anbieter. Die aufgelisteten Hoster sind ausschließlich alphabetisch sortiert.
+Die folgenden Beispiele stellen weder Empfehlungen für bestimmte Hoster dar, noch sprechen sie gegen andere Anbieter. Die aufgelisteten Hoster sind ausschließlich alphabetisch sortiert.
 
-Bitte prüfen Sie eigenständig, ob ein gewählter Hoster Ihre Anforderungen sowie die geltenden Rahmenbedingungen hinsichtlich Sicherheit und Datenschutz erfüllt.
+Bitte prüfen Sie eigenständig, ob ein gewählter Hoster Ihren Anforderungen sowie die geltenden Rahmenbedingungen hinsichtlich Sicherheit und Datenschutz erfüllt.
 
 Für die Aktualität der dargestellten Einstellungen, Abläufe und Benutzeroberflächen der Hoster kann keine Gewähr übernommen werden.
 
@@ -20,5 +20,3 @@ Die Voraussetzungen für den Betrieb von WeNoM sind:
 + Sie besitzen einen sFTP-Zugang zum Dateisystem des Webhostings. Über diesen werden die WeNoM-Dateien auf den Server übertragen.
 + Optional: Sie verwenden eine eigene Subdomain, z. B. wenom.meine-schuladresse.xyz.
 + Sie benötigen ein SSL-/TLS-Zertifikat für die verschlüsselte Verbindung über https://. Viele Hoster stellen entsprechende Zertifikate kostenfrei zur Verfügung.
-
-In den Hosterspezifischen Anleitungen

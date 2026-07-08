@@ -1,8 +1,8 @@
 # Schulungsserver
 
-## technischen Rahmenbedingungen
+## Technische Rahmenbedingungen
 
-Grundsätzlich ist zwischen Präsenz- und Onlineschulungen zu unterscheiden. Der wesentliche Unterschied besteht darin, dass sich die Schulungsteilnehmenden entweder innerhalb eines geschützten Netzwerks oder außerhalb über das Internet befinden.
+Grundsätzlich ist zwischen Präsenz- und Onlineschulungen zu unterscheiden. Der wesentliche Unterschied besteht darin, dass sich die Schulungsteilnehmenden entweder innerhalb eines geschützten Netzwerks befinden oder von außerhalb über das Internet zugreifen.
 
 Dies entspricht dem Zugriff auf den SVWS-Server aus dem Verwaltungsnetz einer Schule bzw. von außerhalb. Für Onlineschulungen muss daher ein sicherer Zugang bereitgestellt werden.
 

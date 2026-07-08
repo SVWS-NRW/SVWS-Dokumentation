@@ -26,7 +26,7 @@ wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v0.x.x/linux-inst
 Entpacken der SVWS-Serverdateien:
 
 ```bash
-tar xzf ./linux-installer-0.7.8.tar.gz
+tar xzf ./linux-installer-x.x.x.tar.gz
 ```
 
 Erstelle Verzeichnisse:
@@ -182,9 +182,9 @@ Bei dieser Konstellation greift der SVWS-Server auf einen externen MariaDB-Serve
 ```bash
 #!/bin/bash
 
-sysstemctl stop svws
+systemctl stop svws
 
-wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v1.0.11/linux-installer-1.0.11.tar.gz
+wget https://github.com/SVWS-NRW/SVWS-Server/releases/latest/linux-installer-x.x.x.tar.gz
 tar xzf ./linux-installer-*
 
 rm -rf /opt/app/svws/app
@@ -224,7 +224,7 @@ dnf -y install nmap
 
 # Entpacken der SVWS-Serverdateien - ggf die Versionsnummer anpassen.
 
-wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v1.0.11/linux-installer-1.0.11.tar.gz
+wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/vx.x.x/linux-installer-x.x.x.tar.gz
 tar xzf ./linux-installer-*
 
 
