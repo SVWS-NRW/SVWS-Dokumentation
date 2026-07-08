@@ -101,6 +101,6 @@ Die Daten sind vollständig anonymisiert!
 
 ## bekannte Fehlerquellen
 
-In einigen Situation kann eine Migration misslingen. 
+In einigen Situation kann eine Migration misslingen.
 
 Hier einige [Beispiele](./Fehlerquellen.md) und wie man damit umgehen kann.

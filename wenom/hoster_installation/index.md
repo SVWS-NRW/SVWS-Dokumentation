@@ -21,4 +21,4 @@ Die Voraussetzungen für den Betrieb von WeNoM sind:
 + Optional: Sie verwenden eine eigene Subdomain, z. B. wenom.meine-schuladresse.xyz.
 + Sie benötigen ein SSL-/TLS-Zertifikat für die verschlüsselte Verbindung über https://. Viele Hoster stellen entsprechende Zertifikate kostenfrei zur Verfügung.
 
-In den Hosterspezifischen Anleitungen 
+In den Hosterspezifischen Anleitungen
