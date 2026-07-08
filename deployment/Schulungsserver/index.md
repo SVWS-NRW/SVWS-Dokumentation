@@ -1,15 +1,19 @@
 # Schulungsserver
 
-## Übersicht über die technischen Rahmenbedingungen
+## Technische Rahmenbedingungen
 
-In diesem Bereich werden mögliche Lösungen für Schulumgsumgebungen skizziert.
+Grundsätzlich ist zwischen Präsenz- und Onlineschulungen zu unterscheiden. Der wesentliche Unterschied besteht darin, dass sich die Schulungsteilnehmenden entweder innerhalb eines geschützten Netzwerks befinden oder von außerhalb über das Internet zugreifen.
 
-Grundsätzlich muss unterschieden werden zwischen Präsenzschulungen und Online-Schulungen. Der wesentliche Unterschied besteht darin, dass sich die Schulungsteilnehmer innerhalb oder außerhalb eines gemeinsam mit dem SVWS-Server genutzen, geschützten Netzes befinden.
+Dies entspricht dem Zugriff auf den SVWS-Server aus dem Verwaltungsnetz einer Schule bzw. von außerhalb. Für Onlineschulungen muss daher ein sicherer Zugang bereitgestellt werden.
 
-Diese beiden Szenarien sind vergleichbar mit der Anforderung einerseits innerhalb des Verwaltungsnetzes einer Schule oder andererseits außerhalb, über das Internet, am SVWS-Server arbeiten zu können. Für die Online-Schulungen muss also ein sicherer Zugang gewähleistet werden.
+Der WebClient des SVWS-Servers ist über HTTPS (Port 443) ausreichend abgesichert. Für Schulungen mit SchILD-NRW 3 werden zusätzlich eine direkte Verbindung zur MariaDB-Datenbank (Port 3306) sowie eine Windows-Installation oder ein Remotedesktop-Zugang benötigt. Dadurch ergeben sich höhere Anforderungen an die Sicherheits- und Netzarchitektur.
 
-Der WebClient des SVWS-Servers ist dabei über Port 443 mit dem HTTPS-Protokoll hinreichend abgesichert. Für eine zusätzliche SchILD-NRW 3-Schulung wird jedoch noch eine direkte Verbindung zur MariaDB-Datenbank, in der Regel über Port 3306, und eine Windows-Installation bzw. ein Zugang per Remotedesktop-Verbindung zu einem Windows Schulungsrechner benötigt. Dies stellt wesentlich höhere Anforderungen an die Sicherheit und Netzarchitektur.
+## Schulungsserver - Beispiele
 
-+ [SchulungsClient](SchulungsClient/index.md) - Ein schneller Weg zu einem einzelnen Schulungsrechner
-+ [Proxmox](Proxmox_Schulungsserver/index.md) - Online-Schulungen oder Präsenzschulungen
-+ [Schulungsserver per Docker](Docker_Schulungsserver/index.md) - Ressourcenschonende, cloudfähige Lösung
+Beispiele zur Umsetzung eines Schulungsservers hierzu finden Sie auf den Github Seiten ["SVWS-Schulungsunterlagen"](https://svws-nrw.github.io/Schulungsunterlagen/) der Beziksregierungen
+
+Hier finden Sie die folgenden Beispiele:
+
++ Virualbox Schulungsclient - Ein schneller Weg zu einem einzelnen Schulungsrechner
++ Proxmox Schulungsserver - Online-Schulungen oder Präsenzschulungen
++ Docker Schulungsserver - Ressourcenschonende, cloudfähige Lösung

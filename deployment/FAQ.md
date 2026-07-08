@@ -21,14 +21,14 @@ Die Schamata können über eigene Schema-Admin-Zugänge mit eigenen Passwörtern
 
 Abhängig von den lokalen Gegebenheiten, kann das sinnvoll sein.
 
-## SVWS-Server / SchILD3
+## SVWS-Server / SchILD-NRW 3
 ### Was bedeuten die Begriffe SVWS-Server und SchILD-NRW 3?
 
 Der *SVWS-Server* ist ein in Java geschriebener Server, der eine REST-API und einen WebClient zur Verfügung stellt.
 
 Der *SVWS-Client*, mit dem sich die Inhalte über eine Weboberfläche aufrufen lassen, hat zunächst die Funktionalitäten von Kurs42 und Lupo übernommen, da diese Programme die neue Datenbankstruktur nicht mehr unterstützen. Nach und nach werden weitere Features hinzugefügt.
 
-Neben dem WebClient ist auch der *SVWS-AdminClient* zur Verwaltung der enthaltenen SVWS-Schemata enthalten.
+Neben dem SVWS-Client ist auch der *SVWS-AdminClient* zur Verwaltung der enthaltenen SVWS-Schemata enthalten.
 
 Der Server muss zuerst nur von Schulformen mit gymnasialer Oberstufe genutzt werden, wenn Blockung und Klausurterminplanung gewünscht sind. Ab dem Schuljahr 2027 wird auch die Statistik über den SVWS-Server durchgeführt, ab diesem Zeitpunkt müssen auch alle anderen Schulen in NRW den SVWS-Server verwenden.
 
@@ -41,7 +41,7 @@ SchILD-NRW 3 wird in den kommenden Jahren auch weiter genutzt werden müssen.
 ## Browserunterstützung
 ### Welche Browser werden vom SVWS-Client unterstützt?
 
-Der WebClient wird mit Firefox, Chrome, Edge und Safari getestet.
+Der SVWS-Client wird mit Firefox, Chrome, Edge und Safari getestet.
 
 ## Zugriffsberechtigungen
 ### Wer benötigt Zugriff auf den SVWS-Client?
@@ -88,9 +88,9 @@ Das kann individuell konfiguriert werden. Beide Varianten sind möglich.
 
 ## Fehler beim Erstellen der Trigger
 
-Bei aktiviertem Binary Logging dürfen Trigger und Funktionen in MariaDB standardmäßig nicht ohne zusätzliche Freigabe erstellt werden. Ist die Option log_bin_trust_function_creators für den verwendeten MariaDB-Benutzer bzw. Server nicht gesetzt, bricht das Anlegen eines neuen SVWS-MariaDB-Schemas beim Erstellen der Trigger ab. Ursache ist Fehler 1419, durch den MariaDB das Anlegen der Trigger blockiert.
+Bei aktiviertem Binary Logging dürfen Trigger und Funktionen in MariaDB standardmäßig nicht ohne zusätzliche Freigabe erstellt werden. Ist die Option `log_bin_trust_function_creators` für den verwendeten MariaDB-Benutzer bzw. Server nicht gesetzt, bricht das Anlegen eines neuen SVWS-MariaDB-Schemas beim Erstellen der Trigger ab. Ursache ist Fehler 1419, durch den MariaDB das Anlegen der Trigger blockiert.
 
-Zur Behebung wird der Parameter log_bin_trust_function_creators auf dem Datenbankserver aktiviert. Dadurch ist das Erstellen der benötigten Trigger erlaubt. 
+Zur Behebung wird der Parameter `log_bin_trust_function_creators` auf dem Datenbankserver aktiviert. Dadurch ist das Erstellen der benötigten Trigger erlaubt.
 
 ## MariaDB-Cluster
 ### Was ist beim Betrieb mit einem MariaDB-Cluster zu beachten?

@@ -26,7 +26,7 @@ wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/v0.x.x/linux-inst
 Entpacken der SVWS-Serverdateien:
 
 ```bash
-tar xzf ./linux-installer-0.7.8.tar.gz
+tar xzf ./linux-installer-x.x.x.tar.gz
 ```
 
 Erstelle Verzeichnisse:
@@ -177,9 +177,146 @@ Benutzer auf der MariaDB einrichten:
 
 Bei dieser Konstellation greift der SVWS-Server auf einen externen MariaDB-Server zu. Hierfür wird dort ein Benutzer benötigt, der Schemata anlegen/löschen und auch von außerhalb zugreifen darf. Das Recht, Benutzer anzulegen, die weniger Rechte haben, wird auch benötigt. Sollte der Benutzer keine Rechte haben, Schemata anzulegen oder zu löschen, so muss dies vorher vom Datenbankadministrator gemacht werden.
 
+## Update SVWS-Server
 
-## Download des Scripts mit den Befehlen
+```bash
+#!/bin/bash
 
-[Redhat Installer Skript](redhat_installer.md)
+systemctl stop svws
 
-[Redhat Update Skript](redhat_update.md)
+wget https://github.com/SVWS-NRW/SVWS-Server/releases/latest/linux-installer-x.x.x.tar.gz
+tar xzf ./linux-installer-*
+
+rm -rf /opt/app/svws/app
+rm -rf /opt/app/svws/client
+rm -rf /opt/app/svws/adminclient
+
+
+cp -r ./svws/app /opt/app/svws/
+unzip -d /opt/app/svws/client  ./svws/app/SVWS-Client.zip
+unzip -d /opt/app/svws/adminclient  ./svws/app/SVWS-Admin-Client.zip
+
+chown -R svws:svws /opt/app/svws
+
+sysstemctl start svws
+sysstemctl status svws
+```
+
+## Zusammenfassung Installation
+
+Alle Schritte komprimiert in einem Skript:
+
+```bash
+#!/bin/bash
+
+## Dieses Skript installiert die Version 1.0.11 des SVWS-Server - ggf die Versionsnummer anpassen.
+
+# Installiere benötigte Software und hilfreiche Tools
+
+dnf install java-21-openjdk-devel.x86_64
+java --version
+
+dnf -y install unzip
+dnf -y install tar
+dnf -y install wget
+dnf -y install net-tools
+dnf -y install nmap
+
+# Entpacken der SVWS-Serverdateien - ggf die Versionsnummer anpassen.
+
+wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/vx.x.x/linux-installer-x.x.x.tar.gz
+tar xzf ./linux-installer-*
+
+
+# Erstelle Verzeichnisse
+
+mkdir -p /opt/app/svws
+mkdir /opt/app/svws/client
+mkdir /opt/app/svws/admin
+mkdir /opt/app/svws/conf
+mkdir -p /etc/app/svws/conf/
+
+
+# Kopiere App, Konfigurationen und Zertifikate
+
+cp -r ./svws/app /opt/app/svws/
+cp -r ./svws/conf /etc/app/svws/conf/
+
+# Entpacke die Clients in die entsprechenden Verzeichnisse
+
+unzip -d /opt/app/svws/client  ./svws/app/SVWS-Client.zip
+unzip -d /opt/app/svws/adminclient  ./svws/app/SVWS-Admin-Client.zip
+
+# Erstelle den SVWS-Keystore
+
+keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test, S=test, C=test" -ext "SAN=DNS:localhost,IP:127.0.0.1,IP:10.1.0.1,DNS:meinserver,DNS:meinserver.mydomain.de" -keystore /etc/app/svws/conf/keystore -storepass test123 -keypass test123  -keyalg RSA
+
+# Erstelle svwsconfig.json im conf-Verzeichnis
+
+echo '{
+  "EnableClientProtection" : null,
+  "DisableDBRootAccess" : false,
+  "DisableAutoUpdates" : false,
+  "UseHTTPDefaultv11" : false,
+  "PortHTTPS" : "8443",
+  "UseCORSHeader" : false,
+  "TempPath" : "tmp",
+  "TLSKeyAlias" : "",
+  "TLSKeystorePath" : "/etc/app/svws/conf",
+  "TLSKeystorePassword" : "test123",
+  "ClientPath" : "./client",
+  "AdminClientPath" : "./admin",
+  "LoggingEnabled" : true,
+  "LoggingPath" : "logs",
+  "ServerMode" : "stable",
+  "DBKonfiguration" : {
+    "dbms" : "MARIA_DB",
+    "location" : "mariadbserver:port",
+    "defaultschema" : "",
+    "SchemaKonfiguration" : []
+  }
+}' > /etc/app/svws/conf/svwsconfig.json
+
+# Erstelle einen symbolischen Link zur Konfigurationsdatei
+
+ln -s /etc/app/svws/conf/svwsconfig.json /opt/app/svws/svwsconfig.json
+
+# Erstelle Service-Datei für Systemd-Service
+
+echo "[Unit]
+Description=SVWS-Server
+
+[Service]
+WorkingDirectory=/opt/app/svws
+ExecStart=java -cp "svws-server-app-*.jar:/opt/app/svws/app/*:/opt/app/svws/app/lib/*" de.svws_nrw.server.jetty.Main
+User=svws
+Type=simple
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target" > /etc/systemd/system/svws.service
+
+# Einrichten des SVWS-Service als Systemd-Service
+
+# Erstellen der Gruppe "svws" und des Nutzers "svws" ohne Login Shell (-s /bin/false)
+
+# Der Nutzer wird der Gruppe "svws" zugewiesen und besitzt Lese-/Schreibzugriff auf die relevanten Verzeichnisse
+
+/usr/sbin/groupadd -r svws
+/usr/sbin/useradd -r -s /bin/false -g svws svws
+
+chown -R svws:svws /opt/app/svws
+chown -R svws:svws /etc/app/svws/
+
+# Aktualisieren der Systemd-Konfigurationen und Starten des Services
+# Der Service wird automatisch gestartet, sobald das System hochfährt (systemctl enable)
+
+systemctl daemon-reload
+systemctl start svws.service
+systemctl enable svws.service
+
+# Überprüfen des Status des Services
+
+systemctl status svws.service
+```
