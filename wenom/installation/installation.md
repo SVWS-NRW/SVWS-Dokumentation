@@ -1,6 +1,6 @@
 # SVWS-WeNoM - Installationsanleitung
 
-## Technische Übersicht zum SVWS-WeNoM
+## Technische Übersicht
 
 ![Informationsverbund SVWS-Server und WeNoM](./graphics/SVWS-Wenom-Verbund.png "Übersicht über die Datensynchronisation SVWS-Server und WeNoM.")
 
@@ -16,13 +16,7 @@ Dies alles liegt in der Regel bei den gängigen [Webhostern](../hoster_installat
 
 Alternativ können Sie die Einrichtung des Webservers unter der Artikel "[eigener  Webserver](./installation_webserver.md)" nachlesen.
 
-Der SVWS-WeNoM ist über eine **eigene Subdomain** aufzurufen. Richten Sie sich also *wenom.*, *noten.* oder in einer anderen Wunschvariante als Subdomain ein.
-
-::: tip Standard: Trennung von SVWS-Server und Webserver mit SVWS-WeNoM
-Der Screenshot oben bildet den Standardfall ab, dass zum einen der SVWS-Server mit dem SVWS-Client im geschlossenen Verwaltungsnetz laufen und zum anderen der SVWS-WebNotenManager auf einem davon vollständig unabhängigen - externen - Webserver aufgesetzt wird.
-
-Sollen hingegen ein *Webserver mit SVWS-WeNoM* auf dem gleichen virtuellen oder physischen Server wie der *SVWS-Server/SVWS-Client* im Verwaltungsnetz laufen, müssen entweder der Standardport des SVWS-Clients oder des Webservers angepasst werden. In beiden Fällen ist der Standard-Port 443 und daher käme es beim Betrieb auf dem gleichen Server zu einer Kollision.
-:::
+Der SVWS-WeNoM ist über eine **eigene (Sub-)Domain** aufzurufen. Richten Sie sich hierfür zum Beispiel *wenom.MeineDomain.de*, *noten.MeineSchule.de* ein.
 
 ## Download der SVWS-WeNoM Programmdateien
 
@@ -34,7 +28,8 @@ Unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVW
 
 + Entpacken aller Dateinen aus der in das `/html` Verzeichnis des Webservers
 + Freigabe der Ordner `app`, `db` und `public` mit entsprechenden Rechten
-+ Ändern des `DocumentRoot` im Apache in `/var/www/html/public` (siehe unten)
++ Stellen Sie die (Sub-)Domain so ein, dass sie auf das Verzeichnis ./public zeigt.  
+Nutzen Sie dazu ggf. die Anleitung Ihres Hosters oder die Anleitung für einen eigenen Webserver.
 
 ![Filezilla upload](./graphics/filezilla_upload.png)
 
