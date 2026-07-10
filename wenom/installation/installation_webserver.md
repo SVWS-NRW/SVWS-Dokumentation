@@ -34,6 +34,9 @@ apt install php php-fpm php-sqlite3 -y
 a2enmod proxy_fcgi setenvif rewrite headers ssl
 a2enconf php8.4-fpm
 a2enmod security2
+# optional: verschärfte Sicherheitseinstellungen
+# apt install modsecurity-crs
+# ln -s /usr/share/modsecurity-crs /etc/modsecurity/crs
 systemctl reload apache2.service 
 systemctl reload systemctl reload apache2.service 
 ```
