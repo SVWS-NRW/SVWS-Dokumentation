@@ -41,7 +41,8 @@ Im Rahmen von Migrationen realer Datenbanken sind bereits folgende Fehlerbilder 
 
 Die Migration bricht nach *Aktualisierung auf Revision 2* ab. Die zugehörige Log-Datei zeigt folgenden Fehler an:
 
-```  - Setze die DB-Revision auf 1
+``` 
+ - Setze die DB-Revision auf 1
     * Aktualisiere auf Revision 2
       - Verwerfe: 0 Trigger
       - Verwerfe: 0 Indizes
