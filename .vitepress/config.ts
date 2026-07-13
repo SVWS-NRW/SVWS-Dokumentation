@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
 	return {
 		// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 		base: env.BASE === undefined ? '/SVWS-Dokumentation/' : env.BASE,
-		title: 'SVWS Dokumentation',
+		title: 'SVWS-Dokumentation',
 		description: 'Dokumentation SVWS-Server NRW, Installation und Entwicklung',
 		lastUpdated: true,
 		themeConfig: {
