@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
-  <!--Created by yEd 3.25.1-->
+  <!--Created by yEd 3.25-->
   <key attr.name="Beschreibung" attr.type="string" for="graph" id="d0"/>
   <key for="port" id="d1" yfiles.type="portgraphics"/>
   <key for="port" id="d2" yfiles.type="portgeometry"/>
@@ -38,7 +38,7 @@
           <y:Geometry height="40.0" width="137.0" x="430.2976390335438" y="430.80920781991483"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="32" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="47.58408737182617" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="204.0323944091797" x="-82.5481292398764" xml:space="preserve" y="-6.9295230469882085">SVWS-Server<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="-0.09541655393050441" labelRatioY="-0.35437310181363113" nodeRatioX="-0.5" nodeRatioY="-0.5" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="32" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="43.203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="208.53125" x="-84.3682917381795" xml:space="preserve" y="-6.291537085707944">SVWS-Server<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="-0.09541655393050441" labelRatioY="-0.35437310181363113" nodeRatioX="-0.5" nodeRatioY="-0.5" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -70,35 +70,34 @@
           <y:Geometry height="92.10501072331056" width="149.87893959503452" x="157.24787958085403" y="341.2467250612942"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="25.792043685913086" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" width="99.52020263671875" x="25.179368479157887" xml:space="preserve" y="-29.792043685913086">SVWS-Client</y:NodeLabel>
-          <y:Image alphaImage="true" href="file:/home/klein/Schreibtisch/SVWS-Client.png" refid="3"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" width="100.890625" x="24.494157297517262" xml:space="preserve" y="-27.6015625">SVWS-Client</y:NodeLabel>
+          <y:Image alphaImage="true" refid="3"/>
         </y:ImageNode>
       </data>
     </node>
     <node id="n5">
       <data key="d6">
         <y:ImageNode>
-          <y:Geometry height="92.10501072331056" width="149.87893959503452" x="611.8406151589672" y="391.43762161301834"/>
+          <y:Geometry height="92.10501072331056" width="149.87893959503452" x="611.8406151589672" y="343.9474946383447"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="25.792043685913086" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.16024780273438" x="16.859345896150103" xml:space="preserve" y="-29.792043685913086">SchILD-NRW 3</y:NodeLabel>
-          <y:Image alphaImage="true" href="file:/home/klein/Schreibtisch/Schild-NRW3.png" refid="4"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.0" x="16.93946979751729" xml:space="preserve" y="-27.6015625">SchILD-NRW 3</y:NodeLabel>
+          <y:Image alphaImage="true" refid="4"/>
         </y:ImageNode>
       </data>
     </node>
     <node id="n6">
       <data key="d6">
         <y:ImageNode>
-          <y:Geometry height="92.10501072331056" width="149.87893959503452" x="182.49575916170807" y="605.5792432260366"/>
+          <y:Geometry height="92.10501072331056" width="149.87893959503452" x="157.24787958085403" y="605.5792432260366"/>
           <y:Fill color="#CCCCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="25.792043685913086" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" width="94.56019592285156" x="27.65937183609148" xml:space="preserve" y="-29.792043685913086">SVWS-Tools</y:NodeLabel>
-          <y:Image alphaImage="true" href="file:/home/klein/Schreibtisch/SVWS-tools.png" refid="5"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="n" textColor="#000000" verticalTextPosition="bottom" visible="true" width="99.109375" x="25.384782297517262" xml:space="preserve" y="-27.6015625">SVWS-Tools</y:NodeLabel>
+          <y:Image alphaImage="true" refid="5"/>
         </y:ImageNode>
       </data>
     </node>
     <edge id="e0" source="n5" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -109,7 +108,6 @@
       </data>
     </edge>
     <edge id="e1" source="n5" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -122,7 +120,6 @@
       </data>
     </edge>
     <edge id="e2" source="n4" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -133,7 +130,6 @@
       </data>
     </edge>
     <edge id="e3" source="n5" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -144,11 +140,11 @@
       </data>
     </edge>
     <edge id="e4" source="n4" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="18.7404607249054" sy="26.37466964437902" tx="0.0" ty="0.0">
+          <y:Path sx="18.7404607249054" sy="26.37466964437902" tx="-49.969131005957706" ty="-3.0663704130182623">
             <y:Point x="250.9278101032767" y="522.8583112681906"/>
+            <y:Point x="351.6878015999999" y="522.8583112681906"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -157,7 +153,6 @@
       </data>
     </edge>
     <edge id="e5" source="n5" target="n3">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="32.15425883550358" sy="46.06964637992655" tx="0.0" ty="0.0">
@@ -170,7 +165,6 @@
       </data>
     </edge>
     <edge id="e6" source="n6" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -312,7 +306,7 @@ lP0AAGA/QKoDCNzl+4f9AKMPgP0APBwa7AMAAAAAAABISQDsB0jAB0HsB0hxAC72A6Q2gPhHwQF4&#13
 NNyddPYDJAlAQBDwZVDyAATiyyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&#13;
 AAAAAAAAAAAAAAAAAMCYAZDFfoCEPhzKfgAAsB8g1QEE7vL9w36A0Qfwf+8H+Bv2wX4s8PYERwAA&#13;
 AABJRU5ErkJggg==</y:Resource>
-      <y:Resource id="3" type="sun.awt.image.ToolkitImage" xml:space="preserve">iVBORw0KGgoAAAANSUhEUgAABQcAAALfCAYAAADc93T6AACAAElEQVR4Xtzd5Xud15n3/b64Z6bc&#13;
+      <y:Resource id="3" type="java.awt.image.BufferedImage" xml:space="preserve">iVBORw0KGgoAAAANSUhEUgAABQcAAALfCAYAAADc93T6AACAAElEQVR4Xtzd5Xud15n3/b64Z6bc&#13;
 pE3SNm0TC8wosGSWxczSFjMzMzMbxGDJtsCyzBROGmqg6Uxnnr/o96zzXGtd+9pbW5bSydwz97z4&#13;
 HtsC24klWd6f4zzX+tHFul5coGp7cK6mG2erOuFd0Y7TZa3wKG2BR0kz3EVuxU04VdSIk4UNOFFQ&#13;
 j2N5dTiaW4PDOdU4mFWJA5kV2J9RDtf0MjillODtpCK8lVSIP1oK8MfEfLyZkIffxeXgt7HZeD06&#13;
@@ -19430,7 +19424,7 @@ gyVYB/i7+6Cjmzf82rSHbxsvdHD1go+rJ7xdzBFJQlfreBFCDvJQEyvpQSEdNRnYxtv0HPc+ZDHJ&#13
 Zc6cYlT4unO/QV/40L4sRTanhhh0r7usWJQo876Sg/UVhJYSUMCJQgv+L8jBMJ/g+sPirx6E+4Ui&#13;
 wi+sToQg9A39XfmXy8FaMEpBM/xCTOnBjjUFoVZWrAnB4IBQAUtBloOB/qGCAN6n1wcFdkIwy0El&#13;
 CINpjRQcrCUIJXpqkP5Mk4P/DbGzZc8an6JlAAAAAElFTkSuQmCC</y:Resource>
-      <y:Resource id="4" type="sun.awt.image.ToolkitImage" xml:space="preserve">iVBORw0KGgoAAAANSUhEUgAAAxkAAAHFCAYAAACegDSCAACAAElEQVR4Xuy9B5wUx5n3P351dz6d&#13;
+      <y:Resource id="4" type="java.awt.image.BufferedImage" xml:space="preserve">iVBORw0KGgoAAAANSUhEUgAAAxkAAAHFCAYAAACegDSCAACAAElEQVR4Xuy9B5wUx5n3P351dz6d&#13;
 fb7z2X+9DmdLr2XpLJ0lW7YsWbItS7YsEQQICSSCBEIEgUBCATYACyxsApawu7DAEnaBZReWnHfJ&#13;
 OecochZBOVhZfv791EwPPVXdNT07efdXn89XWurprq6q7pl5fl3h8Xge7U0AAAAAAAAAEDGUDAAA&#13;
 AAAAAAAIByUDAAAAAAAAAMJByQAAAAAAAACAcFAyAAAAAAAAACAcxH/a5dCtrxQJbulZRDf3LBT8&#13;
@@ -20524,7 +20518,7 @@ AOLBdQAAAAAAAAAA4sF1AAAAAAAAAADiwXUAAAAAAAAAAOLBdQAAAAAAAAAA4sF1AAAAAAAAAADi&#13
 wXUAAAAAAAAAAOLBdQAAAAAAAAAA4sF1AAAAAAAAAADiwXUAAAAAAAAAAOLBdQAAAAAAAAAA4sF1&#13;
 AAAAAAAAAADiwXUAAAAAAAAAAOLBdQAAAAAAAAAA4sF1AAAAAAAAAADi4P8Deww+bWSd0zcAAAAA&#13;
 SUVORK5CYII=</y:Resource>
-      <y:Resource id="5" type="sun.awt.image.ToolkitImage" xml:space="preserve">iVBORw0KGgoAAAANSUhEUgAABWQAAAMVCAYAAADwI/3vAACAAElEQVR4XuyddXwU5/q3ec/v9FSQ&#13;
+      <y:Resource id="5" type="java.awt.image.BufferedImage" xml:space="preserve">iVBORw0KGgoAAAANSUhEUgAABWQAAAMVCAYAAADwI/3vAACAAElEQVR4XuyddXwU5/q3ec/v9FSQ&#13;
 FoqFGJKEJAQJccHdrRQKLW4t2hYvFChtkba4hQiQIHHBgie4Q5CEEHfHrcr3nXt2Z5ncKzCF5tCe&#13;
 /HF9Zncz+8zMY5u59t77qfBHeDTk/B621yCI3K+Xp7Tdeag0UYydh0uzi7H7iLA1wO4YFfSY3k9l&#13;
 Rh4EIg6I/B4ajd9C9uLX4D34OXCXhl+Cdouv/RG2D0/D96veR+XsiS1d3q5DhtlN52gAfr6vG+p6&#13;
