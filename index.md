@@ -12,7 +12,7 @@ const datum = (t: number) => {
   }
 }
 </script>
-# SVWS Dokumentation
+# SVWS-Dokumentation
 
 :::info Erstellungsdatum {{ datum(data.buildDate) }}
 :::
@@ -21,40 +21,27 @@ const datum = (t: number) => {
 [![Admins](./graphics/LandingAdmin.png "Icon für Admins.")](./deployment/)
 [![Devs](./graphics/LandingDev.png "Icon für Developer.")](./development/)
 
-Für die Installation und Nutzung der Software **SchILD-NRW-3** findet sich deren Dokumentation im [Wiki von SchILD-NRW-3](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=SchILD-NRW).
-
 ## SVWS-Server, SVWS-Client und weitere Projekte
 
-Auf dieser Webseite finden Sie Dokumentationen zum *SVWS-Client* und zum *SVWS-Server*. Der **SVWS-Client** ist eine Web-Applikation zur Unterstützung der Verwaltungsprozesse an den Schulen Nordrhein-Westfalens. Er schafft eine plattformübergreifende Benutzeroberfläche, die mit allen gängigen Browsern aufgerufen werden kann.
+Auf dieser Webseite finden Sie Dokumentationen zum **SVWS-Client** und zum **SVWS-Server** sowie diverser **SVWS-Tools**. Die Dokumentation zur Installation und Nutzung der Software **SchILD-NRW 3** finden Sie im [Wiki von SchILD-NRW-3](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=SchILD-NRW_3)
 
-Der SVWS-Client greift auf den SVWS-Server zu, so dass erledigte Arbeiten wechselseitig auch anderen auf den SVWS-Server zugreifenden Client-Anwendungen zur Verfügung stehen.
-
-Er wird in der ersten Übergangsphase parallel zu SchILD-NRW 3 benutzt.
 
 ![Übersicht der SVWS-Server-Umgebung mit Client-Programmen](./graphics/SVWS-Server-LandingPage.png "Zusammenspiel des SVWS-Servers mit unterschiedlichen Programmen.")
 
-Außerdem finden Sie hier Informationen zur Installation und zur Entwicklung und eine Dokumentation der API für die dezentrale Schulverwaltung in NRW. Ebenso gibt es eine Dokumentation zu weiteren Projekten.
+Der SVWS-Client ist eine Webanwendung zur Unterstützung der Verwaltungsprozesse an den Schulen in Nordrhein-Westfalen. Er stellt eine plattformunabhängige Benutzeroberfläche bereit, die über alle gängigen Webbrowser genutzt werden kann. Dabei greift der SVWS-Client auf den SVWS-Server zu, sodass die bearbeiteten Daten unmittelbar auch anderen Client-Anwendungen zur Verfügung stehen, die mit dem SVWS-Server verbunden sind.
 
-Navigieren Sie zu den übergreifenden Bereichen dieser Webseite über die **Kopfzeile**. 
+Während der ersten Übergangsphase wird der SVWS-Client parallel zu SchILD-NRW 3 eingesetzt.
 
-Unter dem ersten Punkt **Benutzerhandbücher** finden Sie die Dokumentationen für die **Anwender** in der Schule.
 
-Die übrigen Punkte bieten Zugang zu technischen Informationen zu Installation, Administration und Entwicklung.
-
-* Der SVWS-Client bietet eine Datenverwaltung für Schul-, Lehrkraft-, Schüler- und Schülerinnen- und Leistungsdaten.
-* **SVWS-WebLuPO** dient zur  Laufbahnberatung in der gymnasialen Oberstufe.
-* Der Client unterstützt die Erstellung von **Blockungen** und **Klausurplänen** und
-* die Verwaltung von **Stundenplänen**.
+In dieser Dokumentation finden Sie Informationen zur Installation, Entwicklung sowie die API-Dokumentation für die dezentrale Schulverwaltung in Nordrhein-Westfalen. Darüber hinaus stehen Dokumentationen zu weiteren Projekten zur Verfügung.
 
 Das Gesamtprojekt _SVWS-Server_ ist ein Open-Source-Projekt des Landes Nordrhein-Westfalen.
 
 Die Programme, die im Rahmen der Schulverwaltung NRW vom Ministerium für Schule und Bildung des Landes NRW zur Verfügung gestellt werden, erhalten Support durch das Fachberatersystem.
 
-Nähere Informationen erhalten Sie hier:
+Weitere Informationen erhalten Sie unter https://www.svws.nrw.de/
 
-https://www.svws.nrw.de/
-
-## Datenschutzhinweis aus dem WebClient
+## Datenschutzhinweis
 
 Nehmen Sie den im SVWS-Client hinterlegten Datenschutzhinweis zur Kenntnis und beachten Sie den gültigen Rechtsrahmen.
 
