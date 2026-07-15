@@ -246,3 +246,31 @@ Sobald in den Leistungsdaten der Schüler Einträge vorgenommen werden, steht di
 + Noten für Teilleistungen
 + Fehlstunden (FSG, FSU)
 :::
+
+## Blocken einer Q2 mit und ohne vorgerige Q1
+
+Grundsätzlich funktioniert das Blocken einer Q2 wie oben beschrieben. Jedoch sind bei einer Q2 noch einige Vorarbeiten zu erledigen.
+
+Wird im Regelfall die Q2-Blockung auf einer Q1-Blockung aufgebaut, wird das verwendete Ergebnis zweimal durch `Hochschreiben` zuerst im Abschnitt Q1.2 und dann im Abschnitt Q2.1 erzeugt.
+
+Stellen Sie nun sicher, dass neu hinzugekommene Schüler passende Kurse gewählt haben und dass Sie Abwahlen existierender beziehungsweise abgegangener Schüler vorgenommen haben. Im Zweifel kann bei Schülerinnen, welche die Schule verlassen, die Kurswahl für die Q2 gelöscht werden, damit diese in der Blockung bei der Berechnung von Ergebnissen unberücksichtigt bleiben.
+
+Nun ist aber darauf zu achten, dass die Schüler in den Kursen fixiert werden, die auf keinen Fall neu mit Personen zugeteilt werden sollen!
+
+Gehen Sie hierzu in der Kopfzeile zu `Schülerzuordnung` und setzen Sie den Haken bei **Schüler in Ziel-Kursen fixieren**.
+
+Alternativ können Sie Kurse links anhaken und dann gehen Sie über den Schalter **Fixiere alle Kurse** und klicken auf den nach unten Zeigenden Marker `v`. Hier können Sie bei einem aktiven Kurs `Fixiere Schüler` wählen. Für eine Auswahl können Sie auch `Kursauswahl: Fixiere Schüler` für alle ausgewählten Kurse verwenden. Ebenso lassen sich hier fixierte Schüler wieder lösen.
+
+::: tip Maximale Schüleranzahl festlegen
+Beachten Sie, dass *"Schüler fixieren"* bedeutet, dass die zugewiesenen Schüler nicht entfernt werden. Es können jedoch noch andere Schüler diesem Kurs zugewiesen werden.
+Wollen Sie also, dass auch niemand mehr hinzugefügt wird, müssten Sie die maximale Schüleranzahl über eine *Regel* festlegen, die die aktuellen Personenanzahl entspricht.
+Es können auch zuvor Plätze für *Externe* reserviert werden. 
+:::
+
+### Blocken einer Q2 ohne Q1
+
+Wollen Sie eine Q2 blocken, ohne dass im SVWS-Server schon ein Blockungsergebnis für eine Q1 vorliegt, Ihre Schüler aber in der aktuellen Q1 verplant sind, müssen Sie die Schüler von Hand den notwendigen Kursen zuweisen und diese dann ebenfalls fixieren.
+
+::: tip Es müssen nicht alle Kurse zugewiesen werden
+Hierbei ist zu beachten, dass nicht alle Kurse fixiert werden müssen: haben Sie zum Beispiel in einem Fach zwei GKs, reicht es, einen zu fixieren und die SuS werden in den anderen Kurs verteilt. Setzen Sie jedoch gegebenfalls über eine *Regel* eine passende *Maximale Schüleranzahl*. Haben Sie nur einen Kurs einer Kursart, sind keine Fixierungen und Regeln einzustellen.
+:::
