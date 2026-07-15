@@ -1,3 +1,3 @@
 # Apps
 
-Wie im WebClient ist auch der AdminClient über **Apps** in die unterschiedlichen Anwendungsbereiche geteilt.
+Wie im SVWS-Client ist auch der SVWS-AdminClient über **Apps** in die unterschiedlichen Anwendungsbereiche geteilt.

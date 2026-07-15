@@ -63,6 +63,18 @@ Achten Sie darauf, dass der SVWS-Server den Host auch erreichen kann, etwa über
 Beim **Datenbanknutzer** handelt es sich um einen **Zugang auf den Datenbankserver**, also etwa einen Root-Administrator oder sonstwie einen Zugang zur Datenbank selbst, nicht um einen *Nutzer-Administrator* oder *SchILD-Benutzer* innerhalb der Datenbank!
 :::
 
+## Verbindungsdatei für SchILD-NRW 3 erstellen
+
+Das Schema kann im Anschluss mit dem SVWS-Client ohne weitere Arbeitsschritte aufgerufen werden.
+
+Soll die Datenbank mit SchILD-NRW 3 verwendet werden, ist im Anschluss eine Verbindungsdatei - eine .con-Datei - im passenden Unterordner des SVWS-Arbeitsverzeichnisses zur erzeugen.
+
+Konsultieren Sie hierfür die [Anleitung im Wiki von SchILD-NRW 3.](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Schild-NRW-Daten_in_eine_andere_Datenbank_%C3%BCbertragen_(migrieren)_(Tutorial))
+
+Im Anschluss kann das Schema sowohl mit dem SVWS-Client als auch mit SchILD-NRW 3 verwendet werden.
+
+Sie finden eine weitere Anleitung für das Erzeugen von Con-Files ebenfalls hier in dieser Dokumentation. Rufen Sie den Artikel *Schema-Neuanlange* links aus dem Inhaltsverzeichnis auf und scrollen Sie nach unten.
+
 ## Weiteres Datenbankmanagement für ITler
 
 Weitere Informationen zu technischerem Datenbankmanagement, das nicht über die grafische Oberfläche durchgeführt wird, wie Backups per Skript, finden IT-Dienstleister bei den [Informationen für IT-Administratoren](../../../deployment/).
