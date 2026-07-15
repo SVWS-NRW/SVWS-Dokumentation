@@ -55,4 +55,6 @@ Wenn SVWS-WebLuPO im freien Internet zu erreichen ist, ist ein Impressum zu setz
 
 Erzeugen Sie hierzu eine Datei *Impressum.md* - achten Sie auf das große "I" - auf der *Root-Ebene* des Webservers und befüllen Sie diese Datei mit Ihren Daten.
 
-Ebenso können Sie einen eigen Datenschutz-Hinweis einfügen, indem Sie eine Datei *Datenschutz.md* anlegen und entsprechend ausfüllen.
+In einer solchen .md-Datei werden Absätze als Zeilenumbruch aufgefasst.
+
+Ebenso können Sie einen eigenen Datenschutz-Hinweis einfügen, indem Sie eine Datei *Datenschutz.md* anlegen und entsprechend ausfüllen.
