@@ -138,11 +138,11 @@ Sie können auch einem individuellen **Benutzer** diese Rechte gezielt zuweisen,
 Haben Sie diese Rechte zugewiesen, wird in der **App Noten** der unten im Screenshot aufgeführte Bereich mit allen Einstellungen freigeschaltet:
 
 ![Konfigurationsrechte sind freigeschaltet](./graphics/konfiguration_Nutzerrechte_notenmodul_AppNoten.png "Die Rechte sind nun für den Benutzer/die Benutzergruppe freigeschaltet.")
-
+<!---
 ## Mail
 
 Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten für den SVWS-WeNoM-Server eingetragen ist, können sich die Lehrkräfte das Initialpasswort zuschicken lassen.
 
 ![Wenom Email Konfiguration](graphics/WenomMail.png "Konfigurieren Sie Emaildaten, um automatisch Kennwörter versenden zu können.")
+-->
 
-(Diese Funktion ist in Version 1.2.2 noch nicht aktiviert.)
