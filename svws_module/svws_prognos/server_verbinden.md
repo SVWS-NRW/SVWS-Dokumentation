@@ -2,15 +2,14 @@
 
 ## Login
 
+Beim Start öffnet sich automatisch der Verbindungsdialog von SVWS-Prognos. Dieser fragt vier Angaben ab, die Sie von Ihrer Schulverwaltung oder Ihrem IT-Betreuer erhalten:
+
 ![Eingabe der Verbindungsdaten](./graphics/svws_prognos_serververbinden.png "Geben Sie Ihre Verbindungsdaten ein.")
 
-Beim ersten Start öffnet sich automatisch der Verbindungsdialog. Dieser fragt vier Angaben ab, die Sie von Ihrer Schulverwaltung oder Ihrem IT-Betreuer erhalten:
+* **Server-URL**, gegebenfalls inklusive des Ports (z.B. https://MEINSERVER:8443) alternativ können Sie hier auch eine IP-Adresse (z.B. https://256.0.1.1:8443) eintragen. Die URL beginnt immer mit `https://`. Eine unverschlüsselte  http://-Verbindung wird nicht unterstützt.
 
-* **Server-URL**, gegebenfalls inklusive des Ports (z.B. https://MEINSERVER:8443) alternativ können Sie hier auch eine IP-Adresse (z.B. https://256.0.1.1:8443) eintragen.
+* Das **Schema** entspricht dem Datenbank-Mandanten Ihrer Schule auf dem SVWS-Server. Jede Schule hat ein eigenes Schema. Der Name wird in der SVWS-Administration festgelegt. Ein Beispiel wäre `ge_musterstadt` oder `svwsdb`, wenn das Beispiel aus den SVWS-Server-Installationsanleitungen verwendet wurde. Wenden Sie sich bei Unklarheiten an Ihre SVWS-Administration. Hier ist die *Groß- oder Kleinschreibung* zu beachten!
 
-Die URL beginnt immer mit `https://`. Eine unverschlüsselte  http://-Verbindung wird nicht unterstützt.
-
-* Das **Schema** entspricht dem Datenbank-Mandanten Ihrer Schule auf dem SVWS-Server. Jede Schule hat ein eigenes Schema. Der Name wird in der SVWS-Administration festgelegt. Ein Beispiel wäre `ge_musterstadt` oder `svwsdb`, wenn das Beispiel aus den SVWS-Server-Installationsanleitungen verwendet wurde. Wenden Sie sich bei Unklarheiten an Ihre SVWS-Administration.
 * Benutzername und Passwort: Geben Sie Ihre persönlichen **SVWS-Zugangsdaten** ein. Es werden dieselben Daten verwendet, die Sie auch für den *SVWS-Client* oder andere Clienten für den Zugriff nutzen.
 
 >[!TIP]Sicherheitshinweis

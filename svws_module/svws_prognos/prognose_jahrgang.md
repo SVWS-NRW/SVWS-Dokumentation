@@ -1,6 +1,11 @@
-Über die Jahrgangs-Kacheln auf dem Dashboard gelangen Sie zur Schülerübersicht für Jahrgang 8, 9 oder 10. Hier sehen Sie alle Schülerinnen und Schüler des gewählten Jahrgangs aus Ihrem SVWS-System und können deren Abschlussprognosen einsehen.
+# Jahrgangsprognosen
 
-Hinweis: Für diese Funktion muss eine aktive Verbindung zum SVWS-Server bestehen. Die Daten werden direkt aus dem SVWS-System geladen.
+Über die Jahrgangs-Kacheln gelangen Sie zur Schülerübersicht für Jahrgang 8, 9 oder 10.
+
+Hier sehen Sie alle Schülerinnen und Schüler des gewählten Jahrgangs aus Ihrem SVWS-System und können deren Abschlussprognosen einsehen.
+
+>[!TIP] Aktive Verbindung
+>Für diese Funktion muss eine aktive Verbindung zum SVWS-Server bestehen. Die Daten werden direkt aus dem SVWS-System geladen.
 
 Aufbau der Ansicht
 Toolbar: [← Zurück]  Jahrgang 10  [Schuljahresabschnitt ▼]  [Klasse ▼]
