@@ -28,7 +28,7 @@ Unter `https://meinserver/admin` steht dann ein AdminClient zur Verfügung, mit 
 | PortHTTPPrivilegedAccess | `null` | Port für die ROOT-API und den AdminClient. Default 443. |
 | UseCORSHeader | `true` | Nutze CORSHeader. |
 | TempPath |  `./tmp` | Pfad für das temporäre Verzeichnis. |
-| TLSKeyAlias | `alias` | Alias für den TLSKey. (required)|
+| TLSKeyAlias | `svws` | Alias für den TLSKey. (required)|
 | TLSKeystorePath | `.` | Pfad für den Keystore mit genau dem Dateinamen `keystore`. |
 | TLSKeystorePassword | `svwskeystore` | Passwort für den Keystore |
 | ClientPath | `/opt/app/svws/client` | Pfad zum SVWS-Web-Client in der Installation. |
@@ -63,7 +63,7 @@ Unter `https://meinserver/admin` steht dann ein AdminClient zur Verfügung, mit 
   "PortHTTPPrivilegedAccess" : null,
   "UseCORSHeader" : true,
   "TempPath" : "./Temp",
-  "TLSKeyAlias" : "alias1",
+  "TLSKeyAlias" : "svws",
   "TLSKeystorePath" : ".",
   "TLSKeystorePassword" : "svwskeystore",
   "ClientPath" : "./SVWS-Server/svws-webclient/client/build/output",
