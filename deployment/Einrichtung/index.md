@@ -63,7 +63,7 @@ Unter `https://meinserver/admin` steht dann ein AdminClient zur Verfügung, mit 
   "PortHTTPPrivilegedAccess" : null,
   "UseCORSHeader" : true,
   "TempPath" : "./Temp",
-  "TLSKeyAlias" : null,
+  "TLSKeyAlias" : "alias1",
   "TLSKeystorePath" : ".",
   "TLSKeystorePassword" : "svwskeystore",
   "ClientPath" : "./SVWS-Server/svws-webclient/client/build/output",
