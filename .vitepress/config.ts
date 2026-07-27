@@ -52,7 +52,7 @@ export default defineConfig(({ mode }) => {
 					items: [
 						{ text: 'SVWS-Server', link: '/development/SVWS-Server/'},
 						{ text: 'Entwicklungsumgebungen', link: '/development/Entwicklungsumgebungen/'},
-						{ text: 'APIs für externe Tools', link: '/development/ExterneAPIs/'},
+						{ text: 'API', link: '/development/API/'},
 						{ text: 'FAQs Development', link: '/development/FAQ/' },
 						{ text: 'SVWS-Server bei GitHub', link: 'https://github.com/SVWS-NRW/SVWS-Server/' },
 						{ text: ' ', items: [
@@ -124,8 +124,10 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Code Styles', link: '/development/Entwicklungsumgebungen/Code-Styles' },
 						],
 						},
-						{ text: 'APIs für externe Tools', link: '/development/ExterneAPIs/' , collapsed: true, items: [
-							{ text: 'Lernplattform Export', link: '/development/ExterneAPIs/Lernplattformen' },
+						{ text: 'API', link: '/development/API/' , collapsed: true, items: [
+							{ text: 'Server API', link: '/development/API/server/index.md' },
+							{ text: 'Externe API', link: '/development/API/external/index.md' },
+							{ text: 'Privileged API', link: '/development/API/privileged/index.md' },
 						],
 						},
 						{ text: 'SVWS-Server bei GitHub', link: 'https://github.com/SVWS-NRW/SVWS-Server/' },

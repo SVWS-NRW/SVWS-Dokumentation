@@ -57,11 +57,13 @@ Nach dem Durchlauf des Skripts haben Sie einen aktiv laufenden SVWS-Server!
 - Geben Sie den Befehl `./install-0.x.x.sh --update` zur Ausführung ein und drücken Sie die Eingabetaste.
 - Danach sollte der SVWS-Server in der aktuellen Version laufen.
 
-## Konfiguration
+## Installationseinstellungen
 
-Das Skript bietet verschiedene Optionen zur Konfiguration, die hier vorgestellt werden sollen. Es werden Standardeinstellungen vorgeschlagen, um eine vereinfachte Installation zu ermöglichen. Sie können die Einstellungen aber auch nach Bedarf individuell anpassen.
+Das Skript bietet verschiedene Installationsoptionen, die im Folgenden erläutert werden. Um die Installation zu vereinfachen, werden für alle Optionen sinnvolle Standardwerte vorgeschlagen. Bei Bedarf können diese jedoch individuell angepasst werden.
 
-Die gewählten Parameter werden in die Datei `.env` geschrieben. Aus dieser Datei werden die Werte für die Installation dann entnommen. Auch das Update bedient sich aus dieser Datei, um die Installationspfade zu ermitteln. Wenn diese Datei schon existiert, dann werden die Parameter nicht mehr abgefragt und die Installation startet sofort. Auf diese Weise kann also auch eine skriptgesteuerte Installation realisiert werden.
+Die gewählten Parameter werden in der Datei .env gespeichert. Während der Installation werden die erforderlichen Werte aus dieser Datei ausgelesen. Auch bei einem Update dient sie zur Ermittlung der Installationspfade.
+
+Existiert die Datei .env bereits, werden die Installationsoptionen nicht erneut abgefragt und die Installation startet unmittelbar. Dadurch lässt sich die Installation auch vollständig skriptgesteuert bzw. automatisiert durchführen.
 
 Folgende Konfigurationen können vorgenommen werden:
 
@@ -107,14 +109,7 @@ Erläuterungen zu den einzelnen Punkten:
 | SVWS_TLS_KEYSTORE_PATH | Der Pfad des angelegten Keystores, um dort Daten zu speichern |
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore |
 
-
-## Daten einpflegen
-
-Bitte beachten Sie dazu die Doku des [AdminClients](../../adminclient/).
-
-## Sinnvolle Konfigurationen
-
-## Eigenen Keystore mit Zertifikat erstellen
+## optional: eigener Keystore mit Zertifikat
 
 ```bash
 keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test, S=test, C=test" -ext "SAN=DNS:localhost,IP:127.0.0.1,IP:10.1.0.1,DNS:meinserver,DNS:meinserver.mydomain.de" -keystore /etc/app/svws/conf/keystore -storepass test123 -keypass test123  -keyalg RSA
@@ -123,20 +118,6 @@ keytool -export -keystore /etc/app/svws/conf/keystore -alias alias1 -file ./SVWS
 ```
 
 Mit diesen Befehlen kann ein eigener Keystore mit einem Zertifikat erstellt werden. Der zweite Befehl exportiert das Zertifikat, welches dann unter den Windows-Client installiert werden kann, so dass die Warnmeldungen im Browser verschwinden.
-
-## MariaDB für Schild-NRW 3 zugänglich machen
-
-Solange Schild-NRW 3 benötigt wird, muss die Datenbank und der Server für das Programm zugänglich gemacht werden.
-
-Erreichbarkeit des MariaDB-Server auch außerhalb von `localhost` setzen:
-
-```shell
-/etc/mysql/mariadb.conf.d/50-server.cnf
-bind-address 127.0.0.1 >> 0.0.0.0
-```
-
-Unter Umständen muss auch noch Port 3306 nach außen geöffnet werden, wenn eine Firewall eingerichtet ist.
-
 
 ## Portumleitung
 

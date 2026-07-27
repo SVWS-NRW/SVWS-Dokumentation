@@ -2,6 +2,15 @@
 
 Letzte Aktualisierung: 2025-09-10
 
+## Release Zyklus
+
+Die Releases des SVWS-Servers und von Schild-NRW 3 sind quartalsweise geplant: 
+
++ Ende Januar
++ Ende April
++ Ende Juli
++ Ende Oktober
+
 ## 2024 - Start Betaphase
 
 Start in die öffentliche Betaphase für SchILD-NRW-3 und den SVWS-Server. Am 13. Oktober 2024 werden die Installationspakete auf GitHub zur Verfügung gestellt.
