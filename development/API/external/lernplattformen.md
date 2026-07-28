@@ -6,7 +6,7 @@ Die Endpunkte können nur im internen Verwaltungsnetz aufgerufen werden und ben�
 
 ## Versionierung
 
-Über die URL ist eine Versionierung /v1, /v2, ... angegeben. Ältere Versionen werden vorraussichtlich bis zu 12 Monate weiter supportet, damit eine Umstellung auf neuere Versionen stattfinden kann.
+Über die URL ist eine Versionierung /v1, /v2, ... angegeben. Ältere Versionen werden voraussichtlich bis zu 12 Monate weiter supportet, damit eine Umstellung auf neuere Versionen stattfinden kann.
 
 ## Endpunkte URLs
 
