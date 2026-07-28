@@ -126,7 +126,10 @@ export default defineConfig(({ mode }) => {
 						},
 						{ text: 'API', link: '/development/API/' , collapsed: true, items: [
 							{ text: 'Server API', link: '/development/API/server/index.md' },
-							{ text: 'Externe API', link: '/development/API/external/index.md' },
+							{ text: 'Externe API', link: '/development/API/external/index.md',collapsed: true, items: [
+								{ text: 'Lernplattformen', link: '/development/API/external/lernplattformen.md' },
+								{ text: 'externe Notenmanager', link: '/development/API/external/notenmanager.md' },
+							] },
 							{ text: 'Privileged API', link: '/development/API/privileged/index.md' },
 						],
 						},

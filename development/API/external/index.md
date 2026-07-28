@@ -1,27 +1,32 @@
-# API - external 
+# Externe API
 
-Endpunkte für externe Anbieter und Tools
+## Endpunkte für externe Anbieter und Werkzeuge
 
-## Grundgedanke
+Ein Großteil der vorhandenen API-Endpunkte ist speziell auf den SVWS-Webclient ausgerichtet. Da sich diese Endpunkte im Rahmen der Weiterentwicklung ändern können, sind sie nur eingeschränkt für eine langfristige Nutzung durch externe Anwendungen geeignet.
 
-Da viele der API-Endpunkte speziell auf den Web-Client zugeschnitten sind und auch während der Entwicklung einem starken Wandel unterzogen sind, kam der Gedanke auf, spezielle API-Endpunkte für externe Prozesse zu schaffen.
+Aus diesem Grund werden separate API-Endpunkte für externe Prozesse und Drittanbieter bereitgestellt. Diese APIs sollen stabil, versioniert und umfassend dokumentiert sein, sodass sie auch über längere Zeiträume zuverlässig genutzt werden können.
 
-Diese sollen einen stabilen und dokumentierten Zustand haben und es Drittanbietern ermöglichen, die API langfristig zu nutzen.
+## Konzeption
 
-## Umsetzung
+Bei der Umsetzung der externen APIs wurden folgende Ziele verfolgt:
 
-Bei der Umsetzung der externen API-Endpunkte standen folgende Überlegungen im Vordergrund:
+### 1. Versionierung der API
 
-1. Versionierung der API
-In der URL und auch in der Response soll eine Versionierung stattfinden. So können andere Anbieter bei Änderungen in einem zeitlichen Rahmen reagieren.
-Solange kann die ätere Version weiterhin genutzt werden.
+Die API wird sowohl in der URL als auch in den Antworten versioniert. Dadurch können Änderungen an einer neuen Version eingeführt werden, ohne bestehende Integrationen unmittelbar zu beeinträchtigen.
 
-2. Ein Format für mehrere Anwendungen
-Damit die Liste der Endpunkte den Aufwand der Wartung nicht übermäßig belastet, sollen möglichst Anwendungen mit ähnlichen Zielen gebündelt werden.
+Drittanbieter erhalten dadurch ausreichend Zeit, ihre Anwendungen auf eine neue API-Version umzustellen, während die bisherige Version für einen Übergangszeitraum weiterhin unterstützt wird.
 
-3. Dokumentation
-Die Endpunkte sollen alle für Drittanbieter nachvollziehbar dokumentiert sein.
+### 2. Einheitliche APIs für mehrere Anwendungsfälle
 
-## Liste der externen APIs
+Um den Wartungsaufwand gering zu halten, sollen die Endpunkte nicht für einzelne Anwendungen entwickelt werden. Stattdessen werden ähnliche Anwendungsfälle in gemeinsamen APIs zusammengefasst. Dadurch können mehrere Anwendungen dieselben Endpunkte nutzen.
 
-1. [Lernplattformen](https://doku.svws-nrw.de/development/API/external/Lernplattformen/)
+### 3. Vollständige Dokumentation
+
+Alle externen APIs werden vollständig dokumentiert. Die Dokumentation beschreibt die verfügbaren Endpunkte, die benötigten Parameter, die Rückgabewerte sowie mögliche Fehlerfälle, sodass Drittanbieter die Schnittstellen ohne Kenntnis der internen Implementierung verwenden können.
+
+## Verfügbare externe APIs
+
+Derzeit stehen folgende externe APIs zur Verfügung:
+
++ [API Lernplattformen](./lernplattformen.md)
++ [API Externe Notenmanager](./notenmanager.md)
