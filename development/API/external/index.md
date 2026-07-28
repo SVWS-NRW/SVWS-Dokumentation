@@ -24,4 +24,4 @@ Die Endpunkte sollen alle für Drittanbieter nachvollziehbar dokumentiert sein.
 
 ## Liste der externen APIs
 
-1. [Lernplattformen](https://doku.svws-nrw.de/development/ExterneAPIs/Lernplattformen)
+1. [Lernplattformen](https://doku.svws-nrw.de/development/API/external/Lernplattformen/)

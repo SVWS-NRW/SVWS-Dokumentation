@@ -37,7 +37,6 @@ Nach erfolgreicher Autorisierung wird der gewünschte API-Endpunkt aufgeklappt. 
 
 Das Ergebnis der Anfrage wird anschließend direkt in der Swagger-Oberfläche angezeigt oder – abhängig vom jeweiligen Endpunkt – als Datei zum Download bereitgestellt.
 
-
 ## Dokumentation der API-Endpunkte
 
 Unter `https://<mein-server>/openapi/server.json` kann eine umfassende, maschinenlesbare Dokumentation des aktuellen Stands der OpenAPI-Spezifikation des SVWS-Servers abgerufen und heruntergeladen werden.
@@ -52,5 +51,14 @@ Eine maschinenlesbare API-Beschreibung bietet hierbei einen wesentlichen Vorteil
 
 Gerade bei der Entwicklung neuer Anwendungen, die auf die Endpunkte des SVWS-Servers zugreifen, erleichtert die OpenAPI-Spezifikation die Integration erheblich, da verfügbare Funktionen, Parameter und Rückgabewerte strukturiert und eindeutig beschrieben sind.
 
-
 ## API per Curl aufrufen
+
+![Swagger Curl Aufruf](./graphics/Swagger_curl.png)
+
+```bash 
+curl -k \
+  -X GET \
+  "https://mein.svws-server.de/api/external/meineSchule/v1/lernplattformen/1/1" \
+  -u "berechtigterUser:Passwort" \
+  -H "Accept: application/json"
+```
