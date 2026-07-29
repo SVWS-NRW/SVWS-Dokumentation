@@ -5,7 +5,6 @@ Dieser Bereich hält Informationen zur Programmierung der SVWS-Projekte und zur 
 Es wird die Einrichtung von Entwicklungsumgebungen behandelt - nicht die Einrichtung, die zur Nutzung der Software durchgeführt wird.
 :::
 
-
 Projekt zur Erstellung einer Schulverwaltungssoftware mit OpenAPI-Schnittstelle für die dezentrale Schulverwaltung in NRW.
 
 ## Übersicht
@@ -52,8 +51,6 @@ Sie können unseren Quellcode und die Testdatenbanken unter dem o.g. Repository 
 
 Wenn Sie an einer Mitarbeit am Projekt interessiert sind, so finden Sie in dieser Dokumentation unter [Teamarbeit](../teamarbeit/) weitere Informationen. Per Github kann die Kontaktaufnahme zu unserem Entwicklerteam erfolgen. Ebenso können hier Bugs oder Issues aus der Open Source Gemeinschaft gesammelt werden.
 
-
 ## [Projektanforderungen](../teamarbeit/Projektanforderungen.md)
 
 ## [FAQ](./FAQ/)
-
