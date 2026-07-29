@@ -4,14 +4,6 @@ Bei der Datenmigration werden neue Schemata oder vorhandene Schemata in der Date
 
 Zur Datenmigration mit dem AdminClient nutzen Sie das [Benutzerhandbuch zum AdminClient](../../adminclient/index.md).
 
-## Download von Testdaten
-
-Für Testzwecke und Schulungen werden anonymisierte Datenbanken verschiedener Schulformen vorgehalten. Zu bestimmten Datenbanken sind auch passende SVWS-WebLuPO Dateien etc. vorhanden, um sich passende Testfälle anzusehen.
-
-::: danger Anonymisiert
-Die Daten sind vollständig anonymisiert!
-:::
-
 [https://github.com/SVWS-NRW/SVWS-TestMDBs](https://github.com/SVWS-NRW/SVWS-TestMDBs)
 
 ## Übersicht
@@ -27,7 +19,7 @@ Es gibt mehrere Möglichkeiten, ein Schema in der Datenbank anzulegen bzw. zu be
 
 ### Kurzübersicht
 
-+ Rufen Sie unter <https://MeinSVWS-Server/admin> den SVWS-AdminClient auf.
++ Rufen Sie unter `https://MeinSVWS-Server/admin` Ihren SVWS-AdminClient auf.
 + Melden Sie sich als root an der MariaDB an.
 + Drücken Sie auf das + Zeichen
 + Wählen Sie Schild2-Datenbank migrieren aus.
@@ -35,7 +27,7 @@ Es gibt mehrere Möglichkeiten, ein Schema in der Datenbank anzulegen bzw. zu be
 
 ![neues Schema anlegen](./graphics/adminclient2.png)
 
-Alternativ kann auch ein anderer Datenbankbenutzer verwendet werden. Die verfügbaren Datenbanken und Funktionen richten sich dabei nach den vergebenen Berechtigungen.
+Alternativ zum Mariadb-Root kann auch ein anderer Datenbankbenutzer verwendet werden. Die verfügbaren Datenbanken und Funktionen richten sich dabei nach den im Mariadb-Server vergebenen Berechtigungen.
 
 Mit dem AdminClient können – abhängig von den Rechten des Datenbankbenutzers – folgende Aufgaben durchgeführt werden:
 
@@ -83,11 +75,9 @@ curl --user "root:mariabd_root_pw" -k -X "POST" "https://server.svws-nrw.de/api/
  -F "database=@/root/SVWS-TestMDBs/GOST_Abitur/Abi-Test-Daten-01/GymAbi.mdb"
 ```
 
-Sie können die Api des SVWS-Server auch mit der Swagger Oberfläche unter ansteuern:
+Sie können die API des SVWS-Server auch mit der Swagger Oberfläche ansteuern bzw.ausprobieren. 
 
-<https://MeinSVWS-Server/debug/>
-
-![SwaggerUI](./graphics/Swagger-01.png)
+[API SVWS Server](../../development/API/index.md)
 
 ## Download von Testdaten
 
@@ -97,7 +87,7 @@ Für Testzwecke und Schulungen werden anonymisierte Datenbanken verschiedener Sc
 Die Daten sind vollständig anonymisiert!
 :::
 
-[https://github.com/SVWS-NRW/SVWS-TestMDBs](https://github.com/SVWS-NRW/SVWS-TestMDBs)
+Download auf Github: [SVWS-TestMDBs](https://github.com/SVWS-NRW/SVWS-TestMDBs)
 
 ## bekannte Fehlerquellen
 
