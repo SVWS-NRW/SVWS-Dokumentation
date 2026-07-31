@@ -4,7 +4,7 @@
 
 + Sie haben einen Webspace bei Hosteurope
 + Sie haben einen FTP-Zugang zum Dateisystem des Webhostings
-+ Sie benötigen eine Subdomain
++ Sie benötigen eine freie Subdomain oder Domain
 + Sie benötigen ein Zertifikat
 
 ## Subdomain anlegen
