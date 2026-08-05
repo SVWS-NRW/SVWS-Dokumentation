@@ -3,7 +3,7 @@
 ## HINWEIS
 1. Es ist dringend zu empfehlen, zuvor die **Stundenplanung** der jeweiligen Jahrgangsstufe einzutragen.
 Ebenso sollte eine vollständige **Raumliste** hinterlegt sein.  
-2. Die ab dem **Abiturjahrgang 2030** zu erbringenden **gkL**s werden hier demnächst dokumentiert.
+2. Die ab dem **Abiturjahrgang 2030** zu erbringenden **gkL**s werden hier demnächst dokumentiert.  
 
 ## Vorgaben erstellen
 Es können für beide Quartale für jedes Fach und Kursart Vorgaben der jeweiligen Klausur eingestellt werden. Im System ist bereits eine Standardvorlage eingestellt, die aufgerufen und individuell bearbeitet werden kann.
