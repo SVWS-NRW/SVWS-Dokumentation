@@ -1,6 +1,6 @@
 # Roadmap
 
-Letzte Aktualisierung: 2025-09-10
+Letzte Aktualisierung: 2026-08-13
 
 ## Release Zyklus
 
@@ -73,15 +73,15 @@ Die Laufbahnplanung soll die Änderungen zum 5. Abiturfach und den Projektkursen
 
 Dies soll die Erzeugung erster Testfälle für die Laufbahnplanungen unterstützen.
 
-## 2026 - Erster Feldtest Schulbewerbungen
+## 2026 Juli - Freigabe des SVWS-WebNotenManager (SVWS-WeNoM)
 
-Es soll ein erster, abgegrenzter Feldtest mit ausgesuchten Schulen stattfinden, die den digitalen Schülerwechsel mit dem SVWS-Server und schulbewerbung.de durchführen.
+Der externe SVWS-WebNotenManager wurde für den Produktivbetrieb freigegeben.
 
-## 2026 - Ausbau des WebClients für Grundschulen
+## 2026 November - Ausbau des WebClients für Grundschulen
 
 Ausbau des WebClients für weitere Schulformen. Zunächst sollen Grundschulen alle Funktionalitäten bekommen, die einen Betrieb des WebClients im Alltag ermöglichen.
 
-Hier wird es notwendig sein, dass Gruppenprozesse und Filterfunktionen wie gewohnt im WebClient zur Verfügung stehen.
+Hier wird es notwendig sein, dass Gruppenprozesse und Filterfunktionen wie gewohnt im WebClient zur Verfügung stehen. Ein Prototyp für Grundschulzeugnisse soll erstellt werden.
 
 ## 2026 - Implementierung der Abschlussberechnungen
 
@@ -93,10 +93,23 @@ Diese Abschlussberechnungen sollen dann auch für SchILD-NRW 3 über die API zur
 
 SchILD-NRW 3 soll schrittweise auf die API des SVWS-Servers umgestellt werden, so dass direkte Datenbankzugriffe nicht mehr oder nur noch lesend notwendig sind.
 
-## 2027 - Ablösung ASDPC32
+## 2027 - Februar neues Abitur
 
-Geplante Ablösung des Programms ASDPC32 als Statistikprogramm durch den WebClient.
+Die Laufbahnplanung für das neue Abitur soll in WebLupo und SVWS-Webclient zur Verfügung stehen.
+Ein erster Prototyp für experimentelle Tests kann seit dem Juli Release mit entsprechenden Datenbanken getestet werden.
 
-## 2028 - Digitale Zeugnisausfertigung
+## 2027 - März Import-Tool
+
+Das Import-Tool für Schulen, die bisher noch kein Schild-NRW nutzen soll zur Verfügung stehen.
+
+## 2027 - Erster Feldtest Schulbewerbungen
+
+Es soll ein erster, abgegrenzter Feldtest mit ausgesuchten Schulen stattfinden, die den digitalen Schülerwechsel mit dem SVWS-Server und schulbewerbung.de durchführen.
+
+## 2027 Oktober - Ablösung ASDPC32
+
+Geplante Ablösung des Programms ASDPC32 als Statistikprogramm durch den WebClient. Die Maske mit den Angaben für die Statistik soll den Schulen ab Oktober 2026 zur Verfügung stehen.
+
+## 2029 - Digitale Zeugnisausfertigung
 
 Die Arbeiten zur digitalen Zeugnisausfertigung sollen im SVWS-Server umgesetzt werden.
