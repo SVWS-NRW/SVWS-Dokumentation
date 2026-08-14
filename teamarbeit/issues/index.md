@@ -8,4 +8,4 @@ Möglicherweise wurde der Fehler bereits gefunden und behoben und ist daher in d
 
 Wenn Sie einen reproduzierbaren Fehler gefunden haben, erstellen Sie bitte ein Issue in unserem [Github-Repository](https://github.com/SVWS-NRW/SVWS-Server/issues). Es wäre hilfreich, wenn Sie Screenshots mit Markierungen oder genaue Angaben von Codestellen hinzufügen und das beobachtete Fehlverhalten beschreiben.
 
-Bitte melden Sie dort keine SchILD-NRW 3-Bugs. Dafür gibt es das [Schild3-BetaTest-Repository](https://github.com/SVWS-NRW/Schild3-BetaTest/issues).
+Bitte melden Sie dort keine SchILD-NRW 3-Bugs. Dafür gibt es das [Schild-NRW-3-Repository](https://github.com/SVWS-NRW/Schild-NRW-3/issues).
