@@ -1,34 +1,40 @@
 # Klausurplanung
 
-## HINWEIS
-1. Es ist dringend zu empfehlen, zuvor die **Stundenplanung** der jeweiligen Jahrgangsstufe einzutragen.
-Ebenso sollte eine vollständige **Raumliste** hinterlegt sein.  
-2. Die ab dem **Abiturjahrgang 2030** zu erbringenden **gkL**s werden hier demnächst dokumentiert.  
+>[!WARNING] Vorbereitungen
+>Es ist dringend empfohlen, zuvor die **Stundenplanung** der jeweiligen Jahrgangsstufe einzutragen.
+>Ebenso sollte eine vollständige **Raumliste** hinterlegt sein.  
+
+>[!TIP] Abiturjahrgang 2030
+>Die ab dem **Abiturjahrgang 2030** zu erbringenden **gkL**s werden hier demnächst dokumentiert.  
 
 ## Vorgaben erstellen
 Es können für beide Quartale für jedes Fach und Kursart Vorgaben der jeweiligen Klausur eingestellt werden. Im System ist bereits eine Standardvorlage eingestellt, die aufgerufen und individuell bearbeitet werden kann.
 
-![gost_klausurplanung_vorlage_1](.\graphics\gost_klausurplanung_vorlage_1.png)
+![gost_klausurplanung_vorlage_1](.\graphics\gost_klausurplanung_vorlage_1.png "Bearbeiten Sie die Vorlage für eine Klausurplanung.")
 
-Zusätzliche Fächer können mit **+** ergänzt werden. Verändert werden können diese Parameter:
+Zusätzliche Fächer können mit **+** ergänzt werden.
 
-![gost_klausurplanung_vorlage_2](.\graphics\gost_klausurplanung_vorlage_2.png)
+Verändert werden können diese Parameter, welche die Rahmenbedindungen einer Klausur wiedergeben:
+
+![gost_klausurplanung_vorlage_2](.\graphics\gost_klausurplanung_vorlage_2.png "Stellen Sie die Rahmenbedingungen für eine Klausur ein.")
 
 
 ## Vorlagen an Jahrgangsstufen zuweisen
-Mit "Vorlage importieren" kann nun für jedes Halbjahr die Vorlage importiert werden. Hier können von der Vorlage abweichende Einstellungen vorgenommen werden.
+Mit ```Vorlage importieren``` kann nun für jedes Halbjahr die Vorlage importiert werden. Hier können von der Vorlage abweichende Einstellungen vorgenommen werden.
 
 ## Klausurtermine blocken
-Im Tab "Schienen" findet sich die Auflistung der im gewählten Abschnitt anzusetzenden Klausuren.
+Im **Tab Schienen** findet sich die Auflistung der im gewählten Abschnitt anzusetzenden Klausuren.
 
  ### Termin manuell setzen
- Mit **+ Termin** werden Terminlagen ergänzt. Klausuren werden per Drag & Drop in die Termine gesetzt.
+ Mit **+ Termin** werden Terminlagen ergänzt.
+ 
+ Klausuren werden per Drag & Drop in die Termine gesetzt.
 
  Es wird auf Kollisionen hingewiesen, wenn zwei Klausuren auf denselben Termin gesetzt werden und Schüler dadurch zeitgleich beide Klausuren schreiben müssten - Facharbeiten werden nicht berücksichtigt.
 
 ### Termine automatisch blocken (ist zu bevorzugen)
 Die Termine können nach Schienen oder nach Fächern geblockt werden. Der Algorithmus sucht immer nach möglichst wenigen Terminen.
-![gost_klausurplanung_autoblocken](.\graphics\gost_klausurplanung_autoblocken.png)
+![gost_klausurplanung_autoblocken](.\graphics\gost_klausurplanung_autoblocken.png "Klicken Sie auf Blocken, um ein Terminraster automatisch zu erstellen.")
 * Klausurtermine können **alle nach Schienen** geblockt werden. Nach der Berechnung können einzelne Kurse in andere Schienen verschoben werden. Schülerkollisionen werden automatisch angezeigt.
 * Es ist in der Q-Phase auch möglich, diese Vorgaben **nach Grund- und Leistungskursen zu trennen**. So können beispielsweise zunächst die LKs schienenweise geblockt werden. Durch "Weiterblocken" und Ändern der Einstellung auf "GK + Fächerweise", werden dann die Grundkurse nach Fächern geblockt.
 * Es können auch **alle Kurse gemeinsam nach Fächern** geblockt werden.
@@ -45,9 +51,9 @@ Zu beachten ist das rechte **Hinweisfenster**: Hier werden Terminkollisionen, ab
 ## Räume und Startzeiten festlegen
 Nach Auswahl eines der Termine (Ansicht "In Planung") wird für den ausgewählten Termin über **"+ Klausurraum anlegen"** ein oder mehrere Klausurräume angelegt.
 
-Jedem der angelegten Räume kann per Drag & Drop ein oder mehrere der Klausuren des ausgewählten Termins zugewiesen.
+Jedem der angelegten Räume kann per Drag & Drop ein oder mehrere Klausuren des ausgewählten Termins zugewiesen.
 
-![gost_klausurplanung_raeume_1](.\graphics\gost_klausurplanung_raeume_1.png)
+![gost_klausurplanung_raeume_1](.\graphics\gost_klausurplanung_raeume_1.png "Planen Sie die Räume für die Klausuren.")
 
 ## Schnellansicht Detailplan
 Im **Detailplan** erfolgt eine chronologische Ansicht aller Termine. Optional kann die Ansicht für das ganze Halbjahr oder nur 1. oder 2. Quartal eingestellt werden.
@@ -55,11 +61,11 @@ Im **Detailplan** erfolgt eine chronologische Ansicht aller Termine. Optional ka
 Hinweis: Eine jahrgangsübergreifende Ansicht ist hier nicht möglich.
 
 ## Fehler und Hinweise
-Es werden z.B. Terminkollisionen, mehr als drei Klausurbelegungen pro Woche, fehlende Raumeinträge angezeigt.
+Es werden zum Beispiel Terminkollisionen, mehr als drei Klausurbelegungen pro Woche oder fehlende Raumeinträge angezeigt.
 
 ## Drucken/Export
 1. Oben rechts befinden sich verschiedene **Formulare** zur Darstellung der Klausurplanung.
-2. Export der GPU017.txt für **Untis**: App Schule -> Datenaustausch -> Untis.
+2. Export der GPU017.txt für **Untis**: App Schule ➜ Datenaustausch ➜ Untis.
 
 ## Klausurversäumnis/Nachschreiber
 
