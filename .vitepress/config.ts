@@ -297,8 +297,10 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Lehrkräfte', link: '/svws-client/apps/lehrer/', collapsed: true, items: [
 									{ text: 'Individualdaten', link: '/svws-client/apps/lehrer/individualdaten/' },
 									{ text: 'Personaldaten', link: '/svws-client/apps/lehrer/personaldaten/' },
-									//{ text: 'Unterricht', link: '/svws-client/apps/lehrer/unterricht/' },
 									{ text: 'Stundenplan', link: '/svws-client/apps/lehrer/stundenplan/' },
+									//{ text: 'Unterricht', link: '/svws-client/apps/lehrer/unterricht/' },
+									//{ text: 'Einwilligungen', link: '/svws-client/apps/lehrer/einwilligungen/' },
+									//{ text: 'Lernplattformen', link: '/svws-client/apps/lehrer/lernplattformen/' },
 								] },
 								{ text: 'Klassen', link: '/svws-client/apps/klassen/klasse/', collapsed: true, items: [
 									{ text: 'Klasse', link: '/svws-client/apps/klassen/klasse/' },
