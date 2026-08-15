@@ -1,10 +1,11 @@
 # Roadmap
 
-Letzte Aktualisierung: 2026-08-13
+>[!TIP]Letzte Aktualisierung
+>13. August 2026
 
 ## Release Zyklus
 
-Die Releases des SVWS-Servers und von Schild-NRW 3 sind quartalsweise geplant: 
+Die Releases des SVWS-Servers und von SchILD-NRW 3 sind quartalsweise geplant: 
 
 + Ende Januar
 + Ende April
