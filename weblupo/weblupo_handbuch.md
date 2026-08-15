@@ -16,7 +16,7 @@ Klicken Sie auf **Datei auswählen** und navigieren Sie dann auf dem Rechner zur
 Hierbei wird das SVWS-WebLuPO nur im Browser auf dem aktuellen Rechner ausgeführt. Somit werden weder ein bestimmtes Betriebssystem vorausgesetzt noch verlassen die Daten das Endgerät, an dem gearbeitet wird.
 :::
 
-## Die Oberfläche von SVWS-WebLuPO.
+## Die Oberfläche von SVWS-WebLuPO
 
 Die folgende Grafik zeigt die vier Bereiche der Laufbahnberatungstools:
 
