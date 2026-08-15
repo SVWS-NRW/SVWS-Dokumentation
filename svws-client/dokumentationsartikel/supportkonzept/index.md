@@ -4,14 +4,14 @@
 
 Diese Webseite teilt sich in drei große Teile:
 
-* Unter **Benutzerhandbücher** finden Sie alles, was für Nutzer der Schulverwaltungssoftware relevant ist.
+1. Unter **Benutzerhandbücher** finden Sie alles, was für Nutzer der Schulverwaltungssoftware relevant ist.
     * Die Dokumentation des *SVWS-Clients* selbst, vom Aufbau bis zu konkreten Anleitungen
     * Die Beschreibung des *SVWS-AdminClients*, mit dem SVWS-Administratoren in der Schule selbst Datenbank-Backups anlegen können oder mit dem mehrere Schemata parallel aufgesetzt werden können. Auch eine Migration lässt sich über den AdminClient starten.
     * Es finden sich Hinweise zur Laufbahnplanung mit *SVWS-WebLuPO* aus Sicht eines Anwenders.
-* **Administration**
+2. **Administration**
     * Unter dem Punkt *SVWS-Installation* finden sich die Information für SVWS-Admins in der Schule oder IT-Dienstleister, mit denen sich die SVWS-Umgebung installieren lässt und eine Migration angestoßen wird.
     * Unter *Einwicklung, Projekte, Schulungen* finden sich weitergehende Informatione für Interessierte, die in die Softwareenticklung einsteigen möchten. Dieser Bereich ist für Anwender in Schule und IT nicht relevant.
-* **Entwicklung** für technische Informationen für Entwickler und zur SVWS-Umgebung gehörende weitergehende Projekte. Für Anwender und Administratoren der Umgebung sind hier keine Informationen hinterlegt.
+3. **Entwicklung** für technische Informationen für Entwickler und zur SVWS-Umgebung gehörende weitergehende Projekte. Für Anwender und Administratoren der Umgebung sind hier keine Informationen hinterlegt.
 
 ## Weiterer Support
 
