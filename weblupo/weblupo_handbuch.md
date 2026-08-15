@@ -6,7 +6,7 @@ In diesem Artikel wird die Benutzung einer `.lp`-Datei erklärt, die von den bet
 
 ## Bearbeitung in SVWS-WebLuPO
 
-![weblupo Startseite](./graphics/weblupo_startseite.png)
+![weblupo Startseite](./graphics/weblupo_startseite.png "Nachdem WebLuPO gestartet wurde, ist eine WebLuPO-Datei einzulesen.")
 
 Startet man SVWS-WebLuPO, ist auf diesem Bildschirm die individuelle `.lp`-Datei hochzuladen.
 
@@ -20,7 +20,7 @@ Hierbei wird das SVWS-WebLuPO nur im Browser auf dem aktuellen Rechner ausgefüh
 
 Die folgende Grafik zeigt die vier Bereiche der Laufbahnberatungstools:
 
-![weblupo Bereichsübersicht](./graphics/weblupo_bereiche.png)
+![weblupo Bereichsübersicht](./graphics/weblupo_bereiche.png "Die Oberfläche von WebLuPO ist in vier große Bereiche aufgeteilt.")
 
 * Im ersten Bereich können Sie den *Modus* einstellen und haben Zugriff auf Speicher- und Bearbeitungsmöglichkeiten.
 
