@@ -276,7 +276,7 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Schüler', link: '/svws-client/apps/schueler/', collapsed: true, items: [
 									{ text: 'Individualdaten', link: '/svws-client/apps/schueler/individualdaten/' },
-									{ text: 'Sonstiges', link: '/svws-client/apps/schueler/sonstiges/', collapsed: true, items: [
+									{ text: 'Sonstiges', link: '/svws-client/apps/schueler/sonstiges/vermerke/', collapsed: true, items: [
 										{ text: 'Vermerke', link: '/svws-client/apps/schueler/sonstiges/vermerke/' },
 										{ text: 'Einwilligungen', link: '/svws-client/apps/schueler/sonstiges/einwilligungen/' },
 										{ text: 'Lernplattformen', link: '/svws-client/apps/schueler/sonstiges/lernplattformen/' },
