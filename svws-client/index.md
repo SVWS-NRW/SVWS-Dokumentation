@@ -10,6 +10,6 @@ Hier finden Sie
 Der SVWS-Client arbeitet auf Basis des SVWS-Servers. Alle Änderungen über den SVWS-Client stehen damit wechselseitig anderen Client-Anwendungen zur Verfügung, die auf den SVWS-Server zugreifen.
 
 >[!TIP]Verwaltungsnetz
->Bezüglich des Datenschutzes ist zu beachten, dass der SVWS-Server mit dem SVWS-Client nur aus dem Verwaltungsnetz zu erreichen sein soll. Möchten Sie einen Zugriff von außen ermöglichen, müssen Sie zu anderen Maßnahmen greifen, also zum Beispiel einen modernen Standards entsprechenden VPN-Zugang einrichten. Kontaktieren Sie hierzu bei Bedarf Ihre IT.
+>Bezüglich des Datenschutzes ist zu beachten, dass der SVWS-Server mit dem SVWS-Client nur aus dem Verwaltungsnetz zu erreichen sein soll. Möchten Sie einen Zugriff von außen ermöglichen, müssen Sie zu anderen, modernen Standards entsprechenden Maßnahmen greifen. Kontaktieren Sie hierzu bei Bedarf Ihre IT.
 
 Hier eine Übersicht aller [Geschäftsprozesse](geschaeftsprozesse.md) des SVWS-Servers und SVWS-Clients.
