@@ -1,6 +1,6 @@
 # Dokumentation für den SVWS-Server und dessen Ableger
 
-Diese Readme-Datei ist nicht Teil der veröffentlichten Doku-Seite, die im Netz veröffentlich wird und beinhaltet Hinweise zur Einrichtung und Arbeit mit diesem Repository.
+Diese ➜ Readme-Datei ist nicht Teil der veröffentlichten Doku-Seite, die im Netz veröffentlich wird und beinhaltet Hinweise zur Einrichtung und Arbeit mit diesem Repository.
 
 Im oberen Teil wird beschrieben, wie man sich eine Entwicklungsumgebung zum lokalen Testen der Dokumentation einrichten kann, weiter unten gibt es Vorgaben zur Erstellung von Artikeln, die in die Doku aufgenommen werden sollen.
 
