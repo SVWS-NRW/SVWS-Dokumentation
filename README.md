@@ -93,6 +93,10 @@ Tatsächliche Anleitungen, Tutorials und Prozessbeschreibungen (ZP10) und vor al
 * Bei Grafiken und Links sind wenn möglich *relative* Links und keine absoluten Pfade zu verwenden!
 * Grafiken werden im normalen Light-Mode (weißer Hintergrund) aufgenommen.
 
+Diagramme können (bald) mit Mermaid erstellt werden: Hier Beispiele:
+
+https://github.com/sametcn99/vitepress-mermaid-renderer/blob/main/docs/content/en/examples/basic.md?plain=1
+
 ### Technische Umsetzung
 Die Dokumentation wird aus vielen [Markdown](https://de.wikipedia.org/wiki/Markdown)-Dokumenten erzeugt, die ähnlich wie Wikipedia ein spezielles Formatierungsformat verwendet. Diese Dateien werden mit Hilfe von [vitepress](https://vitepress.dev/) und der Konfigurationsdatei zu einer HTML-Seite gebaut, die dann mit dem Browser angezeigt werden kann.
 
