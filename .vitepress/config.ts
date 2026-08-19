@@ -35,9 +35,9 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: '', items: [
 							{ text: 'SVWS-WebNotenManager', link: '/svws-wenom' },
-							{ text: 'SVWS-GradeHub', link: '/svws_module/svws_gradehub' },
-							{ text: 'SVWS-Konferenz', link: '/svws_module/svws_konferenzuebersicht' },
-							{ text: 'SVWS-Prognos', link: '/svws_module/svws_prognos' },
+							{ text: 'SVWS-GradeHub', link: '/svws-module/svws-gradehub' },
+							{ text: 'SVWS-Konferenz', link: '/svws-module/svws-konferenzuebersicht' },
+							{ text: 'SVWS-Prognos', link: '/svws-module/svws-prognos' },
 							{ text: 'SVWS-WebLuPO', link: '/svws-weblupo' },
 						] },
 					] },
@@ -158,39 +158,39 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Roadmap', link: '/deployment/roadmap.md' },
 					] },
 				],
-				'/svws_module/svws_gradehub' : [
+				'/svws-module/svws-gradehub' : [
 					{ text: '', items: [
-						{ text: 'SVWS-GradeHub', link: '/svws_module/svws_gradehub/',  collapsed: false, items: [
-							{ text: 'Benutzerhandbuch', link:'/svws_module/svws_gradehub/bh_starten.md', collapsed: false, items: [
-								{ text: 'Nutzerinstallation/Login', link:'/svws_module/svws_gradehub/bh_starten.md' },
-								{ text: 'Leistungsdaten eintragen', link: '/svws_module/svws_gradehub/bh_gradehub_verwenden.md' },
+						{ text: 'SVWS-GradeHub', link: '/svws-module/svws-gradehub/',  collapsed: false, items: [
+							{ text: 'Benutzerhandbuch', link:'/svws-module/svws-gradehub/bh_starten.md', collapsed: false, items: [
+								{ text: 'Nutzerinstallation/Login', link:'/svws-module/svws-gradehub/bh_starten.md' },
+								{ text: 'Leistungsdaten eintragen', link: '/svws-module/svws-gradehub/bh_gradehub_verwenden.md' },
 							] },
-							{ text: 'Administration', link: '/svws_module/svws_gradehub/administration_noten.md', collapsed: false, items: [
-								{ text: 'Administration Noten', link: '/svws_module/svws_gradehub/administration_noten.md' },
-								{ text: 'Adminstration Installation', link: '/svws_module/svws_gradehub/installation.md' },
+							{ text: 'Administration', link: '/svws-module/svws-gradehub/administration_noten.md', collapsed: false, items: [
+								{ text: 'Administration Noten', link: '/svws-module/svws-gradehub/administration_noten.md' },
+								{ text: 'Adminstration Installation', link: '/svws-module/svws-gradehub/installation.md' },
 							] },
 						] },
 					] },
 				],
-				'/svws_module/svws_konferenzuebersicht' : [
+				'/svws-module/svws-konferenzuebersicht' : [
 					{ text: '', items: [
-						{ text: 'SVWS-Konferenzübersicht', link: '/svws_module/svws_konferenzuebersicht/',  collapsed: false, items: [
-							{ text: 'Login - Lokal und Server', link: '/svws_module/svws_konferenzuebersicht/login.md' },
-							{ text: 'Verwendung in der Konferenz', link: '/svws_module/svws_konferenzuebersicht/verwendung.md' },
-							{ text: 'Installation', link: '/svws_module/svws_konferenzuebersicht/installation.md' },
-							{ text: 'Fehlerbehebung', link: '/svws_module/svws_konferenzuebersicht/fehlerbehebung.md' },
-							{ text: 'Hinweise zum Datenschutz', link: '/svws_module/svws_konferenzuebersicht/datenschutz.md' },
+						{ text: 'SVWS-Konferenzübersicht', link: '/svws-module/svws-konferenzuebersicht/',  collapsed: false, items: [
+							{ text: 'Login - Lokal und Server', link: '/svws-module/svws-konferenzuebersicht/login.md' },
+							{ text: 'Verwendung in der Konferenz', link: '/svws-module/svws-konferenzuebersicht/verwendung.md' },
+							{ text: 'Installation', link: '/svws-module/svws-konferenzuebersicht/installation.md' },
+							{ text: 'Fehlerbehebung', link: '/svws-module/svws-konferenzuebersicht/fehlerbehebung.md' },
+							{ text: 'Hinweise zum Datenschutz', link: '/svws-module/svws-konferenzuebersicht/datenschutz.md' },
 						] },
 					] },
 				],
-				'/svws_module/svws_prognos' : [
+				'/svws-module/svws-prognos' : [
 					{ text: '', items: [
-						{ text: 'SVWS-Prognos (unveröffentlicht)', link: '/svws_module/svws_prognos/',  collapsed: false, items: [
-							{ text: 'Verbindung mit dem Server', link: '/svws_module/svws_prognos/server_verbinden.md' },
-							{ text: 'Übersicht SVWS-Prognos', link: '/svws_module/svws_prognos/prognos.md' },
+						{ text: 'SVWS-Prognos (unveröffentlicht)', link: '/svws-module/svws-prognos/',  collapsed: false, items: [
+							{ text: 'Verbindung mit dem Server', link: '/svws-module/svws-prognos/server_verbinden.md' },
+							{ text: 'Übersicht SVWS-Prognos', link: '/svws-module/svws-prognos/prognos.md' },
 							{ text: 'Jahrgangsprognosen [i.E.]' },
-							{ text: 'Manuelle Prognosen', link: '/svws_module/svws_prognos/prognose_manuell.md' },
-							{ text: 'Installation', link: '/svws_module/svws_prognos/installation.md' },
+							{ text: 'Manuelle Prognosen', link: '/svws-module/svws-prognos/prognose_manuell.md' },
+							{ text: 'Installation', link: '/svws-module/svws-prognos/installation.md' },
 							{ text: 'Begriffe, Konventionen und Fehlersuche [i.E.]' },
 						] },
 					] },
