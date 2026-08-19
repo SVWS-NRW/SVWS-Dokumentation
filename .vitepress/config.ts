@@ -92,7 +92,7 @@ export default defineConfig(({ mode }) => {
 				'/projekte': [
 					{ text: '', items: [
 						{ text: 'Projekte', link: '/projekte/', collapsed: false, items: [
-							{ text: 'SVWS-WeNoM', link: '/wenom/' },
+							{ text: 'SVWS-WeNoM', link: '/svws-wenom/' },
 							{ text: 'ASD-Statistik', link: '/projekte/ASD-Statistik/' },
 							{ text: 'Schulbewerbung.de', link: '/projekte/Schulbewerbung.de/' },
 							{ text: 'xSchule', link: '/projekte/xSchule/' },
