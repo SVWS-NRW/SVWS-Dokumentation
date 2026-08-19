@@ -20,21 +20,19 @@ Der SVWS-WeNoM ist über eine **eigene (Sub-)Domain** aufzurufen. Richten Sie si
 
 ## Download der SVWS-WeNoM Programmdateien
 
-Unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVWS-Server/releases) können neben dem SVWS-Server auch die Programmdateien des  zugehörigen SVWS-WeNoM heruntergeladen werden: Dazu auf **SVWS-ENMServer-x.x.x.zip** klicken.
+Unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVWS-Server/releases) können neben dem SVWS-Server auch die Programmdateien des zugehörigen SVWS-WeNoM heruntergeladen werden: Dazu klicken Sie auf **SVWS-ENMServer-x.x.x.zip**.
 
-![Download Github.com](./graphics/download_github.png)
+![Laden Sie die Programmdateien von Github herunter, hier: SVWS-ENServer-x.x.x.zip](./graphics/download_github.png "Laden Sie die gewünschten Dateien herunter.")
 
 ## Kopieren der SVWS-WeNoM Programmdateien
 
-+ Entpacken aller Dateinen aus der in das `/html` Verzeichnis des Webservers
-+ Freigabe der Ordner `app`, `db` und `public` mit entsprechenden Rechten
-+ Stellen Sie die (Sub-)Domain so ein, dass sie auf das Verzeichnis ./public zeigt.  
-Nutzen Sie dazu ggf. die Anleitung Ihres Hosters oder die Anleitung für einen eigenen Webserver.
++ Entpacken aller Dateien aus der gepackten .zip-Datei in das Verzeichnis des Webservers. Sie können das root-Verzeichnis wählen, oft ist das `\html\` oder `\wwww\`. Sie können aber auch ein Unterverzeichnis für den SVWS-WeNoM erstellen.
++ Freigabe der Ordner `app`, `db` und `public` mit entsprechenden Rechten.
++ Stellen Sie die `(Sub-)Domain` so ein, dass sie auf das Verzeichnis `./public` zeigt. Nutzen Sie hierzu gebenfalls die Anleitung Ihres Hosters oder die Anleitung für einen eigenen Webserver.
 
-![Filezilla upload](./graphics/filezilla_upload.png)
+![Die Dateien werden hier mit Filezilla hochgeladen](./graphics/filezilla_upload.png "Laden Sie die Dateien auf Ihren Webserver. Hier im Bild wird dafür Filezilla verwendet.")
 
-
-Die Ordnerstruktur in `/var/www/html/wenom` sollte nun folgerndermaßen aussehen:
+Die Ordnerstruktur in `/var/www/html/wenom` sollte nun folgendermaßen aussehen:
 
 ```bash
 /app
@@ -46,12 +44,11 @@ Die Ordnerstruktur in `/var/www/html/wenom` sollte nun folgerndermaßen aussehen
 `DocumentRoot` in der Apache-Konfiguration muss auf den Ordner `./public` zeigen!
 :::
 
-Die Änderung des `DocumentRoot` kann unter den hosterspezifischen Installationen oder der Installation für den eignenen Webserver bei Bedarf nachgelesen werden.
-
+Die Änderung des `DocumentRoot` kann unter den hosterspezifischen Installationen oder der Installation für den eignenen Webserver bei Bedarf nachgelesen werden. Bei Webhostern ist dies häufig weder nötig noch möglich. Wenn Sie einen eigenen Webserver aufsetzen, kontaktieren Sie hierzu Ihre IT.
 
 ### Ordner-, Unterordner- und Dateiberechtigungen
 
-1. Setzen Sie die korrekten Ordner-Berechtigungen (und Unterordner und Dateien) für `public`und `app`zum Lesen und Schreiben:
+1. Setzen Sie die korrekten Ordner-Berechtigungen (und Unterordner und Dateien) für `public` und `app`zum Lesen und Schreiben:
     - **Besitzer**: `Lesen, Schreiben, Ausführen`
     - **Gruppe**:  `Lesen, x, Ausführen`
     - **Öffentlich**: *NICHTS erlaubt*
@@ -69,17 +66,17 @@ Kontrollieren Sie bitte diese Berechtigungen gewissenhaft!
 
 ## Test
 
-Sie 
+Rufen Sie nun den Netzwerkpfad mit dem passenden Ordner für SVWS-WeNoM auf und testen Sie, ob der Notenserver erreichbar ist.
 
 ## Impressum und Datenschutzhinweis
 
 Für SVWS-WeNoM-Instanzen, die über das freie Internet erreichbar sind, ist ein Impressum zu setzen.
 
-Erzeugen Sie im Pfad der Datenbank eine Datei *Impressum.md*, in die Sie Ihre Daten eintragen. 
+Erzeugen Sie im Pfad der Datenbank `/db/` eine Datei *Impressum.md*, in die Sie Ihre Daten eintragen. 
 
 Sie können den Standard-Datenschutzhinweis in SVWS-WeNoM ändern, indem Sie auch eine *Datenschutz.md* erzeugen und eigene Eintragungen vornehmen.
 
-Wenn an den Pfaden nichts verändert wurde, ist der Standardpfad `wenom_verzeichnis/db/` für die beiden Dateien. Nutzen Sie andere Pfade, etwa für mehrere SVWS-WeNoM-Instanzen, müssen diese verwenden.
+Wenn an den Pfaden nichts verändert wurde, ist der Standardpfad `wenom_verzeichnis/db/` für die beiden Dateien. Nutzen Sie andere Pfade, etwa für mehrere SVWS-WeNoM-Instanzen, müssen diese verwendet werden.
 
 ```
 $impressumPath = $dbPath.'/Impressum.md';
@@ -87,6 +84,6 @@ $datenschutzPath = $dbPath.'/Datenschutz.md';
 ```
 
 >[!TIP]Großschreibung
->Beachten Sie bitte die großen "I" und "D".
+>Beachten Sie bitte die großen "I" für die *Impressum.md* beziehungsweise "D" *für Datenschutz.md*.
 
 Liegt eine der beiden Dateien nicht vor, wird für die Nutzer bei `Impressum` der Link inaktiv und bei `Datenschutz` der Standardtext angezeigt.
