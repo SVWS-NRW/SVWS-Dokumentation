@@ -110,6 +110,3 @@ Speichern Sie die Datei. Es ist kein Neustart und kein Neubau nötig. Beim näch
 
 >[!TIP]Firewall
 >Port 3001 muss in der Firewall des Servers nach außen freigegeben sein.
-
-
-
