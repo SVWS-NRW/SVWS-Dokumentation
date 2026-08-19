@@ -34,7 +34,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'SVWS-Client', link: '/svws-client' },
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
 						{ text: '', items: [
-							{ text: 'SVWS-WebNotenManager', link: '/wenom' },
+							{ text: 'SVWS-WebNotenManager', link: '/svws-wenom' },
 							{ text: 'SVWS-GradeHub', link: '/svws_module/svws_gradehub' },
 							{ text: 'SVWS-Konferenz', link: '/svws_module/svws_konferenzuebersicht' },
 							{ text: 'SVWS-Prognos', link: '/svws_module/svws_prognos' },
@@ -203,26 +203,26 @@ export default defineConfig(({ mode }) => {
 						] },
 					] },
 				],
-				'/wenom' : [
+				'/svws-wenom' : [
 					{ text: '', items: [
-						{ text: 'SVWS-WeNoM', link: '/wenom/index.md' },
-						{ text: 'Benutzerhandbuch', link: '/wenom/benutzerhandbuch/index.md', collapsed: false, items: [
-							{ text: 'Anleitung für Lehrkräfte', link: '/wenom/benutzerhandbuch/anleitung_lehrkraefte.md'},
-							{ text: 'Einrichten der 2-Faktor-Authentifizierung', link: '/wenom/benutzerhandbuch/einrichtungZweiterFaktor.md' },
-							{ text: 'Schulische Administration', link: '/wenom/benutzerhandbuch/schulische_administration.md'},
+						{ text: 'SVWS-WeNoM', link: '/svws-wenom/index.md' },
+						{ text: 'Benutzerhandbuch', link: '/svws-wenom/benutzerhandbuch/index.md', collapsed: false, items: [
+							{ text: 'Anleitung für Lehrkräfte', link: '/svws-wenom/benutzerhandbuch/anleitung_lehrkraefte.md'},
+							{ text: 'Einrichten der 2-Faktor-Authentifizierung', link: '/svws-wenom/benutzerhandbuch/einrichtungZweiterFaktor.md' },
+							{ text: 'Schulische Administration', link: '/svws-wenom/benutzerhandbuch/schulische_administration.md'},
 						] },
-						{ text: 'Installation', link: '/wenom/installation/index.md', collapsed: false, items: [
-							{ text: 'Installationsanleitung', link: '/wenom/installation/installation.md' },
-							{ text: 'Ersteinrichtung', link: '/wenom/installation/ersteinrichtung.md' },
-							{ text: 'Hosterspezifische Anleitungen',link: '/wenom/hoster_installation/', collapsed: false, items: [
-								{ text: 'All-Inkl', link: '/wenom/hoster_installation/all-inkl.md' },
-								{ text: 'Hosteurope', link: '/wenom/hoster_installation/hosteurope.md' },
-								{ text: 'Strato', link: '/wenom/hoster_installation/strato.md' },
-								{ text: 'Eigener Webserver', link: '/wenom/installation/installation_webserver.md' },
+						{ text: 'Installation', link: '/svws-wenom/installation/index.md', collapsed: false, items: [
+							{ text: 'Installationsanleitung', link: '/svws-wenom/installation/installation.md' },
+							{ text: 'Ersteinrichtung', link: '/svws-wenom/installation/ersteinrichtung.md' },
+							{ text: 'Hosterspezifische Anleitungen',link: '/svws-wenom/hoster_installation/', collapsed: false, items: [
+								{ text: 'All-Inkl', link: '/svws-wenom/hoster_installation/all-inkl.md' },
+								{ text: 'Hosteurope', link: '/svws-wenom/hoster_installation/hosteurope.md' },
+								{ text: 'Strato', link: '/svws-wenom/hoster_installation/strato.md' },
+								{ text: 'Eigener Webserver', link: '/svws-wenom/installation/installation_webserver.md' },
 							] },
-							{ text: 'mehrere Mandanten', link: '/wenom/installation/mehrereMandanten.md' },
+							{ text: 'mehrere Mandanten', link: '/svws-wenom/installation/mehrereMandanten.md' },
 						] },
-						{ text: 'Geschäftsprozesse WeNoM', link: '/wenom/geschaeftsprozesse.md' },
+						{ text: 'Geschäftsprozesse WeNoM', link: '/svws-wenom/geschaeftsprozesse.md' },
 					] },
 				],
 				'/svws-client': [

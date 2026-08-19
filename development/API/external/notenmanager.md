@@ -2,7 +2,7 @@
 
 API-Endpunkt für den Export zu externen Notenmanagern
 
-Es wurden fünf Endpunkte für externe Notenmanager, wie zum Beispiel [**SVWS-WeNoM**](../../../wenom/index.md) geschaffen. Mit dieser API soll ein automatisierter Abgleich von Schülerleistungsdaten und Zeugnisbemerkungen seitens der Lehrer und der Schulverwaltung ermöglicht werden.
+Es wurden fünf Endpunkte für externe Notenmanager, wie zum Beispiel [**SVWS-WeNoM**](../../../svws-wenom/index.md) geschaffen. Mit dieser API soll ein automatisierter Abgleich von Schülerleistungsdaten und Zeugnisbemerkungen seitens der Lehrer und der Schulverwaltung ermöglicht werden.
 
 Die Endpunkte können nur im internen Verwaltungsnetz aufgerufen werden und benötigen einen SVWS-Benutzer mit entsprechenden Rechten.
 

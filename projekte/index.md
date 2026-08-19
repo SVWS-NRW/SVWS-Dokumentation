@@ -22,7 +22,7 @@ So wird hier eine minimale Teilmenge der Daten auf einem Webserver gehostet, wo 
 
 Diese Daten werden dann mit dem Bestand im SVWS-Server synchronisiert.
 
-[Zur Beschreibung des Projekts.](../wenom/)
+[Zur Beschreibung des Projekts.](../svws-wenom/)
 
 ## XSchule XML-Schnittstelle zum länderübergreifenden Datenaustausch
 
