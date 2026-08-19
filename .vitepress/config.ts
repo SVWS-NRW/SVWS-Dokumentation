@@ -38,7 +38,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'SVWS-GradeHub', link: '/svws_module/svws_gradehub' },
 							{ text: 'SVWS-Konferenz', link: '/svws_module/svws_konferenzuebersicht' },
 							{ text: 'SVWS-Prognos', link: '/svws_module/svws_prognos' },
-							{ text: 'SVWS-WebLuPO', link: '/weblupo' },
+							{ text: 'SVWS-WebLuPO', link: '/svws-weblupo' },
 						] },
 					] },
 				{ text: 'Administration',
@@ -195,11 +195,11 @@ export default defineConfig(({ mode }) => {
 						] },
 					] },
 				],
-				'/weblupo' : [
+				'/svws-weblupo' : [
 					{ text: '', items: [
-						{ text: 'SVWS-WebLuPO', link: '/weblupo/', collapsed: false, items: [
-							{ text: 'Benutzerhandbuch', link: '/weblupo/weblupo_handbuch.md' },
-							{ text: 'Installation', link: '/weblupo/weblupo_installation.md' },
+						{ text: 'SVWS-WebLuPO', link: '/svws-weblupo/', collapsed: false, items: [
+							{ text: 'Benutzerhandbuch', link: '/svws-weblupo/weblupo_handbuch.md' },
+							{ text: 'Installation', link: '/svws-weblupo/weblupo_installation.md' },
 						] },
 					] },
 				],
