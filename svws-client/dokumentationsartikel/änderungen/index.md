@@ -1,5 +1,5 @@
 
-# Grundlegenede Änderungen im Konzept des SVWS-Clients
+# Grundlegende Änderungen im Konzept des SVWS-Clients
 
 In einigen Bereichen haben sich in den letzten 20 Jahren der Entwicklung von SchILD-NRW technische Altlasten aufgebaut, die mitunter zu unoptimierten Arbeitsverläufen führten.
 
