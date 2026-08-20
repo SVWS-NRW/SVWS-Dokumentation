@@ -5,7 +5,7 @@ In diesem Bereich werden Ihnen die Erziehungsberechtigten einer Schülerin bzw. 
 
 Hier sehen Sie beispielhaft eingetragene Erziehungsberechtigte sowie einen eigenen Eintrag zum Schüler Torsten Blaurock, der volljährig ist.
 
-![Beispieltabelle aller Erziehungsberechtigten](./graphics/SVWS_schueler_erziehungsberechtigte_tabelle.png "Hier sehen Sie ein Beispiel für den Eintrag von Erziehungsberechtigten.")
+![Beispieltabelle aller Erziehungsberechtigten](./graphics/SVWS_schueler_erziehungsberechtigte_Tabelle.png "Hier sehen Sie ein Beispiel für den Eintrag von Erziehungsberechtigten.")
 
 Über das **+** ganz rechts können Sie weitere Erziehungsberechtigte hinzufügen. Es erscheint ein Pop-up-Fenster:
 
