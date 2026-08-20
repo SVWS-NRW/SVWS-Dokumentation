@@ -191,7 +191,7 @@ Damit sind die Laufbahndaten grundsätzlich fixiert.
 Unabhängig vom Abiturjahrgang - je nach Ausgang der Nachprüfung - müssen jetzt ggf. Kurszuordnungen erfolgen.
 Diese werden in der Kursplanung **händisch** oder durch **"Verteilen" automatisch gesetzt**.
 
-::: caution **WICHTIG:**
+::: danger **WICHTIG**
 Vor einer Synchronisation müssen jetzt bei den betroffenen Schülern die **Facheinträge in den Leistungsdaten manuell eingetragen** werden (Fächer ergänzen).
 :::
 
