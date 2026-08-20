@@ -10,4 +10,4 @@ Um eine Einwilligung zu bearbeiten, klappen Sie mittels des kleinen Hakens recht
 
 Wurde ein Haken gesetzt, wird im Titel der Einwilligung dieser Status als Text angezeigt, im Screenshot ist bei *Teilnahme am Lehrerausflug nach Mallorca* der Status *Abgefragt* und bei *Verwendung Foto Schulhomepage* der Status *Abgefragt und Zugestimmt* zu lesen. Bei *"*Adress- und Telefonnummernliste* ist gerade die Einwilligung aufgeklappt, um den Status zu setzen.
 
-Neue Einwillungsarten werden über das Menü ***Schule*** unter ***Katalog*** **Einwilligungen** erzeugt und bearbeitet. Dort können keine Einwilligungen gelöscht oder verändert werden, die schon bei mindestens einer Lehrkraft/Person gesetzt sind. Ebenso lassen sich dort Einwilligungen für Schülerinnen und Schüler erfassen.
+Neue Einwilligungsarten werden über das Menü ***Schule*** unter ***Katalog*** **Einwilligungen** erzeugt und bearbeitet. Dort können keine Einwilligungen gelöscht oder verändert werden, die schon bei mindestens einer Lehrkraft/Person gesetzt sind. Ebenso lassen sich dort Einwilligungen für Schülerinnen und Schüler erfassen.
