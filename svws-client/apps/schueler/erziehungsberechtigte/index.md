@@ -18,7 +18,7 @@ Wählen Sie zuerst die *Erzieherart* aus. Dazu können Sie unter den eingetragen
 Füllen Sie nach der Auswahl die restlichen Felder aus, wobei lediglich die Pflichtfelder *Rufname* und *Nachname* notwendig zufüllen sind.
 
 ::: tip
-Beim Feld *Bemerkungen* kann man sinnvoll eintragen, ist aber auch, ob diese Person überhaupt erziehungsberechtigt ist, oder ob sogar ein Kontaktverbot gegeben ist.
+Beim Feld *Bemerkungen* kann man eintragen, ob diese Person nicht erziehungsberechtigt ist, oder ob sogar ein Kontaktverbot besteht.
 :::
 
 Als nächstes ist zu markieren, ob diese Person ein Anschreiben erhalten soll (***Erhält Anschreiben***).
