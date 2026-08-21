@@ -2,7 +2,7 @@
 
 In diesem Bereich werden Ihnen die Einwilligungen der einzelnen Schülerinnen und Schüler angezeigt.
 
-![Liste der Einwilligungen](./graphics/SVWS_schueler_einwilligungen.png "Haken Sie Abfragestatus und eine eventuell gegebene Einwilligung an.")
+![Liste der Einwilligungen](./graphics/svws_schueler_einwilligungen.png "Haken Sie Abfragestatus und eine eventuell gegebene Einwilligung an.")
 
 Um eine Einwilligung zu bearbeiten, klappen Sie mittels des kleinen Hakens rechts bei jeder Einwilligung den Status auf und setzen Sie einen Haken bei *Abgefragt* beziehungsweise bei *Zugestimmt*. Setzen Sie ihn nur bei *Zugestimmt*, wird der Haken bei *Abgefragt* automatisch gesetzt.
 
