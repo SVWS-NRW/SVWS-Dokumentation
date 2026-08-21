@@ -10,4 +10,4 @@ Alle Einwilligungen, bei denen kein Haken gesetzt ist, werden unter **Nicht Abge
 
 Wurde ein Haken gesetzt, wird im Titel der Einwilligung dieser Status als Text angezeigt. Im Screenshot ist bei *Verwendung Foto* der Status *Abgefragt* und bei *Teilnahme an Stierkämpfen* der Status *Abgefragt und Zugestimmt* zu lesen.
 
-Neue Einwillungsarten werden über das Menü ***Schule*** unter ***Katalog*** **Einwilligungen** erzeugt und bearbeitet. Dort können keine Einwilligungen gelöscht oder verändert werden, die schon bei mindestens einer Schülerin / einem Schüler gesetzt sind. Ebenso lassen sich dort Einwilligungen für Lehrkräfte/Personen erfassen.
+Neue *Einwillungsarten* werden über die **App Schule**  ➜  **Kataloge**  ➜  **Einwilligungen** erzeugt und bearbeitet. Dort können keine Einwilligungen gelöscht oder verändert werden, die schon bei mindestens einer Schülerin / einem Schüler gesetzt sind. Ebenso lassen sich dort Einwilligungen für Lehrkräfte/Personen erfassen.
