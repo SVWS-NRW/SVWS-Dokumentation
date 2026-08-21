@@ -17,10 +17,11 @@ Wählen Sie zuerst die *Erzieherart* aus. Dazu können Sie unter den eingetragen
 
 Füllen Sie nach der Auswahl die restlichen Felder aus, wobei lediglich die Pflichtfelder *Rufname* und *Nachname* notwendig zufüllen sind.
 
-***Hinweis:***
+::: tip
 Beim Feld *Bemerkungen* kann man sinnvoll eintragen, ist aber auch, ob diese Person überhaupt erziehungsberechtigt ist, oder ob sogar ein Kontaktverbot gegeben ist.
+:::
 
-Als nächstes ist zu markieren, ob diese Person ein Anschreiben erhalten soll (***Erhält Anschreiben***). Generell gilt, dass jede ***sorgeberechtigte Person*** ein Anschreiben erhält, d.h. z.B. Mahnungen, Verweise o.ä.
+Als nächstes ist zu markieren, ob diese Person ein Anschreiben erhalten soll (***Erhält Anschreiben***).
 
 Zum Schluss können Sie in Verbindung zu dieser Person eine weitere Person angeben, indem Sie auf ***+2. Person*** klicken. Es öffnet sich ein weiteres Pop-up-Fenster:
 
@@ -36,14 +37,16 @@ Wie Sie bereits in dem Auswahlmenü
 
 ![Auswahlfenster Erzieherart auswählen](./graphics/SVWS_schueler_erzieherart-auswahl.png "Es wird ein Auswahlenster aufgerufen, um die Erzieherart auszuwählen.")
 
-gesehen haben, können unterschiedliche *Erzieherarten* ausgewählt werden. Diese können im Menü ***Schule*** unter ***Kataloge*** und **Erzieherarten** bearbeitet und bei Bedarf ergänzt werden.
+gesehen haben, können unterschiedliche *Erzieherarten* ausgewählt werden. Diese können in der **App Schule** ➜ **Kataloge** ➜ **Erzieherarten** bearbeitet und bei Bedarf ergänzt werden.
 
-***Hinweis:***
+::: tip
 Es ist nur bei **Eltern**, **Pflegeeltern** etc. sinnvoll, eine *2. Person* einzugeben.
+:::
 
 ## Weitere Arten von Ansprechpartnern
 
 Bei weiteren Ansprechpartnern wie z.B. *Partner*, *Onkel* und *Tante*, die nicht erziehungs- bzw. sorgeberechtigt sind, sollte stets das ***Anschreiben*** abgewählt bleiben.
 
-***Hinweis:***
-Der Eintrag ***Schüler ist volljährig*** bzw. ***Schülerin ist volljährig*** ist dann einzutragen, wenn die Schülerin bzw. der Schüler volljährig ist und demnach persönlich ein Anschreiben erhält. Wenn dieser Eintrag vorhanden ist, wird bei Reports an die Erziehungsberechtigten der Schüler bzw. die Schülerin automatisch direkt adressiert. Es ist an Ihrer Schule zu klären, ob die Erziehungsberechtigten dennoch auch ein Anschreiben erhalten sollen, oder ob bei ihnen der Haken weggenommen wird. Rechtlich kann der Schüler bzw. die Schülerin darauf bestehen, dass die Erziehungsberechtigten bei Volljährigkeit kein Anschreiben mehr erhalten sollen.
+::: tip
+Der Eintrag ***Schüler ist volljährig*** ist dann einzutragen, wenn die Schülerin bzw. der Schüler volljährig ist und demnach persönlich ein Anschreiben erhält. Wenn dieser Eintrag vorhanden ist, wird bei einem Reports an die Erziehungsberechtigten auch der Schüler automatisch adressiert.
+:::
