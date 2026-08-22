@@ -2,6 +2,12 @@
 
 Wird nicht im Inhalt verlinkt
 
+Kurzes HowTo:
+
+* Pfeile
+* Formen
+* ...
+
 ```mermaid
 flowchart LR
   Start --> Stop
