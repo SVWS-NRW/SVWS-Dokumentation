@@ -14,7 +14,7 @@
    + Git erfordert **Username** und einen **Access Token** (kann in IntelliJ oder GitLab/GitHub erstellt werden)
 2. Java 21 installieren
    + In IntelliJ auf *File → Project Structure → Project* gehen
-   + Unter SDK die Java Version temurin-21 auswählen (ggf. vorher herunterladen)
+   + Unter SDK die Java Version temurin-21 auswählen (gegebenenfalls vorher herunterladen)
 3. Gradle konfigurieren
    + Gehe zu *File → Settings → Build, Execution, Deployment → Gradle* und verwende folgende Einstellungen:
      + *Build and run using*: Gradle (Default)
@@ -123,10 +123,10 @@ Folgende Aktionen werden bei diesen Macros durchgeführt:
 Nach allen Konfigurationen muss die IDE neugestartet werden, damit alle Einstellungen übernommen werden.
 
 ### Anwendung
-Wird gerade eine Java-Datei bearbeitet, dann muss zum Abschluss diese formatiert und gereinigt werden, bevor sie eingechekt werden darf. Hierfür reicht es den eingestellten Shortcut `STRG` + `ALT` + `Ö` bzw. + `Ä` auszuführen.
+Wird gerade eine Java-Datei bearbeitet, dann muss zum Abschluss diese formatiert und gereinigt werden, bevor sie eingechekt werden darf. Hierfür reicht es den eingestellten Shortcut `STRG` + `ALT` + `Ö` beziehungsweise + `Ä` auszuführen.
 
 > **Hinweis**\
-> Falls es Codestellen gibt, die durch eine solche Bereinigung verändert werden würden, dann werden diese in einem auffälligen Pink hinterlegt. Dies ist ein deutlicher Hinweis, dass `STRG` + `ALT` + `Ö` bzw. + `Ä` ausgeführt werden muss.
+> Falls es Codestellen gibt, die durch eine solche Bereinigung verändert werden würden, dann werden diese in einem auffälligen Pink hinterlegt. Dies ist ein deutlicher Hinweis, dass `STRG` + `ALT` + `Ö` beziehungsweise + `Ä` ausgeführt werden muss.
 
 :::danger **Wichtig!**
 Die Macros dürfen niemals auf andere Dateien als Java-Dateien ausgeführt werden!\

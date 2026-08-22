@@ -30,7 +30,7 @@ curl --user "MARIADBUSER:MYSQLROOTPW" -k -X 'GET' \
 
 Für eine höhere Geschwindigkeit kann, je nach Netzwerk, ein Aufruf direkt auf `localhost` erfolgen.
 
-Hier bitte die Variablen `MARIADBUSER`, `MYSQLROOTPW`, `SERVERNAME`, `PORT` und `SCHEMA_NAME` ersetzen bzw. vorher im Skript oder Terminal definieren.
+Hier bitte die Variablen `MARIADBUSER`, `MYSQLROOTPW`, `SERVERNAME`, `PORT` und `SCHEMA_NAME` ersetzen beziehungsweise vorher im Skript oder Terminal definieren.
 
 ## Backup mit Mariabackup
 
@@ -55,7 +55,7 @@ Das Linux Tool `automysqlbackup` ist für regelmäßige Sicherungen eine weitere
 apt install automysqlbackup
 ```
 
-In der Konfigurationsdatei `/etc/default/automysqlbackup` kann ggf. das Backupverzeichniss definiert oder die Zeiten bzw. Ausnahmen editiert werden.
+In der Konfigurationsdatei `/etc/default/automysqlbackup` kann gegebenenfalls das Backupverzeichniss definiert oder die Zeiten beziehungsweise Ausnahmen editiert werden.
 
 Regelmäßige Backups müssen dann per cronjob eingerichtet werden. z.B:
 
@@ -219,7 +219,7 @@ Alternativ und etwas performanter kann dieses Skript unter node.js verwendet wer
 // Namen der Datenbanken eingeben, deren Tabellen umbenannt werden sollen:
 const dbs = ["schild_gym_sek1", "schild_gym_sek2", "schild_kbk", "schild_kbk2"];
 
-// Die Ausgabe nach dem Ausführen dieses Scripts kann in der MySQL, bzw. MariaDB-Konsole ausgeführt werden und benennt alle Tabellen in das korrekte Format um.
+// Die Ausgabe nach dem Ausführen dieses Scripts kann in der MySQL, beziehungsweise MariaDB-Konsole ausgeführt werden und benennt alle Tabellen in das korrekte Format um.
 
 const names = ["allgadransprechpartner", "credentials", "credentialslernplattformen", "eigeneschule", "eigeneschule_abt_kl", "eigeneschule_abteilungen", "eigeneschule_fachklassen", "eigeneschule_fachteilleistungen", "eigeneschule_faecher", "eigeneschule_jahrgaenge", "eigeneschule_kaoadaten", "eigeneschule_kursart", "eigeneschule_kursartallg", "eigeneschule_merkmale", "eigeneschule_schulformen", "eigeneschule_teilstandorte", "eigeneschule_texte", "eigeneschule_zertifikate", "eigeneschule_zertifikatsfaecher", "erzieherdatenschutz", "erzieherlernplattform", "fach_gliederungen", "fachklassen_schwerpunkte", "floskelgruppen", "floskeln", "k_adressart", "k_allgadresse", "k_ankreuzdaten", "k_ankreuzfloskeln", "k_beschaeftigungsart", "k_datenschutz", "k_einschulungsart", "k_einzelleistungen", "k_entlassgrund", "k_erzieherart", "k_erzieherfunktion", "k_fahrschuelerart", "k_foerderschwerpunkt", "k_haltestelle", "k_kindergarten", "k_klassenorgform", "k_lehrer", "k_ort", "k_ortsteil", "k_religion", "k_schule", "k_schulfunktionen", "k_schwerpunkt", "k_sportbefreiung", "k_staat", "k_telefonart", "k_verkehrssprachen", "k_vermerkart", "k_zertifikate", "kompetenzen", "kompetenzgruppen", "kurse", "kurskombinationen", "kurslehrer", "lehrer_imei", "lehrerabschnittsdaten", "lehreranrechnung", "lehrerdatenschutz", "lehrerentlastung", "lehrerfotos", "lehrerfunktionen", "lehrerlehramt", "lehrerlehramtfachr", "lehrerlehramtlehrbef", "lehrerlernplattform", "lehrermehrleistung", "lernplattformen", "logins", "nichtmoeglabifachkombi", "personengruppen", "personengruppen_personen", "prfsemabschl", "schild_verwaltung", "schildfilter", "schueler", "schueler_allgadr", "schuelerabgaenge", "schuelerabifaecher", "schuelerabitur", "schuelerankreuzfloskeln", "schuelerbkabschluss", "schuelerbkfaecher", "schuelerdatenschutz", "schuelereinzelleistungen", "schuelererzadr", "schuelererzfunktion", "schuelerfehlstunden", "schuelerfhr", "schuelerfhrfaecher", "schuelerfoerderempfehlungen", "schuelerfotos", "schuelergsdaten", "schuelerkaoadaten", "schuelerld_psfachbem", "schuelerleistungsdaten", "schuelerlernabschnittsdaten", "schuelerlernplattform", "schuelerliste", "schuelerliste_inhalt", "schuelermerkmale", "schuelerreportvorlagen", "schuelersprachenfolge", "schuelertelefone", "schuelervermerke", "schuelerwiedervorlage", "schuelerzuweisungen", "schulecredentials", "stundentafel", "stundentafel_faecher", "textexportvorlagen", "usergroups", "users", "versetzung", "zuordnungreportvorlagen"];
 

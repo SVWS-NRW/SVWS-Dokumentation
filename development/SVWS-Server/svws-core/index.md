@@ -21,7 +21,7 @@ Der *Core* besteht aus Java-Code, welcher nach TypeScript transpiliert wird und 
 - Algorithmen (kurz: *Core-Algorithmen* unterschiedlicher Java-Packages)
 - Daten-Transfer-Objekte (kurz: *Core-DTO*, Java-Package `de.svws_nrw.core.data`)
 - Typen in Form von Aufzählungen (kurz: *Core-Types*, Java-Package `de.svws_nrw.core.types`)
-- Hilfsklassen für die Handhabung von Core-DTOs (kurz: *Core-Utils* bzw. *Core-Manager*, Java-Package `de.svws_nrw.core.utils`)
+- Hilfsklassen für die Handhabung von Core-DTOs (kurz: *Core-Utils* beziehungsweise *Core-Manager*, Java-Package `de.svws_nrw.core.utils`)
 
 
 ### **Abstrakte Datenstrukturen**

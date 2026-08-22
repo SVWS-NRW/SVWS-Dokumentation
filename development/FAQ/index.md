@@ -94,7 +94,7 @@ Informationen zum Zustand des Servers erhält man z.B. mit den folgenden Befehle
 ```bash 
 systemctl status svws
 ```
-bzw. 
+beziehungsweise 
 ```bash 
 journalct -u svws -f
 ```
@@ -105,7 +105,7 @@ Hier stimmt irgendwas nicht mit der Definition oder dem Zugriff auf die MariaDB.
 
 Workaround:
 
-Man kann nun nach einer Sicherung der aktuellen ```svwsconfig.json``` ggf. die SchemaKonfiguration entfernen, so dass die Eintragung an dieser Stelle entsprechend: 
+Man kann nun nach einer Sicherung der aktuellen ```svwsconfig.json``` gegebenenfalls die SchemaKonfiguration entfernen, so dass die Eintragung an dieser Stelle entsprechend: 
 ```bash 
 ...
 "DBKonfiguration" : {

@@ -38,7 +38,7 @@ Das Prinzip der Gruppenprozesse, das es ermöglicht, Arbeiten für große Schül
 
 Die Filterung von Schülerdatensätzen auf bestimmte Merkmale soll erhalten bleiben und optimiert werden.
 
-Dabei soll der Filter I als Hauptwerkzeug in seiner Benutzerführung ggf. so gestaltet werden, dass andere Filter (z.B. Filter auf leere Einträge) überflüssig werden.
+Dabei soll der Filter I als Hauptwerkzeug in seiner Benutzerführung gegebenenfalls so gestaltet werden, dass andere Filter (z.B. Filter auf leere Einträge) überflüssig werden.
 
 Diese Umstrukturierung soll im Sinne der Vereinfachung der Programm-Bedienung erfolgen.
 
@@ -88,7 +88,7 @@ Es wird eine standardisierte Schnittstelle benötigt, die den Datenaustausch zwi
 
 ### Dokumentenverwaltung
 
-Die Funktionalität Dokumente zu verwalten muss erhalten bleiben. Dabei ist aber zu bedenken, dass ggf. moderne Systeme angeschlossen werden können. Wünschenswert wäre, wenn der SVWS-Server über ein active Directory eine Open-Source-Lösung ansteuern könnte. Ein Beispiel hierfür wäre eine angeschlossene NextCloud, die in gesicherter Form die Ablage der Dokumente verwaltet.
+Die Funktionalität Dokumente zu verwalten muss erhalten bleiben. Dabei ist aber zu bedenken, dass gegebenenfalls moderne Systeme angeschlossen werden können. Wünschenswert wäre, wenn der SVWS-Server über ein active Directory eine Open-Source-Lösung ansteuern könnte. Ein Beispiel hierfür wäre eine angeschlossene NextCloud, die in gesicherter Form die Ablage der Dokumente verwaltet.
 
 ### Kommunikation über E-Mail
 
@@ -118,7 +118,7 @@ Dabei werden folgende Varianten unbedingt benötigt:
 
 1) Einzelplatzinstallation
 
-Es muss für den Übergang einen Windows-Installer geben, der alle benötigten Teile installiert, die Datenbank einrichtet und die Dienste unter Windows startet. Dieser Server muss ggf. nur von einem anderen Client erreichbar sein, so dass auch entsprechende Ports geöffnet werden müssen.
+Es muss für den Übergang einen Windows-Installer geben, der alle benötigten Teile installiert, die Datenbank einrichtet und die Dienste unter Windows startet. Dieser Server muss gegebenenfalls nur von einem anderen Client erreichbar sein, so dass auch entsprechende Ports geöffnet werden müssen.
 
 2) Serverinstallation in der Schule
 

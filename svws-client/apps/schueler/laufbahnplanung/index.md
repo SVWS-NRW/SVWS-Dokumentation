@@ -50,7 +50,7 @@ Springen Sie zur detaillierten Dokumentation zur [Kursplanung](../../gost/kurspl
 Mit **Fächer anzeigen** kann zwischen *alle* und *nur gewählte* umgeschaltet werden, so dass Zeilen mit nicht gewählten Fächern ausgeblendet werden.
 
   ---
-Im rechts nebenstehenden Bereich werden ggf. **Kommentare** hinterlassen und **Laufbahnfehler** entsprechend der Einstellungen angezeigt.
+Im rechts nebenstehenden Bereich werden gegebenenfalls **Kommentare** hinterlassen und **Laufbahnfehler** entsprechend der Einstellungen angezeigt.
 
 ![Schueler-Laufbahn-Beratung](./graphics/schueler_laufbahnplanung_2.png "Füllen Sie die Beratungsdaten aus und nehmen Sie Bemerkungen auf".)
 

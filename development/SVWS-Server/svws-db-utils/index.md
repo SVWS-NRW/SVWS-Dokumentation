@@ -18,7 +18,7 @@ Im Folgenden werden die Kommandozeilen-Anwendungen kurz vorgestellt.
 
 ## kurs42_import
 
- Mit `kurs42_import.cmd` bzw. `kurs42_import.sh` können Kurs42-Dateien, die im Kurs42 eigenen .blo Format vorliegen, eingelesen werden.
+ Mit `kurs42_import.cmd` beziehungsweise `kurs42_import.sh` können Kurs42-Dateien, die im Kurs42 eigenen .blo Format vorliegen, eingelesen werden.
 
  Argument short | Argument long | Beschreibung
  -------------- | ------------- | ------------
@@ -28,7 +28,7 @@ Im Folgenden werden die Kommandozeilen-Anwendungen kurz vorgestellt.
 
 ## lupo_import
 
-Mit `lupo_import.cmd` bzw. `lupo_import.sh` können LuPO-Dateien, die im LuPO eigenen .lpo Format vorliegen, eingelesen werden.
+Mit `lupo_import.cmd` beziehungsweise `lupo_import.sh` können LuPO-Dateien, die im LuPO eigenen .lpo Format vorliegen, eingelesen werden.
 
 
  Argument short | Argument long | Beschreibung
@@ -53,7 +53,7 @@ Beispiel:
 ```
 ## create_db
 
-Mit `create_db.cmd` bzw. `create_db.sh` kann eine leere Datenbank erzeugt bzw. vorbereitet werden, die per graphischen Frontend im Web-Client befüllt werden kann.
+Mit `create_db.cmd` beziehungsweise `create_db.sh` kann eine leere Datenbank erzeugt beziehungsweise vorbereitet werden, die per graphischen Frontend im Web-Client befüllt werden kann.
 
 Argument short | Argument long | Beschreibung
  -------------- | ------------- | ------------
@@ -76,7 +76,7 @@ Beispiel:
 
  ##  migrate_db
 
- Mit `migrate_db.cmd` bzw. `migrate_db.sh` kann eine  vorliegende Datenbank in ein anderes Schema migriert werden. Grundlegender Prozess für die Migration von SchILD-NRW 2.0 zu SVWS-Server.
+ Mit `migrate_db.cmd` beziehungsweise `migrate_db.sh` kann eine  vorliegende Datenbank in ein anderes Schema migriert werden. Grundlegender Prozess für die Migration von SchILD-NRW 2.0 zu SVWS-Server.
 
 
 Argument short | Argument long | Beschreibung
@@ -112,7 +112,7 @@ Diese beiden Hilfprogramme eignen sich z.B. für ein automatisiertes Datenbank-B
 
 ### export
 
-Mit `export.cmd` bzw. `export.cmd` kann ein SQLITE-Datenbank-Abzug erstellt werden.
+Mit `export.cmd` beziehungsweise `export.cmd` kann ein SQLITE-Datenbank-Abzug erstellt werden.
 
 Argument short | Argument long | Beschreibung
  -------------- | ------------- | ------------
@@ -128,7 +128,7 @@ Argument short | Argument long | Beschreibung
 
 ### import
 
-Mit `import.cmd` bzw. `import.sh` kann eine SQLITE Datenbank importiert werden.
+Mit `import.cmd` beziehungsweise `import.sh` kann eine SQLITE Datenbank importiert werden.
 
 
 Argument short | Argument long | Beschreibung

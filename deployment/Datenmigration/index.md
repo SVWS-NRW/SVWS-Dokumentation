@@ -8,7 +8,7 @@ Zur Datenmigration mit dem AdminClient nutzen Sie das [Benutzerhandbuch zum Admi
 
 ## Übersicht
 
-Es gibt mehrere Möglichkeiten, ein Schema in der Datenbank anzulegen bzw. zu befüllen:
+Es gibt mehrere Möglichkeiten, ein Schema in der Datenbank anzulegen beziehungsweise zu befüllen:
 
 + per SVWS-AdminClient (empfohlen)
 + per API (für den Einsatz in Skripten)
@@ -75,7 +75,7 @@ curl --user "root:mariabd_root_pw" -k -X "POST" "https://server.svws-nrw.de/api/
  -F "database=@/root/SVWS-TestMDBs/GOST_Abitur/Abi-Test-Daten-01/GymAbi.mdb"
 ```
 
-Sie können die API des SVWS-Server auch mit der Swagger Oberfläche ansteuern bzw.ausprobieren. 
+Sie können die API des SVWS-Server auch mit der Swagger Oberfläche ansteuern beziehungsweiseausprobieren. 
 
 [API SVWS Server](../../development/API/index.md)
 

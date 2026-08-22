@@ -38,7 +38,7 @@ Ein MDB-Genarator wird in der Übergangsphase die Keytabs MDBs für SchILD-NRW 2
 
 ## Modernisierung der Tabellenstrukturen
 Ein Ziel des Datenbankprojekts ist es, dass alle Tabellen in der dritten Normalform vorliegen.
-Dazu wurde zunächst die bestehende Datenbankstruktur übernommen und dann schrittweise angepasst. Die Diskussion über diese Vorgehensweise zeigt, dass dieser Weg kompliziert und fehleranfällig ist, da für SchILD-NRW 3.0 unter Umständen alte Strukturen (ggf. über Views) noch benötigt werden.
+Dazu wurde zunächst die bestehende Datenbankstruktur übernommen und dann schrittweise angepasst. Die Diskussion über diese Vorgehensweise zeigt, dass dieser Weg kompliziert und fehleranfällig ist, da für SchILD-NRW 3.0 unter Umständen alte Strukturen (gegebenenfalls über Views) noch benötigt werden.
 Fest steht jedenfalls, dass redundante Daten, nicht mehr verwendete Felder und Verletzungen der dritten Normalform sukzessive abgestellt werden müssen.
 
 

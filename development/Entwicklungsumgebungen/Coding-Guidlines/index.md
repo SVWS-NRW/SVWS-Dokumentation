@@ -1150,7 +1150,7 @@ openssl req -subj '/CN=localhost/O=enmserver/C=DE' -new -newkey rsa:2048 -days 3
 a2enmod ssl rewrite
 # die default ssl-Site aktivieren
 a2ensite default-ssl
-# anpassen des Standardpfads mit html zu public bzw env-var
+# anpassen des Standardpfads mit html zu public beziehungsweiseenv-var
 sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 # Setzen der zus. Konfiguration in das conf-Verzeichnis
 echo "<Directory \${ENMROOT}>
@@ -1176,7 +1176,7 @@ RUN openssl req -subj '/CN=localhost/O=enmserver/C=DE' -new -newkey rsa:2048 -da
 RUN a2enmod ssl rewrite
 # die default ssl-Site aktivieren
 RUN a2ensite default-ssl
-# anpassen des Standardpfads mit html zu public bzw env-var
+# anpassen des Standardpfads mit html zu public beziehungsweiseenv-var
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 ```
 

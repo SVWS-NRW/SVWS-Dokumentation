@@ -18,7 +18,7 @@ Bitte beachten Sie die Nutzungsbedingungen der [Docker Inc.](https://docs.docker
 + Erstellen Sie dort die Datei `.env` und geben Sie die ihre Passwörter ein.
 + Erstellen Sie dort die laut `docker-compose.ylm` benötigten Unterordner.
 
-Starten Sie den SVWS-Server (und ggf. den intergrierten MariaDB-Server) mit `docker compose up -d`.
+Starten Sie den SVWS-Server (und gegebenenfalls den intergrierten MariaDB-Server) mit `docker compose up -d`.
 
 ### Beispiel: `docker-compose.yml`
 
@@ -62,7 +62,7 @@ Mit dieser Konfiguration werden folgende Dienste gestartet:
 
 ## Beispiel .env Datei
 
-In der Environment-Datei, kurz `.env` werden die individuellen Passwörter bzw. Pfade gespeichert. Diese ist in der Regel versteckt und wird vom Dateisystem nicht direkt angezeigt.
+In der Environment-Datei, kurz `.env` werden die individuellen Passwörter beziehungsweise Pfade gespeichert. Diese ist in der Regel versteckt und wird vom Dateisystem nicht direkt angezeigt.
 
 Beispiel einer `.env`-Datei zu dem o.g. `docker-compose.yml`
 
@@ -107,7 +107,7 @@ services:
 #    ...
 ```
 
-Diese Ports müssen auf Ihre Umgebung angepasst bzw. ergänzt werden, je nach Anforderung.
+Diese Ports müssen auf Ihre Umgebung angepasst beziehungsweise ergänzt werden, je nach Anforderung.
 
 ### weitere Beispiele
 

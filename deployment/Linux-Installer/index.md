@@ -63,7 +63,7 @@ Das Skript bietet verschiedene Installationsoptionen, die im Folgenden erläuter
 
 Die gewählten Parameter werden in der Datei .env gespeichert. Während der Installation werden die erforderlichen Werte aus dieser Datei ausgelesen. Auch bei einem Update dient sie zur Ermittlung der Installationspfade.
 
-Existiert die Datei .env bereits, werden die Installationsoptionen nicht erneut abgefragt und die Installation startet unmittelbar. Dadurch lässt sich die Installation auch vollständig skriptgesteuert bzw. automatisiert durchführen.
+Existiert die Datei .env bereits, werden die Installationsoptionen nicht erneut abgefragt und die Installation startet unmittelbar. Dadurch lässt sich die Installation auch vollständig skriptgesteuert beziehungsweise automatisiert durchführen.
 
 Folgende Konfigurationen können vorgenommen werden:
 
@@ -105,7 +105,7 @@ Erläuterungen zu den einzelnen Punkten:
 | MARIADB_PASSWORD | Das Datenbank Passwort für MARIADB_USER |
 | APP_PATH | Installationsverzeichnis des SVWS-Servers|
 | CONF_PATH | Hier finden Sie die Konfigurationsdatei des SVWS-Servers|
-| APP_PORT | Auf diesem Port ist der SVWS-Server erreichbar. i.d.R. ist dies einer der höheren Ports z.B. 8443, da für diese keine root-Rechte benötigt werden. Hier muss ggf. ein Reverse-Proxy oder eine Portumleitung eingerichtet werden, wenn man eine einfache URL verwenden möchte. |
+| APP_PORT | Auf diesem Port ist der SVWS-Server erreichbar. i.d.R. ist dies einer der höheren Ports z.B. 8443, da für diese keine root-Rechte benötigt werden. Hier muss gegebenenfalls ein Reverse-Proxy oder eine Portumleitung eingerichtet werden, wenn man eine einfache URL verwenden möchte. |
 | SVWS_TLS_KEYSTORE_PATH | Der Pfad des angelegten Keystores, um dort Daten zu speichern |
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore |
 

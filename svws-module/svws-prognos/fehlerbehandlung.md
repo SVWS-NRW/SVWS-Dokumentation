@@ -7,7 +7,7 @@ Verbindungsprobleme
 Mögliche Ursachen und Lösungen:
 
 Falsche Server-URL
-Prüfen Sie, ob die URL vollständig und korrekt ist (inklusive https:// und ggf. Port).
+Prüfen Sie, ob die URL vollständig und korrekt ist (inklusive https:// und gegebenenfalls Port).
 Beispiel: https://svws.meine-schule.de oder https://10.0.0.5:8443
 
 Falsches Schema

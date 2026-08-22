@@ -38,7 +38,7 @@ Modulnutzer:innen müssen **keine** Eclipse-Einstellungen mehr manuell setzen �
 1. Repository klonen.
 2. In Eclipse: `File → Import → Existing Gradle Project` und das Repo-Root-Verzeichnis auswählen.
 3. Buildship synchronisiert das Projekt automatisch. Beim Sync werden die Tasks `eclipseJdt`, `eclipseJdtApt` und `eclipseFactorypath` mit ausgeführt – das ist im `SvwsEclipsePlugin` als `synchronizationTasks` hinterlegt und sorgt dafür, dass `.factorypath` und die APT-Prefs- Dateien aktuell sind.
-4. Nach dem ersten Build erscheinen die generierten Mapper-Klassen unter `.apt_generated/` bzw. `.apt_generated_tests/`.
+4. Nach dem ersten Build erscheinen die generierten Mapper-Klassen unter `.apt_generated/` beziehungsweise `.apt_generated_tests/`.
 
 ::: tip
 **Hinweis:** `gradlew eclipse` sollte **nicht** manuell aufgerufen werden, wenn das Projekt mit Buildship verwaltet wird. Buildship erzeugt und aktualisiert die Eclipse-Projektdateien selbst über das Gradle Tooling API und führt die in `synchronizationTasks` registrierten Tasks bei jedem Refresh mit aus. Ein manueller `gradlew eclipse`-Lauf kann die `.classpath` und `.settings/`-Dateien in einen Zustand bringen, den Buildship beim nächsten Refresh nur teilweise wieder überschreibt – mit unvorhersehbarem Ergebnis.
@@ -50,7 +50,7 @@ Wenn sich die APT-Konfiguration geändert hat (z.B. nach Pull, Branchwechsel ode
 
 **Variante A:**
 
-1. `git pull` bzw. `git checkout <branch>`
+1. `git pull` beziehungsweise `git checkout <branch>`
 2. Rechtsklick auf Projekt(e) → `Gradle → Refresh Gradle Project`
 3. Eclipse Schließen + neu öffnen + obligatorischer gradle task sync
 4. Sicherstellen, dass `Project → Build Automatically` aktiviert ist.
@@ -88,7 +88,7 @@ Nach erfolgreicher Einrichtung sollten folgende Dateien und Einstellungen vorhan
 
 Einfachster Verifikationstest – funktioniert ohne Code-Kenntnis:
 
-1. Im `Package Explorer` den Inhalt von `.apt_generated/` (und ggf. `.apt_generated_tests/`) **löschen** – nur den Inhalt, nicht die Verzeichnisse selbst.
+1. Im `Package Explorer` den Inhalt von `.apt_generated/` (und gegebenenfalls `.apt_generated_tests/`) **löschen** – nur den Inhalt, nicht die Verzeichnisse selbst.
 2. `Project → Clean...` für das betroffene Modul ausführen (mit Option *„Build automatically"* aktiv) oder anschließend manuell `Build Project`.
 3. Nach dem Build müssen unter `.apt_generated/` wieder Klassen mit Suffix `*MapperImpl.java` erscheinen.
 

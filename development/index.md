@@ -45,7 +45,7 @@ Unser Projekt ist Open Source!
 
 Das Software Repository finden Sie hier: [Github Repository](https://github.com/SVWS-NRW/SVWS-Server)
 
-Sie können unseren Quellcode und die Testdatenbanken unter dem o.g. Repository bzw. unter [Github - Schulverwaltung NRW](https://github.com/SVWS-NRW) finden.
+Sie können unseren Quellcode und die Testdatenbanken unter dem o.g. Repository beziehungsweise unter [Github - Schulverwaltung NRW](https://github.com/SVWS-NRW) finden.
 
 ## Mitarbeit
 

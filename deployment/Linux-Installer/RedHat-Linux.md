@@ -209,7 +209,7 @@ Alle Schritte komprimiert in einem Skript:
 ```bash
 #!/bin/bash
 
-## Dieses Skript installiert die Version 1.0.11 des SVWS-Server - ggf die Versionsnummer anpassen.
+## Dieses Skript installiert die Version 1.0.11 des SVWS-Server - gegebenenfallsdie Versionsnummer anpassen.
 
 # Installiere benötigte Software und hilfreiche Tools
 
@@ -222,7 +222,7 @@ dnf -y install wget
 dnf -y install net-tools
 dnf -y install nmap
 
-# Entpacken der SVWS-Serverdateien - ggf die Versionsnummer anpassen.
+# Entpacken der SVWS-Serverdateien - gegebenenfallsdie Versionsnummer anpassen.
 
 wget https://github.com/SVWS-NRW/SVWS-Server/releases/download/vx.x.x/linux-installer-x.x.x.tar.gz
 tar xzf ./linux-installer-*

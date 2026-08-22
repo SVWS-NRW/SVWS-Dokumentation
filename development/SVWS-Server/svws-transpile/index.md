@@ -22,4 +22,4 @@ Parameter (kurz) | Parameter (lang) | Beschreibung
 -af [TEXTFILE] | --apifiles [TEXTFILE] | Eine Textdatei mit einer Komma-separierten Liste aller Server-Rest-API-Quellcode-Dateien für das Generieren des Client-API-Codes (nur wenn -a nicht gesetzt ist)
 -o [OUTDIR] | --output [OUTDIR] | Der Ziel-Ordner, in dem der erzeugte TypeScript-Code angelegt wird (Default: "build/ts")
 -t [TMPDIR] | --tmpdir [TMPDIR] | Ein Ordner für temporäre Dateien, wie z.B. die class-Dateien des Java-Compilers (Default: "build/tmp/transpiler")
--i [PRAEFIX] | --ignore [PRAEFIX] | ggf. ein Präfix des Java-Packages, welches beim Aufbau der Ziel-Verzeichnisstruktur ignoriert werden soll (Default: "")
+-i [PRAEFIX] | --ignore [PRAEFIX] | gegebenenfalls ein Präfix des Java-Packages, welches beim Aufbau der Ziel-Verzeichnisstruktur ignoriert werden soll (Default: "")

@@ -64,11 +64,11 @@ Adressbücher)
 Options-Response in SVWSAuthenticator-Klasse)
 - Nicht erfolgreich: Thunderbird Addon TbSync mit Addon Provider für
 CalDAV & CardDAV
-- (Fehler bei Authentifizierung bzw. Initialisierung der Verbindung)
+- (Fehler bei Authentifizierung beziehungsweise Initialisierung der Verbindung)
 - Nicht erfolgreich: iOS (Einstellungen Kontakte Accounts Account
 hinzufügen Andere CardDAV-Account hinzufügen)
 
-(Fehler bei Authentifizierung bzw. Initialisierung der Verbindung,
+(Fehler bei Authentifizierung beziehungsweise Initialisierung der Verbindung,
 selbstsignierte Zertifikate werden nicht akzeptiert, hat über HTTP aber
 auch nicht funktioniert: bei Versuch über HTTP zuzugreifen, wird kein
 Benutzername/Kennwort (Basic Auth) mitgesendet)

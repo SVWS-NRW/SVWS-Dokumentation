@@ -1,5 +1,5 @@
 # Erziehungsberechtige
-In diesem Bereich werden Ihnen die Erziehungsberechtigten einer Schülerin bzw. eines Schülers angezeigt und bearbeitet.
+In diesem Bereich werden Ihnen die Erziehungsberechtigten einer Schülerin beziehungsweise eines Schülers angezeigt und bearbeitet.
 
 ![Erziehungsberechtigte](./graphics/SVWS_schueler_erziehungsberechtigte.png "Tragen Sie hier die Erziehungsberechtigten ein.")
 
@@ -29,7 +29,7 @@ Zum Schluss können Sie in Verbindung zu dieser Person eine weitere Person angeb
 
 Auch hier sind der *Rufname* und *Nachname* Pflichtfelder, um die *2. Person speichern* zu können.
 
-Zum Schluss auf den **Speichern**- bzw. den **2. Person speichern**-Button drücken und die Erziehungsberechtigte Person wird angelegt.
+Zum Schluss auf den **Speichern**- beziehungsweise den **2. Person speichern**-Button drücken und die Erziehungsberechtigte Person wird angelegt.
 
 ## Unterschiedliche Arten von Erziehungsberechtigen
 
@@ -45,8 +45,8 @@ Es ist nur bei **Eltern**, **Pflegeeltern** etc. sinnvoll, eine *2. Person* einz
 
 ## Weitere Arten von Ansprechpartnern
 
-Bei weiteren Ansprechpartnern wie z.B. *Partner*, *Onkel* und *Tante*, die nicht erziehungs- bzw. sorgeberechtigt sind, sollte stets das ***Anschreiben*** abgewählt bleiben.
+Bei weiteren Ansprechpartnern wie z.B. *Partner*, *Onkel* und *Tante*, die nicht erziehungs- beziehungsweise sorgeberechtigt sind, sollte stets das ***Anschreiben*** abgewählt bleiben.
 
 ::: tip
-Der Eintrag ***Schüler ist volljährig*** ist dann einzutragen, wenn die Schülerin bzw. der Schüler volljährig ist und demnach persönlich ein Anschreiben erhält. Wenn dieser Eintrag vorhanden ist, wird bei einem Reports an die Erziehungsberechtigten auch der Schüler automatisch adressiert.
+Der Eintrag ***Schüler ist volljährig*** ist dann einzutragen, wenn die Schülerin beziehungsweise der Schüler volljährig ist und demnach persönlich ein Anschreiben erhält. Wenn dieser Eintrag vorhanden ist, wird bei einem Reports an die Erziehungsberechtigten auch der Schüler automatisch adressiert.
 :::

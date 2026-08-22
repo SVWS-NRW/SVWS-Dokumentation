@@ -162,7 +162,7 @@ Eine **Kursart** muss hier gewählt werden.
 In **Laufbahnplanung** ist jetzt das Fach mit der entprechend gewählten Kursart eingetragen. Die weiteren Abschnitte können hier ergänzt werden.
 
 In **Oberstufe -> Kursplanung** erscheint das neue Fach beim Schüler in der Fachauflistung und kann **händisch gesetzt** werden oder über **"Verteilen" automatisch gesetzt** werden.
-Dabei werden ggf. andere, nicht fixierte, Zuordnungen geändert.
+Dabei werden gegebenenfalls andere, nicht fixierte, Zuordnungen geändert.
 
 Da es jetzt zu möglicherweise neuen Zuordnungen in anderen Kursen gekommen sein kann, sollte die **Kursblockung jetzt synchronisiert** werden.
 
@@ -188,7 +188,7 @@ Es empfiehlt sich, mögliche Umwahlen von feststehenden Wiederholern noch vor de
 
 Hier findet die Hochschreibung oft schon vor den Nachprüfungen statt.
 Damit sind die Laufbahndaten grundsätzlich fixiert.
-Unabhängig vom Abiturjahrgang - je nach Ausgang der Nachprüfung - müssen jetzt ggf. Kurszuordnungen erfolgen.
+Unabhängig vom Abiturjahrgang - je nach Ausgang der Nachprüfung - müssen jetzt gegebenenfalls Kurszuordnungen erfolgen.
 Diese werden in der Kursplanung **händisch** oder durch **"Verteilen" automatisch gesetzt**.
 
 ::: danger **WICHTIG**

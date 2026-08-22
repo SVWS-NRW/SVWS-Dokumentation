@@ -2,7 +2,7 @@
 
 ## Ersteinrichtung SVWS-WeNoM
 
-Damit SVWS-WeNoM und der SVWS-Server miteinander kommunizieren bzw. synchronisieren können, muss ein erstmalig internes Passwort, ein sogenanntes *Secret* eingerichtet werden. Eine Beschreibung der Einrichtung befindet sich unter [technische Ersteinrichtung](../installation/ersteinrichtung.md).
+Damit SVWS-WeNoM und der SVWS-Server miteinander kommunizieren beziehungsweise synchronisieren können, muss ein erstmalig internes Passwort, ein sogenanntes *Secret* eingerichtet werden. Eine Beschreibung der Einrichtung befindet sich unter [technische Ersteinrichtung](../installation/ersteinrichtung.md).
 
 ## Synchronisation
 

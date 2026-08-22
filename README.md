@@ -27,7 +27,7 @@ dadurch wird Vitepress auf die aktuelle Version gebracht, ebenso die verwendeten
 
 Beim allerersten Mal sollte man bei VS Code nun einmal das Fenster der Doku schließen und neu öffnen, damit alles funktioniert.
 
-Funktionieren bedeutet, dass Fehler in der `config.ts`, wo die Menüstruktur u.a. eingerichtet wird, rot unterschlängelt werden bzw. Warnungen gelb unterschlängelt werden. Das betrifft v.a. das Fehlen von Kommas, falsche Leerzeichen oder zu wenig/zu viele Tabs. Geht man mit dem Mauszeiger über den unterschlängelten Fehler, wird einem angezeigt, was falsch ist.
+Funktionieren bedeutet, dass Fehler in der `config.ts`, wo die Menüstruktur u.a. eingerichtet wird, rot unterschlängelt werden beziehungsweise Warnungen gelb unterschlängelt werden. Das betrifft v.a. das Fehlen von Kommas, falsche Leerzeichen oder zu wenig/zu viele Tabs. Geht man mit dem Mauszeiger über den unterschlängelten Fehler, wird einem angezeigt, was falsch ist.
 
 Viele Fehler können dann per F1 und dem Befehl `ESLint: Fix all auto-fixable Problems` automatisch behoben werden.
 
@@ -61,7 +61,7 @@ Diese Seite ist nur temporär für die Erstellung dieser Dokumentation. Auf ihr 
 ### Alles
 
 * Der Plural von "Schema" ist "Schemata".
-* Neutrale Bezeichnungen, wo es möglich ist. "Schüler" bleiben so, wie sie sind; ggf. "Schülerinnen" ebenfalls nutzen; im stringenten Wechsel sieht auch doof aus.
+* Neutrale Bezeichnungen, wo es möglich ist. "Schüler" bleiben so, wie sie sind; gegebenenfalls "Schülerinnen" ebenfalls nutzen; im stringenten Wechsel sieht auch doof aus.
 * Sollen Pfeile verwendet werden, sollte ein echter Pfeil ➜ genutzt werden, keine Bastelllösungen wie > oder ->.
 * Die Laufbahnplanung in der Oberstufe heißt "Laufbahnplanung Oberstufe".
 * Bei Screenshots ist STRENG darauf zu achten, dass nur anoymisierte Daten verwendet werden.

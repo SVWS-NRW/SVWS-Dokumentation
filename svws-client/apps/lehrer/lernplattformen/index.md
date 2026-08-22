@@ -3,7 +3,7 @@ Im Bereich der Lernplattformen kann für jede im SVWS-Server hinterlegte Lernpla
 
 ![Übersicht über die Lernplattformen](./graphics/SVWS_lehrer_lernplattformen.png "Die Einwilligungen für Lernplattformen werden erfasst.")
 
-*Erst wenn eine Zustimmung erfolgt ist, wird bei einem Datenaustausch die Lehrkraft bzw. die Person mit ausgegeben.*
+*Erst wenn eine Zustimmung erfolgt ist, wird bei einem Datenaustausch die Lehrkraft beziehungsweise die Person mit ausgegeben.*
 
 Wurden *Benutzernamen* und *Initialkennworte* erzeugt, können diese hier ebenfalls eingesehen werden.
 

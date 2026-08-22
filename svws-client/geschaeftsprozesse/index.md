@@ -532,7 +532,7 @@ Eine Ausführliche Beschreibung der Geschäftsprozesse befindet sich im [Benutze
 | Blockungsübersicht darstellen ||||
 | Übersichten, Filter, Belegungsmatrix darstellen ||||
 | Kurse einrichten ||||
-| Schienen anlegen bzw. löschen ||||
+| Schienen anlegen beziehungsweise löschen ||||
 | Kurse in Schienen fixieren, sperren ||||
 | Blockungsregeln darstellen ||||
 | Blockungsregeln neu erstellen ||||
@@ -563,7 +563,7 @@ Eine Ausführliche Beschreibung der Geschäftsprozesse befindet sich im [Benutze
 | Nachschreiber erfassen ||||
 | Übergreifende Nachschreibetermine erstellen und Konflikte anzeigen ||||
 | Nachschreibeplan anzeigen und ausdrucken ||||
-| Fehler und Hinweise darstellen und beheben bzw. optimieren ||||
+| Fehler und Hinweise darstellen und beheben beziehungsweise optimieren ||||
 
 ### Abitur
 
@@ -681,4 +681,4 @@ Eine Ausführliche Beschreibung der Geschäftsprozesse befindet sich im [Benutze
 | Benutzergruppen definieren und Rechte zuweisen  ||||
 | Benutzer der Gruppe anzeigen und verlinken ||||
 
-¹ Diese Prozesse sind noch in Planung bzw. befinden sich in der Entwicklung.
+¹ Diese Prozesse sind noch in Planung beziehungsweise befinden sich in der Entwicklung.

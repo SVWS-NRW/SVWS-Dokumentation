@@ -18,7 +18,7 @@ Anschließend kann die Migration in den SVWS-Server mit der korrigierten SchILD2
 
 ## Tabellen verwenden Kleinschreibung
 
-MariaDB/MySQL auf Windows oder macOS sind case insensitive, d.h. Groß- Kleinschreibung spielt keine Rolle. Dies führt aber unweigerlich zu Problemen, wenn man diese Datenbanken, z.B. nach einem Dump/Restore auf einem Linux-Server weiter betreibt.
+MariaDB/MySQL auf Windows oder macOS sind case insensitive, das heißt Groß- Kleinschreibung spielt keine Rolle. Dies führt aber unweigerlich zu Problemen, wenn man diese Datenbanken, z.B. nach einem Dump/Restore auf einem Linux-Server weiter betreibt.
 
 Der Fehler wird nicht sofort korrekt erkannt, es wird lediglich ausgegeben, dass keine Schulnummer in der Tabelle `EigeneSchule` zu finden war, obwohl dort eine gültige Schulnummer eingetragen ist.
 

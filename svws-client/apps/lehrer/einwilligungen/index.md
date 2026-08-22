@@ -1,6 +1,6 @@
 # Einwilligungen (Lehrer)
 
-In diesem Bereich werden Ihnen die Einwilligungen der einzelen Lehrkraft bzw. des Personals angezeigt.
+In diesem Bereich werden Ihnen die Einwilligungen der einzelen Lehrkraft beziehungsweise des Personals angezeigt.
 
 ![Liste der Einwilligungen](./graphics/SVWS_lehrer_einwilligungen.png "Haken Sie Abfragestatus und eine eventuell gegebene Einwilligung an.")
 

@@ -16,7 +16,7 @@ Die Beschreibung des Endpunkts ist in der Swagger UI unter dem Eintrag „Migrie
 
 ![Migration MDB](./graphics/migration_mdb.png)
 
-Für den Aufruf des Endpunkts müssen folgende Parameter bzw. Daten bereitgestellt werden:
+Für den Aufruf des Endpunkts müssen folgende Parameter beziehungsweise Daten bereitgestellt werden:
 
 + Schema: Name des Zielschemas in der MariaDB, in das die Daten importiert werden sollen.
 + MDB-Datei: Die zu migrierende Datenbank im .mdb-Format wird als Datei hochgeladen.

@@ -33,7 +33,7 @@ Noten an SVWS-Server senden
 Klicken Sie bei einem einzelnen Eintrag (Status Bereit) auf An SVWS senden.
 Klicken Sie auf Alle senden, um alle erfolgreich entschlüsselten Dateien auf einmal zu übertragen.
 Die App überträgt die ENM-Daten über den Endpunkt POST /db/{schema}/enm/v2/import an den SVWS-Server.
-Der Status wechselt auf Gesendet bei Erfolg bzw. Sendefehler bei einem Problem.
+Der Status wechselt auf Gesendet bei Erfolg beziehungsweise Sendefehler bei einem Problem.
 7. Konfiguration speichern und wieder laden
 Die Konfiguration enthält alle Notenpasswörter, das RSA-Schlüsselpaar und die SMTP-Einstellungen. Sie wird stets mit AES-256-GCM und einem selbst gewählten Kennwort verschlüsselt — unabhängig davon, wo sie gespeichert wird.
 

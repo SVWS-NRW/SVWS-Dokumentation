@@ -117,7 +117,7 @@
             <mxPoint x="810" y="605" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3cTUFk75r5LNfELIm1jx-13" value="Konfiguration unverändert in &lt;b&gt;projectXml &lt;/b&gt;übertragen bzw. beibehalten" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="3cTUFk75r5LNfELIm1jx-13" value="Konfiguration unverändert in &lt;b&gt;projectXml &lt;/b&gt;übertragen beziehungsweise beibehalten" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="615" y="562.5" width="150" height="85" as="geometry" />
         </mxCell>
         <mxCell id="NG7QQ_voPyfEjJgAZZIw-6" value="andere" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="NG7QQ_voPyfEjJgAZZIw-4" target="JCbQaSHrhp4t1TBs8RTN-54" edge="1">

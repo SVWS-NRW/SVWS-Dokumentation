@@ -116,7 +116,7 @@ Im Intranet der Schule / des Schulträgers<y:LabelModel><y:SmartNodeLabelModel d
           <y:BorderStyle color="#3366FF" raised="false" type="line" width="3.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="134.75291442871094" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="177.88121032714844" x="5.026123269047758" xml:space="preserve" y="21.643940080042597">Anmeldung mit Benutzername
 und Passwort
-ggf. mit 2FA
+gegebenenfalls mit 2FA
 
 Speicherung der 
 Daten in einer 

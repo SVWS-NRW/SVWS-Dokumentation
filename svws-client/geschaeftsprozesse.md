@@ -379,7 +379,7 @@
 #### Blockungsübersicht darstellen
 #### Übersichten, Filter, Belegungsmatrix darstellen
 #### Kurse einrichten
-#### Schienen anlegen bzw. löschen
+#### Schienen anlegen beziehungsweise löschen
 #### Kurse in Schienen fixieren, sperren
 #### Blockungsregeln darstellen
 #### Blockungsregeln neu erstellen
@@ -413,7 +413,7 @@
 #### Nachschreiber erfassen
 #### Übergreifende Nachschreibetermine erstellen und Konflikte anzeigen
 #### Nachschreibeplan anzeigen und ausdrucken
-#### Fehler und Hinweise darstellen und beheben bzw. optimieren
+#### Fehler und Hinweise darstellen und beheben beziehungsweise optimieren
 
 ### Abitur
 #### Kurse für Zulassung markieren und Punkte für Zulassung berechnen

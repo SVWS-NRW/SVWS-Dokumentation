@@ -49,7 +49,7 @@ Textbegrenzung: **Doppelte Anführungszeichen ("")**
 
 In allen Fällen beim Stundenplanimport ist anzugeben, ab wann der importierte Stundenplan gülig sein soll (**Gültig ab**) und wie der importierte Stundenplan im SVWS-Client **bezeichnet** wird. Standardmäßig werden hier Importdatum und Importzeitpunkt in der Bezeichnung hinterlegt.
 
-Ebenso ist über die Checkbox festzulegen, ob Unterrichtseinträge mit fehlerhaften Daten ignoriert d.h. verworfen werden sollen. Sollten Sie fehlerhafte Daten feststellen, empfiehlt es sich, diese Daten vor Im- und Exporten zu bereinigen.
+Ebenso ist über die Checkbox festzulegen, ob Unterrichtseinträge mit fehlerhaften Daten ignoriert das heißt verworfen werden sollen. Sollten Sie fehlerhafte Daten feststellen, empfiehlt es sich, diese Daten vor Im- und Exporten zu bereinigen.
 
 
 ## Raumdaten importieren
@@ -62,7 +62,7 @@ Ebenso ist über die Checkbox festzulegen, ob Unterrichtseinträge mit fehlerhaf
 Falls Sie Kurswahlen im SVWS-Client durchführen und anschließend in Untis für die Stundenplanung weiterverwenden möchten, empfiehlt sich folgender Ablauf:
 
 1. Kurswahlen im SVWS-Client erstellen
-2. Bereich **Blockung** nutzen, ggf. auch zur Kursverteilung
+2. Bereich **Blockung** nutzen, gegebenenfalls auch zur Kursverteilung
 3. Export als `GPU015.txt`
 4. Import dieser Datei in Untis
 

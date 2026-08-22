@@ -7,7 +7,7 @@ Im Projekt werden spezielle Code Styles vorgegeben, die für Eclipse, IntelliJ u
 Die vorgegebenen Code Styles unterteilen sich in die Formatierung des Codes und in einige Code Cleanup Regeln. Grundsätzlich verwenden alle drei IDEs die Formatierungsregeln aus Eclipse und erzwingen so gleiche Formatierungen. Cleanups können jedoch nicht zu 100% in allen IDEs gleich eingestellt werden, da IntelliJ wesentlich mehr Optionen bietet als Eclipse und VSCode. Daher sollten neben den Cleanups auch immer die [Coding Guidlines](../Coding-Guidlines/index.md) zusätzlich beachtet werden. 
 
 ## Code Styles für alle Developer anpassen
-Innerhalb der IDEs können die Developer zwar Anpassungen an den Code Styles vornehmen, welche aber beim nächsten Laden der Gradle Projekte oder bei einem Build ggf. überschrieben werden. Inwieweit sie überschrieben werden, hängt von der IDE ab.
+Innerhalb der IDEs können die Developer zwar Anpassungen an den Code Styles vornehmen, welche aber beim nächsten Laden der Gradle Projekte oder bei einem Build gegebenenfalls überschrieben werden. Inwieweit sie überschrieben werden, hängt von der IDE ab.
 
 Um Anpassungen für alle verbindlich zu machen, müssen die Konfigurationen in Ordner `config` angepasst werden. Es ist zu beachten, dass es für jedes Modul im Projekt die Möglichkeit gibt, unterschiedliche Konfigurationen zu hinterlegen. Nach aktuellem Stand erhalten jedoch alle Module dieselben Konfigurationen.
 
@@ -69,7 +69,7 @@ Durch diese Überschreibungslogik sind für den Developer folgende eigene Einste
 
 Sollen nun aber die Regeln für die Cleanups für alle Developer angepasst werden, muss wie folgt vorgegangen werden:
 * Unter `Settings → Editor → Inspections` den Filter **Show only cleanup Inspections** setzen
-* Die gewünschte Inspections Regel aktiviern und die Servity *Cleanup* setzen, wenn sie bei einem Cleanup korrigiert werden soll oder die Severity auf *Consideration* bzw. *No Highlighting* setzen, falls sie **nicht** korrigiert werden soll.
+* Die gewünschte Inspections Regel aktiviern und die Servity *Cleanup* setzen, wenn sie bei einem Cleanup korrigiert werden soll oder die Severity auf *Consideration* beziehungsweise *No Highlighting* setzen, falls sie **nicht** korrigiert werden soll.
 * Anchließend das Profil nach `config/intellij/IntelliJ_Inspections.xml` exportieren.
 
 Nun werden die neuen Einstellungen bei allen Developern automatisch bei einem Gradle Reload oder Build in ihre IDEs geladen.

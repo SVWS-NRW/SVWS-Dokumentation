@@ -34,7 +34,7 @@ Um einen reibungslosen Ablauf und eine erfolgreiche Mitarbeit zu ermöglichen, w
 
 Urheber der Grafik: [seibert-media.net](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow) veröffentlicht unter [creative-common-lizens](https://infos.seibert-media.net/display/seibertmedia/Inhalte+von+Seibert+Media+unter+Creative-Commons-Lizenz)
 
-Bei der Entwicklung des SVWS-Servers wird die Versionierung im `master`-Branch festgehalten, der ausschließlich von den Release-Managern betreut wird. In unregelmäßigen Abständen wird ein Release zusammengestellt und über [Github](https://github.com/SVWS-NRW/), [DockerHub](https://hub.docker.com/u/svwsnrw) und ggf. [npm](https://www.npmjs.com/~svws-nrw) veröffentlicht.
+Bei der Entwicklung des SVWS-Servers wird die Versionierung im `master`-Branch festgehalten, der ausschließlich von den Release-Managern betreut wird. In unregelmäßigen Abständen wird ein Release zusammengestellt und über [Github](https://github.com/SVWS-NRW/), [DockerHub](https://hub.docker.com/u/svwsnrw) und gegebenenfalls [npm](https://www.npmjs.com/~svws-nrw) veröffentlicht.
 
 Die Entwicklung findet grundsätzlich im `dev`-Branch statt und erfordert das Anlegen von Feature-Branches, die im folgenden Abschnitt beschrieben werden. Bis auf wenige Ausnahmen, werden keine Commits direkt in den dev-Branch eingespielt, der auch durch einen Schreibschutz den Release-Managern vorbehalten ist.
 

@@ -99,7 +99,7 @@ fi
 
 ### Zertifikat setzen
 
-Das Zeritfikat generieren und die Server-IP bzw. den Domainnamen setzen:
+Das Zeritfikat generieren und die Server-IP beziehungsweise den Domainnamen setzen:
 
 ```bash
 openssl req -x509 -nodes -days 3650 -newkey rsa:4096 \

@@ -19,7 +19,7 @@ Die Trennung der Mandantendaten auf Tabellenebene durch Mandanten-Schlüssel (z.
 1. **Risiko durch Software-Fehler und Fehlkonfigurationen:**
 Bei einer Trennung nur über Mandanten-Schlüssel besteht die Gefahr, dass durch Programmierfehler, fehlerhafte Abfragen oder Fehlkonfigurationen versehentlich Daten mehrerer Mandanten zusammengeführt oder offengelegt werden. Ein simpler Fehler in einer SQL-Abfrage (z.B. fehlende WHERE-Klausel) kann dazu führen, dass ein Mandant Zugriff auf sämtliche Daten erhält.
 2. **Erhöhte Angriffsfläche:**
-Ein Angreifer, der sich Zugriff auf das zentrale, geteilte Schema verschafft, hat potentiell Zugriff auf die Daten aller Mandanten. Die Trennung über verschiedene Schemata begrenzt im Falle eines Angriffs das Schadensausmaß auf das betroffene Schema bzw. die vom kompromittierten Datenbank-Benutzer verwalteten Schemata.
+Ein Angreifer, der sich Zugriff auf das zentrale, geteilte Schema verschafft, hat potentiell Zugriff auf die Daten aller Mandanten. Die Trennung über verschiedene Schemata begrenzt im Falle eines Angriffs das Schadensausmaß auf das betroffene Schema beziehungsweise die vom kompromittierten Datenbank-Benutzer verwalteten Schemata.
 3. **Berechtigungsmanagement:**
 Die Vergabe und Kontrolle von Zugriffsrechten ist bei separaten Schemata wesentlich granularer und sicherer möglich. So können beispielsweise Datenbanknutzer, Backup-Jobs oder Administratoren auf Mandantenebene getrennt werden. Bei einem gemeinsamen Schema ist dies technisch oft nicht möglich.
 4. **Einhaltung regulatorischer Vorgaben:**

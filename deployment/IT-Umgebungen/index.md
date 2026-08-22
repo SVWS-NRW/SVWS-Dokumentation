@@ -24,7 +24,7 @@ Diese Variante eignet sich insbesondere für sehr kleine Schulen ohne eigene Ser
 
 ![Serverinstallation_Schule_ohne_VPN_einfach.png](./graphics/Serverinstallation_Schule_ohne_VPN_einfach.png "SVWS-Server und SchILD-NRW 3 liegen auf einem Server, auf den Rechner im Verwaltungsnetz zugreifen.")
 
-Die Installation eines SVWS-Servers erfolgt üblicherweise im Verwaltungsnetzwerk betrieben, getrennt vom pädagogischen Netzwerk. Der SVWS-Server stellt seine Dienste über Port 443 bzw. 8443 bereit und kann sowohl auf Windows- als auch auf Linux-Systemen betrieben werden. Die Linux-Installation ermöglicht dabei einen vollständig lizenzkostenfreien Betrieb.
+Die Installation eines SVWS-Servers erfolgt üblicherweise im Verwaltungsnetzwerk betrieben, getrennt vom pädagogischen Netzwerk. Der SVWS-Server stellt seine Dienste über Port 443 beziehungsweise 8443 bereit und kann sowohl auf Windows- als auch auf Linux-Systemen betrieben werden. Die Linux-Installation ermöglicht dabei einen vollständig lizenzkostenfreien Betrieb.
 
 Das bei der Installation erzeugte Serverzertifikat sollte per Gruppenrichtlinie oder manuell an die Clients verteilt werden, damit Browser die Verbindung als sicher erkennen. Alternativ kann der Server über einen Reverse-Proxy mit einem Zertifikat, beispielsweise über Certbot, abgesichert werden.
 

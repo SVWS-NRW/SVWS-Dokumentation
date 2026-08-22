@@ -31,7 +31,7 @@ Die Bereitstellung der Anwendung Schild-NRW 3 kann analog zu Schild-NRW 2 weiter
 
 ## Installation SchILD-NRW 3
 
-Laden Sie das aktuelle [SchILD-NRW 3-Release](https://github.com/SVWS-NRW/Schild-NRW-3/releases) herunter und entpacken bzw. installieren Sie die Anwendung. Richten Sie anschließend die Verbindung zum SVWS-Server ein.
+Laden Sie das aktuelle [SchILD-NRW 3-Release](https://github.com/SVWS-NRW/Schild-NRW-3/releases) herunter und entpacken beziehungsweise installieren Sie die Anwendung. Richten Sie anschließend die Verbindung zum SVWS-Server ein.
 
 ## MariaDB für Schild-NRW 3 konfigurieren
 
