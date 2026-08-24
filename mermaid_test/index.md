@@ -1,5 +1,7 @@
 # Bereich zum Testen von Mermaid-Diagrammen
 
+Basic Syntax
+
 Wird nicht im Inhalt verlinkt
 
 Kurzes HowTo:
@@ -8,17 +10,51 @@ Kurzes HowTo:
 * Formen
 * ...
 
+* "Flowchart" und "Graph" machen das Gleiche.
+* "o" und "x" nach Pfeilen sind besonders: Leerzeichen! "A---xB" -> "A--- xB", sonst gibt es Formen.
+* Unicode-Text kommt "ABC UNICODE"
+
+Einfach von links nach rechts
+
 ```mermaid
 flowchart LR
   Start --> Stop
 ```
 
+Und von oben nach unten (Mermaid kann TD (down) und TB (bottom), dann BT, RL und LR)
+
+```mermaid
+flowchart TD
+  Anfangen --> Runterfallen
+```
+
+Guck mal, die tollen Formen:
+
 ```mermaid
 graph LR
     A[Eckige Klammern!] -- Mein Link --> B((Doppelklammer))
+    B --> M
+    M(((Dppelkreis mit drei Klammern)))
     A --> C(Einfachklammern)
     B --> D{Geschweift!}
     C --> D
+    E --> F[[Doppelte Eckklammern]]
+    G[(Datenbank)] --> H>Coole Banner!]
+    I[/Schräge Box/] --> J[\und andersrum\]
+    K[/Wahnsinn\] --> L[\Wahnsinn 2/]
+```
+
+Mehr tolle Formen lassen sich direkt mit A@{ shape: rect } generieren. Shape-namen finden sich unter dem Link oben. Vorschlag: Wir nutzen die Namen?
+
+Guck mal, ein paar Pfeile:
+
+```mermaid
+graph LR
+A--xB
+A--oB
+A-->B
+A<-->B
+B-->B
 ```
 
 ```mermaid
