@@ -28,6 +28,15 @@ flowchart TD
   Anfangen --> Runterfallen
 ```
 
+Mit Animation und auch dickem Pfeil!
+```mermaid
+flowchart LR
+  A e1@==> B
+  e1@{ animation: slow }
+  B e2@--> A
+  e2@{animation: fast}
+```
+
 Guck mal, die tollen Formen:
 
 ```mermaid
@@ -77,3 +86,41 @@ gantt
         Task in Bereich 2 :2026-02-12, 12d
         Das muss noch!    :14d
 ```
+
+Boxen gehen mit "Subgraph", die Reihenfolge, wie was erzeugt wird und was am Ende passiert, ist etwas frickelig
+
+```mermaid
+flowchart TB
+    A-->B
+    B<-->C
+    subgraph Eins
+    C-->D
+    D-->A
+    end
+    subgraph Zwei
+    E-->F
+    end
+```
+
+"Flowchart" kann Pfeile von Subgraphen ausgehen lassen.
+
+Pfeileformen:
+
+```mermaid
+flowchart LR
+    A e1@==>B
+    A e2@-->C
+    e1@{ curve: linear }
+    e2@{ curve: natural }
+```
+
+Boxgrafik verändern:
+
+```mermaid
+flowchart LR
+    A(Start)-->B(Stop)
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+```
+
+Es können auch Klassen definiert werden.
