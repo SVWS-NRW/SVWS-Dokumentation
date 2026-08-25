@@ -6,7 +6,7 @@ Wird nicht im Inhalt verlinkt
 
 Kurzes HowTo:
 
-* Pfeile
+* Pfeile: die Zahl der Zeichen im Pfeil gibt die Länge an. "-->" und "--->" erzeugt unterschiedlich lange Pfeile.
 * Formen
 * ...
 
