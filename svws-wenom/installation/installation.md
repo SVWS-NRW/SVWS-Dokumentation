@@ -2,9 +2,39 @@
 
 ## Technische Übersicht
 
-![Informationsverbund SVWS-Server und WeNoM](./graphics/SVWS-Wenom-Verbund.png "Übersicht über die Datensynchronisation SVWS-Server und WeNoM.")
-
 Der SVWS-WeNoM wird auf PHP-Basis mit TypeScript und vue entwickelt und stellt eine benutzerfreundliche und intuitive Benutzeroberfläche bereit, um die Dateneingabe so einfach wie möglich zu gestalten.
+
+Die Arbeit mit dem SVWS-WebNotenManager ist unten schematisch dargestellt:
+
+```mermaid
+flowchart LR
+    subgraph SubOI [Offenes Internet]
+        A(Lehrkraft) a1@==Noteneintrag==> B[(WeNoM)]
+            style B fill:#1A91BA,stroke-width:4px
+            a1@{ animate: true }
+            A@{ shape: stadium }
+        B b1@-.Noteneinsicht.-> A
+            b1@{ animate: true }
+            B@{ shape: cloud }
+    
+    end
+
+    style SubOI stroke:#E8A84F,stroke-width:4px
+
+    subgraph SubV [Verwaltungsnetz]
+        B <==> C[(SVWS-Server)]
+            style C fill:#1A91BA,stroke-width:4px
+        D(SVWS-Client) <==> C
+            style D fill:#1A91BA
+        F(SVWS-Module) <--> C
+            F@{ shape: processes }
+            style F fill:#1A91BA
+        E(SchILD-NRW 3) e1@<--> C
+            style E fill:#959BA1
+    end
+
+    style SubV stroke:#98C96B,stroke-width:4px
+```
 
 Die Software synchronisiert die eingegebenen Daten teilautomatisch mit dem SVWS-Server, um sicherzustellen, dass die Daten stets auf dem neuesten Stand sind und für interne Schulzwecke zur Verfügung stehen.
 
@@ -87,3 +117,9 @@ $datenschutzPath = $dbPath.'/Datenschutz.md';
 >Beachten Sie bitte die großen "I" für die *Impressum.md* beziehungsweise "D" *für Datenschutz.md*.
 
 Liegt eine der beiden Dateien nicht vor, wird für die Nutzer bei `Impressum` der Link inaktiv und bei `Datenschutz` der Standardtext angezeigt.
+
+## Komplexerer Aufbau
+
+Im folgenden Schaubild ist der Aufbau detaillierter Dargestellt, hier wird zum Beispiel ein VPN genutzt, um aus dem Internet auf das Verwaltungsnetz zuzugreifen.
+
+![Informationsverbund SVWS-Server und WeNoM](./graphics/SVWS-Wenom-Verbund.png "Übersicht über die Datensynchronisation SVWS-Server und WeNoM.").
