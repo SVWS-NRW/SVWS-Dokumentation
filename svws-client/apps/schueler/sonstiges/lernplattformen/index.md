@@ -1,4 +1,4 @@
-Schüler -> Sonstiges -> Lernplattformen
+# Schüler -> Sonstiges -> Lernplattformen
 
 ![Übersicht über die Lernplattformen](./graphics/svws_lerplattformen.png "Die Einwilligungen für Lernplattformen werden erfasst.")
 
