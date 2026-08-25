@@ -1,7 +1,6 @@
-## Angebotene Fächer
+# Fächer
 
-Unter Fächer wird als Vorlage oder individuell für jeden Jahrgang festgelegt, in welchem Abschnitt ein Fach angeboten wird und ob es als Abiturfach im GK oder LK belegbar ist.
-
+Unter **Fächer** wird als Vorlage oder individuell für jeden Jahrgang festgelegt, in welchem Abschnitt ein Fach angeboten wird und ob es als Abiturfach im GK oder LK belegbar ist.
 
 ![Beispiel für zulässige Fachwahlen](./graphics/SVWS_Oberstufe_Faecher_1.png "Alle hier gezeigten Fächer sind durch die Oberstufe belegbar, KR und ER jedoch nur als GK.")
 
@@ -11,7 +10,9 @@ Im Beispiel oben sind die Fächer *ER* und *KR* im gewählten *Abiturjahrgang 20
 
 Im zweiten Beispiel oben sind die *Vertiefungskurse* und *Projektkurse* zu sehen. Die Vertiefungskurse werden nur in der EF und der Q1 angeboten, wobei der *Vertiefungskurs Deutsch* nur in der EF belegt werden kann.
 
-Die *Projektkurse* werden ausschließlich in der Q1.1 und der Q1.2 belegt. Hier im Beispiel wurde die Wahloption, sie von 2-stündig auf 3-stündig umzustellen von der Schule gewählt. Es wurden weiterhin *Leitfächer* zugeordnet, von denen eines zu belegen ist, damit der Projektkurs angewählt werden kann.
+Die *Projektkurse* werden ausschließlich in der Q1.1 und der Q1.2 belegt. Hier im Beispiel wurde die Wahloption, sie von 2-stündig auf 3-stündig umzustellen von der Schule gewählt.
+
+Es wurden weiterhin *Leitfächer* zugeordnet, von denen eines zu belegen ist, damit der Projektkurs angewählt werden kann.
 
 ## Unzulässige Kombinationen
 
@@ -19,7 +20,9 @@ Sind an Ihrer Schule manche Kombiniationen unzulässig, lassen sich diese unter 
 
 Es genügt, eine unzulässige Kombinationen einmal einzutragen, schließt Fach A das Fach B aus, gilt dies auch automatisch andersherum.
 
-Hinweis: Durch Importe wird eventuell eine Kombination doppelt eingetragen.
+:::tip Beachten Sie Importe
+Durch Importe wird eventuell eine Kombination doppelt eingetragen.
+:::
 
 **Beispiel:**
 
@@ -61,8 +64,12 @@ Es wird im Bild unten eine Laufbahnwahl dargestellt, in der Fehler enthalten sin
 
 * *GE-ZK fordert SW-GK*: Daher erhält *SW* bei Wahl von *GE-ZK* einen Warnhinweis.
 
-Anmerkung: Derzeit besteht keine Möglichkeit von **oder**-Forderungen, also beispielsweise *GE-ZK fordert SW-LK* **oder** *SW-GK*
+:::tip Keine "oder"-Bedingungen
+Derzeit besteht keine Möglichkeit **oder**-Forderungen zu erstellen, beispielsweise *GE-ZK fordert SW-LK* **oder** *SW-GK*.
+:::
 
 ![Oberstufe_Faecher_Bedingungen_Beispiel_1](./graphics/SVWS_Oberstufe_Faecher_Bedingungen_Beispiel_1.png "Durch rote Ausrufezeichen wird auf Fehler aufmerksam gemacht, die gegen die Kombinationseinstellungen verstoßen.")
 
-Die **Ausrufezeichen ⓘ** machen hierbei auf Fehler aufmerksam. In diesem Beispiel wurde ein Geschichte-Zusatzkurs *ZK* belegt, ohne dass auch ein geforderter SoWi-Kurs angewählt wurde. Weiterhin wurden *KR*, *ER* und *PL* zusammen angewählt, die aber jeweils gegenseitig ausgeschlossen sind.
+Die **Ausrufezeichen ⓘ** machen hierbei auf Fehler aufmerksam.
+
+In diesem Beispiel wurde ein Geschichte-Zusatzkurs *ZK* belegt, ohne dass auch ein geforderter SoWi-Kurs angewählt wurde. Weiterhin wurden *KR*, *ER* und *PL* zusammen angewählt, die aber jeweils gegenseitig ausgeschlossen sind.
