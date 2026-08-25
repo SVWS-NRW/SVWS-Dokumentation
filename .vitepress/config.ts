@@ -282,7 +282,7 @@ export default defineConfig(({ mode }) => {
 										{ text: 'Lernplattformen', link: '/svws-client/apps/schueler/sonstiges/lernplattformen/' },
 									] },
 									{ text: 'Erziehungsberechtigte', link: '/svws-client/apps/schueler/erziehungsberechtigte/' },
-									{ text: 'Betriebe', link: '/svws-client/apps/schueler/ausbildungsbetriebe/' },
+									//{ text: 'Betriebe', link: '/svws-client/apps/schueler/ausbildungsbetriebe/' },
 									//{ text: 'Schulbesuch', link: '/svws-client/apps/schueler/schulbesuch/' },
 									{ text: 'Lernabschnitte', link: '/svws-client/apps/schueler/lernabschnitte/', collapsed: true, items: [
 										{ text: 'Allgemein', link: '/svws-client/apps/schueler/lernabschnitte/allgemein/' },
