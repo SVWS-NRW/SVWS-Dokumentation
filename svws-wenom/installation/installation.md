@@ -50,9 +50,9 @@ Der SVWS-WeNoM ist über eine **eigene (Sub-)Domain** aufzurufen. Richten Sie si
 
 ## Download der SVWS-WeNoM Programmdateien
 
-Unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVWS-Server/releases) können neben dem SVWS-Server auch die Programmdateien des zugehörigen SVWS-WeNoM heruntergeladen werden: Dazu klicken Sie auf **SVWS-ENMServer-x.x.x.zip**.
+Unter [github.com/SVWS-NRW/SVWS-Server/releases](https://github.com/SVWS-NRW/SVWS-Server/releases) können neben dem SVWS-Server auch die Programmdateien des zugehörigen SVWS-WeNoM heruntergeladen werden: Dazu klicken Sie auf **WeNoM-x.x.x.zip**.
 
-![Laden Sie die Programmdateien von Github herunter, hier: SVWS-ENServer-x.x.x.zip](./graphics/download_github.png "Laden Sie die gewünschten Dateien herunter.")
+![Laden Sie die Programmdateien von Github herunter, hier: WeNoMx.x.x.zip](./graphics/download_github.png "Laden Sie die gewünschten Dateien herunter.")
 
 ## Kopieren der SVWS-WeNoM Programmdateien
 
