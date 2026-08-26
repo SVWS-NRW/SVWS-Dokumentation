@@ -4,11 +4,8 @@
 
 + Sie haben einen virtuellen Linux-Server bei Strato
 + Sie haben einen FTP-Zugang zum Dateisystem des Webhostings
-+ Sie benötigen eine Subdomain
-+ Sie haben einen virtuellen Linux-Server bei Strato
-+ Sie haben einen FTP-Zugang zum Dateisystem des Webhostings
-+ Sie benötigen eine Subdomain
-+ Sie benötigen ein Zertifikat
++ Sie benötigen eine freie Subdomain oder Domain
+
 
 ## Subdomain anlegen (optional)
 

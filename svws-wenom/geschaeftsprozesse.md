@@ -1,37 +1,28 @@
 # SVWS-WeNoM Geschäftsprozesse
 
-
 Eine ausführliche Beschreibung der Geschäftsprozesse befindet sich im **Benutzerhandbuch SVWS-WeNoM**, das über das Inhaltsverzeichnis oben zu erreichen ist.
 
 ## technische Administration  
 
-### Verbindungsdaten einrichten 
+### Verbindungsdaten einrichten
 
-### Verbindung prüfen 
+### Verbindung prüfen
 
 ### Verbindungsdaten löschen
-
-
-
 
 ## fachliche Administration im SVWS-Server
 
 ### Synchronisation der Daten
 
-### Zurücksetzen der Datenbank 
+### Zurücksetzen der Datenbank
 
 ### Zugänge der Lehrkräfte einrichten
 
-
-
-
-## Lehrkräfte 
+## Lehrkräfte
 
 ### Anmeldedaten zurücksetzen
 
 ### Leistungsdaten eintragen
-
-### Noten eintragen
 
 ### Mahnungen setzen
 
@@ -40,9 +31,6 @@ Eine ausführliche Beschreibung der Geschäftsprozesse befindet sich im **Benutz
 ### Eintragungen fachbezogene Bemerkungen
 
 ### Teilleistungen eintragen
-
-
-
 
 ## Klassenleitung
 
@@ -60,22 +48,16 @@ Eine ausführliche Beschreibung der Geschäftsprozesse befindet sich im **Benutz
 
 ### Möglicher Nachtrag der Daten in Vertretung für Fachlehrkräfte in dieser Klasse
 
-
-
-
-
 ## Abteilungsleitung
 
 ### Sichten aller Daten der Abteilung
 
 ### Möglicher Nachtrag der Daten in Vertretung für Fachlehrkräfte und Klassenleitungen in dieser Abteilung
 
-
 ## Schulleitung
 
 ### Sichten aller Daten der Schule
 
 ### Möglicher Nachtrag der Daten in Vertretung für Fachlehrkräfte und Klassenleitungen
-
 
 ![WenomGeschaeftsprozesse.png](graphics/WenomGeschaeftsprozesse.png)
