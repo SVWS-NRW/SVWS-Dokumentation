@@ -12,7 +12,7 @@ Mithilfe der Log-Datei kann man die fehlerhafte Tabelle identifizieren. In diese
 
 ### Korrektur durch Migration Schild2->Schild2
 
-Bei fehlendem Primärschlüssel muss die SchILD2-Datenabank zunächst in eine konsistente SchILD2-DB überführt werden. Dazu findet man hier unter kleine Windows Hilfsprogramme ein [Migrationstool](https://www.svws.nrw.de/schild-nrw2/schild-nrw2-tools-download) und die entsprechende [Anleitung](https://wiki.svws.nrw.de/mediawiki/index.php?title=Schild-NRW-Daten_in_eine_andere_Datenbank_%C3%BCbertragen_(migrieren)).
+Bei fehlendem Primärschlüssel muss die SchILD2-Datenabank zunächst in eine konsistente SchILD2-DB überführt werden. Dazu findet man hier unter kleine Windows Hilfsprogramme ein [Migrationstool](https://www.svws.nrw.de/system/files/media/document/file/migrationstool.zip) und die entsprechende [Anleitung](https://wiki.svws.nrw.de/mediawiki/index.php?title=Schild-NRW-Daten_in_eine_andere_Datenbank_%C3%BCbertragen_(migrieren)).
 
 Anschließend kann die Migration in den SVWS-Server mit der korrigierten SchILD2-Datenbank erneut durchgeführt werden.
 
