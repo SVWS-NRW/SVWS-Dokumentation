@@ -1,6 +1,6 @@
 # Installation eines Webservers
 
-Die in diesem Abschnitt zur **technischen Installation** beschriebenen, vorbereitenden Tätigkeiten werden beim Betrieb eines eigenen Servers benötigt.
+Die in diesem Abschnitt zur **technischen Installation** beschriebenen, vorbereitenden Tätigkeiten werden beim Betrieb eines **eigenen Servers** benötigt.
 
 ## Systemvoraussetzungen
 

@@ -96,9 +96,11 @@ Die Änderung des `DocumentRoot` kann unter den hosterspezifischen Installatione
 Kontrollieren Sie bitte diese Berechtigungen gewissenhaft!
 :::
 
-## Test
+### Test
 
 Rufen Sie nun den Netzwerkpfad mit dem passenden Ordner für SVWS-WeNoM auf und testen Sie, ob der Notenserver erreichbar ist.
+
+![Startseite SVWS-WeNoM](./graphics/Startseite_wenom.png)
 
 ## Impressum und Datenschutzhinweis
 
@@ -120,8 +122,36 @@ $datenschutzPath = $dbPath.'/Datenschutz.md';
 
 Liegt eine der beiden Dateien nicht vor, wird für die Nutzer bei `Impressum` der Link inaktiv und bei `Datenschutz` der Standardtext angezeigt.
 
-## Komplexerer Aufbau
-
-Im folgenden Schaubild ist der Aufbau detaillierter Dargestellt, hier wird zum Beispiel ein VPN genutzt, um aus dem Internet auf das Verwaltungsnetz zuzugreifen.
+## Übersicht Informationsverbund
 
 ![Informationsverbund SVWS-Server und WeNoM](./graphics/SVWS-Wenom-Verbund.png "Übersicht über die Datensynchronisation SVWS-Server und WeNoM.").
+
+## Update & Backup
+
+### Backup
+
+Ein einfaches Backup kann durch das Kopieren der Datei `./db/app.sqlite` erstellt werden.
+
+In dieser Datei werden sämtliche personenbezogenen Daten, Zugangsdaten sowie Anwendungseinstellungen gespeichert. Der Synchronisationsschlüssel ist nicht Bestandteil dieser Datei.
+
+Der Synchronisationsschlüssel befindet sich separat in der Datei `./db/client.sec.` Eine Sicherung dieser Datei ist optional, da der Synchronisationsschlüssel bei Bedarf neu generiert werden kann.
+
+### Update
+
+### Update
+
+Vor der Durchführung eines Updates wird dringend empfohlen, ein **Backup der bestehenden Installation** zu erstellen oder zumindest mit einer Synchronisation zum SVWS-Server einen aktuellen Datentransfer zu haben.
+
+Für das Update laden Sie, wie bereits bei der Installation beschrieben, die zugehörigen ZIP-Dateien von unserer [GitHub-Seite](https://github.com/SVWS-NRW/SVWS-Server/releases) herunter. Entpacken Sie anschließend die Dateien direkt über die bereits vorhandene Installation.
+
+In der Regel werden die Dateien im Verzeichnis `./db`, insbesondere `app.sqlite` und `client.sec`, bei einem Update nicht überschrieben. Dadurch bleiben die bestehenden Daten sowie der bisherige Zugang in der Regel erhalten.
+
+Bei größeren Versionssprüngen kann es jedoch zu Änderungen am Datenbankschema kommen, wodurch die bestehende Datenbank möglicherweise nicht mehr kompatibel ist. In diesem Fall kann es erforderlich sein, den WeNoM-Zugang vollständig neu einzurichten.
+
+#### php-fpm 
+
+Fall Ihr Server php-fpm einsetzt muss dieses nach einem update nochmal neu gestartet werden. Hier ein Beispiel für PHP 8.4: 
+
+```bash
+systemctl restart php8.4-fpm
+```
