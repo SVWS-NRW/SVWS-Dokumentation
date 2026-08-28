@@ -22,7 +22,7 @@ In besonderen Fällen kann nur hoch- beziehungsweise heruntergeladen werden, so 
 
 Über den Punkt **Synchronisation** bietet sich der schulfachlichen Administration die Möglichkeit Daten zu löschen.
 
-![Daten zurücksetzen](./graphics/datenzurücksetzen.png)
+![Daten zurücksetzen](graphics/datenzuruecksetzen.png)
 
 Im normalen, halbjährlichen Schulabschnittswechsel können mit dem Punkt **Daten entfernen** alte Zeugnisdaten zur Sicherheit aus dem, über das Internet erreichbare, System genommen werden. Zum einen sind diese Daten dann überhaupt nicht mehr in SVWS-WeNoM abrufbar und zum anderen kann ein neuer Lernabschnitt auf dem SVWS-WeNoM sauber begonnen werden.
 
@@ -44,7 +44,7 @@ Die Möglichkeit zur Verbindung kann gegebenenfalls wiederhergestellt werden, fa
 
 Die Lehrkräfte erhalten von der schulfachlichen Administration ein *Initialkennwort*. In Kombination mit der *Dienstlichen Emailadresse* als Benutzername ist dieses Kennwort der individuelle Erstzugang zum SVWS-WebNotenManager.
 
-![Lehrer-Zugangsdaten](./graphics/lehrer-zugangsdaten.png "Im SVWS-Client sind die Initialkennworte hinterlegt.")
+![Lehrer-Zugangsdaten](graphics/lehrer-zugangsdaten.png "Im SVWS-Client sind die Initialkennworte hinterlegt.")
 
 Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehler markiert und nicht zum SVWS-WeNoM-Server übertragen.
 
@@ -59,21 +59,21 @@ Die Personengruppe der SVWS-Benutzer entspricht nicht den SVWS-WeNoM-Benutzern: 
 
 Die Lehrkraft erhält beim initialen Login ein neu generiertes und dem schulischen Administration unbekanntes Passwort vom Wenom-Server. Ist dieser Intitialisierende Vorgang abgeschlossen und wurde mit dem SVWS-Server erneut synchronisiert, wird dies mit einer roten Markierung neben dem Initialkennwort erkennbar gemacht.
 
-![Zurücksetzen der Initialpasswörter](./graphics/initialpw_zuruecksetzen.png)
+![Zurücksetzen der Initialpasswörter](graphics/initialpw_zuruecksetzen.png)
 
 Die schulische Administration kann mir dem Button *Passwort zurücksetzen* individuell für ausgesuchte Lehrkräfte oder auch für alle Lehrkräfte das Passwort auf das Initialkennwort zurücksetzen.
 
-![Zurücksetzen der Initialpasswörter](./graphics/initialpw_zuruecksetzen2.png)
+![Zurücksetzen der Initialpasswörter](graphics/initialpw_zuruecksetzen2.png)
 
 ### Einrichten einer Zwei-Faktor-Authentifizierung
 
 Sie können unter **Noten ➜ Administration ➜ Zugangsdaten** individuell oder auch gruppenweise die Zwei-Faktor-Authentifizierung aktivieren.
 
-![Zwei Faktor Authentifizierung](./graphics/2fa.png "Stellen Sie bei ausgewählten oder allen Benutzern ein, dass zwei Faktoren zur Authentifizierung verwendet werden.")
+![Zwei Faktor Authentifizierung](graphics/2fa.png "Stellen Sie bei ausgewählten oder allen Benutzern ein, dass zwei Faktoren zur Authentifizierung verwendet werden.")
 
 Bei der Mehrfachauswahl von Benutzern können über den Eintrag `Zwei-Faktor-Authentifizierung mit TOTP` aus dem Dropdown-Menü alle Benutzer verpflichtet werden, die Zwei-Faktor-Authentifizierung beim ersten Login einzurichten.
 
-![Zwei Faktor Authentifizierung Gruppenprozess](./graphics/2fa_GP.png "Setzen Sie alle oder ausgewählte Zwei-Faktor-Authentifizierung zurück.")
+![Zwei Faktor Authentifizierung Gruppenprozess](graphics/2fa_GP.png "Setzen Sie alle oder ausgewählte Zwei-Faktor-Authentifizierung zurück.")
 
 An dieser Stelle können Authentifizierungen einzelner Benutzer beziehungsweise alle Zwei-Faktor-Authentifizierungen zurückgesetzt werden.
 
@@ -89,29 +89,29 @@ Die Einstellungen werden erst durch eine erneute Synchronisation auf dem SVWS-We
 
 Im Tab **Konfiguration** eines SVWS-WeNoM-Servers lässt sich einstellen, welche Spalten bei der Noten- und Leistungsdateneingabe und im Klassenleitungsbereich jeweils klassenweise befüllt und geändert werden können.
 
-![Konfiguration Notenmodul](./graphics/konfigurationNotenmodul.png "Über die Haken lässt sich einstellen, welche Daten verändert werden können.")
+![Konfiguration Notenmodul](graphics/konfigurationNotenmodul.png "Über die Haken lässt sich einstellen, welche Daten verändert werden können.")
 
 Setzen Sie bei einer Klasse die Checkboxen wie beabsichtigt, um die jeweiligen Einträge für Benutzer schreibbar zu machen.
 
 Wenn Fehlstunden erfasst werden sollen - die Einträge in der Spalte **FS** sind angehakt - kann weiterhin über die Spalte **FS klassenweise** gesteuert werden, ob die Eingabe von Fehlstunden auf Fachebene möglich ist oder Fehlstunden eines Lernenden nur über die Klassenleitungen aufsummiert eingegeben werden. Für diesen Fall ist die Checkbox bei **FS klassenweise** anzuhaken. Sollen FS über die Fächer erfasst werden, ist die Spalte **FS klassenweise** ohne Haken zu konfigurieren.
 
-![Stellen Sie ein, welche Spalten angezeigt werden](./graphics/konfigurationNotenmodulSpalten.png "Unterhalb der Klasseneinstellungen lassen sich Spalten ein- und ausblenden. Wählen Sie auch die angezeigten Teilleistungen.")
+![Stellen Sie ein, welche Spalten angezeigt werden](graphics/konfigurationNotenmodulSpalten.png "Unterhalb der Klasseneinstellungen lassen sich Spalten ein- und ausblenden. Wählen Sie auch die angezeigten Teilleistungen.")
 
 Unterhalb der Checkbox-Matrix lassen sich *Spalten* vollständig ein- oder ausblenden.
 
 Hier können Sie auch steuern, welche **Teilleistungen** zur Noteneingabe angezeigt werden.
 
-![Kopfzeile zum ändern einer kompletten Spalte](./graphics/WenomNotenKopfzeile.png "Ändern Sie Freigaben einer Spalte über die Kopfzeile.")
+![Kopfzeile zum ändern einer kompletten Spalte](graphics/WenomNotenKopfzeile.png "Ändern Sie Freigaben einer Spalte über die Kopfzeile.")
 
 Über die Kopfzeile lassen sich die Einträge auch für alle Klassen auf einmal umändern.
 
-![Klassen Gruppieren](./graphics/WenomKonfigurationGruppieren.png "Gruppieren Sie Klassen nach Jahrgängen oder Abteilungen.")
+![Klassen Gruppieren](graphics/WenomKonfigurationGruppieren.png "Gruppieren Sie Klassen nach Jahrgängen oder Abteilungen.")
 
 Über das Dropdown-Menü "Gruppierung" können Sie Klassen nach *Jahrgängen* oder *Abteilungen* zusammenfassen und so übersichtlich mit wenigen Checkboxen im Gruppenkopf steuern. Heben Sie eine Gruppierung auf, indem Sie den Eintrag wieder auf *keine* stellen.
 
 Eine Gruppe lässt sich auch aufklappen, so dass für eine Klasse abweichende  Einstellungen vorgenommen werden können.
 
-![Alles komplett sperren](./graphics/WenomLeistungsdatenAllessperren.png "Sperren Sie alle Eingaben komplett.")
+![Alles komplett sperren](graphics/WenomLeistungsdatenAllessperren.png "Sperren Sie alle Eingaben komplett.")
 
 Oben links können Sie über die beiden Schalter `Alles sperren` und `Alles freischalten` alle Checkboxen auf einmal setzen.
 
@@ -129,7 +129,7 @@ Sie können aber auch einem Lehrer (ob Administrator oder nicht) auch die Nutzer
 
 Gehen Sie über die **App Einstellungen ⚙** in **Benutzerverwaltung ➜ Benutzergruppen**. Erzeugen Sie eine neue Benutzergruppe oder wählen Sie eine existiernde, die die SVWS-WeNoM-Konfiguration übernehmen soll.
 
-![Nutzerrechte freischalten](./graphics/konfiguration_Nutzerrechte_notenmodul.png "Schalten Sie die Rechte frei, das Notenmodul zu konfigurieren.")
+![Nutzerrechte freischalten](graphics/konfiguration_Nutzerrechte_notenmodul.png "Schalten Sie die Rechte frei, das Notenmodul zu konfigurieren.")
 
 Navigieren Sie zum Bereich **Notenmodul** und aktiveren Sie den Bereich **Administration Notenmodul**.
 
@@ -137,7 +137,7 @@ Sie können auch einem individuellen **Benutzer** diese Rechte gezielt zuweisen,
 
 Haben Sie diese Rechte zugewiesen, wird in der **App Noten** der unten im Screenshot aufgeführte Bereich mit allen Einstellungen freigeschaltet:
 
-![Konfigurationsrechte sind freigeschaltet](./graphics/konfiguration_Nutzerrechte_notenmodul_AppNoten.png "Die Rechte sind nun für den Benutzer/die Benutzergruppe freigeschaltet.")
+![Konfigurationsrechte sind freigeschaltet](graphics/konfiguration_Nutzerrechte_notenmodul_AppNoten.png "Die Rechte sind nun für den Benutzer/die Benutzergruppe freigeschaltet.")
 <!---
 ## Mail
 

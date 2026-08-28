@@ -1,6 +1,6 @@
 # SVWS-WeNoM - WebNotenManager
 
-::: tip Direkt zur [Anleitung für Lehrkräfte](./benutzerhandbuch/anleitung_lehrkraefte.md)!
+::: tip Direkt zur [Anleitung für Lehrkräfte](./benutzerhandbuch_lehrkraefte/index.md)!
 :::
 
 Der **WebNotenManager SVWS-WeNoM** ist eine zum SVWS-Server ergänzende Online-Plattform zur Erfassung und Verwaltung von Zeugnisnoten, Quartalsnoten, Mahnungen, Teilleistungen, Bemerkungen und Fehlstunden. Der Zugang über das Internet ist mit einem aktuellen Browser, unabhängig vom Betriebssystem, auch von zu Hause oder unterwegs möglich.

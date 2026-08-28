@@ -24,7 +24,7 @@ Ist das Secret erfolgreich eingtragen, kann jederzeit die Verbindung zum SVWS-We
 
 ## Synchronisation und Konfiguration des SVWS-WeNoM
 
-Nach der Ersteinrichtung befinden sich noch keine Daten, also explizit auch keine Logindaten auf dem SVWS-WeNoM. Dazu benötigt es einer Synchronisation beziehungsweise ein Hochladen der Daten. Dies kann im Benutzerhandbuch [schulische Administration](../benutzerhandbuch/schulische_administration.md) nachgelesen werden.
+Nach der Ersteinrichtung befinden sich noch keine Daten, also explizit auch keine Logindaten auf dem SVWS-WeNoM. Dazu benötigt es einer Synchronisation beziehungsweise ein Hochladen der Daten. Dies kann im Benutzerhandbuch [schulische Administration](../benutzerhandbuch_administration/index.md) nachgelesen werden.
 
 
 ## Hinweise und Fehlersuche zur Einrichtung
