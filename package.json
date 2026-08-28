@@ -22,9 +22,7 @@
     "eslint": "^10.1.0",
     "eslint-plugin-vue": "^10.0.0",
     "typescript-eslint": "^8.0.0-alpha.30",
-    "vitepress": "^1.6.4"
-  },
-  "dependencies": {
+    "vitepress": "^1.6.4",
     "vitepress-mermaid-renderer": "^1.2.0"
   },
   "allowScripts": {

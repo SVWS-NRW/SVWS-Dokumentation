@@ -61,11 +61,11 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Mitarbeit', link: '/teamarbeit' },
 						{ text: 'Schulungen', link: '/schulungen' },
 					] },
-			],
-			socialLinks: [
-				{ icon: 'github', link: 'https://github.com/SVWS-NRW/SVWS-Dokumentation' },
-			],
-			sidebar: {
+						],
+            socialLinks: [
+                { icon: 'github', link: 'https://github.com/SVWS-NRW/SVWS-Dokumentation' },
+            ],
+            sidebar: {
 				'/adminclient': [
 					{ text: '', items: [
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
@@ -206,11 +206,19 @@ export default defineConfig(({ mode }) => {
 				'/svws-wenom' : [
 					{ text: '', items: [
 						{ text: 'SVWS-WeNoM', link: '/svws-wenom/index.md' },
-						{ text: 'Benutzerhandbuch', link: '/svws-wenom/benutzerhandbuch/index.md', collapsed: false, items: [
-							{ text: 'Anleitung für Lehrkräfte', link: '/svws-wenom/benutzerhandbuch/anleitung_lehrkraefte.md'},
-							{ text: 'Einrichten der 2-Faktor-Authentifizierung', link: '/svws-wenom/benutzerhandbuch/einrichtungZweiterFaktor.md' },
-							{ text: 'Schulische Administration', link: '/svws-wenom/benutzerhandbuch/schulische_administration.md'},
-						] },
+						{ text: 'Handbuch Lehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/index.md', collapsed: false, items: [
+							{ text: 'Erste Anmeldung', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/erste_anmeldung.md'},
+							{ text: 'Menüstruktur', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/menuestruktur.md'},
+							{ text: 'Erstansicht', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/standardansicht.md'},
+							{ text: 'Rollenansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/rollenansichten.md'},
+							{ text: 'Fachlehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_fachlehrkraefte.md'},
+							{ text: 'Klassenlehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_klassenlehrkraefte.md'},
+							{ text: 'Weitere Ansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_weitere_ansichten.md'},
+							{ text: 'Sonderfall 2FA', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/2fa/index.md' },
+						] }, //items handbuch lehrkraefte
+						{ text: 'Handbuch Administration', link: '/svws-wenom/benutzerhandbuch_administration/index.md', collapsed: false, items: [
+							{ text: 'Schulische Administration', link: '/svws-wenom/benutzerhandbuch_administration/schulische_administration.md'},
+						] }, //items handbuch administration
 						{ text: 'Installation', link: '/svws-wenom/installation/index.md', collapsed: false, items: [
 							{ text: 'Installationsanleitung', link: '/svws-wenom/installation/installation.md' },
 							{ text: 'Ersteinrichtung', link: '/svws-wenom/installation/ersteinrichtung.md' },
@@ -362,7 +370,8 @@ export default defineConfig(({ mode }) => {
 						],
 					},
 				],
-			},
-		},
-	}
-})
+			}, //sidebar
+		}, //themeConfig
+	
+    }; // returned configuraton object
+}); //defineConfig callback
