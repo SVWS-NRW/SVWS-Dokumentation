@@ -13,8 +13,9 @@ Sollten Sie die Zwei-Faktor-Authentifizierung erstmalig nutzen, dan folgen Sie b
 
 # Einrichtung der Zwei-Faktor-Authentifizierung 
 
-Damit der Umgang mit sensiblen Daten über das Internet zusätzlich gesichert wird, ist es möglich, eine Zwei-Faktor-Authentifizierung für jeden Benutzer einzurichten. Diese Entscheidung wird **seitens der Schule** getroffen.
-Diese weitere Sicherheitsebene muss durch die schulfachliche Administration im SVWS-Server eingeschaltet worden.
+Damit der Umgang mit sensiblen Daten über das Internet zusätzlich gesichert wird, ist es möglich, eine Zwei-Faktor-Authentifizierung für jeden Benutzer einzurichten. 
+
+Diese Entscheidung wird **seitens der Schule** getroffen. Diese weitere Sicherheitsebene muss durch die schulfachliche Administration im SVWS-Server eingeschaltet worden.
 
 Ist diese eingeschaltet worden, so erhält ein Benutzer beim nächsten Login nach erfolgreicher Eingabe des Kennworts die zusätzliche Aufforderung den *Zweiten Faktor* einzugeben.
 
@@ -22,8 +23,8 @@ Vor der Nutzung müssen Sie zunächst z.B. auf Ihrem Smartphone eine Zwei-Faktor
 
 ## Einmalig: Zwei-Faktor App installieren
 
-Sie benötigen eine Authentikator-App als diesen zweiten Faktor.
-Eine solche App kann in Varianten auf lokalen Desktop-Systemen, Tablets oder auch Samrtphones verwendet werden.
+Sie benötigen eine Authentikator-App als diesen zweiten Faktor. Eine solche App kann in Varianten auf lokalen Desktop-Systemen, Tablets oder auch Samrtphones verwendet werden. 
+
 Diese müssen Sie vorab einmal installieren und mithilfe des QR-Code initialisieren.
 
 Hier ein Beispiel einer Smartphone-App:
@@ -37,8 +38,7 @@ In der App wird dann für WeNoM Ihrer Schule ein Eintrag hinterlegt. Zu diesem W
 
 + Übertragen Sie den 6-stelligen Code, der auf dem Endgerät angezeigt wird, in die Eingabe unter TOTP Token.
 
-Im Screenshot wird dieser durch den roten Kasten hervorgehoben. Bei diesen Verfahren werden *zeitbasierte Einmalkennworte* verwendet, die vom Nutzer in der
-Authentikator-App abzulesen und händisch bei einer Anmeldung einzugeben sind.
+Im Screenshot wird dieser durch den roten Kasten hervorgehoben. Bei diesen Verfahren werden *zeitbasierte Einmalkennworte* verwendet, die vom Nutzer in der Authentikator-App abzulesen und händisch bei einer Anmeldung einzugeben sind.
 
 ![Zwei Faktor Benutzereinrichtung](./graphics/2fa_user.png "Tragen Sie den in der App angezeigten Code in zur Anmeldung ein.")
 
