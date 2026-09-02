@@ -48,37 +48,37 @@ Die Anbindung der Schulen kann über VPN-Verbindungen realisiert werden. Dadurch
 
 SchILD-NRW 3 kann an den Schulen kostenfrei über eine Netzwerkfreigabe bereitgestellt werden, analog zur bisherigen Bereitstellung von SchILD-NRW 2.
 
-## best Praktice - Serverdimensionierung
+## Best Practice - Serverdimensionierung
 
-Fragen zur Serverdimensionierung des SVWS-Servers (ohne Schild 3) sind naturgemäß in hohem Maße vom jeweiligen Nutzungsverhalten abhängig. Aus diesem Grund führen wir Lasttests durch, um kritische Prozesse zu identifizieren und gegebenenfalls geeignete Optimierungsmaßnahmen zu ergreifen.
+Fragen zur Serverdimensionierung des SVWS-Servers (ohne SchILD-NRW 3) sind naturgemäß in hohem Maße vom jeweiligen Nutzungsverhalten abhängig. Aus diesem Grund führen wir Lasttests durch, um kritische Prozesse zu identifizieren und gegebenenfalls geeignete Optimierungsmaßnahmen zu ergreifen.
 
 Erfahrungswerte einzelner IT-Dienstleister und Schulungszentren können dabei als Orientierung dienen und aufzeigen, wie vergleichbare Umgebungen dimensioniert wurden.
 
 Gerne nehmen wir auch Ihre Erfahrungen und Spezifikationen entgegen – insbesondere im Hinblick auf Virtualisierungslösungen auf Basis von Linux KVM, LXC oder Docker. Diese Rückmeldungen helfen uns dabei, unsere Empfehlungen zur Serverdimensionierung weiter zu verbessern und praxisnah auszurichten.
 
-### Beispiel: Windowsserver im komunalen Umfeld
+### Beispiel: Windowsserver im kommunalen Umfeld
 
-Die Windowsserver sind virtualisiert auf VMWare Basis, so dass bei Bedarf aufgestockt werden kann.
+Die Windowsserver sind virtualisiert auf VMWare-Basis, so dass bei Bedarf aufgestockt werden kann.
 
 + 10 Schulen mit 20 Datenbanken
 + Windows Server 2019 und 2025
-+ 4 CPUs,
-+ 16 GB RAM,
++ 4 CPU-Kerne
++ 16 GB RAM
 + ca. 100 GB SSD (Bereitstellung je Schule)
 
-Zitat: *"Die größte Last ist bisher das nächtliche Curl-Backup."*
+> Zitat: *"Die größte Last ist bisher das nächtliche Curl-Backup."*
 
-### Beispiel: Proxmox Schulungsumgebung
+### Beispiel: Proxmox-Schulungsumgebung
 
 Die Proxmox Vitualisierung bietet hier die Basis für 40 Debian Linux Container. Der Speicherplatz, Arbeitspeicher und CPU-last wird dabei dynamisch bis zu eingestelleten Obergrenze bereitgestellt.
 
 + 20 SVWS-Server mit 20 Mariadb-Server (unter Debian im LX-Container)
 + 20 Webserver für WeNoM und WebLuPO
-+ 24 CPU
++ 24 CPU-Kerne
 + 128 GB RAM
 + 1000 GB SSD
 
-Zitat: *"Bei der letzten Schulung haben wir mal an 15 Arbeitsplätzen gleichzeitig eine Datensicherung einlesen lassen. Dabei hatte der Server eine Prozessorauslaustung von ca. 15% (...), auch der benötigte Speicherplatz blieb auf wenige Gigabyte begrenzt. Unter Linux ist der SVWS-Server also relativ genügsam."*
+> Zitat: *"Bei der letzten Schulung haben wir mal an 15 Arbeitsplätzen gleichzeitig eine Datensicherung einlesen lassen. Dabei hatte der Server eine Prozessorauslaustung von ca. 15% (...), auch der benötigte Speicherplatz blieb auf wenige Gigabyte begrenzt. Unter Linux ist der SVWS-Server also relativ genügsam."*
 
 ## Support
 
