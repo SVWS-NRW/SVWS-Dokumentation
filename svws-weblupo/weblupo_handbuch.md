@@ -35,3 +35,9 @@ Interessant ist auch die Einstellung **Planung merken** im ersten Bereich, die d
 Somit können Schülerinnen und Schüler von diesem Ausgangspunkt aus schnell mehrere Planungen ausprobieren und wieder zurücksetzen.
 
 ## Exportieren der Wahlen
+
+![Laden Sie die Laufbahnwahl in eine Datei herunter, indem Sie auf Speichern klicken](./graphics/weblupo_speichern.png "Klicken Sie auf Speichern im Kopf, um die Laufbahnwahl wieder als Datei herunterzuladen.")
+
+Nach dem Abschluss einer Laufbahnwahl, nutzen Sie die Schaltfläche `Speichern`, um die Datei herunterzuladen.
+
+Die Datei muss nun so abgelegt werden, dass die Schule die Laufbahnwahl-Datei im SVWS-Client einlesen kann.
