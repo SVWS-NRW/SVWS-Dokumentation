@@ -18,9 +18,9 @@ Start in die öffentliche Betaphase für SchILD-NRW-3 und den SVWS-Server. Am 13
 
 Dabei soll SchILD-NRW 3 den Funktionsumfang von SchILD-NRW 2 ablösen und in Zusammenspiel mit dem SVWS-Client die Möglichkeit bieten, die gymnasiale Oberstufe an Gymnasien und Gesamtschulen in NRW ermöglichen.
 
-Der **WebClient** dient zu dieser Zeit ausschließlich als Ersatz für die Programme *Kurs42* und *LuPO*!
+Der **SVWS-Client** dient zu dieser Zeit ausschließlich als Ersatz für die Programme *Kurs42* und *LuPO*!
 
-An der Integration weiterer Funktionalitäten im WebClient wird gearbeitet.
+An der Integration weiterer Funktionalitäten im SVWS-Client wird gearbeitet.
 
 ## 2025 März - Aufbau von Teststellungen
 
@@ -32,7 +32,7 @@ Zum Zeitpunkt der Umstellung auf den Produktivbetrieb kann die SchILD-NRW 2 Date
 
 ## 2025 August - Erstellen eines ausreichenden Stable-Mode
 
-Der WebClient soll alle benötigten Tabs und Kataloge im Stable-Mode erhalten, sodass erste produktive Arbeiten auch außerhalb der gymnasialen Oberstufe stattfinden können.
+Der SVWS-Client soll alle benötigten Tabs und Kataloge im Stable-Mode erhalten, sodass erste produktive Arbeiten auch außerhalb der gymnasialen Oberstufe stattfinden können.
 
 Dabei ist es wichtig, dass die schulformspezifischen Bedingungen eingearbeitet werden und die eingeblendeten Kataloge in das Testkonzept einbezogen sind.
 
@@ -78,11 +78,11 @@ Dies soll die Erzeugung erster Testfälle für die Laufbahnplanungen unterstütz
 
 Der externe SVWS-WebNotenManager wurde für den Produktivbetrieb freigegeben.
 
-## 2026 November - Ausbau des WebClients für Grundschulen
+## 2026 November - Ausbau des SVWS-Clients für Grundschulen
 
-Ausbau des WebClients für weitere Schulformen. Zunächst sollen Grundschulen alle Funktionalitäten bekommen, die einen Betrieb des WebClients im Alltag ermöglichen.
+Ausbau des SVWS-Clients für weitere Schulformen. Zunächst sollen Grundschulen alle Funktionalitäten bekommen, die einen Betrieb des SVWS-Clients im Alltag ermöglichen.
 
-Hier wird es notwendig sein, dass Gruppenprozesse und Filterfunktionen wie gewohnt im WebClient zur Verfügung stehen. Ein Prototyp für Grundschulzeugnisse soll erstellt werden.
+Hier wird es notwendig sein, dass Gruppenprozesse und Filterfunktionen wie gewohnt im SVWS-Client zur Verfügung stehen. Ein Prototyp für Grundschulzeugnisse soll erstellt werden.
 
 ## 2026 - Implementierung der Abschlussberechnungen
 
@@ -96,12 +96,13 @@ SchILD-NRW 3 soll schrittweise auf die API des SVWS-Servers umgestellt werden, s
 
 ## 2027 - Februar neues Abitur
 
-Die Laufbahnplanung für das neue Abitur soll in WebLupo und SVWS-Webclient zur Verfügung stehen.
-Ein erster Prototyp für experimentelle Tests kann seit dem Juli Release mit entsprechenden Datenbanken getestet werden.
+Die Laufbahnplanung für das neue Abitur soll in WebLupo und SVWS-Client zur Verfügung stehen.
+
+Ein erster Prototyp für experimentelle Tests kann seit dem Juli-Release mit entsprechenden Datenbanken getestet werden.
 
 ## 2027 - März Import-Tool
 
-Das Import-Tool für Schulen, die bisher noch kein Schild-NRW nutzen soll zur Verfügung stehen.
+Das Import-Tool für Schulen, die bisher noch kein Schild-NRW nutzen, soll zur Verfügung stehen.
 
 ## 2027 - Erster Feldtest Schulbewerbungen
 
@@ -109,7 +110,7 @@ Es soll ein erster, abgegrenzter Feldtest mit ausgesuchten Schulen stattfinden, 
 
 ## 2027 Oktober - Ablösung ASDPC32
 
-Geplante Ablösung des Programms ASDPC32 als Statistikprogramm durch den WebClient. Die Maske mit den Angaben für die Statistik soll den Schulen ab Oktober 2026 zur Verfügung stehen.
+Geplante Ablösung des Programms ASDPC32 als Statistikprogramm durch den SVWS-Client. Die Maske mit den Angaben für die Statistik soll den Schulen ab Oktober 2026 zur Verfügung stehen.
 
 ## 2029 - Digitale Zeugnisausfertigung
 
