@@ -15,7 +15,7 @@ Bisher wurden getestet:
 
 Weitere erfolgreiche Installationen können gemeldet werden, dann nehmen wir sie gerne auf.
 
-Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](https://github.com/SVWS-NRW/SVWS-Dokumentation/blob/main/deployment/Testserver/install_wenom_testserver.sh) auf Debian 13.
+Hier findet man ein vollständiges Skript zur [Einrichtung eines Testservers](https://github.com/SVWS-NRW/Schulungsunterlagen/blob/master/Fachberatung_Anleitungen/Test-_und_Schulungsserver/Installationsskripte/install_wenom_testserver.sh) auf Debian 13.
 
 ## Installation Webserver
 
@@ -133,6 +133,14 @@ echo "Download und Entpacken SVWS-WeNoM von $DOWNLOADPATH"
 cd $INSTALLPATH
 wget $DOWNLOADPATH
 unzip -o SVWS-ENMServer-${SVWSVERSION}.zip
+```
+
+## Berechtigungen setzen:
+
+```bash
+chown -R www-data:www-data /$INSTALLPATH
+chmod -R 750 /$INSTALLPATH
+chmod -R 770 /$INSTALLPATH/db
 ```
 
 ## Einrichtung 

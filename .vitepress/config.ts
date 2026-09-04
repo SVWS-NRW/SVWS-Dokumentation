@@ -215,8 +215,10 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Installationsanleitung', link: '/svws-wenom/installation/installation.md' },
 							{ text: 'Ersteinrichtung', link: '/svws-wenom/installation/ersteinrichtung.md' },
 							{ text: 'Hosterspezifische Anleitungen',link: '/svws-wenom/hoster_installation/', collapsed: false, items: [
+								{ text: '1blu', link: '/svws-wenom/hoster_installation/1blu.md' },
 								{ text: 'All-Inkl', link: '/svws-wenom/hoster_installation/all-inkl.md' },
 								{ text: 'Hosteurope', link: '/svws-wenom/hoster_installation/hosteurope.md' },
+								{ text: 'Netcup', link: '/svws-wenom/hoster_installation/netcup.md' },
 								{ text: 'Strato', link: '/svws-wenom/hoster_installation/strato.md' },
 								{ text: 'Eigener Webserver', link: '/svws-wenom/installation/installation_webserver.md' },
 							] },
