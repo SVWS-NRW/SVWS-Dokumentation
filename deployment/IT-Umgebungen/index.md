@@ -82,6 +82,6 @@ Die Proxmox Vitualisierung bietet hier die Basis für 40 Debian Linux Container.
 
 ## Support
 
-Sie können Ihre Fragen jederzeit gerne an uns richten. Informationen zu den verfügbaren Supportangeboten finden Sie auf unserer [offizielle Supportseite](https://svws.nrw.de/support-service).
+Sie können Ihre Fragen jederzeit gerne an uns richten. Informationen zu den verfügbaren Supportangeboten finden Sie auf unserer [offizielle Supportseite](https://svws.nrw.de/service-0).
 
-Insbesondere für IT-Dienstleister, Fachberatungen und kommunale Schulträger steht außerhalb der Schulferien der [Supports für IT-Dienstleiter](https://svws.nrw.de/service/hinweise-fuer-it-dienstleister) zur Verfügung. Bitte nutzen Sie hierfür die Hinweise und Kontaktmöglichkeiten auf der entsprechenden Seite für IT-Dienstleister.
+Insbesondere für IT-Dienstleister, Fachberatungen und kommunale Schulträger steht außerhalb der Schulferien der [Supports für IT-Dienstleiter](https://svws.nrw.de/service/support-fuer-it-dienstleister) zur Verfügung. Bitte nutzen Sie hierfür die Hinweise und Kontaktmöglichkeiten auf der entsprechenden Seite für IT-Dienstleister.

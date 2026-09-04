@@ -21,11 +21,9 @@ Ist das Secret erfolgreich eingtragen, kann jederzeit die Verbindung zum SVWS-We
 
 ![Verbindung prüfen](./graphics/verbingung_pruefen.png)
 
-
 ## Synchronisation und Konfiguration des SVWS-WeNoM
 
 Nach der Ersteinrichtung befinden sich noch keine Daten, also explizit auch keine Logindaten auf dem SVWS-WeNoM. Dazu benötigt es einer Synchronisation beziehungsweise ein Hochladen der Daten. Dies kann im Benutzerhandbuch [schulische Administration](../benutzerhandbuch/schulische_administration.md) nachgelesen werden.
-
 
 ## Hinweise und Fehlersuche zur Einrichtung
 
@@ -59,7 +57,7 @@ Wenn Sie ohne einen SVWS-Server das Secret generieren möchten und dieses dann a
 
 Zur Initialisierung wird folgende URL */api/setup* auf ihrer Domain aufrufen, ein Beispiel wäre etwa:
 
-```
+```bash
 https://meinnotenmanager.de/api/setup
 ```
 
@@ -67,9 +65,9 @@ Dies kann von jedem gängigen Browser aus ausgeführt werden.
 
 Gültige Responsecodes sind:
 
-```
+```bash
 204 Setup erfolgreich
-409 Server ist schon initialisier
+409 Server ist schon initialisiert
 ```
 
 Der Aufruf des oben genannten Api-Befehls erzeugt im Ordner */db* eine *app.sqlite*-Datenbank und eine Datei `client.sec`.

@@ -2,51 +2,57 @@
 
 ## Technische Übersicht
 
-Der SVWS-WeNoM wird auf PHP-Basis mit TypeScript und vue entwickelt und stellt eine benutzerfreundliche und intuitive Benutzeroberfläche bereit, um die Dateneingabe so einfach wie möglich zu gestalten.
+Der SVWS-WeNoM wird auf PHP-Basis unter Verwendung von TypeScript und Vue entwickelt und bietet eine benutzerfreundliche und intuitive Oberfläche, die Lehrkräften eine möglichst einfache und komfortable Dateneingabe ermöglicht.
 
-Die Arbeit mit dem SVWS-WebNotenManager ist unten schematisch dargestellt:
+**Datenfluss zwischen SVWS-WebNotenManager und SVWS-Server**
 
 ```mermaid
 flowchart LR
-    subgraph SubOI [Offenes Internet]
-        A(Lehrkraft) a1@==Noteneintrag==> B[(WeNoM)]
-            style B fill:#1A91BA,stroke-width:4px
+
+subgraph SubA [" "]
+
+    subgraph SubOI ["`**Offenes Internet**`"]
+        A("`**Lehrkraft**`") a1@==Noteneintrag==> B[("`**WeNoM**`")]
+            style A fill:#cccccc, color:#000000, stroke:#ffffff
             a1@{ animate: true }
             A@{ shape: stadium }
         B b1@-.Noteneinsicht.-> A
             b1@{ animate: true }
             B@{ shape: cloud }
-    
+            style B fill:#003064,color:#ffffff,stroke:#ffffff
     end
+    style SubOI stroke:#aaaaaa,stroke-width:4px, fill:none
 
-    style SubOI stroke:#E8A84F,stroke-width:4px
-
-    subgraph SubV [Verwaltungsnetz]
-        B <==> C[(SVWS-Server)]
-            style C fill:#1A91BA,stroke-width:4px
-        D(SVWS-Client) <==> C
-            style D fill:#1A91BA
+    subgraph SubV ["`**Verwaltungsnetz**`"]
+        B c1@<==Synchronisation==> C[("`**SVWS-Server**`")]
+            style C fill:#003064,color:#ffffff,stroke:#ffffff
+        D(SVWS-Client) <--> C
+            style D fill:#003064,color:#ffffff 
         F(SVWS-Module) <--> C
             F@{ shape: processes }
-            style F fill:#1A91BA
+            style F fill:#003064,color:#ffffff 
         E(SchILD-NRW 3) e1@<--> C
-            style E fill:#959BA1
+            style E fill:#bbbbbb, color:#000000,stroke:#ffffff 
     end
+    style SubV stroke:#aaaaaa,stroke-width:4px,fill:none
 
-    style SubV stroke:#98C96B,stroke-width:4px
+end
+style SubA stroke:none,stroke-width:4px,fill:none
+
 ```
-
-Die Software synchronisiert die eingegebenen Daten teilautomatisch mit dem SVWS-Server, um sicherzustellen, dass die Daten stets auf dem neuesten Stand sind und für interne Schulzwecke zur Verfügung stehen.
+Die Software synchronisiert die Daten teilautomatisch mit dem SVWS-Server und hält sie so stets aktuell.
 
 ## Voraussetzungen
 
-Es wird ein Webspace mit mindestens php8.2 oder höher, inkl. sqlite3 Modul benötigt. Der Webspace muss über ein Zertifikat verfügen (http**s**\://...).
+Für WeNoM benötigen Sie:
 
-Dies alles liegt in der Regel bei den gängigen [Webhostern](../hoster_installation/index.md) fertig eingerichtet vor.
++ Webspace mit PHP 8.2+ und SQLite3
++ HTTPS mit SSL-/TLS-Zertifikat
++ SFTP-Zugang zur Dateiübertragung
++ Eine eigene Domain oder Subdomain, z. B. *wenom.meineschule.de*
 
-Alternativ können Sie die Einrichtung des Webservers unter der Artikel "[eigener  Webserver](./installation_webserver.md)" nachlesen.
+Bei gängigen [Webhostern](../hoster_installation/index.md) ist dies in der Regel bereits eingerichtet.
 
-Der SVWS-WeNoM ist über eine **eigene (Sub-)Domain** aufzurufen. Richten Sie sich hierfür zum Beispiel *wenom.MeineDomain.de*, *noten.MeineSchule.de* ein.
 
 ## Download der SVWS-WeNoM Programmdateien
 
@@ -60,7 +66,7 @@ Bei den anderen Dateien handelt es sich hier im die Windows- beziehungsweise Lin
 
 + Entpacken aller Dateien aus der gepackten .zip-Datei in das Verzeichnis des Webservers. Sie können das root-Verzeichnis wählen, oft ist das `\html\` oder `\wwww\`. Sie können aber auch ein Unterverzeichnis für den SVWS-WeNoM erstellen.
 + Freigabe der Ordner `app`, `db` und `public` mit entsprechenden Rechten.
-+ Stellen Sie die `(Sub-)Domain` so ein, dass sie auf das Verzeichnis `./public` zeigt. Nutzen Sie hierzu gebenfalls die Anleitung Ihres Hosters oder die Anleitung für einen eigenen Webserver.
++ Stellen Sie die (Sub-)Domain so ein, dass sie auf das Verzeichnis `./public` zeigt. Nutzen Sie hierzu gebenfalls die Anleitung Ihres Hosters oder die Anleitung für einen eigenen Webserver.
 
 ![Die Dateien werden hier mit Filezilla hochgeladen](./graphics/filezilla_upload.png "Laden Sie die Dateien auf Ihren Webserver. Hier im Bild wird dafür Filezilla verwendet.")
 
@@ -81,16 +87,16 @@ Die Änderung des `DocumentRoot` kann unter den hosterspezifischen Installatione
 ### Ordner-, Unterordner- und Dateiberechtigungen
 
 1. Setzen Sie die korrekten Ordner-Berechtigungen (und Unterordner und Dateien) für `public` und `app`zum Lesen und Schreiben:
-    - **Besitzer**: `Lesen, Schreiben, Ausführen`
-    - **Gruppe**:  `Lesen, x, Ausführen`
-    - **Öffentlich**: *NICHTS erlaubt*
-    - Numerisch: `750`
+    + **Besitzer**: `Lesen, Schreiben, Ausführen`
+    + **Gruppe**:  `Lesen, x, Ausführen`
+    + **Öffentlich**: *NICHTS erlaubt*
+    + Numerisch: `750`
 
 2. Setzen Sie die Ordner-Berechtigungen für den Ordner `db` (und Unterordner und Dateien) auf
-    - **Besitzer**: `Lesen, Schreiben, Ausführen`
-    - **Gruppe**: `Lesen, Schreiben, Ausführen`
-    - **Öffentlich**: *NICHTS erlaubt*
-    - Numerisch: `770`
+    + **Besitzer**: `Lesen, Schreiben, Ausführen`
+    + **Gruppe**: `Lesen, Schreiben, Ausführen`
+    + **Öffentlich**: *NICHTS erlaubt*
+    + Numerisch: `770`
 
 ::: warning Kontrollieren Sie die Ordnerberechtigungen
 Kontrollieren Sie bitte diese Berechtigungen gewissenhaft!
@@ -106,13 +112,13 @@ Rufen Sie nun den Netzwerkpfad mit dem passenden Ordner für SVWS-WeNoM auf und 
 
 Für SVWS-WeNoM-Instanzen, die über das freie Internet erreichbar sind, ist ein Impressum zu setzen.
 
-Erzeugen Sie im Pfad der Datenbank `/db/` eine Datei *Impressum.md*, in die Sie Ihre Daten eintragen. 
+Erzeugen Sie im Pfad der Datenbank `/db/` eine Datei *Impressum.md*, in die Sie Ihre Daten eintragen.
 
 Sie können den Standard-Datenschutzhinweis in SVWS-WeNoM ändern, indem Sie auch eine *Datenschutz.md* erzeugen und eigene Eintragungen vornehmen.
 
 Wenn an den Pfaden nichts verändert wurde, ist der Standardpfad `wenom_verzeichnis/db/` für die beiden Dateien. Nutzen Sie andere Pfade, etwa für mehrere SVWS-WeNoM-Instanzen, müssen diese verwendet werden.
 
-```
+```bash
 $impressumPath = $dbPath.'/Impressum.md';
 $datenschutzPath = $dbPath.'/Datenschutz.md';
 ```
@@ -138,9 +144,7 @@ Der Synchronisationsschlüssel befindet sich separat in der Datei `./db/client.s
 
 ### Update
 
-### Update
-
-Vor der Durchführung eines Updates wird dringend empfohlen, ein **Backup der bestehenden Installation** zu erstellen oder zumindest mit einer Synchronisation zum SVWS-Server einen aktuellen Datentransfer zu haben.
+Vor der Durchführung eines Updates wird dringend empfohlen, ein **Backup der bestehenden Installation** zu erstellen oder zumindest mit einer Synchronisation zum SVWS-Server einen aktuellen Datenstand vorliegen zu haben.
 
 Für das Update laden Sie, wie bereits bei der Installation beschrieben, die zugehörigen ZIP-Dateien von unserer [GitHub-Seite](https://github.com/SVWS-NRW/SVWS-Server/releases) herunter. Entpacken Sie anschließend die Dateien direkt über die bereits vorhandene Installation.
 
@@ -148,9 +152,9 @@ In der Regel werden die Dateien im Verzeichnis `./db`, insbesondere `app.sqlite`
 
 Bei größeren Versionssprüngen kann es jedoch zu Änderungen am Datenbankschema kommen, wodurch die bestehende Datenbank möglicherweise nicht mehr kompatibel ist. In diesem Fall kann es erforderlich sein, den WeNoM-Zugang vollständig neu einzurichten.
 
-#### php-fpm 
+#### php-fpm
 
-Fall Ihr Server php-fpm einsetzt muss dieses nach einem update nochmal neu gestartet werden. Hier ein Beispiel für PHP 8.4: 
+Fall Ihr Server php-fpm einsetzt muss dieses nach einem update nochmal neu gestartet werden. Hier ein Beispiel für PHP 8.4:
 
 ```bash
 systemctl restart php8.4-fpm
