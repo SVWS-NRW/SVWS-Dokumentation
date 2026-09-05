@@ -1,6 +1,6 @@
 # Das Große Handbuch Oberstufenkoordination
 
-Dieses Handbuch richtet sich an Personen, die Aufgaben der Oberstufenkoordination der gymnasialen Oberstufe in NRW in Gänze oder Teilen wahrnehmen.
+Dieses Handbuch richtet sich an Personen, die Aufgaben der Oberstufenkoordination oder Abteilungsleitungen der gymnasialen Oberstufe in NRW in Gänze oder Teilen wahrnehmen. Ebenso gibt es Jahrgangslehrkräfte, Beratungslehrer oder über Entlastungsstunden und/oder Beförderungsstellen unterstützenden Koordinatoren, die Teile dieses Handbuch hilfreich finden könnten. 
 
 :::tip Keine Panik
 Ob sich jemand erstmals einarbeitet, sich im neuen SVWS-Client orientiert oder etwas noch einmal nachschlagen möchte: Hier ist das Handbuch!
@@ -28,11 +28,20 @@ Um das Handbuch zu verwenden, orientieren Sie sich links am Inhaltsverzeichnis u
 
 ## Weitere Unterstützung
 
-Weiteren Unterstützung gibt es im *Forum für Schulverwaltungssoftware zum Mitlesen und Fragenstellen*, im *Wiki zu SchILD-NRW 3* und *in dieser Dokumentation*.
+Weiteren Unterstützung gibt es im
++ **Forum für Schulverwaltungssoftware zum Mitlesen und Fragenstellen**,
++ im **Wiki zu SchILD-NRW 3** und natürlich 
++ **in dieser Dokumentation**.
++ Nehmen Sie die exzellenten **ADV-Fortbildungsangebote Ihrer Bezirksregierung** zur Kenntnis (ADV steht für Allgemeine Datenverarbeitung).
++ Weiterhin können Sie immer die **Fachberatung Ihrer Schule** kontaktieren.
 
-Weiterhin können Sie immer die *Fachberatung Ihrer Schule* kontaktieren.
+Alle diese Möglichkeiten können Sie über die [Webseite des MSB zu Schulverwaltungssoftware](https://svws.nrw.de) erreichen.
 
-Alle diese Möglichkeiten können Sie über die [Webseite des MSB zu Schulverwaltungssoftware](https://svws.nrw.de) erreichen. 
+:::tip Fragen Sie die Fachberatung und im Forum!
+Aus der Praxis hat sich der Rat ergeben: Bei Problemen ist es oft zeiteffektiv, die Hilfemöglichkeiten schnell in Anspruch zu nehmen, anstatt alleine viel Zeit drauf zu verwenden. Die Fachberatung hilft gerne!
+:::
+
+Dieses Handbuch ist nicht als rechtliche Beratung zum Beispiel aber nicht beschränkt auf die APO-GOSt zu verstehen.
 
 ## Das Schuljahr in der Übersicht
 
