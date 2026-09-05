@@ -20,6 +20,12 @@ Die Daten sind sowohl im SVWS-Client und in SchILD-NRW 3 identisch, beide greife
 
 Für beide Programme sollte es ein Icon auf Ihrem Desktop geben. Sofern es keines gibt, wenden Sie sich an Ihre IT. Sie werden diese Programme sehr oft starten.
 
+:::warning Statistikrelevante Felder
+Einige Daten sind relevant für die jährliche Statistik der Amtlichen Schuldaten (ASD). Diese Felder sollten korrekt befüllt werden, da Sie teilweise für Ihre Arbeit besonders relevant sind - die automatischen Prüfungen oder Prozesse funktionieren nur bei korrekten Einträgen wie gewünscht - oder es der mit der Statistik beauftragten Person an Ihrer Schule die jährliche Arbeit sehr erleichtern.
+
+In *SchILD-NRW 3* kennzeichnet ein * die **statistikrelevante Felder***. Unter **Verwaltung ➜ Einstellungen Individuelle ➜ Einstellungen** kann auch eine Farbe zum Hervorheben dieser Felder gesetzt werden. Im *SVWS-Client* werden statistikrelevante Felder durch ein lila Balkendiagramm gekennzeichnet.
+:::
+
 ## Benutzer mit ausreichenden Rechten einrichten
 
 Sie müssen einen Datenbankbenutzer haben, der mit ausreichenden Rechten ausgestattet ist. Mit diesem Benutzer melden Sie sich sowohl bei SchILD-NRW 3 und dem SVWS-Client an. Sprechen Sie bitte hierzu bei Bedarf Ihren SVWS-Administrator an (typischerweise ist am Gym/Ge das "jemand der SchILD macht" oder ein Schulleitungsmitglied).

@@ -24,7 +24,9 @@ Für die Laufbahnplanung und Beratung kann das Tool zur "Laufbahnplanung in der 
 
 Dieses Handbuch erläuterter die technischen Vorgänge, die im Laufe eines Schuljahres durchlaufen werden. Konsultieren für den Rechtsrahmen bitte die geltenden Vorschriften.
 
+:::tip Verwendung des Handbuches im Browser
 Um das Handbuch zu verwenden, orientieren Sie sich links am Inhaltsverzeichnis und nutzen Sie den `Zurück-Button` Ihres Browsers.
+:::
 
 ## Weitere Unterstützung
 
