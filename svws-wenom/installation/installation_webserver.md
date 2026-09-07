@@ -38,7 +38,6 @@ a2enmod security2
 # apt install modsecurity-crs
 # ln -s /usr/share/modsecurity-crs /etc/modsecurity/crs
 systemctl reload apache2.service 
-systemctl reload systemctl reload apache2.service 
 ```
 
 Einstellungen zum Webspace der */etc/apache2/apache2.conf* ergänzen:
