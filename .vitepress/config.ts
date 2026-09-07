@@ -214,7 +214,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Fachlehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_fachlehrkraefte.md'},
 							{ text: 'Klassenlehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_klassenlehrkraefte.md'},
 							{ text: 'Weitere Ansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_weitere_ansichten.md'},
-							{ text: 'Sonderfall 2FA', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/2fa/index.md' },
+							{ text: 'Zwei-Faktor-Authentifizierung', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/2fa/index.md' },
 						] }, //items handbuch lehrkraefte
 						{ text: 'Handbuch Administration', link: '/svws-wenom/benutzerhandbuch_administration/index.md', collapsed: false, items: [
 							{ text: 'Schulische Administration', link: '/svws-wenom/benutzerhandbuch_administration/schulische_administration.md'},

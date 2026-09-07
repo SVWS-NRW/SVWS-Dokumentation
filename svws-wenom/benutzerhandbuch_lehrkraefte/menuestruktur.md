@@ -7,7 +7,7 @@ Die links dargestellten Symbole haben folgende Funktionen:
 
 ![WeNoM Menüleiste](graphics/wenom_menueaufbau.png)
 
-Über die links angezeigten Symbole können Lerngruppen, für die Eintragungen vorgenommen werden sollen, ausgewählt werden.
+Über die links angezeigten Symbole können Lerngruppen ausgewählt werden, für die Eintragungen vorgenommen werden sollen.
 
 + **Leistungsdaten** - dies sind die Zeugnisnoten, Fehlstunden und Mahnungen bei Schülern. Diese sind nach der Anmeldung immer vorausgewählt.
 + **Teilleistungen** - werden an Ihrer Schule Teilleistungen zu Fächern erfasst, sind diese hier aufgeführt. Teilleistungen könnten u.a. Noten für Klausuren, Sonstige Mitarbeit oder ZP10-Noten sein.

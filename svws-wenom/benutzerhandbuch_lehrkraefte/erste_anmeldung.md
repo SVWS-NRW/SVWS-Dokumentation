@@ -13,5 +13,5 @@ Notieren Sie sich das Passwort - zum Beispiel in Ihrem Passwortmanager.
 
 Bitte speichern Sie nie die Passwörter im Browser!
 
-Sollte Ihre schulische Administration die Zwei-Faktor-Authentifizierung aktiviert haben, müssten Sie nun noch den zweiten Faktor zur Anmeldung einrichten.
-Wie dies funktioniert und was dabei zu beachtenm ist, können Sie im Abschnitt 2FA nachlesen: [Einrichtung 2FA](2fa/index.md)
+Sollte Ihre schulische Administration die Zwei-Faktor-Authentifizierung (2FA) aktiviert haben, müssten Sie nun noch den zweiten Faktor zur Anmeldung einrichten.
+Wie dies funktioniert und was dabei zu beachten ist, können Sie im Abschnitt 2FA nachlesen: [Einrichtung 2FA](2fa/index.md)
