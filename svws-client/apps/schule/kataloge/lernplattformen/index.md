@@ -15,3 +15,5 @@ Erfassen Sie Lernplattformen und Einwilligungen in der **App Lehrkräfte**:
 Entsprechend funktioniert auch die Erfassung in der **App Schüler ➜ Sonstiges ➜ Lernplattformen**
 
 ![App Schüler Sonstiges Lernplattformene](./graphics/svws_kataloge_lernplattformen_beispiel_schueler.png "Erfassen Sie Einwilligungen für Schülerinnen.")
+
+Die im Katalog eingetragenen und bei den Schülern erfassten Lernplattformen sind beim **Datenexport** relevant: Ohne eine im Katalog existierende Lernplattform kann für diese kein Datenaustausch angestoßen werden und ohne für die Lernplattform vorliegende Einwilligung bei einer Schüler oder einer Schülerin wird für diesen Datensatz kein Export herausgeschrieben.

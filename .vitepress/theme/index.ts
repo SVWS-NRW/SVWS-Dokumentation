@@ -26,6 +26,7 @@ export default {
     const initMermaid = () => {
       const mermaidRenderer = createMermaidRenderer({
         theme: isDark.value ? 'dark' : 'forest',
+        static: true, // Deaktiviert die interaktive Leiste für alle Diagramme
       });
       mermaidRenderer.setToolbar({
         showLanguageLabel: false,

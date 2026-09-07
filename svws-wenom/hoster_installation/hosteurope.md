@@ -3,26 +3,34 @@
 ## Voraussetzung
 
 + Sie haben einen Webspace bei Hosteurope
-+ Sie haben einen FTP-Zugang zum Dateisystem des Webhostings
-+ Sie benötigen eine freie Subdomain oder Domain
-+ Sie benötigen ein Zertifikat
++ Sie haben einen sFTP-Zugang zum Dateisystem des Webhostings
 
-## Subdomain anlegen
+## Subdomain anlegen (optional)
 
 Loggen Sie sich in den Kundenbereich (KIS) von Hosteurope ein.
 Legen Sie unter "Domains" eine Subdomain an.
 
 ![Bereich Domain](./graphics/hosteurope04.png "Einrichtung Subdomain.")
 
+## Zielverzeichnis setzen
+
+Das Zielverzeichnis des Webhostings muss der Unterordner `public` sein.
+
+## Zertifikat zuweisen
+
 Verknüpfen Sie diese Subdomain mit einem SSL-Zertifikat für die sichere Verbindung.
 
 ![Bereich SSL Verwaltung](./graphics/hosteurope05.png "Verknüpfung SSL Zertifikat.")
 
-## FTP Verbindung aufbauen und Dateien hochladen
+## Dateien hochladen
+
+Laden Sie sich die aktuelle [wenom-x.x.x.zip](https://github.com/SVWS-NRW/SVWS-Server/releases) herunter.
 
 Verbinden Sie sich mit Ihrem FTP-Benutzer und laden Sie die Dateien aus dem ZIP in das Verzeichnis, das mit der gewünschten Subdomain verknüpft wurde.
 
 ![FTP Upload](./graphics/hosteurope01.png "Dateien per FTP übertragen.")
+
+## Berechtigungen setzen
 
 Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner `Public` und `App`:
 
@@ -31,7 +39,6 @@ Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf die Ordner `Public`
 Setzen Sie die Rechte (auf alle Unterordner und Dateien) auf den Ordner `db`:
 
 ![Bereich Domain](./graphics/hosteurope03.png "Einrichtung Subdomain.")
-
 
 ## Einrichtung
 
