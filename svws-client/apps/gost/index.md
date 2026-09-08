@@ -1,10 +1,10 @@
 # Gymnasiale Oberstufe
 
-In diesem Bereich wird die **App Oberstufe** erläutert und führt von den Kurswahlen vor dem Beginn der Einführungsphase mit SVWS-WebLuPO über das Erstellen der Blockung bis zum Abitur.
+In diesem Bereich wird erläutert, wie mittels der  **App Oberstufe** Abiturjahrgänge einzustellen sind und führt von den *Kurswahlen vor dem Beginn der Einführungsphase* mit SVWS-WebLuPO über das *Erstellen der Blockung* bis zum *Abitur*.
 
-Viele der Grundlagen wie das Zuweisen von Fächern/Kursen wird hier stark erweitert, so dass aus den Kurswahlen der Schülerinnen und Schüler die konkrete Kursverteilung, die Blockung, für einen Abiturjahrgang berechnet werden kann.
+Das Ziel ist, dass aus den Fachwahlen der Schülerinnen und Schüler tatsächliche Kurse erzeugt werden, so dass die konkrete Kursverteilung, die "Blockung", für einen Abiturjahrgang berechnet werden kann.
 
-Diese Blockung lässt sich dann den Lernenden eines Jahrgangs zuweisen und hierbei werden automatisch die geplanten Kurse angelegt.
+Diese Blockung lässt sich abschließend den Lernenden eines Jahrgangs zuweisen und hierbei werden automatisch die geplanten Kurse angelegt.
 
 Weiterhin unterstützt der SVWS-Client auch eine Klausurplanung basierend auf den Kurswahlen.
 

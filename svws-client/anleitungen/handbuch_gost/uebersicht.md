@@ -19,7 +19,7 @@ Hat man eine bestehende und über Jahre gewachsene Datenbank übernommen, lohnt 
 
 ## II - Vorlagen im Allgemeinen und für bestimmte Jahrgänge
 
-In diesem Kapitel wird beschrieben, wie die Rahmenbedinungen an der Schule allgemein und für spezielle Jahrgänge sind.
+In diesem Kapitel wird beschrieben, wie die Rahmenbedinungen an der Schule allgemein und für konkrete Abiturjahrgänge sind.
 
 Das bedeutet, es werden die Projektkurse eingestellt oder es wird definiert, welche Fremdsprachen belegt werden können oder welche Fächer grundsätzlich als Grundkurs (GK) oder Leistungskurs (LK) zur Verfügung stehen können.
 
