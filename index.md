@@ -47,6 +47,11 @@ Nehmen Sie den im SVWS-Client hinterlegten Datenschutzhinweis zur Kenntnis und b
 
 Sie erreichen den Datenschutzhinweis über **Client Info** im **App**-Menü im Tab Datenschutz.
 
+## Lizenz dieser Dokumentation
+
+![CC0 Creative Commons Public Domain](./graphics/cc-zero.png "CC0 Creative Commons.")
+
+Diese Dokumentation ist Public Domain nach [CC0](https://creativecommons.org/publicdomain/zero/1.0/) der Creative Commons.
 
 ## Erklärung zur Barrierefreiheit
 
