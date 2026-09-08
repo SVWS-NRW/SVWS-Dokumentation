@@ -14,16 +14,20 @@ Starten Sie SchILD-NRW 3 und loggen Sie sich ein:
 
 Für Prozesse, die Sie mit dem SVWS-Client durchführen möchten, loggen Sie sich in diesen ein.
 
+![Login SVWS-Client](./graphics/client_login.png "Starten Sie den Client über das Icon auf dem Desktop oder indem Sie in einem Browser die Serveradresse eingeben.")
+
+Den SVWS-Client starten Sie über einen normalen Internetbrowser.
+
+Für beide Programme sollte es ein Icon auf Ihrem Desktop geben. Sofern es keines gibt, wenden Sie sich an Ihre IT. Sie werden diese zwei Programme sehr oft starten.
+
 :::tip Die Daten sind gleich!
 Die Daten sind sowohl im SVWS-Client und in SchILD-NRW 3 identisch, beide greifen nur auf die vom SVWS-Server im Hintergrund verwaltete Datenbank zu.
 :::
 
-Für beide Programme sollte es ein Icon auf Ihrem Desktop geben. Sofern es keines gibt, wenden Sie sich an Ihre IT. Sie werden diese Programme sehr oft starten.
-
 :::warning Statistikrelevante Felder
 Einige Daten sind relevant für die jährliche Statistik der Amtlichen Schuldaten (ASD). Diese Felder sollten korrekt befüllt werden, da Sie teilweise für Ihre Arbeit besonders relevant sind - die automatischen Prüfungen oder Prozesse funktionieren nur bei korrekten Einträgen wie gewünscht - oder es der mit der Statistik beauftragten Person an Ihrer Schule die jährliche Arbeit sehr erleichtern.
 
-In *SchILD-NRW 3* kennzeichnet ein * die **statistikrelevante Felder***. Unter **Verwaltung ➜ Einstellungen Individuelle ➜ Einstellungen** kann auch eine Farbe zum Hervorheben dieser Felder gesetzt werden. Im *SVWS-Client* werden statistikrelevante Felder durch ein lila Balkendiagramm gekennzeichnet.
+In **SchILD-NRW 3** kennzeichnet ein * die **statistikrelevante Felder***. Unter **Verwaltung ➜ Einstellungen Individuelle ➜ Einstellungen** kann auch eine Farbe zum Hervorheben dieser Felder gesetzt werden. Im *SVWS-Client* werden statistikrelevante Felder durch ein lila Balkendiagramm gekennzeichnet.
 :::
 
 ## Benutzer mit ausreichenden Rechten einrichten
@@ -45,20 +49,26 @@ Ihr Benutzer sollte Folgendes auf jeden Fall können:
 + Backups durchführen und einspielen.
 + Kataloge vollständig bearbeiten.
 + Stundenpläne bearbeiten.
-+ Das Notenmodul verwenden.
++ Das Notenmodul im SVWS-Client verwenden.
 + Alles bezogen auf die Oberstufe.
 
-Kontaktieren Sie hierzu Ihre schulinterne SchILD- und SVWS-Administration. Sind Sie ein Gymnasium oder eine Gesamtschule und haben diese Aufgabe nicht vergeben, kann darüber nachgedacht werden, jemanden zu beauftragen.
+Kontaktieren Sie hierzu Ihre schulinterne SchILD- und SVWS-Administration. Sind Sie ein Gymnasium oder eine Gesamtschule und haben diese Aufgabe nicht vergeben, kann darüber nachgedacht werden, jemanden zu beauftragen. Jede Schule in Bezug auf die Zusammenarbeit und Aufgabenverteilung in ihren Arbeitsprozessen individuell.
 
-Jede Schule in Bezug auf die Zusammenarbeit und Aufgabenverteilung in ihren Arbeitsprozessen individuell.
+:::tip Funktionsbezogene Rechte
+Ist ein Recht *"Funktionsbezogen"* bedeutet das, dass eigetragene Klassenlehrkräfte (also in der GOSt die Jahrgangsleitungen/Jahrgangsberatungslehrkräfte) oder **Abteilung**sleitungen, denen die Jahrgänge zugeordnet werden, für Ihre Klassen/Abteilungen diese *Rechte (funktionsbezogen)* besitzen.
+:::
 
 ## Jahrgangstabelle, Klassen- und Versetzungstabelle
 
-Damit Zuordnungen von Rechtsbedingungen der APO-GOSt für Versetzungen und andere Prüfungen funktioniere müssen SuS korrekt definiertere Jahrgänge und Klassen zugeordnet sein.
+Damit Zuordnungen von Rechtsbedingungen der APO-GOSt für Versetzungen und andere Prüfungen funktionieren, müssen SuS korrekt definiertere Jahrgänge und Klassen zugeordnet sein.
 
 ### Jahrgänge
 
 Richten Sie zuerst die Jahrgänge mit dem SVWS-Client beziehungsweise in SchILD-NRW 3 ein oder kontrollieren Sie die Einträge.
+
+![Öffnen Sie die App Schule im SVWS-Client](./graphics/client_appschule.png "Bearbeiten Sie Kataloge über die App Schule im SVWS-Client.")
+
+Sie finden die Apps, hier die **App Schule** entweder links oder oben in der Kopfleiste des SVWS-Clients. Dann klappen Sie die Kataloge auf.
 
 Öffenen Sie im SVWS-Client die **App Schule ➜ Kataloge ➜ Jahrgänge**.
 
@@ -81,5 +91,19 @@ An einer Gesamtschule sehen die Restabschnitte anders aus: Zählen Sie von der Q
 Haben Sie noch alte Jahrgänge, die nicht mehr gebraucht werden - typischerweise "11", "12" und "13" - hier gelistet, stellen Sie diese einfach auf "nicht sichtbar", inde, Sie den Haken entfernen.
 
 Ein BK kann hier alle Jahrgänge der unterschiedlichen Bildungsgänge einrichten, also eine GOSt bis zur 13 oder auch eine alternative Oberstufe bis Klasse 14.
+
+### Klassen
+
+Gehen Sie als nächstes über **SchILD-NRW 3** in die **Kataloge ➜ Klassen-/Versetzungstabelle** und generieren Sie Klassen für Ihre Oberstufenjahrgänge. Wie bei den Jahrgängen tragen Sie hier die Vorgänger- und Folgeklasse ein. Die Q2 hat keine Folgeklasse.
+
+![SchILD-NRW 3 Klassen/Versetzungstabelle](./graphics/s3_klassen.png "Rufen Sie über Kataloge die Klassen- und Versetzungstabelle auf.")
+
+Wählen Sie ebenfalls die passende Schulgliederung und Prüfungsordnung aus. Die **Prüfungsordnung** ist die für jeweiligen Jahrgang gültige APO-GOSt. Als **Klassenleitung** können Sie Ihre Jahrgangs-Beratungslehrkräfte hinterlegen.
+
+![Details zu Klassen, hier die EF](./graphics/s3_klassen_detail.png "Details zu EF.")
+
+Die Details sind in den meisten Fällen unkompliziert: Die Gliderung ist vorgegeben, Ganztagsunterricht gibt es nicht, alles ist eine Regelklasse und die APO-GOSt ist ebenfalls normalerweise nicht differenziert. Hier im Beispiel wurde der EF die Vorgängerklasse EF gegeben, da eine individuelle Zuordnung zur 10.1, 10/B oder ähnlich ohnehin nicht in der Klassentabelle abzubilden ist.
+
+Nehmen Sie zur Kenntnis, dass sich an dieser Stelle eine **Noteingabe sperren** lässt, so dass niemand - ohne die Berechtigung, Klassen zu bearbeiten - außerhalb der Notenzeiträume irgendwelche Änderungen vornehmen kann, obwohl der verwendete Benutzer dies eigentlich könnte. 
 
 Fahren Sie mit der [Einstellung und Kontrolle der Fächer](voreinstellungen_faecher.md) fort.

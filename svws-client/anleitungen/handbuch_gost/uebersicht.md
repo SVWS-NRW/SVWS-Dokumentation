@@ -27,7 +27,7 @@ Im Anschluss an diese allgemeine Einstellung wird für jeden Abiturjahrgang fest
 
 Auch Profile von verpflichtend zusammen belegten Fächern oder von Fächern, die sich gegenseitig ausschließen werden hier besprochen.
 
-## III - Vorbereiten eines Jahrgangs
+## III - Vorbereiten eines Jahrgangs und Laufbahnwahlen
 
 Dieses Kapitel ist umfangreich und es behandelt die Aufnahmen von Schülerinnen, die Kontrolle der Sprachenfolgen, die konkreten Laufbahnwahlen und den Beratungsprozess.
 
