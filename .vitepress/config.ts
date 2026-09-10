@@ -144,7 +144,6 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Installationsmethoden', link: '/deployment/installationsmethoden.md', collapsed: false, items: [
 							{ text: 'Linux-Installer', link: '/deployment/Linux-Installer/' },
 							{ text: 'Docker-Container', link: '/deployment/Docker/' },
-							{ text: 'NAS', link: '/deployment/NAS/' },
 							{ text: 'Windows-Installer', link: '/deployment/Windows-Installer/' },
 //							{ text: 'Testserver', link: '/deployment/Testserver/' },
 						] },
