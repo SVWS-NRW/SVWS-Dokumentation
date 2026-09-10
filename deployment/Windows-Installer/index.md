@@ -155,14 +155,6 @@ Bitte beachten Sie, dass nur Chrome und Edge automatisch diese Zertifikate nutze
 
 **Firefox** muss in der `about:config` die Einstellung `security.enterprise_roots.enabled` auf `true` gesetzt haben.
 
-## Uninstaller
-
-Im Programmverzeichnis des SVWS-Server befindet sich auch ein signierter Uninstaller, mit dem alle Installationsdateien wieder entfernt werden können.
-
-Bitte beachten Sie, dass Dateien, die nach der Installation hinzugefügt wurden, nicht erfasst werden.
-
-Außerdem sollte kontrolliert werden, ob auch alle Dienste entfernt wurden. Windows 10 gibt in einigen Fällen die Dienste nicht schnell genug frei, so dass die Löschung scheitert.
-
 ## Update
 
 Um den SVVS-Server zu aktualisieren, laden Sie bitte das aktuelle Release von unserer GitHub-Seite herunter.
@@ -172,6 +164,14 @@ Starten Sie anschließend das Excel-Programm. Es erkennt automatisch, dass berei
 Wenn eine neuere Version von MariaDB vorliegt, wird auch deren Versionsnummer überprüft. Ist ein Update verfügbar, wird Ihnen ebenfalls angeboten, MariaDB zu aktualisieren.
 
 ![update](./graphics/update.png)
+
+## Uninstaller
+
+Im Programmverzeichnis des SVWS-Server befindet sich auch ein signierter Uninstaller, mit dem alle Installationsdateien wieder entfernt werden können.
+
+Bitte beachten Sie, dass Dateien, die nach der Installation hinzugefügt wurden, nicht erfasst werden.
+
+Außerdem sollte kontrolliert werden, ob auch alle Dienste entfernt wurden. Windows 10 gibt in einigen Fällen die Dienste nicht schnell genug frei, so dass die Löschung scheitert.
 
 ## Wichtige Pfade zu den Ordnern
 
