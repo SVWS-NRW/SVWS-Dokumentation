@@ -1,4 +1,4 @@
-# II - Konfigurieren von Abiturjahrgängen
+# II. Konfigurieren von Abiturjahrgängen
 
 Um Schüler und Schülerinnen in ihre Laufbahnen wählen zu lassen, müssen die Rahmenbedingungen ihres Abitursjahrgangs konfiguriert werden.
 

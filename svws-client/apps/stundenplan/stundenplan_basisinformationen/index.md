@@ -60,7 +60,7 @@ Ebenso wählen Sie bei Bedarf ein **Wochentypmodell** (siehe ersten Screenshot).
 * *AB-Wochen*, *ABC-Wochen* oder *ABCD-Wochen* für entsprechend zwei-, drei- oder vierwöchigen Wechsel.
 * Sollten noch mehr Wochen wechseln, lässt sich mit *weitere* eine Wahl treffen, bei der zusätzlich ein Feld *Wochentypmodell* eingeblendet wird, bei dem sich eine ganze Zahl für den Wochentyp anwählen lässt.
 
-Wird ein Wechselwochenmodell gewählt, lassen sich auch die **Kalenderwochen** wählen, jeweils mit der *KW* und ihrem Datumsbereich und welcher *Wochentyp* - also A, B, C usw. - für diese KW gelten soll. Somit sind auch unregelmäßige Muster einstellbar.
+Wird ein Wechselwochenmodell gewählt, lassen sich auch die **Kalenderwochen** wählen, jeweils mit der *KW* und ihrem Datumsbereich und welcher *Wochentyp* - also A, B, C usw. für diese KW gelten soll. Somit sind auch unregelmäßige Muster einstellbar.
 
 ## Übersicht in Unterrichte
 

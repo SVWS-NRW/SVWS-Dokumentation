@@ -1,6 +1,8 @@
 # Das Große Handbuch Oberstufenkoordination
 
-Dieses Handbuch richtet sich an Personen, die Aufgaben der Oberstufenkoordination oder Abteilungsleitungen der gymnasialen Oberstufe in NRW in Gänze oder Teilen wahrnehmen. Ebenso gibt es Jahrgangslehrkräfte, Beratungslehrer oder über Entlastungsstunden und/oder Beförderungsstellen unterstützenden Koordinatoren, die Teile dieses Handbuch hilfreich finden könnten. 
+Dieses Handbuch richtet sich an Personen, die Aufgaben der **Oberstufenkoordination (Gy)** oder **Abteilungsleitungen der gymnasialen Oberstufe (Ge)** in NRW in Gänze oder Teilen wahrnehmen.
+
+Weiterhin gibt unter vielel Bezeichnungen es einen Jahrgang betreuende "Jahrgangskoordindatoren", "Beratungslehrer", über Entlastungsstunden und/oder Beförderungsstellen unterstützende Lehrkräfte, die Teile dieses Handbuch hilfreich finden könnten.
 
 :::tip Keine Panik
 Ob sich jemand erstmals einarbeitet, sich im neuen SVWS-Client orientiert oder etwas noch einmal nachschlagen möchte: Hier ist das Handbuch!

@@ -1,4 +1,4 @@
-# Abiturjahrgang vorbereiten und planen
+# III. Abiturjahrgang vorbereiten und planen
 
 Aus Sicht der Fächer und der Jahrgangsleitung sind die Vorbereitungen getroffen.
 
@@ -45,4 +45,4 @@ Nehmen Sie Schülerinnen in der Q-Phase auf, wird eventuell noch der Reiter **FH
 
 ---
 
-Fahren Sie nun mit der [Laufbahnplanung aller Schülerinnen und Schüler](laufbahnplanung.md) fort.
+Fahren Sie nun mit der [Laufbahnplanung aller Schülerinnen und Schüler](../laufbahnplanung/index.md) fort.

@@ -6,7 +6,7 @@ Weitere Details sind den speziellen Artikeln zu entnehmen, die über das Inhalts
 
 Andere Artikel sind vollständig hier in diesem Handbuch eingebunden. Der Bereich der "Blockung" zum Beispiel ist so groß, dass eine verknappte Übersicht für das Handbuch nicht sinnvoll erscheint.
 
-## I - Grundlegende Vorbereitungen der Datenbank
+## I. Grundlegende Vorbereitungen der Datenbank
 
 In diesem Kapitel wird erkläutert, wie Sie die grundlegende Einstellungen und Anpassungen Ihrer Daten vornehmen, die nur einmal sauber vorgenommen werden müssen.
 
@@ -17,7 +17,7 @@ Hier stellen Sie auch die vorhandenen Jahrgänge und Klassen mit den Restabschni
 Hat man eine bestehende und über Jahre gewachsene Datenbank übernommen, lohnt es sich oft, die Daten einmal vollständig zu prüfen und auf einen sauberen Stand zu bringen. 
 
 
-## II - Vorlagen im Allgemeinen und für bestimmte Jahrgänge
+## II. Vorlagen im Allgemeinen und für bestimmte Jahrgänge
 
 In diesem Kapitel wird beschrieben, wie die Rahmenbedinungen an der Schule allgemein und für konkrete Abiturjahrgänge sind.
 
@@ -27,13 +27,17 @@ Im Anschluss an diese allgemeine Einstellung wird für jeden Abiturjahrgang fest
 
 Auch Profile von verpflichtend zusammen belegten Fächern oder von Fächern, die sich gegenseitig ausschließen werden hier besprochen.
 
-## III - Vorbereiten eines Jahrgangs und Laufbahnwahlen
+## III. Vorbereiten eines Jahrgangs und Laufbahnwahlen
 
 Dieses Kapitel ist umfangreich und es behandelt die Aufnahmen von Schülerinnen, die Kontrolle der Sprachenfolgen, die konkreten Laufbahnwahlen und den Beratungsprozess.
 
-Zum Ende dieses Kapitels ist besprochen, wie Sie mit der Laufbahnwahl im SVWS-Client oder mit WebLuPO alle Schüler und Schülerinnen individuell so verplant haben, dass diese mindestens eine gültige Laufbahn bis zu ihrem Abitur haben. 
 
-## IV - Blocken
+
+## IV. Individuelle Laufbahnplanung 
+
+In diesem Kapitel ist dargelegt, wie Sie mit der Laufbahnwahl im SVWS-Client oder mit WebLuPO alle Schüler und Schülerinnen individuell so verplant haben, dass diese mindestens eine gültige Laufbahn bis zu ihrem Abitur haben. 
+
+## V. Blocken
 
 Nachdem die individuellen Laufbahnen gewählt wurden müssen diese nun so geplant werden, dass ein Unterricht an der Schule für alle möglich ist.
 
@@ -45,25 +49,25 @@ An dieser Stelle ist eventuell eine Rückkopplung mit dem vorherigen Kapitel not
 
 Hier werden auch Umwahlen abgeckt sowie das Festlegen von mündlichen und schriftlichen Grundkursen (GKM und GKS) wie den Leistungskursen und den Abiturfächern.
 
-## V - Listendruck und der Reportexplorer
+## VI. Listendruck und der Reportexplorer
 
 Die Kurse sind geplant und sind allen Schülerinnen und Schülern zugeordnet worden.
 
 Nun müssen Kurslisten gedruckt werden. In diesem Kapitel wird auch erstmals das Reporting beschrieben, mit dem später Leistungsübersichten, weitere Formulare etwa zum Zentralen Abiturausschuss (ZAA) oder die Zeugnisse und weiteres erzeugt werden.
 
-## VI - Klausurplanung
+## VII. Klausurplanung
 
 Nachdem Kurse belegt werden müssen auch schriftliche Leistungen erbracht werden. Im SVWS-Client ist eine praktische Funktion zur Planung von Klausuren basierend auf den belegten Kursen enhalten, um möglichst effizient alle Klausuren zu verplanen.
 
 Während der Klausurplanung werden die Schriebenden auf Räume mit gegebenen Raumgrößen verteilt.
 
-## VII - Der SVWS-WebNotenManager und Leistungsdaten
+## VIII. Der SVWS-WebNotenManager und Leistungsdaten
 
 Noten lassen sich über den SVWS-Client direkt in die Leistungsdaten übernehmen oder über das Internet mit dem SVWS-WebNotenManager einholen.
 
 Dieses Kapitel erläutert diese Möglichkeiten und erläutert ebenfalls den Druck von Konferenzlisten und Leistungsübersichten.
 
-## VIII - Zeugnisdruck und Versetzung
+## IX. Zeugnisdruck und Versetzung
 
 Nachdem alle Noten eingeholt sind, muss gesichtet werden, ob eine Versetzung in die EF erreicht wurde, ob gegebenfalls über ein Fortführen der Q-Phase nachzudenken ist, ob ein FHR erreicht wurde oder ob die Abiturzulassung erreicht wurde.
 
@@ -73,12 +77,12 @@ Dieses Kapitel deckt diese Punkte ab und bespricht das Drucken der jeweiligen Fo
 
 Zum Abschluss werden die Schülerinnen und Schüler für die Versetzung, den Abschluss, zur Wiederholung oder den Abgang markiert.
 
-## IX - Abitur
+## X. Abitur
 
 Das Abitur besteht über das vorherige Kapitel hinaus aus der Abiturzulassung und den Abiturprüfungen, an die sich gegebenfalls noch freiwillige Nachprüfungen und Bestehensprüfungen anschließen.
 
 Während des Prozesses finden weiterhin die Sitzungen des Zentralen Abiturausschusses statt, für die ebenfalls einige Drucke auszuführen sind.
 
-## X - Nachbereitung
+## XI. Nachbereitung
 
 Zum Ende des Schuljahres und nach dem Schuljahr ist vor dem Schuljahr. Es müssen Wiederholer in ihren neuen Jahrgang eingepflegt werden, Abschlüsse wurden erreicht, eventuell sind Neuzugänge zu verplanen.

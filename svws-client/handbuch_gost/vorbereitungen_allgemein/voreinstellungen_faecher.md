@@ -1,4 +1,4 @@
-# I - Grundlegende Vorbereitungen der Datenbank
+# I. Grundlegende Vorbereitungen der Datenbank
 
 Zum einen sind korrekt definierte Fächer notwendig für das Funktionieren der diversen Algorithmen für Laufbahnen, Zulassungen und Prüfungen. Zum anderen dient ein Entfernen überflüssiger Fächer der Übersicht und verhindert Fehler im laufenden Betrieb, die korrigiert werden müssen.
 
