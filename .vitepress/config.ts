@@ -131,6 +131,7 @@ export default defineConfig(({ mode }) => {
 								{ text: 'externe Notenmanager', link: '/development/API/external/notenmanager.md' },
 							] },
 							{ text: 'Privileged API', link: '/development/API/privileged/index.md' },
+							{ text: 'Kataloge API', link: '/development/API/kataloge/index.md' },
 						],
 						},
 						{ text: 'SVWS-Server bei GitHub', link: 'https://github.com/SVWS-NRW/SVWS-Server/' },
