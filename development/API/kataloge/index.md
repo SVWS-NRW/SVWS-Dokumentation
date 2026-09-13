@@ -2,7 +2,7 @@
 
 Über den Aufruf von `https://MEINSERVER:PORT/types/allinone.json` wird eine Ausgabe im json-Format erzeugt, die alle Katalogdaten enthält.
 
-Sie erhalten unter anderem alle IDs, Kürzel und so weiter.
+Sie erhalten unter anderem alle IDs, Kürzel und so weiter. Die Ausgabe erfolgt über alle Schemata, die auf dem Server angelegt sind.
 
 Beispielausgabe, die hier mit dem Abschlüssen beginnt:
 
