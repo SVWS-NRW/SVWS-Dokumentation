@@ -16,7 +16,9 @@ Laden Sie die aktuelle Datei von unseren Githubseiten herunter:
 
 Hinweis: Der SVWS-Server benötigt nicht 16GB Ram, jedoch ist dies für Betrieb eines Windows-Servers und die hiermit verbundenen anderen Dienste für den Mehrbenutzerbetrieb ratsam. Ressourcenschonender kann der SVWS-Server unter Linux oder Docker eingesetzt werden. 
 
-## Installationshinweise
+## Installation
+
+### Installationshinweise
 
 Der SVWS-Installer wird für Windows-64Bit mit InnoSetup erstellt. Er installiert die im Folgenden genannten Komponenten und startet alle Dienste. Eine Migration kann optional durchgeführt werden.
 
@@ -38,7 +40,29 @@ Der SVWS-Installer übernimmt die folgenden Aufgaben:
 + Anlegen der Freigaben für die Windows Firewall, damit der Server auch für andere Clients erreichbar ist
 + Ggf. Migration aus einer bestehenden Datenbank in das neue Schema
 
-## Installationseinstellungen
+
+### Pakete im SVWS-Installer von Open-Source-Fremdherstellern
+
++ curl
++ mariadb
++ innoextract
++ innosetup
++ jdk
++ winsw
+
+### Wichtige Pfade
+
+Als Default-Verzeichnisse werden bei der Installation folgende Verzeichnisse vorgeschlagen:
+
+| Pfad | Beschreibung |
+| --- | --- |
+| `C:\Program files\SVWS-Server` | Alle Programm-Dateien inklusive MariaDB und Java-Umgebung |
+| `C:\ProgramData\SVWS-Server` | Alle Daten und Logs und Einstellungsdateien |
+| `C:\Users\{Username}\AppData\Local\Temp` | Log-Files des Installers und Uninstallers |
+| `C:\Users\{Username}\Dokumente` | Das Zertifikat für die Browser |
+
+
+### Installationseinstellungen
 
 Zu Beginn der Installation erscheinen nach der Annahme der Lizenzvereinbarungen folgende Optionen:
 
@@ -49,8 +73,6 @@ Es werden für MariaDB und den Datenbank-Benutzer Zufallspasswörter generiert! 
 
 Ohne diese Passwörter kann Ihnen später im Supportfall nicht geholfen werden!
 :::
-
-## Installation
 
 ### Installation MariaDB
 
@@ -82,66 +104,26 @@ Die Aufrufe werden in Form von Batch-Dateien mit der Endung `.cmd` im Hauptverze
 
 Die Dienste MariaDB und SVWS-Server werden in der Computerverwaltung registriert und automatisch gestartet.
 
-![Windows-Dienste mit dem SVWS-Java-Service-Dienst](./graphics/SVWSDienste.jpg "Der Dienst für den SVWS-Java-Service ist hervorgehoben.")
+![Windows-Dienste mit dem SVWS-Java-Service-Dienst](./graphics/SVWSDienste.png "Der Dienst für den SVWS-Java-Service ist hervorgehoben.")
 
 ::: warning Port 443 für den SVWS-Server
 Der SVWS-Server wird immer auf Port 443 installiert. Dies kann nach der Installation in der `svwsconfig.json` geändert werden. Das sollte allerdings nur in Ausnahmefällen geschehen.
 :::
 
-## Konfigurationsdatei editieren
-
-Man findet alle Einstellungsmöglichkeiten zum Betrieb des SVWS-Servers an zentraler Stelle in der Datei: `svwsconfig.json`
-
-Unter Windows im Verzeichnis: `C:\ProgramData\SVWS-Server\res`
-In dieser Datei wird die Serverkonfiguration gespeichert.
-
-### Parameter Beschreibung
-
-#### allgemeine Einstellungen
-
-| Parameter | Beschreibung |
-| --- | --- |
-| DisableDBRootAccess | Hier kann bei erhöhtem Sicherheitsbedarf der Root-Zugang zur Datenbank gesperrt werden. |
-| UseHTTPDefaultv11 | Hier kann auf HTTP/1.1 herunter geschaltet werden. |
-| PortHTTPS | Hier kann der Port von 443 auf einen anderen Port gesetzt werden, falls 443 schon belegt ist. |
-| UseCORSHeader | Die Verwendung des CORSHeader kann deaktiviert werden. |
-| TLSKeystorePath | Pfad zum Keystore für das Zertifikat |
-| TLSKeystorePassword | Das Passwort für den Keystore. (Wird automatisch generiert.) |
-| ClientPath | Pfad zu den Dateien des SVWSClient. |
-| AdminClientPath | Pfad zu den Dateien des SVWS-AdminClient. |
-| LoggingEnabled | Schaltet das Logging ein. |
-| LoggingPath | Pfad zu den LOG-Dateien. |
-
-#### Datenbankserver Einstellungen
-
-| DBKonfiguration | |
-| --- | --- |
-| dbms | Datenbanksystem (MariaDB oder SQLite für Schulungsumgebungen) |
-| location | ServerURL |
-| defaultschema | Standard-Schema. Es können mehrere Schemata verwendet werden. |
-
-#### Datenbankschemata Einstellungen
-
-| SchemaKonfiguration | |
-| --- | --- |
-| name | Name des Datenbankschemas |
-| svwslogin | Login-Prozess auch über das DBMS möglich. Benutzer muss dann im DBMS angelegt sein — Zur Zeit nicht unterstützt! |
-| username | Datenbank-Benutzername |
-| password | Passwort des Datenbank-Benutzers |
-
-## Registrierung der Dienste
-
+### Registrierung der Dienste
 
 Der SVWS-Server und der Mariadb-Server werden als Dienst registriert. Diese können in der Computerverwaltung überprüft werden.
 
 ![SVWS Dienste](./graphics/SVWSDienste.png)
 
-
 ::: warning Rechte zum Starten der Dienste
 Mögliche Fehlerquelle: Das (Dienst-)Konto, mit dem der Dienst gestartet werden soll, muss auch die Berechtigungen hierfür haben. Eventuell hilft es, das MariaDB-Dienstkonto in die Default Controllers Policy mit der Berechtigung "Anmelden als Dienst" aufzunehmen (2025).
 :::
 
-## Erstellen des Keystore/Zertifikat
+## optional: Keystore
+
+Optional kann ein eigener Keystore mit Zertifikat erstellt werden.
+
 
 Im Keystore des SVWS-Server wird ein selbstsigniertes Zertifikat erstellt. Der öffentliche Teil wird im Ordner `C:\Users\{Benutzername}\Dokumente` gespeichert.
 
@@ -173,22 +155,6 @@ Bitte beachten Sie, dass Dateien, die nach der Installation hinzugefügt wurden,
 
 Außerdem sollte kontrolliert werden, ob auch alle Dienste entfernt wurden. Windows 10 gibt in einigen Fällen die Dienste nicht schnell genug frei, so dass die Löschung scheitert.
 
-## Wichtige Pfade zu den Ordnern
+## Einrichtung
 
-Als Default-Verzeichnisse werden bei der Installation folgende Verzeichnisse vorgeschlagen:
-
-| Pfad | Beschreibung |
-| --- | --- |
-| `C:\Program files\SVWS-Server` | Alle Programm-Dateien inklusive MariaDB und Java-Umgebung |
-| `C:\ProgramData\SVWS-Server` | Alle Daten und Logs und Einstellungsdateien |
-| `C:\Users\{Username}\AppData\Local\Temp` | Log-Files des Installers und Uninstallers |
-| `C:\Users\{Username}\Dokumente` | Das Zertifikat für die Browser |
-
-## Pakete im SVWS-Installer von Open-Source-Fremdherstellern
-
-+ curl
-+ mariadb
-+ innoextract
-+ innosetup
-+ jdk
-+ winsw
+Sie haben nun einen laufenden SVWS-Server eingerichtet. Um den Server mit Daten zu befüllen und an die Anforderungen Ihrer Schule anzupassen, fahren Sie bitte mit dem Artikel **[Einrichtung](../Einrichtung/index.md)** fort.

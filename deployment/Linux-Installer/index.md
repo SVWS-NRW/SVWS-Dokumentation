@@ -1,10 +1,25 @@
 # Linux Installer
 
+## Wichtige Hinweise
+
+- Verwendung der Skripte geschieht auf eigene Gefahr.
+- Führen Sie die Skripte nur auf einem Testsystem durch, bevor Sie es auf einem Produktivsystem verwenden.
+- Stellen Sie sicher, dass alle Konfigurationen und Passwörter sicher gespeichert und aufbewahrt werden.
+- Beachten Sie, dass das Skript eine Internetverbindung benötigt, um bestimmte Pakete herunterzuladen und zu
+installieren.
+
+## Voraussetzungen
+
+- [Ein Debian-basiertes Betriebssystem](#debian-basierte-systeme)
+- [(weitere Linux-basierte Betriebssystem)](#weitere-linux-basierte-systeme)
+- Zugriff mit root-Rechten
+
+
 ## Debian-basierte Systeme:
 
-Download unter: https://github.com/SVWS-NRW/SVWS-Server/releases
+Unter unseren Githubseiten im Bereich [Releases](https://github.com/SVWS-NRW/SVWS-Server/releases) befindet sich das Installationsskript des SVWS-Server in der aktuellen Version für Debian-basierte Systeme.
 
-Dieses Skript ist für die Installation des SVWS-Servers auf einem Debian-basierten System gedacht.
+**install-x.y.z-sh**
 
 Bisher getestet unter:
 
@@ -13,49 +28,15 @@ Bisher getestet unter:
 - Ubuntu 22.04 LTS
 - Ubuntu 24.04 LTS
 
-## Redhat-basierte Systeme
-
-Die Installation unter RedHat-basierten Systemen kann hier nachgelesen werden:
-
-[Installation Redhat (RHL)](RedHat-Linux.md)
-
-Bisher getestet unter:
-
-- RedHat 9
-- Rocky-Linux 9
-
-## Wichtige Hinweise
-
-- Verwendung der Skripte geschieht auf eigene Gefahr.
-- Führen Sie das Skript nur auf einem Testsystem durch, bevor Sie es auf einem Produktivsystem verwenden.
-- Stellen Sie sicher, dass alle Konfigurationen und Passwörter sicher gespeichert und aufbewahrt werden.
-- Beachten Sie, dass das Skript eine Internetverbindung benötigt, um bestimmte Pakete herunterzuladen und zu
-installieren.
-
-
-## Voraussetzungen
-
-- Ein Debian-basiertes Betriebssystem
-- Zugriff mit root-Rechten
-
-## Installation DEB
+## Installation
 
 - Laden Sie das Skript auf den Zielcomputer herunter.
 - Öffnen Sie die Terminalanwendung und navigieren Sie zum Verzeichnis, in dem sich das Skript befindet.
-- Geben Sie den Befehl `chmod +x /install-0.x.x.sh` ein und drücken Sie die Eingabetaste, um es ausführbar zu machen.
-- Geben Sie den Befehl `./install-0.x.x.sh`  zur Ausführung ein und drücken Sie die Eingabetaste.
+- Geben Sie den Befehl `chmod +x /install-x.y.z.sh` ein und drücken Sie die Eingabetaste, um es ausführbar zu machen.
+- Geben Sie den Befehl `./install-x.y.z.sh`  zur Ausführung ein und drücken Sie die Eingabetaste.
 - Folgen Sie den Anweisungen im Skript.
 
 Nach dem Durchlauf des Skripts haben Sie einen aktiv laufenden SVWS-Server!
-
-## Update der Linux-Installation
-
-- Laden Sie das Skript auf den Zielcomputer herunter.
-- Öffnen Sie die Terminalanwendung und navigieren Sie zum Verzeichnis, in dem sich das Skript befindet.
-- Geben Sie den Befehl `chmod +x /install-0.x.x.sh` ein und drücken Sie die Eingabetaste, um es ausfürbar zu machen.
-- Achten Sie darauf, dass die Datei `.env` aus der Installation neben dem Install-Skript liegt.
-- Geben Sie den Befehl `./install-0.x.x.sh --update` zur Ausführung ein und drücken Sie die Eingabetaste.
-- Danach sollte der SVWS-Server in der aktuellen Version laufen.
 
 ## Installationseinstellungen
 
@@ -109,7 +90,9 @@ Erläuterungen zu den einzelnen Punkten:
 | SVWS_TLS_KEYSTORE_PATH | Der Pfad des angelegten Keystores, um dort Daten zu speichern |
 | SVWS_TLS_KEY_ALIAS | Alias des zu verwendenden Keys im Keystore |
 
-## optional: eigener Keystore mit Zertifikat
+## optional: Keystore
+
+Optional kann ein eigener Keystore mit Zertifikat erstellt werden.
 
 ```bash
 keytool -genkey -noprompt -alias alias1 -dname "CN=test, OU=test, O=test, L=test, S=test, C=test" -ext "SAN=DNS:localhost,IP:127.0.0.1,IP:10.1.0.1,DNS:meinserver,DNS:meinserver.mydomain.de" -keystore /etc/app/svws/conf/keystore -storepass test123 -keypass test123  -keyalg RSA
@@ -119,23 +102,42 @@ keytool -export -keystore /etc/app/svws/conf/keystore -alias alias1 -file ./SVWS
 
 Mit diesen Befehlen kann ein eigener Keystore mit einem Zertifikat erstellt werden. Der zweite Befehl exportiert das Zertifikat, welches dann unter den Windows-Client installiert werden kann, so dass die Warnmeldungen im Browser verschwinden.
 
-## Portumleitung
+## Einrichtung
 
-Eine Möglichkeit den SVWS-Server unter einer "normalen" URL erreichen zu können und somit auf das Appendix der Ports verzichten zu können, wäre eine Portumleitung. Der bessere Weg, vor allem in größeren Netzwerken, wäre der Einsatz eines Reverse-Proxies.
+Sie haben nun einen laufenden SVWS-Server eingerichtet. Um den Server mit Daten zu befüllen und an die Anforderungen Ihrer Schule anzupassen, fahren Sie bitte mit dem Artikel **[Einrichtung](../Einrichtung/index.md)** fort.
 
-In beiden Fällen könnte man statt zum Beispiel `https://meineServeradresse:8443/` dann unter `https://meineServeradresse/` den SVWS-Server direkt erreichen.
+## Update
 
-Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit `iptables`:
+Update der Debian-Linux-Installation
 
-```bash
-iptables -A PREROUTING -t nat -p tcp --dport 443 -j REDIRECT --to-port 8443
-```
+- Laden Sie das Skript auf den Zielcomputer herunter.
+- Öffnen Sie die Terminalanwendung und navigieren Sie zum Verzeichnis, in dem sich das Skript befindet.
+- Geben Sie den Befehl `chmod +x /install-x.y.z.sh` ein und drücken Sie die Eingabetaste, um es ausfürbar zu machen.
+- Achten Sie darauf, dass die Datei `.env` aus der Installation neben dem Install-Skript liegt.
+- Geben Sie den Befehl `./install-x.y.z.sh --update` zur Ausführung ein und drücken Sie die Eingabetaste.
+- Danach sollte der SVWS-Server in der aktuellen Version laufen.
 
-## Reverse-Proxy einrichten
+## Weitere Linux-basierte Systeme 
 
-Alternativ zur Portumleitung kann der nginx Webserver als Reverse-Proxy eingesetzt werden.
+Hinweis: diese Systeme werden nicht offiziell supported.
 
+### Installation (RHL)
 
-## UFW als Firewall einrichten
+Die Installation unter RedHat-basierten Systemen kann hier nachgelesen werden:
 
-Für die Linuxmaschine im Livebetrieb empfiehlt sich eine Firewall einzurichten. Dazu ist bei vielen Distributionen die `ufw`-Firewall vorinstalliert.
+[Installation Redhat (RHL)](RedHat-Linux.md)
+
+Bisher getestet unter:
+
+- RedHat 9
+- Rocky-Linux 9
+
+### NAS
+
+Ein Proof of Concept zur Installation unter einem NAS-Systemen kann hier nachgelesen werden:
+
+[Installation NAS](../NAS/index.md)
+
+Bisher getestet unter:
+
+- Synologie 2025

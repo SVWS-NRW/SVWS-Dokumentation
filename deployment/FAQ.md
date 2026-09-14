@@ -58,28 +58,10 @@ Bei der Installation wird ein selbstsigniertes Zertifikat erstellt, welches in e
 
 Eigene Zertifikate können in den Keystore des SVWS-Server geladen werden. Eine Anleitung dazu wird zur Verfügung gestellt.
 
-## Reverse-Proxy
-### Was ist beim Betrieb hinter einem Reverse-Proxy zu beachten?
+## Reverse Proxy 
 
-Beim Betrieb eines Reverese-Proxy-Servers als Zugangsserver sind die folgenden Einstellungen empfehlenswert:
-
-```bash
-    client_max_body_size 100M;
-    add_header 'Content-Security-Policy' 'upgrade-insecure-requests';
-    proxy_set_header X-Content-Type-Options nosniff;
-    proxy_set_header X-Frame-Options "SAMEORIGIN";
-    proxy_set_header Host $host;
-    proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-
-    proxy_http_version 1.1;
-    proxy_read_timeout 300;
-    proxy_connect_timeout 300;
-    proxy_send_timeout 300;
-```
-
-Gegebenenfalls können die Einstellungen in der Paketgröße und den Timeouts je nach Größe der Schule und Geschwindigkeit der Internetverbindung angepasst werden.
-
+Was ist beim Betrieb hinter einem Reverse-Proxy zu beachten?
+siehe: [Einrichtung - Netzwerkeinstellungen](./Einrichtung/index.md#netzwerkeinstellungen-optional)
 
 ## Datenbanken
 ### Liegt die Datenbank auf einem separaten Server?
