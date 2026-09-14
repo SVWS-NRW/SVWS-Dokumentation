@@ -1,8 +1,9 @@
 # Menü nach der Erstanmeldung
 
 Nachdem Sie sich erfolgreich beim WebNotenManager Ihrer Schule angemeldet haben, sehen Sie ein Fenster das inhaltlich dreigeteilt ist.
-Ganz links im Fenster sehen Sie eine dauerhafte Menüleiste.
 
+
+Ganz links im Fenster sehen Sie eine dauerhafte Menüleiste. 
 Die links dargestellten Symbole haben folgende Funktionen:
 
 ![WeNoM Menüleiste](graphics/wenom_menueaufbau.png)
