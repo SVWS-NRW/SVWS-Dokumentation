@@ -138,6 +138,12 @@ Werden Schülerdaten exportiert, legen Sie fest, welche Art der SchülerID Sie n
 
 SVWS-IDs haben den Vorteil, dass diese unabhängig von Namensänderungen oder falschen, beziehungsweise fehlerhaften Einträgen bei Name, Vorname und Geburtsdatum sind. Wird Untis bei Ihnen mit SVWS-Exporten befüllt, empfiehlt sich diese Wahl.
 
+Es werden Einträge von diesem Format erzeugt:
+
+```
+"S-1001";"Blumenfreund";;;;;;"Barabara";"1001";"Q2";"2";;"20080817";"B.Blumenfreund@smail.de";"1001";
+```
+
 Schüler-ID-Arten sollten in Untis nicht gemischt werden.
 
 ---
