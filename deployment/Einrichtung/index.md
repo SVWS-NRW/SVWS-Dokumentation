@@ -1,8 +1,19 @@
 # Einrichtung eines SVWS-Servers
 
-## Konfigurationsdatei svwsconfig.json
+## svwsconfig.json
 
-Aus der `svwsconfig.json` werden beim Start des SVWS-Server die individuellen Einstellungen der jeweiligen Umgebung eingelesen.
+Aus der Konfigurationsdatei  `svwsconfig.json` werden beim Start des SVWS-Server die individuellen Einstellungen der jeweiligen Umgebung eingelesen.
+
+Hinwesi : Profibereich ... man kann sich auf die Vorauswahl in den Installationsmethoden verlassen
+
+1.)  im Ausführungsverzeichniss oder im classpath ... z.B. 
+
+
+![alt text](image.png)
+
+2.) ./svwsconfig.json
+3.) User Homeverzeichnis
+
 
 Die `svwsconfig.json` muss unter Windows im `res`-Verzeichnis des Datenverzeichnis des SVWS-Servers liegen (z.B. `S:\SVWS-Server-Data\res\`). Unter Linux ist des das Verzeichnis  `etc/app/svws/conf/svwsconfig.json`.
 Es kann auch, wie im Linux-Installer, ein symbolischer Link erstellt werden. 
@@ -13,6 +24,8 @@ Der SVWS-Server startet auch ohne einen Eintrag unter Schemakonfiguration und bi
 
 Unter `https://meinserver/admin` steht dann ein AdminClient zur Verfügung, mit dem man erste Datenbanken migrieren oder Backups erstellen kann.
 
+### autoamische Ableiten der svwsconfig.json 
+
 ### Beschreibung der Variablen
 
 Die folgende Tabelle beschreibt die im Quellcode definierten
@@ -21,27 +34,27 @@ Konfigurationseinstellungen von `svwsconfig.json`.
 
 | Variable | Default | Erläuterung |
 | --- | --- | --- |
-| `EnableClientProtection` | `false` | Aktiviert den Schutz der WebClient-Dateien über eine Datenbank-Authentifizierung. |
+| `EnableClientProtection` | `false` |  **DEPRECATED.** Aktiviert den Schutz der WebClient-Dateien über eine Datenbank-Authentifizierung. Issue zum Entfernen machen und nicht öffentlich darstellen!!!|
 | `DisableDBRootAccess` | `false` | Deaktiviert den privilegierten bzw. Root-Zugriff auf die Datenbank- und Root-APIs. Ist die Einstellung `true`, werden die Root-API und der AdminClient nicht für den privilegierten Zugriff bereitgestellt. |
-| `DisableAutoUpdates` | `false` | Deaktiviert automatische Aktualisierungen der Datenbank beim Start des SVWS-Servers. |
-| `DisableTLS` | `false` | Deaktiviert TLS. Wenn TLS deaktiviert ist, verwendet der Server den HTTP-Port (`PortHTTP`) anstelle des HTTPS-Ports. |
-| `PortHTTP` | `8080` | Port für HTTP-Verbindungen. Der aktuelle Quellcode verwendet `8080` als Default. |
+| `DisableAutoUpdates` | `false` | Deaktiviert automatische Aktualisierungen der Datenbank beim Start des SVWS-Servers. Hinweis: Einsatz wird eher in Endwicklungsumgebenungen .... erprobung neuerer DB Versionen|.. manuelles Hochsetzten einzelne DBs 
+| `DisableTLS` | `false` | Deaktiviert TLS. Wenn TLS deaktiviert ist, verwendet der Server den HTTP-Port (`PortHTTP`) anstelle des HTTPS-Ports. Hinweis: Der hhtp Port muss dann gesetzt sein ... dann wird autamatisch Http1.1 verwendet, da Browser kein hhtp2 ohne TLS unterstützen |
+| `PortHTTP` | `8080` | Port für HTTP-Verbindungen. Der aktuelle Quellcode verwendet `8080` als Default, also auch bei null. |
 | `UseHTTPDefaultv11` | `false` | Beeinflusst die Priorisierung der HTTP-Protokollversionen. Bei Aktivierung wird HTTP/1.1 gegenüber HTTP/2 bevorzugt. Die Einstellung bedeutet nicht, dass ausschließlich HTTP/1.1 verwendet wird. |
-| `PortHTTPS` | `443` | Port für HTTPS-Verbindungen. |
+| `PortHTTPS` | `443` | Port für HTTPS-Verbindungen.Hinweis: linux systeme sollten 8443 aufgrund ... verwenden.|
 | `PortHTTPPrivilegedAccess` | `null` | Optionaler zusätzlicher Port für den privilegierten Zugriff. Ein zweiter Connector wird nur eingerichtet, wenn DB-Root-Zugriff nicht deaktiviert ist und dieser Wert gesetzt wurde. |
 | `UseCORSHeader` | `true` | Steuert, ob der Server CORS-Header verwendet. |
 | `TempPath` | `./tmp` | Verzeichnis für temporäre Dateien des Servers. |
-| `TLSKeyAlias` | `selfsigned` | Alias des für TLS verwendeten Schlüssels/Zertifikats im Keystore (required). |
-| `TLSKeystorePath` | `.` | Verzeichnis, in dem der TLS-Keystore liegt. Der Server erwartet darin die Datei `keystore`. |
-| `TLSKeystorePassword` | `svwskeystore` | Kennwort des TLS-Keystores. |
-| `ClientPath` | `webclient` | Pfad zum WebClient. |
+| `TLSKeyAlias` | `selfsigned` | Alias des für TLS verwendeten Schlüssels/Zertifikats im Keystore Hinweis: beim Erstellen des Keystore muss des Alias im Keystore muss passen ... Ein leerer String ist nicht nzulässig ... bei null -> selfsigned |
+| `TLSKeystorePath` | `.` | Verzeichnis, in dem der TLS-Keystore liegt. Der Server erwartet darin die Datei `keystore`. ... "." relativ zum Ausführungsort des Servers bzw. den beim Aufruf gesetztem Classpath Einträgen..|
+| `TLSKeystorePassword` | `svwskeystore` | Kennwort des TLS-Keystores. Der default wert ist für Testumgebungen gesetzt und sollte nicht ... |
+| `ClientPath` | `webclient` | Pfad zum WebClient. Issue: default wert auf client setzen ? Zeile 353 svwskonfiguration. java eigene megre request ...  |
 | `AdminClientPath` | `null` | Optionaler Pfad zum AdminClient. Ist der Wert leer bzw. nicht gesetzt, wird der AdminClient nicht über diesen Pfad registriert. Die Registrierung erfolgt zusätzlich nur, wenn `DisableDBRootAccess` nicht aktiviert ist. |
-| `AppsPath` | `null` | Optionaler Pfad für die Apps. Ein leerer oder nicht gesetzter Wert wird als `null` behandelt. |
-| `LoggingEnabled` | `false` bzw. abhängig von der Konfiguration | Aktiviert das Request-Logging. Für das Laden einer vorhandenen Konfiguration ist Logging nur aktiviert, wenn `LoggingEnabled` explizit auf `true` gesetzt ist. Beim Erzeugen einer Default-Konfiguration wird die Einstellung aus dem Vorhandensein eines Logging-Pfades abgeleitet. |
-| `LoggingPath` | `.` | Verzeichnis für die Logdateien. Der Jetty-Request-Logger legt dort tägliche Request-Logs ab. Die Logs werden 90 Tage aufbewahrt. |
-| `ServerMode` | `stable` | Betriebsmodus des Servers. Der Getter verwendet `STABLE` als Default, wenn kein gültiger Wert angegeben ist. Weitere Einstellungen: dev=Developermode alpha=Alphamode, beta=Betamode |
+| `AppsPath` | `null` | Optionaler Pfad für die link setzte -> "Apps". Ein leerer oder nicht gesetzter Wert wird als `null` behandelt. |
+| `LoggingEnabled` | `false` | Aktiviert das Logging. |
+| `LoggingPath` | `.` | Verzeichnis für die Logdateien. Hier werden u A.  Mirgations und Request logg abgelegt.  Die täglichen Request-Logs werden nach 90 Tage automaisch entfrent. |
+| `ServerMode` | `stable` | Betriebsmodus des Servers im produktivbetrieb. Der Getter verwendet `STABLE` als Default, wenn kein gültiger Wert angegeben ist. Weitere Einstellungen (für die Entwicklung und Testsysteme) : dev=Developermode alpha=Alphamode, beta=Betamode |
 | `PrivilegedDatabaseUser` | `root` | Benutzername für den privilegierten Datenbankzugriff. Der aktuelle Getter verwendet `root` als Default. |
-| `DBKonfiguration` | -- | Enthält die zentrale Datenbankkonfiguration einschließlich DBMS, Serveradresse, Standardschema und der konfigurierten Schemata. |
+| `DBKonfiguration` | -- | Abschnitt mit der ...  Enthält die zentrale Datenbankkonfiguration einschließlich DBMS, Serveradresse, Standardschema und der konfigurierten Schemata. |
 
 
 
@@ -49,12 +62,12 @@ Konfigurationseinstellungen von `svwsconfig.json`.
 
 | Variable |Default |Erläuterung|
 |-------------|---------------|---------------|
-| `dbms` | `MARIA_DB` | Verwendetes Datenbankmanagementsystem. Im DTO sind `MARIA_DB`, `MYSQL` und `MSSQL` als gültige Werte dokumentiert. |
-| `location` | abhängig von der Default-Konfiguration | Hostname bzw. Adresse des Datenbankservers, optional einschließlich Port, z. B. `localhost:3403`. Wird kein Port angegeben, wird der Standardport des jeweiligen DBMS verwendet. |
-| `defaultschema` | `null` / erstes Schema | Gibt das Standardschema an, das verwendet wird, wenn in einem Pfad kein Schema angegeben ist. Ist kein passendes Standardschema konfiguriert, kann das erste konfigurierte Schema als Default verwendet werden. |
-| `SchemaKonfiguration` | -- | Liste der konfigurierten Datenbankschemata. Es können mehrere Schema-Konfigurationen vorhanden sein. |
-| `connectionRetries` | `0` | **DEPRECATED.** Anzahl der wiederholten Verbindungsversuche zur Datenbank. |
-| `retryTimeout` | `0` | **DEPRECATED.** Wartezeit zwischen zwei Verbindungsversuchen in Millisekunden. |
+| `dbms` | `MARIA_DB` | Verwendetes Datenbankmanagementsystem. Andere DB Systeme werden nicht unterstützt ISSUE: Kommentar in der svwsdatabasedto zeile 14 knunur MariaDB |
+| `location` | localhost:3306 | Hostname bzw. Adresse des Datenbankservers, optional einschließlich Port, z. B. `MariaDBServer:3306`. (MariaDB default 3306 muss nicht explizit angegeben werden )  |
+| `defaultschema` | `null`  | Gibt den Namen des Schemas an, die als erstes im Client angezeigt werden soll, wird null angegeben ist der Standart der zuletzt aufgewählten konfigiuration   |
+| `SchemaKonfiguration` | -- | Abschnitt: Liste der konfigurierten Datenbankschemata. Es können mehrere Schema-Konfigurationen vorhanden sein. |
+| `connectionRetries` | `0` | **DEPRECATED.** Wird im SVWS-Server nicht mehr verwendet.  |
+| `retryTimeout` | `0` | **DEPRECATED.** Wird im SVWS-Server nicht mehr verwendet. |
 
 
 #### SchemaKonfiguration 
@@ -64,7 +77,7 @@ Konfigurationseinstellungen von `svwsconfig.json`.
 | Variable |Default |Erläuterung|
 |-------------|---------------|---------------|
 | `name` |  | Der Name des Datenbankschemas (der Schule) wird erfragt bei Erzeugung einer Default-Konfiguration. |
-| `svwslogin` | `false` | Legt fest, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung verwendet werden. Bei `true` ist für jeden SVWS-Benutzer ein entsprechender Datenbankbenutzer erforderlich. Die Einstellung ist im aktuellen Konfigurationscode als veraltet/deprecated behandelt; beim Einlesen wird ein fehlender Wert auf `false` normalisiert. |
+| `svwslogin` | `false` | Legt fest, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung verwendet werden. ** DEPRECATED** Legt fest, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung verwendet werden. Darf bei neueren SVWS-Server nicht auf true gesetzt werden  |
 | `username` |  | Der Benutzername für die Datenbankverbindung, wird erfragt bei Erzeugung einer Default-Konfiguration, sofern nicht `svwslogin` verwendet wird. |
 | `password` | | Das Kennwort für die Datenbankverbindung, wird erfragt bei Erzeugung einer Default-Konfiguration, sofern nicht `svwslogin` verwendet wird. |
 
