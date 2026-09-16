@@ -6,4 +6,4 @@ Je nach Rolle der Lehrkraft kann die Ansicht variieren. Es wird zwischen den fol
 
 + Die **Fachlehrkraft** sieht nur die Leistungsdaten ihrer Klassenunterrichte und Kurse.
 + Die **Klassenleitung** sieht weitere Daten wie Zeugnisbemerkungen.
-+ Die **Schulleitung** oder eine  **Abteilungsleitung/Stufenkoordination** sieht wie die Klassenleitung alle Daten der Schule oder Abteilung. Diese Ansicht wird noch in dem WebNotenManager implementiert werden.
++ Die **Schulleitung** oder eine  **Abteilungsleitung/Stufenkoordination** sieht wie die Klassenleitung alle Daten der Schule oder Abteilung. *Diese Ansicht wird in dem WebNotenManager noch implementiert werden.*

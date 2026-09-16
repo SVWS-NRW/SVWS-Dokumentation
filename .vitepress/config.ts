@@ -210,11 +210,12 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Handbuch Lehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/index.md', collapsed: false, items: [
 							{ text: 'Erste Anmeldung', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/erste_anmeldung.md'},
 							{ text: 'Menüstruktur', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/menuestruktur.md'},
-							{ text: 'Erstansicht', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/standardansicht.md'},
-							{ text: 'Rollenansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/rollenansichten.md'},
-							{ text: 'Fachlehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_fachlehrkraefte.md'},
-							{ text: 'Klassenlehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_klassenlehrkraefte.md'},
-							{ text: 'Weitere Ansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_weitere_ansichten.md'},
+							{ text: 'Ansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/standardansicht.md', collapsed: true, items: [
+							    { text: 'Rollenansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/rollenansichten.md'},
+							    { text: 'Fachlehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_fachlehrkraefte.md'},
+							    { text: 'Klassenlehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_klassenlehrkraefte.md'},
+							    { text: 'Weitere Ansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_weitere_ansichten.md'},
+							] }, //items Ansichten 						
 							{ text: 'Zwei-Faktor-Authentifizierung', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/2fa/index.md' },
 						] }, //items handbuch lehrkraefte
 						{ text: 'Handbuch Administration', link: '/svws-wenom/benutzerhandbuch_administration/index.md', collapsed: false, items: [

@@ -51,9 +51,8 @@ Ungültige oder uneindeutige Email-Einträge in den Dienstmails werden als Fehle
 Ebenso werden ausschließlich Dienstmailadressen und keine privaten Email-Adressen des Lehrerdatensatzes als Zugangsdaten verwendet. Liegt im Lehrerdatensatz kein gültiger Eintrag im Datenfeld *dienstliche Email* vor, so erhält diese Lehrkraft kein Login für den SVWS-WebNotenManager.
 
 ::: warning SVWS-Benutzer vs SVWS-WeNoM-Benutzer
-Die Personengruppe der SVWS-Benutzer entspricht nicht den SVWS-WeNoM-Benutzern: Die unter Noten -> Administration -> Zugangsdaten aufgeführte Personengruppe sind Unterrichtende oder mit Koordination und Klassenleitung Beauftragte. 
+Die Personengruppe der SVWS-Benutzer entspricht nicht den SVWS-WeNoM-Benutzern: Die unter Noten -> Administration -> Zugangsdaten aufgeführte Personengruppe sind Unterrichtende oder mit Koordination und Klassenleitung Beauftragte.
 :::
-
 
 ### Zurücksetzten auf das Initialkennwort
 
@@ -125,7 +124,7 @@ Soll ein Datenbank-Nutzer auch die oben erklärte Konfiguration vornehmen könne
 
 Sie können zur Konfiugration der Klassen/Jahrgänge/Abteilungen einen *Administrator, der kein Lehrer ist* verwenden.
 
-Sie können aber auch einem Lehrer (ob Administrator oder nicht) auch die Nutzerrechte des Notenmoduls freischalten. 
+Sie können aber auch einem Lehrer (ob Administrator oder nicht) auch die Nutzerrechte des Notenmoduls freischalten.
 
 Gehen Sie über die **App Einstellungen ⚙** in **Benutzerverwaltung ➜ Benutzergruppen**. Erzeugen Sie eine neue Benutzergruppe oder wählen Sie eine existiernde, die die SVWS-WeNoM-Konfiguration übernehmen soll.
 
@@ -145,4 +144,3 @@ Falls unter **Mail** eine gültige Emailadresse zum Versenden von Nachrichten f�
 
 ![Wenom Email Konfiguration](graphics/WenomMail.png "Konfigurieren Sie Emaildaten, um automatisch Kennwörter versenden zu können.")
 -->
-

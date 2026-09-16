@@ -15,7 +15,7 @@ Sollten Sie die Zwei-Faktor-Authentifizierung erstmalig nutzen, dan folgen Sie b
 
 Damit der Umgang mit sensiblen Daten über das Internet zusätzlich gesichert wird, ist es möglich, eine Zwei-Faktor-Authentifizierung für jeden Benutzer einzurichten. 
 
-Diese Entscheidung wird **seitens der Schule** getroffen. Diese weitere Sicherheitsebene muss durch die schulfachliche Administration im SVWS-Server eingeschaltet worden.
+Diese Entscheidung wird **seitens der Schule** getroffen. Diese weitere Sicherheitsebene muss durch die schulfachliche Administration im SVWS-Server eingeschaltet werden.
 
 Ist diese eingeschaltet worden, so erhält ein Benutzer beim nächsten Login nach erfolgreicher Eingabe des Kennworts die zusätzliche Aufforderung den *Zweiten Faktor* einzugeben.
 
@@ -23,14 +23,14 @@ Vor der Nutzung müssen Sie zunächst z.B. auf Ihrem Smartphone eine Zwei-Faktor
 
 ## Einmalig: Zwei-Faktor App installieren
 
-Sie benötigen eine Authentikator-App als diesen zweiten Faktor. Eine solche App kann in Varianten auf lokalen Desktop-Systemen, Tablets oder auch Samrtphones verwendet werden. 
+Sie benötigen eine Authentikator-App als diesen zweiten Faktor. Eine solche App gibt es in verschiedenen Varianten für lokale Desktop-Systeme, Tablets oder auch Samrtphones. 
 
 Diese müssen Sie vorab einmal installieren und mithilfe des QR-Code initialisieren.
 
 Hier ein Beispiel einer Smartphone-App:
 
 + Richten Sie eine neue Verbindung ein (oft ein Plus-Zeichen).
-+ Scannen Sie den QRCode mit der Kamera des Smartphones
++ Scannen Sie den QR-Code mit der Kamera des Smartphones
 
 ![Zwei Faktor Handy](./graphics/2fa_handy.png "Scannen Sie den QR-Code.")
 
