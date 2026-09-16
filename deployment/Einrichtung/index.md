@@ -2,29 +2,24 @@
 
 ## svwsconfig.json
 
-Aus der Konfigurationsdatei  `svwsconfig.json` werden beim Start des SVWS-Server die individuellen Einstellungen der jeweiligen Umgebung eingelesen.
+Aus der Konfigurationsdatei  `svwsconfig.json` werden beim Start des SVWS-Server die individuellen Einstellungen der jeweiligen Umgebung eingelesen. In der Regel wurde bei Verwendung von einer der drei Installationmethoden (Docker, Linux-Installer oder Windows-Installer) eine sinnvolle svwsconfig.json Datei im Zuge der Installation automatisiert erstellt.
 
-Hinwesi : Profibereich ... man kann sich auf die Vorauswahl in den Installationsmethoden verlassen
+Dieser Artikel gibt nun eine umfassende Übersicht über alle Einstellungesmöglichkeiten durch die svwsconfig.json
 
-1.)  im Ausführungsverzeichniss oder im classpath ... z.B. 
+### Wo wird die svws-config.json hinterlegt? 
 
++ Bei Verwendung des Windows-Installers unter:  
+`S:\SVWS-Server-Data\res\`
++ Bei Verwendung der Linux-Instalers unter:   
+`etc/app/svws/conf/svwsconfig.json`.
 
-![alt text](image.png)
+Grundsätzlich sucht der SVWS-Server die svwsconfig.json in der folgenden Reihenfolge: 
 
-2.) ./svwsconfig.json
-3.) User Homeverzeichnis
-
-
-Die `svwsconfig.json` muss unter Windows im `res`-Verzeichnis des Datenverzeichnis des SVWS-Servers liegen (z.B. `S:\SVWS-Server-Data\res\`). Unter Linux ist des das Verzeichnis  `etc/app/svws/conf/svwsconfig.json`.
-Es kann auch, wie im Linux-Installer, ein symbolischer Link erstellt werden. 
-
-Ein Beispiel-Template der [svwsconfig.json](https://github.com/SVWS-NRW/SVWS-Server/blob/dev/svws-server-app/src/main/resources/svwsconfig.json.example) liegt in unserem Github
-
-Der SVWS-Server startet auch ohne einen Eintrag unter Schemakonfiguration und bietet dann beim Start keine Auswahl für eine Datenbank an.
-
-Unter `https://meinserver/admin` steht dann ein AdminClient zur Verfügung, mit dem man erste Datenbanken migrieren oder Backups erstellen kann.
-
-### autoamische Ableiten der svwsconfig.json 
++ Der Pfad wird beim Aufruf des Servers übergeben   
+(`... ---classpath "C://ProgrammData\SVWS-Server\res ...`)
++ Im Ausführungsverzeichniss des SVWS Server  
+(`./svwsconfig.json`)
++ Im Homeverzeichnis des Users
 
 ### Beschreibung der Variablen
 
@@ -34,19 +29,18 @@ Konfigurationseinstellungen von `svwsconfig.json`.
 
 | Variable | Default | Erläuterung |
 | --- | --- | --- |
-| `EnableClientProtection` | `false` |  **DEPRECATED.** Aktiviert den Schutz der WebClient-Dateien über eine Datenbank-Authentifizierung. Issue zum Entfernen machen und nicht öffentlich darstellen!!!|
 | `DisableDBRootAccess` | `false` | Deaktiviert den privilegierten bzw. Root-Zugriff auf die Datenbank- und Root-APIs. Ist die Einstellung `true`, werden die Root-API und der AdminClient nicht für den privilegierten Zugriff bereitgestellt. |
 | `DisableAutoUpdates` | `false` | Deaktiviert automatische Aktualisierungen der Datenbank beim Start des SVWS-Servers. Hinweis: Einsatz wird eher in Endwicklungsumgebenungen .... erprobung neuerer DB Versionen|.. manuelles Hochsetzten einzelne DBs 
-| `DisableTLS` | `false` | Deaktiviert TLS. Wenn TLS deaktiviert ist, verwendet der Server den HTTP-Port (`PortHTTP`) anstelle des HTTPS-Ports. Hinweis: Der hhtp Port muss dann gesetzt sein ... dann wird autamatisch Http1.1 verwendet, da Browser kein hhtp2 ohne TLS unterstützen |
-| `PortHTTP` | `8080` | Port für HTTP-Verbindungen. Der aktuelle Quellcode verwendet `8080` als Default, also auch bei null. |
-| `UseHTTPDefaultv11` | `false` | Beeinflusst die Priorisierung der HTTP-Protokollversionen. Bei Aktivierung wird HTTP/1.1 gegenüber HTTP/2 bevorzugt. Die Einstellung bedeutet nicht, dass ausschließlich HTTP/1.1 verwendet wird. |
-| `PortHTTPS` | `443` | Port für HTTPS-Verbindungen.Hinweis: linux systeme sollten 8443 aufgrund ... verwenden.|
+| `DisableTLS` | `false` | Deaktiviert TLS. Wenn TLS deaktiviert ist, verwendet der Server den HTTP-Port (`PortHTTP`) anstelle des HTTPS-Ports.  **Hinweis:** Der http Port bei Deaktivierung von TLS gesetzt sein. Es wird dann wird autamatisch Http1.1 verwendet. |
+| `PortHTTP` | `8080` | Port für HTTP-Verbindungen. Bei Auslassen der Variablen oder beim Setzen von `null` wird als Default  `8080` verwendet . |
+| `UseHTTPDefaultv11` | `false` | Setzt die Priorisierung der HTTP-Protokollversionen: Bei Aktivierung wird HTTP/1.1 gegenüber HTTP/2 bevorzugt. **Hinweis:** Die Einstellung bedeutet nicht, dass ausschließlich HTTP/1.1 verwendet wird. |
+| `PortHTTPS` | `443` | Port für HTTPS-Verbindungen.  **Hinweis:** Unter Linux erfordern Ports < 1024 erhöhte Rechte; daher sollte in diesem Fall `8443` verwendet werden.|
 | `PortHTTPPrivilegedAccess` | `null` | Optionaler zusätzlicher Port für den privilegierten Zugriff. Ein zweiter Connector wird nur eingerichtet, wenn DB-Root-Zugriff nicht deaktiviert ist und dieser Wert gesetzt wurde. |
 | `UseCORSHeader` | `true` | Steuert, ob der Server CORS-Header verwendet. |
 | `TempPath` | `./tmp` | Verzeichnis für temporäre Dateien des Servers. |
-| `TLSKeyAlias` | `selfsigned` | Alias des für TLS verwendeten Schlüssels/Zertifikats im Keystore Hinweis: beim Erstellen des Keystore muss des Alias im Keystore muss passen ... Ein leerer String ist nicht nzulässig ... bei null -> selfsigned |
-| `TLSKeystorePath` | `.` | Verzeichnis, in dem der TLS-Keystore liegt. Der Server erwartet darin die Datei `keystore`. ... "." relativ zum Ausführungsort des Servers bzw. den beim Aufruf gesetztem Classpath Einträgen..|
-| `TLSKeystorePassword` | `svwskeystore` | Kennwort des TLS-Keystores. Der default wert ist für Testumgebungen gesetzt und sollte nicht ... |
+| `TLSKeyAlias` | `selfsigned` | Alias des für TLS verwendeten Zertifikats im Keystore **Hinweis:** beim Erstellen des Keystore **muss** der Alias im Keystore gesetzt sein. Ein leerer String ist nicht zulässig. |
+| `TLSKeystorePath` | `.` | Verzeichnis, in dem der TLS-Keystore liegt. Der Server erwartet darin die Datei mit der Bezeichnung: `keystore`.|
+| `TLSKeystorePassword` | `svwskeystore` | Kennwort des TLS-Keystores. **Hinweis:** Der Default Wert ist für Testumgebungen und Entwicklerversionen gesetzt und sollte nicht im Produktivbetrieb verwendet werden. |
 | `ClientPath` | `webclient` | Pfad zum WebClient. Issue: default wert auf client setzen ? Zeile 353 svwskonfiguration. java eigene megre request ...  |
 | `AdminClientPath` | `null` | Optionaler Pfad zum AdminClient. Ist der Wert leer bzw. nicht gesetzt, wird der AdminClient nicht über diesen Pfad registriert. Die Registrierung erfolgt zusätzlich nur, wenn `DisableDBRootAccess` nicht aktiviert ist. |
 | `AppsPath` | `null` | Optionaler Pfad für die link setzte -> "Apps". Ein leerer oder nicht gesetzter Wert wird als `null` behandelt. |
@@ -73,6 +67,7 @@ Konfigurationseinstellungen von `svwsconfig.json`.
 #### SchemaKonfiguration 
 
 
+Der SVWS-Server startet auch ohne einen Eintrag unter Schemakonfiguration und bietet dann beim Start keine Auswahl für eine Datenbank an. 
 
 | Variable |Default |Erläuterung|
 |-------------|---------------|---------------|
@@ -85,7 +80,6 @@ Konfigurationseinstellungen von `svwsconfig.json`.
 
 ``` json
 {
-  "EnableClientProtection" : false,
   "DisableDBRootAccess" : false,
   "DisableAutoUpdates" : false,
   "DisableTLS" : false,
