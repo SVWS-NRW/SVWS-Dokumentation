@@ -104,7 +104,7 @@ SchILD-NRW 3 soll schrittweise auf die API des SVWS-Servers umgestellt werden, s
 
 Die Laufbahnplanung für das neue Abitur soll in WebLupo und SVWS-Client zur Verfügung stehen.
 
-Ein erster Prototyp für experimentelle Tests kann seit dem Juli-Release mit entsprechenden Datenbanken getestet werden.
+Ein erster Prototyp für experimentelle Tests kann seit dem Juli-Release 2026 mit entsprechenden Datenbanken getestet werden.
 
 Die Finale Version steht am 31. Oktober 2026 mit dem Release 1.5.1 des SVWS-Server und mit WebLupo 1.5.1 zur Verfügung.
 
