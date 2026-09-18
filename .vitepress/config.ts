@@ -139,7 +139,7 @@ export default defineConfig(({ mode }) => {
 				],
 				'/deployment': [
 					{ text: '', items: [
-						{ text: 'Übersicht', link: '/deployment/' },
+						{ text: 'Installation', link: '/deployment/' },
 						{ text: 'IT-Umgebungen', link: '/deployment/IT-Umgebungen/' },
 						{ text: 'Installationsmethoden', link: '/deployment/installationsmethoden.md', collapsed: false, items: [
 							{ text: 'Linux-Installer', link: '/deployment/Linux-Installer/' },
@@ -151,6 +151,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Datenmigration', link: '/deployment/Datenmigration/' },
 						{ text: 'Datensicherung', link: '/deployment/Datensicherung/' },
 						{ text: 'Updates', link: '/deployment/UpdateSVWS' },
+						{ text: 'SVWS-Tools', link: '/deployment/svws-tools/'},
 						{ text: 'Schulungsserver', link: '/deployment/Schulungsserver/'},
 						{ text: 'SchILD-NRW-3', link: '/deployment/Schild-NRW3/' },
 						{ text: 'FAQ', link: '/deployment/FAQ.md' },

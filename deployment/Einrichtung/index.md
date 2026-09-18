@@ -41,14 +41,14 @@ Konfigurationseinstellungen von `svwsconfig.json`.
 | `TLSKeyAlias` | `selfsigned` | Alias des für TLS verwendeten Zertifikats im Keystore **Hinweis:** beim Erstellen des Keystore **muss** der Alias im Keystore gesetzt sein. Ein leerer String ist nicht zulässig. |
 | `TLSKeystorePath` | `.` | Verzeichnis, in dem der TLS-Keystore liegt. Der Server erwartet darin die Datei mit der Bezeichnung: `keystore`.|
 | `TLSKeystorePassword` | `svwskeystore` | Kennwort des TLS-Keystores. **Hinweis:** Der Default Wert ist für Testumgebungen und Entwicklerversionen gesetzt und sollte nicht im Produktivbetrieb verwendet werden. |
-| `ClientPath` | `webclient` | Pfad zum WebClient. Issue: default wert auf client setzen ? Zeile 353 svwskonfiguration. java eigene megre request ...  |
+| `ClientPath` | `client` | Pfad zum WebClient des SVWS-Servers. |
 | `AdminClientPath` | `null` | Optionaler Pfad zum AdminClient. Ist der Wert leer bzw. nicht gesetzt, wird der AdminClient nicht über diesen Pfad registriert. Die Registrierung erfolgt zusätzlich nur, wenn `DisableDBRootAccess` nicht aktiviert ist. |
-| `AppsPath` | `null` | Optionaler Pfad für die link setzte -> "Apps". Ein leerer oder nicht gesetzter Wert wird als `null` behandelt. |
+| `AppsPath` | `null` | Optionaler Pfad zum Einbinden externen Seiten z.B. [SVWS-Tools](../svws-tools/index.md). Ein leerer oder nicht gesetzter Wert wird als `null` behandelt. |
 | `LoggingEnabled` | `false` | Aktiviert das Logging. |
-| `LoggingPath` | `.` | Verzeichnis für die Logdateien. Hier werden u A.  Mirgations und Request logg abgelegt.  Die täglichen Request-Logs werden nach 90 Tage automaisch entfrent. |
-| `ServerMode` | `stable` | Betriebsmodus des Servers im produktivbetrieb. Der Getter verwendet `STABLE` als Default, wenn kein gültiger Wert angegeben ist. Weitere Einstellungen (für die Entwicklung und Testsysteme) : dev=Developermode alpha=Alphamode, beta=Betamode |
-| `PrivilegedDatabaseUser` | `root` | Benutzername für den privilegierten Datenbankzugriff. Der aktuelle Getter verwendet `root` als Default. |
-| `DBKonfiguration` | -- | Abschnitt mit der ...  Enthält die zentrale Datenbankkonfiguration einschließlich DBMS, Serveradresse, Standardschema und der konfigurierten Schemata. |
+| `LoggingPath` | `.` | Verzeichnis für die Logdateien. Hier werden u A.  Mirgations- und Requestlogs abgelegt. Die täglichen Request-Logs werden nach 90 Tage automatisch entfernt. |
+| `ServerMode` | `stable` | Betriebsmodus des Servers im Produktivbetrieb: `stable`.  Weitere Einstellungen für die Entwicklungs- und Testsysteme: dev, alpha, beta |
+| `PrivilegedDatabaseUser` | `root` | Benutzername für den privilegierten Datenbankzugriff. |
+| `DBKonfiguration` |  | Abschnitt mit der die zentrale Datenbankkonfiguration einschließlich DBMS, Serveradresse, Standardschema und der konfigurierten Schemata enthält. |
 
 
 
