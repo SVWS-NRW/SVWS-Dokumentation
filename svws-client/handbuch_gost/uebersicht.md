@@ -31,8 +31,6 @@ Auch Profile von verpflichtend zusammen belegten Fächern oder von Fächern, die
 
 Dieses Kapitel ist umfangreich und es behandelt die Aufnahmen von Schülerinnen, die Kontrolle der Sprachenfolgen, die konkreten Laufbahnwahlen und den Beratungsprozess.
 
-
-
 ## IV. Individuelle Laufbahnplanung 
 
 In diesem Kapitel ist dargelegt, wie Sie mit der Laufbahnwahl im SVWS-Client oder mit WebLuPO alle Schüler und Schülerinnen individuell so verplant haben, dass diese mindestens eine gültige Laufbahn bis zu ihrem Abitur haben. 
