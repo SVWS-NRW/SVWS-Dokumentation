@@ -78,6 +78,10 @@ Dies soll die Erzeugung erster Testfälle für die Laufbahnplanungen unterstütz
 
 Der externe SVWS-WebNotenManager wurde für den Produktivbetrieb freigegeben.
 
+## 2026  Oktober Information der Schulen und Schulträger
+
+Es wird weitere Schulmails zu den bereits bekannten Informationen geben.
+
 ## 2026 November - Ausbau des SVWS-Clients für Grundschulen
 
 Ausbau des SVWS-Clients für weitere Schulformen. Zunächst sollen Grundschulen alle Funktionalitäten bekommen, die einen Betrieb des SVWS-Clients im Alltag ermöglichen.
@@ -86,19 +90,25 @@ Hier wird es notwendig sein, dass Gruppenprozesse und Filterfunktionen wie gewoh
 
 ## 2026 - Implementierung der Abschlussberechnungen
 
-Die Abschlussberechnungen aller Schulformen inkl. Berufskolleg sollen vorangetrieben werden.
+Die Abschlussberechnungen mehrerer Schulformen inkl. Berufskolleg sollen vorangetrieben werden.
 
 Diese Abschlussberechnungen sollen dann auch für SchILD-NRW 3 über die API zur Verfügung stehen.
+
+Fokus soll hier auf der Entwicklung der Berufskollegs Anlage D und Vorbereitung des neuen Abiturs stehen.
 
 ## 2026 Schrittweise Umstellung auf API
 
 SchILD-NRW 3 soll schrittweise auf die API des SVWS-Servers umgestellt werden, so dass direkte Datenbankzugriffe nicht mehr oder nur noch lesend notwendig sind.
 
-## 2027 - Februar neues Abitur
+## 2027 - Jaqnuar neues Abitur 20230
 
 Die Laufbahnplanung für das neue Abitur soll in WebLupo und SVWS-Client zur Verfügung stehen.
 
 Ein erster Prototyp für experimentelle Tests kann seit dem Juli-Release mit entsprechenden Datenbanken getestet werden.
+
+Die Finale Version steht am 31. Oktober 2026 mit dem Release 1.5.1 des SVWS-Server und mit WebLupo 1.5.1 zur Verfügung.
+
+Bis dahin kann die Version 1.4.1 für erste Arbeiten genutzt werden.
 
 ## 2027 - März Import-Tool
 
