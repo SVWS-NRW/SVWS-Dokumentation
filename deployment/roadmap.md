@@ -100,19 +100,19 @@ Fokus soll hier auf der Entwicklung der Berufskollegs Anlage D und Vorbereitung 
 
 SchILD-NRW 3 soll schrittweise auf die API des SVWS-Servers umgestellt werden, so dass direkte Datenbankzugriffe nicht mehr oder nur noch lesend notwendig sind.
 
-## 2027 - Jaqnuar neues Abitur 20230
+## 2027 - Januar neues Abitur 20230
 
-Die Laufbahnplanung für das neue Abitur soll in WebLupo und SVWS-Client zur Verfügung stehen.
+Die Laufbahnplanung für das neue Abitur soll in WebLuPO und SVWS-Client zur Verfügung stehen.
 
 Ein erster Prototyp für experimentelle Tests kann seit dem Juli-Release 2026 mit entsprechenden Datenbanken getestet werden.
 
-Die Finale Version steht am 31. Oktober 2026 mit dem Release 1.5.1 des SVWS-Server und mit WebLupo 1.5.1 zur Verfügung.
+Die finale Version steht am 31. Oktober 2026 mit dem Release 1.5.1 des SVWS-Server und mit WebLuPO 1.5.1 zur Verfügung.
 
 Bis dahin kann die Version 1.4.1 für erste Arbeiten genutzt werden.
 
-## 2027 - März Import-Tool
+## 2027 - März SVWS-Import-Tool
 
-Das Import-Tool für Schulen, die bisher noch kein Schild-NRW nutzen, soll zur Verfügung stehen.
+Das SVWS-Import-Tool für Schulen, die bisher noch kein Schild-NRW nutzen, soll zur Verfügung stehen.
 
 ## 2027 - Erster Feldtest Schulbewerbungen
 
