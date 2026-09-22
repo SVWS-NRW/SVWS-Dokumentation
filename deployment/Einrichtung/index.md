@@ -6,16 +6,16 @@ Aus der Konfigurationsdatei  `svwsconfig.json` werden beim Start des SVWS-Server
 
 Dieser Artikel gibt nun eine umfassende Übersicht über alle Einstellungesmöglichkeiten durch die svwsconfig.json
 
-### Wo wird die svws-config.json hinterlegt? 
+### Wo wird die svws-config.json hinterlegt?
 
 + Bei Verwendung des Windows-Installers unter:  
 `S:\SVWS-Server-Data\res\`
-+ Bei Verwendung der Linux-Instalers unter:   
++ Bei Verwendung der Linux-Instalers unter:
 `etc/app/svws/conf/svwsconfig.json`.
 
-Grundsätzlich sucht der SVWS-Server die svwsconfig.json in der folgenden Reihenfolge: 
+Grundsätzlich sucht der SVWS-Server die svwsconfig.json in der folgenden Reihenfolge:
 
-+ Der Pfad wird beim Aufruf des Servers übergeben   
++ Der Pfad wird beim Aufruf des Servers übergeben
 (`... ---classpath "C://ProgrammData\SVWS-Server\res ...`)
 + Im Ausführungsverzeichniss des SVWS Server  
 (`./svwsconfig.json`)
@@ -26,20 +26,19 @@ Grundsätzlich sucht der SVWS-Server die svwsconfig.json in der folgenden Reihen
 Die folgende Tabelle beschreibt die im Quellcode definierten
 Konfigurationseinstellungen von `svwsconfig.json`.
 
-
 | Variable | Default | Erläuterung |
 | --- | --- | --- |
 | `DisableDBRootAccess` | `false` | Deaktiviert den privilegierten bzw. Root-Zugriff auf die Datenbank- und Root-APIs. Ist die Einstellung `true`, werden die Root-API und der AdminClient nicht für den privilegierten Zugriff bereitgestellt. |
-| `DisableAutoUpdates` | `false` | Deaktiviert automatische Aktualisierungen der Datenbank beim Start des SVWS-Servers. Hinweis: Einsatz wird eher in Endwicklungsumgebenungen .... erprobung neuerer DB Versionen|.. manuelles Hochsetzten einzelne DBs 
+| `DisableAutoUpdates` | `false` | Deaktiviert automatische Aktualisierungen der Datenbank beim Start des SVWS-Servers. **Hinweis:** Einsatz wird eher in Endwicklungsumgebungen Zur Erprobung neuerer DB Versionen insbesondere zum manuellen Hochsetzten einzelner DBs. |
 | `DisableTLS` | `false` | Deaktiviert TLS. Wenn TLS deaktiviert ist, verwendet der Server den HTTP-Port (`PortHTTP`) anstelle des HTTPS-Ports.  **Hinweis:** Der http Port bei Deaktivierung von TLS gesetzt sein. Es wird dann wird autamatisch Http1.1 verwendet. |
 | `PortHTTP` | `8080` | Port für HTTP-Verbindungen. Bei Auslassen der Variablen oder beim Setzen von `null` wird als Default  `8080` verwendet . |
 | `UseHTTPDefaultv11` | `false` | Setzt die Priorisierung der HTTP-Protokollversionen: Bei Aktivierung wird HTTP/1.1 gegenüber HTTP/2 bevorzugt. **Hinweis:** Die Einstellung bedeutet nicht, dass ausschließlich HTTP/1.1 verwendet wird. |
-| `PortHTTPS` | `443` | Port für HTTPS-Verbindungen.  **Hinweis:** Unter Linux erfordern Ports < 1024 erhöhte Rechte; daher sollte in diesem Fall `8443` verwendet werden.|
+| `PortHTTPS` | `443` | Port für HTTPS-Verbindungen.  **Hinweis:** Unter Linux erfordern Ports < 1024 erhöhte Rechte; daher sollte in diesem Fall `8443` verwendet werden. |
 | `PortHTTPPrivilegedAccess` | `null` | Optionaler zusätzlicher Port für den privilegierten Zugriff. Ein zweiter Connector wird nur eingerichtet, wenn DB-Root-Zugriff nicht deaktiviert ist und dieser Wert gesetzt wurde. |
 | `UseCORSHeader` | `true` | Steuert, ob der Server CORS-Header verwendet. |
 | `TempPath` | `./tmp` | Verzeichnis für temporäre Dateien des Servers. |
 | `TLSKeyAlias` | `selfsigned` | Alias des für TLS verwendeten Zertifikats im Keystore **Hinweis:** beim Erstellen des Keystore **muss** der Alias im Keystore gesetzt sein. Ein leerer String ist nicht zulässig. |
-| `TLSKeystorePath` | `.` | Verzeichnis, in dem der TLS-Keystore liegt. Der Server erwartet darin die Datei mit der Bezeichnung: `keystore`.|
+| `TLSKeystorePath` | `.` | Verzeichnis, in dem der TLS-Keystore liegt. Der Server erwartet darin die Datei mit der Bezeichnung: `keystore`. |
 | `TLSKeystorePassword` | `svwskeystore` | Kennwort des TLS-Keystores. **Hinweis:** Der Default Wert ist für Testumgebungen und Entwicklerversionen gesetzt und sollte nicht im Produktivbetrieb verwendet werden. |
 | `ClientPath` | `client` | Pfad zum WebClient des SVWS-Servers. |
 | `AdminClientPath` | `null` | Optionaler Pfad zum AdminClient. Ist der Wert leer bzw. nicht gesetzt, wird der AdminClient nicht über diesen Pfad registriert. Die Registrierung erfolgt zusätzlich nur, wenn `DisableDBRootAccess` nicht aktiviert ist. |
@@ -48,35 +47,31 @@ Konfigurationseinstellungen von `svwsconfig.json`.
 | `LoggingPath` | `.` | Verzeichnis für die Logdateien. Hier werden u A.  Mirgations- und Requestlogs abgelegt. Die täglichen Request-Logs werden nach 90 Tage automatisch entfernt. |
 | `ServerMode` | `stable` | Betriebsmodus des Servers im Produktivbetrieb: `stable`.  Weitere Einstellungen für die Entwicklungs- und Testsysteme: dev, alpha, beta |
 | `PrivilegedDatabaseUser` | `root` | Benutzername für den privilegierten Datenbankzugriff. |
-| `DBKonfiguration` |  | Abschnitt mit der die zentrale Datenbankkonfiguration einschließlich DBMS, Serveradresse, Standardschema und der konfigurierten Schemata enthält. |
-
-
+| `DBKonfiguration` | | Abschnitt mit der die zentrale Datenbankkonfiguration einschließlich DBMS, Serveradresse, Standardschema und der konfigurierten Schemata enthält. |
 
 #### DBKonfigration
 
-| Variable |Default |Erläuterung|
-|-------------|---------------|---------------|
+| Variable | Default | Erläuterung |
+| ------------- | --------------- | --------------- |
 | `dbms` | `MARIA_DB` | Verwendetes Datenbankmanagementsystem. Andere DB Systeme werden nicht unterstützt ISSUE: Kommentar in der svwsdatabasedto zeile 14 knunur MariaDB |
-| `location` | localhost:3306 | Hostname bzw. Adresse des Datenbankservers, optional einschließlich Port, z. B. `MariaDBServer:3306`. (MariaDB default 3306 muss nicht explizit angegeben werden )  |
-| `defaultschema` | `null`  | Gibt den Namen des Schemas an, die als erstes im Client angezeigt werden soll, wird null angegeben ist der Standart der zuletzt aufgewählten konfigiuration   |
+| `location` | localhost:3306 | Hostname bzw. Adresse des Datenbankservers, optional einschließlich Port, z. B. `MariaDBServer:3306`. (MariaDB default 3306 muss nicht explizit angegeben werden ) |
+| `defaultschema` | `null` | Gibt den Namen des Schemas an, die als erstes im Client angezeigt werden soll, wird null angegeben ist der Standart der zuletzt aufgewählten konfigiuration |
 | `SchemaKonfiguration` | -- | Abschnitt: Liste der konfigurierten Datenbankschemata. Es können mehrere Schema-Konfigurationen vorhanden sein. |
-| `connectionRetries` | `0` | **DEPRECATED.** Wird im SVWS-Server nicht mehr verwendet.  |
+| `connectionRetries` | `0` | **DEPRECATED.** Wird im SVWS-Server nicht mehr verwendet. |
 | `retryTimeout` | `0` | **DEPRECATED.** Wird im SVWS-Server nicht mehr verwendet. |
 
+#### SchemaKonfiguration
 
-#### SchemaKonfiguration 
+Der SVWS-Server startet auch ohne einen Eintrag unter Schemakonfiguration und bietet dann beim Start keine Auswahl für eine Datenbank an.
 
-
-Der SVWS-Server startet auch ohne einen Eintrag unter Schemakonfiguration und bietet dann beim Start keine Auswahl für eine Datenbank an. 
-
-| Variable |Default |Erläuterung|
-|-------------|---------------|---------------|
-| `name` |  | Der Name des Datenbankschemas (der Schule) wird erfragt bei Erzeugung einer Default-Konfiguration. |
-| `svwslogin` | `false` | Legt fest, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung verwendet werden. ** DEPRECATED** Legt fest, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung verwendet werden. Darf bei neueren SVWS-Server nicht auf true gesetzt werden  |
-| `username` |  | Der Benutzername für die Datenbankverbindung, wird erfragt bei Erzeugung einer Default-Konfiguration, sofern nicht `svwslogin` verwendet wird. |
+| Variable | Default | Erläuterung |
+| ------------- | --------------- | --------------- |
+| `name` | | Der Name des Datenbankschemas (der Schule) wird erfragt bei Erzeugung einer Default-Konfiguration. |
+| `svwslogin` | `false` | **DEPRECATED** Legt fest, ob der SVWS-Anmeldename und das zugehörige Kennwort auch für die Datenbankverbindung verwendet werden. **Hinweis**: Darf bei neueren SVWS-Server nicht auf true gesetzt werden! |
+| `username` | | Der Benutzername für die Datenbankverbindung, wird erfragt bei Erzeugung einer Default-Konfiguration, sofern nicht `svwslogin` verwendet wird. |
 | `password` | | Das Kennwort für die Datenbankverbindung, wird erfragt bei Erzeugung einer Default-Konfiguration, sofern nicht `svwslogin` verwendet wird. |
 
-### Beispieldatei für eine svwsconfig.json (mit einem Schema)
+## Beispiel: svwsconfig.json
 
 ``` json
 {
@@ -115,34 +110,9 @@ Der SVWS-Server startet auch ohne einen Eintrag unter Schemakonfiguration und bi
 }
 ```
 
-### Servermode
+## Reverse-Proxy Einstellungen
 
-Der Servermode bestimmt, welche Komponenten im Web-Client gezeigt werden:
-
-- **dev**: Es werden alle Komponenten gezeigt, auch die, die noch in Entwicklung sind.
-- **alpha**: Es werden die Komponenten gezeigt, die für Alpha-Tester benötigt werden.
-- **beta**: Es werden die Komponenten gezeigt, die für Beta-Tester benötigt werden.
-- **stable**: Es werden nur Komponenten gezeigt, die für das Release freigegegeben wurden.
-
-## Netzwerkeinstellungen (optional)
-
-Es folgt eine Übersicht über möglich Netzwerkeinstellungen, die ja nach Betriebsumfeld noch angepasst werden können.
-
-## Portumleitung
-
-Eine Möglichkeit den SVWS-Server unter einer "normalen" URL erreichen zu können und somit auf das Appendix der Ports verzichten zu können, wäre eine Portumleitung. Der bessere Weg, vor allem in größeren Netzwerken, wäre der Einsatz eines Reverse-Proxies.
-
-In beiden Fällen könnte man statt zum Beispiel `https://meineServeradresse:8443/` dann unter `https://meineServeradresse/` den SVWS-Server direkt erreichen.
-
-Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit `iptables`:
-
-```bash
-iptables -A PREROUTING -t nat -p tcp --dport 443 -j REDIRECT --to-port 8443
-```
-
-## Reverse-Proxy einrichten
-
-Alternativ zu einer direkten Portweiterleitung kann nginx als Reverse-Proxy für den SVWS-Server eingesetzt werden.
+Insbesonder bei größeren IT-Umgebungen kann ein nginx Als Reverse-Proxy eingesetzt werden.
 
 Für den Betrieb hinter einem Reverse-Proxy werden insbesondere folgende Einstellungen empfohlen:
 
@@ -158,7 +128,7 @@ proxy_connect_timeout 300;
 proxy_send_timeout 300;
 ```
 
-Zusätzlich können Sicherheits-Header wie `Content-Security-Policy`, `X-Content-Type-Options` und `X-Frame-Options` gesetzt werden,  wie in diesem Beispiel: 
+Zusätzlich können Sicherheits-Header wie `Content-Security-Policy`, `X-Content-Type-Options` und `X-Frame-Options` gesetzt werden,  wie in diesem Beispiel:
 
 ```nginx
 # Security Header
@@ -208,145 +178,22 @@ server {
 
 Die Werte für Paketgröße und Timeouts können abhängig von Schulgröße und verfügbarer Internetgeschwindigkeit angepasst werden. Für Produktivumgebungen sollte auf sichere und aktuelle TLS-Konfiguration geachtet werden.
 
-## UFW als Firewall einrichten
+## optional: weitere Netzwerkeinstellungen
+
+Es folgt eine Übersicht über möglich Netzwerkeinstellungen, die ja nach Betriebsumfeld noch angepasst werden können.
+
+### Portumleitung
+
+Eine Möglichkeit den SVWS-Server unter einer "normalen" URL erreichen zu können und somit auf das Appendix der Ports verzichten zu können, wäre eine Portumleitung. Der bessere Weg, vor allem in größeren Netzwerken, wäre der Einsatz eines Reverse-Proxies.
+
+In beiden Fällen könnte man statt zum Beispiel `https://meineServeradresse:8443/` dann unter `https://meineServeradresse/` den SVWS-Server direkt erreichen.
+
+Umleiten des Ports 443 auf Port 8443 unter Ubuntu 22.04 mit `iptables`:
+
+```bash
+iptables -A PREROUTING -t nat -p tcp --dport 443 -j REDIRECT --to-port 8443
+```
+
+### UFW als Firewall einrichten
 
 Für die Linuxmaschine im Livebetrieb empfiehlt sich eine Firewall einzurichten. Dazu ist bei vielen Distributionen die `ufw`-Firewall vorinstalliert.
-
-
-
-
-
-## AdminClient Web-Applikation zur Verwaltung von Datenbank-Schemata
-
-Der *AdminClient* bietet eine Web-Applikation, die die Verwaltung von Datenbank-Schemata innerhalb eines grafischen Frontends ermöglicht.
-
-Folgende Prozesse werden vom Admin-Client unterstützt:
-- Anlegen von neuen (leeren) Schemata
-- Löschen von Schemata
-- Migration einer Schild-NRW 2-Datenbank in ein neues oder bestehendes Schema
-- Erstellen eines Backups aus einem bestehenden Schema (SQLite-Format)
-- Einspielen eines Backups in ein bestehendes oder ein neues Schema
-- Setzen eines Schemas in die `svwsconfig.json`
-
-Die Anmeldung am AdminClient erfolgt mit Benutzername und Passwort eines MariaDB-Benutzers.
-
-Dabei muss nicht zwingend der Root-Benutzer genommen werden. Der Benutzer sieht die Datenbank-Schemata, auf die er entsprechende Rechte hat.
-
-### Symbole unter der Schemaliste (nur für root)
-
-Entsprechend der Beschreibung, die als Tooltip erscheinen, können Schemata wie o.a. erstellt, verändert oder entfernt werden.
-
-Für diese Aktionen, die unter der Schemataliste dargestellt werden, werden grundsätzlich Datenbankserver-root-Rechte benötigt. Die Symbole zum Verwalten der Schemata an sich werden auch nur dem root-Benutzer angezeigt.
-
-#### Migration in ein neues Schema
-
-Hier wird automatisch ein neues Schema angelegt und mit den erforderlichen Tabellen befüllt.
-
-Es öffnet sich ein Dialog, in dem die erforderlichen Angaben zur Migration abgefragt werden.
-
-Es kann aus folgenden Datenbankformaten importiert werden:
-- Access
-- MySQL
-- MariaDB
-- SQL-Server (MSSQL)
-
-**1. Access:**
-
-**Quelldatenbank:**
-
-Wählen Sie hier eine Schild-NRW 2 Access-Datenbank (Endung .mdb) aus. Es gibt vereinzelt noch Datenbanken im Access98-Format. Diese können nicht migriert werden. Kontaktieren Sie Ihren Fachberater!
-
-**Zieldatenbank**
-
-**Schema**
-
-Name des neuen Schemas im SVWS-Server.
-
-**Name des Schema-Datenbanknutzers**
-
-Schema-Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen zugreifen können. Es können auch mehrere Schulen mit dem gleichen Schema-Admin etwa durch IT-Dienstleister verwaltet werden.
-
-Wenn man einen bestehenden Schema-Datenbankbenutzer noch einmal verwenden möchte, muss natürlich das korrekte Passwort verwendet werden.
-
-Wenn der Datenbankbenutzer noch nicht existiert, wird er vor der Migration angelegt.
-
-**Passwort des Schema-Datenbankbenutzers**
-
-Das Passwort des Schema-Datenbankbenutzers.
-
-**2. Alle anderen DBMS:**
-
-**Angabe einer Schulnummer**
-
-Diese Funktion ist für die Migration aus *Schild-Zentral* geschaffen worden.
-
-Durch die Angabe der Schulnummer werden nur die Daten dieser Schule in das neue Schema migriert. Der SVWS-Server unterstützt die Haltung von mehreren Schulen in einem Schema aus Datenschutzgründen nicht mehr.
-
-**Quelldatenbank:**
-
-**Datenbankhost**
-
-Name oder IP-Adresse unter der der Datenbankserver erreichbar ist. (hostname:port oder IP:port)
-
-Bei SQL-Server (MSSQL) muss das TCP-Protokoll aktiviert und freigegeben sein.
-
-**Datenbank-Schema**
-
-Name des Quellschemas auf dem Datenbankserver, der als Quelle dient.
-
-**Name des Datenbankbenutzers**
-
-Name des Benutzers auf dem Datenbankserver, der als Quelle dient.
-
-**Passwort des Datenbankbenutzers**
-
-Passwort des Benutzers auf dem Datenbankserver, der als Quelle dient.
-
-**Zieldatenbank**
-
-**Schema**
-
-Name des neuen Schemas im SVWS-Server. Dieses Schema wird automatisch erstellt.
-
-**Name des Datenbanknutzers**
-
-Datenbankbenutzer in der MariaDB des SVWS-Servers. Dieser kann für jedes Schema anders gewählt werden. Somit kann man schon auf Datenbankebene verhindern, dass Schulen auf die Daten von anderen Schulen zugreifen können. Wenn man einen bestehenden Datenbankbenutzer noch einmal verwenden möchte, so muss natürlich das korrekte Passwort verwendet werden.
-
-Wenn der Datenbankbenutzer noch nicht existiert, so wird er vor der Migration angelegt.
-
-**Passwort des Datenbankbenutzers**
-
-Das Passwort des Datenbankbenutzers.
-
-#### SQLite Schema importieren
-
-Ein aus einer anderen Datenbank erzeugtes SQLite-Backup kann hier in ein neu angelegtes Schema importiert werden.
-
-#### Schema duplizieren
-
-Erzeugt eine Kopie eines Schemas in einem neuen Schema. Diese Funktion soll es erleichtern, eine Testdatenbank zu erstellen, wenn z.B. komplexere Arbeiten im Vorfeld getestet werden sollen.
-
-#### Anlegen eines neuen SVWS-Schema
-
-Unter der Liste der Schemata kann mit dem Plus-Symbol ein neues SVWS-Schema angelegt werden.
-
-Das Schema wird dabei automatisch mit den erforderlichen Tabellen gefüllt und in der `svwsconfig.json` registriert.
-
-Man erhält somit eine leere Datenbank, die man mit einer Schulnummer initialisieren kann.
-
-
-## Menüpunkte im rechten Fensterbereich
-
-Diese Menüpunkte haben die gleichen Funktionen, wie die Menüpunkte unter der Schema-Liste.
-
-Nur werden diese Funktionen immer auf das ausgewählte und bestehende Schema ausgeführt und können somit auch von anderen Benutzern außer root verwendet werden. Diese Menüpunkte sind immer verfügbar.
-
-**In Config setzen**
-
-Diese Funktion setzt ein bestehendes Schema in die `svwsconfig.json`, so dass dieses Schema beim nächsten Start des SVWS-Servers mit in die Auswahlliste aufgenommen wird.
-
-::: warning Schema initialisieren
-Achtung! Dieses Schema muss initialisiert werden, also die Datenbankstruktur des SVWS-Servers haben!
-:::
-
-Sollte ein Datenbankadministrator keine Rechte besitzen, Schemata anzulegen oder zu löschen, so kann dieser dann aber so angelegte, leere Schemata verwalten.

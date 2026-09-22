@@ -1,10 +1,10 @@
 # Update des SVWS-Servers
 
-Um den SVWS-Server zusammen mit dem SVWS-Client und dem SVWS-AdminClient auf die jeweils aktuelle Version zu aktualisieren, gehen Sie wie folgt vor.
+Die Updatemethoden sind Abhängig von der Art der Installation. Siehe dazu: 
 
-Laden Sie die jeweils neue Version des SVWS-Servers über die Webseite des [MSB für Schulverwaltungsofware](https://www.svws.nrw.de) herunter. Server, WebClient und AdminClient werden mit dem gleichen Installationspaket ausgeliefert.
-
-Der Link dort zum Download führt zum Order *Releases* auf der GitHub-Seite des Projekts. Laden Sie die aktuelle Version für *MS Windows* oder *Linux* herunter.
++ [SVWS-Server Update unter Linux](../Linux-Installer/index.md#update)
++ [SVWS-Server Update unter Docker](../Docker/index.md#update)
++ [SVWS-Server Update unter Windows](../Windows-Installer/index.md#update)
 
 ::: tip SchILD-NRW 3
 Denken Sie bei der Verwendung von SchILD-NRW-3 daran, auch dort auf neue Versionen zu prüfen und gegebenfalls ein Update durchzuführen.

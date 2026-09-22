@@ -1,10 +1,6 @@
 # Datenmigration
 
-Bei der Datenmigration werden neue Schemata oder vorhandene Schemata in der Datenbank des SVWS-Servers angelegt und die Daten einer existierenden Datenbank in diese migriert.
-
-Zur Datenmigration mit dem AdminClient nutzen Sie das [Benutzerhandbuch zum AdminClient](../../adminclient/index.md).
-
-[https://github.com/SVWS-NRW/SVWS-TestMDBs](https://github.com/SVWS-NRW/SVWS-TestMDBs)
+Bei der Datenmigration werden in der Datenbank des SVWS-Servers neue Schemata angelegt oder vorhandene Schemata verwendet. Die Daten einer bestehenden Datenbank werden anschließend in die entsprechenden Schemata des SVWS-Servers übernommen.
 
 ## Übersicht
 
@@ -15,9 +11,16 @@ Es gibt mehrere Möglichkeiten, ein Schema in der Datenbank anzulegen beziehungs
 
 ## Migration per SVWS-AdminClient (empfohlen)
 
-![adminclient.png](./graphics/adminclient.png)
-
 ### Kurzübersicht
+
+::: tip weitere Informationen:
+
+Ein ausführliche Dokumentation der Migration oder des Datenbankmanagementes finden Sie im
+[Benutzerhandbuch SVWS-AdminClient](../../adminclient/index.md).
+
+:::
+
+![adminclient.png](./graphics/adminclient.png)
 
 + Rufen Sie unter `https://MeinSVWS-Server/admin` Ihren SVWS-AdminClient auf.
 + Melden Sie sich als root an der MariaDB an.
@@ -37,11 +40,6 @@ Mit dem AdminClient können – abhängig von den Rechten des Datenbankbenutzers
 + SQLite-Backup ausführen
 + SQLite-Backup wieder einspielen
 + Datenbankschema löschen
-
-::: tip weitere Informationen:
-[Benutzerhandbuch SVWS-AdminClient](../../adminclient/index.md).
-
-:::
 
 ## Migration per API
 
@@ -75,7 +73,7 @@ curl --user "root:mariabd_root_pw" -k -X "POST" "https://server.svws-nrw.de/api/
  -F "database=@/root/SVWS-TestMDBs/GOST_Abitur/Abi-Test-Daten-01/GymAbi.mdb"
 ```
 
-Sie können die API des SVWS-Server auch mit der Swagger Oberfläche ansteuern beziehungsweiseausprobieren. 
+Sie können die API des SVWS-Server auch mit der Swagger Oberfläche ansteuern beziehungsweiseausprobieren.
 
 [API SVWS Server](../../development/API/index.md)
 
@@ -87,7 +85,11 @@ Für Testzwecke und Schulungen werden anonymisierte Datenbanken verschiedener Sc
 Die Daten sind vollständig anonymisiert!
 :::
 
-Download auf Github: [SVWS-TestMDBs](https://github.com/SVWS-NRW/SVWS-TestMDBs)
+[SVWS-TestSqlites](https://github.com/SVWS-NRW/SVWS-TestSqlites)
+
+Zum Testen der Migration können Sie auch auf älteren .mdb Datenbanken in unserem Entwickler Repository für Datenbanken zurückgreifen:
+
+[SVWS-TestMDBs](https://github.com/SVWS-NRW/SVWS-TestMDBs)
 
 ## bekannte Fehlerquellen
 

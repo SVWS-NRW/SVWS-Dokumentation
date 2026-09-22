@@ -75,6 +75,9 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Schema-Neuanlage', link: '/adminclient/apps/schemata/schema_neu.md' },
 							{ text: 'Konfiguration', link: '/adminclient/apps/konfiguration' },
 						] },
+						{ text: 'Anleitungen', link: '/adminclient/anleitungen/', collapsed: false, items: [
+							{ text: 'Kurzanleitung Migration', link: '/adminclient/anleitungen/kurzanleitung_migration.md' },
+						] },
 					] },
 				],
 				'/schulungen': [
