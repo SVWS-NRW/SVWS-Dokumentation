@@ -64,4 +64,6 @@ Reports können in der Schule selbst erstellt oder verändert werden. Eventuell 
 
 Nutzen Sie auch die Möglichkeit, Reports als pdf zu erstellen oder automatisch in die *Dokumentenablage von SchILD-NRW 3* legen zu lassen oder ein *Zeugnisverzeichnis* für die Ablage von Zeugnis-pfds zu definieren.
 
+---
+
 Weitere Informationen hierzu finden Sie im Wiki zu SchILD-NRW 3.
