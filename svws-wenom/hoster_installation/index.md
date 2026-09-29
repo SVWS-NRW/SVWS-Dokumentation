@@ -6,7 +6,7 @@ In diesem Bereich finden sich Beispiele, wie die Einrichtung des SVWS-WeNoM-Serv
 
 Die folgenden Beispiele stellen weder Empfehlungen für bestimmte Hoster dar, noch sprechen sie gegen andere Anbieter. Die aufgelisteten Hoster sind ausschließlich alphabetisch sortiert.
 
-Bitte prüfen Sie eigenständig, ob ein gewählter Hoster Ihren Anforderungen sowie die geltenden Rahmenbedingungen hinsichtlich Sicherheit und Datenschutz erfüllt.
+Bitte prüfen Sie eigenständig, ob ein gewählter Hoster Ihren Anforderungen genügt sowie geltende Rahmenbedingungen hinsichtlich Verlässlichkeit, Sicherheit und Datenschutz erfüllt.
 
 Für die Aktualität der dargestellten Einstellungen, Abläufe und Benutzeroberflächen der Hoster kann keine Gewähr übernommen werden.
 
