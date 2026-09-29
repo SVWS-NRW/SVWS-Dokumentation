@@ -2,7 +2,15 @@
 
 Ganz oben links in der Kopfzeile werden Daten zum **aktuell angemeldeten Benutzer** angezeigt. Die angezeigten zwei Buchstaben basieren auf dem Nutzernamen.
 
-Hier kann dieser Nutzer auch selbst das **Passwort ändern**.
+## Aufgaben
+
+Verwalten Sie gesetzte **Wiedervorlagen** oder erzeugen Sie eine *Allgemeine Wiedervorlage*.
+
+Lesen Sie für die Wiedervorlage den Artikel zu diesen unter **Anleitungen**.
+
+## Einstellungen
+
+In den **Nutzereinstellungen** kann dieser Nutzer selbst das **Passwort ändern**.
 
 ![Die Übersicht über den aktuell angmeldeten Benutzer.](./graphics/SVWS_aktuellerNutzer_BasisdatenUndPasswort.png "Sehen Sie Daten zum aktuell angemeldeten Nutzer an. Ändern Sie weiterhin Ihr Passwort.")
 
