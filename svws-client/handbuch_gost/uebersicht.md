@@ -67,7 +67,7 @@ Dieses Kapitel erläutert diese Möglichkeiten und erläutert ebenfalls den Druc
 
 ## IX. Zeugnisdruck und Versetzung
 
-Nachdem alle Noten eingeholt sind, muss gesichtet werden, ob eine Versetzung in die EF erreicht wurde, ob gegebenfalls über ein Fortführen der Q-Phase nachzudenken ist, ob ein FHR erreicht wurde oder ob die Abiturzulassung erreicht wurde.
+Nachdem alle Noten eingeholt sind, muss gesichtet werden, ob eine Versetzung in die EF erreicht wurde, ob gegebenfalls über ein Fortführen der Q-Phase nachzudenken ist, ob der schulische Teil der Fachhochschulreife (FHR) erreicht wurde oder ob die Abiturzulassung erreicht wurde.
 
 Es gibt unterschiedliche Zeugnisse wie am Ende der EF, Abgangszeugnisse oder Abschlusszeugnisse und die Leistungsübersichten der Q-Phase.
 
