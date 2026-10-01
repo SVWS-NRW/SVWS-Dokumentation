@@ -6,11 +6,17 @@
 
 Der AdminClient kann i.d.R. unter `https://URLdesSVWS-Servers/admin` aufgerufen werden.
 
-Weitere Informationen dazu befinden sich im [Handbuch des AdminClients](../../adminclient/).
+Weitere Informationen dazu befinden sich im [Benutzerhandbuch des AdminClients](../../adminclient/).
 
 ## Automatisierte SQLite Backups
 
-Automatisierte SQLite Backups können z.B. crontab geskriptet aufgerufen werden:
+Über einen API-Aufruf können berechtigte Benutzer SQLite-Backups erstellen.
+
+Als berechtigte Benutzer gelten alle MariaDB-Administratoren, die über Lese- und Schreibrechte auf die zu sichernde Datenbank verfügen. Darüber hinaus können die innerhalb des Schemas angegebenen SVWS-Benutzer ein Backup erstellen, sofern sie über die entsprechende Berechtigung in der internen Benutzerverwaltung verfügen.
+
+![Berechtigung_Datensicherung](./graphics/Berechtigung_Datensicherung.png)
+
+Automatisierte SQLite Backups können so. z.B. crontab geskriptet aufgerufen werden:
 
 ```bash
 curl --user "MARIADBUSER:MYSQLROOTPW" -k -X 'GET' \
@@ -34,8 +40,7 @@ Hier bitte die Variablen `MARIADBUSER`, `MYSQLROOTPW`, `SERVERNAME`, `PORT` und 
 
 ## Backup mit Mariabackup
 
-Das Tool `mariabackup` kann auch auf Windows per MSI-Paket installiert werden. Die [Anleitung von MariaDB.com] (https://mariadb.com/kb/en/full-backup-and-restore-with-mariabackup/) beschreibt, wie man mit kurzen Befehlen Backups anlegt und zurückspielt. Dies kann über einen Cronjob oder die Windows Aufgabenplanung regelmäßig ausgeführt werden.
-
+Das Tool `mariabackup` kann auch auf Windows per MSI-Paket installiert werden. Die [Anleitung von MariaDB.com](https://mariadb.com/kb/en/full-backup-and-restore-with-mariabackup/) beschreibt, wie man mit kurzen Befehlen Backups anlegt und zurückspielt. Dies kann über einen Cronjob oder die Windows Aufgabenplanung regelmäßig ausgeführt werden.
 
 ## Automatisiertes Backup per mysqldump
 

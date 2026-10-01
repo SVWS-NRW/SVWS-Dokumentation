@@ -2,6 +2,8 @@
 
 Eine ausführliche Beschreibung der Geschäftsprozesse befindet sich im **Benutzerhandbuch SVWS-WeNoM**, das über das Inhaltsverzeichnis oben zu erreichen ist.
 
+![WenomGeschaeftsprozesse.png](graphics/WenomGeschaeftsprozesse.png)
+
 ## technische Administration  
 
 ### Verbindungsdaten einrichten
@@ -60,4 +62,3 @@ Eine ausführliche Beschreibung der Geschäftsprozesse befindet sich im **Benutz
 
 ### Möglicher Nachtrag der Daten in Vertretung für Fachlehrkräfte und Klassenleitungen
 
-![WenomGeschaeftsprozesse.png](graphics/WenomGeschaeftsprozesse.png)

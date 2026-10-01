@@ -47,7 +47,6 @@ Nehmen Sie den im SVWS-Client hinterlegten Datenschutzhinweis zur Kenntnis und b
 
 Sie erreichen den Datenschutzhinweis über **Client Info** im **App**-Menü im Tab Datenschutz.
 
-
 ## Erklärung zur Barrierefreiheit
 
 Dieses Angebot wird momentan auf Barrierefreiheit geprüft.
@@ -65,3 +64,5 @@ Völklinger Straße 49, 40221 Düsseldorf
 Telefon: +49 211 5867 40
 
 https://www.schulministerium.nrw/
+
+Diese Dokumentation steht unter [CC0](https://creativecommons.org/publicdomain/zero/1.0/) der Creative Commons.

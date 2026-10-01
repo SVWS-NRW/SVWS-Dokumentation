@@ -61,11 +61,11 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Mitarbeit', link: '/teamarbeit' },
 						{ text: 'Schulungen', link: '/schulungen' },
 					] },
-			],
-			socialLinks: [
-				{ icon: 'github', link: 'https://github.com/SVWS-NRW/SVWS-Dokumentation' },
-			],
-			sidebar: {
+						],
+            socialLinks: [
+                { icon: 'github', link: 'https://github.com/SVWS-NRW/SVWS-Dokumentation' },
+            ],
+            sidebar: {
 				'/adminclient': [
 					{ text: '', items: [
 						{ text: 'SVWS-AdminClient', link: '/adminclient' },
@@ -74,6 +74,9 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Schemata & Migration', link: '/adminclient/apps/schemata/' },
 							{ text: 'Schema-Neuanlage', link: '/adminclient/apps/schemata/schema_neu.md' },
 							{ text: 'Konfiguration', link: '/adminclient/apps/konfiguration' },
+						] },
+						{ text: 'Anleitungen', link: '/adminclient/anleitungen/', collapsed: false, items: [
+							{ text: 'Kurzanleitung Migration', link: '/adminclient/anleitungen/kurzanleitung_migration.md' },
 						] },
 					] },
 				],
@@ -92,7 +95,6 @@ export default defineConfig(({ mode }) => {
 				'/projekte': [
 					{ text: '', items: [
 						{ text: 'Projekte', link: '/projekte/', collapsed: false, items: [
-							{ text: 'SVWS-WeNoM', link: '/svws-wenom/' },
 							{ text: 'ASD-Statistik', link: '/projekte/ASD-Statistik/' },
 							{ text: 'Schulbewerbung.de', link: '/projekte/Schulbewerbung.de/' },
 							{ text: 'xSchule', link: '/projekte/xSchule/' },
@@ -131,6 +133,7 @@ export default defineConfig(({ mode }) => {
 								{ text: 'externe Notenmanager', link: '/development/API/external/notenmanager.md' },
 							] },
 							{ text: 'Privileged API', link: '/development/API/privileged/index.md' },
+							{ text: 'Kataloge API', link: '/development/API/kataloge/index.md' },
 						],
 						},
 						{ text: 'SVWS-Server bei GitHub', link: 'https://github.com/SVWS-NRW/SVWS-Server/' },
@@ -139,12 +142,11 @@ export default defineConfig(({ mode }) => {
 				],
 				'/deployment': [
 					{ text: '', items: [
-						{ text: 'Übersicht', link: '/deployment/' },
+						{ text: 'Installation', link: '/deployment/' },
 						{ text: 'IT-Umgebungen', link: '/deployment/IT-Umgebungen/' },
 						{ text: 'Installationsmethoden', link: '/deployment/installationsmethoden.md', collapsed: false, items: [
 							{ text: 'Linux-Installer', link: '/deployment/Linux-Installer/' },
 							{ text: 'Docker-Container', link: '/deployment/Docker/' },
-							{ text: 'NAS', link: '/deployment/NAS/' },
 							{ text: 'Windows-Installer', link: '/deployment/Windows-Installer/' },
 //							{ text: 'Testserver', link: '/deployment/Testserver/' },
 						] },
@@ -152,6 +154,7 @@ export default defineConfig(({ mode }) => {
 						{ text: 'Datenmigration', link: '/deployment/Datenmigration/' },
 						{ text: 'Datensicherung', link: '/deployment/Datensicherung/' },
 						{ text: 'Updates', link: '/deployment/UpdateSVWS' },
+						{ text: 'SVWS-Tools', link: '/deployment/svws-tools/'},
 						{ text: 'Schulungsserver', link: '/deployment/Schulungsserver/'},
 						{ text: 'SchILD-NRW-3', link: '/deployment/Schild-NRW3/' },
 						{ text: 'FAQ', link: '/deployment/FAQ.md' },
@@ -206,17 +209,28 @@ export default defineConfig(({ mode }) => {
 				'/svws-wenom' : [
 					{ text: '', items: [
 						{ text: 'SVWS-WeNoM', link: '/svws-wenom/index.md' },
-						{ text: 'Benutzerhandbuch', link: '/svws-wenom/benutzerhandbuch/index.md', collapsed: false, items: [
-							{ text: 'Anleitung für Lehrkräfte', link: '/svws-wenom/benutzerhandbuch/anleitung_lehrkraefte.md'},
-							{ text: 'Einrichten der 2-Faktor-Authentifizierung', link: '/svws-wenom/benutzerhandbuch/einrichtungZweiterFaktor.md' },
-							{ text: 'Schulische Administration', link: '/svws-wenom/benutzerhandbuch/schulische_administration.md'},
-						] },
+						{ text: 'Handbuch Lehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/index.md', collapsed: false, items: [
+							{ text: 'Erste Anmeldung', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/erste_anmeldung.md'},
+							{ text: 'Menüstruktur', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/menuestruktur.md'},
+							{ text: 'Ansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/standardansicht.md', collapsed: true, items: [
+							    { text: 'Rollenansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/rollenansichten.md'},
+							    { text: 'Fachlehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_fachlehrkraefte.md'},
+							    { text: 'Klassenlehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_klassenlehrkraefte.md'},
+							    { text: 'Weitere Ansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/anleitung_weitere_ansichten.md'},
+							] }, //items Ansichten 						
+							{ text: 'Zwei-Faktor-Authentifizierung', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/2fa/index.md' },
+						] }, //items handbuch lehrkraefte
+						{ text: 'Handbuch Administration', link: '/svws-wenom/benutzerhandbuch_administration/index.md', collapsed: false, items: [
+							{ text: 'Schulische Administration', link: '/svws-wenom/benutzerhandbuch_administration/schulische_administration.md'},
+						] }, //items handbuch administration
 						{ text: 'Installation', link: '/svws-wenom/installation/index.md', collapsed: false, items: [
 							{ text: 'Installationsanleitung', link: '/svws-wenom/installation/installation.md' },
 							{ text: 'Ersteinrichtung', link: '/svws-wenom/installation/ersteinrichtung.md' },
 							{ text: 'Hosterspezifische Anleitungen',link: '/svws-wenom/hoster_installation/', collapsed: false, items: [
+								{ text: '1blu', link: '/svws-wenom/hoster_installation/1blu.md' },
 								{ text: 'All-Inkl', link: '/svws-wenom/hoster_installation/all-inkl.md' },
 								{ text: 'Hosteurope', link: '/svws-wenom/hoster_installation/hosteurope.md' },
+								{ text: 'Netcup', link: '/svws-wenom/hoster_installation/netcup.md' },
 								{ text: 'Strato', link: '/svws-wenom/hoster_installation/strato.md' },
 								{ text: 'Eigener Webserver', link: '/svws-wenom/installation/installation_webserver.md' },
 							] },
@@ -362,7 +376,8 @@ export default defineConfig(({ mode }) => {
 						],
 					},
 				],
-			},
-		},
-	}
-})
+			}, //sidebar
+		}, //themeConfig
+	
+    }; // returned configuraton object
+}); //defineConfig callback

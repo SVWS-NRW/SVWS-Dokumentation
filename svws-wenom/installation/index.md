@@ -12,7 +12,7 @@
 
 4. Konfigurieren Sie die Verbindung zwischen diesem SVWS-WeNoM-Server mit Ihrem SVWS-Server. Hierzu wird ein *Secret* generiert.
 
-[Schulfachlicher Teil](../benutzerhandbuch/schulische_administration.md)
+[Schulfachlicher Teil](../benutzerhandbuch_administration/schulische_administration.md)
 
 5. Synchronisieren Sie die Daten des SVWS-Servers mit dem SVWS-WeNoM-Server. Dies ist der Schritt, bei dem die konkreten Daten der Schule übertragen werden:
 

@@ -4,7 +4,7 @@ Der SVWS-Server kann in einem Docker-Container betrieben werden.
 
 Die bereitgestellten SVWS-Container-Images sind mit Docker (Docker Engine und Docker Desktop) kompatibel. Der Einsatz in anderen Container-Umgebungen wie Podman, Kubernetes oder OpenShift ist grundsätzlich möglich, wurde jedoch bislang nicht getestet (Stand: Mitte 2026).
 
-## Systemvoraussetzungen Installation Docker-Umgebung
+## Systemvoraussetzungen
 
 Für die lokale Inbetriebnahme ist eine Installation von Docker auf dem Zielsystem erforderlich.
 
@@ -133,3 +133,11 @@ Die Konfiguration der Docker-basierten SVWS-Umgebung erfolgt über das Setzen de
 | SVWS_TLS_CERT_L=CITY | Name des Ortes Default: Duesseldorf |
 | SVWS_TLS_CERT_S=STATE | Name des Bundeslands Name Default: NRW |
 | SVWS_TLS_CERT_C=COUNTRY | Name des Staates Default: Germany |
+
+## Update 
+
+Öffnen Sie die Docker-compose.yml und ersetzen Sie die entsprechend neue Versionnummer. Starten Sie die Container neu. Bitte vergessen Sie nicht vorher ein Backups zu erstellen. 
+
+## Einrichtung
+
+Sie haben nun einen laufenden SVWS-Server eingerichtet. Um den Server mit Daten zu befüllen und an die Anforderungen Ihrer Schule anzupassen, fahren Sie bitte mit dem Artikel **[Einrichtung](../Einrichtung/index.md)** fort.

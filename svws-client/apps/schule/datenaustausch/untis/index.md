@@ -8,10 +8,12 @@ Konsultieren Sie für den konkreten Aufbau der jeweilgen `.txt`-Dateien das übe
 Ebenso nutzen Sie das Handbuch und den Untis-Support für den Im- und Export im Programm Untis. Diese Dokumentation beschreibt primär die Nutzung im SVWS-Client.
 :::
 
-:::warning Beugen Sie Synchronisationsproblemen vor
+:::warning Beugen Sie Synchronisationsproblemen und Missverständnissen vor
 Achten Sie bitte unbedingt darauf, dass die Bezeichnungen für Kurse, Klassen, Lehrkräfte und Fächer in der SVWS-Datenbank, in Untis und anderen Programmen exakt übereinstimmen. Dies gilt ebenfalls für Schülerdaten wie Vor-, Nachname und Geburtsdatum. Der **Ausgangspunkt** für den Import von Daten sollte immer der SVWS-Client sein. Die Bezeichnungen der Klassen, Lehrkräfte, Fächer und Kurse sollten im SVWS-Client festgelegt, und die entsprechenden Bezeichnungen in Untis oder anderen Programmen müssen sich exakt daran anpassen. Auch Tippfehler führen mitunter zu Problemen bei einer Datensynchronisation!
 
 Achten Sie bitte auch darauf, immer nur **aktuelle Untis-Dateien zu importieren** nicht alte oder welche, die Änderungen in Untis noch nicht beinhalten!
+
+Weiterhin ist zu beachten, welches Datenfeld konkret genau von welcher weiteren Software wie verwendet wird, um **Missverständnisse** und damit unerklärliche Fehler zu verhindern.
 :::
 
 
@@ -132,13 +134,23 @@ Klicken Sie abschließend auf **Speichern**, um die Datei an einem Speicherort I
 ![Wahl der Art der Schüler-IDs](./graphics/svws_schule_datenaustausch_untis_export_schülerids.png "Wählen Sie, wie Schüler-IDs in Untis gespeichert werden.")
 
 Werden Schülerdaten exportiert, legen Sie fest, welche Art der SchülerID Sie nutzen wollen. Zur Wahl stehen die:
-+ *SVWS-ID*
-+ *Untis kurz* bestehend aus Nachname, drei Zeichen des Vornamens und des Geburtsdatums JJJJMMTT
-+ *Untis lang*, wie oben, nur dass der volle Vorname verwendet wird
++ *SVWS-ID*, diese besteht aus "S-", an das die Datenbank-ID angehängt wird, zum Beispiel ergibt sich "S-1015".
++ *Untis kurz* bestehend aus Nachname, drei Zeichen des Vornamens und des Geburtsdatums JJJJMMTT.
++ *Untis lang*, wie oben, nur dass der volle Vorname verwendet wird.
 
 SVWS-IDs haben den Vorteil, dass diese unabhängig von Namensänderungen oder falschen, beziehungsweise fehlerhaften Einträgen bei Name, Vorname und Geburtsdatum sind. Wird Untis bei Ihnen mit SVWS-Exporten befüllt, empfiehlt sich diese Wahl.
 
-Schüler-ID-Arten sollten in Untis nicht gemischt werden.
+Es werden Einträge von diesem Format erzeugt:
+
+```
+"S-1001";"Blumenfreund";;;;;;"Barabara";"1001";"Q2";"2";;"20080817";"B.Blumenfreund@smail.de";"1001";
+```
+
+Schüler-ID-Arten sollten in externer Software nicht gemischt werden.
+
+:::tip Datenfelder beachten
+Bitte beachten Sie, welches Datenfeld - welche ID - von Untis und dann anderen Programmen weiterverwendet werden soll. Hier im Beispiel steht die *SVWS-ID* (oder eine der *Untis-IDs*) im vordersten Datenfeld. Dieses wird von Untis als *Name* bezeichnet und wird verwendet, um Personen zu identifizieren. Das letzte Datenfeld heißt bei Units *Fremdschlüssel*, in dieses schreibt der SVWS-Server die Datenbank-ID (ohne *"S-"* als Präfix) und manche externe Software verwendet mitunter den Fremdschlüssel weiter. 
+:::
 
 ---
 

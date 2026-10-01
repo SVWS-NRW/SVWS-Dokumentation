@@ -3,9 +3,9 @@
 Die Einrichtung der Synchronisation mit dem SVWS-Server obliegt der für die Schule zuständigen **schulfachlichen Administration**, gegebenfalls also der Schulleitung, Stellvertretung oder Beauftragte/technische Koordinatoren/Schuladmins. Es werden somit höhere Rechte beim Benutzer des SVWS-Servers benötigt.
 Zur Einrichtung eines neuen WebNotenManagers im SVWS-Server das Pluszeichen unter **Noten -> Administration -> Serververbindungen -> Server** drücken.
 
-![neuen Wenom erstellen](./graphics/neuer_wenom.png)
+![Neuen Wenom verbinden](./graphics/neuer_wenom.png "Verbinden Sie sich mit einem installierten WebNotenmanager.")
 
-(Es können mit einer Datenbank mehrer SVWS-WebNotenManager verknüpft werden, um z.B. in größeren Berufskollegs die Abteilungen autark voneinander arbeiten zu lassen.)
+Es können mit einer Datenbank mehrere SVWS-WebNotenManager verknüpft werden, um zum Beispiel in größeren Berufskollegs die Abteilungen autark voneinander arbeiten zu lassen.
 
 ## Generierung des Secrets
 
@@ -13,19 +13,25 @@ Damit der SVWS-Server und SVWS-WeNoM gesichert kommunizieren können, wird ein *
 
 Das Secret wird bei der erstmaligen Eingabe der Verbindungsdaten im SVWS-Client automatisch generiert und im Webspace des SVWS-WeNoM unter `./db/client.sec` abgespeichert. Das Secret aus dieser Datei muss unter *Secret* (vgl. Screenshot) eingefügt werden.
 
-![Secret Eintrag](./graphics/secret_eintrag.png)
+![Tragen Sie das Secret ein](./graphics/secret_eintrag.png "Tragen Sie das Secret des WeNoM im SVWS-Client ein.")
 
 Alternativ können Sie das Secret auch direkt **ohne SVWS-Server** per API Aufruf generieren. Navigieren Sie hierzu mit im Inhaltsverzeichnis zu *Alternativ: Generation des Secrets per API* in diesem Artikel.
 
 Ist das Secret erfolgreich eingtragen, kann jederzeit die Verbindung zum SVWS-WeNoM geprüft werden:
 
-![Verbindung prüfen](./graphics/verbingung_pruefen.png)
+![Verbindung prüfen](./graphics/verbingung_pruefen.png "Prüfen Sie anschließend die Verbindungen.")
 
+Die Ergebnisse sehen sie im Log-Fenster auf der rechten Seite:
+
+![Log sichten](./graphics/verbingung_pruefen_log.png "Sichten Sie das angezeigte Log. Hier war der Test erfolgreich.")
+
+Im Log-Bereich sehen Sie die Ergenisse der Prüfung. Hier im Beispiel ist der `Verbindungstest erfolgreich abgeschlossen`.
 
 ## Synchronisation und Konfiguration des SVWS-WeNoM
 
-Nach der Ersteinrichtung befinden sich noch keine Daten, also explizit auch keine Logindaten auf dem SVWS-WeNoM. Dazu benötigt es einer Synchronisation beziehungsweise ein Hochladen der Daten. Dies kann im Benutzerhandbuch [schulische Administration](../benutzerhandbuch/schulische_administration.md) nachgelesen werden.
+Nach der Ersteinrichtung befinden sich noch keine Daten, also explizit auch keine Logindaten auf dem SVWS-WeNoM. Diese werden durch eine Synchronisation mit dem SVWS-Client beziehungsweise durch ein Hochladen der Daten auf den WeNoM übertragen.
 
+Die hierfür nötigen Schritte können im Benutzerhandbuch [schulische Administration](../benutzerhandbuch_administration/index.md) nachgelesen werden.
 
 ## Hinweise und Fehlersuche zur Einrichtung
 
@@ -59,7 +65,7 @@ Wenn Sie ohne einen SVWS-Server das Secret generieren möchten und dieses dann a
 
 Zur Initialisierung wird folgende URL */api/setup* auf ihrer Domain aufrufen, ein Beispiel wäre etwa:
 
-```
+```bash
 https://meinnotenmanager.de/api/setup
 ```
 
@@ -67,9 +73,9 @@ Dies kann von jedem gängigen Browser aus ausgeführt werden.
 
 Gültige Responsecodes sind:
 
-```
+```bash
 204 Setup erfolgreich
-409 Server ist schon initialisier
+409 Server ist schon initialisiert
 ```
 
 Der Aufruf des oben genannten Api-Befehls erzeugt im Ordner */db* eine *app.sqlite*-Datenbank und eine Datei `client.sec`.

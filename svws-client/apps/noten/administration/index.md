@@ -7,7 +7,7 @@ Dies ist eine Kurzübersicht zur Orientierung in der App Noten.
 
 Um **SVWS-WeNoM-Serververbindungen** zu konfigurieren und für eine ausführliche Anleitung zur **Noteneingabe**, konsultieren Sie bitte das [Benutzerhandbuch WeNoM](../../../../svws-wenom/index.md).
 
-Um im aktuellen Theme weiterzulesen, wechseln Sie im Benutzerhandbuch in den Bereich zum [**Tab Konfiguration**](../../../../svws-wenom/benutzerhandbuch/schulische_administration.md#konfiguration).
+Um im aktuellen Theme weiterzulesen, wechseln Sie im Benutzerhandbuch in den Bereich zum [**Tab Konfiguration**](../../../../svws-wenom/benutzerhandbuch_administration/schulische_administration.md#konfiguration).
 :::
 
 Im lokalen Notenmodul ist nur der **Tab Konfiguration** sichtbar, über den sich klassen- und jahrgangsweise einstellen lässt, welche Noten und anderen Daten sich unter über den Bereich **Noteneingabe** eingeben werden können.

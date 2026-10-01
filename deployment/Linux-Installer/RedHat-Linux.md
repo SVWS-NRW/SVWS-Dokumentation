@@ -320,3 +320,7 @@ systemctl enable svws.service
 
 systemctl status svws.service
 ```
+
+## Einrichtung
+
+Sie haben nun einen laufenden SVWS-Server eingerichtet. Um den Server mit Daten zu befüllen und an die Anforderungen Ihrer Schule anzupassen, fahren Sie bitte mit dem Artikel **[Einrichtung](../Einrichtung/index.md)** fort.
