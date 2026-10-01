@@ -8,9 +8,9 @@ Der SVWS-Server befindet sich derzeit in der Entwicklung und wird auch für die 
 
 Um die Datenprüfung und die Bereitstellung von Schlüsselkatalogen und Kombinationskatalogen für die kommende hauptamtliche Schulstatistik im Bundesland NRW zu unterstützen, wird derzeit in Zusammenarbeit mit IT.NRW eine Javabibliothek entwickelt. Die Bibliothek übernimmt die Datenprüfung und stellt alle benötigten Schlüsselkataloge und Kombinationskataloge zur Verfügung. Die Bibliothek ist so konzipiert, dass sie in den SVWS-Server eingebunden werden kann, um eine nahtlose Integration zu gewährleisten. Die Bibliothek bietet eine zuverlässige und effiziente Möglichkeit, um sicherzustellen, dass die Daten der Schulstatistik korrekt und vollständig sind und den Anforderungen der zuständigen Stellen entsprechen. Die Zusammenarbeit mit IT.NRW gewährleistet, dass die Bibliothek auf dem neuesten Stand ist und geprüfte Kataloge auf dem aktuellen Stand enthält.
 
-## technischer Unterbau
+## Technischer Unterbau
 
-Im SVWS-Server-Projekt wurde ein eigenes Unterprojekt `svws-asd` geschaffen. In diesem Unterprojekt werden die Schlüsselkataloge von IT.NRW in versionierten JSON-Dateien abgespeichert. Die wiederum in die CoreTypes des SVWS-Servers geladen werden können und somit im WebClient zur Verfügung stehen.Sogenannte `Echtzeitvalidatoren` prüfen dann auf den Datenfeldern im WebClient auf Statistikfehler und geben dem Benutzer eine direkte Rückmeldung.
+Im SVWS-Server-Projekt wurde ein eigenes Unterprojekt `svws-asd` geschaffen. In diesem Unterprojekt werden die Schlüsselkataloge von IT.NRW in versionierten JSON-Dateien abgespeichert. Diese können in die CoreTypes des SVWS-Servers geladen werden und stehen anschließend im WebClient zur Verfügung.Sogenannte `Echtzeitvalidatoren` prüfen dann auf den Datenfeldern im WebClient auf Statistikfehler und geben dem Benutzer eine direkte Rückmeldung.
 
 ## Ausblick
 
