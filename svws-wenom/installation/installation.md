@@ -106,7 +106,7 @@ Kontrollieren Sie bitte diese Berechtigungen gewissenhaft!
 
 Rufen Sie nun den Netzwerkpfad mit dem passenden Ordner für SVWS-WeNoM auf und testen Sie, ob der Notenserver erreichbar ist.
 
-![Startseite SVWS-WeNoM](./graphics/Startseite_wenom.png)
+![Startseite SVWS-WeNoM](./graphics/Startseite_wenom.png "Prüfen Sie, ob der WeNoM erreichbar ist, indem Sie den Login-Bildschirm anzeigen lassen.")
 
 ## Impressum und Datenschutzhinweis
 

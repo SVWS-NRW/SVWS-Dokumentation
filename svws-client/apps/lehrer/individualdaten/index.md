@@ -10,7 +10,6 @@ Das **Foto** lässt sich hochladen, wenn Sie mit der Maus über den Fotobereich 
 
 Neben Kürzel, Vornamen und Nachname, einem eventuellen akademischen Grad und anderen persönlichen Daten werden ebenfalls die Wohnort- und Kontaktdaten erfasst.
 
-
 Über den **Personal-Typ** steht eine Dropdown-Liste zur Verfügung für unterschiedliche Typen.
 
 ![Auswahlmenü mit Personaltypen.](./graphics/SVWS_lehrer_individualdaten_personaltyp.png "Wählen Sie den zur Person passenden Personaltyp aus.")
@@ -18,3 +17,9 @@ Neben Kürzel, Vornamen und Nachname, einem eventuellen akademischen Grad und an
 Es lassen sich von einer *regulären* **Lehrkraft** bis zu **Sonstiges Personal** alle an der Schule beschäftigten Personengruppen erfassen.
 
 Wichtig ist bei Lehrkräften und auch bei sonstigem Personal darauf zu achten, ob sie **statistikrelevant** sind.
+
+![Wiedervorlage definieren](./graphics/SVWS_lehrer_wiedervorlage.png "Definieren Sie eine Wiedervorlage für Lehrkräfte.")
+
+Über die App Lehrkräfte können Sie auch eine **Wiedervorlage** für eine Lehrkraft setzen, um zu einem gesetzten Datum an einen Vorgang erinnert zu werden.
+
+Nutzen Sie den Artikel zu den **Wiedervorlagen in den Anlagen**.
