@@ -2,8 +2,6 @@
 
 Im Tab **Konfiguration** eines SVWS-WeNoM-Servers lässt sich einstellen, welche Spalten bei der Noten- und Leistungsdateneingabe und im Klassenleitungsbereich jeweils klassenweise befüllt und geändert werden können.
 
-![Konfiguration Notenmodul](graphics/serververbindung_konfiguration.png "Konfiguration der Spalten für die Noten- und Leistungsdateneingabe.")
-
 Setzen Sie bei einer Klasse die Checkboxen wie beabsichtigt, um die jeweiligen Einträge für Benutzer schreibbar zu machen.
 
 Wenn Fehlstunden erfasst werden sollen - die Einträge in der Spalte **FS** sind angehakt - kann weiterhin über die Spalte **FS klassenweise** gesteuert werden, ob die Eingabe von Fehlstunden auf Fachebene möglich ist oder Fehlstunden eines Lernenden nur über die Klassenleitungen aufsummiert eingegeben werden. Für diesen Fall ist die Checkbox bei **FS klassenweise** anzuhaken. Sollen FS über die Fächer erfasst werden, ist die Spalte **FS klassenweise** ohne Haken zu konfigurieren.
