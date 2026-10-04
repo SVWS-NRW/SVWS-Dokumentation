@@ -221,12 +221,31 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Zwei-Faktor-Authentifizierung', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/2fa/index.md' },
 						] }, //items handbuch lehrkraefte
 						{ text: 'Handbuch Administration', link: '/svws-wenom/benutzerhandbuch_administration/index.md', collapsed: false, items: [
+							{ text: 'Überblick', link: '/svws-wenom/benutzerhandbuch_administration/ueberblick_administration.md'},
+							{ text: 'Verbindung konfigurieren', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_wenom_einrichten.md', collapsed: true, items: [
+							    { text: 'einrichten', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_einrichten.md'},
+								{ text: 'prüfen', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_pruefen.md'},
+								{ text: 'löschen', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_loeschen.md'},
+							   ] }, //items Verbindung konfigurieren
+							{ text: 'Notenmodul konfigurieren', link: '/svws-wenom/benutzerhandbuch_administration/konfiguration_notenmodul.md',  collapsed: true, items: [
+							    { text: 'Anzeige anpassen', link: '/svws-wenom/benutzerhandbuch_administration/konfiguration_notenmodul_darstellung.md'},
+								{ text: 'Benutzerrechte anpassen', link: '/svws-wenom/benutzerhandbuch_administration/konfiguration_notenmodul_benutzerrechte.md'},
+                                { text: 'Übernahme für WeNoM', link: '/svws-wenom/benutzerhandbuch_administration/konfiguration_notenmodul_wenom.md'},
+							] }, //items Konfiguration Notenmodul	
+							{ text: 'Synchronisation SVWS - WeNoM', link: '/svws-wenom/benutzerhandbuch_administration/synchronisation_svws_wenom.md', collapsed: true, items: [
+							    { text: 'Daten abgleichen', link: '/svws-wenom/benutzerhandbuch_administration/synchronisation_daten_abgleichen.md'},
+								{ text: 'Daten entfernen', link: '/svws-wenom/benutzerhandbuch_administration/synchronisation_daten_loeschen.md'},
+							] }, //items Synchronisation SVWS - WeNoM
+							{ text: 'Zugänge für Lehrkräfte', link: '/svws-wenom/benutzerhandbuch_administration/zugaenge_lehrkraefte.md', collapsed: true, items: [
+							    { text: 'Zugänge einrichten', link: '/svws-wenom/benutzerhandbuch_administration/zugaenge_lk_einrichten.md'},
+								{ text: 'Zugänge zurücksetzen', link: '/svws-wenom/benutzerhandbuch_administration/zugaenge_lk_zuruecksetzen.md'},
+							] }, //items Synchronisation SVWS - WeNoM
 							{ text: 'Schulische Administration', link: '/svws-wenom/benutzerhandbuch_administration/schulische_administration.md'},
 						] }, //items handbuch administration
 						{ text: 'Installation', link: '/svws-wenom/installation/index.md', collapsed: false, items: [
 							{ text: 'Installationsanleitung', link: '/svws-wenom/installation/installation.md' },
 							{ text: 'Ersteinrichtung', link: '/svws-wenom/installation/ersteinrichtung.md' },
-							{ text: 'Hosterspezifische Anleitungen',link: '/svws-wenom/hoster_installation/', collapsed: false, items: [
+							{ text: 'Hosterspezifische Anleitungen',link: '/svws-wenom/hoster_installation/', collapsed: true, items: [
 								{ text: '1blu', link: '/svws-wenom/hoster_installation/1blu.md' },
 								{ text: 'All-Inkl', link: '/svws-wenom/hoster_installation/all-inkl.md' },
 								{ text: 'Hosteurope', link: '/svws-wenom/hoster_installation/hosteurope.md' },
