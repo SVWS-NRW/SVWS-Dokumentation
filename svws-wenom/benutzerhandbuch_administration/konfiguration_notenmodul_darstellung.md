@@ -2,7 +2,7 @@
 
 Im Tab **Konfiguration** eines SVWS-WeNoM-Servers lässt sich einstellen, welche Spalten bei der Noten- und Leistungsdateneingabe und im Klassenleitungsbereich jeweils klassenweise befüllt und geändert werden können.
 
-![Konfiguration Notenmodul](./graphics/serververbindung_konfiguration.png "Konfiguration der Spalten für die Noten- und Leistungsdateneingabe.")
+![Konfiguration Notenmodul](graphics/serververbindung_konfiguration.png "Konfiguration der Spalten für die Noten- und Leistungsdateneingabe.")
 
 Setzen Sie bei einer Klasse die Checkboxen wie beabsichtigt, um die jeweiligen Einträge für Benutzer schreibbar zu machen.
 
