@@ -95,7 +95,6 @@ Eine aktuelle Übersicht der bisher geeigneten Tools:
 * **SVWS-Import**
 * **SVWS-Dokumentation**
 * **SVWS-Schulungsunterlagen**
-* **SVWS-Media**
 * ...
 
 Die Aufzählung erhebt keinen Anspruch auf Vollständigkeit. Weiterhin kann auch eine Startseite kreiert werden, die alle enthaltenen Tools und z.B. den Client des SVWS-Servers zusätzlich verlinken. Ebenso externe Quellen, wie den SVWS-WeNoM können verlinkt werden. Hier eine Anregung zu den noch möglichen Verlinkungen: 
