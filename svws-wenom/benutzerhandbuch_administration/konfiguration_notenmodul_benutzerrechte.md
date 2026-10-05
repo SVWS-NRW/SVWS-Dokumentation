@@ -4,21 +4,21 @@ Im Menü des SVWS-Client wählen Sie als Administrator ganz unten links das Zahn
 
 ![Einstellungen Benutzergruppen](graphics/svws-client-menue-einstellungen.png "Einstellungen Benutzergruppen.")
 
-Haben Sie den Menüpunt **Einstellungen** ausgewählt, erscheint rechts daneben eine Spalte mit den angelegten Benutzergruppen.
+Haben Sie den Menüpunt **Einstellungen ⚙** ausgewählt, erscheint rechts daneben eine Spalte mit den angelegten Benutzergruppen.
 
 ## Berechtigungsstufe der Benutzergruppe anpassen
 
 ![Benutzergruppen darstellen](graphics/svws-client-menue-benutzergruppen-einstellungen.png "Benutzergruppen darstellen.")
 
-Hier werden alle Benutzergruppen dargestellt, die Sie bereits im System angelegt haben. Benötigen Sie weitere Benutzergruppen, könen Sie diese über das **+** - Zeichen umsetzen.
+Hier werden alle Benutzergruppen dargestellt, die Sie bereits im System angelegt haben. Benötigen Sie weitere Benutzergruppen, können Sie diese über das **+** - Zeichen hinzufügen.
 
-Wählen Sie eine Benutzergruppe aus - dies erkennen Sie ab der Hintergrundschraffur bei der Bezeichnung der Benutzergruppe - sehen Sie rechts daneben ein weiteres Fenster, in dem die für diese Benutzergruppe ausgewählten Kompetenzen dargestellt werden. Sollten Sie für bestimmte Benutzergruppe weniger oder weitergehende Benutzerberechtigungen benötigen, so passen Sie diese Auswahl mithilfe der Checkboxen auf die gewünschten Kompetenzen/Berechtigungen an.
+Wählen Sie eine Benutzergruppe aus. Die ausgewählte Benutzergruppe wird mit einer Hintergrundschraffur dargestellt. Rechts daneben sehen Sie ein weiteres Fenster, in dem die für diese Benutzergruppe ausgewählten Kompetenzen dargestellt werden. Sollten Sie für bestimmte Benutzergruppe weniger oder weitergehende Benutzerberechtigungen benötigen, so passen Sie diese Auswahl mithilfe der Checkboxen auf die gewünschten Kompetenzen/Berechtigungen an.
 
 ![Benutzergruppen anpassen](graphics/svws-client-menue-benutzergruppe-berechtigungen.png "Benutzergruppen anpassen.")
 
 ## Benutzern, eine Berechtigungsgruppe zuordnen
 
-Damit Lehrer Noten eintragen und bestimmte Lehrer zusätzlich als Administratoren für das Notenmodul arbeiten können, müssen Sie diesen Benutzern die gewünschte Berechtigungsstufe zuordnen. Dies erfolgt, indem Sie pro Benutzer diesen einer entsprechenden Benutzergruppe zuordnen bzw. mehrere Benutzergruppen einem Bebnutzer zuordnen. 
+Damit Lehrer Noten eintragen und bestimmte Lehrer zusätzlich als Administratoren für das Notenmodul arbeiten können, müssen Sie diesen Benutzern die gewünschte Berechtigungsstufe zuordnen. Dies erreichen Sie, indem Sie jeden Benutzer einer entsprechenden Benutzergruppe zuordnen bzw. mehrere Benutzergruppen einem Bennutzer zuordnen. 
 
 Wählen Sie hierzu unter **Einstellungen - Benutzerverwaltung** den Punkt **Benutzer** aus. Rechts daneben erscheint der ausgewählte Benutzer mit den darunter zugewiesenen Bneutzergruppen. Rechts daneben sehen Sie die für diesen Benutzer ausgewählten einzelnen Berechtigungen.
 

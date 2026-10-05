@@ -8,19 +8,21 @@ Das Funktionsprinzip des Notenmanagements mit dem internen SVWS-Server und dem e
 
 ![Funktionsprinzip des Notenmanagements mit SVWS-Server und WeNoM-Server](graphics/noteneingabe-svws-wenom-funktionsprinzip-ki-generiert.png)
 
+*Abb. mit KI-Unterstützung erstellt.*
+
 ## Ablauf des Notenmanagements
 
 **Voraussetzung**
 
 Es ist ein SVWS-Server korrekt installiert und konfiguriert. Entsprechend der Version des verwendeten SVWS-Servers ist ein externer WeNoM-Server installiert und konfiguriert.
 
-Wie der externe WeNoM-Server installiert und konfiguriert werden sollte, ist im eigenständigen Kapitel **![Installation](../installation/installation.md)** nachzulesen. 
+Wie der externe WeNoM-Server installiert und konfiguriert werden sollte, ist im eigenständigen Kapitel Installation nachzulesen: **[Installation](../installation/installation.md)**
 
 **Auf dem SVWS-Server:**
 
-1. Es werden alle Belegungen (Klassen, Schüler, Lehrer, Fächer, Kurse, Notenarten) durchgeführt.
-2. Es werden alle Lehrer als Nutzer hinterlegt.
-3. Es sind allen Lehrern die erforderlichen Berechtigungen zur Noteneintragung zuzuweisen.
+1. Es werden alle Belegungen (Klassen, Schüler, Lehrkräfte, Fächer, Kurse, Notenarten) durchgeführt.
+2. Es werden alle Lehrkräfte als Nutzer hinterlegt.
+3. Es sind allen Lehrkräften die erforderlichen Berechtigungen zur Noteneintragung zuzuweisen.
 4. Es werden allen schulischen Administratoren die erforderlichen Berechtigungen zugewiesen, um das Notenmanagement durchführen zu können.
 5. Es wird die Verbindung zum WeNoM-Server eingerichtet und getestet.
 6. Es wird festgelegt, welche Klassen zur Noteneingabe freigegeben werden und welche Daten für die anstehende Synchronisation genutzt werden sollen.
@@ -29,10 +31,10 @@ Wie der externe WeNoM-Server installiert und konfiguriert werden sollte, ist im 
 
 **Auf dem WeNoM-Server:**
 
-1. Lehrer melden sich mit ihren Zugangsdaten an.
-2. Lehrer prüfen, ob sie alle Klassen, Fächer, Kurse und Teilleistungen sehen bzw. eintragen können, die sie benötigen.
-3. Lehrer tragen Noten, Teilleistungen, Mahnungen und Zeugnisbemerkungen ein.
-4. Sollten Lehrer ihr Zugangskennwort nicht mehr kennen, wenden diese sich an die schulische Administration, die das Kennwort zurücksetzen kann.
+1. Lehrkräfte melden sich mit ihren Zugangsdaten an.
+2. Lehrkräfte prüfen, ob sie alle Klassen, Fächer, Kurse und Teilleistungen sehen bzw. eintragen können, die sie benötigen.
+3. Lehrkräfte tragen Noten, Teilleistungen, Mahnungen und Zeugnisbemerkungen ein.
+4. Sollten Lehrkräfte ihr Zugangskennwort nicht mehr kennen, wenden diese sich an die schulische Administration, die das Kennwort zurücksetzen kann.
 
 ## Aufgaben der schulischen Administration
 

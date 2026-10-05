@@ -6,7 +6,7 @@ Klicken Sie dazu auf die **App Noten** links in der Menüleiste, wählen Sie dan
 
 ![WeNoM: Übernahme der lokalen Konfiguration](graphics/svws-client-noten-wenom-uebernahme-config.png "WeNoM: Übernahme der lokalen Konfiguration") 
 
-Wenn Sie nun oben in der Menüleiste den Punkt **Übernahme der lokalen Konfiguration** auswählen, werden alle Einstellungen, die Sie bereits für die lokale Noteneingabe über den SVWS-Server konfiguriert haben 1:1 übernommen. Die einzelnen Einstellungen pro Klasse werden unterhalb der dargestellten Spalktenköpfe angezeigt.
+Wenn Sie nun oben in der Menüleiste den Punkt **Übernahme der lokalen Konfiguration** auswählen, werden alle Einstellungen, die Sie bereits für die lokale Noteneingabe über den SVWS-Server konfiguriert haben 1:1 übernommen. Die einzelnen Einstellungen pro Klasse werden unterhalb der dargestellten Spaltenköpfe angezeigt.
 
 Hier können Sie weitere Anpassungen vornehmen, die Besonderheiten von Klassen abbilden. 
 

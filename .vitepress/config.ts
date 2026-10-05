@@ -240,7 +240,6 @@ export default defineConfig(({ mode }) => {
 							    { text: 'Zugänge einrichten', link: '/svws-wenom/benutzerhandbuch_administration/zugaenge_lk_einrichten.md'},
 								{ text: 'Zugänge zurücksetzen', link: '/svws-wenom/benutzerhandbuch_administration/zugaenge_lk_zuruecksetzen.md'},
 							] }, //items Synchronisation SVWS - WeNoM
-							{ text: 'Schulische Administration', link: '/svws-wenom/benutzerhandbuch_administration/schulische_administration.md'},
 						] }, //items handbuch administration
 						{ text: 'Installation', link: '/svws-wenom/installation/index.md', collapsed: false, items: [
 							{ text: 'Installationsanleitung', link: '/svws-wenom/installation/installation.md' },
