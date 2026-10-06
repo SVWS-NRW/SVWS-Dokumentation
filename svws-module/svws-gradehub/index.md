@@ -21,6 +21,3 @@ Im *Admin-Modus* kann der Notenmanager weiterhin
 
 >[!TIP]Der SVWS-Client und SVWS-GradeHub
 >Nehmen Sie bitte die Hinweise im Bereich Administration zur Kenntnis, wie Lehrkraft-Notendateien verarbeitet oder nicht verarbeitet werden können, die jeweils in SVWS-GradeHub und dem SVWS-Client erstellt wurden. 
-
->[!TIP]SVWS-GradeHub ist als Übergangslösung vorgesehen
->Für Schulen, die den WeNoM noch nicht im Einsatz haben, stellen wir eine Übergangslösung für die Noteneingabe zur Verfügung. Diese Lösung wird vorübergehend bereitgestellt und ermöglicht es, die Noteneingabe auch vor der Einführung des WeNoM weiterhin zuverlässig durchzuführen. Sie dient als temporäre Unterstützung, bis der WeNoM flächendeckend verfügbar ist.
