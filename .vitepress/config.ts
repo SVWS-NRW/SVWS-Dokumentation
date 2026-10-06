@@ -360,6 +360,7 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Allgemeine Anleitungen', link: '/svws-client/anleitungen/anleitungen_allgemein/', collapsed: true, items: [
 									{ text: 'Anmeldung', link: '/svws-client/anleitungen/anleitungen_allgemein/anmeldung/' },
 									{ text: 'Schulbescheinigung drucken', link: '/svws-client/anleitungen/anleitungen_allgemein/drucken_schulbescheinigung/' },
+									{ text: 'Mögliche Fehler im Datenbestand', link: '/svws-client/anleitungen/anleitungen_allgemein/fehlertypen.md' },
 								] },
 								{ text: 'Schulformspezifisch', link: '/svws-client/anleitungen/anleitungen_schulform/', collapsed: true, items: [
 									{ text: 'Oberstufe', link: '/svws-client/anleitungen/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
