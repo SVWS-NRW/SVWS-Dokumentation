@@ -13,7 +13,7 @@ Liegt das Modul schon vor, etwa weil die Schule Ihnen einen Link oder eine Inter
 >[!TIP] Tipp für die IT
 >Wenn Sie die IT der Schule sind, legen Sie einen Link auf den Desktops an.
 
-Ansonsten laden Sie das Modul herunter und installieren Sie es. Ihr Schule wird Ihnen hierfür einen Link zur Verfügung stellen.
+Liegt das Modul noch nicht vor, laden Modul herunter und installieren Sie es. Ihre Schule wird Ihnen hierfür einen Link zur Verfügung stellen.
 
 * Entpacken Sie die Datei. Unter MS-Windows ist mit der `rechten Maustaste` auf die Datei zu klicken, dann wählen Sie `Alle extrahieren...`.
 * Wählen Sie einen Speicherort für die Dateien.
@@ -21,6 +21,33 @@ Ansonsten laden Sie das Modul herunter und installieren Sie es. Ihr Schule wird 
 
 >[!TIP] MS Windows blendet Dateiendungen aus
 >MS Windows blendet per Standard die Dateiendungen aus. Damit wäre die die startende Datei nur die `index`.
+
+Unter Umständen stellt Ihnen Ihre Schule einen Link zur Verfügung, mit dem sich SVWS-GradeHub direkt und ohne Installation über einen Browser aufrufen lässt.
+
+Diese Möglichkeiten, SVWS-GradeHub zu nutzen, könnten für Sie zutreffen:
+
+```mermaid
+flowchart LR
+  subgraph SVWS-GradeHub bereistellen
+    I(Ist schon installiert,<br>von früher oder in der Schule) --Okay!--> ND>Notendatei<br>öffnen]
+    style I fill:#008000,stroke:#808080,stroke-width:4px
+    style ND fill:#008000,stroke:#808080,stroke-width:4px
+    ZI(Noch nicht vorhanden,<br>z.B. zu Hause) --Installieren--> I
+    style ZI fill:#800080,stroke:#808080,stroke-width:4px
+    W(Aufruf aus dem Netz per Link<br>der Schule) --Okay!--> ND
+    style W fill:#008000,stroke:#808080,stroke-width:4px
+
+  end
+  ND --> NE>Noteneintrag]
+  style NE fill:#008000,stroke:#808080,stroke-width:4px
+  subgraph Notendateien der Schule bereitstellen
+  NE --> A[Abschicken der<br>Notendatei]
+  NE --> LZ[Notendatei im<br>Lehrerzimmer ablegen]
+  end
+
+```
+
+Die Administration kümmert sich um das Bereitstellen von Notendateien und des Passworts.
 
 ## Lehrernoten-Datei laden & Login
 
