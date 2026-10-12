@@ -1,5 +1,9 @@
 # Benutzerhandbuch SVWS-GradeHub
 
+::: tip Handbuch für Benutzer
+Sie befinden sich im Bereich für die Benutzer - also die Lehrkräfte, die Noten eintragen - von SVWS-GradeHub.
+:::
+
 ## SVWS-GradeHub installieren und starten
 
 Um das Externe SVWS Notenmodul SVWS-GradeHub zu starten, müssen Sie es aufrufen.
