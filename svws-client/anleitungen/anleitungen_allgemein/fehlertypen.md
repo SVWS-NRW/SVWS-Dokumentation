@@ -1,4 +1,6 @@
-# Mögliche Fehlertypen im Datenbestand
+# Fehleintragungen 
+
+ Wie lassen sich Fehleintragungen im Datenbestand finden und vermeiden? 
 
 Im Datenbestand können durch fehlerhafte Einträge Probleme erzeugt werden. Dies kann die Statistik betreffen oder zum Beispiel Abschlussalgorithmen oder die Kursplanung in der GOSt verwirren. 
 
@@ -22,7 +24,7 @@ Einige aufgeführte Fehlertypen können unter Umständen vollständig verschwind
 
 * Schüler mit *Status Abgang* haben noch *Kurszuweisungen*. Das ist nicht immer erkennbar. Dies sind oft Bedienereingaben, kam aber bei ungünstigen Szenarian auch schon ohne Fehler durch Benutzer vor. Dadurch scheitern Teile der Klausurplanung, möglicherweise dann auch Untisexporte, u.a.
 
-* **Nicht existende Schüker sind als Externe noch vorhanden:** Zu *löschende Schüler*, die nicht an der Schule angekommen sind, werden auf einen falschen Status gesetzt (etwa *Extern*) und somit mit fehlerhaften/unvollständigen Angaben in Abijahrgängen geladen. Schüler können in solchen Fällen schadlos gelöscht werden, da sie durch Zurücksetzen der Löschmarkierung wieder aktiviert werden können.
+* **Nicht existende Schüler sind als "Externe" noch vorhanden:** Zu *löschende Schüler*, die nicht an der Schule angekommen sind, werden auf einen falschen Status gesetzt (etwa *Extern*) und somit mit fehlerhaften oder unvollständigen Angaben in Abijahrgängen geladen. Schüler können in solchen Fällen schadlos gelöscht werden, da sie durch Zurücksetzen der Löschmarkierung wieder aktiviert werden können.
 
 * **Mysterium Deutschförderung unmöglich:** Nach der Statistik kommen Schüler aus dem Ausland und werden so auch korrekt mit "Schule aus dem Ausland" erfasst. Die *Klassenart* ist aber nicht *Deutschförderung*. Das führt dazu, dass die Schüler beim Schuljahreswechsel *Versetzt* werden und die Herkunft *Eigene Schule* im *Schulbesuch* bekommen. Damit können die im folgenden Schuljahr nicht mehr an der *Deutschförderung* teilnehmen und es gibt einen Fehler, dessen Ursache jedoch im vergangenen Schuljahr zu suchen ist. 
 

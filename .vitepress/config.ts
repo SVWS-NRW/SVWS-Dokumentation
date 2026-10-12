@@ -209,7 +209,7 @@ export default defineConfig(({ mode }) => {
 				'/svws-wenom' : [
 					{ text: '', items: [
 						{ text: 'SVWS-WeNoM', link: '/svws-wenom/index.md' },
-						{ text: 'Handbuch Lehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/index.md', collapsed: false, items: [
+						{ text: 'Handbuch Lehrkräfte', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/index.md', collapsed: true, items: [
 							{ text: 'Erste Anmeldung', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/erste_anmeldung.md'},
 							{ text: 'Menüstruktur', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/menuestruktur.md'},
 							{ text: 'Ansichten', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/standardansicht.md', collapsed: true, items: [
@@ -220,7 +220,7 @@ export default defineConfig(({ mode }) => {
 							] }, //items Ansichten 						
 							{ text: 'Zwei-Faktor-Authentifizierung', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/2fa/index.md' },
 						] }, //items handbuch lehrkraefte
-						{ text: 'Handbuch Administration', link: '/svws-wenom/benutzerhandbuch_administration/index.md', collapsed: false, items: [
+						{ text: 'Handbuch Administration', link: '/svws-wenom/benutzerhandbuch_administration/index.md', collapsed: true, items: [
 							{ text: 'Überblick', link: '/svws-wenom/benutzerhandbuch_administration/ueberblick_administration.md'},
 							{ text: 'Verbindung konfigurieren', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_wenom_einrichten.md', collapsed: true, items: [
 							    { text: 'einrichten', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_einrichten.md'},
@@ -241,7 +241,7 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Zugänge zurücksetzen', link: '/svws-wenom/benutzerhandbuch_administration/zugaenge_lk_zuruecksetzen.md'},
 							] }, //items Synchronisation SVWS - WeNoM
 						] }, //items handbuch administration
-						{ text: 'Installation', link: '/svws-wenom/installation/index.md', collapsed: false, items: [
+						{ text: 'Installation', link: '/svws-wenom/installation/index.md', collapsed: true, items: [
 							{ text: 'Installationsanleitung', link: '/svws-wenom/installation/installation.md' },
 							{ text: 'Ersteinrichtung', link: '/svws-wenom/installation/ersteinrichtung.md' },
 							{ text: 'Hosterspezifische Anleitungen',link: '/svws-wenom/hoster_installation/', collapsed: true, items: [
@@ -255,6 +255,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'mehrere Mandanten', link: '/svws-wenom/installation/mehrereMandanten.md' },
 						] },
 						{ text: 'Geschäftsprozesse WeNoM', link: '/svws-wenom/geschaeftsprozesse.md' },
+						{ text: 'FAQ Wenom', link: '/svws-wenom/FAQ.md' },
 					] },
 				],
 				'/svws-client': [
@@ -375,18 +376,20 @@ export default defineConfig(({ mode }) => {
 								] },
 							] },
 							{ text: 'Anleitungen', link: '/svws-client/anleitungen/', collapsed: false, items: [
-								{ text: 'Allgemeine Anleitungen', link: '/svws-client/anleitungen/anleitungen_allgemein/', collapsed: true, items: [
+								{ text: 'alle Schulformen', link: '/svws-client/anleitungen/anleitungen_allgemein/', collapsed: true, items: [
 									{ text: 'Anmeldung', link: '/svws-client/anleitungen/anleitungen_allgemein/anmeldung/' },
-									{ text: 'Schulbescheinigung drucken', link: '/svws-client/anleitungen/anleitungen_allgemein/drucken_schulbescheinigung/' },
-									{ text: 'Mögliche Fehler im Datenbestand', link: '/svws-client/anleitungen/anleitungen_allgemein/fehlertypen.md' },
+									{ text: 'Schulbescheinigung', link: '/svws-client/anleitungen/anleitungen_allgemein/drucken_schulbescheinigung/' },
+									{ text: 'Mail und Kalender', link: '/svws-client/anleitungen/anleitungen_allgemein/mail_und_kalender/' },
+									{ text: 'Fehleintragungen', link: '/svws-client/anleitungen/anleitungen_allgemein/fehlertypen.md' },
+									{ text: 'Zeugnisvorbereitung', link: '/svws-client/anleitungen/anleitungen_zeugnisse/' },
 								] },
-								{ text: 'Schulformspezifisch', link: '/svws-client/anleitungen/anleitungen_schulform/', collapsed: true, items: [
-									{ text: 'Oberstufe', link: '/svws-client/anleitungen/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
+								
+									{ text: 'gymnasiale Oberstufe', link: '/svws-client/anleitungen/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
 										{ text: 'WebLuPO (Schulintern)', link: '/svws-client/anleitungen/anleitungen_schulform/anleitungen_gost/weblupo/' },
 									] },
 									// { text: 'Grundschule', link: '/svws-client/anleitungen/anleitungen_schulform/anleitungen_gs/' },
-								] },
-								{ text: 'Zeugnisvorbereitung', link: '/svws-client/anleitungen/anleitungen_zeugnisse/' },
+								 
+								
 							] },
 							//{ text: 'Weiteres', link: '/svws-client/weiteres/', collapsed: false, items: [
 							//	{ text: 'Adressbücher', link: '/svws-client/kommunikationsschnittstelle/adressbuecher/' },

@@ -79,7 +79,8 @@ Die Ordnerstruktur in `/var/www/html/wenom` sollte nun folgendermaßen aussehen:
 ```
 
 ::: warning Wichtig!
-`DocumentRoot` in der Apache-Konfiguration muss auf den Ordner `./public` zeigen!
+`DocumentRoot` in der Apache-Konfiguration muss auf den Ordner `./public` zeigen!  
+Achten Sie Bitte auch darauf, dass kein weiteres, übergeordnetes DocumentRoot lesenden Zugriff auf die Ordnerstruktur des WeNoM zulässt.
 :::
 
 Die Änderung des `DocumentRoot` kann unter den hosterspezifischen Installationen oder der Installation für den eignenen Webserver bei Bedarf nachgelesen werden. Bei Webhostern ist dies häufig weder nötig noch möglich. Wenn Sie einen eigenen Webserver aufsetzen, kontaktieren Sie hierzu Ihre IT.
