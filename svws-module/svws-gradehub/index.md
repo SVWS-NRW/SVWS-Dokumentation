@@ -15,9 +15,9 @@ Im *Admin-Modus* kann der Notenmanager weiterhin
 * Notendateien erzeugen
 * Notendateien importieren
 
->[!CAUTION] Nicht kompatibel mit SchILD-ENM 3
->GradeHub und die Notendateien des SVWS-Clients sind nicht kompatibel mit dem ENM2 von SchILD-NRW2 und ebenso nicht kompatibel mit dem SchILD-NRW-3 ENM3, das mit *.nm3*-Dateien arbeitet. Sofern Sie Noten mit dem ENM3 und SchILD-NRW-3 verarbeiten wollen, ist dies weiterhin möglich.
->Für das Externe SVWS Notenmodul SVWS-GradeHub erstellen Sie die Notendateien bitte mit dem SVWS-Client oder mit SVWS-GradeHub selbst.
+>[!CAUTION] Nicht kompatibel mit SchILD-ENM 2 oder 3
+>GradeHub und die Notendateien des SVWS-Clients sind nicht kompatibel mit dem ENM2 von SchILD-NRW2 und ebenso nicht kompatibel mit dem SchILD-NRW-3 ENM3.
+>Für das Externe Notenmodul SVWS-GradeHub erstellen Sie die Notendateien bitte mit dem SVWS-Client oder mit SVWS-GradeHub selbst.
 
 >[!TIP]Der SVWS-Client und SVWS-GradeHub
 >Nehmen Sie bitte die Hinweise im Bereich Administration zur Kenntnis, wie Lehrkraft-Notendateien verarbeitet oder nicht verarbeitet werden können, die jeweils in SVWS-GradeHub und dem SVWS-Client erstellt wurden. 
