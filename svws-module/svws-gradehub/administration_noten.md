@@ -5,7 +5,7 @@ Diese Anleitung beschreibt
 * die Erstellung der Notendateien für Lehrkräfte sowie
 * die Vorbereitung des späteren Notenimports.
 
-SVWS-GradeHub dient als Übergangslösung zur Noteneingabe, bis WeNoM flächendeckend verfügbar ist.
+SVWS-GradeHub dient als Lösung zur Noteneingabe, sofern SVWS-WeNoM (noch) nicht verwendet wird.
 
 >[!TIP]GradeHub und der SVWS Client
 >Sie können mit dem SVWS-Client ebenfalls Lehrkraft-Notendateien erzeugen. Nutzen Sie hierfür den **Datenaustausch** in der **App Schule**. Diese Dateien sind jedoch nicht verschlüsselt.
