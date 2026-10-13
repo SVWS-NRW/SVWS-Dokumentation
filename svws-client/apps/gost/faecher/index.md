@@ -2,17 +2,25 @@
 
 Unter **Fächer** wird als Vorlage oder individuell für jeden Jahrgang festgelegt, in welchem Abschnitt ein Fach angeboten wird und ob es als Abiturfach im GK oder LK belegbar ist.
 
+## "Allgemeine Vorlage" und die Vorlage für eine "Abi Jahrgang"
+
+In der *"Allgemeinen Vorlage"* werden grundsätzlich alle Fächer in ihren Gemeinsamkeiten konfiguriert, so dass in der jeweiligen Vorlage für einen *"Abiturjahrgang"* nur die die für diesen Jahrgang geltenden Abweichungen hiervon eingestellt werden müssen. 
+
+Zu den **Projekursen** ist hier zu beachten, dass die Leitfächer für alle Projektkurse in der *Allgemeinen Vorlage* global eingestellt werden.
+
+Anschließend können Sie für jeden Abiturjahrgang einstellen, welche dieser Projektkurse tatsächlich zur Wahl stehen.
+
 ![Beispiel für zulässige Fachwahlen](./graphics/SVWS_Oberstufe_Faecher_1.png "Alle hier gezeigten Fächer sind durch die Oberstufe belegbar, KR und ER jedoch nur als GK.")
 
-Im Beispiel oben sind die Fächer *ER* und *KR* im gewählten *Abiturjahrgang 2025*, der im aktuellen Schuljahr der Datenbank die *Q1* ist, zwar durchgehend belegt, sie stehen aber nicht als LK zur Wahl.
+Im Beispiel oben sind die Fächer *ER* und *KR* im *Abiturjahrgang 2025*, der im aktuellen Schuljahr der Datenbank die *Q1* ist, durchgehend durch Schülerinnen belegbar. Diese Fächer stehen stehen aber nicht als LK zur Wahl.
 
 ![Beispiel für Projektkurse/Vertiefungskurse](./graphics/SVWS_Oberstufe_Faecher_1_Beispiel2.png "Im Beispiel sind Vertiefungs- und Projektkurse konfiguriert.")
 
 Im zweiten Beispiel oben sind die *Vertiefungskurse* und *Projektkurse* zu sehen. Die Vertiefungskurse werden nur in der EF und der Q1 angeboten, wobei der *Vertiefungskurs Deutsch* nur in der EF belegt werden kann.
 
-Die *Projektkurse* werden ausschließlich in der Q1.1 und der Q1.2 belegt. Hier im Beispiel wurde die Wahloption, sie von 2-stündig auf 3-stündig umzustellen von der Schule gewählt.
+Die *Projektkurse* werden ausschließlich in der Q1.1 und der Q1.2 belegt. Hier im Beispiel wurde die Wahloption, sie von 2-stündig auf 3-stündig umzustellen von der Schule gewählt. Die Leitfächer wurden schon in der *Allgemeinen Vorlage* eingestellt.
 
-Es wurden weiterhin *Leitfächer* zugeordnet, von denen eines zu belegen ist, damit der Projektkurs angewählt werden kann.
+Von den zugeordneten *Leitfächern* ist eines zu belegen, damit der Projektkurs angewählt werden kann.
 
 ## Unzulässige Kombinationen
 
