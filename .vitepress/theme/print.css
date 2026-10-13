@@ -1,0 +1,123 @@
+
+@media print {
+  /* Papierformat und Seitenränder */
+  @page {
+    size: A4;
+    margin: 18mm 16mm 20mm;
+  }
+
+  /* Navigation und Bedienelemente ausblenden */
+  .VPNav,
+  .VPSidebar,
+  .VPFooter,
+  .VPLocalNav,
+  .VPDocAside,
+  .VPDocFooter,
+  .pdf-button,
+  button {
+    display: none !important;
+  }
+
+  /* Hauptinhalt auf die volle Seitenbreite setzen */
+  body,
+  .VPApp,
+  .VPContent,
+  .VPDoc,
+  .VPDoc .container,
+  .VPDoc .content,
+  .VPDoc .content-container,
+  .VPDoc .main {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    color: #222 !important;
+  }
+
+  /* Lesbare Schrift */
+  .vp-doc {
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: #222 !important;
+  }
+
+  .vp-doc h1 {
+    font-size: 25pt;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 18pt;
+  }
+
+  .vp-doc h2 {
+    font-size: 17pt;
+    margin-top: 26pt;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .vp-doc h3,
+  .vp-doc h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Codeblöcke lesbar halten */
+  .vp-doc div[class*="language-"] {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border: 1px solid #ddd;
+    background: #f6f6f6 !important;
+  }
+
+  .vp-doc pre {
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere;
+    color: #222 !important;
+    background: transparent !important;
+  }
+
+  .vp-doc code {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Tabellen */
+  .vp-doc table {
+    display: table !important;
+    width: 100% !important;
+    font-size: 9pt;
+    border-collapse: collapse;
+  }
+
+  .vp-doc th,
+  .vp-doc td {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+  }
+
+  /* Bilder und Diagramme */
+  .vp-doc img,
+  .vp-doc svg {
+    max-width: 100% !important;
+    height: auto;
+  }
+
+  .vp-doc figure,
+  .vp-doc .mermaid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Links im PDF */
+  .vp-doc a {
+    color: #174ea6 !important;
+    text-decoration: underline;
+  }
+
+  /* Keine unnötigen Schatten */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
