@@ -164,7 +164,7 @@ export default defineConfig(({ mode }) => {
 				'/svws-module/svws-gradehub' : [
 					{ text: '', items: [
 						{ text: 'SVWS-GradeHub', link: '/svws-module/svws-gradehub/',  collapsed: false, items: [
-							{ text: 'Benutzerhandbuch', link:'/svws-module/svws-gradehub/bh_starten.md', collapsed: false, items: [
+							{ text: 'Lehrkraft-Handbuch', link:'/svws-module/svws-gradehub/bh_starten.md', collapsed: false, items: [
 								{ text: 'Nutzerinstallation/Login', link:'/svws-module/svws-gradehub/bh_starten.md' },
 								{ text: 'Leistungsdaten eintragen', link: '/svws-module/svws-gradehub/bh_gradehub_verwenden.md' },
 							] },
