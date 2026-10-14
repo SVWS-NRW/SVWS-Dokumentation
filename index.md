@@ -49,11 +49,9 @@ Sie erreichen den Datenschutzhinweis über **Client Info** im **App**-Menü im T
 
 ## Erklärung zur Barrierefreiheit
 
-Dieses Angebot wird momentan auf Barrierefreiheit geprüft.
+Dieses Angebot wird regelmäßig auf Barrierefreiheit geprüft.
 
-Die Ergebnisse werden hier veröffentlicht.
-
-Stand: 21. Februar 2025
+Stand: 14. Oktober 2026
 
 ## Impressum
 
