@@ -2,11 +2,23 @@
 
 Laden Sie den SVWS Konferenzübersicht auf der [Seite des MSB für Schulverwaltungssoftware](https://www.svws.nrw.de/) im Bereich für [Tools und Module](https://www.svws.nrw.de/svws-server-schild-nrw-3/svws-server-tools-module) herunter.
 
-## Browser des zugreifenden Clients
+## Starten der ausführbaren .exe-Datei (Standard unter MS Windows)
 
-- Ein aktueller Browser: Firefox, Chrome (Chromium-basiert), Edge oder Safari.
-- JavaScript muss aktiviert sein.
-- Desktop-Browser werden empfohlen; die Oberfläche ist für große Bildschirme optimiert.
+Sie können die ausführbare .exe-Datei in MS Windows direkt starten, sofern Sie auf Ihrem Computer mit Ihrem Betriebssystem-Benutzer die Rechte hierfür haben.
+
+Hierbei wird ein Desktop-Icon installiert. 
+
+>[!NOTE] Dateiendungen werden von MS Windows per Standard ausgeblendet.
+>Beachten Sie, dass unter MS Windows die Dateiendungen häufig per Standard im Explorer nicht zu sehen sind.
+>Ihre Dateien heißen dort also nur "SVWS-Konferenzübersicht.Setup.VERSION" oder, im Falle der nicht-installierten Version, "index".
+
+Teilweise werden Ihnen die Rechte durch die IT nicht eingeräumt, eigene ausführbare Dateien zu starten. Kontaktieren Sie in diesem Fall Ihre IT und bitten Sie darum, SVWS-Konferenzübersicht für Sie zu installieren.
+
+Starten Sie die Konferenzübersicht mit einem Doppelklick auf das Icon.
+
+Nutzen Sie die SVWS-Konferenzübersicht auf diese Weise, können Sie mit dem Login fortfahren. 
+
+---
 
 ## Installation der App auf einem Rechner oder im Netzwerk
 
@@ -20,18 +32,6 @@ Hierbei wird ein Desktop-Icon installiert, über welches das SVWS-Konferenzmodul
 * Die .zip-Datei muss entpackt werden, dann lässt sich die `index.html` starten und das SVWS-Konferenzmodul läuft in ihrem Browser. Diese Version kann damit auf jedem Betriebssystem startet, das einen aktuellen Browser unterstützt.
 
 * Die .appimage-Datei kann unter Linux mit `chmod +x` ausführbar gemacht und dann per `./appimage` gestartet werden.
-
-### Starte der ausführbaren .exe-Datei
-
-Sie können die ausführbare .exe-Datei in MS Windows direkt starten, sofern Sie auf Ihrem Computer mit Ihrem Betriebssystem-Benutzer die Rechte hierfür haben.
-
-Teilweise werden Ihnen die Rechte durch die IT nicht eingeräumt, eigene ausführbare Dateien zu starten.
-
-Hierbei wird ein Desktop-Icon installiert.
-
->[!NOTE] Dateiendungen werden von MS Windows per Standard ausgeblendet.
->Beachten Sie, dass unter MS Windows die Dateiendungen häufig per Standard im Explorer nicht zu sehen sind.
->Ihre Dateien heißen dort also nur SVWS-Konferenzübersicht.Setup.VERSION oder index.
 
 ### Starten der browserbasierten index.html
 
@@ -60,6 +60,12 @@ Das Icon der Datei variiert je nach installiertem Internetbrowser.
 ::: tip Betrieb über einen Webserver
 Hinweis für die IT: Ein einfacher statischer Webserver reicht aus, um die App im Schulnetz bereitzustellen.
 :::
+
+Voraussetzungen:
+
+- Ein aktueller Browser: Firefox, Chrome (Chromium-basiert), Edge oder Safari.
+- JavaScript muss aktiviert sein.
+- Desktop-Browser werden empfohlen; die Oberfläche ist für große Bildschirme optimiert.
 
 ### Erzeugen eines Impressums
 
