@@ -1,15 +1,30 @@
-# SVWS-Client 
+# Der SVWS-Client
 
-Auf der Seite findet sich das **Benutzerhandbuch** zum SVWS-Client, über den über einen Browser im Verwaltungsnetz auf die Datenbank zugegriffen werden kann.
+Über den SVWS-Client erreichen Sie den Datenbestand Ihrer Schule. Er wird über einen **Internetbrowser** ausgeführt.
 
-Hier finden Sie 
-+ eine Übersicht über die unterschiedlichen Funktionsbereichte, genannt [Apps](apps/index.md), zur Verwaltung von Schul-, Schüler- und Lehrerdaten wie auch zur Verwaltung von Fächern, Kursen und so weiter,
-+ eine [Einführung in die Bedienung](dokumentationsartikel/index.md) des SVWS-Clients, 
-+ [Bedienungsanleitungen](anleitungen/index.md) zu diesen schulischen Prozessen.
+## Starten Sie den SVWS-Client
+
+**So starten Sie den SVWS-Client:** Bitten Sie Ihre zuständige IT, ein Icon mit dem Link auf den SVWS-Client auf Ihrem Desktop abzulegen. Starten Sie den Client dann mit einem Doppelklick.
+
+::: tip SVWS-Client ohne Icon aufrufen
+Sofern Sie kein Icon auf dem Desktop haben, klicken Sie links im Inhaltsverzeichnis auf `Bedienung im Browser`, oben in diesem Artikel wird erläutert, wie der SVWS-Client auch so erreichbar ist.
+:::
+
+**Wenn der Client startet:** Im aufgerufenen Fenster loggen Sie sich mit Ihrem Datenbankbenutzer und dem Passwort ein.
+
+![Oberfläche des SVWS-Clients](./graphics/svws_client.png "Die Oberfläche des SVWS-Clients nach dem Start.")
+
+Auf der linken Seite im Screenshot sehen Sie die unterschiedlichen Arbeitsbereiche des SVWS-Clients, die hier **"Apps"** genannt werden. Mit diesen Verwalten Sie Ihre Schule, die Schülerschaft, die Lehrkräfte und so weiter.
 
 Der SVWS-Client arbeitet auf Basis des SVWS-Servers. Alle Änderungen über den SVWS-Client stehen damit wechselseitig anderen Client-Anwendungen zur Verfügung, die auf den SVWS-Server zugreifen.
 
+## Verwendung dieser Dokumentation
+
+Nutzen Sie das Inhaltsverzeichnis auf dieser Webseite (links), um die Dokumentation des SVWS-Clients zu erreichen.
+
 Nehmen Sie in der Kopfzeile unter **Benutzerhandbücher v** auch die Handbücher zu den *SVWS-Tools* zur Kenntnis.
+
+---
 
 >[!TIP]Verwaltungsnetz
 >Bezüglich des Datenschutzes ist zu beachten, dass der SVWS-Server mit dem SVWS-Client nur aus dem Verwaltungsnetz zu erreichen sein soll. Möchten Sie einen Zugriff von außen ermöglichen, müssen Sie zu anderen, modernen Standards entsprechenden Maßnahmen greifen. Kontaktieren Sie hierzu bei Bedarf Ihre IT.
