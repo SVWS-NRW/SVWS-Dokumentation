@@ -221,7 +221,20 @@ export default defineConfig(({ mode }) => {
 							] }, //items Ansichten 						
 							{ text: 'Zwei-Faktor-Authentifizierung', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/2fa/index.md' },
 						] }, //items handbuch lehrkraefte
-						{ text: 'Handbuch Administration', link: '/svws-wenom/benutzerhandbuch_administration/index.md', collapsed: false, items: [
+						{ text: 'Installation des Servers', link: '/svws-wenom/installation/index.md', collapsed: false, items: [
+							{ text: 'Installationsanleitung', link: '/svws-wenom/installation/installation.md' },
+							{ text: 'Ersteinrichtung', link: '/svws-wenom/installation/ersteinrichtung.md' },
+							{ text: 'Hosterspezifische Anleitungen',link: '/svws-wenom/hoster_installation/', collapsed: true, items: [
+								{ text: '1blu', link: '/svws-wenom/hoster_installation/1blu.md' },
+								{ text: 'All-Inkl', link: '/svws-wenom/hoster_installation/all-inkl.md' },
+								{ text: 'Hosteurope', link: '/svws-wenom/hoster_installation/hosteurope.md' },
+								{ text: 'Netcup', link: '/svws-wenom/hoster_installation/netcup.md' },
+								{ text: 'Strato', link: '/svws-wenom/hoster_installation/strato.md' },
+								{ text: 'Eigener Webserver', link: '/svws-wenom/installation/installation_webserver.md' },
+							] },
+							{ text: 'mehrere Mandanten', link: '/svws-wenom/installation/mehrereMandanten.md' },
+						] },
+						{ text: 'Schulische Verwaltung des Servers', link: '/svws-wenom/benutzerhandbuch_administration/index.md', collapsed: false, items: [
 							{ text: 'Überblick', link: '/svws-wenom/benutzerhandbuch_administration/ueberblick_administration.md'},
 							{ text: 'Verbindung konfigurieren', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_wenom_einrichten.md', collapsed: true, items: [
 							    { text: 'einrichten', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_einrichten.md'},
@@ -242,19 +255,6 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Zugänge zurücksetzen', link: '/svws-wenom/benutzerhandbuch_administration/zugaenge_lk_zuruecksetzen.md'},
 							] }, //items Synchronisation SVWS - WeNoM
 						] }, //items handbuch administration
-						{ text: 'Installation', link: '/svws-wenom/installation/index.md', collapsed: false, items: [
-							{ text: 'Installationsanleitung', link: '/svws-wenom/installation/installation.md' },
-							{ text: 'Ersteinrichtung', link: '/svws-wenom/installation/ersteinrichtung.md' },
-							{ text: 'Hosterspezifische Anleitungen',link: '/svws-wenom/hoster_installation/', collapsed: true, items: [
-								{ text: '1blu', link: '/svws-wenom/hoster_installation/1blu.md' },
-								{ text: 'All-Inkl', link: '/svws-wenom/hoster_installation/all-inkl.md' },
-								{ text: 'Hosteurope', link: '/svws-wenom/hoster_installation/hosteurope.md' },
-								{ text: 'Netcup', link: '/svws-wenom/hoster_installation/netcup.md' },
-								{ text: 'Strato', link: '/svws-wenom/hoster_installation/strato.md' },
-								{ text: 'Eigener Webserver', link: '/svws-wenom/installation/installation_webserver.md' },
-							] },
-							{ text: 'mehrere Mandanten', link: '/svws-wenom/installation/mehrereMandanten.md' },
-						] },
 						{ text: 'Geschäftsprozesse WeNoM', link: '/svws-wenom/geschaeftsprozesse.md' },
 					] },
 				],
