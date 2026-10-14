@@ -168,9 +168,10 @@ export default defineConfig(({ mode }) => {
 								{ text: 'Nutzerinstallation/Login', link:'/svws-module/svws-gradehub/bh_starten.md' },
 								{ text: 'Leistungsdaten eintragen', link: '/svws-module/svws-gradehub/bh_gradehub_verwenden.md' },
 							] },
-							{ text: 'Administration', link: '/svws-module/svws-gradehub/administration_noten.md', collapsed: false, items: [
-								{ text: 'Administration Noten', link: '/svws-module/svws-gradehub/administration_noten.md' },
-								{ text: 'Adminstration Installation', link: '/svws-module/svws-gradehub/installation.md' },
+							{ text: 'Schul-Administration', link: '/svws-module/svws-gradehub/administration_noten.md', collapsed: false, items: [
+								{ text: 'Installation', link: '/svws-module/svws-gradehub/installation.md' },
+								{ text: 'Notendateien erzeugen & einlesen', link: '/svws-module/svws-gradehub/administration_noten.md' },
+
 							] },
 						] },
 					] },

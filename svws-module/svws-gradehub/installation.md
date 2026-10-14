@@ -4,17 +4,15 @@ Laden Sie den **Externen Notenmanager für Lehrkräfte SVWS-GradeHub** auf der [
 
 Die Dateien stehen als mehrere Optionen zur Verfügung:
 
-* Als MS-Windows-exe
+* **Als MS-Windows-exe (Standard für MS Windows)**
 * Als gepackte .zip, hier wird eine index.html entpackt und in einem Browser gestartet.
-* Weitere Varianten für IT-Kundige
+* Webserver-Installationspaket für IT-Kundige
 
 In allen Varianten findet die Verarbeitung von Daten ausschließlich auf dem Client-Rechner statt. Es findet nach dem Programmstart keine Kommunikation mit einem eventuelle Server statt und Daten werden nur in die lokale Lehrkraft-Notendatei gespeichert.
 
 ![Downloadvarianten](./graphics/svws_gradehub_downdload.png "Laden Sie die MS-Windows-Datei oder die webserver.zip herunter.")
 
-## Anwendung starten
-
-### Als MS-Windows-Programm
+## Als MS-Windows-Programm (Standard für MS Windows)
 
 Laden Sie ausführbare Datei *SVWS-GradeHub-Setup-x.x.x.exe* herunter. Die "x" stehen hierbei für die Versionsnummer.
 
@@ -23,7 +21,9 @@ Führen Sie auf Ihrem MS-Windows-System die Datei aus. Hierbei wird ein Desktop-
 >[!TIP] Installation abgeschlossen
 Fahren Sie nun mit dem **Nutzerhandbuch für Anwender** oder dem **Nutzerhandbuch für Administratoren** fort.
 
-### Als entpackte .zip-Datei
+---
+
+## Als entpackte .zip-Datei
 
 Die folgende Variante läuft auf allen Betriebssystemen, auf denen ein moderner Browser zur Verfügung steht.
 
