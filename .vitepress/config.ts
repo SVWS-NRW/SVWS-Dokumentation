@@ -261,14 +261,14 @@ export default defineConfig(({ mode }) => {
 				'/svws-client': [
 					{ text: '', items:
 						[
-							{ text: 'SVWS-Client', link: '/svws-client/', collapsed: false, items: [
-								{ text: 'Supportkonzept', link: '/svws-client/dokumentationsartikel/supportkonzept/' },
+							{ text: 'SVWS-Client', link: '/svws-client/' },
+							{ text: 'Einführung', link: '/svws-client/einfuehrung.md', collapsed: false, items: [
+								{ text: 'Was ist neu?', link: '/svws-client/dokumentationsartikel/änderungen/' },
 								{ text: 'Bedienung im Browser', link: '/svws-client/dokumentationsartikel/' },
-								{ text: 'Gruppenprozesse', link: '/svws-client/dokumentationsartikel/gruppenprozesse/' },
-								{ text: 'Tastaturnavigation', link: '/svws-client/dokumentationsartikel/tastaturnavigation' },
-								{ text: 'Änderungen', link: '/svws-client/dokumentationsartikel/änderungen/' },
+								{ text: 'Navigation über die Tastatur', link: '/svws-client/dokumentationsartikel/tastaturnavigation' },
+								{ text: 'Wo bekomme ich Hilfe?', link: '/svws-client/dokumentationsartikel/supportkonzept/' },
 							] },
-							{ text: 'Apps', link: '/svws-client/apps/', collapsed: false, items: [
+							{ text: 'Programmoberfläche', link: '/svws-client/apps/', collapsed: false, items: [
 								{ text: 'Aktueller Benutzer', link: '/svws-client/apps/aktuellernutzer/' },
 								{ text: 'Schule', link: '/svws-client/apps/schule/', collapsed: true, items: [
 									{ text: 'Allgemein', link: '/svws-client/apps/schule/allgemein/stammdaten/', collapsed: true, items: [
@@ -378,6 +378,7 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Anleitungen', link: '/svws-client/anleitungen/', collapsed: false, items: [
 								{ text: 'Allgemeine Anleitungen', link: '/svws-client/anleitungen/anleitungen_allgemein/', collapsed: true, items: [
 									{ text: 'Anmeldung', link: '/svws-client/anleitungen/anleitungen_allgemein/anmeldung/' },
+									{ text: 'Integrierte Gruppenprozesse', link: '/svws-client/dokumentationsartikel/gruppenprozesse/' },
 									{ text: 'Schulbescheinigung drucken', link: '/svws-client/anleitungen/anleitungen_allgemein/drucken_schulbescheinigung/' },
 									{ text: 'Mögliche Fehler im Datenbestand', link: '/svws-client/anleitungen/anleitungen_allgemein/fehlertypen.md' },
 								] },
