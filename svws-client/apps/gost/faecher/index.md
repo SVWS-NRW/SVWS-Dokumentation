@@ -6,7 +6,7 @@ Unter **Fächer** wird als Vorlage oder individuell für jeden Jahrgang festgele
 
 In der *"Allgemeinen Vorlage"* werden grundsätzlich alle Fächer in ihren Gemeinsamkeiten konfiguriert, so dass in der jeweiligen Vorlage für einen *"Abiturjahrgang (20xx)"* nur die für diesen Jahrgang geltenden Abweichungen eingestellt werden müssen. 
 
-Zu den **Projektkursen** ist hier zu beachten, dass ein Leitfach oder alternativ zwei Leitfächer für alle Projektkurse in der *Allgemeinen Vorlage* global eingestellt werden.
+Zu den **Projektkursen** ist hier zu beachten, dass ein Referenzfach oder alternativ zwei Referenzfächer für alle Projektkurse in der *Allgemeinen Vorlage* global eingestellt werden.
 
 Anschließend können Sie für jeden *Abiturjahrgang* einstellen, welche dieser Projektkurse tatsächlich zur Wahl stehen.
 
@@ -18,9 +18,9 @@ Im Beispiel oben sind die Fächer *ER* und *KR* im *Abiturjahrgang 2025*, der im
 
 Im zweiten Beispiel oben sind die *Vertiefungskurse* und *Projektkurse* zu sehen. Die Vertiefungskurse werden nur in der EF und der Q1 angeboten, wobei der *Vertiefungskurs Deutsch* nur in der EF belegt werden kann.
 
-Die *Projektkurse* werden ausschließlich in der Q1.1 und der Q1.2 belegt. Hier im Beispiel wurde die Wahloption, sie von 2-stündig auf 3-stündig umzustellen von der Schule gewählt. Die Leitfächer wurden schon in der *Allgemeinen Vorlage* eingestellt.
+Die *Projektkurse* werden ausschließlich in der Q1.1 und der Q1.2 belegt. Hier im Beispiel wurde die Wahloption, sie von 2-stündig auf 3-stündig umzustellen von der Schule gewählt. Die Referenzfächer wurden schon in der *Allgemeinen Vorlage* eingestellt.
 
-Von den zugeordneten *Leitfächern* ist mindestens ein *Leitfach* zu belegen, damit der Projektkurs angewählt werden kann.
+Von den zugeordneten *Referenzfächern* ist mindestens eines zu belegen, damit der Projektkurs angewählt werden kann.
 
 ## Unzulässige Kombinationen
 
