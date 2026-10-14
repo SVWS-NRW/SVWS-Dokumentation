@@ -7,7 +7,7 @@
 **So starten Sie den SVWS-Client:** Bitten Sie Ihre zuständige IT, ein Icon mit dem Link auf den SVWS-Client auf Ihrem Desktop abzulegen. Starten Sie den Client dann mit einem Doppelklick.
 
 ::: tip SVWS-Client ohne Icon aufrufen
-Sofern Sie kein Icon auf dem Desktop haben, klicken Sie links im Inhaltsverzeichnis auf `Bedienung im Browser`, oben in diesem Artikel wird erläutert, wie der SVWS-Client auch so erreichbar ist.
+Sofern Sie kein Icon auf dem Desktop haben, klicken Sie links im Inhaltsverzeichnis auf `Bedienung im Browser`. Direkt oben in diesem Artikel wird erläutert, wie der SVWS-Client auch ohne Icon erreichbar ist.
 :::
 
 **Wenn der Client startet:** Im aufgerufenen Fenster loggen Sie sich mit Ihrem Datenbankbenutzer und dem Passwort ein.
