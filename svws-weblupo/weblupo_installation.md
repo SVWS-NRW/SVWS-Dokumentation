@@ -6,7 +6,7 @@ SVWS-WebLuPo ist ein webbasiertes Laufbahnberatungs- und Planungstool für die g
 
 Die Beschreibung und Benutzung des Tools für Anwender ist unter den Benutzerhandbüchern [WebLuPO Handbuch](weblupo_handbuch.md) zu finden.
 
-Laden Sie **SVWS-WebLuPo** auf der [Seite des MSB für Schulverwaltungssoftware](https://www.svws.nrw.de/) im Bereich für [Tools und Module](https://www.svws.nrw.de/svws-server-schild-nrw-3/svws-server-tools-module) herunter.
+Laden Sie **SVWS-WebLuPo** auf der [Seite des MSB für Schulverwaltungssoftware](https://www.svws.nrw.de/) im Bereich **SVWS-Tools** herunter.
 
 ## Technischer Hintergrund
 
