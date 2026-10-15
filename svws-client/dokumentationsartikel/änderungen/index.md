@@ -1,45 +1,46 @@
 
 # Grundlegende Änderungen im Konzept des SVWS-Clients
 
-In einigen Bereichen haben sich in den letzten 20 Jahren der Entwicklung von SchILD-NRW technische Altlasten aufgebaut, die mitunter zu unoptimierten Arbeitsverläufen führten.
+Der SVWS-Client ist eine Möglichkeit, mit einem Internetbrowser auf den schulischen Datenbestand zuzugreifen.
 
 An dieser Stelle werden wesentliche Änderungen in Bedienung und Konzept der neuen Schulverwaltungssoftware erläutert.
 
+Der Artikel zur `Bedienung im Browser`, zu erreichen im Inhaltsverzeichnis links, führt durch die neue Oberfläche.
+
 ## Verwaltung in einer abschnittsbezogenen Klassentabelle
 
-Bisher war es in SchILD-NRW 2 nicht möglich, die **Historie der Klassen** zu speichern. Dies ist mit dem neuen Datenbankformat nun gegeben.
+Bisher war es in SchILD-NRW 2 nicht möglich, die **Historie von Klassen** zu speichern, nun werden Klassen für jeden Lernabschnitt mit ihren Daten angelegt.
 
 Die Schuljahresabschnitte werden mit eindeutigen IDs gespeichert, welche in der Tabelle der Klassen für alle Lernabschnitte mit Ihren Klassenlehrkräften und den weiteren Angaben abgelegt werden.
 
 Somit ist es nun möglich, für Klassen rückblickend zum Beispiel die Lehrkräfte oder die Zusammensetzung der Schülergruppe einzusehen.
 
-Außerdem wird somit der vielfach von Schulen geäußerte Wunsch ermöglicht, die **Planung eines Folgeschuljahres** vorzunehmen.
+## Planung eines zukünftigen Lernabschnitts
+
+Außerdem wird es ermöglicht, die **Planung eines kommenden Lernabschnitts** vorzunehmen. Sie können somit Klassen und auch Kurse mit ihren Belegungen schon für das nächste Schuljahr vornehmen.
+
+## Stundenplanverwaltung und Unterrichtsverteilung
+
+SVWS-Server und SVWS-Client erlauben nun die Verwaltung eines Stundenplans für die Schülerinnen und Schüler.
+
+Ebenso wird die Unterrichtsverteilung im SVWS-Client erfasst.
+
+## Erfassen Sie die Quartalsnoten direkt im Lernabschnitt eines Halbjahres
+
+Quartale werden nicht mehr als eigene Lernabschnitte geführt.
+
+Quartalsnoten lassen sich direkt im **aktuellen Lernabschnitt** erfassen. Hierfür steht neben der Spalte für die *Note* eine neue Spalte für die *Quartal*snote zur Verfügung.
+
+![Quartalsnoten werden in den aktuellen Leistungsdaten erfasst](./graphics/SVWS_Informationen_Quartalsnoten.png "Erfassung der Quartalsnoten direkt im Lernbschnitt.")
+
+## Erfassung der Statistikdaten mit dem SVWS-Client
+
+Die Statistik der amtlichen Schuldaten wird über den SVWS-Client erhoben. Damit werden auch alle Statistikprüfungen, die bislang im Statistikprogramm durchgeführt wurden, jederzeit im SVWS-Client ausgeführt.
 
 ## Markierung von Schülern
 
 Schüler und Schülerinnen werden über die Checkboxen auf eine Art markiert, um dann auf dieser Gruppe weitere Funktionen auszuführen.
 
-
-## Abschaffung des Quartalsbetriebs
-
-Es ist nicht mehr vorgesehen, dass in einer Schule Quartale als eigene Lernabschnitte geführt werden.
-
-Quartalsnoten lassen sich nun aber direkt im **aktuellen Lernabschnitt** erfassen. Hierfür steht neben der Spalte für die *Note* eine neue Spalte für die *Quartal*snote zur Verfügung.
-
-![Quartalsnoten werden in den aktuellen Leistungsdaten erfasst](./graphics/SVWS_Informationen_Quartalsnoten.png "Erfassung der Quartalsnoten direkt im Lernbschnitt.")
-
-## Erfassung der Zuwanderungsgeschichte
-
-Die **Vereinfachte Erfassung der Zuwanderungsgeschichte** wird vom neuen Datenbankserver nicht mehr unterstützt und damit bietet sich nur noch eine Option zur Erfassung der Zuwanderungsgeschichte.
-
-Bei der Statistik wird bei einem "nicht deutschen" Eintrag korrekt "Nicht deutsch" gemeldet, die übrige Zuwanderungsgeschichte wäre zukünftig einzupflegen.
-
-## Stundenplanverwaltung
-
-SVWS-Server und SVWS-Client erlauben nun die Verwaltung eines Stundenplans für die Schülerinnen und Schüler.
-
-## Verwaltung von Adressbüchern und Kalendern
-
-## Neues Konzept zur Ansicht bei den Lernabschnitten und Leistungsdaten
-
 ## Konzept zum Druck aus dem SVWS-Client
+
+Der SVWS-Client bietet die Möglichkeit, Listen oder Schulbescheinigungen direkt aus dem SVWS-Client zu erzeugen.
