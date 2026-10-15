@@ -5,7 +5,7 @@ SVWS-WebLuPO ist ein webbasiertes Tool zur Laufbahnberatung und -planung im Brow
 ##  Arbeitsablauf mit WebLuPO
 
 ```mermaid
-    flowchart LR
+    flowchart TD
     subgraph Vorbereitung in der Schule
         A(Erzeugung von Laufbahnwahldateien)
     end
@@ -25,6 +25,10 @@ Die Schülerinnen und Schüler können damit am Webbrowser individuell ihre Lauf
 Dazu klicken Sie auf die Schaltfläche **Exportieren** und die Datei wird normalerweise im Download-Ordner des verwendeten Endgeräts gespeichert.
 
 Nachdem die Laufbahnwahl vorgenommen wurde, muss die Datei wieder der Schule zukommen und wird dort eingelesen.
+
+## Erzeugen der Laufbahnwahldateien
+
+Konsultieren Sie den Artikel zur **Laufbahnplanung** in der **App Oberstufe** für die Anleitungen zum Vorbereiten der Laufbahnwahlen und zum Export und Import der Laufbahnwahldateien.
 
 ## Bearbeitung in SVWS-WebLuPO
 
@@ -63,3 +67,7 @@ Somit können Schülerinnen und Schüler von diesem Ausgangspunkt aus schnell me
 Nach dem Abschluss einer Laufbahnwahl, nutzen Sie die Schaltfläche `Speichern`, um die Datei herunterzuladen.
 
 Die Datei muss nun so abgelegt werden, dass die Schule die Laufbahnwahl-Datei im SVWS-Client einlesen kann.
+
+## Einlesen der Wahlen
+
+Konsultieren Sie den Artikel zur **Laufbahnplanung** in der **App Oberstufe** für die Anleitungen zum Vorbereiten der Laufbahnwahlen und zum Export und Import der Laufbahnwahldateien.

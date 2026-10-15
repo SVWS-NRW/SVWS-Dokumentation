@@ -202,8 +202,9 @@ export default defineConfig(({ mode }) => {
 				'/svws-weblupo' : [
 					{ text: '', items: [
 						{ text: 'SVWS-WebLuPO', link: '/svws-weblupo/', collapsed: false, items: [
-							{ text: 'Benutzerhandbuch', link: '/svws-weblupo/weblupo_handbuch.md' },
 							{ text: 'Installation', link: '/svws-weblupo/weblupo_installation.md' },
+							{ text: 'Lehrkrafthandreichung', link: '/svws-weblupo/weblupo_handbuch.md' },
+							{ text: 'Schülerhandreichung', link: '/svws-weblupo/weblupo_schueler.md' },
 						] },
 					] },
 				],
