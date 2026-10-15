@@ -4,19 +4,11 @@
 
 SVWS-WebLuPo ist ein webbasiertes Laufbahnberatungs- und Planungstool für die gymnasiale Oberstufe in NRW.
 
-Die Beschreibung und Benutzung des Tools für Anwender ist unter den Benutzerhandbüchern [WebLuPO Handbuch](weblupo_handbuch.md) zu finden.
-
 Laden Sie **SVWS-WebLuPo** auf der [Seite des MSB für Schulverwaltungssoftware](https://www.svws.nrw.de/) im Bereich **SVWS-Tools** herunter.
 
-## Technischer Hintergrund
-
-Die Nutzer erhalten von der Schule `.lp`-Dateien, die über einen Link zum SVWS-WebLuPO-Client geöffnet werden können. Dieser Client wird ausschließlich im Browser ausgeführt und versendet keine Daten.
-
-Das bedeutet konkret, dass die Daten der Nutzer immer lokal auf ihrem PC, Tablet oder Handy bleiben und nicht auf einen Server übertragen werden. Außer beim erstmaligen Laden entsteht anschließend keine Last auf dem Server, sodass ein Server auch von mehreren Schulen genutzt werden kann.
-
-Die Schülerinnen und Schüler können damit am Webbrowser individuell ihre Laufbahnplanung durchführen. Nachdem die Planung abgeschlossen ist, kann die Datei lokal gespeichert werden.
-
-Dazu klicken Sie auf die Schaltfläche **Exportieren** und die Datei wird normalerweise im Download-Ordner des verwendeten Endgeräts gespeichert.
+::: tip Anwenderhandbuch
+Die Beschreibung und Benutzung des Tools für Anwender ist unter den Benutzerhandbüchern [WebLuPO Handbuch](weblupo_handbuch.md) zu finden.
+:::
 
 ## Systemvoraussetzungen
 
