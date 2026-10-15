@@ -4,6 +4,8 @@ Mit dem externen **Notenmodul für Lehrkräfte SVWS-GradeHub** lassen sich Noten
 
 Das Notenmodul läuft für sich vollständig isoliert auf einem lokalen Rechner und verfügt über keine direkte Verbindung zum SVWS-Server. Der Datenaustausch findet ausschließlich über exportierte Notendateien statt.
 
+SVWS-GradeHub stellt ein Basispaket für das Erfassen von Leistungsdaten dar. Für den vollen Leistungsumfang ist der **SVWS-WebNotenManager (WeNoM)** vorgesehen.
+
 SVWS-GradeHub hat für die Administration einen alternativen SVWS-Server-Modus, mit dem sich *schulische Administratoren* direkt mit dem SVWS-Server verbinden können, um Notendateien zu erzeugen oder einzulesen oder einen Emailversand nutzen können.
 
 Also in Kürze: 
