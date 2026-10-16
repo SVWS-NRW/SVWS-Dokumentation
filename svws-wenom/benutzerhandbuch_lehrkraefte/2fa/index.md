@@ -43,3 +43,5 @@ Im Screenshot wird dieser durch den roten Kasten hervorgehoben. Bei diesen Verfa
 ![Zwei Faktor Benutzereinrichtung](./graphics/2fa_user.png "Tragen Sie den in der App angezeigten Code in zur Anmeldung ein.")
 
 Damit ist die Authentifizierung über einen zweiten Faktor eingerichtet und kann beim nächsten Login verwendet werden.
+
+<DownloadPdf />
