@@ -95,7 +95,6 @@ Eine aktuelle Übersicht der bisher geeigneten Tools:
 * **SVWS-Import**
 * **SVWS-Dokumentation**
 * **SVWS-Schulungsunterlagen**
-* **SVWS-Media**
 * ...
 
 Die Aufzählung erhebt keinen Anspruch auf Vollständigkeit. Weiterhin kann auch eine Startseite kreiert werden, die alle enthaltenen Tools und z.B. den Client des SVWS-Servers zusätzlich verlinken. Ebenso externe Quellen, wie den SVWS-WeNoM können verlinkt werden. Hier eine Anregung zu den noch möglichen Verlinkungen: 
@@ -111,4 +110,4 @@ Ein möglich Ansicht einer Startseite:
 
 ### Installationsbeispiele
 
-Installationsbeispiele als Skript oder in einer fixen Version, die mit SVWS-1.4.1 kompatibel ist finden Sie unter den [SVWS-Schulungsunterlagen}(https://svws-nrw.github.io/Schulungsunterlagen/) im Bereich Fachberatung_Anleitungen. 
+Ein Installationsbeispiel in einer fixen Version, die mit SVWS-1.4.1 kompatibel ist befindet sich unter den [SVWS-Schulungsunterlagen -> SVWS-Tools}(https://svws-nrw.github.io/Schulungsunterlagen/Fachberatung_Anleitungen/Test-_und_Schulungsserver/SVWS-Tools/) im Bereich Fachberatung_Anleitungen. 

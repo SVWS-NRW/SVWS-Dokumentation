@@ -1,4 +1,4 @@
-# Gruppenprozesse
+# Integrierte Gruppenprozesse
 
 In einigen Auswahllisten schaltet der SVWS-Client in den Modus für die **Mehrfachauswahl** beziehungsweise die **Gruppenprozesse**, sobald über die Checkbox vor dem Eintrag mindestens eine Eintrag ausgewählt wurde.
 

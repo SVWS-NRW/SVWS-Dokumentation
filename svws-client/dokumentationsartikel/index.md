@@ -2,6 +2,28 @@
 
 Die offiziell unterstützte minimale Auflösung für die Verwendung des SVWS-Clients ist FullHD (1920 * 1080 Pixel). Nach modernen ergonomischen Gesichtspunkten für Bildschirmarbeitsplätze werden Monitore mit einer Mindestgröße von 21", besser >23", empfohlen.
 
+## Aufruf des SVWS-Clients
+
+Sie können den SVWS-Client mit jedem Browser im Verwaltungsnetz aufrufen.
+
+Öffnen Sie die Adresse des SVWS-Servers. Diese erhalten Sie von Ihrer Schulträger-IT.
+
+> https://adresse-die-ihr-schultraeger-genannt-hat:8443
+
+Der Teil *"https://"* ist wichtig, dann folgt die Server-Adresse. Der Teil nach dem *":"* ist der *Port*, praktisch eine Hausnummer. Unter Umständen kann der Port auch weggelassen werden. Unter Umständen brauchen Sie keinen Port anzugeben. Das weiß aber Ihr Schulträger.
+
+![Einfaches Beispiel localhost](./graphics/SVWS_adresse.png "Im Beispiel liegt der SVWS-Server auf dem lokalen Rechner mit einem Standardport, der somit nicht angegeben werden muss.")
+
+::: tip Nutzen Sie ein Icon auf dem Desktop
+Aber es geht einfacher: bitten Sie den Schulträger, Ihnen ein Icon auf Ihrem Desktop zu erzeugen!
+:::
+
+### Achtung, eine Sicherheitswarnung!
+
+Unter Umständen kann es vorkommen, dass Sie eine "Sicherheitswarnung" angezeigt bekommen, wiel die "Verbindung nicht sicher" sei. Bitten Sie in diesem Fall den Schulträger, das **Sicherheits-Zertifikat** beim Server einzutragen.
+
+Dieses Zertifikat wurde bei der Installation mit erzeugt.
+
 ## Wesentliche Bedienbereiche des SVWS-Clients
 
 Die Programmpunkte im SVWS-Client heißen **Apps**.

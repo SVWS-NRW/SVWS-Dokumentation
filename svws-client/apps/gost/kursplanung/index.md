@@ -25,12 +25,17 @@ Eine *Wiederherstellung* erfolgt, wenn die vorliegende Datenbank bereits eingetr
 
 ### Fall Wiederherstellung und Weiterbearbeitung
 
-Eine Wiederherstellung ist nur möglich, wenn in der Datenbank bereits Blockungsdaten vorliegen, zum Beispiel nach einer Migration einer SchILD-NRW-2-Datenbank oder vergleichbarer Datenbestände.
+Eine "Wiederherstellung" einer Blockung ist möglich, wenn in der Datenbank bereits Leistungsdaten bei den Schülern und damit auch die Kurse im Katalog vorliegen, zum Beispiel nach einer Migration einer SchILD-NRW-2-Datenbank oder vergleichbarer Datenbestände.
 
-Nach Auswahl von Abiturjahrgang und Abschnitt **Wiederherstellen** aktivieren. Die Blockung wird dann als **Restaurierte** Blockung angezeigt.
+Nach Auswahl von Abiturjahrgang und Abschnitt **Wiederherstellen** aktivieren. Die Blockung wird dann als **Restaurierte Blockung** angezeigt.
 
 Es wird eine Übersicht über eingerichtete Kurse angezeigt, in welchen Schienen sie liegen und so weiter.
 
+Diese Blockung kann nun wie jede andere Blockung weiterverarbeitet werden. Beachten Sie jedoch, dass die Leistungsdaten schon bei den Schülern vorhanden sind und von einem eventuellen Weiter.Arbeitsstand abweichen.
+
+::: info Verwendungsmöglichkeit
+Eine Restaurierte Blockung könnte in der Praxis zum Beispiel dazu dienen, für einen zukünftigen Lernabschnitt weiter zu planen.
+:::
 
 ### Fall Neue Kursblockung
 

@@ -1,30 +1,26 @@
 # SVWS-WebLuPO Installation
 
-**Installationsanleitung und technische Dokumentation**
+:::tip Installation durch eine IT
+Die Installation und ein Update von SVWS-WebLuPO auf dem Webspace wird in der Regel durch die IT des Schulträgers vorgenommen.
+:::
 
 SVWS-WebLuPo ist ein webbasiertes Laufbahnberatungs- und Planungstool für die gymnasiale Oberstufe in NRW.
 
+Laden Sie **SVWS-WebLuPo** auf der [Seite des MSB für Schulverwaltungssoftware](https://www.svws.nrw.de/) im Bereich **SVWS-Tools** herunter.
+
+::: tip Anwenderhandbuch
 Die Beschreibung und Benutzung des Tools für Anwender ist unter den Benutzerhandbüchern [WebLuPO Handbuch](weblupo_handbuch.md) zu finden.
-
-Laden Sie **SVWS-WebLuPo** auf der [Seite des MSB für Schulverwaltungssoftware](https://www.svws.nrw.de/) im Bereich für [Tools und Module](https://www.svws.nrw.de/svws-server-schild-nrw-3/svws-server-tools-module) herunter.
-
-## Technischer Hintergrund
-
-Die Nutzer erhalten von der Schule `.lp`-Dateien, die über einen Link zum SVWS-WebLuPO-Client geöffnet werden können. Dieser Client wird ausschließlich im Browser ausgeführt und versendet keine Daten.
-
-Das bedeutet konkret, dass die Daten der Nutzer immer lokal auf ihrem PC, Tablet oder Handy bleiben und nicht auf einen Server übertragen werden. Außer beim erstmaligen Laden entsteht anschließend keine Last auf dem Server, sodass ein Server auch von mehreren Schulen genutzt werden kann.
-
-Die Schülerinnen und Schüler können damit am Webbrowser individuell ihre Laufbahnplanung durchführen. Nachdem die Planung abgeschlossen ist, kann die Datei lokal gespeichert werden.
-
-Dazu klicken Sie auf die Schaltfläche **Exportieren** und die Datei wird normalerweise im Download-Ordner des verwendeten Endgeräts gespeichert.
+:::
 
 ## Systemvoraussetzungen
 
-Für die Bereitstellung des Clients ist ein einfacher Webspace ausreichend, ohne Datenbankanbindung oder PHP. Das Tool wurde unter Debian 12 mit einem nginx oder Apache2 Webserver getestet.
+Für die Bereitstellung des Clients ist ein *einfacher Webspace* ausreichend, ohne Datenbankanbindung oder PHP.
 
 ## Installation per zip download
 
-Die aktuelle `SVWS-Laufbahnplanung-x.y.z.zip` kann vom [Github repository](https://github.com/SVWS-NRW/SVWS-Server/releases) heruntergeladen werden.
+Die aktuelle `SVWS-Laufbahnplanung-x.y.z.zip` wird über die oben verlinkte Webseite des MSB herunterzuladen. "x.y.z" steht hierbei für die aktuelle Version.
+
+![alt text](./graphics/weblupo_download.png "Laden Sie die WebLuPO-Installationsdatei herunter")
 
 Entpacken Sie diese Datei im Webverzeichnis Ihres Hosters.
 

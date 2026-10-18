@@ -1,23 +1,23 @@
-# Administration im externen SVWS Notenmodul SVWS-GradeHub
+# Schulische Verwaltung im externen SVWS Notenmodul SVWS-GradeHub
 
 Diese Anleitung beschreibt
 * die Einrichtung von SVWS-GradeHub,
 * die Erstellung der Notendateien für Lehrkräfte sowie
 * die Vorbereitung des späteren Notenimports.
 
-SVWS-GradeHub dient als Übergangslösung zur Noteneingabe, bis WeNoM flächendeckend verfügbar ist.
+SVWS-GradeHub dient als Lösung zur Noteneingabe, sofern SVWS-WeNoM (noch) nicht verwendet wird.
 
 >[!TIP]GradeHub und der SVWS Client
 >Sie können mit dem SVWS-Client ebenfalls Lehrkraft-Notendateien erzeugen. Nutzen Sie hierfür den **Datenaustausch** in der **App Schule**. Diese Dateien sind jedoch nicht verschlüsselt.
 > Entsprechend können Sie im SVWS-Client auch keine Lehrkraft-Notendateien einlesen, die verschlüsselt mit SVWS-GradeHub erzeugt wurden. Sie können aber die unverschlüsselten Lehrkraft-Notendateien, die mit dem SVWS-Client erstellt wurden, mit SVWS-GradeHub ganz wie erwartet verarbeiten und im Anschluss wieder mit dem SVWS-Client einlesen.
 
-## Starten im Administratormodus
+## Starten im Schul-Administratormodus
 
 ![Der Administratorenbereich](./graphics/svws_gradehub_admin_login.png "GradeHub startet im Administratorenmodus.")
 
-Startet SVWS-GradeHub im Modus für Administratoren, finden Sie diesen oberhalb dem normalen Bereich für Lehrkräfte. 
+Startet SVWS-GradeHub im Modus für Schul-Administratoren, finden Sie diesen oberhalb dem normalen Bereich für Lehrkräfte. 
 
-Die ausführbare Datei für MS Windows startet immer im Administratorenmodus.
+Die ausführbare Datei für MS Windows startet immer im Schul-Administratorenmodus.
 
 Um das Externe SVWS Notenmodul SVWS-GradeHub in der Webserver-Variante im Modus für Adminstratoren zu starten, ist dieser in der Datei `config.js` auf `true`zu stellen und eventuelle Kommentarzeichen vor der Zeile `//` sind zu entfernen.
 
@@ -55,7 +55,7 @@ Wenn Sie in diesem Modus `Speichern` wählen, bekommen Sie die Option, eventuell
 
 Sofern Sie Notendateien für alle oder ausgewählte Lehrkräfte erzeugen wollen, klicken Sie auf den roten Button `Adminbereich`.
 
-![Der Adminbereich von SVWS-GradeHub](./graphics/svws_gradehub_admin_adminbereich.png "Der Adminbereich von SVWS-GradeHub nach dem ersten Start.")
+![Der Adminbereich von SVWS-GradeHub](./graphics/svws_gradehub_admin_adminbereich.png "Der Schul-Adminbereich von SVWS-GradeHub nach dem ersten Start.")
 
 Der Admin-Bereich von SVWS-GradeHub startet mit der Lehrkraftliste. Hier im Screenshot ist zu sehen, dass der Bereich **Passwörter generieren** ausgegraut ist und nicht zur Verfügung steht und auch keine **Notenpasswörter** erzeugt wurden.
 

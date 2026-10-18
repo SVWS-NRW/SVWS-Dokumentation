@@ -1,5 +1,5 @@
-# SVWS-WebNotenManger - Benutzerhandbuch Administration
+# SVWS-WebNotenManger - Schulische Verwaltung
 
-Hier finden Sie für die vorgesehenen Gesschäftsprozesse alle Informationen zur Administration des WebNotenManagers.  
+Hier finden Sie für die vorgesehenen Geschäftsprozesse alle Informationen zur Administration des WebNotenManagers.  
 
-Es werden sowohl die technische Administration zur Einrichtung der Verbindungsdaten als auch die schulische Administration zur Synchronisation der Daten und für das Zurücksetzen der Zugänge für die Lehrkräfte erläutert.
+Es werden sowohl die technische Administration zur Konfiguration des Notenmoduls im SVWS-Server, die Einrichtung der Verbindungsdaten zur externen WeNoM-Instanz, die schulische Administration zur Synchronisation der Daten als auch die Einrichtung und das Zurücksetzen der Zugänge für die Lehrkräfte erläutert.

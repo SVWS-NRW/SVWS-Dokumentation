@@ -1,10 +1,12 @@
-# Apps
-
-![Die Liste mit den Apps](./graphics/SVWS_apps.png "Die Apps des SVWS-Clients. Der Inhalt dieser Leiste ist abhängig von der Schulform der Schule.")
+# Die Apps, die Programmoberfläche des SVWS-Clients
 
 Die großen Programmteile im SVWS-Client heißen **Apps**.
 
-Je nach Bildschirmbreite können die Apps als Menü oben oder links im Browser angezeigt werden.
+![Die Liste mit den Apps](./graphics/SVWS_apps.png "Die Apps des SVWS-Clients. Der Inhalt dieser Leiste ist abhängig von der Schulform der Schule.")
+
+Mit diesen werden die Schule, die Schülerschaft Lehrkräfte und so weiter verwaltet.
+
+Je nach Bildschirmbreite können die Apps als Menü **oben** oder **links** im Browser angezeigt werden.
 
 Die App-Leiste beginnt immer zuerst mit dem akuell angemeldeten Benutzer, hier im Screenshot *AD* für den "Admin", dann folgen die weiteren Apps.
 
@@ -12,7 +14,7 @@ Je nach Schulform werden bei Ihnen eventuell Apps ausgeblendet oder weitere Apps
 
 ![Einstellungen und Abmelden](./graphics/SVWS_apps_einstellungen.png "Die Knöpfe Einstellungen und Abmelden finden sich am Ende der App-Leiste.")
 
-Die Knöpfe für die Einstellungen und das Abmelden finden sich am Ende der App-Leiste.
+Die Knöpfe für die **Einstellungen** und das **Abmelden** finden sich am Ende der App-Leiste.
 
 Ganz am Ende lässt sich über **Client Info** die installierte Version des Clients abrufen.
 

@@ -164,13 +164,14 @@ export default defineConfig(({ mode }) => {
 				'/svws-module/svws-gradehub' : [
 					{ text: '', items: [
 						{ text: 'SVWS-GradeHub', link: '/svws-module/svws-gradehub/',  collapsed: false, items: [
-							{ text: 'Benutzerhandbuch', link:'/svws-module/svws-gradehub/bh_starten.md', collapsed: false, items: [
+							{ text: 'Lehrkraft-Handbuch', link:'/svws-module/svws-gradehub/bh_starten.md', collapsed: false, items: [
 								{ text: 'Nutzerinstallation/Login', link:'/svws-module/svws-gradehub/bh_starten.md' },
 								{ text: 'Leistungsdaten eintragen', link: '/svws-module/svws-gradehub/bh_gradehub_verwenden.md' },
 							] },
-							{ text: 'Administration', link: '/svws-module/svws-gradehub/administration_noten.md', collapsed: false, items: [
-								{ text: 'Administration Noten', link: '/svws-module/svws-gradehub/administration_noten.md' },
-								{ text: 'Adminstration Installation', link: '/svws-module/svws-gradehub/installation.md' },
+							{ text: 'Schul-Administration', link: '/svws-module/svws-gradehub/administration_noten.md', collapsed: false, items: [
+								{ text: 'Installation', link: '/svws-module/svws-gradehub/installation.md' },
+								{ text: 'Notendateien erzeugen & einlesen', link: '/svws-module/svws-gradehub/administration_noten.md' },
+
 							] },
 						] },
 					] },
@@ -201,8 +202,9 @@ export default defineConfig(({ mode }) => {
 				'/svws-weblupo' : [
 					{ text: '', items: [
 						{ text: 'SVWS-WebLuPO', link: '/svws-weblupo/', collapsed: false, items: [
-							{ text: 'Benutzerhandbuch', link: '/svws-weblupo/weblupo_handbuch.md' },
 							{ text: 'Installation', link: '/svws-weblupo/weblupo_installation.md' },
+							{ text: 'Lehrkrafthandreichung', link: '/svws-weblupo/weblupo_handbuch.md' },
+							{ text: 'Schülerhandreichung', link: '/svws-weblupo/weblupo_schueler.md' },
 						] },
 					] },
 				],
@@ -220,13 +222,10 @@ export default defineConfig(({ mode }) => {
 							] }, //items Ansichten 						
 							{ text: 'Zwei-Faktor-Authentifizierung', link: '/svws-wenom/benutzerhandbuch_lehrkraefte/2fa/index.md' },
 						] }, //items handbuch lehrkraefte
-						{ text: 'Handbuch Administration', link: '/svws-wenom/benutzerhandbuch_administration/index.md', collapsed: false, items: [
-							{ text: 'Schulische Administration', link: '/svws-wenom/benutzerhandbuch_administration/schulische_administration.md'},
-						] }, //items handbuch administration
-						{ text: 'Installation', link: '/svws-wenom/installation/index.md', collapsed: false, items: [
+						{ text: 'Installation des Servers', link: '/svws-wenom/installation/index.md', collapsed: false, items: [
 							{ text: 'Installationsanleitung', link: '/svws-wenom/installation/installation.md' },
 							{ text: 'Ersteinrichtung', link: '/svws-wenom/installation/ersteinrichtung.md' },
-							{ text: 'Hosterspezifische Anleitungen',link: '/svws-wenom/hoster_installation/', collapsed: false, items: [
+							{ text: 'Hosterspezifische Anleitungen',link: '/svws-wenom/hoster_installation/', collapsed: true, items: [
 								{ text: '1blu', link: '/svws-wenom/hoster_installation/1blu.md' },
 								{ text: 'All-Inkl', link: '/svws-wenom/hoster_installation/all-inkl.md' },
 								{ text: 'Hosteurope', link: '/svws-wenom/hoster_installation/hosteurope.md' },
@@ -236,20 +235,41 @@ export default defineConfig(({ mode }) => {
 							] },
 							{ text: 'mehrere Mandanten', link: '/svws-wenom/installation/mehrereMandanten.md' },
 						] },
+						{ text: 'Schulische Verwaltung des Servers', link: '/svws-wenom/benutzerhandbuch_administration/index.md', collapsed: false, items: [
+							{ text: 'Überblick', link: '/svws-wenom/benutzerhandbuch_administration/ueberblick_administration.md'},
+							{ text: 'Verbindung konfigurieren', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_wenom_einrichten.md', collapsed: true, items: [
+							    { text: 'einrichten', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_einrichten.md'},
+								{ text: 'prüfen', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_pruefen.md'},
+								{ text: 'löschen', link: '/svws-wenom/benutzerhandbuch_administration/verbindung_loeschen.md'},
+							   ] }, //items Verbindung konfigurieren
+							{ text: 'Notenmodul konfigurieren', link: '/svws-wenom/benutzerhandbuch_administration/konfiguration_notenmodul.md',  collapsed: true, items: [
+							    { text: 'Anzeige anpassen', link: '/svws-wenom/benutzerhandbuch_administration/konfiguration_notenmodul_darstellung.md'},
+								{ text: 'Benutzerrechte anpassen', link: '/svws-wenom/benutzerhandbuch_administration/konfiguration_notenmodul_benutzerrechte.md'},
+                                { text: 'Übernahme für WeNoM', link: '/svws-wenom/benutzerhandbuch_administration/konfiguration_notenmodul_wenom.md'},
+							] }, //items Konfiguration Notenmodul	
+							{ text: 'Synchronisation SVWS - WeNoM', link: '/svws-wenom/benutzerhandbuch_administration/synchronisation_svws_wenom.md', collapsed: true, items: [
+							    { text: 'Daten abgleichen', link: '/svws-wenom/benutzerhandbuch_administration/synchronisation_daten_abgleichen.md'},
+								{ text: 'Daten entfernen', link: '/svws-wenom/benutzerhandbuch_administration/synchronisation_daten_loeschen.md'},
+							] }, //items Synchronisation SVWS - WeNoM
+							{ text: 'Zugänge für Lehrkräfte', link: '/svws-wenom/benutzerhandbuch_administration/zugaenge_lehrkraefte.md', collapsed: true, items: [
+							    { text: 'Zugänge einrichten', link: '/svws-wenom/benutzerhandbuch_administration/zugaenge_lk_einrichten.md'},
+								{ text: 'Zugänge zurücksetzen', link: '/svws-wenom/benutzerhandbuch_administration/zugaenge_lk_zuruecksetzen.md'},
+							] }, //items Synchronisation SVWS - WeNoM
+						] }, //items handbuch administration
 						{ text: 'Geschäftsprozesse WeNoM', link: '/svws-wenom/geschaeftsprozesse.md' },
 					] },
 				],
 				'/svws-client': [
 					{ text: '', items:
 						[
-							{ text: 'SVWS-Client', link: '/svws-client/', collapsed: false, items: [
-								{ text: 'Supportkonzept', link: '/svws-client/dokumentationsartikel/supportkonzept/' },
+							{ text: 'SVWS-Client', link: '/svws-client/' },
+							{ text: 'Einführung', link: '/svws-client/einfuehrung.md', collapsed: false, items: [
+								{ text: 'Was ist neu?', link: '/svws-client/dokumentationsartikel/änderungen/' },
 								{ text: 'Bedienung im Browser', link: '/svws-client/dokumentationsartikel/' },
-								{ text: 'Gruppenprozesse', link: '/svws-client/dokumentationsartikel/gruppenprozesse/' },
-								{ text: 'Tastaturnavigation', link: '/svws-client/dokumentationsartikel/tastaturnavigation' },
-								{ text: 'Änderungen', link: '/svws-client/dokumentationsartikel/änderungen/' },
+								{ text: 'Navigation über die Tastatur', link: '/svws-client/dokumentationsartikel/tastaturnavigation' },
+								{ text: 'Wo bekomme ich Hilfe?', link: '/svws-client/dokumentationsartikel/supportkonzept/' },
 							] },
-							{ text: 'Apps', link: '/svws-client/apps/', collapsed: false, items: [
+							{ text: 'Programmoberfläche', link: '/svws-client/apps/', collapsed: false, items: [
 								{ text: 'Aktueller Benutzer', link: '/svws-client/apps/aktuellernutzer/' },
 								{ text: 'Schule', link: '/svws-client/apps/schule/', collapsed: true, items: [
 									{ text: 'Allgemein', link: '/svws-client/apps/schule/allgemein/stammdaten/', collapsed: true, items: [
@@ -359,7 +379,9 @@ export default defineConfig(({ mode }) => {
 							{ text: 'Anleitungen', link: '/svws-client/anleitungen/', collapsed: false, items: [
 								{ text: 'Allgemeine Anleitungen', link: '/svws-client/anleitungen/anleitungen_allgemein/', collapsed: true, items: [
 									{ text: 'Anmeldung', link: '/svws-client/anleitungen/anleitungen_allgemein/anmeldung/' },
+									{ text: 'Integrierte Gruppenprozesse', link: '/svws-client/dokumentationsartikel/gruppenprozesse/' },
 									{ text: 'Schulbescheinigung drucken', link: '/svws-client/anleitungen/anleitungen_allgemein/drucken_schulbescheinigung/' },
+									{ text: 'Mögliche Fehler im Datenbestand', link: '/svws-client/anleitungen/anleitungen_allgemein/fehlertypen.md' },
 								] },
 								{ text: 'Schulformspezifisch', link: '/svws-client/anleitungen/anleitungen_schulform/', collapsed: true, items: [
 									{ text: 'Oberstufe', link: '/svws-client/anleitungen/anleitungen_schulform/anleitungen_gost/', collapsed: true, items: [
