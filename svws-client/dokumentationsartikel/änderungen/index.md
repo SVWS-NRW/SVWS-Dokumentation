@@ -1,5 +1,5 @@
 
-# Grundlegende Änderungen im Konzept des SVWS-Clients
+# Was ist neu?
 
 Der SVWS-Client ist eine Möglichkeit, mit einem Internetbrowser auf den schulischen Datenbestand zuzugreifen.
 
