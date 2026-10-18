@@ -4,8 +4,14 @@ Die Oberfläche der individuellen Laufbahnwahlen von von WebLuPO sieht aus, wie 
 
 Die Schülerinnen und Schüler sehen also 
 
+
+
 ## Dateien Im- und Exportieren
 
 Beachten: Dateiendungen
 
 ## Einzeln, Jahrgangsweise
+
+COPYPASTE aus index.md
+
+Struktur: Dann weiter?
