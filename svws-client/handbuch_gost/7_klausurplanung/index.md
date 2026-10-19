@@ -32,13 +32,26 @@ Die eigentliche Klausurplanung findet im **Tab Schienen** statt.
 
 Lesen Sie für die detaillierte Erläuterung bitte die im Inhaltsverzeichnis folgenden Artikel.
 
-Im **Tab Schienen** werden die zu planenden Klausuren zu möglichen **Terminen** zugeordnet.
+Klausuroplanung folgt dieser Struktur:
 
-Dies können Sie manuell per Drag & Drop vornehmen, sehr hilfreich hier sind aber die automatischen Vorgänge, die Sie mit einem Klick auf `automatisch Blocken` anstoßen.
+In den unterschiedlichen Tabs werden *Zuordnungen durch Drag & Drop* vorgenommen. Ebenso bekommen Sie bei einer Anwahl eines Termins *Hinweise und Fehler* angezeigt, zum Beispiel ob jemand in einer Woche zu viele Klausuren schreibt. 
 
-Hierbei können Sie unterschiedliche Einstellungen vornehmen, etwa, ob Sie beide Quartale in einer Stufe zusammen planen möchten oder getrennt. Ebenso unterscheiden Sie, ob LKs und GKs getrennt geblockt werden.
+* Im **Tab Schienen** werden die zu planenden Klausuren zu möglichen Klasur-**Terminen** zugeordnet. Diese "Termine" sind an dieser Stelle bislang nur "geplante Terminblöcke", denen zwar Kurse hinzugefügt werden, die jedoch noch keinem konkreten Datum zugeordet sind. Sie können beim *automatischen Blocken* zum Beispiel wählen, ob GKs und LKs getrennt bleiben oder ob Klausuren mit *"gleichem Fach und gleicher Lehrkraft"* auch im gleichen Terminblock geplant werden soll.
 
-Im **Tab Kalender** sind die geblockten Termine in einer nach Kalenderwochen aufgeteilten Übersicht eingetragen.
+* Im **Tab Kalender** sind die gerade geblockten Termine in einer nach Kalenderwochen (KW) aufgeteilten Übersicht eingetragen. Wurde ein Stundenraster/Stundenplan hinterlegt, werden die Termine in dieser Struktur angelegt. Planen Sie KLausuren durch Drag & Drop in unterschiedliche Kalenderwochen ein.
 
-Auch hier können Sie Klausurblöcke durch Drag & Drop eine Zuordnung zuweisen oder entziehen.
+* Unter **Rähme und Startzeiten** können Sie in Ihrem Schulkatalog definierte Räume zum Klausurschreiben hinzufügen und dann die KLausurtermine auf diese Räume verteilen. Dies geht auch automatisch. Sie können weiterhin vom aus dem Stundenraster hervorgehende Startzeiten mit abweichenden Startzeiten überschreiben.
 
+* Der **Tab Detailplan** zeigt eine tabellarsiche Übersicht der Planungen an.
+
+* Erfassen Sie Klausurversämnisse direkt beim Schüler oder über den Klausurtermin und sie können anschließend über den **Tab Nachschreiber** Nachschreibetermine planen. Sie können neue Termine anlegen oder einen späteren Haupttermin zulassen.
+
+* Im folgenden **Tab Nachschreibplan** wird dieser Nachschreibplan als Übersicht angezeigt.
+
+* Der letzte **Tab Fehler & Hinweise** gibt einer Übersicht über Fehler, die gegen Harte Regeln verstoßen und die geändert werden müssen. Ebenso werden Hinweise angezeigt, die teilweise wie Fehler zu beseitigen sind oder nach einer Prüfung akzeptiert werden können.
+
+In der gesamten **App Klausurplanung** steht oben rechts die Möglichkeit zur Verfügung, eine druckbare Datei der gewählten Klausurplanung zu erstellen.
+
+---
+
+Lesen Sie im Inhaltsverzeichnis folgend die Detailartikel zur Klausurplanung.
