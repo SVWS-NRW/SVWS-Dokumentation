@@ -5,7 +5,7 @@ Bei den **Leistungsdaten** von Schülern und Schülerinnen handelt es sich um di
 Vollständig sind die Leistungsdaten, wenn auch die **Noten**, **Fehlstunden** und weitere Bemerkungen eingetragen werden.
 
 * Diese Daten können für jede Person individuell in den SVWS-Client oder in SchILD-NRW 3 eingetragen werden.
-* Weiterhin können Sie Gruppenprozesse in diesen Programmen verwenden.
+* Weiterhin können Sie Gruppenprozesse in diesen Programmen, zum Beispiel zum Eintragen von Daten "kursweise" verwenden.
 * Mit dem SVWS-WebNotenManager (WeNoM) steht ein hilfreiches Werkzeug zur Verfügung, mit dem Noten durch Lehrkräfte von einem beliebigen Ort eingetragen werden können.
 
 ## Eintragungen über den SVWS-Client
