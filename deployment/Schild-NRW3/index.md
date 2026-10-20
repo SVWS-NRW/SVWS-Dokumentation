@@ -47,11 +47,22 @@ Je nach Firewall-Konfiguration muss zusätzlich der Port 3306 für den Zugriff a
 
 ## Datenbankverbindung konfigurieren
 
-SchILD-NRW 3 benötigt für jede Datenbank eine eigene `.con`-Datei. Diese liegt im Unterordner `Connection-Files` des SchILD-NRW-3-Arbeitsverzeichnisses und enthält die Verbindungsinformationen im UTF-8-Format.
+SchILD-NRW 3 benötigt für jede Datenbank eine eigene `.con`-Datei. Diese liegt im Unterordner `Connection-Files` des SVWS-Arbeitsverzeichnisses und enthält die Verbindungsinformationen im UTF-8-Format.
+
+Also zum Beispiel
+```
+  S:\SVWS-Arbeitsverzeichnis\Connection-Files\
+```
+
+Hierbei muss für jedes Datenbank-Schema, das mit SchILD-NRW 3 gestartet werden soll, eine eigene Connection-Datei angelegt werden.
+
+Der SVWS-Server und damit der SVWS-Client benötigt keine solche .con-Datei.
 
 ::: danger Schema-Namen unter Windows!
 Achten Sie auch unter Windows auf die korrekte Groß- und Kleinschreibung des Schema-Namens in der `.con`-Datei. Die REST-Schnittstelle arbeitet **case sensitive**, daher muss der Schema-Name exakt übereinstimmen.
 :::
+
+Wenn Sie über die Admin.ini von SchILD-NRW 3 ein eigenes SVWS-Arbeitsverzeichnis festlegen, muss dieses auch den Ordner für die Con-Dateien enthalten.
 
 [TODO] Screenshot Einrichtung Schild NRW
 
