@@ -60,3 +60,17 @@ flowchart LR
     ZD ==Q2.2==> ABI_Z(Abiturzulassung)
     ABI_Z ==> ABI>Abiturprüfung]
 ````
+
+## Rollenklarheit
+
+In der Schulverwaltung gibt es unterschiedliche Rollen. Als Oberstufenkoordination sind Sie grundsätzlich für die Organisation der Oberstufenjahrgänge verantwortlich.
+
+Dieser Aufgabenbereich wird von **Administrativen Aufgaben der IT** berührt, etwa, wenn es um die Installation, Einrichtung oder das Update der verwendeten Programme geht. In den Bereich der IT fallen auch die Wartung der Computer, mit denen Sie arbeiten.
+
+Dann gibt es Aufgaben der **Schulischen Administration**. Dieser Bereich ist schon weicher definiert, typischerweise sind das "SchILD-Teams" oder "Schulverwaltungskoordinatoren". Dieser Bereich umfasst häufig das Konfigurieren und Einsammeln von Notendateien, den Zeugnisdruck oder, in der Sekundarstufe I, das einrichten von Kursen - alles in Eigenverantwortung oder unterstützend der Jahrgangs-Koordinatoren oder -Abteilungsleitungen.
+
+Darüber hinaus wird die Oberstufenkoordination auch von **Jahrgangskoordinatoren** (oder Jahrgangsberatungslehrkräften oder...)
+
+Wichtig ist an dieser Stelle, dass Ihnen klar ist, welche Rolle(n) Sie haben und wann und wo Sie andere Personen beauftragen, die Grundlagen für Ihre Arbeit zu schaffen. Zum Beispiel: Sind Sie persönlich verantwortlich, den SVWS-WebNotenManager aufzusetzen, für das Oberstufen-Noteneinsammeln vorzubereiten und dann die Noten einzusammeln? Oder fallen diese Aufgaben bei Ihnen in den Bereich der IT beziehungsweise an einen SVWS-Beauftragten (m/w/d)?
+
+Stellen Sie für sich und andere Rollenklarheit her, mit dem Ziel, effektiv und ohne vermeidbare Hektik durch das Schuljahr zu kommen.

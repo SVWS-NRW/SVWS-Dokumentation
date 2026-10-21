@@ -1,6 +1,6 @@
 # I. Grundlegende Vorbereitungen der Datenbank
 
-Diese Vorbereitungen sind in der Regel einmal vorzunehmen und auch nur dann, wenn die Daten noch nicht vollständig korrekt sind. Ist Ihre Datenbank gut eingerichtet: Herzlichen Glückwunsch - das haben Sie oder Ihre vorhergehenden Koordinationspersonen gut gemacht! 
+Diese Vorbereitungen sind in der Regel einmal vorzunehmen und auch nur dann, wenn die Daten noch nicht vollständig korrekt sind. Ist Ihre Datenbank gut eingerichtet: das haben Sie oder Ihre vorhergehenden Koordinationspersonen gut gemacht! 
 
 Spätere Anpassungen sind mitunter nötig, wenn sich rechtliche oder pädagogische Rahmenbedingungen ändern.
 

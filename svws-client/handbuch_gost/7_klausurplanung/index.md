@@ -44,7 +44,7 @@ In den unterschiedlichen Tabs werden *Zuordnungen durch Drag & Drop* vorgenommen
 
 * Der **Tab Detailplan** zeigt eine tabellarsiche Übersicht der Planungen an.
 
-* Erfassen Sie Klausurversämnisse direkt beim Schüler oder über den Klausurtermin und sie können anschließend über den **Tab Nachschreiber** Nachschreibetermine planen. Sie können neue Termine anlegen oder einen späteren Haupttermin zulassen.
+* Erfassen Sie Klausurversämnisse direkt beim Schüler oder über den Klausurtermin und sie können anschließend über den **Tab Nachschreiber** Nachschreibetermine planen. Sie können neue Termine anlegen oder einen späteren Haupttermin zulassen. Sie können eine verpasste Klausur in der **App Schüler** und dort im **Tab Klausur** über das blaue Icon als `Nicht migeschrieben` markieren.
 
 * Im folgenden **Tab Nachschreibplan** wird dieser Nachschreibplan als Übersicht angezeigt.
 
