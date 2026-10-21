@@ -36,10 +36,17 @@ Sie können hier nun die Leistungsdaten eintragen, die zuvor konfiguriert wurden
 
 *Mahnungen* sind in der Oberstufe so nicht vorgesehen, aber die Oberstufenkoordination hat sich hier im Beispiel entschieden, sie im Zuge von Beratungsprozessen doch zu ermöglichen.
 
+Weiterhin ist freigeschaltet, dass auch **Teilleistungen** eingegeben werden können. Dies können in der GOSt zum Beispiel SoMi-Noten oder Klausurnoten sein (zum Beispiel SM1, SM2, K1, K2, K2, ...).
+
+Diese Einstellungen gelten als Beispiel für die Orientierung.
+
+Die genaue Verwendung der Notenmodule finden Sie in die Artikeln der **App Noten** und in den Artikeln zum **SVWS-WebNotenManager**.
+
 ## Eintragen über SchILD-NRW 3
 
-## Erfassen der Noten über WeNoM
+Derzeit - Ende 2026 - bietet SchILD-NRW für die direkte Noteineintrung auch nützliche Funktionen für das Aufnehmen von Leistungsdaten. Der individuelle Noteneintrag im jeweiligen Lernbaschnitt ist im SVWS-Client vergleichbar und die Noten lassen sich ebenso kursweise über das lokale Notenmodul erfassen, je nach Fall lohnt sich auch ein Blick auf die Gruppenprozesse in SchILD-NRW 3.
 
+## Erfassen der Noten über WeNoM
 
 NICHT selbst aufsetzen IT und SVWS-Beauftrage in der Schule! Sonst : Support
 
