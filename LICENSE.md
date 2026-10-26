@@ -1,0 +1,1 @@
+Diese Dokumentation steht unter [CC0](https://creativecommons.org/publicdomain/zero/1.0/) der Creative Commons.
