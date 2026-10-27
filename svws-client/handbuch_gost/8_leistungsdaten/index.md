@@ -128,7 +128,54 @@ Auch Ausschulungen von Abgängern und Abschlüssen lassen sich mit SchILD vorneh
 
 Konsultieren Sie hierzu den folgenden Artikel und die Artikel in der Dokumentation zu SchILD-NRW 3.
 
-## Bemerkungen, Floskeln, Projektkurstitel
+## Bemerkungen, Versetzungsberechnungen und Projektkurstitel
+
+### Bemerkungen 
+
+Sofern noch nicht beim Noteneinsammeln geschehen, können Sie im Anschluss Bemerkungen zum **Außerunterrichtlichen Engagement** setzen. Solche Bemerkungen können als **Floskel** im entsprechend benannten **Katalog** hinterlegt werden.
+
+### Versetzungs- und Abschlussberechnungen
+
+Die folgenden Arbeiten werden in SchILD-NRW 3 ausgeführt.
+
+Zeugnisbemerkungen zu einer Versetzung und vergleichbar werden automatisch erzeugt, wenn Sie in SchILD-NRW 3 in **Schüler ➔ Akt. Halbjahr ➔ Leistungsdaten** die `Versetzungs- und Abschlussberechnung` anklicken.
+
+![Versetzungs- und Abschlussberechnung](./graphics/schild3_versetzungs-abschlussberechnung.png "Stoßen Sie individuell die Berechnungen zu Versetzung und Abschluss an.")
+
+Im Reiter *Protokoll zur Versetzungs- und Abschlussberechnung* finden Sie eine Zusammenfassung der Berechnungen. Diese sind im Falle einer nicht erreichten Versetzung oder, hauptsächlich ist dies in der Sekundarstufe I an Gesamtschulen interessant, für die diversen Abschlüsse am Ende der 10 in der SI aufschlussreich.
+
+Sie finden das Ergebnis unterhalb der Leistungsdaten im Bereich **Zeugnis/Abschluss** und dann in den Feldern **Vers. Vermerk** und **Abschluss**.
+
+![Zusammenfassung unterhalb der Leistungsdaten](./graphics/schild3_abschlussberechnung_ergebnisse.png "Die Ergenisse von Versetzungs- und Abschlussberechnungen werden unterhalb der Leistungsdaten anzeigt.")
+
+Für die Oberstufe hihngegen ist relevant: es wird hier der **schulische Teil der Fachhochschulreife (FHR)** mit angezeigt, der ab dem 2. Halbjahr der Q1 erstmalig erreicht werden kann und ansonsten ausgewiesen wird, wenn die Leistungen in zwei aufeinanderfolgenden Halbjahren den Kriterien entsprechen.
+
+An dieser Stelle können Sie auch ein gesetztes Datum für die **Zeugniskonferenz** und die **Zeugnisausgabe** einsehen beziehungsweise bemerken, dass diese Daten noch nicht zugewiesen wurden.
+
+Diese Einträge können Sie auch manuell überschreiben.
+
+![Versetzungsberechnungen per Gruppenprozess](./graphics/schild3_versetzungsberechnung_gruppenprozess.png "Lassen Sie diese Berechungen per Gruppenprozess für eine Schülerauswahl ausführen.")
+
+Diese Berechnungen lassen sich über **Gruppenprozesse ➔ Lernabschnitte, Versetzung** und dann über einen Klick auf `Versetzungs-/Abschluss-Berechnung` für die Auswahl im ganzen Schülercontainer durchführen lassen.
+
+Hierbei werden eventuell zuvor gemachte manuelle Änderungen wieder überschrieben.
+
+### Projektkurstitel
+
+Im **Katalog ➔ Kurse** können Sie auf die Kurse des passenden Jahrgangs filtern und dann als **Zeugnisbezeichnung** den Titel des Projektkurses vergeben.
+
+![Filtern Sie auf einen Projektkurs](./graphics/schild3_projektkurstitel_filter.png "Erzeugen Sie eine Zeugnisbezeichnung für Projektkurse. Filtern Sie erst auf die Kurse des Jahrgangs.")
+
+Nachdem Sie auf einen Jahrgang in einem Lernabschnitt gefiltert haben, können Sie eine **Zeugnisbezeichnung** für einen Projektkurs vergeben. Dieser Kurs ist häufig ein vorherigen Lernabschnitt, wenn Sie etwa zum Abitur auf die damalige Q1 filtern.
+
+![Projektkurs Zeugnisbezeichnung](./graphics/schild3_projektkurs_zeugnisbezeichnung.png "Erzeugen Sie die Zeugnisbezeichnung für Projektkurse.")
+
+Achten Sie darauf, dass die Zeugnisbezeichnungen in das vorgesehene Feld auf dem Zeugnisformular passt.
+
+Das **Thema des Projektkurses** setzen Sie individuell bei jedem Schüler und jeder Schülerin. 
+
+Über "Fahcbezogene Leistungs...." dann... 
+
 
 ## Teilleistungen
 
