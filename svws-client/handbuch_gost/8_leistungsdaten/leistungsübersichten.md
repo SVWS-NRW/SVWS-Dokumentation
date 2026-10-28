@@ -41,11 +41,11 @@ In MS Windows steht ein Standarddrucker zur Verfügung, mit dem Sie einen Report
 
 Im folgenden Screenshot wurde der Report *Klassenliste - Leistungsübersicht Jg. Q1 bis Q2 Beamerprojektion @KL.rtm* erzeugt. Hierbei wird jeweils eine Person auf einer A4-Seite quer mit Farbe und großer Schrift dargestellt. 
 
-![alt text](./graphics/schild3_reports_vorschau_konferenzübersicht.png "Die Vorschau der Q-Phasen-Beamervorlage aus den Standardreports.")
+![Vorschau: Beamervorlage aus den Standardreports](./graphics/schild3_reports_vorschau_konferenzübersicht.png "Die Vorschau der Q-Phasen-Beamervorlage aus den Standardreports.")
 
 Für Notenlisten oder um mehr als nur einer Person gleichzeitig auf einer Konferenz darzustellen, wählen Sie zum Beispiel den Report *Klassenliste - Leistungsübersicht Halbjahr Konferenzprotokoll ZN QN @KL.rtm*. 
 
-![alt text](./graphics/schild3_reports_vorschau_noteliste.png "Die Vorschau der Notenliste für die Q-Phase.")
+![Vorschau: Notenliste aus den Standardreports](./graphics/schild3_reports_vorschau_noteliste.png "Die Vorschau der Notenliste für die Q-Phase.")
 
 Hier wird die Version ohne Teilleistungen gezeigt.
 
@@ -57,4 +57,6 @@ Nutzen Sie in vergleichbarer Weise eigene Reports oder Reports, die Sie über an
 
 Zum Beispiel könnten Sie einen Report verwenden, auf dem alle eine Klasse/einen Jahrgang unterrichteten Fachlehrkräfte aufgeführt sind, um eine Anwesenheitsliste auszulegen.
 
-## SVWS-Client, SVWS-Konferenzmodul und SVWS-WeNoM
+## SVWS-Konferenzmodul
+
+Schülerlupe, sonst doof.

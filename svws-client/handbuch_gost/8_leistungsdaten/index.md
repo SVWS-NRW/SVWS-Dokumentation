@@ -34,6 +34,10 @@ Unter **Verwaltung ➔ Einstellungen ➔ Globale Einstellungen** können Sie im 
 Eventuell reichen Ihre Benutzerrechte nicht aus, in SchILD-NRW 3 globale Einstellungen zu verändern. Bitten Sie in diesem Falle Ihre SchILD-Administration, diese Einstellungen einmalig zu aktivieren.
 :::
 
+::: tip Die automatischen Berechnungen sind als Hilfestellung zu verstehen
+Alle Berechnungen in SchILD-NRW 3 und dem SVWS-Client für Abschlüsse, Versetzungen, Zulassungen, Erreichen des FHR und so weiter sind als Hilfestellungen zu verstehen. Die Verantwortung für die Korrektheit der Ergebnisse liegt immer bei den zuständigen Personen.
+:::
+
 ## Eintragungen über den SVWS-Client
 
 ### Eintragen individueller Noten
