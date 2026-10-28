@@ -34,7 +34,7 @@ Je nach persönlicher Vorliebe könenn die **Noten** auch als **Punkte** dargest
 Ebenso können hier die **Abiturfächer** direkt eingetragen werden. Üblicherweise werden diese jedoch über die Laufbahnplanung im SVWS-Client mit verwaltet und dann bein Übertragen einer Blockung automatisch gesetzt und somit nicht mehr über SchILD-NRW 3 verwaltet. Technisch lassen sich die Abiturfächer aber nach wie vor in SchILD-NRW 3 verändern.
 :::
 
-### Eintrag über Gruppenprozesse
+## Eintrag über Gruppenprozesse
 
 In der Praxis werden Noten oder Fehlstunden häufig nicht einzeln nachgetragen, sondern kursweise. Im folgenden Screenshot wurde die Jahrgangsstufe Q1 vorausgewählt, so dass die Gruppenprozesse über dieser Schülergruppe ausgeführt werden.
 
@@ -42,7 +42,7 @@ In der Praxis werden Noten oder Fehlstunden häufig nicht einzeln nachgetragen, 
 
 Im Bereich der **Noten/Zeugnisvorbereitungen** gibt es mehrere Gruppenprozesse, die für Sie interessant sein können:
 
-#### Noten, Mahnungen und Fehlstunden
+### Noten, Mahnungen und Fehlstunden
 
 Der Gruppenprozess **Noten, Mahnungen und Fehlstunden eingeben** ist ein effektiver Weg, um kursweise nachgelieferte Daten einzutragen. Dies kann notwendig sein, wenn eine Lehrkraft verspätet liefert oder es im Einzelfall technische oder personelle Probleme beim Erfassen der Noten gab.
 
@@ -60,7 +60,7 @@ Klicken Sie im Anschluss unten rechts auf
 
 `In Datenbank übernehmen` spielt Ihre Eingaben in die Datenbank ein, während ein Klick auf `Abbrechen` den Gruppenprozess ohne Datenübernahme beendet.
 
-#### Konferenz- und Zeugnisdatum setzen
+### Konferenz- und Zeugnisdatum setzen
 
 Sehr wichtig ist der Gruppenprozess **Konferenz- und Zeugnisdatum setzen**. Taucht beim Zeugnisdruck das Standarddatum *"1899"* auf, wurde vergessen, eines der Daten (Konferenzdatum, Zeugnisdatum, Abgangsdatum, ...) zu setzen. Nutzen Sie also diesen Gruppenprozess, um für jede Schülergruppe die passenden Konferenzdaten und Zeugnisdaten zu setzen.
 
@@ -70,7 +70,7 @@ Wählen Sie also Ihre gewünschte Schülermenge aus und starten Sie den Gruppenp
 
 Bestätigen Sie mit `OK`. 
 
-#### Weitere Gruppenprozesse
+### Weitere Gruppenprozesse
 
 Der Gruppenprozess **Fächer ohne Noten suchen** ist mitunter wertvoll, wenn Sie in jedem Lernabschnitt nur einmal Noten erfassen, also nicht etwa Quartalsnoten im Halbjahr aufnehmen. Wurden "zuvor" schon einmal Noten eingetragen, werden aktuell nicht-aktualisierte Noten nicht gefunden.
 
@@ -79,3 +79,7 @@ Der Gruppenprozess **Fächer ohne Lehrkraft suchen** kann ausprobiert werden und
 Erfassen Sie Fehlstunden als Gesamtzahl, können Sie diese über **Fehlstunden-Summen manuell eingeben** komfortabel in den **Allgemeinen Angaben** des Lernaschnitts bei den Schülermenge nachtragen.
 
 Ebenso bilden Sie die Summen aus den fachbezogenen eingetragenen Fehlstunden über **Fehlstunden-Summen autom. berechnen**. Dieser Gruppenprozess muss immer ausgeführt werden, wenn Fehlstundensummen fachbezogen nachgetragen wurden. Dies gilt auch, wenn noch Fehlstunden später "entschuldigt" wurden. Dass hier nicht aktualisiert wird, ist eine häufige Fehlerquelle.
+
+---
+
+Fahren Sie nun mit dem Artikel zu Bemerkungen und Projektkursen fort.
