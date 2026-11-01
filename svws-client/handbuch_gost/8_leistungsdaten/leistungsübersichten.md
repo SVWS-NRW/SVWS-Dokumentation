@@ -59,4 +59,6 @@ Zum Beispiel könnten Sie einen Report verwenden, auf dem alle eine Klasse/einen
 
 ## SVWS-Konferenzmodul
 
-Schülerlupe, sonst doof.
+Das SVWS-Konferenzmodul eignet sich bei der Verwendung der **Schülerlupe** für die Detailansicht auch für eine Konferenz der Sekundarstufe II, jedoch ist hier zu beachten dass die sek-II-spezifischen Daten wie die Summe der Kurse, Defizite und so weiter nicht angezeigt werden.
+
+An dieser Stelle sind die speziell entwickelten PDF-Übersichten daher eher zu empfehlen. 

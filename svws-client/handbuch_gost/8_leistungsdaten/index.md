@@ -142,6 +142,10 @@ Auch Ausschulungen von Abgängern und Abschlüssen lassen sich mit SchILD vorneh
 
 Konsultieren Sie hierzu den folgenden Artikel und die Artikel in der Dokumentation zu SchILD-NRW 3.
 
+### Für Wiederholer 
+
+Ebenso können in SchILD-NRW 3 bei Wiederholern schon im Reiter Schüler und dort in den Leistungsdaten die neue **Folgeklasse** eingetragen werden, daher kann ein Schüler von der Q1 in die Q1 gehen. Beim Schuljahreswechsel würde hier die Zurodnung automatisch vorgenommen werden.
+
 ---
 
 Sofern Sie die Noten eingesammelt und eingetragen haben, fahren Sie mit dem Artikel zu Bemerkungen und Projektkursen fort.
