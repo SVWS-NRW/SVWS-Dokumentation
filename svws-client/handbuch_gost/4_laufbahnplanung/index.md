@@ -1,7 +1,5 @@
 # Laufbahnplanung
 
-# IV. Laufbahnplanung
-
 In der Laufbahnplanung werden die Schülerinnen und Schüler durch Jahrgangskoordinatoren beraten und durch den Wahlprozess der Oberstufenlaufbahn begleitet. Oftmals werden hier auch Wahlalternativen besprochen.
 
 Typische Alternativen sind die Wahl der Leistungskurse, der Abiturfächer, eventuelle spätere Abwwahlen von "dem einen Fach" oder "dem anderen Fach" oder die mündliche oder schriftliche Belegung von Grundkursen, woran auch die Wahl möglicher Abiturfächer hängt.

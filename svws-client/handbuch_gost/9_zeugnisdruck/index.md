@@ -1,4 +1,4 @@
-# VIII - Zeugnisdruck
+# Zeugnisdruck
 
 Zeugnisse werden als Reports gedruckt, wie dies auch schon bei Kurslisten und Notenlisten gemacht wurde. Technisch kommen hier kein Neuerungen hinzu, lediglich muss sichergestellt werden, dass alle notwendigen Daten für den Zeugnisdruck auch erfasst sind.
 

@@ -1,4 +1,4 @@
-# VI. Listendruck und Reporting
+# Listendruck und Reporting
 
 In Laufe eines Abiturjahrgangs müssen viele Listen und andere Dokumente erzeugt werden. Dies beginnt bei Kurslisten, geht über Wahlbögen, die ersten Zeugnisse in der EF, Leistungsübersichten der Q-Phase, Drucke zum zentralen Abitur-Ausschuss und Abiturzeugnissen, wobei diese Aufstellung nicht erschöpfend ist.
 

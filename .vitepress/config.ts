@@ -391,6 +391,39 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Zeugnisvorbereitung', link: '/svws-client/anleitungen/anleitungen_zeugnisse/' },
 							] },
+							{ text: 'Handbuch GOSt', link: '/svws-client/handbuch_gost/', collapsed: true, items: [
+								{ text: 'Inhaltsübersicht', link: '/svws-client/handbuch_gost/uebersicht.md' },
+								{ text: 'Allgemeine Vorbereitungen', link: '/svws-client/handbuch_gost/1_2_vorbereitungen_allgemein/', collapsed: true, items: [
+									{ text: 'Konfiguration der Fächer', link: '/svws-client/handbuch_gost/1_2_vorbereitungen_allgemein/voreinstellungen_faecher.md' },
+									{ text: 'Konfiguration der Jahrgänge', link: '/svws-client/handbuch_gost/1_2_vorbereitungen_allgemein/voreinstellungen_jahrgang.md' },
+								] },
+								{ text: 'Einen Abiturjahrgang planen', link: '/svws-client/handbuch_gost/3_vorbereitungen_jahrgang/' },
+								{ text: 'Laufbahnplanung', link: '/svws-client/handbuch_gost/4_laufbahnplanung/', collapsed: true, items: [
+									{ text: '[Handbuch WebLuPO]' },
+							 	] },
+								{ text: 'Blocken', link: '/svws-client/handbuch_gost/5_blocken/', collapsed: true, items: [
+									{ text: '(Blockungsartikel SVWS-Client)', link: '/svws-client/apps/gost/kursplanung/' },
+									{ text: '(Blockungsartikel SVWS-Client Bsps.)', link: '/svws-client/apps/gost/kursplanung/beispiele_weiteres.md' },
+							 	] },
+								{ text: 'Listendruck für Noten/Konferenzen', link: '/svws-client/handbuch_gost/6_listendruck_reporting/', collapsed: true, items: [
+									{ text: 'Listendruck über SchILD-NRW 3', link: '/svws-client/handbuch_gost/6_listendruck_reporting/s3_reporting.md' },
+							 	] },
+								{ text: 'Klausurplanung', link: '/svws-client/handbuch_gost/7_klausurplanung/', collapsed: true, items: [
+									{ text: '(Klausurplanung SVWS-Client)', link: '/svws-client/apps/gost/klausurplanung/' },
+									{ text: '(Klausurplanung SVWS-Client GkL)', link: '/svws-client/apps/gost/klausurplanung/gkL/' },
+							 	] },
+								{ text: 'Leistungsdaten verwalten', link: '/svws-client/handbuch_gost/8_leistungsdaten/', collapsed: true, items: [
+									{ text: 'Leistungsdaten mit SchILD-NRW 3', link: '/svws-client/handbuch_gost/8_leistungsdaten/schild3.md' },
+									{ text: 'Bemerkungen und Projektkurse', link: '/svws-client/handbuch_gost/8_leistungsdaten/bemerkungen_projektkurs.md' },
+									{ text: '[Teilleistungen]' },
+									{ text: 'FHR prüfen und berechnen', link: '/svws-client/handbuch_gost/8_leistungsdaten/fhr_q-phase.md' },
+									{ text: 'Übersichten drucken', link: '/svws-client/handbuch_gost/8_leistungsdaten/leistungsübersichten.md' },
+							 	] },
+								{ text: 'Zeugnisdruck', link: '/svws-client/handbuch_gost/9_zeugnisdruck/'},
+								{ text: '[Abitur]' },
+								{ text: '[Nachbereitung]' },
+							] },
+
 							//{ text: 'Weiteres', link: '/svws-client/weiteres/', collapsed: false, items: [
 							//	{ text: 'Adressbücher', link: '/svws-client/kommunikationsschnittstelle/adressbuecher/' },
 							//	{ text: 'Kalender', link: '/svws-client/kommunikationsschnittstelle/kalender/' },

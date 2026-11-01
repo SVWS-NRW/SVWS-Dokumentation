@@ -84,4 +84,4 @@ Mit Teilleistungen können Sie zum Beispiel SoMi-Noten oder die Ergebnisse von K
 
 Befinden Sie sich in der Q-Phase, prüfen Sie, ob der schulische Teil der Fachhochschulreife erreicht wurde.
 
-An diese Arbeitsprozesse folgt im Anschluss das Erzeugen von Leistungsübersichten zur Beratung und für eine Konferenz. Sie können Konferenzen ebenfalls mit dem SVWS-Konferenzmodul durchführen.
+An diese Arbeitsprozesse folgt im Anschluss das Erzeugen von Leistungsübersichten zur Beratung und für eine Konferenz.

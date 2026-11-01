@@ -1,4 +1,4 @@
-# IX - Abitur
+# Abitur
 
 ## Abitur mit SchILD NRW 3
 

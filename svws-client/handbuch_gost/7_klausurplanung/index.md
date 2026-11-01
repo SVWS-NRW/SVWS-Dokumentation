@@ -1,9 +1,5 @@
 # Klausurplanung
 
-::: caution Noch unklar
-TOdo! Die Klausurplanung ist noch sehr unklar!
-:::
-
 Im SVWS-Client ist die Funktionalität enthalten, einen Klausurplan berechnen zu lassen.
 
 Nach den Kurswahlen und der Wahl von Schriftlichkeiten von Kursen - und Leistungskursen oder Abiturfächern - und dem einem Übertragen einer in die Leistungsdaten der Schülerinnen und Schülerinnen liegen in der Datenbank alle Informationen vor, einen Klausurplan zu rechnen.
