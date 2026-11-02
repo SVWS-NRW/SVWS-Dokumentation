@@ -18,7 +18,7 @@ Zuerst werden die **Individualdaten** eines Schülers erfasst. Dies sind Name, A
 
 Auch die **Erziehungsberechtigten** anzulegen ist natürlich relevant, für die Laufbahnerfassung sind aber die eingekreisten Reiter von großem Interesse.
 
-Schlagen Sie bitte den Reiter im Detail im Wiki von SchILD-NRW 3 nach. Dieses erreichen Sie über die [Webseite für Schulverwaltungssoftware des MSB](https://svws.nrw.de). Hier findet sich eine schnelle Übersicht:
+Schlagen Sie bitte den Reiter im Detail in der [Dokumentation von SchILD-NRW 3](https://schild3.svws-nrw.de/) nach. Hier findet sich eine schnelle Übersicht:
 
 * Im Reiter **Schüler ➜ Schulbesuch** erfassen Sie die **zuvor besuchte Schule** mit den bekannten Daten zur dortigen Entlassung.
 * Sofern bekannt füllen Sie ebenfalls den Bereich **Alle zuvor besuchten Schulen** aus, hier werden die bekannten Schule in einer Liste aufgeführt. Bei Schulen aus anderen Bundesländern oder aus dem Ausland können Sie die hierzu vorgesehenen Schulnummern verwenden und die Schulen entweder konkret im **Katalog** anlegen oder es einfach zum Beispiel bei *Schule aus Bayern* belassen.

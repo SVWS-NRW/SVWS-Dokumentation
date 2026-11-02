@@ -4,7 +4,7 @@ In Laufe eines Abiturjahrgangs müssen viele Listen und andere Dokumente erzeugt
 
 Dieses Kapitel führt durch die unterschiedlichen Druckmöglichkeiten und bespricht das Reporting in SchILD-NRW 3.
 
-Weiterführende Artikel zum Reporting von SchILD-NRW 3, etwa, wie Reports verändert und selbst erstellt werden können, finden Sie im Wiki zu SchILD-NRW 3. Ebenso finden Sie dort sehr ausführliche Anleitungen, wie Zeugnisreports zu verwenden und einzustellen sind. Dieses Handbuch wird aber auch hier einen Überblick verschaffen.
+Weiterführende Artikel zum Reporting von SchILD-NRW 3, etwa, wie Reports verändert und selbst erstellt werden können, finden Sie in der Dokumentation zu SchILD-NRW 3. Ebenso finden Sie dort sehr ausführliche Anleitungen, wie Zeugnisreports zu verwenden und einzustellen sind. Dieses Handbuch wird aber auch hier einen Überblick verschaffen.
 
 Dieser Artikel deckt nicht ab, dass auch externe Programme wie etwa Stundenplanungsprogramme verwendet werden können, um Kurslisten und vergleichbares zu drucken. Konsultieren Sie hierzu den Support und die Dokumentation von diesen Programmen.
 

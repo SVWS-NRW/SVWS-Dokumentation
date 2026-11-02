@@ -20,7 +20,7 @@ const datum = (t: number) => {
 
 ## SVWS-Server, SVWS-Client und weitere Projekte
 
-Auf dieser Webseite finden Sie Dokumentationen zum **SVWS-Client** und zum **SVWS-Server** sowie diverser **SVWS-Tools**. Die Dokumentation zur Installation und Nutzung der Software **SchILD-NRW 3** finden Sie im [Wiki von SchILD-NRW-3](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=SchILD-NRW_3)
+Auf dieser Webseite finden Sie Dokumentationen zum **SVWS-Client** und zum **SVWS-Server** sowie diverser **SVWS-Tools**. Die Dokumentation zur Installation und Nutzung der Software **SchILD-NRW 3** finden Sie in der [Dokumentation SchILD-NRW-3](https://schild3.svws-nrw.de/).
 
 
 ![Übersicht der SVWS-Server-Umgebung mit Client-Programmen](./graphics/SVWS-Server-LandingPage.png "Zusammenspiel des SVWS-Servers mit unterschiedlichen Programmen.")

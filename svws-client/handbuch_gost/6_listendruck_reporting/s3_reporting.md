@@ -46,8 +46,8 @@ Richten Sie ebenso Ordner für die *EF*, *Q-Phase* und *Abitur* ein, in denen Si
 
 Beachten Sie, dass manche Reports als *gepackte .zip-Datei* heruntergeladen werden. Diese müssen Sie zuerst entpacken. Nehmen Sie zur Kenntnis, dass MS Windows per Standard Dateiendungen ausblendet, Sie sehen mitunter also nicht, ob Sie eine .zip oder schon die entpackte .rtm-Datei im Ordner liegen haben. In zip-Archieven können auch viele Dateien zusammen gepackt sein.
 
-:::tip Nutzen Sie das exzellente Wiki!
-Nutzen Sie hierzu bitte das Wiki von SchILD-NRW 3, in dem das Installieren von Reports ausführlich erläutert ist.
+:::tip Nutzen Sie die Dokumenation!
+Nutzen Sie hierzu bitte die [Dokumentation von SchILD-NRW 3](https://schild3.svws-nrw.de/), in der das Installieren von Reports ausführlich erläutert ist.
 :::
 
 ## Bezugsquellen von Reports
@@ -66,4 +66,4 @@ Nutzen Sie auch die Möglichkeit, Reports als pdf zu erstellen oder automatisch 
 
 ---
 
-Weitere Informationen hierzu finden Sie im Wiki zu SchILD-NRW 3.
+Weitere Informationen hierzu finden Sie in der [Dokumentation zu SchILD-NRW 3](https://schild3.svws-nrw.de/).

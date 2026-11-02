@@ -34,7 +34,7 @@ Um das Handbuch zu verwenden, orientieren Sie sich links am Inhaltsverzeichnis u
 
 Weiteren Unterstützung gibt es im
 + **Forum für Schulverwaltungssoftware zum Mitlesen und Fragenstellen**,
-+ im **Wiki zu SchILD-NRW 3** und natürlich 
++ in der [**Dokumentation zu SchILD-NRW 3**](https://schild3.svws-nrw.de/) und natürlich 
 + **in dieser Dokumentation**.
 + Nehmen Sie die exzellenten **ADV-Fortbildungsangebote Ihrer Bezirksregierung** zur Kenntnis (ADV steht für Allgemeine Datenverarbeitung).
 + Weiterhin können Sie immer die **Fachberatung Ihrer Schule** kontaktieren.

@@ -69,7 +69,7 @@ Das Schema kann im Anschluss mit dem SVWS-Client ohne weitere Arbeitsschritte au
 
 Soll die Datenbank mit SchILD-NRW 3 verwendet werden, ist im Anschluss eine Verbindungsdatei - eine .con-Datei - im passenden Unterordner des SVWS-Arbeitsverzeichnisses zur erzeugen.
 
-Konsultieren Sie hierfür die [Anleitung im Wiki von SchILD-NRW 3.](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Schild-NRW-Daten_in_eine_andere_Datenbank_%C3%BCbertragen_(migrieren)_(Tutorial))
+Konsultieren Sie hierfür die [Dokumentations von SchILD-NRW 3](https://schild3.svws-nrw.de/). Gehen Siein den Bereich zur *Administration*, dort finden Sie die Artikel zu Installation und Migration.
 
 Im Anschluss kann das Schema sowohl mit dem SVWS-Client als auch mit SchILD-NRW 3 verwendet werden.
 
