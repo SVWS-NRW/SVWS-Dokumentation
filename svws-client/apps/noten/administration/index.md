@@ -1,4 +1,4 @@
-# Noten Administration
+# Noteneingabe konfigurieren
 
 Über den Bereich **Administration** können die verbundenen SVWS-WeNoM-Server sowie des **Lokale Notenmodul des SVWS-Clients** konfiguriert werden.
 

@@ -4,6 +4,8 @@ Diese ➜ Readme-Datei ist nicht Teil der veröffentlichten Doku-Seite, die im N
 
 Im oberen Teil wird beschrieben, wie man sich eine Entwicklungsumgebung zum lokalen Testen der Dokumentation einrichten kann, weiter unten gibt es Vorgaben zur Erstellung von Artikeln, die in die Doku aufgenommen werden sollen.
 
+Diese Dokumentation steht unter [CC0](https://creativecommons.org/publicdomain/zero/1.0/) der Creative Commons.
+
 ## Einrichtung einer Entwicklungsumgebung
 
 Grundsätzlich ist es möglich, diese Doku mit einfachsten Hilfsmitteln oder auch direkt auf GitHub zu bearbeiten. Das Problem dabei ist jedoch, dass man nicht die Ausgabe prüfen kann und auch nicht auf mögliche Fehler hingewiesen wird. Für das Beheben einfacher Tippfehler ist keine Entwicklungsumgebung notwendig! Regelmäßiges Arbeiten an der Doku sollte schon aus praktischen Gründen mit einer Enwicklungsumgebung erfolgen.

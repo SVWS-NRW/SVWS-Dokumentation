@@ -342,8 +342,8 @@ export default defineConfig(({ mode }) => {
 								] },
 								{ text: 'Kurse', link: '/svws-client/apps/kurse/' },
 								{ text: 'Noten', link: '/svws-client/apps/noten/', collapsed: true, items: [
-									{ text: 'Administration', link: '/svws-client/apps/noten/administration' },
-									{ text: 'Noteneingabe', link: '/svws-client/apps/noten/noteneingabe' },
+									{ text: 'Noteneingabe konfigurieren', link: '/svws-client/apps/noten/administration' },
+									{ text: 'Noteneingabe durchführen', link: '/svws-client/apps/noten/noteneingabe' },
 								] },
 								{ text: 'Oberstufe', link: '/svws-client/apps/gost/', collapsed: true, items: [
 									{ text: 'Fächer', link: '/svws-client/apps/gost/faecher/' },

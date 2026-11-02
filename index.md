@@ -60,4 +60,6 @@ Telefon: +49 211 5867 40
 
 https://www.schulministerium.nrw/
 
+---
+
 Diese Dokumentation steht unter [CC0](https://creativecommons.org/publicdomain/zero/1.0/) der Creative Commons.
