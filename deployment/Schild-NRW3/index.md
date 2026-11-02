@@ -1,5 +1,7 @@
 # SchILD-NRW 3
 
+Konsultieren Sie zu ausführlichen Installationsartikeln bitte die Dokumentation zu SchILD-NRW-3: https://schild3.svws-nrw.de/
+
 ## Übersicht
 
 Neben dem SVWS-Client, der per Browser aufgerufen wird, kann das Windowsprogamm **SchILD-NRW 3** genutzt werden.
@@ -54,6 +56,12 @@ Achten Sie auch unter Windows auf die korrekte Groß- und Kleinschreibung des Sc
 :::
 
 [TODO] Screenshot Einrichtung Schild NRW
+
+## Änderungen des SVWS-Arbeitsverzeichnisses
+
+Das SVWS-Arbeitsverzeichnis, in dem die Daten der Nutzer liegen, zum Beispiel die Reports oder die Export- und Importdateien. Hier haben Nutzer für die tägliche Arbeit Zugriff. Soll dieses Verzeichnis nach der Installation verändert werden, lässt sich dies über die *Admin.ini* im SchILD-NRW-3-Installationsverzeichnis mit dem Eintrag `GroupDir=D:\SVWS-Arbeitsverzeichnis` umstellen.
+
+Sie können auch *SchILD-NRW 3 mit einem Parameter starten*, um zur Laufzeit ein zu verwendendes SVWS-Arbeitsverzeichnis zu setzen. Hierbei wird die Admin.ini ignoriert. Starten Sie zum Beispiel `SchILD3.exe -GROUPDIR:S:\Anderes-SVWS-Arbeitsverzeichnis` über eine Verknüpfung. Nutzen Sie dies, um unterschiedliche Schulen zwar eine einzige SchILD-3-Installation verwerden zu lassen, die anschließend alle ein eigenes SVWS-Arbeitsverzeichnis verwenden.
 
 ## Beispiel 
 
