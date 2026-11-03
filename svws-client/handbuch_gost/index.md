@@ -7,7 +7,9 @@ Weiterhin gibt unter vielel Bezeichnungen es einen Jahrgang betreuende "Jahrgang
 :::tip Keine Panik
 Ob sich jemand erstmals einarbeitet, sich im neuen SVWS-Client orientiert oder etwas noch einmal nachschlagen möchte: Hier ist das Handbuch!
 
-Dieses Handbuch wurde mit dem Stand des Releases Juli 2026 vom SVWS-Client und SchILD-NRW 3 erstellt.
+Dieses Handbuch wurde mit dem Stand des Releases Juli/Oktober 2026 vom SVWS-Client und SchILD-NRW 3 erstellt.
+
+Alle Screenshots werden mit einem Jahrgang der "alten" APO GOSt erzeugt. Sobald diese Jahrgänge auslaufen, werden die Screenshots und Ausführungen auf die APO GOSt (2027) umgestellt.
 :::
 
 ## Verwendete Programme
@@ -74,3 +76,7 @@ Darüber hinaus wird die Oberstufenkoordination auch von **Jahrgangskoordinatore
 Wichtig ist an dieser Stelle, dass Ihnen klar ist, welche Rolle(n) Sie haben und wann und wo Sie andere Personen beauftragen, die Grundlagen für Ihre Arbeit zu schaffen. Zum Beispiel: Sind Sie persönlich verantwortlich, den SVWS-WebNotenManager aufzusetzen, für das Oberstufen-Noteneinsammeln vorzubereiten und dann die Noten einzusammeln? Oder fallen diese Aufgaben bei Ihnen in den Bereich der IT beziehungsweise an einen SVWS-Beauftragten (m/w/d)?
 
 Stellen Sie für sich und andere Rollenklarheit her, mit dem Ziel, effektiv und ohne vermeidbare Hektik durch das Schuljahr zu kommen.
+
+## Der Rechtsrahmen
+
+Bei dieser Anleitung handelt es sich um eine technische Hilfe und orientiert exemplarisch. An vielen Stellen kommt es auf die Details der relevanten Rechtstexte wie das SchulG, die geltende APO GOSt, Verwaltungsverfügungen und Kommentare zu den Rechtstexten, Absprachen mit der zuständigen Schulaufsicht oder Inhalte von Implementationsveranstalungen (etc.) an. Dieser Rahmen ist von diesem Handbuch nicht rechtsverbindlich und erschöpfend abzudecken.
