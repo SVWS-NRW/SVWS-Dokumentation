@@ -19,42 +19,60 @@ Unter `/app/start` gibt es eine Startseite, die alle installierten Tools verlink
 
 ---
 
-## Kurzanleitung
+## Installationsanleitung
 
-1. **Paket herunterladen:** [svws-tools-1.5.1.zip](https://github.com/SVWS-NRW/SVWS-Tools/releases/download/v1.5.1/svws-tools-1.5.1.zip) von [GitHub SVWS-Tools](https://github.com/SVWS-NRW/SVWS-Tools/releases). Prüfen Sie dort, ob es eine neuere Version gibt.
-2. **Entpacken**, z. B.
-   - unter Windows nach `C:/SVWS-Arbeitsverzeichnis/tools`
+### Paket herunterladen
+
+[svws-tools-1.5.1.zip](https://github.com/SVWS-NRW/SVWS-Tools/releases/download/v1.5.1/svws-tools-1.5.1.zip) von [GitHub SVWS-Tools](https://github.com/SVWS-NRW/SVWS-Tools/releases). Prüfen Sie dort, ob es eine neuere Version gibt.
+
+### Entpacken
+
+   - unter Windows nach `C:\ProgramData\SVWS-Server\apps`
    - unter Linux nach `/opt/app/svws/apps`
-3. **`svwsconfig.json` anpassen** (siehe [unten](#svwsconfig-json-anpassen)):
-   - Windows: `"AppsPath": "C:/SVWS-Arbeitsverzeichnis/tools"`
-   - Linux: `"AppsPath": "/opt/app/svws/apps"`
-4. **SVWS-Server neu starten**, unter Linux z. B. mit `systemctl restart svws`.
-5. **Testen:** `https://Mein_SVWS-Server:8443/app/start` aufrufen.
 
--> [Installation unter Docker](#installation-unter-docker).
+### `svwsconfig.json` anpassen
 
-
-### svwsconfig.json anpassen
 
 Alle Einstellungen der Datei `svwsconfig.json` sind unter [Einrichtung](../Einrichtung/) ausführlich beschrieben.
 
 Für die SVWS-Tools brauchen Sie nur den Eintrag `"AppsPath"`. Er gibt das Verzeichnis an, in dem die Tools liegen:
 
+Unter Linux: 
+
 ```json
 "AppsPath": "/opt/app/svws/apps/"
 ```
 
+Unter Windows: 
+```json
+"AppsPath": "C:\\ProgramData\\SVWS-Server/apps"
+```
+
 ::: warning Pfade unter Windows
-Verwenden Sie in der JSON-Datei Schrägstriche (`C:/...`) oder doppelte Backslashes (`C:\\...`). Ein einfacher Backslash ist in JSON ungültig.
+Verwenden Sie in der JSON-Datei doppelte Backslashes (`C:\\...`).  
+Ein einfacher Backslash ist in JSON ungültig.
+:::
+
+### Aufrufen der Tools
+
+**SVWS-Server neu starten**
+
+Unter Linux:   
+z. B. mit `systemctl restart svws`.
+
+Unter Windows:   
+z.B. unter Task-Manager -> Dienste -> Dienstname: svws_server_service -> rechte Maustaste & neu starten
+
+**Testen** 
+
+::: warning Startseite der Tools:
+`https://Mein_SVWS-Server:8443/app/start`
 :::
 
 
-### Das Tool-Paket konfigurieren
+## Startseite anpassen
 
-
-#### Startseite anpassen
-
-Die Startseite unter `/app/start` verlinkt alle installierten Tools. Sie können dort auch weitere Ziele verlinken, z. B.:
+Die Startseite unter `https://Mein_SVWS-Server:8443/app/start` verlinkt alle installierten Tools. Sie können dort auch weitere Ziele verlinken, z. B.:
 
 - SVWS-Client
 - SVWS-Adminclient
@@ -70,9 +88,10 @@ Im entpackten Paket liegen zwei Dateien, mit denen Sie die Installation anpassen
 
 Prüfen Sie beide Dateien und passen Sie sie bei Bedarf an.
 
-#### Tools ergänzen
 
 -> [Beispiel: weitere Seiten einfügen](#ein-einzelnes-tool-manuell-einrichten)
+
+---
 
 ## Installation unter Docker
 
