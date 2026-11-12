@@ -1,113 +1,248 @@
 # SVWS-Tools
 
-Unter den SVWS-Server können SVWS-Tools eingebunden werden, die insbesondere bei einfachen Tools direkt ein Einbinden unter dem Werbserver im SVWS-Server eingebunden werden.
+Der SVWS-Server kann neben dem SVWS-Client weitere Web-Anwendungen ausliefern, die **SVWS-Tools**. Das sind einfache HTML/TypeScript-Anwendungen (z. B. SVWS-Konferenz, SVWS-Prognos oder SVWS-WebLupo). Sie werden direkt über den Webserver des SVWS-Servers bereitgestellt, also ohne eigenen Webserver und unter derselben Adresse wie der SVWS-Server.
 
-## svwsconfig.json anpassen
+Nach der Einrichtung sind die Tools so erreichbar:
 
-Die Einstellungen in der Datei svwsconfig.json ist ausführlich unter [Einrichtung](../Einrichtung/index.md) beschrieben. 
+```
+https://Mein_SVWS-Server:8443/app/<toolname>
+```
 
-Geben Sie zum Einbinden der SVWS-Tools im Eintrag `"AppsPath"` den entsprechenden Pfad an. Hier ein Beispiel:
+Unter `/app/start` gibt es eine Startseite, die alle installierten Tools verlinkt.
+
+::: tip Kurz gesagt
+1. Paket herunterladen
+2. In ein Apps-Verzeichnis entpacken
+3. Das Verzeichnis in der `svwsconfig.json` als `"AppsPath"` eintragen
+4. SVWS-Server neu starten
+:::
+
+---
+
+## Kurzanleitung
+
+1. **Paket herunterladen:** [svws-tools-1.5.1.zip](https://github.com/SVWS-NRW/SVWS-Tools/releases/download/v1.5.1/svws-tools-1.5.1.zip) von [GitHub SVWS-Tools](https://github.com/SVWS-NRW/SVWS-Tools/releases). Prüfen Sie dort, ob es eine neuere Version gibt.
+2. **Entpacken**, z. B.
+   - unter Windows nach `C:/SVWS-Arbeitsverzeichnis/tools`
+   - unter Linux nach `/opt/app/svws/apps`
+3. **`svwsconfig.json` anpassen** (siehe [unten](#svwsconfig-json-anpassen)):
+   - Windows: `"AppsPath": "C:/SVWS-Arbeitsverzeichnis/tools"`
+   - Linux: `"AppsPath": "/opt/app/svws/apps"`
+4. **SVWS-Server neu starten**, unter Linux z. B. mit `systemctl restart svws`.
+5. **Testen:** `https://Mein_SVWS-Server:8443/app/start` aufrufen.
+
+-> [Installation unter Docker](#installation-unter-docker).
+
+
+### svwsconfig.json anpassen
+
+Alle Einstellungen der Datei `svwsconfig.json` sind unter [Einrichtung](../Einrichtung/) ausführlich beschrieben.
+
+Für die SVWS-Tools brauchen Sie nur den Eintrag `"AppsPath"`. Er gibt das Verzeichnis an, in dem die Tools liegen:
 
 ```json
-"Apps/Path": "/opt/app/svws/apps/"
+"AppsPath": "/opt/app/svws/apps/"
 ```
 
-## SVWS-Tools Einrichten
+::: warning Pfade unter Windows
+Verwenden Sie in der JSON-Datei Schrägstriche (`C:/...`) oder doppelte Backslashes (`C:\\...`). Ein einfacher Backslash ist in JSON ungültig.
+:::
 
-### Beispiel: SVWS-Konferenz
 
-Legen Sie den Ordner 'konferenz' unter dem im Beispiel angegebenen Verzeichnis `/opt/app/svws/apps/` an: 
+### Das Tool-Paket konfigurieren
 
-![alt text](./graphics/image-1.png)
 
-Download des Pakets [SVWS-Konferenz](https://svws.nrw.de/svws-tools/svws-konferenz) und den Inhalt entpacken in den Ordner, so dass direkt auf die index.html zugegriffen werden kann:
+#### Startseite anpassen
 
-![alt text](./graphics/image-2.png)
+Die Startseite unter `/app/start` verlinkt alle installierten Tools. Sie können dort auch weitere Ziele verlinken, z. B.:
 
-### Neustart und Test
+- SVWS-Client
+- SVWS-Adminclient
+- SVWS-SwaggerUI
+- externe Anwendungen wie SVWS-WeNoM
 
-Starten Sie den SVWS-Server neu:  `systemctl restart svws` unter Linux
+Im entpackten Paket liegen zwei Dateien, mit denen Sie die Installation anpassen können:
 
-Rufen Sie die folgende URL zum testen auf bei einem SVWS-Server, der unter Port 8443 läuft: 
+| Datei | Zweck |
+|---|---|
+| `versions.json` | Versionsangaben der enthaltenen Tools |
+| `start/sichtbarkeit.example.js` | Legt fest, welche Tools die Startseite anzeigt (Vorlage) Bei Verwendung bitte im Ordner eine Kopie `sichtbarkeit.js` angelen und hier die Einstellungen angeben. |
+
+Prüfen Sie beide Dateien und passen Sie sie bei Bedarf an.
+
+#### Tools ergänzen
+
+-> [Beispiel: weitere Seiten einfügen](#ein-einzelnes-tool-manuell-einrichten)
+
+## Installation unter Docker
+
+::: info Stand der Planung
+Mit Version 1.6 sollen die SVWS-Tools zusammen mit dem SVWS-Server ausgerollt werden. Wie das unter Docker genau umgesetzt wird, ist noch in Planung. Bis dahin können Sie die Tools wie hier beschrieben selbst einbinden.
+:::
+
+Die folgenden Schritte gehen von einer Installation mit Docker Compose aus. Sie arbeiten im Verzeichnis mit der `docker-compose.yml`.
+
+### 1. Container stoppen
 
 ```bash
-https://Mein_SVWS-Server:8443/app/konferenz
+docker compose down
 ```
 
-![KonferenzTool](./graphics/KonferenzTool.png)
+### 2. Volume für die Apps ergänzen
 
-## Fehlerquellen
+```bash
+nano docker-compose.yml
+```
 
-### Schreibfehler
+Ergänzen Sie beim Service `svws-server` unter `volumes:` die zweite Zeile für das App-Verzeichnis:
 
-Achten Sie bitte auf das den Ausruf des Browsers auf `http://.../app/...`, also ohne "s", im Gegensatz dazu ist in der svwsconfig.json die Variable als `"Apps-Path"`. Das ist orthographisch richtig, birgt aber die Möglichkeit Menschlicher Fehleingaben.
+```yaml
+    volumes:
+      - ./volume/svws:/opt/app/svws/conf
+      - ./volume/apps:/opt/app/svws/apps
+```
 
-### Ordnerstruktur
+::: warning Wichtig
+Der Apps-Ordner gehört nach `volume/apps`, **nicht** nach `volume/svws/apps`. Das Verzeichnis `volume/svws` ist bereits als `conf` eingebunden.
+:::
 
-Unterhalb des `"Apps-Path"` erwartet der SVWS-Server für jede App genau ein namengebendes Verzeichnis in dem die Datei `index.html` aufgerufen wird. 
+### 3. Apps-Ordner anlegen und SVWS-Tools herunterladen
 
-### Restart
+```bash
+mkdir volume/apps
+cd volume/apps
+wget https://github.com/SVWS-NRW/SVWS-Tools/releases/download/v1.5.1/svws-tools-1.5.1.zip
+unzip svws-tools-1.5.1.zip
+rm svws-tools-1.5.1.zip   # optional
+```
 
- Der SVWS-Server muss einerseits nach dem editieren des svwsjson.config und andererseits auch nach jedem Anlegen eines neuen Tools neu gestartet werden, da auc die Ordnerstruktur unter dem AppsPath nur beim Start eingelesen wird. 
+### 4. Tools konfigurieren
+
+```bash
+nano versions.json
+nano start/sichtbarkeit.example.js
+```
+
+Siehe [Das Tool-Paket konfigurieren](#das-tool-paket-konfigurieren).
+
+### 5. SVWS-Konfiguration anpassen
+
+```bash
+cd ../..
+nano volume/svws/svwsconfig.json
+```
+
+Tragen Sie den Pfad **innerhalb des Containers** ein:
+
+```json
+"AppsPath": "/opt/app/svws/apps"
+```
+
+### 6. Container wieder starten
+
+```bash
+docker compose up -d
+```
+
+Die Logs sehen Sie mit `docker compose logs -f svws-server`.
+
+### 7. Aufrufen
+
+Öffnen Sie im Browser `https://<Server-IP>:8443/app/start`. Die IP-Adresse des Servers finden Sie mit `ip a`.
 
 
-## Weitere Beispiele
 
-Diese Technik bietet weiteren, einfachen html/typeScript basierten Projekten die Möglichkeit in die bestehende Infrastrukur des SVWS-Servers integriert zu werden. Hier einige Beispiele: 
+## Ein einzelnes Tool manuell einrichten
 
-### lokale Schulungsunterlagen
+Sie können statt des Gesamtpakets auch einzelne Tools einbinden bzw. ergänzen, hier am Beispiel **SVWS-Konferenz**:
 
-![lokale Schulungsunterlagen](./graphics/lokale_Schulung.png)
+1. Legen Sie unterhalb des `AppsPath` den Ordner `konferenz` an, z. B. `/opt/app/svws/apps/konferenz`.
+2. Laden Sie das Paket [SVWS-Konferenz](https://svws.nrw.de/svws-tools/svws-konferenz) herunter und entpacken Sie es so in diesen Ordner, dass die `index.html` direkt darin liegt:
+   ```
+   /opt/app/svws/apps/konferenz/index.html
+   ```
+3. Starten Sie den SVWS-Server neu: `systemctl restart svws`
+4. Testen Sie den Aufruf:
+   ```
+   https://Mein_SVWS-Server:8443/app/konferenz
+   ```
 
-Am Beispiel der Schulungsunterlagen kann das grundsätzliche Vorgehen nachvollzogen werden und z.B. auch für die für die lokale Einbindung des SVWS-Dokumentation oder ähnlicher Vite-Press Projekte herangezogen werden.
+Dies kann mit jeder beliebigen html Seite gemacht werden.
 
-```bash 
+## Beispiel: Eigene VitePress-Projekte einbinden
+
+Auf dieselbe Weise lassen sich weitere einfache HTML/TypeScript-Projekte in den SVWS-Server einbinden. Das Vorgehen wird hier an den **Schulungsunterlagen** gezeigt. Es funktioniert genauso für eine lokale SVWS-Dokumentation oder andere VitePress-Projekte.
+
+**1. Projekt holen und Abhängigkeiten installieren**
+
+```bash
 git clone https://github.com/SVWS-NRW/Schulungsunterlagen
-cd Schulunggsunterlagen 
-npm i 
+cd Schulungsunterlagen
+npm i
 ```
 
-In der Datei `.vitepress/config.ts` den Pfad anpassen: Wenn der Aufruf in der URL `httpsd://Mein_SVWS-Server/app/schulung `  sein soll, so muss der Pfad entsprechend verändert werden: 
+**2. Basispfad anpassen**
 
-`base: env.BASE === undefined ? '/Schulungsunterlagen/' : env.BASE,`  
-`base: env.BASE === undefined ? '/app/schulung/' : env.BASE,` 
+Damit die Seite später unter `https://Mein_SVWS-Server:8443/app/schulung` erreichbar ist, ändern Sie in `.vitepress/config.ts` den Eintrag `base`:
 
-Nun kann der html Code erzeugt und in das entsprechnde Verzeichnis verschoben werden. 
+```ts
+// vorher
+base: env.BASE === undefined ? '/Schulungsunterlagen/' : env.BASE,
+// nachher
+base: env.BASE === undefined ? '/app/schulung/' : env.BASE,
+```
 
-```bash 
+Der Ordnername unter dem `AppsPath` muss mit dem Pfad hinter `/app/` übereinstimmen.
+
+**3. Bauen, kopieren, neu starten**
+
+```bash
 npm run build
-cp -r /Where/Ever/Schulungsunterlagen/.vitepress/dist/* /SVWS_Server_APPPath/schulung/
+mkdir -p /opt/app/svws/apps/schulung
+cp -r .vitepress/dist/* /opt/app/svws/apps/schulung/
 systemctl restart svws
 ```
 
-## All in one Server
+## Fehlerquellen
 
+### `app` und `AppsPath`
+Im Browser lautet der Pfad `/app/...` (**ohne** „s“). In der `svwsconfig.json` heißt der Eintrag dagegen `"AppsPath"` (**mit** „s“). Diese Abweichung führt leicht zu Tippfehlern.
 
-Für die Einbindung bzw. Nutzung im **SVWS-Server** stehen mittlerweile zahlreiche Tools zur Verfügung. Die Liste wächst kontinuierlich und wird fortlaufend erweitert.
+### Ordnerstruktur
+Der SVWS-Server erwartet unterhalb des `AppsPath` für jedes Tool **genau ein Verzeichnis**. Der Name dieses Verzeichnisses ist der Name in der URL, und die `index.html` muss direkt darin liegen, nicht in einem weiteren Unterordner.
 
-Eine aktuelle Übersicht der bisher geeigneten Tools:
+```
+/opt/app/svws/apps/
+├── start/
+│   └── index.html
+├── konferenz/
+│   └── index.html
+└── schulung/
+    └── index.html
+```
 
+### Neustart vergessen
+Der SVWS-Server liest die `svwsconfig.json` **und** die Ordnerstruktur unter dem `AppsPath` nur beim Start ein. Starten Sie ihn deshalb neu,
+- nachdem Sie die `svwsconfig.json` geändert haben und
+- nachdem Sie ein neues Tool hinzugefügt haben.
 
-* **SVWS-Konferenz**
-* **SVWS-Prognos**
-* **SVWS-WebLupo**
-* **SVWS-GradeHub**
-* **SVWS-Import**
-* **SVWS-Dokumentation**
-* **SVWS-Schulungsunterlagen**
-* ...
+### Docker: falscher Mount
+Wenn die Tools unter Docker nicht erscheinen, prüfen Sie Folgendes:
+- Liegt der Apps-Ordner unter `volume/apps` (nicht `volume/svws/apps`)?
+- Ist er in der `docker-compose.yml` nach `/opt/app/svws/apps` gemountet?
+- Steht in der `svwsconfig.json` der Container-Pfad und nicht der Pfad auf dem Host?
 
-Die Aufzählung erhebt keinen Anspruch auf Vollständigkeit. Weiterhin kann auch eine Startseite kreiert werden, die alle enthaltenen Tools und z.B. den Client des SVWS-Servers zusätzlich verlinken. Ebenso externe Quellen, wie den SVWS-WeNoM können verlinkt werden. Hier eine Anregung zu den noch möglichen Verlinkungen: 
+## Verfügbare Tools
 
-* **SVWS-Client**
-* **SVWS-Adminclient**
-* **SVWS-SwaggerUI**
-* **SVWS-WeNoM**
+Für den SVWS-Server gibt es inzwischen zahlreiche Tools, und die Liste wächst laufend. Eine Auswahl (ohne Anspruch auf Vollständigkeit):
 
-Ein möglich Ansicht einer Startseite: 
+- SVWS-Konferenz
+- SVWS-Prognos
+- SVWS-WebLupo
+- SVWS-GradeHub
+- SVWS-Import
+- SVWS-Dokumentation
+- SVWS-Schulungsunterlagen
+- ...
 
-![alt text](image.png)
-
-### Installationsbeispiele
-
-Ein Installationsbeispiel in einer fixen Version, die mit SVWS-1.4.1 kompatibel ist befindet sich unter den [SVWS-Schulungsunterlagen -> SVWS-Tools}(https://svws-nrw.github.io/Schulungsunterlagen/Fachberatung_Anleitungen/Test-_und_Schulungsserver/SVWS-Tools/) im Bereich Fachberatung_Anleitungen. 
+siehe GitHub: [SVWS-Tools](https://github.com/SVWS-NRW/SVWS-Tools/releases)
