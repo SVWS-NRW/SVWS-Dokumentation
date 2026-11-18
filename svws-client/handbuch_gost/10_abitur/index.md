@@ -131,12 +131,71 @@ Wie schon oben geschrieben: das Holen von Leistungsdaten löscht an dieser Stell
 
 ## Reports
 
-Basissammlung, Abituranlagen, Sonstiges
+Rund um das Abitur werden unterschiedliche über SchILD-NRW 3 zu generierende Reports genutzt.
+
+Sie finden in der **Basisreportsammmlung** Reports zur *Sek II* für das Abitur. Nutzen Sie einen Report, der kursweise einen *Mantelbogen in A3* generiert, der bei der *verbindlichen Festlegung der Abiturfächer* verwendet werden kann oder in denen die Ergebnisse des *Blocks I* und des *Blocks I und II* für den ersten (Zulassung) beziehungsweise zweiten ZAA (Prüfungsergebnisse) zusammengefasst werden. Ebenso finden Sie dort eine Schülerliste mit den *Abiturergebnissen*.
+
+![Beispielreports aus der Basissammlung](./graphics/s3_basissammlung_sii.png "Sie finden in der Basisreportsammlung auch Reports um das Abitur.")
+
+Weiterhin finden sich die *offiziellen Reports* für unterschiedeliche Phasen des Abiturs bei den **Abiturzeugnissen**. Hierbei handelt es sich um die für den jeweils zutreffenden Fall zu verwendenden **Anlagen**.
+
+![Anlagen zu Abitur](./graphics/s3_anlagen_abitur.png "Die Anlangen zum Abitur sind im Zeugnispaket SII enthalten.")
+
+Nachdem Sie das Zeugnispaket zur Sekundarstufe entpackt haben, finden Sie dort alle zu verwendenden Anlagen. Diese reichen vom EF-Zeugnis über die Benachrichtungen zur Nichtzulassung bis zum Abitur.
+
+Nutzen Sie die *Zeugniseinstellungen.ini*, um das Erscheinungsbild und die Datenquellen für zum Beispiel Datumsangaben der Anlangen bei Wunsch zu konfigurieren.
+
+Viele der Einstellungen können im Standard übernommen werden.
+
+Mitunter erhalten Sie über andere Schulen oder das Forum weitere Reports, die Sie verwenden möchten.
+
+## Download schriftliches Abitur und FPA mündliches Abitur
+
+Laden Sie die Abiturprüfungen nach den Vorgaben in den Anschreiben und Emails formal wie vorgesehen herunter.
+
+Organisieren Sie die Fachprüfungsausschüsse, um das mündliche Abitur zu planen. Beachten Sie hier die Vorgaben für die Prüfenden und Fristen.
 
 ## Prüfungen
 
-### Schriftliche Prüfung Download
+Die Ergebnisse der Abiturprüfungen werden laufend in SchILD-NRW 3 erfasst. Dies geschieht analog zur Zulassungsberechnung im Bereich **Schüler** und dort im Reiter **Abitur**.
 
+![Abiturprüfungsergebnisse](./graphics/s3_abiturprüfungen.png "In die Spalten für die Abiturprüfungen wurden Ergebnisse eingetragen.")
+
+Nachdem die Prüfungsergebnisse eingetragen wurden, wird über *Gesamtergebnis berechnen* die Punktsumme für das Abitur gebildet, auch die Auswertung der Defizite wird vorgenommen.
+
+![Zusammenfassung im Fuß](./graphics/s3_abiturergebnis_bestanden.png "Im Fuß des Reiters findet sich die Zusammenfassung über alle Prüfungen.")
+
+Im Fuß werden alle Prüfungen ausgewertet. In diesem Fall wurde das Abitur bestanden.
+
+![Ergebnisse im Fuß: Nicht bestanden](./graphics/s3_abiturergebnis_nicht.png "Hier reichen die Prüfungsergebnisse nicht aus.")
+
+Im Beispiel oben reichen die Ergebnisse von den Punkte beziehungsweise den Defiziten nicht für ein Bestehen aus. Auch diese Zusammenfassung wird angezeigt.
+
+### Weitere mündliche Prüfungen
+
+![alt text](./graphics/s3_abitur_bestehensprüfungen.png "Gesetzte Bestehensprüfungen und deren Reihenfolge.")
+
+Bei Nichtbestehen des Abiturs werden *Mündliche Bestehensprüfungen (MBP)* per Haken angesetzt.
+
+Im Beispiel wurde für die erste Prüfung schon die erreichte *Prüfungsnote (MP Pkt.)* eingetragen.
+
+Zuerst sind händisch die *Reihenfolge (RF)* zu definieren. Hier werden die Prüfungen zuerst angesetzt, bei denen die Chance am besten erscheint, die notwendigen Punkte zu erreichen beziehungsweise Defizite aufzuwerten.
+
+Hierbei kommt es immer auf den Einzelfall an.
+
+::: tip Vorsicht für Verschlechterungen
+Bedenken Sie aber bitte, dass Prüfungsergebnisse, die schlechter als die Ausgangsnote ausfallen, auch zu einer Verringerung der Abitur-Punktsumme führen können.
+
+Beraten Sie taktisch sinnvoll.
+:::
+
+Wurde das Abitur schon nach der 1. oder 2. Bestehensprüfung bestanden, können weitere Prüfungen abgesagt und die Haken entfernt werden.
+
+Sie sehen in der letzten Spalte *(Ges Erg.)* die jeweils erreichten Wertungspunkte.
+
+Soll eine oder weitere *Freiwillige Mündliche Prüfung* angetreten werden, sind hier die Haken von Hand zu setzen und auch hier werden bei Bedarf Reihenfolgen eingegeben.
+
+Beachten Sie bitte den Hinweis oben zu möglichen Verschlechterungen des Abiturergebnisses.
 
 ## Nicht-Zulassung und Nicht-Bestehen
 
@@ -146,7 +205,5 @@ Basissammlung, Abituranlagen, Sonstiges
 
 
 
-
-Offiziellen Papierkram ausfüllen? Download?
 
 (Export Abiturdaten?)
