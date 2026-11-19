@@ -219,4 +219,10 @@ Das andere Ziel ist, dass jeder Schüler und jede Schüler mindestens eine garan
 Eventuell sind auch Zielsetzungen des Schulkonzepts als wesentlicher Faktor zu beachten.
 :::
 
+## Gleichwertige Komplexe Lernleistungen
+
+Lesen Sie den Artikel zu den Gleichwertigen Komplexen Lernleistungen gKl.
+
+---
+
 Sind alle Fachwahlen zufriedenstellend eingegangen und kontrolliert, können Sie daran gehen, eine **Blockung** für den Jahrgang zu berechnen, die dem neuen Stundenplan zur Grunde liegt.
