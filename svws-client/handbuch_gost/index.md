@@ -4,12 +4,12 @@ Dieses Handbuch richtet sich an Personen, die Aufgaben der **Oberstufenkoordinat
 
 Weiterhin gibt unter vielel Bezeichnungen es einen Jahrgang betreuende "Jahrgangskoordindatoren", "Beratungslehrer", über Entlastungsstunden und/oder Beförderungsstellen unterstützende Lehrkräfte, die Teile dieses Handbuch hilfreich finden könnten.
 
-:::tip Keine Panik
+:::tip Handbuch 1.0
 Ob sich jemand erstmals einarbeitet, sich im neuen SVWS-Client orientiert oder etwas noch einmal nachschlagen möchte: Hier ist das Handbuch!
 
-Dieses Handbuch wurde mit dem Stand des Releases Juli/Oktober 2026 vom SVWS-Client und SchILD-NRW 3 erstellt.
+Dieses Handbuch wurde mit dem Stand des Releases Juli/Oktober 2026 vom SVWS-Client (1.5.1) und SchILD-NRW 3 erstellt.
 
-Alle Screenshots werden mit einem Jahrgang der "alten" APO GOSt erzeugt. Sobald diese Jahrgänge auslaufen, werden die Screenshots und Ausführungen auf die APO GOSt (2027) umgestellt.
+Alle Screenshots werden mit einem Jahrgang der bisherigen APO GOSt erzeugt. Sobald diese Jahrgänge auslaufen, werden die Screenshots und Ausführungen auf die APO GOSt (2027) umgestellt.
 :::
 
 ## Verwendete Programme

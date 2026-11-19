@@ -50,6 +50,7 @@ Kontrollieren Sie,
 * dass die Sprachenfolge letztmalig aktualisiert wurde.
 * Denken Sie daran, an die **Projektkurstehmen** in die *fachbezogenen Bemerkungen* einzutragen.
 * Sammeln Sie rechtzeitig eventuelles *Außerunterrichtliche Engagement* und Mitarbeit in der *Schülervertreitung* oder vergleichbar zusammen.
+* Berechnen und prüfen Sie für die ganze Q2 das Erreichen des **FHR**.
 
 ::: tip Fragen Sie Abiturientendaten ab
 In der Praxis kann zur Vorbereitung des Abiturprozesses auch eine *Abfrage der Abiturientendaten* stattfinden. Sind die Namen - die können sich durchaus ändern - aktuell und genauso wie auf der *Geburtsurkunde* oder anderen Beurkundungen einer Namensänderung? Ist das *Geburtsdatum* garantiert korrekt und wie auf der Geburtsurkunde? Soll die *Konfession* mit auf das Zeugnis gedruckt werden oder nicht (dies wird über einen Haken in den *Individualdaten* gesteuert).
@@ -189,21 +190,97 @@ Bedenken Sie aber bitte, dass Prüfungsergebnisse, die schlechter als die Ausgan
 Beraten Sie taktisch sinnvoll.
 :::
 
-Wurde das Abitur schon nach der 1. oder 2. Bestehensprüfung bestanden, können weitere Prüfungen abgesagt und die Haken entfernt werden.
+Wurde das Abitur schon nach der 1. oder 2. Bestehensprüfung bestanden, können weitere Prüfungen abgesagt und die MBP-Haken entfernt werden.
 
 Sie sehen in der letzten Spalte *(Ges Erg.)* die jeweils erreichten Wertungspunkte.
 
 Soll eine oder weitere *Freiwillige Mündliche Prüfung* angetreten werden, sind hier die Haken von Hand zu setzen und auch hier werden bei Bedarf Reihenfolgen eingegeben.
 
-Beachten Sie bitte den Hinweis oben zu möglichen Verschlechterungen des Abiturergebnisses.
+Beachten Sie gerade bei den freiwilligen Prüfungen den Hinweis oben zu möglichen Verschlechterungen des Abiturergebnisses.
 
-## Nicht-Zulassung und Nicht-Bestehen
+## Nichtzulassung, Nichtbestehen und Rücktritt
+
+Die Abiturlaufbahn kann im Prüfungsprozess an zwei Stellen beendet sein: 
+* die Zulassung kann nicht erreicht werden
+* die Abiturprüfung kann nicht mehr bestanden werden
+
+Beim zweiten Punkt kann es vorkommen, dass zwar eine rechnerische Möglichkeit besteht, das Abitur doch noch über eine mündliche Prüfung zu bestehen, aufgrund der unrealistischen Perspektive entscheidet sich ein Prüfung nach einer Beratung jedoch, freiwillig von der Abiturprüfung zurückzutreten.
+
+![Rücktritt von der Abiturprüfung](./graphics/s3_abitur_rücktritt.png "Bei einem freiwilligen Rücktritt vom Abitur nutzen Sie die entsprechende Schaltfläche.")
+
+* Bei einer Nichtzulassung steht unter *"Zulassung"* am Ende des Blocks I ein **Nein**.
+* Wird die Prüfung angetreten und schlussendlich nicht bestanden, steht am Ende von Block I unter Zulassung ein Ja und am Ende von Block II unter *"Abitur bestanden"* ein **Nein**.
+* Tritt ein Prüfung von der Abiturprüfung zurück, klicken Sie auf die Schaltfläche `Freiw. Rücktritt` in der Abiturzusammenfassung im Fuß des Reiters Abitur. Damit bleibt *"Abitur bestanden"* auf **Nein** und unter **Zulassung** ändert sich der Inhalt auf **Rücktritt**.
+
+Nun ist zu entscheiden, ob der Prüfling die Q2 wiederholen kann und möchte oder ob die Schullaufbahn an Ihrer Schule mit einem Angang beendet ist.
+
+Für alle möglichen Fälle - keine Zulassung, Abitur nicht bestanden, Abgang, Abitur bestanden und so weiter - sind die passenden **Anlangen** aus dem Zeugnispaket über die *Zeugniseinstellungen.ini* zu konfigurieren und zu drucken.
+
+Tragen Sie bei Abgängern unter **Schüler ➔ Schulbesuch** bei **Entlassung von eigener Schule** den bislang höchsten erreichten Abschluss im Feld **Art des Abschlussess** ein. Typischerweise wird dies ein *FHR* oder der *MSA-Q* sein. Beachten Sie hier die tatsächlich bislang erreichten Abschlüsse nach den durchlaufenen Prüfungsordnungen. 
 
 ## Gruppenprozesse
 
+Haben Sie Schüler und Schülerinnen exklusiv aus der Q2 als Schülermenge ausgewählt, steht Ihnen ein neuer Bereich **Abitur** in den Gruppenprozessen zur Verfügung.
+
+![Gruppenprozesse zum Abitur](./graphics/s3_abitur_gruppenprozesse.png "Die Gruppenprozesse führen durch das Abitur.")
+
+Die Schritte des Abiturprozesses, der in diesem Kapitel oben individuell behandelt wurde, lassen sich an vielen Stellen für den ganzen Jahrgang durchführen.
+
+* Schreiben Sie im Anschluss an den Noteneintrag durch die Lehrkräfte die *Leistungsdaten* in den Reiter Abitur.
+* Prüfen Sie, dass alle *Projektkursthemen* indivduell erfasst sind und holen Sie diese dann in den Reiter Abitur.
+* Die Kurse sollten automatisch algorithmisch markiert sein, um sicher zu gehen, dass dies über den ganzen Jahrgang der Fall ist, können Sie den Gruppenprozess hier anstoßen.
+* Nach der individuellen Kontrolle der Markierungen lassen Sie die *Zulassung berechnen*. Denken Sie hier daran, dass das Berechnen der Zulassung schon erzeugte Eintragungen im Reiter Abitur löscht! Sprechen Sie sich im Team ab, damit es nicht zu Missverständnissen kommt!
+* Es schließen sich die drei Gruppenprozesse an, mit denen Sie nach und nach die *Prüfungsergebnisse eingeben* können.
+
+![Prüfungsergebnisse per GP eintragen](./graphics/s3_abitur_gp_prüfungsergebnisse.png "Tragen Sie die Prüfungsergebnisse ein.")
+
+Beim Eintrag der Prüfungsergebnisse sind die Haken zum anzeigen der LKs und Abiturfächer wichtig. So kann man wählen, welche Prüfungsergebnisse gerade vorliegen und nur diese für den Eintrag anzeigen.
+
+Liegen später weitere Ergebnisse von einem anderen Kurs vor, wählen Sie passenden Haken und filtern Sie auf den betreffenden Kurs, um dann diese Daten einzugeben.
+
+Gegen Sie nichts ein, wird keine Note gelöscht. Geben Sie eine neue Note ein, wird die bisherige überschrieben.
+
+Die Eintragungen werden mit einem Klick auf `In Datenbank übernehmen` gespeichert.
+
+* Legen Sie Anschluss an die obligatorischen Abiturprüfungen die *mündlichen Bestehensprüfungen* fest.
+
+![Mündliche Bestehensbrüfungen per Abiturprozess festlegen](./graphics/s3_abitur_gp_mdl_prüfungen.png "Berechnen Sie die das Ansetzen von Bestehensprüfungen.")
+
+In diesem Prozess ist keine Einstellung vorzunehmen, am Ende wird einer Zusammenfassung für jeden Schüler oder Schülerin angezeigt. Kontrollieren Sie nun die Bestehensprüfungen individuell und legen Sie im Reiter Abitur eine Prüfungsreihenfolge fest.
+
+*Freiwillige Mündliche Prüfungen* legen Sie immer individuell im Reiter Abitur an.
+
+* Berechen Sie zum Ende des Abiturprozess das Gesamtergebnis für alle.
+* Zusatzdaten wir ein erreichtes Latinum oder ähnlich können Sie zu einem beliebigen Zeitpunkt nach dem Ende der Noteneintragung setzen.
+* Setzen Sie auch für alle Abiturienten das Statistikdatum des Abiturs. Dieser Schritt ist leicht zu vergessen und kann auch zu einem frühen Zeitpunkt erfolgen.  
+
 ## Zeugnisdruck Abitur
 
+Konfigurieren Sie die Zeugniseinstellungen.ini für alle Anlagen. Es ist in vielen Fällen empfehlenswert, die Daten so zu wählen, dass möglichst viel aus der Datenbank geholt wird (Abschlussdatum, Zeugnisdatum und so weiter).
+
+Drucken Sie die Zeugnisse so, wie es im Kapitel Zeugnisdruck beschrieben wurde.
+
+Drucken Sie zuerst die Personen mit "Abitur", diese haben den Abschluss. Sofern Sie nicht über den Gruppenprozess *Zeugnisse drucken und Schüler ausschulen* drucken, müssen Sie erst über einen Gruppenprozess das Entlassdatum setzen und nach dem Zeugnisdruck den **Status** der Schüler und Schülerinnen auf **Abschluss**. Der Gruppenprozess erzeugt diese Eintragungen automatisch.
+
+Gehen Sie analag mit den Abgängern vor, wählen Sie hier je nach Abgangszeitpunkt (Zulassung oder Nichtbestehen der Abiturprüfung) die korrekte Anlage. Den Status setzen Sie im Anschluss auf **Abgang**.
 
 
+::: Zweitschriften archivieren
+Denken Sie daran, die Zweitschriften von Abschluss- und Abgangszeugnissen zu archivieren. Papierkopien empfehlen sich, da diese auch in Jahrzehnten noch ohne unerwartete Probleme gelesen und kopiert werden können.
+:::
 
-(Export Abiturdaten?)
+Wollen Sie noch digitale Kopien als PDF-Datei in die Dokumentenablage oder ein über die Einstellungen von SchILD-NRW 3 gesetztes Zeugnisarchiv erzeugen, müssen Sie den Zeugnisdruck über die Reportverwaltung noch einmal wiederholen. Hierzu müssen Sie über **Auswahl** und dann im **Schülerfilter** erst in den **Individualdaten I** den aktuellen Lernabschnitt einstellen und den Jahrgang Q2 wählen. Sie bekommen Sie ihre Abschluss-Abiturienten und die Abgänger.
+
+Müssen Sie in einem Fall noch nach der Abschlussart differenzieren, können Sie das zusätzlich über Reiter **Lernabschnitt/Leistungsdaten** definieren. 
+
+Im Anschluss können Sie über die Reportverwaltung die Anlagen noch einmal "drucken".
+
+![Wählen Sie die Art des Drucks](./graphics/s3_abitur_digitalesdrucken.png "Wählen Sie die Art des Drucks.")
+
+Je nach Filterung und wie Sie die Schüler oder Schülerinnen ausgewählt haben, können Sie wie immer nur die *ausgewählte Person*, eine *angehakte Gruppe* oder *die ganze Gruppe* verarbeiten lassen.
+
+Sofern Sie nur in die Dokumentenablage drucken möchte, wählen Sie *nur Archivierung (in Dokumentenverwaltung)*. Soll in das Zeugnisarchiv gedruckt werden, wählen Sie *Archivierung in Zeugnisarchiv*.
+
+::: tip Automatische Löschung des Dokumentenverzeichnisses
+Beachten Sie hier, dass die automatische Datenlöschung von SchILD-NRW 3 die Dokumentenverwaltung eines Schülers nach einer Frist von 10 Jahren löscht (Stand 2026).
+:::

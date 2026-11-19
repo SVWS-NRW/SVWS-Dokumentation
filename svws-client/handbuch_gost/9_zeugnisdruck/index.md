@@ -157,7 +157,7 @@ Filtern Sie dazu auf *Status: Abschluss* oder *Status: Abgang* im aktuellen Lern
 
 ## Archivierung
 
-Denken Sie daran, dass gedruckte Zeugnisse, besonders *Abschlusszeugnisse* und *Abgangszeugnisse* zu archivieren sind.
+Denken Sie daran, dass gedruckte Zeugnisse, besonders *Abschlusszeugnisse* und *Abgangszeugnisse* zu archivieren sind. Die Fristen sind der jeweils geltenden Datenschutzverordnung zu entnehmen, zum Verfassungszeitpunkt dieses Artikels (2026) sind das 50 Jahre.
 
 Hier sind Dopplungen zu drucken und im Ordner im Schularchiv abzulegen.
 
