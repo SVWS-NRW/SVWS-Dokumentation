@@ -55,6 +55,7 @@ Konfigurationseinstellungen von `svwsconfig.json`.
 | ------------- | --------------- | --------------- |
 | `dbms` | `MARIA_DB` | Verwendetes Datenbankmanagementsystem. Andere DB Systeme werden nicht unterstützt ISSUE: Kommentar in der svwsdatabasedto zeile 14 knunur MariaDB |
 | `location` | localhost:3306 | Hostname bzw. Adresse des Datenbankservers, optional einschließlich Port, z. B. `MariaDBServer:3306`. (MariaDB default 3306 muss nicht explizit angegeben werden ) |
+| `tls` | `true` `false`| (Ab Version 1.6.1) Mit `true` wird die Verbindung zwischen Server und Client verschlüsselt |
 | `defaultschema` | `null` | Gibt den Namen des Schemas an, die als erstes im Client angezeigt werden soll, wird null angegeben ist der Standart der zuletzt aufgewählten konfigiuration |
 | `SchemaKonfiguration` | -- | Abschnitt: Liste der konfigurierten Datenbankschemata. Es können mehrere Schema-Konfigurationen vorhanden sein. |
 | `connectionRetries` | `0` | **DEPRECATED.** Wird im SVWS-Server nicht mehr verwendet. |
